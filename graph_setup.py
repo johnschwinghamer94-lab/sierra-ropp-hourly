@@ -15,7 +15,7 @@ if len(sys.argv) < 3:
     print("Usage: py graph_setup.py <CLIENT_ID> <TENANT_ID>")
     sys.exit(1)
 CLIENT, TENANT = sys.argv[1], sys.argv[2]
-SCOPE = "Files.Read offline_access"
+SCOPE = "Files.Read Mail.Read offline_access"
 BASE = f"https://login.microsoftonline.com/{TENANT}/oauth2/v2.0"
 
 dc = requests.post(f"{BASE}/devicecode", data={"client_id": CLIENT, "scope": SCOPE}).json()
