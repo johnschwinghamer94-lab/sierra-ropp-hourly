@@ -1,0 +1,19 @@
+name: Cloud hourly (Graph)
+on:
+  schedule:
+    - cron: "0 16-23,0-6 * * *"
+  workflow_dispatch:
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install --quiet requests openpyxl pynacl
+      - env:
+          GRAPH_CLIENT_ID: ${{ secrets.GRAPH_CLIENT_ID }}
+          GRAPH_TENANT_ID: ${{ secrets.GRAPH_TENANT_ID }}
+          GRAPH_REFRESH_TOKEN: ${{ secrets.GRAPH_REFRESH_TOKEN }}
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+        run: python graph_hourly.py
