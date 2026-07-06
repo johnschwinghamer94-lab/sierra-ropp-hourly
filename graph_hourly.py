@@ -166,6 +166,35 @@ def per_tech(rev_rows, tgl_rows):
     return techs
 
 
+def _asdate(v):
+    from datetime import datetime as _dt, date as _date
+    if isinstance(v, _dt): return v.date()
+    if isinstance(v, _date): return v
+    try: return _dt.strptime(str(v)[:10], "%Y-%m-%d").date()
+    except (ValueError, TypeError): return None
+
+
+def sched_metrics(rows):
+    """Same-day / ran / sold from the today-only 'Scheduled vs Ran vs Sold' report.
+    Grouped by sales tech (col 3) but ATTRIBUTED to the ROPP source tech (col 4), like
+    the dashboard. col6 Scheduled Date, col7 Created Date (same-day flip = equal),
+    col8 'Jobs Estimate Sales Installed' = sold $ (sold when > 0)."""
+    per = {}; ran = same = sold = 0; soldrev = 0.0
+    for r in _grouped(rows, 1):
+        name = str(r[4]).split(",")[0].strip() if len(r) > 4 and r[4] else "Unassigned"
+        sd = _asdate(r[6]) if len(r) > 6 else None
+        cr = _asdate(r[7]) if len(r) > 7 else None
+        inst = _fnum(r[8]) if len(r) > 8 else 0.0
+        e = per.setdefault(name, {"name": name, "ran": 0, "same": 0, "sold": 0, "soldrev": 0.0})
+        e["ran"] += 1; ran += 1
+        if sd and cr and sd == cr: e["same"] += 1; same += 1
+        if inst > 0: e["sold"] += 1; e["soldrev"] += inst; sold += 1; soldrev += inst
+    techs = sorted(per.values(), key=lambda x: (-x["ran"], -x["same"], x["name"]))
+    for t in techs: t["soldrev"] = round(t["soldrev"]); t["samePct"] = rate(t["same"], t["ran"])
+    return {"ran": ran, "same": same, "samePct": rate(same, ran),
+            "sold": sold, "soldrev": round(soldrev), "closeRate": rate(sold, ran), "techs": techs}
+
+
 def rate(a, b):
     return round(a / b * 1000) / 10 if b else 0.0
 
@@ -200,6 +229,8 @@ def main():
     rev_rows = rows(rev, tok); tgl_rows = rows(tgl, tok)
     calls, tgls = count(rev_rows, tgl_rows)
     techs = per_tech(rev_rows, tgl_rows)
+    sch = today_file(items, "scheduled")               # optional 3rd report
+    sched = sched_metrics(rows(sch, tok)) if sch else None
     n = _now(); today = n.date().isoformat(); hh = f"{n.hour:02d}"
 
     st, _ = pget("hourly_state.json")
@@ -215,10 +246,12 @@ def main():
         pc, pt = c, t
     latest = series[-1] if series else {"calls": 0, "tgls": 0, "rate": 0}
     revenue = sum(t["rev"] for t in techs)
+    today_block = {"calls": latest["calls"], "tgls": latest["tgls"], "rate": latest["rate"],
+                   "rev": revenue, "techs": techs}
+    if sched:
+        today_block["sched"] = sched
     out = {"date": today, "updated": n.strftime("%I:%M %p").lstrip("0"),
-           "today": {"calls": latest["calls"], "tgls": latest["tgls"], "rate": latest["rate"],
-                     "rev": revenue, "techs": techs},
-           "hours": series}
+           "today": today_block, "hours": series}
 
     _, ssha = pget("hourly_state.json")
     pput("hourly_state.json", st, ssha, f"Cloud(graph) hourly state {today} {hh}:00")
