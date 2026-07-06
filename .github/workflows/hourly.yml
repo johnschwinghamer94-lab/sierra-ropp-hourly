@@ -1,0 +1,21 @@
+name: Hourly capture
+# Fires when Power Automate pushes today's reports into hourly_reports/.
+# Computes the hour's numbers and publishes hourly.json to the PUBLIC dashboard repo.
+on:
+  push:
+    paths: ["hourly_reports/**"]
+  workflow_dispatch:
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet openpyxl requests
+      - name: Compute + publish hourly.json
+        env:
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+        run: python cloud_hourly.py
