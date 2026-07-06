@@ -66,7 +66,7 @@ def rotate_secret(new_rt):
 def list_children(tok):
     from urllib.parse import quote
     url = (f"https://graph.microsoft.com/v1.0/me/drive/root:/{quote(FOLDER)}:/children"
-           "?$top=400&$select=name,lastModifiedDateTime,@microsoft.graph.downloadUrl")
+           "?$top=400&$select=id,name,lastModifiedDateTime")
     items = []
     while url:
         j = requests.get(url, headers={"Authorization": "Bearer " + tok}).json()
@@ -104,9 +104,11 @@ def today_file(items, *subs):
     return best
 
 
-def rows(it):
+def rows(it, tok):
     from openpyxl import load_workbook
-    data = requests.get(it["@microsoft.graph.downloadUrl"]).content
+    data = requests.get(
+        f"https://graph.microsoft.com/v1.0/me/drive/items/{it['id']}/content",
+        headers={"Authorization": "Bearer " + tok}).content
     wb = load_workbook(io.BytesIO(data), data_only=True, read_only=True)
     return [list(r) for r in wb.active.iter_rows(values_only=True)]
 
@@ -164,7 +166,7 @@ def main():
         print("No today-only revenue/tgls export in OneDrive yet; nothing to publish.")
         return
 
-    calls, tgls = count(rows(rev), rows(tgl))
+    calls, tgls = count(rows(rev, tok), rows(tgl, tok))
     n = _now(); today = n.date().isoformat(); hh = f"{n.hour:02d}"
 
     st, _ = pget("hourly_state.json")
