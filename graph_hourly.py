@@ -1,19 +1,18 @@
 #!/usr/bin/env python3
 """
-graph_hourly.py — FULLY-FREE cloud capture, now reading straight from EMAIL.
+graph_hourly.py — FULLY-FREE cloud capture. Runs in GitHub Actions on a schedule
+(no machine, no Power Automate premium). Reads today's ServiceTitan "today-only"
+exports straight from OneDrive via Microsoft Graph (delegated auth), counts today's
+distinct ROPPs/TGLs, and publishes the SHARED hourly_state.json + hourly.json to the
+PUBLIC dashboard repo. Rotates its own Graph refresh-token secret so it never expires.
 
-Runs in GitHub Actions on a schedule. Pulls the newest hourly "today-only" ServiceTitan
-exports directly from the Outlook "Service Titan Reports" folder via Microsoft Graph
-(delegated Mail.Read) — no OneDrive, no Power Automate. Counts today's distinct
-ROPPs/TGLs the same way the dashboard engine does, and publishes the SHARED
-hourly_state.json + hourly.json to the PUBLIC dashboard repo. Rotates its own Graph
-refresh-token secret so it never expires.
-
-Secrets (this private repo -> Settings -> Secrets -> Actions):
-  GRAPH_CLIENT_ID, GRAPH_TENANT_ID, GRAPH_REFRESH_TOKEN  (refresh token must be
-  consented for Mail.Read + offline_access), DASHBOARD_TOKEN.
+Secrets it needs (this private repo -> Settings -> Secrets -> Actions):
+  GRAPH_CLIENT_ID     - Azure app (client) id
+  GRAPH_TENANT_ID     - Azure directory (tenant) id
+  GRAPH_REFRESH_TOKEN - from running graph_setup.py once (auto-rotated after that)
+  DASHBOARD_TOKEN     - GitHub PAT with write to sierra-ropp-dashboard (+ this repo's secrets)
 """
-import os, io, json, base64
+import os, re, io, json, base64
 from datetime import datetime
 import requests
 try:
@@ -28,8 +27,7 @@ RTOKEN = os.environ["GRAPH_REFRESH_TOKEN"]
 GHTOK  = os.environ["DASHBOARD_TOKEN"]
 SELF   = os.environ.get("GITHUB_REPOSITORY", "johnschwinghamer94-lab/sierra-ropp-hourly")
 PUB    = "johnschwinghamer94-lab/sierra-ropp-dashboard"
-FOLDER = "Service Titan Reports"
-GRAPH  = "https://graph.microsoft.com/v1.0"
+FOLDER = "CLAUDE STUFF/SILO_Reports"
 
 GH = {"Authorization": "token " + GHTOK, "Accept": "application/vnd.github+json"}
 PUBAPI = "https://api.github.com/repos/" + PUB + "/contents/"
@@ -40,13 +38,15 @@ def graph_token():
     r = requests.post(
         f"https://login.microsoftonline.com/{TENANT}/oauth2/v2.0/token",
         data={"client_id": CLIENT, "grant_type": "refresh_token",
-              "refresh_token": RTOKEN, "scope": "Mail.Read offline_access"})
+              "refresh_token": RTOKEN, "scope": "Files.Read offline_access"})
     r.raise_for_status()
     j = r.json()
     return j["access_token"], j.get("refresh_token")
 
 
 def rotate_secret(new_rt):
+    """Persist the freshly-issued refresh token back into this repo's secret so the
+    login chain never lapses (Azure rolls the token on every use)."""
     if not new_rt or new_rt == RTOKEN:
         return
     try:
@@ -63,52 +63,70 @@ def rotate_secret(new_rt):
         print("WARN: could not rotate refresh token:", e)
 
 
-def _get(tok, url):
-    return requests.get(url, headers={"Authorization": "Bearer " + tok}).json()
-
-
-def folder_id(tok):
+def list_children(tok):
     from urllib.parse import quote
-    j = _get(tok, f"{GRAPH}/me/mailFolders?$filter=displayName eq '{quote(FOLDER)}'&$select=id,displayName")
-    vals = j.get("value", [])
-    if not vals:
-        raise SystemExit(f"Mail folder '{FOLDER}' not found")
-    return vals[0]["id"]
+    url = (f"https://graph.microsoft.com/v1.0/me/drive/root:/{quote(FOLDER)}:/children"
+           "?$top=400&$select=id,name,lastModifiedDateTime")
+    items = []
+    while url:
+        j = requests.get(url, headers={"Authorization": "Bearer " + tok}).json()
+        items += j.get("value", [])
+        url = j.get("@odata.nextLink")
+    return items
 
 
-def newest_message(tok, fid, *subs):
-    """id of the newest message in the folder whose subject contains all subs (lowercased)."""
-    url = (f"{GRAPH}/me/mailFolders/{fid}/messages"
-           "?$top=40&$orderby=receivedDateTime desc&$select=id,subject,receivedDateTime")
-    for m in _get(tok, url).get("value", []):
-        s = (m.get("subject") or "").lower()
-        if all(sub in s for sub in subs):
-            return m["id"]
-    return None
+# ---------- pick today's snapshot & count ----------
+def _range(name):
+    m = re.search(r"(\d{2})_(\d{2})_(\d{2})\s*-\s*(\d{2})_(\d{2})_(\d{2})", name)
+    if not m:
+        return None, None
+    try:
+        from datetime import date
+        s = date(2000+int(m.group(3)), int(m.group(1)), int(m.group(2)))
+        e = date(2000+int(m.group(6)), int(m.group(4)), int(m.group(5)))
+        return s, e
+    except ValueError:
+        return None, None
 
 
-def rows_from_message(tok, msg_id):
-    """Load the .xlsx file attachment of a message into rows (via Graph contentBytes)."""
+def today_file(items, *subs):
+    """Newest 'today-only' (start==end==today) export whose name contains all subs."""
+    today = _now().date()
+    best = None
+    for it in items:
+        n = it["name"].lower()
+        if not n.endswith(".xlsx") or not all(s in n for s in subs):
+            continue
+        s, e = _range(it["name"])
+        if s == today and e == today:
+            if best is None or it["lastModifiedDateTime"] > best["lastModifiedDateTime"]:
+                best = it
+    return best
+
+
+def rows(it, tok):
     from openpyxl import load_workbook
-    j = _get(tok, f"{GRAPH}/me/messages/{msg_id}/attachments?$select=name,contentType,contentBytes")
-    for a in j.get("value", []):
-        name = (a.get("name") or "").lower()
-        if name.endswith(".xlsx") and a.get("contentBytes"):
-            data = base64.b64decode(a["contentBytes"])
-            wb = load_workbook(io.BytesIO(data), data_only=True, read_only=True)
-            return [list(r) for r in wb.active.iter_rows(values_only=True)]
-    return None
+    data = requests.get(
+        f"https://graph.microsoft.com/v1.0/me/drive/items/{it['id']}/content",
+        headers={"Authorization": "Bearer " + tok}).content
+    wb = load_workbook(io.BytesIO(data), data_only=True, read_only=True)
+    return [list(r) for r in wb.active.iter_rows(values_only=True)]
 
 
-# ---------- count exactly like UPDATE_DASHBOARD.iter_grouped ----------
 def _grouped(rows, jobcol):
+    """Mirror UPDATE_DASHBOARD.iter_grouped: one row == one call/TGL. Skips the
+    'Assigned Technicians:' group headers AND the per-tech subtotal / grand-total
+    rows (those carry a small count like 1/2/7 in the job column). A real job#
+    is a >=6-digit number, which is the exact filter the main dashboard uses."""
     for r in rows[1:]:
         a = r[0] if r else None
         if isinstance(a, str) and a.strip().startswith("Assigned Technicians:"):
             continue
-        if len(r) <= jobcol or r[jobcol] is None:
+        if len(r) <= jobcol:
             continue
         jb = r[jobcol]
+        if jb is None:
+            continue
         s = str(int(jb)) if isinstance(jb, (int, float)) and float(jb).is_integer() else str(jb).strip()
         if not s.isdigit() or len(s) < 6:
             continue
@@ -116,8 +134,8 @@ def _grouped(rows, jobcol):
 
 
 def count(rev_rows, tgl_rows):
-    calls = sum(1 for _ in _grouped(rev_rows, 3))
-    tgls  = sum(1 for _ in _grouped(tgl_rows, 1))
+    calls = sum(1 for _ in _grouped(rev_rows, 3))   # Revenue: Job# in col 3
+    tgls  = sum(1 for _ in _grouped(tgl_rows, 1))    # TGLs Created: Job# in col 1
     return calls, tgls
 
 
@@ -145,22 +163,14 @@ def main():
     tok, new_rt = graph_token()
     rotate_secret(new_rt)
 
-    fid = folder_id(tok)
-    # hourly "today-only" exports have " - Copy" in the subject (the morning full-year
-    # reports do NOT). The revenue subject also literally contains "copy" ("Johns Copy
-    # of Ericka's..."), so match the trailing " - copy" to tell them apart.
-    rev_id = newest_message(tok, fid, "revenue by job", " - copy")
-    tgl_id = newest_message(tok, fid, "tgls created", " - copy")
-    if not rev_id or not tgl_id:
-        print("No hourly '- Copy' revenue/tgls email found yet; nothing to publish.")
-        return
-    rev_rows = rows_from_message(tok, rev_id)
-    tgl_rows = rows_from_message(tok, tgl_id)
-    if not rev_rows or not tgl_rows:
-        print("Report email had no .xlsx attachment; nothing to publish.")
+    items = list_children(tok)
+    rev = today_file(items, "revenue")
+    tgl = today_file(items, "tgls", "created") or today_file(items, "tgls")
+    if not rev or not tgl:
+        print("No today-only revenue/tgls export in OneDrive yet; nothing to publish.")
         return
 
-    calls, tgls = count(rev_rows, tgl_rows)
+    calls, tgls = count(rows(rev, tok), rows(tgl, tok))
     n = _now(); today = n.date().isoformat(); hh = f"{n.hour:02d}"
 
     st, _ = pget("hourly_state.json")
@@ -180,9 +190,9 @@ def main():
            "hours": series}
 
     _, ssha = pget("hourly_state.json")
-    pput("hourly_state.json", st, ssha, f"Cloud(email) hourly state {today} {hh}:00")
+    pput("hourly_state.json", st, ssha, f"Cloud(graph) hourly state {today} {hh}:00")
     _, osha = pget("hourly.json")
-    pput("hourly.json", out, osha, f"Cloud(email) hourly capture {today} {hh}:00")
+    pput("hourly.json", out, osha, f"Cloud(graph) hourly capture {today} {hh}:00")
     print(f"Published {today} {hh}:00 -> {calls} calls / {tgls} TGLs ({rate(tgls, calls)}%)")
 
 
