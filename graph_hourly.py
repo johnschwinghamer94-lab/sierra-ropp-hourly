@@ -139,6 +139,24 @@ def count(rev_rows, tgl_rows):
     return calls, tgls
 
 
+def per_tech(rev_rows, tgl_rows):
+    """Today's calls/TGLs per technician (tech name: Revenue col 7, TGLs col 3;
+    first-listed on shared jobs). Sorted by TGLs desc, then calls desc."""
+    def tally(rows, jobcol, techcol):
+        d = {}
+        for r in _grouped(rows, jobcol):
+            t = r[techcol] if len(r) > techcol else None
+            name = str(t).split(",")[0].strip() if t else "Unassigned"
+            d[name] = d.get(name, 0) + 1
+        return d
+    rc = tally(rev_rows, 3, 7)
+    tc = tally(tgl_rows, 1, 3)
+    techs = [{"name": n, "calls": rc.get(n, 0), "tgls": tc.get(n, 0),
+              "rate": rate(tc.get(n, 0), rc.get(n, 0))} for n in (set(rc) | set(tc))]
+    techs.sort(key=lambda x: (-x["tgls"], -x["calls"], x["name"]))
+    return techs
+
+
 def rate(a, b):
     return round(a / b * 1000) / 10 if b else 0.0
 
@@ -170,7 +188,9 @@ def main():
         print("No today-only revenue/tgls export in OneDrive yet; nothing to publish.")
         return
 
-    calls, tgls = count(rows(rev, tok), rows(tgl, tok))
+    rev_rows = rows(rev, tok); tgl_rows = rows(tgl, tok)
+    calls, tgls = count(rev_rows, tgl_rows)
+    techs = per_tech(rev_rows, tgl_rows)
     n = _now(); today = n.date().isoformat(); hh = f"{n.hour:02d}"
 
     st, _ = pget("hourly_state.json")
@@ -186,7 +206,7 @@ def main():
         pc, pt = c, t
     latest = series[-1] if series else {"calls": 0, "tgls": 0, "rate": 0}
     out = {"date": today, "updated": n.strftime("%I:%M %p").lstrip("0"),
-           "today": {"calls": latest["calls"], "tgls": latest["tgls"], "rate": latest["rate"]},
+           "today": {"calls": latest["calls"], "tgls": latest["tgls"], "rate": latest["rate"], "techs": techs},
            "hours": series}
 
     _, ssha = pget("hourly_state.json")
