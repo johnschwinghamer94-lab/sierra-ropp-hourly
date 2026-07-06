@@ -5,7 +5,7 @@ pushes today's reports into hourly_reports/. Counts today's distinct ROPPs/TGLs 
 publishes the SHARED hourly_state.json + hourly.json to the PUBLIC dashboard repo via
 the API. Raw reports never leave this private repo. No machine needs to be on.
 """
-import os, glob, json, base64
+import os, re, glob, json, base64
 from datetime import datetime
 import requests
 try:
@@ -36,12 +36,18 @@ def _jk(v):
     return str(int(v)) if isinstance(v, (int, float)) else str(v).strip()
 
 
+def _ts(p):
+    # Power Automate prefixes each upload with a yyyyMMddHHmmss stamp, so the
+    # leading digits sort chronologically. (git checkout gives every file the
+    # same mtime, so mtime can't tell today's snapshots apart in the cloud.)
+    m = re.match(r"(\d{14})", os.path.basename(p))
+    return m.group(1) if m else "0"
+
+
 def _find(*subs):
-    for p in sorted(glob.glob("hourly_reports/*.xlsx"), key=os.path.getmtime, reverse=True):
-        n = os.path.basename(p).lower()
-        if all(s in n for s in subs):
-            return p
-    return None
+    cands = [p for p in glob.glob("hourly_reports/*.xlsx")
+             if all(s in os.path.basename(p).lower() for s in subs)]
+    return max(cands, key=lambda p: (_ts(p), os.path.getmtime(p))) if cands else None
 
 
 def count_today():
