@@ -113,26 +113,30 @@ def rows(it, tok):
     return [list(r) for r in wb.active.iter_rows(values_only=True)]
 
 
-def _isjob(v):
-    if isinstance(v, (int, float)): return v > 0
-    if isinstance(v, str): return v.strip().isdigit()
-    return False
-
-
-def _jk(v):
-    return str(int(v)) if isinstance(v, (int, float)) else str(v).strip()
+def _grouped(rows, jobcol):
+    """Mirror UPDATE_DASHBOARD.iter_grouped: one row == one call/TGL. Skips the
+    'Assigned Technicians:' group headers AND the per-tech subtotal / grand-total
+    rows (those carry a small count like 1/2/7 in the job column). A real job#
+    is a >=6-digit number, which is the exact filter the main dashboard uses."""
+    for r in rows[1:]:
+        a = r[0] if r else None
+        if isinstance(a, str) and a.strip().startswith("Assigned Technicians:"):
+            continue
+        if len(r) <= jobcol:
+            continue
+        jb = r[jobcol]
+        if jb is None:
+            continue
+        s = str(int(jb)) if isinstance(jb, (int, float)) and float(jb).is_integer() else str(jb).strip()
+        if not s.isdigit() or len(s) < 6:
+            continue
+        yield r
 
 
 def count(rev_rows, tgl_rows):
-    calls, tgls = set(), set()
-    for r in rev_rows:
-        bu = r[10] if len(r) > 10 and isinstance(r[10], str) else ""
-        if "HVAC" in bu and ("Service" in bu or "Maintenance" in bu) and len(r) > 3 and _isjob(r[3]):
-            calls.add(_jk(r[3]))
-    for r in tgl_rows:
-        if len(r) > 1 and _isjob(r[1]):
-            tgls.add(_jk(r[1]))
-    return len(calls), len(tgls)
+    calls = sum(1 for _ in _grouped(rev_rows, 3))   # Revenue: Job# in col 3
+    tgls  = sum(1 for _ in _grouped(tgl_rows, 1))    # TGLs Created: Job# in col 1
+    return calls, tgls
 
 
 def rate(a, b):
