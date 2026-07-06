@@ -26,14 +26,20 @@ def _rows(path):
     return [list(r) for r in wb.active.iter_rows(values_only=True)]
 
 
-def _isjob(v):
-    if isinstance(v, (int, float)): return v > 0
-    if isinstance(v, str): return v.strip().isdigit()
-    return False
-
-
-def _jk(v):
-    return str(int(v)) if isinstance(v, (int, float)) else str(v).strip()
+def _grouped(rows, jobcol):
+    """One grouped row == one call/TGL; skips group headers and per-tech subtotal
+    rows (job# < 6 digits). Mirrors UPDATE_DASHBOARD.iter_grouped exactly."""
+    for r in rows[1:]:
+        a = r[0] if r else None
+        if isinstance(a, str) and a.strip().startswith("Assigned Technicians:"):
+            continue
+        if len(r) <= jobcol or r[jobcol] is None:
+            continue
+        jb = r[jobcol]
+        s = str(int(jb)) if isinstance(jb, (int, float)) and float(jb).is_integer() else str(jb).strip()
+        if not s.isdigit() or len(s) < 6:
+            continue
+        yield r
 
 
 def _ts(p):
@@ -51,19 +57,11 @@ def _find(*subs):
 
 
 def count_today():
-    calls, tgls = set(), set()
     rev = _find("revenue")
-    if rev:
-        for r in _rows(rev):
-            bu = r[10] if len(r) > 10 and isinstance(r[10], str) else ""
-            if "HVAC" in bu and ("Service" in bu or "Maintenance" in bu) and len(r) > 3 and _isjob(r[3]):
-                calls.add(_jk(r[3]))
     tgl = _find("tgls", "created") or _find("tgls")
-    if tgl:
-        for r in _rows(tgl):
-            if len(r) > 1 and _isjob(r[1]):
-                tgls.add(_jk(r[1]))
-    return len(calls), len(tgls)
+    calls = sum(1 for _ in _grouped(_rows(rev), 3)) if rev else 0
+    tgls  = sum(1 for _ in _grouped(_rows(tgl), 1)) if tgl else 0
+    return calls, tgls
 
 
 def rate(a, b):
