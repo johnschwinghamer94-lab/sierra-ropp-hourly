@@ -222,11 +222,15 @@ def main():
     items = list_children(tok)
     rev = today_file(items, "revenue")
     tgl = today_file(items, "tgls", "created") or today_file(items, "tgls")
-    if not rev or not tgl:
+    if not rev and not tgl:
         print("No today-only revenue/tgls export in OneDrive yet; nothing to publish.")
         return
 
-    rev_rows = rows(rev, tok); tgl_rows = rows(tgl, tok)
+    # ServiceTitan omits a report entirely when its count is 0 for the day (e.g. no
+    # TGLs created yet). Treat a missing report as an empty dataset so early calls
+    # still publish instead of the whole capture skipping.
+    rev_rows = rows(rev, tok) if rev else []
+    tgl_rows = rows(tgl, tok) if tgl else []
     calls, tgls = count(rev_rows, tgl_rows)
     techs = per_tech(rev_rows, tgl_rows)
     sch = today_file(items, "scheduled")               # optional 3rd report
