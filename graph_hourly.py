@@ -139,20 +139,29 @@ def count(rev_rows, tgl_rows):
     return calls, tgls
 
 
+def _fnum(v):
+    try: return float(v)
+    except (TypeError, ValueError): return 0.0
+
+
 def per_tech(rev_rows, tgl_rows):
-    """Today's calls/TGLs per technician (tech name: Revenue col 7, TGLs col 3;
-    first-listed on shared jobs). Sorted by TGLs desc, then calls desc."""
-    def tally(rows, jobcol, techcol):
-        d = {}
+    """Today's calls/TGLs/revenue per technician (tech name: Revenue col 7, TGLs
+    col 3; TGL revenue = TGLs 'Sales from Leads Created' col 8; first-listed on
+    shared jobs). Sorted by TGLs desc, then calls desc."""
+    def tally(rows, jobcol, techcol, sumcol=None):
+        cnt = {}; amt = {}
         for r in _grouped(rows, jobcol):
             t = r[techcol] if len(r) > techcol else None
             name = str(t).split(",")[0].strip() if t else "Unassigned"
-            d[name] = d.get(name, 0) + 1
-        return d
-    rc = tally(rev_rows, 3, 7)
-    tc = tally(tgl_rows, 1, 3)
+            cnt[name] = cnt.get(name, 0) + 1
+            if sumcol is not None:
+                amt[name] = amt.get(name, 0.0) + (_fnum(r[sumcol]) if len(r) > sumcol else 0.0)
+        return cnt, amt
+    rc, _ = tally(rev_rows, 3, 7)
+    tc, rv = tally(tgl_rows, 1, 3, 8)
     techs = [{"name": n, "calls": rc.get(n, 0), "tgls": tc.get(n, 0),
-              "rate": rate(tc.get(n, 0), rc.get(n, 0))} for n in (set(rc) | set(tc))]
+              "rate": rate(tc.get(n, 0), rc.get(n, 0)), "rev": round(rv.get(n, 0.0))}
+             for n in (set(rc) | set(tc))]
     techs.sort(key=lambda x: (-x["tgls"], -x["calls"], x["name"]))
     return techs
 
@@ -205,8 +214,10 @@ def main():
                        "dcalls": max(c-pc, 0), "dtgls": max(t-pt, 0), "drate": rate(max(t-pt, 0), max(c-pc, 0))})
         pc, pt = c, t
     latest = series[-1] if series else {"calls": 0, "tgls": 0, "rate": 0}
+    revenue = sum(t["rev"] for t in techs)
     out = {"date": today, "updated": n.strftime("%I:%M %p").lstrip("0"),
-           "today": {"calls": latest["calls"], "tgls": latest["tgls"], "rate": latest["rate"], "techs": techs},
+           "today": {"calls": latest["calls"], "tgls": latest["tgls"], "rate": latest["rate"],
+                     "rev": revenue, "techs": techs},
            "hours": series}
 
     _, ssha = pget("hourly_state.json")
