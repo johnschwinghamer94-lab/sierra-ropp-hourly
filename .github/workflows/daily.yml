@@ -1,0 +1,32 @@
+name: Cloud daily rebuild
+on:
+  schedule:
+    - cron: "20 14 * * *"   # ~7:20 AM Pacific
+  workflow_dispatch:
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4          # engine (this private repo)
+      - uses: actions/checkout@v4          # live site (public repo)
+        with:
+          repository: johnschwinghamer94-lab/sierra-ropp-dashboard
+          token: ${{ secrets.DASHBOARD_TOKEN }}
+          path: site
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install --quiet requests openpyxl pynacl
+      - name: Download the 4 reports from OneDrive
+        env:
+          GRAPH_CLIENT_ID: ${{ secrets.GRAPH_CLIENT_ID }}
+          GRAPH_TENANT_ID: ${{ secrets.GRAPH_TENANT_ID }}
+          GRAPH_REFRESH_TOKEN: ${{ secrets.GRAPH_REFRESH_TOKEN }}
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+        run: python graph_download_cloud.py
+      - name: Rebuild index.html and push
+        env:
+          ROPP_REPO: ${{ github.workspace }}/site
+        run: |
+          git -C site config user.email "johnschwinghamer94@gmail.com"
+          git -C site config user.name "John Schwinghamer"
+          python auto_update_dashboard.py
