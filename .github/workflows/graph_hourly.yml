@@ -1,7 +1,10 @@
 name: Cloud hourly (Graph)
 on:
   schedule:
-    - cron: "0 16-23,0-6 * * *"
+    # Every 15 min, 9 AM–11 PM PT. GitHub often skips single hourly ticks on
+    # low-traffic private repos, so run 4x/hour to reliably catch each hour
+    # (idempotent — re-runs just refresh the current hour's counts).
+    - cron: "*/15 16-23,0-6 * * *"
   workflow_dispatch:
 jobs:
   capture:
