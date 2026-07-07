@@ -29,48 +29,57 @@ INDEX = os.path.join(REPO, "index.html")
 
 
 def build_close_rate(techs, cancel, today):
-    """CA close rate per silo tech (YTD + MTD): Sold TGLs / Actual TGLs, CA sales $, $/ROPP.
-    Sold TGLs & sales come from the Scheduled-vs-Ran-vs-Sold report (installed > 0),
-    attributed to the silo tech who generated the lead (Source Technician, col 4)."""
+    """CA close rate per silo tech (YTD + MTD): Sold TGLs / Ran TGLs, CA sales $, $/ROPP.
+    A TGL counts as SOLD when Jobs Estimate Sales Subtotal (col 10) > 0 -- verified against
+    ServiceTitan's export, where Subtotal>0 exactly equals Closed=True. (Do NOT use
+    "Installed"/col 8: that's $0 until the unit is physically installed, so it undercounts.)
+    Close Rate denominator = RAN opportunities (TGL estimates that ran), keyed on the
+    Scheduled/Ran date (col 6) = ServiceTitan's Opportunity Date. "Actual"/"tgl_pct" still
+    come from the TGLs-Created report. Attributed to the silo tech (Source Technician, col 4)."""
     mo_name = U.MONTH_NAMES[today.month - 1]
-    sold = {}  # name -> {'yc','ya','mc','ma'}  (ytd/mtd count + amount)
+    opp = {}   # name -> {'yr','mr'}          ran opportunities (ytd/mtd)
+    sold = {}  # name -> {'yc','ya','mc','ma'}  sold count + amount (ytd/mtd)
     for grp, r in U.iter_grouped(U.load_rows("ROPP_TGLs_Scheduled.xlsx"), "Assigned Technicians", 1):
-        src = U.resolve(r[4]); cr = U.to_date(r[7])
-        if not src or cr is None or cr.year != U.YEAR:
+        src = U.resolve(r[4]); rd = U.to_date(r[6])   # col 6 = Scheduled/Ran date = opportunity date
+        if not src or rd is None or rd.year != U.YEAR:
             continue
-        installed = U.fnum(r[8]) if len(r) > 8 else 0.0
-        if installed <= 0:
+        o = opp.setdefault(src, {'yr': 0, 'mr': 0}); o['yr'] += 1
+        if rd.month == today.month:
+            o['mr'] += 1
+        sold_amt = U.fnum(r[10]) if len(r) > 10 else 0.0   # col 10 = Estimate Sales Subtotal = SOLD price
+        if sold_amt <= 0:
             continue
         e = sold.setdefault(src, {'yc': 0, 'ya': 0.0, 'mc': 0, 'ma': 0.0})
-        e['yc'] += 1; e['ya'] += installed
-        if cr.month == today.month:
-            e['mc'] += 1; e['ma'] += installed
+        e['yc'] += 1; e['ya'] += sold_amt
+        if rd.month == today.month:
+            e['mc'] += 1; e['ma'] += sold_amt
 
     def metrics(n, period):
-        t = techs.get(n); s = sold.get(n, {})
+        t = techs.get(n); s = sold.get(n, {}); o = opp.get(n, {})
         if period == "ytd":
             ropps = t["ytd"]["calls"] if t else 0
             tgls  = t["ytd"]["tgls"]  if t else 0
             canceled = cancel[n]["ytd"] if n in cancel else 0
-            sc = s.get('yc', 0); sa = round(s.get('ya', 0.0))
+            sc = s.get('yc', 0); sa = round(s.get('ya', 0.0)); ran = o.get('yr', 0)
         else:
             ropps = t["mtd"]["calls"] if t else 0
             tgls  = t["mtd"]["tgls"]  if t else 0
             canceled = cancel[n]["monthly"].get(mo_name, 0) if n in cancel else 0
-            sc = s.get('mc', 0); sa = round(s.get('ma', 0.0))
+            sc = s.get('mc', 0); sa = round(s.get('ma', 0.0)); ran = o.get('mr', 0)
         actual = max(tgls - canceled, 0)
         return {"ropps": ropps, "tgls": tgls, "canceled": canceled, "actual": actual,
-                "tgl_pct": U.rate(actual, ropps), "sold": sc, "close_rate": U.rate(sc, actual),
-                "sales": sa, "per_ropp": round(sa / ropps) if ropps else 0}
+                "tgl_pct": U.rate(actual, ropps), "ran": ran, "sold": sc,
+                "close_rate": U.rate(sc, ran), "sales": sa, "per_ropp": round(sa / ropps) if ropps else 0}
 
     def row(n):
         return {"name": n, "ytd": metrics(n, "ytd"), "mtd": metrics(n, "mtd")}
 
     def tot(rows, p):
         R = sum(x[p]["ropps"] for x in rows);  A = sum(x[p]["actual"] for x in rows)
+        RN = sum(x[p]["ran"] for x in rows)
         S = sum(x[p]["sold"] for x in rows);   SL = sum(x[p]["sales"] for x in rows)
         return {"ropps": R, "tgls": sum(x[p]["tgls"] for x in rows), "canceled": sum(x[p]["canceled"] for x in rows),
-                "actual": A, "sold": S, "close_rate": U.rate(S, A), "tgl_pct": U.rate(A, R),
+                "actual": A, "ran": RN, "sold": S, "close_rate": U.rate(S, RN), "tgl_pct": U.rate(A, R),
                 "sales": SL, "per_ropp": round(SL / R) if R else 0}
 
     ta = [row(n) for n in U.TEAM_A]

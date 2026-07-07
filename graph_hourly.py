@@ -178,17 +178,18 @@ def sched_metrics(rows):
     """Same-day / ran / sold from the today-only 'Scheduled vs Ran vs Sold' report.
     Grouped by sales tech (col 3) but ATTRIBUTED to the ROPP source tech (col 4), like
     the dashboard. col6 Scheduled Date, col7 Created Date (same-day flip = equal),
-    col8 'Jobs Estimate Sales Installed' = sold $ (sold when > 0)."""
+    col10 'Jobs Estimate Sales Subtotal' = SOLD $ (sold when > 0). NOT col8 'Installed',
+    which is $0 until physically installed -- Subtotal>0 == ServiceTitan Closed=True."""
     per = {}; ran = same = sold = 0; soldrev = 0.0
     for r in _grouped(rows, 1):
         name = str(r[4]).split(",")[0].strip() if len(r) > 4 and r[4] else "Unassigned"
         sd = _asdate(r[6]) if len(r) > 6 else None
         cr = _asdate(r[7]) if len(r) > 7 else None
-        inst = _fnum(r[8]) if len(r) > 8 else 0.0
+        sold_amt = _fnum(r[10]) if len(r) > 10 else 0.0   # col 10 = Estimate Sales Subtotal = SOLD price
         e = per.setdefault(name, {"name": name, "ran": 0, "same": 0, "sold": 0, "soldrev": 0.0})
         e["ran"] += 1; ran += 1
         if sd and cr and sd == cr: e["same"] += 1; same += 1
-        if inst > 0: e["sold"] += 1; e["soldrev"] += inst; sold += 1; soldrev += inst
+        if sold_amt > 0: e["sold"] += 1; e["soldrev"] += sold_amt; sold += 1; soldrev += sold_amt
     techs = sorted(per.values(), key=lambda x: (-x["ran"], -x["same"], x["name"]))
     for t in techs: t["soldrev"] = round(t["soldrev"]); t["samePct"] = rate(t["same"], t["ran"])
     return {"ran": ran, "same": same, "samePct": rate(same, ran),
