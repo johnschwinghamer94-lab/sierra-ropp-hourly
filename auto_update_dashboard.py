@@ -39,19 +39,28 @@ def build_close_rate(techs, cancel, today):
     mo_name = U.MONTH_NAMES[today.month - 1]
     opp = {}   # name -> {'yr','mr'}          ran opportunities (ytd/mtd)
     sold = {}  # name -> {'yc','ya','mc','ma'}  sold count + amount (ytd/mtd)
+    NM = today.month
+    tset = {"team_a": set(U.TEAM_A), "team_b": set(U.TEAM_B), "combined": set(U.SILO)}
+    tmo = {k: [{"ran": 0, "sold": 0, "sales": 0.0} for _ in range(NM)] for k in tset}  # team monthly history
     for grp, r in U.iter_grouped(U.load_rows("ROPP_TGLs_Scheduled.xlsx"), "Assigned Technicians", 1):
         src = U.resolve(r[4]); rd = U.to_date(r[6])   # col 6 = Scheduled/Ran date = opportunity date
         if not src or rd is None or rd.year != U.YEAR:
             continue
+        m = rd.month
         o = opp.setdefault(src, {'yr': 0, 'mr': 0}); o['yr'] += 1
-        if rd.month == today.month:
+        if m == today.month:
             o['mr'] += 1
         sold_amt = U.fnum(r[10]) if len(r) > 10 else 0.0   # col 10 = Estimate Sales Subtotal = SOLD price
+        for k, members in tset.items():                     # team monthly (ran always; sold when subtotal>0)
+            if m <= NM and src in members:
+                b = tmo[k][m - 1]; b["ran"] += 1
+                if sold_amt > 0:
+                    b["sold"] += 1; b["sales"] += sold_amt
         if sold_amt <= 0:
             continue
         e = sold.setdefault(src, {'yc': 0, 'ya': 0.0, 'mc': 0, 'ma': 0.0})
         e['yc'] += 1; e['ya'] += sold_amt
-        if rd.month == today.month:
+        if m == today.month:
             e['mc'] += 1; e['ma'] += sold_amt
 
     def metrics(n, period):
@@ -82,10 +91,17 @@ def build_close_rate(techs, cancel, today):
                 "actual": A, "ran": RN, "sold": S, "close_rate": U.rate(S, RN), "tgl_pct": U.rate(A, R),
                 "sales": SL, "per_ropp": round(SL / R) if R else 0}
 
+    def mo_series(k):
+        return [{"month": U.MONTH_NAMES[i], "ran": b["ran"], "sold": b["sold"],
+                 "cr": U.rate(b["sold"], b["ran"]), "sales": round(b["sales"])}
+                for i, b in enumerate(tmo[k])]
+    monthly = {"months": U.MONTH_NAMES[:NM], "team_a": mo_series("team_a"),
+               "team_b": mo_series("team_b"), "combined": mo_series("combined")}
+
     ta = [row(n) for n in U.TEAM_A]
     tb = [row(n) for n in U.TEAM_B]
     comb = [row(n) for n in U.SILO]   # Alex + Team A + Team B
-    return {"month": mo_name, "team_a": ta, "team_b": tb, "combined": comb,
+    return {"month": mo_name, "team_a": ta, "team_b": tb, "combined": comb, "monthly": monthly,
             "totals": {p: {"team_a": tot(ta, p), "team_b": tot(tb, p), "combined": tot(comb, p)}
                        for p in ("ytd", "mtd")}}
 
