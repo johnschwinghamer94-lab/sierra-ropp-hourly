@@ -58,6 +58,7 @@ REPORT_MATCH = {
     "ROPP_TGLs_Scheduled.xlsx": "tgls scheduled",
     "ROPP_Cancelations.xlsx":   "cancelations",
     "Revenue_By_JobType.xlsx":  "revenue by job",
+    "ROPP_Estimate_TGLs.xlsx":  "estimate ac",
 }
 
 def _norm(s):
@@ -162,9 +163,29 @@ def jobkey(v):
     return str(int(v)) if isinstance(v, (int, float)) and float(v).is_integer() else str(v).strip()
 
 def sub_by_srcjob():
-    """TGL revenue = sold Estimate Sales Subtotal (col 10) from the Scheduled-vs-Ran-vs-Sold
-    report, summed per lead-source job number (col 5), joined to ROPP_TGLs_Created Job#."""
+    """TGL revenue = sold Estimate Sales Subtotal from the ESTIMATE AC/TGLS report (TGL-only,
+    scheduled daily), per lead-source job number joined to ROPP_TGLs_Created Job#. Columns
+    detected from the header (flat OR grouped export). Falls back to the Scheduled-vs-Ran
+    report if the ESTIMATE report is absent, so the build never breaks."""
     d = {}
+    try:
+        rows = load_rows("ROPP_Estimate_TGLs.xlsx")
+    except Exception:
+        rows = None
+    if rows:
+        hdr = [str(c or "").strip().lower() for c in rows[0]]
+        def col(name, dflt):
+            for i, hh in enumerate(hdr):
+                if name in hh: return i
+            return dflt
+        cj = col("source job number", 4)
+        cs = col("estimate sales subtotal", 8)
+        for r in rows[1:]:
+            if len(r) <= max(cj, cs): continue
+            k = jobkey(r[cj])
+            if k and k.isdigit() and len(k) >= 6:
+                d[k] = d.get(k, 0.0) + fnum(r[cs])
+        if d: return d
     for grp, r in iter_grouped(load_rows("ROPP_TGLs_Scheduled.xlsx"), "Assigned Technicians", 1):
         k = jobkey(r[5])
         if k: d[k] = d.get(k, 0.0) + (fnum(r[10]) if len(r) > 10 else 0.0)

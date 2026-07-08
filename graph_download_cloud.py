@@ -23,7 +23,11 @@ PHRASES = {
     "ROPP_TGLs_Created.xlsx":   "tgls created",
     "ROPP_TGLs_Scheduled.xlsx": "tgls scheduled",
     "ROPP_Cancelations.xlsx":   "cancelations",
+    "ROPP_Estimate_TGLs.xlsx":  "estimate ac",
 }
+# Optional reports: downloaded if present, but a missing one does NOT fail the build
+# (the builder falls back to the Scheduled report for revenue).
+OPTIONAL = {"ROPP_Estimate_TGLs.xlsx"}
 
 
 def graph_token():
@@ -82,8 +86,9 @@ def main():
         cands = [it for it in items
                  if it["name"].lower().endswith(".xlsx") and phrase in _norm(it["name"])]
         if not cands:
-            missing.append(phrase)
-            print("MISSING:", phrase)
+            if canon not in OPTIONAL:
+                missing.append(phrase)
+            print(("MISSING (optional):" if canon in OPTIONAL else "MISSING:"), phrase)
             continue
         earliest = min(_start(it["name"]) for it in cands)              # widest YTD range
         best = max((it for it in cands if _start(it["name"]) == earliest),
