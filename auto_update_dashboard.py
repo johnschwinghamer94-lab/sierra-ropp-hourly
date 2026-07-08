@@ -42,15 +42,13 @@ def build_close_rate(techs, cancel, today):
     NM = today.month
     tset = {"team_a": set(U.TEAM_A), "team_b": set(U.TEAM_B), "combined": set(U.SILO)}
     tmo = {k: [{"ran": 0, "sold": 0, "sales": 0.0} for _ in range(NM)] for k in tset}  # team monthly history
-    for grp, r in U.iter_grouped(U.load_rows("ROPP_TGLs_Scheduled.xlsx"), "Assigned Technicians", 1):
-        src = U.resolve(r[4]); rd = U.to_date(r[6])   # col 6 = Scheduled/Ran date = opportunity date
+    for src, rd, sold_amt in U.tgl_estimates():   # ESTIMATE AC/TGLS report (fallback: Scheduled)
         if not src or rd is None or rd.year != U.YEAR:
             continue
         m = rd.month
         o = opp.setdefault(src, {'yr': 0, 'mr': 0}); o['yr'] += 1
         if m == today.month:
             o['mr'] += 1
-        sold_amt = U.fnum(r[10]) if len(r) > 10 else 0.0   # col 10 = Estimate Sales Subtotal = SOLD price
         for k, members in tset.items():                     # team monthly (ran always; sold when subtotal>0)
             if m <= NM and src in members:
                 b = tmo[k][m - 1]; b["ran"] += 1

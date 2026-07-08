@@ -191,6 +191,34 @@ def sub_by_srcjob():
         if k: d[k] = d.get(k, 0.0) + (fnum(r[10]) if len(r) > 10 else 0.0)
     return d
 
+def tgl_estimates():
+    """Yield (source_tech_resolved, scheduled_date, subtotal) per TGL estimate from the
+    ESTIMATE AC/TGLS report (header-detected cols; flat or grouped). Fallback to Scheduled."""
+    try:
+        rows = load_rows("ROPP_Estimate_TGLs.xlsx")
+    except Exception:
+        rows = None
+    out = []
+    if rows:
+        hdr = [str(c or "").strip().lower() for c in rows[0]]
+        def col(name, dflt):
+            for i, hh in enumerate(hdr):
+                if name in hh: return i
+            return dflt
+        cjob = col("job #", 0); csrc = col("source technician", 3)
+        csch = col("scheduled date", 5); csub = col("estimate sales subtotal", 8)
+        for r in rows[1:]:
+            if len(r) <= max(cjob, csrc, csch, csub): continue
+            k = jobkey(r[cjob])
+            if not (k and k.isdigit() and len(k) >= 6): continue
+            src = resolve(r[csrc])
+            if src: out.append((src, to_date(r[csch]), fnum(r[csub])))
+        if out: return out
+    for grp, r in iter_grouped(load_rows("ROPP_TGLs_Scheduled.xlsx"), "Assigned Technicians", 1):
+        src = resolve(r[4])
+        if src: out.append((src, to_date(r[6]), fnum(r[10]) if len(r) > 10 else 0.0))
+    return out
+
 def parse_all(today):
     techs = defaultdict(blank)
     SUB = sub_by_srcjob()
