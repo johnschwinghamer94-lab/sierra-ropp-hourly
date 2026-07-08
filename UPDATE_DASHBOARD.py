@@ -157,12 +157,26 @@ def blank():
             "mtd": dict(calls=0,tgls=0,revenue=0.0,svc_calls=0,svc_tgls=0,maint_calls=0,maint_tgls=0),
             "monthly": {m: dict(calls=0,tgls=0,revenue=0.0) for m in MONTH_NAMES}}
 
+def jobkey(v):
+    if v is None: return None
+    return str(int(v)) if isinstance(v, (int, float)) and float(v).is_integer() else str(v).strip()
+
+def sub_by_srcjob():
+    """TGL revenue = sold Estimate Sales Subtotal (col 10) from the Scheduled-vs-Ran-vs-Sold
+    report, summed per lead-source job number (col 5), joined to ROPP_TGLs_Created Job#."""
+    d = {}
+    for grp, r in iter_grouped(load_rows("ROPP_TGLs_Scheduled.xlsx"), "Assigned Technicians", 1):
+        k = jobkey(r[5])
+        if k: d[k] = d.get(k, 0.0) + (fnum(r[10]) if len(r) > 10 else 0.0)
+    return d
+
 def parse_all(today):
     techs = defaultdict(blank)
+    SUB = sub_by_srcjob()
     for grp, r in iter_grouped(load_rows("ROPP_TGLs_Created.xlsx"), "Assigned Technicians", 1):
         tech = resolve(r[3]) or resolve(grp); d = to_date(r[5])
         if not tech or d is None or d.year != YEAR: continue
-        rev = fnum(r[8]); bu = r[4]; t = techs[tech]; mo = MONTH_NAMES[d.month-1]
+        rev = SUB.get(jobkey(r[1]), 0.0); bu = r[4]; t = techs[tech]; mo = MONTH_NAMES[d.month-1]
         t["ytd"]["tgls"] += 1; t["ytd"]["revenue"] += rev
         t["monthly"][mo]["tgls"] += 1; t["monthly"][mo]["revenue"] += rev
         if is_maint(bu): t["ytd"]["maint_tgls"] += 1
@@ -252,10 +266,11 @@ def build_sameday(sd, today, months, all_names):
 def build_weekly_prevmonth(today):
     pm = today.month - 1 or 12; py = YEAR if today.month > 1 else YEAR-1
     agg = defaultdict(lambda: {w: dict(calls=0,tgls=0,revenue=0.0) for w in ("W1","W2","W3","W4")})
+    SUB = sub_by_srcjob()
     for grp, r in iter_grouped(load_rows("ROPP_TGLs_Created.xlsx"), "Assigned Technicians", 1):
         tech = resolve(r[3]) or resolve(grp); d = to_date(r[5])
         if not tech or d is None or d.year != py or d.month != pm: continue
-        w = week_of_month(d); agg[tech][w]["tgls"] += 1; agg[tech][w]["revenue"] += fnum(r[8])
+        w = week_of_month(d); agg[tech][w]["tgls"] += 1; agg[tech][w]["revenue"] += SUB.get(jobkey(r[1]), 0.0)
     for grp, r in iter_grouped(load_rows("Revenue_By_JobType.xlsx"), "Assigned Technicians", 3):
         tech = resolve(r[7]) or resolve(grp); d = to_date(r[4])
         if not tech or d is None or d.year != py or d.month != pm: continue
@@ -271,10 +286,11 @@ def build_weekly_conv(today, all_names):
     labels = conv_week_labels(today.month)
     idx = {"W1":0,"W2":1,"W3":2,"W4":3}
     per = defaultdict(lambda: [dict(calls=0,tgls=0,revenue=0.0) for _ in range(4)])
+    SUB = sub_by_srcjob()
     for grp, r in iter_grouped(load_rows("ROPP_TGLs_Created.xlsx"), "Assigned Technicians", 1):
         tech = resolve(r[3]) or resolve(grp); d = to_date(r[5])
         if not tech or d is None or d.year != YEAR or d.month != today.month: continue
-        i = idx[week_of_month(d)]; per[tech][i]["tgls"] += 1; per[tech][i]["revenue"] += fnum(r[8])
+        i = idx[week_of_month(d)]; per[tech][i]["tgls"] += 1; per[tech][i]["revenue"] += SUB.get(jobkey(r[1]), 0.0)
     for grp, r in iter_grouped(load_rows("Revenue_By_JobType.xlsx"), "Assigned Technicians", 3):
         tech = resolve(r[7]) or resolve(grp); d = to_date(r[4])
         if not tech or d is None or d.year != YEAR or d.month != today.month: continue
@@ -379,9 +395,10 @@ def build_yesterday(today):
     for grp, r in iter_grouped(load_rows("Revenue_By_JobType.xlsx"), "Assigned Technicians", 3):
         if to_date(r[4])!=yday: continue
         for tech in st(r[7]): calls[tech]+=1
+    SUB = sub_by_srcjob()
     for grp, r in iter_grouped(load_rows("ROPP_TGLs_Created.xlsx"), "Assigned Technicians", 1):
         if to_date(r[5])!=yday: continue
-        for tech in st(r[3]): tgls[tech]+=1; rev[tech]+=fnum(r[8])
+        for tech in st(r[3]): tgls[tech]+=1; rev[tech]+=SUB.get(jobkey(r[1]), 0.0)
     def team(names):
         rows=[dict(name=n,calls=calls.get(n,0),tgls=tgls.get(n,0),rate=rate(tgls.get(n,0),calls.get(n,0)),
                    revenue=round(rev.get(n,0))) for n in names]
