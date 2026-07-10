@@ -30,3 +30,6 @@ jobs:
           git -C site config user.email "johnschwinghamer94@gmail.com"
           git -C site config user.name "John Schwinghamer"
           python auto_update_dashboard.py
+      - name: Data self-audit (independent recount vs published index.html)
+              continue-on-error: true
+                      run: python audit_dashboard.py --index site/index.html
