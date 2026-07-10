@@ -89,13 +89,16 @@ def _range(name):
         return None, None
 
 
-def today_file(items, *subs):
-    """Newest 'today-only' (start==end==today) export whose name contains all subs."""
+def today_file(items, *subs, exclude=()):
+    """Newest 'today-only' (start==end==today) export whose name contains all subs
+    and none of the `exclude` substrings."""
     today = _now().date()
     best = None
     for it in items:
         n = it["name"].lower()
         if not n.endswith(".xlsx") or not all(s in n for s in subs):
+            continue
+        if any(x in n for x in exclude):
             continue
         s, e = _range(it["name"])
         if s == today and e == today:
@@ -222,7 +225,11 @@ def main():
 
     items = list_children(tok)
     rev = today_file(items, "revenue")
-    tgl = today_file(items, "tgls", "created") or today_file(items, "tgls")
+    # TGLs-Created only. The fallback must NOT match the Scheduled-vs-Ran or ESTIMATE
+    # reports (their names also contain "tgls") -- when ServiceTitan omits the empty
+    # TGLs-Created report, the old loose fallback grabbed the Scheduled report and
+    # miscounted its ran-estimate rows as created TGLs.
+    tgl = today_file(items, "tgls", "created") or today_file(items, "tgls", exclude=("scheduled", "ran", "sold", "estimate"))
     if not rev and not tgl:
         print("No today-only revenue/tgls export in OneDrive yet; nothing to publish.")
         return
