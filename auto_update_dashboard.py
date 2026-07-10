@@ -152,6 +152,14 @@ def main():
     a = ap.parse_args()
     today = datetime.strptime(a.date, "%Y-%m-%d").date() if a.date else date.today()
 
+    # Live-API source: pull the ROPP reports straight from the ServiceTitan Reporting API
+    # (ropp_live) instead of the emailed Excel files. Opt-in via ROPP_SOURCE=api so the
+    # Excel path stays the default/fallback. ropp_live monkeypatches U.load_rows.
+    if os.environ.get("ROPP_SOURCE") == "api":
+        import ropp_live
+        U.load_rows = ropp_live.load_rows
+        print("Data source: ServiceTitan Reporting API (ropp_live)")
+
     if not a.dry and not a.no_git:
         git("pull", "--rebase", "--autostash", check=False)
 
