@@ -24,19 +24,11 @@ jobs:
           GRAPH_REFRESH_TOKEN: ${{ secrets.GRAPH_REFRESH_TOKEN }}
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
         run: |
-          if [ -n "$ST_CREDS_JSON" ]; then
-            mkdir -p ~/.servicetitan
-            printf '%s' "$ST_CREDS_JSON" > ~/.servicetitan/sierra.json
-            chmod 600 ~/.servicetitan/sierra.json
-            if python -c "import ropp_live; ropp_live.cache_reports()"; then
-              echo "ROPP_SOURCE=api" >> "$GITHUB_ENV"
-              echo "OK — fetched ROPP reports from the ServiceTitan Reporting API"
-            else
-              echo "WARN — ServiceTitan fetch failed; falling back to OneDrive Excel"
-              python graph_download_cloud.py
-            fi
+          if python cloud_fetch.py; then
+            echo "ROPP_SOURCE=api" >> "$GITHUB_ENV"
+            echo "OK — fetched ROPP reports from the ServiceTitan Reporting API"
           else
-            echo "No ST_CREDS_JSON secret; using OneDrive Excel"
+            echo "WARN — ServiceTitan fetch unavailable; falling back to OneDrive Excel"
             python graph_download_cloud.py
           fi
       - name: Rebuild index.html and push
