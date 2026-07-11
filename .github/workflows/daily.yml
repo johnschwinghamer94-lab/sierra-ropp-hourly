@@ -1,7 +1,7 @@
-name: Cloud daily rebuild
+name: Cloud rebuild (hourly · live API)
 on:
   schedule:
-    - cron: "20 14 * * *"   # ~7:20 AM Pacific
+    - cron: "20 * * * *"    # every hour at :20 — full ROPP rebuild from the ServiceTitan API
   workflow_dispatch:
 jobs:
   rebuild:
@@ -47,7 +47,13 @@ jobs:
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
           AUDIT_FRESH: "6"               # per-tech count allowance; 5%/$50k on money
         run: |
-          # Recount from YOUR emailed Excel reports and diff against the published (API-fed)
-          # index.html. Fetch the reports if the API path was used (they weren't downloaded).
+          # Your emailed reports refresh ~daily, so audit vs them once a day (14:00 UTC ≈ 7 AM
+          # Pacific, after the morning reports land) — plus on any manual run. Other hourly
+          # rebuilds skip this to avoid hammering the Graph API.
+          if [ "$GITHUB_EVENT_NAME" != "workflow_dispatch" ] && [ "$(date -u +%H)" != "14" ]; then
+            echo "hourly rebuild — daily report audit runs at 14:00 UTC only; skipping this hour"
+            exit 0
+          fi
+          # Recount from YOUR emailed Excel reports and diff against the published (API-fed) index.html.
           python graph_download_cloud.py || echo "(could not fetch emailed reports for audit)"
           python audit_dashboard.py --index site/index.html
