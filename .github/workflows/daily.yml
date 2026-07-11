@@ -38,6 +38,16 @@ jobs:
           git -C site config user.email "johnschwinghamer94@gmail.com"
           git -C site config user.name "John Schwinghamer"
           python auto_update_dashboard.py
-      - name: Data self-audit (independent recount vs published index.html)
-        continue-on-error: true
-        run: python audit_dashboard.py --index site/index.html
+      - name: Audit — published dashboard vs your emailed reports (freshness-tolerant)
+        continue-on-error: true          # a DRIFT flags the step red but never reverts the build
+        env:
+          GRAPH_CLIENT_ID: ${{ secrets.GRAPH_CLIENT_ID }}
+          GRAPH_TENANT_ID: ${{ secrets.GRAPH_TENANT_ID }}
+          GRAPH_REFRESH_TOKEN: ${{ secrets.GRAPH_REFRESH_TOKEN }}
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+          AUDIT_FRESH: "6"               # per-tech count allowance; 5%/$50k on money
+        run: |
+          # Recount from YOUR emailed Excel reports and diff against the published (API-fed)
+          # index.html. Fetch the reports if the API path was used (they weren't downloaded).
+          python graph_download_cloud.py || echo "(could not fetch emailed reports for audit)"
+          python audit_dashboard.py --index site/index.html

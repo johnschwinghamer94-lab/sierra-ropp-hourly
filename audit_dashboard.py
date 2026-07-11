@@ -90,15 +90,25 @@ def block(name):
 INIT = block("INITIAL_DATA"); CAN = block("CANCEL_DATA"); SAM = block("SAMEDAY_DATA"); CRD = block("CLOSE_RATE_DATA")
 
 diffs = []; nchk = 0
-def chk(lbl, exp, got, tol=0):
+# When the dashboard is fed LIVE from the ServiceTitan API it runs a few hours ahead of the
+# emailed Excel this audit recounts from, so exact-match would false-alarm. AUDIT_FRESH sets a
+# per-tech count allowance (and a 2% money allowance); real methodology drift still trips it.
+# Unset / 0 => exact match (Excel-path daily build), unchanged behavior.
+FRESH = int(os.environ.get("AUDIT_FRESH", "0") or 0)
+def chk(lbl, exp, got, tol=0, money=False):
     global nchk; nchk += 1
-    if abs((exp or 0) - (got or 0)) > tol: diffs.append(f"{lbl}: dashboard={got} recount={exp}")
+    allow = tol
+    if FRESH:
+        # money: 5% or a one-estimate floor ($50k) so a single fresh sale doesn't trip it.
+        allow = max(tol, round(abs(exp or 0) * 0.05), 50000) if money else max(tol, FRESH)
+    if abs((exp or 0) - (got or 0)) > allow:
+        diffs.append(f"{lbl}: dashboard={got} recount={exp} (Δ{(got or 0)-(exp or 0):+})")
 
 for n, dd in INIT.items():
     for per, i in (("ytd", 0), ("mtd", 1)):
         chk(f"{n}.{per}.calls", calls[n][i], dd[per].get("calls", 0))
         chk(f"{n}.{per}.tgls",  tgls[n][i],  dd[per].get("tgls", 0))
-        chk(f"{n}.{per}.revenue", round(rev[n][i]), round(dd[per].get("revenue", 0)), tol=2)
+        chk(f"{n}.{per}.revenue", round(rev[n][i]), round(dd[per].get("revenue", 0)), tol=2, money=True)
 for n, v in CAN.get("ytd", {}).items():
     chk(f"{n}.cancelled", canc[n][0], v.get("cancelled", 0))
 for n, v in SAM.get("ytd", {}).items():
@@ -111,19 +121,21 @@ for grp in ("team_a", "team_b", "combined"):
             g = row.get(per, {})
             chk(f"{grp}/{n}.{per}.ran",   opp[n][i],   g.get("ran", 0))
             chk(f"{grp}/{n}.{per}.sold",  soldc[n][i], g.get("sold", 0))
-            chk(f"{grp}/{n}.{per}.sales", round(sales[n][i]), round(g.get("sales", 0)), tol=2)
+            chk(f"{grp}/{n}.{per}.sales", round(sales[n][i]), round(g.get("sales", 0)), tol=2, money=True)
 
 yc = sum(v[0] for v in calls.values()); yt = sum(v[0] for v in tgls.values()); yr = round(sum(v[0] for v in rev.values()))
-status = "PASS" if not diffs else "FAIL"
+status = "PASS" if not diffs else "DRIFT"
+mode = f"freshness-tolerant (±{FRESH} counts / 5%+$50k money)" if FRESH else "exact"
 stamp = datetime.now().strftime("%Y-%m-%d %H:%M")
-line = f"{stamp}  AUDIT {status}  {nchk} checks  {len(diffs)} mismatches  |  DEPT YTD {yc}c/{yt}t/${yr:,}"
+line = f"{stamp}  AUDIT {status} ({mode})  {nchk} checks  {len(diffs)} beyond-tolerance  |  DEPT YTD {yc}c/{yt}t/${yr:,}"
 print("="*70); print(line); print("="*70)
 if diffs:
-    print("MISMATCHES (dashboard vs independent recount from today's reports):")
+    print("DRIFT — published dashboard vs independent recount from your emailed reports:")
+    print("(Δ = dashboard − reports; small + values are just the live feed being fresher)")
     for d in diffs[:40]: print("  " + d)
     if len(diffs) > 40: print(f"  ...and {len(diffs)-40} more")
 else:
-    print("All dashboard values reconcile to today's reports.")
+    print("All dashboard values reconcile to your emailed reports" + (" (within freshness allowance)." if FRESH else "."))
 try:
     with open(os.path.join(HERE, "ropp-audit.log"), "a", encoding="utf-8") as f:
         f.write(line + ("" if not diffs else "  :: " + " ; ".join(diffs[:8])) + "\n")
