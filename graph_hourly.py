@@ -219,31 +219,66 @@ def pput(path, obj, sha, msg):
     requests.put(PUBAPI + path, headers=GH, json=body).raise_for_status()
 
 
+def _ensure_st_creds():
+    """Materialize ~/.servicetitan/sierra.json from the ST_CREDS_JSON env (GitHub secret)
+    if it isn't already on disk. Returns True if usable creds are present."""
+    import pathlib
+    fp = pathlib.Path.home() / ".servicetitan" / "sierra.json"
+    if fp.exists():
+        return True
+    raw = os.environ.get("ST_CREDS_JSON", "")
+    if not raw.strip():
+        return False
+    try:
+        json.loads(raw)
+    except Exception:
+        return False
+    fp.parent.mkdir(parents=True, exist_ok=True); fp.write_text(raw); os.chmod(fp, 0o600)
+    return True
+
+
+def _st_today(today):
+    """Today's Revenue / TGLs-Created / Scheduled rows straight from the ServiceTitan
+    Reporting API (same reports the today-only Excel exports come from), in the Excel
+    row shape the counters expect. Fresher than waiting on the OneDrive export to land."""
+    import ropp_live as RL
+    return (RL.fetch_report_rows("Revenue_By_JobType.xlsx", today, today),
+            RL.fetch_report_rows("ROPP_TGLs_Created.xlsx",   today, today),
+            RL.fetch_report_rows("ROPP_TGLs_Scheduled.xlsx", today, today))
+
+
 def main():
-    tok, new_rt = graph_token()
-    rotate_secret(new_rt)
+    n = _now(); today = n.date().isoformat(); hh = f"{n.hour:02d}"
+    rev_rows = tgl_rows = sch_rows = None
 
-    items = list_children(tok)
-    rev = today_file(items, "revenue")
-    # TGLs-Created only. The fallback must NOT match the Scheduled-vs-Ran or ESTIMATE
-    # reports (their names also contain "tgls") -- when ServiceTitan omits the empty
-    # TGLs-Created report, the old loose fallback grabbed the Scheduled report and
-    # miscounted its ran-estimate rows as created TGLs.
-    tgl = today_file(items, "tgls", "created") or today_file(items, "tgls", exclude=("scheduled", "ran", "sold", "estimate"))
-    if not rev and not tgl:
-        print("No today-only revenue/tgls export in OneDrive yet; nothing to publish.")
-        return
+    # PREFERRED: pull today's reports live from the ServiceTitan API.
+    if _ensure_st_creds():
+        try:
+            rev_rows, tgl_rows, sch_rows = _st_today(today)
+            print("Today source: ServiceTitan Reporting API")
+        except Exception as e:
+            print(f"ServiceTitan today-fetch failed ({e}); falling back to OneDrive Excel")
+            rev_rows = None
 
-    # ServiceTitan omits a report entirely when its count is 0 for the day (e.g. no
-    # TGLs created yet). Treat a missing report as an empty dataset so early calls
-    # still publish instead of the whole capture skipping.
-    rev_rows = rows(rev, tok) if rev else []
-    tgl_rows = rows(tgl, tok) if tgl else []
+    # FALLBACK: today-only Excel exports from OneDrive via Graph (original behavior).
+    if rev_rows is None:
+        tok, new_rt = graph_token()
+        rotate_secret(new_rt)
+        items = list_children(tok)
+        rev = today_file(items, "revenue")
+        tgl = today_file(items, "tgls", "created") or today_file(items, "tgls", exclude=("scheduled", "ran", "sold", "estimate"))
+        if not rev and not tgl:
+            print("No today-only revenue/tgls export in OneDrive yet; nothing to publish.")
+            return
+        rev_rows = rows(rev, tok) if rev else []
+        tgl_rows = rows(tgl, tok) if tgl else []
+        sch = today_file(items, "scheduled")
+        sch_rows = rows(sch, tok) if sch else None
+        print("Today source: OneDrive Excel (today-only exports)")
+
     calls, tgls = count(rev_rows, tgl_rows)
     techs = per_tech(rev_rows, tgl_rows)
-    sch = today_file(items, "scheduled")               # optional 3rd report
-    sched = sched_metrics(rows(sch, tok)) if sch else None
-    n = _now(); today = n.date().isoformat(); hh = f"{n.hour:02d}"
+    sched = sched_metrics(sch_rows) if sch_rows else None
 
     st, _ = pget("hourly_state.json")
     if not st or st.get("date") != today:

@@ -44,9 +44,11 @@ EST_HEADER = ["Job #","Job Type","Assigned Technicians","Lead Generated From Sou
               "Business Unit","Jobs Estimate Sales Subtotal"]
 
 def _convert(canon):
+    cache = json.load(open(os.path.join(HERE, "cache", CONFIG[canon][0] + ".json")))
+    return _convert_rows(canon, cache["fields"], cache["rows"])
+
+def _convert_rows(canon, fields, rows):
     cfg = CONFIG[canon]
-    cache = json.load(open(os.path.join(HERE, "cache", cfg[0] + ".json")))
-    fields, rows = cache["fields"], cache["rows"]
     idx = {f: i for i, f in enumerate(fields)}
     rows = [[_cell(c) for c in r] for r in rows]
     if canon == "ROPP_Estimate_TGLs.xlsx":
@@ -75,6 +77,31 @@ def load_rows(fname):
 FETCH = {"tgls_created":("technician",642925621,3), "cancellations":("technician",642928003,8),
          "scheduled":("technician",660537364,1), "estimate":("technician",648754648,1),
          "revenue":("accounting",379143819,1)}
+
+def _fetch_report(cache_name, frm, to):
+    """Live-fetch one report for [frm,to]; returns (fields, rows). Paced, 429 backoff."""
+    import st_client as st, urllib.error, time
+    cat, rid, dt_ = FETCH[cache_name]
+    out = []; page = 1; fields = None
+    while True:
+        for _ in range(8):
+            try:
+                r = st.run_report(cat, rid, [{"name":"DateType","value":dt_},
+                    {"name":"From","value":frm}, {"name":"To","value":to}], page=page, page_size=5000); break
+            except urllib.error.HTTPError as e:
+                if e.code == 429: time.sleep(int(e.headers.get("Retry-After","30") or 30) + 1); continue
+                raise
+        else:
+            raise RuntimeError("retries exhausted")
+        fields = [f["name"] for f in r["fields"]]; out += r.get("data", [])
+        if not r.get("hasMore") or not r.get("data"): break
+        page += 1; time.sleep(1)
+    return fields, out
+
+def fetch_report_rows(canonical, frm, to):
+    """Live-fetch a report for [frm,to] and return Excel-shaped rows (no cache).
+    Used by the 15-min Today-tab job to pull today's Revenue/TGLs/Scheduled from the API."""
+    return _convert_rows(canonical, *_fetch_report(CONFIG[canonical][0], frm, to))
 def cache_reports(frm=None, to=None):
     """Refresh cache/*.json from the live Reporting API (paced, 429-backoff).
     Defaults to YTD-through-today so scheduled daily runs stay current."""

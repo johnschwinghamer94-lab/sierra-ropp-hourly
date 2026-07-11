@@ -1,4 +1,4 @@
-name: Cloud hourly (Graph)
+name: Cloud hourly (live API · Graph fallback)
 on:
   schedule:
     # Every 15 min, 9 AM–11 PM PT. GitHub often skips single hourly ticks on
@@ -15,6 +15,7 @@ jobs:
         with: { python-version: "3.12" }
       - run: pip install --quiet requests openpyxl pynacl
       - env:
+          ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}   # today's reports live from ServiceTitan
           GRAPH_CLIENT_ID: ${{ secrets.GRAPH_CLIENT_ID }}
           GRAPH_TENANT_ID: ${{ secrets.GRAPH_TENANT_ID }}
           GRAPH_REFRESH_TOKEN: ${{ secrets.GRAPH_REFRESH_TOKEN }}
