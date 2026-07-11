@@ -75,8 +75,12 @@ def load_rows(fname):
 FETCH = {"tgls_created":("technician",642925621,3), "cancellations":("technician",642928003,8),
          "scheduled":("technician",660537364,1), "estimate":("technician",648754648,1),
          "revenue":("accounting",379143819,1)}
-def cache_reports(frm="2026-01-01", to="2026-07-10"):
-    """Refresh cache/*.json from the live Reporting API (paced, 429-backoff)."""
+def cache_reports(frm=None, to=None):
+    """Refresh cache/*.json from the live Reporting API (paced, 429-backoff).
+    Defaults to YTD-through-today so scheduled daily runs stay current."""
+    _t = dt.date.today()
+    frm = frm or f"{_t.year}-01-01"
+    to = to or _t.isoformat()
     import st_client as st, urllib.error, time
     def call(fn,*a,**k):
         for _ in range(8):
