@@ -306,6 +306,20 @@ def main():
     pput("hourly.json", out, osha, f"Cloud(graph) hourly capture {today} {hh}:00")
     print(f"Published {today} {hh}:00 -> {calls} calls / {tgls} TGLs ({rate(tgls, calls)}%)")
 
+    # Kick the full ROPP rebuild (daily.yml) once per hour so MTD/YTD refresh reliably.
+    # GitHub's native cron skips hourly ticks on low-traffic private repos, but this 15-min
+    # job runs dependably (4x/hour); on the top-of-hour tick it dispatches the heavier full
+    # rebuild. Idempotent — auto_update_dashboard skips its push when nothing changed, and
+    # daily.yml's own cron stays as an overnight backup (this job pauses 12 AM–9 AM PT).
+    if _now().minute < 15:
+        try:
+            r = requests.post(
+                f"https://api.github.com/repos/{SELF}/actions/workflows/daily.yml/dispatches",
+                headers=GH, json={"ref": "main"})
+            print(f"Kicked daily.yml full rebuild -> HTTP {r.status_code}")
+        except Exception as e:
+            print("WARN: could not dispatch daily.yml:", e)
+
 
 if __name__ == "__main__":
     main()
