@@ -509,7 +509,7 @@ def cloud_main():
             break
         if in_window(now):
             try:
-                hb = time.time() - last_push > 600
+                hb = time.time() - last_push > 240
                 r = cycle(force_heartbeat=hb)
                 if r == "pushed":
                     last_push = time.time()
@@ -549,7 +549,7 @@ def main():
                 break
             if in_window(now):
                 try:
-                    hb = time.time() - last_push > 600
+                    hb = time.time() - last_push > 240
                     r = cycle(force_heartbeat=hb)
                     if r == "pushed":
                         last_push = time.time()
