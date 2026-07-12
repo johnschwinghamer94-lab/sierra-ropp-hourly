@@ -1,13 +1,12 @@
 name: SILO Live Feed (cloud)
 on:
   schedule:
-    # Relay sessions, PT = UTC-7: 6:50a start, then re-arm every 2 h through 9 pm.
-    # concurrency keeps exactly one active session + one queued - when the active
-    # 5-hour session ends, the queued one starts instantly, so coverage is
-    # continuous 6:50a-10:00p even when GitHub skips individual cron ticks.
-    - cron: "50 13 * * *"
-    - cron: "0 16,18,20,22 * * *"
-    - cron: "0 0,2,4 * * *"
+    # PT = UTC-7. Dense 6:50-9a start window (GitHub skips single ticks),
+    # then re-arm every 2 h through 9 pm. concurrency keeps one active
+    # session + one queued, so extra ticks collapse harmlessly.
+    - cron: "50,55 13 * * *"
+    - cron: "0,15,30,45 14,15 * * *"
+    - cron: "0 16,18,20,22,0,2,4 * * *"
   workflow_dispatch:
 concurrency:
   group: livefeed
