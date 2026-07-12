@@ -1,0 +1,29 @@
+name: SILO Live Feed (cloud)
+on:
+  schedule:
+    # Relay sessions, PT = UTC-7: 6:50a start, then re-arm every 2 h through 9 pm.
+    # concurrency keeps exactly one active session + one queued - when the active
+    # 5-hour session ends, the queued one starts instantly, so coverage is
+    # continuous 6:50a-10:00p even when GitHub skips individual cron ticks.
+    - cron: "50 13 * * *"
+    - cron: "0 16,18,20,22 * * *"
+    - cron: "0 0,2,4 * * *"
+  workflow_dispatch:
+concurrency:
+  group: livefeed
+  cancel-in-progress: false
+jobs:
+  livefeed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      TZ: America/Los_Angeles
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - env:
+          ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+          LIVEFEED_CLOUD: "1"
+        run: python livefeed_sync.py
