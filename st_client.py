@@ -1,15 +1,47 @@
 #!/usr/bin/env python3
 """Minimal ServiceTitan API client (stdlib only). Reads creds from the git-ignored
-~/.servicetitan/sierra.json; never prints the secret. OAuth2 client_credentials."""
-import json, os, time, urllib.request, urllib.parse, urllib.error
+~/.servicetitan/sierra.json; never prints the secret. OAuth2 client_credentials.
+
+Hardened for unattended hourly use:
+  - gzip transfer (Accept-Encoding) — the YTD revenue payload alone is ~1MB+ raw
+  - one retry policy for every call: 429 honors Retry-After; 5xx/network get
+    exponential backoff (Cloudflare fronts the API and hiccups occasionally)
+"""
+import gzip, json, os, time, urllib.request, urllib.parse, urllib.error
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 CREDS_PATH = os.path.expanduser("~/.servicetitan/sierra.json")
 CACHE_PATH = os.path.expanduser("~/.servicetitan/sierra_token.json")
 
+_CREDS = None
 def _creds():
-    with open(CREDS_PATH) as f:
-        return json.load(f)
+    global _CREDS
+    if _CREDS is None:
+        with open(CREDS_PATH) as f:
+            _CREDS = json.load(f)
+    return _CREDS
+
+def _open(req, timeout):
+    """urlopen with the shared retry policy; returns parsed JSON."""
+    last = None
+    for attempt in range(6):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                data = r.read()
+                if (r.headers.get("Content-Encoding") or "").lower() == "gzip":
+                    data = gzip.decompress(data)
+                return json.loads(data or b"{}")
+        except urllib.error.HTTPError as e:
+            last = e
+            if e.code == 429:                       # rate limit: honor Retry-After
+                time.sleep(int(e.headers.get("Retry-After", "30") or 30) + 1); continue
+            if e.code >= 500:                       # transient server/Cloudflare error
+                time.sleep(2 ** attempt); continue
+            raise                                   # 4xx (auth, bad request): fail fast
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+            last = e                                # network blip
+            time.sleep(2 ** attempt)
+    raise last
 
 def get_token(force=False):
     c = _creds()
@@ -27,15 +59,15 @@ def get_token(force=False):
     }).encode()
     req = urllib.request.Request(c["auth_base"].rstrip("/") + "/connect/token", data=body,
         headers={"Content-Type": "application/x-www-form-urlencoded", "User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        tok = json.load(r)
+    tok = _open(req, timeout=30)
     tok["expires_at"] = time.time() + tok.get("expires_in", 900)
     with open(os.open(CACHE_PATH, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600), "w") as f:
         json.dump(tok, f)
     return tok["access_token"]
 
 def _headers(c, extra=None):
-    h = {"Authorization": "Bearer " + get_token(), "ST-App-Key": c["app_key"], "User-Agent": UA}
+    h = {"Authorization": "Bearer " + get_token(), "ST-App-Key": c["app_key"],
+         "User-Agent": UA, "Accept-Encoding": "gzip"}
     if extra:
         h.update(extra)
     return h
@@ -45,9 +77,7 @@ def api_get(path, params=None, tenant="SIE"):
     url = c["api_base"].rstrip("/") + path.replace("{tenant}", c["tenants"][tenant])
     if params:
         url += ("&" if "?" in url else "?") + urllib.parse.urlencode(params)
-    req = urllib.request.Request(url, headers=_headers(c))
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return json.load(r)
+    return _open(urllib.request.Request(url, headers=_headers(c)), timeout=60)
 
 def api_post(path, body, params=None, tenant="SIE"):
     c = _creds()
@@ -57,8 +87,7 @@ def api_post(path, body, params=None, tenant="SIE"):
     data = json.dumps(body).encode()
     req = urllib.request.Request(url, data=data, method="POST",
         headers=_headers(c, {"Content-Type": "application/json"}))
-    with urllib.request.urlopen(req, timeout=120) as r:
-        return json.load(r)
+    return _open(req, timeout=120)
 
 def run_report(category, report_id, parameters, page=1, page_size=5000, tenant="SIE"):
     """Run a saved report; returns the raw {fields, data, hasMore, ...} payload."""

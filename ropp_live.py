@@ -126,12 +126,17 @@ def cache_reports(frm=None, to=None):
             fields=[f["name"] for f in r.get("fields",[])]; rows+=r.get("data",[])
             if not r.get("hasMore") or not r.get("data"): break
             page+=1; time.sleep(1)
-        json.dump({"fields":fields,"rows":rows,"dateType":dt_}, open(os.path.join(HERE,"cache",name+".json"),"w"))
+        # Atomic write (tmp + replace): a run killed mid-write can never leave a
+        # corrupt cache file behind. Compact separators keep the files ~20% smaller.
+        path = os.path.join(HERE, "cache", name + ".json")
+        with open(path + ".tmp", "w") as f:
+            json.dump({"fields": fields, "rows": rows, "dateType": dt_}, f, separators=(",", ":"))
+        os.replace(path + ".tmp", path)
         time.sleep(2)
 
 def build_into(template_path, today=None):
     import auto_update_dashboard as A                         # lazy: avoids import cycle
-    today = today or dt.date(2026, 7, 10)
+    today = today or dt.date.today()
     U.load_rows = load_rows                                   # monkeypatch: API rows, not Excel
     html = open(template_path, encoding="utf-8").read()
     new, at_a = A.build_html(html, today)

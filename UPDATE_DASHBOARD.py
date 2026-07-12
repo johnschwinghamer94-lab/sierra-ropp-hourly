@@ -34,10 +34,17 @@ SILO_12 = [n for n in SILO if n != "Andrew Alonso"]   # 14 (SILO_12 const)
 
 ROSTER_START = {"Andrew Alonso": date(2026, 6, 14)}    # team-split tab only
 
-YEAR        = 2026
-YEAR_START  = date(YEAR, 1, 1)
-YEAR_END    = date(YEAR, 12, 31)
-DAYS_TOTAL  = (YEAR_END - YEAR_START).days + 1
+# Dashboard year — tracks the calendar automatically so the build never freezes at
+# year-end (the cache fetcher already pulls {current-year}-01-01 → today; a hardcoded
+# YEAR here would filter every 2027 row out on Jan 1). Override with ROPP_YEAR=2026
+# to rebuild a past season; main() also re-derives it from --date.
+def set_year(y):
+    global YEAR, YEAR_START, YEAR_END, DAYS_TOTAL
+    YEAR        = y
+    YEAR_START  = date(y, 1, 1)
+    YEAR_END    = date(y, 12, 31)
+    DAYS_TOTAL  = (YEAR_END - YEAR_START).days + 1
+set_year(int(os.environ.get("ROPP_YEAR", "0") or 0) or date.today().year)
 TECH_GOAL   = 3_500_000
 DEPT_GOAL   = 30_000_000
 MONTH_NAMES = ["January","February","March","April","May","June","July",
@@ -516,9 +523,9 @@ def patch_sets(html):
 
 def find_template(explicit):
     if explicit and (SCRIPT_DIR/explicit).exists(): return SCRIPT_DIR/explicit
-    cands=sorted(SCRIPT_DIR.glob("ROPP_Dashboard_2026_DEPARTMENT_Sierra_*.html"),key=lambda p:p.stat().st_mtime,reverse=True)
+    cands=sorted(SCRIPT_DIR.glob(f"ROPP_Dashboard_{YEAR}_DEPARTMENT_Sierra_*.html"),key=lambda p:p.stat().st_mtime,reverse=True)
     if not cands:
-        cands=sorted(SCRIPT_DIR.glob("ROPP_Dashboard_2026_*Sierra_*.html"),key=lambda p:p.stat().st_mtime,reverse=True)
+        cands=sorted(SCRIPT_DIR.glob("ROPP_Dashboard_2*_*Sierra_*.html"),key=lambda p:p.stat().st_mtime,reverse=True)
     if not cands: raise SystemExit("No dashboard template found.")
     return cands[0]
 
@@ -527,6 +534,7 @@ def main():
     ap.add_argument("--date"); ap.add_argument("--template"); ap.add_argument("--out")
     a=ap.parse_args()
     today=datetime.strptime(a.date,"%Y-%m-%d").date() if a.date else date.today()
+    if today.year != YEAR: set_year(today.year)
     de=(today-YEAR_START).days; months=MONTH_NAMES[:today.month]
     print("Rebuilding DEPARTMENT dashboard for", today, "(day", de, ")")
     techs, cancel, sd = parse_all(today)
@@ -556,8 +564,8 @@ def main():
     html=replace_list(html,"DEPT_TECHS",dept_techs_list(techs))
     html=patch_sets(html)
     cur=today.strftime("%b ")+str(today.day)+", "+str(YEAR)
-    html=re.sub(r'Jan 1 [-–] [A-Z][a-z]{2} \d{1,2}, '+str(YEAR), "Jan 1 – "+cur, html)
-    out=a.out or ("ROPP_Dashboard_2026_DEPARTMENT_Sierra_"+today.strftime('%b%d')+".html")
+    html=re.sub(r'Jan 1 [-–] [A-Z][a-z]{2} \d{1,2}, \d{4}', "Jan 1 – "+cur, html)
+    out=a.out or (f"ROPP_Dashboard_{YEAR}_DEPARTMENT_Sierra_"+today.strftime('%b%d')+".html")
     (SCRIPT_DIR/out).write_text(html,encoding="utf-8")
     print("DEPT YTD:", at_a['ytd_c'], "calls /", at_a['ytd_t'], "TGLs /", at_a['ytd_rate'], "%  MTD",
           at_a['mtd_c'], "/", at_a['mtd_t'], "/", at_a['mtd_rate'], "%")
