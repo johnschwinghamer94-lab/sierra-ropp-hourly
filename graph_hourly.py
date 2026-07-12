@@ -306,12 +306,12 @@ def main():
     pput("hourly.json", out, osha, f"Cloud(graph) hourly capture {today} {hh}:00")
     print(f"Published {today} {hh}:00 -> {calls} calls / {tgls} TGLs ({rate(tgls, calls)}%)")
 
-    # Kick the full ROPP rebuild (daily.yml) once per hour so MTD/YTD refresh reliably.
-    # GitHub's native cron skips hourly ticks on low-traffic private repos, but this 15-min
-    # job runs dependably (4x/hour); on the top-of-hour tick it dispatches the heavier full
-    # rebuild. Idempotent — auto_update_dashboard skips its push when nothing changed, and
-    # daily.yml's own cron stays as an overnight backup (this job pauses 12 AM–9 AM PT).
-    if _now().minute < 15:
+    # Kick the full ROPP rebuild (daily.yml) every quarter hour so MTD/YTD stay near-live.
+    # GitHub's native cron skips ticks on low-traffic repos, but this cron-job.org-driven
+    # job runs dependably; the first tick inside each quarter (:00/:15/:30/:45) dispatches
+    # the heavier full rebuild. Idempotent — auto_update_dashboard skips its push when
+    # nothing changed, and daily.yml's own cron stays as an overnight backup.
+    if _now().minute % 15 < 3:
         try:
             r = requests.post(
                 f"https://api.github.com/repos/{SELF}/actions/workflows/daily.yml/dispatches",
