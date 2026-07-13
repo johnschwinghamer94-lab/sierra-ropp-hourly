@@ -284,6 +284,10 @@ def build(state):
         elif tgl_n > prev_tgl:
             event("✅", "TGL CREATED: " + ", ".join(techs) + " @ " + cust +
                   (" [×" + str(tgl_n) + "]" if tgl_n > 1 else ""), "#4ADE80")
+            sheet_log({"date": dkey, "time": now_s, "tech": ", ".join(techs),
+                       "customer": cust, "jobId": jid, "jobNumber": j.get("jobNumber", ""),
+                       "bu": j.get("_bu", ""), "jobType": j.get("_jt", ""),
+                       "n": tgl_n - prev_tgl})
         if sold_t > js.get("sold", 0) + 0.5:
             event("\U0001F4B5", "Sold on call: " + ", ".join(techs) + " @ " + cust +
                   " [+$" + format(int(sold_t - js.get("sold", 0)), ",") + "]", "#7fb3e8")
@@ -407,6 +411,26 @@ def gh_put(path, text, msg):
         else:
             raise
     _GH_SHAS[path] = j["content"]["sha"]
+
+def sheet_log(row):
+    """POST a TGL event to John's bonus-sheet Apps Script webhook (env
+    SHEET_WEBHOOK; silently inert when unset). Fire-and-forget with one retry —
+    a sheet hiccup must never stall the feed loop."""
+    url = os.environ.get("SHEET_WEBHOOK", "").strip()
+    if not url:
+        return
+    data = json.dumps(row).encode()
+    for attempt in (1, 2):
+        try:
+            req = urllib.request.Request(url, data=data, method="POST",
+                headers={"Content-Type": "application/json", "User-Agent": "silo-livefeed"})
+            urllib.request.urlopen(req, timeout=15)
+            log("bonus sheet: logged TGL for " + str(row.get("tech", "?")))
+            return
+        except Exception as ex:
+            if attempt == 2:
+                log("WARN: bonus sheet post failed: " + repr(ex)[:150])
+            time.sleep(2)
 
 def arm_next():
     """Queue the successor relay run. GitHub's native cron skips ticks (burned
