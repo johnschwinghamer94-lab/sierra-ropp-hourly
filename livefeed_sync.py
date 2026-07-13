@@ -394,11 +394,12 @@ def build(state):
                         "ran": "", "sold": "", "sd": sd}
     track = {int(k): v for k, v in sheet.items()
              if not v.get("skip") and v.get("src")
-             and v.get("day", "") >= (today - timedelta(days=7)).isoformat()
+             and v.get("day", "") >= (today - timedelta(days=10)).isoformat()
+             and not v.get("can")
              and not (v.get("ran") in ("Y", "N") and v.get("sold") == "Y")}
     if track and os.environ.get("SHEET_WEBHOOK", "").strip():
         lead_jobs = {j["id"]: j for j in chunked_get("/jpm/v2/tenant/{tenant}/jobs", list(track.keys()))}
-        wk = (datetime.combine(today - timedelta(days=7), datetime.min.time())
+        wk = (datetime.combine(today - timedelta(days=10), datetime.min.time())
               .astimezone().astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
         sold_ids = set()
         for e2 in paged("/sales/v2/tenant/{tenant}/estimates", {"soldAfter": wk}):
@@ -409,20 +410,23 @@ def build(state):
             if not lj:
                 continue
             stj = lj.get("jobStatus")
+            canceled = stj == "Canceled"    # F=CANCELED on the sheet, D/E stay blank
             ca = lead_ca(lid)
             if ca and ca.split()[0].upper() == "RYAN":
                 ran = "RYAN EMAIL"          # Ryan works his TGL tickets by email
             else:
-                ran = "Y" if stj == "Completed" else "N" if stj == "Canceled" else ""
+                ran = "Y" if stj == "Completed" else ""
             sold = "Y" if lid in sold_ids else ("N" if stj == "Completed" else "")
             sd = tr.get("sd")
             if sd is None:
                 sd = lead_sameday(lid, tr.get("day", dkey))
-            if ran != tr.get("ran", "") or sold != tr.get("sold", "") or sd != tr.get("sd"):
+            if (ran != tr.get("ran", "") or sold != tr.get("sold", "")
+                    or sd != tr.get("sd") or canceled != bool(tr.get("can"))):
                 if sheet_log({"op": "update", "jobNumber": str(tr["src"]),
-                              "ran": ran, "sold": sold, "sameDay": sd}):
-                    tr["ran"], tr["sold"], tr["sd"] = ran, sold, sd
-    cutoff = (today - timedelta(days=10)).isoformat()
+                              "ran": ran, "sold": sold, "sameDay": sd,
+                              "canceled": canceled}):
+                    tr["ran"], tr["sold"], tr["sd"], tr["can"] = ran, sold, sd, canceled
+    cutoff = (today - timedelta(days=13)).isoformat()
     for k in [k for k, v in sheet.items() if v.get("day", "") < cutoff]:
         del sheet[k]
     if first_run_of_day:
