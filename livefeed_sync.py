@@ -429,6 +429,7 @@ def build(state):
     cutoff = (today - timedelta(days=13)).isoformat()
     for k in [k for k, v in sheet.items() if v.get("day", "") < cutoff]:
         del sheet[k]
+    sheet_audit(state, today)
     if first_run_of_day:
         feed.insert(0, {"i": "\U0001F4E1", "x": "Live Feed online — tracking " + str(len(cards)) +
                         " SILO job" + ("" if len(cards) == 1 else "s") + " today", "t": now_s, "c": "#2E78C7"})
@@ -554,6 +555,85 @@ def sheet_log(row):
                 log("WARN: bonus sheet post failed: " + repr(ex)[:150])
             time.sleep(2)
     return False
+
+
+def sheet_check(job_numbers):
+    """Ask the sheet which of these job#s are missing from column C (op:check)."""
+    url = os.environ.get("SHEET_WEBHOOK", "").strip()
+    if not url:
+        return None
+    try:
+        req = urllib.request.Request(url, data=json.dumps({"op": "check", "jobs": job_numbers}).encode(),
+            method="POST", headers={"Content-Type": "application/json", "User-Agent": "silo-livefeed"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            t = r.read().decode()
+        return json.loads(t) if t.startswith("[") else None
+    except Exception as ex:
+        log("WARN: sheet check failed: " + repr(ex)[:120])
+        return None
+
+def sheet_audit(state, today):
+    """Daily 2nd check (John's spec): the official TGLs-Created report over a
+    10-day window vs the sheet. Rows the report has but the sheet lacks get
+    self-healed into the right date block; sheet rows the report lacks are
+    logged as warnings (never deleted). One run per day, after 8:30 AM."""
+    if not os.environ.get("SHEET_WEBHOOK", "").strip():
+        return
+    aud = state.setdefault("sheetAudit", {})
+    if aud.get("done") == today.isoformat():
+        return
+    now = datetime.now()
+    if (now.hour, now.minute) < (8, 30):
+        return
+    aud["done"] = today.isoformat()       # one attempt per day, even on failure
+    try:
+        import ropp_live
+        frm = (today - timedelta(days=10)).isoformat()
+        fields, rows = ropp_live._fetch_report("tgls_created", frm, today.isoformat())
+        ji = fields.index("JobNumber")
+        ti = next((i for i, f in enumerate(fields) if "echnician" in f), None)
+        report = {}
+        for r_ in rows:
+            jn = str(r_[ji] or "").strip()
+            if len(jn) >= 6 and jn.isdigit():
+                report[jn] = str(r_[ti] or "") if ti is not None else ""
+        mine = {jn: t for jn, t in report.items() if t not in SHEET_EXCLUDE}
+        missing = sheet_check(sorted(mine))
+        if missing is None:
+            return
+        healed = 0
+        if missing:
+            day0 = (datetime.combine(today - timedelta(days=11), datetime.min.time())
+                    .astimezone().astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
+            src_map = {}
+            jts = _LOOKUPS.get("jts", {})
+            for lj in paged("/jpm/v2/tenant/{tenant}/jobs", {"createdOnOrAfter": day0}):
+                gls = lj.get("jobGeneratedLeadSource") or {}
+                s_ = str(gls.get("jobId") or "")
+                if s_ in missing and (jts.get(lj.get("jobTypeId")) or "").startswith("Estimate"):
+                    src_map[s_] = lj
+            for jn in missing:
+                lj = src_map.get(jn)
+                created = parse_utc(lj.get("createdOn")) if lj else None
+                dk = created.date().isoformat() if created else today.isoformat()
+                tech = mine.get(jn, "")
+                sd = lead_sameday(lj["id"], dk) if lj else None
+                if sheet_log({"date": dk, "time": fmt_t(created) if created else "",
+                              "tech": tech, "first": sheet_name(tech),
+                              "jobId": int(jn), "jobNumber": jn, "srcId": int(jn),
+                              "sameDay": sd}):
+                    healed += 1
+                    if lj:
+                        state.setdefault("sheet", {})[str(lj["id"])] = {
+                            "skip": False, "day": dk, "src": int(jn),
+                            "ran": "", "sold": "", "sd": sd}
+        ours = {str(v.get("src")) for v in state.get("sheet", {}).values()
+                if not v.get("skip") and v.get("src")}
+        extra = sorted(ours - set(report))
+        log("audit vs TGLs-Created: report %d (yours) | healed %d missing | %d logged-not-in-report%s"
+            % (len(mine), healed, len(extra), (": " + ",".join(extra[:8])) if extra else ""))
+    except Exception as ex:
+        log("audit ERROR: " + repr(ex)[:250])
 
 def arm_next():
     """Queue the successor relay run. GitHub's native cron skips ticks (burned
