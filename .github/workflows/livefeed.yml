@@ -24,5 +24,6 @@ jobs:
       - env:
           ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+          SHEET_WEBHOOK: ${{ secrets.SHEET_WEBHOOK }}
           LIVEFEED_CLOUD: "1"
         run: python livefeed_sync.py
