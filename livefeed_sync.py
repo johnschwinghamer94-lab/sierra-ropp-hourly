@@ -409,8 +409,12 @@ def build(state):
             if not lj:
                 continue
             stj = lj.get("jobStatus")
-            ran = "Y" if stj == "Completed" else "N" if stj == "Canceled" else ""
-            sold = "Y" if lid in sold_ids else ("N" if ran == "Y" else "")
+            ca = lead_ca(lid)
+            if ca and ca.split()[0].upper() == "RYAN":
+                ran = "RYAN EMAIL"          # Ryan works his TGL tickets by email
+            else:
+                ran = "Y" if stj == "Completed" else "N" if stj == "Canceled" else ""
+            sold = "Y" if lid in sold_ids else ("N" if stj == "Completed" else "")
             sd = tr.get("sd")
             if sd is None:
                 sd = lead_sameday(lid, tr.get("day", dkey))
@@ -498,6 +502,24 @@ def lead_sameday(lead_id, ref_iso):
             return None
     v = _LEAD_APPT[lead_id]
     return None if v is None else v == ref_iso
+
+_LEAD_CA = {}
+def lead_ca(lead_id):
+    """CA assigned to the TGL ticket (cached once found; retried while empty —
+    CAs often get assigned hours after the lead is created)."""
+    if _LEAD_CA.get(lead_id):
+        return _LEAD_CA[lead_id]
+    try:
+        r = st.api_get("/dispatch/v2/tenant/{tenant}/appointment-assignments",
+                       {"jobId": lead_id, "pageSize": 10})
+        names = [a.get("technicianName") for a in r.get("data", [])
+                 if a.get("active") and a.get("technicianName")]
+        if names:
+            _LEAD_CA[lead_id] = names[0]
+            return names[0]
+    except Exception:
+        pass
+    return None
 
 # sheet shows first names; the only non-obvious mapping on the roster
 _SHEET_NAMES = {"Benjamin Wyllie": "BEN"}
