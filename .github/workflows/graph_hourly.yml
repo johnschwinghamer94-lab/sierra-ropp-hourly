@@ -21,3 +21,23 @@ jobs:
           GRAPH_REFRESH_TOKEN: ${{ secrets.GRAPH_REFRESH_TOKEN }}
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
         run: python graph_hourly.py
+      # This job is driven dependably 24/7 by cron-job.org, so it doubles as the
+      # heartbeat that keeps a SILO Live Feed relay session armed during ops
+      # hours — GitHub's own cron skipped all three evening ticks on day one
+      # and the live board sat stale for 2.5 h. Extra dispatches are harmless:
+      # livefeed.yml's concurrency group collapses pending duplicates.
+      - name: Arm SILO Live Feed relay (6a–10p PT)
+        if: always()
+        env:
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+        run: |
+          H=$(TZ=America/Los_Angeles date +%-H)
+          if [ "$H" -ge 6 ] && [ "$H" -lt 22 ]; then
+            curl -s -o /dev/null -w "arm livefeed -> HTTP %{http_code}\n" -X POST \
+              -H "Authorization: token $DASHBOARD_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/${{ github.repository }}/actions/workflows/livefeed.yml/dispatches \
+              -d '{"ref":"main"}'
+          else
+            echo "outside ops hours (PT hour $H) — skip"
+          fi
