@@ -441,6 +441,10 @@ def build(state):
         "day": now.strftime("%A, %B %d").upper(),
         "generated": now_s,
         "generatedMs": int(time.time() * 1000),
+        "tgls": sorted([{"t": L["t"], "first": sheet_name(L["tech"] or "") or "?",
+                         "src": L["src"],
+                         "mine": not (L["tech"] and L["tech"] in SHEET_EXCLUDE)}
+                        for L in dept_leads], key=lambda x: x["t"]),
         "kpis": {
             "jobs": len(cards), "completed": completed,
             "onSite": on_site, "enRoute": en_route,
