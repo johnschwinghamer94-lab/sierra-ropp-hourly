@@ -192,8 +192,9 @@ def fetch_today():
     for lj in paged("/jpm/v2/tenant/{tenant}/jobs", {"createdOnOrAfter": iso(day0)}):
         src = (lj.get("jobGeneratedLeadSource") or {}).get("jobId")
         if src in jobs:
-            ent = lead_by_src.setdefault(src, {"n": 0, "t": None})
+            ent = lead_by_src.setdefault(src, {"n": 0, "t": None, "ids": []})
             ent["n"] += 1
+            ent["ids"].append(lj["id"])
             dtl = parse_utc(lj.get("createdOn"))
             if dtl and ent["t"] is None:
                 ent["t"] = fmt_t(dtl)
@@ -284,10 +285,12 @@ def build(state):
         elif tgl_n > prev_tgl:
             event("✅", "TGL CREATED: " + ", ".join(techs) + " @ " + cust +
                   (" [×" + str(tgl_n) + "]" if tgl_n > 1 else ""), "#4ADE80")
+            sd = lead_sameday(lead["ids"][-1], today) if lead and lead.get("ids") else None
             sheet_log({"date": dkey, "time": now_s, "tech": ", ".join(techs),
+                       "first": sheet_name(techs[0] if techs else ""),
                        "customer": cust, "jobId": jid, "jobNumber": j.get("jobNumber", ""),
                        "bu": j.get("_bu", ""), "jobType": j.get("_jt", ""),
-                       "n": tgl_n - prev_tgl})
+                       "sameDay": sd, "n": tgl_n - prev_tgl})
         if sold_t > js.get("sold", 0) + 0.5:
             event("\U0001F4B5", "Sold on call: " + ", ".join(techs) + " @ " + cust +
                   " [+$" + format(int(sold_t - js.get("sold", 0)), ",") + "]", "#7fb3e8")
@@ -411,6 +414,28 @@ def gh_put(path, text, msg):
         else:
             raise
     _GH_SHAS[path] = j["content"]["sha"]
+
+_LEAD_APPT = {}
+def lead_sameday(lead_id, today):
+    """True if the created lead job is booked for today (bonus: SAME DAY $30 vs
+    SCHEDULED $10 on John's sheet). Cached per lead job; None = couldn't tell."""
+    if lead_id in _LEAD_APPT:
+        v = _LEAD_APPT[lead_id]
+        return None if v is None else v == today.isoformat()
+    try:
+        r = st.api_get("/jpm/v2/tenant/{tenant}/appointments", {"jobId": lead_id, "pageSize": 1})
+        d = r.get("data") or []
+        dtl = parse_utc(d[0].get("start")) if d else None
+        _LEAD_APPT[lead_id] = dtl.date().isoformat() if dtl else None
+    except Exception:
+        return None
+    v = _LEAD_APPT[lead_id]
+    return None if v is None else v == today.isoformat()
+
+# sheet shows first names; the only non-obvious mapping on the roster
+_SHEET_NAMES = {"Benjamin Wyllie": "BEN"}
+def sheet_name(full):
+    return _SHEET_NAMES.get(full) or (full.split()[0].upper() if full else "")
 
 def sheet_log(row):
     """POST a TGL event to John's bonus-sheet Apps Script webhook (env
