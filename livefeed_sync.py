@@ -233,8 +233,9 @@ def build(state):
 
     first_run_of_day = state.get("date") != dkey
     if first_run_of_day:
+        keep_sheet = state.get("sheet", {})
         state.clear()
-        state.update({"date": dkey, "jobs": {}, "feed": []})
+        state.update({"date": dkey, "jobs": {}, "feed": [], "sheet": keep_sheet})
     seen = state["jobs"]
     feed = state["feed"]
 
@@ -371,24 +372,55 @@ def build(state):
     # board reads top-to-bottom, left-to-right in call-start order (John's spec)
     cards.sort(key=lambda c: c["startIso"])
 
-    # ── bonus sheet: log EVERY dept TGL created today except SHEET_EXCLUDE ──
-    # (state-deduped across relay sessions; the Apps Script also dedupes by
-    # job number, so a retry can never double a row)
-    logged = set(state.get("sheetLeads", []))
+    # ── bonus sheet: add every dept TGL (Estimate-type, minus SHEET_EXCLUDE)
+    #    with the SOURCE CALL job# in column C, then keep D (CA ran Y/N) and
+    #    E (sold Y/N) updated for 7 days as the TGL runs and sells ──────────
+    sheet = state.setdefault("sheet", {})
     for L in dept_leads:
-        if L["id"] in logged:
+        k = str(L["id"])
+        if k in sheet:
             continue
         tech = L["tech"]
         if tech and tech in SHEET_EXCLUDE:
-            logged.add(L["id"])           # other manager's tech — never John's sheet
+            sheet[k] = {"skip": True, "day": dkey}
             continue
+        sd = lead_sameday(L["id"], dkey)
         ok = sheet_log({"date": dkey, "time": L["t"] or now_s,
                         "tech": tech or "", "first": sheet_name(tech or ""),
-                        "jobId": L["id"], "jobNumber": L["number"],
-                        "sameDay": lead_sameday(L["id"], today)})
+                        "jobId": L["src"], "jobNumber": str(L["src"]),
+                        "srcId": L["src"], "sameDay": sd})
         if ok:
-            logged.add(L["id"])
-    state["sheetLeads"] = sorted(logged)[-800:]
+            sheet[k] = {"skip": False, "day": dkey, "src": L["src"],
+                        "ran": "", "sold": "", "sd": sd}
+    track = {int(k): v for k, v in sheet.items()
+             if not v.get("skip") and v.get("src")
+             and v.get("day", "") >= (today - timedelta(days=7)).isoformat()
+             and not (v.get("ran") in ("Y", "N") and v.get("sold") == "Y")}
+    if track and os.environ.get("SHEET_WEBHOOK", "").strip():
+        lead_jobs = {j["id"]: j for j in chunked_get("/jpm/v2/tenant/{tenant}/jobs", list(track.keys()))}
+        wk = (datetime.combine(today - timedelta(days=7), datetime.min.time())
+              .astimezone().astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
+        sold_ids = set()
+        for e2 in paged("/sales/v2/tenant/{tenant}/estimates", {"soldAfter": wk}):
+            if e2.get("jobId") in lead_jobs and (e2.get("soldOn") or ((e2.get("status") or {}).get("name") == "Sold")):
+                sold_ids.add(e2["jobId"])
+        for lid, tr in track.items():
+            lj = lead_jobs.get(lid)
+            if not lj:
+                continue
+            stj = lj.get("jobStatus")
+            ran = "Y" if stj == "Completed" else "N" if stj == "Canceled" else ""
+            sold = "Y" if lid in sold_ids else ("N" if ran == "Y" else "")
+            sd = tr.get("sd")
+            if sd is None:
+                sd = lead_sameday(lid, tr.get("day", dkey))
+            if ran != tr.get("ran", "") or sold != tr.get("sold", "") or sd != tr.get("sd"):
+                if sheet_log({"op": "update", "jobNumber": str(tr["src"]),
+                              "ran": ran, "sold": sold, "sameDay": sd}):
+                    tr["ran"], tr["sold"], tr["sd"] = ran, sold, sd
+    cutoff = (today - timedelta(days=10)).isoformat()
+    for k in [k for k, v in sheet.items() if v.get("day", "") < cutoff]:
+        del sheet[k]
     if first_run_of_day:
         feed.insert(0, {"i": "\U0001F4E1", "x": "Live Feed online — tracking " + str(len(cards)) +
                         " SILO job" + ("" if len(cards) == 1 else "s") + " today", "t": now_s, "c": "#2E78C7"})
@@ -453,21 +485,19 @@ def gh_put(path, text, msg):
     _GH_SHAS[path] = j["content"]["sha"]
 
 _LEAD_APPT = {}
-def lead_sameday(lead_id, today):
-    """True if the created lead job is booked for today (bonus: SAME DAY $30 vs
-    SCHEDULED $10 on John's sheet). Cached per lead job; None = couldn't tell."""
-    if lead_id in _LEAD_APPT:
-        v = _LEAD_APPT[lead_id]
-        return None if v is None else v == today.isoformat()
-    try:
-        r = st.api_get("/jpm/v2/tenant/{tenant}/appointments", {"jobId": lead_id, "pageSize": 1})
-        d = r.get("data") or []
-        dtl = parse_utc(d[0].get("start")) if d else None
-        _LEAD_APPT[lead_id] = dtl.date().isoformat() if dtl else None
-    except Exception:
-        return None
+def lead_sameday(lead_id, ref_iso):
+    """True if the lead job's first appointment falls on ref_iso (its creation
+    day) — SAME DAY $30 vs SCHEDULED $10. Cached; None = no appointment yet."""
+    if lead_id not in _LEAD_APPT:
+        try:
+            r = st.api_get("/jpm/v2/tenant/{tenant}/appointments", {"jobId": lead_id, "pageSize": 1})
+            d = r.get("data") or []
+            dtl = parse_utc(d[0].get("start")) if d else None
+            _LEAD_APPT[lead_id] = dtl.date().isoformat() if dtl else None
+        except Exception:
+            return None
     v = _LEAD_APPT[lead_id]
-    return None if v is None else v == today.isoformat()
+    return None if v is None else v == ref_iso
 
 # sheet shows first names; the only non-obvious mapping on the roster
 _SHEET_NAMES = {"Benjamin Wyllie": "BEN"}
