@@ -408,6 +408,22 @@ def gh_put(path, text, msg):
             raise
     _GH_SHAS[path] = j["content"]["sha"]
 
+def arm_next():
+    """Queue the successor relay run. GitHub's native cron skips ticks (burned
+    twice on day one), so every session arms its own replacement; the workflow's
+    concurrency group collapses extra pending runs."""
+    try:
+        req = urllib.request.Request(
+            "https://api.github.com/repos/johnschwinghamer94-lab/sierra-ropp-hourly/actions/workflows/livefeed.yml/dispatches",
+            data=json.dumps({"ref": "main"}).encode(), method="POST",
+            headers={"Authorization": "token " + os.environ["DASHBOARD_TOKEN"],
+                     "Accept": "application/vnd.github+json", "User-Agent": "silo-livefeed",
+                     "Content-Type": "application/json"})
+        urllib.request.urlopen(req, timeout=30)
+        log("armed successor relay run")
+    except Exception as ex:
+        log("WARN: could not arm successor: " + repr(ex)[:150])
+
 def cloud_seed_state():
     """Start a relay session from the state the previous session committed."""
     txt = gh_fetch("livefeed_state.json")
@@ -497,6 +513,7 @@ def cloud_main():
         fp.write_text(os.environ["ST_CREDS_JSON"])
     cloud_seed_state()
     log("cloud session started (cap %d min)" % MAX_MIN)
+    arm_next()                        # successor waits in the queue from minute one
     t0 = time.time()
     last_push = 0.0
     while True:
@@ -506,6 +523,8 @@ def cloud_main():
             break
         if (time.time() - t0) / 60 > MAX_MIN:
             log("session cap reached — handing off to the next relay run")
+            if (now.hour, now.minute) < DAY_END:
+                arm_next()            # belt & suspenders: re-arm on the way out too
             break
         if in_window(now):
             try:
