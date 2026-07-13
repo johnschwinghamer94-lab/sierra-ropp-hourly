@@ -121,6 +121,7 @@ def _lookups(today):
         _LOOKUPS["bus"] = {b["id"]: b.get("name", "") for b in paged("/settings/v2/tenant/{tenant}/business-units", {})}
         _LOOKUPS["jts"] = {t["id"]: t.get("name", "") for t in paged("/jpm/v2/tenant/{tenant}/job-types", {})}
         _LOOKUPS["tagnames"] = {t["id"]: t.get("name", "") for t in paged("/settings/v2/tenant/{tenant}/tag-types", {})}
+        _LOOKUPS["emps"] = {t["id"]: t.get("name", "") for t in paged("/settings/v2/tenant/{tenant}/technicians", {})}
         _LOOKUPS["date"] = today.isoformat()
     return _LOOKUPS["bus"], _LOOKUPS["jts"], _LOOKUPS["tagnames"]
 
@@ -146,7 +147,7 @@ def fetch_today():
                   {"startsOnOrAfter": iso(day0), "startsBefore": iso(day1)})
     appts = [a for a in appts if a.get("status") not in ("Canceled",)]
     if not appts:
-        return today, [], {}, {}, {}, [], []
+        return today, [], {}, {}, {}, [], {}, []
 
     # tech per appointment (SILO filter happens here)
     asg = []
@@ -163,7 +164,7 @@ def fetch_today():
     silo_appts = [a for a in appts if a["id"] in tech_by_appt]
     job_ids = sorted({a["jobId"] for a in silo_appts})
     if not job_ids:
-        return today, [], {}, {}, {}, [], []
+        return today, [], {}, {}, {}, [], {}, []
 
     jobs = {j["id"]: j for j in chunked_get("/jpm/v2/tenant/{tenant}/jobs", job_ids)}
     cust_ids = sorted({j.get("customerId") for j in jobs.values() if j.get("customerId")})
@@ -188,9 +189,21 @@ def fetch_today():
     # TGL CREATED — the authoritative signal: a lead job created today whose
     # jobGeneratedLeadSource points at one of our call jobs. (A sold estimate on
     # the call job is NOT a TGL — techs also sell parts that way.)
+    # any-tech attribution for the bonus sheet: job -> techs from ALL of today's
+    # assignments (asg covers every appointment today, not just SILO)
+    all_job_tech = {}
+    for a in asg:
+        if a.get("active") and a.get("technicianName") and a.get("jobId"):
+            all_job_tech.setdefault(a["jobId"], []).append(a["technicianName"])
+
     lead_by_src = {}
+    dept_leads = []      # every TGL created today, department-wide (bonus sheet)
+    emps = _LOOKUPS.get("emps", {})
     for lj in paged("/jpm/v2/tenant/{tenant}/jobs", {"createdOnOrAfter": iso(day0)}):
-        src = (lj.get("jobGeneratedLeadSource") or {}).get("jobId")
+        gls = lj.get("jobGeneratedLeadSource") or {}
+        src = gls.get("jobId")
+        if not src:
+            continue
         if src in jobs:
             ent = lead_by_src.setdefault(src, {"n": 0, "t": None, "ids": []})
             ent["n"] += 1
@@ -198,11 +211,17 @@ def fetch_today():
             dtl = parse_utc(lj.get("createdOn"))
             if dtl and ent["t"] is None:
                 ent["t"] = fmt_t(dtl)
+        # credited tech: ST's own lead-source employee first, else source-job tech
+        tech = emps.get(gls.get("employeeId")) or (all_job_tech.get(src) or [None])[0]
+        dtl = parse_utc(lj.get("createdOn"))
+        dept_leads.append({"id": lj["id"], "number": lj.get("jobNumber", ""),
+                           "src": src, "tech": tech,
+                           "t": fmt_t(dtl) if dtl else ""})
 
-    return today, silo_appts, tech_by_appt, jobs, custs, est_by_job, lead_by_src
+    return today, silo_appts, tech_by_appt, jobs, custs, est_by_job, lead_by_src, dept_leads
 
 def build(state):
-    today, silo_appts, tech_by_appt, jobs, custs, est_by_job, lead_by_src = fetch_today()
+    today, silo_appts, tech_by_appt, jobs, custs, est_by_job, lead_by_src, dept_leads = fetch_today()
     now = datetime.now().astimezone()
     now_s = fmt_t(now)
     dkey = today.isoformat()
@@ -285,12 +304,6 @@ def build(state):
         elif tgl_n > prev_tgl:
             event("✅", "TGL CREATED: " + ", ".join(techs) + " @ " + cust +
                   (" [×" + str(tgl_n) + "]" if tgl_n > 1 else ""), "#4ADE80")
-            sd = lead_sameday(lead["ids"][-1], today) if lead and lead.get("ids") else None
-            sheet_log({"date": dkey, "time": now_s, "tech": ", ".join(techs),
-                       "first": sheet_name(techs[0] if techs else ""),
-                       "customer": cust, "jobId": jid, "jobNumber": j.get("jobNumber", ""),
-                       "bu": j.get("_bu", ""), "jobType": j.get("_jt", ""),
-                       "sameDay": sd, "n": tgl_n - prev_tgl})
         if sold_t > js.get("sold", 0) + 0.5:
             event("\U0001F4B5", "Sold on call: " + ", ".join(techs) + " @ " + cust +
                   " [+$" + format(int(sold_t - js.get("sold", 0)), ",") + "]", "#7fb3e8")
@@ -352,6 +365,25 @@ def build(state):
 
     # board reads top-to-bottom, left-to-right in call-start order (John's spec)
     cards.sort(key=lambda c: c["startIso"])
+
+    # ── bonus sheet: log EVERY dept TGL created today except SHEET_EXCLUDE ──
+    # (state-deduped across relay sessions; the Apps Script also dedupes by
+    # job number, so a retry can never double a row)
+    logged = set(state.get("sheetLeads", []))
+    for L in dept_leads:
+        if L["id"] in logged:
+            continue
+        tech = L["tech"]
+        if tech and tech in SHEET_EXCLUDE:
+            logged.add(L["id"])           # other manager's tech — never John's sheet
+            continue
+        ok = sheet_log({"date": dkey, "time": L["t"] or now_s,
+                        "tech": tech or "", "first": sheet_name(tech or ""),
+                        "jobId": L["id"], "jobNumber": L["number"],
+                        "sameDay": lead_sameday(L["id"], today)})
+        if ok:
+            logged.add(L["id"])
+    state["sheetLeads"] = sorted(logged)[-800:]
     if first_run_of_day:
         feed.insert(0, {"i": "\U0001F4E1", "x": "Live Feed online — tracking " + str(len(cards)) +
                         " SILO job" + ("" if len(cards) == 1 else "s") + " today", "t": now_s, "c": "#2E78C7"})
@@ -437,25 +469,30 @@ _SHEET_NAMES = {"Benjamin Wyllie": "BEN"}
 def sheet_name(full):
     return _SHEET_NAMES.get(full) or (full.split()[0].upper() if full else "")
 
+# These techs bonus under another manager — never logged to John's sheet.
+SHEET_EXCLUDE = {"Andrew Alonso", "Brandon Moreno", "Cole Pantol", "Francisco Valencia",
+                 "Mario Castro", "Nathan Colquitt", "Robert Silinzy"}
+
 def sheet_log(row):
     """POST a TGL event to John's bonus-sheet Apps Script webhook (env
     SHEET_WEBHOOK; silently inert when unset). Fire-and-forget with one retry —
     a sheet hiccup must never stall the feed loop."""
     url = os.environ.get("SHEET_WEBHOOK", "").strip()
     if not url:
-        return
+        return False
     data = json.dumps(row).encode()
     for attempt in (1, 2):
         try:
             req = urllib.request.Request(url, data=data, method="POST",
                 headers={"Content-Type": "application/json", "User-Agent": "silo-livefeed"})
             urllib.request.urlopen(req, timeout=15)
-            log("bonus sheet: logged TGL for " + str(row.get("tech", "?")))
-            return
+            log("bonus sheet: logged TGL for " + str(row.get("first") or row.get("tech", "?")))
+            return True
         except Exception as ex:
             if attempt == 2:
                 log("WARN: bonus sheet post failed: " + repr(ex)[:150])
             time.sleep(2)
+    return False
 
 def arm_next():
     """Queue the successor relay run. GitHub's native cron skips ticks (burned
