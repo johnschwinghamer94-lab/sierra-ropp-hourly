@@ -458,6 +458,11 @@ def build(state):
     del feed[60:]
     state["date"] = dkey
 
+    # ⚡ same-day flag for the TGL board (estimate appt on the creation day);
+    # lead_sameday is memory-cached, so this is ~one API call per lead per session
+    for L in dept_leads:
+        L["sd"] = lead_sameday(L["id"], dkey)
+
     payload = {
         "date": dkey,
         "day": now.strftime("%A, %B %d").upper(),
@@ -466,6 +471,7 @@ def build(state):
         "tgls": [{"t": L["t"], "first": sheet_name(L["tech"] or "") or "?",
                   "src": L["src"], "num": str(L.get("number", "")),
                   "cust": L.get("cust", ""), "soldT": L.get("soldT"),
+                  "sd": bool(L.get("sd")),
                   "mine": not (L["tech"] and L["tech"] in SHEET_EXCLUDE)}
                  for L in sorted(dept_leads, key=lambda x: x.get("iso", ""))],
         "kpis": {
