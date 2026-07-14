@@ -198,19 +198,26 @@ def fetch_today():
 
     lead_by_src = {}
     dept_leads = []      # every TGL created today, department-wide (bonus sheet)
+    install_by_src = {}  # src call job -> install-booked time = that TGL SOLD
     emps = _LOOKUPS.get("emps", {})
     for lj in paged("/jpm/v2/tenant/{tenant}/jobs", {"createdOnOrAfter": iso(day0)}):
         gls = lj.get("jobGeneratedLeadSource") or {}
         src = gls.get("jobId")
         if not src:
             continue
+        _jtn = jts.get(lj.get("jobTypeId")) or ""
+        # An "Install … TGL" job booked from the same source call = the TGL sold.
+        # Tracked separately for the SOLD badge; never counted as a TGL creation
+        # (double-pays — burned: Joe 664141521 "Install 80% Horizontal TGL" on 7/11).
+        if _jtn.startswith("Install") and "TGL" in _jtn:
+            dtl = parse_utc(lj.get("createdOn"))
+            if dtl and src not in install_by_src:
+                install_by_src[src] = fmt_t(dtl)
+            continue
         # Only REPLACEMENT TGL estimates count (John, 2026-07-13): job type must be
         # in the "Estimate … TGL" family (Estimate AC TGL, Estimate Furnace TGL, …).
         # Excludes plain/marketed estimates (Estimate AC, Costco), accessory estimates
-        # (IAQ / Thermostat / Humidifier), plumbing estimates, and Install jobs booked
-        # after a sold TGL — those carry jobGeneratedLeadSource too and double-pay
-        # (burned: Joe 664141521 "Install 80% Horizontal TGL" on 7/11).
-        _jtn = jts.get(lj.get("jobTypeId")) or ""
+        # (IAQ / Thermostat / Humidifier), and plumbing estimates.
         if not (_jtn.startswith("Estimate") and "TGL" in _jtn):
             continue
         if src in jobs:
@@ -224,8 +231,19 @@ def fetch_today():
         tech = emps.get(gls.get("employeeId")) or (all_job_tech.get(src) or [None])[0]
         dtl = parse_utc(lj.get("createdOn"))
         dept_leads.append({"id": lj["id"], "number": lj.get("jobNumber", ""),
-                           "src": src, "tech": tech,
-                           "t": fmt_t(dtl) if dtl else ""})
+                           "src": src, "tech": tech, "custId": lj.get("customerId"),
+                           "t": fmt_t(dtl) if dtl else "",
+                           "iso": lj.get("createdOn") or ""})
+
+    # customer names + SOLD badge for the TGL board
+    lead_cust = {c["id"]: c.get("name", "") for c in chunked_get(
+        "/crm/v2/tenant/{tenant}/customers",
+        list({L["custId"] for L in dept_leads if L.get("custId")} - set(custs)))}
+    lead_cust.update(custs)
+    for L in dept_leads:
+        L["cust"] = lead_cust.get(L.get("custId"), "")
+        # install may point at the original call job OR at the estimate lead job
+        L["soldT"] = install_by_src.get(L["src"]) or install_by_src.get(L["id"])
 
     return today, silo_appts, tech_by_appt, jobs, custs, est_by_job, lead_by_src, dept_leads
 
@@ -445,15 +463,18 @@ def build(state):
         "day": now.strftime("%A, %B %d").upper(),
         "generated": now_s,
         "generatedMs": int(time.time() * 1000),
-        "tgls": sorted([{"t": L["t"], "first": sheet_name(L["tech"] or "") or "?",
-                         "src": L["src"],
-                         "mine": not (L["tech"] and L["tech"] in SHEET_EXCLUDE)}
-                        for L in dept_leads], key=lambda x: x["t"]),
+        "tgls": [{"t": L["t"], "first": sheet_name(L["tech"] or "") or "?",
+                  "src": L["src"], "num": str(L.get("number", "")),
+                  "cust": L.get("cust", ""), "soldT": L.get("soldT"),
+                  "mine": not (L["tech"] and L["tech"] in SHEET_EXCLUDE)}
+                 for L in sorted(dept_leads, key=lambda x: x.get("iso", ""))],
         "kpis": {
             "jobs": len(cards), "completed": completed,
             "onSite": on_site, "enRoute": en_route,
             "optionsTotal": int(opt_total), "optionsCount": opt_count, "optionsJobs": len(opt_jobs),
             "signedTotal": int(signed_total), "signedJobs": len(signed_jobs),
+            "tglLeads": len(dept_leads),
+            "tglSold": sum(1 for L in dept_leads if L.get("soldT")),
         },
         "jobs": cards,
         "feed": feed,
