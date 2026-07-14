@@ -309,6 +309,24 @@ def build_initial(techs):
                             for m in MONTH_NAMES}}
             for n, t in techs.items() if "," not in n}
 
+def patch_cancel_markup(html):
+    """Ensure the Cancellation tab renders the duplicate-exclusion asterisk + footnote.
+    Idempotent and applied every build, so it survives index.html regeneration. Operates on
+    the compiled React.createElement output; silently no-ops if the anchor structure changes."""
+    if 'label: "YTD CANCELLED *"' not in html:
+        html = html.replace('label: "YTD CANCELLED",', 'label: "YTD CANCELLED *",', 1)
+    if "CANCEL_DATA.dupNote" not in html:
+        anchor = ('    color: "#E63946"\n  })), /*#__PURE__*/React.createElement("div", {\n'
+                  '    style: {\n      padding: "14px 24px 0"')
+        inject = ('    color: "#E63946"\n  })), '
+                  '/*#__PURE__*/(CANCEL_DATA.dupNote ? React.createElement("div", {\n'
+                  '    style: { fontSize: 11, color: "#8b98b5", padding: "6px 24px 0", fontStyle: "italic" }\n'
+                  '  }, CANCEL_DATA.dupNote) : null), '
+                  '/*#__PURE__*/React.createElement("div", {\n    style: {\n      padding: "14px 24px 0"')
+        if anchor in html:
+            html = html.replace(anchor, inject, 1)
+    return html
+
 def build_cancel(techs, cancel, today, months):
     ytd, monthly, weekly = {}, {}, {}
     for n in set(list(techs.keys()) + list(cancel.keys())):

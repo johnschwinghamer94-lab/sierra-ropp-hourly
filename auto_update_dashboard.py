@@ -135,6 +135,7 @@ def build_html(template_html, today):
     html = U.replace_list(html, "SILO_12", U.SILO_12)
     html = U.replace_list(html, "DEPT_TECHS", U.dept_techs_list(techs))
     html = U.patch_sets(html)
+    html = U.patch_cancel_markup(html)   # asterisk + duplicate-exclusion footnote on the Cancellation tab
     cur = today.strftime("%b ") + str(today.day) + ", " + str(U.YEAR)
     html = re.sub(r'Jan 1 [-–] [A-Z][a-z]{2} \d{1,2}, \d{4}', "Jan 1 – " + cur, html)
     return html, at_a
