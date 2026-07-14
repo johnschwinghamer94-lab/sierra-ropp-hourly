@@ -220,20 +220,34 @@ def fetch_today():
         # (IAQ / Thermostat / Humidifier), and plumbing estimates.
         if not (_jtn.startswith("Estimate") and "TGL" in _jtn):
             continue
-        if src in jobs:
-            ent = lead_by_src.setdefault(src, {"n": 0, "t": None, "ids": []})
-            ent["n"] += 1
-            ent["ids"].append(lj["id"])
-            dtl = parse_utc(lj.get("createdOn"))
-            if dtl and ent["t"] is None:
-                ent["t"] = fmt_t(dtl)
         # credited tech: ST's own lead-source employee first, else source-job tech
         tech = emps.get(gls.get("employeeId")) or (all_job_tech.get(src) or [None])[0]
         dtl = parse_utc(lj.get("createdOn"))
         dept_leads.append({"id": lj["id"], "number": lj.get("jobNumber", ""),
                            "src": src, "tech": tech, "custId": lj.get("customerId"),
                            "t": fmt_t(dtl) if dtl else "",
-                           "iso": lj.get("createdOn") or ""})
+                           "iso": lj.get("createdOn") or "",
+                           "can": lj.get("jobStatus") == "Canceled"})
+
+    # Dup-ticket rule (John, 2026-07-13): several leads on ONE call where some are
+    # canceled = the canceled ones are duplicate tickets, not TGLs — drop them.
+    # A lone canceled lead is a REAL canceled TGL and stays (flagged "can").
+    by_src = {}
+    for L in dept_leads:
+        by_src.setdefault(L["src"], []).append(L)
+    dept_leads = []
+    for group in by_src.values():
+        live = [L for L in group if not L["can"]]
+        dept_leads.extend(live if live else group[:1])
+
+    # per-card TGL counter (SILO board calls) — built AFTER the dup drop
+    for L in dept_leads:
+        if L["src"] in jobs:
+            ent = lead_by_src.setdefault(L["src"], {"n": 0, "t": None, "ids": []})
+            ent["n"] += 1
+            ent["ids"].append(L["id"])
+            if ent["t"] is None and L["t"]:
+                ent["t"] = L["t"]
 
     # customer names + SOLD badge for the TGL board
     lead_cust = {c["id"]: c.get("name", "") for c in chunked_get(
@@ -471,7 +485,7 @@ def build(state):
         "tgls": [{"t": L["t"], "first": sheet_name(L["tech"] or "") or "?",
                   "src": L["src"], "num": str(L.get("number", "")),
                   "cust": L.get("cust", ""), "soldT": L.get("soldT"),
-                  "sd": bool(L.get("sd")),
+                  "sd": bool(L.get("sd")), "can": bool(L.get("can")),
                   "mine": not (L["tech"] and L["tech"] in SHEET_EXCLUDE)}
                  for L in sorted(dept_leads, key=lambda x: x.get("iso", ""))],
         "kpis": {
