@@ -204,10 +204,14 @@ def fetch_today():
         src = gls.get("jobId")
         if not src:
             continue
-        # Only Estimate-type jobs are TGL creations. Install jobs booked after a
-        # sold TGL also carry jobGeneratedLeadSource — counting them double-pays
+        # Only REPLACEMENT TGL estimates count (John, 2026-07-13): job type must be
+        # in the "Estimate … TGL" family (Estimate AC TGL, Estimate Furnace TGL, …).
+        # Excludes plain/marketed estimates (Estimate AC, Costco), accessory estimates
+        # (IAQ / Thermostat / Humidifier), plumbing estimates, and Install jobs booked
+        # after a sold TGL — those carry jobGeneratedLeadSource too and double-pay
         # (burned: Joe 664141521 "Install 80% Horizontal TGL" on 7/11).
-        if not (jts.get(lj.get("jobTypeId")) or "").startswith("Estimate"):
+        _jtn = jts.get(lj.get("jobTypeId")) or ""
+        if not (_jtn.startswith("Estimate") and "TGL" in _jtn):
             continue
         if src in jobs:
             ent = lead_by_src.setdefault(src, {"n": 0, "t": None, "ids": []})
