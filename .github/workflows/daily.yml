@@ -3,6 +3,8 @@ on:
   schedule:
     - cron: "20 8-15 * * *"   # overnight backup; daytime runs dispatched hourly
   workflow_dispatch:
+permissions:
+  contents: write            # allow the refresher to commit cancel_dup_exclusions.json back
 jobs:
   rebuild:
     runs-on: ubuntu-latest
@@ -30,6 +32,26 @@ jobs:
           else
             echo "WARN — ServiceTitan fetch unavailable; falling back to OneDrive Excel"
             python graph_download_cloud.py
+          fi
+      - name: Refresh duplicate-ticket exclusions (once daily · 14:00 UTC)
+        continue-on-error: true          # a refresher failure keeps the last good list; never breaks the build
+        env:
+          ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
+        run: |
+          # The true-dup scan makes ~200 API calls, so run it once a day (after cloud_fetch
+          # materialized creds) — plus on any manual run. Other hourly builds reuse the
+          # committed cancel_dup_exclusions.json.
+          if [ "$GITHUB_EVENT_NAME" != "workflow_dispatch" ] && [ "$(date -u +%H)" != "14" ]; then
+            echo "hourly rebuild — dup-exclusion refresh runs at 14:00 UTC only; skipping"
+            exit 0
+          fi
+          python cloud_fetch.py >/dev/null 2>&1 || true   # ensure ~/.servicetitan creds exist
+          if python refresh_dup_exclusions.py; then
+            git config user.email "johnschwinghamer94@gmail.com"
+            git config user.name "John Schwinghamer"
+            git add cancel_dup_exclusions.json
+            git commit -m "Refresh cancel duplicate-exclusions ($(date -u +%F))" || echo "no change"
+            git push || echo "push skipped"
           fi
       - name: Rebuild index.html and push
         env:
