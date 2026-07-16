@@ -346,14 +346,14 @@ def main():
         e_tot, e_by = _entity_tgls_today(today)
         tgls = e_tot
         seen = set()
-        for t in techs:
-            t["tgls"] = e_by.get(t["name"], 0)
-            t["rate"] = rate(t["tgls"], t["calls"])
-            seen.add(t["name"])
-        for n, c in e_by.items():
-            if n not in seen:
-                techs.append({"name": n, "calls": 0, "tgls": c, "rate": None, "rev": 0})
-        techs = [t for t in techs if t["calls"] or t["tgls"]]
+        for tec in techs:
+            tec["tgls"] = e_by.get(tec["name"], 0)
+            tec["rate"] = rate(tec["tgls"], tec["calls"])
+            seen.add(tec["name"])
+        for enm, ecnt in e_by.items():
+            if enm not in seen:
+                techs.append({"name": enm, "calls": 0, "tgls": ecnt, "rate": None, "rev": 0})
+        techs = [tec for tec in techs if tec["calls"] or tec["tgls"]]
         techs.sort(key=lambda x: (-x["tgls"], -x["calls"], x["name"]))
         print(f"TGL lens: entity created-today ({e_tot})")
     except Exception as e:
