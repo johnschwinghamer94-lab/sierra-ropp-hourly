@@ -378,6 +378,7 @@ def main():
     if sched:
         today_block["sched"] = sched
     out = {"date": today, "updated": n.strftime("%I:%M %p").lstrip("0"),
+           "generatedMs": int(n.timestamp() * 1000),   # health banner reads this
            "today": today_block, "hours": series}
 
     _, ssha = pget("hourly_state.json")
