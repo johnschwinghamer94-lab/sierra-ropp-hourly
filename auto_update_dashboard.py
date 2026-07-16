@@ -104,6 +104,26 @@ def build_close_rate(techs, cancel, today):
                        for p in ("ytd", "mtd")}}
 
 
+def patch_cancel_markup(html):
+    """Ensure the Cancellation tab renders the duplicate-exclusion asterisk + footnote.
+    Idempotent and applied every build. Defined HERE (next to its only caller) so it can
+    never orphan the call the way a cross-module reference did. Operates on the compiled
+    React.createElement output; silently no-ops if the anchor structure changes."""
+    if 'label: "YTD CANCELLED *"' not in html:
+        html = html.replace('label: "YTD CANCELLED",', 'label: "YTD CANCELLED *",', 1)
+    if "CANCEL_DATA.dupNote" not in html:
+        anchor = ('    color: "#E63946"\n  })), /*#__PURE__*/React.createElement("div", {\n'
+                  '    style: {\n      padding: "14px 24px 0"')
+        inject = ('    color: "#E63946"\n  })), '
+                  '/*#__PURE__*/(CANCEL_DATA.dupNote ? React.createElement("div", {\n'
+                  '    style: { fontSize: 11, color: "#8b98b5", padding: "6px 24px 0", fontStyle: "italic" }\n'
+                  '  }, CANCEL_DATA.dupNote) : null), '
+                  '/*#__PURE__*/React.createElement("div", {\n    style: {\n      padding: "14px 24px 0"')
+        if anchor in html:
+            html = html.replace(anchor, inject, 1)
+    return html
+
+
 def build_html(template_html, today):
     """Apply all data blocks to template_html (a full index.html) and return the new html."""
     de = (today - U.YEAR_START).days
@@ -135,7 +155,7 @@ def build_html(template_html, today):
     html = U.replace_list(html, "SILO_12", U.SILO_12)
     html = U.replace_list(html, "DEPT_TECHS", U.dept_techs_list(techs))
     html = U.patch_sets(html)
-    html = U.patch_cancel_markup(html)   # asterisk + duplicate-exclusion footnote on the Cancellation tab
+    html = patch_cancel_markup(html)   # asterisk + duplicate-exclusion footnote on the Cancellation tab
     cur = today.strftime("%b ") + str(today.day) + ", " + str(U.YEAR)
     html = re.sub(r'Jan 1 [-–] [A-Z][a-z]{2} \d{1,2}, \d{4}', "Jan 1 – " + cur, html)
     return html, at_a
