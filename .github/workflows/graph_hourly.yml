@@ -9,6 +9,9 @@ on:
 jobs:
   capture:
     runs-on: ubuntu-latest
+    env:
+      TZ: America/Los_Angeles   # date.today() must be VEGAS-today — UTC rolls over at
+                                # 5 PM PT and made the Yesterday tab show today every evening
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
