@@ -247,6 +247,68 @@ def _st_today(today):
             RL.fetch_report_rows("ROPP_TGLs_Scheduled.xlsx", today, today))
 
 
+def _entity_tgls_today(today):
+    """John's rule (2026-07-16): a TGL counts on the day its TICKET IS CREATED —
+    including follow-up turnovers on calls that ran earlier. The TGLs-Created
+    report can't express that via the API (LeadCreated comes back empty and
+    DateType filters on the call's ScheduledDate), so count lead JOBS from the
+    entity API: created today, job type in the "Estimate … TGL" family, with the
+    dup-ticket rule (canceled leads on a multi-lead call are duplicates; a lone
+    canceled lead is a real canceled TGL and still counts as created).
+    Returns (total, {tech_full_name: count})."""
+    import st_client as st
+    from datetime import datetime as _dt, time as _time, timezone as _tz
+
+    day0 = _dt.combine(_dt.strptime(today, "%Y-%m-%d").date(), _time.min
+                       ).astimezone(_tz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+    def paged(path, params):
+        page = 1
+        while True:
+            r = st.api_get(path, {**params, "page": page, "pageSize": 200})
+            yield from r.get("data", [])
+            if not r.get("hasMore"):
+                break
+            page += 1
+
+    jts = {x["id"]: x.get("name", "") for x in paged("/jpm/v2/tenant/{tenant}/job-types", {})}
+    leads = []
+    for lj in paged("/jpm/v2/tenant/{tenant}/jobs", {"createdOnOrAfter": day0}):
+        gls = lj.get("jobGeneratedLeadSource") or {}
+        jtn = jts.get(lj.get("jobTypeId")) or ""
+        if gls.get("jobId") and jtn.startswith("Estimate") and "TGL" in jtn:
+            leads.append({"src": gls["jobId"], "emp": gls.get("employeeId"),
+                          "can": lj.get("jobStatus") == "Canceled"})
+    by_src = {}
+    for L in leads:
+        by_src.setdefault(L["src"], []).append(L)
+    leads = []
+    for grp in by_src.values():
+        live = [L for L in grp if not L["can"]]
+        leads.extend(live if live else grp[:1])
+
+    eids = list({L["emp"] for L in leads if L["emp"]})
+    emps = {}
+    for i in range(0, len(eids), 50):
+        for e in paged("/settings/v2/tenant/{tenant}/employees",
+                       {"ids": ",".join(map(str, eids[i:i+50]))}):
+            emps[e["id"]] = e.get("name", "")
+    by_tech = {}
+    for L in leads:
+        name = emps.get(L["emp"]) or None
+        if not name:
+            try:
+                r = st.api_get("/dispatch/v2/tenant/{tenant}/appointment-assignments",
+                               {"jobId": L["src"], "pageSize": 5})
+                names = [a.get("technicianName") for a in r.get("data", [])
+                         if a.get("active") and a.get("technicianName")]
+                name = names[0] if names else "Unassigned"
+            except Exception:
+                name = "Unassigned"
+        by_tech[name] = by_tech.get(name, 0) + 1
+    return len(leads), by_tech
+
+
 def main():
     n = _now(); today = n.date().isoformat(); hh = f"{n.hour:02d}"
     rev_rows = tgl_rows = sch_rows = None
@@ -278,6 +340,24 @@ def main():
 
     calls, tgls = count(rev_rows, tgl_rows)
     techs = per_tech(rev_rows, tgl_rows)
+    # TGLs count on their CREATION day (John's rule) — override the report's
+    # scheduled-date lens with the entity-API count; report stays the fallback.
+    try:
+        e_tot, e_by = _entity_tgls_today(today)
+        tgls = e_tot
+        seen = set()
+        for t in techs:
+            t["tgls"] = e_by.get(t["name"], 0)
+            t["rate"] = rate(t["tgls"], t["calls"])
+            seen.add(t["name"])
+        for n, c in e_by.items():
+            if n not in seen:
+                techs.append({"name": n, "calls": 0, "tgls": c, "rate": None, "rev": 0})
+        techs = [t for t in techs if t["calls"] or t["tgls"]]
+        techs.sort(key=lambda x: (-x["tgls"], -x["calls"], x["name"]))
+        print(f"TGL lens: entity created-today ({e_tot})")
+    except Exception as e:
+        print(f"entity TGL count failed ({e}); keeping report lens")
     sched = sched_metrics(sch_rows) if sch_rows else None
 
     st, _ = pget("hourly_state.json")
