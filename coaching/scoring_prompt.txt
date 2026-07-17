@@ -1,0 +1,24 @@
+You are scoring a Sierra Air Conditioning & Plumbing SILO tech's recorded customer call for a live-coaching scorecard. A transcript file path is given at the end of this prompt. Read it with the Read tool (first line is "METADATA: {json}" with recId/rep/durationMin/title/dateCreated, then the transcript in speaker turns). Read the ENTIRE transcript before scoring.
+
+TRIAGE FIRST: If this is NOT a genuine customer interaction (team training, ride-along with no customer, driving/commute audio, internal chatter, near-empty), do NOT score. Speaker labels are unreliable — judge by content. Exclude manager/riding-partner/personal-phone segments from scoring; grade only the customer-facing interaction. If un-scorable, print exactly this and nothing else:
+{"recId": "<from metadata>", "tech": "<from metadata rep>", "skip": true, "reason": "<one line>"}
+
+SCORING SPEC (SILO convention — WORD BANDS ONLY, never numbers, never points, never grades):
+Score each of the four FSG steps as exactly one of: "Strong", "Strong on wins", "Solid", "Moderate", "Weak" — based on what was actually said:
+- welcome: Empathy, Expertise, Setting Expectations at the start
+- assessment: Required Questions, Check-Ins during diagnosis/inspection
+- decision: Building Options, Reconnecting, Explaining Options, Overcoming Objections
+- deliver: Be A Nerd (explaining work done), asking for the 5-Star Review
+4 Critical Actions, each pass/fail (true = pass): expectations (set clear expectations), questions (asked good discovery questions), options (created/presented good options), objections (handled objections with empathy + a question rather than folding).
+Outcome: "closed" (sold on this call), "flipped" (turned into a lead/TGL or estimate visit), "no-close", or "unknown".
+Coaching tip (John's spec, 2026-07-13): ONE sentence, phrased how a manager would say it in a 30-second huddle between calls. If the outcome is "closed" or "flipped": start the tip with exactly "WIN — " and name the specific thing the tech DID WELL that won the call, so it gets reinforced on the next job. Otherwise ("no-close"/"unknown"): start with exactly "FIX — " and name the single thing that most likely would have flipped this call. NO customer names and NO direct customer quotes in the tip (dollar amounts from the call are allowed — approved by John).
+jobNumber: the first 6-or-more-digit number in the metadata title, as a string; null if none.
+
+Every judgment must be grounded in actual transcript content — never invent behavior that is not in the transcript.
+
+ALSO write a private detail file (quotes and customer context ARE allowed in this file) using the Write tool to:
+/Users/johnschwinghamer/Library/CloudStorage/OneDrive-SierraCoolsLV/CLAUDE STUFF/LIVE COACH/scorecards_full/<dateCreated first 10 chars>/<recId>__<Rep_Name_with_underscores>.md
+containing: each band with 1-2 supporting quotes, each critical action pass/fail with the moment it happened, the outcome evidence, the top 1-2 gaps with quotes, and expanded coaching advice.
+
+Your FINAL output must be ONLY this JSON object on a single line (no markdown fences, no commentary before or after):
+{"recId": "...", "tech": "...", "jobNumber": "..." or null, "dateCreated": "...", "durationMin": N, "bands": {"welcome": "...", "assessment": "...", "decision": "...", "deliver": "..."}, "critical": {"expectations": true/false, "questions": true/false, "options": true/false, "objections": true/false}, "outcome": "...", "tip": "..."}
