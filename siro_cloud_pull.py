@@ -280,17 +280,20 @@ def main():
                   "and --dry not set — nothing to do this run.")
             return 0
 
+    # Secrets PRESENT but not working = a real failure that must show red in
+    # Actions (a green no-op run masks a bad secret — learned 2026-07-17 #3).
+    # Only the secrets-entirely-absent case above exits 0.
     try:
         token = mint_token(api_key, client_id, client_secret, user_id)
     except Exception as e:
-        print(f"Failed to mint Siro access token: {e}")
-        return 0
+        print(f"FAILED to mint Siro access token (check SIRO_* secrets): {e}")
+        return 1
 
     try:
         recs = list_recordings(token)
     except Exception as e:
-        print(f"Failed to list Siro recordings: {e}")
-        return 0
+        print(f"FAILED to list Siro recordings: {e}")
+        return 1
 
     state = load_state()
     pending = [r for r in recs
@@ -304,8 +307,8 @@ def main():
             gtok, new_rt = graph_token(graph_client_id, graph_tenant_id, graph_refresh_token)
             rotate_graph_secret(new_rt, graph_refresh_token)
         except Exception as e:
-            print(f"Failed to get a Microsoft Graph token: {e}")
-            return 0
+            print(f"FAILED to get a Microsoft Graph token (check GRAPH_* secrets / Files.ReadWrite consent): {e}")
+            return 1
     else:
         DRY_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
