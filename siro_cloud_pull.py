@@ -61,6 +61,8 @@ API_BASE = "https://api.siro.ai/v1/core"
 
 LOOKBACK_DAYS = 3          # pull finished recordings from the last N days
 STATE_PRUNE_DAYS = 14      # keep pulled-ids in state for N days, then drop
+MIN_DURATION_MS = 300_000  # skip recordings under 5 minutes — same floor as both
+                           # Mac writers (siro_livecoach_poll / siro_download_mac)
 
 GRAPH_FOLDER = "CLAUDE STUFF/SILO TRANSCRIPTS"
 SELF = os.environ.get("GITHUB_REPOSITORY", "johnschwinghamer94-lab/sierra-ropp-hourly")
@@ -299,10 +301,17 @@ def main():
         return 1
 
     state = load_state()
+    # Ready = the recording has a settled duration ≥ the floor, exactly like the
+    # Mac writers. Do NOT gate on rec["result"]: that's Siro's sales-outcome tag
+    # (flipped/closed/unknown), which can land HOURS after the call — gating on
+    # it left the repo mirror 2/26 transcripts behind the Mac intraday
+    # (2026-07-17). Still-processing calls are caught by the no-utterances
+    # PENDING retry below.
     pending = [r for r in recs
-               if r.get("result") != "in progress" and r.get("id") not in state["done"]]
+               if (r.get("durationInMilliseconds") or 0) >= MIN_DURATION_MS
+               and r.get("id") not in state["done"]]
     print(f"{len(recs)} recording(s) in the last {LOOKBACK_DAYS} day(s), "
-          f"{len(pending)} finished & not yet pulled")
+          f"{len(pending)} ready (≥5 min) & not yet pulled")
 
     gtok = None
     if not args.dry and graph_client_id:
