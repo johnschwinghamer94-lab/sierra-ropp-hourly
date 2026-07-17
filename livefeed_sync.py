@@ -220,6 +220,9 @@ def fetch_today():
         # (IAQ / Thermostat / Humidifier), and plumbing estimates.
         if not (_jtn.startswith("Estimate") and "TGL" in _jtn):
             continue
+        # mis-created tickets are not TGLs in any sense — drop before every consumer
+        if str(lj.get("jobNumber", "")) in NOT_A_TGL:
+            continue
         # credited tech: ST's own lead-source employee first, else source-job tech
         tech = emps.get(gls.get("employeeId")) or (all_job_tech.get(src) or [None])[0]
         dtl = parse_utc(lj.get("createdOn"))
@@ -583,6 +586,11 @@ def sheet_name(full):
 # These techs bonus under another manager — never logged to John's sheet.
 SHEET_EXCLUDE = {"Andrew Alonso", "Brandon Moreno", "Cole Pantol", "Francisco Valencia",
                  "Mario Castro", "Nathan Colquitt", "Robert Silinzy"}
+
+# Tickets created in error that must NEVER appear as TGLs — board, count, bonus
+# sheet, events. Distinct from canceled TGLs (can:true), which DO still count
+# (John 2026-07-17). Key = the lead job's jobNumber.
+NOT_A_TGL = {"667275619"}   # 2026-07-17 Jose / TAPASAK DIANA — ticket made wrong (John)
 
 def sheet_log(row):
     """POST a TGL event to John's bonus-sheet Apps Script webhook (env
