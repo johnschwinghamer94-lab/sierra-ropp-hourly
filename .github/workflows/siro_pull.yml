@@ -29,7 +29,8 @@ jobs:
         run: |
           git config user.email "johnschwinghamer94@gmail.com"
           git config user.name "John Schwinghamer"
-          git add siro_pull_state.json transcripts/
+          git add siro_pull_state.json
+          [ -d transcripts ] && git add transcripts/
           if git diff --cached --quiet; then
             echo "no state change"
             exit 0
