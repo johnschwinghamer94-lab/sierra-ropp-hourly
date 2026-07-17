@@ -1,9 +1,11 @@
 name: Siro transcript pull (cloud)
 on:
   workflow_dispatch:
-    # No cron yet — enabled after SIRO_*/GRAPH_* secrets are added and a manual
-    # dispatch run is verified. This replaces the Mac's browser-based transcript
-    # downloads with Siro's REST API + a Microsoft Graph upload to OneDrive.
+  schedule:
+    # Every ~30 min during Vegas work hours (6:00 AM – 9:59 PM PT = 13:00–04:59 UTC),
+    # off the :00/:30 marks. Verified working via dispatch on 2026-07-17 (run #6).
+    - cron: "7,37 13-23 * * *"
+    - cron: "7,37 0-4 * * *"
 permissions:
   contents: write   # allow committing the updated siro_pull_state.json back
 jobs:
