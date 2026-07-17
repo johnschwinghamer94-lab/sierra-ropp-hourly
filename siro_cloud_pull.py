@@ -49,6 +49,11 @@ import requests
 HERE = Path(__file__).resolve().parent
 STATE_FILE = HERE / "siro_pull_state.json"
 DRY_OUTPUT_DIR = HERE / "siro_dry_output"
+# In-repo mirror of every pulled transcript, committed by the workflow so the
+# claude.ai cloud routines (plan generation / scoring) can read transcripts
+# straight from the repo without holding any credentials. Owner-approved
+# private-repo storage (2026-07-16).
+TRANSCRIPTS_DIR = HERE / "transcripts"
 
 TEAM_ID = "Q42L8L"
 TOKEN_URL_FMT = "https://functions.siro.ai/api-externalApi/v1/core/oauth/apps/{client_id}/access-token"
@@ -304,7 +309,7 @@ def main():
     else:
         DRY_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    pulled = skipped_exists = errors = 0
+    pulled = skipped_exists = errors = mirrored = 0
     for rec in pending:
         rid = rec.get("id")
         rep = f"{rec.get('repFirstName','')} {rec.get('repLastName','')}".strip() or "Unknown"
@@ -325,6 +330,11 @@ def main():
                 print(f"  DRY WROTE: {date_str}/{fname}")
                 pulled += 1
             else:
+                repo_file = TRANSCRIPTS_DIR / date_str / fname
+                if not repo_file.exists():
+                    repo_file.parent.mkdir(parents=True, exist_ok=True)
+                    repo_file.write_bytes(content)
+                    mirrored += 1
                 rel_path = f"{GRAPH_FOLDER}/{date_str}/{fname}"
                 if graph_item_exists(gtok, rel_path):
                     print(f"  SKIP (already exists on OneDrive): {rel_path}")
@@ -341,7 +351,8 @@ def main():
 
     if not args.dry:
         save_state(state)
-    print(f"Done — {pulled} pulled, {skipped_exists} skipped (already on OneDrive), {errors} error(s).")
+    print(f"Done — {pulled} pulled, {skipped_exists} skipped (already on OneDrive), "
+          f"{mirrored} mirrored into transcripts/, {errors} error(s).")
     return 0
 
 
