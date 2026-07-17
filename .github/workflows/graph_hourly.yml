@@ -44,3 +44,23 @@ jobs:
           else
             echo "outside ops hours (PT hour $H) — skip"
           fi
+      # Same heartbeat arms the Siro transcript pull on the :00/:30 ticks (John's
+      # 30-min cadence) — siro_pull's own GitHub cron fired 1 of 12 slots on
+      # 2026-07-17 morning. siro_pull.yml's concurrency group collapses any
+      # overlap with a late native-cron firing.
+      - name: Arm Siro transcript pull (6a–10p PT, :00/:30 ticks)
+        if: always()
+        env:
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+        run: |
+          H=$(TZ=America/Los_Angeles date +%-H)
+          M=$(TZ=America/Los_Angeles date +%-M)
+          if [ "$H" -ge 6 ] && [ "$H" -lt 22 ] && { [ "$M" -lt 15 ] || { [ "$M" -ge 30 ] && [ "$M" -lt 45 ]; }; }; then
+            curl -s -o /dev/null -w "arm siro_pull -> HTTP %{http_code}\n" -X POST \
+              -H "Authorization: token $DASHBOARD_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/${{ github.repository }}/actions/workflows/siro_pull.yml/dispatches \
+              -d '{"ref":"main"}'
+          else
+            echo "skip (PT $H:$M — siro pull runs on :00/:30 ticks, 6a-10p)"
+          fi
