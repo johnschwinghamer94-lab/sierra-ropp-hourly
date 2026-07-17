@@ -272,13 +272,16 @@ def main():
               "files) — nothing to do this run.")
         return 0
 
+    # Graph/OneDrive is OPTIONAL: the repo transcripts/ mirror is the primary
+    # store (cloud routines read it). Files.ReadWrite needs Sierra IT admin
+    # consent (requested 2026-07-17, pending) — until granted, the upload is
+    # skipped and the pull still succeeds via the repo mirror.
     graph_client_id = graph_tenant_id = graph_refresh_token = None
     if not args.dry:
         graph_client_id, graph_tenant_id, graph_refresh_token = get_graph_creds()
         if not all([graph_client_id, graph_tenant_id, graph_refresh_token]):
-            print("Missing Graph credentials (GRAPH_CLIENT_ID, GRAPH_TENANT_ID, GRAPH_REFRESH_TOKEN) "
-                  "and --dry not set — nothing to do this run.")
-            return 0
+            print("NOTE: Graph credentials absent — OneDrive upload disabled, repo mirror only.")
+            graph_client_id = None
 
     # Secrets PRESENT but not working = a real failure that must show red in
     # Actions (a green no-op run masks a bad secret — learned 2026-07-17 #3).
@@ -302,14 +305,15 @@ def main():
           f"{len(pending)} finished & not yet pulled")
 
     gtok = None
-    if not args.dry:
+    if not args.dry and graph_client_id:
         try:
             gtok, new_rt = graph_token(graph_client_id, graph_tenant_id, graph_refresh_token)
             rotate_graph_secret(new_rt, graph_refresh_token)
         except Exception as e:
-            print(f"FAILED to get a Microsoft Graph token (check GRAPH_* secrets / Files.ReadWrite consent): {e}")
-            return 1
-    else:
+            print(f"NOTE: no Microsoft Graph token (Files.ReadWrite admin consent pending?) — "
+                  f"OneDrive upload disabled this run, repo mirror only. Detail: {e}")
+            gtok = None
+    elif args.dry:
         DRY_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     pulled = skipped_exists = errors = mirrored = 0
@@ -338,14 +342,16 @@ def main():
                     repo_file.parent.mkdir(parents=True, exist_ok=True)
                     repo_file.write_bytes(content)
                     mirrored += 1
-                rel_path = f"{GRAPH_FOLDER}/{date_str}/{fname}"
-                if graph_item_exists(gtok, rel_path):
-                    print(f"  SKIP (already exists on OneDrive): {rel_path}")
-                    skipped_exists += 1
-                else:
-                    graph_upload(gtok, rel_path, content)
-                    print(f"  UPLOADED: {rel_path}")
                     pulled += 1
+                    print(f"  MIRRORED: transcripts/{date_str}/{fname}")
+                if gtok:
+                    rel_path = f"{GRAPH_FOLDER}/{date_str}/{fname}"
+                    if graph_item_exists(gtok, rel_path):
+                        print(f"  SKIP (already exists on OneDrive): {rel_path}")
+                        skipped_exists += 1
+                    else:
+                        graph_upload(gtok, rel_path, content)
+                        print(f"  UPLOADED: {rel_path}")
             state["done"][rid] = datetime.now(timezone.utc).isoformat()
         except Exception as e:
             print(f"  ERROR on recording {rid} ({rep} — {title[:50]}): {e}")
