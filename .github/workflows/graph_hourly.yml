@@ -36,11 +36,19 @@ jobs:
         run: |
           H=$(TZ=America/Los_Angeles date +%-H)
           if [ "$H" -ge 6 ] && [ "$H" -lt 22 ]; then
-            curl -s -o /dev/null -w "arm livefeed -> HTTP %{http_code}\n" -X POST \
-              -H "Authorization: token $DASHBOARD_TOKEN" \
-              -H "Accept: application/vnd.github+json" \
-              https://api.github.com/repos/${{ github.repository }}/actions/workflows/livefeed.yml/dispatches \
-              -d '{"ref":"main"}'
+            # only arm when a spare is not already waiting - extra dispatches
+            # replace the queued run and litter Actions with cancelled noise
+            API="https://api.github.com/repos/${{ github.repository }}/actions/workflows/livefeed.yml"
+            AUTH="Authorization: token $DASHBOARD_TOKEN"
+            A=$(curl -s -H "$AUTH" "$API/runs?status=in_progress&per_page=1" | jq '.total_count')
+            W=$(curl -s -H "$AUTH" "$API/runs?status=queued&per_page=1" | jq '.total_count')
+            if [ "${A:-0}" -ge 1 ] && [ "${W:-0}" -ge 1 ]; then
+              echo "livefeed active with a spare queued - no arm needed"
+            else
+              curl -s -o /dev/null -w "arm livefeed -> HTTP %{http_code}\n" -X POST \
+                -H "$AUTH" -H "Accept: application/vnd.github+json" \
+                "$API/dispatches" -d '{"ref":"main"}'
+            fi
           else
             echo "outside ops hours (PT hour $H) — skip"
           fi
