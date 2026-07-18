@@ -1,9 +1,5 @@
-<!-- Copied from the Mac scheduled task ~/.claude/scheduled-tasks/silo-coaching-plans/SKILL.md on 2026-07-16; this repo copy is now the source of truth for the cloud plan-generation routine. -->
+<!-- Copied from the Mac scheduled task ~/.claude/scheduled-tasks/silo-coaching-plans/SKILL.md on 2026-07-16; this repo copy is now the source of truth for the cloud plan-generation routine. Updated 2026-07-17: plans now build from scorecards_full cards (primary) with raw transcripts as fallback — token optimization. CLOUD PATH NOTES: transcripts live in transcripts/<date>/ in this repo; full scorecards will live in scorecards_full/<date>/ in this repo once the cloud scoring routine exists — until then ALL calls are "uncarded" and the transcript fallback applies to everything. Rubric: coaching/FSG-Grading-Rubric.md; exemplar: coaching/EXEMPLAR_Benjamin_Wyllie.html; output: plans/<date>/. -->
 
----
-name: silo-coaching-plans
-description: Generate FSG coaching plan HTMLs from Siro transcripts — daily at 7 AM, after the 6 AM transcript pull
----
 
 You are generating daily FSG coaching plans for Sierra Air Conditioning & Plumbing's Silo Techs team. This runs every morning at 7 AM, AFTER the 6 AM launchd script has pulled the prior day's transcripts.
 
@@ -27,11 +23,25 @@ State clearly which TARGET date you resolved and why. The output folder is named
 ## Step 1 — Load reference files
 Read FSG-Grading-Rubric.md and EXEMPLAR_Benjamin_Wyllie.html in full. Copy the EXEMPLAR's exact <style> block and HTML structure for every plan you generate.
 
-## Step 2 — Load transcripts
-Read every .txt file from the TARGET folder only (Transcripts root/TARGET/). Skip _summary.txt files. The transcripts store one word per line — reflow them into readable speaker turns before analyzing. If a file is empty or only a header (no dialogue), skip it and note it.
+## Step 2 — Load scorecards FIRST (primary input), raw transcripts only as fallback
+The live-coach pipeline already scored each call during the day and saved a full
+detail card (bands per section, verbatim transcript quotes as Evidence, gaps,
+critical-action pass/fails) to: BASE/LIVE COACH/scorecards_full/TARGET/*.md
+(also check scorecards_full/TARGET+1/ — evening calls after ~5 PM file under the
+next UTC date). These cards are the PRIMARY analysis input — do NOT re-read raw
+transcripts for calls that have a card. Quotes in a card's Evidence lines are
+verbatim from the transcript and may be used directly in the plan.
+
+Fallback ONLY for uncarded calls: list the TARGET transcript folder
+(Transcripts root/TARGET/, skip _summary.txt) and match each transcript
+(rep + Job # / customer in the filename) against the cards (rep + Job # in the
+card header). For transcripts with NO matching card, read the raw .txt (one word
+per line — reflow into speaker turns). If a needed quote for a card-backed call
+isn't in the card, you may open that one call's transcript — but only that one.
 
 ## Step 3 — Triage every recording
-Before scoring anything, triage each transcript:
+Card-backed calls were already screened during scoring — take their bands/outcome
+as given. Apply this triage to the FALLBACK transcripts (uncarded calls) you read:
 - SCORE: genuine in-home customer sales or maintenance calls where a rep is interacting with a homeowner/decision-maker.
 - SKIP (list with one-line reason): team training sessions, ride-alongs with no customer, driving/commute recordings, internal chatter, empty/near-empty recordings, and calls under ~5 minutes with no real customer dialogue.
 - Speaker labels are unreliable — read content, not just labels. "Customer:" turns may be a trainer, GPS, or radio. Never invent behavior not in the transcript.
@@ -57,9 +67,12 @@ Rate each section and its behaviors:
 - 4 Critical Actions (Pass/Fail): Setting clear expectations, Asking good questions, Creating good options, Handling objections
 
 **Number rule — read carefully:** The ONLY number allowed anywhere in the report is the **close-rate percentage** = (rep's closed/flipped calls ÷ their gradeable calls), e.g. "44%". Do NOT output a total score, a /170, a points value, an A–F grade, or a grade %. Every category is a word band.
-**Every band must be backed by a real quote** from that rep's transcripts.
+**Every band must be backed by a real quote** from that rep's transcripts — the
+Evidence quotes inside the scorecards ARE transcript quotes and satisfy this rule.
 Any missed Critical Action = automatic FAIL on that call regardless of bands. Flag it prominently.
-Read the ENTIRE transcript for each call — do not truncate or summarize early. Every quote used in the plan must come directly from the transcript text.
+For FALLBACK (uncarded) calls: read the ENTIRE transcript — do not truncate or
+summarize early. Every quote used in the plan must trace to transcript text
+(directly, or via a card's Evidence line).
 
 ## Step 5 — Generate HTML coaching plans
 Use the EXEMPLAR_Benjamin_Wyllie.html's exact <style> block and class structure. Every plan must include:
