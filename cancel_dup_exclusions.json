@@ -151,6 +151,7 @@
   "645269118",
   "645349361",
   "645403905",
+  "645557866",
   "645583705",
   "645588933",
   "645617009",
@@ -353,9 +354,9 @@
   "660462372",
   "661039114"
  ],
- "trueDupsTotal": 350,
- "excludedCount": 343,
+ "trueDupsTotal": 351,
+ "excludedCount": 344,
  "asOf": "2026-07-18",
  "rule": "Exclude a canceled Estimate/TGL ticket only if a duplicate TGL ticket exists at the same location within 21 days AND that partner job was not canceled. If both are canceled it still counts.",
- "note": "* 350 true duplicate TGL tickets identified in cancellations. 343 excluded here (duplicate of a job that was completed). 7 retained (both tickets canceled)."
+ "note": "* 351 true duplicate TGL tickets identified in cancellations. 344 excluded here (duplicate of a job that was completed). 7 retained (both tickets canceled)."
 }
