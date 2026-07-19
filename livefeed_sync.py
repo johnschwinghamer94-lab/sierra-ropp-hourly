@@ -776,6 +776,42 @@ def arm_next():
     except Exception as ex:
         log("WARN: could not arm successor: " + repr(ex)[:150])
 
+_HOURLY_GUARD = {"t": 0.0}
+
+def keep_hourly_fresh():
+    """Today-tab freshness guard (John, 2026-07-19): when the PC's 3-minute
+    dispatcher is asleep, hourly.json only updates on cron-job.org's quarter
+    hours — one failed tick then means a ~30-min gap and a STALE banner (it
+    fired 11:45a today). This relay is awake every 90s anyway, so every ~5 min
+    it checks graph_hourly's latest run and dispatches one if nothing started
+    in the last 4.5 min. While the PC dispatcher is active this never fires."""
+    if time.time() - _HOURLY_GUARD["t"] < 270:
+        return
+    _HOURLY_GUARD["t"] = time.time()
+    base = "https://api.github.com/repos/johnschwinghamer94-lab/sierra-ropp-hourly/actions/workflows/graph_hourly.yml"
+    hdrs = {"Authorization": "token " + os.environ["DASHBOARD_TOKEN"],
+            "Accept": "application/vnd.github+json", "User-Agent": "silo-livefeed"}
+    try:
+        req = urllib.request.Request(base + "/runs?per_page=1", headers=hdrs)
+        with urllib.request.urlopen(req, timeout=30) as r:
+            runs = json.loads(r.read()).get("workflow_runs", [])
+        age_min = None
+        if runs:
+            started = datetime.strptime(runs[0]["run_started_at"],
+                                        "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+            age = (datetime.now(timezone.utc) - started).total_seconds()
+            age_min = int(age // 60)
+            if age < 270 or runs[0]["status"] in ("queued", "in_progress", "pending"):
+                return
+        req = urllib.request.Request(base + "/dispatches",
+            data=json.dumps({"ref": "main"}).encode(), method="POST",
+            headers=dict(hdrs, **{"Content-Type": "application/json"}))
+        urllib.request.urlopen(req, timeout=30)
+        log("hourly freshness guard: dispatched graph_hourly (last run %s min ago)"
+            % ("?" if age_min is None else age_min))
+    except Exception as ex:
+        log("WARN hourly guard: " + repr(ex)[:120])
+
 def cloud_seed_state():
     """Start a relay session from the state the previous session committed."""
     txt = gh_fetch("livefeed_state.json")
@@ -887,6 +923,7 @@ def cloud_main():
                 log("cycle -> " + str(r))
             except Exception as ex:
                 log("cycle ERROR: " + repr(ex)[:300])
+            keep_hourly_fresh()
         time.sleep(CYCLE_SECS)
 
 def main():
