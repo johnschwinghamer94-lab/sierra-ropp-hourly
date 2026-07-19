@@ -214,11 +214,19 @@ def fetch_today():
             if dtl and src not in install_by_src:
                 install_by_src[src] = fmt_t(dtl)
             continue
-        # Only REPLACEMENT TGL estimates count (John, 2026-07-13): job type must be
-        # in the "Estimate … TGL" family (Estimate AC TGL, Estimate Furnace TGL, …).
-        # Excludes plain/marketed estimates (Estimate AC, Costco), accessory estimates
-        # (IAQ / Thermostat / Humidifier), and plumbing estimates.
-        if not (_jtn.startswith("Estimate") and "TGL" in _jtn):
+        # Count-it rule (John, 2026-07-18, supersedes the strict 7/13 family rule):
+        # a lead-LINKED estimate is a TGL even when the booker forgot the "TGL"
+        # job type (burned: Noah's Fri 7/17 lead from call 667461628 booked as
+        # plain "Estimate AC" — board said 4, ST's report said 5). Marketed and
+        # Costco estimates never carry a jobGeneratedLeadSource link, so the link
+        # itself is the real gate; only accessory / plumbing / Costco estimate
+        # types stay excluded per John.
+        if not _jtn.startswith("Estimate"):
+            continue
+        _l = _jtn.lower()
+        if "tgl" not in _l and any(x in _l for x in (
+                "iaq", "thermostat", "humidifier", "air scrubber", "duct clean",
+                "plumb", "water heater", "water treatment", "costco")):
             continue
         # mis-created tickets are not TGLs in any sense — drop before every consumer
         if str(lj.get("jobNumber", "")) in NOT_A_TGL:
