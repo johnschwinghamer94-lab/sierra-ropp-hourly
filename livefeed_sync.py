@@ -38,6 +38,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import st_client as st
 
+# flip-day attribution cache: lead job id -> True (counts today) / False (never
+# will). Session-lifetime only; positives stop the per-cycle appointment lookups.
+_FLIP_DAY_CACHE = {}
+
 CLOUD = os.environ.get("LIVEFEED_CLOUD") == "1"
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO = Path(os.environ.get("LIVEFEED_REPO", r"C:\Users\johns\sierra-ropp-dashboard"))
@@ -234,6 +238,62 @@ def fetch_today():
         # credited tech: ST's own lead-source employee first, else source-job tech
         tech = emps.get(gls.get("employeeId")) or (all_job_tech.get(src) or [None])[0]
         dtl = parse_utc(lj.get("createdOn"))
+        dept_leads.append({"id": lj["id"], "number": lj.get("jobNumber", ""),
+                           "src": src, "tech": tech, "custId": lj.get("customerId"),
+                           "t": fmt_t(dtl) if dtl else "",
+                           "iso": lj.get("createdOn") or "",
+                           "can": lj.get("jobStatus") == "Canceled"})
+
+    # Flip-day attribution (John, 2026-07-18): a PRE-BOOKED lead counts on the
+    # day the TECH ran the source call and flipped it, not the day the ticket
+    # was typed in. Burned: Noah's lead for call 667461628 was booked Fri 7 PM;
+    # the CA's estimate ran Saturday, the customer wanted repairs, Noah went out
+    # SATURDAY and flipped it back to the CA — that is a Saturday TGL, and the
+    # board read 4 while ServiceTitan read 5. Candidates are rare: leads created
+    # in the prior 3 days whose source call has an appointment TODAY and had
+    # none on the day the lead was created (a same-day lead is already counted
+    # on its created day — no double attribution).
+    _seen_srcs = {L["src"] for L in dept_leads}
+    _today_local = datetime.now().astimezone().date()
+    for lj in paged("/jpm/v2/tenant/{tenant}/jobs",
+                    {"createdOnOrAfter": iso(day0 - timedelta(days=3)),
+                     "createdBefore": iso(day0)}):
+        gls = lj.get("jobGeneratedLeadSource") or {}
+        src = gls.get("jobId")
+        if not src or src in _seen_srcs:
+            continue
+        _jtn = jts.get(lj.get("jobTypeId")) or ""
+        if not _jtn.startswith("Estimate"):
+            continue
+        _l = _jtn.lower()
+        if "tgl" not in _l and any(x in _l for x in (
+                "iaq", "thermostat", "humidifier", "air scrubber", "duct clean",
+                "plumb", "water heater", "water treatment", "costco")):
+            continue
+        if str(lj.get("jobNumber", "")) in NOT_A_TGL:
+            continue
+        cached = _FLIP_DAY_CACHE.get(lj["id"])
+        if cached is False:
+            continue
+        if cached is None:
+            try:
+                appts_src = st.api_get("/jpm/v2/tenant/{tenant}/appointments",
+                                       {"jobId": src, "pageSize": 50}).get("data", [])
+            except Exception:
+                continue
+            _days = set()
+            for a in appts_src:
+                _ad = parse_utc(a.get("start"))
+                if _ad:
+                    _days.add(_ad.date())
+            cdt_ = parse_utc(lj.get("createdOn"))
+            is_flip_today = (_today_local in _days) and not (cdt_ and cdt_.date() in _days)
+            if _today_local in _days or (cdt_ and (_today_local - cdt_.date()).days >= 3):
+                _FLIP_DAY_CACHE[lj["id"]] = is_flip_today   # verdict final once visited/aged out
+            if not is_flip_today:
+                continue
+        dtl = parse_utc(lj.get("createdOn"))
+        tech = emps.get(gls.get("employeeId")) or (all_job_tech.get(src) or [None])[0]
         dept_leads.append({"id": lj["id"], "number": lj.get("jobNumber", ""),
                            "src": src, "tech": tech, "custId": lj.get("customerId"),
                            "t": fmt_t(dtl) if dtl else "",
