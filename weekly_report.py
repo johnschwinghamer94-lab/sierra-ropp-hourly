@@ -16,7 +16,7 @@ if not _fp.exists() and os.environ.get("ST_CREDS_JSON", "").strip():
 
 sys.path.insert(0, str(Path(__file__).parent))
 import st_client as st  # noqa: E402
-from livefeed_sync import paged, chunked_get, SHEET_EXCLUDE  # noqa: E402
+from livefeed_sync import paged, chunked_get, lead_sameday, SHEET_EXCLUDE  # noqa: E402
 
 # ---- date range: last full Mon-Sun week vs the one before ----
 args = sys.argv[1:]
@@ -46,7 +46,8 @@ def week(start, end):
             src = gls.get("jobId")
             if not src or not is_tgl(jts.get(lj.get("jobTypeId")) or ""): continue
             if emps.get(gls.get("employeeId")) in SHEET_EXCLUDE: continue
-            tg.append({"src": str(src), "lead": lj["id"], "tech": emps.get(gls.get("employeeId")) or "?"})
+            tg.append({"src": str(src), "lead": lj["id"], "date": d.isoformat(),
+                       "tech": emps.get(gls.get("employeeId")) or "?"})
         d += timedelta(days=1)
     ljs = {j["id"]: j for j in chunked_get("/jpm/v2/tenant/{tenant}/jobs", [t["lead"] for t in tg])}
     sold = set()
@@ -61,17 +62,19 @@ def week(start, end):
         pool = [x for x in g if sof(x["lead"]) != "Canceled"] or g
         pool.sort(key=lambda x: (x["lead"] not in sold, sof(x["lead"]) != "Completed"))
         chosen.append(pool[0])
-    a = {"created": 0, "ran": 0, "sold": 0, "canceled": 0}
-    per = defaultdict(lambda: {"created": 0, "sold": 0})
+    a = {"created": 0, "ran": 0, "sold": 0, "canceled": 0, "flip": 0}
+    per = defaultdict(lambda: {"created": 0, "ran": 0, "sold": 0, "flip": 0})
     for t in chosen:
-        stj = sof(t["lead"])
-        a["created"] += 1
+        stj = sof(t["lead"]); p = per[t["tech"]]
+        a["created"] += 1; p["created"] += 1
         if stj == "Canceled": a["canceled"] += 1; continue
-        if stj == "Completed": a["ran"] += 1
-        s = t["lead"] in sold
-        a["sold"] += 1 if s else 0
-        per[t["tech"]]["created"] += 1; per[t["tech"]]["sold"] += 1 if s else 0
-    a["close"] = round(a["sold"] / a["ran"] * 100) if a["ran"] else 0
+        if stj != "Completed": continue                      # not run yet
+        a["ran"] += 1; p["ran"] += 1
+        if t["lead"] in sold: a["sold"] += 1; p["sold"] += 1
+        if lead_sameday(t["lead"], t["date"]) is True:       # ran the same day it was created = flip
+            a["flip"] += 1; p["flip"] += 1
+    a["close"] = round(a["sold"] / a["ran"] * 100) if a["ran"] else 0   # Sold / Ran (CA close-rate math)
+    a["fliprate"] = round(a["flip"] / a["ran"] * 100) if a["ran"] else 0  # same-day / Ran
     return a, per
 
 lw, per = week(*LW)
@@ -109,19 +112,20 @@ def arrow(dv, good_up=True):
 tiles = [("TGLs CREATED", lw["created"], lw["created"] - pw["created"], True, ""),
          ("SOLD", lw["sold"], lw["sold"] - pw["sold"], True, ""),
          ("CLOSE RATE", lw["close"], lw["close"] - pw["close"], True, "%"),
+         ("FLIP RATE", lw["fliprate"], lw["fliprate"] - pw["fliprate"], True, "%"),
          ("CANCELED", lw["canceled"], lw["canceled"] - pw["canceled"], False, "")]
-n = len(tiles); x0, x1, gap, ty, th = 0.06, 0.94, 0.022, 0.795, 0.095
+n = len(tiles); x0, x1, gap, ty, th = 0.06, 0.94, 0.018, 0.795, 0.095
 w = (x1 - x0 - gap * (n - 1)) / n
 for i, (lbl, val, dv, gu, suf) in enumerate(tiles):
     xx = x0 + i * (w + gap)
     ax = fig.add_axes([xx, ty, w, th]); ax.axis("off"); ax.set_xlim(0, 1); ax.set_ylim(0, 1)
-    ax.add_patch(FancyBboxPatch((0.04, 0.06), 0.92, 0.88, boxstyle="round,pad=0.0,rounding_size=0.10",
+    ax.add_patch(FancyBboxPatch((0.05, 0.06), 0.90, 0.88, boxstyle="round,pad=0.0,rounding_size=0.12",
                                 facecolor="#f6f8fc", edgecolor=LINE, lw=1.1, transform=ax.transAxes))
-    ax.text(0.5, 0.80, lbl, ha="center", va="center", fontsize=8.3, color=MUT, fontweight="bold")
-    ax.text(0.5, 0.48, f"{val}{suf}", ha="center", va="center", fontsize=26, color=INK, fontweight="bold")
+    ax.text(0.5, 0.80, lbl, ha="center", va="center", fontsize=7.6, color=MUT, fontweight="bold")
+    ax.text(0.5, 0.47, f"{val}{suf}", ha="center", va="center", fontsize=23, color=INK, fontweight="bold")
     ar, col = arrow(dv, gu)
-    ax.text(0.5, 0.17, f"{ar} {'+' if dv>0 else ''}{dv}{suf} WoW", ha="center", va="center",
-            fontsize=9, color=col, fontweight="bold")
+    ax.text(0.5, 0.16, f"{ar} {'+' if dv>0 else ''}{dv}{suf}", ha="center", va="center",
+            fontsize=8.5, color=col, fontweight="bold")
 
 # grouped bar: created / ran / sold
 axb = fig.add_axes([0.10, 0.45, 0.85, 0.235])
@@ -144,18 +148,23 @@ axb.spines["bottom"].set_color(LINE)
 # per-tech table (figure coords, top-down)
 rows = sorted(per.items(), key=lambda kv: (-kv[1]["sold"], -kv[1]["created"]))[:10]
 ftxt(0.06, 0.385, "By technician — last week", 12, INK, "bold")
-cols = [(0.06, "TECHNICIAN", "left"), (0.66, "CREATED", "right"),
-        (0.80, "SOLD", "right"), (0.94, "CLOSE %", "right")]
+ftxt(0.94, 0.386, "Close % = Sold ÷ Ran   ·   Flip % = same-day ÷ Ran", 8, MUT, ha="right")
+cols = [(0.06, "TECHNICIAN", "left"), (0.55, "CREATED", "right"), (0.65, "RAN", "right"),
+        (0.745, "SOLD", "right"), (0.855, "CLOSE %", "right"), (0.94, "FLIP %", "right")]
 for cx, ct, ha in cols:
-    ftxt(cx, 0.358, ct, 8.3, MUT, "bold", ha=ha)
+    ftxt(cx, 0.358, ct, 8.0, MUT, "bold", ha=ha)
 fig.add_artist(plt.Line2D([0.06, 0.94], [0.347, 0.347], color=LINE, lw=1, transform=fig.transFigure))
 ry = 0.325
 for tech, v in rows:
-    cr, so = v["created"], v["sold"]; cp = round(so / cr * 100) if cr else 0
+    cr, rn, so, fl = v["created"], v["ran"], v["sold"], v["flip"]
+    cp = round(so / rn * 100) if rn else 0
+    fp = round(fl / rn * 100) if rn else 0
     ftxt(0.06, ry, tech, 10.5, INK, ha="left")
-    ftxt(0.66, ry, str(cr), 10.5, INK, ha="right")
-    ftxt(0.80, ry, str(so), 10.5, BLUE, "bold", ha="right")
-    ftxt(0.94, ry, f"{cp}%", 10.5, (GREEN if cp >= 50 else INK), "bold" if cp >= 50 else "normal", ha="right")
+    ftxt(0.55, ry, str(cr), 10.5, INK, ha="right")
+    ftxt(0.65, ry, str(rn), 10.5, MUT, ha="right")
+    ftxt(0.745, ry, str(so), 10.5, BLUE, "bold", ha="right")
+    ftxt(0.855, ry, f"{cp}%" if rn else "—", 10.5, (GREEN if cp >= 50 else INK), "bold" if cp >= 50 else "normal", ha="right")
+    ftxt(0.94, ry, f"{fp}%" if rn else "—", 10.5, INK, ha="right")
     ry -= 0.026
 
 ftxt(0.06, 0.028, f"Generated {run.isoformat()}  ·  Source: ServiceTitan live API  ·  "
@@ -165,4 +174,5 @@ out = Path(__file__).parent / f"weekly_report_{LW[1].isoformat()}.pdf"
 fig.savefig(out, facecolor="white")
 print("wrote", out)
 print(f"created {pw['created']}->{lw['created']} sold {pw['sold']}->{lw['sold']} "
-      f"close {pw['close']}%->{lw['close']}% cxl {pw['canceled']}->{lw['canceled']}")
+      f"close {pw['close']}%->{lw['close']}% flip {pw['fliprate']}%->{lw['fliprate']}% "
+      f"cxl {pw['canceled']}->{lw['canceled']}")
