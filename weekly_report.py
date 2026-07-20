@@ -70,7 +70,7 @@ def week(start, end):
             gls = lj.get("jobGeneratedLeadSource") or {}
             src = gls.get("jobId")
             if not src or not is_tgl(jts.get(lj.get("jobTypeId")) or ""): continue
-            if emps.get(gls.get("employeeId")) in SHEET_EXCLUDE: continue
+            # dept-wide: every service tech's Estimate-TGL counts (no SILO-team filter)
             tg.append({"src": str(src), "lead": lj["id"], "date": d.isoformat(),
                        "tech": emps.get(gls.get("employeeId")) or "?"})
         d += timedelta(days=1)
@@ -183,8 +183,11 @@ for sp in ["top", "right", "left"]: axb.spines[sp].set_visible(False)
 axb.tick_params(left=False, labelleft=False, bottom=False); axb.set_ylim(0, top*1.18)
 axb.spines["bottom"].set_color(LINE)
 
-# per-tech table (all techs, with total)
-trows = sorted(per.items(), key=lambda kv: (-kv[1]["sold"], -kv[1]["created"]))
+# per-tech table (top techs by sold + an "others" roll-up + total)
+all_rows = sorted(per.items(), key=lambda kv: (-kv[1]["sold"], -kv[1]["created"]))
+Tc = sum(v["created"] for _, v in all_rows); Tr = sum(v["ran"] for _, v in all_rows); Ts = sum(v["sold"] for _, v in all_rows)
+TOP = 12
+trows = all_rows[:TOP]
 ftxt(0.06, 0.405, "By technician — last week", 12, INK, "bold")
 ftxt(0.94, 0.406, "Close % = Sold ÷ Ran", 8, MUT, ha="right")
 for cx, ct, ha in [(0.06, "TECHNICIAN", "left"), (0.62, "CREATED", "right"), (0.74, "RAN", "right"),
@@ -194,13 +197,20 @@ fig.add_artist(plt.Line2D([0.06, 0.94], [0.370, 0.370], color=LINE, lw=1, transf
 ry = 0.350
 for tech, v in trows:
     cr, rn, so = v["created"], v["ran"], v["sold"]; cp = round(so / rn * 100) if rn else 0
-    ftxt(0.06, ry, tech, 9.8, INK, ha="left")
-    ftxt(0.62, ry, str(cr), 9.8, INK, ha="right")
-    ftxt(0.74, ry, str(rn), 9.8, MUT, ha="right")
-    ftxt(0.85, ry, str(so), 9.8, BLUE, "bold", ha="right")
-    ftxt(0.94, ry, f"{cp}%" if rn else "—", 9.8, (GREEN if cp >= 50 else INK), "bold" if cp >= 50 else "normal", ha="right")
-    ry -= 0.0208
-Tc = sum(v["created"] for _, v in trows); Tr = sum(v["ran"] for _, v in trows); Ts = sum(v["sold"] for _, v in trows)
+    ftxt(0.06, ry, tech, 9.6, INK, ha="left")
+    ftxt(0.62, ry, str(cr), 9.6, INK, ha="right")
+    ftxt(0.74, ry, str(rn), 9.6, MUT, ha="right")
+    ftxt(0.85, ry, str(so), 9.6, BLUE, "bold", ha="right")
+    ftxt(0.94, ry, f"{cp}%" if rn else "—", 9.6, (GREEN if cp >= 50 else INK), "bold" if cp >= 50 else "normal", ha="right")
+    ry -= 0.0198
+others = all_rows[TOP:]
+if others:
+    oc = sum(v["created"] for _, v in others); orn = sum(v["ran"] for _, v in others); os_ = sum(v["sold"] for _, v in others)
+    ftxt(0.06, ry, f"+ {len(others)} others", 9.6, MUT, "normal", ha="left")
+    ftxt(0.62, ry, str(oc), 9.6, MUT, ha="right"); ftxt(0.74, ry, str(orn), 9.6, MUT, ha="right")
+    ftxt(0.85, ry, str(os_), 9.6, MUT, ha="right")
+    ftxt(0.94, ry, f"{round(os_/orn*100) if orn else 0}%", 9.6, MUT, ha="right")
+    ry -= 0.0198
 fig.add_artist(plt.Line2D([0.06, 0.94], [ry + 0.010, ry + 0.010], color=LINE, lw=1, transform=fig.transFigure))
 ftxt(0.06, ry - 0.004, "TOTAL", 10, INK, "bold")
 ftxt(0.62, ry - 0.004, str(Tc), 10, INK, "bold", ha="right")
@@ -210,7 +220,7 @@ ftxt(0.94, ry - 0.004, f"{round(Ts/Tr*100) if Tr else 0}%", 10, INK, "bold", ha=
 
 ftxt(0.06, 0.036, f"Flip denominator = ROPP-tagged completed calls, excl. Management-Removed ROPP "
      f"({lw['calls']} last wk / {pw['calls']} prior)", 7.6, MUT)
-ftxt(0.06, 0.021, f"Generated {run.isoformat()}   ·   ServiceTitan live API   ·   John's SILO team (excl. other managers' techs)", 7.4, MUT)
+ftxt(0.06, 0.021, f"Generated {run.isoformat()}   ·   ServiceTitan live API   ·   HVAC Service dept — all ROPP TGLs (dept-wide)", 7.4, MUT)
 
 out = Path(__file__).parent / f"weekly_report_{LW[1].isoformat()}.pdf"
 fig.savefig(out, facecolor="white")
