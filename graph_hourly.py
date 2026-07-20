@@ -219,7 +219,6 @@ def pget(path):
         r.raise_for_status()
     return None, None
 
-
 def pput(path, obj, sha, msg):
     body = {"message": msg, "content": base64.b64encode(json.dumps(obj).encode()).decode(),
             "branch": "main"}
@@ -233,7 +232,6 @@ def pput(path, obj, sha, msg):
         if attempt < 2:
             time.sleep(2 ** (attempt + 1))
     r.raise_for_status()
-
 
 def _ensure_st_creds():
     """Materialize ~/.servicetitan/sierra.json from the ST_CREDS_JSON env (GitHub secret)
