@@ -14,6 +14,7 @@ Secrets it needs (this private repo -> Settings -> Secrets -> Actions):
 """
 import os, re, io, json, base64
 from datetime import datetime
+import time
 import requests
 try:
     from zoneinfo import ZoneInfo
@@ -205,18 +206,33 @@ def rate(a, b):
 
 # ---------- publish shared state to the public repo ----------
 def pget(path):
-    r = requests.get(PUBAPI + path, headers=GH)
-    if r.status_code == 200:
-        j = r.json()
-        return json.loads(base64.b64decode(j["content"])), j["sha"]
+    for attempt in range(3):
+        r = requests.get(PUBAPI + path, headers=GH)
+        if r.status_code == 200:
+            j = r.json()
+            return json.loads(base64.b64decode(j["content"])), j["sha"]
+        if r.status_code == 404:
+            return None, None
+        if r.status_code >= 500 and attempt < 2:
+            time.sleep(2 ** (attempt + 1))
+            continue
+        r.raise_for_status()
     return None, None
 
 
 def pput(path, obj, sha, msg):
-    body = {"message": msg, "content": base64.b64encode(json.dumps(obj).encode()).decode(), "branch": "main"}
+    body = {"message": msg, "content": base64.b64encode(json.dumps(obj).encode()).decode(),
+            "branch": "main"}
     if sha:
         body["sha"] = sha
-    requests.put(PUBAPI + path, headers=GH, json=body).raise_for_status()
+    for attempt in range(3):
+        r = requests.put(PUBAPI + path, headers=GH, json=body)
+        if r.status_code < 500:
+            r.raise_for_status()
+            return
+        if attempt < 2:
+            time.sleep(2 ** (attempt + 1))
+    r.raise_for_status()
 
 
 def _ensure_st_creds():
