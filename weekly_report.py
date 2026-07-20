@@ -16,7 +16,18 @@ if not _fp.exists() and os.environ.get("ST_CREDS_JSON", "").strip():
 
 sys.path.insert(0, str(Path(__file__).parent))
 import st_client as st  # noqa: E402
-from livefeed_sync import paged, chunked_get, lead_sameday, SHEET_EXCLUDE  # noqa: E402
+from livefeed_sync import paged, chunked_get, SHEET_EXCLUDE  # noqa: E402
+
+ROPP_TAG, ROPP_REMOVED = 962027, 545867780   # "ROPP" tag / "Management Removed ROPP" tag
+def ropp_calls_ran(start, end):
+    """Calls ran = jobs completed in [start,end] tagged ROPP, excluding those also tagged
+    'Management Removed ROPP'. This is the flip-rate denominator (John's definition)."""
+    n = 0
+    for j in paged("/jpm/v2/tenant/{tenant}/jobs",
+                   {"tagTypeIds": ROPP_TAG, "completedOnOrAfter": start, "completedBefore": end}):
+        if ROPP_REMOVED not in set(j.get("tagTypeIds") or []):
+            n += 1
+    return n
 
 # ---- date range: last full Mon-Sun week vs the one before ----
 args = sys.argv[1:]
@@ -62,23 +73,25 @@ def week(start, end):
         pool = [x for x in g if sof(x["lead"]) != "Canceled"] or g
         pool.sort(key=lambda x: (x["lead"] not in sold, sof(x["lead"]) != "Completed"))
         chosen.append(pool[0])
-    a = {"created": 0, "ran": 0, "sold": 0, "canceled": 0, "flip": 0}
-    per = defaultdict(lambda: {"created": 0, "ran": 0, "sold": 0, "flip": 0})
+    a = {"created": 0, "ran": 0, "sold": 0, "canceled": 0}
+    per = defaultdict(lambda: {"created": 0, "ran": 0, "sold": 0})
     for t in chosen:
         stj = sof(t["lead"]); p = per[t["tech"]]
         a["created"] += 1; p["created"] += 1
         if stj == "Canceled": a["canceled"] += 1; continue
-        if lead_sameday(t["lead"], t["date"]) is True:       # same-day appointment (run OR not yet) = flip
-            a["flip"] += 1; p["flip"] += 1
         if stj != "Completed": continue                      # ran/close metrics need a completed job
         a["ran"] += 1; p["ran"] += 1
         if t["lead"] in sold: a["sold"] += 1; p["sold"] += 1
-    a["close"] = round(a["sold"] / a["ran"] * 100) if a["ran"] else 0        # Sold / Ran (CA close-rate math)
-    a["fliprate"] = round(a["flip"] / a["created"] * 100) if a["created"] else 0  # same-day / Created (incl. not-yet-run)
+    a["close"] = round(a["sold"] / a["ran"] * 100) if a["ran"] else 0   # Sold / Ran (CA close-rate math)
     return a, per
 
 lw, per = week(*LW)
 pw, _ = week(*PW)
+# flip rate = TGLs created / ROPP calls ran (tagged ROPP, excl. Management-Removed ROPP)
+lw["calls"] = ropp_calls_ran(iso(utc0(LW[0])), iso(utc0(LW[1] + timedelta(days=1))))
+pw["calls"] = ropp_calls_ran(iso(utc0(PW[0])), iso(utc0(PW[1] + timedelta(days=1))))
+lw["fliprate"] = round(lw["created"] / lw["calls"] * 100) if lw["calls"] else 0
+pw["fliprate"] = round(pw["created"] / pw["calls"] * 100) if pw["calls"] else 0
 
 # ---------- render ----------
 import matplotlib
@@ -148,27 +161,27 @@ axb.spines["bottom"].set_color(LINE)
 # per-tech table (figure coords, top-down)
 rows = sorted(per.items(), key=lambda kv: (-kv[1]["sold"], -kv[1]["created"]))[:10]
 ftxt(0.06, 0.385, "By technician — last week", 12, INK, "bold")
-ftxt(0.94, 0.386, "Close % = Sold ÷ Ran   ·   Flip % = same-day ÷ Created", 8, MUT, ha="right")
-cols = [(0.06, "TECHNICIAN", "left"), (0.55, "CREATED", "right"), (0.65, "RAN", "right"),
-        (0.745, "SOLD", "right"), (0.855, "CLOSE %", "right"), (0.94, "FLIP %", "right")]
+ftxt(0.94, 0.386, "Close % = Sold ÷ Ran", 8, MUT, ha="right")
+cols = [(0.06, "TECHNICIAN", "left"), (0.62, "CREATED", "right"), (0.74, "RAN", "right"),
+        (0.85, "SOLD", "right"), (0.94, "CLOSE %", "right")]
 for cx, ct, ha in cols:
     ftxt(cx, 0.358, ct, 8.0, MUT, "bold", ha=ha)
 fig.add_artist(plt.Line2D([0.06, 0.94], [0.347, 0.347], color=LINE, lw=1, transform=fig.transFigure))
 ry = 0.325
 for tech, v in rows:
-    cr, rn, so, fl = v["created"], v["ran"], v["sold"], v["flip"]
+    cr, rn, so = v["created"], v["ran"], v["sold"]
     cp = round(so / rn * 100) if rn else 0
-    fp = round(fl / cr * 100) if cr else 0
     ftxt(0.06, ry, tech, 10.5, INK, ha="left")
-    ftxt(0.55, ry, str(cr), 10.5, INK, ha="right")
-    ftxt(0.65, ry, str(rn), 10.5, MUT, ha="right")
-    ftxt(0.745, ry, str(so), 10.5, BLUE, "bold", ha="right")
-    ftxt(0.855, ry, f"{cp}%" if rn else "—", 10.5, (GREEN if cp >= 50 else INK), "bold" if cp >= 50 else "normal", ha="right")
-    ftxt(0.94, ry, f"{fp}%", 10.5, INK, ha="right")
+    ftxt(0.62, ry, str(cr), 10.5, INK, ha="right")
+    ftxt(0.74, ry, str(rn), 10.5, MUT, ha="right")
+    ftxt(0.85, ry, str(so), 10.5, BLUE, "bold", ha="right")
+    ftxt(0.94, ry, f"{cp}%" if rn else "—", 10.5, (GREEN if cp >= 50 else INK), "bold" if cp >= 50 else "normal", ha="right")
     ry -= 0.026
 
-ftxt(0.06, 0.028, f"Generated {run.isoformat()}  ·  Source: ServiceTitan live API  ·  "
-     f"John's SILO team (excludes other managers' techs)", 8, MUT)
+ftxt(0.06, 0.040, f"Flip rate = TGLs created ÷ ROPP calls ran (excl. Management-Removed ROPP)   ·   "
+     f"ROPP calls ran: {lw['calls']} last wk / {pw['calls']} prior", 8, MUT)
+ftxt(0.06, 0.022, f"Generated {run.isoformat()}   ·   ServiceTitan live API   ·   Close rate = Sold ÷ Ran   ·   "
+     f"John's SILO team", 8, MUT)
 
 out = Path(__file__).parent / f"weekly_report_{LW[1].isoformat()}.pdf"
 fig.savefig(out, facecolor="white")
