@@ -16,32 +16,24 @@ if not _fp.exists() and os.environ.get("ST_CREDS_JSON", "").strip():
 
 sys.path.insert(0, str(Path(__file__).parent))
 import st_client as st  # noqa: E402
-from livefeed_sync import paged, chunked_get, parse_utc, SHEET_EXCLUDE  # noqa: E402
+from UPDATE_DASHBOARD import resolve, to_date  # noqa: E402  (same tech-resolve the dashboard uses)
+import urllib.error, time  # noqa: E402
 
-_APPT = {}
-def appt_offset(lead_id, created_iso):
-    """Days between the lead job's first appointment and its creation day.
-    0 = same-day flip, 1 = next-day. None = no appointment yet."""
-    if lead_id not in _APPT:
+# Same reports + logic the ROPP dashboard is built from, so every number matches it.
+REP_TGLS, REP_REVENUE = ("technician", 642925621), ("accounting", 379143819)
+REP_SCHEDULED, REP_CANCEL = ("technician", 660537364), ("technician", 642928003)
+
+def run_rep(rep, F, T, dt=1):
+    for _ in range(8):
         try:
-            r = st.api_get("/jpm/v2/tenant/{tenant}/appointments", {"jobId": lead_id, "pageSize": 1})
-            d = r.get("data") or []
-            _APPT[lead_id] = parse_utc(d[0]["start"]).date() if d else None
-        except Exception:
-            _APPT[lead_id] = None
-    ad = _APPT[lead_id]
-    return None if ad is None else (ad - date.fromisoformat(created_iso)).days
-
-ROPP_TAG, ROPP_REMOVED = 962027, 545867780   # "ROPP" tag / "Management Removed ROPP" tag
-def ropp_calls_ran(start, end):
-    """Calls ran = jobs completed in [start,end] tagged ROPP, excluding those also tagged
-    'Management Removed ROPP'. This is the flip-rate denominator (John's definition)."""
-    n = 0
-    for j in paged("/jpm/v2/tenant/{tenant}/jobs",
-                   {"tagTypeIds": ROPP_TAG, "completedOnOrAfter": start, "completedBefore": end}):
-        if ROPP_REMOVED not in set(j.get("tagTypeIds") or []):
-            n += 1
-    return n
+            return st.run_report(rep[0], rep[1], [{"name": "DateType", "value": dt},
+                {"name": "From", "value": F}, {"name": "To", "value": T}], page=1, page_size=5000)
+        except urllib.error.HTTPError as e:
+            if e.code == 429: time.sleep(15); continue
+            raise
+    raise RuntimeError("report retries")
+def _flds(r): return [f["name"] if isinstance(f, dict) else f for f in r["fields"]]
+def _vjob(s): s = str(s).strip(); return s.isdigit() and len(s) >= 6
 
 # ---- date range: last full Mon-Sun week vs the one before ----
 args = sys.argv[1:]
@@ -50,67 +42,47 @@ this_mon = run - timedelta(days=run.weekday())
 LW = (this_mon - timedelta(days=7), this_mon - timedelta(days=1))     # last week Mon..Sun
 PW = (this_mon - timedelta(days=14), this_mon - timedelta(days=8))    # prior week
 
-TGL_EXCL = ("iaq", "thermostat", "humidifier", "air scrubber", "duct clean",
-            "plumb", "water heater", "water treatment", "costco")
-def is_tgl(n):
-    if not (n or "").startswith("Estimate"): return False
-    low = n.lower(); return True if "tgl" in low else not any(x in low for x in TGL_EXCL)
-iso = lambda d: d.strftime("%Y-%m-%dT%H:%M:%SZ")
-def utc0(d): return datetime.combine(d, datetime.min.time()).astimezone().astimezone(timezone.utc)
-
-jts = {t["id"]: t.get("name", "") for t in paged("/jpm/v2/tenant/{tenant}/job-types", {})}
-emps = {t["id"]: t.get("name", "") for t in paged("/settings/v2/tenant/{tenant}/technicians", {})}
-
 def week(start, end):
-    tg = []
-    d = start
-    while d <= end:
-        for lj in paged("/jpm/v2/tenant/{tenant}/jobs",
-                        {"createdOnOrAfter": iso(utc0(d)), "createdBefore": iso(utc0(d + timedelta(days=1)))}):
-            gls = lj.get("jobGeneratedLeadSource") or {}
-            src = gls.get("jobId")
-            if not src or not is_tgl(jts.get(lj.get("jobTypeId")) or ""): continue
-            # dept-wide: every service tech's Estimate-TGL counts (no SILO-team filter)
-            tg.append({"src": str(src), "lead": lj["id"], "date": d.isoformat(),
-                       "tech": emps.get(gls.get("employeeId")) or "?"})
-        d += timedelta(days=1)
-    ljs = {j["id"]: j for j in chunked_get("/jpm/v2/tenant/{tenant}/jobs", [t["lead"] for t in tg])}
-    sold = set()
-    for e in paged("/sales/v2/tenant/{tenant}/estimates", {"soldAfter": iso(utc0(start))}):
-        if e.get("jobId") in ljs and (e.get("soldOn") or ((e.get("status") or {}).get("name") == "Sold")):
-            sold.add(e["jobId"])
-    sof = lambda lid: (ljs.get(lid) or {}).get("jobStatus")
-    bysrc = defaultdict(list)
-    for t in tg: bysrc[t["src"]].append(t)
-    chosen = []
-    for s, g in bysrc.items():
-        pool = [x for x in g if sof(x["lead"]) != "Canceled"] or g
-        pool.sort(key=lambda x: (x["lead"] not in sold, sof(x["lead"]) != "Completed"))
-        chosen.append(pool[0])
-    a = {"created": 0, "ran": 0, "sold": 0, "canceled": 0, "sameday": 0, "nextday": 0}
+    F, T = start.isoformat(), end.isoformat()
     per = defaultdict(lambda: {"created": 0, "ran": 0, "sold": 0})
-    for t in chosen:
-        stj = sof(t["lead"]); p = per[t["tech"]]
-        a["created"] += 1; p["created"] += 1
-        if stj == "Canceled": a["canceled"] += 1; continue
-        off = appt_offset(t["lead"], t["date"])              # same-day / next-day appointment
-        if off == 0: a["sameday"] += 1
-        elif off == 1: a["nextday"] += 1
-        if stj != "Completed": continue                      # ran/close metrics need a completed job
-        a["ran"] += 1; p["ran"] += 1
-        if t["lead"] in sold: a["sold"] += 1; p["sold"] += 1
-    a["close"] = round(a["sold"] / a["ran"] * 100) if a["ran"] else 0   # Sold / Ran (CA close-rate math)
-    a["sameday_rate"] = round(a["sameday"] / a["created"] * 100) if a["created"] else 0
-    a["samenext_rate"] = round((a["sameday"] + a["nextday"]) / a["created"] * 100) if a["created"] else 0
+    # TGLs created — ROPP TGLS CREATED report, count rows, per creating tech (LeadCreatedBy)
+    tc = run_rep(REP_TGLS, F, T); ti = {n: i for i, n in enumerate(_flds(tc))}
+    tgls = 0
+    for r in tc["data"]:
+        if not _vjob(r[ti["JobNumber"]]): continue
+        tgls += 1; per[resolve(r[ti["LeadCreatedBy"]]) or "?"]["created"] += 1
+    # calls ran — Revenue by Job Type report, count rows
+    rv = run_rep(REP_REVENUE, F, T); ri = {n: i for i, n in enumerate(_flds(rv))}
+    calls = sum(1 for r in rv["data"] if _vjob(r[ri["JobNumber"]]))
+    # ran / same-day / next-day / sold — Scheduled-vs-Ran-vs-Sold report (ran=ScheduledDate)
+    sc = run_rep(REP_SCHEDULED, F, T); si = {n: i for i, n in enumerate(_flds(sc))}
+    ran = same = nxt = sold = 0
+    for r in sc["data"]:
+        if not _vjob(r[si["JobNumber"]]): continue
+        rd = to_date(r[si["ScheduledDate"]]); cr = to_date(r[si["CreatedDate"]])
+        if rd is None: continue
+        tech = resolve(r[si["LeadGeneratedFromSourceTech"]]) or "?"
+        ran += 1; per[tech]["ran"] += 1
+        if cr and rd == cr: same += 1
+        if cr and (rd - cr).days == 1: nxt += 1
+        if float(r[si["EstimateSalesSubtotal"]] or 0) > 0: sold += 1; per[tech]["sold"] += 1
+    # cancellations — ROPP Cancelations report, DateType 2 = cancelled-date; count TGL leads
+    # canceled in the week attributed to a lead-gen tech (dashboard method)
+    cx = run_rep(REP_CANCEL, F, T, dt=2); ci = {n: i for i, n in enumerate(_flds(cx))}
+    canceled = 0
+    for r in cx["data"]:
+        cd = to_date(r[ci["CancelledDate"]])
+        if _vjob(r[ci["JobNumber"]]) and cd and start <= cd <= end and resolve(r[ci["LeadGeneratedBy"]]):
+            canceled += 1
+    a = {"created": tgls, "calls": calls, "ran": ran, "sold": sold, "canceled": canceled,
+         "close": round(sold / ran * 100) if ran else 0,             # Sold / Ran
+         "fliprate": round(tgls / calls * 100) if calls else 0,      # TGLs / calls ran (dashboard rate)
+         "sameday_rate": round(same / ran * 100) if ran else 0,      # same-day / ran
+         "samenext_rate": round((same + nxt) / ran * 100) if ran else 0}
     return a, per
 
 lw, per = week(*LW)
 pw, _ = week(*PW)
-# flip rate = TGLs created / ROPP calls ran (tagged ROPP, excl. Management-Removed ROPP)
-lw["calls"] = ropp_calls_ran(iso(utc0(LW[0])), iso(utc0(LW[1] + timedelta(days=1))))
-pw["calls"] = ropp_calls_ran(iso(utc0(PW[0])), iso(utc0(PW[1] + timedelta(days=1))))
-lw["fliprate"] = round(lw["created"] / lw["calls"] * 100) if lw["calls"] else 0
-pw["fliprate"] = round(pw["created"] / pw["calls"] * 100) if pw["calls"] else 0
 
 # ---------- render ----------
 import matplotlib
@@ -159,9 +131,9 @@ row1 = [("TGLs CREATED", lw["created"], lw["created"] - pw["created"], True, "",
         ("SOLD", lw["sold"], lw["sold"] - pw["sold"], True, "", ""),
         ("CLOSE RATE", lw["close"], lw["close"] - pw["close"], True, "%", "Sold ÷ Ran"),
         ("CANCELED", lw["canceled"], lw["canceled"] - pw["canceled"], False, "", "")]
-row2 = [("FLIP RATE", lw["fliprate"], lw["fliprate"] - pw["fliprate"], True, "%", "TGLs ÷ ROPP calls"),
-        ("SAME-DAY FLIP", lw["sameday_rate"], lw["sameday_rate"] - pw["sameday_rate"], True, "%", "same-day ÷ created"),
-        ("SAME / NEXT DAY", lw["samenext_rate"], lw["samenext_rate"] - pw["samenext_rate"], True, "%", "same+next ÷ created")]
+row2 = [("FLIP RATE", lw["fliprate"], lw["fliprate"] - pw["fliprate"], True, "%", "TGLs ÷ calls ran"),
+        ("SAME-DAY FLIP", lw["sameday_rate"], lw["sameday_rate"] - pw["sameday_rate"], True, "%", "same-day ÷ ran"),
+        ("SAME / NEXT DAY", lw["samenext_rate"], lw["samenext_rate"] - pw["samenext_rate"], True, "%", "same+next ÷ ran")]
 draw_tiles(row1, 0.805, 0.082)
 draw_tiles(row2, 0.710, 0.082)
 
@@ -218,8 +190,8 @@ ftxt(0.74, ry - 0.004, str(Tr), 10, INK, "bold", ha="right")
 ftxt(0.85, ry - 0.004, str(Ts), 10, BLUE, "bold", ha="right")
 ftxt(0.94, ry - 0.004, f"{round(Ts/Tr*100) if Tr else 0}%", 10, INK, "bold", ha="right")
 
-ftxt(0.06, 0.036, f"Flip denominator = ROPP-tagged completed calls, excl. Management-Removed ROPP "
-     f"({lw['calls']} last wk / {pw['calls']} prior)", 7.6, MUT)
+ftxt(0.06, 0.036, f"Flip = TGLs ÷ calls ran (Revenue report: {lw['calls']} calls last wk / {pw['calls']} prior).  "
+     f"Same-day/Next-day ÷ ran.  Same reports & method as the ROPP dashboard.", 7.4, MUT)
 ftxt(0.06, 0.021, f"Generated {run.isoformat()}   ·   ServiceTitan live API   ·   HVAC Service dept — all ROPP TGLs (dept-wide)", 7.4, MUT)
 
 out = Path(__file__).parent / f"weekly_report_{LW[1].isoformat()}.pdf"
