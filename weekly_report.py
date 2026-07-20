@@ -68,13 +68,13 @@ def week(start, end):
         stj = sof(t["lead"]); p = per[t["tech"]]
         a["created"] += 1; p["created"] += 1
         if stj == "Canceled": a["canceled"] += 1; continue
-        if stj != "Completed": continue                      # not run yet
+        if lead_sameday(t["lead"], t["date"]) is True:       # same-day appointment (run OR not yet) = flip
+            a["flip"] += 1; p["flip"] += 1
+        if stj != "Completed": continue                      # ran/close metrics need a completed job
         a["ran"] += 1; p["ran"] += 1
         if t["lead"] in sold: a["sold"] += 1; p["sold"] += 1
-        if lead_sameday(t["lead"], t["date"]) is True:       # ran the same day it was created = flip
-            a["flip"] += 1; p["flip"] += 1
-    a["close"] = round(a["sold"] / a["ran"] * 100) if a["ran"] else 0   # Sold / Ran (CA close-rate math)
-    a["fliprate"] = round(a["flip"] / a["ran"] * 100) if a["ran"] else 0  # same-day / Ran
+    a["close"] = round(a["sold"] / a["ran"] * 100) if a["ran"] else 0        # Sold / Ran (CA close-rate math)
+    a["fliprate"] = round(a["flip"] / a["created"] * 100) if a["created"] else 0  # same-day / Created (incl. not-yet-run)
     return a, per
 
 lw, per = week(*LW)
@@ -148,7 +148,7 @@ axb.spines["bottom"].set_color(LINE)
 # per-tech table (figure coords, top-down)
 rows = sorted(per.items(), key=lambda kv: (-kv[1]["sold"], -kv[1]["created"]))[:10]
 ftxt(0.06, 0.385, "By technician — last week", 12, INK, "bold")
-ftxt(0.94, 0.386, "Close % = Sold ÷ Ran   ·   Flip % = same-day ÷ Ran", 8, MUT, ha="right")
+ftxt(0.94, 0.386, "Close % = Sold ÷ Ran   ·   Flip % = same-day ÷ Created", 8, MUT, ha="right")
 cols = [(0.06, "TECHNICIAN", "left"), (0.55, "CREATED", "right"), (0.65, "RAN", "right"),
         (0.745, "SOLD", "right"), (0.855, "CLOSE %", "right"), (0.94, "FLIP %", "right")]
 for cx, ct, ha in cols:
@@ -158,13 +158,13 @@ ry = 0.325
 for tech, v in rows:
     cr, rn, so, fl = v["created"], v["ran"], v["sold"], v["flip"]
     cp = round(so / rn * 100) if rn else 0
-    fp = round(fl / rn * 100) if rn else 0
+    fp = round(fl / cr * 100) if cr else 0
     ftxt(0.06, ry, tech, 10.5, INK, ha="left")
     ftxt(0.55, ry, str(cr), 10.5, INK, ha="right")
     ftxt(0.65, ry, str(rn), 10.5, MUT, ha="right")
     ftxt(0.745, ry, str(so), 10.5, BLUE, "bold", ha="right")
     ftxt(0.855, ry, f"{cp}%" if rn else "—", 10.5, (GREEN if cp >= 50 else INK), "bold" if cp >= 50 else "normal", ha="right")
-    ftxt(0.94, ry, f"{fp}%" if rn else "—", 10.5, INK, ha="right")
+    ftxt(0.94, ry, f"{fp}%", 10.5, INK, ha="right")
     ry -= 0.026
 
 ftxt(0.06, 0.028, f"Generated {run.isoformat()}  ·  Source: ServiceTitan live API  ·  "
