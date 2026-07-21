@@ -137,9 +137,41 @@ def _grouped(rows, jobcol):
         yield r
 
 
+def _jobnum(v):
+    """Normalize a raw job-number cell to its canonical digit string (mirrors the
+    filter _grouped already applies), or None if it isn't a valid job#."""
+    if v is None:
+        return None
+    s = str(int(v)) if isinstance(v, (int, float)) and float(v).is_integer() else str(v).strip()
+    return s if s.isdigit() and len(s) >= 6 else None
+
+
+def _jobset(rows, jobcol):
+    """Set of distinct job numbers (as strings) for a report, dept-wide."""
+    out = set()
+    for r in _grouped(rows, jobcol):
+        jn = _jobnum(r[jobcol])
+        if jn:
+            out.add(jn)
+    return out
+
+
+def _tally_call_sets(rev_rows, jobcol=3, techcol=7):
+    """Per-tech set of distinct call job numbers (Revenue report)."""
+    sets = {}
+    for r in _grouped(rev_rows, jobcol):
+        jn = _jobnum(r[jobcol])
+        if not jn:
+            continue
+        t = r[techcol] if len(r) > techcol else None
+        name = str(t).split(",")[0].strip() if t else "Unassigned"
+        sets.setdefault(name, set()).add(jn)
+    return sets
+
+
 def count(rev_rows, tgl_rows):
-    calls = sum(1 for _ in _grouped(rev_rows, 3))   # Revenue: Job# in col 3
-    tgls  = sum(1 for _ in _grouped(tgl_rows, 1))    # TGLs Created: Job# in col 1
+    calls = len(_jobset(rev_rows, 3))                # Revenue: Job# in col 3
+    tgls  = sum(1 for _ in _grouped(tgl_rows, 1))     # TGLs Created: Job# in col 1
     return calls, tgls
 
 
@@ -269,7 +301,12 @@ def _entity_tgls_today(today):
     entity API: created today, job type in the "Estimate … TGL" family, with the
     dup-ticket rule (canceled leads on a multi-lead call are duplicates; a lone
     canceled lead is a real canceled TGL and still counts as created).
-    Returns (total, {tech_full_name: count})."""
+    Returns (total, {tech_full_name: count}, {source_call_job_ids today's TGLs point
+    at (str)}, {tech_full_name: {source_call_job_ids} for that tech's TGLs today}).
+    The source-call sets let the caller count a TGL's source call as "ran" the
+    moment the TGL is created, instead of waiting for the tech to close it out
+    (John's rule, 2026-07-21) -- via a set union so a call that later shows up in
+    the normal today-calls report is never double-counted."""
     import st_client as st
     from datetime import datetime as _dt, time as _time, timezone as _tz
 
@@ -308,6 +345,8 @@ def _entity_tgls_today(today):
                        {"ids": ",".join(map(str, eids[i:i+50]))}):
             emps[e["id"]] = e.get("name", "")
     by_tech = {}
+    src_all = set()
+    src_by_tech = {}
     for L in leads:
         name = emps.get(L["emp"]) or None
         if not name:
@@ -320,7 +359,13 @@ def _entity_tgls_today(today):
             except Exception:
                 name = "Unassigned"
         by_tech[name] = by_tech.get(name, 0) + 1
-    return len(leads), by_tech
+        # Guard: skip TGLs with no resolvable source-call id -- never add a phantom call.
+        src = L.get("src")
+        if src is not None:
+            src = str(src)
+            src_all.add(src)
+            src_by_tech.setdefault(name, set()).add(src)
+    return len(leads), by_tech, src_all, src_by_tech
 
 
 def main():
@@ -353,23 +398,38 @@ def main():
         print("Today source: OneDrive Excel (today-only exports)")
 
     calls, tgls = count(rev_rows, tgl_rows)
+    call_sets = _tally_call_sets(rev_rows)          # per-tech job# sets, for the union below
+    calls_set = _jobset(rev_rows, 3)                # dept-wide job# set, for the union below
     techs = per_tech(rev_rows, tgl_rows)
     # TGLs count on their CREATION day (John's rule) — override the report's
     # scheduled-date lens with the entity-API count; report stays the fallback.
     try:
-        e_tot, e_by = _entity_tgls_today(today)
+        e_tot, e_by, e_src_all, e_src_by_tech = _entity_tgls_today(today)
         tgls = e_tot
+        # John's rule (2026-07-21): a TGL's SOURCE call counts as "ran" the moment
+        # the TGL is created (not when the tech closes it out). Union the source-call
+        # job#s into the today-calls set(s) — set semantics means if/when the tech
+        # later closes the call and it shows up in the normal report too, it's not
+        # double-counted (same job# already in the set).
+        calls_set |= e_src_all
+        calls = len(calls_set)
         seen = set()
         for tec in techs:
             tec["tgls"] = e_by.get(tec["name"], 0)
+            tsrc = e_src_by_tech.get(tec["name"])
+            if tsrc:
+                tec["calls"] = len(call_sets.get(tec["name"], set()) | tsrc)
             tec["rate"] = rate(tec["tgls"], tec["calls"])
             seen.add(tec["name"])
         for enm, ecnt in e_by.items():
             if enm not in seen:
-                techs.append({"name": enm, "calls": 0, "tgls": ecnt, "rate": None, "rev": 0})
+                tsrc = e_src_by_tech.get(enm, set())
+                tcalls = len(tsrc)
+                techs.append({"name": enm, "calls": tcalls, "tgls": ecnt,
+                              "rate": rate(ecnt, tcalls), "rev": 0})
         techs = [tec for tec in techs if tec["calls"] or tec["tgls"]]
         techs.sort(key=lambda x: (-x["tgls"], -x["calls"], x["name"]))
-        print(f"TGL lens: entity created-today ({e_tot})")
+        print(f"TGL lens: entity created-today ({e_tot}); calls incl. TGL-source union ({calls})")
     except Exception as e:
         print(f"entity TGL count failed ({e}); keeping report lens")
     sched = sched_metrics(sch_rows) if sch_rows else None
