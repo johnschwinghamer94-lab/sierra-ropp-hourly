@@ -175,7 +175,7 @@ def rate(g, c): return round(g / c * 100, 1) if c else 0.0
 def blank():
     return {"ytd": dict(calls=0,tgls=0,revenue=0.0,svc_calls=0,svc_tgls=0,maint_calls=0,maint_tgls=0),
             "mtd": dict(calls=0,tgls=0,revenue=0.0,svc_calls=0,svc_tgls=0,maint_calls=0,maint_tgls=0),
-            "monthly": {m: dict(calls=0,tgls=0,revenue=0.0) for m in MONTH_NAMES}}
+            "monthly": {m: dict(calls=0,tgls=0,revenue=0.0,svc_calls=0,maint_calls=0,svc_tgls=0,maint_tgls=0,svc_rev=0.0,maint_rev=0.0) for m in MONTH_NAMES}}
 
 def jobkey(v):
     if v is None: return None
@@ -247,8 +247,12 @@ def parse_all(today):
         rev = SUB.get(jobkey(r[1]), 0.0); bu = r[4]; t = techs[tech]; mo = MONTH_NAMES[d.month-1]
         t["ytd"]["tgls"] += 1; t["ytd"]["revenue"] += rev
         t["monthly"][mo]["tgls"] += 1; t["monthly"][mo]["revenue"] += rev
-        if is_maint(bu): t["ytd"]["maint_tgls"] += 1
-        elif is_svc(bu): t["ytd"]["svc_tgls"] += 1
+        if is_maint(bu):
+            t["ytd"]["maint_tgls"] += 1
+            t["monthly"][mo]["maint_tgls"] += 1; t["monthly"][mo]["maint_rev"] += rev
+        elif is_svc(bu):
+            t["ytd"]["svc_tgls"] += 1
+            t["monthly"][mo]["svc_tgls"] += 1; t["monthly"][mo]["svc_rev"] += rev
         if d.month == today.month:
             t["mtd"]["tgls"] += 1; t["mtd"]["revenue"] += rev
             wt = t.setdefault("weekly_tgls", {}); wk_ = week_of_month(d)
@@ -260,8 +264,10 @@ def parse_all(today):
         if not tech or d is None or d.year != YEAR: continue
         bu = r[10]; t = techs[tech]; mo = MONTH_NAMES[d.month-1]
         t["ytd"]["calls"] += 1; t["monthly"][mo]["calls"] += 1
-        if is_maint(bu): t["ytd"]["maint_calls"] += 1
-        elif is_svc(bu): t["ytd"]["svc_calls"] += 1
+        if is_maint(bu):
+            t["ytd"]["maint_calls"] += 1; t["monthly"][mo]["maint_calls"] += 1
+        elif is_svc(bu):
+            t["ytd"]["svc_calls"] += 1; t["monthly"][mo]["svc_calls"] += 1
         if d.month == today.month:
             t["mtd"]["calls"] += 1
             if is_maint(bu): t["mtd"]["maint_calls"] += 1
@@ -270,7 +276,10 @@ def parse_all(today):
         for p in ("ytd","mtd"):
             t[p]["revenue"] = round(t[p]["revenue"])
             t[p]["rate"] = rate(t[p]["tgls"], t[p]["calls"])
-        for m in MONTH_NAMES: t["monthly"][m]["revenue"] = round(t["monthly"][m]["revenue"])
+        for m in MONTH_NAMES:
+            t["monthly"][m]["revenue"] = round(t["monthly"][m]["revenue"])
+            t["monthly"][m]["svc_rev"] = round(t["monthly"][m]["svc_rev"])
+            t["monthly"][m]["maint_rev"] = round(t["monthly"][m]["maint_rev"])
 
     global _CANCEL_EXCLUDED_COUNT; _CANCEL_EXCLUDED_COUNT = 0
     cancel = defaultdict(lambda: {"ytd":0,"monthly":defaultdict(int),"weekly":defaultdict(int)})
@@ -408,8 +417,10 @@ def build_monthly_detail(techs, months):
             if "," in n: continue
             mm = t["monthly"][m]
             if mm["calls"]==0 and mm["tgls"]==0 and mm["revenue"]==0: continue
-            out[m][n] = dict(calls=mm["calls"],svc_calls=0,maint_calls=0,svc_tgls=0,maint_tgls=0,
-                             total_tgls=mm["tgls"],svc_rev=0,maint_rev=0,total_rev=mm["revenue"])
+            out[m][n] = dict(calls=mm["calls"],svc_calls=mm.get("svc_calls",0),maint_calls=mm.get("maint_calls",0),
+                             svc_tgls=mm.get("svc_tgls",0),maint_tgls=mm.get("maint_tgls",0),
+                             total_tgls=mm["tgls"],svc_rev=mm.get("svc_rev",0),maint_rev=mm.get("maint_rev",0),
+                             total_rev=mm["revenue"])
     return out
 
 def build_allteams(techs):
