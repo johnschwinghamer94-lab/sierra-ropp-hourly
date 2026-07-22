@@ -1,0 +1,737 @@
+TRANSCRIPT
+Rep:      Joe Mendoza
+Date:     2026-07-22
+Duration: 8 min
+Job:      CREWS ELINOR C, Job # 667969611
+============================================================
+
+
+Customer:
+  Yes!
+
+Joe Mendoza:
+  Morning!
+
+Customer:
+  You
+  got
+  it!
+
+Joe Mendoza:
+  Hello.
+
+Customer:
+  Hopefully
+  you
+  don't
+  have
+  to
+  go
+  upstairs
+  because
+  then
+  I'll
+  have
+  to
+  move
+  them.
+
+Joe Mendoza:
+  Ah,
+  and
+  who
+  do
+  I
+  have
+  the
+  pleasure
+  of
+  speaking
+  with?
+
+Customer:
+  I'm
+  Ellinor
+  Kirkland.
+  Ellinor,
+  it's
+  a
+  pleasure.
+
+Joe Mendoza:
+  My
+  name
+  is
+  Joe
+  with
+  Sierra
+  Conditioning
+  and
+  Plumbing.
+  Yep.
+
+Customer:
+  Come
+  on
+  in.
+
+Joe Mendoza:
+  So
+  what's
+  going
+  on?
+
+Customer:
+  Well,
+  I
+  got
+  up
+  this
+  morning,
+  passed
+  the
+  thermostat,
+  which
+  is
+  right
+  outside
+  my
+  bedroom.
+  Okay.
+
+Joe Mendoza:
+  Gave
+  us
+  a
+  call.
+
+Customer:
+  Yes,
+  they're
+  just
+  still
+  there.
+
+Joe Mendoza:
+  Okay,
+  is
+  the
+  system
+  working
+  currently?
+
+Customer:
+  Well,
+  it's
+  fan
+  running,
+  but
+  I've
+  seen
+  cooling.
+  System
+  is
+  cooling.
+  And
+  that's
+  what
+  it
+  says,
+  and
+  I
+  don't
+  know
+  how
+  to
+  get
+  rid
+  of
+  it.
+
+Joe Mendoza:
+  Huh.
+
+Customer:
+  And
+  I
+  don't
+  know
+  what
+  it
+  means.
+  Wow.
+  I
+  can't
+  figure
+  out
+  if
+  there's—
+  have
+  to
+  take
+  it
+  off
+  either.
+  It's
+  like,
+  okay,
+  I
+  think
+  it
+  needs
+  new
+  batteries
+  maybe.
+
+Joe Mendoza:
+  No,
+  this
+  one
+  doesn't
+  take
+  batteries.
+  Okay.
+
+Customer:
+  I
+  hear
+  you.
+  Be
+  quiet.
+  Get
+  warm
+  for
+  a
+  minute.
+  Did
+  the
+  side
+  nut?
+  Okay.
+
+Joe Mendoza:
+  It's
+  just
+  a
+  big
+  magnet
+  on
+  the
+  outside.
+  Looks
+  like
+  we
+  were
+  out
+  here
+  last
+  night
+  after
+  the
+  service
+  truck.
+  Give
+  it
+  a
+  minute,
+  it's
+  trying
+  to
+  set
+  itself
+  up.
+
+Customer:
+  Yeah,
+  putting
+  in
+  a
+  new
+  water
+  heater
+  for
+  me
+  on
+  Friday
+  afternoon.
+
+Joe Mendoza:
+  Okay,
+  things
+  get
+  older,
+  things
+  wear
+  out.
+
+Customer:
+  Ah,
+  ah,
+  quiet!
+  You
+  did
+  that
+  too
+  much.
+  All
+  you
+  did
+  was
+  open
+  the
+  door.
+  Yeah,
+  open
+  it
+  from
+  that
+  side.
+  She
+  does
+  all
+  the
+  time.
+
+Joe Mendoza:
+  Nice.
+
+Customer:
+  Did
+  you
+  hear
+  it
+  running?
+  It's
+  running
+  fine.
+  Aha,
+  here
+  it
+  goes.
+  I
+  don't
+  even
+  know
+  what
+  the
+  Smart
+  Hub
+  is.
+
+Joe Mendoza:
+  It's
+  a
+  hub
+  up
+  there.
+
+Customer:
+  Okay,
+  great,
+  wonderful.
+  It's
+  okay.
+  And
+  no,
+  you
+  don't
+  get
+  to
+  come
+  out.
+  Takes
+  a
+  while
+  to
+  initialize.
+  Doesn't
+  it?
+
+Joe Mendoza:
+  I
+  don't
+  think
+  it's.
+
+Customer:
+  I
+  don't
+  think
+  it's
+  86
+  degrees
+  in
+  here.
+
+Joe Mendoza:
+  Uh,
+  let
+  me
+  go
+  outside
+  and
+  make
+  sure
+  that
+  that
+  unit
+  outside
+  is
+  running.
+
+Customer:
+  Okay.
+
+Joe Mendoza:
+  Um,
+  then
+  I'll
+  come
+  back
+  inside.
+  So
+  with
+  the
+  S30s,
+  so
+  we
+  have
+  the
+  S30
+  model.
+  Over
+  time,
+  these
+  start
+  communicating
+  to
+  the
+  unit
+  upstairs.
+
+Customer:
+  Okay.
+
+Joe Mendoza:
+  And
+  start
+  causing
+  issues
+  where
+  it
+  won't
+  turn
+  on,
+  it
+  won't
+  keep
+  up,
+  and
+  we
+  have
+  to
+  replace
+  it.
+
+Customer:
+  Okay.
+  Um,
+  let
+  me
+  just
+  put
+  on
+  a
+  new
+  one,
+  right?
+
+Joe Mendoza:
+  Not
+  exactly.
+  We
+  have
+  to
+  wire
+  everything
+  upstairs,
+  wire
+  it
+  down
+  here.
+  It
+  can
+  get
+  pretty
+  complex.
+  Um,
+  just
+  taking
+  a
+  look
+  at
+  the
+  history
+  here,
+  looks
+  like
+  there
+  are
+  some
+  things
+  on
+  the
+  watch
+  list
+  as
+  well
+  with
+  the
+  unit
+  as
+  well.
+  So,
+  um,
+  definitely,
+  definitely
+  some,
+  some
+  food
+  for
+  thought
+  there.
+  Okay,
+  let
+  me
+  take
+  a
+  look
+  at
+  the
+  outdoor
+  unit.
+  If
+  everything's
+  running,
+  by
+  all
+  means
+  we
+  can
+  leave
+  it
+  alone.
+  Okay.
+  Um,
+  if
+  it
+  happens
+  again,
+  you
+  could
+  always
+  give
+  us
+  a
+  call
+  back.
+  Looks
+  like
+  it's
+  gone,
+  um,
+  but
+  I
+  just
+  want
+  to
+  make
+  sure
+  that
+  you
+  know
+  it's
+  turned
+  on.
+
+Customer:
+  Okay,
+  if
+  it's
+  turned
+  on,
+  then,
+  um,
+  I
+  have
+  the,
+  um,
+  fall
+  service
+  already
+  scheduled.
+
+Joe Mendoza:
+  Okay.
+
+Customer:
+  Something—
+  I
+  don't
+  remember
+  what
+  time,
+  but,
+  um,
+  maybe
+  they
+  can
+  just
+  replace
+  it
+  for
+  me.
+
+Joe Mendoza:
+  Okay,
+  yeah,
+  sounds
+  great.
+  Let
+  me
+  go
+  make
+  sure
+  that
+  everything's
+  turned
+  on
+  outside.
+
+Customer:
+  Okay.
+  Okay,
+  it's
+  to
+  the
+  left
+  behind
+  the
+  big
+  bush.
+
+Joe Mendoza:
+  Oh,
+  I'll
+  be
+  right
+  back
+  then.
+
+Customer:
+  All
+  right.
+  Okay.
+
+Joe Mendoza:
+  It's
+  on.
+  All
+  right.
+  Okay,
+  yeah,
+  no
+  problem.
+  Yeah,
+  we'll
+  just
+  cancel
+  out
+  today's
+  visit.
+  No
+  worry
+  about
+  it.
+  We
+  won't—
+  um,
+  you'll
+  still
+  have
+  that
+  complimentary
+  diagnostic.
+  If
+  anything
+  else
+  happens,
+  don't
+  hesitate
+  to
+  reach
+  out.
+
+Customer:
+  Okay,
+  I'll
+  do
+  that.
+
+Joe Mendoza:
+  It
+  was
+  a
+  pleasure.
+  Thank
+  you.
+  Thank
+  you
+  for
+  having
+  us.
+  Nice
+  meeting
+  you.
+  Take
+  care.
+
+Customer:
+  Thank
+  you
+  so
+  much
+  for
+  coming
+  out
+  while
+  I
+  was
+  still
+  working.
+
+Joe Mendoza:
+  Absolutely.
+  Have
+  a
+  good
+  one.
+  No,
+  I'll
+  let
+  them
+  know.
+  I'll
+  put
+  it
+  in
+  your
+  notes.
+
+Customer:
+  Thank
+  you.
+
+Joe Mendoza:
+  Absolutely.
+  Bye-bye.
