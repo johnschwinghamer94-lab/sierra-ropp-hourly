@@ -204,6 +204,7 @@ def fetch_today():
     dept_leads = []      # every TGL created today, department-wide (bonus sheet)
     install_by_src = {}  # src call job -> install-booked time = that TGL SOLD
     emps = _LOOKUPS.get("emps", {})
+    oneoff_exclusions = _load_tgl_oneoff_exclusions()
     for lj in paged("/jpm/v2/tenant/{tenant}/jobs", {"createdOnOrAfter": iso(day0)}):
         gls = lj.get("jobGeneratedLeadSource") or {}
         src = gls.get("jobId")
@@ -235,6 +236,8 @@ def fetch_today():
         # mis-created tickets are not TGLs in any sense — drop before every consumer
         if str(lj.get("jobNumber", "")) in NOT_A_TGL:
             continue
+        if str(lj.get("jobNumber", "")) in oneoff_exclusions:
+            continue  # one-off manual exclusion (John) — see tgl_oneoff_exclusions.json
         # credited tech: ST's own lead-source employee first, else source-job tech
         tech = emps.get(gls.get("employeeId")) or (all_job_tech.get(src) or [None])[0]
         dtl = parse_utc(lj.get("createdOn"))
@@ -272,6 +275,8 @@ def fetch_today():
             continue
         if str(lj.get("jobNumber", "")) in NOT_A_TGL:
             continue
+        if str(lj.get("jobNumber", "")) in oneoff_exclusions:
+            continue  # one-off manual exclusion (John) — see tgl_oneoff_exclusions.json
         cached = _FLIP_DAY_CACHE.get(lj["id"])
         if cached is False:
             continue
@@ -659,6 +664,22 @@ SHEET_EXCLUDE = {"Andrew Alonso", "Brandon Moreno", "Cole Pantol", "Francisco Va
 # sheet, events. Distinct from canceled TGLs (can:true), which DO still count
 # (John 2026-07-17). Key = the lead job's jobNumber.
 NOT_A_TGL = {"667275619"}   # 2026-07-17 Jose / TAPASAK DIANA — ticket made wrong (John)
+
+
+def _load_tgl_oneoff_exclusions():
+    """One-off manual TGL corrections by John (e.g. a lead ticket typed today
+    whose source call actually ran and was counted on a prior day). Keys are
+    lead job numbers (str). Loaded from tgl_oneoff_exclusions.json next to this
+    script (each of the two synced copies — repo + servicetitan/ — finds its own
+    local file); tolerates a missing/invalid file (returns {} — behaves as
+    before). Safe to prune entries older than ~30 days ("added" field)."""
+    try:
+        p = Path(__file__).resolve().parent / "tgl_oneoff_exclusions.json"
+        with open(p, "r") as f:
+            data = json.load(f)
+        return data if isinstance(data, dict) else {}
+    except Exception:
+        return {}
 
 def sheet_log(row):
     """POST a TGL event to John's bonus-sheet Apps Script webhook (env

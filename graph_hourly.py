@@ -14,6 +14,7 @@ Secrets it needs (this private repo -> Settings -> Secrets -> Actions):
 """
 import os, re, io, json, base64
 from datetime import datetime
+from pathlib import Path
 import time
 import requests
 try:
@@ -32,6 +33,21 @@ FOLDER = "CLAUDE STUFF/SILO_Reports"
 
 GH = {"Authorization": "token " + GHTOK, "Accept": "application/vnd.github+json"}
 PUBAPI = "https://api.github.com/repos/" + PUB + "/contents/"
+
+
+def _load_tgl_oneoff_exclusions():
+    """One-off manual TGL corrections by John (e.g. a lead ticket typed today
+    whose source call actually ran and was counted on a prior day). Keys are
+    lead job numbers (str). Loaded from tgl_oneoff_exclusions.json next to this
+    script; tolerates a missing/invalid file (returns {} — behaves as before).
+    Safe to prune entries older than ~30 days ("added" field)."""
+    try:
+        p = Path(__file__).resolve().parent / "tgl_oneoff_exclusions.json"
+        with open(p, "r") as f:
+            data = json.load(f)
+        return data if isinstance(data, dict) else {}
+    except Exception:
+        return {}
 
 
 # ---------- Microsoft Graph (delegated, refresh-token flow) ----------
@@ -323,10 +339,13 @@ def _entity_tgls_today(today):
             page += 1
 
     jts = {x["id"]: x.get("name", "") for x in paged("/jpm/v2/tenant/{tenant}/job-types", {})}
+    oneoff_exclusions = _load_tgl_oneoff_exclusions()
     leads = []
     for lj in paged("/jpm/v2/tenant/{tenant}/jobs", {"createdOnOrAfter": day0}):
         gls = lj.get("jobGeneratedLeadSource") or {}
         jtn = jts.get(lj.get("jobTypeId")) or ""
+        if str(lj.get("jobNumber", "")) in oneoff_exclusions:
+            continue  # one-off manual exclusion (John) — see tgl_oneoff_exclusions.json
         if gls.get("jobId") and jtn.startswith("Estimate") and "TGL" in jtn:
             leads.append({"src": gls["jobId"], "emp": gls.get("employeeId"),
                           "can": lj.get("jobStatus") == "Canceled"})
