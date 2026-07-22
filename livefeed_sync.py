@@ -61,6 +61,15 @@ CYCLE_SECS = 90
 DAY_START = (6, 50)     # local (PC is Vegas time)
 DAY_END = (22, 0)       # techs regularly work past 8 PM in season — track them
 
+# self-update: pick up a pushed code/data fix within one tick instead of
+# waiting up to MAX_MIN for the session to end. Only active when the workflow
+# sets RELAY_SELF_UPDATE=1 — never fires on local/Mac runs. Checked every
+# SELF_UPDATE_EVERY ticks (CYCLE_SECS=90s * 5 = ~7.5 min) so the extra
+# `git fetch` per check doesn't hammer the API.
+SELF_UPDATE = os.environ.get("RELAY_SELF_UPDATE") == "1"
+SELF_UPDATE_EVERY = 5
+SELF_UPDATE_CWD = Path(os.environ.get("GITHUB_WORKSPACE", ".")).resolve()
+
 # SILO roster — prefer the engine's curated list so roster edits propagate.
 try:
     from UPDATE_DASHBOARD import SILO as ROSTER
@@ -859,6 +868,45 @@ def git(*args, check=True):
     return subprocess.run(["git", "-C", str(REPO)] + list(args),
                           capture_output=True, text=True, check=check)
 
+def _run_ws(*args):
+    """git command against the workflow checkout (GITHUB_WORKSPACE), used only
+    by the self-update check — separate from git() which targets the dashboard
+    repo clone used for --once/local publishing."""
+    return subprocess.run(["git", "-C", str(SELF_UPDATE_CWD)] + list(args),
+                          capture_output=True, text=True)
+
+def check_self_update():
+    """Compare local HEAD to origin/main; if a newer commit was pushed, pull
+    --rebase and re-exec so the running relay picks up the new code within one
+    tick. No-op (returns False) unless RELAY_SELF_UPDATE=1 is set. Never
+    crashes the relay: any git failure just logs and continues on old code."""
+    if not SELF_UPDATE:
+        return False
+    try:
+        fetch = _run_ws("fetch", "origin", "-q")
+        if fetch.returncode != 0:
+            log("self-update: fetch failed — continuing on current code: " + fetch.stderr[:200])
+            return False
+        head = _run_ws("rev-parse", "HEAD")
+        remote = _run_ws("rev-parse", "origin/main")
+        if head.returncode != 0 or remote.returncode != 0:
+            log("self-update: rev-parse failed — continuing on current code")
+            return False
+        local_sha = head.stdout.strip()
+        remote_sha = remote.stdout.strip()
+        if local_sha == remote_sha:
+            return False
+        log("code update detected " + remote_sha[:9] + " — restarting relay")
+        pull = _run_ws("pull", "--rebase", "-q")
+        if pull.returncode != 0:
+            log("self-update: pull --rebase failed — continuing on old code: " + pull.stderr[:200])
+            _run_ws("rebase", "--abort")
+            return False
+        os.execv(sys.executable, [sys.executable] + sys.argv)
+    except Exception as ex:
+        log("self-update ERROR — continuing on current code: " + repr(ex)[:300])
+        return False
+
 def publish(payload, force_heartbeat=False):
     stable = {k: v for k, v in payload.items() if k not in ("generated", "generatedMs")}
     old_stable = None
@@ -925,6 +973,7 @@ def cloud_main():
     arm_next()                        # successor waits in the queue from minute one
     t0 = time.time()
     last_push = 0.0
+    tick = 0
     while True:
         now = datetime.now()
         if (now.hour, now.minute) > DAY_END:
@@ -935,6 +984,9 @@ def cloud_main():
             if (now.hour, now.minute) < DAY_END:
                 arm_next()            # belt & suspenders: re-arm on the way out too
             break
+        tick += 1
+        if tick % SELF_UPDATE_EVERY == 0:
+            check_self_update()       # re-execs in place if a newer commit landed
         if in_window(now):
             try:
                 hb = time.time() - last_push > 240

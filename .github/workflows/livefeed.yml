@@ -26,4 +26,5 @@ jobs:
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
           SHEET_WEBHOOK: ${{ secrets.SHEET_WEBHOOK }}
           LIVEFEED_CLOUD: "1"
+          RELAY_SELF_UPDATE: "1"
         run: python livefeed_sync.py
