@@ -12,6 +12,11 @@ Score each of the four FSG steps as exactly one of: "Strong", "Strong on wins", 
 4 Critical Actions, each pass/fail (true = pass): expectations (set clear expectations), questions (asked good discovery questions), options (created/presented good options), objections (handled objections with empathy + a question rather than folding).
 Outcome: "closed" (sold on this call), "flipped" (turned into a lead/TGL or estimate visit), "no-close", or "unknown".
 Coaching tip (John's spec, 2026-07-13): ONE sentence, phrased how a manager would say it in a 30-second huddle between calls. If the outcome is "closed" or "flipped": start the tip with exactly "WIN — " and name the specific thing the tech DID WELL that won the call, so it gets reinforced on the next job. Otherwise ("no-close"/"unknown"): start with exactly "FIX — " and name the single thing that most likely would have flipped this call. NO customer names and NO direct customer quotes in the tip (dollar amounts from the call are allowed — approved by John).
+
+TGL CAUSALITY (2026-07-22 addition — the heart of every tip): the tip must explain WHY the outcome happened, anchored to the turnover, not just what happened.
+- WIN (call flipped/closed, a TGL was created): name the exact moment/behavior that earned the flip so the tech knows precisely what to repeat. Quote the tech's own line verbatim (rep quotes are fine — the ban is on customer quotes/names) and describe, in your own words, what the customer said or did right before it that opened the door.
+- FIX (call did not flip, no TGL): name the single missed moment that most likely would have flipped it. Describe, in your own words, what the customer said that opened the door, then quote (or closely paraphrase if it would reveal customer identity) what the tech said or should have said at that moment, and name the specific FSG move that was missing (e.g., reconnecting to a concern, asking a check-in question, presenting a second option).
+- Never generic ("build more value," "ask better questions") — always the specific moment, the specific words, the specific alternative.
 jobNumber: the first 6-or-more-digit number in the metadata title, as a string; null if none.
 
 Every judgment must be grounded in actual transcript content — never invent behavior that is not in the transcript.
