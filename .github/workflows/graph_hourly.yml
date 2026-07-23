@@ -1,0 +1,74 @@
+name: Cloud hourly (live API · Graph fallback)
+on:
+  schedule:
+    # Every 15 min, 9 AM–11 PM PT. GitHub often skips single hourly ticks on
+    # low-traffic private repos, so run 4x/hour to reliably catch each hour
+    # (idempotent — re-runs just refresh the current hour's counts).
+    - cron: "*/15 16-23,0-6 * * *"
+  workflow_dispatch:
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/Los_Angeles   # date.today() must be VEGAS-today — UTC rolls over at
+                                # 5 PM PT and made the Yesterday tab show today every evening
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install --quiet -r requirements.txt
+      - env:
+          ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}   # today's reports live from ServiceTitan
+          GRAPH_CLIENT_ID: ${{ secrets.GRAPH_CLIENT_ID }}
+          GRAPH_TENANT_ID: ${{ secrets.GRAPH_TENANT_ID }}
+          GRAPH_REFRESH_TOKEN: ${{ secrets.GRAPH_REFRESH_TOKEN }}
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+        run: python graph_hourly.py
+      # This job is driven dependably 24/7 by cron-job.org, so it doubles as the
+      # heartbeat that keeps a SILO Live Feed relay session armed during ops
+      # hours — GitHub's own cron skipped all three evening ticks on day one
+      # and the live board sat stale for 2.5 h. Extra dispatches are harmless:
+      # livefeed.yml's concurrency group collapses pending duplicates.
+      - name: Arm SILO Live Feed relay (6a–10p PT)
+        if: always()
+        env:
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+        run: |
+          H=$(TZ=America/Los_Angeles date +%-H)
+          if [ "$H" -ge 6 ] && [ "$H" -lt 22 ]; then
+            # only arm when a spare is not already waiting - extra dispatches
+            # replace the queued run and litter Actions with cancelled noise
+            API="https://api.github.com/repos/${{ github.repository }}/actions/workflows/livefeed.yml"
+            AUTH="Authorization: token $DASHBOARD_TOKEN"
+            A=$(curl -s -H "$AUTH" "$API/runs?status=in_progress&per_page=1" | jq '.total_count')
+            W=$(curl -s -H "$AUTH" "$API/runs?status=queued&per_page=1" | jq '.total_count')
+            if [ "${A:-0}" -ge 1 ] && [ "${W:-0}" -ge 1 ]; then
+              echo "livefeed active with a spare queued - no arm needed"
+            else
+              curl -s -o /dev/null -w "arm livefeed -> HTTP %{http_code}\n" -X POST \
+                -H "$AUTH" -H "Accept: application/vnd.github+json" \
+                "$API/dispatches" -d '{"ref":"main"}'
+            fi
+          else
+            echo "outside ops hours (PT hour $H) — skip"
+          fi
+      # Same heartbeat arms the Siro transcript pull on the :00/:30 ticks (John's
+      # 30-min cadence) — siro_pull's own GitHub cron fired 1 of 12 slots on
+      # 2026-07-17 morning. siro_pull.yml's concurrency group collapses any
+      # overlap with a late native-cron firing.
+      - name: Arm Siro transcript pull (6a–10p PT, :00/:30 ticks)
+        if: always()
+        env:
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+        run: |
+          H=$(TZ=America/Los_Angeles date +%-H)
+          M=$(TZ=America/Los_Angeles date +%-M)
+          if [ "$H" -ge 6 ] && [ "$H" -lt 22 ] && { [ "$M" -lt 15 ] || { [ "$M" -ge 30 ] && [ "$M" -lt 45 ]; }; }; then
+            curl -s -o /dev/null -w "arm siro_pull -> HTTP %{http_code}\n" -X POST \
+              -H "Authorization: token $DASHBOARD_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/${{ github.repository }}/actions/workflows/siro_pull.yml/dispatches \
+              -d '{"ref":"main"}'
+          else
+            echo "skip (PT $H:$M — siro pull runs on :00/:30 ticks, 6a-10p)"
+          fi

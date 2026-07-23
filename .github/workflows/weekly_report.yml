@@ -1,0 +1,41 @@
+name: SILO weekly report (Monday · PDF)
+on:
+  schedule:
+    - cron: "0 14 * * 1"    # Monday 14:00 UTC = 7 AM PT
+  workflow_dispatch:
+concurrency:
+  group: weekly-report
+  cancel-in-progress: false
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TZ: America/Los_Angeles
+    steps:
+      - uses: actions/checkout@v4          # engine (this repo)
+      - uses: actions/checkout@v4          # live site (public repo) — where the PDF is published
+        with:
+          repository: johnschwinghamer94-lab/sierra-ropp-dashboard
+          token: ${{ secrets.DASHBOARD_TOKEN }}
+          path: site
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install --quiet matplotlib
+      - name: Build the weekly PDF
+        env:
+          ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
+        run: python weekly_report.py
+      - name: Publish to the site (stable + dated URL)
+        run: |
+          pdf=$(ls -t weekly_report_*.pdf | head -1)
+          mkdir -p site/reports
+          cp "$pdf" "site/reports/$(basename "$pdf")"
+          cp "$pdf" site/reports/weekly-latest.pdf
+          cd site
+          git config user.email "johnschwinghamer94@gmail.com"
+          git config user.name "John Schwinghamer"
+          git add reports/
+          git commit -m "Weekly SILO report $(date -u +%F)" || { echo "no change"; exit 0; }
+          git pull --rebase --autostash origin main || true
+          git push || echo "push skipped"
