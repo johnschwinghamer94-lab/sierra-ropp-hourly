@@ -16,7 +16,7 @@ if not _fp.exists() and os.environ.get("ST_CREDS_JSON", "").strip():
 
 sys.path.insert(0, str(Path(__file__).parent))
 import st_client as st  # noqa: E402
-from UPDATE_DASHBOARD import resolve, to_date  # noqa: E402  (same tech-resolve the dashboard uses)
+from UPDATE_DASHBOARD import resolve, to_date, _ropp_clean_jobs  # noqa: E402  (same tech-resolve the dashboard uses)
 import urllib.error, time  # noqa: E402
 
 # Same reports + logic the ROPP dashboard is built from, so every number matches it.
@@ -53,7 +53,9 @@ def week(start, end):
         tgls += 1; per[resolve(r[ti["LeadCreatedBy"]]) or "?"]["created"] += 1
     # calls ran — Revenue by Job Type report, count rows
     rv = run_rep(REP_REVENUE, F, T); ri = {n: i for i, n in enumerate(_flds(rv))}
-    calls = sum(1 for r in rv["data"] if _vjob(r[ri["JobNumber"]]))
+    _rev_jobs = [str(r[ri["JobNumber"]]).strip() for r in rv["data"] if _vjob(r[ri["JobNumber"]])]
+    _rev_clean = _ropp_clean_jobs(set(_rev_jobs))
+    calls = sum(1 for j in _rev_jobs if j in _rev_clean)
     # ran / same-day / next-day / sold — Scheduled-vs-Ran-vs-Sold report (ran=ScheduledDate)
     sc = run_rep(REP_SCHEDULED, F, T); si = {n: i for i, n in enumerate(_flds(sc))}
     ran = same = nxt = sold = 0

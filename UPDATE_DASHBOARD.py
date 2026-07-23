@@ -181,6 +181,53 @@ def jobkey(v):
     if v is None: return None
     return str(int(v)) if isinstance(v, (int, float)) and float(v).is_integer() else str(v).strip()
 
+TAG_ROPP = 962027            # "ROPP" tag type
+TAG_MGMT_REMOVED = 545867780 # "Management Removed ROPP" tag type
+_ROPP_CLEAN_CACHE = {}
+
+def _ropp_clean_jobs(jobset):
+    """John's rule (2026-07-22): a call counts as 'ran' only if its job carries the
+    ROPP tag and is NOT 'Management Removed ROPP'. Return the subset of jobset that
+    qualifies (entity tagTypeIds). Fails OPEN (keeps everything) on any API error or
+    missing creds, so the offline/Excel path and the TGL numerator are untouched."""
+    ids = sorted(str(j) for j in jobset if str(j).isdigit())
+    if not ids:
+        return set(jobset)
+    key = ("jobs", tuple(ids))
+    if key in _ROPP_CLEAN_CACHE:
+        return _ROPP_CLEAN_CACHE[key]
+    tags = {}
+    try:
+        import st_client as st
+        for i in range(0, len(ids), 50):
+            r = st.api_get("/jpm/v2/tenant/{tenant}/jobs",
+                           {"ids": ",".join(ids[i:i+50]), "pageSize": 200})
+            for j in r.get("data", []):
+                tags[str(j.get("id"))] = j.get("tagTypeIds") or []
+    except Exception as e:
+        print("  ROPP tag audit skipped (%s); keeping all calls" % e)
+        return set(jobset)
+    clean = set()
+    for j in jobset:
+        tt = tags.get(str(j))
+        if tt is None:                 # job not returned -> keep (fail open per job)
+            clean.add(j)
+        elif TAG_MGMT_REMOVED in tt:   # management-removed -> drop
+            continue
+        elif TAG_ROPP in tt:           # has ROPP -> keep
+            clean.add(j)
+        # else: no ROPP tag -> drop
+    _ROPP_CLEAN_CACHE[key] = clean
+    return clean
+
+def _rev_clean_set():
+    """Cached clean job# set for the whole Revenue report, shared by all calls-ran loops."""
+    if "rev" not in _ROPP_CLEAN_CACHE:
+        jobs = {jobkey(r[3]) for _, r in
+                iter_grouped(load_rows("Revenue_By_JobType.xlsx"), "Assigned Technicians", 3)}
+        _ROPP_CLEAN_CACHE["rev"] = _ropp_clean_jobs(jobs)
+    return _ROPP_CLEAN_CACHE["rev"]
+
 def sub_by_srcjob():
     """TGL revenue = sold Estimate Sales Subtotal from the ESTIMATE AC/TGLS report (TGL-only,
     scheduled daily), per lead-source job number joined to ROPP_TGLs_Created Job#. Columns
@@ -260,6 +307,7 @@ def parse_all(today):
             if is_maint(bu): t["mtd"]["maint_tgls"] += 1
             elif is_svc(bu): t["mtd"]["svc_tgls"] += 1
     for grp, r in iter_grouped(load_rows("Revenue_By_JobType.xlsx"), "Assigned Technicians", 3):
+        if jobkey(r[3]) not in _rev_clean_set(): continue
         tech = resolve(r[7]) or resolve(grp); d = to_date(r[4])
         if not tech or d is None or d.year != YEAR: continue
         bu = r[10]; t = techs[tech]; mo = MONTH_NAMES[d.month-1]
@@ -360,6 +408,7 @@ def build_weekly_prevmonth(today):
         if not tech or d is None or d.year != py or d.month != pm: continue
         w = week_of_month(d); agg[tech][w]["tgls"] += 1; agg[tech][w]["revenue"] += SUB.get(jobkey(r[1]), 0.0)
     for grp, r in iter_grouped(load_rows("Revenue_By_JobType.xlsx"), "Assigned Technicians", 3):
+        if jobkey(r[3]) not in _rev_clean_set(): continue
         tech = resolve(r[7]) or resolve(grp); d = to_date(r[4])
         if not tech or d is None or d.year != py or d.month != pm: continue
         agg[tech][week_of_month(d)]["calls"] += 1
@@ -380,6 +429,7 @@ def build_weekly_conv(today, all_names):
         if not tech or d is None or d.year != YEAR or d.month != today.month: continue
         i = idx[week_of_month(d)]; per[tech][i]["tgls"] += 1; per[tech][i]["revenue"] += SUB.get(jobkey(r[1]), 0.0)
     for grp, r in iter_grouped(load_rows("Revenue_By_JobType.xlsx"), "Assigned Technicians", 3):
+        if jobkey(r[3]) not in _rev_clean_set(): continue
         tech = resolve(r[7]) or resolve(grp); d = to_date(r[4])
         if not tech or d is None or d.year != YEAR or d.month != today.month: continue
         per[tech][idx[week_of_month(d)]]["calls"] += 1
@@ -483,6 +533,7 @@ def build_yesterday(today):
         if out: return out
         f=resolve(name); return [f] if f in SILO else []
     for grp, r in iter_grouped(load_rows("Revenue_By_JobType.xlsx"), "Assigned Technicians", 3):
+        if jobkey(r[3]) not in _rev_clean_set(): continue
         if to_date(r[4])!=yday: continue
         for tech in st(r[7]): calls[tech]+=1
     SUB = sub_by_srcjob()
