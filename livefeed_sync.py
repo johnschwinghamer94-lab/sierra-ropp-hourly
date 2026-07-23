@@ -339,10 +339,23 @@ def fetch_today():
         "/crm/v2/tenant/{tenant}/customers",
         list({L["custId"] for L in dept_leads if L.get("custId")} - set(custs)))}
     lead_cust.update(custs)
+    # TGL SOLD — primary signal is a sold estimate on the lead job itself (the
+    # same rule the bonus-sheet tracker uses below); install-booked stays as a
+    # fallback. Burned 7/22: 6 TGLs sold, only the 2 with same-day install
+    # bookings got SOLD badges on the board.
+    lead_ids = {L["id"] for L in dept_leads}
+    lead_sold = {}
+    for e in ests:
+        jid = e.get("jobId")
+        if jid in lead_ids and jid not in lead_sold and (
+                e.get("soldOn") or (e.get("status") or {}).get("name") == "Sold"):
+            dtl = parse_utc(e.get("soldOn"))
+            lead_sold[jid] = fmt_t(dtl) if dtl else fmt_t(datetime.now().astimezone())
     for L in dept_leads:
         L["cust"] = lead_cust.get(L.get("custId"), "")
-        # install may point at the original call job OR at the estimate lead job
-        L["soldT"] = install_by_src.get(L["src"]) or install_by_src.get(L["id"])
+        # sold estimate first; install may point at the call job OR the lead job
+        L["soldT"] = (lead_sold.get(L["id"]) or install_by_src.get(L["src"])
+                      or install_by_src.get(L["id"]))
 
     return today, silo_appts, tech_by_appt, jobs, custs, est_by_job, lead_by_src, dept_leads
 
