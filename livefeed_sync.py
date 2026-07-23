@@ -506,6 +506,14 @@ def build(state):
             continue
         tech = L["tech"]
         other = bool(tech and tech in SHEET_EXCLUDE)   # manager B's tech
+        wk = date.fromisoformat(dkey).weekday() >= 5
+        if wk:
+            # WEEKEND SPLIT (John, 2026-07-21): Sat/Sun TGLs pool dept-wide and
+            # alternate between the managers as they land, starting with John —
+            # an odd day's extra TGL stays with John.
+            wk_n = sum(1 for v in sheet.values()
+                       if v.get("day") == dkey and not v.get("skip") and v.get("wk"))
+            other = wk_n % 2 == 1
         sd = lead_sameday(L["id"], dkey)
         ok = sheet_log({"date": dkey, "time": L["t"] or now_s,
                         "tech": tech or "", "first": sheet_name(tech or ""),
@@ -513,7 +521,7 @@ def build(state):
                         "srcId": L["src"], "sameDay": sd},
                        url=sheet_b_url() if other else None)
         if ok:
-            sheet[k] = {"skip": False, "other": other, "day": dkey,
+            sheet[k] = {"skip": False, "other": other, "wk": wk, "day": dkey,
                         "src": L["src"], "ran": "", "sold": "", "sd": sd}
     track = {int(k): v for k, v in sheet.items()
              if not v.get("skip") and v.get("src")
@@ -770,6 +778,16 @@ def sheet_audit(state, today):
         missing_b = sheet_check(sorted(theirs), url=sheet_b_url()) or []
         if missing is None:
             missing = []
+        # weekend-split rows can legitimately live on EITHER sheet — a row is
+        # only truly missing when absent from both
+        if missing:
+            also_b = sheet_check(sorted(missing), url=sheet_b_url())
+            if also_b is not None:
+                missing = [j for j in missing if j in set(also_b)]
+        if missing_b:
+            also_a = sheet_check(sorted(missing_b))
+            if also_a is not None:
+                missing_b = [j for j in missing_b if j in set(also_a)]
         healed = 0
         if missing or missing_b:
             day0 = (datetime.combine(today - timedelta(days=11), datetime.min.time())
