@@ -499,20 +499,22 @@ def build(state):
     sheet = state.setdefault("sheet", {})
     for L in dept_leads:
         k = str(L["id"])
-        if k in sheet:
+        prev = sheet.get(k)
+        # re-process TODAY's entries that were skipped under the old
+        # one-sheet rule, so manager B's sheet backfills the day's TGLs
+        if prev and not (prev.get("skip") and prev.get("day") == dkey):
             continue
         tech = L["tech"]
-        if tech and tech in SHEET_EXCLUDE:
-            sheet[k] = {"skip": True, "day": dkey}
-            continue
+        other = bool(tech and tech in SHEET_EXCLUDE)   # manager B's tech
         sd = lead_sameday(L["id"], dkey)
         ok = sheet_log({"date": dkey, "time": L["t"] or now_s,
                         "tech": tech or "", "first": sheet_name(tech or ""),
                         "jobId": L["src"], "jobNumber": str(L["src"]),
-                        "srcId": L["src"], "sameDay": sd})
+                        "srcId": L["src"], "sameDay": sd},
+                       url=sheet_b_url() if other else None)
         if ok:
-            sheet[k] = {"skip": False, "day": dkey, "src": L["src"],
-                        "ran": "", "sold": "", "sd": sd}
+            sheet[k] = {"skip": False, "other": other, "day": dkey,
+                        "src": L["src"], "ran": "", "sold": "", "sd": sd}
     track = {int(k): v for k, v in sheet.items()
              if not v.get("skip") and v.get("src")
              and v.get("day", "") >= (today - timedelta(days=10)).isoformat()
@@ -545,7 +547,8 @@ def build(state):
                     or sd != tr.get("sd") or canceled != bool(tr.get("can"))):
                 if sheet_log({"op": "update", "jobNumber": str(tr["src"]),
                               "ran": ran, "sold": sold, "sameDay": sd,
-                              "canceled": canceled}):
+                              "canceled": canceled},
+                             url=sheet_b_url() if tr.get("other") else None):
                     tr["ran"], tr["sold"], tr["sd"], tr["can"] = ran, sold, sd, canceled
     cutoff = (today - timedelta(days=13)).isoformat()
     for k in [k for k, v in sheet.items() if v.get("day", "") < cutoff]:
@@ -690,11 +693,20 @@ def _load_tgl_oneoff_exclusions():
     except Exception:
         return {}
 
-def sheet_log(row):
-    """POST a TGL event to John's bonus-sheet Apps Script webhook (env
-    SHEET_WEBHOOK; silently inert when unset). Fire-and-forget with one retry —
-    a sheet hiccup must never stall the feed loop."""
-    url = os.environ.get("SHEET_WEBHOOK", "").strip()
+# Manager B (2026-07-21): the OTHER manager's bonus sheet — a copy of John's,
+# same Apps Script. His 7 techs (SHEET_EXCLUDE) route here instead of being
+# skipped. Env SHEET_WEBHOOK_B overrides; this default is his deployed webhook.
+SHEET_WEBHOOK_B_DEFAULT = ("https://script.google.com/macros/s/AKfycbwpeVWuKpqYxwva_"
+                           "8xfJC8cNpRB84vBcxJVetg3KAz-Q95CMIrhihdEFRr7025SUkbJVw/exec")
+
+def sheet_b_url():
+    return os.environ.get("SHEET_WEBHOOK_B", "").strip() or SHEET_WEBHOOK_B_DEFAULT
+
+def sheet_log(row, url=None):
+    """POST a TGL event to a bonus-sheet Apps Script webhook (default: John's,
+    env SHEET_WEBHOOK; silently inert when unset). Fire-and-forget with one
+    retry — a sheet hiccup must never stall the feed loop."""
+    url = url or os.environ.get("SHEET_WEBHOOK", "").strip()
     if not url:
         return False
     data = json.dumps(row).encode()
@@ -712,9 +724,9 @@ def sheet_log(row):
     return False
 
 
-def sheet_check(job_numbers):
-    """Ask the sheet which of these job#s are missing from column C (op:check)."""
-    url = os.environ.get("SHEET_WEBHOOK", "").strip()
+def sheet_check(job_numbers, url=None):
+    """Ask a sheet which of these job#s are missing from column C (op:check)."""
+    url = url or os.environ.get("SHEET_WEBHOOK", "").strip()
     if not url:
         return None
     try:
@@ -753,40 +765,45 @@ def sheet_audit(state, today):
             if len(jn) >= 6 and jn.isdigit():
                 report[jn] = str(r_[ti] or "") if ti is not None else ""
         mine = {jn: t for jn, t in report.items() if t not in SHEET_EXCLUDE}
+        theirs = {jn: t for jn, t in report.items() if t in SHEET_EXCLUDE}
         missing = sheet_check(sorted(mine))
+        missing_b = sheet_check(sorted(theirs), url=sheet_b_url()) or []
         if missing is None:
-            return
+            missing = []
         healed = 0
-        if missing:
+        if missing or missing_b:
             day0 = (datetime.combine(today - timedelta(days=11), datetime.min.time())
                     .astimezone().astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
             src_map = {}
+            allmiss = set(missing) | set(missing_b)
             jts = _LOOKUPS.get("jts", {})
             for lj in paged("/jpm/v2/tenant/{tenant}/jobs", {"createdOnOrAfter": day0}):
                 gls = lj.get("jobGeneratedLeadSource") or {}
                 s_ = str(gls.get("jobId") or "")
-                if s_ in missing and (jts.get(lj.get("jobTypeId")) or "").startswith("Estimate"):
+                if s_ in allmiss and (jts.get(lj.get("jobTypeId")) or "").startswith("Estimate"):
                     src_map[s_] = lj
-            for jn in missing:
+            for jn in sorted(allmiss):
+                other = jn in set(missing_b)
                 lj = src_map.get(jn)
                 created = parse_utc(lj.get("createdOn")) if lj else None
                 dk = created.date().isoformat() if created else today.isoformat()
-                tech = mine.get(jn, "")
+                tech = (theirs if other else mine).get(jn, "")
                 sd = lead_sameday(lj["id"], dk) if lj else None
                 if sheet_log({"date": dk, "time": fmt_t(created) if created else "",
                               "tech": tech, "first": sheet_name(tech),
                               "jobId": int(jn), "jobNumber": jn, "srcId": int(jn),
-                              "sameDay": sd}):
+                              "sameDay": sd},
+                             url=sheet_b_url() if other else None):
                     healed += 1
                     if lj:
                         state.setdefault("sheet", {})[str(lj["id"])] = {
-                            "skip": False, "day": dk, "src": int(jn),
+                            "skip": False, "other": other, "day": dk, "src": int(jn),
                             "ran": "", "sold": "", "sd": sd}
         ours = {str(v.get("src")) for v in state.get("sheet", {}).values()
                 if not v.get("skip") and v.get("src")}
         extra = sorted(ours - set(report))
-        log("audit vs TGLs-Created: report %d (yours) | healed %d missing | %d logged-not-in-report%s"
-            % (len(mine), healed, len(extra), (": " + ",".join(extra[:8])) if extra else ""))
+        log("audit vs TGLs-Created: report %d yours + %d mgr-B | healed %d missing | %d logged-not-in-report%s"
+            % (len(mine), len(theirs), healed, len(extra), (": " + ",".join(extra[:8])) if extra else ""))
     except Exception as ex:
         log("audit ERROR: " + repr(ex)[:250])
 
