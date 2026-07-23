@@ -387,6 +387,44 @@ def _entity_tgls_today(today):
     return len(leads), by_tech, src_all, src_by_tech
 
 
+TAG_ROPP = 962027                 # "ROPP" tag type
+TAG_MGMT_REMOVED = 545867780      # "Management Removed ROPP" tag type
+
+
+def _ropp_clean(calls_set):
+    """John's rule (2026-07-22): a call only counts as 'ran' if it carries the ROPP
+    tag (962027) and is NOT flagged 'Management Removed ROPP' (545867780). Audit each
+    job in the calls set by its entity tagTypeIds and drop the no-ROPP and
+    management-removed jobs. TGL counts are unaffected. Fails OPEN (returns the set
+    unchanged) on API error, and keeps any job the API doesn't return, so the gauge
+    never crashes or silently under-counts."""
+    import st_client as st
+    ids = [str(c) for c in calls_set if str(c).isdigit()]
+    if not ids:
+        return set(calls_set)
+    tags = {}
+    try:
+        for i in range(0, len(ids), 50):
+            r = st.api_get("/jpm/v2/tenant/{tenant}/jobs",
+                           {"ids": ",".join(ids[i:i+50]), "pageSize": 200})
+            for j in r.get("data", []):
+                tags[str(j.get("id"))] = j.get("tagTypeIds") or []
+    except Exception as e:
+        print(f"ROPP tag audit failed ({e}); keeping unfiltered calls set")
+        return set(calls_set)
+    clean = set()
+    for c in calls_set:
+        tt = tags.get(str(c))
+        if tt is None:                    # job not returned -> keep (fail open per job)
+            clean.add(c)
+        elif TAG_MGMT_REMOVED in tt:      # management-removed -> drop
+            continue
+        elif TAG_ROPP in tt:              # has ROPP tag -> keep
+            clean.add(c)
+        # else: no ROPP tag -> drop
+    return clean
+
+
 def main():
     n = _now(); today = n.date().isoformat(); hh = f"{n.hour:02d}"
     rev_rows = tgl_rows = sch_rows = None
@@ -431,24 +469,28 @@ def main():
         # later closes the call and it shows up in the normal report too, it's not
         # double-counted (same job# already in the set).
         calls_set |= e_src_all
+        # John's rule (2026-07-22): a call only counts as "ran" if it carries the ROPP
+        # tag and is NOT "Management Removed ROPP". Audit the union; drop no-ROPP and
+        # management-removed calls. TGL counts are unaffected -- a dropped call's TGL
+        # still counts (it created a lead; the call just wasn't a ROPP call).
+        calls_set = _ropp_clean(calls_set)
         calls = len(calls_set)
         seen = set()
         for tec in techs:
             tec["tgls"] = e_by.get(tec["name"], 0)
-            tsrc = e_src_by_tech.get(tec["name"])
-            if tsrc:
-                tec["calls"] = len(call_sets.get(tec["name"], set()) | tsrc)
+            tsrc = e_src_by_tech.get(tec["name"], set())
+            tec["calls"] = len((call_sets.get(tec["name"], set()) | tsrc) & calls_set)
             tec["rate"] = rate(tec["tgls"], tec["calls"])
             seen.add(tec["name"])
         for enm, ecnt in e_by.items():
             if enm not in seen:
                 tsrc = e_src_by_tech.get(enm, set())
-                tcalls = len(tsrc)
+                tcalls = len(tsrc & calls_set)
                 techs.append({"name": enm, "calls": tcalls, "tgls": ecnt,
                               "rate": rate(ecnt, tcalls), "rev": 0})
         techs = [tec for tec in techs if tec["calls"] or tec["tgls"]]
         techs.sort(key=lambda x: (-x["tgls"], -x["calls"], x["name"]))
-        print(f"TGL lens: entity created-today ({e_tot}); calls incl. TGL-source union ({calls})")
+        print(f"TGL lens: entity created-today ({e_tot}); calls ROPP-audited ({calls})")
     except Exception as e:
         print(f"entity TGL count failed ({e}); keeping report lens")
     sched = sched_metrics(sch_rows) if sch_rows else None
