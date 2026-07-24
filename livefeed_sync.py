@@ -75,7 +75,7 @@ try:
     from UPDATE_DASHBOARD import SILO as ROSTER
 except Exception:
     ROSTER = ["Alex - Oleksiy Yakovchuk", "Noah Weng", "Joe Mendoza", "Benjamin Wyllie",
-              "Nikko April", "Andrew Trujillo", "Juan Tlatenchi",
+              "Nikko April", "Andrew Trujillo", "Juan Tlatenchi", "David Canales",
               "Brandon Moreno", "Francisco Valencia", "Mario Castro", "Cole Pantol",
               "Nathan Colquitt", "Robert Silinzy", "Andrew Alonso"]
 

@@ -37,12 +37,12 @@ _CANCEL_EXCLUDED_COUNT = 0   # set during parse_all, read by build_cancel
 
 # ---- SILO roster (curated) --------------------------------------------------
 TEAM_A = ["Noah Weng", "Joe Mendoza", "Benjamin Wyllie", "Nikko April",
-          "Andrew Trujillo", "Juan Tlatenchi"]
+          "Andrew Trujillo", "Juan Tlatenchi", "David Canales"]
 TEAM_B = ["Brandon Moreno", "Francisco Valencia", "Mario Castro", "Cole Pantol",
           "Nathan Colquitt", "Andrew Alonso", "Robert Silinzy"]
 ALEX   = "Alex - Oleksiy Yakovchuk"
-SILO   = [ALEX] + TEAM_A + TEAM_B           # 14 (SILO_SET, incl Andrew Alonso)
-SILO_12 = [n for n in SILO if n != "Andrew Alonso"]   # 13 (SILO_12 const)
+SILO   = [ALEX] + TEAM_A + TEAM_B           # 15 (SILO_SET, incl Andrew Alonso)
+SILO_12 = [n for n in SILO if n != "Andrew Alonso"]   # 14 (SILO_12 const)
 
 ROSTER_START = {"Andrew Alonso": date(2026, 6, 14)}    # team-split tab only
 
