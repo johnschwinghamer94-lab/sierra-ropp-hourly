@@ -25,6 +25,10 @@ jobs:
           ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
           SHEET_WEBHOOK: ${{ secrets.SHEET_WEBHOOK }}
+          SIRO_API_KEY: ${{ secrets.SIRO_API_KEY }}
+          SIRO_CLIENT_ID: ${{ secrets.SIRO_CLIENT_ID }}
+          SIRO_CLIENT_SECRET: ${{ secrets.SIRO_CLIENT_SECRET }}
+          SIRO_USER_ID: ${{ secrets.SIRO_USER_ID }}
           LIVEFEED_CLOUD: "1"
           RELAY_SELF_UPDATE: "1"
         run: python livefeed_sync.py
