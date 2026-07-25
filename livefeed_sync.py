@@ -529,19 +529,33 @@ def build(state):
         # estimates on this job: unsold = options in play; sold = money closed on
         # the call itself (parts etc.) — a sold estimate is NOT a TGL signal,
         # the lead-job link (lead_by_src) is the authority for TGLs.
+        #
+        # opts_n = COUNT of real options the tech built today (active,
+        # non-dismissed estimates whose items aren't just the CA01 "speak to
+        # a comfort advisor / install specialist" routing placeholder). This
+        # counts sold AND still-open estimates alike, because a tech who built
+        # 3 options and got 2 signed still built 3 — the count must reflect
+        # what was built, not just what's still open. (Bug: previously gated
+        # on subtotal > 0 and excluded anything sold, which undercounted jobs
+        # where an option was $0 [call-for-quote pricing] or already signed.)
+        # opts_t = dollar total of estimates STILL open/unsold ("$ in play").
         opts_t = opts_n = 0
         opt_time = sold_time = None
         sold_t = 0.0
         for est in est_by_job.get(jid, []):
             sub = float(est.get("subtotal") or 0)
             st_name = ((est.get("status") or {}).get("name") or "").lower()
-            if est.get("soldOn") or st_name == "sold":
+            sold = bool(est.get("soldOn")) or st_name == "sold"
+            skus = {(i.get("sku") or {}).get("name") for i in (est.get("items") or [])}
+            is_ca_placeholder = skus == {"CA01"}
+            if sold:
                 sold_t += sub
                 dtl = parse_utc(est.get("soldOn"))
                 if dtl and dtl.date() == today:
                     sold_time = fmt_t(dtl)
             elif est.get("active") and st_name != "dismissed" and sub > 0:
                 opts_t += sub
+            if est.get("active") and st_name != "dismissed" and not is_ca_placeholder:
                 opts_n += 1
                 dtl = parse_utc(est.get("createdOn"))
                 if dtl:
