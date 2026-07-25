@@ -21,6 +21,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
+      - run: pip install --quiet -r requirements.txt
       - env:
           ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
