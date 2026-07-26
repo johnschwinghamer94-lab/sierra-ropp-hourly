@@ -1,44 +1,79 @@
-# Live Coach Card — Andrew Trujillo
+# Live-Coach Scorecard: Andrew Trujillo — Motor Start Device Replacement
 
-**Recording ID:** e070f715-19cd-4214-971b-92339a35d507-uRoNvVAJhDZXMKB2yLsFt1Sm6te2  
-**Tech:** Andrew Trujillo  
-**Date:** 2026-07-26  
-**Duration:** 103 min  
-**Job:** Motor Start Device Replacement (Tenant-Occupied Rental)
+**Call Details**
+- RecId: e070f715-19cd-4214-971b-92339a35d507-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
+- Date: 2026-07-26
+- Duration: 103 min
+- Rep: Andrew Trujillo
+- Job: AC Unit Motor Start Device Replacement (Tenant Rental)
 
 ---
 
-## FSG Scores
+## FSG Bands
 
-| Step | Band | Evidence |
-|------|------|----------|
-| **Welcome** | Strong | "That's a pretty cool name, man." Set clear expectations: "I'm gonna look at the full thing, outside and in." Proactively explained homeowner-tenant protocol. |
-| **Assessment** | Strong | Systematic diagnosis: asked when failure started (36 hrs), what tenant tried, verified no airflow, checked thermostat setting, confirmed fan issue. Traced root cause methodically through voltage readings. |
-| **Decision** | Strong on wins | Clear value narrative: "motor start device... stores electricity... like a battery." Transparent pricing $557 with 1-year warranty. Offered maintenance plan but respected objection ("I think we're gonna sell the house") without pushback. |
-| **Deliver** | Solid | Confirmed repair worked (60°F air, proper 20° split). Verified temperature drop. Arranged signature acknowledgment. Plans to email invoice and photos to homeowner. No explicit ask for 5-star review. |
+**Welcome: Solid**
+- Introduced himself warmly: "I'm Andrew with Sierra"
+- Complimented customer: "That's a pretty cool name, man"
+- Set expectations upfront about scope: Work on downstairs AC that's not turning on
+- Tone was friendly but didn't emphasize customer's problem/pain in opening
+
+**Assessment: Strong**
+- Diagnosed both upstairs and downstairs systems thoroughly
+- Asked about system operation and customer concerns
+- Explained thermostat fan settings: "When you do fan auto or on, that's actually the fan that's inside the attic"
+- Checked outdoor unit condition and motor start device functionality
+- Identified root cause: failed motor start device on outdoor unit
+
+**Decision: Strong on Wins**
+- Connected with both decision-makers (tenant + landlord Justin via phone)
+- Explained repair clearly before quoting: "I'm gonna give Justin a call. Let him know essentially what that repair is going to look like for him cost-wise"
+- Tenant was receptive throughout
+- Got landlord approval: "as long as he gives me the A-okay, I can have you guys up in the next 15-20 minutes"
+- Work was approved and completed same call
+
+**Deliver: Strong**
+- Explained cooling system operation: "This fan shoots it out into the air. That gets rid of the hot air from your house"
+- Demonstrated technical knowledge: 20-degree temperature split test ("we're getting some good cooling")
+- Asked for feedback: "Can I take you up on that? [drink offer]"
+- Built rapport throughout conversation (discussed California cities, personal background)
+- Got signatures at end: "I'm just gonna get 2 signatures from you"
+
+---
 
 ## Critical Actions
 
-| Action | Pass | Moment |
-|--------|------|--------|
-| **expectations** | ✓ | "I'm gonna take all the information, go straight to him... it's the customer's call." Set clear cost, warranty, timeline expectations. |
-| **questions** | ✓ | "Did the last tech give you any sort of inkling... what did they tell you?" Uncovered prior work and system history to build context. |
-| **options** | ✓ | Presented motor start device repair ($557, 1-year warranty) and maintenance plan alternative ($86 savings). |
-| **objections** | ✓ | Homeowner said "I think we're gonna sell the house." Andrew replied "I hear you" and moved forward without re-pitching, respecting the decision. |
+| Action | Pass/Fail | Evidence |
+|--------|-----------|----------|
+| **Expectations** | ✓ TRUE | Clear about needing landlord approval and timeline: "as long as he gives me the A-okay, I can have you guys up in the next 15-20 minutes" |
+| **Questions** | ✓ TRUE | Asked about system operation, customer needs, outdoor unit condition |
+| **Options** | ✓ TRUE | Presented repair solution and got approval to proceed |
+| **Objections** | ✓ TRUE | Customer was receptive; handled potential concerns about cost by getting landlord approval upfront |
+
+---
 
 ## Outcome
 
-**Closed** — Homeowner (Justin) approved repair over phone, payment processed via credit card, repair completed same night with successful verification.
+**Closed** — Customer approved repair, work was completed, signatures obtained
 
-## Win Moment
+---
 
-**The diagnostic clarity was the closer.** When Justin asked "Would this be under warranty?" instead of guessing, Andrew looked up the actual Trane warranty, found it expired 7/16 (just passed), then pivoted: "This is the motor start device... it's fresh out the box. I can get you up and running in 15 minutes with a one-year warranty from us." That transparency—showing the dead capacitor photo, explaining the 45/5 power readings, and offering Sierra's own warranty—eliminated doubt. Justin went from "let me call somebody" to "okay, let's do it" in one callback.
+## Strengths
 
-## Gaps
+1. **Landlord communication** — Called landlord proactively to explain repair and get approval rather than just telling tenant what needed to be done
+2. **Technical explanation** — Explained what the motor start device does and how the cooling system works in customer-friendly terms
+3. **Rapport building** — Extended conversation with customer and landlord created trust that led to quick approval
+4. **Execution** — Got approval and completed work same call with no back-and-forth
 
-- **Be a Nerd lite:** Explained the system well upfront and during repair, but minimal post-completion teaching moment (could have walked through the readings again after successful restart).
-- **5-Star ask:** Sent report mention but no explicit "would you mind leaving us a review?" (low priority for rental property closing anyway).
+---
 
-## Coaching
+## Coaching Notes
 
-**FOR NEXT CALL:** You nailed the tenant-homeowner dynamic—respecting that Justin's the decider, managing expectations about communication paths, getting approval before proceeding. Lean on that strength. The one-minute gain: after verification, a quick "How's the airflow feeling now?" from the tenant in the call with Justin would have locked in the emotional win ("yeah, it's running great!") and made that closing even warmer.
+Andrew is excellent at relationship-building and can sell complex repairs because he explains the "why" clearly. His 103-minute call shows he wasn't rushing—he took time to connect and educate. The landlord approval process worked well and could be a model for rentals.
+
+One area: he could have surfaced pricing earlier in the decision phase to accelerate approval, but since he got the yes anyway, this wasn't an issue here.
+
+---
+
+## Summary
+
+Strong all-around performance. Tech fully owned the call from diagnosis through completion, communicated clearly with both tenant and landlord, and delivered good technical explanation. Closed call same day with customer satisfaction.
