@@ -1,45 +1,51 @@
-# Live Coach Card — Robert Silinzy
+# Live-Coach Card: Robert Silinzy (2026-07-26)
 
-**Recording ID:** file:Robert_Silinzy_-_  
-**Tech:** Robert Silinzy  
-**Date:** 2026-07-26  
-**Duration:** 45 min  
-**Job:** Diagnostic/Assessment (13-year-old system, multiple components failing)
+## Overview
+- **Transcript ID**: file:Robert_Silinzy_-_
+- **Date**: 2026-07-26
+- **Duration**: 45 minutes
+- **Outcome**: Flipped (estimate/lead created)
 
----
+## FSG Bands
 
-## FSG Scores
+### Welcome: Strong
+- Warm greeting and personal connection
+- Acknowledged pet (Ruby) to build rapport
+- Set approachable tone
 
-| Step | Band | Evidence |
-|------|------|----------|
-| **Welcome** | Solid | "I love dogs," builds rapport with customer immediately. Professional greeting and acknowledgment. |
-| **Assessment** | Strong | Systematic testing: checked compressor windings with megometer, tested hard start device (114v vs 88-108 rated), inspected blower motor for oil leak, reviewed previous invoice history (Nov 2022 repair). Clear communication of findings. |
-| **Decision** | Solid | Presented three major issues (weakened compressor, overamped hard start, failing blower motor) and offered followup with pricing. Set proper expectations: "could be tomorrow, could be back order, could be three weeks." Didn't push unnecessary upsell. |
-| **Deliver** | Moderate | Explained what he tested and why (megometer testing, winding inspection), but light on "Be A Nerd" detail post-diagnosis. Got signature for evaluation completion. No explicit 5-star ask. |
+### Assessment: Strong
+- Asked key discovery: "Is this the first time something like this has happened?"
+- Explored system age (13 years) and repair history
+- Investigated previous service costs and potential overcharging concern
+- Detailed technical diagnosis: compressor operation, hard start amperage (114 vs 88-108 rated), winding weakness via megohmmeter test
+- Checked blower motor for oil leak, filter inspection
+
+### Decision: Solid
+- Addressed prior overcharging concern by looking up old invoice
+- Discussed cost ranges for repairs
+- Did not present multiple options during call (deferred to report)
+- Set realistic expectations about supply chain delays
+
+### Deliver: Solid
+- Explained hard start purpose and microprocessor role in technical but accessible language
+- Megohmmeter testing explanation
+- Oil on blower motor as failure indicator
+- Articulated company value and thoroughness
 
 ## Critical Actions
 
-| Action | Pass | Moment |
-|--------|------|--------|
-| **expectations** | ✓ | Set realistic timeline expectations: "I don't want to promise next week then have you wait three months." Acknowledged parts availability uncertainty. |
-| **questions** | ✓ | "Is this the first time something like this has happened?" Diagnosed system age (13 years old). Reviewed previous repair history ($1,400 in 2022). |
-| **options** | ✗ | Presented diagnosis (compressor weakened, hard start over-amped, blower motor leaking oil) but didn't offer options on priorities or payment plans. Said "give me 20 minutes, I'll put it together," implying followup. |
-| **objections** | ✓ | Handled customer frustration from prior $1,600+ repair ("he charged me too much for"): acknowledged without defensiveness, looked up invoice history to verify. |
+✓ **Expectations**: Yes  
+✓ **Questions**: Yes  
+✗ **Options**: No (deferred to report)  
+✓ **Objections**: Yes (addressed overcharging concern)  
 
-## Outcome
+## Findings & Gaps
 
-**Flipped** — Diagnostic visit converted to estimate/follow-up. Robert promised pricing on compressor ($potentially $1,500-$5,500), blower motor, and potential hard start upgrade. No same-day purchase.
+### What Went Well
+1. Trust recovery from overcharging concern via invoice verification
+2. Comprehensive diagnosis with all components tested
+3. Realistic timeline communication without false promises
 
-## Conversation Flow
+## Coaching Tip
 
-Robert found a system on its last legs: 13-year-old unit with three concurrent failures (compressor windings weakening, hard start over-amped after 4-year previous repair, blower bearing oil leak). He offered to research and return with pricing, setting clear expectations about lead time ("could be weeks"). The call is a textbook diagnostic flip—good assessment, honest expectations, but no close.
-
-## Gaps
-
-- **Options missing:** Should have offered "Just fix the capacitor to get you cooling today while we source the compressor?" to buy customer goodwill and immediate relief.
-- **5-Star ask:** Friendly throughout, but no explicit review request at the end.
-- **Followup commitment:** Didn't calendar the exact time he'd call back with pricing.
-
-## Coaching
-
-**FOR NEXT CALL:** The honesty about lead time was excellent and protected you from over-promising. One gain: next time a 13-year-old system's got three issues, offer a quick-fix (capacitor, blower motor today) even if it's temporary, so the customer isn't without AC while you price the big stuff. That builds trust that you're solving today, not just quoting tomorrow.
+**WIN — When the customer mentioned being overcharged $1,400 for a hard start in 2022, the tech immediately looked up the previous invoice to acknowledge the concern and explain what was charged, establishing trust that this company values fairness and will provide honest pricing on the compressor replacement decision coming in the report.**
