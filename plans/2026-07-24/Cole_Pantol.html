@@ -1,0 +1,230 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cole Pantol — SILO Coaching Plan · 2026-07-24</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style>
+</head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;·&nbsp;SILO</b><span class="tag">Daily Coaching Plan · 2026-07-24</span></div>
+<div class="wrap">
+<div class="hero"><div class="ey">Daily Coaching Plan · 2026-07-24 · 4 gradeable calls · one confirmed handoff</div><h1 class="disp">Cole Pantol</h1><p class="lede">On the BALTERA call he ran the flip exactly as the model draws it — three options, the futures priced, the specialist booked, and a customer talked out of spending three thousand dollars he was about to waste. Ninety minutes later, on an almost identical system, the same buying signal came twice and he emailed a report instead.</p></div>
+<div class="glance">
+<div class="g"><div class="k">Close Rate</div><div class="v grn">25%<small>1 of 4 — the BALTERA specialist handoff, booked and signed on tape</small></div></div>
+<div class="g"><div class="k">Calls Reviewed</div><div class="v">4 of 4<small><q>BALTERA</q> complete · <q>JENSEN</q> · <q>BURRICHTER</q> · one unnamed job</small></div></div>
+<div class="g"><div class="k">Strongest</div><div class="v grn">Assessment<small>Draw the Picture — Strong</small></div></div>
+<div class="g"><div class="k">Weakest</div><div class="v red">Deliver<small>5-Star Review — never asked</small></div></div>
+</div>
+<div class="legend"><span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span><span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span></div>
+<p class="note">Scored on strength bands, never numbers — the only figure anywhere is the close rate. Prices and meter readings below are the rep's own words to the customer, quoted as evidence, not scores. A phone call with a coworker embedded in the BURRICHTER recording has been excluded entirely and is neither graded nor commented on. The BURRICHTER and unnamed recordings end before the decision conversation and are graded partial.</p>
+
+<section><div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive"><div class="dh"><div class="k">The day in two calls</div><h3>He knows exactly how to flip one — and let an identical one go to email.</h3></div><div class="split"><div class="c should"><div class="lbl">BALTERA — textbook</div><p>Immediates, futures and a third path, all named: <q>I did give you that third option we talked about, which would be speaking to one of our comfort advisors about what it would take to update the system. That way you have a repair price, you have a replacement price, and you can see what works best for you and your wife.</q> Then he protected the customer from himself: <q>I hate to see you guys light $3,000 on fire and then go for a permanent solution. So I can always get someone out.</q> The customer booked it: <q>I'll go ahead and give a call and we'll get them out here.</q></p></div><div class="c said"><div class="lbl">JENSEN — the same signal, twice, unconverted</div><p>Two failing compressors on banned refrigerant, a rusting coil and a leaking blower motor. The customer asked <q>How much is the whole unit going for nowadays?</q> Cole: <q>I just work on the repair side, so I'm not entirely sure on what replacements cost, but that's always information we can get for you guys if you wanted it.</q> Asked again, same answer. No advisor called, no appointment offered — the report went out by email and he collected the tune-up fee and left.</p></div></div></div></section>
+
+<section><div class="sh"><div class="no">2</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div><div class="rub">
+
+<div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b wins">Strong on wins</span></span></div>
+<div class="row"><div class="rb">Intro / get their name</div><div><span class="b strong">Strong</span></div><div class="ev">Consistent and two-way: <q>My name is Cole, I'm with Sierra. Nice to meet you. What's your name?</q> → <q>Samantha.</q> He also re-introduced himself when the second decision-maker appeared: <q>My name is Cole. What was your name?</q> → <q>Morgan.</q></div></div>
+<div class="row"><div class="rb">Verify our vehicle parking</div><div><span class="b weak">Weak</span></div><div class="ev">Not raised on any of the four calls.</div></div>
+<div class="row"><div class="rb">Permission to enter</div><div><span class="b strong">Strong</span></div><div class="ev">Asked for the whole visit, not just the doorway: <q>Is it okay just to come and go as I need?</q> on two calls, and before going up: <q>I'm just going to come in and take a look at the attic portion, and I'll come down and go over everything. Is that okay?</q></div></div>
+<div class="row"><div class="rb">Floor protectors</div><div><span class="b weak">Weak</span></div><div class="ev">Not mentioned on any of the four calls.</div></div>
+<div class="row"><div class="rb">Personal connection</div><div><span class="b strong">Strong</span></div><div class="ev">Genuinely good, and it goes somewhere. Dogs, Long Island, the DJ side-hustle — <q>if you could do something that you love and generate income, that's not a job</q> — and the moment that mattered most, when a customer warned him his father has dementia and asked for patience: <q>Well, of course. My grandfather has it, so I definitely understand where you're coming from. I got nothing but patience for them.</q></div></div>
+<div class="row"><div class="rb">Confirm the reason for the call</div><div><span class="b strong">Strong</span></div><div class="ev">Dated and characterised every fault: <q>When did this all start happening?</q> → <q>Three nights ago</q> → <q>Is there any loud sounds or smells or anything?</q> And he went one better on the unnamed call by asking the outcome question outright: <q>What's your ultimate goal for today?</q> → <q>I just want to get peace of mind, man.</q></div></div>
+<div class="row"><div class="rb">Brief technical questions</div><div><span class="b strong">Strong</span></div><div class="ev">Ownership length, build year, equipment history, prior contractors — and on BURRICHTER he established the decision-maker before doing anything: <q>And Pauline is the homeowner, and you're the tenant. Correct.</q> Then held that line when the tenant pushed: <q>if you come and say we can fix it but it's going to cost this — you can't relay that to me, can you?</q> → <q>No, I would have to give her a call.</q></div></div>
+<div class="row"><div class="rb">Intent to fix today</div><div><span class="b strong">Strong</span></div><div class="ev">In the block on three of four: <q>We get that approval to start as soon as today.</q> On BALTERA he pushed the timeline for the customer: <q>we are still pretty early in the day. Sometimes they have same day installs and other times we have next day.</q></div></div>
+<div class="row"><div class="rb">Address membership status</div><div><span class="b weak">Weak</span></div><div class="ev">Never raised on any of the four calls.</div></div>
+<div class="row"><div class="rb">Setting Expectations — LTOAT5</div><div><span class="b wins">Strong on wins</span></div><div class="ev">Where he runs it, it is complete — all six beats including the five-star seed: <q>Then I'll step into my thorough evaluation, look for safety, cleanliness, proper operations. Anything's out of the ordinary, is that okay to let you know? … I'll step out to the van, I'll build a report for you. We don't do any work without your approval. We get that approval to start as soon as today. Above all, I'm here to give you a five star experience. If I'm not doing that, let me know so I can change it.</q> Delivered nearly verbatim on the unnamed call and on BURRICHTER. Entirely absent on JENSEN, which opened with <q>when we come out, we do take a look at the whole system… would you mind showing me around real quick?</q> and nothing else.</div></div>
+
+<div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+<div class="row"><div class="rb">Required questions</div><div><span class="b wins">Strong on wins</span></div><div class="ev">On the unnamed call, three of four land and the follow-ups are better than the questions. Thermostat: <q>what do you usually keep the thermostat at?</q> → <q>75… when it's just me and my wife, 74.</q> Rooms, with a genuinely useful calibration: <q>would you say it's like a couple degrees warmer in there, or like 10 degrees walking through a wall of heat when you get in there?</q> And the bill: <q>what are the utility bills like on the home during the summertime?</q> → the spike from twenty dollars to two hundred. On BALTERA the filter question lands. On BURRICHTER and JENSEN almost none of the set is asked.</div></div>
+<div class="row"><div class="rb">Check-ins</div><div><span class="b strong">Strong</span></div><div class="ev">Structured, announced in advance and then honoured: <q>the way I usually start is I start on the outside, take a look at that system, then I'll come in, go over it with you, and then I jump up in the attic, take a look at that system, I go over everything as a whole with you.</q> He then did precisely that on every call — and on JENSEN he repeated the outdoor findings from scratch for a second decision-maker who had been asleep.</div></div>
+<div class="row"><div class="rb">Draw the Picture</div><div><span class="b strong">Strong</span></div><div class="ev">The best teaching on the board this day. The hard start: <q>it's kind of like a band aid for the compressor… it lowers the amount of power that that compressor pulls in to start itself.</q> Rated against actual, every time, in the customer's hearing. The leaking fan motor: <q>just like a car engine, no oil, it's going to seize up on you… there's no dipstick. There's no way to add oil back in.</q> The blower motor's dust carpet: <q>dust and oil become like a magnet for each other, making this carpet that you're starting to develop.</q> The rusting coil, followed all the way to the consequence — leak, low charge, no cooling.</div></div>
+<div class="row"><div class="rb">Check Your Tone</div><div><span class="b strong">Strong</span></div><div class="ev">Never alarmist, and repeatedly generous. He talked a customer out of a repair — <q>I hate to see you guys light $3,000 on fire</q> — and volunteered work nobody asked for: <q>I cleaned the coils. There was a lot of dog urine and some bird poop all over them… that all restricts airflow.</q></div></div>
+<div class="row"><div class="rb">Keep It Simple</div><div><span class="b strong">Strong</span></div><div class="ev">Every technical term is defined the moment it appears — LRA, RLA, the magometer's <q>good, caution, and bad</q> — and he checks: <q>Do you have any questions or anything I can explain better on that?</q></div></div>
+<div class="row"><div class="rb">Show Pictures</div><div><span class="b strong">Strong</span></div><div class="ev">Shows the part and the plate together: <q>I know the data tag is hard to see, but right here. So compressor, we follow it over, it has an LRA right here of 68… and when it did start itself up, we're pulling in 99.</q> The customer can see the gap, not just hear about it.</div></div>
+<div class="row"><div class="rb">Get the Customer to Diagnose</div><div><span class="b strong">Strong</span></div><div class="ev">It works — the BALTERA customer reached the conclusion himself: <q>So basically what you're saying is it really needs a whole new system.</q> That sentence is the whole objective of the Assessment step, arrived at by the customer, out loud.</div></div>
+
+<div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b wins">Strong on wins</span></span></div>
+<div class="row"><div class="rb">Building options</div><div><span class="b strong">Strong</span></div><div class="ev">Genuine tiers on BALTERA — the immediate voltage switch, the futures (<q>those two together come out to over 7,200</q>), and the advisor — and he recommended all three honestly when asked: <q>I would suggest all three of those to ensure the proper operation.</q></div></div>
+<div class="row"><div class="rb">Reconnecting</div><div><span class="b solid">Solid</span></div><div class="ev">Re-anchored on the agreed fault before pricing, though without much reference back to what the customer said he cared about.</div></div>
+<div class="row"><div class="rb">Link It</div><div><span class="b strong">Strong</span></div><div class="ev">The strongest link of anyone's day, and it was unprompted: <q>I know you guys have solar, but when it comes to the utilities, with that compressor pulling in that much power, it's going to be running up the amount of electricity used by about 10%. Eat up those credits you build up through the year.</q> He turned a failing compressor into something the customer was already paying for.</div></div>
+<div class="row"><div class="rb">Say It</div><div><span class="b wins">Strong on wins</span></div><div class="ev">Named repair and future numbers plainly on BALTERA and gave honest ballparks with the caveat attached: <q>I'll get concrete numbers at the end, but just to give you a ballpark.</q> On JENSEN the number the customer actually asked for was never produced.</div></div>
+<div class="row"><div class="rb">Spin It</div><div><span class="b strong">Strong</span></div><div class="ev">Reframed the decision as protecting the customer's money rather than spending it: <q>We can start throwing parts at this. It's just, it is going to add up.</q></div></div>
+<div class="row"><div class="rb">Zip It</div><div><span class="b solid">Solid</span></div><div class="ev">Presented and then handed it over — <q>But take a look, let me know what works best for you</q> — though on BALTERA he filled the pause afterwards with reassurance rather than letting it sit.</div></div>
+<div class="row"><div class="rb">Overcoming objections</div><div><span class="b strong">Strong</span></div><div class="ev">The BALTERA hesitation was worked properly. The customer was weighing a repair against waiting for a quote; Cole surfaced the real risk — irreversible spend on a system about to be replaced — offered a same-day advisor, and answered the timing worry directly: <q>worst case tomorrow.</q> Customer re-engaged and booked it.</div></div>
+
+<div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+<div class="row"><div class="rb">Be A Nerd</div><div><span class="b strong">Strong</span></div><div class="ev">Hard starts, LRA against RLA, magometer readings, refrigerant law, coil rust chemistry, blower oil, damper solutions for a hot bedroom — and an observation nobody else on the board would have made: <q>You have one of the better attics in Vegas… they put the insulation on the actual roof, not the ceiling. So it only gets about 10 degrees hotter than what your home actually is.</q></div></div>
+<div class="row"><div class="rb">5-Star Review</div><div><span class="b weak">Weak</span></div><div class="ev">Seeded well on three of four calls — <q>above all, I'm here to give you a five star experience</q> — and never once asked for, including on the calls that reached a close and a payment.</div></div>
+
+<div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b strong">Strong</span></span></div>
+<div class="row"><div class="rb">Make their time valuable</div><div><span class="b strong">Strong</span></div><div class="ev">Every one of these customers understood their equipment better afterwards, and two of them were actively steered away from spending money that would have been wasted.</div></div>
+<div class="row"><div class="rb">Help them arrive at their own solution</div><div><span class="b strong">Strong</span></div><div class="ev">The BALTERA customer said the conclusion himself and then chose the path himself. That is the objective, achieved.</div></div>
+
+</div>
+
+<div class="sh" style="margin-top:26px"><div class="no">3</div><h2>Critical Actions — pass rate</h2></div><div class="rub">
+<div class="row"><div class="rb">Setting clear expectations</div><div><span class="b fail">Fail</span></div><div class="ev">All six beats, near-verbatim, on three of four calls — the most complete block on the board. Entirely absent on JENSEN. One miss is an automatic fail on the day.</div></div>
+<div class="row"><div class="rb">Asking good questions</div><div><span class="b fail">Fail</span></div><div class="ev">Excellent on the unnamed call — thermostat, rooms and the bill, with real follow-ups. On BURRICHTER and JENSEN almost none of the required set is asked, and the filter question appears on only one call all day.</div></div>
+<div class="row"><div class="rb">Creating good options</div><div><span class="b pass">Pass</span></div><div class="ev">Immediates, futures and the advisor path, priced and grounded in the evaluation. On JENSEN the report carried immediates and futures too — it was emailed rather than presented, which is a delivery failure, not an option-building one.</div></div>
+<div class="row"><div class="rb">Handling objections</div><div><span class="b pass">Pass</span></div><div class="ev">The one real objection of the day was handled with the customer's interest in front of the sale, and it converted.</div></div>
+</div></section>
+
+<section><div class="sh"><div class="no">4</div><h2>What went right — real strength, build on it</h2></div><ul class="str">
+<li><b>He talked a customer out of spending three thousand dollars.</b> <q>I hate to see you guys light $3,000 on fire and then go for a permanent solution.</q> And that is precisely why the flip happened.</li>
+<li><b>He tied a failing compressor to a solar bill.</b> <q>it's going to be running up the amount of electricity used by about 10%. Eat up those credits you build up through the year.</q> Nobody else on the board linked a finding to the customer's own economics that cleanly.</li>
+<li><b>Every reading was shown, not stated.</b> Rated against actual, plate in hand, on every single call.</li>
+<li><b>He protected the decision-maker.</b> On a landlord-tenant job he confirmed who decides and refused to quote to the wrong person — and took the trouble to get her name right.</li>
+<li><b>He cleaned coils nobody asked him to clean</b> and explained why it mattered.</li>
+<li><b>Real grace with a hard household.</b> <q>My grandfather has it, so I definitely understand where you're coming from. I got nothing but patience for them.</q></li>
+</ul></section>
+
+<section><div class="sh"><div class="no">5</div><h2>The three gaps</h2><span class="hint">each one anchored to a real moment on tape</span></div>
+
+<div class="mom"><div class="top2"><span class="b weak">Weak</span><h4>Gap 1 — The same buying signal, twice, on one call, and no advisor called</h4></div>
+<div class="q"><b>Customer, JENSEN</b>"How much is it to [replace] the unit?" … and later, from her husband: "How much is the whole unit going for nowadays?"</div>
+<div class="q"><b>Cole, both times</b>"I just work on the repair side, so I'm not entirely sure on what replacements cost, but that's always information we can get for you guys if you wanted it."</div>
+<p class="fixline"><b>The fix</b> He gave the right answer on BALTERA to the identical question and it converted: <q>I would get one of my comfort advisors out here… they give you a price on what it would be to start over fresh with brand new warranties.</q> On JENSEN the same sentence never came out, and <q>if you wanted it</q> put the work back on the customer. Two failing compressors on banned refrigerant, a rusting coil and a leaking blower is the definition of a repair-versus-replace call. The move is the same every time: <q>Let me get our advisor out — no cost, no commitment, he brings the real number. He's out this way this afternoon, or is tomorrow morning better?</q></p></div>
+
+<div class="mom"><div class="top2"><span class="b weak">Weak</span><h4>Gap 2 — He let the whole decision conversation become an email</h4></div>
+<div class="q"><b>Cole</b>"if you have some time I can build that report for you, come back in and go over it if you have that time, but I know your wife was saying just email everything over."</div>
+<div class="q"><b>What happened next</b>The tune-up fee was collected, the report was emailed, and the visit ended.</div>
+<p class="fixline"><b>The fix</b> He offered the presentation and then supplied the customer's excuse in the same breath. A findings report is not a document, it is a conversation — everything that makes his teaching work (the plate, the reading, the analogy, the question check) disappears in an email. Offer once, plainly, and stop: <q>I'd rather walk you through it — it's ten minutes and it'll make a lot more sense than the PDF.</q> Then wait.</p></div>
+
+<div class="mom"><div class="top2"><span class="b weak">Weak</span><h4>Gap 3 — He plants the five-star standard and never collects it</h4></div>
+<div class="q"><b>Seeded, three calls out of four</b>"Above all, I'm here to give you a five star experience. If I'm not doing that, let me know so I can change it."</div>
+<div class="q"><b>Asked for</b>Never — including on the call he closed and the call where he ran a card.</div>
+<p class="fixline"><b>The fix</b> He is doing the harder half already. The seed is what makes the ask land, and the ask takes one sentence at the card or the signature: <q>I promised you a five-star visit — did I get there? If I did, would you mind saying so in a review? It's the biggest thing that helps me.</q> Four seeds, zero asks, on a day where two customers were plainly happy.</p></div>
+</section>
+
+<section><div class="sh"><div class="no">6</div><h2>This week's drill — the replacement question is always a booking</h2></div><div class="script" style="border-radius:14px"><div class="lbl">Trigger and response</div>
+<p><b>Trigger:</b> any version of "how much is a whole new one?" — from anyone in the house, at any point in the visit.</p>
+<p><b>Response, within ten seconds, and never "if you wanted it":</b></p>
+<p class="say">"Great question, and I want you to have the real number rather than my guess. Our comfort advisor does that at no cost — he's out this way this afternoon, or is tomorrow morning easier?"</p>
+<p>Then stop talking and let them pick. He already runs this perfectly on one call out of four. The drill is running it every time the question is asked, not only when he senses the customer is ready.</p>
+</div></section>
+
+<section><div class="sh"><div class="no">7</div><h2>3-week training plan</h2></div><div class="rub">
+<div class="row"><div class="rb">Week 1</div><div><b>Signal to booking</b></div><div class="ev">Every replacement question converts to a named day and time for an advisor, on the spot. No "if you wanted it."</div></div>
+<div class="row"><div class="rb">Week 2</div><div><b>Present the report, never email it</b></div><div class="ev">Findings walked through in person on every call. Email is the copy, not the conversation.</div></div>
+<div class="row"><div class="rb">Week 3</div><div><b>The expectations block on maintenance calls</b></div><div class="ev">The same six beats he already nails on demand calls, run on tune-ups too — plus the five-star ask at the card.</div></div>
+</div></section>
+
+<section><div class="sh"><div class="no">8</div><h2>What we owe Cole</h2></div><ul class="str">
+<li>Advisors reachable and bookable from the driveway, same day — the BALTERA flip happened because that was possible, and it should be possible every time.</li>
+<li>The BALTERA three-option presentation recorded and used as the team's standard for repair-versus-replace.</li>
+<li>Replacement ballpark ranges he is allowed to quote, so "how much for a whole new one?" never has to end in "I'm not entirely sure."</li>
+</ul></section>
+
+<div class="bottom"><div class="eyb">Bottom line</div><p>Cole teaches better than anyone on the board — every reading shown, every term defined, every consequence followed to the end — and on BALTERA he converted it into exactly the outcome the model is built for: three honest options, a customer steered away from wasted money, and an advisor booked on the spot. The gap is not skill, it is consistency. The identical question came twice on the JENSEN call and got "I'm not entirely sure" instead of a calendar slot. Same sentence, every time it is asked, and this becomes the strongest board on the team.</p></div>
+<div class="foot">Sierra · SILO daily coaching plan · 2026-07-24 · Scored on strength bands — close rate is the only number</div>
+
+</div></body></html>

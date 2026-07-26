@@ -1,0 +1,229 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brandon Moreno — SILO Coaching Plan · 2026-07-24</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style>
+</head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;·&nbsp;SILO</b><span class="tag">Daily Coaching Plan · 2026-07-24</span></div>
+<div class="wrap">
+<div class="hero"><div class="ey">Daily Coaching Plan · 2026-07-24 · 2 gradeable calls · one full Decision step on tape</div><h1 class="disp">Brandon Moreno</h1><p class="lede">The best single stretch of teaching-to-decision on the board this day. On a twenty-year-old R-22 system he built the replacement case from the serial number outward, priced the repair honestly, refused a shortcut that would have cost him his licence, and steered a fully-earned handoff — all in Spanish, all on tape.</p></div>
+<div class="glance">
+<div class="g"><div class="k">Close Rate</div><div class="v red">0%<small>handoff being arranged when the tape ends — no confirmed outcome</small></div></div>
+<div class="g"><div class="k">Calls Reviewed</div><div class="v">2 of 2<small><q>MERCADO-BALANOS</q> full · <q>FAIR</q> partial</small></div></div>
+<div class="g"><div class="k">Strongest</div><div class="v grn">Decision<small>Building Options · Objections — Strong</small></div></div>
+<div class="g"><div class="k">Weakest</div><div class="v red">Assessment<small>Required Questions — Moderate</small></div></div>
+</div>
+<div class="legend"><span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span><span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span></div>
+<p class="note">Scored on strength bands, never numbers — the only figure anywhere is the close rate. The MERCADO-BALANOS call was conducted in Spanish; quotes are given as spoken. The FAIR recording stops eleven minutes in, so only its Welcome step is graded. The close rate reads zero because no outcome is confirmed on tape — <b>not</b> because the flip was mishandled. It was handled well.</p>
+
+<section><div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive" style="border-color:var(--strong)"><div class="dh" style="background:#EFF6F1;border-bottom-color:#D5E7DC"><div class="k" style="color:var(--strong)">What the tape shows</div><h3 style="color:#1F5C3E">He built the replacement conversation the way the model says to build it.</h3></div><div class="split"><div class="c should"><div class="lbl">What actually happened</div><p>Age off the serial, then the refrigerant: <q>este ya tiene casi 20 años la máquina… este lleva un gas se llama R o freon, so con este gas en 2010 ellos ya paró producción.</q> Then the pressure, in the customer's own body: <q>cuando la máquina se corre con los presores altos es como nosotros como el corazón corriendo con la sangre… como presión alta.</q> Then the rusted evaporator, the burned contactor, the discoloured control board and the whitened heat exchanger — each one shown, each one explained.</p></div><div class="c should"><div class="lbl">Then he made it the customer's decision</div><p>He asked the question that decides it — <q>¿cuántos años ustedes van a quedar en esta casa?</q> → <q>pues yo pienso quedarme aquí</q> — and then linked it: <q>Si vas a quedar en esta casa más de 5 años, yo recomendar agarrando el estimado para una nueva máquina y mirando la diferencia.</q> He priced the repair honestly at two to three thousand and up, refused to be a bandage — <q>yo no quiero poner un patch… nos ponemos un bandit, por último día va a caer también</q> — and offered the no-cost specialist visit as the next step.</p></div></div></div></section>
+
+<section><div class="sh"><div class="no">2</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div><div class="rub">
+
+<div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b wins">Strong on wins</span></span></div>
+<div class="row"><div class="rb">Intro / get their name</div><div><span class="b solid">Solid</span></div><div class="ev"><q>Hey, good morning. I'm Brandon with Sierra</q> on FAIR. On MERCADO the recording opens with the problem already being described, so the introduction is off-tape.</div></div>
+<div class="row"><div class="rb">Verify our vehicle parking</div><div><span class="b solid">Solid</span></div><div class="ev">Raised on MERCADO, and framed around the customer's convenience rather than his own: <q>yo no voy a agarrar tanto, yo puedo dejar la van ahí.</q></div></div>
+<div class="row"><div class="rb">Permission to enter</div><div><span class="b strong">Strong</span></div><div class="ev">Asked at the door and again at every interior threshold — <q>¿Okay, puedo pasar?</q> — and on FAIR he asked the customer to choose the route: <q>Now, what's the best way to come in and out?</q></div></div>
+<div class="row"><div class="rb">Floor protectors</div><div><span class="b weak">Weak</span></div><div class="ev">Not mentioned on either call.</div></div>
+<div class="row"><div class="rb">Personal connection</div><div><span class="b solid">Solid</span></div><div class="ev">Practical rather than chatty — the dogs and the garage door on FAIR, the family's six years in the house and the ongoing garage repair on MERCADO. Warm, but he spends less time here than most.</div></div>
+<div class="row"><div class="rb">Confirm the reason for the call</div><div><span class="b strong">Strong</span></div><div class="ev">Got the actual pattern, not the headline: cools at four or five in the morning, fails once the sun is up, <q>ayer eran las 11 de la noche y ya estaba 86 adentro</q> — and then walked the house register by register to confirm where the air was and was not arriving.</div></div>
+<div class="row"><div class="rb">Brief technical questions</div><div><span class="b strong">Strong</span></div><div class="ev">Six years in the home, who had been servicing it, whether gas had been added — <q>no sé si le echó gas o le echó de más o le hace falta gas</q> — and the filter routine, which the customer answered in detail.</div></div>
+<div class="row"><div class="rb">Intent to fix today</div><div><span class="b solid">Solid</span></div><div class="ev">Clear on FAIR — <q>whatever you do approve, we get started</q> — and on MERCADO he compressed his own timeline twice to keep the decision live today: <q>dame como unos 15-20 minutos yo voy a escribir todas las cosas.</q></div></div>
+<div class="row"><div class="rb">Address membership status</div><div><span class="b weak">Weak</span></div><div class="ev">Never raised on either call.</div></div>
+<div class="row"><div class="rb">Setting Expectations — LTOAT5</div><div><span class="b wins">Strong on wins</span></div><div class="ev">On FAIR it is the complete block, and it is excellent: <q>We're gonna do a thorough evaluation, check on safety, cleanliness, performance, make sure that everything looks right. Now, if anything looks out of the norm, would you like me to share with you that information? … Now, I won't do any work without your approval… and we do all this for a five star experience.</q> On MERCADO the look, the thorough evaluation and the options promise all land — <q>yo voy a tomar tiempo a ver todo el sistema… tomar fotos, vídeos, todo eso</q> — but the approval promise and the five-star standard are missing.</div></div>
+
+<div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+<div class="row"><div class="rb">Required questions</div><div><span class="b mod">Moderate</span></div><div class="ev">The weak spot on a strong day. Filters land and land well — the customer volunteered <q>yo el filtro cada mes se lo cambio, yo compro paquete y yo le pongo fecha</q> — and hot-and-cold spots are covered by walking the house rather than asking. But the thermostat-setting question is never asked, and the power-bill follow-up never happens, on a call that was building toward a replacement where the bill is the strongest argument available.</div></div>
+<div class="row"><div class="rb">Check-ins</div><div><span class="b strong">Strong</span></div><div class="ev">Three real check-ins on MERCADO: at the registers, at the equipment with the serial and gas type — <q>ahorita nomás quiero enseñar toda esa información para tú sabes más o menos qué tipo de situación nos vamos a mirar</q> — and at the full findings. The customer is brought along at every stage.</div></div>
+<div class="row"><div class="rb">Draw the Picture</div><div><span class="b strong">Strong</span></div><div class="ev">Best on the board this day. The high-pressure-as-blood-pressure image, the evaporator explained as steel where new coils are copper — <q>La nueva máquina no viene con este porque es cobre y aquí es steel</q> — and the heat exchanger read like an exhaust manifold: <q>como un carro, cuando ya calienta tanto se quema y se cambia el color.</q></div></div>
+<div class="row"><div class="rb">Check Your Tone</div><div><span class="b strong">Strong</span></div><div class="ev">Never alarmist. He stated his own uncertainty rather than manufacturing fear: <q>yo no estoy confidente como si va a durar este summer en esta condición.</q></div></div>
+<div class="row"><div class="rb">Keep It Simple</div><div><span class="b strong">Strong</span></div><div class="ev">Twenty years of equipment history, an EPA phase-out and four failing components explained without a single unexplained term.</div></div>
+<div class="row"><div class="rb">Show Pictures</div><div><span class="b strong">Strong</span></div><div class="ev">Promised at the intake and delivered at the equipment: <q>ahorita yo tomo tantas fotos ahí arriba</q>, then <q>aquí este es un tag como el serial number… y aquí dice qué tipo de gas lleva</q>, walking the customer through each component in front of it.</div></div>
+<div class="row"><div class="rb">Get the Customer to Diagnose</div><div><span class="b solid">Solid</span></div><div class="ev">He got there in the end — the customer's own conclusion was <q>si ya no sirve, pues sí se tiene que cambiar</q> — but it arrived after a long stretch of Brandon explaining. The conclusion is right; it could have been reached sooner by asking rather than telling.</div></div>
+
+<div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+<div class="row"><div class="rb">Building options</div><div><span class="b strong">Strong</span></div><div class="ev">Three real tiers, grounded in what he found: a minimum patch, a full component repair, and replacement via the specialist — <q>mínimo yo voy a escribirlo pero como a 2 o 3 mil dólares ya para un patch; para hacerlo bien, cambiando las partes, no estamos más de como 3 mil dólares.</q></div></div>
+<div class="row"><div class="rb">Reconnecting</div><div><span class="b solid">Solid</span></div><div class="ev">Re-anchored on the customer's own situation before presenting — the six years, the plan to stay, the failed maintenance history — rather than opening cold on price.</div></div>
+<div class="row"><div class="rb">Link It</div><div><span class="b strong">Strong</span></div><div class="ev">Tied the recommendation directly to her answer about staying: <q>Si vas a quedar en esta casa más de 5 años, yo recomendar agarrando el estimado para una nueva máquina.</q></div></div>
+<div class="row"><div class="rb">Say It</div><div><span class="b strong">Strong</span></div><div class="ev">Named the repair range plainly and more than once, without hedging or burying it, and was explicit that a repair carries no guarantee on the rest: <q>eso no te protege de todas las otras cosas que estamos mirando.</q></div></div>
+<div class="row"><div class="rb">Spin It</div><div><span class="b strong">Strong</span></div><div class="ev">Reframed the specialist visit as information, not commitment — <q>el último día es gratis para nomás mirar, revisar las opciones</q> — and made the alternative concrete: wait, and you call back in a week for the same conversation.</div></div>
+<div class="row"><div class="rb">Zip It</div><div><span class="b mod">Moderate</span></div><div class="ev">His one real habit to break. After the home-warranty answer he kept going into a long story about his mother's dishwasher and nine years of experience. The point had already landed; the extra minute gave the objection room to breathe.</div></div>
+<div class="row"><div class="rb">Overcoming objections</div><div><span class="b strong">Strong</span></div><div class="ev">Two objections, both worked properly. On the home warranty he empathised, got specific about how adjusters actually behave, and redirected to what the customer wanted — <q>pero es opción, a ver qué ellos dicen</q> — without arguing her out of it. On <q>¿me lo dejas jalando poquito nomás mientras decidimos?</q> he refused for the right reason and explained it plainly: <q>si alguien me mira nomás sacando la gas, ya me quita la licencia.</q> Firm, honest, not defensive.</div></div>
+
+<div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+<div class="row"><div class="rb">Be A Nerd</div><div><span class="b strong">Strong</span></div><div class="ev">Serial-number dating, refrigerant phase-out law, galvanic corrosion on a steel coil, contactor pitting, board discolouration and heat-exchanger burn — six teaching moments in one call, each tied to something visible.</div></div>
+<div class="row"><div class="rb">5-Star Review</div><div><span class="b weak">Weak</span></div><div class="ev">Seeded on FAIR — <q>we do all this for a five star experience</q> — and never seeded or asked on MERCADO.</div></div>
+
+<div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b strong">Strong</span></span></div>
+<div class="row"><div class="rb">Make their time valuable</div><div><span class="b strong">Strong</span></div><div class="ev">That customer now knows how old her system is, why it cannot legally be topped up, what her home warranty will and will not do, and what the two real paths cost. She is better off whatever she decides.</div></div>
+<div class="row"><div class="rb">Help them arrive at their own solution</div><div><span class="b strong">Strong</span></div><div class="ev">The decision came out of her mouth: <q>si ya no sirve, pues sí se tiene que cambiar.</q> That is the objective, achieved.</div></div>
+
+</div>
+
+<div class="sh" style="margin-top:26px"><div class="no">3</div><h2>Critical Actions — pass rate</h2></div><div class="rub">
+<div class="row"><div class="rb">Setting clear expectations</div><div><span class="b fail">Fail</span></div><div class="ev">Textbook and complete on FAIR. On MERCADO the approval promise and the five-star standard are both missing. One miss is an automatic fail on the day.</div></div>
+<div class="row"><div class="rb">Asking good questions</div><div><span class="b fail">Fail</span></div><div class="ev">Filters, history, failure pattern and length-of-stay all land — but the thermostat setting and the power bill are never asked, on the one call all day where the bill would have been the strongest argument in the room.</div></div>
+<div class="row"><div class="rb">Creating good options</div><div><span class="b pass">Pass</span></div><div class="ev">Three tiers, priced, grounded in the evaluation, with the no-cost specialist as the third path. The FAIR tape ends before options were reachable.</div></div>
+<div class="row"><div class="rb">Handling objections</div><div><span class="b pass">Pass</span></div><div class="ev">Home warranty and the gas top-off request both handled with empathy, a real question and a redirect to what she wanted. The best objection work on the board this day.</div></div>
+</div></section>
+
+<section><div class="sh"><div class="no">4</div><h2>What went right — real strength, build on it</h2></div><ul class="str">
+<li><b>He refused the easy shortcut and explained why.</b> The customer asked him to just put a little gas in it. He said no, on the record, for the right reason: <q>si alguien me mira nomás sacando la gas, ya me quita la licencia.</q></li>
+<li><b>He asked the question that decides every replacement conversation.</b> <q>¿cuántos años ustedes van a quedar en esta casa?</q> — and then built the recommendation on her answer instead of on the equipment.</li>
+<li><b>He priced the repair honestly against himself.</b> Naming two to three thousand for a patch he did not believe in is harder than quoting a replacement, and it is why she believed the rest.</li>
+<li><b>The teaching is genuinely elite.</b> Serial number, refrigerant law, steel versus copper, blood pressure, the burnt exhaust — six images, all in the customer's language, all in front of the part.</li>
+<li><b>The full expectations block on FAIR.</b> Look, thorough evaluation, options, approval, today and five stars, in ninety seconds, before the tools came out.</li>
+</ul></section>
+
+<section><div class="sh"><div class="no">5</div><h2>The three gaps</h2><span class="hint">each one anchored to a real moment on tape</span></div>
+
+<div class="mom"><div class="top2"><span class="b mod">Moderate</span><h4>Gap 1 — The decision was made and the appointment was never set</h4></div>
+<div class="q"><b>Customer</b>"No, pues si ya no sirve, pues sí se tiene que cambiar."</div>
+<div class="q"><b>Brandon</b>"Yo entiendo. Ahorita yo voy. Dame como 15 minutos. Yo voy a hacer mi tarea… Yo voy a llamar a mi manager y qué puedo hacer más rápido y para más bajito."</div>
+<p class="fixline"><b>The fix</b> That sentence from the customer is the flip. It is the moment to convert it into a day and a time before anything else is said — <q>Perfecto. El especialista no le cuesta nada y solo trae el número real. Anda por esta área mañana en la mañana — ¿le queda mejor mañana o en la tarde?</q> — and then go write the report. He earned the handoff completely; the tape ends with it still being arranged rather than booked.</p></div>
+
+<div class="mom"><div class="top2"><span class="b mod">Moderate</span><h4>Gap 2 — The power bill never came up on a replacement call</h4></div>
+<div class="q"><b>What he taught</b>"cuando la máquina se corre con los presores altos es como nosotros como el corazón corriendo con la sangre como presión alta."</div>
+<div class="q"><b>What he never asked</b>What the thermostat is set at in summer and winter — and what a standard power bill looks like at that setting.</div>
+<p class="fixline"><b>The fix</b> He already teaches that a struggling twenty-year-old system pulls more power. The bill question turns that lesson into her number instead of his claim. Ask it at the intake, then close the loop at the presentation: the difference between a repair and a replacement stops being an expense and becomes something she is already paying every month.</p></div>
+
+<div class="mom"><div class="top2"><span class="b weak">Weak</span><h4>Gap 3 — The five-star seed lands on one call and vanishes on the other</h4></div>
+<div class="q"><b>FAIR</b>"we do all this for a five star experience."</div>
+<div class="q"><b>MERCADO</b>Nothing — no five-star standard, and no approval promise, on the longest and most important call of his day.</div>
+<p class="fixline"><b>The fix</b> Same block, both languages, every door: <q>No vamos a empezar nada sin su aprobación, y mi meta hoy es que esto sea una experiencia de cinco estrellas — si no lo estoy logrando, párame.</q> He says the English version perfectly. It needs a Spanish twin.</p></div>
+</section>
+
+<section><div class="sh"><div class="no">6</div><h2>This week's drill — signal to slot</h2></div><div class="script" style="border-radius:14px"><div class="lbl">Practice until it is automatic</div>
+<p><b>Trigger:</b> the customer concedes the system has to be replaced — "se tiene que cambiar", "we'd have to replace it", "it's probably time."</p>
+<p><b>Response, within ten seconds, before any other sentence:</b></p>
+<p class="say">"Perfecto — el especialista no le cuesta nada y solo le trae el número real. ¿Mañana en la mañana o en la tarde?"</p>
+<p>Then stop talking and let her pick. Everything Brandon did before that moment on this call was right. The only thing missing was the calendar.</p>
+</div></section>
+
+<section><div class="sh"><div class="no">7</div><h2>3-week training plan</h2></div><div class="rub">
+<div class="row"><div class="rb">Week 1</div><div><b>Book the handoff on tape</b></div><div class="ev">Every replacement conversation ends with a specific day and time offered, out loud, before the report is written.</div></div>
+<div class="row"><div class="rb">Week 2</div><div><b>Thermostat and bill, every intake</b></div><div class="ev">Summer setting, winter setting, then the mandatory follow-up on the bill — then reuse her number at the presentation.</div></div>
+<div class="row"><div class="rb">Week 3</div><div><b>The Spanish expectations block</b></div><div class="ev">Approval promise and five-star standard added in Spanish, matching what he already delivers in English.</div></div>
+</div></section>
+
+<section><div class="sh"><div class="no">8</div><h2>What we owe Brandon</h2></div><ul class="str">
+<li>A specialist who can be booked from the driveway on the same visit — his handoff was fully earned and had nowhere to land.</li>
+<li>Credit on the board for the objection work and the licence refusal, both of which protected the company as much as the customer.</li>
+<li>The MERCADO teaching sequence recorded and used as the Spanish-language training standard for the team.</li>
+</ul></section>
+
+<div class="bottom"><div class="eyb">Bottom line</div><p>This is the strongest Decision step anyone put on tape this day. Brandon taught a twenty-year-old system down to the burn marks, priced the repair against his own interest, refused an illegal shortcut, worked two real objections properly and got the customer to say the conclusion herself. One move away from a clean flip: when she says it has to be replaced, stop selling and put the specialist on the calendar. Everything else is already there.</p></div>
+<div class="foot">Sierra · SILO daily coaching plan · 2026-07-24 · Scored on strength bands — close rate is the only number</div>
+
+</div></body></html>

@@ -1,0 +1,159 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SILO Coaching Plans — 2026-07-24</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style>
+</head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;·&nbsp;SILO</b><span class="tag">Daily Index · 2026-07-24</span></div>
+<div class="wrap">
+<div class="hero"><div class="ey">Daily Coaching Index · 2026-07-24 · 12 reps scored · 35 recordings reviewed</div><h1 class="disp">The board, 2026-07-24</h1><p class="lede">Twelve reps, thirty-five gradeable recordings and four skipped. Eight calls reached a real outcome on tape — repairs closed and specialist handoffs booked; the rest stopped before the customer was ever shown an option. Scored on strength bands — the close rate is the only number anywhere.</p></div>
+<div class="glance">
+<div class="g"><div class="k">Reps scored</div><div class="v">12<small>4 recordings skipped, listed below</small></div></div>
+<div class="g"><div class="k">Reps with a win on tape</div><div class="v grn">6<small>repairs closed and Option C handoffs booked</small></div></div>
+<div class="g"><div class="k">Board strength</div><div class="v grn">Welcome<small>expectations and rapport, near-universally strong</small></div></div>
+<div class="g"><div class="k">Board weakness</div><div class="v red">Deliver<small>the five-star review is almost never asked for</small></div></div>
+</div>
+<div class="legend"><span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span><span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span></div>
+<p class="note">Scored on strength bands, never numbers — the only figure anywhere is the close rate. Band pills below read in order: Welcome · Assessment / Decision · Deliver. Sections that never reached tape are banded down to Weak in this summary and marked "not observed" inside each rep's plan. Internal phone calls, riding-partner training and manager conversations embedded in these recordings are excluded from every grade.</p>
+
+<section><div class="sh"><div class="no">1</div><h2>Every rep, ranked by outcome on tape</h2><span class="hint">click a name for the full plan</span></div>
+<div class="rub">
+<div class="grp"><span class="gn"><a href="Nikko_April.html" style="color:var(--navy);text-decoration:none">Nikko April</a></span><span class="gb"><span class="b strong">50% close rate</span></span></div>
+<div class="row"><div class="rb">4 calls reviewed</div><div><span class="b strong">Strong</span> <span class="b strong">Strong</span><br><span class="b strong">Strong</span> <span class="b solid">Solid</span></div><div class="ev"><b>Strongest:</b> Assessment · <b>Weakest:</b> Deliver<br>Caught a drain pan at the brim above a ceiling and shut the system down; dispatched a specialist on site twice in one day.<br><span style="color:var(--weak)"><b>Headline gap:</b></span> Never seeds or asks for the five-star review, on any call — including two where the customer thanked him unprompted.<br><span style="font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.06em"><span class="b fail">Expectations</span> <span class="b fail">Questions</span> <span class="b pass">Options</span> <span class="b pass">Objections</span></span><br><a href="Nikko_April.html" style="font-size:12.5px">Open full plan &rarr;</a></div></div><div class="grp"><span class="gn"><a href="Andrew_Trujillo.html" style="color:var(--navy);text-decoration:none">Andrew Trujillo</a></span><span class="gb"><span class="b strong">50% close rate</span></span></div>
+<div class="row"><div class="rb">2 calls reviewed</div><div><span class="b strong">Strong</span> <span class="b strong">Strong</span><br><span class="b strong">Strong</span> <span class="b solid">Solid</span></div><div class="ev"><b>Strongest:</b> Assessment · <b>Weakest:</b> Deliver<br>Came back the next day with the specialist so the second decision-maker could hear it; the only rep who asked the mandatory power-bill follow-up.<br><span style="color:var(--weak)"><b>Headline gap:</b></span> Plants no five-star standard and never asks for the review, on a return visit that plainly earned one.<br><span style="font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.06em"><span class="b fail">Expectations</span> <span class="b fail">Questions</span> <span class="b pass">Options</span> <span class="b pass">Objections</span></span><br><a href="Andrew_Trujillo.html" style="font-size:12.5px">Open full plan &rarr;</a></div></div><div class="grp"><span class="gn"><a href="David_Canales.html" style="color:var(--navy);text-decoration:none">David Canales</a></span><span class="gb"><span class="b strong">50% close rate</span></span></div>
+<div class="row"><div class="rb">2 calls reviewed</div><div><span class="b wins">Strong on wins</span> <span class="b mod">Moderate</span><br><span class="b wins">Strong on wins</span> <span class="b solid">Solid</span></div><div class="ev"><b>Strongest:</b> Deliver · <b>Weakest:</b> Assessment<br>Taught a customer her entire system unprompted and solved the decision-maker problem to win the handoff; lost the other call at the pricing wall.<br><span style="color:var(--weak)"><b>Headline gap:</b></span> Leads with the department limit instead of the next step when asked about replacement, and asked none of the four required questions on either call.<br><span style="font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.06em"><span class="b fail">Expectations</span> <span class="b fail">Questions</span> <span class="b pass">Options</span> <span class="b fail">Objections</span></span><br><a href="David_Canales.html" style="font-size:12.5px">Open full plan &rarr;</a></div></div><div class="grp"><span class="gn"><a href="Joe_Mendoza.html" style="color:var(--navy);text-decoration:none">Joe Mendoza</a></span><span class="gb"><span class="b strong">40% close rate</span></span></div>
+<div class="row"><div class="rb">5 calls reviewed</div><div><span class="b strong">Strong</span> <span class="b solid">Solid</span><br><span class="b wins">Strong on wins</span> <span class="b mod">Moderate</span></div><div class="ev"><b>Strongest:</b> Welcome · <b>Weakest:</b> Decision<br>Sold a repair while stating three times that it might not work; lost a different customer inside ninety seconds by guessing at a price.<br><span style="color:var(--weak)"><b>Headline gap:</b></span> Answers pushback with a fact instead of a question — one objection was accepted instantly, another was met by disowning the price.<br><span style="font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.06em"><span class="b fail">Expectations</span> <span class="b fail">Questions</span> <span class="b fail">Options</span> <span class="b fail">Objections</span></span><br><a href="Joe_Mendoza.html" style="font-size:12.5px">Open full plan &rarr;</a></div></div><div class="grp"><span class="gn"><a href="Robert_Silinzy.html" style="color:var(--navy);text-decoration:none">Robert Silinzy</a></span><span class="gb"><span class="b strong">33% close rate</span></span></div>
+<div class="row"><div class="rb">3 calls reviewed</div><div><span class="b strong">Strong</span> <span class="b solid">Solid</span><br><span class="b solid">Solid</span> <span class="b mod">Moderate</span></div><div class="ev"><b>Strongest:</b> Welcome · <b>Weakest:</b> Deliver<br>The only full call on tape from knock to payment; checked the warranty before quoting and refused to fit a customer-supplied part that might do harm.<br><span style="color:var(--weak)"><b>Headline gap:</b></span> Never asks for the review, including on the only complete closed call on the board, where the customer thanked him twice unprompted.<br><span style="font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.06em"><span class="b fail">Expectations</span> <span class="b fail">Questions</span> <span class="b pass">Options</span> <span class="b pass">Objections</span></span><br><a href="Robert_Silinzy.html" style="font-size:12.5px">Open full plan &rarr;</a></div></div><div class="grp"><span class="gn"><a href="Cole_Pantol.html" style="color:var(--navy);text-decoration:none">Cole Pantol</a></span><span class="gb"><span class="b strong">25% close rate</span></span></div>
+<div class="row"><div class="rb">4 calls reviewed</div><div><span class="b wins">Strong on wins</span> <span class="b strong">Strong</span><br><span class="b wins">Strong on wins</span> <span class="b solid">Solid</span></div><div class="ev"><b>Strongest:</b> Assessment · <b>Weakest:</b> Deliver<br>Ran a textbook three-option flip on one call and let the identical buying signal go unconverted twice on another.<br><span style="color:var(--weak)"><b>Headline gap:</b></span> Answers the replacement question with an offer to get information later instead of a booked specialist, and lets the findings review become an email.<br><span style="font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.06em"><span class="b fail">Expectations</span> <span class="b fail">Questions</span> <span class="b pass">Options</span> <span class="b pass">Objections</span></span><br><a href="Cole_Pantol.html" style="font-size:12.5px">Open full plan &rarr;</a></div></div><div class="grp"><span class="gn"><a href="Brandon_Moreno.html" style="color:var(--navy);text-decoration:none">Brandon Moreno</a></span><span class="gb"><span class="b weak">0% close rate</span></span></div>
+<div class="row"><div class="rb">2 calls reviewed</div><div><span class="b wins">Strong on wins</span> <span class="b solid">Solid</span><br><span class="b strong">Strong</span> <span class="b solid">Solid</span></div><div class="ev"><b>Strongest:</b> Decision · <b>Weakest:</b> Assessment<br>The strongest Decision step on the board — three priced tiers, two objections worked properly, and an illegal shortcut refused on the record.<br><span style="color:var(--weak)"><b>Headline gap:</b></span> Reaches the moment the customer concedes replacement and goes to write the report instead of booking the specialist to a day and time.<br><span style="font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.06em"><span class="b fail">Expectations</span> <span class="b fail">Questions</span> <span class="b pass">Options</span> <span class="b pass">Objections</span></span><br><a href="Brandon_Moreno.html" style="font-size:12.5px">Open full plan &rarr;</a></div></div><div class="grp"><span class="gn"><a href="Benjamin_Wyllie.html" style="color:var(--navy);text-decoration:none">Benjamin Wyllie</a></span><span class="gb"><span class="b weak">0% close rate</span></span></div>
+<div class="row"><div class="rb">4 calls reviewed</div><div><span class="b strong">Strong</span> <span class="b solid">Solid</span><br><span class="b mod">Moderate</span> <span class="b solid">Solid</span></div><div class="ev"><b>Strongest:</b> Welcome · <b>Weakest:</b> Decision<br>The only rep to run a complete expectations block, five stars included, at every single door; told one customer his system was fine and ran a free leak search for another.<br><span style="color:var(--weak)"><b>Headline gap:</b></span> No priced option ever reaches a customer on tape, and a fully stated affordability objection was agreed with rather than worked.<br><span style="font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.06em"><span class="b pass">Expectations</span> <span class="b fail">Questions</span> <span class="b fail">Options</span> <span class="b fail">Objections</span></span><br><a href="Benjamin_Wyllie.html" style="font-size:12.5px">Open full plan &rarr;</a></div></div><div class="grp"><span class="gn"><a href="Francisco_Valencia.html" style="color:var(--navy);text-decoration:none">Francisco Valencia</a></span><span class="gb"><span class="b weak">0% close rate</span></span></div>
+<div class="row"><div class="rb">3 calls reviewed</div><div><span class="b strong">Strong</span> <span class="b strong">Strong</span><br><span class="b weak">Weak</span> <span class="b solid">Solid</span></div><div class="ev"><b>Strongest:</b> Assessment · <b>Weakest:</b> Decision<br>Got a customer to explain his own failure back to him three times — the hardest behaviour in the rubric, executed properly.<br><span style="color:var(--weak)"><b>Headline gap:</b></span> Never promises that no work happens without approval, and never asks what the power bill costs at the setting he has just proved the system cannot hold.<br><span style="font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.06em"><span class="b fail">Expectations</span> <span class="b fail">Questions</span> <span class="b fail">Options</span> <span class="b fail">Objections</span></span><br><a href="Francisco_Valencia.html" style="font-size:12.5px">Open full plan &rarr;</a></div></div><div class="grp"><span class="gn"><a href="Andrew_Alonso.html" style="color:var(--navy);text-decoration:none">Andrew Alonso</a></span><span class="gb"><span class="b weak">0% close rate</span></span></div>
+<div class="row"><div class="rb">2 calls reviewed</div><div><span class="b strong">Strong</span> <span class="b solid">Solid</span><br><span class="b weak">Weak</span> <span class="b mod">Moderate</span></div><div class="ev"><b>Strongest:</b> Welcome · <b>Weakest:</b> Decision<br>The best expectations block on the board when he runs it — and both recordings stop before a single finding is delivered.<br><span style="color:var(--weak)"><b>Headline gap:</b></span> Lets an early replacement objection sit unworked for the rest of the visit, and skips the expectations block entirely on the shorter call.<br><span style="font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.06em"><span class="b fail">Expectations</span> <span class="b pass">Questions</span> <span class="b fail">Options</span> <span class="b fail">Objections</span></span><br><a href="Andrew_Alonso.html" style="font-size:12.5px">Open full plan &rarr;</a></div></div><div class="grp"><span class="gn"><a href="Mario_Castro.html" style="color:var(--navy);text-decoration:none">Mario Castro</a></span><span class="gb"><span class="b weak">0% close rate</span></span></div>
+<div class="row"><div class="rb">2 calls reviewed</div><div><span class="b strong">Strong</span> <span class="b solid">Solid</span><br><span class="b weak">Weak</span> <span class="b mod">Moderate</span></div><div class="ev"><b>Strongest:</b> Welcome · <b>Weakest:</b> Decision<br>Led with an apology and free documentation for a household wronged by another contractor; the only rep whose floor protection appears on tape.<br><span style="color:var(--weak)"><b>Headline gap:</b></span> Second graded day running in which every recording stops at the intake, and the required question set slipped from complete to half.<br><span style="font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.06em"><span class="b fail">Expectations</span> <span class="b fail">Questions</span> <span class="b fail">Options</span> <span class="b fail">Objections</span></span><br><a href="Mario_Castro.html" style="font-size:12.5px">Open full plan &rarr;</a></div></div><div class="grp"><span class="gn"><a href="Nathan_Colquitt.html" style="color:var(--navy);text-decoration:none">Nathan Colquitt</a></span><span class="gb"><span class="b weak">0% close rate</span></span></div>
+<div class="row"><div class="rb">2 calls reviewed</div><div><span class="b strong">Strong</span> <span class="b solid">Solid</span><br><span class="b weak">Weak</span> <span class="b weak">Weak</span></div><div class="ev"><b>Strongest:</b> Welcome · <b>Weakest:</b> Decision<br>Pre-framed the repair-versus-replace handoff at the front door before any diagnosis — the earliest Option C setup anyone put on tape.<br><span style="color:var(--weak)"><b>Headline gap:</b></span> Three of the four required questions are never asked, and the expectations block is missing both the approval promise and the five-star standard.<br><span style="font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.06em"><span class="b fail">Expectations</span> <span class="b fail">Questions</span> <span class="b fail">Options</span> <span class="b fail">Objections</span></span><br><a href="Nathan_Colquitt.html" style="font-size:12.5px">Open full plan &rarr;</a></div></div>
+</div></section>
+
+<section><div class="sh"><div class="no">2</div><h2>Recordings skipped</h2></div>
+<div class="rub"><div class="row"><div class="rb">Juan Tlatenchi</div><div><span class="b na">Skipped</span></div><div class="ev">Six-minute recording collapses moments after the intake; no gradeable customer dialogue captured.</div></div><div class="row"><div class="rb">Andrew Trujillo</div><div><span class="b na">Skipped</span></div><div class="ev">A 35-minute call captured only a handful of usable lines before the audio failed.</div></div><div class="row"><div class="rb">Andrew Alonso</div><div><span class="b na">Skipped</span></div><div class="ev">Arrived at a rescheduled job; tenant and landlord mix-up resolved at the door, no evaluation performed.</div></div><div class="row"><div class="rb">Joe Mendoza</div><div><span class="b na">Skipped</span></div><div class="ev">Six-minute return trip to the same job to order a part; no evaluation or decision conversation.</div></div></div></section>
+
+<section><div class="sh"><div class="no">3</div><h2>What the whole board has in common</h2></div><div class="rub">
+<div class="row"><div class="rb">The five-star ask</div><div><span class="b weak">Weak</span></div><div class="ev">Eleven of twelve reps never asked a single customer for a review. Several were thanked warmly, unprompted, and left anyway. It is the single cheapest fix on the board.</div></div>
+<div class="row"><div class="rb">The power-bill follow-up</div><div><span class="b weak">Weak</span></div><div class="ev">The mandatory follow-up to the thermostat question was asked on two calls out of thirty-five — on a day when most of the replacement conversations would have been decided by it.</div></div>
+<div class="row"><div class="rb">Recordings that stop at the decision</div><div><span class="b weak">Weak</span></div><div class="ev">Five reps have no tape that reaches an option or a price. Their close rates are unknowable and they are being coached entirely on their introductions. This is a hardware and habit problem before it is a rep problem.</div></div>
+<div class="row"><div class="rb">"That's a different department"</div><div><span class="b mod">Moderate</span></div><div class="ev">Four reps met a direct replacement question with the limit rather than the next step. Where a specialist was offered with a day and a time instead, it converted almost every time.</div></div>
+<div class="row"><div class="rb">Welcome and expectations</div><div><span class="b strong">Strong</span></div><div class="ev">The real strength of this board. Introductions, parking, permission and thorough-evaluation promises are near-universal, and several blocks are complete enough to be training standards.</div></div>
+</div></section>
+
+<div class="bottom"><div class="eyb">Bottom line</div><p>This board opens better than it closes. Expectations, rapport and teaching are genuinely strong across almost every rep — and then, again and again, the tape stops, the review goes unasked, and a replacement question gets answered with a department instead of an appointment. Three habits would move the whole team at once: run the recorder to the end of the call, attach a specialist and a time to every replacement question, and ask for the five-star review you have already earned.</p></div>
+<div class="foot">Sierra · SILO daily coaching index · 2026-07-24 · Scored on strength bands — close rate is the only number</div>
+</div></body></html>
