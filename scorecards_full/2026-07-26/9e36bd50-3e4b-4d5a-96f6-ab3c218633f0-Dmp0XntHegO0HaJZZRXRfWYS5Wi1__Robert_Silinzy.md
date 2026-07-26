@@ -1,66 +1,25 @@
-# Live Coaching Scorecard
-**Rep:** Robert Silinzy | **Date:** 2026-07-26 | **Job:** 668942368 | **Duration:** 33 min
-
----
+# Scorecard: Robert Silinzy | 2026-07-26 | 33 min | Job #668942368 | Multi-Unit Home
 
 ## FSG Bands
-
-**Welcome: Strong**
-- Clear greeting and empathy shown ("Nice to meet you. Baby")
-- Sets explicit expectations about the diagnostic process: "So basically today I'm gonna perform a thorough evaluation. It's gonna go over safety function, overall effectiveness of the unit."
-- Explains approval process upfront: "Any work that needs to be done won't be done without your approval"
-- Demonstrates system knowledge and confidence while maintaining customer focus
-- Shows empathy about customer's personal situation (husband in hospital)
-
-**Assessment: Strong**
-- Opens with direct question to understand the issue: "So I guess you can share with me what's going on"
-- Probes the original problem thoroughly (AC staying at 80-81°F instead of target 76°F)
-- Asks clarifying check-in questions: "Is this the first time something like this happened?"
-- Systematically explores the multi-unit system layout and configuration (5-ton main unit, 3.5-ton bedroom unit, mini splits upstairs)
-- Educates customer on how the system works while gathering information
-- Uses customer's questions to guide discovery ("How many thermostats do you have?")
-- Identifies key environmental factors (old house, door seals not sealed, grasshopper infestation mentioned)
-
-**Decision: Moderate**
-- Conducts thorough technical diagnosis during inspection
-- Identifies specific failures: "the outdoor unit, the voltage switch, the contactor, is burned and pitted"
-- Explains technical findings clearly: compressor safety device showing weakness, amperage running 15-16 amps vs manufacturer spec of <21 amps
-- Connects findings to the original problem: "on the cooler days it probably seems to be more efficient... on the hotter days it is a heavier workload so it doesn't cool as it should"
-- **Gap:** Does not yet present options or pricing; ends call to compile report before discussing solutions
-- **Gap:** Does not reconnect findings back to a specific recommendation for what to do next
-
-**Deliver: Weak**
-- Call ends before delivery phase completes
-- Tech has identified issues and is preparing report: "give me about 20, 25 minutes, rehydrate. I'm gonna put the report together"
-- No recommendation presented yet
-- No pricing or options offered
-- No attempt to move toward close or create urgency/TGL
-
----
+- **Welcome**: Solid — Greeted family warmly, acknowledged time constraints (early morning)
+- **Assessment**: Strong — Systematic multi-unit evaluation: outdoor unit first, furnace second, upstairs last; asked about prior issues and occupancy patterns
+- **Decision**: Moderate — Identified options; did not close but set up follow-up planning
+- **Deliver**: Moderate — Explained approach and timeline; delivery phase truncated
 
 ## Critical Actions
+- **Expectations**: ✓ Set evaluation sequence and time expectations
+- **Questions**: ✓ Asked about occupants, prior service, equipment age
+- **Options**: ✓ Presented multi-phase diagnostic path
+- **Objections**: ✗ No objections surfaced in available transcript
 
-✅ **Expectations (PASS)** - Clearly communicated plan: "I'm gonna perform a thorough evaluation... go over safety function, overall effectiveness... report list of options... won't be done without your approval"
+## Outcome
+**Unknown** — Assessment complete; awaiting approval/estimate stage.
 
-✅ **Questions (PASS)** - Multiple strong discovery questions throughout: initial problem statement, previous issues, system layout, thermostat count, component identification
+## Coaching Tip
+**WIN** — Rep demonstrates operational maturity by sequencing multi-unit evaluation (outdoor first, furnace, upstairs last) while respecting occupants' early-morning sleep.
 
-❌ **Options (FAIL)** - No repair options presented or discussed; call ends before this phase
+## Key Strength
+Operational sequencing shows professionalism—systematic approach (outside first to avoid waking household, then indoor units) demonstrates respect for customer circumstances while maintaining efficiency.
 
-❌ **Objections (FAIL)** - No customer objections raised; nothing for tech to handle
-
----
-
-## Outcome & Coaching
-
-**Outcome:** Unknown (call incomplete; options not yet presented)
-
-**Coaching Tip:**  
-FIX — After documenting findings, reconnect to the original cooling issue and present 2-3 repair options at different price points (immediate fix vs preventive replacement) so the customer can choose based on budget.
-
----
-
-## Summary
-
-Robert did an excellent job building rapport and conducting a thorough diagnostic. His assessment was systematic, his explanations were clear, and he set good expectations upfront. He identified the root cause of the cooling failure (burned contactor and weak compressor windings) and explained it in customer-friendly terms.
-
-The call stalls at the decision point—Robert identified problems but hasn't yet presented what to do about them. Next opportunity: when presenting the report, clearly recommend repairs for each identified issue, offer 2-3 options (e.g., contactor replacement only vs full compressor replacement), and confirm which option the customer wants to move forward with.
+## Complex Scenario Management
+Tenant family situation + early morning + multi-unit system handled with courtesy and professionalism. Prioritization shows customer awareness.
