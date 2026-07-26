@@ -6,6 +6,9 @@ on:
     # (idempotent — re-runs just refresh the current hour's counts).
     - cron: "*/15 16-23,0-6 * * *"
   workflow_dispatch:
+concurrency:
+  group: graph-hourly
+  cancel-in-progress: false
 jobs:
   capture:
     runs-on: ubuntu-latest
@@ -23,7 +26,15 @@ jobs:
           GRAPH_TENANT_ID: ${{ secrets.GRAPH_TENANT_ID }}
           GRAPH_REFRESH_TOKEN: ${{ secrets.GRAPH_REFRESH_TOKEN }}
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
-        run: python graph_hourly.py
+        # John 2026-07-26: near-live Today tab with no machine on — capture
+        # every ~3 min for the whole heartbeat window. cron-job.org fires the
+        # next dispatch each quarter-hour; the concurrency group queues it
+        # until this loop finishes, so the chain is continuous.
+        run: |
+          for i in 1 2 3 4 5; do
+            python graph_hourly.py || echo "capture $i failed — continuing"
+            [ "$i" -lt 5 ] && sleep 150
+          done
       # This job is driven dependably 24/7 by cron-job.org, so it doubles as the
       # heartbeat that keeps a SILO Live Feed relay session armed during ops
       # hours — GitHub's own cron skipped all three evening ticks on day one
@@ -62,13 +73,14 @@ jobs:
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
         run: |
           H=$(TZ=America/Los_Angeles date +%-H)
-          M=$(TZ=America/Los_Angeles date +%-M)
-          if [ "$H" -ge 6 ] && [ "$H" -lt 22 ] && [ $((M % 15)) -lt 8 ]; then
+          # minute gate removed 2026-07-26: the capture loop makes each job ~15
+          # min long, so this step already fires once per quarter-hour window.
+          if [ "$H" -ge 6 ] && [ "$H" -lt 22 ]; then
             curl -s -o /dev/null -w "arm siro_pull -> HTTP %{http_code}\n" -X POST \
               -H "Authorization: token $DASHBOARD_TOKEN" \
               -H "Accept: application/vnd.github+json" \
               https://api.github.com/repos/${{ github.repository }}/actions/workflows/siro_pull.yml/dispatches \
               -d '{"ref":"main"}'
           else
-            echo "skip (PT $H:$M — siro pull runs on quarter-hour ticks, 6a-10p)"
+            echo "skip (outside 6a-10p PT)"
           fi
