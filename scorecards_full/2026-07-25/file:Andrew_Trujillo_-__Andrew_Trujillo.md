@@ -1,52 +1,50 @@
-# Live-Coach Card: Andrew Trujillo (2026-07-25)
+# Scorecard: Andrew Trujillo - 2026-07-25
 
-## Overview
-- **Transcript ID**: file:Andrew_Trujillo_-_
-- **Date**: 2026-07-25
-- **Duration**: 80 minutes
-- **Outcome**: Flipped (lead/TGL created)
+**RecId:** file:Andrew_Trujillo_-_  
+**Rep:** Andrew Trujillo  
+**Date:** 2026-07-25  
+**Duration:** 80 min  
+**Job:** None captured  
 
 ## FSG Bands
 
-### Welcome: Strong
-- Greeted customer with friendly rapport ("Morning. How you doing?")
-- Acknowledged customer's concern about AC issue professionally
-- Built comfort by listening to the issue
+**Welcome:** Solid  
+Introduced himself and established empathy: "I just want to make sure I'm setting a clear expectation." Set clear expectations about the inspection scope (both systems, fully outside and in).
 
-### Assessment: Strong
-- Asked discovery questions: "Is this the first time we've had issues in terms of not getting proper cooling?" ✓
-- Explored repair history and past service experiences
-- Identified root cause: bent ductwork limiting airflow to bedroom (50% restriction)
-- Checked previous system work and maintenance plan details
-- Professional technical investigation approach
+**Assessment:** Strong  
+Conducted thorough discovery: asked about duration ("stopped yesterday when it was really hot"), scope ("upstairs and downstairs"), customer history ("how long have you guys been living in the home?"), prior work ("any sort of repairs"), past issues. Checked thermostats, asked about cooling problems, explored ductwork concerns.
 
-### Decision: Solid
-- Presented the inspection plan clearly (both outside/inside systems, outdoor unit, attic)
-- Did not present multiple service options during call (this was diagnostic)
-- Reconnected to customer's key concern: bedroom airflow issue
-- Set follow-up expectation for after investigation
+**Decision:** Moderate  
+Did not formally present options or next steps. When customer asked about canceling vs. continuing, tech continued inspection without resolving the hesitation. No explicit options or close.
 
-### Deliver: Solid
-- Explained system operation (thermostat calls for cooling, how air flows)
-- Discussed energy consumption relative to pool pump
-- Checked for unusual noises (system diagnostics)
-- Positioned self as thorough investigator, not just quick fix
+**Deliver:** Solid  
+Explained issues as discovered (condensate dripping, ductwork bend reducing airflow, system age). Discussed maintenance plan membership benefits and next steps ("I'll touch base with you once I'm finished up working").
 
 ## Critical Actions
 
-✓ **Expectations**: Yes  
-✓ **Questions**: Yes  
-✗ **Options**: No (diagnostic call)  
-✓ **Objections**: Yes  
+**Expectations:** ✓ True  
+Clearly stated inspection plan: "I'm going to be looking at both systems, fully outside and in."
 
-## Findings & Gaps
+**Questions:** ✓ True  
+Multiple discovery questions throughout: home ownership, prior repairs, symptoms, energy costs.
 
-### What Went Well
-1. Root cause identification: bent ductwork limiting airflow
-2. Empathy: acknowledged customer's frustration
-3. Trust building: recognized previous poor service experience
-4. Thorough approach: two-system inspection
+**Options:** ✗ False  
+No formal options presented; tech did not propose next steps beyond inspection.
 
-## Coaching Tip
+**Objections:** ✗ False  
+When customer expressed hesitation ("do we cancel it or do we still have him come out?"), tech did not address the concern directly.
 
-**WIN — When the customer expressed frustration about the bedroom ductwork limiting airflow (50% restriction), the tech empathetically acknowledged the specific problem and created a clear follow-up path explaining how to resolve the bent duct issue, converting skepticism into commitment for the investigation visit.**
+## Outcome
+
+**No-Close** — No additional service agreed upon.
+
+## Gaps
+
+1. **Objection handling:** Customer hesitated mid-visit; tech should have paused to ask clarifying question about concern before continuing.
+2. **Options:** No formal recommendation or options presented after diagnosis.
+
+## Coaching
+
+**Key insight:** The customer showed a buying signal (uncertainty about whether to keep tech on-site) but it was missed. When you hear hesitation like "do we cancel or keep him," ask "What's your concern?" to uncover the real objection, then reconnect that objection to the value of the inspection.
+
+**Next call:** After the inspection, always return with 1–3 clear options (e.g., "Here's what I found, here's the priority, here's the cost of action vs. inaction").
