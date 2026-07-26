@@ -1,0 +1,59 @@
+name: "Coaching relay (plans → dashboard)"
+on:
+  push:
+    paths:
+      - "plans/**"
+      - "coaching.json"
+  workflow_dispatch:
+concurrency:
+  group: coaching-relay
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  relay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TZ: America/Los_Angeles
+    steps:
+      - uses: actions/checkout@v4          # engine (this repo)
+      - uses: actions/checkout@v4          # live site (public repo) — where the coaching feed is published
+        with:
+          repository: johnschwinghamer94-lab/sierra-ropp-dashboard
+          token: ${{ secrets.DASHBOARD_TOKEN }}
+          persist-credentials: true
+          path: site
+      - name: Relay coaching.json and plans to the site
+        run: |
+          if [ ! -f coaching.json ]; then
+            echo "No coaching.json in this repo — nothing to relay."
+            exit 0
+          fi
+
+          cp coaching.json site/coaching.json
+          mkdir -p site/coaching/plans
+          if [ -d plans ]; then
+            for d in plans/*/; do
+              [ -d "$d" ] || continue
+              date_name=$(basename "$d")
+              mkdir -p "site/coaching/plans/$date_name"
+              rsync -a "$d" "site/coaching/plans/$date_name/"
+            done
+          fi
+
+          cd site
+          git config user.name "coaching-relay"
+          git config user.email "actions@github.com"
+          git add coaching.json coaching/plans
+          if git diff --cached --quiet; then
+            echo "No staged changes — nothing to commit."
+            exit 0
+          fi
+          git commit -m "Coaching plans relay $(date +%F)"
+          git pull --rebase --autostash origin main
+          if ! git push; then
+            echo "Push failed, retrying after another rebase..."
+            git pull --rebase --autostash origin main
+            git push
+          fi

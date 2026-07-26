@@ -1,4 +1,4 @@
-<!-- Copied from the Mac scheduled task ~/.claude/scheduled-tasks/silo-coaching-plans/SKILL.md on 2026-07-16; this repo copy is now the source of truth for the cloud plan-generation routine. Updated 2026-07-17: plans now build from scorecards_full cards (primary) with raw transcripts as fallback — token optimization. CLOUD PATH NOTES: transcripts live in transcripts/<date>/ in this repo; full scorecards will live in scorecards_full/<date>/ in this repo once the cloud scoring routine exists — until then ALL calls are "uncarded" and the transcript fallback applies to everything. Rubric: coaching/FSG-Grading-Rubric.md; exemplar: coaching/EXEMPLAR_Benjamin_Wyllie.html; output: plans/<date>/. -->
+<!-- Copied from the Mac scheduled task ~/.claude/scheduled-tasks/silo-coaching-plans/SKILL.md on 2026-07-16; this repo copy is now the source of truth for the cloud plan-generation routine. Updated 2026-07-17: plans now build from scorecards_full cards (primary) with raw transcripts as fallback — token optimization. CLOUD PATH NOTES: transcripts live in transcripts/<date>/ in this repo; full scorecards will live in scorecards_full/<date>/ in this repo once the cloud scoring routine exists — until then ALL calls are "uncarded" and the transcript fallback applies to everything. Rubric: coaching/FSG-Grading-Rubric.md; exemplar: coaching/EXEMPLAR_Benjamin_Wyllie.html; output: plans/<date>/. Updated 2026-07-25: Step 6b's coaching.json (repo root) plus the plans/ folder are relayed to the public dashboard repo by .github/workflows/coaching_relay.yml, which fires on push to plans/** or coaching.json. -->
 
 
 You are generating daily FSG coaching plans for Sierra Air Conditioning & Plumbing's Silo Techs team. This runs every morning at 7 AM, AFTER the 6 AM launchd script has pulled the prior day's transcripts.
@@ -89,6 +89,38 @@ Save each plan to: Output root/TARGET/[Rep Name].html (use underscores in the fi
 
 ## Step 6 — Generate _index.html
 Create _index.html in Output root/TARGET/ showing: the TARGET date, all reps scored (close rate %, strongest section band, weakest section band, headline gap — NO total score, NO grade), and the list of skipped recordings with reasons.
+
+## Step 6b — Emit coaching.json (dashboard feed) at the REPO ROOT
+Write `coaching.json` at the repository root (overwrite if it exists), JSON, using this exact schema:
+```
+{
+  "generated": "<ISO timestamp with offset, America/Los_Angeles>",
+  "date": "<TARGET date YYYY-MM-DD>",
+  "reps": [
+    {
+      "name": "Rep Name",
+      "closeRate": "44%",
+      "calls": 3,
+      "strongest": "Welcome",
+      "weakest": "Decision",
+      "bands": {"welcome": "Solid", "assessment": "Moderate", "decision": "Weak", "deliver": "Strong"},
+      "critical": {"expectations": true, "questions": false, "options": true, "objections": true},
+      "headlineGap": "one-sentence top gap — NO customer names, NO quotes",
+      "focus": ["Week 1: ...", "Week 2: ...", "Week 3: ..."],
+      "plan": "coaching/plans/<TARGET>/Rep_Name.html"
+    }
+  ],
+  "skipped": [{"rep": "Name or Unknown", "reason": "one line"}],
+  "dates": ["<TARGET>", "...older dates that exist under plans/, newest first, max 14"]
+}
+```
+Rules:
+- Band values must be ONLY the five words Strong / Strong on wins / Solid / Moderate / Weak — never numbers.
+- `closeRate` is the ONLY number-bearing field (a percent string, e.g. "44%").
+- `critical` values are booleans — true means the rep passed that critical action on ALL of their gradeable calls that day.
+- `headlineGap` and each `focus` entry must contain NO customer names and NO transcript quotes (quotes stay inside the HTML plans, not in coaching.json).
+- `plan` is the dashboard-relative path where the relay workflow publishes the HTML: `coaching/plans/<TARGET>/<Rep_Name with underscores>.html` (matches the filename saved in Step 5).
+- `dates` lists the dated folders under `plans/` newest-first, max 14 entries, so the dashboard can link to recent history.
 
 ## Step 7 — Report
 Print a summary: TARGET date processed (and why it was chosen), reps scored with their close rates, recordings skipped, files saved.
