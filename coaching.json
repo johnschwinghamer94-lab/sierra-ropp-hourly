@@ -352,6 +352,150 @@
     }
   ],
   "dates": [
-    "2026-07-25"
-  ]
+    "2026-07-25",
+    "2026-07-20",
+    "2026-07-19"
+  ],
+  "history": {
+    "Andrew Alonso": [
+      {
+        "date": "2026-07-25",
+        "plan": "coaching/plans/2026-07-25/Andrew_Alonso.html"
+      },
+      {
+        "date": "2026-07-20",
+        "plan": "coaching/plans/2026-07-20/Andrew_Alonso.html"
+      }
+    ],
+    "Andrew Trujillo": [
+      {
+        "date": "2026-07-25",
+        "plan": "coaching/plans/2026-07-25/Andrew_Trujillo.html"
+      },
+      {
+        "date": "2026-07-20",
+        "plan": "coaching/plans/2026-07-20/Andrew_Trujillo.html"
+      }
+    ],
+    "Benjamin Wyllie": [
+      {
+        "date": "2026-07-25",
+        "plan": "coaching/plans/2026-07-25/Benjamin_Wyllie.html"
+      },
+      {
+        "date": "2026-07-20",
+        "plan": "coaching/plans/2026-07-20/Benjamin_Wyllie.html"
+      }
+    ],
+    "Brandon Moreno": [
+      {
+        "date": "2026-07-25",
+        "plan": "coaching/plans/2026-07-25/Brandon_Moreno.html"
+      },
+      {
+        "date": "2026-07-20",
+        "plan": "coaching/plans/2026-07-20/Brandon_Moreno.html"
+      }
+    ],
+    "Cole Pantol": [
+      {
+        "date": "2026-07-25",
+        "plan": "coaching/plans/2026-07-25/Cole_Pantol.html"
+      },
+      {
+        "date": "2026-07-20",
+        "plan": "coaching/plans/2026-07-20/Cole_Pantol.html"
+      },
+      {
+        "date": "2026-07-19",
+        "plan": "coaching/plans/2026-07-19/Cole_Pantol.html"
+      }
+    ],
+    "David Canales": [
+      {
+        "date": "2026-07-25",
+        "plan": "coaching/plans/2026-07-25/David_Canales.html"
+      }
+    ],
+    "Francisco Valencia": [
+      {
+        "date": "2026-07-25",
+        "plan": "coaching/plans/2026-07-25/Francisco_Valencia.html"
+      },
+      {
+        "date": "2026-07-20",
+        "plan": "coaching/plans/2026-07-20/Francisco_Valencia.html"
+      }
+    ],
+    "Joe Mendoza": [
+      {
+        "date": "2026-07-25",
+        "plan": "coaching/plans/2026-07-25/Joe_Mendoza.html"
+      },
+      {
+        "date": "2026-07-20",
+        "plan": "coaching/plans/2026-07-20/Joe_Mendoza.html"
+      }
+    ],
+    "Juan Tlatenchi": [
+      {
+        "date": "2026-07-25",
+        "plan": "coaching/plans/2026-07-25/Juan_Tlatenchi.html"
+      },
+      {
+        "date": "2026-07-20",
+        "plan": "coaching/plans/2026-07-20/Juan_Tlatenchi.html"
+      },
+      {
+        "date": "2026-07-19",
+        "plan": "coaching/plans/2026-07-19/Juan_Tlatenchi.html"
+      }
+    ],
+    "Mario Castro": [
+      {
+        "date": "2026-07-25",
+        "plan": "coaching/plans/2026-07-25/Mario_Castro.html"
+      },
+      {
+        "date": "2026-07-20",
+        "plan": "coaching/plans/2026-07-20/Mario_Castro.html"
+      }
+    ],
+    "Nathan Colquitt": [
+      {
+        "date": "2026-07-25",
+        "plan": "coaching/plans/2026-07-25/Nathan_Colquitt.html"
+      },
+      {
+        "date": "2026-07-19",
+        "plan": "coaching/plans/2026-07-19/Nathan_Colquitt.html"
+      }
+    ],
+    "Nikko April": [
+      {
+        "date": "2026-07-25",
+        "plan": "coaching/plans/2026-07-25/Nikko_April.html"
+      },
+      {
+        "date": "2026-07-20",
+        "plan": "coaching/plans/2026-07-20/Nikko_April.html"
+      }
+    ],
+    "Robert Silinzy": [
+      {
+        "date": "2026-07-25",
+        "plan": "coaching/plans/2026-07-25/Robert_Silinzy.html"
+      }
+    ],
+    "Noah Weng": [
+      {
+        "date": "2026-07-20",
+        "plan": "coaching/plans/2026-07-20/Noah_Weng.html"
+      },
+      {
+        "date": "2026-07-19",
+        "plan": "coaching/plans/2026-07-19/Noah_Weng.html"
+      }
+    ]
+  }
 }
