@@ -1,36 +1,28 @@
-# Live-Coach Card
+# Scorecard: Andrew Trujillo
 
-**Tech:** Andrew Trujillo
-**Date:** 2026-07-25
-**Duration:** 80 min
-**Job:** 
 **RecId:** file:Andrew_Trujillo_-_
+**Date:** 2026-07-25
+**Job:** N/A
+**Duration:** 80 min
 
-## FSG Scoring
+## Scoring Bands
 
-- **Welcome (Empathy/Expertise/Expectations):** Solid
-- **Assessment (Questions/Check-ins):** Strong
-- **Decision (Options/Reconnect/Explain):** Moderate
-- **Deliver (Nerd/5-Star):** Weak
+**Welcome:** Solid
+**Assessment:** Solid
+**Decision:** Moderate
+**Deliver:** Moderate
 
 ## Critical Actions
 
-| Action | Result |
-|--------|--------|
-| Set Clear Expectations | ✓ Pass |
-| Asked Discovery Questions | ✓ Pass |
-| Created/Presented Options | ✗ Fail |
-| Handled Objections w/ Empathy | ✗ Fail |
+- **Expectations Set:** True
+- **Good Discovery Questions:** True
+- **Built/Presented Options:** False
+- **Handled Objections:** False
 
-## Outcome
+## Outcome: NO-CLOSE
 
-**CLOSED**
+**Coaching Tip:** FIX — When Monica expressed concerns about the bedroom not cooling and her worry about the system failing at night, that was an objection born from real stress. Instead of just assuring her the maintenance would help, explicitly present two clear options (repair the ductwork issue vs. full replacement) with pricing today so she can make a decision rather than just scheduling diagnosis.
 
-## Coaching Tip
+## Summary
 
-WIN — Call outcome was positive despite areas for improvement.
-
-## Analysis Notes
-
-- Transcript has 55 speaker turns
-- Key phrases identified: standard call flow
+Tech set clear expectations and asked good discovery questions about the system history and symptoms. However, when the customer raised concerns about reliability and the 4-year-old ductwork issue, the tech didn't present concrete options with costs. Call ended with diagnosis incomplete and customer asked to wait for report instead of deciding today.
