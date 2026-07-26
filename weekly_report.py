@@ -199,6 +199,19 @@ ftxt(0.06, 0.021, f"Generated {run.isoformat()}   Â·   ServiceTitan live API   Â
 out = Path(__file__).parent / f"weekly_report_{LW[1].isoformat()}.pdf"
 fig.savefig(out, facecolor="white")
 print("wrote", out)
+
+# JSON twin of the PDF so the dashboard's WEEK OVER WEEK tab can render the
+# same tiles + per-tech table natively (John, 2026-07-26).
+jout = Path(__file__).parent / f"weekly_report_{LW[1].isoformat()}.json"
+_rows = sorted(per.items(), key=lambda kv: (-kv[1]["created"], -kv[1]["sold"], kv[0]))
+jout.write_text(json.dumps({
+    "generated": run.isoformat(),
+    "week": {"start": LW[0].isoformat(), "end": LW[1].isoformat()},
+    "prior": {"start": PW[0].isoformat(), "end": PW[1].isoformat()},
+    "lastWeek": lw, "priorWeek": pw,
+    "perTech": [dict(tech=t, **v) for t, v in _rows],
+}, indent=1))
+print("wrote", jout)
 print(f"created {pw['created']}->{lw['created']} sold {pw['sold']}->{lw['sold']} "
       f"close {pw['close']}%->{lw['close']}% flip {pw['fliprate']}%->{lw['fliprate']}% "
       f"cxl {pw['canceled']}->{lw['canceled']}")

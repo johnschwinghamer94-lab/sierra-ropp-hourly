@@ -32,6 +32,9 @@ jobs:
           mkdir -p site/reports
           cp "$pdf" "site/reports/$(basename "$pdf")"
           cp "$pdf" site/reports/weekly-latest.pdf
+          jsn=$(ls -t weekly_report_*.json | head -1)
+          cp "$jsn" "site/reports/$(basename "$jsn")"
+          cp "$jsn" site/reports/weekly-latest.json
           cd site
           git config user.email "johnschwinghamer94@gmail.com"
           git config user.name "John Schwinghamer"
