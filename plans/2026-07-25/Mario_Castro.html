@@ -1,0 +1,203 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mario Castro — SILO Coaching Plan · 2026-07-25</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style>
+</head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;·&nbsp;SILO</b><span class="tag">Daily Coaching Plan · 2026-07-25</span></div>
+<div class="wrap">
+<div class="hero"><div class="ey">Daily Coaching Plan · 2026-07-25 · 3 gradeable calls (all partial tapes)</div><h1 class="disp">Mario Castro</h1><p class="lede">The best question discipline on the board. On two of three calls he asks all four required questions — filter, rooms, temperature and the power bill — and on the Spanish call he turns the bill answer into the whole teaching moment. Then all three recordings stop before he finds anything.</p></div>
+<div class="glance">
+<div class="g"><div class="k">Close Rate</div><div class="v red">0%<small>no outcome captured on any of the three tapes</small></div></div>
+<div class="g"><div class="k">Calls Reviewed</div><div class="v">3 of 3<small><q>ORTIZ-PERALDA</q> · <q>GONZALEZ-VELAZQUEZ</q> · <q>ZAMORA</q> — all graded partial</small></div></div>
+<div class="g"><div class="k">Strongest</div><div class="v grn">Assessment<small>Required Questions — Strong</small></div></div>
+<div class="g"><div class="k">Weakest</div><div class="v red">Decision<small>never reaches tape</small></div></div>
+</div>
+<div class="legend"><span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span><span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span></div>
+<p class="note">Scored on strength bands, never numbers — the only figure anywhere is the close rate. All three recordings end during or shortly after the intake, so Decision and Deliver are marked not observed rather than banded down. An internal phone call with a coworker at the end of the ORTIZ-PERALDA recording has been excluded entirely and is not graded or commented on. One call was conducted in Spanish; quotes are given as spoken.</p>
+<section><div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive"><div class="dh"><div class="k">What the tape shows</div><h3>He asks the questions nobody else asks — and then the tape ends.</h3></div><div class="split"><div class="c said"><div class="lbl">What actually happened</div><p>On the Spanish call he led with the bill: <q>¿ha visto que sus pagos de electricidad han subido?</q> When the customer said he did not understand the connection, Mario offered to draw it: <q>¿Cómo se lo explico? Tiene como un pedazo de papel, ahí se lo dibujo</q> — then taught startup amperage and named the real numbers people pay: <q>hay personas que pagan como más de 300, 400, 500 dólares al mes. Se les hace normal pero no saben que el sistema es la causa.</q></p></div><div class="c should"><div class="lbl">What the FSG model calls for</div><p>That is the replacement conversation being built correctly, from the customer&#x27;s own bill outward. Nothing to fix in it. What we cannot see, on any of three calls, is what he did with it — every recording stops before the first finding is delivered.</p></div></div></div></section>
+<section><div class="sh"><div class="no">2</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div><div class="rub">
+<div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+<div class="row"><div class="rb">Intro / get their name</div><div><span class="b solid">Solid</span></div><div class="ev"><q>I&#x27;m Mario with Sierra</q> and <q>soy Mario, Sierra</q> — consistent introduction, though the customer&#x27;s name is rarely asked back.</div></div>
+<div class="row"><div class="rb">Verify our vehicle parking</div><div><span class="b strong">Strong</span></div><div class="ev">Best on the board for consistency — asked on all three calls: <q>I parked behind the truck. Is that okay?</q> and <q>ahí donde me estacioné, ¿está bien?</q></div></div>
+<div class="row"><div class="rb">Permission to enter</div><div><span class="b strong">Strong</span></div><div class="ev"><q>Is it okay if I come in?</q> and, at the attic, <q>Is it okay if I go in there?</q></div></div>
+<div class="row"><div class="rb">Floor protectors</div><div><span class="b weak">Weak</span></div><div class="ev">Not mentioned on any of the three calls.</div></div>
+<div class="row"><div class="rb">Personal connection</div><div><span class="b solid">Solid</span></div><div class="ev">Warm and low-key — the dogs on two calls, <q>this is a nice area, you guys been living here for a while?</q>, and on the Spanish call he offered to teach as he worked: <q>si quiere estar ahí viendo lo que hago, puede seguirme. No me importa si quiere aprender.</q></div></div>
+<div class="row"><div class="rb">Confirm the reason for the call</div><div><span class="b strong">Strong</span></div><div class="ev"><q>You guys having AC issues?</q> / <q>¿Cómo le ha ido?</q> then chased the pattern hard — when it shuts off, when it will not restart, how long it has been happening: <q>¿tiempo lleva haciendo eso?</q> / <q>como una semana.</q></div></div>
+<div class="row"><div class="rb">Brief technical questions</div><div><span class="b strong">Strong</span></div><div class="ev">Sharpest on the board. On the Spanish call: install company, whether permits and insurance were pulled — <q>cuando instalaron el sistema, ¿sacaron seguros, agregaron permisos?</q> — warranty status, and then he sat and helped the customer search his own email for the installer&#x27;s name.</div></div>
+<div class="row"><div class="rb">Intent to fix today</div><div><span class="b solid">Solid</span></div><div class="ev"><q>si usted quiere firmar o empezar algo hoy, podemos empezar</q> — stated on the Spanish call, implied on the others.</div></div>
+<div class="row"><div class="rb">Address membership status</div><div><span class="b weak">Weak</span></div><div class="ev">Never raised on any of the three calls.</div></div>
+<div class="row"><div class="rb">Setting Expectations — LTOAT5</div><div><span class="b solid">Solid</span></div><div class="ev">Strongest in Spanish, where the block is complete: <q>ya cuando acabe voy a hacer mi reporte, dura como 20, 30 minutos... vengo, le doy toda la información, todo lo que encontré</q> (Options) and <q>no vamos a empezar nada sin su autorización</q> (Approval), plus the today commitment. In English the block thins out to <q>I&#x27;m checking all the components. It&#x27;s a thorough evaluation</q> plus <q>I&#x27;ll show you pictures. I&#x27;ll keep you updated as I&#x27;m going.</q> The five-star seed is missing on all three.</div></div>
+<div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+<div class="row"><div class="rb">Required questions</div><div><span class="b strong">Strong</span></div><div class="ev">The standout. On GONZALEZ-VELAZQUEZ all four land in sequence: <q>72. Is that normally the temperature you keep it at?</q> → <q>How are your utility bills?</q> → <q>Any hot or cold spots besides the upstairs?</q> → <q>how often do the filters get changed?</q> On ZAMORA the same four, plus the maintenance question exactly as written: <q>Is there anything in particular you want me to take a look at? Anything you&#x27;re trying to get out of this maintenance?</q> On the Spanish call the bill and filter questions are asked and the filter follow-up goes further than anyone else&#x27;s — thickness, count and sizes.</div></div>
+<div class="row"><div class="rb">Check-ins</div><div><span class="b na">Not observed</span></div><div class="ev">All three recordings end before the first findings check-in.</div></div>
+<div class="row"><div class="rb">Draw the Picture</div><div><span class="b strong">Strong</span></div><div class="ev">On the Spanish call he offered to literally draw it — <q>tiene como un pedazo de papel, ahí se lo dibujo</q> — then: <q>el compresor, como es el corazón... cuando ya están más viejos los sistemas, para empezar necesita más electricidad, y eso es lo que hace que los pagos sean más grandes.</q> On the English call, the damper teaching: <q>since it&#x27;s two thermostats, you have two big ductworks. Each one has a damper... If they&#x27;re bypassing dampers, they&#x27;re just messing up your unit, because airflow is the main reason why these units break down.</q></div></div>
+<div class="row"><div class="rb">Check Your Tone</div><div><span class="b strong">Strong</span></div><div class="ev">Calm and unhurried on all three. He also volunteered a limit that cost him work: <q>solo voy a chequear el sistema de aquí abajo... no voy a tocar el otro porque si tocamos el otro lo tenemos que cobrar.</q></div></div>
+<div class="row"><div class="rb">Keep It Simple</div><div><span class="b strong">Strong</span></div><div class="ev">No jargon in either language. Every technical point is anchored to something the customer already understands.</div></div>
+<div class="row"><div class="rb">Show Pictures</div><div><span class="b solid">Solid</span></div><div class="ev">Promised on every call — <q>I&#x27;ll show you pictures. Did they show you pictures? I&#x27;ll show you everything, how everything&#x27;s working</q> — but the tapes end before any are shown.</div></div>
+<div class="row"><div class="rb">Get the Customer to Diagnose</div><div><span class="b solid">Solid</span></div><div class="ev">On the Spanish call the customer worked the problem out loud with him — the two systems, which one failed, what the installer actually replaced — rather than being lectured. Good, though the conclusions still land in Mario&#x27;s mouth.</div></div>
+<div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b na">Not observed</span></span></div>
+<div class="row"><div class="rb">Building options / Reconnecting / Link-Say-Spin-Zip / Objections</div><div><span class="b na">Not observed</span></div><div class="ev">All three tapes end before any findings, options or prices exist. Nothing in the Decision step is graded.</div></div>
+<div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b na">Not observed</span></span></div>
+<div class="row"><div class="rb">Be A Nerd</div><div><span class="b strong">Strong</span></div><div class="ev">On the visible evidence alone: startup amperage and the power bill, damper zoning and airflow, builder-grade life expectancy — <q>usually they&#x27;re builder grade, original to the home, they usually last eight to ten years.</q> He teaches early and unprompted.</div></div>
+<div class="row"><div class="rb">5-Star Review</div><div><span class="b weak">Weak</span></div><div class="ev">Never seeded and never asked on any of the three calls. This is a genuine absence in the observed portion, not a casualty of the tape.</div></div>
+<div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b solid">Solid</span></span></div>
+<div class="row"><div class="rb">Make their time valuable</div><div><span class="b strong">Strong</span></div><div class="ev">Every one of these customers learned something before a tool came out — what a damper does, why an aging compressor raises a power bill, how long a builder-grade unit lasts here.</div></div>
+<div class="row"><div class="rb">Help them arrive at their own solution</div><div><span class="b na">Not observed</span></div><div class="ev">The decision conversation is off-tape on all three.</div></div>
+</div>
+<div class="sh" style="margin-top:26px"><div class="no">3</div><h2>Critical Actions — pass rate</h2></div><div class="rub">
+<div class="row"><div class="rb">Setting clear expectations</div><div><span class="b fail">Fail</span></div><div class="ev">Complete in Spanish, thin in English — no approval promise on either English call, and no five-star standard on any of the three. Automatic fail on the day.</div></div>
+<div class="row"><div class="rb">Asking good questions</div><div><span class="b pass">Pass</span></div><div class="ev">All four required questions on two of three calls, plus the maintenance question, warranty and permit history, and filter sizing. The strongest questioning on the board.</div></div>
+<div class="row"><div class="rb">Creating good options</div><div><span class="b na">Not observed</span></div><div class="ev">All three tapes end before options exist. Not graded — and not credited.</div></div>
+<div class="row"><div class="rb">Handling objections</div><div><span class="b na">Not observed</span></div><div class="ev">No objection surfaces before any of the recordings stop.</div></div>
+</div></section>
+<section><div class="sh"><div class="no">4</div><h2>What went right — real strength, build on it</h2></div><ul class="str">
+<li>&lt;b&gt;All four required questions, in sequence, on two of three calls.&lt;/b&gt; Nobody else on the board does this consistently.</li>
+<li>&lt;b&gt;He turns the bill answer into the teaching.&lt;/b&gt; <q>hay personas que pagan como más de 300, 400, 500 dólares al mes. Se les hace normal pero no saben que el sistema es la causa.</q> That is how a replacement conversation should start.</li>
+<li>&lt;b&gt;Parking verified on every single call.&lt;/b&gt; Three for three.</li>
+<li>&lt;b&gt;Volunteered a limit that cost him work.&lt;/b&gt; <q>no voy a tocar el otro porque si tocamos el otro lo tenemos que cobrar</q> — and then spent his own time helping the customer hunt down a warranty from a different company.</li>
+</ul></section>
+<section><div class="sh"><div class="no">5</div><h2>The three gaps</h2><span class="hint">each one anchored to a real moment on tape</span></div>
+<div class="mom"><div class="top2"><span class="b weak">Weak</span><h4>Gap 1 — Three calls, three recordings that stop before the findings</h4></div>
+<div class="q"><b>Last words, Spanish call</b>&quot;ahorita yo checo todo y yo le aviso todo lo que encontré.&quot;</div>
+<div class="q"><b>Last words, GONZALEZ-VELAZQUEZ</b>&quot;So I&#x27;ll show you pictures of everything.&quot;</div>
+<div class="q"><b>Last words, ZAMORA</b>&quot;I&#x27;ll let you know everything once I&#x27;m done. I&#x27;ll keep you updated as I&#x27;m going through.&quot;</div>
+<p class="fixline"><b>The fix</b> Every recording ends on a promise to come back and show what he found — and none of them show it. His intake is the best on the board and it is the only thing we can see. Recorder check before the knock, recording stops in the van. Until that changes there is no honest read on his close rate.</p></div>
+<div class="mom"><div class="top2"><span class="b weak">Weak</span><h4>Gap 2 — The English expectations block is missing the approval promise</h4></div>
+<div class="q"><b>Spanish call</b>&quot;no vamos a empezar nada sin su autorización, pero si usted quiere firmar o empezar algo hoy, podemos empezar.&quot;</div>
+<div class="q"><b>English calls</b>&quot;I&#x27;m checking all the components. It&#x27;s a thorough evaluation.&quot; … &quot;I&#x27;ll keep you updated as I&#x27;m going.&quot; — and nothing about approval, options or today.</div>
+<p class="fixline"><b>The fix</b> He already has the full block; it only survives in Spanish. Say the same four sentences in English on every call: I&#x27;ll look at the whole system, I&#x27;ll bring you back everything I find with your options, I won&#x27;t do anything without your approval, and my goal is to take care of it today. Same words, same order, both languages.</p></div>
+<div class="mom"><div class="top2"><span class="b weak">Weak</span><h4>Gap 3 — The five-star seed is never planted</h4></div>
+<div class="q"><b>What he says instead</b>&quot;So it&#x27;s my first time here, so I&#x27;ll go over everything. That way you guys know what to expect from me.&quot;</div>
+<div class="q"><b>What is missing</b>Any mention of the five-star standard, on any of three calls, in either language.</div>
+<p class="fixline"><b>The fix</b> One sentence at the end of the expectations block: <q>My goal today is a five-star experience — if I&#x27;m falling short of that at any point, stop me.</q> / <q>Mi meta hoy es que esto sea una experiencia de cinco estrellas — si no lo estoy logrando, párame.</q> Plant it before the tools come out and the ask at the end writes itself.</p></div>
+</section>
+<section><div class="sh"><div class="no">6</div><h2>This week&#x27;s drill — finish the block, finish the tape</h2></div><div class="script" style="border-radius:14px"><div class="lbl">Two habits, both one sentence long</div>
+<p class="">&lt;b&gt;At the end of every expectations block, in either language:&lt;/b&gt;</p>
+<p class="say">&quot;I won&#x27;t do anything without your approval, and my goal today is a five-star experience — if I&#x27;m falling short, stop me.&quot;</p>
+<p class="">&lt;b&gt;Before you knock:&lt;/b&gt; check the recorder. &lt;b&gt;Before you drive off:&lt;/b&gt; check it is still running. His questions deserve to be judged next to his close.</p>
+</div></section>
+<section><div class="sh"><div class="no">7</div><h2>3-week training plan</h2></div><div class="rub">
+<div class="row"><div class="rb">Week 1</div><div><b>Capture the full call</b></div><div class="ev">Recorder check before every knock; stops only in the van. Review one complete recording with a manager.</div></div>
+<div class="row"><div class="rb">Week 2</div><div><b>The English expectations block</b></div><div class="ev">Approval and today added to every English call, matching what he already says in Spanish.</div></div>
+<div class="row"><div class="rb">Week 3</div><div><b>Five-star seed</b></div><div class="ev">Planted on every call, both languages, then asked for at the close.</div></div>
+</div></section>
+<section><div class="sh"><div class="no">8</div><h2>What we owe Mario</h2></div><ul class="str">
+<li>A recorder that captures the whole visit — three partial tapes in one day is a systems problem, not a rep problem.</li>
+<li>Recognition that his required-question discipline is the best on the board and should be the training standard.</li>
+<li>A real close-rate read next week, from complete recordings.</li>
+</ul></section>
+<div class="bottom"><div class="eyb">Bottom line</div><p>Mario asks the questions the model actually asks for — all four, in order, in two languages — and turns the answers into teaching before he has touched a tool. That is the hardest habit to build and he already has it. What we have never seen is what he does after. Get one full call on tape and we will almost certainly be coaching a closer, not a diagnostician.</p></div>
+<div class="foot">Sierra · SILO daily coaching plan · 2026-07-25 · Scored on strength bands — close rate is the only number</div>
+</div></body></html>

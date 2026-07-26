@@ -1,0 +1,357 @@
+{
+  "generated": "2026-07-26T00:06:53-07:00",
+  "date": "2026-07-25",
+  "reps": [
+    {
+      "name": "Andrew Alonso",
+      "closeRate": "0%",
+      "calls": 1,
+      "strongest": "Welcome",
+      "weakest": "Decision",
+      "bands": {
+        "welcome": "Strong",
+        "assessment": "Solid",
+        "decision": "Weak",
+        "deliver": "Weak"
+      },
+      "critical": {
+        "expectations": true,
+        "questions": true,
+        "options": false,
+        "objections": false
+      },
+      "headlineGap": "The recording ends mid-evaluation, so the entire decision and close half of the visit is unverified.",
+      "focus": [
+        "Week 1: Record every call door to door and review one complete recording with a manager",
+        "Week 2: Ask the summer and winter thermostat question deliberately, always followed by the power-bill question",
+        "Week 3: Address membership status in the welcome before tools come out"
+      ],
+      "plan": "coaching/plans/2026-07-25/Andrew_Alonso.html"
+    },
+    {
+      "name": "Andrew Trujillo",
+      "closeRate": "0%",
+      "calls": 2,
+      "strongest": "Assessment",
+      "weakest": "Decision",
+      "bands": {
+        "welcome": "Strong",
+        "assessment": "Strong",
+        "decision": "Weak",
+        "deliver": "Weak"
+      },
+      "critical": {
+        "expectations": true,
+        "questions": true,
+        "options": false,
+        "objections": false
+      },
+      "headlineGap": "Both recordings stop during the intake, so no findings, options or close were captured on either call.",
+      "focus": [
+        "Week 1: Record every call door to door; review one complete recording with a manager",
+        "Week 2: Add the five-star seed, parking confirmation and floor protectors to the welcome",
+        "Week 3: Add the filter-frequency question to the intake block"
+      ],
+      "plan": "coaching/plans/2026-07-25/Andrew_Trujillo.html"
+    },
+    {
+      "name": "Benjamin Wyllie",
+      "closeRate": "29%",
+      "calls": 7,
+      "strongest": "Welcome",
+      "weakest": "Assessment",
+      "bands": {
+        "welcome": "Strong",
+        "assessment": "Moderate",
+        "decision": "Solid",
+        "deliver": "Moderate"
+      },
+      "critical": {
+        "expectations": true,
+        "questions": false,
+        "options": true,
+        "objections": false
+      },
+      "headlineGap": "When customers ask what a replacement costs, he answers that pricing is a different department instead of proposing an appointment time.",
+      "focus": [
+        "Week 1: Replace the repair-guy line with the sizing explanation and always propose a specific appointment time",
+        "Week 2: Ask the thermostat and power-bill questions before presenting any efficiency analysis",
+        "Week 3: Ask for the five-star review on every call, not just seed it"
+      ],
+      "plan": "coaching/plans/2026-07-25/Benjamin_Wyllie.html"
+    },
+    {
+      "name": "Brandon Moreno",
+      "closeRate": "0%",
+      "calls": 1,
+      "strongest": "Assessment",
+      "weakest": "Welcome",
+      "bands": {
+        "welcome": "Moderate",
+        "assessment": "Solid",
+        "decision": "Weak",
+        "deliver": "Weak"
+      },
+      "critical": {
+        "expectations": false,
+        "questions": false,
+        "options": false,
+        "objections": false
+      },
+      "headlineGap": "A direct question about replacement cost was answered with a rough estimate instead of a booked specialist visit.",
+      "focus": [
+        "Week 1: Run the three required questions as a fixed block at the thermostat on every call",
+        "Week 2: Add options, approval and today to the expectations block",
+        "Week 3: Convert every pricing question into a booked specialist appointment"
+      ],
+      "plan": "coaching/plans/2026-07-25/Brandon_Moreno.html"
+    },
+    {
+      "name": "Cole Pantol",
+      "closeRate": "100%",
+      "calls": 1,
+      "strongest": "Assessment",
+      "weakest": "Welcome",
+      "bands": {
+        "welcome": "Solid",
+        "assessment": "Strong",
+        "decision": "Strong",
+        "deliver": "Solid"
+      },
+      "critical": {
+        "expectations": true,
+        "questions": true,
+        "options": true,
+        "objections": true
+      },
+      "headlineGap": "Kept adding supporting arguments after the options were presented instead of stopping and letting the customer respond.",
+      "focus": [
+        "Week 1: Present the options, deliver the closing line, then stay silent until the customer speaks",
+        "Week 2: Add filter frequency and the power-bill follow-up to the thermostat block",
+        "Week 3: Ask for the five-star review before leaving, not just seed it in the welcome"
+      ],
+      "plan": "coaching/plans/2026-07-25/Cole_Pantol.html"
+    },
+    {
+      "name": "David Canales",
+      "closeRate": "0%",
+      "calls": 2,
+      "strongest": "Welcome",
+      "weakest": "Decision",
+      "bands": {
+        "welcome": "Strong",
+        "assessment": "Solid",
+        "decision": "Solid",
+        "deliver": "Solid"
+      },
+      "critical": {
+        "expectations": true,
+        "questions": false,
+        "options": true,
+        "objections": false
+      },
+      "headlineGap": "The specialist visit was offered three times across two calls and never converted into a booked appointment.",
+      "focus": [
+        "Week 1: Convert every price hesitation into a specialist appointment with a day and a time",
+        "Week 2: Run the three required questions as a fixed block at the thermostat",
+        "Week 3: Re-shoot unreadable photos before showing them, and ask for the review on every call"
+      ],
+      "plan": "coaching/plans/2026-07-25/David_Canales.html"
+    },
+    {
+      "name": "Francisco Valencia",
+      "closeRate": "60%",
+      "calls": 5,
+      "strongest": "Decision",
+      "weakest": "Assessment",
+      "bands": {
+        "welcome": "Solid",
+        "assessment": "Solid",
+        "decision": "Strong",
+        "deliver": "Solid"
+      },
+      "critical": {
+        "expectations": false,
+        "questions": false,
+        "options": true,
+        "objections": true
+      },
+      "headlineGap": "None of the required assessment questions were asked on any call, so the customer's own bill and comfort evidence never entered the conversation.",
+      "focus": [
+        "Week 1: Ask filter frequency, hot and cold rooms, and the thermostat and power-bill pair on every call",
+        "Week 2: Present one option line and one number at a time, pausing before the next",
+        "Week 3: Seed the five-star standard in the welcome and ask for the review before leaving"
+      ],
+      "plan": "coaching/plans/2026-07-25/Francisco_Valencia.html"
+    },
+    {
+      "name": "Joe Mendoza",
+      "closeRate": "100%",
+      "calls": 2,
+      "strongest": "Decision",
+      "weakest": "Assessment",
+      "bands": {
+        "welcome": "Strong",
+        "assessment": "Moderate",
+        "decision": "Strong",
+        "deliver": "Solid"
+      },
+      "critical": {
+        "expectations": true,
+        "questions": false,
+        "options": true,
+        "objections": true
+      },
+      "headlineGap": "Only one of the four required questions was asked across two calls, so both wins rested entirely on rapport and option-building.",
+      "focus": [
+        "Week 1: Run all four required questions at the thermostat on every call",
+        "Week 2: Deliver the system teach-back instead of offering it and withdrawing it",
+        "Week 3: Ask for the five-star review before leaving every home"
+      ],
+      "plan": "coaching/plans/2026-07-25/Joe_Mendoza.html"
+    },
+    {
+      "name": "Juan Tlatenchi",
+      "closeRate": "0%",
+      "calls": 1,
+      "strongest": "Welcome",
+      "weakest": "Assessment",
+      "bands": {
+        "welcome": "Solid",
+        "assessment": "Moderate",
+        "decision": "Moderate",
+        "deliver": "Solid"
+      },
+      "critical": {
+        "expectations": true,
+        "questions": false,
+        "options": true,
+        "objections": false
+      },
+      "headlineGap": "The specialist visit was offered as something the customer might want rather than proposed with a specific day and time.",
+      "focus": [
+        "Week 1: Ask filter frequency, hot and cold rooms, and the thermostat and power-bill pair on every call",
+        "Week 2: Propose a specific day and time for the specialist instead of asking whether they would like one",
+        "Week 3: Never leave a home without a repair date, a specialist appointment or an agreed callback time"
+      ],
+      "plan": "coaching/plans/2026-07-25/Juan_Tlatenchi.html"
+    },
+    {
+      "name": "Mario Castro",
+      "closeRate": "0%",
+      "calls": 3,
+      "strongest": "Assessment",
+      "weakest": "Decision",
+      "bands": {
+        "welcome": "Solid",
+        "assessment": "Strong",
+        "decision": "Weak",
+        "deliver": "Weak"
+      },
+      "critical": {
+        "expectations": false,
+        "questions": true,
+        "options": false,
+        "objections": false
+      },
+      "headlineGap": "All three recordings end during the intake, so nothing after the questions was captured on any call.",
+      "focus": [
+        "Week 1: Record every call door to door; review one complete recording with a manager",
+        "Week 2: Deliver the approval and today commitments in English, matching what is already said in Spanish",
+        "Week 3: Plant the five-star seed on every call in both languages"
+      ],
+      "plan": "coaching/plans/2026-07-25/Mario_Castro.html"
+    },
+    {
+      "name": "Nathan Colquitt",
+      "closeRate": "0%",
+      "calls": 1,
+      "strongest": "Assessment",
+      "weakest": "Welcome",
+      "bands": {
+        "welcome": "Moderate",
+        "assessment": "Strong",
+        "decision": "Weak",
+        "deliver": "Weak"
+      },
+      "critical": {
+        "expectations": false,
+        "questions": true,
+        "options": false,
+        "objections": false
+      },
+      "headlineGap": "The expectations block covers only look and options, with no approval promise, today commitment or five-star standard.",
+      "focus": [
+        "Week 1: Deliver all six expectation beats on every call",
+        "Week 2: Record every call door to door and review one complete recording with a manager",
+        "Week 3: Ask the summer and winter thermostat question deliberately on every call"
+      ],
+      "plan": "coaching/plans/2026-07-25/Nathan_Colquitt.html"
+    },
+    {
+      "name": "Nikko April",
+      "closeRate": "0%",
+      "calls": 2,
+      "strongest": "Welcome",
+      "weakest": "Decision",
+      "bands": {
+        "welcome": "Strong",
+        "assessment": "Solid",
+        "decision": "Moderate",
+        "deliver": "Solid"
+      },
+      "critical": {
+        "expectations": true,
+        "questions": false,
+        "options": false,
+        "objections": false
+      },
+      "headlineGap": "A customer volunteered that he wanted replacement pricing and received general advice instead of a booked specialist visit.",
+      "focus": [
+        "Week 1: Convert every replacement mention into a booked specialist appointment with a time",
+        "Week 2: Ask filter frequency and the power-bill question before asserting anything about energy costs",
+        "Week 3: Stop narrating uncertainty to customers; name the limit and promise the follow-up"
+      ],
+      "plan": "coaching/plans/2026-07-25/Nikko_April.html"
+    },
+    {
+      "name": "Robert Silinzy",
+      "closeRate": "0%",
+      "calls": 5,
+      "strongest": "Assessment",
+      "weakest": "Decision",
+      "bands": {
+        "welcome": "Solid",
+        "assessment": "Strong",
+        "decision": "Moderate",
+        "deliver": "Solid"
+      },
+      "critical": {
+        "expectations": false,
+        "questions": false,
+        "options": true,
+        "objections": false
+      },
+      "headlineGap": "Five visits ended with information delivered and nothing scheduled, including one where the customer asked directly about replacement cost.",
+      "focus": [
+        "Week 1: End every call with a repair date, a specialist appointment or a specific callback time",
+        "Week 2: Add the summer and winter thermostat question and the hot and cold rooms question to the intake",
+        "Week 3: Answer customer reasoning with a question rather than a correction"
+      ],
+      "plan": "coaching/plans/2026-07-25/Robert_Silinzy.html"
+    }
+  ],
+  "skipped": [
+    {
+      "rep": "Andrew Alonso",
+      "reason": "Recording ends about two minutes in, during the welcome; no assessment, options or outcome to grade."
+    },
+    {
+      "rep": "Francisco Valencia",
+      "reason": "Empty recording — no usable audio captured."
+    }
+  ],
+  "dates": [
+    "2026-07-25"
+  ]
+}
