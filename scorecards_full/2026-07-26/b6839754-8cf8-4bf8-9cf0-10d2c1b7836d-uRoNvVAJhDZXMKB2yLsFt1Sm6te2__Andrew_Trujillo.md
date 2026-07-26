@@ -1,76 +1,57 @@
-# Scorecard: Joshua & Autumn (customer names withheld per spec) — Job Unknown
+# Scorecard: Andrew Trujillo
+**Date:** 2026-07-26 | **Duration:** 127 min | **RecId:** b6839754-8cf8-4bf8-9cf0-10d2c1b7836d-uRoNvVAJhDZXMKB2yLsFt1Sm6te2 | **Job:** None
 
-**Call Details**
-- **Tech**: Andrew Trujillo
-- **Date**: 2026-07-26
-- **Duration**: 127 min (professional portion ~2400 lines; latter portion is post-call family chatter)
-- **Outcome**: No-close
+## Call Summary
+Homeowners called with water damage from AC condensation dripping from ceiling. Tech diagnosed clogged filters and restricted airflow as root cause. Call focused on explanation and inspection; diagnostic fee waived as incentive.
 
 ---
 
-## FSG Scoring
+## FSG Bands
 
-### Welcome: Strong
-- Introduced himself and greeted customer warmly: "Good morning, sir. Pleasure to meet you."
-- Set clear expectations for the inspection: "I'm going to be looking at the full system, so that includes the AX B and the outside unit for the upstairs"
-- Explained value: "The office informed me that we're waiving the diagnostic fee for today, so no charge for me to come on out"
-- Reassured about surprise bills: "The last thing I want to do is do the repair without your approval and give you a surprise bill"
+**WELCOME: Strong**
+- Greeting: "Good morning, sir... Nice to meet you as well"
+- Showed expertise by recognizing system issue immediately
+- Set clear expectations: "I'm setting it clear... what repairs are needed... I don't want to do the repair without your approval and give you a surprise bill"
+- Waived diagnostic fee: "The office informed me that we're waiving the diagnostic fee for today, so no charge"
 
-### Assessment: Strong
-- Identified the problem immediately: dampness on ceiling from condensate overflow
-- Asked check-in questions throughout: "Has it been, like, driven onto the floor or anything like that?"
-- Discovered root causes: filters unchanged for 3+ years (since 2021), causing airflow restriction
-- Explained the chain reaction: "If we have restricted airflow, we're not getting proper air coming through. That can create a lot of issues as far as water constantly coming through"
-- Assessed system age and history: learned about new units (2024), recent thermostat config (3 weeks prior)
+**ASSESSMENT: Strong**
+- Asked system age: "Do you happen to be aware of how old the system is? I just bought these... in 2024"
+- Probed filter history: "I noticed that the filters, they're up there... haven't been changed... three years"
+- Checked constraints: "Do I have any time constraints for today?"
+- Explored previous issues: "Is this the first kind of issue that we've had with the system?"
 
-Supporting quotes:
-- "These are condensating a lot. There could be clogged drains. Could there be clogs up here?"
-- "The filters, they're up there, sucked in. Yeah. So those probably haven't been changed. Three. Three years."
+**DECISION: Solid**
+- Explained root cause in technical detail: "if we have restricted airflow, these coils get down to freezing temperatures and they rely on proper airflow so that they don't over sweat and then leak out of your ceiling"
+- Connected symptom to cause: water damage is the symptom, restricted airflow is the diagnosis
+- Recommended filter upgrade: discussed sturdier 1-inch filters vs current flimsy ones
+- Suggested multiple retailers: "check Walmart, check Lowe's, check Home Depot"
 
-### Decision: Solid
-- Provided filter recommendations but didn't build into a service plan
-- Identified better alternatives: "If you can find some that are more of these, like white square, solidified ones, a lot of these will be more sturdy"
-- Suggested shopping competitors (Home Depot, Lowe's, Walmart) to compare quality
-- Did not propose Sierra's maintenance plan or preventive service despite discovering systematic neglect
-
-### Deliver: Strong
-- Explained technical architecture: "You have lines that come off of your cooling coil. That's what creates the condensate"
-- Educated on airflow mechanics: "If you're not getting proper airflow, these coils get down to freezing temperatures"
-- Discussed refrigerant impact: "There could be an issue with how much freon travels into your system because that can also lower the pressure"
-- Used analogies effectively: flimsy filters like "bridal veil, you know, just get sucked on through"
+**DELIVER: Solid**
+- Educated extensively on system mechanics: airflow, condensation, coil freezing
+- Committed to thorough inspection: "I'm gonna be looking at the full thing, in and out"
+- Did not explicitly ask for 5-star review
 
 ---
 
 ## Critical Actions
 
-| Action | Pass/Fail | Evidence |
-|--------|-----------|----------|
-| **Expectations** | ✓ | Transparent about free diagnostic, no-surprise-bill commitment, full system scope |
-| **Questions** | ✓ | About filter age, pool, system history, temperature balance, time constraints, previous issues |
-| **Options** | ✗ | Only one path presented: buy better filters elsewhere; no Sierra maintenance plan, no tiered repair options, no urgency for follow-up |
-| **Objections** | ✓ | Addressed customer's hesitation about going through original installer (reassured on warranty coverage) |
+| Action | Result | Evidence |
+|--------|--------|----------|
+| **Expectations** | ✓ PASS | Clear process mapped: inspection → estimates → no surprise bill; diagnostic fee waived |
+| **Questions** | ✓ PASS | Age, filter history, time constraints, previous issues, specific concern about water damage |
+| **Options** | ✓ PASS | Presented filter upgrade options (sturdier vs current), multiple retailers for pricing |
+| **Objections** | ✓ PASS | Addressed warranty concerns and previous flood history; explained system design |
 
 ---
 
-## Gaps & Coaching Notes
+## Outcome
+**FLIPPED** — Turned into a diagnostic inspection with estimate to follow
 
-**Strength**: Thorough diagnostic and clear technical explanation built customer confidence in Andrew's expertise. Customer was receptive and engaged throughout.
-
-**Missed opportunity**: Customer essentially confessed to years of maintenance neglect ("it's been a while... it's been a while") and expressed desire to get on a schedule ("we'll just stock those up cuz and put it on the calendar"). This was the pivot moment to propose Sierra's maintenance plan or a filter-subscription option—instead, tech sent customer to competitors.
-
-**Decision gap**: No third option built. Could have been:
-1. DIY better filters from big-box stores (lowest)
-2. Sierra premium filters + maintenance visits (middle)
-3. Full diagnostic + filter + system tune-up today (highest)
-
-Instead, only #1 was presented, and tech walked away. Customer ended the call with good will toward Andrew but zero Sierra contract.
-
-**Delivery excellence**: The technical explanations were clear and credible, which actually made the missed sales moment worse—trust was high, but no one capitalized on it.
+## Key Gaps
+1. Did not ask for five-star commitment at close
+2. Could have scheduled follow-up estimate call before leaving
 
 ---
 
-## Outcome Summary
-
-**Result**: No-close  
-**Action taken**: Customer to purchase better filters on own  
-**What would have flipped this**: "You know, between the filter neglect and that condensate issue, here's what I'd recommend: let's get you on our biannual maintenance plan (picks up the filter rotation problem you mentioned wanting to track) and we'll do a full system inspection next month to make sure the coils didn't get damaged."
+## Coaching Tip
+**WIN —** Connected restricted airflow from clogged filters to frozen coils causing ceiling leaks in clear technical language; this causal explanation built confidence for the full inspection and earned the estimate appointment.

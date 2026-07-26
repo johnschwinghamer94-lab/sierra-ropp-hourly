@@ -1,25 +1,52 @@
-# Scorecard: Francisco Valencia | 2026-07-26 | 54 min | Job #668942747
+# Scorecard: Francisco Valencia
+
+**Date:** 2026-07-26 | **Duration:** 54 min | **Job:** 668942747  
+**Customer:** Jose / Jaime, Alejandra
 
 ## FSG Bands
-- **Welcome**: Solid — Established rapport, showed concern for customer situation
-- **Assessment**: Strong — Identified mix-match AC/heat system, diagnosed complex equipment issue, asked contextual questions
-- **Decision**: Moderate — Appropriately deferred replacement quote to equipment specialist; did not close but set up next expert visit
-- **Deliver**: Strong — Explained regulatory context (2025 refrigerant phase-out), positioned company as knowledgeable guide
+
+**Welcome: Strong**
+- Introduced self warmly and explained value proposition: "at Sierra, we always...make our own...evaluations"
+- Set expectations clearly: "I'm gonna take a look at both the inside unit and then the outside unit"
+- Built rapport and asked about customer background
+
+**Assessment: Strong**
+- Comprehensive diagnostic: checked pressures, motors, compressor, refrigerant state
+- Asked discovery questions: tenure, prior service history, thermostat behavior
+- Identified root cause: 9-year-old indoor unit mismatched with 4-year-old outdoor unit
+- Found secondary issues: dog urine damage, previously replaced metering device
+
+**Decision: Strong on wins**
+- Presented 3 clear options with pricing:
+  - Leave as-is: deal with inefficiency until failure
+  - Minimum: condenser + coils ($13-16k); 5-year warranty
+  - Full: includes furnace (~$3-4k more); 10-year warranty
+- Explained technical rationale: refrigerant law changes require matched units
+- Handled objection about partial replacement with historical context
+- Connected warranty value to long-term cost
+
+**Deliver: Strong**
+- Scheduled future sales visit for detailed quote
+- Set expectation about multiple system tiers and brands available
+- Explained next steps clearly
 
 ## Critical Actions
-- **Expectations**: ✓ Set clear scope of assessment visit and next steps
-- **Questions**: ✓ Asked about usage, prior service, occupancy patterns
-- **Options**: ✓ Presented pathway (equipment specialist quote, warranty info)
-- **Objections**: ✗ No objections surfaced in available transcript
+
+| Action | Status | Evidence |
+|--------|--------|----------|
+| **Expectations** | ✓ Yes | Clear upfront about evaluation and reporting process |
+| **Questions** | ✓ Yes | Asked tenure, thermostat behavior, prior service |
+| **Options** | ✓ Yes | Three options with pricing and warranty tradeoffs |
+| **Objections** | ✓ Yes | Addressed why only outdoor was replaced previously |
 
 ## Outcome
-**No-close** — Assessment complete; expert quote deferred to specialized contractor visit.
+
+**Flipped** — Customer scheduled estimate appointment with sales team for system replacement options.
 
 ## Coaching Tip
-**WIN** — Rep builds credibility by explaining 2025 refrigerant law changes that phase out old equipment availability, positioning as knowledgeable guide navigating regulatory constraints.
 
-## Key Strength
-Technical knowledge goes beyond the immediate problem. Explaining regulatory environment (refrigerant phase-out) showed expertise and helped customer understand why full replacement was appropriate—this educates rather than sells.
+**WIN —** Tech connected refrigerant law changes and warranty advantage to pricing, making full replacement feel like smart long-term value; customer scheduled follow-up immediately.
 
-## Strategic Note
-Appropriate boundary-setting by deferring equipment quote to specialist. Positioned company as customer advocate who knows when to involve expert partners.
+## Summary
+
+Excellent balance of technical credibility and business acumen. Built understanding of root cause, explained cost drivers, and moved customer toward decision.

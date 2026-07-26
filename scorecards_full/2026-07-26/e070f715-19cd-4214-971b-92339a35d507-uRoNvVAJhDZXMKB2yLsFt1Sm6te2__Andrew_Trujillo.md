@@ -1,62 +1,123 @@
-# Live-Coach Scorecard
-
-**Call Details:**
-- RecId: e070f715-19cd-4214-971b-92339a35d507-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
-- Tech: Andrew Trujillo
-- Date: 2026-07-26
-- Duration: 103 min
-- Job: Downstairs AC Unit Motor Start Device Replacement - Tenant Renting Home
-
----
+# Scorecard: Andrew Trujillo
+**Date:** 2026-07-26  
+**Duration:** 103 min  
+**Job:** Nazareth - Downstairs AC Unit Motor Start Device Replacement - Tenant Renting Home  
+**RecId:** e070f715-19cd-4214-971b-92339a35d507-uRoNvVAJhDZXMKB2yLsFt1Sm6te2  
 
 ## FSG Bands
 
-### Welcome: **Strong**
-Andrew opened with genuine warmth and immediately established rapport. He introduced himself from Sierra, learned the customer's name, and set clear expectations: full system inspection (inside and outside), theatermostat check, attic access. He proactively recognized this is a rental property and explained the homeowner-tenant protocol—all decisions go to the homeowner. Asked about time constraints early. Confident and empathetic throughout.
+### Welcome: Strong
+Warm, professional greeting with immediate empathy. Andrew introduced himself clearly, complimented the customer's name ("That's a pretty cool name, man"), and quickly got permission to tour the home. Set positive expectations: "I'm gonna look at the full thing, so outside and in." Tone was friendly and non-threatening, building immediate rapport.
 
-### Assessment: **Solid**
-Good discovery: when the downstairs unit failed (36 hours), symptoms (no airflow, fans not spinning), what the prior tech did (vague—just wire tightening), system age (stated as 2 years installed; actually a 6-year-old 2020 unit), filter maintenance (monthly). Inspected both outdoor and indoor systems. Identified the motor start device issue using electrical readings (45/5 amperage spec showing zeros). Verified upstairs unit is fine. Gap: called the homeowner before collecting full diagnostic details from the prior visit, requiring a callback. Better practice: complete inspection with photos, then call homeowner with full picture.
+### Assessment: Strong
+Extensive discovery and diagnostic work:
+- Asked about prior work: "Did the last tech give you any sort of inkling..."
+- Verified system age and history with both tenant and homeowner
+- Checked filter maintenance habits ("How often do you guys change out your filters?")
+- Identified the problem systematically: no airflow, investigated thermostat, checked outside unit
+- Used a multimeter to test electrical readings and confirm the failed motor start device
+- Explained findings clearly to both tenant and homeowner: "It stores electricity, and it's like a battery"
+- Verified the problem visually: "See how that middle piece is pressed in...See how that's domed up like that? These things are like batteries"
 
-### Decision: **Strong on Wins**
-Clear diagnosis: motor start device is completely depleted—no charge. Explained in layman's terms: "It stores electricity, and it's like a battery for your car. These go bad pretty easy." Walked homeowner through the 45/5 amperage spec and what zero readings mean. Presented repair: $557 parts + labor + 1-year warranty. Offered secondary option: $16/month maintenance plan with 15% parts discount (saves $86 on this call) and twice-yearly service.
+### Decision: Strong on Wins
+Handled the complex tenant/homeowner dynamic perfectly:
+- Established clear expectations early: "I have to get your approval before I can do any sort of repairs"
+- Explained the $39 diagnostic fee upfront
+- Provided a specific repair estimate: "$557 for the repair" including parts, labor, and 1-year warranty
+- Got homeowner approval over the phone while tenant was present
+- Offered a secondary option: maintenance plan ($16/month, $86 discount on this repair)
+- Customer declined the plan but approved the repair
+- Took payment over the phone (credit card)
+- Verified all the details (name, card info, email, signature authorization)
 
-Objection handling (the win): Homeowner asked about warranty coverage. Andrew didn't dismiss it—he checked Trane's database live on the phone, discovered the customer has extended heating coil coverage through 2041, then offered his own 1-year parts warranty on the motor start device. This transparency removed hesitation and closed the deal.
-
-### Deliver: **Strong**
-Completed the repair and verified it immediately: "You got 60-degree temperatures coming on through. Temperature in the house is 83, 84. You definitely want to have at least a 20-degree temperature split." Explained the work (whole new part, fresh out of the box, tested properly). Got customer signatures on work acknowledgment forms. Arranged full invoice with photos to be sent to homeowner. Stayed to confirm temperature improvement. Professional finish.
-
----
+### Deliver: Strong
+Completed the repair with expertise and follow-through:
+- Installed fresh motor start device from parts inventory
+- Stayed to verify the repair worked: checked airflow and temperature differential (60-degree output vs 83-84 ambient = excellent 20+ degree split)
+- Took photos of the failed part for documentation and sent to homeowner
+- Provided detailed invoice with photos and warranty information
+- Offered maintenance plan upsell after the sale (still professional)
+- Explained next steps: "I'm gonna be sending all the information, like all the reports and stuff like that"
+- Professional close: Clear promise to send documentation to homeowner, confirmed follow-up contact method (text)
 
 ## Critical Actions
 
-**expectations** ✓ PASS
-Moment: Opening. Set clear process: full inside/outside inspection, $39 diagnostic fee, homeowner approval required for any repairs, no work without authorization, potential time depending on findings.
+**expectations (PASS):** Set multiple clear expectations throughout:
+- "I have to get your approval before I can do any sort of repairs"
+- "$39 diagnostic fee" disclosed upfront
+- "$557 repair" with "1-year warranty"
+- Homeowner approval required for tenant/owner property
+- Process for payment collection explained
+- "I'll have everything on file...follow up with him tomorrow morning"
 
-**questions** ✓ PASS
-Moments: Timeline (36 hours), symptoms (no airflow, no fan spin), prior visit findings (vague wire tightening), system age, maintenance frequency, time constraints, access points. Later: called homeowner for full history on the centipede wire damage from Wednesday.
+**questions (PASS):** Excellent discovery:
+- System age and history
+- Prior tech work and what was done
+- Filter maintenance habits
+- Thermostat settings and airflow
+- Homeowner responsiveness
+- System specs and both units
+- Warranty registration details
 
-**options** ✓ PASS
-Moment: Presented the $557 repair with warranty. Also offered $16/month maintenance plan with 15% discount (would have saved $86 tonight) and twice-yearly checkups. Customer declined the plan due to planning to sell.
+**options (PASS):** Presented clear choices:
+- Primary: $557 repair with 1-year warranty
+- Secondary: $16/month maintenance plan with 15% parts discount ($86 savings on this call)
+- Alternative follow-up: If parts unavailable tonight, schedule next-day repair
+Customer chose Option 1, declined maintenance plan.
 
-**objections** ✓ PASS
-Moment: Homeowner asked "will this be under warranty or no?" Andrew checked Trane database live, found extended coverage through 2041 on heating coil, offered 1-year parts warranty on the motor start device. Turned objection into proof of Sierra's quality.
-
----
+**objections (PASS):** Handled concerns with empathy and expertise:
+- Customer concern about cost for tenant situation: Andrew clarified cost goes to homeowner, not tenant
+- Homeowner's warranty concern: Andrew looked up and explained the actual warranty coverage, explained the motor start device has its own 1-year warranty
+- System age uncertainty: Andrew educated that the 6-year-old 2020 unit is still relatively young with a recent problem
+- Follow-up uncertainty: Andrew established clear communication plan (text, email, photos)
 
 ## Outcome
+**CLOSED** — Repair approved, payment collected ($596 total: $557 repair + $39 diagnostic), work completed, system verified working correctly.
 
-**closed** — Repair approved same night. Payment authorized over phone via credit card. Total invoice: $596 ($39 diagnostic + $557 repair). System verified working with proper temperature differential before tech departed.
+## Top Strengths
 
----
+1. **Technical Education Done Right:** Andrew didn't just say "the motor start device is bad." He explained it step-by-step:
+   - "This is your voltage switch. This is like the outdoor system's light switch. It turns it on and off."
+   - "It stores electricity, and it's like a battery for your car."
+   - Visual proof: "See how that's domed up like that? You got that little arc? These things are like batteries and they go out pretty easy."
+   This gave the homeowner confidence in both the problem and the solution.
 
-## Top Coaching Points
+2. **Tenant/Homeowner Dynamic Mastery:** Andrew navigated a complex situation flawlessly:
+   - Explained to tenant that he needed homeowner approval for any repairs
+   - Called homeowner proactively to brief him (even though it was 2 AM Chicago time)
+   - Got verbal approval and payment from homeowner with tenant present
+   - Made clear who was responsible for what cost
+   - Documented "homeowner approved over phone" on invoice
+   - Sent all documentation to homeowner's email
 
-**Strength to reinforce:** When questioned on warranty, Andrew didn't get defensive or guess—he checked the manufacturer database in real-time, found the customer actually had extended coverage through 2041, and offered his own 1-year part warranty. This expert move transformed a stall into trust and closed the sale.
+3. **Personal Rapport Without Losing Focus:** Andrew built excellent connection:
+   - Found common ground (California/Ontario connection)
+   - Complimented customer interests (fish tanks, isopods)
+   - Shared stories (Disney collection, prior coworker opening reptile shop)
+   - BUT never let personal chat override the core mission
+   - Each personal tangent was brief and led back to the work
 
-**Development:** For homeowner-tenant coordination calls, complete the full inspection with photos/evidence before calling the homeowner. This keeps the decision focused and avoids callbacks for details you should have already gathered.
+4. **Complete Problem Solving:** Didn't just fix the immediate issue:
+   - Checked upstairs system (clear, no issues)
+   - Explained why the downstairs failure matters (other system overcompensating)
+   - Provided photos of the failed part to homeowner
+   - Verified repair with temperature readings
+   - Set up future communication and support
 
----
+## Coaching Notes
 
-## Summary
+**What Made This a WIN:**
+When Andrew showed the customer the motor start device with the visible domed arc and compared it to a battery, he moved from "you have a problem" to "here's why and here's proof." That moment—combining visual evidence with an accessible metaphor—is what turned a $557 repair request into an immediate yes.
 
-A thorough 103-minute call reflecting complete system inspection, clear technical diagnosis in customer-friendly language, skilled objection handling, and verified repair completion. Andrew's pairing of technical competence with genuine customer empathy created the kind of call that builds repeat business and referrals.
+The secondary win was handling the tenant/owner separation perfectly, removing all friction from an inherently complex situation.
+
+**Teachable Moments:**
+- This is the model call. Andrew executed all four FSG bands at "Strong" or higher.
+- Use this as training for how to explain technical failures to customers who aren't technicians.
+- Demonstrate how to maintain personal warmth while staying professionally focused.
+- Show how to handle multi-party approvals (tenant + homeowner) without confusion or delay.
+
+**Next Level:**
+- After closing, Andrew did ask for the customer to spread the word ("we're at 4.9 stars at a 5"), but didn't explicitly ask for a 5-star review by name. A simple "If you could leave us a 5-star review online, that'd be huge" would be a natural next step.
+
+This is a textbook example of strong FSG execution across all four bands. Andrew earned the sale through expertise, empathy, and clarity.
