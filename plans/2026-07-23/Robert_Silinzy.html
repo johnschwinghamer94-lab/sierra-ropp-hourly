@@ -1,0 +1,228 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Robert Silinzy — SILO Coaching Plan · 2026-07-23</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style>
+</head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;·&nbsp;SILO</b><span class="tag">Daily Coaching Plan · 2026-07-23</span></div>
+<div class="wrap">
+<div class="hero"><div class="ey">Daily Coaching Plan · 2026-07-23 · 3 gradeable calls</div><h1 class="disp">Robert Silinzy</h1><p class="lede">The most complete expectations block on this board — scope, approval promise, work-today, and the five-star standard — run at door after door. And a competitor was on his way to the house while he was still in the attic.</p></div>
+<div class="glance">
+<div class="g"><div class="k">Close Rate</div><div class="v red">0%<small>0 of 3 — no recording reaches a presented option</small></div></div>
+<div class="g"><div class="k">Calls Reviewed</div><div class="v">3 of 3<small><q>DEOGNY</q> · <q>STATER</q> no-cool · <q>OLAGUE</q> maintenance</small></div></div>
+<div class="g"><div class="k">Strongest</div><div class="v grn">Welcome<small>Setting Expectations — Strong</small></div></div>
+<div class="g"><div class="k">Weakest</div><div class="v red">Decision<small>a competing bid announced and never answered</small></div></div>
+</div>
+<div class="legend"><span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span><span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span></div>
+<p class="note">Scored on strength bands, never numbers — the only figure anywhere is the close rate. Readings and settings below are the words spoken in the room, quoted as evidence, not scores. Where a rubric line never reached tape it is marked <i>Not observed</i> rather than banded.</p>
+
+<section><div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive"><div class="dh"><div class="k">The call that defines the day</div><h3>Told to his face that a cheaper competitor was on the way, he answered with a slogan instead of a strategy.</h3></div><div class="split"><div class="c should"><div class="lbl">What he did</div><p>The diagnosis was excellent and shown live, not just written. He walked the customer through the compressor amp draw — <q>you can see that it's not barely running… the amps on startup are 82. That one was reading at 96, so it's above the amount of power it should be getting</q> — the dead start capacitor — <q>this one reads that it should be 45 plus 5, and it's reading 1 and then 0 on the other side. So that one is pretty much completely out</q> — and then the contactor, explained as a light switch with two ways to fail: <q>it can weld shut… so basically your unit will just run and run and run. The other sign is a coil behind it — if that coil goes out, it just won't close at all.</q> He also ran the full expectations block at every door of the day, five-star standard included.</p></div><div class="c said"><div class="lbl">What he did not do</div><p>Compete. The customer told him plainly what he was walking into: <q>the guy that's coming has installed three units for me in my other houses… he's a low-value guy as far as cost. Your company will be competing against a good number.</q> The whole answer was <q>we do things the right way, so we're gonna pull permits and everything</q> — and the customer immediately closed that door too: <q>he does the same thing. He installs them in new homes all over the place.</q> Nothing followed. No difference named, no timeline advantage, no offer to be there when the other quote landed, no request for a chance to respond to it.</p></div></div></div></section>
+
+<section><div class="sh"><div class="no">2</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div><div class="rub">
+
+<div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+<div class="row"><div class="rb">Intro / get their name</div><div><span class="b strong">Strong</span></div><div class="ev">Company named at every door — <q>Rob with Sierra</q>, <q>Robert, Sierra</q> — and names taken and used: <q>Hey, Kyle. Nice to meet you.</q></div></div>
+<div class="row"><div class="rb">Verify our vehicle parking</div><div><span class="b strong">Strong</span></div><div class="ev">Checked at every door before entering: <q>I need to park right here. Is it okay right there?</q> and <q>park right outside. Is that okay?</q></div></div>
+<div class="row"><div class="rb">Permission to enter</div><div><span class="b strong">Strong</span></div><div class="ev">Asked at each house, and access routes negotiated rather than assumed — the side gate, whether to carry tools through the house, and how he should announce his return: <q>when I need to come in, we're going to knock on the door.</q></div></div>
+<div class="row"><div class="rb">Floor protectors</div><div><span class="b strong">Strong</span></div><div class="ev">Offered even when waved off, and for the customer's benefit rather than the rule's: <q>you don't have to put those on at all</q> → <q>I don't want to track it in here.</q></div></div>
+<div class="row"><div class="rb">Personal connection</div><div><span class="b strong">Strong</span></div><div class="ev">He met a house mid-move and mid-adoption without making it awkward — <q>disregard the boxes, man</q> → <q>you're moving, so I understand</q> — and then matched it with something of his own: <q>you know how it is with kids… even with new toys, you gotta get rid of something to get some new ones.</q> On the no-cool he noticed the cats on the patio and let the customer talk about them.</div></div>
+<div class="row"><div class="rb">Confirm the reason for the call</div><div><span class="b strong">Strong</span></div><div class="ev">He got the timeline before the tools came out — <q>did this happen yesterday?</q> → <q>yeah, around 9:30</q> — and on the maintenance he chased a prior repair the customer half-remembered: <q>they had to come back and fix it</q> → <q>once you go up there, take a look at it.</q></div></div>
+<div class="row"><div class="rb">Brief technical questions</div><div><span class="b strong">Strong</span></div><div class="ev">Tenure, unit count, thermostat count, filter sizes and attic access collected at every house: <q>how long have you been here?</q> → <q>20 years</q> → <q>so you got it when it was brand new</q>, and <q>how many filters do you have?… 12 by 20 by 1.</q></div></div>
+<div class="row"><div class="rb">Intent to fix today</div><div><span class="b strong">Strong</span></div><div class="ev">Stated explicitly in the block on every call: <q>if you do happen to approve anything, the work could be done today.</q></div></div>
+<div class="row"><div class="rb">Address membership status</div><div><span class="b weak">Weak</span></div><div class="ev">Never raised on any of the three, including a twenty-year homeowner facing a failed compressor and a household that admitted <q>I really haven't ever done it</q> about maintenance.</div></div>
+<div class="row"><div class="rb">Setting Expectations — LTOAT5</div><div><span class="b strong">Strong</span></div><div class="ev">The best block on the board, run twice almost word for word: <q>I'm going to perform a thorough evaluation going over safety, function, overall effectiveness of the unit. If I do happen to notice something, would you like me to let you know about that? From there we're going to build a report, list of options. Any work that needs to be done won't be done without your approval. Of course, if you do approve anything, the work could be done today. And the goal is to deliver a five-star experience — if I'm not meeting that, you stop me.</q> Duration given honestly and up front on every call, including <q>it'll be about three hours</q> on a two-system maintenance.</div></div>
+
+<div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+<div class="row"><div class="rb">Required questions</div><div><span class="b strong">Strong</span></div><div class="ev">All four areas covered across the day and the whole set on one call: filters and frequency (<q>how often do you change the filter?</q> → <q>usually 30 or 45 days</q> → <q>every 30 days is what we recommend</q>), power bills (<q>as far as the power bills, everything good for summer?… you seeing the increase, because I know you got a new unit</q>), thermostat settings read out (<q>this is set at 73, but it's going at 75</q>), and comfort problems chased floor by floor.</div></div>
+<div class="row"><div class="rb">Check-ins</div><div><span class="b strong">Strong</span></div><div class="ev">Announced, timed and honoured: <q>I'll go ahead and get started, and I'll check in with you</q>, then a mid-job return with findings — <q>can I show you some real quick? So I'm just about finished with the outdoor unit</q> — and a duration attached each time: <q>I want to say about 10 minutes.</q></div></div>
+<div class="row"><div class="rb">Draw the Picture</div><div><span class="b strong">Strong</span></div><div class="ev">Two of the best explanations of the day. The contactor as a light switch with two named failure modes, and — unprompted, on a maintenance — a full lesson on why a three-storey house cannot cool evenly: <q>if this one is set for 73 and that one is set for 73 and they're both trying to cool at the same time… you're splitting up the airflow. So you want to stagger them to 75, 73 — this one will be satisfied, and then boom, it'll switch to that one.</q></div></div>
+<div class="row"><div class="rb">Check Your Tone</div><div><span class="b strong">Strong</span></div><div class="ev">He set an honest expectation most technicians avoid: <q>the units won't ever get to the temperature you set it at… if it's on the hottest days, the unit is going to run 24 hours</q>, and immediately qualified it rather than generalising — <q>no, just, every house is different.</q> When a customer worried about two contractors on site he defused it: <q>I don't want you two guys arguing</q> → handled without a word against the competitor.</div></div>
+<div class="row"><div class="rb">Keep It Simple</div><div><span class="b strong">Strong</span></div><div class="ev">He corrected a closed-vent habit with the consequence attached in one breath: <q>you don't want to do that. It stops the flow… that can cause damage to your system, because one floor will be trying to push more and the unit will overwork itself.</q> Then gave the alternative: turn it off, or set it warmer.</div></div>
+<div class="row"><div class="rb">Show Pictures</div><div><span class="b strong">Strong</span></div><div class="ev">Better than pictures — he took the panel off and had the customer read the meter with him: <q>this one reads that it should be 45 plus 5, and it's reading 1 and then 0.</q></div></div>
+<div class="row"><div class="rb">Get the Customer to Diagnose</div><div><span class="b solid">Solid</span></div><div class="ev">He kept checking comprehension rather than assuming it — <q>does that make sense?</q> — and the customer worked the airflow question out in his own words. On the no-cool he confirmed the customer's own hunch (<q>I have a feeling it's the compressor</q>) with measurements rather than agreement.</div></div>
+
+<div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b weak">Weak</span></span></div>
+<div class="row"><div class="rb">Building options</div><div><span class="b na">Not observed</span></div><div class="ev">No recording reaches a presented option. Three calls, two of them over forty minutes, one over a hundred, and the report is promised on every one of them and delivered on none.</div></div>
+<div class="row"><div class="rb">Reconnecting / Spin It</div><div><span class="b mod">Moderate</span></div><div class="ev">He tried to reframe repair versus replace — <q>I do repairs… if you want information about a possible new unit, if that's what you're looking for</q> — and the customer had to correct the frame for him: <q>it's whether or not you say it's not repairable. If you can repair it, that's great.</q></div></div>
+<div class="row"><div class="rb">Say It</div><div><span class="b na">Not observed</span></div><div class="ev">No price is spoken on any of the three recordings.</div></div>
+<div class="row"><div class="rb">Zip It</div><div><span class="b na">Not observed</span></div><div class="ev">Nothing was placed, so nothing was left to sit.</div></div>
+<div class="row"><div class="rb">Overcoming objections</div><div><span class="b weak">Weak</span></div><div class="ev">The clearest competitive objection on this board — a trusted, cheaper contractor already booked — got one sentence about permits, was rebutted by the customer in the next breath, and was dropped. <q>Your company will be competing against a good number</q> is an invitation to make a case, and no case was made.</div></div>
+
+<div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b mod">Moderate</span></span></div>
+<div class="row"><div class="rb">Be A Nerd</div><div><span class="b strong">Strong</span></div><div class="ev">He gave away two pieces of genuinely useful advice on a maintenance where he was selling nothing: stagger the thermostats, and stop closing vents in unused rooms. Both save the customer money, neither earns Sierra a penny today, and both are the reason he is believed later.</div></div>
+<div class="row"><div class="rb">5-Star Review</div><div><span class="b mod">Moderate</span></div><div class="ev">Seeded properly at the start of every call as a standard he holds himself to — <q>the goal is to deliver a five-star experience. If I'm not meeting that, you stop me</q> — and never collected. A customer answered it out loud (<q>you're doing great</q>) and was not asked to say so anywhere public.</div></div>
+
+<div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b solid">Solid</span></span></div>
+<div class="row"><div class="rb">Make their time valuable</div><div><span class="b strong">Strong</span></div><div class="ev">All three households got something real: a diagnosis read off the meters, a three-hour honest time estimate on a moving day, and free advice that will lower a power bill.</div></div>
+<div class="row"><div class="rb">Help them arrive at their own solution</div><div><span class="b mod">Moderate</span></div><div class="ev">Every customer understood the problem. None of them, on tape, was given anything to decide between — and one of them had a competing bid arriving the same morning.</div></div>
+
+</div>
+
+<div class="sh" style="margin-top:26px"><div class="no">3</div><h2>Critical Actions — pass rate</h2></div><div class="rub">
+<div class="row"><div class="rb">Setting clear expectations</div><div><span class="b pass">Pass</span></div><div class="ev">The full block — scope, notify-me, report and options, approval promise, work-today, five-star standard — plus an honest duration, at every door of the day. Best on the board.</div></div>
+<div class="row"><div class="rb">Asking good questions</div><div><span class="b pass">Pass</span></div><div class="ev">Filters and frequency, power bills, thermostat settings and comfort problems all asked, plus tenure, prior repairs and access.</div></div>
+<div class="row"><div class="rb">Creating good options</div><div><span class="b fail">Fail</span></div><div class="ev">Automatic fail on evidence. Options promised on all three calls; no recording reaches one.</div></div>
+<div class="row"><div class="rb">Handling objections</div><div><span class="b fail">Fail</span></div><div class="ev">Automatic fail. A named, cheaper, trusted competitor was announced to his face and answered with a single sentence that the customer immediately neutralised.</div></div>
+</div></section>
+
+<section><div class="sh"><div class="no">4</div><h2>What went right — real strength, build on it</h2></div><ul class="str">
+<li><b>The complete expectations block at every door</b>, five-star standard and approval promise included, almost word for word. Nobody else on this board runs it this consistently.</li>
+<li><b>He gave honest, uncomfortable time estimates</b> — three hours on a two-system maintenance — instead of a comfortable one.</li>
+<li><b>He taught thermostat staggering unprompted</b> on a house he was not selling anything to, and stayed with it until the customer said it made sense.</li>
+<li><b>He stopped a customer closing vents</b> and explained the damage it does.</li>
+<li><b>He read the meters out loud with the customer</b> rather than reporting conclusions from the truck.</li>
+<li><b>He explained the contactor's two failure modes</b> in language a homeowner can repeat back.</li>
+<li><b>He refused to knock the competitor</b> even when the customer opened the door to it.</li>
+</ul></section>
+
+<section><div class="sh"><div class="no">5</div><h2>The three gaps</h2><span class="hint">each one anchored to a real moment on tape</span></div>
+
+<div class="mom"><div class="top2"><span class="b weak">Weak</span><h4>Gap 1 — He was told the competition was cheaper and answered with permits</h4></div>
+<div class="q"><b>Customer</b>"He's a low-value guy as far as cost. Your company will be competing against a good number."</div>
+<div class="q"><b>Rob</b>"We do things the right way, so we're gonna pull permits and everything."</div>
+<div class="q"><b>Customer</b>"He does the same thing. He installs them in new homes all over the place."</div>
+<p class="fixline"><b>The fix</b> Permits are table stakes and the customer knew it. Compete on what is actually different and on what is happening today: <q>Then you'll get two honest numbers, and that's fair. What I'd ask is this — I'm the one who has the readings in front of me right now, so let me put both a repair and a replacement in writing before I leave, with what each one buys you. When his number comes in, call me and I'll tell you straight if it's the better deal.</q> That keeps him in the comparison instead of ceding it.</p></div>
+
+<div class="mom"><div class="top2"><span class="b weak">Weak</span><h4>Gap 2 — Three calls, three promises of options, none delivered on tape</h4></div>
+<div class="q"><b>Rob, at every door</b>"From there we're going to build a report, list of options."</div>
+<div class="q"><b>What reached tape</b>Nothing. Not one price, not one option sheet, across more than three hours of recorded customer time.</div>
+<p class="fixline"><b>The fix</b> Part of this is recording coverage and part of it is sequencing — on the no-cool the customer left for a dental appointment before the report existed. Where a decision-maker is leaving, the presentation gets pulled forward or booked: <q>You'll be back by eleven — I'll have both options written by then and I'll walk you through them before I leave. Should I wait, or would you rather I call your daughter with them?</q></p></div>
+
+<div class="mom"><div class="top2"><span class="b weak">Weak</span><h4>Gap 3 — A twenty-year homeowner, a dead compressor, and no membership question</h4></div>
+<div class="q"><b>Customer</b>"Twenty years." → and elsewhere, "I really haven't ever done it."</div>
+<div class="q"><b>Rob</b>No membership question, on any of the three calls.</div>
+<p class="fixline"><b>The fix</b> A homeowner who has never had maintenance and just lost a compressor is the clearest case there is. <q>Whatever you decide on this unit, let's stop it happening again — two visits a year, we come to you first, and it's sixteen a month.</q> Especially on the house facing a replacement decision, being the company that shows up twice a year is worth more than being the company that pulls permits.</p></div>
+</section>
+
+<section><div class="sh"><div class="no">6</div><h2>This week's drill — when a competitor is already booked</h2></div><div class="script" style="border-radius:14px"><div class="lbl">The moment a customer says another company is coming</div>
+<p class="say">"Good — you should get two numbers. Here's what I'll do: I've got the readings in front of me right now, so before I leave you'll have a repair option and a replacement option in writing. When his quote comes in, call me and I'll tell you honestly which is the better deal for you. That way you're comparing like for like."</p>
+<p>He already has the trust and the diagnosis. What he needs is to be holding a piece of paper when the other van pulls up.</p>
+</div></section>
+
+<section><div class="sh"><div class="no">7</div><h2>3-week training plan</h2></div><div class="rub">
+<div class="row"><div class="rb">Week 1</div><div><b>Written options before leaving the property</b></div><div class="ev">Every call ends with something on paper, especially when a decision-maker is leaving.</div></div>
+<div class="row"><div class="rb">Week 2</div><div><b>A real answer to the competing bid</b></div><div class="ev">Never permits alone — a comparison, an offer to review the other quote, and a date.</div></div>
+<div class="row"><div class="rb">Week 3</div><div><b>Membership and the five-star collection</b></div><div class="ev">He already seeds five-star at every door; now close the loop and add the membership ask.</div></div>
+</div></section>
+
+<section><div class="sh"><div class="no">8</div><h2>What we owe Rob</h2></div><ul class="str">
+<li>His expectations block recorded and taught as the standard version. It is the most complete one on this board and it is already word-perfect.</li>
+<li>A competitive brief he can actually use — what Sierra does that a good independent installer does not, in language that survives <q>he does the same thing.</q></li>
+<li>Recordings that reach the presentation. Three calls, over three hours, and his Decision step still has no evidence to be graded on.</li>
+</ul></section>
+
+<div class="bottom"><div class="eyb">Bottom line</div><p>Rob runs the front of a call at the standard the rest of the board should be measured against — parking, permission, floor protection, an honest three-hour estimate, the full expectations block with the five-star promise, all four required questions, and teaching he gives away for free. Then a customer handed him the most direct competitive challenge of the week and he answered it in one sentence about permits. The skill gap is narrow and specific: he needs written options in his hand before he leaves the property, and a real answer when someone tells him the other guy is cheaper.</p></div>
+<div class="foot">Sierra · SILO daily coaching plan · 2026-07-23 · Scored on strength bands — close rate is the only number</div>
+
+</div></body></html>
