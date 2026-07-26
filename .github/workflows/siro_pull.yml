@@ -1,0 +1,50 @@
+name: Siro transcript pull (cloud)
+on:
+  workflow_dispatch:
+  schedule:
+    # BACKUP ONLY — GitHub's cron fired 1 of 12 slots on 2026-07-17 morning.
+    # The dependable trigger is graph_hourly.yml's cron-job.org heartbeat, which
+    # dispatches this workflow on the :00/:30 ticks, 6a–10p PT.
+    # Every ~30 min during Vegas work hours (6:00 AM – 9:59 PM PT = 13:00–04:59 UTC),
+    # off the :00/:30 marks. Verified working via dispatch on 2026-07-17 (run #6).
+    - cron: "7,37 13-23 * * *"
+    - cron: "7,37 0-4 * * *"
+concurrency:
+  group: siro-pull        # a late cron firing + a dispatch must not race the
+  cancel-in-progress: false   # state commit; extra queued runs collapse to one
+permissions:
+  contents: write   # allow committing the updated siro_pull_state.json back
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install --quiet -r requirements.txt
+      - name: Pull finished Siro recordings and upload transcripts to OneDrive
+        env:
+          SIRO_API_KEY: ${{ secrets.SIRO_API_KEY }}
+          SIRO_CLIENT_ID: ${{ secrets.SIRO_CLIENT_ID }}
+          SIRO_CLIENT_SECRET: ${{ secrets.SIRO_CLIENT_SECRET }}
+          SIRO_USER_ID: ${{ secrets.SIRO_USER_ID }}
+          GRAPH_CLIENT_ID: ${{ secrets.GRAPH_CLIENT_ID }}
+          GRAPH_TENANT_ID: ${{ secrets.GRAPH_TENANT_ID }}
+          GRAPH_REFRESH_TOKEN: ${{ secrets.GRAPH_REFRESH_TOKEN }}
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+        run: python siro_cloud_pull.py
+      - name: Commit + push updated state (retry once after pull --rebase)
+        run: |
+          git config user.email "johnschwinghamer94@gmail.com"
+          git config user.name "John Schwinghamer"
+          git add siro_pull_state.json
+          [ -d transcripts ] && git add transcripts/
+          if git diff --cached --quiet; then
+            echo "no state change"
+            exit 0
+          fi
+          git commit -q -m "Siro cloud pull state $(date -u +%F' '%H:%M)"
+          if ! git push -q origin main; then
+            git pull --rebase --autostash -q
+            git push -q origin main
+          fi
