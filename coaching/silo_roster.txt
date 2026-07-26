@@ -1,0 +1,21 @@
+# Active Sierra SILO roster for cloud coaching jobs (weekly rollups + live scoring).
+# Source: siro-coaching/siro-test/master-rep-list.csv — Trade=silo, Status=active,
+# Company="" (in-house reps only, no subcontractor companies). Excludes
+# John Schwinghamer (owner, not a coached rep) and the single-space "Nathan Colquitt"
+# duplicate row; the double-space "Nathan  Colquitt" is the live account and is kept.
+Andrew Alonso
+Nikko April
+Mario Castro
+Nathan  Colquitt
+Joe Mendoza
+Brandon Moreno
+Cole Pantol
+Dustin Romine
+Robert Silinzy
+Jaden Szelestey
+Juan Tlatenchi
+Andrew Trujillo
+Francisco Valencia
+Noah Weng
+Benjamin Wyllie
+Alex Yakovchuk

@@ -4,6 +4,7 @@ on:
     paths:
       - "plans/**"
       - "coaching.json"
+      - "weekly/**"
   workflow_dispatch:
 concurrency:
   group: coaching-relay
@@ -24,7 +25,7 @@ jobs:
           token: ${{ secrets.DASHBOARD_TOKEN }}
           persist-credentials: true
           path: site
-      - name: Relay coaching.json and plans to the site
+      - name: Relay coaching.json, plans, and weekly rollups to the site
         run: |
           if [ ! -f coaching.json ]; then
             echo "No coaching.json in this repo — nothing to relay."
@@ -42,10 +43,20 @@ jobs:
             done
           fi
 
+          mkdir -p site/coaching/weekly
+          if [ -d weekly ]; then
+            for d in weekly/*/; do
+              [ -d "$d" ] || continue
+              folder_name=$(basename "$d")
+              mkdir -p "site/coaching/weekly/$folder_name"
+              rsync -a "$d" "site/coaching/weekly/$folder_name/"
+            done
+          fi
+
           cd site
           git config user.name "coaching-relay"
           git config user.email "actions@github.com"
-          git add coaching.json coaching/plans
+          git add coaching.json coaching/plans coaching/weekly
           if git diff --cached --quiet; then
             echo "No staged changes — nothing to commit."
             exit 0

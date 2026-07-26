@@ -1,0 +1,52 @@
+name: "Scorecards relay (livecards → dashboard)"
+on:
+  push:
+    paths:
+      - "livecards/**"
+  workflow_dispatch:
+concurrency:
+  group: scorecards-relay
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  relay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TZ: America/Los_Angeles
+    steps:
+      - uses: actions/checkout@v4          # engine (this repo)
+      - uses: actions/checkout@v4          # live site (public repo) — where the scorecards feed is published
+        with:
+          repository: johnschwinghamer94-lab/sierra-ropp-dashboard
+          token: ${{ secrets.DASHBOARD_TOKEN }}
+          persist-credentials: true
+          path: site
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Merge livecards and relay scorecards.json to the site
+        run: |
+          if [ ! -d livecards ]; then
+            echo "No livecards/ in this repo — nothing to relay."
+            exit 0
+          fi
+
+          python tools/merge_livecards.py livecards site/scorecards.json
+
+          cd site
+          git config user.name "livecoach-cloud"
+          git config user.email "actions@github.com"
+          git add scorecards.json
+          if git diff --cached --quiet; then
+            echo "No staged changes — nothing to commit."
+            exit 0
+          fi
+          git commit -m "livecoach: scorecards update (cloud)"
+          git pull --rebase --autostash origin main
+          if ! git push; then
+            echo "Push failed, retrying after another rebase..."
+            git pull --rebase --autostash origin main
+            git push
+          fi

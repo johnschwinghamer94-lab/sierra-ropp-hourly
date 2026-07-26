@@ -1,0 +1,644 @@
+# ============================================================
+# SILO CROSS-TECH COMPARISON — PROJECT TEMPLATE
+# V7.5 — EVIDENCE-BANDED (NO NUMERIC SCORING)
+# Consumes the banded, quote-backed SILO per-tech coaching reports
+# (V7.5) and produces a team-wide comparison. Mirrors the HVAC
+# Cross-Rep V7.5 architecture; reads SILO 5-Step reports.
+# ============================================================
+# WHAT CHANGED IN V7.5 — READ ONCE:
+# Output files defined for pipeline automation. The closing
+# instruction and final self-check now require three files per run:
+# a .txt (machine-readable copy), a DOCX built from that content,
+# and a PDF converted from that DOCX so the PDF looks identical to
+# it. PDF = leadership copy. The cross-tech reads the per-tech .txt
+# copies as its input. No comparison logic, sections, bands, or
+# wording changed — this only specifies what the run saves and where.
+# ============================================================
+# WHAT CHANGED FROM THE PRIOR SILO CROSS-TECH TEMPLATE — READ ONCE:
+# This version consumes BANDED per-tech reports, not numeric ones.
+# Every per-step value is now a band (Strong, Strong on wins, Solid,
+# Moderate, Weak) backed by a direct quote — not a 1–5 average. The
+# ONLY numbers anywhere are each tech's two outcome rates (Repair-Won
+# rate and Option C Handoff rate), plus team rate figures derived
+# from them and simple tech/band counts. What the comparison DOES is
+# unchanged: rank techs, separate company-wide training gaps from
+# individual coaching gaps, find the #1 differentiator, test which
+# behaviors predict a positive outcome, produce an executive summary.
+# Only the currency changed: bands + quotes instead of averages,
+# gaps, spreads, and score thresholds. Specifically: NORM-2 reads the
+# Section 4 BAND verbatim (was Avg); NORM-3/4 read positive/no-move as
+# a band contrast + quotes (was a number pair + computed gap); the
+# Score Threshold Test becomes the Positive-Outcome Predictor Test
+# (band threshold, not score threshold); all scorecards/leaderboards
+# carry bands; spread becomes band-spread. NORM-10 (two rates per
+# tech) is retained — both rates are still extracted and used.
+# ============================================================
+# SET UP A NEW COMPANY IN 2 STEPS — NO FIND-AND-REPLACE NEEDED:
+# STEP 1: Fill in the COMPANY SETUP block at the top of Field 3.
+# STEP 2: Paste Field 1, Field 2, Field 3 into the Project. Upload
+#         that company's V7.5 SILO per-tech coaching reports (.txt) +
+#         the SILO Field Strategy Guide.
+# A defensive reading layer reconciles report-to-report variation,
+# so the comparison behaves identically with 2 reports or 20,
+# clean or malformed.
+# ============================================================
+
+---
+
+## FIELD 1 — "What are you trying to achieve?"
+Paste this verbatim. (No edits needed.)
+
+Compare the banded, quote-backed SILO Field Strategy Guide coaching reports across all uploaded
+technicians for the company configured in the custom instructions to identify — using each tech's step
+bands, the supporting quotes in their reports, and their two outcome rates — what separates techs who
+reach positive outcomes from the rest, which of the 5 SILO steps are company-wide training gaps vs.
+individual coaching gaps, and which banded behaviors actually predict a positive outcome. Produce a
+ranked team scorecard built on bands (not numeric scores) and an executive-ready management summary
+that works regardless of how many techs are in the dataset, and that reads every report defensively so
+a single malformed or inconsistently labeled report never corrupts a team-wide finding. The only
+numbers used as scores anywhere are the tech's Repair-Won rate and Option C Handoff rate.
+
+---
+
+## FIELD 2 — "How can I help you today?"
+Paste this verbatim. (No edits needed.)
+
+All SILO per-tech coaching report documents are uploaded to this Project along with the SILO Field
+Strategy Guide. These reports use no numeric scoring — every SILO step is expressed as a band (Strong,
+Strong on wins, Solid, Moderate, Weak) and backed by direct transcript quotes, and the only numbers in
+each report are the tech's Repair-Won rate and Option C Handoff rate. Run the Normalization Pass and the
+Data Integrity Protocol defined in the custom instructions FIRST, then extract every tech's bands,
+supporting quotes, both outcome rates, strengths, gaps, priorities, and Beyond-the-Guide patterns, then
+produce the full SILO Cross-Tech Comparison Report for the company named in the COMPANY SETUP block,
+following the exact format, section order, headings, and rules defined in the custom instructions. Do
+not reintroduce numeric scores of any kind. Rely on bands and quotes to show how each tech did, what was
+good, and what needs improving, and draw heavily on real quotes carried up from the individual reports.
+Use the SILO Field Strategy Guide to validate that all cross-tech patterns and coaching recommendations
+are grounded in the guide's specific steps and critical actions. Do not ask for permission to continue
+between sections. Do not ask clarifying questions. Work through all sections without stopping, run the
+Final Self-Check, and generate the report files for me. OUTPUT FILES — produce all three, in this order:
+(1) a .txt file holding the full comparison content (machine-readable copy, in case the report is ever
+chained further — do not skip it); (2) a DOCX built from that same content, with the formatting defined
+in the VISUAL AND STYLE RULES; (3) a PDF converted from that DOCX so the PDF looks identical to the
+DOCX. Save all three in the same folder, named "{{COMPANY}} - SILO Cross-Tech Comparison.txt / .docx /
+.pdf". The PDF is the leadership copy.
+
+---
+
+## FIELD 3 — "Custom Instructions"
+Paste everything below this line into the Custom Instructions field.
+Fill in the COMPANY SETUP lines. Change nothing else.
+=======================================================================
+
+## COMPANY SETUP — FILL IN THESE LINES ONLY
+COMPANY = [type the company name here, e.g., Desert Air Mechanical]
+MARKET  = [type the market here, e.g., Las Vegas]
+
+BINDING RULE: Wherever {{COMPANY}} appears anywhere below, use the
+COMPANY value above. Wherever {{MARKET}} appears, use the MARKET
+value above. COMPANY and MARKET are the only things that differ
+between companies. If COMPANY or MARKET still contains its
+bracketed placeholder text instead of a real value, stop and do
+not produce a report — the company has not been configured.
+=======================================================================
+
+## CONTEXT
+You will receive banded SILO Field Strategy Guide coaching reports for any number of {{COMPANY}}
+HVAC SILO technicians. Each was produced using the identical V7.5 SILO banded format and process. You
+do NOT have raw transcripts here — work ONLY from the data in the uploaded reports.
+
+The 5 SILO steps assessed in every report are, in this exact canonical order:
+1. Ready
+2. Welcome
+3. Assessment
+4. Decision
+5. Deliver
+
+Each step is assigned ONE band from the five-band Strength Band Key (below) and backed by a direct
+quote — never a number. SILO outcomes are: Repair Won (Option A/B approved), Option C Handoff (customer
+chose to explore an upgrade and the tech initiated the Comfort Advisor handoff), and No-Move (all
+options declined). A SILO tech is NEVER scored on closing a system upgrade — that is the Comfort
+Advisor's job, not the tech's. Both outcome rates, the defining strength and its band, the single
+biggest gap and its band, the positive-outcome-vs-no-move contrast per step, strengths, gaps, coaching
+priorities, and Beyond-the-Guide patterns are documented in each tech's report.
+
+THE STRENGTH BAND KEY (the currency of this comparison — the same five bands used in every per-tech
+report):
+* Strong — executed well and consistently across the tech's calls.
+* Strong on wins — clearly present on positive-outcome calls (repair won or Option C handoff), drops
+  off or disappears on no-moves. This is the coaching band: a behavior the tech can already do but
+  doesn't do every time.
+* Solid — reliably present, gets the job done, but not a standout.
+* Moderate — inconsistent; present on some calls, absent on others, no clear positive/no-move pattern.
+* Weak — rarely attempted, or attempted poorly, across the tech's calls.
+A step may also carry "—" (genuinely not applicable / no instance found), explained in that tech's
+Appendix. For the Option C handoff specifically, "—" on a call where no upgrade interest arose is NOT a
+failure. Treat "—" as not-applicable, not as a band, and exclude it from band tallies for that step
+(note the exclusion).
+
+NO-NUMERIC-SCORING RULE (LOCKED — INHERITED FROM THE PER-TECH REPORTS):
+* Do NOT assign or reintroduce 1–5 scores, step averages, per-call numbers, score thresholds, or any
+  numeric rating anywhere in this comparison.
+* The ONLY numbers permitted as performance scores are each tech's Repair-Won rate and Option C Handoff
+  rate (counts and %), and team-level rate figures derived from them (team rate, range, median).
+* Simple tallies are allowed and expected — e.g., "5 of 8 techs band Decision as 'Strong on wins'" —
+  because these count bands, they do not score them.
+* Every cross-tech assessment is expressed in bands and justified with a quote carried up from a tech's
+  report.
+
+BAND ORDERING (for ranking, tallies, and "highest/lowest" language — use this fixed order only):
+Strong (highest) > Solid > Strong on wins > Moderate > Weak (lowest).
+Rationale, fixed so every comparison sorts identically: Strong is consistent execution everywhere;
+Solid is reliable; Strong on wins is real ability applied inconsistently (above Moderate because the
+skill exists); Moderate is inconsistent with no pattern; Weak is rare or poor. Never invent a different
+ordering. "Strong on wins" is always treated as the priority coaching band regardless of its rank
+position, because it marks the largest recoverable upside.
+
+SCALABILITY RULE: These instructions work with any number of techs — 2 or 20. Every section scales to
+the actual number of reports present. Never hardcode a tech count.
+
+=======================================================================
+## STEP 0 — NORMALIZATION PASS (RUN BEFORE ANYTHING ELSE)
+=======================================================================
+The per-tech reports come from a fixed prompt that produces small, predictable variations. Reconcile
+them the SAME way for every report or team-wide tallies will be inconsistent. Apply all of the following
+before extracting a single data point.
+
+NORM-1 — CANONICAL STEP LABELS.
+Treat cosmetic label variants as the SAME step and use the canonical names (Ready, Welcome, Assessment,
+Decision, Deliver) everywhere. Match on meaning and position in the 5-step set — never create a 6th step
+because a label was worded differently.
+
+NORM-2 — THE BAND SOURCE RULE (LOCKED — DO NOT DEVIATE).
+For each tech's per-step band, read the band printed in that tech's STRATEGY GUIDE SCORECARD (Section
+4), "Band" column, EXACTLY AS PRINTED. Use that band verbatim in every scorecard, leaderboard, and
+tally.
+* NEVER infer or upgrade/downgrade a band from the prose in Sections 5–7.
+* NEVER convert a band to a number, or a number back to a band.
+* Section 4 "Band" is the single source of truth for a tech's per-step band. Full stop. The only
+  permitted value other than the five bands is "—" (not applicable), handled per the Strength Band Key
+  note above.
+
+NORM-3 — THE POSITIVE-OUTCOME/NO-MOVE PATTERN SOURCE RULE.
+When you need how a step behaved on positive-outcome calls versus no-moves (for Top Performer Analysis,
+Company-Wide Pattern correlation, and the Positive-Outcome Predictor Test), read it from that tech's
+Section 7 ("WHAT SEPARATES POSITIVE OUTCOMES FROM NO-MOVES"), which states each step as a
+band-on-positive-vs-band-on-no-move contrast or a one-phrase contrast, with quotes. Capture the contrast
+and at least one supporting quote — never a number.
+
+NORM-4 — THE SUPPORTING QUOTE IS LOAD-BEARING.
+For every band you carry up, also carry the exact supporting quote and call number printed beside it in
+the report's Section 4, and any contrasting quote from the report's Section 7. Quotes are how this
+comparison shows evidence. If a report's Section 4 row shows "No instance found in transcripts," treat
+the band as printed (usually Weak) and carry that phrase as the evidence.
+
+NORM-5 — UNIQUE CALLS, NOT TOTAL FILES.
+Each report has a "unique calls analyzed / unique service calls" figure (after duplicates and
+non-scoreable/unusable contacts were removed) and a larger "total files provided" figure in Section 3.
+ALWAYS use the UNIQUE figure ("[X] unique service calls" from Section 3, equal to the header's "[X]
+Unique Calls Analyzed"). Never use total-files-provided as a tech's call count.
+
+NORM-6 — STRONGEST / WEAKEST SELECTION.
+Each report's Section 3 names TWO strongest steps and TWO weakest steps, each with its band. The
+scorecard has one "Strongest" and one "Weakest" column. For the column value:
+* Strongest column = the higher-banded of the two named strongest steps, using BAND ORDERING. If the
+  two carry the same band, use the one listed first.
+* Weakest column = the lower-banded of the two named weakest steps, using BAND ORDERING. If tied, use
+  the one listed first. Do this identically for every tech.
+
+NORM-7 — STRENGTHS COUNT NORMALIZATION.
+Section 5 of a per-tech report contains 3 OR 4 strengths in printed order (the report leads with
+genuine standouts), each banded and quote-backed. When you need "top 3 strengths," take the FIRST THREE
+as printed, in order, with their bands and quotes. If a report has only 3, use all 3. Never reorder by
+your own judgment.
+
+NORM-8 — PRIORITIES COUNT.
+Section 9 contains exactly 3 ranked coaching priorities plus an italicized fourth-priority note. Use the
+3 ranked priorities. The fourth note is context only.
+
+NORM-9 — LOAD-BEARING HEADINGS.
+You locate each data point by the per-tech report's section headings and the exact phrase "Beyond the
+Guide." These strings are how extraction works. If a heading is intact, read normally. If a heading is
+renamed, missing, or merged, do NOT guess content from surrounding text — treat that data point as
+unreadable for that tech and apply the Data Integrity Protocol.
+
+NORM-10 — TWO RATES PER TECH.
+SILO reports carry TWO outcome rates: a Repair-Won rate (A/B approved) and an Option C Handoff rate.
+Extract BOTH from Section 1 / Section 3.
+
+MANAGER'S DOCTRINE (LOCKED 2026-07-18): SILO techs are not sellers — their job is to FLIP the
+call: surface the upgrade conversation and create the turnover lead that gets a Comfort Advisor
+into the home to sell the equipment. The Option C Handoff is the PRIMARY win and the lens for the
+whole comparison. Rank the master scorecard by Option C Handoff rate (primary), with Repair-Won
+rate shown as its own column and used as the tiebreaker (band-quality tally breaks remaining
+ties). Frame the team analysis, the separating behavior, and the one-intervention recommendation
+around what produces handoffs. A won repair is a positive secondary outcome, never the headline.
+Never collapse the two rates into one number, and never frame a low Repair-Won rate as failure —
+the failure pattern worth naming is upgrade-candidate calls that ended with no handoff.
+These two rates are the only numbers permitted anywhere in the comparison.
+
+=======================================================================
+## STEP 0.5 — DATA INTEGRITY PROTOCOL (QUARANTINE, NEVER SKIP)
+=======================================================================
+A malformed or inconsistent report must never silently drop out and must never be tallied around
+invisibly.
+
+DI-1 — KEEP THE TECH IN THE ROSTER. Every uploaded tech appears in the Appendix roster and, wherever
+data permits, in the scorecard and snapshots. Never delete a tech for being malformed.
+
+DI-2 — EXCLUDE ONLY THE AFFECTED CALCULATION. If a specific data point is missing/unreadable (e.g., one
+step Band is blank, or Section 7 is absent), exclude that tech from ONLY the team tallies needing that
+specific point. Keep them in every other tally. (A missing Section 7 removes a tech from the
+positive/no-move contrast and the Positive-Outcome Predictor Test only — they remain in the scorecard,
+step leaderboard for steps that do have a band, and roster.)
+
+DI-3 — SHOW THE HOLE, DON'T FILL IT. In any cell where a value is unavailable, print "N/A — see Data
+Integrity", never a blank, a guessed band, or an estimate. Never substitute a typical band or a guessed
+value for a missing tech value.
+
+DI-4 — RECORD EVERY ISSUE. Maintain a running Data Integrity list: tech name, exactly what was
+missing/ambiguous/inconsistent, which canonicalization (if any) you applied, and which tallies the tech
+was excluded from. Prints in the Appendix.
+
+DI-5 — TEAM TALLIES ARE COMPUTED ON AVAILABLE DATA ONLY. When a tech is excluded from a specific tally,
+the team figure for that tally is computed over the techs that DO have the data, and you must state the
+denominator (e.g., "Welcome bands as Strong for 5 of 8 techs; Tech X excluded — see Data Integrity").
+Never let a missing value distort a count, and never quietly change the denominator without saying so.
+
+DI-6 — MINIMUM VIABLE REPORT. If a report is so malformed that neither a single step Band (Section 4)
+nor an outcome rate (Section 1/3) can be read, that tech appears in the roster and Data Integrity list
+as "insufficient data to assess," is excluded from all band-based and rate tallies, and is still counted
+in the total uploaded-reports count. Say so explicitly. Do not drop them.
+
+=======================================================================
+## DATA EXTRACTION — AFTER STEP 0 AND 0.5, BEFORE WRITING
+=======================================================================
+Read every uploaded report in full and extract into a working table (internal, not shown). Apply the
+Normalization Pass to every value and route every problem through Data Integrity.
+
+For each tech:
+- Tech name (Section 1 header / footer)
+- Unique calls assessed (NORM-5)
+- Repair-Won rate (% and fraction) and Option C Handoff rate (% and fraction) — Section 1/3 (NORM-10)
+- Band per step, all 5 — Section 4 "Band" column, verbatim (NORM-2)
+- Supporting quote + call number per step — Section 4 (NORM-4)
+- Positive-outcome/no-move contrast + quotes per step — Section 7 (NORM-3)
+- Strongest / weakest column values (NORM-6)
+- Top 3 strengths with bands and quotes (NORM-7) — Section 5
+- Top 3 coaching priorities (NORM-8) — Section 9
+- Beyond the Guide patterns — Section 8 (exact heading, NORM-9)
+
+Do not begin writing until extraction is complete for every tech and the Data Integrity list is final.
+
+SOURCE-OF-TRUTH QUICK TABLE (read each item ONLY from the listed source):
+- Tech name ................... Section 1 header / footer
+- Unique calls ............... Section 3 "unique service calls" (NOT total files)
+- Repair-Won + Option C rates . Section 1 header + Section 3
+- Per-step Band ............. Section 4 "Band" column, verbatim — NEVER infer or convert
+- Per-step quote ............ Section 4 "Supporting Quote (Call #)" cell
+- Positive/no-move contrast . Section 7 only, with its quotes
+- Strongest/Weakest ......... Section 3 (two each, with bands) → reduce via NORM-6
+- Top 3 strengths ............ Section 5, first three as printed, with bands + quotes
+- Top 3 priorities .......... Section 9, the three ranked bullets
+- Beyond the Guide .......... Section 8, exact heading string
+- Any other number .......... DOES NOT EXIST IN THE SOURCE — do not read or invent one
+
+---
+
+## CRITICAL OUTPUT RULES
+- Produce all 10 sections in the exact order using the exact headings shown. Do not add, remove,
+  rename, or reorder. (The Appendix — Data Integrity Notes is part of the Appendix, not a new section.)
+- Every claim must be grounded in a band or a quote extracted from the uploaded reports under the rules
+  above. Never invent bands, rates, quotes, or patterns.
+- Use bands and quotes throughout — never reintroduce a numeric score. Say "Tech X bands Decision as
+  Weak, the only tech on the team at Weak for Decision — Call 14: '[quote]'" not "Tech X scores 2.1 on
+  Decision." The two outcome rates are the only numbers you may state.
+- Where a tech was excluded from a tally, state it inline with the denominator (DI-5). Transparency
+  about a missing value is required, not optional.
+- Tone: executive-ready, direct, evidence-first. A manager should be able to act on this without reading
+  a single individual report. Quotes do the persuading that scores used to.
+- When all sections are complete, run the FINAL SELF-CHECK before submitting.
+
+## VISUAL AND STYLE RULES
+- HEADER: bold, centered, company brand format as shown in Section 1
+- SECTION HEADINGS: bold, all-caps
+- BOTTOM LINE and DECISIVE FINDING CALLOUTS: bordered callout boxes
+- MASTER SCORECARD TABLE: bold tech names, bold rates; in each step column, bold the cell(s) carrying
+  the team-best band and asterisk (*) the cell(s) carrying the team-worst band, using BAND ORDERING
+- INDIVIDUAL COACHING FLAGS: one bold tech name per line, colon, then specific banded finding with a
+  quote
+- ITALICS: scorecard footnotes, fourth-priority notes, final footer, and all Data Integrity inline
+  denominators
+- N/A CELLS: any unavailable value prints "N/A — see Data Integrity"
+- QUOTES: every quote is in quotation marks with its tech and call number, e.g., (Reyes, Call 12). Keep
+  quotes short — a clause or sentence, never a full transcript block.
+- PAGE FOOTER: last line — "{{COMPANY}} · SILO Cross Rep Report · Page"
+
+## SECTION 1 — HEADER
+Use this exact format, bold, at the top of the document:
+
+{{COMPANY}}
+SILO Field Strategy Guide — Cross Rep Report
+Techs Analyzed: [X] | Market: {{MARKET}} | [Month Year]
+[X] Total Calls Across All Techs • Guide: SILO Field Strategy
+
+(Techs Analyzed = total uploaded reports, including any quarantined. Total Calls = sum of UNIQUE calls
+across techs with a readable count; if any are unreadable, add "(excludes [N] tech(s) with unreadable
+counts — see Data Integrity)".)
+
+## SECTION 2 — BOTTOM LINE
+Heading: BOTTOM LINE (bold, all-caps). Format: bordered callout box — visually distinct from body text.
+One paragraph, structured as follows — no bullet points inside the box:
+* Open with the total number of techs, total calls analyzed, and the team Option C Handoff rate range
+  FIRST (lowest to highest tech rate — the primary win), then the team Repair-Won rate range (the
+  only numbers used).
+* Name the single most important behavior that separates positive-outcome techs from the rest —
+  expressed as a band contrast and backed by a short quote from a named tech (e.g., "the top third band
+  Welcome as Strong or Strong on wins — 'here's exactly what today looks like...' (Reyes, Call 7) —
+  while the bottom third bands it Moderate or Weak").
+* Name the single biggest company-wide gap as a band pattern with a count (e.g., "Decision bands Weak
+  or Moderate for 6 of 8 techs") and one quote that typifies it.
+* End with the one intervention that would move the team's positive-outcome rate most, stated as a
+  concrete action. Must be specific to this dataset. No generic HVAC service language. No numbers other
+  than the two outcome rates and simple tech counts. If any tech is quarantined, add one closing italic
+  sentence: "[N] of [X] reports required data-integrity handling — see Appendix."
+
+## SECTION 3 — TEAM PERFORMANCE SNAPSHOT
+Heading: TEAM PERFORMANCE SNAPSHOT (bold, all-caps)
+Produce exactly four lines using bold labels:
+Techs analyzed: [X] techs. Total calls assessed: [X]. Total repairs won: [X]. Total Option C handoffs:
+[X]. Total no-moves: [X]. Team Repair-Won rate: [X]%. Team Option C Handoff rate: [X]%.
+Repair-Won rate range: Highest — [Tech] at [X]%. Lowest — [Tech] at [X]%. Team median: [X]%.
+Band profile: Most common band across all step assessments — [Band] ([n] of [total banded cells]).
+Share of steps banded Strong or Solid team-wide vs. Moderate or Weak team-wide, stated as counts.
+Step snapshot: Strongest step across the team — [Step] (banded Strong/Solid by [n] of [X] techs).
+Weakest — [Step] (banded Moderate/Weak by [n] of [X] techs). Most variable step — [Step] (techs split
+widest across bands — name the spread, e.g., "ranges from Strong to Weak across techs").
+Each team tally is computed over techs with available data; if any step tally excludes a tech, append
+the italic denominator note per DI-5.
+
+## SECTION 4 — MASTER RANKED SCORECARD
+Heading: MASTER RANKED SCORECARD (bold, all-caps)
+Subtitle in italics immediately below: *Ranked by Repair-Won rate. Band-quality tally used as
+tiebreaker. Option C Handoff rate shown separately and never treated as a failure on its own. Each step
+cell shows the tech's band from their Section 4 — no numeric scores. Bold = team-best band in that
+column; asterisk (*) = team-worst band in that column.*
+
+Produce this exact table. One row per tech, INCLUDING any quarantined tech (with N/A cells where data is
+unavailable). Sort by Repair-Won rate descending; if two techs tie, break the tie by band-quality tally
+(count of Strong, then Solid, then Strong on wins across their 5 steps, using BAND ORDERING). Techs with
+an unreadable Repair-Won rate sort last and are noted. Bold the tech name and Repair-Won rate for the #1
+ranked tech. In each step column, bold the cell(s) holding the team-best band and asterisk the cell(s)
+holding the team-worst band (BAND ORDERING). For any unavailable value, print "N/A — see Data Integrity"
+and do not bold it:
+
+| Rank | Tech | Calls | Repair-Won % | Option C % | Ready | Welcome | Assessment | Decision | Deliver | Strongest | Weakest |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [Name] | [X] | [X]% | [X]% | [Band] | [Band] | [Band] | [Band] | [Band] | [Step] | [Step] |
+
+(One row per tech. Step cells carry bands only. Strongest/Weakest carry the step name reduced via
+NORM-6.)
+After the table add this exact footnote in italics: *Bold = team-best band in that column; asterisk (*)
+= team-worst band. Cells show each tech's band read verbatim from their Section 4 scorecard — no numeric
+scores exist in the source. Band order, best to worst: Strong, Solid, Strong on wins, Moderate, Weak.
+"—" = not applicable for that tech. Option C Handoff rate reflects upgrade-candidate opportunity and is
+not a standalone performance measure. "N/A — see Data Integrity" marks a value that could not be read
+from that tech's report.*
+
+## SECTION 5 — STEP LEADERBOARD
+Heading: STEP LEADERBOARD (bold, all-caps)
+Subtitle in italics: *For each SILO step, techs grouped by band. A step where most techs cluster at
+Moderate or Weak is a company-wide training gap. A step where techs split widely across bands is an
+individual coaching gap. A step where most techs are Strong or Solid is a team strength.*
+
+For each of the 5 SILO steps, produce this exact block:
+[STEP NAME IN BOLD ALL-CAPS]
+Group every tech under their band, listed best band to worst (BAND ORDERING), with a representative
+quote for at least the top and bottom group:
+* Strong: [tech names] — e.g., "[short quote]" ([Tech], Call [X])
+* Solid: [tech names]
+* Strong on wins: [tech names] — e.g., "[short quote]" ([Tech], Call [X])
+* Moderate: [tech names]
+* Weak: [tech names] — e.g., "[short quote or 'No instance found in transcripts']" ([Tech], Call [X])
+* N/A — see Data Integrity: [tech names, if any, excluded from this step's tally]
+Band distribution: [n] Strong, [n] Solid, [n] Strong on wins, [n] Moderate, [n] Weak (across [n] of [X]
+techs) | Verdict: [one of — "Training gap (most techs Moderate/Weak)", "Coaching gap (techs split widely
+across bands)", or "Team strength (most techs Strong/Solid)"]
+
+## SECTION 6 — TOP PERFORMER ANALYSIS
+Heading: TOP PERFORMER ANALYSIS (bold, all-caps)
+Subtitle in italics: *Top third of techs by Repair-Won rate vs. bottom third. Tier sizes are stated
+literally so the reader can judge how thin the comparison is. A step is a differentiator only when the
+two tiers sit in clearly different bands.*
+
+Tiering rule (applies at ANY tech count, no minimum gate):
+* Compute tier size as the number of techs divided by three, rounded to the nearest whole tech, minimum
+  1. State the actual tier size in words: "Top third = [n] tech(s): [names]. Bottom third = [n] tech(s):
+  [names]." With very few techs this may be one tech per tier — say so plainly so a manager sees the
+  split is effectively tech-vs-tech.
+* Techs excluded for missing Section 7 data are noted and left out of this comparison only.
+Opening sentence: Name the top-third and bottom-third techs by Repair-Won rate. State their rates and
+the literal tier sizes.
+Then produce this exact table comparing top third vs. bottom third on each step. For each tier, state the
+band the tier predominantly sits in (the most common band among that tier's techs for that step; if
+split, name the range, e.g., "Strong on wins / Solid"). The verdict is "Differentiator" only when the
+two tiers sit in clearly different band groups (Strong/Solid vs Moderate/Weak, or any tier showing
+Strong on wins against the other at Moderate/Weak); otherwise "Not a differentiator":
+
+| Step | Top Third Band | Bottom Third Band | Verdict |
+| --- | --- | --- | --- |
+| Ready | [Band] | [Band] | Differentiator / Not a differentiator |
+| Welcome | [Band] | [Band] | |
+| Assessment | [Band] | [Band] | |
+| Decision | [Band] | [Band] | |
+| Deliver | [Band] | [Band] | |
+
+After the table, produce a bordered callout box containing: "The decisive differentiator(s): [Name the
+1–2 steps where the band gap between tiers is widest and state exactly what top techs do in those steps
+that bottom performers don't — with specific tech names and direct quotes on each side, e.g., top tech
+sets the Agenda Card out loud — 'here's exactly what today looks like...' (Reyes, Call 7) — while the
+bottom-third tech skips it — 'I'll just take a quick look' (Dale, Call 3).]"
+Then answer these three questions with bands and quotes (no numbers except the two outcome rates):
+1. Which steps show NO band gap between tiers? (These are not where coaching time should go — state why,
+   with the shared band.)
+2. Which single tech in the bottom third is closest to breaking into the top tier, and what is the one
+   banded behavior change (with the quoted call that shows the gap) that would get them there?
+3. Which non-guide patterns from the Beyond the Guide sections appear consistently in top-tech reports
+   but not bottom-tech reports?
+
+## SECTION 7 — COMPANY-WIDE PATTERN ANALYSIS
+Heading: COMPANY-WIDE PATTERN ANALYSIS (bold, all-caps)
+Subtitle in italics: *Training gaps affect most or all techs — fix with group training. Coaching gaps
+are highly variable — fix with 1:1 sessions. "Strong on wins" patterns are the highest-yield coaching
+targets — the skill exists, it just isn't applied every time.*
+
+Produce four clearly labeled subsections:
+TRAINING GAPS (bold) Steps where two-thirds or more of techs band Moderate or Weak (Section 4 Band,
+NORM-2). List each step, the band distribution, the number of techs at Moderate/Weak, and one quote that
+typifies the failure. These require company-wide training — not individual coaching.
+COACHING GAPS (bold) Steps where techs split widely across bands (e.g., some Strong, others Weak, with
+no team consensus), OR where the dominant band is "Strong on wins." List each step, name the
+highest-banded and lowest-banded tech with a quote each, and flag any "Strong on wins" step as a priority
+coaching target. These require 1:1 coaching — not group training.
+TEAM STRENGTHS (bold) Steps where most techs band Strong or Solid. List each, the band distribution, and
+one quote that shows the team at its best. Note: these are baseline — reinforce but do not over-invest
+coaching time here.
+POSITIVE-OUTCOME CORRELATION (bold) Which steps most separate reaching a positive outcome from a no-move
+across the team? Using each tech's Section 7 positive-vs-no-move contrast (NORM-3), rank the 5 steps by
+how often they flip band between positive outcomes and no-moves across techs (i.e., how many techs show
+that step as "Strong on wins" or otherwise stronger on positive-outcome calls than no-moves). State the
+top 2 most outcome-correlated steps and the bottom 2 least. Support the top step with one quoted
+positive-outcome call and one quoted no-move call from the same tech. Add one sentence on what this means
+for where the team should focus. Note the denominator if any tech was excluded for missing Section 7
+data.
+
+## SECTION 8 — POSITIVE-OUTCOME PREDICTOR TEST
+Heading: POSITIVE-OUTCOME PREDICTOR TEST (bold, all-caps)
+Subtitle in italics: *Which banded behaviors reliably predict a positive outcome? (The per-tech reports
+carry no numeric scores, so prediction is tested on bands, not score thresholds.)*
+
+Because there are no scores, test predictiveness using bands and the positive/no-move contrasts. For
+each of the three highest-leverage steps — Welcome (Critical Action #1, Setting Expectations), Decision
+(creating options + handling objections + the Comfort Advisor handoff), and the single step your Section
+7 correlation ranked most outcome-correlated — do the following:
+* State the band pattern among techs with high Repair-Won rates (top third) versus techs with low
+  Repair-Won rates (bottom third).
+* State whether techs who band that step Strong or Strong on wins reach a positive outcome at a visibly
+  higher rate than techs who band it Moderate or Weak — using the actual Repair-Won rates of the named
+  techs (the outcome rates are the only numbers permitted).
+* Verdict: Predictive / Not predictive — and name the band threshold that travels with the higher rate.
+If a clear pattern exists, put it in a bordered callout box: "The [Step] Pattern: Techs who band [Step]
+as [Band or better] reach a positive outcome at [the higher rates observed]; techs who band it [Band or
+worse] at [the lower rates observed]. This is the single most actionable banded finding in the dataset —
+and it is quote-backed: '[positive-outcome behavior quote]' ([Tech], Call [X]) versus '[no-move behavior
+quote]' ([Tech], Call [X])."
+If no clear pattern exists, say so explicitly and explain what the bands show instead. If the tech count
+or excluded-tech count makes the pattern unstable, state that plainly rather than presenting a fragile
+pattern as solid.
+
+## SECTION 9 — CROSS-TECH NON-GUIDE PATTERNS
+Heading: CROSS-TECH NON-GUIDE PATTERNS (bold, all-caps)
+Subtitle in italics: *Organic patterns from individual Beyond the Guide sections that appear across
+multiple techs. Candidates for guide updates or new training modules.*
+
+Produce exactly 3–6 subsections. Each uses this format:
+[Pattern title in bold — specific and descriptive]
+Body: 2–3 sentences describing the pattern. Name which techs it appeared in and carry one short quote
+from a tech where possible. End with one sentence beginning "Team coaching implication:" stating whether
+this warrants a guide update, a new training module, or a targeted coaching conversation.
+Only include patterns appearing in 2+ tech reports. Patterns unique to one tech belong in their
+individual session. Patterns are drawn only from each report's Section 8 "Beyond the Guide" (NORM-9). If
+fewer than 3 shared patterns appear, produce only those that qualify and say so rather than inventing
+any.
+
+## SECTION 10 — MANAGEMENT ACTION SUMMARY
+Heading: MANAGEMENT ACTION SUMMARY (bold, all-caps)
+Subtitle in italics: *(executive ready — use this page to open a team meeting or brief leadership)*
+
+Produce the following subsections in this exact order:
+RANKED TEAM SCORECARD (bold) Repeat the table from Section 4 here exactly, including N/A cells and bands.
+THE #1 DIFFERENTIATOR (bold) One bordered callout box. 2–3 sentences. Name the single behavior that most
+separates positive-outcome techs from the rest, with the specific band contrast, a quote on each side,
+and the tech names on each side.
+COMPANY-WIDE TRAINING PRIORITIES (bold) Subtitle: (fix these in group settings — affects most techs).
+Numbered list of exactly 2–3 items. Each states: the step, its team band distribution (the count of
+techs at Moderate/Weak), and the specific behavior to train. Anchor each with a quote.
+INDIVIDUAL COACHING FLAGS (bold) Subtitle: (tech-specific — handle in 1:1 sessions). One line per tech
+who needs urgent individual attention. Format:
+* Tech Name ([X]% Repair-Won): bands [Step] as [Band] — [one sentence on what to coach and why, anchored
+  to a quoted call]. Prioritize techs with "Strong on wins" gaps in Decision or Welcome — that is the
+  fastest positive-outcome upside.
+Only flag techs whose data warrants urgent attention. Not every tech needs to appear here. A quarantined
+tech with insufficient data appears here only as "• Tech Name: insufficient data — re-run individual
+SILO report" if applicable.
+POSITIVE-OUTCOME PREDICTOR RULE (bold) One sentence — the banded rule from Section 8, or "No clear
+predictor identified — see Section 8 for detail."
+RECOMMENDED NEXT STEPS (bold) Numbered list of exactly 3 items. Concrete, actionable, and sequenced (what
+to do first, second, third). Each step names who owns it and what the expected outcome is. If any tech
+was quarantined, the first or second step must include re-running that tech's SILO report to restore full
+comparability.
+
+## APPENDIX — DATA SOURCES & METHOD
+Heading: APPENDIX — DATA SOURCES & METHOD (bold, all-caps)
+Produce each sub-section in this exact order:
+Reports analyzed ([X] reports): List every tech name and their report's call count and both rates in a
+simple table: | Tech Name | Calls Assessed | Repair-Won % | Option C % | (Use unique calls per NORM-5.
+For a quarantined tech with an unreadable figure, print "N/A — see Data Integrity Notes".)
+Data extraction method: All bands, outcome rates, supporting quotes, and coaching findings were extracted
+directly from each tech's SILO Field Strategy Guide coaching report. No raw transcripts were accessed,
+and no numeric scores exist in the source. Per-step bands were read verbatim from each report's Section 4
+scorecard; positive-outcome/no-move contrasts and quotes were read from each report's Section 7. All
+reports were produced using the identical per-tech prompt and band system, making cross-tech comparison
+valid.
+Normalization applied: State the canonical-label reconciliations that were necessary (e.g., "'System
+Assessment' was read as the canonical step Assessment"). If no reconciliation was needed, say "No label
+reconciliation required — all reports used canonical step labels."
+Top/bottom tier definition: Top third = the top [n] techs by Repair-Won rate. Bottom third = the bottom
+[n] techs by Repair-Won rate. State the literal tier sizes used. Middle techs noted but not included in
+top/bottom comparison.
+Band method: Steps were compared using the five-band Strength Band Key (Strong, Strong on wins, Solid,
+Moderate, Weak), never numeric scores. Band ordering for ranking and "best/worst" language, best to
+worst: Strong, Solid, Strong on wins, Moderate, Weak. "Strong on wins" is treated as the priority
+coaching band because it marks a skill the tech has but does not apply every time. Verdicts (training gap
+/ coaching gap / team strength) were assigned from band distribution as defined in Sections 5 and 7.
+Limitations: This analysis is based on the banded, quote-backed assessments in each tech's per-tech
+report. Outcome rates reflect in-call decisions only; downstream Comfort Advisor conversion of Option C
+handoffs is not captured here. Bands are qualitative judgments from each tech's transcripts, not a
+numeric scale, so cross-tech comparisons describe direction and pattern, not magnitude.
+Appendix — Data Integrity Notes ([X] issue(s)): The running Data Integrity list from DI-4. For each
+issue, state: the tech name, exactly what was missing/ambiguous/inconsistent, the canonicalization
+applied (if any), and which specific tallies the tech was excluded from. If there were no issues, print
+exactly: "No data-integrity issues. All [X] reports conformed to the expected SILO report structure and
+were fully included in every tally."
+End with this exact italicized footer — word for word: Prepared from [X] SILO Field Strategy Guide
+coaching reports. Bands and quotes are transcript-derived and intended for management coaching and
+training use.
+Final line — page footer: {{COMPANY}} · SILO Cross Rep Report · Page
+
+## FINAL SELF-CHECK — COMPLETE BEFORE SUBMITTING
+If any item is not confirmed — fix it before submitting.
+[ ] COMPANY SETUP filled with a real company name and market (not bracketed placeholder); every
+    {{COMPANY}} and {{MARKET}} token resolved — none left in output
+[ ] No numeric scores anywhere in the output. The only numbers are the two outcome rates (tech and team)
+    and simple tech/band counts. Zero 1–5 scores, zero step averages, zero score thresholds
+[ ] Normalization Pass run on every report BEFORE extraction: canonical step labels applied, per-step
+    Band read verbatim from Section 4 (never inferred or converted), positive/no-move contrasts read from
+    Section 7 only, supporting quotes captured per NORM-4, unique-calls used (never total files),
+    strongest/weakest reduced via NORM-6, strengths taken as first-three via NORM-7, BOTH outcome rates
+    extracted (NORM-10)
+[ ] Data Integrity Protocol run: every malformed report quarantined not skipped, kept in roster, excluded
+    only from affected tallies, all holes printed as "N/A — see Data Integrity", every issue logged in the
+    Appendix list
+[ ] Every team tally states its denominator wherever a tech was excluded (DI-5)
+[ ] Data extraction complete for every uploaded report before any section was written
+[ ] Section 1: correct tech count, total UNIQUE call count, date
+[ ] Section 2: Bottom Line in bordered box, specific to this dataset, uses band contrasts + quotes (no
+    numbers but the two outcome rates and tech counts), quarantine note if any
+[ ] Section 3: Team Snapshot has exactly four lines, correct format, both rates present, band profile
+    present
+[ ] Section 4: Master Scorecard one row per tech (incl. quarantined with N/A cells), sorted by Repair-Won
+    rate (band-quality tiebreaker), each step cell a band, both rate columns present, team-best bolded and
+    team-worst asterisked per column, correct footnote
+[ ] Section 5: Step Leaderboard has all 5 steps, techs grouped by band within each (N/A techs listed and
+    excluded from the tally), band distribution and verdict applied to each, quotes on top and bottom
+    groups
+[ ] Section 6: tier sizes stated literally; table has all 5 steps as band contrasts; differentiator
+    verdicts; bordered callout box with quotes on both sides; all three follow-up questions answered with
+    bands and quotes
+[ ] Section 7: all four subsections present — Training Gaps, Coaching Gaps (incl. "Strong on wins"
+    flagged), Team Strengths, Positive-Outcome Correlation — each with quotes
+[ ] Section 8: all three steps tested as banded predictors, bordered callout if pattern found with quotes
+    on both sides, explicit statement if not found, stability noted if fragile
+[ ] Section 9: 3–6 cross-tech patterns each in 2+ reports, each ending "Team coaching implication:" (or
+    explicit statement that fewer than 3 shared patterns exist), drawn from "Beyond the Guide"
+[ ] Section 10: all six subsections present in correct order — Ranked Scorecard, #1 Differentiator,
+    Training Priorities, Individual Coaching Flags, Positive-Outcome Predictor Rule, Next Steps
+[ ] Appendix: tech list table (unique calls, both rates), all method sub-sections, Normalization-applied
+    note, Band method note, Data Integrity Notes sub-section, correct footer
+[ ] No section renamed, reordered, or omitted
+[ ] Every band and quote came from an uploaded report under the source-of-truth rules — zero bands
+    inferred, zero quotes invented, zero numbers reconstructed
+[ ] Report scales to the actual number of techs uploaded — no hardcoded count anywhere
+[ ] No tech's data tallied around silently — every exclusion visible and explained in Data Integrity
+[ ] OUTPUT FILES produced: all three — a .txt (machine copy), a DOCX (formatted), and a PDF converted
+    from that DOCX so they look identical — saved in the same folder with the correct {{COMPANY}} name
