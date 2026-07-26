@@ -33,7 +33,7 @@ jobs:
         run: |
           for i in 1 2 3 4 5; do
             python graph_hourly.py || echo "capture $i failed — continuing"
-            [ "$i" -lt 5 ] && sleep 150
+            if [ "$i" -lt 5 ]; then sleep 150; fi
           done
       # This job is driven dependably 24/7 by cron-job.org, so it doubles as the
       # heartbeat that keeps a SILO Live Feed relay session armed during ops
