@@ -1,0 +1,221 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Andrew Trujillo — SILO Coaching Plan · 2026-07-21</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style>
+</head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;·&nbsp;SILO</b><span class="tag">Daily Coaching Plan · 2026-07-21</span></div>
+<div class="wrap">
+<div class="hero"><div class="ey">Daily Coaching Plan · 2026-07-21 · 1 gradeable call · partial — tape ends at the walkthrough</div><h1 class="disp">Andrew Trujillo</h1><p class="lede">Twenty minutes of near-perfect front door. He offered to cover his own shoes before the customer asked, confirmed his parking, set an expectation block out loud, and worked the hot-room complaint harder than anyone on the board. Then the recording stops, and everything the rubric measures after that is unknowable.</p></div>
+<div class="glance">
+<div class="g"><div class="k">Close Rate</div><div class="v red">0%<small>0 of 1 — no decision conversation reached tape</small></div></div>
+<div class="g"><div class="k">Calls Reviewed</div><div class="v">1 of 1<small>four-system maintenance · 20 min · homeowner "Lori"</small></div></div>
+<div class="g"><div class="k">Strongest</div><div class="v grn">Welcome<small>Empathy — Strong</small></div></div>
+<div class="g"><div class="k">Weakest</div><div class="v red">Decision<small>never reached the recording</small></div></div>
+</div>
+<div class="legend"><span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span><span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span></div>
+<p class="note">Scored on strength bands, never numbers — the only figure anywhere is the close rate. This recording ends immediately after the walkthrough, before the evaluation, the findings review or any options. The Decision and Deliver steps are marked not observed and are not graded against him; they are banded down only in the daily summary, where a missing section cannot be distinguished from a weak one.</p>
+
+<section><div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive"><div class="dh"><div class="k">The whole file</div><h3>The best twenty minutes on the board, and then nothing.</h3></div><div class="split"><div class="c should"><div class="lbl">What is on tape</div><p>Floor protection offered unprompted — <q>you don't have to put anything on your shoes… I just want to make sure I'm protecting your home</q> — parking confirmed, permission for the back door, and an expectations block that names the one thing most reps forget to ask: <q>if I happen to come across concerns that need addressed, is that information you'd like me to keep to myself, or would you like me to share that with you?</q></p></div><div class="c said"><div class="lbl">What is not</div><p>Four systems, a standing complaint about rooms that never reach temperature, and a customer who says she has been told the explanation before and <q>kind of don't really remember</q> it. That is a maintenance call with a real conversation waiting at the end of it — and the recording stops before a single finding, price or option is delivered. He cannot be credited for what happened next, and he cannot be coached on it either.</p></div></div></div></section>
+
+<section><div class="sh"><div class="no">2</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div><div class="rub">
+
+<div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+<div class="row"><div class="rb">Intro / get their name</div><div><span class="b strong">Strong</span></div><div class="ev">Had her name before he was through the door and used it: <q>Lori? Yeah. I'm Andrew. Pleasure to meet you.</q></div></div>
+<div class="row"><div class="rb">Verify our vehicle parking</div><div><span class="b strong">Strong</span></div><div class="ev">Named the exact spot rather than asking a vague question: <q>I'm parked right out front, just on the left there by the mailboxes. Is that going to be all right?</q></div></div>
+<div class="row"><div class="rb">Permission to enter</div><div><span class="b strong">Strong</span></div><div class="ev">Asked for access as the visit needed it, not once at the door: <q>Is there a gate on the side that I can use?</q> and <q>Is it okay if I use the back door if I need to come over, use the thermostats?</q></div></div>
+<div class="row"><div class="rb">Floor protectors</div><div><span class="b strong">Strong</span></div><div class="ev">The only rep on this board who raises it before the customer does, and he does it as a courtesy rather than a rule: <q>you don't have to put anything on your shoes… I just want to make sure I'm protecting your home.</q></div></div>
+<div class="row"><div class="rb">Personal connection</div><div><span class="b solid">Solid</span></div><div class="ev">Warm and specific to the house — <q>This is a really nice place you guys have here. I really love coming on this side of town</q> — and he followed the daughter's comfort past the equipment question: <q>Is that giving your daughter any issues in terms of temperature?</q></div></div>
+<div class="row"><div class="rb">Confirm the reason for the call</div><div><span class="b strong">Strong</span></div><div class="ev">Stated the scope back and had it confirmed: <q>it looks like today we're out here for cooling maintenance. We got four systems we're working on today.</q></div></div>
+<div class="row"><div class="rb">Brief technical questions</div><div><span class="b solid">Solid</span></div><div class="ev">Dated the complaint and found the pattern: <q>How long have you been having these kind of issues?</q> → <q>Probably ever since we moved in</q> → <q>How long has that been?</q> → <q>2022.</q> Then the timing: <q>Is that any particular time of the day?</q> → <q>when it gets around like three or four o'clock.</q></div></div>
+<div class="row"><div class="rb">Intent to fix today</div><div><span class="b na">Not observed</span></div><div class="ev">Maintenance visit; no demand fault had been identified before the recording ended.</div></div>
+<div class="row"><div class="rb">Address membership status</div><div><span class="b weak">Weak</span></div><div class="ev">Never raised, on a recurring annual maintenance visit where the customer volunteered <q>every year when you guys come out to do this tune up</q> — the opening was handed to him.</div></div>
+<div class="row"><div class="rb">Setting Expectations — LTOAT5</div><div><span class="b solid">Solid</span></div><div class="ev">He announces that he is doing it, which is rare and good — <q>I want to make sure I'm setting a clear expectation in terms of how I'm going to be helping you out today</q> — and lands Look, Thorough and Options: <q>I'll be looking at all systems, inside and out… After I'm finished up with everything, I'll step out to my van. I'll have a written report based on anything we need to address, and we can go over your options at that point.</q> Missing: the approval promise, the today commitment, and the five-star standard.</div></div>
+
+<div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b mod">Moderate</span></span></div>
+<div class="row"><div class="rb">Required questions</div><div><span class="b mod">Moderate</span></div><div class="ev">The rooms question is the best-worked example on the board — he did not stop at the first answer: <q>Which rooms in particular, are we upstairs, downstairs?</q> … <q>Any other rooms that are feeling excessively hot or cold?</q> → the guest room and the daughter's room, and the reason (<q>her room's one of the rooms that doesn't have a thermostat</q>). But the filter question is never asked, the thermostat-setting question is never asked — the customer volunteers the numbers herself — the power-bill follow-up never comes, and the maintenance opener <q>what were you hoping we could accomplish while I'm here?</q> is replaced by the softer <q>what questions you have for me before we get started?</q></div></div>
+<div class="row"><div class="rb">Check-ins</div><div><span class="b na">Not observed</span></div><div class="ev">Promised and then off tape: <q>I'll check with you periodically as best I can… yell for me if need be for anything.</q> The evaluation itself was never recorded.</div></div>
+<div class="row"><div class="rb">Draw the Picture</div><div><span class="b solid">Solid</span></div><div class="ev">One real teaching moment, on the complaint the customer had never had explained: <q>if we have thermostats within eye shot of each other, where they're so close that heat is transferred from sensor to sensor — if in here it's getting up to 78, it's going to interfere.</q> Correct instinct, delivered before he had any readings.</div></div>
+<div class="row"><div class="rb">Check Your Tone</div><div><span class="b strong">Strong</span></div><div class="ev">Calm, unhurried and completely non-alarmist throughout: <q>Take your time. I'll wait right here for you.</q></div></div>
+<div class="row"><div class="rb">Keep It Simple</div><div><span class="b strong">Strong</span></div><div class="ev">The sensor-interference explanation is jargon-free and immediately understood — the customer had said she had been told before and could not remember it. This version she followed.</div></div>
+<div class="row"><div class="rb">Show Pictures</div><div><span class="b na">Not observed</span></div><div class="ev">No evaluation reached the recording, so there was nothing yet to show.</div></div>
+<div class="row"><div class="rb">Get the Customer to Diagnose</div><div><span class="b mod">Moderate</span></div><div class="ev">He explained the thermostat interference rather than handing it to her, and she was left where she started — <q>they've explained it to me before, but I kind of don't really remember the explanation.</q> The second explanation was clearer; it was still his conclusion, not hers.</div></div>
+
+<div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b na">Not observed</span></span></div>
+<div class="row"><div class="rb">All Decision behaviors</div><div><span class="b na">Not observed</span></div><div class="ev">Building options, reconnecting, Link/Say/Spin/Zip and objection handling all happen after the point where this recording ends. Nothing is graded here.</div></div>
+
+<div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b na">Not observed</span></span></div>
+<div class="row"><div class="rb">Be A Nerd</div><div><span class="b solid">Solid</span></div><div class="ev">On the strength of the one explanation that did reach tape — thermostat placement and sensor interference, taught properly and without condescension.</div></div>
+<div class="row"><div class="rb">5-Star Review</div><div><span class="b weak">Weak</span></div><div class="ev">No five-star standard set at the door, which is the half of the behavior that does belong in the Welcome step and was available to him. The ask itself is off tape.</div></div>
+
+<div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b solid">Solid</span></span></div>
+<div class="row"><div class="rb">Make their time valuable</div><div><span class="b solid">Solid</span></div><div class="ev">In twenty minutes she got a clear answer to a question she had asked for years, and a technician who protected her floors and her morning. On the evidence available, she was better off.</div></div>
+<div class="row"><div class="rb">Help her arrive at her own solution</div><div><span class="b na">Not observed</span></div><div class="ev">There is no decision on tape to have helped her reach.</div></div>
+
+</div>
+
+<div class="sh" style="margin-top:26px"><div class="no">3</div><h2>Critical Actions — pass rate</h2></div><div class="rub">
+<div class="row"><div class="rb">Setting clear expectations</div><div><span class="b pass">Pass</span></div><div class="ev">A genuine, announced expectations block including the share-my-findings permission. Incomplete against LTOAT5, but unambiguously set.</div></div>
+<div class="row"><div class="rb">Asking good questions</div><div><span class="b fail">Fail</span></div><div class="ev">Automatic fail. The rooms question is excellent; filters, the thermostat setting, the power-bill follow-up and the maintenance opener are all absent.</div></div>
+<div class="row"><div class="rb">Creating good options</div><div><span class="b na">Not observed</span></div><div class="ev">Off tape — cannot be passed or failed.</div></div>
+<div class="row"><div class="rb">Handling objections</div><div><span class="b na">Not observed</span></div><div class="ev">Off tape — no objection was raised before the recording ended.</div></div>
+</div></section>
+
+<section><div class="sh"><div class="no">4</div><h2>What went right — real strength, build on it</h2></div><ul class="str">
+<li><b>He offered floor protection before anyone asked.</b> <q>You don't have to put anything on your shoes… I just want to make sure I'm protecting your home.</q> Nobody else on the board did this.</li>
+<li><b>He asked permission to share bad news.</b> <q>Is that information you'd like me to keep to myself, or would you like me to share that with you?</q> That single question converts every later finding from a pitch into something the customer requested.</li>
+<li><b>He worked the hot-room complaint to the end</b> instead of accepting the first room named — guest room, daughter's room, the missing thermostat, the time of day, and the door that gets shut.</li>
+<li><b>He explained something she had given up on understanding.</b> Sensor interference between thermostats, in one sentence, no jargon.</li>
+<li><b>He named his parking spot rather than asking a vague question</b> — a small thing that makes the answer easy.</li>
+</ul></section>
+
+<section><div class="sh"><div class="no">5</div><h2>The three gaps</h2><span class="hint">each one anchored to a real moment on tape</span></div>
+
+<div class="mom"><div class="top2"><span class="b weak">Weak</span><h4>Gap 1 — The recording stops before the part of the visit that gets graded</h4></div>
+<div class="q"><b>Last words on tape</b>"I'll check with you periodically as best I can… yell for me if need be for anything."</div>
+<div class="q"><b>What is missing</b>Four systems evaluated, findings, photos, a written report, options and whatever the customer decided — none of it recorded.</div>
+<p class="fixline"><b>The fix</b> This is a habit and equipment problem before it is a coaching problem, and it costs him the entire record of his best work. Everything the rubric rewards most — building options, Link/Say/Spin/Zip, objection handling, the five-star ask — lives in the last third of a call. Start the recorder at the door and let it run to the truck. Until that happens he is being coached, fairly, on his introduction.</p></div>
+
+<div class="mom"><div class="top2"><span class="b weak">Weak</span><h4>Gap 2 — He asked the hardest required question and skipped the three easy ones</h4></div>
+<div class="q"><b>Asked, thoroughly</b>"Which rooms in particular… any other rooms that are feeling excessively hot or cold?"</div>
+<div class="q"><b>Never asked</b>How often the filters get changed · what the thermostat is set at in summer and winter · what a standard power bill looks like at that setting.</div>
+<p class="fixline"><b>The fix</b> The customer handed him the setup for all three and he walked past it. She said herself that a thermostat <q>says to cool when it's 78</q> and that setting one to 68 still leaves the room at 73 — that is the thermostat question answering itself, and the mandatory follow-up is one sentence away: <q>and what does a standard power bill look like for you setting it there in the summer?</q> On a four-system home with rooms that never reach temperature, that number is the whole conversation.</p></div>
+
+<div class="mom"><div class="top2"><span class="b weak">Weak</span><h4>Gap 3 — Three of the six expectation beats are missing, including the five-star seed</h4></div>
+<div class="q"><b>What he said</b>"I'll be looking at all systems, inside and out… I'll have a written report based on anything we need to address, and we can go over your options at that point."</div>
+<div class="q"><b>What he did not say</b>"I won't do anything without your approval." · "My goal is to take care of everything today." · "Above all I'm here to give you a five-star experience."</div>
+<p class="fixline"><b>The fix</b> He is already the rep who announces that he is setting expectations — the structure is there, it is three sentences short. The approval promise is what makes a customer relax enough to let him find things; the five-star seed at the door is what makes the ask at the end land. Add all three to the block he already runs and it becomes the standard version.</p></div>
+</section>
+
+<section><div class="sh"><div class="no">6</div><h2>This week's drill — finish the block, then finish the tape</h2></div><div class="script" style="border-radius:14px"><div class="lbl">Say it in one breath, at every door</div>
+<p class="say">"I'll look at the whole system, not just the one thing. I'll do a thorough evaluation, and I'll bring you back everything I find and show you your options. I won't do anything without your approval first, and my goal is to take care of everything today if we can. Above all I'm here to give you a five-star experience — if I'm not doing that, tell me so I can fix it."</p>
+<p>Then: recorder on at the door, off at the truck. He already runs the first half better than most of the team; the drill is the second half of the sentence and the second half of the call.</p>
+</div></section>
+
+<section><div class="sh"><div class="no">7</div><h2>3-week training plan</h2></div><div class="rub">
+<div class="row"><div class="rb">Week 1</div><div><b>Record the whole call</b></div><div class="ev">Every visit captured from knock to departure. Nothing else on this plan can be evaluated until this happens.</div></div>
+<div class="row"><div class="rb">Week 2</div><div><b>The four required questions, in order</b></div><div class="ev">Filters, rooms, thermostat setting, power bill — the rooms question he already owns, added to the three he does not.</div></div>
+<div class="row"><div class="rb">Week 3</div><div><b>The complete LTOAT5 block</b></div><div class="ev">Approval, today and the five-star standard added to the block he already announces, on every call.</div></div>
+</div></section>
+
+<section><div class="sh"><div class="no">8</div><h2>What we owe Andrew</h2></div><ul class="str">
+<li>Recording equipment and a start-of-call habit that survives a four-system property — the tape ending at twenty minutes is not a coaching failure, and he should not be graded on introductions forever.</li>
+<li>His floor-protection offer and his share-my-findings question recorded and taught to the board; both are one-line habits nobody else has.</li>
+<li>A second visit to this address on the record, so the hot-room problem she has lived with since 2022 gets a documented answer rather than another annual explanation.</li>
+</ul></section>
+
+<div class="bottom"><div class="eyb">Bottom line</div><p>On the evidence available, Andrew runs the best front door on this board — floors, parking, permission, a stated expectation block, and a hot-room complaint chased all the way to the shut door and the missing thermostat. Then the tape ends, and everything the model is actually built to measure goes unrecorded. Two habits change his whole board: run the recorder to the end of the call, and ask the three required questions he skipped on a house that was handing him the answers.</p></div>
+<div class="foot">Sierra · SILO daily coaching plan · 2026-07-21 · Scored on strength bands — close rate is the only number</div>
+
+</div></body></html>
