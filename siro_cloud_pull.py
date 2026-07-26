@@ -166,6 +166,7 @@ def build_transcript(token, rec):
     lines = ["TRANSCRIPT", f"Rep:      {rep_name}",
              f"Date:     {rec.get('dateCreated','')[:10]}",
              f"Duration: {round((rec.get('durationInMilliseconds') or 0)/60000)} min",
+             f"RecId:    {rec.get('id','')}",
              f"Job:      {rec.get('title','').strip()}", "=" * 60, ""]
     prev = None
     for utt in utterances:
