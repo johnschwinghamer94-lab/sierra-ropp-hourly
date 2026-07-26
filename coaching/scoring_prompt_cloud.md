@@ -13,9 +13,24 @@ runner. Read it with the Read tool.
 **Transcript format note:** transcript files are stored one word per line.
 Before scoring, reflow the file into speaker turns (group consecutive lines
 by speaker into normal sentences/paragraphs) so you can read it as a real
-conversation. The first line is `METADATA: {json}` with
-recId/rep/durationMin/title/dateCreated; everything after that is the
-transcript. Read the ENTIRE transcript before scoring.
+conversation. Read the ENTIRE transcript before scoring.
+
+**Header parsing (recId/jobNumber/dateCreated/durationMin):** newer
+transcripts carry a header block with `RecId:`, `Job:`, `Date:`, and
+`Duration:` lines before the transcript body — parse these fields from those
+lines, not from a JSON metadata blob:
+
+- `recId`: value of the `RecId:` header line (the Siro recording UUID). If
+  that line is missing or empty (older transcripts predate this header), use
+  the pseudo-id `"file:" + <transcript filename without .txt, spaces
+  replaced with underscores>` instead. This same id — real RecId or the
+  `file:...` pseudo-id — is what goes in the card's `"recId"` field, in the
+  full private card's filename, and in the `livecards/<recId>.card.json`
+  filename.
+- `jobNumber`: parsed from the `Job:` header line, e.g. `"Job # 12345"` →
+  `"12345"`; `null` if the line is missing or has no job number.
+- `dateCreated`: value of the `Date:` header line.
+- `durationMin`: value of the `Duration:` header line.
 
 ## Triage first
 
@@ -27,7 +42,7 @@ customer-facing interaction. If un-scorable, print exactly this and nothing
 else:
 
 ```
-{"recId": "<from metadata>", "tech": "<from metadata rep>", "skip": true, "reason": "<one line>"}
+{"recId": "<from RecId header, or file:<filename> if missing>", "tech": "<rep name>", "skip": true, "reason": "<one line>"}
 ```
 
 ## Scoring spec (SILO convention — WORD BANDS ONLY, never numbers, never points, never grades)
@@ -78,9 +93,6 @@ just what happened.
   option).
 - Never generic ("build more value," "ask better questions") — always the
   specific moment, the specific words, the specific alternative.
-
-`jobNumber`: the first 6-or-more-digit number in the metadata title, as a
-string; `null` if none.
 
 Every judgment must be grounded in actual transcript content — never invent
 behavior that is not in the transcript. NO customer names anywhere in the
