@@ -111,7 +111,12 @@ Write `coaching.json` at the repository root (overwrite if it exists), JSON, usi
     }
   ],
   "skipped": [{"rep": "Name or Unknown", "reason": "one line"}],
-  "dates": ["<TARGET>", "...older dates that exist under plans/, newest first, max 14"]
+  "dates": ["<TARGET>", "...older dates that exist under plans/, newest first, max 14"],
+  "history": {
+    "Rep Name": [
+      {"date": "<YYYY-MM-DD>", "plan": "coaching/plans/<YYYY-MM-DD>/Rep_Name.html"}
+    ]
+  }
 }
 ```
 Rules:
@@ -121,6 +126,7 @@ Rules:
 - `headlineGap` and each `focus` entry must contain NO customer names and NO transcript quotes (quotes stay inside the HTML plans, not in coaching.json).
 - `plan` is the dashboard-relative path where the relay workflow publishes the HTML: `coaching/plans/<TARGET>/<Rep_Name with underscores>.html` (matches the filename saved in Step 5).
 - `dates` lists the dated folders under `plans/` newest-first, max 14 entries, so the dashboard can link to recent history.
+- `history` is built MECHANICALLY from the filesystem, not from analysis: for EVERY dated folder under `plans/` (all of them, not just the last 14), list each `*.html` file except `_index.html`; the rep name is the filename with underscores converted to spaces and `.html` dropped; group entries per rep, newest date first. This powers the dashboard's click-a-name → all-their-plans view, so it must include every plan file that exists on disk.
 
 ## Step 7 — Report
 Print a summary: TARGET date processed (and why it was chosen), reps scored with their close rates, recordings skipped, files saved.
