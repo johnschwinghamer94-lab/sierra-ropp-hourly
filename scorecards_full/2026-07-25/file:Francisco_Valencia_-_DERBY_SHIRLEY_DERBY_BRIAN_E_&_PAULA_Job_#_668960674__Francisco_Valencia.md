@@ -1,16 +1,16 @@
 # Live-Coach Card
 
-**Tech:** Andrew Trujillo
+**Tech:** Francisco Valencia
 **Date:** 2026-07-25
-**Duration:** 80 min
-**Job:** 
-**RecId:** file:Andrew_Trujillo_-_
+**Duration:** 46 min
+**Job:** DERBY SHIRLEY DERBY BRIAN E & PAULA, Job # 668960674
+**RecId:** file:Francisco_Valencia_-_DERBY_SHIRLEY_DERBY_BRIAN_E_&_PAULA_Job_#_668960674
 
 ## FSG Scoring
 
-- **Welcome (Empathy/Expertise/Expectations):** Solid
+- **Welcome (Empathy/Expertise/Expectations):** Weak
 - **Assessment (Questions/Check-ins):** Strong
-- **Decision (Options/Reconnect/Explain):** Moderate
+- **Decision (Options/Reconnect/Explain):** Weak
 - **Deliver (Nerd/5-Star):** Weak
 
 ## Critical Actions
@@ -32,5 +32,5 @@ WIN — Call outcome was positive despite areas for improvement.
 
 ## Analysis Notes
 
-- Transcript has 55 speaker turns
+- Transcript has 29 speaker turns
 - Key phrases identified: standard call flow

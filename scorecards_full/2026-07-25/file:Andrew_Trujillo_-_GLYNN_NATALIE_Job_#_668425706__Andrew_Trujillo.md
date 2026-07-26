@@ -2,13 +2,13 @@
 
 **Tech:** Andrew Trujillo
 **Date:** 2026-07-25
-**Duration:** 80 min
-**Job:** 
-**RecId:** file:Andrew_Trujillo_-_
+**Duration:** 64 min
+**Job:** GLYNN NATALIE, Job # 668425706
+**RecId:** file:Andrew_Trujillo_-_GLYNN_NATALIE_Job_#_668425706
 
 ## FSG Scoring
 
-- **Welcome (Empathy/Expertise/Expectations):** Solid
+- **Welcome (Empathy/Expertise/Expectations):** Strong
 - **Assessment (Questions/Check-ins):** Strong
 - **Decision (Options/Reconnect/Explain):** Moderate
 - **Deliver (Nerd/5-Star):** Weak
@@ -20,7 +20,7 @@
 | Set Clear Expectations | ✓ Pass |
 | Asked Discovery Questions | ✓ Pass |
 | Created/Presented Options | ✗ Fail |
-| Handled Objections w/ Empathy | ✗ Fail |
+| Handled Objections w/ Empathy | ✓ Pass |
 
 ## Outcome
 
@@ -32,5 +32,5 @@ WIN — Call outcome was positive despite areas for improvement.
 
 ## Analysis Notes
 
-- Transcript has 55 speaker turns
+- Transcript has 106 speaker turns
 - Key phrases identified: standard call flow

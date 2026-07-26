@@ -1,17 +1,17 @@
 # Live-Coach Card
 
-**Tech:** David Canales
+**Tech:** Benjamin Wyllie
 **Date:** 2026-07-25
-**Duration:** 101 min
-**Job:** 
-**RecId:** file:David_Canales_-_
+**Duration:** 13 min
+**Job:** ROBLES ANDREA DENISSE, Job # 668795394
+**RecId:** file:Benjamin_Wyllie_-_ROBLES_ANDREA_DENISSE_Job_#_668795394
 
 ## FSG Scoring
 
 - **Welcome (Empathy/Expertise/Expectations):** Solid
 - **Assessment (Questions/Check-ins):** Strong
 - **Decision (Options/Reconnect/Explain):** Strong
-- **Deliver (Nerd/5-Star):** Strong
+- **Deliver (Nerd/5-Star):** Moderate
 
 ## Critical Actions
 
@@ -20,7 +20,7 @@
 | Set Clear Expectations | ✓ Pass |
 | Asked Discovery Questions | ✓ Pass |
 | Created/Presented Options | ✓ Pass |
-| Handled Objections w/ Empathy | ✓ Pass |
+| Handled Objections w/ Empathy | ✗ Fail |
 
 ## Outcome
 
@@ -32,5 +32,5 @@ WIN — Tech effectively presented options and handled customer needs.
 
 ## Analysis Notes
 
-- Transcript has 43 speaker turns
+- Transcript has 49 speaker turns
 - Key phrases identified: standard call flow

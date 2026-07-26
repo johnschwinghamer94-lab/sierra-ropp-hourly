@@ -1,14 +1,14 @@
 # Live-Coach Card
 
-**Tech:** David Canales
+**Tech:** Benjamin Wyllie
 **Date:** 2026-07-25
-**Duration:** 101 min
-**Job:** 
-**RecId:** file:David_Canales_-_
+**Duration:** 77 min
+**Job:** DIFILLIPPO, SHARON M & JAMES A, Job # 668749440
+**RecId:** file:Benjamin_Wyllie_-_DIFILLIPPO_SHARON_M_&_JAMES_A_Job_#_668749440
 
 ## FSG Scoring
 
-- **Welcome (Empathy/Expertise/Expectations):** Solid
+- **Welcome (Empathy/Expertise/Expectations):** Strong
 - **Assessment (Questions/Check-ins):** Strong
 - **Decision (Options/Reconnect/Explain):** Strong
 - **Deliver (Nerd/5-Star):** Strong
@@ -32,5 +32,5 @@ WIN — Tech effectively presented options and handled customer needs.
 
 ## Analysis Notes
 
-- Transcript has 43 speaker turns
+- Transcript has 410 speaker turns
 - Key phrases identified: standard call flow

@@ -1,23 +1,23 @@
 # Live-Coach Card
 
-**Tech:** Andrew Trujillo
+**Tech:** Andrew Alonso
 **Date:** 2026-07-25
-**Duration:** 80 min
-**Job:** 
-**RecId:** file:Andrew_Trujillo_-_
+**Duration:** 5 min
+**Job:** DUPREE ANDREA, Job # 667935142
+**RecId:** file:Andrew_Alonso_-_DUPREE_ANDREA_Job_#_667935142
 
 ## FSG Scoring
 
-- **Welcome (Empathy/Expertise/Expectations):** Solid
-- **Assessment (Questions/Check-ins):** Strong
-- **Decision (Options/Reconnect/Explain):** Moderate
+- **Welcome (Empathy/Expertise/Expectations):** Weak
+- **Assessment (Questions/Check-ins):** Weak
+- **Decision (Options/Reconnect/Explain):** Weak
 - **Deliver (Nerd/5-Star):** Weak
 
 ## Critical Actions
 
 | Action | Result |
 |--------|--------|
-| Set Clear Expectations | ✓ Pass |
+| Set Clear Expectations | ✗ Fail |
 | Asked Discovery Questions | ✓ Pass |
 | Created/Presented Options | ✗ Fail |
 | Handled Objections w/ Empathy | ✗ Fail |
@@ -32,5 +32,5 @@ WIN — Call outcome was positive despite areas for improvement.
 
 ## Analysis Notes
 
-- Transcript has 55 speaker turns
+- Transcript has 12 speaker turns
 - Key phrases identified: standard call flow
