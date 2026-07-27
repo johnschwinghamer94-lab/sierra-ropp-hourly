@@ -147,3 +147,13 @@ you write to `livecards/<recId>.card.json`:
 ```
 {"recId": "...", "tech": "...", "jobNumber": "..." or null, "dateCreated": "...", "durationMin": N, "bands": {"welcome": "...", "assessment": "...", "decision": "...", "deliver": "..."}, "critical": {"expectations": true/false, "questions": true/false, "options": true/false, "objections": true/false}, "outcome": "...", "tip": "..."}
 ```
+
+## SILO PRICE RULE (locked — John, 2026-07-27)
+The SILO team does NOT do price transparency — quoting or breaking down replacement
+pricing is not part of their process. Therefore:
+- NEVER band a tech down, list a gap, or lower a grade because they declined to give
+  pricing details or deflected a price question.
+- Redirecting a price question to the specialist / Option C path IS the correct
+  process and should be credited as such (often the "great" move).
+- Coaching output must never tell a SILO tech to be more transparent about price or
+  to present pricing breakdowns.
