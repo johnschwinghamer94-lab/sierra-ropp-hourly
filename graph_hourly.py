@@ -19,8 +19,10 @@ import time
 import requests
 try:
     from zoneinfo import ZoneInfo
-    def _now(): return datetime.now(ZoneInfo("America/Los_Angeles"))
+    _PACIFIC = ZoneInfo("America/Los_Angeles")
+    def _now(): return datetime.now(_PACIFIC)
 except Exception:
+    _PACIFIC = None
     def _now(): return datetime.utcnow()
 
 CLIENT = os.environ["GRAPH_CLIENT_ID"]
@@ -309,14 +311,53 @@ def _st_today(today):
             RL.fetch_report_rows("ROPP_TGLs_Scheduled.xlsx", today, today))
 
 
+# Mis-created tickets that are not TGLs in any sense — matches livefeed_sync.py's
+# NOT_A_TGL (keep the two lists in sync; John corrects these by job number).
+NOT_A_TGL = {"667275619"}   # 2026-07-17 Jose / TAPASAK DIANA — ticket made wrong (John)
+
+# Estimate-type job names that never count as TGLs even without the literal "TGL"
+# in the name (Costco/marketed estimates don't carry a lead-source link at all, so
+# this list only has to catch accessory/plumbing categories per John).
+_TGL_TYPE_EXCLUDE = ("iaq", "thermostat", "humidifier", "air scrubber", "duct clean",
+                      "plumb", "water heater", "water treatment", "costco")
+
+
+def _is_tgl_type(jtn):
+    """Count-it rule (John, 2026-07-18 / commit e6d0098): a lead-LINKED estimate is
+    a TGL even when the booker forgot the "TGL" job type — only accessory/plumbing/
+    Costco estimate types stay excluded. Mirrors livefeed_sync.fetch_today()."""
+    if not jtn.startswith("Estimate"):
+        return False
+    l = jtn.lower()
+    if "tgl" not in l and any(x in l for x in _TGL_TYPE_EXCLUDE):
+        return False
+    return True
+
+
+def _parse_dt(s):
+    """ServiceTitan UTC timestamp -> aware Pacific datetime (matches livefeed_sync's
+    parse_utc so appointment-day comparisons use the tech's actual calendar day, not
+    the runner's OS timezone -- GitHub Actions runs in UTC, not Vegas time)."""
+    if not s:
+        return None
+    from datetime import datetime as _dt, timezone as _tz
+    try:
+        dt_ = _dt.fromisoformat(s.replace("Z", "+00:00"))
+        return dt_.astimezone(_PACIFIC) if _PACIFIC else dt_.astimezone(_tz.utc)
+    except ValueError:
+        return None
+
+
 def _entity_tgls_today(today):
     """John's rule (2026-07-16): a TGL counts on the day its TICKET IS CREATED —
-    including follow-up turnovers on calls that ran earlier. The TGLs-Created
-    report can't express that via the API (LeadCreated comes back empty and
-    DateType filters on the call's ScheduledDate), so count lead JOBS from the
-    entity API: created today, job type in the "Estimate … TGL" family, with the
-    dup-ticket rule (canceled leads on a multi-lead call are duplicates; a lone
-    canceled lead is a real canceled TGL and still counts as created).
+    including follow-up turnovers on calls that ran earlier — OR, per the flip-day
+    rule (John, 2026-07-18), the day the TECH RAN the source call for a lead that
+    was pre-typed in the prior few days (parity with livefeed_sync.fetch_today()).
+    The TGLs-Created report can't express either lens via the API (LeadCreated
+    comes back empty and DateType filters on the call's ScheduledDate), so count
+    lead JOBS from the entity API directly, with the dup-ticket rule (canceled
+    leads on a multi-lead call are duplicates; a lone canceled lead is a real
+    canceled TGL and still counts as created).
     Returns (total, {tech_full_name: count}, {source_call_job_ids today's TGLs point
     at (str)}, {tech_full_name: {source_call_job_ids} for that tech's TGLs today}).
     The source-call sets let the caller count a TGL's source call as "ran" the
@@ -324,10 +365,12 @@ def _entity_tgls_today(today):
     (John's rule, 2026-07-21) -- via a set union so a call that later shows up in
     the normal today-calls report is never double-counted."""
     import st_client as st
-    from datetime import datetime as _dt, time as _time, timezone as _tz
+    from datetime import datetime as _dt, date as _date, time as _time, timezone as _tz, timedelta as _td
 
-    day0 = _dt.combine(_dt.strptime(today, "%Y-%m-%d").date(), _time.min
-                       ).astimezone(_tz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    today_date = _dt.strptime(today, "%Y-%m-%d").date()
+    _tzinfo = _PACIFIC or _tz.utc   # Pacific midnight boundary, not the runner's OS tz (UTC on Actions)
+    day0 = _dt.combine(today_date, _time.min, tzinfo=_tzinfo).astimezone(_tz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    day0_minus4 = _dt.combine(today_date - _td(days=4), _time.min, tzinfo=_tzinfo).astimezone(_tz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     def paged(path, params):
         page = 1
@@ -340,15 +383,63 @@ def _entity_tgls_today(today):
 
     jts = {x["id"]: x.get("name", "") for x in paged("/jpm/v2/tenant/{tenant}/job-types", {})}
     oneoff_exclusions = _load_tgl_oneoff_exclusions()
+
+    # Same-day lens: lead ticket created today.
     leads = []
     for lj in paged("/jpm/v2/tenant/{tenant}/jobs", {"createdOnOrAfter": day0}):
         gls = lj.get("jobGeneratedLeadSource") or {}
         jtn = jts.get(lj.get("jobTypeId")) or ""
+        src = gls.get("jobId")
+        if not src or not _is_tgl_type(jtn):
+            continue
+        if str(lj.get("jobNumber", "")) in NOT_A_TGL:
+            continue
         if str(lj.get("jobNumber", "")) in oneoff_exclusions:
             continue  # one-off manual exclusion (John) — see tgl_oneoff_exclusions.json
-        if gls.get("jobId") and jtn.startswith("Estimate") and "TGL" in jtn:
-            leads.append({"src": gls["jobId"], "emp": gls.get("employeeId"),
-                          "can": lj.get("jobStatus") == "Canceled"})
+        leads.append({"src": src, "emp": gls.get("employeeId"),
+                     "can": lj.get("jobStatus") == "Canceled"})
+
+    # Flip-day lens (John, 2026-07-18): a PRE-BOOKED lead counts on the day the
+    # TECH ran the source call and flipped it, not the day the ticket was typed.
+    # Candidates are leads created in the prior ~4 days whose source call has an
+    # appointment TODAY and had none on the day the lead was created (a same-day
+    # lead is already counted above — dedupe by source-call job id).
+    _seen_srcs = {L["src"] for L in leads}
+    for lj in paged("/jpm/v2/tenant/{tenant}/jobs",
+                    {"createdOnOrAfter": day0_minus4, "createdBefore": day0}):
+        gls = lj.get("jobGeneratedLeadSource") or {}
+        jtn = jts.get(lj.get("jobTypeId")) or ""
+        src = gls.get("jobId")
+        if not src or src in _seen_srcs:
+            continue
+        if not _is_tgl_type(jtn):
+            continue
+        if str(lj.get("jobNumber", "")) in NOT_A_TGL:
+            continue
+        if str(lj.get("jobNumber", "")) in oneoff_exclusions:
+            continue  # one-off manual exclusion (John) — see tgl_oneoff_exclusions.json
+        try:
+            r = st.api_get("/jpm/v2/tenant/{tenant}/appointments",
+                           {"jobId": src, "pageSize": 50})
+            appts_src = r.get("data", [])
+        except Exception:
+            continue
+        _days = set()
+        for a in appts_src:
+            ad = _parse_dt(a.get("start"))
+            if ad:
+                _days.add(ad.date())
+        cdt = _parse_dt(lj.get("createdOn"))
+        is_flip_today = (today_date in _days) and not (cdt and cdt.date() in _days)
+        if not is_flip_today:
+            continue
+        leads.append({"src": src, "emp": gls.get("employeeId"),
+                     "can": lj.get("jobStatus") == "Canceled"})
+        _seen_srcs.add(src)
+
+    # Dup-ticket rule (John, 2026-07-13): several leads on ONE call where some are
+    # canceled = the canceled ones are duplicate tickets, not TGLs — drop them.
+    # A lone canceled lead is a REAL canceled TGL and stays.
     by_src = {}
     for L in leads:
         by_src.setdefault(L["src"], []).append(L)
