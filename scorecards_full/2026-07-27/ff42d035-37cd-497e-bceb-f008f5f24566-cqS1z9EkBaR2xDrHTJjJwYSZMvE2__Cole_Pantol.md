@@ -7,29 +7,29 @@ RecId: ff42d035-37cd-497e-bceb-f008f5f24566-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
 
 ## FSG Scoring
 
-- **Welcome**: Solid - Greeted customer and explained he was there to check the emergency repair
-- **Assessment**: Solid - Performed system check and confirmed repair was holding
-- **Decision**: Weak - No reconnection to ongoing concerns; minimal discussion of future options or maintenance
-- **Deliver**: Moderate - Confirmed repair status but no explanation of what could prevent future emergencies
+- **Welcome**: Strong - Friendly greeting and clear purpose for visit
+- **Assessment**: Strong - Checked system performance post-repair
+- **Decision**: Weak - Customer expressed anxiety about stressing system; tech did not offer maintenance plan or follow-up options
+- **Deliver**: Moderate - Confirmed repair status but no guidance on future prevention
 
 ## Critical Actions
 
-- **Expectations**: ❌ No expectations set for ongoing support or maintenance
-- **Questions**: ✅ Asked about system performance since repair
-- **Options**: ❌ No options for ongoing service or maintenance plans offered
-- **Objections**: ❌ No objections encountered or handled
+- **Expectations**: ✅ Set clear expectation about the visit purpose
+- **Questions**: ✅ Asked how system has been performing
+- **Options**: ❌ No options for maintenance or preventive service offered
+- **Objections**: ❌ Did not address customer's anxiety about system
 
 ## Outcome
 
-- **Result**: no-close
-- **Evidence**: Follow-up inspection only; no new sale or service agreement discussed
+- **Result**: unknown
+- **Evidence**: Follow-up inspection only; no clear TGL or conversion indication
 
 ## Top Gaps
 
-1. **Missed opportunity for maintenance** - System just repaired from emergency; ideal time to discuss preventive service
-2. **No reconnection** - Did not reconnect to customer's cost/downtime from emergency event
-3. **All small talk** - Call consumed by casual conversation without pivoting to customer needs
+1. **Missed maintenance opportunity** - Customer nervous about system; ideal time for preventive service pitch
+2. **No reconnection** - Did not tie back to cost of emergency repairs vs preventive investment
+3. **Anxiety unaddressed** - Customer's concern about "stressing the system" was left unresolved
 
-## Notes
+## Coaching Notes
 
-Data corruption noted in transcript lines 1688–1770 (Korean text and corrupted fragments). Scoring based on pre-corruption section only.
+When customer said they're worried about stressing the system: "That's exactly why we should put you on a maintenance plan. Regular check-ups catch issues before they become emergencies. Much less stress—and cost—than another Saturday night call like Friday. Want to set up a plan?"
