@@ -1,3 +1,10 @@
 {
-  "668131125": {"reason": "counted 2026-07-21 (source call ran 7/21; ticket typed 7/22 morning)", "added": "2026-07-22"}
+ "668131125": {
+  "reason": "counted 2026-07-21 (source call ran 7/21; ticket typed 7/22 morning)",
+  "added": "2026-07-22"
+ },
+ "669014089": {
+  "reason": "remade ticket (Brandon Moreno, TGL FROM BRANDON TO ROB) \u2014 do not count 2026-07-26; John manual adjustment",
+  "added": "2026-07-26"
+ }
 }
