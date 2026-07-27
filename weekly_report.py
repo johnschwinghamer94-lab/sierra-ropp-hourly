@@ -86,6 +86,30 @@ def week(start, end):
 lw, per = week(*LW)
 pw, _ = week(*PW)
 
+# ---- monthly TGL budget (mirrors the dashboard Overview budget box) ----
+# Set each month's target here ("YYYY-MM": tgls); a month with no entry
+# estimates ~23 flips per budget day and is labeled (EST.)
+TGL_BUDGETS = {"2026-07": 530}
+import calendar, math
+_dim = calendar.monthrange(run.year, run.month)[1]
+bud_days_total = sum(1 for d in range(1, _dim + 1) if date(run.year, run.month, d).weekday() < 5)
+bud_days_left = sum(1 for d in range(run.day, _dim + 1) if date(run.year, run.month, d).weekday() < 5)
+_bkey = f"{run.year}-{run.month:02d}"
+bud_is_set = _bkey in TGL_BUDGETS
+budget = TGL_BUDGETS.get(_bkey, round(23 * bud_days_total))
+# MTD TGLs + calls, same reports/cleaning as the weekly numbers
+_mF, _mT = run.replace(day=1).isoformat(), run.isoformat()
+_mtc = run_rep(REP_TGLS, _mF, _mT); _mti = {n: i for i, n in enumerate(_flds(_mtc))}
+mtd_tgls = sum(1 for r in _mtc["data"] if _vjob(r[_mti["JobNumber"]]))
+_mrv = run_rep(REP_REVENUE, _mF, _mT); _mri = {n: i for i, n in enumerate(_flds(_mrv))}
+_mjobs = [str(r[_mri["JobNumber"]]).strip() for r in _mrv["data"] if _vjob(r[_mri["JobNumber"]])]
+_mclean = _ropp_clean_jobs(set(_mjobs))
+mtd_calls = sum(1 for j in _mjobs if j in _mclean)
+bud_left = max(0, budget - mtd_tgls)
+bud_calls_left = math.ceil(bud_left / (mtd_tgls / mtd_calls)) if mtd_tgls and mtd_calls else None
+bud_proj = round(mtd_tgls * _dim / run.day) if run.day else 0
+bud_on_pace = bud_proj >= budget
+
 # ---------- render ----------
 import matplotlib
 matplotlib.use("Agg")
@@ -139,8 +163,28 @@ row2 = [("FLIP RATE", lw["fliprate"], lw["fliprate"] - pw["fliprate"], True, "%"
 draw_tiles(row1, 0.805, 0.082)
 draw_tiles(row2, 0.710, 0.082)
 
+# budget band — month-to-date vs the monthly TGL budget
+bb_col = GREEN if bud_left == 0 else (BLUE if bud_on_pace else "#c77700")
+axk = fig.add_axes([0.06, 0.652, 0.88, 0.048]); axk.axis("off"); axk.set_xlim(0, 1); axk.set_ylim(0, 1)
+axk.add_patch(FancyBboxPatch((0.0, 0.04), 1.0, 0.92, boxstyle="round,pad=0.0,rounding_size=0.18",
+                             facecolor="#f6f8fc", edgecolor=bb_col, lw=1.3, transform=axk.transAxes))
+_mon = run.strftime("%B").upper()
+axk.text(0.02, 0.66, f"{_mon} TGL BUDGET — {budget}" + ("" if bud_is_set else " (EST.)"),
+         fontsize=9.5, color=INK, fontweight="bold", va="center")
+axk.text(0.02, 0.28, f"{mtd_tgls} booked MTD · {bud_left} still needed", fontsize=8, color=MUT, va="center")
+if bud_left == 0:
+    _need = "BUDGET HIT"
+elif bud_days_left and bud_calls_left is not None:
+    _need = (f"~{math.ceil(bud_calls_left / bud_days_left)} calls/day · "
+             f"~{math.ceil(bud_left / bud_days_left)} flips/day · {bud_days_left} of {bud_days_total} budget days left")
+else:
+    _need = "no budget days left"
+axk.text(0.98, 0.66, _need, fontsize=9.5, color=bb_col, fontweight="bold", va="center", ha="right")
+axk.text(0.98, 0.28, ("on pace" if bud_on_pace else "behind pace") + f" — projected {bud_proj} (budget days = weekdays)",
+         fontsize=8, color=MUT, va="center", ha="right")
+
 # grouped bar: created / ran / sold
-axb = fig.add_axes([0.10, 0.455, 0.85, 0.175])
+axb = fig.add_axes([0.10, 0.450, 0.85, 0.160])
 cats = ["Created", "Ran", "Sold"]
 pv = [pw["created"], pw["ran"], pw["sold"]]; lv = [lw["created"], lw["ran"], lw["sold"]]
 xpos = np.arange(len(cats)); bw = 0.34
@@ -151,7 +195,7 @@ for xi, (p, l) in enumerate(zip(pv, lv)):
     axb.text(xi - bw/2, p + top*0.02, str(p), ha="center", fontsize=8.5, color=MUT)
     axb.text(xi + bw/2, l + top*0.02, str(l), ha="center", fontsize=9, color=INK, fontweight="bold")
 axb.set_xticks(xpos); axb.set_xticklabels(cats, fontsize=10.5, color=INK)
-ftxt(0.10, 0.655, "TGL volume — week over week", 12, INK, "bold", ha="left")
+ftxt(0.10, 0.632, "TGL volume — week over week", 12, INK, "bold", ha="left")
 axb.legend(fontsize=8.5, frameon=False, loc="upper right")
 for sp in ["top", "right", "left"]: axb.spines[sp].set_visible(False)
 axb.tick_params(left=False, labelleft=False, bottom=False); axb.set_ylim(0, top*1.18)
@@ -215,3 +259,5 @@ print("wrote", jout)
 print(f"created {pw['created']}->{lw['created']} sold {pw['sold']}->{lw['sold']} "
       f"close {pw['close']}%->{lw['close']}% flip {pw['fliprate']}%->{lw['fliprate']}% "
       f"cxl {pw['canceled']}->{lw['canceled']}")
+print(f"budget {budget}{'' if bud_is_set else ' (est)'}: {mtd_tgls} booked, {bud_left} needed, "
+      f"{bud_days_left}/{bud_days_total} budget days left")
