@@ -1,0 +1,1052 @@
+TRANSCRIPT
+Rep:      Cole Pantol
+Date:     2026-04-20
+Duration: 31 min
+RecId:    e15a5abd-564c-4760-8944-17837ec416e8-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
+Job:      APPLEBAUM, DAVID, Job # 640519558
+============================================================
+
+
+Customer:
+  Sa.
+  Hello.
+
+Cole Pantol:
+  Good
+  morning.
+  How
+  are
+  you?
+  Good.
+  How
+  are
+  you?
+  Good.
+
+Customer:
+  It's
+  this
+  one
+  in
+  the
+  kitchen.
+  It
+  said,
+
+Cole Pantol:
+  How's
+  the
+  day
+  going?
+
+Customer:
+  Good.
+  How
+  about
+  you?
+
+Cole Pantol:
+  Good.
+
+Customer:
+  How
+  was
+  your
+  weekend?
+
+Cole Pantol:
+  It
+  was.
+  I
+  was
+  moving,
+  so
+  it
+  was
+  hectic.
+  Bunch
+  of
+  fun.
+  Yeah.
+
+Customer:
+  There
+  we
+  go.
+  I
+  thought
+  it
+  said
+  something
+  if
+  I
+  don't
+  want
+  low
+  pressure
+  or
+  something.
+  Is
+  that
+  correct?
+
+Cole Pantol:
+  Said
+  low
+  pressure.
+
+Customer:
+  Well,
+  I
+  thought
+  that
+  when
+  I
+  did
+  diagnostics
+  or
+  something.
+
+Cole Pantol:
+  No
+  problem.
+  How
+  you
+  doing
+  today,
+  sir?
+  Pretty
+  good.
+
+Customer:
+  How
+  about
+  yourself?
+  Good.
+
+Cole Pantol:
+  We'll
+  go
+  take
+  a
+  look
+  at
+  the
+  unit
+  outside.
+  Okay.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  Yeah.
+  So
+  pretty
+  much
+  what
+  these
+  systems
+  have
+  up
+  in
+  the
+  attic
+  and
+  then
+  outside
+  there's
+  a
+  big
+  board
+  that
+  talk
+  back
+  and
+  forth
+  to
+  each
+  other.
+  It
+  looks
+  like
+  they
+  stopped
+  talking
+  to
+  each
+  other.
+  I
+  just
+  got
+  to
+  tell
+  them
+  to
+  talk
+  to
+  each
+  other.
+  So
+  having
+  a
+  little
+  bit
+  of
+  an
+  argument
+  but
+  don't
+  back
+  up.
+  Exactly.
+
+Customer:
+  Yeah.
+  Go
+  through
+  this
+  way.
+  Yeah,
+  we
+  can
+  go
+  this
+  way.
+
+Cole Pantol:
+  Happens
+  every
+  now
+  and
+  then
+  with
+  those,
+
+Customer:
+  you
+  know,
+  with
+  all
+  these
+  technical
+  things.
+  There's
+  always
+  some,
+  you
+  know,
+  somebody
+  gets
+  over
+  with.
+  Tick
+  tock
+  and.
+
+Cole Pantol:
+  Yeah.
+  Thank
+  you.
+  I'll
+  be
+  back
+  in.
+
+Customer:
+  Okay.
+  It's
+  a
+  problem.
+  They
+  weren't
+  talking.
+  You'll
+  find
+  out.
+
+Cole Pantol:
+  That's
+  usually
+  what
+  that
+  code
+  is,
+  but
+  it
+  takes
+  me
+  just
+  a
+  few
+  minutes.
+
+Customer:
+  No,
+  no.
+
+Cole Pantol:
+  Do
+  live
+  on
+  the
+  side
+  of
+  the
+  house
+  or
+  maybe
+  even
+  in
+  the
+  garage.
+  Take
+  a
+  look
+  in
+  the
+  garage
+  real
+  quick.
+
+Customer:
+  Yeah.
+  Okay.
+  And
+  then
+  it
+  might
+  be
+  even
+  on
+  the
+  other
+  side
+  of
+  the
+  house,
+  the
+  garage.
+
+Cole Pantol:
+  I'll
+  do
+  a
+  lap
+  and
+  I'll
+  find.
+  Already
+  all
+  set.
+  Went
+  ahead.
+  I
+  power
+  cycled
+  all
+  three
+  of
+  them.
+  Just
+  because
+  I
+  don't
+  want
+  you
+  to
+  have
+  an
+  issue
+  with
+  the
+  other
+  two.
+  Because
+  this
+  one
+  was
+  doing
+  that.
+  Just
+  tested
+  all
+  three.
+  They
+  all
+  turn
+  on.
+  When
+  that
+  happens,
+  I
+  just
+  gotta
+  kind
+  of
+  trip
+  the
+  breaker,
+  pull
+  out
+  their
+  tower
+  out
+  there,
+  side,
+  turn
+  it
+  back
+  on,
+  put
+  all
+  the
+  power
+  back
+  on
+  again,
+  verify
+  they
+  all
+  turn
+  on.
+  Make
+  sure
+  that
+  we
+  have
+  nothing
+  going
+  on
+  over
+  here.
+  Where
+  it
+  says
+  service
+  urgent
+  and
+  we
+  have
+  no.
+
+Customer:
+  I
+  noticed
+  he
+  has
+  the
+  other
+  two
+  set
+  up
+  still
+  on
+  heating.
+
+Cole Pantol:
+  He
+  has
+  them
+  on
+  the
+  auto,
+  which
+  is
+  heat
+  and
+  cool.
+  It
+  wasn't
+  on
+  there,
+  but
+  I
+  can
+  absolutely
+  put
+  it
+  on
+  there
+  for
+  you.
+
+Customer:
+  Yeah,
+  so
+  it's
+  the
+  same
+  way,
+  heat
+  and
+  cold.
+  Yeah.
+
+Cole Pantol:
+  So
+  if
+  you
+  want
+  to
+  auto,
+
+Customer:
+  I'll
+  be
+  at
+  space
+  now.
+
+Cole Pantol:
+  Yeah.
+  Put
+  it
+  to
+  where
+  it
+  was
+  like,
+  I
+  don't
+  know
+  when
+  I
+  was
+  here.
+  This
+  day
+  was
+  at
+  77.
+  So
+  if
+  you
+  want,
+  we
+  can
+  leave
+  it
+  there.
+  But
+  he
+  has
+  it
+  at
+  75.
+  This
+  is
+  the
+  new
+  ver
+  setup,
+  you
+  go,
+  like,
+  ranch
+  your
+  temperature
+  on
+  you,
+  like
+  at
+  a
+  77.
+  So
+  if
+  it
+  gets
+  too
+  hot,
+  you'll
+  turn
+  the
+  air
+  on.
+  If
+  it
+  gets
+  too
+  cold.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  Be
+  able
+  to
+  come
+  out
+  in,
+  like,
+  the
+  morning.
+  And
+  it's,
+  like,
+  really
+  cold
+  in
+  here.
+  So
+  that'll
+  fix
+  that.
+  So
+  it
+  will
+  always
+  be
+  77.
+
+Customer:
+  Oh,
+  okay.
+
+Cole Pantol:
+  Unless
+  you
+  want
+  that
+  change.
+
+Customer:
+  Yeah.
+  Yeah.
+  Because
+  usually
+  at
+  night,
+  we
+  put
+  it
+  down
+  to
+  74,
+  I
+  think,
+  you
+  know?
+
+Cole Pantol:
+  Okay.
+
+Customer:
+  Yeah.
+
+Cole Pantol:
+  But
+  if
+  you
+  leave
+  it
+  like
+  that,
+  it'll
+  always
+  be
+  at
+  77.
+  And
+  then
+  if
+  you
+  want,
+  you
+  can
+  always
+  just
+  when
+  you
+  go
+  to
+  bed
+  and
+  drop
+  it
+  down
+  to
+  that
+  74.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  It
+  will
+  keep
+  it
+  at
+  that
+  temperature.
+  That
+  way,
+  when
+  you
+  wake
+  up,
+  that's
+  how
+  you.
+
+Customer:
+  Sounds
+  good?
+
+Cole Pantol:
+  Perfect.
+  Sorry
+  I
+  had
+  to
+  come
+  back
+  and
+  take
+  another
+  day
+  of
+  yours.
+
+Customer:
+  No
+  problem.
+  Like
+  I
+  said,
+  we're
+  totally
+  oblivious.
+  No
+  problem.
+
+Cole Pantol:
+  That's
+  what
+  I'm
+  here
+  for.
+  Anything
+  else?
+  You're
+  the
+  expert.
+  Yeah.
+  I'll
+  be
+  your
+  guy
+  from
+  now
+  on.
+  Okay,
+  Good.
+
+Customer:
+  Good.
+  Yes.
+  Hey,
+  David.
+  I
+  said
+  it's
+  all
+  fixed.
+
+Cole Pantol:
+  They
+  weren't
+  talking
+  to
+  each
+  other.
+  Awesome.
+  So
+  there's
+  a
+  board
+  inside
+  of
+  the
+  ac.
+
+Customer:
+  Yeah.
+
+Cole Pantol:
+  And
+  there's
+  a
+  board
+  up
+  in
+  the
+  attic.
+  Sometimes
+  they
+  stop
+  talking
+  to
+  each
+  other.
+  So
+  we
+  just
+  had
+  to
+  tell
+  them
+  to
+  talk
+  to
+  each
+  other
+  again.
+
+Customer:
+  And
+  that
+  was
+  it.
+
+Cole Pantol:
+  They
+  just
+  had
+  a
+  little
+  bit
+  of
+  an
+  argument.
+  Now
+  that
+  they
+  made
+  up,
+  they're
+  good.
+
+Customer:
+  I
+  love
+  it.
+
+Cole Pantol:
+  Yeah.
+
+Customer:
+  Okay.
+  Thank
+  you.
+
+Cole Pantol:
+  But
+  I
+  did
+  it
+  for
+  all
+  three
+  of
+  them.
+  Yeah.
+  I
+  power
+  cycled
+  everything.
+  That
+  way,
+  we're
+  all
+  good.
+  No
+  issues.
+  Okay.
+
+Customer:
+  Terrific.
+
+Cole Pantol:
+  All
+  righty.
+  What's
+  your
+  name?
+  Cole.
+
+Customer:
+  Cole.
+  Oh,
+  you
+  were
+  here.
+
+Cole Pantol:
+  Yeah.
+
+Customer:
+  Yeah.
+
+Cole Pantol:
+  I'll
+  be
+  your
+  guy
+  from
+  now
+  on.
+  When
+  you
+  guys
+  need
+  anything,
+  just
+  let
+  me
+  know.
+
+Customer:
+  Okay?
+  Thank
+  you.
+
+Cole Pantol:
+  No
+  problem.
+  It
+  was
+  nice
+  seeing
+  you
+  again.
+  Okay.
+
+Customer:
+  Likewise.
+
+Cole Pantol:
+  All
+  righty.
+  Take
+  care.
+  You
+  too.
+  Have
+  a
+  nice
+  day.
+
+Customer:
+  Thanks.
+  Thank
+  you
+  so
+  much.
+
+Cole Pantol:
+  Not
+  a
+  problem
+  at
+  all.
+
+Customer:
+  Good
+  luck
+  if
+  you're
+  moving.
+
+Cole Pantol:
+  Thank
+  you.
+
+Customer:
+  I
+  know
+  that's
+  always
+  a
+  chore.
+
+Cole Pantol:
+  Oh,
+  it's
+  always
+  a
+  chore.
+  Moving
+  on
+  with
+  heavy
+  stuff.
+  It.
+  Perfect.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  All
+  righty.
+  We
+  have
+  a
+  nice
+  day,
+  and
+  then
+  you'll
+  see
+  Derek
+  on
+  Thursday.
+
+Customer:
+  Thursday,
+  that's
+  right.
+
+Cole Pantol:
+  Yeah.
+  All
+  righty.
+
+Customer:
+  And
+  we'll
+  see
+  you
+  next
+  year.
+
+Cole Pantol:
+  We'll
+  see
+  me
+  next
+  year.
+  Well,
+  six
+  bucks.
+
+Customer:
+  Yeah.
+
+Cole Pantol:
+  All
+  righty.
+  Have
+  a
+  good
+  one.
+
+Customer:
+  Thank
+  you.
+
+Cole Pantol:
+  No.

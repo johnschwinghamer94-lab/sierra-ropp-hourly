@@ -1,0 +1,2696 @@
+TRANSCRIPT
+Rep:      Cole Pantol
+Date:     2026-04-24
+Duration: 87 min
+RecId:    8c6f6a4e-8f13-4ba9-8967-72440adee6f7-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
+Job:      Cliff - Air Conditioning Maintenance - Compressor High LRA and Heat Cycling Noise
+============================================================
+
+
+Customer:
+  Are
+  you
+  here
+  to
+  do
+  air
+  conditioning
+  or
+  plumbing?
+
+Cole Pantol:
+  I'll
+  be
+  here
+  for
+  the
+  air
+  conditioning.
+
+Customer:
+  Air
+  conditioning.
+  Okay.
+  I'm
+  going
+  to.
+  I'll
+  let
+  you
+  through
+  the
+  garage.
+
+Cole Pantol:
+  Garage,
+  okay.
+  Over
+  there.
+  Right.
+  How
+  you
+  doing,
+  Cliff?
+  Good.
+
+Customer:
+  How
+  are
+  you?
+
+Cole Pantol:
+  Good.
+  My
+  name
+  is
+  Paul.
+  And
+  I'm
+  Sierra.
+
+Customer:
+  Hi,
+  Donna.
+  So
+  the
+  air
+  conditioning
+  is
+  here,
+  and
+  I
+  didn't
+  know,
+  like,
+  what
+  other
+  access
+  you
+  need.
+  So
+  I'll
+  just
+  put
+  the
+  dog
+  in
+  my
+  bedroom.
+  But
+  just
+  let
+  me
+  know.
+
+Cole Pantol:
+  So
+  when
+  we
+  come
+  out,
+  we'll
+  take
+  a
+  look
+  at
+  the
+  outside
+  unit.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  As
+  well
+  as
+  up
+  in
+  the.
+  The
+  attic.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  Or
+  the.
+
+Customer:
+  All
+  right,
+  I'll
+  stick
+  her
+  in
+  my
+  room
+  then.
+
+Cole Pantol:
+  Okay.
+  What
+  kind
+  of
+  dog
+  is
+  she?
+
+Customer:
+  I
+  mean,
+  she's
+  just.
+  She's
+  like
+  a
+  lover,
+  but,
+  like,
+  she's
+  annoying.
+
+Cole Pantol:
+  That's
+  how
+  my
+  name
+  is.
+  I
+  have
+  a.
+  I
+  have
+  a
+  pitbull.
+  And
+  she'll
+  just
+  look
+  at
+  that.
+
+Customer:
+  Yeah.
+
+Cole Pantol:
+  So
+  I'm
+  just
+  like.
+
+Customer:
+  She's
+  more
+  annoying
+  than
+  anything.
+
+Cole Pantol:
+  Gotcha.
+  But
+  looks
+  like
+  we're
+  here
+  to
+  do
+  the
+  pulling
+  maintenance
+  today.
+
+Customer:
+  Yes.
+
+Cole Pantol:
+  Looks
+  like.
+  Looking
+  at
+  the
+  history,
+  we
+  haven't
+  been
+  out
+  here
+  in
+  a
+  little
+  while.
+
+Customer:
+  Yeah,
+  I
+  think
+  it
+  was
+  installed
+  in,
+  like,
+  2018,
+  and
+  then
+  I
+  think
+  I
+  had
+  a
+  problem
+  in
+  2020,
+  maybe
+  like,
+  during
+  COVID
+  time,
+  and
+  they
+  came
+  and
+  fixed
+  something,
+  but
+  other
+  than
+  that,
+  it
+  works
+  fine.
+  Air
+  conditioning
+  works
+  fine.
+  He
+  test
+  the
+  heat,
+  obviously.
+  But
+  heat,
+  like,
+  at
+  night,
+  heat,
+  all
+  of
+  a
+  sudden
+  it'll,
+  like,
+  turn
+  off
+  and
+  make,
+  like,
+  a
+  grinding
+  noise.
+
+Cole Pantol:
+  Okay.
+
+Customer:
+  And
+  then
+  it'll,
+  like,
+  go
+  back
+  on
+  again.
+  And
+  then
+  what
+  I
+  do,
+  it
+  wakes
+  me
+  up.
+  So
+  then
+  when
+  I
+  do
+  it
+  on
+  my
+  phone,
+  I
+  just,
+  like,
+  turn
+  the
+  heat
+  up
+  so
+  it
+  doesn't
+  go
+  back
+  on.
+  You
+  know
+  what
+  I'm
+  saying?
+  I
+  fix
+  it
+  myself.
+  Like.
+  Yeah,
+  that's
+  it.
+
+Cole Pantol:
+  Turn
+  it
+  off.
+  And
+  then
+  when
+  you
+  turn
+  it
+  back
+  on,
+  it
+  goes
+  away.
+
+Customer:
+  Yeah,
+  pretty
+  much.
+  Yeah.
+  I
+  think
+  it,
+  like.
+  I
+  don't
+  know
+  if
+  you
+  can
+  get.
+  I
+  don't
+  know,
+  the
+  heat
+  maybe,
+  like,
+  it
+  gets
+  overheated
+  or
+  something
+  and
+  it
+  shuts
+  down
+  or
+  something.
+  I
+  don't
+  know.
+
+Cole Pantol:
+  I
+  can
+  definitely
+  take
+  a
+  look
+  at
+  that
+  while
+  I'm
+  up
+  there.
+  Okay.
+  Because
+  a
+  lot
+  of
+  the
+  components
+  we
+  use
+  for
+  AC
+  also
+  get
+  used
+  for
+  heat
+  as
+  well.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  But
+  absolutely.
+  You
+  don't
+  mind
+  if
+  I
+  just
+  go
+  over
+  this
+  with
+  you?
+
+Customer:
+  Sure.
+
+Cole Pantol:
+  This
+  is
+  just
+  the
+  expectations
+  for
+  the
+  call.
+  The
+  first
+  portion
+  here
+  is
+  just
+  taking
+  a
+  look
+  around,
+  a
+  little
+  bit
+  of
+  a
+  tour,
+  just
+  seeing
+  where
+  everything's
+  located.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  No.
+  Step
+  into
+  my
+  thorough
+  evaluation.
+  Looking
+  for
+  safety,
+  cleaning,
+  and
+  Proper
+  operation.
+  If
+  anything
+  down
+  those
+  standards.
+  You
+  want
+  me
+  to
+  let
+  you
+  know
+  about
+  that?
+
+Customer:
+  I
+  mean,
+  sure.
+
+Cole Pantol:
+  In
+  the
+  event
+  anything
+  is
+  out
+  of
+  the
+  ordinary
+  or
+  create
+  some
+  options
+  out
+  in
+  the
+  bank.
+  We
+  don't
+  do
+  any
+  work
+  without
+  your
+  approval.
+  We
+  get
+  that
+  approval,
+  we'll
+  get
+  started
+  today.
+  But
+  while
+  we're
+  here
+  to
+  give
+  you
+  a
+  five
+  star.
+  Okay.
+  All
+  right.
+  How
+  long
+  you
+  been
+  at
+  home?
+
+Customer:
+  Since
+  you
+  guys.
+
+Cole Pantol:
+  18.
+  Okay.
+  Is
+  that
+  when
+  this
+  was
+  built
+  or
+  is
+  it
+  old?
+
+Customer:
+  Oh,
+  my
+  God.
+  No,
+  this
+  is
+  like
+  30
+  something
+  years
+  old.
+
+Cole Pantol:
+  Okay.
+  All
+  right.
+
+Customer:
+  Yeah,
+  like
+  built
+  like
+  89
+  or
+  90.
+
+Cole Pantol:
+  Got.
+  Okay.
+  It's
+  a
+  beautiful
+  neighborhood,
+  Nice
+  and
+  quiet.
+
+Customer:
+  So.
+  Yeah,
+  I
+  have
+  a
+  pool
+  and
+  like,
+  if
+  you
+  lay
+  in
+  the
+  pool,
+  you
+  don't
+  hear
+  anything.
+  Like
+  it's
+  like
+  you
+  hear
+  a
+  pin
+  drop.
+  It's
+  like
+  it's
+  such
+  a
+  quiet
+  neighborhood.
+
+Cole Pantol:
+  That's
+  pretty
+  relaxing.
+  Can't
+  be
+  that,
+  right?
+
+Customer:
+  Huh?
+
+Cole Pantol:
+  It
+  can't
+  be
+  that.
+
+Customer:
+  Yeah,
+  exactly.
+  Driveway.
+
+Cole Pantol:
+  Are
+  you
+  from
+  Vegas?
+
+Customer:
+  No,
+  Jersey.
+
+Cole Pantol:
+  Oh,
+  New
+  York.
+
+Customer:
+  Oh,
+  okay.
+  What
+  part?
+
+Cole Pantol:
+  Oh,
+  Long
+  island.
+
+Customer:
+  Long
+  island.
+  Okay.
+
+Cole Pantol:
+  Well,
+  this
+  is
+  fairy
+  ride
+  away.
+
+Customer:
+  Yes.
+
+Cole Pantol:
+  What
+  brought
+  you
+  out
+  here?
+
+Customer:
+  Work
+  the
+  government?
+  Yeah,
+  I
+  work
+  for
+  the
+  government.
+
+Cole Pantol:
+  Oh,
+  very
+  cool.
+
+Customer:
+  Yeah.
+  And
+  then
+  I
+  have
+  also
+  the
+  bumming
+  guys
+  today
+  coming
+  too,
+  from
+  Sierra
+  because
+  they
+  put
+  new
+  water
+  heater
+  in
+  about
+  two
+  months
+  ago
+  and
+  never
+  came
+  back
+  to
+  certify
+  it,
+  you
+  know.
+
+Cole Pantol:
+  Oh,
+  for
+  the
+  inspection.
+
+Customer:
+  Yeah.
+  So
+  they're
+  due
+  to
+  come
+  back.
+  They're
+  due
+  to
+  come
+  today
+  too.
+  I
+  was
+  like,
+  let
+  me
+  get
+  you
+  guys.
+  Like
+  I'm
+  off
+  today.
+
+Cole Pantol:
+  So
+  I'm
+  like,
+  let's
+  get
+  it
+  all
+  done.
+  Yeah,
+  I'll
+  worry
+  about
+  it.
+  Right.
+
+Customer:
+  Hopefully
+  how.
+
+Cole Pantol:
+  How
+  that
+  experience
+  without
+  treating
+  you,
+  I
+  mean,
+  it's
+  great.
+
+Customer:
+  Yeah.
+  I
+  mean,
+  the
+  only
+  issue
+  I
+  have
+  is
+  that
+  in
+  the
+  winter.
+  Well,
+  it's
+  kind
+  of.
+  I.
+  I
+  haven't
+  used
+  this
+  one
+  in
+  the
+  winter,
+  but
+  like
+  my
+  bedroom
+  in
+  the
+  back,
+  it
+  takes
+  like
+  15
+  minutes
+  to
+  get
+  hot
+  water
+  back
+  there
+  in
+  the
+  winter.
+  That's
+  it.
+  That's
+  the
+  only
+  problem.
+  Other
+  than
+  that
+  it's
+  fine.
+
+Cole Pantol:
+  I
+  can
+  always
+  let
+  them
+  know
+  when
+  they.
+  When
+  they
+  come
+  out.
+  Just
+  giving
+  their
+  little
+  once
+  over.
+  They
+  can
+  check
+  in
+  that.
+
+Customer:
+  Yeah,
+  I
+  turned
+  it
+  up.
+  Like
+  I
+  turned
+  up.
+  The
+  temperature
+  in
+  that
+  back
+  bedroom
+  does
+  not.
+
+Cole Pantol:
+  Just
+  doesn't
+  reach.
+
+Customer:
+  No,
+  it
+  doesn't
+  reach.
+  It's
+  not
+  like
+  it's
+  a
+  big
+  house.
+  It
+  just
+  doesn't
+  reach.
+  So
+  other
+  than
+  that.
+  But
+  when
+  you
+  turn
+  on
+  it
+  hot
+  in
+  the
+  kitchen,
+  it's
+  like.
+
+Cole Pantol:
+  So
+  is
+  the
+  kitchen
+  right,
+  right
+  there?
+
+Customer:
+  No,
+  the
+  kitchen's
+  on
+  the
+  other
+  side.
+  But
+  it's
+  just
+  so
+  hot.
+  So
+  I
+  can
+  like
+  warn
+  people.
+  Like,
+  hey,
+  I'm
+  just
+  gonna
+  let
+  you
+  know
+  it's
+  like
+  getting
+  super
+  hot.
+  But
+  like
+  it's
+  only
+  cuz
+  I
+  have
+  to
+  pack
+  in
+  the
+  pot
+  with
+  a
+  friend
+  a
+  shower.
+
+Cole Pantol:
+  I
+  mean,
+  I
+  don't
+  blame
+  you
+  for
+  that.
+  Taking
+  a
+  cold
+  shower
+  is
+  not
+  that
+  good
+  of.
+
+Customer:
+  No,
+  not
+  at
+  all.
+  Unless
+  you
+  really
+  want
+  to.
+
+Cole Pantol:
+  Yeah.
+  But
+  yeah,
+  if
+  you
+  don't
+  mind,
+  just
+  show
+  me
+  where
+  the
+  attic
+  is.
+
+Customer:
+  Okay.
+  Let
+  me
+  get
+  her
+  in
+  the
+  bedroom.
+
+Cole Pantol:
+  Okay.
+
+Customer:
+  She's
+  annoying.
+
+Cole Pantol:
+  Quit.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  All
+  right.
+
+Customer:
+  Yes.
+
+Cole Pantol:
+  That's
+  your
+  name?
+  Harley
+  quinn.
+
+Customer:
+  Harley
+  quinn.
+
+Cole Pantol:
+  That's
+  cool.
+
+Customer:
+  So
+  the
+  attics
+  right
+  here.
+
+Cole Pantol:
+  Your
+  filters.
+
+Customer:
+  Yeah,
+  but
+  the
+  attic.
+  Oh,
+  that's
+  how
+  they
+  went
+  in.
+  Shoot,
+  then
+  I
+  gotta
+  move
+  her.
+
+Cole Pantol:
+  Hold
+  on.
+  No
+  problem.
+
+Customer:
+  Let
+  me
+  move
+  her.
+  Come
+  here,
+  baby.
+  Let
+  me
+  move
+  her
+  somewhere
+  else.
+  Because
+  I'm
+  like
+  taking
+  character.
+  So
+  that's
+  how
+  they
+  did
+  it.
+
+Cole Pantol:
+  Okay.
+
+Customer:
+  I
+  didn't
+  even
+  think
+  about
+  this.
+  It's
+  really
+  hard
+  to
+  get
+  anywhere
+  that.
+
+Cole Pantol:
+  Gotcha.
+
+Customer:
+  So
+  I
+  can
+  move.
+  I
+  can
+  move
+  this
+  out.
+  I
+  can
+  move
+  this
+  out.
+  But
+  that's
+  it.
+  Because
+  they
+  did
+  it
+  through
+  that
+  hole.
+  That's
+  how
+  they
+  did
+  it.
+
+Cole Pantol:
+  They
+  went
+  through
+  the.
+  The
+  filters.
+
+Customer:
+  Well,
+  because
+  it
+  was
+  small
+  and
+  they
+  made
+  it
+  huge.
+  So
+  they
+  never
+  even
+  accessed
+  here.
+  I
+  don't
+  even
+  think
+  that's
+  it.
+  That's
+  what
+  I
+  was
+  thinking.
+  Like
+  they
+  never
+  in
+  here.
+
+Cole Pantol:
+  Did
+  they
+  go
+  through
+  there
+  during
+  like
+  the
+  install
+  on
+  the
+  new
+  year?
+  The
+  maintenance
+  is
+  as
+  well
+  wall.
+
+Customer:
+  Well,
+  never
+  any
+  maintenance,
+  just
+  the
+  install.
+  The
+  install
+  was.
+  They
+  did
+  it
+  through
+  that.
+  Through
+  there?
+  Yeah,
+  all
+  through
+  that.
+  So.
+  But
+  you'll
+  have
+  to
+  do
+  this.
+  But
+  it's.
+
+Cole Pantol:
+  Well,
+  I
+  got
+  a.
+  I
+  got
+  a
+  layer
+  that
+  I
+  could
+  try
+  out.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  Okay.
+
+Customer:
+  All
+  right.
+  Yeah,
+  I'll
+  just
+  pull
+  it.
+
+Cole Pantol:
+  This
+  is
+  the
+  second.
+  This
+  is
+  the
+  last
+  part
+  I
+  do.
+  I
+  usually
+  stand
+  outside.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  I
+  mean
+  honestly,
+  the
+  only
+  thing
+  that
+  looks
+  like
+  that
+  we
+  might
+  need
+  to
+  move
+  is
+  that
+  shoe
+  rack.
+  That's
+  really
+  it.
+
+Customer:
+  Yeah.
+  Okay.
+
+Cole Pantol:
+  Yeah.
+
+Customer:
+  All
+  right.
+  Nobody's
+  probably
+  access
+  that.
+
+Cole Pantol:
+  Gotcha.
+  I'll
+  do
+  the
+  first.
+  I'll.
+
+Customer:
+  Okay.
+  Yeah.
+  I
+  totally
+  forgot.
+  Cuz
+  that's
+  how
+  they
+  were
+  entering
+  and
+  exiting
+  and
+  did
+  everything
+  and
+  they
+  realized.
+
+Cole Pantol:
+  Yeah.
+
+Customer:
+  So
+  I
+  wasn't
+  even
+  thinking.
+
+Cole Pantol:
+  Gotcha.
+  No
+  problem.
+  It's
+  out
+  of
+  sight,
+  out
+  of
+  mind
+  for
+  a
+  reason,
+  you
+  know?
+
+Customer:
+  Yeah,
+  exactly.
+  I
+  have
+  no
+  reason
+  to
+  go
+  out
+  there.
+
+Cole Pantol:
+  But
+  other
+  than
+  that,
+  I
+  mean,
+  what's
+  the
+  ultimate
+  goal
+  today?
+  What
+  are
+  we
+  looking
+  to
+  accomplish
+  with
+  the
+  maintenance?
+
+Customer:
+  Oh,
+  just
+  to
+  make
+  sure
+  it's
+  working.
+
+Cole Pantol:
+  Gotcha.
+
+Customer:
+  Like
+  up
+  to
+  Speed.
+
+Cole Pantol:
+  Yeah.
+  Make
+  sure
+  you're
+  good
+  for
+  the
+  summer.
+  Absolutely.
+
+Customer:
+  I
+  mean,
+  so
+  far
+  I've
+  had
+  no
+  problems.
+  It's
+  working.
+  I.
+  I
+  don't
+  like
+  air
+  conditioning,
+  but
+  I
+  only
+  put
+  it
+  on
+  at
+  night,
+  just,
+  you
+  know,
+  just
+  to
+  sleep.
+  Yeah,
+  I.
+  During
+  the
+  day,
+  it's
+  at
+  80.
+
+Cole Pantol:
+  Got
+  you.
+
+Customer:
+  Okay.
+  Yeah,
+  I
+  don't
+  really
+  like
+  it.
+
+Cole Pantol:
+  Well,
+  I'll
+  have
+  to
+  have
+  it
+  on
+  for.
+  While
+  on
+  here.
+
+Customer:
+  Just.
+  Fine.
+  That's
+  fine.
+  No
+  problem.
+
+Cole Pantol:
+  But
+  where
+  would
+  that.
+
+Customer:
+  Oh,
+  it's
+  right
+  here.
+
+Cole Pantol:
+  Don't
+  worry.
+  It
+  won't
+  get
+  that
+  cold
+  in
+  here.
+  Let's
+  just
+  put
+  it
+  in
+  the
+  high
+  speed.
+  Do
+  you
+  have
+  any
+  questions
+  for
+  me
+  before
+  we
+  go
+  ahead
+  and
+  get
+  started?
+
+Customer:
+  Yeah,
+  no,
+  I'll
+  clean
+  up
+  that
+  closet.
+
+Cole Pantol:
+  Got
+  you.
+  No
+  problem.
+  Well,
+  I'll
+  go
+  ahead
+  and
+  get
+  started
+  on
+  the
+  outside
+  unit
+  first.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  Is
+  it
+  okay
+  just
+  to
+  come
+  back
+  in
+  or.
+
+Customer:
+  Just
+  come
+  back
+  in
+  now
+  that
+  she's
+  secure
+  and
+  I
+  have
+  a
+  cat.
+  But
+  she
+  probably
+  already
+  hid,
+  so
+  she's
+  not
+  a
+  climber.
+  Yeah,
+  no,
+  she's
+  not.
+  You're
+  good.
+
+Cole Pantol:
+  All
+  right,
+  It.
+  Your
+  call.
+
+Customer:
+  Hemping.
+
+Cole Pantol:
+  It's.
+  It's.
+  What's
+  up?
+  Hey,
+  what's
+  up,
+  Alex?
+  Do
+  I
+  want
+  you
+  Got
+  a
+  question
+  for
+  you.
+  I'm
+  at
+  a
+  house.
+  We
+  haven't
+  been
+  here
+  since
+  we
+  did
+  the
+  install.
+  The
+  attic
+  access
+  is.
+  Looks
+  very
+  difficult
+  to
+  get
+  into.
+  She
+  said
+  the
+  guy
+  that
+  usually
+  came
+  out
+  to
+  do
+  the
+  install
+  went
+  into
+  the
+  filters.
+  Okay.
+  How
+  would
+  one
+  go
+  in
+  through
+  the
+  filters,
+  Pull
+  the
+  filters
+  out
+  and
+  see
+  if
+  there's
+  an
+  entrance.
+  I
+  mean,
+  wouldn't
+  there
+  be
+  a
+  duct
+  there?
+  I
+  don't
+  want
+  to
+  take
+  a
+  look.
+  Yeah,
+  I
+  mean,
+  if
+  there
+  is
+  a
+  duct,
+  I
+  mean,
+  can
+  we
+  detach
+  that?
+  No.
+  Right.
+  I
+  mean,
+  I'm.
+  Personally,
+  I
+  wouldn't.
+  Okay.
+  How
+  old
+  is
+  it?
+  Eight
+  years
+  old.
+  He's
+  never
+  had
+  a.
+
+Customer:
+  Maintenance
+  there.
+
+Cole Pantol:
+  She's
+  never
+  had
+  maintenance
+  on
+  that.
+  And
+  there's
+  no
+  attic
+  access?
+  No,
+  there's
+  an
+  attic
+  access,
+  but
+  she
+  put
+  California
+  closets
+  up
+  there
+  and
+  into.
+  Into
+  the
+  wall,
+  so
+  it
+  covers
+  the
+  majority
+  of
+  the
+  excess.
+  I
+  mean,
+  I
+  wouldn't
+  detach
+  from
+  D.
+  Okay,
+  I'm
+  calling
+  you
+  because
+  I
+  can't
+  get
+  a
+  hold
+  of
+  John,
+  so.
+  Okay.
+  After
+  you
+  reimagine
+  it,
+  you
+  know.
+  Yeah,
+  that's
+  why
+  I'm
+  just
+  trying
+  to
+  figure
+  it
+  out
+  right
+  now.
+  It
+  also
+  seems
+  like
+  the
+  system
+  has
+  a
+  leak,
+  so
+  I
+  gotta
+  get
+  up.
+  There's
+  no
+  leak
+  belts
+  in
+  the
+  closet.
+  I
+  mean,
+  I'm
+  gonna.
+  I'm
+  gonna
+  try
+  right
+  now,
+  but
+  even
+  she
+  was
+  like,
+  I've
+  Never
+  had
+  anyone
+  go
+  up
+  this
+  way.
+  So
+  I'm
+  gonna
+  try.
+  If
+  not,
+  I
+  guess
+  I'll
+  see
+  if
+  there's
+  access
+  and
+  filters,
+  but
+  I'll
+  get
+  through.
+  Okay.
+  All
+  right.
+  Well,
+  yeah,
+  I
+  was
+  telling
+  you
+  it
+  was
+  a
+  pretty
+  good
+  arm,
+  so
+  thank
+  you.
+  Bye.
+  Outside.
+  Party.
+  All
+  finished
+  up.
+  Let's
+  get
+  up
+  there.
+  A
+  little
+  tight
+  squeeze
+  what
+  I
+  got
+  up
+  there.
+  Need
+  a
+  few
+  seconds
+  to
+  go.
+
+Customer:
+  Sure.
+
+Cole Pantol:
+  So
+  going
+  on
+  with
+  the
+  system
+  was
+  the
+  compressor
+  here.
+  Compressor
+  has
+  an
+  lra.
+  How
+  much
+  power
+  I
+  can
+  pull
+  when
+  it
+  starts
+  at
+  152.
+  Let's
+  pull
+  in
+  163.
+  So
+  it's
+  holding
+  a
+  little
+  bit
+  too
+  much
+  power,
+  which
+  over
+  time
+  a
+  little
+  bit
+  of
+  stress
+  in
+  the
+  motor.
+  It's
+  not
+  something
+  that
+  needs
+  to
+  be
+  immediately.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  Something
+  I
+  will
+  away
+  keep
+  our
+  boats
+  come
+  out.
+  We
+  can
+  take
+  a
+  look
+  at
+  it.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  That's
+  something
+  that's
+  all
+  going
+  on
+  with
+  the
+  system.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  It's
+  all
+  cleaned
+  up,
+  took
+  measurements.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  But
+  yeah.
+
+Customer:
+  Okay
+  about
+  it.
+  Okay.
+
+Cole Pantol:
+  As
+  far
+  as
+  the
+  sound,
+  I
+  couldn't
+  recreate
+  the
+  sound
+  when
+  I
+  was
+  up
+  there.
+  I
+  didn't
+  see
+  anything
+  going
+  on
+  with
+  the
+  actual
+  outside.
+  It's
+  outside.
+  Okay.
+
+Customer:
+  Yeah.
+  It
+  wasn't
+  up
+  there.
+  Yeah.
+
+Cole Pantol:
+  Is
+  it
+  when
+  it
+  like
+  turns
+  on
+  and
+  turns
+  off?
+  No.
+
+Customer:
+  So
+  like
+  it'll
+  be
+  running
+  for
+  a
+  while.
+  I
+  actually
+  hear
+  other
+  people.
+  People's
+  in
+  the
+  neighborhood
+  doing
+  it
+  too.
+  So
+  like
+  it's
+  running
+  for
+  a
+  while
+  and
+  then
+  it
+  just
+  like
+  stops
+  and
+  makes
+  like
+  almost
+  like
+  a
+  belt
+  noise.
+  Like
+  a
+  belt
+  noise.
+
+Cole Pantol:
+  Do
+  you
+  have
+  a
+  two
+  stage
+  system?
+  So
+  you
+  have
+  a
+  high
+  speed
+  and
+  a
+  low
+  speed.
+  That's
+  it
+  changing
+  its
+  speed
+  down
+  below.
+  Say
+  if
+  it's
+  like
+  it
+  only
+  does
+
+Customer:
+  it
+  on
+  heat
+  though,
+  not
+  air.
+
+Cole Pantol:
+  Interesting.
+
+Customer:
+  Yeah.
+  I've
+  never
+  heard
+  it
+  on
+  the
+  air
+  conditioning
+  because
+  it
+  literally
+  will
+  wake
+  me
+  up
+  at
+  night.
+  Like
+  it'll
+  go
+  like,
+  it'll
+  like
+  go
+  down
+  and
+  then
+  it's
+  like
+  stops
+  and
+  then
+  I
+  hear
+  it
+  starting
+  up
+  again.
+  Yep.
+
+Cole Pantol:
+  Yeah,
+  yeah,
+  that's
+  it.
+  Going
+  from
+  60%
+  of
+  speed
+  all
+  the
+  way
+  up
+  to
+  100%.
+
+Customer:
+  Oh,
+  okay.
+
+Cole Pantol:
+  So
+  if
+  you
+  keep
+  it
+  within
+  2
+  degree.
+  So
+  say
+  it's
+  74
+  in
+  here
+  and
+  you
+  drop
+  it
+  down
+  to
+  72.
+
+Customer:
+  Yeah.
+
+Cole Pantol:
+  That's
+  when
+  it'll
+  be
+  in
+  close
+  speed.
+  Anything
+  after
+  that,
+  it'll
+  be
+  open
+  in
+  five
+  seconds.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  Just
+  trying
+  to
+  pool
+  or.
+
+Customer:
+  Oh,
+  okay.
+  All
+  right.
+  And
+  then
+  this
+  service
+  is
+  like
+  two
+  times
+  a
+  year
+  or
+  is
+  it
+  like
+
+Cole Pantol:
+  two
+  times
+  a
+  year?
+  Once
+  for
+  plumbing.
+  And
+  if
+  you
+  ever
+  have
+  like
+  a.
+  An
+  issue
+  where
+  it's
+  not
+  running
+  you
+  get
+  an
+  emergency
+  visit
+  for
+  free
+  as
+  well.
+
+Customer:
+  Okay.
+  All
+  right,
+  well,
+  I'm
+  planning
+  on
+  leaving
+  like
+  May
+  next
+  year.
+  So
+  I
+  was
+  like,
+  that's
+  fine.
+  I
+  just
+  want
+  to
+  like
+  make
+  sure
+  things.
+  Things
+  are
+  good
+  before
+  I
+  get
+  out
+  of
+  here.
+
+Cole Pantol:
+  Absolutely.
+  Two
+  signatures
+  from
+  you.
+  First
+  one
+  states
+  that
+  I
+  came
+  out,
+  did
+  that
+  maintenance
+  for
+  you.
+
+Customer:
+  Okay.
+
+Cole Pantol:
+  Second
+  one
+  just
+  states
+  I
+  wasn't
+  screaming,
+  I
+  was
+  yelling
+  at
+  a
+  bunch
+  and
+  I
+  was
+  like,
+  okay,
+  but
+  you're
+  all
+  set.
+  Okay.
+  And
+  then
+  just
+  to
+  make
+  sure
+  I
+  have
+  an
+  email.
+
+Customer:
+  Yeah.
+
+Cole Pantol:
+  Which
+  all
+  done
+  on
+  a
+  hiding
+  other
+  than
+  I'll
+  just
+  build
+  my
+  report
+  and
+  email
+  everything
+  over
+  to
+  you.
+
+Customer:
+  Okay,
+  great.
+
+Cole Pantol:
+  Thank
+  you
+  so
+  much.
+  No
+  problem.
+  You
+  can
+  live
+  hard
+  this
+  way
+  on
+
+Customer:
+  just
+  wants
+  to
+  come
+  out
+  and
+  say
+
+Cole Pantol:
+  yeah,
+  you
+  have
+  a
+  good
+  one.
+  Okay.
+
+Customer:
+  All
+  right.
+  Thank
+  you
+  so
+  much.
+
+Cole Pantol:
+  No
+  problem.

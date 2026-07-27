@@ -1,0 +1,4374 @@
+TRANSCRIPT
+Rep:      Benjamin Wyllie
+Date:     2026-06-19
+Duration: 93 min
+RecId:    c1381661-7709-460d-9969-78e8655b7807-LHPyzDeQsNek3Dzj7AlgurDjs6E2
+Job:      ORDONIO ORLANDO B & ANABEL N TRS, Job # 657121777
+============================================================
+
+
+Benjamin Wyllie:
+  How's
+  it
+  going?
+  Hi.
+  All
+  right,
+  so
+  thermostats
+  aren't
+  working
+  all
+  of
+  a
+  sudden,
+  or—
+  okay,
+  last
+  night.
+  Wow.
+
+Customer:
+  All
+  right.
+  And
+  we
+  tried,
+  uh,
+  checking
+  the
+  spaces.
+
+Benjamin Wyllie:
+  Okay.
+
+Customer:
+  Yeah,
+  we
+  turn
+  it
+  off
+  and
+  on,
+  it's
+  still
+  nothing.
+  And
+  then
+  the
+  outside
+  unit,
+  I
+  swung,
+  tried
+  Checking
+  that
+  one.
+
+Benjamin Wyllie:
+  So
+  they're
+  just
+  blank?
+
+Customer:
+  Yeah.
+
+Benjamin Wyllie:
+  This
+  happened
+  last
+  night?
+
+Customer:
+  Yeah.
+
+Benjamin Wyllie:
+  Okay,
+  so
+  when
+  I
+  left
+  it
+  was
+  okay
+  though,
+  right?
+
+Customer:
+  Yeah,
+  we
+  just
+  put
+  back
+  in
+  the
+  thing
+  'cause
+  I
+  think
+  it
+  was
+  off.
+
+Benjamin Wyllie:
+  Oh,
+  it
+  was
+  off?
+
+Customer:
+  Yeah.
+  Oh,
+  interesting.
+  And
+  then
+  we
+  put
+  it
+  back
+  in,
+  it
+  was
+  working,
+  and
+  then
+  just
+  suddenly
+  last
+  night,
+  turned
+  off.
+
+Benjamin Wyllie:
+  Okay,
+  let
+  me
+  go
+  check
+  out,
+  let
+  me
+  grab
+  my
+  tools
+  and
+  my
+  ladder
+  and
+  stuff
+  'cause
+  that's
+  weird.
+
+Customer:
+  Yeah,
+  you
+  had
+  upstairs
+  before.
+
+Benjamin Wyllie:
+  Okay,
+  I'm
+  gonna
+  go,
+  is
+  the
+  side
+  gate
+  unlocked,
+  right?
+
+Customer:
+  Uh,
+  you
+  can
+  go
+  in
+  here.
+
+Benjamin Wyllie:
+  Okay,
+  well
+  actually
+  let
+  me
+  check
+  the
+  upstairs
+  thermostat
+  real
+  quick.
+  That
+  one's
+  not
+  working
+  either,
+  right?
+
+Customer:
+  Yeah.
+  Interesting.
+  Yeah,
+  we
+  thought
+  it
+  was
+  like
+  a
+  short
+  circuit
+  or
+  something.
+
+Benjamin Wyllie:
+  Huh.
+
+Customer:
+  Okay.
+
+Benjamin Wyllie:
+  Might
+  be
+  up
+  in
+  the—
+  are
+  they—
+
+Customer:
+  are
+  y'all
+  in
+  that
+  room
+  right
+  now?
+  Uh,
+  yeah,
+  they're
+  in
+  the
+  room.
+
+Benjamin Wyllie:
+  Okay,
+  so
+  I
+  gotta
+  get—
+  I'll
+  have
+  to
+  check
+  into
+  the
+  attic.
+
+Customer:
+  Okay,
+  thank
+  you.
+
+Benjamin Wyllie:
+  I'm
+  good
+  to
+  go
+  into
+  that
+  room
+  for
+  the
+  attic,
+  right?
+
+Customer:
+  Yeah.
+
+Benjamin Wyllie:
+  Okay.
+
+Customer:
+  Safety
+  switch.
+  Yeah,
+  that's
+  what
+  I
+  think
+  it
+  is.
+
+Benjamin Wyllie:
+  Okay,
+  I
+  just
+  want
+  to
+  make
+  sure,
+  just
+  in
+  case.
+
+Customer:
+  Can't
+  be
+  the
+  safety
+  switch.
+  It's
+  connected.
+  No
+  power
+  to
+  the
+  RC
+  wire.
+
+Benjamin Wyllie:
+  There's
+  no
+  power
+  going
+  through.
+  I
+  checked
+  the
+  box,
+  the
+  safety
+  switch
+  was
+  on.
+  Check
+  the
+  area
+  under
+  the
+  box.
+  What's
+  that
+  come
+  down
+  to?
+  Yep,
+  this
+  says
+  no
+  power
+  to
+  the
+  RC,
+  uh,
+  no
+  power
+  to
+  RC
+  wire.
+  Yeah,
+  but
+  the
+  safety
+  switch
+  is
+  closed,
+  and
+  it
+  happened
+  last
+  night
+  that
+  it
+  just
+  stopped
+  working.
+  Not
+  yet,
+  but
+  it's
+  gonna
+  be
+  on
+  soon.
+  What
+  could
+  cause
+  that
+  just
+  to
+  give
+  out
+  like
+  that.
+
+Customer:
+  The
+  heck?
+  That
+  doesn't
+  turn
+  on.
+  Huh?
+  If
+  you
+  jump
+  the
+  unit
+  at
+  the
+  thermostat,
+  does
+  it
+  turn
+  on?
+
+Benjamin Wyllie:
+  I
+  didn't
+  try
+  that
+  yet.
+  I
+  would
+  try
+  that.
+
+Customer:
+  If
+  it
+  does
+  that,
+  you
+  have
+  a
+  bad
+  thermostat.
+
+Benjamin Wyllie:
+  Well,
+  both
+  thermostats
+  are
+  bad.
+  I
+  mean,
+  Both
+  thermostats
+  aren't
+  turning
+  on.
+
+Customer:
+  Interesting.
+  That's
+  not
+  a
+  bad
+  thermostat.
+  Yeah.
+
+Benjamin Wyllie:
+  Checking
+  the
+  outside
+  unit.
+  Well,
+  'cause
+  the
+  outside
+  is
+  like
+  a—
+
+Customer:
+  is
+  a—
+
+Benjamin Wyllie:
+  what's
+  it
+  called?
+
+Customer:
+  System.
+
+Benjamin Wyllie:
+  Like
+  a
+  communicating
+  system.
+
+Customer:
+  Did
+  you
+  check
+  the
+  errors?
+  Is
+  it
+  both
+  communicating?
+  Yeah.
+
+Benjamin Wyllie:
+  Yeah.
+
+Customer:
+  Okay.
+
+Benjamin Wyllie:
+  So
+  I
+  thought
+  I
+  was
+  trying
+  to—
+
+Customer:
+  I'll
+  go
+  out
+  to
+  the
+  outdoor
+  unit,
+  pull
+  that
+  panel
+  off,
+  see
+  if
+  you're
+  getting
+  any
+  codes.
+
+Benjamin Wyllie:
+  I
+  got
+  a
+  90,
+  saying
+  90.
+  Now
+  I'm
+  reading
+  the
+  back
+  of
+  it
+  and
+  I
+  don't
+  see
+  a
+  90.
+  Is
+  it
+  code?
+
+Customer:
+  Is
+  it
+  a
+  06?
+
+Benjamin Wyllie:
+  Oh,
+  like
+  it's
+  upside
+  down?
+
+Customer:
+  Yeah.
+
+Benjamin Wyllie:
+  It's
+  not
+  upside
+  down.
+  Let
+  me
+  try
+  to
+  see
+  if
+  it's
+  a
+  06.
+  Fan
+  speed
+  high-low.
+  No,
+  it's
+  not.
+
+Customer:
+  I'm
+  so
+  confused.
+  Call
+  Francisco.
+
+Benjamin Wyllie:
+  Francisco?
+
+Customer:
+  Yeah.
+
+Benjamin Wyllie:
+  Okay,
+  I'll
+  give
+  it
+  a
+  try.
+
+Customer:
+  He's
+  pretty
+  good.
+  He's
+  a
+  local.
+  He
+  helped
+  me
+  out
+  when
+  I
+  was
+  having
+  a
+  hard
+  time.
+
+Benjamin Wyllie:
+  Okay,
+  thanks.
+
+Customer:
+  Yeah.
+  All
+  right,
+  later.
+  Bye.
+  Bye.
+
+Benjamin Wyllie:
+  Call
+  Francisco,
+  boys.
+
+Customer:
+  Hello.
+
+Benjamin Wyllie:
+  Hey,
+  uh,
+  question.
+  So
+  I'm
+  at
+  a
+  return
+  for
+  myself,
+  but
+  So
+  the,
+  their
+  system's
+  not
+  turning
+  on
+  at
+  all.
+  And
+  I,
+  dude,
+  I
+  have
+  no
+  clue
+  why.
+  Thermostats
+  aren't
+  working.
+  And
+  the
+  Nest
+  thermostat
+  says
+  no
+  power
+  to
+  the
+  RC
+  wire.
+
+Customer:
+  Uh-huh.
+
+Benjamin Wyllie:
+  What
+  does
+  that
+  mean?
+
+Customer:
+  That
+  means
+  there's
+  no
+  power
+  to,
+  from
+  your
+  indoor
+  unit.
+
+Benjamin Wyllie:
+  How
+  is
+  that?
+  So
+  then
+  how
+  do
+  I
+  get
+  the
+  indoor
+  unit
+  going
+  back
+  again?
+
+Customer:
+  So
+  first
+  things
+  first,
+  right?
+  Do
+  you
+  have
+  power
+  going
+  in
+  your
+  indoor
+  unit
+  from
+  your
+  R
+  to
+  C?
+  Do
+  you
+  have
+  24
+  volts?
+
+Benjamin Wyllie:
+  So
+  checking
+  that,
+  I
+  just
+  need
+  to
+  pull
+  the
+  panel
+  off
+  and—
+
+Customer:
+  You
+  would
+  first
+  start
+  in
+  the
+  attic.
+
+Benjamin Wyllie:
+  Okay.
+
+Customer:
+  You
+  would
+  press
+  it,
+  or
+  you
+  can
+  just
+  easily
+  look.
+  Does
+  your
+  control
+  board
+  have
+  LED
+  lights
+  on?
+
+Benjamin Wyllie:
+  It's
+  not
+  on.
+
+Customer:
+  So
+  then,
+  uh,
+  that
+  means
+  your
+  FAU
+  switch
+  might
+  have
+  popped.
+  Your
+  breaker
+  outside.
+  They
+  said
+  they
+  checked—
+
+Benjamin Wyllie:
+  they
+  said
+  that
+  they
+  checked
+  the
+  breaker.
+
+Customer:
+  They
+  probably
+  checked
+  the
+  AC
+  breaker,
+  not
+  the
+  FAU
+  breaker.
+
+Benjamin Wyllie:
+  Where's
+  the
+  FAU
+  breaker?
+
+Customer:
+  Same
+  place,
+  it's
+  just
+  a
+  smaller
+  breaker.
+  It's
+  inside
+  120
+  and
+  outside
+  240,
+  so
+  outside
+  is
+  a
+  bigger
+  breaker
+  and
+  the
+  inside
+  is
+  a
+  smaller
+  breaker.
+
+Benjamin Wyllie:
+  So
+  it's
+  all
+  just
+  gonna
+  be
+  on
+  the
+  outside?
+  You
+  have
+  the
+  key
+  to
+  get
+  into
+  the
+  breaker
+  box?
+
+Customer:
+  Yeah.
+
+Benjamin Wyllie:
+  Okay.
+
+Customer:
+  Got
+  dogs.
+  Uh,
+  Puck
+  and,
+  uh,
+  Mixie.
+  Thank
+  you.
+  Hi.
+
+Benjamin Wyllie:
+  Do
+  you
+  mind,
+  can
+  we
+  leave
+  this
+  unlocked
+  for
+  a
+  time
+  so
+  I
+  can
+  kind
+  of
+  do
+  a
+  little
+  bit
+  more
+  checking
+  out?
+
+Customer:
+  Thank
+  you.
+  Call
+  Sierra.
+
+Benjamin Wyllie:
+  It's
+  not
+  tripped.
+
+Customer:
+  It's
+  not
+  tripped?
+
+Benjamin Wyllie:
+  No,
+  I
+  turned
+  them
+  off
+  and
+  then
+  turned
+  them
+  back
+  on
+  again.
+
+Customer:
+  Okay,
+  so
+  then
+  we're
+  going
+  to
+  be
+  going
+  into
+  the
+  attic.
+  Yep.
+  So
+  you
+  said
+  the,
+  the
+  electrical
+  board
+  didn't
+  have
+  any,
+  uh,
+  didn't
+  have
+  any
+  LED
+  lights
+  on,
+  huh?
+
+Benjamin Wyllie:
+  Yeah,
+  I
+  don't
+  see
+  any
+  going
+  on.
+
+Customer:
+  So
+  then
+  you
+  have
+  to
+  check
+  your
+  fuse,
+  see
+  if
+  it's
+  blown.
+  Where
+  the
+  heck
+  is
+  the
+  fuse?
+  There
+  it
+  is.
+  Okay.
+  So
+  take
+  it
+  off,
+  look
+  into
+  the—
+  lift
+  it
+  up
+  in
+  the
+  light
+  bulb
+  and
+  see
+  if
+  it's
+  blown.
+
+Benjamin Wyllie:
+  No.
+
+Customer:
+  It's
+  not
+  blown?
+
+Benjamin Wyllie:
+  It
+  looks
+  completely
+  fine.
+
+Customer:
+  Uh-huh.
+  Are
+  you
+  sure?
+
+Benjamin Wyllie:
+  Yeah,
+  dude,
+  it's
+  like
+  silver.
+
+Customer:
+  Okay,
+  now
+  you
+  know
+  the
+  best
+  way
+  to
+  check
+  it
+  is
+  check
+  continuity
+  between
+  the
+  two
+  leads.
+  Make
+  sure
+  that
+  you—
+
+Benjamin Wyllie:
+  So
+  where
+  this
+  plugs
+  into?
+
+Customer:
+  No,
+  like
+  the
+  actual
+  fuse
+  that
+  you're
+  holding
+  in
+  your
+  hands.
+
+Benjamin Wyllie:
+  So
+  take
+  my
+  meter
+  and
+  touch
+  tips?
+  On
+  voltage
+  or
+  amps?
+
+Customer:
+  No,
+  on
+  continuity.
+  So
+  you
+  have
+  a
+  few
+  pieces,
+  right?
+
+Benjamin Wyllie:
+  Yeah,
+  oh,
+  so
+  the
+  one
+  where
+  I
+  check
+  like
+  if
+  something's
+  grounded?
+
+Customer:
+  Correct.
+
+Benjamin Wyllie:
+  There's
+  an
+  omega
+  sign.
+
+Customer:
+  And
+  then
+  you
+  touch
+  to
+  your
+  own
+  leads
+  and
+  it's
+  gonna
+  beep,
+  right?
+  Okay.
+  So
+  test
+  it
+  by
+  checking
+  and
+  touching
+  both
+  leads.
+
+Benjamin Wyllie:
+  Yep.
+
+Customer:
+  First,
+  and
+  if
+  it
+  beeps,
+  then
+  now
+  check
+  the
+  fuse.
+
+Benjamin Wyllie:
+  All
+  right,
+  the
+  fuse
+  is
+  beeping.
+
+Customer:
+  Okay,
+  so
+  then
+  that's
+  good.
+  Okay,
+  so
+  put
+  the
+  fuse
+  back
+  on
+  there.
+  Okay.
+
+Benjamin Wyllie:
+  Does
+  it
+  matter
+  which
+  way
+  it
+  goes
+  in?
+
+Customer:
+  No,
+  it
+  doesn't.
+  Okay.
+  So
+  when
+  you're
+  checking
+  for
+  LED
+  lights,
+  did
+  you
+  push
+  in
+  the
+  door
+  switch
+  button?
+
+Benjamin Wyllie:
+  Yeah,
+  it's
+  in.
+
+Customer:
+  And
+  no
+  LEDs
+  come
+  on?
+
+Benjamin Wyllie:
+  Nothing's
+  coming
+  on.
+
+Customer:
+  So
+  then
+  it
+  might
+  be
+  your
+  transformer.
+
+Benjamin Wyllie:
+  So
+  trans—
+  dude,
+  it's
+  a
+  communicating
+  system.
+
+Customer:
+  It's
+  a
+  communicating
+  system?
+  With—
+
+Benjamin Wyllie:
+  well,
+  the
+  outside
+  is,
+  yeah.
+
+Customer:
+  Okay,
+  well,
+  you
+  still
+  have
+  a
+  transformer,
+  probably.
+
+Benjamin Wyllie:
+  Oh,
+  okay,
+  so
+  now
+  I
+  need
+  to
+  go
+  back
+  outside?
+
+Customer:
+  No,
+  in
+  the
+  attic.
+
+Benjamin Wyllie:
+  Okay,
+  I
+  see
+  the
+  transformer.
+
+Customer:
+  You
+  don't
+  see
+  the
+  transformer?
+
+Benjamin Wyllie:
+  No,
+  I
+  do.
+  It's
+  right
+  next
+  to
+  the,
+  uh,
+  the
+  control
+  board.
+
+Customer:
+  Yep,
+  like
+  right
+  angle,
+  right?
+  Yeah.
+  Okay,
+  so
+  you're
+  going
+  to
+  have
+  one
+  side
+  240
+  and
+  one
+  side
+  24
+  volts.
+
+Benjamin Wyllie:
+  I
+  don't
+  even
+  know
+  how
+  to
+  get
+  into
+  it,
+  dude.
+
+Customer:
+  I
+  got
+  to
+  be
+  honest.
+  On
+  the
+  top.
+
+Benjamin Wyllie:
+  No,
+  it's
+  on
+  the
+  back.
+
+Customer:
+  On
+  the
+  back?
+  It's
+  on
+  the
+  back
+  of
+  the
+  controller?
+
+Benjamin Wyllie:
+  No,
+  kinda.
+  Gosh,
+  I
+  don't
+  even
+  know
+  how
+  to—
+  like,
+  the
+  wires
+  are
+  coming
+  from
+  the
+  back
+  side
+  of
+  it,
+  not
+  the
+  front.
+
+Customer:
+  Uh-huh.
+
+Benjamin Wyllie:
+  And
+  it's
+  attached.
+
+Customer:
+  But
+  if
+  you
+  switch
+  it
+  on—
+  Yeah.
+  On
+  the
+  inside
+  the
+  attic?
+
+Benjamin Wyllie:
+  Uh,
+  inside
+  the
+  attic.
+  Oh
+  my
+  gosh.
+
+Customer:
+  My
+  voice.
+
+Benjamin Wyllie:
+  No,
+  the
+  switch,
+  uh,
+  is
+  the
+  switch
+  tripped?
+  I
+  got
+  to
+  tape
+  the
+  switch
+  down.
+
+Customer:
+  No,
+  I'm
+  talking
+  about
+  like
+  the,
+  not
+  the
+  door
+  switch.
+
+Benjamin Wyllie:
+  No,
+  I
+  know
+  the
+  switch
+  above.
+  Yeah,
+  dude,
+  it,
+  uh,
+  it
+  just
+  turned
+  itself
+  off.
+  You
+  tape
+  it
+  down.
+
+Customer:
+  Like
+  when
+  you
+  flick
+  it,
+  it
+  goes
+  back
+  to
+  off.
+
+Benjamin Wyllie:
+  It
+  goes
+  back
+  to
+  on.
+  It's
+  like
+  getting
+  stuck
+  in
+  the
+  middle
+  where—
+  yeah,
+  there
+  it
+  is.
+  So,
+  so
+  I
+  didn't
+  even
+  touch
+  that
+  switch,
+  so
+  I
+  guess
+  that
+  thing
+  just
+  like
+  decided
+  to
+  stop
+  working.
+
+Customer:
+  Okay,
+  so
+  you
+  have
+  power
+  back
+  to
+  your
+  unit?
+
+Benjamin Wyllie:
+  Yeah,
+  it's
+  working
+  now.
+
+Customer:
+  Okay.
+
+Benjamin Wyllie:
+  So
+  I
+  just
+  had
+  to
+  tape
+  the
+  switch
+  down
+  to
+  make
+  sure
+  it
+  actually
+  stays
+  closed
+  because
+  I
+  tried
+  to
+  turn
+  it
+  on.
+
+Customer:
+  So
+  is
+  that—
+  Which
+  switch
+  are
+  we
+  talking
+  about?
+  Are
+  you
+  talking
+  about
+  the
+  one
+  by
+  the
+  stud
+  or
+  the
+  one
+  on
+  the
+  inside
+  of
+  the
+  unit?
+
+Benjamin Wyllie:
+  No,
+  like
+  the
+  one
+  by
+  the
+  stud,
+  like
+  the
+  one
+  that
+  just
+  turns
+  the
+  system
+  on
+  and
+  off
+  when
+  you
+  want
+  to
+  turn
+  it
+  on
+  and
+  off.
+  Not
+  the
+  safety
+  switch,
+  just
+  like
+  a
+  normal
+  switch.
+
+Customer:
+  Yeah.
+
+Benjamin Wyllie:
+  Outside
+  of
+  it.
+  So
+  the—
+
+Customer:
+  Yeah.
+
+Benjamin Wyllie:
+  Did
+  it
+  just
+  decide
+  to
+  stop
+  working
+  or—
+
+Customer:
+  Yeah,
+  I
+  mean,
+  it
+  might
+  be
+  that
+  internally
+  there's
+  some
+  s***
+  going
+  on.
+
+Benjamin Wyllie:
+  To
+  trip
+  it?
+  Trip
+  the
+  switch?
+
+Customer:
+  Yeah.
+
+Benjamin Wyllie:
+  Well,
+  I
+  got
+  it
+  working.
+
+Customer:
+  Great.
+  REDACTED
+  Well,
+  that's
+  the
+  important
+  part.
+  Huh?
+  I
+  said
+  that's
+  the
+  important
+  part.
+
+Benjamin Wyllie:
+  Exactly.
+  Let
+  me
+  make
+  sure
+  it
+  stays
+  on.
+  Let
+  me
+  go
+  check
+  the
+  thermostats.
+
+Customer:
+  For
+  sure.
+
+Benjamin Wyllie:
+  So
+  look,
+  I'll
+  call
+  you
+  if
+  I
+  need
+  help
+  again,
+  'cause
+  that
+  was
+  weird.
+
+Customer:
+  For
+  sure,
+  brother.
+
+Benjamin Wyllie:
+  All
+  right,
+  thanks,
+  man.
+
+Customer:
+  Yeah,
+  bye.
+
+Benjamin Wyllie:
+  Bye.
+
+Customer:
+  All
+  right,
+  it's
+  working.
+  Okay.
+
+Benjamin Wyllie:
+  Yeah,
+  so
+  some
+  reason
+  the
+  kind
+  of
+  your
+  on
+  and
+  off
+  switch
+  up
+  there
+  got
+  stuck
+  in
+  the
+  center.
+  So
+  when
+  I
+  clicked
+  it
+  to
+  turn
+  it
+  on,
+  it
+  then
+  turned
+  on,
+  but
+  then
+  kind
+  of
+  just
+  fell
+  back
+  into
+  an
+  off
+  position.
+
+Customer:
+  It's
+  weird.
+
+Benjamin Wyllie:
+  So
+  I
+  just
+  kind
+  of
+  taped
+  down
+  the
+  switch
+  to
+  keep
+  it
+  to
+  stay
+  on.
+
+Customer:
+  Okay.
+
+Benjamin Wyllie:
+  But
+  yeah,
+  it's
+  running
+  at
+  that
+  point.
+  I'm
+  going
+  to
+  stay
+  until
+  I
+  can
+  feel
+  like
+  cold
+  air
+  coming
+  out.
+
+Customer:
+  Yeah.
+
+Benjamin Wyllie:
+  You
+  got
+  to
+  go
+  check
+  your
+  outside
+  system.
+
+Customer:
+  Snap
+  the
+  pin
+  pull
+  there.
+  That's
+  closed.
+  Very
+  good.
+  Stretching
+  now.
+  Come
+  on.
+  S***.
+  Taking
+  a
+  long
+  time
+  to
+  pull
+  down
+  the
+  Sierras.
+  There's
+  something
+  else
+  going
+  on.
+  They
+  take
+  pressures.
+
+Benjamin Wyllie:
+  Okay,
+  today,
+  Paul,
+  we'll
+  catch
+  you
+  a
+  call.
+  So,
+  blow
+  is
+  working
+  now.
+
+Customer:
+  I
+  heard
+  refrigerant
+  going
+  through
+  the
+  system,
+  and
+  I
+  go
+  outside,
+  compressor's
+  not
+  on.
+
+Benjamin Wyllie:
+  Nothing's
+  going
+  outside.
+
+Customer:
+  So
+  it's
+  reading—
+  Zero.
+
+Benjamin Wyllie:
+  Which
+  means
+  nothing.
+
+Customer:
+  You
+  said
+  it's
+  full
+  communicating
+  outside,
+  right?
+  Yeah.
+  What
+  I
+  would
+  do
+  is
+  I
+  would
+  reset
+  the
+  indoor
+  unit.
+  How
+  so?
+  How
+  long
+  has
+  it
+  been?
+  Because
+  usually
+  it
+  goes
+  into
+  like
+  a
+  5-minute
+  delay
+  before
+  it
+  turns
+  back
+  on.
+
+Benjamin Wyllie:
+  It's
+  been
+  a
+  minute
+  since
+  I
+  sat
+  up
+  there
+  for
+  about
+  5
+  minutes
+  checking
+  temperatures,
+  but
+  the
+  outside
+  unit's
+  not
+  turning
+  on
+  at
+  all.
+  This
+  connects
+  on.
+  I
+  checked
+  the
+  breaker.
+
+Customer:
+  Breaker's
+  fine.
+  Do
+  you
+  have
+  power
+  going
+  to
+  the
+  outdoor
+  unit?
+
+Benjamin Wyllie:
+  That's
+  what
+  I'm
+  gonna
+  do.
+
+Customer:
+  You
+  have
+  the
+  contactor?
+
+Benjamin Wyllie:
+  Dude,
+  I
+  don't
+  even
+  see
+  a
+  contact
+  on
+  this
+  b****.
+
+Customer:
+  Yeah,
+  the
+  contacts
+  should
+  be
+  on
+  the
+  bottom
+  for
+  some
+  reason.
+  Okay.
+
+Benjamin Wyllie:
+  It
+  says
+  like
+  L1,
+  L2.
+  Let
+  me
+  check
+  that.
+  So
+  I
+  attach
+  it
+  to
+  the
+  bottom,
+  right?
+
+Customer:
+  So
+  you
+  can
+  check
+  first,
+  uh,
+  uh,
+  where
+  that
+  240
+  L1,
+  L2,
+  and
+  see
+  if
+  you
+  have
+  240
+  coming
+  out.
+
+Benjamin Wyllie:
+  Yep,
+  got
+  240
+  coming
+  in.
+
+Customer:
+  Okay,
+  this—
+  can
+  you
+  push
+  into
+  the,
+  into
+  the
+  contactor?
+
+Benjamin Wyllie:
+  No.
+
+Customer:
+  Does
+  not
+  push
+  it.
+
+Benjamin Wyllie:
+  I
+  got
+  240
+  on
+  top.
+  Oh,
+  sounds
+  like
+  it's
+  going
+  now.
+
+Customer:
+  Yeah,
+  it's
+  probably
+  on
+  that
+  delay,
+  my
+  boy.
+
+Benjamin Wyllie:
+  It
+  was
+  a
+  long-a**
+  delay,
+  dude.
+  I
+  was
+  up
+  there
+  for
+  10
+  minutes
+  checking.
+  Yeah,
+  it's
+  going
+  now.
+  Okay,
+  that's
+  Weird,
+  dude.
+  That
+  was
+  a
+  wild
+  delay.
+  I'll
+  let
+  you
+  know
+  if
+  I
+  need
+  help
+  again,
+  but
+  I
+  know
+  you
+  got
+  to
+  your
+  call,
+  so—
+
+Customer:
+  Agreed,
+  man.
+  All
+  right.
+  Thanks,
+  bud.
+  Thanks,
+  bud.
+
+Benjamin Wyllie:
+  We're
+  replacing
+  these
+  pretty
+  often,
+  yes?
+  Yeah.
+
+Customer:
+  Yeah?
+
+Benjamin Wyllie:
+  Yeah.
+
+Customer:
+  June.
+  Wait,
+  what
+  was
+  the
+  street
+  address?
+  Yeah.
+  Yeah,
+  we
+  just
+  changed
+  that
+  one
+  thing.
+  Okay.
+
+Benjamin Wyllie:
+  Getting
+  air
+  again.
+
+Customer:
+  It's
+  cold.
+
+Benjamin Wyllie:
+  Yeah,
+  okay,
+  it's
+  getting
+  colder.
+
+Customer:
+  Downstairs.
+
+Benjamin Wyllie:
+  Downstairs.
+
+Customer:
+  I
+  know
+  this,
+  like,
+  a
+  little
+  bit
+  weak,
+  but—
+  Yeah,
+  it's—
+  it
+  is
+  pretty
+  weak.
+
+Benjamin Wyllie:
+  That's
+  what
+  I
+  mentioned,
+  um,
+  Patrick,
+  right?
+
+Customer:
+  Mm-hmm.
+
+Benjamin Wyllie:
+  Um,
+  that
+  your—
+  up
+  there
+  is
+  kind
+  of
+  like
+  some
+  doors
+  that
+  open
+  and
+  close
+  in
+  the
+  vents.
+  Those
+  doors
+  could
+  be
+  going
+  bad,
+  so
+  I
+  did
+  recommend,
+  you
+  know,
+  he's
+  like,
+  just
+  call
+  my
+  dad
+  about
+  it,
+  so
+  I
+  sent
+  the
+  email
+  to
+  the
+  dad,
+  so
+  see
+  what
+  he
+  wants
+  to
+  do
+  there,
+  but
+  we,
+  uh,
+  I
+  know
+  the
+  outside
+  system
+  was
+  replaced
+  recently,
+  but
+  the
+  upstairs
+  is
+  all
+  still
+  original.
+  So
+  yeah,
+  they
+  kind
+  of
+  went
+  halfway
+  with
+  full
+  replacement,
+  so
+  there's
+  going
+  to
+  be
+  issues
+  no
+  matter
+  what,
+  kind
+  of
+  because
+  it's
+  offsetting.
+
+Customer:
+  Okay.
+
+Benjamin Wyllie:
+  Outside's
+  brand
+  new,
+  this
+  is
+  like
+  11
+  years
+  old.
+  Doesn't
+  match
+  well.
+
+Customer:
+  Okay.
+  Yeah.
+  What?
+
+Benjamin Wyllie:
+  I'll
+  keep
+  on—
+
+Customer:
+  I'll—
+
+Benjamin Wyllie:
+  yeah,
+  I'll
+  give—
+  I'll
+  still
+  like
+  stay
+  for
+  a
+  second
+  just
+  to
+  see
+  if
+  it's
+  dropping
+  anymore,
+  and
+  if
+  I
+  see
+  it
+  dropping,
+  I'll
+  be
+  like,
+  okay,
+  it
+  is
+  officially
+  working.
+  But
+  yeah,
+  your
+  airflow
+  is
+  still
+  very,
+  very
+  weak.
+
+Customer:
+  Very
+  weak.
+  It's
+  cold,
+  which
+  is
+  good.
+  It's
+  just
+  not
+  strong.
+  Gosh.
+  Dang.
+  Who
+  the
+  frick
+  glued
+  these
+  things
+  shut?
+  Your
+  call
+  has
+  been
+  forwarded
+  to
+  voicemail.
+  The
+  person
+  you're
+  trying
+  to
+  call—
+  Alex
+  Sierra.
+  Yes,
+  Benjamin.
+
+Benjamin Wyllie:
+  John
+  busy
+  or
+  something?
+
+Customer:
+  Benjamin.
+
+Benjamin Wyllie:
+  Okay,
+  having
+  issues
+  with
+  this
+  call
+  where
+  I
+  was
+  at
+  the
+  other
+  day.
+
+Customer:
+  It
+  was
+  just
+  a
+  d***—
+  Mess
+  up
+  the
+  control
+  board?
+  I
+  know,
+  Benjamin.
+
+Benjamin Wyllie:
+  I
+  didn't
+  mess
+  up
+  the
+  control
+  board.
+  There's
+  nothing
+  wrong
+  with
+  the
+  control
+  board.
+
+Customer:
+  What
+  is
+  going
+  on?
+
+Benjamin Wyllie:
+  The,
+  um,
+  so
+  the
+  switch
+  that
+  turn
+  on,
+  like
+  the
+  switch
+  in
+  the
+  FAU
+  switch
+  in
+  the
+  attic
+  got
+  like
+  stuck
+  in,
+  stuck
+  in
+  the
+  center.
+  And
+  the
+  outside
+  unit
+  just
+  keeps
+  on
+  turning
+  on
+  and
+  turning
+  off.
+
+Customer:
+  Okay.
+
+Benjamin Wyllie:
+  Doesn't
+  make
+  any
+  sense.
+  Like,
+  it
+  starts
+  cooling
+  and
+  then
+  it
+  just
+  decides
+  to
+  quit.
+
+Customer:
+  How
+  do
+  you
+  know
+  it's
+  the
+  switch?
+
+Benjamin Wyllie:
+  Because
+  when
+  I
+  touch
+  the
+  switch
+  and
+  put
+  it
+  pressed
+  it
+  on
+  on
+  and
+  turned
+  back
+  on,
+  but
+  then
+  I
+  let
+  go
+  of
+  it
+  and
+  it
+  just
+  went
+  back
+  to
+  the
+  center
+  and
+  turned
+  it
+  off
+  again.
+  I—
+  the
+  way
+  that
+  the—
+  I'm—
+
+Customer:
+  yeah.
+
+Benjamin Wyllie:
+  Sounds
+  like
+  I
+  need
+  a
+  new
+  light
+  switch,
+  brother.
+  But
+  why
+  is
+  the
+  outside
+  system
+  turning
+  off?
+  I
+  taped
+  it
+  down.
+  So
+  now
+  it's
+  staying,
+  it's
+  staying
+  on.
+  The
+  blower's
+  on,
+  it's
+  just
+  the,
+  the
+  system
+  outside
+  just
+  keeps
+  on
+  turning
+  on
+  then
+  turning
+  off
+  again.
+  I
+  don't
+  get
+  it.
+
+Customer:
+  Mhm.
+
+Benjamin Wyllie:
+  Got
+  0.2
+  sub—
+  they
+  got
+  0
+  sub
+  cooling.
+  How
+  hot
+  is
+  it
+  outside?
+  89
+  degrees.
+  They
+  got
+  a
+  temperature
+  of
+  91.
+
+Customer:
+  Whoever
+  put
+  on
+  these
+  things
+  for
+  the
+  pressures
+  glued
+  them
+  down.
+
+Benjamin Wyllie:
+  So
+  when
+  I
+  took
+  them
+  off,
+  they
+  were
+  fine,
+  and
+  now
+  I
+  can't
+  get
+  them
+  off
+  again.
+
+Customer:
+  Gosh.
+  Can
+  you
+  get
+  one
+  off?
+  What
+  are
+  you
+  talking
+  about?
+
+Benjamin Wyllie:
+  Trying
+  to
+  take
+  the
+  pressures
+  again,
+  B.
+  And
+  they
+  like
+  glued
+  this
+  s***
+  on.
+
+Customer:
+  Glued
+  what
+  on?
+  The—
+  what
+  are
+  those?
+  The
+  caps.
+  Okay,
+  grab
+  a—
+  brother,
+  just
+  grab
+  something
+  that's
+  not
+  glued
+  on.
+
+Benjamin Wyllie:
+  Yeah,
+  thank
+  you,
+  sir.
+  I
+  appreciate
+  that.
+  That's
+  exactly
+  what
+  I'm
+  doing.
+  I'm
+  not
+  trying
+  to
+  be
+  sarcastic
+  with
+  you.
+  I'm
+  using
+  I'm
+  using
+  my
+  wrench,
+  I'm
+  using
+  my
+  pliers.
+
+Customer:
+  It
+  sounds
+  like
+  you
+  glued
+  them
+  on
+  if
+  you
+  were
+  the
+  last
+  one
+  out
+  there.
+  I
+  didn't
+  glue
+  them
+  on.
+
+Benjamin Wyllie:
+  It
+  was
+  tough
+  the
+  last
+  time,
+  but
+  it
+  feels
+  like
+  these
+  got
+  like
+  dried
+  on
+  more.
+
+Customer:
+  God
+  dang
+  it.
+  I'll
+  probably
+  offer
+  a
+  light
+  switch.
+  I
+  don't
+  even
+  know.
+  I
+  don't
+  either,
+  dude.
+
+Benjamin Wyllie:
+  I
+  want
+  to
+  see
+  how
+  long
+  this
+  thing
+  runs
+  for
+  before
+  it
+  turns
+  off
+  again.
+
+Customer:
+  This
+  is
+  f******—
+
+Benjamin Wyllie:
+  this
+  is
+  why
+  you
+  don't
+  go
+  to
+  cheap-a**
+  companies
+  install
+  s***.
+  There
+  we
+  go.
+  Holy
+  crap.
+
+Customer:
+  Good
+  golly.
+
+Benjamin Wyllie:
+  This
+  is
+  what
+  you
+  get.
+
+Customer:
+  You
+  get
+  s*****—
+  Are
+  you
+  okay,
+  brother?
+  No,
+  it's
+  just
+  f******
+  frustrating.
+  Like,
+  people
+  go
+  with
+  cheap-a**
+  companies
+  and—
+  Hey,
+  it's
+  okay.
+  It's
+  okay.
+
+Benjamin Wyllie:
+  End
+  up
+  screwing
+  themselves.
+
+Customer:
+  You're
+  okay.
+
+Benjamin Wyllie:
+  D***,
+  they're
+  exactly—
+
+Customer:
+  We
+  don't
+  have
+  to
+  jump
+  off
+  a
+  cliff
+  yet.
+  I'm
+  jumping
+  off.
+  The
+  lights—
+  you
+  guys
+  should
+  let
+  them
+  know
+  the
+  light
+  switch
+  could
+  be
+  going
+  bad.
+  I
+  mean,
+  as
+  long
+  as
+  it's
+  not
+  the
+  control
+  board.
+
+Benjamin Wyllie:
+  There's
+  nothing
+  wrong
+  with
+  the
+  control
+  board.
+
+Customer:
+  I
+  checked
+  everything
+  else
+  out.
+  I
+  gotta
+  call
+  like
+  2
+  more
+  people
+  back.
+
+Benjamin Wyllie:
+  How
+  are
+  their
+  pressures?
+  Their
+  liquid
+  pressure
+  is
+  282,
+  their
+  suction's
+  193.
+
+Customer:
+  Vsat
+  is
+  66.
+  Did
+  you
+  wire
+  everything
+  back
+  correctly,
+  brother?
+
+Benjamin Wyllie:
+  Yeah,
+  I
+  wired
+  everything
+  back
+  correctly.
+
+Customer:
+  Sounds
+  like
+  the
+  compressor
+  is
+  not
+  pumping.
+
+Benjamin Wyllie:
+  I
+  feel
+  it
+  going
+  through.
+  It's
+  a—
+  it's
+  a
+  communicating
+  system.
+  I
+  didn't
+  even
+  unplug
+  anything.
+  Nothing
+  out
+  here.
+
+Customer:
+  No,
+  that's
+  any
+  of
+  the
+  pressures.
+  This
+  doesn't
+  make
+  any
+  sense.
+  Gosh.
+  282
+  over
+  493
+  is
+  definitely
+  not
+  good.
+
+Benjamin Wyllie:
+  Yeah,
+  I
+  know.
+  What
+  does
+  that
+  even
+  mean
+  though?
+
+Customer:
+  Is
+  that
+  compressor
+  even
+  running?
+
+Benjamin Wyllie:
+  It
+  sounds
+  like
+  it's—
+
+Customer:
+  is
+  it
+  equalizing?
+  Is
+  it
+  getting
+  closer
+  to
+  similar
+  numbers?
+  Is
+  the
+  compressor
+  overheating?
+
+Benjamin Wyllie:
+  Not
+  that
+  I
+  know,
+  dude.
+  I
+  don't—
+  I've
+  never
+  seen
+  a
+  system,
+  a
+  compressor
+  like
+  this
+  in
+  my
+  life.
+
+Customer:
+  Brother,
+  send
+  me
+  the
+  pressures.
+
+Benjamin Wyllie:
+  I
+  just
+  did.
+  Look
+  at
+  your
+  Telegram.
+
+Customer:
+  Are
+  the
+  pressures
+  better
+  than
+  Still
+  186
+  over
+  291.
+
+Benjamin Wyllie:
+  185.
+  I
+  want
+  to
+  see
+  how
+  long
+  this
+  thing
+  goes
+  for
+  before
+  it
+  locks
+  out.
+  The
+  temp—
+  the
+  liquid
+  set
+  is
+  so
+  low.
+  It
+  shouldn't
+  be
+  94,
+  it
+  should
+  be
+  at
+  least
+  like
+  100.
+  The
+  Vsat's
+  extremely
+  high.
+  184
+  over
+  299.
+
+Customer:
+  The
+  compressor
+  is
+  shot.
+
+Benjamin Wyllie:
+  Okay,
+  184,
+  301.
+
+Customer:
+  Just
+  compressor
+  on
+  cook
+  or
+  what?
+  100%.
+  See
+  if
+  it'll
+  f***
+  out.
+  You
+  think
+  fan's
+  gonna
+  know
+  how
+  to
+  pump
+  down
+  a
+  f******
+  compressor?
+  He
+  doesn't
+  have
+  service
+  wrench.
+  [FOREIGN
+  LANGUAGE]
+  All
+  this
+  money
+  you
+  make,
+  Benjamin,
+  you
+  can't
+  get
+  a
+  service
+  wrench?
+
+Benjamin Wyllie:
+  No,
+  'cause
+  I
+  made
+  it
+  this
+  week.
+  I
+  didn't
+  get
+  crap
+  my
+  last
+  paycheck,
+  dude.
+
+Customer:
+  What's
+  the
+  temperature
+  outside?
+  89.
+
+Benjamin Wyllie:
+  Because
+  when
+  I
+  was
+  here
+  last
+  time,
+  Sierra
+  was
+  cooling
+  kind
+  of
+  well.
+  They
+  said
+  the
+  upstairs
+  didn't
+  feel
+  like
+  it
+  was
+  getting
+  cool
+  that
+  well,
+  so
+  I
+  said,
+  okay,
+  it's
+  probably
+  the
+  dampers.
+  That's
+  when
+  I
+  called
+  you,
+  remember
+  that?
+  Other
+  than
+  that,
+  I
+  didn't
+  do
+  anything
+  to
+  the
+  system,
+  dude.
+
+Customer:
+  Was
+  your
+  blower
+  working?
+
+Benjamin Wyllie:
+  Yep.
+  I,
+  I,
+  all
+  I
+  did
+  was
+  I
+  cleaned
+  out
+  the
+  compressor,
+  the
+  condenser,
+  checked
+  the
+  inside,
+  didn't
+  unwire
+  anything.
+
+Customer:
+  Is
+  the
+  compressor
+  running?
+  Are
+  you
+  getting
+  RLA?
+  What
+  kind
+  of
+  system
+  is
+  it?
+
+Benjamin Wyllie:
+  It's
+  a
+  InnoVair.
+  I've
+  never
+  heard
+  of
+  this
+  before
+  in
+  my
+  life.
+
+Customer:
+  And
+  when
+  are
+  you
+  here?
+
+Benjamin Wyllie:
+  Like
+  the
+  16th.
+
+Customer:
+  How
+  old
+  is
+  it?
+  2020,
+  I
+  believe.
+
+Benjamin Wyllie:
+  They
+  went
+  with
+  a
+  different
+  company
+  when
+  we
+  gave
+  them
+  replacement
+  options,
+  so
+  Let
+  me
+  double-check
+  the
+  date
+  if
+  I
+  can
+  see
+  it.
+  I
+  mean,
+  you
+  were
+  pricing
+  in
+  2025
+  as
+  well.
+  Oh
+  yeah,
+  no,
+  so
+  it
+  was
+  the
+  last
+  time
+  that
+  we
+  were
+  here.
+  So
+  they
+  just
+  got
+  this
+  thing.
+
+Customer:
+  This
+  is
+  brand
+  new?
+
+Benjamin Wyllie:
+  Yeah,
+  it's
+  brand
+  new.
+
+Customer:
+  I
+  don't
+  like—
+  what
+  the
+  h***?
+
+Benjamin Wyllie:
+  This
+  is
+  what
+  I
+  was
+  confused
+  about
+  when
+  I
+  was
+  here,
+  is
+  nothing
+  had
+  numbers.
+
+Customer:
+  Jaden!
+  What's
+  your
+  pressure?
+  It's
+  from
+  last
+  time,
+  bro.
+  Come
+  here.
+  You
+  got
+  a
+  low
+  pressure.
+
+Benjamin Wyllie:
+  One
+  second,
+  it's
+  equalizing
+  out.
+  Because
+  when
+  I
+  checked
+  them,
+  I
+  didn't
+  have
+  any
+  concerns.
+  I
+  should
+  have
+  uploaded
+  them
+  though.
+
+Customer:
+  What?
+  You're
+  still
+  gonna
+  invert
+  our
+  system,
+  right?
+  Hi.
+
+Benjamin Wyllie:
+  Oh.
+
+Customer:
+  Who
+  is
+  this?
+  I
+  don't
+  know.
+  Is
+  there
+  cooling?
+  Does
+  it
+  have
+  a
+  split?
+
+Benjamin Wyllie:
+  Yeah,
+  it
+  was—
+  one
+  second,
+  I'm
+  looking
+  for
+  pictures.
+
+Customer:
+  Sounds
+  whack.
+  Sounds
+  what?
+
+Benjamin Wyllie:
+  Sounds
+  whack.
+
+Customer:
+  It
+  might
+  not
+  be
+  kicking
+  in.
+  What
+  does
+  the
+  board
+  say?
+  Does
+  the
+  board
+  have
+  a
+  code?
+  It
+  says
+  like
+  C1,
+  C2.
+  49.
+  Huh?
+
+Benjamin Wyllie:
+  49.
+
+Customer:
+  It
+  says
+  C49?
+
+Benjamin Wyllie:
+  No,
+  it
+  just
+  says
+  49.
+
+Customer:
+  What
+  does
+  that
+  translate
+  to
+  on
+  the
+  back
+  of
+  the—
+  Nothing.
+  Okay.
+
+Benjamin Wyllie:
+  Max
+  is
+  out
+  at
+  37.
+
+Customer:
+  What?
+
+Benjamin Wyllie:
+  Max
+  is
+  out
+  at
+  37.
+
+Customer:
+  What
+  are
+  you
+  talking
+  about?
+
+Benjamin Wyllie:
+  It
+  only
+  goes
+  from
+  1
+  to
+  37.
+  That's
+  what
+  I'm
+  talking
+  about.
+  Doesn't
+  go
+  to—
+  and
+  now
+  it's
+  at
+  51.
+  Why
+  is
+  it
+  going
+  up?
+
+Customer:
+  What's
+  going
+  up,
+  man?
+
+Benjamin Wyllie:
+  52
+  on
+  the
+  one
+  of
+  the
+  boards.
+
+Customer:
+  The,
+  uh,
+  that's
+  probably
+  what
+  speed
+  is.
+  It's
+  probably
+  running
+  at
+  50%
+  speed.
+  Yeah.
+  It's
+  fine.
+  Why
+  your
+  pressures
+  look
+  like
+  that?
+  Is
+  it
+  cooling?
+  Do
+  you
+  have
+  a
+  temperature
+  split?
+
+Benjamin Wyllie:
+  I
+  just—
+  give
+  me
+  a
+  second.
+  I
+  was
+  just
+  inside.
+  It
+  wasn't
+  a
+  large
+  temperature
+  split.
+  It
+  was
+  85
+  inside
+  the
+  house
+  and
+  70,
+  uh,
+  coming
+  out.
+  It's
+  a
+  return.
+  The
+  outside
+  is
+  new.
+  The
+  inside
+  makeup
+  is
+  the
+  same.
+  It's
+  cooling
+  now
+  downstairs.
+  It's
+  64,
+  65.
+  Yeah,
+  so
+  that's
+  when
+  I
+  called.
+
+Customer:
+  That's
+  when
+  I
+  called.
+
+Benjamin Wyllie:
+  I
+  called
+  you
+  at
+  9:28.
+  So
+  it's
+  just
+  taking
+  its
+  time.
+  It's
+  a
+  multistage
+  system,
+  so
+  it
+  just
+  takes
+  forever
+  to
+  cool
+  down.
+
+Customer:
+  So
+  just
+  because
+  it's
+  a
+  multistage,
+  it
+  takes
+  forever
+  to
+  cool
+  down.
+
+Benjamin Wyllie:
+  Gotcha.
+
+Customer:
+  I'm
+  asking
+  because
+  it
+  goes
+  to
+  the
+  different
+  speeds,
+  it's
+  going
+  to
+  have
+  different
+  pressures.
+  Okay.
+
+Benjamin Wyllie:
+  All
+  right,
+  that's
+  fine.
+
+Customer:
+  I
+  just—
+
+Benjamin Wyllie:
+  it
+  was—
+  it
+  just
+  wasn't
+  cooling
+  as
+  fast
+  as
+  I
+  thought.
+  The
+  house
+  was
+  like
+  78,
+  I
+  turned
+  it
+  down
+  to
+  68,
+  it
+  took
+  forever
+  to
+  cool
+  down.
+
+Customer:
+  Yeah,
+  no,
+  but
+  whatever's
+  fine.
+
+Benjamin Wyllie:
+  But
+  like,
+  you
+  know,
+  something
+  Oh,
+  Inovair?
+
+Customer:
+  Inovair.
+  Yeah,
+  that's
+  a
+  test
+  circuit
+  in
+  high
+  speed.
+
+Benjamin Wyllie:
+  It's
+  going
+  down.
+  I
+  checked
+  the
+  temperature
+  split.
+  Is
+  it
+  80,
+  85?
+
+Customer:
+  Tell
+  him
+  to
+  hit
+  the
+  light
+  switch
+  and
+  get
+  out.
+  So
+  return.
+
+Benjamin Wyllie:
+  Why
+  are
+  you
+  Because
+  I
+  need
+  to
+  make
+  sure
+  it's
+  cooling.
+  I
+  need
+  to
+  do
+  my
+  job.
+
+Customer:
+  Okay.
+
+Benjamin Wyllie:
+  Yeah,
+  no,
+  I
+  needed
+  to
+  double-check.
+  I
+  don't
+  want
+  to
+  be
+  called
+  out
+  here
+  again.
+
+Customer:
+  Not
+  a
+  problem.
+  Good
+  job.
+  All
+  right.
+  The
+  light
+  switch
+  was
+  the
+  issue.
+  Okay.
+
+Benjamin Wyllie:
+  All
+  right.
+  Deuces.
+
+Customer:
+  Why
+  didn't
+  they
+  mention
+  anything
+  that
+  you
+  didn't
+  realize
+  was
+  up
+  there?
+
+Benjamin Wyllie:
+  Sure
+  they
+  will,
+  but
+  I
+  didn't
+  even
+  touch
+  the
+  light
+  switch,
+  so.
+  I
+  have
+  no
+  reason
+  to
+  touch
+  a
+  light
+  switch.
+  But
+  all
+  right,
+  thank
+  you,
+  appreciate
+  it.
+
+Customer:
+  Bye.
+  Bye.
+
+Benjamin Wyllie:
+  So
+  I'd
+  recommend—
+  the
+  system's
+  up
+  and
+  running,
+  it
+  just
+  takes
+  a
+  long
+  time
+  for
+  your
+  system
+  to
+  cool
+  down.
+  It's
+  a
+  multi-stage
+  system.
+  Um,
+  a
+  new
+  light
+  switch
+  for
+  up
+  in
+  the
+  attic.
+  It
+  could—
+  there's
+  something
+  with
+  your
+  electrical
+  that
+  might
+  have
+  happened,
+  uh,
+  last
+  night,
+  because
+  when
+  I
+  left
+  it
+  was
+  on
+  perfect.
+  So,
+  new
+  light
+  switch,
+  it
+  just
+  happens
+  with
+  time.
+  But
+  yeah,
+  your
+  system's
+  cooling.
+  You're
+  all
+  set.
+
+Customer:
+  Perfect.
+  Thank
+  you.

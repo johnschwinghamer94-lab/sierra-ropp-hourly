@@ -1,0 +1,4537 @@
+TRANSCRIPT
+Rep:      Noah Weng
+Date:     2026-05-13
+Duration: 101 min
+RecId:    4f42a452-6111-45e8-9902-794f068829cd-f8aRc5tAKRdW4Ktah4fP6cbaJrs1
+Job:      Harvey - AC System Maintenance - Compressor Overamping and Motor Oil Leaks
+============================================================
+
+
+Customer:
+  It.
+
+Noah Weng:
+  Hello.
+  Good
+  afternoon,
+  Harvey.
+
+Customer:
+  Yep.
+
+Noah Weng:
+  Noah.
+
+Customer:
+  How
+  you
+  doing?
+
+Noah Weng:
+  I'm
+  doing
+  well.
+  How
+  about
+  this?
+
+Customer:
+  Oh,
+  peachy.
+
+Noah Weng:
+  All
+  right.
+
+Customer:
+  No.
+  Where
+  do
+  you
+  want
+  to
+  start?
+
+Noah Weng:
+  So
+  I
+  want
+  to
+  go
+  ahead.
+  If
+  it's
+  all
+  right
+  with
+  you,
+  go
+  ahead
+  and
+  start
+  checking
+  everything
+  out
+  inside.
+  Have
+  you
+  just
+  show
+  me
+  around
+  where
+  everything's
+  at
+  so
+  I
+  can
+  familiarize
+  myself.
+
+Customer:
+  Okay.
+  So
+  the
+  AC's
+  on
+  that
+  side.
+  And
+  then
+  I
+  have
+  a
+  new
+  pup.
+
+Noah Weng:
+  No
+  worries.
+  I
+  love
+  dogs.
+  I've
+  got
+  two
+  big
+  ones.
+  They
+  don't
+  have
+  any
+  manners,
+  so
+  it's
+  okay.
+
+Customer:
+  Okay.
+
+Noah Weng:
+  Did
+  I
+  park
+  okay?
+  Garby?
+
+Customer:
+  That's
+  fine.
+
+Noah Weng:
+  Okay.
+  Boy
+  or
+  girl?
+  Girl.
+  What's
+  her
+  name?
+
+Customer:
+  Coco.
+
+Noah Weng:
+  All
+  right.
+  What
+  kind
+  of
+  dog
+  is
+  he?
+  Okay.
+
+Customer:
+  Only
+  six
+  months
+  old.
+  Hey,
+  baby,
+  you
+  should
+  be
+  okay.
+  Be
+  nice,
+
+Noah Weng:
+  okay?
+
+Customer:
+  Okay.
+  Go
+  lay
+  down
+  or
+  I'll
+  put
+  you
+  in
+  your
+  film.
+  I
+  think
+  you
+  should
+  do
+  that.
+  Okay.
+  She's
+  actually
+  very
+  socialized.
+
+Noah Weng:
+  It's
+  all
+  right.
+
+Customer:
+  She's
+  going
+  through
+  a
+  real
+  protective
+  state
+  right
+  now,
+  though.
+
+Noah Weng:
+  My
+  dog
+  did
+  the
+  same
+  thing.
+  How
+  old
+  is
+  she?
+
+Customer:
+  Six
+  months.
+
+Noah Weng:
+  Y.
+  About
+  that
+  time,
+  yeah.
+  So
+  when
+  I
+  started
+  walking
+  my
+  dog
+  around
+  six
+  months,
+  like,
+  she
+  would
+  stop
+  because
+  I
+  have
+  an
+  Aida.
+  She
+  would.
+  Oh,
+  yeah,
+  yeah.
+  She
+  would
+  stop
+  and
+  she
+  would,
+  you
+  know,
+  look,
+  whoever.
+  If
+  somebody
+  was
+  walking
+  past
+  me,
+  she'd
+  stop,
+  stand
+  in
+  front
+  of
+  me.
+  Tail
+  came
+  up,
+  hair
+  came
+  up,
+  and
+  she
+  wouldn't
+  do
+  nothing.
+  She'd
+  just
+  stand
+  there.
+  Are
+  you
+  Karen,
+  by
+  the
+  way?
+  Yeah.
+  I'm
+  Noah.
+
+Customer:
+  Nice
+  to
+  meet
+  you.
+  No,
+  I've
+  got
+  a
+  bottle
+  in
+  my
+  other
+  hand.
+
+Noah Weng:
+  All
+  right.
+
+Customer:
+  Good
+  enough.
+
+Noah Weng:
+  All
+  right,
+
+Customer:
+  this
+  main
+  unit
+  right
+  here.
+
+Noah Weng:
+  Thermostat.
+
+Customer:
+  Right,
+  sorry,
+  yellow
+  thermostat.
+  And
+  then
+  the
+  filters
+  are
+  over
+  there.
+  Yeah,
+  I
+  changed
+  those
+  probably
+  about
+  two
+  months
+  ago.
+
+Noah Weng:
+  Okay.
+
+Customer:
+  I'm
+  pretty
+  good
+  about
+  it
+  if
+  you
+
+Noah Weng:
+  want
+  to
+  set
+  them
+  out.
+  I
+  can
+  change
+  them
+  while
+  I'm
+  here.
+
+Customer:
+  Oh,
+  am
+  I
+  going
+  to
+  get
+  charged
+  for
+  it?
+
+Noah Weng:
+  No.
+
+Customer:
+  Oh,
+  yeah,
+  if
+  you
+  have
+  them,
+  I
+  got
+  them.
+
+Noah Weng:
+  Yeah,
+  if
+  you
+  have
+  them.
+
+Customer:
+  All
+  right,
+  let's
+  do
+  that,
+  then.
+
+Noah Weng:
+  Kuvings
+  and
+  then
+  75
+  on
+  the
+  thermostat.
+  Is
+  that
+  normally
+  what
+  you
+  keep
+  it
+  at?
+  In
+  the
+  summer
+  days,
+  yeah.
+  Okay.
+  How's
+  it
+  maintaining
+  temperature?
+  Pretty
+  good.
+  Yeah.
+
+Customer:
+  Yeah.
+  I
+  think
+  you
+  guys
+  installed
+  that.
+  Were
+  you
+  here
+  last
+  year?
+  I.
+  I
+  saw
+  you
+  personally.
+
+Noah Weng:
+  I
+  think
+  we
+  did.
+  Maybe
+  I'd
+  have
+  to.
+  I'll
+  double
+  check.
+
+Customer:
+  All
+  right.
+  It's
+  no
+  big
+  deal.
+  Actually,
+  I
+  think
+  Nevada
+  Energy.
+
+Noah Weng:
+  Oh,
+  okay.
+
+Customer:
+  Is
+  that
+  possible?
+
+Noah Weng:
+  Yeah,
+  it
+  is.
+
+Customer:
+  Yeah.
+
+Noah Weng:
+  Did
+  you
+  got.
+  How
+  long
+  have
+  you
+  guys
+  bought.
+  Had
+  the
+  home?
+
+Customer:
+  Eight
+  years.
+
+Noah Weng:
+  Eight
+  years
+  yeah.
+  Okay.
+
+Customer:
+  I
+  mean,
+  the
+  one
+  that
+  was
+  on
+  it
+  before,
+  wasn't.
+  It
+  was
+  an
+  antique.
+
+Noah Weng:
+  Yeah.
+
+Customer:
+  And
+  they
+  put
+  this
+  on.
+  It's
+  actually
+  a
+  pretty
+  nice
+  unit.
+
+Noah Weng:
+  Okay.
+
+Customer:
+  And
+  then
+  here's
+  the
+  attic
+  access.
+
+Noah Weng:
+  Okay.
+  For
+  sure.
+
+Customer:
+  Are
+  you
+  going
+  to
+  go
+  up
+  there?
+
+Noah Weng:
+  Yeah.
+
+Customer:
+  Bless
+  you.
+
+Noah Weng:
+  I
+  have
+  to
+  check
+  everything.
+
+Customer:
+  All
+  right.
+  Right
+  on.
+
+Noah Weng:
+  I
+  don't
+  have
+  any.
+  I
+  have
+  a
+  drop
+  cloth
+  that
+  I'll
+  put
+  down.
+
+Customer:
+  Okay.
+
+Noah Weng:
+  So
+  nothing
+  gets
+  on
+  the
+  floor.
+
+Customer:
+  All
+  right.
+
+Noah Weng:
+  If
+  you
+  have.
+  If
+  you
+  guys
+  have,
+  like,
+  some
+  old
+  sheets
+  that
+  you
+  don't
+  want
+  to
+  use,
+  I
+  can
+  drape
+  it
+  over
+  the
+  clothes.
+  That
+  way
+  we
+  can
+  just
+  check
+  all
+  of
+  our
+  boxes
+  and
+  make
+  sure
+  nothing
+  gets
+  on
+  the
+  clothes.
+  I'll.
+
+Customer:
+  I'll
+  ask
+  the
+  high
+  command.
+
+Noah Weng:
+  Okay.
+  And
+  how
+  much
+  is
+  your
+  so
+  with
+  in
+  the
+  summer
+  when
+  you're
+  running
+  this
+  thing?
+  A
+  lot.
+  How
+  much
+  is
+  your
+  power
+  bill
+  slightly.
+
+Customer:
+  Good
+  question.
+  Okay.
+  How
+  much
+  is
+  our
+  power
+  bill
+  go
+  up
+  in
+  the
+  summertime?
+  Probably
+  from
+  about
+  180
+  to
+  about
+  200.
+  Not
+  horrible.
+
+Noah Weng:
+  Okay.
+
+Customer:
+  I
+  was.
+  I
+  thought
+  it
+  would
+  go,
+  you
+  know,
+  that
+  it
+  would
+  be
+  a
+  little
+  bit
+  more
+  than
+  that
+  because
+  the
+  age
+  of
+  the
+  unit.
+  It's
+  an
+  old
+  unit.
+
+Noah Weng:
+  How
+  old
+  is
+  it?
+  How.
+
+Customer:
+  How
+  old's
+  the
+  house
+  care?
+  2004.
+
+Noah Weng:
+  Oh,
+  okay.
+  How
+  many.
+  So
+  how
+  many
+  issues
+  do
+  you
+  guys
+  have?
+  None.
+  Yeah.
+
+Customer:
+  Don't
+  tell
+  it.
+
+Noah Weng:
+  Okay.
+
+Customer:
+  No,
+  we've
+  been
+  really
+  lucky.
+
+Noah Weng:
+  Yeah.
+
+Customer:
+  You
+  know,
+  we
+  have
+  people
+  check
+  it
+  regularly.
+  We
+  had
+  one
+  weird
+  issue.
+  I
+  think
+  you
+  guys
+  got
+  it.
+  The
+  previous
+  person
+  found
+  it.
+  Some
+  kind
+  of
+  filter
+  got
+  stuck
+  up
+  inside
+  the
+  motor
+  up
+  there.
+
+Noah Weng:
+  Oh.
+
+Customer:
+  But
+  they
+  cleaned
+  it
+  out.
+  And
+  I
+  mean,
+  it's
+  been
+  heating
+  all
+  winter,
+  and
+  right
+  now
+  it's
+  running,
+  so
+  it
+  seems
+  to
+  be.
+  It's
+  nice
+  and
+  comfortable
+  in
+  here.
+  All
+  right.
+  Do
+  you
+  have
+  any
+  sheets
+  you
+  want
+  to
+  put
+  down
+  over
+  the
+  clothes?
+  It's
+  got
+  to
+  go
+  up
+  in
+  the
+  attic.
+
+Noah Weng:
+  So
+  I'll
+  be
+  going
+  in
+  the
+  attic.
+  I
+  have
+  my
+  own
+  drop
+  cloth
+  that
+  I'll
+  put
+  on
+  the
+  floor
+  to
+  make
+  sure
+  nothing
+  gets
+  on
+  the
+  floor.
+
+Customer:
+  Yeah.
+
+Noah Weng:
+  I
+  don't
+  have
+  any,
+  like,
+  painters
+  cloth,
+  though.
+  So
+  if
+  you
+  have
+  some
+  old
+  sheets
+  or
+  something,
+  I
+  can
+  go
+  ahead
+  and
+  hang
+  those
+  up.
+
+Customer:
+  So
+  you
+  have
+  to
+  look
+  up
+  in
+  that
+  on
+  the
+  right
+  side
+  towards
+  the
+  back
+  and
+  see
+  if
+  there's
+  any
+  old
+  sheets
+  up
+  on
+  that
+  right
+  side.
+  In
+  our
+  closet.
+  In
+  our
+  closet.
+  Today
+  is
+  Wednesday,
+  right?
+
+Noah Weng:
+  Correct.
+  Where
+  you
+  got.
+  Are
+  you
+  guys
+  originally
+  from
+  Vegas?
+
+Customer:
+  I'm
+  from
+  California.
+  Cancer
+  in
+  New
+  York.
+
+Noah Weng:
+  Oh,
+  okay.
+  I
+  got
+  family
+  up
+  in
+  Scarsdale.
+
+Customer:
+  Oh,
+  really?
+  Well,
+  that's
+  where
+  she's
+  from.
+  Portchester.
+
+Noah Weng:
+  Yeah.
+
+Customer:
+  Which
+  isn't
+  far
+  from
+  Scarsdale.
+  That's
+  a
+  nice
+  area.
+  Scarsdale's
+  pretty
+  spot.
+
+Noah Weng:
+  It
+  is.
+  So
+  I've
+  got
+  family
+  up
+  there
+  and
+  up
+  in
+  White
+  Plains,
+  so.
+
+Customer:
+  Oh,
+  really?
+
+Noah Weng:
+  What
+  a
+  hoot.
+  Yeah,
+  I
+  like
+  to
+  go
+  over
+  there.
+  Me
+  and
+  my
+  wife
+  go
+  over
+  there
+  probably
+  once
+  a
+  year.
+
+Customer:
+  Really?
+
+Noah Weng:
+  Yeah,
+  around
+  like
+  January,
+  December.
+
+Customer:
+  Oh,
+  lucky
+  you.
+  That's
+  just
+  the
+  perfect
+  time
+  to
+  go.
+
+Noah Weng:
+  That's
+  when
+  I
+  like
+  to
+  go.
+
+Customer:
+  Well,
+  I
+  know.
+  I
+  hear
+  you
+  being
+  a.
+
+Noah Weng:
+  Get
+  a
+  change
+  of
+  weather
+  or
+  something.
+
+Customer:
+  Yeah,
+  there
+  you
+  go.
+
+Noah Weng:
+  Yeah.
+  And
+  I
+  can
+  just.
+  It
+  shouldn't
+  be
+  a
+  problem
+  over
+  here
+  on
+  the
+  left.
+
+Customer:
+  No,
+  I
+  know.
+
+Noah Weng:
+  I
+  had
+  the
+  same
+  costume.
+  The
+  Mad
+  Hatter.
+
+Customer:
+  Yes.
+  And
+  just
+  do
+  the
+  best
+  you
+  can.
+  It's
+  not
+  too,
+  too
+  bad.
+
+Noah Weng:
+  I'll
+  get
+  everything
+  covered
+  up.
+  Right
+  on.
+  So
+  you
+  guys
+  plan
+  on
+  staying
+  here?
+
+Customer:
+  My
+  wife
+  has
+  fallen
+  in
+  love
+  with
+  Florida.
+
+Noah Weng:
+  Okay.
+
+Customer:
+  And
+  I
+  don't
+  like
+  it.
+  It's
+  a
+  little
+  tiny
+  town
+  called
+  Arcadia,
+  Florida.
+
+Noah Weng:
+  Florida.
+
+Customer:
+  She
+  befriended
+  an
+  old
+  girlfriend
+  of
+  hers
+  and
+  they're
+  kind
+  of
+  going
+  through
+  old
+  times
+  together.
+  And
+  so
+  we
+  may,
+  I
+  may
+  visit
+  there.
+
+Noah Weng:
+  Yeah.
+
+Customer:
+  But
+  no,
+  this
+  is,
+  this
+  is
+  forever.
+  I
+  just
+  retired.
+
+Noah Weng:
+  Okay,
+  What'd
+  you
+  do?
+
+Customer:
+  I
+  was
+  inspector
+  for
+  the
+  state
+  on
+  cannabis
+  facilities.
+  Okay.
+  So
+  production
+  cultivation
+  and
+  the
+  dispensaries
+  I've
+  got
+  going.
+
+Noah Weng:
+  I
+  used
+  to
+  be
+  in
+  house
+  service
+  technician
+  for
+  Reef.
+
+Customer:
+  Oh
+  really?
+
+Noah Weng:
+  Down
+  there
+  off
+  of
+  Western?
+  Yeah,
+  yeah.
+  They
+  changed
+  security.
+
+Customer:
+  Yeah.
+  Right
+  down
+  from
+  planet
+  13.
+
+Noah Weng:
+  Yeah,
+  yeah,
+  right
+  there.
+
+Customer:
+  Yeah.
+  I've
+  inspected
+  that
+  kind
+  of
+  place
+  many
+  times.
+  Oh,
+  let
+  me
+  tell
+  you.
+  And
+  just
+  I've
+  been
+  doing
+  it
+  for
+  five
+  years.
+  I
+  turned
+  68
+  and
+  I
+  said
+  I'm
+  done
+  working.
+
+Noah Weng:
+  You
+  got
+  to
+  see
+  a
+  little
+  bit
+  of
+  everything.
+
+Customer:
+  Oh,
+  it's
+  really,
+  it's
+  really
+  fun.
+  It
+  is
+  neat.
+  And
+  I
+  can
+  tell
+  you
+  this,
+  it's
+  really.
+  The
+  industry
+  is
+  weird
+  still.
+  A
+  lot
+  of
+  gray
+  areas,
+  but
+  very
+  strange.
+  There's
+  not
+  the
+  money
+  that
+  you
+  thought
+  there
+  was
+  and
+  they
+  were
+  throwing
+  money
+  at
+  it.
+
+Noah Weng:
+  There's
+  a
+  lot
+  of
+  money
+  to
+  be
+
+Customer:
+  put
+  into
+  it
+  and
+  nobody
+  in
+  yesterday
+  at
+  all.
+
+Noah Weng:
+  The
+  initial
+  start
+  startup
+  and
+  then
+  you
+  have
+  to
+  do
+  the
+  things
+  just
+  to
+  maintain
+  while
+  everything's
+  in
+  the
+  process.
+
+Customer:
+  You
+  know,
+  at
+  the
+  beginning
+  everybody
+  was
+  throwing
+  money
+  at
+  it
+  and
+  says,
+  oh
+  gee,
+  we
+  really
+  have
+  to
+  have
+  an
+  HR
+  department.
+  Do
+  we
+  really
+  have
+  to
+  have,
+  you
+  know,
+  this
+  department?
+  Well,
+  you
+  said
+  I,
+  I
+  clocked.
+  No,
+  the
+  model
+  was
+  messed
+  up.
+  They
+  didn't
+  have
+  a
+  model.
+
+Noah Weng:
+  Something
+  like
+  that.
+  You
+  know,
+  you're
+  going
+  from
+  it
+  being
+  illegal
+  to
+  now
+  being
+  brutal
+  to
+  cut
+  corners
+  on.
+  You
+  know,
+  how
+  A
+  company
+  should
+  be
+  run.
+  You
+  just
+  can't
+  do
+  it.
+  Can't
+  do
+  it,
+  right?
+
+Customer:
+  No,
+  your
+  business
+  model's
+  got
+  to
+  be
+  sound.
+
+Noah Weng:
+  All
+  right.
+
+Customer:
+  All
+  right.
+  So
+  knock
+  yourself
+  out.
+
+Noah Weng:
+  Just
+  to
+  let
+  you
+  know,
+  to
+  set
+  an
+  agenda
+  and
+  an
+  expectation.
+  We
+  already
+  took
+  a
+  look
+  around.
+  I'll
+  go
+  ahead
+  and
+  do
+  a
+  thorough
+  evaluation.
+  So
+  do
+  we
+  have
+  any
+  time
+  constraints
+  in
+  where
+  you
+  need
+  to
+  be
+  go?
+
+Customer:
+  How
+  long
+  would
+  be
+  an
+  hour,
+  hour
+  and
+  a
+  half?
+
+Noah Weng:
+  Takes
+  me
+  about
+  90
+  minutes
+  to
+  do
+  the
+  maintenance.
+
+Customer:
+  Okay.
+
+Noah Weng:
+  Then
+  I
+  have
+  to
+  write
+  my
+  report
+  and
+  I'll
+  go
+  over
+  everything.
+  Perfect.
+  Roughly
+  about
+  two,
+  two
+  and
+  a
+  half
+  hours.
+
+Customer:
+  Right
+  on.
+  If
+  not.
+  If
+  I'm
+  not
+  here,
+  she'll
+  be
+  here,
+  but
+  I'll.
+  We
+  have.
+  We're
+  babysitting
+  granddaughter
+  right
+  now.
+  So
+  I'm
+  here.
+  Knock
+  yourself
+  out.
+
+Noah Weng:
+  Have
+  fun.
+  And
+  then.
+  So
+  if
+  I
+  come
+  across
+  anything
+  or
+  concern,
+  should
+  I
+  let
+  you
+  know?
+  Should
+  I
+  keep
+  it
+  to
+  myself?
+
+Customer:
+  You
+  can
+  let
+  me
+  know.
+  But
+  I
+  don't
+  think
+  you
+  guys
+  are
+  just
+  here
+  and
+  I
+  just
+  want
+  to
+  know.
+  So
+  it
+  should
+  be.
+
+Noah Weng:
+  I
+  just
+  have
+  to
+  ask.
+  Some
+  people
+  are
+  like,
+  you
+  know,
+  if
+  it's
+  blowing
+  cold,
+  we're
+  good.
+
+Customer:
+  No,
+  I
+  understand,
+  but.
+
+Noah Weng:
+  And
+  then
+  I
+  won't
+  do
+  anything
+  without
+  your
+  approval.
+
+Customer:
+  Right
+  on.
+
+Noah Weng:
+  If
+  you
+  want
+  to
+  approve
+  something,
+  I
+  can
+  build
+  you
+  some
+  options.
+
+Customer:
+  Okay.
+
+Noah Weng:
+  And
+  then,
+  you
+  know,
+  my
+  main
+  goal
+  for
+  today
+  is
+  just
+  to
+  get
+  a
+  five
+  star
+  service.
+  Right
+  on.
+
+Customer:
+  So
+  I
+  appreciate
+  it.
+
+Noah Weng:
+  Yes,
+  sir.
+  I'll
+  go
+  ahead
+  and
+  get
+  started.
+  I'll
+  be
+  running
+  in
+  and
+  out.
+  Is
+  it
+  all
+  right
+  if
+  I
+  just
+  let
+  myself
+  in?
+
+Customer:
+  Should
+  I
+  not?
+  Absolutely.
+  So
+  then,
+  docs
+  up.
+  So
+  you're
+  good.
+
+Noah Weng:
+  All
+  right.
+  And
+  set
+  those
+  filters
+  out.
+  I'll
+  get
+  them
+  changed
+  for
+  you.
+
+Customer:
+  Right
+  on.
+
+Noah Weng:
+  What?
+  All
+  right.
+  Absolutely.
+
+Customer:
+  It's
+  a
+  retirement
+  project.
+
+Noah Weng:
+  No
+  worries.
+  It's
+  all
+  good.
+  What
+  have
+  you
+  been
+  doing
+  since
+  you've
+  been
+  retired?
+
+Customer:
+  Flying
+  back
+  and
+  forth
+  to
+  Florida.
+
+Noah Weng:
+  Okay.
+  I
+  was
+  just
+  down
+  there
+  in
+  January.
+
+Customer:
+  In
+  Florida.
+
+Noah Weng:
+  I
+  did
+  some
+  training
+  for
+  work.
+
+Customer:
+  Oh,
+  really?
+
+Noah Weng:
+  Yeah.
+
+Customer:
+  Where?
+  What
+  city?
+
+Noah Weng:
+  Sarasota.
+
+Customer:
+  Oh,
+  very
+  nice.
+
+Noah Weng:
+  How
+  far
+  is
+  Sarasota?
+
+Customer:
+  Oh,
+  it's
+  up
+  north,
+  isn't
+  it?
+  Well,
+  it's
+  only
+  an
+  hour
+  away.
+  Fort
+  Myer.
+  Okay.
+  Sarasota,
+  Bradenton.
+  They're
+  all
+  about
+  an
+  hour.
+
+Noah Weng:
+  Yeah.
+  Yeah.
+
+Customer:
+  Pretty
+  cool.
+
+Noah Weng:
+  You
+  got
+  those,
+  you
+  got
+  those
+  filters.
+
+Customer:
+  Let
+  me
+  go
+  look
+  for
+  them,
+  okay?
+  I
+  know
+  you
+  have
+  them.
+  I
+  thought
+  I
+  had
+  them.
+  I
+  just
+  looked
+  real
+  quick
+  and
+  I
+  couldn't
+  see
+  clean.
+  Talking.
+
+Noah Weng:
+  All
+  the
+  other
+  ones,
+  look,
+  they're
+  a
+  little
+  dirty.
+  They're
+  right
+  down
+  there.
+
+Customer:
+  Not
+  too,
+  too.
+
+Noah Weng:
+  But
+  I
+  went
+  ahead
+  and
+  put
+  to
+  put
+  today's
+  date
+  on
+  these
+  ones
+  that
+  I
+  put
+  into.
+
+Customer:
+  Oh,
+  good.
+  That's
+  a
+  smart
+  idea.
+
+Noah Weng:
+  And
+  don't
+  worry
+  about
+  throwing
+  those
+  filters
+  away.
+  I'll
+  take
+  them
+  with
+  me.
+  We
+  have
+  a
+  dedicated
+  canvas
+  for
+  filters.
+
+Customer:
+  Very
+  good.
+
+Noah Weng:
+  Thanks
+  so
+  much.
+  And
+  I'm
+  going
+  to
+  go
+  ahead
+  and
+  turn
+  this
+  down
+  so
+  it'll
+  stay
+  running
+  while
+  I'm
+  here.
+  All
+  right.
+  And
+  then
+  real
+  quick,
+  with
+  today's
+  visit,
+  what
+  are
+  you
+  guys
+  trying
+  to
+  achieve?
+
+Customer:
+  Just
+  a
+  maintenance.
+  I
+  mean,
+  that's
+  why
+  you
+  came
+  in
+  the
+  last
+  time.
+
+Noah Weng:
+  Yeah.
+
+Customer:
+  Yeah.
+
+Noah Weng:
+  So
+  we're
+  just
+  trying
+  to
+  make
+  sure
+  we
+  don't
+  have
+  any
+  breakdowns
+  come
+  summer.
+
+Customer:
+  Yeah,
+  okay.
+  Yeah,
+  I
+  know
+  what
+  the
+  answer
+  is.
+  Buy
+  a
+  new
+  unit.
+
+Noah Weng:
+  No,
+  not.
+  Not
+  necessarily.
+  Yeah,
+  you
+  know,
+  I'll
+  just
+  go
+  ahead
+  and
+  keep
+  an
+  eye
+  out
+  for
+  everything.
+  Yeah,
+  I'll
+  let
+  you
+  know.
+
+Customer:
+  What
+  you
+  need
+  to
+  TR
+  something
+  off,
+  just
+  let
+  us
+  know.
+
+Noah Weng:
+  Okay,
+  thank
+  you.
+
+Customer:
+  It.
+  It's.
+  It's.
+  It's.
+  It's.
+  It's.
+  It's.
+  It's.
+  Whoa,
+  whoa,
+  whoa,
+  whoa,
+  whoa,
+  whoa.
+  Whoop,
+  Whoop.
+  Whoa,
+  whoa,
+  whoa,
+  whoa,
+  whoa.
+  Whoop.
+  It's.
+  It's.
+  It's.
+  It.
+  It's.
+  It's.
+  It's.
+  It's.
+
+Noah Weng:
+  Hey,
+  Harvey.
+  Harvey,
+  can
+  I
+  go
+  over
+  some
+  things
+  with
+  you
+  real
+  quick?
+
+Customer:
+  No,
+  not
+  at
+  all.
+
+Noah Weng:
+  So,
+  just
+  want
+  to
+  let
+  you
+  know
+  what
+  I've
+  noticed
+  out
+  here.
+  Let
+  me
+  put
+  this
+  on
+  lock
+  so
+  everything
+  doesn't
+  start
+  flip
+  flopping.
+  Okay,
+  so
+  right
+  here
+  where
+  it
+  says
+  compressor.
+
+Customer:
+  Yeah.
+
+Noah Weng:
+  It
+  gives
+  you
+  all
+  the
+  information
+  and
+  ratings
+  for
+  it.
+  Right
+  here.
+  The
+  82
+  LRA.
+  Yeah,
+  what
+  that
+  stands
+  for
+  is
+  locked
+  rotor
+  amps.
+  Huh.
+
+Customer:
+  I
+  think
+  this
+  was
+  found
+  the
+  last
+  time.
+  Yeah.
+
+Noah Weng:
+  So
+  this
+  thing
+  right
+  now
+  is
+  pulling
+  89.3.
+
+Customer:
+  Okay.
+
+Noah Weng:
+  So
+  it
+  is
+  overamping.
+  I
+  wouldn't
+  be
+  concerned
+  if
+  it
+  was
+  1
+  or
+  2.
+  Over.
+  Over.
+
+Customer:
+  Yeah.
+
+Noah Weng:
+  But
+  7.
+  7
+  over
+  7.1.
+  It's
+  concerning.
+
+Customer:
+  Yeah.
+
+Noah Weng:
+  What
+  are
+  your
+  thoughts
+  on
+  that?
+
+Customer:
+  Can
+  you
+  replace
+  just
+  that
+  part?
+
+Noah Weng:
+  The
+  compressor?
+
+Customer:
+  Yeah,
+
+Noah Weng:
+  maybe.
+  We
+  would
+  have
+  to
+  find.
+  We.
+  Because
+  R22
+  has
+  been
+  phased
+  out,
+  that
+  Freon's
+  been
+  phased
+  out,
+  the
+  trouble.
+  So,
+  I
+  mean,
+  fine,
+  if
+  we
+  can
+  find
+  that
+  compressor,
+  it
+  would
+  probably
+  be
+  a
+  little
+  bit
+  more
+  than
+  your
+  normal
+  compressor.
+  And
+  then
+  also,
+  so
+  because
+  I
+  saw
+  it
+  over
+  amp,
+  I
+  wanted
+  to
+  go
+  ahead
+  and
+  check
+  the
+  windings,
+  the
+  insulation
+  inside
+  of
+  the
+  compressor
+  itself.
+  So
+  on
+  this
+  meter,
+  we
+  start
+  at
+  good
+  at
+  a
+  thousand
+  and
+  we
+  end
+  at
+  150.
+  Right
+  now
+  we're
+  at
+  100
+  on
+  the
+  caution
+  line
+  time.
+
+Customer:
+  Okay.
+
+Noah Weng:
+  And
+  that's
+  telling
+  me
+  the
+  insulation
+  in
+  that
+  Compressor
+  is
+  worn
+  itself
+  out.
+
+Customer:
+  Yeah.
+
+Noah Weng:
+  And
+  that
+  just
+  makes
+  it
+  susceptible
+  for
+  a
+  ground
+  out
+  so
+  that
+  the
+  compressor
+  could
+  ground
+  out,
+  blow
+  up,
+  and
+  then
+  because
+  that's
+  the
+  heart
+  of
+  your
+  system,
+  not
+  have
+  ac.
+  Okay,
+  so
+  what
+  are
+  your
+  thoughts
+  on
+  that?
+
+Customer:
+  You
+  know,
+  I
+  have
+  this.
+  I
+  don't
+  know,
+  is
+  it
+  worth
+  repairing?
+  Is
+  it
+  worth
+  a
+  unit?
+  That's
+  the
+  thing
+  that
+  comes
+  down
+  to
+  I'm
+  gonna
+  just
+  run
+  this
+  into
+  the
+  ground
+  until
+  it
+  dies
+  and
+  then
+  get
+  a
+  new
+  unit
+  or
+  what?
+
+Noah Weng:
+  Well,
+  it
+  depends
+  on
+  what
+  you
+  want
+  to
+  do,
+  how
+  proactive
+  you
+  want
+  to
+  be.
+  I
+  still
+  have
+  to
+  go
+  ahead
+  and
+  check
+  the
+  rest
+  of
+  the
+  unit
+  and
+  once
+  I'm
+  done,
+  I'll
+  get
+  numbers
+  on
+  everything.
+  So
+  you
+  can
+  go
+  ahead
+  and
+  have.
+  Have
+  all
+  those
+  to
+  look
+  at.
+
+Customer:
+  Yeah.
+
+Noah Weng:
+  So
+  out
+  here,
+  this
+  is
+  your
+  blower
+  motor.
+  Do
+  you
+  see
+  all
+  that?
+  All
+  that
+  around?
+
+Customer:
+  Yeah,
+  around
+  it.
+
+Noah Weng:
+  So
+  do
+  you
+  know
+  what
+  that
+  is?
+
+Customer:
+  Is,
+  I
+  think
+  dust.
+
+Noah Weng:
+  Okay.
+  Yeah.
+  So
+  the
+  dust
+  collected
+  around
+  that
+  because
+  the
+  motor
+  leaked
+  oil.
+
+Customer:
+  Right.
+
+Noah Weng:
+  These
+  things
+  come
+  sealed
+  from
+  factory
+  and
+  lubricated
+  from
+  factory.
+  Once
+  they've,
+  once
+  they've
+  leaked
+  oil
+  by
+  manufacturer
+  specification,
+  they
+  have
+  failed.
+
+Customer:
+  Okay.
+
+Noah Weng:
+  Then,
+  so
+  right
+  here,
+  this
+  is
+  all
+  your
+  pressures
+  and
+  everything
+  like
+  that.
+  So
+  BTU
+  stands
+  for
+  British
+  Thermal
+  Unit.
+  It
+  is
+  how
+  heating
+  and
+  cooling
+  is
+  measured.
+
+Customer:
+  Correct.
+
+Noah Weng:
+  You
+  have
+  three.
+  You
+  have
+  a
+  three
+  ton
+  unit.
+  So
+  you
+  get
+  12,
+  000
+  BTUs
+  per
+  ton.
+  And
+  right
+  now
+  we're
+  operating
+  at
+  25.
+  At
+  25,
+  almost
+  at
+  a
+  two
+  ton
+  unit.
+  So
+  this
+  thing's
+  just
+  working
+  hard
+  to
+  keep
+  up.
+  All
+  right.
+  What
+  questions
+  do
+  you
+  have
+  for
+  me
+  on
+  that?
+
+Customer:
+  Nothing.
+
+Noah Weng:
+  Okay.
+
+Customer:
+  No,
+  I
+  think
+  we
+  found
+  this
+  last
+  year
+  actually
+  the.
+  The
+  current
+  dance
+  being
+  drawn.
+
+Noah Weng:
+  Yeah.
+
+Customer:
+  So
+  we'll
+  see.
+  Finish
+  up.
+
+Noah Weng:
+  Okay.
+
+Customer:
+  And
+  we'll
+  take
+  it
+  from
+  there.
+
+Noah Weng:
+  All
+  right.
+
+Customer:
+  Thank
+  you,
+  Noah.
+
+Noah Weng:
+  Yeah,
+  no
+  worries.
+  If
+  you
+  have
+  any
+  questions
+  for
+  me,
+  just
+  let
+  me
+  know.
+
+Customer:
+  We'll
+  do.
+  It's
+  it,
+  It's,
+  It's,
+  it's.
+  It's.
+  Quiet.
+  She's
+  in.
+  She's
+  like
+  it.
+  Run
+  it
+  out.
+  Coco
+  is
+  only
+
+Noah Weng:
+  going
+  to
+  run
+  out
+  real
+  quick.
+
+Customer:
+  Not
+  a
+  problem.
+  Yeah.
+  You
+  want
+  to
+  sit
+  over
+  here?
+  Where
+  should
+  we
+  sit?
+  Not
+  over
+  there,
+  cuz
+  I've
+  taken
+  over
+  the
+  whole
+  thing.
+
+Noah Weng:
+  Come
+  on
+  over
+  here.
+
+Customer:
+  It's
+  okay.
+
+Noah Weng:
+  So
+  no,
+
+Customer:
+  doesn't
+  matter.
+
+Noah Weng:
+  I
+  have
+  one
+  dog
+  that
+  just.
+  He's
+  not
+  vicious
+  or
+  anything.
+  He
+  just
+  barks
+  constantly.
+  He's
+  a
+  great
+  alarm
+  system,
+  but
+  as
+  soon
+  as
+  you
+  walk
+  up
+  to
+  him,
+  retreat.
+
+Customer:
+  So
+  akitis
+  could
+  be
+  tough.
+
+Noah Weng:
+  So
+  my
+  Akitis,
+  she
+  doesn't
+  bark
+  at
+  all.
+
+Customer:
+  She
+  doesn't
+  huh?
+
+Noah Weng:
+  No,
+  no.
+  She's
+  strictly
+  business.
+  You
+  won't
+  hear
+  nothing
+  from
+  her.
+  So,
+  real
+  quick,
+  I'd
+  just
+  like
+  to
+  go
+  ahead
+  and
+  draw
+  this
+  out
+  for
+  you
+  guys.
+
+Customer:
+  Sure.
+
+Noah Weng:
+  I
+  can
+  explain
+  how
+  an
+  AC
+  system
+  works.
+
+Customer:
+  Just
+  be
+  careful.
+  Don't
+  hurt
+  yourself
+  falling
+  off
+  that.
+
+Noah Weng:
+  So
+  we
+  have
+  our
+  outside
+  unit.
+
+Customer:
+  Correct.
+
+Noah Weng:
+  And
+  that
+  consists
+  of
+  two
+  major
+  parts.
+  You
+  have
+  your
+  outdoor
+  fan
+  motor,
+  and
+  you
+  have
+  your
+  pump.
+  We're
+  going
+  to
+  go
+  ahead
+  and
+  just
+  call
+  it
+  a
+  pump.
+  It's
+  called
+  a
+  compressor,
+  but
+  it
+  pumps
+  coolant,
+  so
+  that's
+  what
+  we're
+  going
+  to
+  call
+  it.
+  And
+  then
+  you
+  have
+  two
+  copper
+  pipes
+  that
+  attach
+  to
+  that
+  outdoor.
+  From
+  that
+  outdoor
+  to
+  the
+  indoor
+  in
+  the
+  attic,
+  attached
+  to
+  the.
+  What
+  we
+  call
+  the
+  cooling
+  box
+  coil.
+  And
+  then
+  we
+  have
+  our
+  furnace,
+  the
+  heat
+  exchanger
+  for
+  the
+  furnace
+  that
+  has
+  the
+  gas
+  plane
+  burnt
+  through
+  it,
+  and
+  that's
+  how
+  you
+  get
+  your
+  heat.
+  And
+  then
+  we
+  have
+  a
+  blower
+  motor
+  on
+  each
+  side.
+  One
+  side
+  of
+  the
+  coil,
+  one
+  side
+  of
+  the
+  furnace,
+  you
+  have
+  what
+  we
+  call
+  mixing
+  boxes.
+  That's
+  just
+  what
+  the
+  ductwork
+  attaches
+  to.
+  So
+  that
+  return
+  air
+  attaches
+  to
+  the
+  filter,
+  and
+  the
+  blower
+  motor
+  sucks
+  up
+  air
+  through
+  the
+  filter,
+  pushes
+  it
+  through
+  the
+  cooling
+  box
+  coil,
+  making
+  the
+  air
+  cold,
+  and
+  then
+  delivers
+  all
+  of
+  that
+  cold
+  air
+  into
+  your
+  rooms
+  through
+  the
+  ductwork.
+
+Customer:
+  Correct.
+
+Noah Weng:
+  Then
+  you
+  have
+  your
+  thermostat.
+  It's
+  just
+  a
+  mouthpiece.
+  It
+  says,
+  I'm
+  too
+  cold,
+  turns
+  the
+  heater
+  on.
+  I'm
+  too
+  hot,
+  turns
+  the
+  outdoor
+  unit
+  on.
+  Does
+  all
+  that
+  make
+  sense?
+
+Customer:
+  Perfectly
+  clear.
+
+Noah Weng:
+  Okay.
+
+Customer:
+  So.
+
+Noah Weng:
+  Outside
+  we
+  have
+  that.
+  That
+  pump
+  overheating
+  or
+  over
+  amping.
+  And
+  also
+  the
+  internals.
+  Those
+  internals
+  are
+  reading
+  bad.
+
+Customer:
+  Yeah,
+  you're
+  right.
+  We're
+  right
+  on
+  the
+  border
+  on
+  that
+  one.
+  Yeah.
+  That's
+  the
+  wiring
+  for
+  the
+  coil,
+  you
+  said.
+  Correct.
+  Yeah.
+
+Noah Weng:
+  So
+  that
+  just.
+
+Customer:
+  Excuse
+  me.
+
+Noah Weng:
+  Excuse
+  me.
+  It
+  just
+  means
+  that
+  that
+  compressor
+  is
+  liable
+  to
+  ground
+  itself
+  out,
+  and
+  it'll
+  just
+  completely
+  go
+  out.
+  And
+  then
+  we
+  have
+  that
+  outdoor
+  fan
+  motor
+  that's
+  leaked
+  the.
+  And
+  then
+  I
+  took
+  a
+  peek
+
+Customer:
+  up
+
+Noah Weng:
+  there
+  in
+  your
+  attic.
+
+Customer:
+  Oh,
+  the
+  rust
+  on
+  the
+  coils
+  there.
+  Yeah,
+  yeah.
+
+Noah Weng:
+  So,
+  I
+  mean,
+  this
+  thing
+  right
+  now,
+  it
+  is.
+  It's
+  about
+  95
+  degrees
+  outside,
+  and
+  it's
+  operating
+  at
+  278psi,
+  so
+  about
+  five
+  to
+  six
+  times
+  more
+  than
+  your
+  average
+  tire
+  with
+  that
+  rust.
+  Rust.
+  Everybody
+  knows
+  rust
+  makes
+  metal
+  weak,
+  so
+  it's
+  potential
+  for
+  a
+  leak
+  at
+  any
+  point
+  in
+  time
+  in
+  the
+  summer
+  because
+  as
+  it
+  gets
+  hotter
+  outside,
+  that
+  pressure
+  rises
+  up
+  to
+  about
+  320.
+  For
+  this
+  type
+  of
+  unit,
+  I've
+  Seen
+  that
+  before.
+
+Customer:
+  That
+  was
+  found
+  before.
+
+Noah Weng:
+  Okay.
+  And
+  then
+  the
+  dirt
+  on
+  the
+  coil.
+  It
+  just
+  looks
+  like
+  the
+  coil
+  hasn't
+  been
+  cleaned
+  since
+  last
+  year.
+
+Customer:
+  No,
+  I
+  don't
+  know
+  if
+  they
+  cleaned
+  it
+  last
+  year.
+  I
+  don't
+  remember.
+
+Noah Weng:
+  And
+  then
+  all
+  that.
+  So
+  you
+  can
+  just.
+  One
+  second.
+  So
+  you
+  see
+  that
+  big
+  clump
+  of
+  dust
+  on
+  top
+  of
+  that
+  motor.
+  The
+  reason
+  why
+  it
+  collects
+  on
+  there
+  is
+  because
+  oil
+  has
+  leaked
+  out
+  of
+  that
+  motor
+  as
+  well.
+  Huh.
+  And
+  then
+  also,
+  just
+  as
+  a
+  side
+  note,
+  you
+  have
+  that
+  3
+  ton
+  unit
+  that
+  you
+  and
+  I
+  talked
+  about
+  and
+  it's
+  operating
+  like
+  a
+  2
+  ton
+  due
+  to
+  the
+  age
+  and
+  efficiency.
+  So
+  we
+  got
+  two
+  major
+  issues
+  like
+  as
+  far
+  as
+  immediate
+  being
+  the.
+  Both
+  the
+  motors
+  and
+  then
+  just
+  not
+  an
+  if,
+  but
+  when
+  that
+  compressor
+  goes
+  out.
+  I'm
+  gonna
+  go
+  ahead
+  and
+  write
+  my
+  report
+  out
+  in
+  the
+  van.
+
+Customer:
+  Okay.
+
+Noah Weng:
+  What
+  questions
+  do
+  you
+  guys
+  have
+  for
+  me?
+  What
+  are
+  your
+  thoughts
+  on
+  all
+  this?
+
+Customer:
+  It's
+  familiar.
+
+Noah Weng:
+  Familiar.
+
+Customer:
+  Yeah.
+  Is
+  what.
+  It's
+  familiar.
+  How's
+  that?
+  I've
+  heard
+  the
+  story
+  before.
+  Yeah,
+  we
+  have.
+  I
+  mean,
+  I
+  saw
+  the
+  duct
+  rest
+  on
+  the
+  coils.
+
+Noah Weng:
+  Okay.
+
+Customer:
+  And
+  I
+  remember
+  the
+  over
+  amperage.
+
+Noah Weng:
+  Yeah.
+
+Customer:
+  On
+  that
+  unit.
+  And
+  I
+  don't
+  know
+  if
+  it
+  was
+  you
+  guys
+  or
+  I
+  think
+  last
+  year
+  was.
+  It
+  was
+  Sierra.
+  Was
+  it
+  Sierra
+  last
+  year?
+  Sure.
+  Okay.
+  I
+  know
+  that
+  we
+  had,
+  you
+  know,
+  essentially
+  give
+  us
+  a
+  quote
+  for.
+  There's
+  right
+  there,
+  your
+  invoice
+  from
+  Sierra
+  on
+  5,
+  30,
+  25.
+  Don't
+  you
+  see
+  it?
+  One
+  more
+  day.
+  Oh,
+  yeah.
+  Here
+  we
+  go.
+  Same
+  pictures.
+
+Noah Weng:
+  Okay.
+
+Customer:
+  Yeah,
+  same
+  exact
+  pictures.
+
+Noah Weng:
+  See?
+
+Customer:
+  Yep.
+
+Noah Weng:
+  There,
+  there,
+  there,
+  there.
+
+Customer:
+  So.
+  And
+  when
+  was
+  this?
+  This
+  was
+  almost
+  a
+  year
+  ago.
+  Yeah.
+
+Noah Weng:
+  What
+  a
+  hoot.
+  Yeah.
+
+Customer:
+  And
+  that's
+  the
+  old.
+  That's
+  the
+  old
+  unit.
+  And
+  it
+  was
+  Nevada
+  Energy
+  that
+  came
+  in
+  and
+  put
+  the
+  new
+  thermostat.
+  Yeah.
+
+Noah Weng:
+  Okay,
+  so
+  they
+  are.
+  They.
+  They're
+  adjust.
+  So
+  they're
+  adjusting
+  your
+  thermostat.
+
+Customer:
+  No,
+  no,
+  no,
+  no.
+
+Noah Weng:
+  You
+  guys
+  aren't
+  on
+  their
+  energy
+  program
+  and
+  they
+  came
+  out
+  and
+  adjusted
+  it
+  for
+  you.
+
+Customer:
+  No,
+  they
+  put
+  in
+  a
+  new
+  thermostat.
+
+Noah Weng:
+  They
+  came
+  out
+  and
+  put
+  the
+  thermostat
+  on
+  and
+  they're
+  not
+  controlling
+  your
+  temperatures.
+  Okay.
+
+Customer:
+  I
+  thought.
+
+Noah Weng:
+  Because
+  I've
+  had.
+  Because
+  I
+  know
+  they
+  have
+  a
+  problem.
+  Yeah.
+  They
+  have
+  a
+  program
+  to
+  where,
+  you
+  know,
+  they'll.
+  They
+  give
+  you
+  a
+  deal.
+  Yeah.
+  They
+  give
+  a
+  deal
+  on.
+  For
+  it
+  on
+  you.
+  But
+  they.
+  They'll
+  adjust
+  your
+  thermostat
+  temperatures
+  whenever
+  they
+  want.
+
+Customer:
+  No,
+  this
+  was
+  just
+  a.
+  Replace
+  your
+  old
+  thermostat
+  with
+  a
+  new
+  one.
+  And
+  it
+  was
+  free.
+
+Noah Weng:
+  Okay.
+  Yeah.
+  So
+  we.
+  I
+  went
+  ahead
+  and
+  cleaned
+  out
+  the
+  condenser,
+  cleaned
+  the
+  coils,
+  took
+  all
+  the
+  leaves
+  out
+  of
+  it.
+
+Customer:
+  Good.
+  Thank
+  you.
+
+Noah Weng:
+  So
+  let
+  me
+  go
+  ahead
+  out
+  here
+  and
+  write
+  my
+  report.
+  Do
+  you
+  guys
+  have
+  any
+  questions
+  for
+  me?
+
+Customer:
+  Nope.
+  We
+  appreciate
+  your
+  thoroughness.
+  And
+  so
+  basically
+  we'll
+  look
+  for
+  how
+  are.
+  How
+  supply
+  chain
+  for
+  units.
+
+Noah Weng:
+  Typically
+  it
+  just
+  depends
+  on
+  what
+  you
+  want.
+  I
+  don't
+  really
+  deal
+  with
+  that
+  side
+  of
+  it.
+
+Customer:
+  Okay.
+
+Noah Weng:
+  We
+  have
+  a.
+  We
+  have
+  an
+  install
+  team
+  member
+  that
+  would
+  come
+  out.
+  Okay,
+  everything
+  out.
+  So
+  let
+  me
+  just
+  go
+  write
+  my
+  report.
+  I'll
+  give
+  you
+  everything
+  that
+  I
+  can
+  give
+  you
+  and
+  then
+  we
+  can
+  talk
+  about
+  everything
+  else.
+
+Customer:
+  But
+  you
+  could
+  see
+  that
+  it
+  hasn't
+  changed
+  much
+  in
+  a
+  year.
+  It's
+  really
+  weird
+  is
+  that
+  I
+  have.
+  I
+  don't
+  know
+  if
+  you've
+  heard
+  of
+  Electric
+  Code.
+  They're
+  the
+  electric
+  company
+  I
+  use.
+  They're
+  very
+  thorough
+  and
+  certified.
+  And
+  as
+  a
+  side
+  story,
+  they're
+  coming
+  out
+  Friday
+  the
+  15th
+  and
+  the
+  last
+  time
+  they
+  were
+  out
+  here
+  was
+  a
+  year
+  ago
+  exactly
+  on
+  the
+  15th.
+  So
+  yeah,
+  I'm
+  going
+  down
+  to
+  the
+  casino.
+  Put
+  $5
+  on
+  15.
+
+Noah Weng:
+  Okay.
+  There
+  you
+  go.
+  Yeah,
+  there
+  you
+  go.
+  What
+  casino
+  do
+  you
+  guys
+  go
+  to?
+
+Customer:
+  Oh,
+  we
+  just
+  go
+  to
+  the
+  M.
+  Okay.
+
+Noah Weng:
+  Yeah,
+  yeah.
+  I
+  haven't
+  been
+  to
+  that.
+  I
+  haven't
+  been
+  to
+  that
+  one.
+  I've
+  been
+  to
+  Durango
+  1.
+  That's
+  pretty
+  nice.
+
+Customer:
+  Durango
+  is
+  nice.
+
+Noah Weng:
+  I
+  like
+  it.
+  Cuz
+  I
+  used.
+  So
+  I
+  was
+  up
+  north
+  so
+  I
+  used
+  to
+  go
+  to
+  Aliante
+  mom
+  because
+  she
+  likes
+  to
+  play
+  the
+  slots.
+  But
+  it's
+  just
+  not
+  the
+  same
+  anymore.
+  It's
+  a
+  little.
+  I
+  don't
+  like
+  going.
+
+Customer:
+  I
+  don't
+  understand.
+  I
+  understand.
+  All
+  right.
+  Thank
+  you,
+  Noah.
+  Yeah.
+
+Noah Weng:
+  Hey,
+  brother.
+  Hey,
+  real
+  quick,
+  don't
+  jump
+  down
+  my
+  neck
+  because
+  I
+  know
+  we're
+  not
+  gonna
+  do
+  it,
+  but
+  he
+  wants
+  to.
+  He
+  wants
+  to
+  hear
+  it.
+  What
+  would
+  be.
+  What
+  would
+  you
+  ballpark?
+  R22
+  compressor
+  for.
+  8,600.
+  £5.
+  3
+  at
+  £6.
+  £6
+  and
+  a
+  half
+  pounds
+  total.
+  Yeah.
+  Okay,
+  so
+  the
+  only
+  thing
+  he's
+  got
+  going
+  on
+  here
+  is
+  outdoor
+  fan
+  motor,
+  indoor
+  fan
+  motor.
+  And
+  then
+  the
+  compressor
+  internals
+  are
+  reading
+  bad
+  and
+  it's
+  over.
+  Amping
+  on
+  startup.
+  Can
+  you
+  hear
+  me
+  now?
+  Hey,
+  John.
