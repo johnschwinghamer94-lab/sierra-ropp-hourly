@@ -1,15 +1,1 @@
-# file:Benjamin_Wyllie_-_Job_#_668882435
-
-**Tech:** Benjamin Wyllie
-**Job:** 668882435
-**Date:** 2026-07-25
-**Duration:** 44 min
-
-## FSG Scores
-- **Welcome:** Solid
-- **Assessment:** Solid
-- **Decision:** Moderate
-- **Deliver:** Weak
-
-## Outcome
-unknown
+[SKIP] Corrupted transcript (excessive single-word fragments)

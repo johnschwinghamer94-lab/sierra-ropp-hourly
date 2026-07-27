@@ -1,1 +1,1 @@
-Non-scoreable: Transcript too short, garbled, or lacks clear customer interaction.
+[SKIP] Corrupted transcript (excessive single-word fragments)
