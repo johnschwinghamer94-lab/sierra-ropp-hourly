@@ -1,0 +1,61 @@
+{
+  "generated": "2026-07-27T06:56:05.955661Z",
+  "window": {
+    "start": "2026-06-27",
+    "end": "2026-07-16"
+  },
+  "totals": {
+    "total": 3592,
+    "great": 0,
+    "ok": 2847,
+    "poor": 745
+  },
+  "types": {
+    "Price": {
+      "total": 978,
+      "great": 0,
+      "ok": 854,
+      "poor": 124
+    },
+    "Stall / Think About It": {
+      "total": 178,
+      "great": 0,
+      "ok": 137,
+      "poor": 41
+    },
+    "Doubt / Distrust": {
+      "total": 225,
+      "great": 0,
+      "ok": 185,
+      "poor": 40
+    },
+    "System Too Old": {
+      "total": 688,
+      "great": 0,
+      "ok": 537,
+      "poor": 151
+    },
+    "Competitor": {
+      "total": 410,
+      "great": 0,
+      "ok": 325,
+      "poor": 85
+    },
+    "Spouse / Decision-Maker": {
+      "total": 532,
+      "great": 0,
+      "ok": 375,
+      "poor": 157
+    },
+    "Other": {
+      "total": 581,
+      "great": 0,
+      "ok": 434,
+      "poor": 147
+    }
+  },
+  "months": [
+    "2026-07",
+    "2026-06"
+  ]
+}
