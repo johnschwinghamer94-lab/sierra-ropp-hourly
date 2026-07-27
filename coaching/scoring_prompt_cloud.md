@@ -74,6 +74,23 @@ thing that most likely would have flipped this call. NO customer names and NO
 direct customer quotes in the tip (dollar amounts from the call are allowed —
 approved by John).
 
+## OUTCOME GROUND TRUTH (ServiceTitan is authoritative)
+
+John's conversion rates must reflect real TGL creation, not how a call
+"sounded" — ST is authoritative:
+
+- Outcome is `"flipped"` whenever the customer AGREES to Option C or a
+  Comfort Advisor appointment is set/scheduled during the call — soft
+  wording still counts if the appointment is set.
+- BEFORE finalizing outcome, parse the call's job number from the
+  transcript's `Job:` header and check `tgl_truth/<call PT date>.json`
+  (also check the NEXT day's file — tickets are often typed late). If the
+  job number appears as a key in either file's `tgls` object, outcome MUST
+  be `"flipped"` regardless of how the conversation sounded.
+- If the transcript clearly shows Option C agreement but no truth entry
+  exists yet (ticket not typed yet), still record `"flipped"` and note
+  "ticket pending" in the full private card.
+
 ## TGL causality (the heart of every tip)
 
 The tip must explain WHY the outcome happened, anchored to the turnover, not

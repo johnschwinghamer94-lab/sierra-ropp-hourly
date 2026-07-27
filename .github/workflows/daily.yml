@@ -38,6 +38,22 @@ jobs:
             echo "WARN — ServiceTitan fetch unavailable; falling back to OneDrive Excel"
             python graph_download_cloud.py
           fi
+      - name: TGL ground truth (trailing 8 days)
+        continue-on-error: true          # a truth-refresh failure never breaks the rebuild
+        env:
+          ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
+        run: |
+          python tgl_truth.py || echo "truth refresh failed — keeping last good"
+          git config user.email "johnschwinghamer94@gmail.com"
+          git config user.name "John Schwinghamer"
+          git add tgl_truth/
+          if git diff --cached --quiet; then
+            echo "no TGL truth change"
+          else
+            git commit -m "TGL truth $(date -u +'%F %H:%M')"
+            git pull --rebase || echo "pull --rebase failed"
+            git push || echo "push skipped"
+          fi
       - name: Refresh duplicate-ticket exclusions (once daily · 14:00 UTC)
         continue-on-error: true          # a refresher failure keeps the last good list; never breaks the build
         env:

@@ -67,6 +67,20 @@ Rate each section and its behaviors:
 - 4 Critical Actions (Pass/Fail): Setting clear expectations, Asking good questions, Creating good options, Handling objections
 
 **Number rule — read carefully:** The ONLY number allowed anywhere in the report is the **close-rate percentage** = (rep's closed/flipped calls ÷ their gradeable calls), e.g. "44%". Do NOT output a total score, a /170, a points value, an A–F grade, or a grade %. Every category is a word band.
+
+**Outcome ground truth (ServiceTitan overrides transcript impressions):** close
+rate = flipped-or-closed calls ÷ gradeable calls, where "flipped" is
+determined per the same ground-truth rule the live scoring pipeline uses —
+cross-reference each graded call's job number (from the transcript's `Job:`
+header, or already carried on the card as `jobNumber`) against
+`tgl_truth/<TARGET>.json` and `tgl_truth/<TARGET+1>.json` (late-typed
+tickets land the next day). A job number found as a key in either file's
+`tgls` object is a flip, full stop — this overrides transcript impressions
+in BOTH directions: a truth-file hit counts as flipped even if the call
+sounded ambiguous or soft; no truth-file hit AND no clear in-call Option
+C/CA-appointment agreement means it is NOT a flip, even if the tech felt
+good about the call. ST is authoritative — John's conversion rates must
+reflect real TGL creation.
 **Every band must be backed by a real quote** from that rep's transcripts — the
 Evidence quotes inside the scorecards ARE transcript quotes and satisfy this rule.
 Any missed Critical Action = automatic FAIL on that call regardless of bands. Flag it prominently.
@@ -121,7 +135,7 @@ Write `coaching.json` at the repository root (overwrite if it exists), JSON, usi
 ```
 Rules:
 - Band values must be ONLY the five words Strong / Strong on wins / Solid / Moderate / Weak — never numbers.
-- `closeRate` is the ONLY number-bearing field (a percent string, e.g. "44%").
+- `closeRate` is the ONLY number-bearing field (a percent string, e.g. "44%"), computed per the OUTCOME GROUND TRUTH rule in Step 4 (`tgl_truth/<TARGET>.json` + `<TARGET+1>.json` override transcript impressions in both directions).
 - `critical` values are booleans — true means the rep passed that critical action on ALL of their gradeable calls that day.
 - `headlineGap` and each `focus` entry must contain NO customer names and NO transcript quotes (quotes stay inside the HTML plans, not in coaching.json).
 - `plan` is the dashboard-relative path where the relay workflow publishes the HTML: `coaching/plans/<TARGET>/<Rep_Name with underscores>.html` (matches the filename saved in Step 5).
