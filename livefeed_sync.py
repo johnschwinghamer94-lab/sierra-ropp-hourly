@@ -27,15 +27,13 @@ Runs in TWO environments (same file, keep private repo & servicetitan/ in sync):
     ST_CREDS_JSON (st_client materializes ~/.servicetitan/sierra.json).
 
 Usage:
-    python livefeed_sync.py            # loop: one cycle / 90 s, 06:50-22:00, exits after
+    python livefeed_sync.py            # loop: one cycle / 90 s, 06:50-midnight, exits after
     python livefeed_sync.py --once     # single cycle now (ignores the time window)
     python livefeed_sync.py --dry      # single cycle, print JSON, no write/git
 """
 import base64, json, os, sys, time, subprocess, urllib.request, urllib.error
 from datetime import datetime, date, timedelta, timezone
 from pathlib import Path
-
-import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import st_client as st
@@ -61,7 +59,8 @@ TAG_MGMT_REMOVED = 545867780      # "Management Removed ROPP" tag type
 
 CYCLE_SECS = 90
 DAY_START = (6, 50)     # local (PC is Vegas time)
-DAY_END = (22, 0)       # techs regularly work past 8 PM in season — track them
+# extended to midnight 2026-07-26 (John) — late-typed TGL tickets must count on the day's board
+DAY_END = (23, 59)      # techs regularly work past 8 PM in season — track them; run to midnight
 
 # self-update: pick up a pushed code/data fix within one tick instead of
 # waiting up to MAX_MIN for the session to end. Only active when the workflow
@@ -80,116 +79,6 @@ except Exception:
               "Nikko April", "Andrew Trujillo", "Juan Tlatenchi", "David Canales",
               "Brandon Moreno", "Francisco Valencia", "Mario Castro", "Cole Pantol",
               "Nathan Colquitt", "Robert Silinzy", "Andrew Alonso"]
-
-# ── Siro "not recording" check (John, 2026-07-25) ────────────────────────────
-# Per-cycle query of active Siro recordings, so Working-status Live Feed cards
-# can show a "not recording" blinker. Same mint/auth pattern as
-# siro_cloud_pull.py's mint_token/list_recordings; token cached module-lifetime,
-# re-minted on 401. FAIL OPEN on any error (creds absent, network, 4xx): returns
-# None, and the caller sets rec:null on every job (UI shows nothing) rather than
-# ever crashing the relay.
-SIRO_TEAM_ID = "Q42L8L"
-SIRO_TOKEN_URL_FMT = "https://functions.siro.ai/api-externalApi/v1/core/oauth/apps/{client_id}/access-token"
-SIRO_API_BASE = "https://api.siro.ai/v1/core"
-SIRO_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-           "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
-_SIRO_LOCAL_API_KEY = Path.home() / ".siro_api_key"
-_SIRO_LOCAL_OAUTH_APP = Path.home() / ".siro_oauth_app.json"
-_SIRO_LOCAL_TEST_USER_ID = "RKnwDLk8seVkMrLIhDdnSOVsEu73"
-_SIRO_TOKEN = {"tok": None}
-
-
-def _siro_creds():
-    api_key = os.environ.get("SIRO_API_KEY")
-    client_id = os.environ.get("SIRO_CLIENT_ID")
-    client_secret = os.environ.get("SIRO_CLIENT_SECRET")
-    user_id = os.environ.get("SIRO_USER_ID")
-    if not api_key and _SIRO_LOCAL_API_KEY.exists():
-        try:
-            api_key = _SIRO_LOCAL_API_KEY.read_text().strip()
-        except OSError:
-            pass
-    if (not client_id or not client_secret) and _SIRO_LOCAL_OAUTH_APP.exists():
-        try:
-            app = json.loads(_SIRO_LOCAL_OAUTH_APP.read_text())
-            client_id = client_id or app.get("clientID")
-            client_secret = client_secret or app.get("clientSecret")
-        except (OSError, json.JSONDecodeError):
-            pass
-    if not user_id and _SIRO_LOCAL_API_KEY.exists() and _SIRO_LOCAL_OAUTH_APP.exists():
-        user_id = _SIRO_LOCAL_TEST_USER_ID
-    return api_key, client_id, client_secret, user_id
-
-
-def _siro_mint_token(api_key, client_id, client_secret, user_id):
-    url = SIRO_TOKEN_URL_FMT.format(client_id=client_id)
-    r = requests.post(url, json={"clientSecret": client_secret, "userId": user_id, "scope": "read"},
-                       headers={"Authorization": f"Bearer {api_key}", "User-Agent": SIRO_UA}, timeout=30)
-    r.raise_for_status()
-    return r.json()["accessToken"]
-
-
-def _siro_fetch_recordings(token):
-    r = requests.get(f"{SIRO_API_BASE}/recordings?teamId={SIRO_TEAM_ID}&limit=50",
-                      headers={"x-siro-auth-token": token, "User-Agent": SIRO_UA}, timeout=30)
-    if r.status_code == 401:
-        raise PermissionError("401")
-    r.raise_for_status()
-    return r.json().get("data", [])
-
-
-_siro_norm = lambda s: " ".join((s or "").lower().split())
-
-
-def active_recording_names():
-    """(full_name_set, first_name_set) of reps with an 'in progress' Siro
-    recording right now, or None on any failure (fail-open — caller sets
-    rec:null on all jobs this cycle)."""
-    api_key, client_id, client_secret, user_id = _siro_creds()
-    if not all([api_key, client_id, client_secret, user_id]):
-        log("siro rec-check: creds absent — rec:null this cycle")
-        return None
-    try:
-        tok = _SIRO_TOKEN["tok"]
-        if not tok:
-            tok = _siro_mint_token(api_key, client_id, client_secret, user_id)
-            _SIRO_TOKEN["tok"] = tok
-        try:
-            recs = _siro_fetch_recordings(tok)
-        except PermissionError:
-            tok = _siro_mint_token(api_key, client_id, client_secret, user_id)
-            _SIRO_TOKEN["tok"] = tok
-            recs = _siro_fetch_recordings(tok)
-        full, first = set(), set()
-        for rec in recs:
-            if (rec.get("result") or "").strip().lower() != "in progress":
-                continue
-            fn = _siro_norm(rec.get("repFirstName"))
-            ln = _siro_norm(rec.get("repLastName"))
-            if fn:
-                first.add(fn)
-            if fn or ln:
-                full.add(_siro_norm(f"{fn} {ln}"))
-        return full, first
-    except Exception as ex:
-        log("siro rec-check FAILED (fail-open, rec:null): " + repr(ex)[:150])
-        return None
-
-
-def _tech_recording(tech_name, active):
-    """True/False if tech_name matches an active recording's rep; active is the
-    (full, first) tuple from active_recording_names(), or None (fail-open)."""
-    if active is None:
-        return None
-    full, first = active
-    norm = _siro_norm(tech_name)
-    if not norm:
-        return False
-    if norm in full:
-        return True
-    first_word = norm.split()[0] if norm.split() else ""
-    return bool(first_word and first_word in first)
-
 
 def log(msg):
     line = datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "  " + msg
@@ -495,7 +384,6 @@ def build(state):
         by_job.setdefault(a["jobId"], a)
 
     RANK = {"Working": 0, "Dispatched": 1, "Hold": 2, "Scheduled": 3, "Done": 4}
-    active_recs = active_recording_names()   # one Siro check per cycle (fail-open -> None)
     cards = []
     on_site = en_route = completed = 0
     opt_total = opt_count = 0
@@ -528,33 +416,19 @@ def build(state):
         # estimates on this job: unsold = options in play; sold = money closed on
         # the call itself (parts etc.) — a sold estimate is NOT a TGL signal,
         # the lead-job link (lead_by_src) is the authority for TGLs.
-        #
-        # opts_n = COUNT of real options the tech built today (active,
-        # non-dismissed estimates whose items aren't just the CA01 "speak to
-        # a comfort advisor / install specialist" routing placeholder). This
-        # counts sold AND still-open estimates alike, because a tech who built
-        # 3 options and got 2 signed still built 3 — the count must reflect
-        # what was built, not just what's still open. (Bug: previously gated
-        # on subtotal > 0 and excluded anything sold, which undercounted jobs
-        # where an option was $0 [call-for-quote pricing] or already signed.)
-        # opts_t = dollar total of estimates STILL open/unsold ("$ in play").
         opts_t = opts_n = 0
         opt_time = sold_time = None
         sold_t = 0.0
         for est in est_by_job.get(jid, []):
             sub = float(est.get("subtotal") or 0)
             st_name = ((est.get("status") or {}).get("name") or "").lower()
-            sold = bool(est.get("soldOn")) or st_name == "sold"
-            skus = {(i.get("sku") or {}).get("name") for i in (est.get("items") or [])}
-            is_ca_placeholder = skus == {"CA01"}
-            if sold:
+            if est.get("soldOn") or st_name == "sold":
                 sold_t += sub
                 dtl = parse_utc(est.get("soldOn"))
                 if dtl and dtl.date() == today:
                     sold_time = fmt_t(dtl)
             elif est.get("active") and st_name != "dismissed" and sub > 0:
                 opts_t += sub
-            if est.get("active") and st_name != "dismissed" and not is_ca_placeholder:
                 opts_n += 1
                 dtl = parse_utc(est.get("createdOn"))
                 if dtl:
@@ -610,14 +484,6 @@ def build(state):
         jtags = j.get("tagTypeIds") or []
         tag_flag = ("removed" if TAG_MGMT_REMOVED in jtags
                     else None if TAG_ROPP in jtags else "noropp")
-
-        # "not recording" blinker (John, 2026-07-25): only meaningful while a
-        # tech is Working; other statuses omit the field (UI shows nothing).
-        rec = None
-        if status == "Working":
-            hits = [_tech_recording(t, active_recs) for t in techs]
-            rec = None if active_recs is None else any(h is True for h in hits)
-
         cards.append({
             "jobId": jid, "jobNumber": j.get("jobNumber", ""),
             "tech": ", ".join(techs), "customer": cust,
@@ -636,7 +502,6 @@ def build(state):
             "warn": warn,
             "tagFlag": tag_flag,
             "extraTags": flag_tags(j.get("_tags", [])),
-            "rec": rec,
         })
 
     # board reads top-to-bottom, left-to-right in call-start order (John's spec)
