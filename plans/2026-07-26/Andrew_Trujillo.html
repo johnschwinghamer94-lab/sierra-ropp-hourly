@@ -1,0 +1,208 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Andrew Trujillo — SILO Coaching Plan 2026-07-26</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;·&nbsp;SILO</b><span class="tag">Daily Coaching Plan · 2026-07-26</span></div>
+<div class="wrap">
+<div class="hero"><div class="ey">Daily Coaching Plan · 2026-07-26 · 3 gradeable calls · 1 closed · 1 recording skipped</div><h1 class="disp">Andrew Trujillo</h1><p class="lede">Five and a half hours of customer time across three visits, and one decision to show for it. When he lands the close he lands it beautifully — a hesitant landlord thanking him for the recommendation he just paid for. On the other two he taught brilliantly for two hours apiece and walked out with nothing on a calendar.</p></div>
+<div class="glance">
+<div class="g"><div class="k">Close Rate</div><div class="v red">33%<small>1 of 3 — the Nazareth repair approved in the home</small></div></div>
+<div class="g"><div class="k">Calls Reviewed</div><div class="v">3 of 4<small><q>Nazareth</q> closed · <q>BUJAZIA</q> · one no-job consultation · <q>SULLIVAN</q> skipped (empty recording)</small></div></div>
+<div class="g"><div class="k">Strongest</div><div class="v grn">Welcome<small>Personal connection — Strong</small></div></div>
+<div class="g"><div class="k">Weakest</div><div class="v red">Deliver<small>long calls, no landing</small></div></div>
+</div>
+<div class="legend"><span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span><span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span></div>
+<p class="note">Scored on strength bands, never numbers — the only figure anywhere is the close rate. The SULLIVAN recording runs 98 minutes of duration but captured only three lines of audio and is not gradeable. Two of his calls carry no job number, so their outcomes are taken from what is audible in the call itself; the rest come from ServiceTitan TGL records.</p>
+<section><div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive"><div class="dh"><div class="k">Why two of three didn&#x27;t land</div><h3>He runs a masterclass and forgets to take attendance.</h3></div><div class="split"><div class="c said"><div class="lbl">What actually happened</div><p>On the 127-minute consultation he explained thermal expansion, installation quality and warranty implications until the customer understood his own house better than the builder did. Then it ended on <q>Please don&#x27;t be afraid to hit me up.</q> On BUJAZIA he diagnosed a failed compressor across 110 minutes, worked through warranty coverage and replacement paths, and the tape ends with no commitment and no date.</p></div><div class="c should"><div class="lbl">What the FSG model calls for</div><p>Education is the setup, not the close. The FSG move at the end of a two-hour consultation is to convert the understanding into a slot while it is still warm: <q>You now know more about this system than anyone who has looked at it. Let&#x27;s get our advisor out to put real numbers next to what I just showed you — it costs you nothing. Tomorrow morning, or is afternoon better?</q> Then silence. He earned that ask three times and made it once.</p></div></div></div></section>
+<section><div class="sh"><div class="no">2</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div><div class="rub">
+<div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+<div class="row"><div class="rb">Introduction / get their name</div><div><span class="b strong">Strong</span></div><div class="ev">Name exchanged in the first breath on every call: <q>Andrew, Zach. Pleasure to meet you</q> · <q>Good. Joshua. Yes. Pleasure to meet you.</q></div></div>
+<div class="row"><div class="rb">Permission to enter</div><div><span class="b solid">Solid</span></div><div class="ev">Asked and confirmed before entering on the calls where the tape covers it.</div></div>
+<div class="row"><div class="rb">Floor protectors</div><div><span class="b weak">Weak</span></div><div class="ev">Not mentioned on any graded call.</div></div>
+<div class="row"><div class="rb">Personal connection</div><div><span class="b strong">Strong</span></div><div class="ev">The best opening on the board. <q>Evening, how&#x27;s it going? Pretty good, how are you?</q> then, unprompted, <q>That&#x27;s a pretty cool name, man.</q> Nazareth was relaxed inside sixty seconds and approved a repair ninety minutes later.</div></div>
+<div class="row"><div class="rb">Confirm the reason for the call</div><div><span class="b strong">Strong</span></div><div class="ev">Opens on the customer&#x27;s problem in the customer&#x27;s words every time before touching equipment.</div></div>
+<div class="row"><div class="rb">Brief technical questions</div><div><span class="b strong">Strong</span></div><div class="ev">System age, performance history, prior repairs and — on the tenant call — the ownership question that actually decided who could approve the work.</div></div>
+<div class="row"><div class="rb">Setting Expectations — LTOAT5</div><div><span class="b solid">Solid</span></div><div class="ev">The approval promise is his and it is consistent: <q>make sure to get your approval before we do anything</q>, plus written estimates promised up front. The five-star seed and the today commitment are not there.</div></div>
+<div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+<div class="row"><div class="rb">Required questions</div><div><span class="b strong">Strong</span></div><div class="ev">Deep and genuinely diagnostic — system history, performance, efficiency, design faults, tenant responsibilities. On the consultation he got to root causes (thermal expansion, installation quality) that nobody else had raised with that homeowner.</div></div>
+<div class="row"><div class="rb">Check-ins</div><div><span class="b strong">Strong</span></div><div class="ev">Brings the customer to the equipment and checks in at each stage; the customer is with him the whole way, which is why these calls run long and stay warm.</div></div>
+<div class="row"><div class="rb">Draw the Picture</div><div><span class="b strong">Strong</span></div><div class="ev">Explains failure mechanisms rather than naming parts — why a compressor fails, what a warranty actually covers, what happens next if nothing changes.</div></div>
+<div class="row"><div class="rb">Check Your Tone</div><div><span class="b strong">Strong</span></div><div class="ev">Never alarmist. On the tenant call he validated the landlord&#x27;s hesitation about cost instead of pushing through it.</div></div>
+<div class="row"><div class="rb">Keep It Simple</div><div><span class="b solid">Solid</span></div><div class="ev">Mostly jargon-free; on the longest call the depth occasionally outruns what the customer needed to decide.</div></div>
+<div class="row"><div class="rb">Show Pictures</div><div><span class="b solid">Solid</span></div><div class="ev">Photos and readings used during the walk-throughs.</div></div>
+<div class="row"><div class="rb">Get the Customer to Diagnose</div><div><span class="b solid">Solid</span></div><div class="ev">On the consultation the customer genuinely followed the reasoning and reached conclusions with him — the closest anyone came to this behavior all day.</div></div>
+<div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b wins">Strong on wins</span></span></div>
+<div class="row"><div class="rb">Building options</div><div><span class="b wins">Strong on wins</span></div><div class="ev">On Nazareth the repair, its value and its warranty were laid out clearly enough for a hesitant landlord to say yes. On BUJAZIA warranty coverage, repair and replacement were all discussed and none of them was ever framed as a choice to make today.</div></div>
+<div class="row"><div class="rb">Reconnecting</div><div><span class="b solid">Solid</span></div><div class="ev">Recaps the findings before pricing on the calls that reach it.</div></div>
+<div class="row"><div class="rb">Link It</div><div><span class="b wins">Strong on wins</span></div><div class="ev">On the tenant call he tied the repair straight to the landlord&#x27;s actual exposure — equipment is the owner&#x27;s responsibility, the tenant is without air. That is why it closed.</div></div>
+<div class="row"><div class="rb">Say It</div><div><span class="b wins">Strong on wins</span></div><div class="ev">Named the repair price plainly on Nazareth and the customer approved it. On the two long calls no number is ever put on the table as a decision.</div></div>
+<div class="row"><div class="rb">Spin It</div><div><span class="b solid">Solid</span></div><div class="ev">Reframes cost as peace of mind and warranty coverage rather than as a part.</div></div>
+<div class="row"><div class="rb">Zip It</div><div><span class="b mod">Moderate</span></div><div class="ev">On the long calls he keeps teaching past the point where the customer has enough to decide. Two hours of value can bury the ask.</div></div>
+<div class="row"><div class="rb">Overcoming objections</div><div><span class="b mod">Moderate</span></div><div class="ev">Nazareth&#x27;s cost hesitation was handled well — validated, then answered with value, then closed. On BUJAZIA the customer&#x27;s warranty questions were answered thoroughly and never converted into a next step. That is the automatic fail on the day.</div></div>
+<div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b mod">Moderate</span></span></div>
+<div class="row"><div class="rb">Be A Nerd</div><div><span class="b strong">Strong</span></div><div class="ev">Elite. A 127-minute consultation that left the homeowner able to explain his own system, and a tenant call where the landlord understood exactly what he was buying and why.</div></div>
+<div class="row"><div class="rb">5-Star Review</div><div><span class="b mod">Moderate</span></div><div class="ev">Asked on Nazareth at the close. Absent on the two calls that did not close — which is the pattern worth naming: the review ask is riding on the sale instead of on the service.</div></div>
+<div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b strong">Strong</span></span></div>
+<div class="row"><div class="rb">Make their time valuable</div><div><span class="b strong">Strong</span></div><div class="ev">Nobody on the board gives customers more. Three homeowners finished these visits genuinely better informed.</div></div>
+<div class="row"><div class="rb">Help them arrive at their own solution</div><div><span class="b solid">Solid</span></div><div class="ev">One of three arrived at a decision. The other two arrived at understanding and were left to act on it alone.</div></div>
+</div>
+<div class="sh" style="margin-top:26px"><div class="no">3</div><h2>Critical Actions — pass rate</h2></div><div class="rub">
+<div class="row"><div class="rb">Setting clear expectations</div><div><span class="b pass">Pass</span></div><div class="ev">Written estimates and the approval promise stated up front: <q>make sure to get your approval before we do anything.</q></div></div>
+<div class="row"><div class="rb">Asking good questions</div><div><span class="b pass">Pass</span></div><div class="ev">Deep diagnostic discovery on all three calls, including the ownership question that unlocked the Nazareth approval.</div></div>
+<div class="row"><div class="rb">Creating good options</div><div><span class="b pass">Pass</span></div><div class="ev">Repair, warranty and replacement paths presented with trade-offs on every call that reached a presentation.</div></div>
+<div class="row"><div class="rb">Handling objections</div><div><span class="b fail">Fail</span></div><div class="ev">On BUJAZIA the customer&#x27;s warranty and cost questions were answered but never converted into a decision or a next step, and the call ended open. Automatic fail on that call.</div></div>
+</div></section>
+<section><div class="sh"><div class="no">4</div><h2>What went right — real strength, build on it</h2></div><ul class="str">
+<li><b>The warmest opening on the board.</b> <q>That&#x27;s a pretty cool name, man.</q> Unprompted, genuine, and it set up a close ninety minutes later.</li>
+<li><b>He closed the hardest call of his day.</b> A rental property, a landlord who is not the occupant, a cost he did not want to spend — and Nazareth approved the repair and thanked him for it.</li>
+<li><b>Teaching depth nobody else reaches.</b> Thermal expansion, installation quality, warranty mechanics — a two-hour consultation that left the customer able to explain his own house.</li>
+<li><b>Process transparency as a closing tool.</b> <q>Make sure to get your approval before we do anything</q>, with written estimates promised up front. Customers relax when they know they are in control.</li>
+<li><b>He validates before he answers.</b> Cost hesitation on the tenant call got acknowledgement first and value second, in that order. That sequence is exactly right.</li>
+</ul></section>
+<section><div class="sh"><div class="no">5</div><h2>The three gaps</h2><span class="hint">each one anchored to a real moment on tape</span></div>
+<div class="mom"><div class="top2"><span class="b weak">Weak</span><h4>Gap 1 — 340 minutes of customer time, one decision</h4></div>
+<div class="q"><b>The consultation</b>127 minutes. Ends on <q>Please don&#x27;t be afraid to hit me up.</q> No date, no advisor, no callback time.</div>
+<div class="q"><b>BUJAZIA</b>110 minutes. Compressor failure diagnosed, warranty and replacement discussed, no commitment captured before the tape ends.</div>
+<div class="q"><b>Nazareth</b>103 minutes — and this one closed, because he asked.</div>
+<p class="fixline"><b>The fix</b> The difference between his one win and his two losses is not effort, knowledge or rapport. It is a single sentence at the end. After two hours of teaching, the customer is as ready as they will ever be: <q>You know this system better than anyone who has looked at it now. Let&#x27;s get our advisor out to put real numbers next to it — costs you nothing. Tomorrow morning, or is afternoon better?</q> Then stop talking and let them answer.</p></div>
+<div class="mom"><div class="top2"><span class="b weak">Weak</span><h4>Gap 2 — The warranty conversation that never became a decision</h4></div>
+<div class="q"><b>BUJAZIA</b>Compressor failure confirmed. Warranty coverage, repair options and replacement paths all discussed at length.</div>
+<div class="q"><b>How it ended</b>No explicit commitment, no scheduled next step, no approval captured.</div>
+<div class="q"><b>The Critical Action</b>Objections — Fail. Answering a question is not handling the concern underneath it.</div>
+<p class="fixline"><b>The fix</b> When a customer keeps asking about warranty coverage, the concern underneath is <i>am I about to spend money I should not have to?</i> Answer the concern, not the question: <q>Let&#x27;s find out for certain rather than guessing. I&#x27;ll write it up both ways — what it costs if the warranty covers it and what it costs if it doesn&#x27;t — and I&#x27;ll get the advisor out Tuesday so you have the replacement number too. Then you decide with everything in front of you.</q> That turns an open question into a booked appointment.</p></div>
+<div class="mom"><div class="top2"><span class="b mod">Moderate</span><h4>Gap 3 — The five-star ask is riding on the sale</h4></div>
+<div class="q"><b>Nazareth (closed)</b>Review requested at the close, warmly and naturally.</div>
+<div class="q"><b>The two that did not close</b>No review request on either.</div>
+<div class="q"><b>Why it matters</b>The 127-minute consultation was the best service of his day and produced the customer most likely to say yes to a review.</div>
+<p class="fixline"><b>The fix</b> The review is for the experience, not the transaction. A homeowner who just got two hours of free expertise is a better review candidate than one who just paid for a repair. Ask on every call, closed or not — and plant it at the door so the ask at the end is a callback, not a request out of nowhere.</p></div>
+</section>
+<section><div class="sh"><div class="no">6</div><h2>This week&#x27;s drill — the sentence after the teaching</h2></div><div class="script" style="border-radius:14px"><div class="lbl">Convert understanding into a calendar slot</div>
+<p class=""><b>Trigger:</b> the customer has understood the problem and you are about to wrap up.</p>
+<p class=""><b>Say this before anything else:</b></p>
+<p class="say">&quot;You know more about this system now than anyone who has looked at it. Let&#x27;s get our advisor out to put real numbers next to what I just showed you — it costs you nothing and takes twenty minutes. I&#x27;ve got tomorrow morning or tomorrow afternoon — which one works?&quot;</p>
+<p class="">Then be quiet. Andrew earns this ask on every call he runs. This week the only target is making it three times out of three.</p>
+</div></section>
+<section><div class="sh"><div class="no">7</div><h2>3-week training plan</h2></div><div class="rub">
+<div class="row"><div class="rb">Week 1</div><div><b>Nothing leaves unscheduled</b></div><div class="ev">Every call ends with an approved repair, a booked advisor slot or a specific callback time. Log all three outcomes with a manager daily.</div></div>
+<div class="row"><div class="rb">Week 2</div><div><b>Answer the concern, not the question</b></div><div class="ev">When a customer asks about warranty or cost, respond with a question that surfaces the real worry, then a written option both ways.</div></div>
+<div class="row"><div class="rb">Week 3</div><div><b>Call economics</b></div><div class="ev">Target the same quality inside a tighter window — set the frame, teach to the decision, then ask. Review two recordings for where the teaching stopped adding to the decision.</div></div>
+</div></section>
+<section><div class="sh"><div class="no">8</div><h2>What we owe Andrew</h2></div><ul class="str">
+<li>Recognition for the Nazareth close. A rental-property repair approved by an absent-occupant landlord is a genuinely hard sale and he made it look easy.</li>
+<li>A manager sitting on the last ten minutes of one long call — his coaching is entirely in the final stretch.</li>
+<li>An answer on the SULLIVAN recording: 98 minutes of duration and three lines of audio. He should not lose credit for a call the capture dropped.</li>
+</ul></section>
+<div class="bottom"><div class="eyb">Bottom line</div><p>Andrew gives customers more than anyone on this board and asks them for less. He opened three visits with real warmth, taught for five and a half hours, and closed the one call where he actually made the ask — a hesitant landlord on a rental property, which was the hardest sale of his day. He does not need to sell harder. He needs to finish the sentence he has already earned the right to say.</p></div>
+<div class="foot">Sierra · SILO daily coaching plan · 2026-07-26 · Scored on strength bands — close rate is the only number</div>
+</div></body></html>
