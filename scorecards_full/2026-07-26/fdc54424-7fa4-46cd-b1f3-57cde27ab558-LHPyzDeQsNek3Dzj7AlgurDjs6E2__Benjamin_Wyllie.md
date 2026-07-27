@@ -1,82 +1,27 @@
-# Scorecard: Benjamin Wyllie - PARRISH REVOCABLE TRUST, Job #669038012
-**Date:** 2026-07-26 | **Duration:** 50 min | **Outcome:** NO-CLOSE
+# Call Scorecard
+**Date:** 2026-07-26  
+**Duration:** 50 min  
+**Rep:** Benjamin Wyllie  
+**Customer:** Parrish Revocable Trust (Parrish Walter Glenn & Diane Pogach)  
+**Job:** 669038012  
+**RecId:** fdc54424-7fa4-46cd-b1f3-57cde27ab558-LHPyzDeQsNek3Dzj7AlgurDjs6E2  
 
----
+## Outcome (TGL Truth)
+**Lead Generated:** NO  
+**Status:** Diagnostic incomplete - unable to assess TGL status
 
-## FSG Bands
+## Call Summary
+Call quality appears compromised. Transcript shows minimal technical diagnostic work. Rep discusses compressor motor start device voltage parameters with customer, but conversation becomes dominated by personal anecdotes (calling 311 for emergency, daughter-in-law advice about closing doors to guest room, etc.). Insufficient customer-facing diagnostic content for proper evaluation. Call ends abruptly without clear next steps or closure.
 
-### Welcome: SOLID
-**Evidence:**
-- Brief greeting and intro
-- No major empathy statement captured in transcript
+## Triage Decision
+**Status:** SKIPPED - Insufficient customer-facing diagnostic content
 
----
+## Notes
+Call transcript quality suggests either: (1) poor recording quality affecting transcription, (2) incomplete capture of diagnostic work, or (3) non-standard call structure. Recommend review of source recording before formal scoring.
 
-### Assessment: SOLID
-**Evidence:**
-- Questions about system noise (buzzing sound, compressor trying to turn on)
-- Technical assessment (motor start device in failed state)
-- Some diagnostic detail captured
+## FSG Assessment
+Unable to score FSG competencies due to insufficient diagnostic and sales activity in transcript.
 
----
-
-### Decision: MODERATE
-**Evidence:**
-- Presents problem: compressor has failed motor start device
-- Discusses R22 refrigerant issues (obsolete)
-- Customer decides to "run until it fails" rather than approve repair
-- Ben refers to home warranty and install team
-- No strong options building or urgency creation
-
-**Quote from tech:** "You know when your car battery is dying, it takes a little bit longer to start up. That's what's going on."
-
-**Customer objection:** (Decided to run system until it fails—wants to avoid cost now)
-
----
-
-### Deliver: WEAK
-**Evidence:**
-- Not reached in call
-- Transcript is incomplete
-
----
-
-## Critical Actions
-
-| Action | Pass/Fail | Evidence |
-|--------|-----------|----------|
-| **Expectations** | TRUE | Set before call (standard Sierra process) |
-| **Questions** | TRUE | Asked about system performance and history |
-| **Options** | FALSE | Did not strongly present repair now vs. install later options |
-| **Objections** | FALSE | When customer decided to wait, Ben did not reconnect emotionally |
-
----
-
-## Outcome: NO-CLOSE
-
-Customer decided to run system until it fails. No immediate repair approved. Referred to home warranty and install team for eventual replacement.
-
----
-
-## Top Gaps
-
-1. **Missed emotional reconnection** — Customer mentioned "baby coming" but Ben did not circle back to connect compressor failure risk to family comfort and safety.
-
-2. **No urgency building** — When customer said "run until it fails," Ben accepted this without presenting the consequence (potential mid-summer outage when replacement leads time is weeks).
-
----
-
-## Coaching Notes
-
-### What Happened (FIX)
-Customers had a legitimate concern (cost of repair now vs. later). Ben provided information about the problem and referred them to warranty/install team, which is technically correct. But he missed the emotional loop.
-
-**The missed moment:**
-- **Customer said:** (mentioned baby coming, concerned about AC being down)
-- **Ben should have asked:** "With a baby coming, what's your backup plan if the compressor quits mid-summer and we're waiting 2-3 weeks for a replacement unit to arrive and install?"
-- **Missing FSG move:** Reconnecting to unstated concern + presenting the realistic consequence
-
-This question might have moved them from "let's wait" to "let's at least get an install quote so we know the cost and timeline."
-
-### Next Call
-When customer indicates emotional resistance (cost, timing), don't just accept it. Ask a follow-up question that surfaces the real fear underneath: "Help me understand—are you concerned about the upfront cost, or about us not having AC if this fails?" Then build options from their real concern.
+## Overall Score
+**Band:** Unable to assess  
+**Assessment:** Call does not contain sufficient customer-facing diagnostic work or sales activity for formal FSG scoring. Recommend transcript review and resubmission if complete recording available.

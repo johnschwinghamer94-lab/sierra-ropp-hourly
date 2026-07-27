@@ -1,1 +1,19 @@
-{"recId": "eee132da-434f-45d5-bc2d-f03316e6e8bf-b6xhRGsYH8eMOzcoHjFcmJrxoqp1", "tech": "Francisco Valencia", "jobNumber": "669008659", "dateCreated": "2026-07-26", "durationMin": 24, "bands": {"welcome": "Solid", "assessment": "Moderate", "decision": "Unknown", "deliver": "Unknown"}, "critical": {"expectations": false, "questions": false, "options": false, "objections": false}, "outcome": "unknown", "tip": "INCOMPLETE CALL — Transcript cuts off mid-evaluation. Cannot score decision or deliver bands, or provide coaching. Recommend reviewing full recording or obtaining complete transcript."}
+{
+  "recId": "eee132da-434f-45d5-bc2d-f03316e6e8bf-b6xhRGsYH8eMOzcoHjFcmJrxoqp1",
+  "date": "2026-07-26",
+  "rep": "Francisco Valencia",
+  "customer": "Schwartz, Marc",
+  "job": "669008659",
+  "duration_min": 24,
+  "tgl_outcome": null,
+  "tgl_created": null,
+  "overall_band": "Unable to assess",
+  "fsg_scores": {
+    "welcome": "Unable to assess",
+    "assessment": "Unable to assess",
+    "decision": "Unable to assess",
+    "deliver": "Unable to assess"
+  },
+  "critical_actions": {},
+  "summary": "Call transcript incomplete. Bilingual (Spanish/English) diagnostic begins but transitions to casual weather conversation. No diagnostic closure or next steps documented. Requires complete transcript for formal evaluation."
+}

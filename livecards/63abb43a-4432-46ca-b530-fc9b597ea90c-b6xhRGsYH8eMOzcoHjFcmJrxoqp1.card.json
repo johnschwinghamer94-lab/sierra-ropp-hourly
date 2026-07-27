@@ -1,1 +1,25 @@
-{"recId": "63abb43a-4432-46ca-b530-fc9b597ea90c-b6xhRGsYH8eMOzcoHjFcmJrxoqp1", "tech": "Francisco Valencia", "jobNumber": "669013793", "dateCreated": "2026-07-26", "durationMin": 17, "bands": {"welcome": "Solid", "assessment": "Solid", "decision": "Solid", "deliver": "Solid"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "flipped", "tip": "WIN — Francisco didn't let research stall the momentum. When the customer wanted to check with their warranty company first, instead of saying 'call us back,' Francisco immediately said 'let me schedule your appointment with the install team so you're locked in.' He converted a 'let me think about it' moment into a committed next step, turning a diagnostic call into an active lead."}
+{
+  "recId": "63abb43a-4432-46ca-b530-fc9b597ea90c-b6xhRGsYH8eMOzcoHjFcmJrxoqp1",
+  "date": "2026-07-26",
+  "rep": "Francisco Valencia",
+  "customer": "David Kish",
+  "job": "669013793",
+  "duration_min": 17,
+  "tgl_outcome": true,
+  "tgl_created": "2026-07-27T00:27:24Z",
+  "overall_band": "STRONG",
+  "fsg_scores": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Strong",
+    "deliver": "Strong"
+  },
+  "critical_actions": {
+    "professional_welcome": true,
+    "needs_assessment": true,
+    "product_knowledge": true,
+    "trial_close": true,
+    "objection_handling": true
+  },
+  "summary": "Professional diagnostic call identifying R22/R410A refrigerant incompatibility. Clear options presentation with cost/warranty trade-offs. Successful appointment booking and lead generation."
+}

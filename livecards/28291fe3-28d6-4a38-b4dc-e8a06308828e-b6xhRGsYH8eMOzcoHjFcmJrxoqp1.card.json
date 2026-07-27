@@ -1,1 +1,27 @@
-{"recId": "28291fe3-28d6-4a38-b4dc-e8a06308828e-b6xhRGsYH8eMOzcoHjFcmJrxoqp1", "tech": "Francisco Valencia", "jobNumber": "668942747", "dateCreated": "2026-07-26", "durationMin": 54, "bands": {"welcome": "Solid", "assessment": "Strong", "decision": "Strong", "deliver": "Strong"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "flipped", "tip": "WIN — Francisco educated his way into urgency. He explained that R22 refrigerant laws changed in 2025, so the mismatched system (2017 indoor, 2022 outdoor) can't just be patched—it needs replacement. Then he immediately scheduled the install team for the same day or next day, turning a 'maybe I'll think about it' into a locked-in appointment. Customer moved from confused to committed."}
+{
+  "recId": "28291fe3-28d6-4a38-b4dc-e8a06308828e-b6xhRGsYH8eMOzcoHjFcmJrxoqp1",
+  "date": "2026-07-26",
+  "rep": "Francisco Valencia",
+  "customer": "Jaime, Alejandra (Jose)",
+  "job": "668942747",
+  "duration_min": 54,
+  "tgl_outcome": true,
+  "tgl_created": "2026-07-26T16:27:07Z",
+  "overall_band": "STRONG on wins",
+  "fsg_scores": {
+    "welcome": "Strong",
+    "assessment": "Strong on wins",
+    "decision": "Strong on wins",
+    "deliver": "Strong"
+  },
+  "critical_actions": {
+    "professional_welcome": true,
+    "needs_assessment": true,
+    "technical_education": true,
+    "product_knowledge": true,
+    "trial_close": true,
+    "objection_handling": true,
+    "decision_support": true
+  },
+  "summary": "Exceptional diagnostic identifying mix-match system (9yo indoor + 4yo outdoor). Educated customer on refrigerant regulations (2025 A2L phase-out) and system compatibility issues. Presented tiered replacement options with warranty/cost trade-offs. Secured sales appointment with both decision-makers. Lead generation successful."
+}

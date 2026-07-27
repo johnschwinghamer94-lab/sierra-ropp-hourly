@@ -6,10 +6,10 @@
 
 ## FSG Bands
 
-- **Welcome:** Solid
-- **Assessment:** Moderate
-- **Decision:** Moderate
-- **Deliver:** Moderate
+- **Welcome:** Weak
+- **Assessment:** Weak
+- **Decision:** Weak
+- **Deliver:** Weak
 
 ## Critical Actions
 
@@ -20,8 +20,8 @@
 
 ## Outcome
 
-NO-CLOSE
+FLIPPED
 
 ## Coaching Tip
 
-FIX — ask clarifying questions to understand the full scope before presenting options
+WIN — customer confidence in assessment and options led to closure

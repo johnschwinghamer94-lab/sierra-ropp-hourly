@@ -1,1 +1,28 @@
-{"recId": "8b7afe52-10a8-428c-a1df-5ce03acb56e8-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2", "tech": "Andrew Alonso", "jobNumber": "668928685", "dateCreated": "2026-07-27", "durationMin": 220, "bands": {"welcome": "Strong", "assessment": "Moderate", "decision": "Strong", "deliver": "Solid"}, "critical": {"expectations": true, "questions": false, "options": true, "objections": true}, "outcome": "flipped", "tip": "WIN \u2014 clearly explained the options and customer agreed to move forward"}
+{
+  "recId": "8b7afe52-10a8-428c-a1df-5ce03acb56e8-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2",
+  "date": "2026-07-27",
+  "rep": "Andrew Alonso",
+  "customer": "Morales, Walter A. & Eva M.",
+  "job": "668928685",
+  "duration_min": 220,
+  "tgl_outcome": false,
+  "tgl_created": null,
+  "overall_band": "SOLID",
+  "fsg_scores": {
+    "welcome": "Strong",
+    "assessment": "Strong on wins",
+    "decision": "Solid",
+    "deliver": "Moderate"
+  },
+  "critical_actions": {
+    "professional_welcome": true,
+    "needs_assessment": true,
+    "empathy": true,
+    "technical_knowledge": true,
+    "educational_content": true,
+    "trial_close": false,
+    "formal_options_presentation": false,
+    "sales_transition": false
+  },
+  "summary": "Exemplary 3.7-hour diagnostic with comprehensive technical analysis (compressor stage-1 lock, motor oil loss, 29yo blower bearing degradation, refrigerant mismatch). Strong empathy/rapport for heat-stressed pregnant customer. Extensive AC education but failed to close or schedule quote appointment. Diagnostic excellence + weak sales execution = Solid."
+}

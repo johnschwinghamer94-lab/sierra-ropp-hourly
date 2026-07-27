@@ -6,22 +6,22 @@
 
 ## FSG Bands
 
-- **Welcome:** Strong
-- **Assessment:** Moderate
-- **Decision:** Moderate
-- **Deliver:** Solid
+- **Welcome:** Weak
+- **Assessment:** Weak
+- **Decision:** Weak
+- **Deliver:** Weak
 
 ## Critical Actions
 
-- Set Expectations: ✓
+- Set Expectations: ✗
 - Asked Questions: ✗
 - Created Options: ✗
-- Handled Objections: ✓
+- Handled Objections: ✗
 
 ## Outcome
 
-CLOSED
+NO-CLOSE
 
 ## Coaching Tip
 
-WIN — clearly explained the options and customer agreed to move forward
+FIX — set clear expectations early with LTOAT5 before diving into diagnosis
