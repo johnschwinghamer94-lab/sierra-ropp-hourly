@@ -1,0 +1,1 @@
+Corrupted transcript - heavily garbled text with repetitions and non-readable content
