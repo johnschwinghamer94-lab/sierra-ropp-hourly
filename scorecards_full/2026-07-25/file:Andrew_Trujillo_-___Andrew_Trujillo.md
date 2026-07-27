@@ -1,15 +1,1 @@
-# file:Andrew_Trujillo_-_
-
-**Tech:** Andrew Trujillo
-**Job:** None
-**Date:** 2026-07-25
-**Duration:** 80 min
-
-## FSG Scores
-- **Welcome:** Solid
-- **Assessment:** Moderate
-- **Decision:** Weak
-- **Deliver:** Weak
-
-## Outcome
-unknown
+Non-scoreable: Transcript too short, garbled, or lacks clear customer interaction.
