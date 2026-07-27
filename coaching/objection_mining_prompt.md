@@ -177,8 +177,9 @@ Merge into the existing state file (don't clobber other dates' entries).
 - NOT objections: ordinary questions ("how long does that take?"), thinking-out-loud
   filler ("hmm, ok, wow"), politeness deflections the customer immediately drops,
   or scheduling logistics back-and-forth.
-- Typical customer calls contain 0-3 real objections. More than ~4 from one call
-  means you are over-extracting — keep only the most substantive.
+- HARD CAP (John, 2026-07-27): extract AT MOST 3 true objections per call — no
+  exceptions. If a call seems to contain more, keep only the 3 most substantive
+  (the ones the tech most had to overcome). Typical calls contain 0-2.
 - Only extract when the tech gave an identifiable ANSWER to that objection.
 
 **Grade anchors (expected distribution across many calls is roughly 25-35% great,
