@@ -166,3 +166,33 @@ Merge into the existing state file (don't clobber other dates' entries).
   `Job:` line, omit `job` from the item rather than guessing.
 - Skip transcripts under any per-call minimum duration only if the runner's input
   set already filtered them — this spec does not re-filter by duration.
+
+
+## CALIBRATION (added 2026-07-27 after the first pass over-extracted and under-graded)
+
+**What counts as an objection — the bar is HIGH:**
+- A real objection is substantive resistance the tech must overcome: price pushback,
+  wanting to delay/think, distrust of the diagnosis or company, defending an old
+  system, naming a competitor, or deferring to an absent decision-maker.
+- NOT objections: ordinary questions ("how long does that take?"), thinking-out-loud
+  filler ("hmm, ok, wow"), politeness deflections the customer immediately drops,
+  or scheduling logistics back-and-forth.
+- Typical customer calls contain 0-3 real objections. More than ~4 from one call
+  means you are over-extracting — keep only the most substantive.
+- Only extract when the tech gave an identifiable ANSWER to that objection.
+
+**Grade anchors (expected distribution across many calls is roughly 25-35% great,
+45-60% ok, 10-20% poor — if a batch lands far outside this, recalibrate before
+writing output):**
+- "great" — acknowledged the concern AND redirected toward value or the Option C /
+  specialist path AND the call advanced. Real examples: "I gave you that option C
+  again... I hate for you to put $3,000 in just to turn around and replace the
+  system." / "I highly recommend talking to one of our equipment specialists... so
+  you can compare apples with apples." / answering a stall by setting the
+  appointment on the spot ("if we want to do Monday around 10... I'll set it for
+  you right now.").
+- "ok" — adequate but generic or partial: answered without redirecting to value or
+  a next step, or acknowledged without isolating.
+- "poor" — capitulated, ignored the objection, argued, or let the call dead-end.
+- A call that FLIPPED or CLOSED after the objection is strong evidence the handling
+  was at least "ok" and usually "great" — weigh the verified outcome.
