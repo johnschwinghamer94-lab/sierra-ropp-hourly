@@ -1,1 +1,21 @@
-{"recId": "e070f715-19cd-4214-971b-92339a35d507-uRoNvVAJhDZXMKB2yLsFt1Sm6te2", "tech": "Andrew Trujillo", "jobNumber": null, "dateCreated": "2026-07-26", "durationMin": 103, "bands": {"welcome": "Solid", "assessment": "Solid", "decision": "Solid", "deliver": "Weak"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "closed", "tip": "WIN \u2014 Presented options and secured approval; moving forward with solution."}
+{
+  "recId": "e070f715-19cd-4214-971b-92339a35d507-uRoNvVAJhDZXMKB2yLsFt1Sm6te2",
+  "tech": "Andrew Trujillo",
+  "jobNumber": null,
+  "dateCreated": "2026-07-26",
+  "durationMin": 103,
+  "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Strong",
+    "deliver": "Strong"
+  },
+  "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": true,
+    "objections": true
+  },
+  "outcome": "closed",
+  "tip": "WIN— Masterclass in consultative selling under complex circumstances. You navigated the tenant/homeowner responsibility issue by first educating, then building trust, then guiding the decision. The key: when Nazareth hesitated on cost, you didn't push—you explained value instead. He felt heard, not sold. That's how consultative selling closes deals."
+}

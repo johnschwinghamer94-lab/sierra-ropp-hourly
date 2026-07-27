@@ -1,1 +1,21 @@
-{"recId": "7b7c7e2a-ff2a-4cea-9ec6-2045695be642-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2", "tech": "Andrew Alonso", "jobNumber": "669027830", "dateCreated": "2026-07-26", "durationMin": 43, "bands": {"welcome": "Strong", "assessment": "Strong", "decision": "Strong", "deliver": "Strong"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "flipped", "tip": "WIN — Andrew's car battery and oil leak analogies made complex technical problems tangible, helping the customer understand urgency and why professional replacement beats band-aids."}
+{
+  "recId": "7b7c7e2a-ff2a-4cea-9ec6-2045695be642-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2",
+  "tech": "Andrew Alonso",
+  "jobNumber": 669027830,
+  "dateCreated": "2026-07-26",
+  "durationMin": 43,
+  "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Solid",
+    "deliver": "Solid"
+  },
+  "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": false,
+    "objections": false
+  },
+  "outcome": "no-close",
+  "tip": "FIX— Excellent discovery work was undermined by missing the close. After thorough assessment, create decision options: 'Option A is a high-efficiency upgrade with better modulation. Option B is a maintenance plan for your current system. Which direction appeals to you?' Then ask for commitment."
+}

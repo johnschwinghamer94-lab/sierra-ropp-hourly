@@ -1,1 +1,21 @@
-{"recId": "b6839754-8cf8-4bf8-9cf0-10d2c1b7836d-uRoNvVAJhDZXMKB2yLsFt1Sm6te2", "tech": "Andrew Trujillo", "jobNumber": null, "dateCreated": "2026-07-26", "durationMin": 127, "bands": {"welcome": "Solid", "assessment": "Solid", "decision": "Solid", "deliver": "Weak"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "closed", "tip": "WIN \u2014 Presented options and secured approval; moving forward with solution."}
+{
+  "recId": "b6839754-8cf8-4bf8-9cf0-10d2c1b7836d-uRoNvVAJhDZXMKB2yLsFt1Sm6te2",
+  "tech": "Andrew Trujillo",
+  "jobNumber": null,
+  "dateCreated": "2026-07-26",
+  "durationMin": 127,
+  "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong on wins",
+    "decision": "Solid",
+    "deliver": "Strong"
+  },
+  "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": true,
+    "objections": true
+  },
+  "outcome": "flipped",
+  "tip": "WIN— Masterclass in consultative selling. You turned a 127-minute deep-dive into qualified lead currency by educating the customer on thermal expansion and system design issues. Customers flip when they understand WHY problems matter, not just what problems exist. This builds trust for future callbacks."
+}
