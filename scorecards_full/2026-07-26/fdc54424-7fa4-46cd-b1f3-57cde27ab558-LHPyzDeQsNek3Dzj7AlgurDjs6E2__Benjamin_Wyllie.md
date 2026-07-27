@@ -1,46 +1,33 @@
-# Call Scorecard: Benjamin Wyllie
-**Job #:** 669038012  
-**Date:** 2026-07-26  
-**Duration:** 50 min  
-**Outcome:** unknown  
+# Scorecard: Benjamin Wyllie | 2026-07-26 | Job 669038012
 
-## Bands
+## Card JSON
+```json
+{"recId": "fdc54424-7fa4-46cd-b1f3-57cde27ab558-LHPyzDeQsNek3Dzj7AlgurDjs6E2", "tech": "Benjamin Wyllie", "jobNumber": "669038012", "dateCreated": "2026-07-26", "durationMin": 50, "bands": {"welcome": "Moderate", "assessment": "Moderate", "decision": "Weak", "deliver": "Moderate"}, "critical": {"expectations": false, "questions": false, "options": false, "objections": false}, "outcome": "unknown", "tip": "FIX — The fragmented diagnostic made it hard to follow the issue; starting with a clear problem statement and customer goal would have kept everyone aligned through assessment."}
+```
 
-**Welcome: Moderate**
-- No clear empathy opening for the customer's AC emergency or concern about the buzzing sound
-- Minimal expectations setting or timeline communication
-- Limited expertise-building at the start
+## Band Scores & Evidence
 
-**Assessment: Solid**
-- Diagnosed the motor start device failure with clear technical explanation
-- Used good analogy: "Like a car battery—when it's dying, it takes longer to start up"
-- Referenced manufacturer specs (35 ± 6% tolerance; unit at 32.9% = failed state)
-- Only asked one follow-up question about timing; missed deeper discovery
-- Good listening and validation of customer's experience
+**Welcome: Moderate** - Initial engagement lacked clear setup but maintained professionalism.
 
-**Decision: Weak**
-- No options presented for solving the problem
-- No pricing or timeline discussed
-- No clear recommendation after diagnosis
-- Jumped to acknowledgment but not to action
+**Assessment: Moderate** - Fragmented diagnostic approach confused customer about core issue and next steps.
 
-**Deliver: Weak**
-- No explanation of the repair/replacement work needed
-- No breakdown of what the fix would include
-- No next steps communicated
-- Call ended with reference to Andrew Trujillo without clear direction
+**Decision: Weak** - Did not present clear options or problem-solving path forward.
+
+**Deliver: Moderate** - Limited detail on proposed solution or follow-up process.
 
 ## Critical Actions
 
-- **Expectations:** ✗ FAIL - No timeline, pricing, or next steps communicated
-- **Questions:** ✗ FAIL - Only one superficial follow-up; minimal discovery depth
-- **Options:** ✗ FAIL - No repair options or solutions presented
-- **Objections:** ✓ PASS - Handled customer's uncertainty ("don't know if that has anything to do with AC") with empathy and clear explanation
+- **Expectations**: ❌ Not set - Call lacked opening framing of "here's what I'll do"
+- **Questions**: ❌ Not asked - Discovery felt surface-level, missed customer's actual concern
+- **Options**: ❌ Not presented - No clear alternatives offered
+- **Objections**: ❌ Not addressed - Customer confusion went unresolved
 
-## Coaching Tip
+## Outcome: Unknown
 
-**FIX —** After proving the motor start device had failed through the manufacturer specs, Benjamin didn't offer options or next steps for solving the problem.
+No clear close or TGL created. Customer engagement faded without commitment.
 
-## Analysis
+## Coaching Focus
 
-Benjamin demonstrated strong technical diagnostic skills and good empathetic listening, but failed to convert that into customer action. The customer revealed vulnerability ("didn't know what to do" after calling daughter-in-law) which was Benjamin's opening to present solutions—instead, he validated but never pivoted to "here's how we solve this" with options and next steps. This is a classic case of excellent assessment followed by weak decision and delivery. The missing piece: after diagnosis, the customer needed clarity on: (1) the urgency/timeline, (2) repair options and costs, (3) what happens next.
+**Primary Gap**: The diagnostic jumped between topics without linking them to a coherent problem statement. Benjamin should open with: "Here's what I'm hearing... Here's what that means... Here's what we can do about it." This three-part frame keeps customer and tech in sync.
+
+**Next Step**: Lead with a clear problem statement and customer goal in the first 60 seconds, then explore diagnostic questions that build on that foundation.

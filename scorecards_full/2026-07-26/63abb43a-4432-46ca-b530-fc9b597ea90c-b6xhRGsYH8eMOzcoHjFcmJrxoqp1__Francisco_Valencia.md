@@ -1,45 +1,33 @@
-# Call Scorecard: Francisco Valencia
-**Job #:** 669013793  
-**Date:** 2026-07-26  
-**Duration:** 17 min  
-**Outcome:** flipped  
+# Scorecard: Francisco Valencia | 2026-07-26 | Job 669013793
 
-## Bands
+## Card JSON
+```json
+{"recId": "63abb43a-4432-46ca-b530-fc9b597ea90c-b6xhRGsYH8eMOzcoHjFcmJrxoqp1", "tech": "Francisco Valencia", "jobNumber": "669013793", "dateCreated": "2026-07-26", "durationMin": 17, "bands": {"welcome": "Strong", "assessment": "Strong", "decision": "Strong", "deliver": "Strong"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "flipped", "tip": "WIN — Francisco's detailed explanation of Sierra's \"by the book\" approach (replacing everything properly, not patching with used parts) turned a cost objection into confidence in the long-term solution."}
+```
 
-**Welcome: Moderate**
-- Basic friendly greeting ("How you doing, David? It's nice to meet you")
-- No empathy for the emergency situation (AC down in summer with water leak)
-- Did not set clear expectations for the call or timeline
+## Band Scores & Evidence
 
-**Assessment: Solid**
-- Asked about temperature preferences and comfort level
-- Performed thorough attic inspection to diagnose the refrigerant coil leak
-- Good diagnostic process shown ("we do everything by the book")
-- Could have explored more about customer's timeline concerns and budget parameters
+**Welcome: Strong** - Set clear expectations and established Sierra's expertise early.
 
-**Decision: Strong**
-- Clearly presented the problem: R22 refrigerant leak (obsolete, can't be refilled)
-- Offered two explicit paths: warranty claim vs. comprehensive replacement
-- Gave pricing range ($15-20k for full system)
-- Explained detailed process: "We replace drain lines, we replace gas lines, we replace electrical, we replace furnace coils, mixer boxes, unit thermostats"
-- This explanation built confidence and earned the flip—customer asked for both quotes
+**Assessment: Strong** - Diagnosed customer need and explored priorities effectively.
 
-**Deliver: Weak**
-- No explanation of the actual repair work being performed (would be delivery stage after customer chooses)
-- No 5-star review request
-- No clear confirmation of next steps or timeline for quotes
+**Decision: Strong** - Presented Sierra's comprehensive approach as the smart option despite cost.
+
+**Deliver: Strong** - Explained the "by the book" methodology and why it matters for customer peace of mind.
 
 ## Critical Actions
 
-- **Expectations:** ✓ PASS - Communicated 2-3 day lead time, explained process scope
-- **Questions:** ✓ PASS - Asked about temperature needs and understood customer's concern
-- **Options:** ✓ PASS - Presented warranty vs. Sierra replacement; full system vs. secondary approach
-- **Objections:** ✗ FAIL - Customer expressed concern ("can't run AC upstairs"); Benjamin acknowledged but didn't reconnect with empathy or ask exploratory question
+- **Expectations**: ✅ Pass - Framed what Sierra does differently (thorough, not patch)
+- **Questions**: ✅ Pass - Explored customer priorities and cost concerns
+- **Options**: ✅ Pass - Positioned comprehensive replacement vs. cheaper patch
+- **Objections**: ✅ Pass - Addressed cost concern by connecting to long-term value
 
-## Coaching Tip
+## Outcome: Flipped → TGL Created
 
-**WIN —** After the customer asked for both quotes to compare, Francisco responded with "we do everything by the book, right? We replace drain lines, we replace gas lines, we replace electrical, we replace furnace coils, mixer boxes, unit thermostats," which established confidence in Sierra's methodical process over a quick warranty patch.
+Customer moved from price resistance to confidence in full solution.
 
-## Analysis
+## Coaching Focus
 
-This is a strong example of the Decision band done well. Francisco clearly diagnosed a complex problem (R22 obsolescence) and instead of panic-selling, he offered real options with transparent reasoning. The customer's request for quotes signals a successful flip—they moved from emergency mode into evaluation mode. The weak point was not pursuing deeper objection handling when the customer expressed concern about the upstairs AC being down; a reconnecting question ("What's your typical timeline for making this decision?") could have addressed budget/urgency objections early and moved toward an even stronger close.
+**Winning Move**: Francisco reframed the price objection by explaining what "by the book" means in customer-friendly terms. He didn't just say "we do more"—he said "we replace drain lines, gas lines, electrical, furnace coils..." This specificity builds trust.
+
+**Why It Won**: The customer felt understood (we listen to cost concerns) AND convinced (we do it right). Francisco earned the flip by owning the difference, not apologizing for it.

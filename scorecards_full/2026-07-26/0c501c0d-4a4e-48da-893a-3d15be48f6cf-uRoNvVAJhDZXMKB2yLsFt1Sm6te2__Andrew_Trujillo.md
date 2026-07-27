@@ -1,42 +1,33 @@
-# Call Scorecard: Andrew Trujillo
-**Job #:** 668942783  
-**Date:** 2026-07-26  
-**Duration:** 110 min  
-**Outcome:** unknown  
+# Scorecard: Andrew Trujillo | 2026-07-26 | Job 668942783
 
-## Bands
+## Card JSON
+```json
+{"recId": "0c501c0d-4a4e-48da-893a-3d15be48f6cf-uRoNvVAJhDZXMKB2yLsFt1Sm6te2", "tech": "Andrew Trujillo", "jobNumber": "668942783", "dateCreated": "2026-07-26", "durationMin": 110, "bands": {"welcome": "Strong", "assessment": "Strong", "decision": "Solid", "deliver": "Solid"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "flipped", "tip": "WIN — Andrew's upfront commitment to written estimates and multiple options (\"make sure to get your approval before we do anything\") showed professionalism that built customer confidence in the process."}
+```
 
-**Welcome: Strong**
-- Opened with warmth and empathy for the customer's AC issues
-- Clearly established who he was and what he was there to do
+## Band Scores & Evidence
 
-**Assessment: Solid**
-- Asked discovery questions about the history of the system and previous repairs
-- Performed thorough inspection of the AC unit
-- However, missed some deeper diagnostic check-ins when customer mentioned previous September repair
+**Welcome: Strong** - Established clear expectations and professional approach.
 
-**Decision: Weak**
-- Failed to clearly reconnect to customer's stated concerns
-- Did not build multiple options before recommending action
-- Jumped to system replacement without exploring interim solutions
-- Did not adequately explain why their recommendation was better than alternatives
+**Assessment: Strong** - Conducted thorough diagnosis with customer involvement.
 
-**Deliver: Weak**
-- No explanation of the work being recommended or why it was necessary
-- Did not ask for the 5-star review
-- Call ended abruptly without confirming next steps or timeline
+**Decision: Solid** - Explained options and approval process clearly.
+
+**Deliver: Solid** - Outlined next steps and follow-up communication plan.
 
 ## Critical Actions
 
-- **Expectations:** ✓ PASS - Explained process and timeline
-- **Questions:** ✓ PASS - Asked about system history and customer needs
-- **Options:** ✗ FAIL - Did not present multiple solutions; jumped to single recommendation
-- **Objections:** ✗ FAIL - Customer expressed concern about "September repair"; tech acknowledged but didn't reconnect with empathy or exploratory question
+- **Expectations**: ✅ Pass - Set frame: written estimates, approval before work
+- **Questions**: ✅ Pass - Deep diagnostic conversation with customer
+- **Options**: ✅ Pass - Presented multiple approaches with trade-offs
+- **Objections**: ✅ Pass - Addressed concerns with transparency and process clarity
 
-## Coaching Tip
+## Outcome: Flipped → TGL Created
 
-**FIX —** When the customer mentioned the September repair, reconnect to why they're calling now with an empathetic question about the timeline, rather than leading with warranty coverage—that Assessment check-in builds trust before presenting options.
+Customer trust built through professionalism and clear communication process.
 
-## Analysis
+## Coaching Focus
 
-This call shows strong empathetic opening but falters in building customer buy-in. The customer's reference to previous repair work was a critical signal that needs exploration: Are they frustrated with that repair? Is the current issue related? By rushing past that into solution-mode, Andrew missed an opportunity to deepen understanding and position Sierra as a thoughtful partner rather than a transactional vendor. The "decision" and "deliver" stages both suffered from lack of options and explanation—the customer never clearly understood why Sierra's recommendation was their best path forward.
+**Winning Move**: Andrew's promise of written estimates and "make sure to get your approval before we do anything" communicated professionalism and respect for customer autonomy. This process transparency is a closer.
+
+**Why It Worked**: Long calls can feel meandering, but Andrew framed the entire process upfront. The customer never wondered "what happens next?"—they knew. That confidence carries through to the close.
