@@ -419,32 +419,73 @@ def build_weekly_prevmonth(today):
                           rate=rate(wk[w]["tgls"],wk[w]["calls"])) for w in ("W1","W2","W3","W4")}
     return {"weeks":["W1","W2","W3","W4"],"weekLabels":month_week_labels(py,pm),"techs":out}
 
+def _cal_week_start(d):
+    """Monday of the calendar week containing date d."""
+    return d - timedelta(days=d.weekday())
+
+def _cal_week_label(wk_start):
+    """Short label for a Mon-Sun week: same-month 'Jul 6-12', cross-month 'Jun 29-Jul 5'."""
+    wk_end = wk_start + timedelta(days=6)
+    sm = MONTH_NAMES[wk_start.month-1][:3]
+    if wk_start.month == wk_end.month:
+        return f"{sm} {wk_start.day}-{wk_end.day}"
+    em = MONTH_NAMES[wk_end.month-1][:3]
+    return f"{sm} {wk_start.day}-{em} {wk_end.day}"
+
+def _cal_weeks_for_month(year, month, today):
+    """Mon-Sun week-start dates covering the 1st of the month through today, month-to-date (no future weeks)."""
+    first = date(year, month, 1)
+    ws = _cal_week_start(first)
+    last_ws = _cal_week_start(today)
+    out = []
+    while ws <= last_ws:
+        out.append(ws)
+        ws += timedelta(days=7)
+    return out
+
 def build_weekly_conv(today, all_names):
-    labels = conv_week_labels(today.month)
-    idx = {"W1":0,"W2":1,"W3":2,"W4":3}
-    per = defaultdict(lambda: [dict(calls=0,tgls=0,revenue=0.0) for _ in range(4)])
+    # True Mon-Sun calendar weeks (replaces old day-of-month W1-W4 chunks).
+    # NOTE: source rows below are still filtered to the current month only, so
+    # cross-month weeks (e.g. "Jun 29-Jul 5") will only reflect the current-month
+    # days within them (Jul 1-5), not the prior-month spillover days (Jun 29-30).
+    week_starts = _cal_weeks_for_month(YEAR, today.month, today)
+    labels = [_cal_week_label(ws) for ws in week_starts]
+    n_weeks = len(week_starts)
+
+    def week_idx(d):
+        ws = _cal_week_start(d)
+        for i, w in enumerate(week_starts):
+            if w == ws:
+                return i
+        return None
+
+    per = defaultdict(lambda: [dict(calls=0,tgls=0,revenue=0.0) for _ in range(n_weeks)])
     SUB = sub_by_srcjob()
     for grp, r in iter_grouped(load_rows("ROPP_TGLs_Created.xlsx"), "Assigned Technicians", 1):
         tech = resolve(r[3]) or resolve(grp); d = to_date(r[5])
         if not tech or d is None or d.year != YEAR or d.month != today.month: continue
-        i = idx[week_of_month(d)]; per[tech][i]["tgls"] += 1; per[tech][i]["revenue"] += SUB.get(jobkey(r[1]), 0.0)
+        i = week_idx(d)
+        if i is None: continue
+        per[tech][i]["tgls"] += 1; per[tech][i]["revenue"] += SUB.get(jobkey(r[1]), 0.0)
     for grp, r in iter_grouped(load_rows("Revenue_By_JobType.xlsx"), "Assigned Technicians", 3):
         if jobkey(r[3]) not in _rev_clean_set(): continue
         tech = resolve(r[7]) or resolve(grp); d = to_date(r[4])
         if not tech or d is None or d.year != YEAR or d.month != today.month: continue
-        per[tech][idx[week_of_month(d)]]["calls"] += 1
-    techs_out = {}; tot = [dict(calls=0,tgls=0,revenue=0.0) for _ in range(4)]
+        i = week_idx(d)
+        if i is None: continue
+        per[tech][i]["calls"] += 1
+    techs_out = {}; tot = [dict(calls=0,tgls=0,revenue=0.0) for _ in range(n_weeks)]
     for n, weeks in per.items():
         if "," in n: continue
         techs_out[n] = {labels[i]: dict(calls=weeks[i]["calls"],tgls=weeks[i]["tgls"],
-                        revenue=round(weeks[i]["revenue"]),rate=rate(weeks[i]["tgls"],weeks[i]["calls"])) for i in range(4)}
-        for i in range(4):
+                        revenue=round(weeks[i]["revenue"]),rate=rate(weeks[i]["tgls"],weeks[i]["calls"])) for i in range(n_weeks)}
+        for i in range(n_weeks):
             tot[i]["calls"]+=weeks[i]["calls"]; tot[i]["tgls"]+=weeks[i]["tgls"]; tot[i]["revenue"]+=weeks[i]["revenue"]
     for n in all_names:
         if "," in n or n in techs_out: continue
-        techs_out[n] = {labels[i]: dict(calls=0,tgls=0,revenue=0,rate=0.0) for i in range(4)}
+        techs_out[n] = {labels[i]: dict(calls=0,tgls=0,revenue=0,rate=0.0) for i in range(n_weeks)}
     team_totals = [dict(week=labels[i],calls=tot[i]["calls"],tgls=tot[i]["tgls"],
-                        rate=rate(tot[i]["tgls"],tot[i]["calls"]),revenue=round(tot[i]["revenue"])) for i in range(4)]
+                        rate=rate(tot[i]["tgls"],tot[i]["calls"]),revenue=round(tot[i]["revenue"])) for i in range(n_weeks)]
     return {"month":MONTH_NAMES[today.month-1],"weeks":labels,"team_totals":team_totals,"techs":techs_out}
 
 def build_pace(techs, today, de):
