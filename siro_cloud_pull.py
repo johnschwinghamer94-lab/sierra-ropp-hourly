@@ -60,8 +60,9 @@ TOKEN_URL_FMT = "https://functions.siro.ai/api-externalApi/v1/core/oauth/apps/{c
 API_BASE = "https://api.siro.ai/v1/core"
 
 LOOKBACK_DAYS = 3          # pull finished recordings from the last N days
-try:  # historical backfill: workflow_dispatch can override via SIRO_LOOKBACK_DAYS, capped at 45
-    LOOKBACK_DAYS = min(45, int(os.environ.get("SIRO_LOOKBACK_DAYS", "").strip() or LOOKBACK_DAYS))
+try:  # historical backfill: workflow_dispatch can override via SIRO_LOOKBACK_DAYS, capped at
+      # 120 (Siro data exists since ~2026-04-15; objection mining needs the full history)
+    LOOKBACK_DAYS = min(120, int(os.environ.get("SIRO_LOOKBACK_DAYS", "").strip() or LOOKBACK_DAYS))
 except ValueError:
     pass
 STATE_PRUNE_DAYS = 14      # keep pulled-ids in state for N days, then drop

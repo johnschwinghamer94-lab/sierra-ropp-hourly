@@ -1,0 +1,168 @@
+# Objection mining — cloud agent spec
+
+Mines customer objections and tech answers out of Siro call transcripts, classifies
+and grades them, and rolls them up into `objections/` for the ROPP dashboard's
+coaching feed. Idempotent per transcript-date folder — safe to re-run across many
+days as new transcripts land.
+
+## Input
+
+- One or more `transcripts/<date>/` folders (`<date>` = `YYYY-MM-DD`). The runner
+  decides which date folders to process for a given invocation — do not assume
+  "today" or "all dates."
+- Each file is `transcripts/<date>/*.txt` with:
+  - A header block: `Rep:`, `Date:`, `Duration:`, `RecId:`, `Job:` (source call job
+    number — this is the number to carry through to `job` in the output item).
+  - Below the header, the transcript body is **one word per line**, each line
+    prefixed by the speaker turn. Reflow each speaker's consecutive one-word lines
+    into normal sentences before doing any analysis — do not analyze word-per-line.
+- `tgl_truth/<date>.json` and `tgl_truth/<date + 1 day>.json` — per-day TGL/flip
+  ground truth, keyed by job number.
+- `tgl_truth/ytd_sources.json` — `{"generated": iso, "sources": {"<source job#>":
+  "<ScheduledDate YYYY-MM-DD>"}}`, built from the full YTD flip history. Use this as
+  a fallback/cross-check when the per-day truth files don't cover the call's date.
+- `objections/mined_state.json` — `{"<transcripts date folder>": "<iso mined at>"}`.
+  Read this first; **skip any date folder already present** unless the runner
+  explicitly asks for a re-mine.
+
+## Extraction
+
+For every customer turn that is an OBJECTION — a statement resisting price, timing,
+trust, the product itself, a competitor, or a decision-maker not being present —
+capture:
+
+1. The customer's objection quote, verbatim from the transcript (after reflow),
+   lightly trimmed with `...` for brevity. Max ~50 words.
+2. The tech's ANSWER: the response turn(s) immediately addressing that objection
+   (skip filler/acknowledgment-only turns that don't actually respond). Verbatim,
+   lightly trimmed with `...` for brevity. Max ~60 words.
+
+**Never invent or paraphrase into the quotes.** If you can't find a clean verbatim
+excerpt under the length caps, trim further with `...` rather than rewrite. If the
+tech never actually answers the objection (call moves on, gets cut off, etc.), still
+record the objection with `answer` capturing whatever the tech said next (even if
+it's off-topic or non-existent — use `""` if there is truly no responding turn) and
+grade it `poor` (see below).
+
+## Classification
+
+Assign exactly one type per objection, from this fixed set — no others:
+
+- `Price`
+- `Stall / Think About It`
+- `Doubt / Distrust`
+- `System Too Old`
+- `Competitor`
+- `Spouse / Decision-Maker`
+- `Other`
+
+## Grading (word bands only — no numeric scores anywhere in this pipeline)
+
+- `great` — tech acknowledged the concern, isolated it, tied the response to value
+  or the Option C specialist path, and advanced the call (moved toward a decision,
+  a specialist visit, or close).
+- `ok` — adequate but generic or partial; addressed the objection without clearly
+  isolating or advancing.
+- `poor` — tech capitulated, ignored the objection, argued with the customer, or
+  the call dead-ended without a real response.
+
+## Closed flag
+
+Set `"closed": true` if the call flipped or closed. Check, in order:
+
+1. `tgl_truth/<date>.json` for the call's `Job:` header number.
+2. `tgl_truth/<date + 1 day>.json` for the same job number (flips can land the
+   next day).
+3. `tgl_truth/ytd_sources.json["sources"]` for the same job number as a fallback
+   when the per-day truth files don't have it.
+
+If the job number isn't found as a flip/close in any of the three, set `"closed":
+false`. Never guess.
+
+## Output
+
+### `objections/<YYYY-MM>.json` (one file per calendar month of the call date)
+
+```json
+{
+  "month": "YYYY-MM",
+  "items": [
+    {
+      "id": "<recId-or-file-slug>-<n>",
+      "type": "Price",
+      "cust": "verbatim customer quote...",
+      "answer": "verbatim tech answer...",
+      "tech": "Rep Name",
+      "date": "YYYY-MM-DD",
+      "grade": "great",
+      "closed": true,
+      "job": "<source job#>"
+    }
+  ]
+}
+```
+
+- `id` = `<RecId>-<n>` where `n` is a 1-based counter of objections found in that
+  transcript (or a slugified filename if `RecId` is missing). This makes `id`
+  stable and idempotent across re-runs of the same file.
+- **Merge, don't clobber**: load the existing month file (if any), dedupe by `id`
+  (an item with an `id` already present is replaced by the freshly-mined version,
+  not duplicated), then write back the full merged `items` list.
+- A single transcript folder's objections may span at most one month (the call
+  date determines the month file), but a mining run may touch several month files
+  if it processes date folders spanning a month boundary.
+
+### `objections/summary.json` (always fully regenerated by scanning ALL month files)
+
+```json
+{
+  "generated": "<iso timestamp>",
+  "window": {"start": "<earliest item date>", "end": "<latest item date>"},
+  "totals": {"total": 0, "great": 0, "ok": 0, "poor": 0},
+  "types": {
+    "Price": {"total": 0, "great": 0, "ok": 0, "poor": 0},
+    "Stall / Think About It": {"total": 0, "great": 0, "ok": 0, "poor": 0},
+    "Doubt / Distrust": {"total": 0, "great": 0, "ok": 0, "poor": 0},
+    "System Too Old": {"total": 0, "great": 0, "ok": 0, "poor": 0},
+    "Competitor": {"total": 0, "great": 0, "ok": 0, "poor": 0},
+    "Spouse / Decision-Maker": {"total": 0, "great": 0, "ok": 0, "poor": 0},
+    "Other": {"total": 0, "great": 0, "ok": 0, "poor": 0}
+  },
+  "months": ["YYYY-MM", "..."]
+}
+```
+
+- `months` is every `objections/<YYYY-MM>.json` present, newest first.
+- Regenerate this file in full every run after any month file is written — never
+  hand-patch it.
+
+### `objections/mined_state.json`
+
+After successfully processing a date folder end-to-end (extraction + merge into
+the month file + summary regen), record:
+
+```json
+{"2026-07-24": "2026-07-26T18:03:11Z", "...": "..."}
+```
+
+Merge into the existing state file (don't clobber other dates' entries).
+
+## Idempotency
+
+- Re-running this spec on a date folder already in `mined_state.json` should be a
+  no-op unless explicitly told to re-mine.
+- Re-mining a folder is safe: the same transcript produces the same `id`s, so the
+  dedupe-by-`id` merge in the month file naturally overwrites rather than
+  duplicates.
+- `summary.json` is cheap to fully regenerate every run — always do so rather than
+  trying to incrementally patch it.
+
+## Guardrails
+
+- Word bands only for grades (`great` / `ok` / `poor`). The only number allowed
+  anywhere in this output is the `closed` boolean's supporting evidence (job
+  numbers/dates) — never emit a numeric quality score.
+- Never fabricate a `Job:` number, `RecId`, or quote. If the header is missing a
+  `Job:` line, omit `job` from the item rather than guessing.
+- Skip transcripts under any per-call minimum duration only if the runner's input
+  set already filtered them — this spec does not re-filter by duration.

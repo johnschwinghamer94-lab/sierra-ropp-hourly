@@ -44,6 +44,40 @@ jobs:
           ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
         run: |
           python tgl_truth.py || echo "truth refresh failed — keeping last good"
+          python - <<'PYEOF'
+          # Objection mining needs a source-job# -> ScheduledDate map spanning the whole
+          # YTD flip history. cache/tgls_created.json is written earlier in this job by
+          # cloud_fetch.py; JobNumber there is the SOURCE call job number.
+          import json, os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          cache_file = Path("cache/tgls_created.json")
+          if not cache_file.exists():
+              print("cache/tgls_created.json missing — skipping ytd_sources.json")
+          else:
+              rows = json.loads(cache_file.read_text())
+              if isinstance(rows, dict):
+                  rows = rows.get("rows") or rows.get("data") or []
+              sources = {}
+              for row in rows:
+                  job = str(row.get("JobNumber") or "").strip()
+                  sched = row.get("ScheduledDate") or ""
+                  if len(job) < 6 or not job.isdigit():
+                      continue
+                  date_part = str(sched)[:10]
+                  if len(date_part) != 10:
+                      continue
+                  sources[job] = date_part
+              out_dir = Path("tgl_truth")
+              out_dir.mkdir(exist_ok=True)
+              out = {
+                  "generated": datetime.now(timezone.utc).isoformat(),
+                  "sources": sources,
+              }
+              (out_dir / "ytd_sources.json").write_text(json.dumps(out, indent=2))
+              print(f"wrote tgl_truth/ytd_sources.json with {len(sources)} source jobs")
+          PYEOF
           git config user.email "johnschwinghamer94@gmail.com"
           git config user.name "John Schwinghamer"
           git add tgl_truth/
