@@ -5,10 +5,12 @@ Runs in seconds at the top of daily.yml so a stale push that reverts the cancell
 work fails the build IMMEDIATELY with a clear message — instead of a 13-minute rebuild
 that either crashes on a missing function or silently drops the exclusion.
 
-It protects two things that MUST travel together:
+It protects several things that MUST travel together:
   1. The Cancellation-tab duplicate-exclusion logic in UPDATE_DASHBOARD.py.
   2. patch_cancel_markup defined in the SAME file that calls it (auto_update_dashboard.py),
      so a partial revert can never orphan the call again.
+  3. The Siro not-recording blinker and the CA01 placeholder-SKU options-count filter in
+     livefeed_sync.py, both of which have been wiped by stale-checkout pushes before.
 
 If you are intentionally removing this feature, delete this file and its daily.yml step.
 """
@@ -51,6 +53,21 @@ try:
 except Exception as e:
     FAIL.append("cancel_dup_exclusions.json is missing or invalid (%s)." % e)
 
+# 5. livefeed_sync.py must retain the Siro not-recording blinker and the CA01
+#    placeholder-SKU options-count filter (both reverted by stale pushes on 2026-07-25/26)
+lfs = src("livefeed_sync.py")
+defines_recording = "def active_recording_names(" in lfs
+calls_recording = "active_recording_names()" in lfs.replace("def active_recording_names(", "")
+if not (defines_recording and calls_recording):
+    FAIL.append("livefeed_sync.py is missing the Siro not-recording blinker "
+                "(`active_recording_names`, commit 391deec) — a stale checkout likely reverted it. "
+                "pull --rebase on the machine that pushed, then re-apply.")
+
+if not ("is_ca_placeholder" in lfs and '{"CA01"}' in lfs):
+    FAIL.append("livefeed_sync.py is missing the CA01 placeholder-SKU options-count filter "
+                "(`is_ca_placeholder` / `{\"CA01\"}`, commit b20dadf) — a stale checkout likely "
+                "reverted it. pull --rebase on the machine that pushed, then re-apply.")
+
 # 4. Both modules must import cleanly (catches syntax / load-time errors)
 for mod in ("UPDATE_DASHBOARD", "auto_update_dashboard"):
     try:
@@ -66,4 +83,5 @@ if FAIL:
           "See the commit 'Fix rebuild crash: restore cancel-exclusion logic'.", file=sys.stderr)
     sys.exit(1)
 
-print("preflight OK — cancellation exclusion + self-contained markup present and consistent.")
+print("preflight OK — cancellation exclusion, self-contained markup, and livefeed "
+      "blinker/options-count guards present and consistent.")
