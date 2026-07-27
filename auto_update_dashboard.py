@@ -12,7 +12,7 @@ Usage:
   python3 auto_update_dashboard.py --no-git   # rebuild + write index.html, but do not commit/push
   python3 auto_update_dashboard.py --date 2026-07-03
 """
-import os, re, sys, json, subprocess, argparse, tempfile
+import os, re, sys, json, subprocess, argparse, tempfile, time
 from datetime import date, datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -180,6 +180,16 @@ def main():
         import ropp_live
         U.load_rows = ropp_live.load_rows
         print("Data source: ServiceTitan Reporting API (ropp_live)")
+        # Real publishes must never ship stale MTD/YTD totals (2026-07-26: a local
+        # rebuild published days-old cache numbers). Refresh cache/*.json when the
+        # last fetch is >30 min old. --dry stays unchanged/fast: no refresh here.
+        if not a.dry:
+            cache_file = os.path.join(ropp_live.HERE, "cache", "revenue.json")
+            age = time.time() - os.path.getmtime(cache_file) if os.path.exists(cache_file) else None
+            if age is None or age > 1800:
+                print("Report cache %s — refreshing via ropp_live.cache_reports()..."
+                      % ("missing" if age is None else "is %.0f min old" % (age / 60)))
+                ropp_live.cache_reports()
 
     if not a.dry and not a.no_git:
         git("pull", "--rebase", "--autostash", check=False)
