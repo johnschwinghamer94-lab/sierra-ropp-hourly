@@ -22,9 +22,10 @@ if not _fp.exists() and os.environ.get("ST_CREDS_JSON", "").strip():
 sys.path.insert(0, str(Path(__file__).parent))
 import st_client as st  # noqa: E402
 from livefeed_sync import (paged, parse_utc, fmt_t, chunked_get, lead_ca,  # noqa: E402
-                           lead_sameday, SHEET_EXCLUDE)
+                           lead_sameday, SHEET_EXCLUDE, sheet_b_url)
 
 WEBHOOK = os.environ.get("SHEET_WEBHOOK", "").strip()
+WEBHOOK_B = sheet_b_url()   # manager B's sheet — env SHEET_WEBHOOK_B or the deployed default
 DRY = "--dry" in sys.argv
 args = [a for a in sys.argv[1:] if not a.startswith("--")]
 if len(args) >= 2:
@@ -60,8 +61,6 @@ while d <= end:
         src = gls.get("jobId")
         if not src or not is_tgl_type(jts.get(lj.get("jobTypeId")) or ""):
             continue
-        if emps.get(gls.get("employeeId")) in SHEET_EXCLUDE:
-            continue
         tgls.append({"src": str(src), "lead_id": lj["id"],
                      "tech": emps.get(gls.get("employeeId")) or "?",
                      "date": d.isoformat(), "t": fmt_t(parse_utc(lj.get("createdOn")))})
@@ -85,13 +84,14 @@ for src, group in bysrc.items():
     pool.sort(key=lambda g: (g["lead_id"] not in sold_ids, status_of(g["lead_id"]) != "Completed", g["date"], g["t"]))
     chosen.append(pool[0])
 
-def post(row):
-    req = urllib.request.Request(WEBHOOK, data=json.dumps(row).encode(), method="POST",
+def post(row, url):
+    req = urllib.request.Request(url, data=json.dumps(row).encode(), method="POST",
         headers={"Content-Type": "application/json", "User-Agent": "sierra-ops"})
     with urllib.request.urlopen(req, timeout=60) as r:
         return r.read().decode()
 
 posted = 0
+skipped_b = 0
 for t in sorted(chosen, key=lambda x: (x["date"], x["t"])):
     lj = lead_jobs.get(t["lead_id"])
     if not lj:
@@ -104,13 +104,21 @@ for t in sorted(chosen, key=lambda x: (x["date"], x["t"])):
     sd = lead_sameday(t["lead_id"], t["date"])
     if not (ran or sold or canceled):        # still scheduled, not run yet — leave blank
         continue
+    other = bool(t["tech"] and t["tech"] in SHEET_EXCLUDE)   # manager B's tech
+    url = WEBHOOK_B if other else WEBHOOK
+    if other and not url:
+        print(f"WARN: SHEET_WEBHOOK_B not resolved — skipping {t['tech']} ({t['src']})")
+        skipped_b += 1
+        continue
     if DRY:
         print(f"{t['date']} {t['tech'][:16]:16} {t['src']:>10}  ran={ran or '·':10} sold={sold or '·'} "
-              f"{'CANCELED' if canceled else ('SAME DAY' if sd else 'SCHEDULED')}")
+              f"{'CANCELED' if canceled else ('SAME DAY' if sd else 'SCHEDULED')}"
+              f"{'  [B]' if other else ''}")
     else:
         post({"op": "update", "jobNumber": t["src"], "ran": ran, "sold": sold,
-              "sameDay": sd, "canceled": canceled})
+              "sameDay": sd, "canceled": canceled}, url)
     posted += 1
 
 print(f"bonus_backfill {start}..{end}: {len(tgls)} leads -> {len(chosen)} calls; "
-      f"{'DRY, would fill' if DRY else 'filled'} {posted}.")
+      f"{'DRY, would fill' if DRY else 'filled'} {posted}"
+      f"{f'; skipped {skipped_b} (no SHEET_WEBHOOK_B)' if skipped_b else ''}.")
