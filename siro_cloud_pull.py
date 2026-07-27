@@ -60,6 +60,10 @@ TOKEN_URL_FMT = "https://functions.siro.ai/api-externalApi/v1/core/oauth/apps/{c
 API_BASE = "https://api.siro.ai/v1/core"
 
 LOOKBACK_DAYS = 3          # pull finished recordings from the last N days
+try:  # historical backfill: workflow_dispatch can override via SIRO_LOOKBACK_DAYS, capped at 45
+    LOOKBACK_DAYS = min(45, int(os.environ.get("SIRO_LOOKBACK_DAYS", "").strip() or LOOKBACK_DAYS))
+except ValueError:
+    pass
 STATE_PRUNE_DAYS = 14      # keep pulled-ids in state for N days, then drop
 MIN_DURATION_MS = 300_000  # skip recordings under 5 minutes — same floor as both
                            # Mac writers (siro_livecoach_poll / siro_download_mac)

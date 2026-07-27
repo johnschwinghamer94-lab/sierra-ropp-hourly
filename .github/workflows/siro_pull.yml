@@ -1,6 +1,12 @@
 name: Siro transcript pull (cloud)
 on:
   workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: "Historical backfill lookback (days). Leave blank for the normal LOOKBACK_DAYS constant."
+        required: false
+        type: string
+        default: ""
   schedule:
     # BACKUP ONLY — GitHub's cron fired 1 of 12 slots on 2026-07-17 morning.
     # The dependable trigger is graph_hourly.yml's cron-job.org heartbeat, which
@@ -34,7 +40,11 @@ jobs:
           GRAPH_TENANT_ID: ${{ secrets.GRAPH_TENANT_ID }}
           GRAPH_REFRESH_TOKEN: ${{ secrets.GRAPH_REFRESH_TOKEN }}
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
-        run: python siro_cloud_pull.py
+        run: |
+          if [ -n "${{ github.event.inputs.lookback_days }}" ]; then
+            export SIRO_LOOKBACK_DAYS="${{ github.event.inputs.lookback_days }}"
+          fi
+          python siro_cloud_pull.py
       - name: Commit + push updated state (retry once after pull --rebase)
         run: |
           git config user.email "johnschwinghamer94@gmail.com"

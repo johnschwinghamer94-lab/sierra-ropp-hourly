@@ -9,9 +9,10 @@ do NOT count as TGLs (that's an install booked off an already-flipped lead,
 not the flip itself). Same definition livefeed_sync.py uses for the live
 board's TGL counter — see its fetch_today()/dept_leads logic.
 
-Writes tgl_truth/<PT date of LEAD creation>.json for each of the trailing 8 PT
-dates (today back 7 days), every run, even when a day is empty — downstream
-consumers (coaching prompts) always find all 8 files. Keyed by the SOURCE
+Writes tgl_truth/<PT date of LEAD creation>.json for each of the trailing 35 PT
+dates (today back 34 days — covers the full current month plus prior-month
+tail for monthly coaching rollups), every run, even when a day is empty —
+downstream consumers (coaching prompts) always find all 35 files. Keyed by the SOURCE
 call job's NUMBER (transcripts identify calls by job number, not job id):
 
     {"generated": "<iso>", "tgls": {"<source job number>": {"lead": "<lead job number>", "createdOn": "<iso>"}}}
@@ -96,7 +97,7 @@ def job_type_names():
 
 def main():
     today_pt = now_pt().date()
-    trailing_dates = [today_pt - timedelta(days=i) for i in range(7, -1, -1)]  # oldest -> newest, 8 dates
+    trailing_dates = [today_pt - timedelta(days=i) for i in range(34, -1, -1)]  # oldest -> newest, 35 dates
     window_start_pt = trailing_dates[0]
 
     day0_utc = datetime(window_start_pt.year, window_start_pt.month, window_start_pt.day,
@@ -126,7 +127,7 @@ def main():
             continue
         dkey = created_pt.date().isoformat()
         if dkey not in buckets:
-            continue  # outside the trailing-8 window (created_after has some slack for paging)
+            continue  # outside the trailing-35 window (created_after has some slack for paging)
         # need the SOURCE job's number — resolved below in a batch pass
         buckets[dkey][src] = {"lead_num": lj.get("jobNumber", ""), "createdOn": created_iso}
         total += 1
