@@ -7,6 +7,10 @@ on:
     - cron: "50,55 13 * * *"
     - cron: "0,15,30,45 14,15 * * *"
     - cron: "0 16,18,20,22,0,2,4 * * *"
+    # 0 6 * * * = 11 PM PT — extended to midnight 2026-07-26 (John): a session
+    # can start late evening even if none is already running, so late-typed
+    # TGL tickets still land on that day's live board.
+    - cron: "0 6 * * *"
   workflow_dispatch:
 concurrency:
   group: livefeed
