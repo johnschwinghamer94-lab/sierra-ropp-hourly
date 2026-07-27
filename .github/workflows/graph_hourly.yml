@@ -40,13 +40,14 @@ jobs:
       # hours — GitHub's own cron skipped all three evening ticks on day one
       # and the live board sat stale for 2.5 h. Extra dispatches are harmless:
       # livefeed.yml's concurrency group collapses pending duplicates.
-      - name: Arm SILO Live Feed relay (6a–10p PT)
+      - name: Arm SILO Live Feed relay (6a–midnight PT)
         if: always()
         env:
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
         run: |
+          # extended to midnight 2026-07-26 (John) — late-typed TGL tickets must count on the day's board
           H=$(TZ=America/Los_Angeles date +%-H)
-          if [ "$H" -ge 6 ] && [ "$H" -lt 22 ]; then
+          if [ "$H" -ge 6 ] && [ "$H" -lt 24 ]; then
             # only arm when a spare is not already waiting - extra dispatches
             # replace the queued run and litter Actions with cancelled noise
             API="https://api.github.com/repos/${{ github.repository }}/actions/workflows/livefeed.yml"
@@ -67,7 +68,7 @@ jobs:
       # 30-min cadence) — siro_pull's own GitHub cron fired 1 of 12 slots on
       # 2026-07-17 morning. siro_pull.yml's concurrency group collapses any
       # overlap with a late native-cron firing.
-      - name: Arm Siro transcript pull (6a–10p PT, every quarter-hour tick)
+      - name: Arm Siro transcript pull (6a–midnight PT, every quarter-hour tick)
         if: always()
         env:
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
@@ -75,12 +76,14 @@ jobs:
           H=$(TZ=America/Los_Angeles date +%-H)
           # minute gate removed 2026-07-26: the capture loop makes each job ~15
           # min long, so this step already fires once per quarter-hour window.
-          if [ "$H" -ge 6 ] && [ "$H" -lt 22 ]; then
+          # extended to midnight 2026-07-26 (John) — late calls need transcripts
+          # pulled for scoring/coaching too.
+          if [ "$H" -ge 6 ] && [ "$H" -lt 24 ]; then
             curl -s -o /dev/null -w "arm siro_pull -> HTTP %{http_code}\n" -X POST \
               -H "Authorization: token $DASHBOARD_TOKEN" \
               -H "Accept: application/vnd.github+json" \
               https://api.github.com/repos/${{ github.repository }}/actions/workflows/siro_pull.yml/dispatches \
               -d '{"ref":"main"}'
           else
-            echo "skip (outside 6a-10p PT)"
+            echo "skip (outside 6a-midnight PT)"
           fi
