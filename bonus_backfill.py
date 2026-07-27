@@ -85,10 +85,22 @@ for src, group in bysrc.items():
     chosen.append(pool[0])
 
 def post(row, url):
+    # Apps Script webhooks can hang past 60s (known); dedupe/setIfSafe make
+    # retries safe, so retry rather than dying mid-backfill (2026-07-27).
+    import time as _time
     req = urllib.request.Request(url, data=json.dumps(row).encode(), method="POST",
         headers={"Content-Type": "application/json", "User-Agent": "sierra-ops"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return r.read().decode()
+    last = None
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=90) as r:
+                return r.read().decode()
+        except Exception as e:
+            last = e
+            print(f"  post retry {attempt + 1}/3 after {type(e).__name__}: {e}")
+            _time.sleep(10 * (attempt + 1))
+    print(f"  WARN: post gave up after 3 attempts ({type(last).__name__}) — row skipped, nightly run will heal it")
+    return None
 
 posted = 0
 skipped_b = 0
