@@ -1,0 +1,244 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Juan Tlatenchi — SILO Coaching Plan 2026-07-21</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;·&nbsp;SILO</b><span class="tag">Daily Coaching Plan · 2026-07-21</span></div>
+<div class="wrap">
+<div class="hero">
+  <div class="ey">Daily Coaching Plan · 2026-07-21 · Good findings, and then the call disappears</div>
+  <h1 class="disp">Juan Tlatenchi</h1>
+  <p class="lede">Caked blower wheels, motors leaking oil and running unlubricated — Juan found real problems and explained them clearly. Then the recording turns into an hour of conversation with a colleague about schedules, other technicians and personal news, and the customer is never heard from again. <b>No presentation, no advisor, no lead.</b></p>
+</div>
+
+<div class="glance">
+  <div class="g"><div class="k">Close Rate</div><div class="v red">0%<small>no flip and no close on one gradeable call</small></div></div>
+  <div class="g"><div class="k">Calls Reviewed</div><div class="v">One recording<small>much of the tape is a colleague conversation</small></div></div>
+  <div class="g"><div class="k">Strongest Section</div><div class="v grn">Assessment<small>Solid</small></div></div>
+  <div class="g"><div class="k">Weakest Section</div><div class="v red">Decision<small>Off-tape</small></div></div>
+</div>
+<div class="legend">
+  <span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span>
+  <span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span>
+</div>
+<p class="note">Scored on strength bands, never numbers — the only figure anywhere is the close rate. Extended personal and work conversation with a colleague occupies most of this recording and is excluded from scoring; the customer-facing portion is short. No lead was created off this visit.</p>
+
+<section id="verdict">
+<div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive">
+  <div class="dh"><div class="k">Why it didn&#x27;t flip</div><h3>Third graded day, same ending: the findings never become an ask.</h3></div>
+  <div class="split">
+    <div class="c said"><div class="lbl">What is on tape</div><p>The customer-facing part is good work — <q>the wheels for the motor are completely covered in dirt… it&#x27;s going to cause the wheel to be imbalanced and make a lot of rattling noise. On top of that, the motors are leaking oil, so they&#x27;re working a little harder than they need to. They&#x27;re running unlubricated.</q> After that the recording is almost entirely a colleague conversation.</p></div>
+    <div class="c should"><div class="lbl">The pattern</div><p>This is the third graded day in a row where Juan&#x27;s diagnosis is strong and no appointment results. Two days ago it was an insurance deadline; yesterday a customer asked twice for a replacement estimate. Today the presentation does not appear at all. <b>The teaching is not the problem and has never been the problem.</b> The problem is that the visit ends without anyone being asked to do anything.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="calls">
+<div class="sh"><div class="no">2</div><h2>The day&#x27;s calls</h2><span class="hint">outcome per gradeable call</span></div>
+<div class="rub">
+  <div class="row"><div class="rb">Rattling noise, caked blower wheels, motors leaking oil · one hundred eleven minutes</div><div><span class="b weak">No-flip</span></div><div class="ev">Real findings clearly explained. No presentation, options or advisor on tape and no lead in ServiceTitan. Most of the recording is a conversation with a colleague.</div></div>
+</div>
+</section>
+
+<section id="rubric">
+<div class="sh"><div class="no">3</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div>
+<div class="rub">
+  <div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b na">Off-tape</span></span></div>
+  <div class="row"><div class="rb">All Welcome behaviours</div><div><span class="b na">Off-tape</span></div><div class="ev">The recording begins mid-visit at the findings walkthrough. Across his two previously graded days, Juan&#x27;s expectation-setting was consistently Strong and complete — it is simply not captured here.</div></div>
+  <div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Required questions</div><div><span class="b na">Off-tape</span></div><div class="ev">Not captured — the recording starts after the discovery phase.</div></div>
+  <div class="row"><div class="rb">Check-ins</div><div><span class="b solid">Solid</span></div><div class="ev">Brought the customer to the findings and connected them to what she had already noticed: <q>I noticed when you went out and it kicked back on after a minute… it was doing the — but then it quieted down.</q></div></div>
+  <div class="row"><div class="rb">Draw the picture</div><div><span class="b strong">Strong</span></div><div class="ev">Imbalance and lubrication explained in a way the customer could see for herself, with the removed filter as the physical evidence.</div></div>
+  <div class="row"><div class="rb">Check your tone</div><div><span class="b solid">Solid</span></div><div class="ev">Matter-of-fact and unhurried in the customer-facing portion.</div></div>
+  <div class="row"><div class="rb">Keep it simple</div><div><span class="b strong">Strong</span></div><div class="ev"><q>They&#x27;re running unlubricated</q> — one phrase that makes the consequence obvious without a lecture.</div></div>
+  <div class="row"><div class="rb">Show pictures</div><div><span class="b solid">Solid</span></div><div class="ev">Used the pulled filter and the visible dirt on the wheels rather than describing them.</div></div>
+  <div class="row"><div class="rb">Get customer to diagnose</div><div><span class="b solid">Solid</span></div><div class="ev">The customer connected the filter to the wheel condition unprompted: <q>that looks like the filter we pulled out.</q></div></div>
+  <div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b na">Off-tape</span></span></div>
+  <div class="row"><div class="rb">All Decision behaviours</div><div><span class="b na">Off-tape</span></div><div class="ev">No presentation, options, pricing or ask appears anywhere on the recording, and ServiceTitan shows no lead. On two previously graded days the same step was the decisive weakness.</div></div>
+  <div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Be a nerd</div><div><span class="b solid">Solid</span></div><div class="ev">Correct on the mechanics of wheel imbalance and oil loss, though far less depth on tape than his previous graded days.</div></div>
+  <div class="row"><div class="rb">5-star review</div><div><span class="b na">Off-tape</span></div><div class="ev">Not captured.</div></div>
+  <div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b mod">Moderate</span></span></div>
+  <div class="row"><div class="rb">Make time valuable</div><div><span class="b solid">Solid</span></div><div class="ev">The customer learned why her system was rattling and what the filter had to do with it.</div></div>
+  <div class="row"><div class="rb">Help them decide</div><div><span class="b weak">Weak</span></div><div class="ev">Nothing was put in front of her to decide, and no lead resulted.</div></div>
+</div>
+
+<div class="sh" style="margin-top:26px"><div class="no">4</div><h2>Critical Actions — pass rate</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Setting clear expectations</div><div><span class="b na">Off-tape</span></div><div class="ev">Off-tape — the recording begins mid-visit.</div></div>
+  <div class="row"><div class="rb">Asking good questions</div><div><span class="b na">Off-tape</span></div><div class="ev">Off-tape.</div></div>
+  <div class="row"><div class="rb">Creating good options</div><div><span class="b fail">Fail</span></div><div class="ev">Automatic fail — real findings on two motors and no option set anywhere on tape or in ServiceTitan.</div></div>
+  <div class="row"><div class="rb">Handling objections</div><div><span class="b na">Off-tape</span></div><div class="ev">No objection surfaced, because no ask was made.</div></div>
+</div>
+</section>
+
+<section id="strengths">
+<div class="sh"><div class="no">5</div><h2>What Juan did right — real strength, build on it</h2></div>
+<ul class="str">
+  <li><b>The diagnosis is right and it is well explained.</b> Dirty wheels, imbalance, oil loss and unlubricated running — connected in a chain the customer could follow.</li>
+  <li><b>He used the physical evidence.</b> The filter she had just pulled became the proof for what he found on the wheels.</li>
+  <li><b>The customer made the connection herself.</b> <q>That looks like the filter we pulled out</q> is the customer doing the diagnosing.</li>
+  <li><b>His welcome, on the two days it was captured, was consistently complete.</b> That habit is established and is not in question here.</li>
+</ul>
+</section>
+
+<section id="gaps">
+<div class="sh"><div class="no">6</div><h2>The three gaps</h2><span class="hint">each one in Juan&#x27;s own calls</span></div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Gap 1 — two failing motors and no option set, anywhere</h4></div>
+  <div class="q"><b>Juan&#x27;s own findings</b>The motors are leaking oil, so they&#x27;re working a little harder than they need to. They&#x27;re running unlubricated.</div>
+  <div class="q"><b>What appears afterwards on tape</b>No prices, no options, no advisor, no signature.</div>
+  <div class="q"><b>ServiceTitan</b>No lead created off this job.</div>
+  <p class="fixline"><b>The fix</b> Third graded day, same ending. The rule has to become mechanical rather than judgement-based: <b>every gradeable call produces a written report with three options, one of which is the no-cost advisor visit with a time attached.</b> No exceptions for calls that feel like maintenance.</p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Gap 2 — most of a one-hundred-eleven-minute visit is a colleague conversation</h4></div>
+  <div class="q"><b>On tape during the visit</b>Extended discussion of schedules, hours worked, other technicians, personal news and company gossip.</div>
+  <div class="q"><b>Customer-facing content</b>A few minutes at the start of the recording.</div>
+  <p class="fixline"><b>The fix</b> None of that conversation is scored and none of it is held against the customer interaction — but it is filling a visit that produced no outcome, and some of it would not read well overheard in a customer&#x27;s home. <b>Personal and work conversation happens between calls.</b></p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b mod">Moderate</span><h4>Gap 3 — the pattern is now three days old</h4></div>
+  <div class="q"><b>Two graded days ago</b>A customer&#x27;s hotel deadline and open insurance claim, both left unconverted.</div>
+  <div class="q"><b>One graded day ago</b>A customer asked twice for a replacement estimate and received the promise of a report.</div>
+  <div class="q"><b>Today</b>Two failing motors and no ask at all.</div>
+  <p class="fixline"><b>The fix</b> Three different customers, three different openings, one identical ending. This is not a skill gap — Juan&#x27;s teaching is among the best on the board in two languages. It is a missing habit at a specific moment. <b>The visit is not over until someone has been asked to do something.</b> That sentence should be on his dash.</p>
+</div>
+</section>
+
+<section id="plan">
+<div class="sh"><div class="no">7</div><h2>Three-week training plan</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Week 1</div><div><span class="b solid">Never leave without an ask</span></div><div class="ev"><b>Drill:</b> Every gradeable call ends with a written option set and a proposed advisor time, regardless of what was found.<br><b>Proof it worked:</b> A report and an ask on tape for every call.</div></div>
+  <div class="row"><div class="rb">Week 2</div><div><span class="b solid">The house is the customer&#x27;s</span></div><div class="ev"><b>Drill:</b> Colleague conversation moves to the van and between calls; the visit time goes to the presentation.<br><b>Proof it worked:</b> No extended colleague conversation on tape during a visit.</div></div>
+  <div class="row"><div class="rb">Week 3</div><div><span class="b solid">Record the whole call</span></div><div class="ev"><b>Drill:</b> Recorder confirmed at the door so the welcome and the close both exist for coaching.<br><b>Proof it worked:</b> Full-length recordings for every visit.</div></div>
+</div>
+</section>
+
+<section id="owe">
+<div class="sh"><div class="no">8</div><h2>What we owe Juan Tlatenchi</h2></div>
+<ul class="str">
+  <li><b>A direct conversation, not another gap list.</b> Three graded days, three strong diagnoses, zero asks. He needs a manager to name the pattern out loud rather than repeat the coaching note.</li>
+  <li><b>A mechanical report rule.</b> Take the judgement out of it — every call gets three options, every time.</li>
+  <li><b>Keep crediting the teaching.</b> His refrigerant and system explanations are among the best here and that should not get lost in the correction.</li>
+  <li><b>Clarity on colleague conversation during visits.</b> Nobody appears to have told him where the line is.</li>
+</ul>
+</section>
+
+<div class="bottom">
+  <div class="eyb">Bottom line</div>
+  <p>Juan found two failing motors, explained them so clearly the customer connected the evidence herself, and then the visit dissolved into an hour of conversation with a colleague and ended with nothing offered. That is the third graded day in a row where excellent diagnosis produced no ask. The coaching cannot keep being about technique, because the technique is not the problem. Every call ends with a report and a proposed time. That is the whole assignment.</p>
+</div>
+
+<div class="foot">Sierra · SILO daily coaching plan · 2026-07-21 · Scored on strength bands — close rate is the only number</div>
+</div></body></html>
