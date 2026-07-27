@@ -302,7 +302,7 @@ def parse_all(today):
             t["monthly"][mo]["svc_tgls"] += 1; t["monthly"][mo]["svc_rev"] += rev
         if d.month == today.month:
             t["mtd"]["tgls"] += 1; t["mtd"]["revenue"] += rev
-            wt = t.setdefault("weekly_tgls", {}); wk_ = week_of_month(d)
+            wt = t.setdefault("weekly_tgls", {}); wk_ = _cal_week_label(_cal_week_start(d))
             wt[wk_] = wt.get(wk_, 0) + 1
             if is_maint(bu): t["mtd"]["maint_tgls"] += 1
             elif is_svc(bu): t["mtd"]["svc_tgls"] += 1
@@ -341,7 +341,7 @@ def parse_all(today):
         if cd is not None and cd.year == YEAR: cancel[tech]["ytd"] += 1
         if sdt is not None and sdt.year == YEAR:
             cancel[tech]["monthly"][MONTH_NAMES[sdt.month-1]] += 1
-            if sdt.month == today.month: cancel[tech]["weekly"][week_of_month(sdt)] += 1
+            if sdt.month == today.month: cancel[tech]["weekly"][_cal_week_label(_cal_week_start(sdt))] += 1
 
     sd = defaultdict(lambda: {"ytd":{"total":0,"flipped":0,"nextday":0},
                               "monthly":defaultdict(lambda:{"total":0,"flipped":0,"nextday":0}),
@@ -354,7 +354,7 @@ def parse_all(today):
         for b in (sd[tech]["ytd"], sd[tech]["monthly"][mo]):
             b["total"] += 1; b["flipped"] += 1 if same else 0; b["nextday"] += 1 if nxt else 0
         if ran.month == today.month:
-            b = sd[tech]["weekly"][week_of_month(ran)]
+            b = sd[tech]["weekly"][_cal_week_label(_cal_week_start(ran))]
             b["total"] += 1; b["flipped"] += 1 if same else 0; b["nextday"] += 1 if nxt else 0
     return techs, cancel, sd
 
@@ -368,6 +368,8 @@ def build_initial(techs):
             for n, t in techs.items() if "," not in n}
 
 def build_cancel(techs, cancel, today, months):
+    # True Mon-Sun calendar weeks (matches build_weekly_conv's labeling).
+    labels = [_cal_week_label(ws) for ws in _cal_weeks_for_month(YEAR, today.month, today)]
     ytd, monthly, weekly = {}, {}, {}
     for n in set(list(techs.keys()) + list(cancel.keys())):
         if "," in n: continue
@@ -376,28 +378,30 @@ def build_cancel(techs, cancel, today, months):
         monthly[n] = {m: {"scheduled": t["monthly"][m]["tgls"] if t else 0,
                           "cancelled": cancel[n]["monthly"].get(m,0)} for m in months}
         wt = t.get("weekly_tgls", {}) if t else {}
-        weekly[n] = {w: {"scheduled":wt.get(w,0),"cancelled":cancel[n]["weekly"].get(w,0)} for w in ("W1","W2","W3","W4")}
+        weekly[n] = {w: {"scheduled":wt.get(w,0),"cancelled":cancel[n]["weekly"].get(w,0)} for w in labels}
     dup_note = ("* %d true duplicate TGL tickets excluded from this count — each a duplicate of a "
                 "job that was completed. Duo tickets where both jobs were canceled still count."
                 % _CANCEL_EXCLUDED_COUNT) if _CANCEL_EXCLUDED_COUNT else ""
     return {"ytd":ytd,"monthly":monthly,"weekly":weekly,"months":months,
-            "weeks":["W1","W2","W3","W4"],"weekLabels":month_week_labels(YEAR,today.month),
+            "weeks":labels,"weekLabels":{w:w for w in labels},
             "dupExcluded":_CANCEL_EXCLUDED_COUNT, "dupNote":dup_note}
 
 def build_sameday(sd, today, months, all_names):
+    # True Mon-Sun calendar weeks (matches build_weekly_conv's labeling).
+    labels = [_cal_week_label(ws) for ws in _cal_weeks_for_month(YEAR, today.month, today)]
     ytd, monthly, weekly = {}, {}, {}
     for n, s in sd.items():
         if "," in n: continue
         ytd[n] = dict(s["ytd"])
         monthly[n] = {m: dict(s["monthly"].get(m,{"total":0,"flipped":0,"nextday":0})) for m in months}
-        weekly[n] = {w: dict(s["weekly"].get(w,{"total":0,"flipped":0,"nextday":0})) for w in ("W1","W2","W3","W4")}
+        weekly[n] = {w: dict(s["weekly"].get(w,{"total":0,"flipped":0,"nextday":0})) for w in labels}
     for n in all_names:
         if "," in n or n in ytd: continue
         ytd[n] = {"total":0,"flipped":0,"nextday":0}
         monthly[n] = {m: {"total":0,"flipped":0,"nextday":0} for m in months}
-        weekly[n] = {w: {"total":0,"flipped":0,"nextday":0} for w in ("W1","W2","W3","W4")}
+        weekly[n] = {w: {"total":0,"flipped":0,"nextday":0} for w in labels}
     return {"ytd":ytd,"monthly":monthly,"weekly":weekly,"months":months,
-            "weeks":["W1","W2","W3","W4"],"weekLabels":month_week_labels(YEAR,today.month)}
+            "weeks":labels,"weekLabels":{w:w for w in labels}}
 
 def build_weekly_prevmonth(today):
     pm = today.month - 1 or 12; py = YEAR if today.month > 1 else YEAR-1
