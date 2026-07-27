@@ -1,78 +1,34 @@
-# Call Scorecard: Robert Silinzy - Diagnostic Evaluation
+# Robert Silinzy - AC Diagnostic
 
-**RecId:** file:Robert_Silinzy_-_  
-**Rep:** Robert Silinzy  
-**Date:** 2026-07-26  
-**Duration:** 45 min  
-**Job:** (missing from header)
+Date: 2026-07-26
+Duration: 45 min
+RecId: file:Robert_Silinzy_-_
 
----
+## FSG Scoring
 
-## Scoring Summary
+- **Welcome**: Solid - Opened with basic empathy and explained he'd look at the AC unit
+- **Assessment**: Strong - Thorough diagnostic questioning about unit age, symptoms, previous repairs; identified compressor and blower motor issues
+- **Decision**: Moderate - Diagnosed issues clearly but did not present options or pricing path; ended abruptly without reconnecting to customer concern or next steps
+- **Deliver**: Moderate - Explained technical findings but no action plan presented
 
-| Band | Score |
-|------|-------|
-| Welcome | Strong |
-| Assessment | Strong |
-| Decision | Solid |
-| Deliver | Solid |
+## Critical Actions
 
-### Critical Actions
-- **Expectations:** ✓ PASS - "The goal is to give you an evaluation to be thorough and share everything that's going on with your system and then you can make a decision on how you would like to move forward."
-- **Questions:** ✓ PASS - Multiple discovery questions (system age, repair history, filter counts, dimensions)
-- **Options:** ✗ FAIL - No multiple options presented; evaluation complete but options discussion deferred to report-writing phase
-- **Objections:** ✗ FAIL - Customer mentioned previous overcharging concern. Robert acknowledged but didn't actively address with empathetic follow-up or question.
+- **Expectations**: ❌ Did not set clear expectations for pricing or next steps
+- **Questions**: ✅ Asked thorough discovery questions during diagnosis
+- **Options**: ❌ No options presented or discussed
+- **Objections**: ❌ No objections handled
 
-**Outcome:** no-close  
-**TGL:** None observed in transcript; job number missing prevents ServiceTitan verification
+## Outcome
 
----
+- **Result**: no-close
+- **Evidence**: Call ends after diagnosis with no pricing discussion, Option C mention, or scheduled follow-up
 
-## Welcome: Strong
+## Top Gaps
 
-**Evidence:**
-- Warm, personal opening: "Nice to meet you. I love dogs. That's Ruby."
-- Established rapport and comfort
-- Clear expectation-setting on evaluation goals
+1. **Missing reconnection** - Did not reconnect diagnostic findings to customer's initial concern
+2. **No options path** - Failed to present Option C or specialist appointment option
+3. **Abrupt close** - Ended without setting expectations for pricing or next communication
 
----
+## Coaching Notes
 
-## Assessment: Strong
-
-**Evidence:**
-- **Discovery questions:** Asked about system history, repairs, filter counts
-- **Thorough diagnosis:** Tested compressor windings with Legometer, checked capacitor, identified hard start issues, detected blower motor oil leak
-- **Check-ins:** Active listening pattern throughout inspection
-- **System knowledge:** Strong understanding of age (13 years), previous repairs, technical components
-
----
-
-## Decision: Solid
-
-**Evidence:**
-- Clear diagnosis communication: weakened windings, motor failure signs, hard start overage
-- Strong technical education on hard start devices and microprocessors
-- **Gap:** Options not presented in call; evaluation complete but "I'll put report together" leaves decision path unclear
-
----
-
-## Deliver: Solid
-
-**Evidence:**
-- **Be A Nerd:** Excellent technical education on capacitors, relays, winding testing
-- **Gap:** No ask for 5-star review; no next-step commitment offered
-
----
-
-## Coaching Tips
-
-1. **Objection handling:** Customer mentioned previous overcharging. Robert moved past without acknowledgment. Should have addressed trust directly: "I understand—let me make sure we're transparent about pricing."
-
-2. **Options pathway:** Before "I'll put the report together," present framework: "You're looking at compressor and motor issues. Some customers do replacement; others schedule with our Comfort Advisor. Which path interests you?" Creates decision commitment.
-
-3. **Close the loop:** No clarity on follow-up timing or next steps.
-
----
-
-## Outcome: no-close
-No TGL/Comfort Advisor appointment scheduled. High engagement but incomplete decision presentation.
+Solid diagnostic work but needed to bridge from assessment to decision. At the end, should have said something like: "So the compressor and blower motor are both failing — for a full diagnostic on options and pricing I'd recommend scheduling with our comfort advisor. Can I get that on your calendar?"
