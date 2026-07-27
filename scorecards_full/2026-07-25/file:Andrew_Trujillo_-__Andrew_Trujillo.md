@@ -1,50 +1,41 @@
-# Scorecard: Andrew Trujillo - 2026-07-25
+# Live-Coach Card: Andrew Trujillo
 
-**RecId:** file:Andrew_Trujillo_-_  
-**Rep:** Andrew Trujillo  
-**Date:** 2026-07-25  
-**Duration:** 80 min  
-**Job:** None captured  
+**Date:** 2026-07-25 | **Duration:** 80 min | **Job:** (none) | **Outcome:** Unknown
 
-## FSG Bands
+## Bands
 
-**Welcome:** Solid  
-Introduced himself and established empathy: "I just want to make sure I'm setting a clear expectation." Set clear expectations about the inspection scope (both systems, fully outside and in).
+### Welcome: Solid
+- Warm greeting: "How you doing?"
+- Built quick rapport with customer
+- Introduced self politely
 
-**Assessment:** Strong  
-Conducted thorough discovery: asked about duration ("stopped yesterday when it was really hot"), scope ("upstairs and downstairs"), customer history ("how long have you guys been living in the home?"), prior work ("any sort of repairs"), past issues. Checked thermostats, asked about cooling problems, explored ductwork concerns.
+### Assessment: Solid
+- Diagnosed compressor running 3 hours with only 3-degree rise
+- Checked return/suction line temperatures
+- Tested compressor output and hard start device
+- Measured voltage against spec (88-108 rated, reading 114)
+- Tested compressor windings and found weakening
+- Inspected blower motor and found oil leak (failure sign)
+- Checked filters
+- Asked about repair history and previous overcharging
 
-**Decision:** Moderate  
-Did not formally present options or next steps. When customer asked about canceling vs. continuing, tech continued inspection without resolving the hesitation. No explicit options or close.
+### Decision: Moderate
+- Set expectation to prepare report and return with options
+- Mentioned potential compressor costs (up to $5,500)
+- Did not present clear options or pricing tiers
 
-**Deliver:** Solid  
-Explained issues as discovered (condensate dripping, ductwork bend reducing airflow, system age). Discussed maintenance plan membership benefits and next steps ("I'll touch base with you once I'm finished up working").
+### Deliver: Moderate
+- Explained technical findings: windings, hard start, capacitor, microprocessor
+- Good technical depth but transcript quality affects clarity
+- No clear 5-star review request
 
 ## Critical Actions
 
-**Expectations:** ✓ True  
-Clearly stated inspection plan: "I'm going to be looking at both systems, fully outside and in."
-
-**Questions:** ✓ True  
-Multiple discovery questions throughout: home ownership, prior repairs, symptoms, energy costs.
-
-**Options:** ✗ False  
-No formal options presented; tech did not propose next steps beyond inspection.
-
-**Objections:** ✗ False  
-When customer expressed hesitation ("do we cancel it or do we still have him come out?"), tech did not address the concern directly.
+- **Expectations** ✓ Set expectation to prepare report in ~20 min
+- **Questions** ✓ Asked about repair history, previous service, system performance
+- **Options** ✗ Did not present on this call; promised follow-up report
+- **Objections** ✓ Acknowledged concern about prior overcharging
 
 ## Outcome
 
-**No-Close** — No additional service agreed upon.
-
-## Gaps
-
-1. **Objection handling:** Customer hesitated mid-visit; tech should have paused to ask clarifying question about concern before continuing.
-2. **Options:** No formal recommendation or options presented after diagnosis.
-
-## Coaching
-
-**Key insight:** The customer showed a buying signal (uncertainty about whether to keep tech on-site) but it was missed. When you hear hesitation like "do we cancel or keep him," ask "What's your concern?" to uncover the real objection, then reconnect that objection to the value of the inspection.
-
-**Next call:** After the inspection, always return with 1–3 clear options (e.g., "Here's what I found, here's the priority, here's the cost of action vs. inaction").
+Outcome unknown—transcript ends before closure or option presentation visible.
