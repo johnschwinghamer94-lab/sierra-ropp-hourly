@@ -1,27 +1,25 @@
-# Scorecard: Robert Silinzy
+# Live-Coach Scorecard
 
-**Job:** null  
-**Date:** 2026-07-26  
+**RecId:** file:Robert_Silinzy_-_
+**Tech:** Robert Silinzy
+**Job:** None
+**Date:** 2026-07-26
 **Duration:** 45 min
 
 ## FSG Bands
-
-- **Welcome:** Strong
-- **Assessment:** Strong
-- **Decision:** Moderate
-- **Deliver:** Solid
+- Welcome: Moderate
+- Assessment: Strong
+- Decision: Moderate
+- Deliver: Moderate
 
 ## Critical Actions
-
-- Set Expectations: ✓
-- Asked Questions: ✓
-- Created Options: ✓
-- Handled Objections: ✗
+- Expectations: ✗
+- Questions: ✓
+- Options: ✗
+- Objections: ✓
 
 ## Outcome
-
 FLIPPED
 
 ## Coaching Tip
-
-WIN — built strong rapport and clearly explained diagnostic process
+WIN — Tech provided thorough diagnosis of failing compressor windings, motor oil leakage, and over-amped hard start, then set realistic expectations on parts availability and timeframes rather than overpromising delivery.

@@ -1,0 +1,1 @@
+Skip: Transcript severely truncated; insufficient content for reliable scoring
