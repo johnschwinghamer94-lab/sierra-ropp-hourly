@@ -1,11 +1,11 @@
 {
-  "generated": "2026-07-27T01:21:00-07:00",
+  "generated": "2026-07-27T07:13:10-07:00",
   "date": "2026-07-26",
   "reps": [
     {
       "name": "Andrew Alonso",
       "closeRate": "100%",
-      "calls": 3,
+      "calls": 4,
       "strongest": "Assessment",
       "weakest": "Welcome",
       "bands": {
@@ -16,15 +16,15 @@
       },
       "critical": {
         "expectations": false,
-        "questions": true,
+        "questions": false,
         "options": true,
         "objections": true
       },
-      "headlineGap": "Converts every call on warmth and diagnosis but never sets the expectations block at the door, and never asks for the five-star review.",
+      "headlineGap": "Delivers the full expectations block and the five-star seed on a long job and skips both on ordinary calls, and never closes the loop by asking for the review.",
       "focus": [
-        "Week 1: LTOAT5 expectations block at the door on every call",
-        "Week 2: Package at least two options as distinct choices, including the advisor path, then ask which direction",
-        "Week 3: Plant the five-star seed at the start and ask for it at the close"
+        "Week 1: Run the same expectations block on short jobs that he already runs on long ones",
+        "Week 2: All required questions, filters included, asked before the visit opens up into rapport",
+        "Week 3: Speak from expertise when handing off to the specialist, and ask for the five-star review at the close"
       ],
       "plan": "coaching/plans/2026-07-26/Andrew_Alonso.html"
     },
@@ -252,66 +252,6 @@
         "plan": "coaching/plans/2026-07-20/Benjamin_Wyllie.html"
       }
     ],
-    "Francisco Valencia": [
-      {
-        "date": "2026-07-26",
-        "plan": "coaching/plans/2026-07-26/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-25",
-        "plan": "coaching/plans/2026-07-25/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-24",
-        "plan": "coaching/plans/2026-07-24/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-23",
-        "plan": "coaching/plans/2026-07-23/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-22",
-        "plan": "coaching/plans/2026-07-22/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-21",
-        "plan": "coaching/plans/2026-07-21/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-20",
-        "plan": "coaching/plans/2026-07-20/Francisco_Valencia.html"
-      }
-    ],
-    "Robert Silinzy": [
-      {
-        "date": "2026-07-26",
-        "plan": "coaching/plans/2026-07-26/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-25",
-        "plan": "coaching/plans/2026-07-25/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-24",
-        "plan": "coaching/plans/2026-07-24/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-23",
-        "plan": "coaching/plans/2026-07-23/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-22",
-        "plan": "coaching/plans/2026-07-22/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-21",
-        "plan": "coaching/plans/2026-07-21/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-20",
-        "plan": "coaching/plans/2026-07-20/Robert_Silinzy.html"
-      }
-    ],
     "Brandon Moreno": [
       {
         "date": "2026-07-25",
@@ -376,6 +316,36 @@
       {
         "date": "2026-07-24",
         "plan": "coaching/plans/2026-07-24/David_Canales.html"
+      }
+    ],
+    "Francisco Valencia": [
+      {
+        "date": "2026-07-26",
+        "plan": "coaching/plans/2026-07-26/Francisco_Valencia.html"
+      },
+      {
+        "date": "2026-07-25",
+        "plan": "coaching/plans/2026-07-25/Francisco_Valencia.html"
+      },
+      {
+        "date": "2026-07-24",
+        "plan": "coaching/plans/2026-07-24/Francisco_Valencia.html"
+      },
+      {
+        "date": "2026-07-23",
+        "plan": "coaching/plans/2026-07-23/Francisco_Valencia.html"
+      },
+      {
+        "date": "2026-07-22",
+        "plan": "coaching/plans/2026-07-22/Francisco_Valencia.html"
+      },
+      {
+        "date": "2026-07-21",
+        "plan": "coaching/plans/2026-07-21/Francisco_Valencia.html"
+      },
+      {
+        "date": "2026-07-20",
+        "plan": "coaching/plans/2026-07-20/Francisco_Valencia.html"
       }
     ],
     "Joe Mendoza": [
@@ -524,6 +494,36 @@
       {
         "date": "2026-07-19",
         "plan": "coaching/plans/2026-07-19/Noah_Weng.html"
+      }
+    ],
+    "Robert Silinzy": [
+      {
+        "date": "2026-07-26",
+        "plan": "coaching/plans/2026-07-26/Robert_Silinzy.html"
+      },
+      {
+        "date": "2026-07-25",
+        "plan": "coaching/plans/2026-07-25/Robert_Silinzy.html"
+      },
+      {
+        "date": "2026-07-24",
+        "plan": "coaching/plans/2026-07-24/Robert_Silinzy.html"
+      },
+      {
+        "date": "2026-07-23",
+        "plan": "coaching/plans/2026-07-23/Robert_Silinzy.html"
+      },
+      {
+        "date": "2026-07-22",
+        "plan": "coaching/plans/2026-07-22/Robert_Silinzy.html"
+      },
+      {
+        "date": "2026-07-21",
+        "plan": "coaching/plans/2026-07-21/Robert_Silinzy.html"
+      },
+      {
+        "date": "2026-07-20",
+        "plan": "coaching/plans/2026-07-20/Robert_Silinzy.html"
       }
     ]
   }
