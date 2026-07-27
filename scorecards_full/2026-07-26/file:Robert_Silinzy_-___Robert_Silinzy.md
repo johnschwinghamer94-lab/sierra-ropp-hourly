@@ -1,32 +1,78 @@
-# Scorecard: Robert Silinzy
-**Date:** 2026-07-26 | **Duration:** 45 min | **Job:** (none) | **RecId:** file:Robert_Silinzy_-_
+# Call Scorecard: Robert Silinzy - Diagnostic Evaluation
 
-## FSG Bands
+**RecId:** file:Robert_Silinzy_-_  
+**Rep:** Robert Silinzy  
+**Date:** 2026-07-26  
+**Duration:** 45 min  
+**Job:** (missing from header)
 
-### Welcome: Strong
-The call opens with warm rapport-building. Robert greets the customer by name ("Rob Guerra"), engages immediately about the dog ("I love dogs"), and builds connection. He shows genuine interest in the customer's comfort and explicitly frames his role: "The goal is to not have you without AC...to give you an evaluation to be thorough and share everything that's going on."
+---
 
-### Assessment: Strong
-Robert asks systematic questions: "Any repairs?" → discovers the 13-year-old unit and past pigeons issue. Asks about filter types/sizes. Conducts methodical inspection of both outdoor (compressor, hard start, microprocessor) and indoor (blower motor, thermostats) components. Provides real-time check-ins: "So the only thing I noticed is the compressor..." and "The only thing I noticed upstairs was the blower motor itself had oil coming on top of it."
+## Scoring Summary
 
-### Decision: Moderate
-Robert identifies findings (compressor showing weakness, blower motor showing failure signs) and begins explaining them in technical detail. However, options presentation is unclear. Customer expresses concern about past overcharging ($1,600 charge 4 years ago). Robert doesn't explicitly reconnect with empathy on that concern or present clear distinct options (repair/replace/specialist visit). Instead pivots to "give me about 20 minutes, I'll put the report together."
+| Band | Score |
+|------|-------|
+| Welcome | Strong |
+| Assessment | Strong |
+| Decision | Solid |
+| Deliver | Solid |
 
-### Deliver: Solid
-Excellent technical explanation. Robert demonstrates expertise explaining microprocessor vs. contactor, hard start capacitors, Legometer testing, compressor winding weakness, and failure signs. Clearly explains why the system is struggling. However, no request for 5-star review at the end of the call.
+### Critical Actions
+- **Expectations:** ✓ PASS - "The goal is to give you an evaluation to be thorough and share everything that's going on with your system and then you can make a decision on how you would like to move forward."
+- **Questions:** ✓ PASS - Multiple discovery questions (system age, repair history, filter counts, dimensions)
+- **Options:** ✗ FAIL - No multiple options presented; evaluation complete but options discussion deferred to report-writing phase
+- **Objections:** ✗ FAIL - Customer mentioned previous overcharging concern. Robert acknowledged but didn't actively address with empathetic follow-up or question.
 
-## Critical Actions
-- **expectations** ✓ Set: "give me about 20 minutes"; addresses lead time for parts ("could be tomorrow, could be back order")
-- **questions** ✓ Asked: filter types, repair history, previous work
-- **options** ✗ Not presented: no clear "Option A/B/C" laid out
-- **objections** ✗ Not well handled: customer mentioned past overcharging; Robert acknowledged but didn't reconnect with empathy or reassurance
+**Outcome:** no-close  
+**TGL:** None observed in transcript; job number missing prevents ServiceTitan verification
 
-## Outcome
-**unknown** — transcript doesn't show whether customer agreed to any option or visit follow-up.
+---
 
-## Top Gaps
-1. **Option presentation:** Customer was primed for an Option C estimate/specialist follow-up but this wasn't explicitly offered ("Would you like me to get you a pricing estimate for these components?")
-2. **Reconnecting on price concern:** When customer referenced the past $1,600 charge and implied frustration with overcharging, Robert didn't pause to reassure or ask "What pricing would feel fair to you?" or "Let's get you a clear estimate so there's no surprises."
+## Welcome: Strong
 
-## Coaching Notes
-Robert's technical depth is strong — customers hear genuine expertise. Next time when you sense a price worry from the customer (like the $1,600 mention), pause and reconnect: "I get that — let me get you a clear estimate upfront so there's no surprises, and you can decide what makes sense for your home."
+**Evidence:**
+- Warm, personal opening: "Nice to meet you. I love dogs. That's Ruby."
+- Established rapport and comfort
+- Clear expectation-setting on evaluation goals
+
+---
+
+## Assessment: Strong
+
+**Evidence:**
+- **Discovery questions:** Asked about system history, repairs, filter counts
+- **Thorough diagnosis:** Tested compressor windings with Legometer, checked capacitor, identified hard start issues, detected blower motor oil leak
+- **Check-ins:** Active listening pattern throughout inspection
+- **System knowledge:** Strong understanding of age (13 years), previous repairs, technical components
+
+---
+
+## Decision: Solid
+
+**Evidence:**
+- Clear diagnosis communication: weakened windings, motor failure signs, hard start overage
+- Strong technical education on hard start devices and microprocessors
+- **Gap:** Options not presented in call; evaluation complete but "I'll put report together" leaves decision path unclear
+
+---
+
+## Deliver: Solid
+
+**Evidence:**
+- **Be A Nerd:** Excellent technical education on capacitors, relays, winding testing
+- **Gap:** No ask for 5-star review; no next-step commitment offered
+
+---
+
+## Coaching Tips
+
+1. **Objection handling:** Customer mentioned previous overcharging. Robert moved past without acknowledgment. Should have addressed trust directly: "I understand—let me make sure we're transparent about pricing."
+
+2. **Options pathway:** Before "I'll put the report together," present framework: "You're looking at compressor and motor issues. Some customers do replacement; others schedule with our Comfort Advisor. Which path interests you?" Creates decision commitment.
+
+3. **Close the loop:** No clarity on follow-up timing or next steps.
+
+---
+
+## Outcome: no-close
+No TGL/Comfort Advisor appointment scheduled. High engagement but incomplete decision presentation.
