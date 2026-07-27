@@ -1,28 +1,27 @@
-# Scorecard: Benjamin_Wyllie
+# Scorecard: Benjamin Wyllie
 
-**RecId:** file:Benjamin_Wyllie_-_MEGA_ENTERPRISES_L_L_C,_Job_#_668757307
-**Job:** 668757307
-**Date:** 2026-07-26
+**Job:** 668757307  
+**Date:** 2026-07-26  
 **Duration:** 23 min
 
 ## FSG Bands
 
-- **Welcome:** Moderate
-- **Assessment:** Strong
-- **Decision:** Solid
-- **Deliver:** Strong
+- **Welcome:** Solid
+- **Assessment:** Solid
+- **Decision:** Weak
+- **Deliver:** Weak
 
 ## Critical Actions
 
-- **Expectations:** ✗
-- **Questions:** ✓
-- **Options:** ✓
-- **Objections:** ✓
+- Set Expectations: ✓
+- Asked Questions: ✓
+- Created Options: ✗
+- Handled Objections: ✗
 
 ## Outcome
 
-unknown
+NO-CLOSE
 
 ## Coaching Tip
 
-FIX — Ask clarifying questions early to fully understand the issue before proposing solutions.
+FIX — frame business decision options clearly before close attempt

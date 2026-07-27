@@ -1,28 +1,27 @@
-# Scoring Card - Andrew Alonso
+# Scorecard: Andrew Alonso
 
-**Recording ID:** 15c2875a-c466-4dd1-a2d4-5a16f9f74359-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
-**Job:** 668926412
-**Date:** 2026-07-26
-**Duration:** 15 minutes
+**Job:** 668926412  
+**Date:** 2026-07-26  
+**Duration:** 15 min
 
-## FSG Steps
+## FSG Bands
 
-- Welcome: Solid
-- Assessment: Solid
-- Decision: Solid
-- Deliver: Weak
+- **Welcome:** Solid — Tech set friendly tone
+- **Assessment:** Moderate — Asked some questions but lacked depth
+- **Decision:** Weak — Minimal discussion of options
+- **Deliver:** Weak — No clear follow-up
 
 ## Critical Actions
 
-- Expectations: ✓
-- Questions: ✓
-- Options: ✓
-- Objections: ✓
+- Set Expectations: ✓
+- Asked Questions: ✗
+- Created Options: ✗
+- Handled Objections: ✗
 
 ## Outcome
 
-CLOSED
+NO-CLOSE
 
-## Coaching Note
+## Coaching Tip
 
-WIN — Presented options and secured approval; moving forward with solution.
+FIX — ask qualifying questions about system age before inspection

@@ -1,28 +1,27 @@
-# Scoring Card - Andrew Trujillo
+# Scorecard: Andrew Trujillo
 
-**Recording ID:** b6839754-8cf8-4bf8-9cf0-10d2c1b7836d-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
-**Job:** N/A
-**Date:** 2026-07-26
-**Duration:** 127 minutes
+**Job:** null  
+**Date:** 2026-07-26  
+**Duration:** 127 min
 
-## FSG Steps
+## FSG Bands
 
-- Welcome: Solid
-- Assessment: Solid
-- Decision: Solid
-- Deliver: Weak
+- **Welcome:** Strong
+- **Assessment:** Strong
+- **Decision:** Strong on wins
+- **Deliver:** Strong
 
 ## Critical Actions
 
-- Expectations: ✓
-- Questions: ✓
-- Options: ✓
-- Objections: ✓
+- Set Expectations: ✓
+- Asked Questions: ✓
+- Created Options: ✓
+- Handled Objections: ✓
 
 ## Outcome
 
-CLOSED
+FLIPPED
 
-## Coaching Note
+## Coaching Tip
 
-WIN — Presented options and secured approval; moving forward with solution.
+WIN — consistently reconnected to pain points and offered clear options

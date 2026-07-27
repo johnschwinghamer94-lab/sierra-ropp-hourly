@@ -1,28 +1,27 @@
-# Scoring Card - Andrew Alonso
+# Scorecard: Andrew Alonso
 
-**Recording ID:** e18b6ae3-33bc-4af7-9c3c-7e0b08cf7080-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
-**Job:** 668994580
-**Date:** 2026-07-26
-**Duration:** 6 minutes
+**Job:** 668994580  
+**Date:** 2026-07-26  
+**Duration:** 6 min
 
-## FSG Steps
+## FSG Bands
 
-- Welcome: Solid
-- Assessment: Solid
-- Decision: Solid
-- Deliver: Weak
+- **Welcome:** Solid
+- **Assessment:** Weak
+- **Decision:** Weak
+- **Deliver:** Weak
 
 ## Critical Actions
 
-- Expectations: ✓
-- Questions: ✓
-- Options: ✓
-- Objections: ✓
+- Set Expectations: ✗
+- Asked Questions: ✗
+- Created Options: ✗
+- Handled Objections: ✗
 
 ## Outcome
 
-FLIPPED
+NO-CLOSE
 
-## Coaching Note
+## Coaching Tip
 
-WIN — Presented options and secured approval; moving forward with solution.
+FIX — spend time learning about pain point before diagnosing
