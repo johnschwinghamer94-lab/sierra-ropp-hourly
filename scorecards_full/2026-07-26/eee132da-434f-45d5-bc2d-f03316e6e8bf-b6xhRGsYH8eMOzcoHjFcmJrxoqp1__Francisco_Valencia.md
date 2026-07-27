@@ -1,28 +1,59 @@
-# Scoring Card - Francisco Valencia
+# Scorecard: Francisco Valencia - SCHWARTZ MARC, Job #669008659
+**Date:** 2026-07-26 | **Duration:** 24 min | **Outcome:** UNKNOWN (INCOMPLETE)
 
-**Recording ID:** eee132da-434f-45d5-bc2d-f03316e6e8bf-b6xhRGsYH8eMOzcoHjFcmJrxoqp1
-**Job:** 669008659
-**Date:** 2026-07-26
-**Duration:** 24 minutes
+---
 
-## FSG Steps
+## FSG Bands
 
-- Welcome: Solid
-- Assessment: Weak
-- Decision: Weak
-- Deliver: Weak
+### Welcome: SOLID
+**Evidence:**
+- Warm, bilingual greeting (Spanish to English switch)
+- Casual, friendly tone
+- Limited content
+
+---
+
+### Assessment: MODERATE
+**Evidence:**
+- Started with discovery questions
+- Customer mentioned filter replaced but AC still not working
+- Francisco began troubleshooting but transcript cuts off mid-evaluation
+
+---
+
+### Decision: UNKNOWN
+**Evidence:**
+- Transcript ends before diagnosis or options
+- Cannot assess
+
+---
+
+### Deliver: UNKNOWN
+**Evidence:**
+- Not reached
+
+---
 
 ## Critical Actions
 
-- Expectations: ✓
-- Questions: ✓
-- Options: ✗
-- Objections: ✓
+| Action | Pass/Fail | Evidence |
+|--------|-----------|----------|
+| **Expectations** | UNKNOWN | Unclear |
+| **Questions** | PARTIAL | Started discovery but incomplete |
+| **Options** | UNKNOWN | Not reached |
+| **Objections** | UNKNOWN | Not reached |
 
-## Outcome
+---
 
-UNKNOWN
+## Outcome: UNKNOWN
 
-## Coaching Note
+Transcript incomplete. Call was in-progress when recording ended. Cannot determine if work was closed, led to flip, or had other outcome.
 
-FIX — Need to present options and get approval to move forward; ensure customer understands next steps.
+---
+
+## Notes
+
+This recording appears to cut off mid-call. The transcript shows Francisco starting the diagnostic process (checking outside unit, assessing customer's actions around filter replacement) but ends abruptly.
+
+**Recommendation:** Obtain complete recording or transcript to score the full call.
+
