@@ -1,28 +1,19 @@
-# Scorecard: Robert Silinzy
+# Robert Silinzy - Compressor Failure Assessment
 
-**RecId:** file:Robert_Silinzy_-_
-**Date:** 2026-07-26
-**Job:** N/A
-**Duration:** 45 min
-
-## Scoring Bands
-
-**Welcome:** Solid
-**Assessment:** Strong
-**Decision:** Solid
-**Deliver:** Strong on wins
+## FSG Bands
+- **welcome**: Strong — Warm greeting with rapport-building ("I love dogs... That's Ruby"). Establishes positive relationship immediately despite technical emergency.
+- **assessment**: Strong — Thorough testing: checked return air, suction lines, tested capacitor with multimeter, tested all three compressor windings with legometer, measured hard start amperage (114 vs rated 88-108), identified blower motor oil leak. Discovers weakened windings, over-amped hard start, failing blower motor.
+- **decision**: Solid — Explains findings clearly: "the windings are weakened to the point where like it may cut on, it may not." Reconnects to history (prior $1600 work, capacitor overcharge 2-3 years ago, hard start replaced Nov 2022). Doesn't yet present pricing options but clearly states next step.
+- **deliver**: Solid — Shows expertise (legometer testing, winding analysis, explains microprocessor vs old contactor system, teaches what oil on motor means: sign of failure). Provides transparent coaching: "It's hard to put a time frame on [failure]... I just see the signs, and I share that with the homeowner."
 
 ## Critical Actions
+- **expectations** (PASS): "Give me about 20 minutes... put my work part together"
+- **questions** (PASS): Asked about prior issues, engaged with customer's history
+- **options** (FAIL): Not presented during call; preparing quotes after
+- **objections** (PASS): Customer objected to past overcharging ("he charged me too much for... Way too much for"). Robert handled by saying "Let me just look real quick... I'll look at the previous invoices" — transparency built trust.
 
-- **Expectations Set:** True
-- **Good Discovery Questions:** True
-- **Built/Presented Options:** True
-- **Handled Objections:** True
+## Outcome
+**flipped** — Customer was initially skeptical due to prior overcharge experience but Robert's honesty ("I'll check your history to make sure we don't repeat that"), thorough diagnosis, and transparent process converted them from defensive to engaged. Customer signed off and Robert is preparing detailed options/pricing.
 
-## Outcome: FLIPPED
-
-**Coaching Tip:** WIN — When the customer pushed back on past pricing for repairs ("$1,600 a couple years ago"), Robert didn't get defensive. Instead, he looked up the invoice, explained each line item (hard start $670, microprocessor $411, drain cleaning $311), and then said honestly: "I can't promise next week—parts are on back order—but I'm being honest with you about what we can do." That transparency turned skepticism into trust.
-
-## Summary
-
-Tech built strong rapport and explained complex findings clearly (weakened compressor windings, sealed-for-life fan motor, blower motor oil leak). Addressed customer's concern about past overcharges by reviewing the invoice and justifying the components. Presented pricing options for compressor ($5,500 range) and blower motor replacement. Managed expectations about lead times honestly, which reconnected the customer to the value of having a professional diagnosis.
+## Coaching
+Excellent objection handling—Robert turned a trust deficit into a competitive advantage. The compressor windings + blower motor = two repairs, so when presenting options, anchor to "We saw this pattern with your hard start in 2022, and it cost you $X; here's exactly what fixing both parts costs now vs. waiting for a failure." That specificity (comparing to 2022 invoice, showing breakdown) continues the transparency that just flipped this customer.

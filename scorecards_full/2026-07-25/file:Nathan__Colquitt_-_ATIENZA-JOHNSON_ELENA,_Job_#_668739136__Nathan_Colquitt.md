@@ -1,40 +1,19 @@
-# Live-Coach Card: Nathan Colquitt
+# Nathan Colquitt - Job #668739136
 
-**Date:** 2026-07-25 | **Duration:** 20 min | **Job:** 668739136 | **Outcome:** Flipped to estimate
-
-## Bands
-
-### Welcome: Solid
-- Warm greeting: "How's it going? How are you?"
-- Introduced self: "Nathan, nice to meet you"
-- Acknowledged family connection (brother works for Sierra)
-- Built quick rapport
-
-### Assessment: Strong
-- Excellent discovery questions about prior issues before current problem
-- Asked about power bill spikes and room cooling issues
-- Inquired about filter maintenance frequency
-- Asked about attic access and system layout (dual-unit configuration)
-- Inquired about previous ductwork cleaning service history
-- Checked for unusual noises as diagnostic check-in
-
-### Decision: Moderate
-- Set expectation: will sit down and review all options
-- Did not yet present specific options or pricing (diagnostic phase)
-- Identified multiple issues but options deferred
-
-### Deliver: Solid
-- Explained technical findings clearly: voltage switch burning, fan motor seized, capacitor out of spec
-- Explained why motor seizes (factory-sealed, unlike car engines)
-- Did not request 5-star review (diagnostic phase)
+## FSG Bands
+- **welcome**: Strong — "How's it going? How are you?" + "Nathan, nice to meet you" with clear expectations set: "I'm gonna find out what's going on and see why you're not cooling, and then I'll come to you and let you know everything that's going on."
+- **assessment**: Strong — Multiple discovery questions ("did you see a spike in power bill?", "did you see any issues before?"), check-ins on filter maintenance, attic access, noise inspection, and thorough technical investigation of motor and voltage switch.
+- **decision**: Solid — Explains findings clearly (voltage switch burning, fan motor seized), shows evidence ("you see how it's black around here? It's supposed to look like copper"), but does not yet explicitly present multiple repair options with pricing.
+- **deliver**: Moderate — Good technical explanation ("These motors come like factory sealed, so once they start to lose oil, they start to seize up") with photos mentioned, but call ends incomplete and no 5-star review request.
 
 ## Critical Actions
-
-- **Expectations** ✓ Clearly stated full evaluation and sit-down review
-- **Questions** ✓ Targeted questions about power bill, room cooling, filter maintenance, prior service
-- **Options** ✗ Not yet presented (diagnostic-only call)
-- **Objections** ✗ No objections raised; customer cooperative
+- **expectations** (PASS): Set at welcome — "I'll come to you and let you know everything"
+- **questions** (PASS): Multiple discovery questions throughout, good check-ins on prior issues, filter maintenance, system history
+- **options** (FAIL): Mentioned "go over every option" but not yet presented explicitly with costs
+- **objections** (FAIL): None raised; call incomplete before decision phase conclusion
 
 ## Outcome
+**unknown** — Transcript ends mid-assessment/early decision phase; call appears to be progressing well but decision point not yet reached.
 
-Customer converted to follow-up estimate visit (TGL/flipped).
+## Coaching
+Nathan is building strong foundation with empathy and thorough assessment. Next step: After diagnosis, present repair options (voltage switch + fan motor replacement) with pricing and timeline upfront, before going deep into technical explanations. Connect the dual failures to the customer's immediate need (AC out in 95°F heat) to create urgency for the fix.
