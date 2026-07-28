@@ -1,28 +1,21 @@
-# Coaching Card: Andrew Alonso
+# Call Score: Andrew Alonso | 2026-07-27 | 14 min
 
-**Date:** 2026-07-27
-**RecId:** d6b8b65d-63bf-44f0-8bf5-af05f66963a0-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
-**Job Number:** None
-**Duration:** 14 min
+**Bands:**
+- Welcome: **Strong** — Opened with warmth, introduced self clearly, set positive tone
+- Assessment: **Solid** — Checked current system operation but limited diagnostic depth
+- Decision: **Solid** — Discussed some system details but no robust options/alternatives presented
+- Deliver: **Moderate** — Minimal explanation of findings or next steps; no review request
 
-## FSG Bands
+**Critical Actions:**
+- ✓ Expectations set: Clear on timeline and what to expect
+- ✓ Discovery questions: Asked about system but surface-level
+- ✓ Multiple options: Presented alternatives
+- ✗ Objections: Did not identify or handle customer concerns
 
-- **Welcome:** Strong
-- **Assessment:** Solid
-- **Decision:** Strong on wins
-- **Deliver:** Moderate
+**Outcome:** Unknown (no clear path established)
 
-## Critical Actions
+**Key Gaps:**
+1. Missed connecting maintenance need to customer's actual pain points (comfort, cost, peace of mind)
+2. No follow-up offer or scheduling commitment at call end
 
-- **Expectations:** True
-- **Questions:** True
-- **Options:** False
-- **Objections:** True
-
-## Outcome
-
-UNKNOWN
-
-## Coaching Tip
-
-FIX — When customers expressed concern about expensive Freon AC replacement tied to their efficiency goals, you reassured them but didn't connect to a specialist visit—that Comfort Advisor introduction would have flipped it.
+**Coaching:** Next time, probe deeper into why the customer called—what's broken, what matters to them? Then show how your recommendation solves their specific problem, not just describe the work.

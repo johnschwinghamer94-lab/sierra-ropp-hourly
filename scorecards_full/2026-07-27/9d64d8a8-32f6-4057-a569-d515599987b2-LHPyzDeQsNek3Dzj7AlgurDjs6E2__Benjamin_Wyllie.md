@@ -1,34 +1,20 @@
-# SILO Tech Call Scorecard
+# Call Score: Benjamin Wyllie | 2026-07-27 | 35 min | Job # 669096027
 
-**Rep:** Benjamin Wyllie
-**Job #:** 669096027
-**Date:** 2026-07-27
-**Duration:** 35 min
-**RecId:** 9d64d8a8-32f6-4057-a569-d515599987b2-LHPyzDeQsNek3Dzj7AlgurDjs6E2
+**Bands:**
+- Welcome: **Strong** — Professional and reassuring
+- Assessment: **Strong** — Diagnosed no-refrigerant/cooked-compressor issue clearly
+- Decision: **Solid** — Acknowledged urgency but no decision fork presented
+- Deliver: **Solid** — Explained issue clearly
 
-## Call Overview
-35-minute call covering system evaluation and customer consultation.
+**Critical Actions:**
+- ✓ Expectations set: Clear on severity (cooked compressor)
+- ✓ Discovery questions: Asked about tenant's situation and urgency
+- ✗ Multiple options: None explicitly presented to tenant
+- ✗ Objections: Not addressed; call ends without tenant input
 
-## FSG Steps
-| Step | Status |
-|------|--------|
-| Welcome | ✓ |
-| Assessment | ✓ |
-| Decision | ✓ |
-| Deliver | ✓ |
+**Outcome:** Unknown (ends with "I'll call the homeowner")
 
-## Critical Actions
-| Action | Completed |
-|--------|-----------|
-| Expectations Set | ✓ |
-| Questions Asked | ✓ |
-| Options Presented | ✓ |
-| Objections Handled | ✓ |
+**Key Gap:**
+This is a tenant-landlord situation. Ben correctly identified that HE can't decide, but he ended by saying "I'll call the homeowner" without first asking the TENANT: "Do you want me to tell them this needs repair (probably $X or more), or should I also get replacement pricing so they see both paths?" This preps the tenant to advocate with the owner instead of just waiting for Ben's call.
 
-## Results
-**Outcome:** CLOSED
-**Band:** Strong
-**Tip:** WIN: Excellent FSG execution with strong customer engagement.
-
----
-*Generated: 2026-07-28T13:48:34.742872*
+**Coaching:** In multi-party situations, always confirm with your customer contact what information they want you to take to the decision-maker. Don't go silent.

@@ -1,34 +1,24 @@
-# SILO Tech Call Scorecard
+# Call Score: Andrew Alonso | 2026-07-27 | 220 min | Job # 668928685
 
-**Rep:** Andrew Alonso
-**Job #:** 668928685
-**Date:** 2026-07-27
-**Duration:** 220 min
-**RecId:** 8b7afe52-10a8-428c-a1df-5ce03acb56e8-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
+**Bands:**
+- Welcome: **Strong** — Built immediate empathy by acknowledging wife's health concern during pregnancy
+- Assessment: **Strong** — Systematic diagnosis of refrigerant issue, motor overheat, and electrical wiring problems
+- Decision: **Strong on wins** — Presented solution confidently after establishing technical credibility
+- Deliver: **Strong** — Explained root causes clearly so customer understood value of fix
 
-## Call Overview
-220-minute call covering system evaluation and customer consultation.
+**Critical Actions:**
+- ✓ Expectations set: Clear on urgency (pregnancy health issue) and solution path
+- ✓ Discovery questions: Probed customer's main concern (health safety) and system history
+- ✓ Multiple options: Presented primary fix with confidence
+- ✓ Objections: Addressed cost/urgency concerns by framing health benefit
 
-## FSG Steps
-| Step | Status |
-|------|--------|
-| Welcome | ✓ |
-| Assessment | ✓ |
-| Decision | ✓ |
-| Deliver | ✓ |
+**Outcome:** Flipped (customer agreed to Option C evaluation/specialist appointment)
 
-## Critical Actions
-| Action | Completed |
-|--------|-----------|
-| Expectations Set | ✓ |
-| Questions Asked | ✓ |
-| Options Presented | ✓ |
-| Objections Handled | ✓ |
+**Key Strengths:**
+1. Led with health/safety angle (pregnant wife's comfort) rather than just cost—powerful emotional anchor
+2. Diagnosed and explained technical root causes (mismatched refrigerants, motor overheating) to prove competence
+3. Overcame price objections by reframing as investment in family health
 
-## Results
-**Outcome:** CLOSED
-**Band:** Strong
-**Tip:** WIN: Excellent FSG execution with strong customer engagement.
+**Coaching:** This is a masterclass in outcome flipping. You identified the customer's real driver (health/safety), then used technical credibility to justify the cost. Repeat this pattern.
 
----
-*Generated: 2026-07-28T13:48:34.731794*
+**Note:** Outcome marked "flipped" (customer agreed to Option C appointment). ServiceTitan ticket not yet typed; will validate against tgl_truth when ready.

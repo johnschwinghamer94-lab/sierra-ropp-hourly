@@ -1,34 +1,20 @@
-# SILO Tech Call Scorecard
+# Call Score: Benjamin Wyllie | 2026-07-27 | 8 min | Job # 669045485
 
-**Rep:** Benjamin Wyllie
-**Job #:** 669045485
-**Date:** 2026-07-27
-**Duration:** 8 min
-**RecId:** 141a4d16-a07a-489e-90ce-bccb4d09102d-LHPyzDeQsNek3Dzj7AlgurDjs6E2
+**Bands:**
+- Welcome: **Strong** — Empathetic opening
+- Assessment: **Strong** — Identified EPA refrigerant restriction issue
+- Decision: **Solid** — Explained constraint but no follow-up path offered
+- Deliver: **Solid** — Clear explanation of EPA limits
 
-## Call Overview
-8-minute call covering system evaluation and customer consultation.
+**Critical Actions:**
+- ✓ Expectations set
+- ✓ Discovery questions: Asked about customer's concern about insurance/pricing
+- ✗ Multiple options: None presented; only constraint explained
+- ✓ Objections: Handled pricing/EPA concern with education
 
-## FSG Steps
-| Step | Status |
-|------|--------|
-| Welcome | ✓ |
-| Assessment | ✓ |
-| Decision | ✓ |
-| Deliver | ✓ |
+**Outcome:** Unknown (ends at handoff)
 
-## Critical Actions
-| Action | Completed |
-|--------|-----------|
-| Expectations Set | ✓ |
-| Questions Asked | ✓ |
-| Options Presented | ✓ |
-| Objections Handled | ✓ |
+**Key Gap:**
+After explaining EPA restriction, Ben needed to ask: "So does it make sense to bring in a replacement specialist to walk through your options, or would you like me to schedule that follow-up?" This closes the loop and signals next steps.
 
-## Results
-**Outcome:** CLOSED
-**Band:** Strong
-**Tip:** WIN: Excellent FSG execution with strong customer engagement.
-
----
-*Generated: 2026-07-28T13:48:34.737965*
+**Coaching:** Always end with a question that commits to forward momentum, even if you're handing off to someone else.

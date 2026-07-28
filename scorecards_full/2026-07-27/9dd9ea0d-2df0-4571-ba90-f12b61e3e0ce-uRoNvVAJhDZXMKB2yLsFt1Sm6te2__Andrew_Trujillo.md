@@ -1,34 +1,22 @@
-# SILO Tech Call Scorecard
+# Call Score: Andrew Trujillo | 2026-07-27 | 137 min
 
-**Rep:** Andrew Trujillo
-**Job #:** 0
-**Date:** 2026-07-27
-**Duration:** 137 min
-**RecId:** 9dd9ea0d-2df0-4571-ba90-f12b61e3e0ce-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
+**Bands:**
+- Welcome: **Strong** — Built rapport and showed empathy with customer's cost concerns
+- Assessment: **Strong** — Diagnosed AC/heating issue and understood customer's budget constraints
+- Decision: **Strong on wins** — Reframed expensive replacement into fixable-today options
+- Deliver: **Strong** — Explained capacitor repair and drain priority clearly
 
-## Call Overview
-137-minute call covering system evaluation and customer consultation.
+**Critical Actions:**
+- ✓ Expectations set: Clear on what can be done today vs. future options
+- ✓ Discovery questions: Asked about budget constraints and pain points
+- ✓ Multiple options: Presented capacitor fix as immediate solution
+- ✓ Objections: When customer said "can't afford replacement," pivoted to same-day fix
 
-## FSG Steps
-| Step | Status |
-|------|--------|
-| Welcome | ✓ |
-| Assessment | ✓ |
-| Decision | ✓ |
-| Deliver | ✓ |
+**Outcome:** Flipped (customer agreed to immediate service)
 
-## Critical Actions
-| Action | Completed |
-|--------|-----------|
-| Expectations Set | ✓ |
-| Questions Asked | ✓ |
-| Options Presented | ✓ |
-| Objections Handled | ✓ |
+**Key Strengths:**
+1. Listened to customer's "can't afford replacement" objection and reframed to achievable fix
+2. Split solution into today's repair (capacitor) + future consideration (replacement)
+3. Showed empathy for cost sensitivity while still closing commitment
 
-## Results
-**Outcome:** CLOSED
-**Band:** Strong
-**Tip:** WIN: Excellent FSG execution with strong customer engagement.
-
----
-*Generated: 2026-07-28T13:48:34.735276*
+**Coaching:** Great pivot on the objection. You didn't push the big sale—you found the immediate win and built customer trust for future work.

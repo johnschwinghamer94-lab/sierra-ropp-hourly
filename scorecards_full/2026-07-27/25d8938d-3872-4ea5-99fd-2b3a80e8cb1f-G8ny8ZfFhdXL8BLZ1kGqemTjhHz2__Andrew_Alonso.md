@@ -1,34 +1,24 @@
-# SILO Tech Call Scorecard
+# Call Score: Andrew Alonso | 2026-07-27 | 133 min | Job # 669083742
 
-**Rep:** Andrew Alonso
-**Job #:** 669083742
-**Date:** 2026-07-27
-**Duration:** 133 min
-**RecId:** 25d8938d-3872-4ea5-99fd-2b3a80e8cb1f-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
+**Bands:**
+- Welcome: **Strong** — Warm greeting, set expectations for full inspection
+- Assessment: **Strong** — Identified damper/heater failure from customer's January quote memory, diagnosed low capacitor power as fixable today
+- Decision: **Strong** — Presented clear priority (drain line urgency before ceiling water damage) to justify immediate commitment
+- Deliver: **Strong** — Explained capacitor fix and drain line threat clearly; customer felt ownership of decision
 
-## Call Overview
-133-minute call covering system evaluation and customer consultation.
+**Critical Actions:**
+- ✓ Expectations set: Clear on what will be checked and timeline
+- ✓ Discovery questions: Referenced prior quote and customer's comfort history
+- ✓ Multiple options: Prioritized fixable-today work vs. future replacement
+- ✓ Objections: Overcame hesitation with urgency (water damage threat)
 
-## FSG Steps
-| Step | Status |
-|------|--------|
-| Welcome | ✗ |
-| Assessment | ✗ |
-| Decision | ✓ |
-| Deliver | ✗ |
+**Outcome:** Flipped (customer committed to immediate work)
 
-## Critical Actions
-| Action | Completed |
-|--------|-----------|
-| Expectations Set | ✗ |
-| Questions Asked | ✓ |
-| Options Presented | ✓ |
-| Objections Handled | ✗ |
+**Key Strengths:**
+1. Leveraged customer's January quote memory to show continuity and competence
+2. Used water damage threat as urgency lever—practical, not fear-mongering
+3. Split decision into today's fix (capacitor) + future decision (replacement) to build momentum
 
-## Results
-**Outcome:** UNKNOWN
-**Band:** Weak
-**Tip:** FIX: Focus on establishing clear expectations and asking diagnostic questions.
+**Coaching:** Excellent use of prior history to build trust and create urgency. When customers resist investment, find the fixable piece they can act on today.
 
----
-*Generated: 2026-07-28T13:48:34.732755*
+**Note:** Outcome marked "flipped" (customer committed to immediate work). ServiceTitan ticket not yet typed; will validate against tgl_truth when ready.

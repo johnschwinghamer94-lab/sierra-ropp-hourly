@@ -1,34 +1,20 @@
-# SILO Tech Call Scorecard
+# Call Score: Brandon Moreno | 2026-07-27 | 36 min | Job # 667671831
 
-**Rep:** Brandon Moreno
-**Job #:** 667671831
-**Date:** 2026-07-27
-**Duration:** 36 min
-**RecId:** 6075f33a-37ef-4a32-ac30-ae822bf33b79-f4dx65lewNTPydNXjgypLVFAcbk1
+**Bands:**
+- Welcome: **Strong** — Warm greeting and established trust
+- Assessment: **Solid** — Started diagnosis but call cuts mid-attic-access
+- Decision: **Solid** — No root cause identified yet
+- Deliver: **Strong** — Good rapport and customer comfort
 
-## Call Overview
-36-minute call covering system evaluation and customer consultation.
+**Critical Actions:**
+- ✓ Expectations set
+- ✓ Discovery questions: Asked about issues and access
+- ✗ Multiple options: None yet (diagnosis incomplete)
+- ✗ Objections: None raised yet
 
-## FSG Steps
-| Step | Status |
-|------|--------|
-| Welcome | ✓ |
-| Assessment | ✓ |
-| Decision | ✓ |
-| Deliver | ✓ |
+**Outcome:** Unknown (call incomplete)
 
-## Critical Actions
-| Action | Completed |
-|--------|-----------|
-| Expectations Set | ✓ |
-| Questions Asked | ✓ |
-| Options Presented | ✓ |
-| Objections Handled | ✓ |
+**Key Gap:**
+Call cuts before root cause is identified. Damper malfunction, zone-balancing problem, failed compressor—all possible but undiagnosed. Brandon built great rapport but needs to complete the inspection and diagnosis BEFORE stepping away, so when the customer is ready to decide, options are clear and ready.
 
-## Results
-**Outcome:** CLOSED
-**Band:** Strong
-**Tip:** WIN: Excellent FSG execution with strong customer engagement.
-
----
-*Generated: 2026-07-28T13:48:34.744864*
+**Coaching:** Don't step away mid-diagnosis. Finish your assessment, present options, THEN go about your day. The customer shouldn't have to start the conversation over when you call back.
