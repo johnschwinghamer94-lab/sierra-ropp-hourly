@@ -56,7 +56,18 @@ jobs:
             exit 0
           fi
           git commit -q -m "Siro cloud pull state $(date -u +%F' '%H:%M)"
-          if ! git push -q origin main; then
-            git pull --rebase --autostash -q
-            git push -q origin main
-          fi
+          # Push with conflict healing: parallel pulls also rewrite
+          # siro_pull_state.json, and a rebase conflict there used to abort the
+          # whole push, LOSING every transcript in this run (2026-07-28, a
+          # 1,494-file January backfill died this way). State is safely
+          # re-derivable (the puller skips transcripts that already exist on
+          # disk), so on conflict keep the REMOTE state file and our transcripts.
+          n=0
+          until git push -q origin main; do
+            n=$((n+1)); [ "$n" -gt 3 ] && { echo "push failed after 3 heals"; exit 1; }
+            if ! git pull --rebase --autostash -q; then
+              git checkout --ours siro_pull_state.json 2>/dev/null || true
+              git add siro_pull_state.json 2>/dev/null || true
+              GIT_EDITOR=true git rebase --continue || git rebase --abort
+            fi
+          done
