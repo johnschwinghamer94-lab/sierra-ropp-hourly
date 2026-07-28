@@ -1,0 +1,5665 @@
+TRANSCRIPT
+Rep:      Alex - Oleksiy Yakovchuk
+Date:     2026-04-01
+Duration: 78 min
+RecId:    caf59551-6112-4adb-a168-bcd78f678c87-QSgW0Qp6bKP82NeJl9A5ckCGhts1
+Job:      Gary - HVAC System Maintenance - Four Units with Coil Rust and Compressor Overload Concerns
+============================================================
+
+
+Customer:
+  It's.
+  It.
+
+Alex - Oleksiy Yakovchuk:
+  Hey,
+  how's
+  it
+  going?
+  Good
+  morning.
+
+Customer:
+  Good.
+
+Alex - Oleksiy Yakovchuk:
+  Hold
+  on.
+  I'm
+  speaking
+  with.
+  Pardon
+  me,
+  your
+  name?
+
+Customer:
+  Gary.
+
+Alex - Oleksiy Yakovchuk:
+  Gary.
+  Good
+  to
+  meet
+  you,
+  Gary.
+  I'm
+  Alex.
+
+Customer:
+  I
+  see
+  that.
+
+Alex - Oleksiy Yakovchuk:
+  Awesome.
+  The
+  man's
+  parts.
+  Okay.
+
+Customer:
+  Right
+  there,
+  Gary.
+
+Alex - Oleksiy Yakovchuk:
+  No
+  problem.
+  And
+  thank
+  you
+  for
+  your
+  service,
+  man.
+  Yeah,
+  appreciate
+  that.
+  How
+  long
+  did
+  you
+  serve?
+
+Customer:
+  24
+  years.
+
+Alex - Oleksiy Yakovchuk:
+  24
+  years.
+  Oh,
+  wow.
+  Quite
+  some
+  time.
+
+Customer:
+  Full
+  career.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  man.
+  Come
+  inside,
+  please.
+
+Customer:
+  We
+  work
+  out
+  there.
+  All
+  right,
+  go
+  ahead.
+
+Alex - Oleksiy Yakovchuk:
+  How's
+  your
+  day
+  going?
+  Everything
+  all
+  good?
+
+Customer:
+  Going
+  good.
+
+Alex - Oleksiy Yakovchuk:
+  Good.
+  Good
+  luck
+  to
+  hearing
+  that.
+  And
+  we're
+  here
+  for
+  the
+  maintenance
+  today,
+  for
+  the
+  systems.
+
+Customer:
+  Right.
+  We
+  have
+  four
+  systems.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+
+Customer:
+  Yeah,
+  let's
+  see.
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  If
+  you
+  want
+  to
+  kind
+  of
+  show
+  me
+  around
+  a
+  little
+  bit,
+  give
+  me
+  the
+  grand
+  tour.
+  Thermostats,
+  filters,
+  attic
+  access,
+  outside
+  units.
+
+Customer:
+  There's
+  one
+  for
+  this
+  area.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+  Are
+  you
+  the
+  original
+  homeowner,
+  Gary?
+
+Customer:
+  No,
+  second
+  homeowner.
+
+Alex - Oleksiy Yakovchuk:
+  Second
+  homeowner.
+
+Customer:
+  Been
+  here
+  since
+  2019.
+
+Alex - Oleksiy Yakovchuk:
+  Oh,
+  nice.
+
+Customer:
+  The
+  other
+  one.
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Okay,
+  perfect.
+
+Customer:
+  And
+  then
+  there's
+  two
+  upstairs,
+  one
+  in
+  the
+  master
+  bedroom
+  and
+  one
+  in
+  that
+  hole.
+  You
+  can
+  see
+  it
+  there.
+
+Alex - Oleksiy Yakovchuk:
+  Yes.
+  Okay.
+
+Customer:
+  The
+  other
+  one's
+  in
+  the
+  master
+  bedroom.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+
+Customer:
+  And
+  all
+  the
+  filters
+  are
+  up
+  there.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+
+Customer:
+  Okay.
+  I.
+  I
+  have
+  replacement
+  filters
+  that
+  I
+  put
+  upstairs.
+
+Alex - Oleksiy Yakovchuk:
+  Okay,
+  gotcha.
+  How
+  often
+  are
+  you
+  changing
+  those?
+
+Customer:
+  Not
+  often.
+  Usually
+  when
+  you
+  guys
+  come
+  around.
+
+Alex - Oleksiy Yakovchuk:
+  Okay,
+  gotcha.
+  Perfect.
+
+Customer:
+  Pretty
+  much
+  twice
+  a
+  week.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  of
+  course.
+  And
+  how's
+  the
+  system
+  been
+  working?
+  Everything
+  is
+  working
+  good.
+  All
+  rooms
+  staying
+  good
+  temperature?
+  No
+  one.
+
+Customer:
+  I.
+  I
+  keep
+  it.
+  I
+  keep
+  them
+  all
+  at
+  the
+  same
+  temperature.
+  Okay.
+  It
+  seems
+  to
+  be
+  working
+  well.
+
+Alex - Oleksiy Yakovchuk:
+  Good.
+
+Customer:
+  We
+  had
+  the
+  main
+  unit
+  in
+  the
+  master
+  bedroom
+  replaced
+  last
+  year.
+
+Alex - Oleksiy Yakovchuk:
+  Oh,
+  you
+  did?
+
+Customer:
+  Yeah.
+  Nice.
+  Small
+  fortune.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  How's
+  that
+  been
+  working?
+  Is
+  it
+  good?
+
+Customer:
+  Oh,
+  it's
+  very
+  good.
+
+Alex - Oleksiy Yakovchuk:
+  Good,
+  good.
+
+Customer:
+  You
+  know,
+  the
+  latest
+  and
+  greatest,
+  you
+  know,
+  thermostat
+  controller
+  works
+  very
+  good.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+  Awesome.
+  Yeah,
+  I'd
+  love
+  to
+  hear
+  that.
+
+Customer:
+  And
+  all
+  the
+  units
+  are
+  outside
+  on.
+
+Alex - Oleksiy Yakovchuk:
+  Along
+  that
+  wall.
+  Okay.
+  And
+  do
+  you
+  mind
+  showing
+  me
+  the
+  attic
+  access,
+  where
+  the
+  air
+  handlers
+  are
+  at?
+  Are
+  they
+  all
+  in
+  the
+  same
+  attic
+  or
+  is
+  there
+  a
+  separate
+  attic?
+  Awesome.
+  It
+  makes
+  my
+  life
+  so
+  much
+  easier.
+  And
+  no
+  unusual
+  noises,
+  smells,
+  nothing
+  of
+  that
+  sort?
+  No,
+  it
+  seems
+  to
+  be
+  quite
+  good,
+  Kenny.
+  And
+  for
+  the
+  outside
+  units,
+  is
+  there
+  a
+  water
+  spigot
+  on
+  that
+  side
+  of
+  the
+  house
+  to
+  wash
+  the
+  units
+  out?
+  There
+  is.
+  There
+  is.
+  Okay.
+
+Customer:
+  Forward
+  of
+  the
+  gate.
+
+Alex - Oleksiy Yakovchuk:
+  Gotcha.
+  Is
+  that
+  the
+  best
+  way
+  for
+  me
+  to
+  access
+  that
+  part
+  of
+  the
+  house
+  is
+  through
+  the
+  gate?
+
+Customer:
+  Yeah.
+  Okay.
+  Oh,
+  I'm
+  sorry.
+  I
+  brought
+  this
+  ladder
+  up
+  to
+  change
+  the
+  filters
+  myself
+  and
+  realize
+  you
+  guys
+  are
+  coming
+  around
+  soon,
+  so.
+
+Alex - Oleksiy Yakovchuk:
+  Right.
+
+Customer:
+  I
+  don't
+  do
+  that.
+  My
+  wife
+  doesn't
+  like
+  me
+  on
+  ladders.
+
+Alex - Oleksiy Yakovchuk:
+  Right.
+  Better
+  stay
+  off
+  then.
+  If
+  you
+  don't
+  need
+  to
+  go
+  on
+
+Customer:
+  though,
+  you
+  know,
+  you
+  probably
+  need
+  a
+  different
+  ladder.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  I'll
+  grab
+  my
+  ladder
+  to
+  come
+  inside
+  if
+  you
+  want
+  me.
+  We
+  can
+  just
+  put
+  this
+  to
+  the
+  side
+  for
+  now
+  and
+  then
+  I'll
+  just
+  bring
+  mine
+  in
+  and
+  then
+  we'll
+  go
+  from
+  there.
+  Okay.
+  Okay.
+  That
+  way
+  you
+  don't
+  have
+  to
+  carry
+  all
+  the
+  up
+  and
+  down.
+  Where
+  are
+  you
+  from
+  originally?
+  You
+  from.
+  From
+  Vegas
+  or.
+
+Customer:
+  No,
+  New
+  Jersey.
+
+Alex - Oleksiy Yakovchuk:
+  New
+  Jersey,
+  long
+  time
+  ago.
+
+Customer:
+  Lives
+  all
+  over
+  the
+  country.
+  Probably
+  the
+  longest
+  time
+  in
+  California.
+
+Alex - Oleksiy Yakovchuk:
+  California?
+  Yeah.
+  I
+  just
+  moved
+  there
+  from
+  New
+  York
+  like
+  four
+  years
+  ago.
+  So
+  I
+  was
+  in
+  Brooklyn.
+  Williamsburg.
+  Yeah.
+  So
+  right
+  across
+  the
+  water
+  from
+  the
+  city.
+  I
+  lived
+  in
+  the
+  city
+  too,
+  but
+  the
+  city,
+  man,
+  it's
+  a
+  little
+  crazy.
+  Too
+  many
+  people.
+
+Customer:
+  Yeah,
+  we
+  were
+  there
+  last
+  year
+  for
+  a
+  visit.
+  My
+  son
+  in
+  law
+  and
+  daughter
+  lived
+  in
+  Puerto
+  Rico,
+  New
+  York
+  and
+  took
+  the
+  grandkids
+  to
+  Brooklyn
+  Zoo.
+
+Alex - Oleksiy Yakovchuk:
+  Oh,
+  nice.
+  That
+  sounds
+  like
+  a
+  fun
+  time.
+  Super
+  cool.
+  It's
+  good
+  to
+  meet
+  some
+  fellow
+  East
+  Coasters
+  here,
+  you
+  know.
+
+Customer:
+  Yeah,
+  briefly
+  in
+  the
+  Brooklyn
+  Navy
+  Yard.
+
+Alex - Oleksiy Yakovchuk:
+  Oh,
+  wow.
+  Oh,
+  wow.
+  Yeah,
+  I
+  used
+  to
+  pass
+  by
+  that
+  Navy
+  yard
+  all
+  the
+  time.
+
+Customer:
+  Is
+  it
+  still
+  there?
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  yeah,
+  yeah.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  They
+  still
+  have
+  it.
+  Awesome.
+
+Customer:
+  Okay,
+  good.
+  That
+  looks.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  I
+  think
+  they
+  called
+  Brooklyn
+  Navy
+  Yard.
+  So
+
+Customer:
+  they've
+  closed
+  so
+  many
+  over
+  there.
+
+Alex - Oleksiy Yakovchuk:
+  Oh,
+  have
+  they?
+  Right.
+
+Customer:
+  There
+  used
+  to
+  be
+  a
+  lot
+  of
+  shipyards
+  in
+  this
+  country
+  and.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+
+Customer:
+  Congressional
+  mandate
+  to
+  close
+  some
+  of
+  them.
+  Reduce
+  expenses.
+
+Alex - Oleksiy Yakovchuk:
+  Right?
+  Yeah,
+  I
+  mean
+  maybe
+  that's,
+  that's,
+  that's
+  like
+  one
+  of
+  the
+  best
+  branches.
+  I
+  was
+  thinking
+  about
+  Navy
+  or
+  going
+  to
+  like.
+  I
+  mean,
+  Navy
+  is
+  probably
+  the
+  toughest,
+  Right.
+  I'd
+  say
+  the
+  Marine
+  Corps
+  is
+  probably
+  Marine
+  Corps.
+  Yeah.
+  Besides
+  that.
+  But
+  yeah,
+  I
+  am.
+  But
+  I
+  know
+  I
+  wanted
+  to
+  either
+  go
+  Navy
+  or
+  Air
+  Force
+  when
+  I
+  was
+  thinking
+  about
+  going
+  because
+  most
+  of
+  my
+  family
+  was
+  in
+  military
+  too
+  and.
+  But
+  my
+  wife
+  was
+  like,
+  if
+  you
+  go,
+  we're
+  gonna
+  come
+  back
+  to
+  my
+  wife.
+  I'm
+  like,
+  okay,
+  cool,
+  awesome.
+  Thank
+  you.
+  Thank
+  you
+  for
+  the
+  support.
+
+Customer:
+  I
+  was
+  18,
+  I
+  guess
+  when
+  they
+  had
+  drafted
+  that
+  time
+  better
+  sign
+  up
+  for
+  something
+  rather
+  than
+  being
+  drafted.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+
+Customer:
+  Be
+  drafted.
+  You
+  end
+  up
+  as
+  a
+  grunt
+  someplace.
+
+Alex - Oleksiy Yakovchuk:
+  Oh,
+  wow.
+  Yeah.
+
+Customer:
+  And
+  my
+  father
+  says
+  either
+  go
+  in
+  the
+  Air
+  Force
+  or
+  the
+  Navy.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+
+Customer:
+  He
+  get
+  an
+  education,
+  get
+  it.
+  Learn
+  a
+  tree
+  rather
+  than
+  just
+  be
+  a.
+  A
+  rifleman.
+
+Alex - Oleksiy Yakovchuk:
+  Right.
+  Yeah.
+
+Customer:
+  And
+  then
+  he
+  said
+  if
+  you
+  Join
+  the
+  Army,
+  I'll
+  kick
+  your
+  a**
+  all
+  the
+  way
+  from
+  New
+  Jersey.
+
+Alex - Oleksiy Yakovchuk:
+  That's
+  funny.
+
+Customer:
+  So
+  that
+  was
+  a
+  motivation,
+  right?
+
+Alex - Oleksiy Yakovchuk:
+  That's
+  one
+  way
+  to
+  get
+  you
+  going.
+
+Customer:
+  I
+  found
+  I
+  liked
+  going
+  to
+  sea.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+
+Customer:
+  Really,
+  really
+  did
+  a
+  little
+  life
+  of
+  worship,
+  camaraderie,
+  and,
+  you
+  know,
+  it's.
+  You
+  get
+  to
+  depend
+  on
+  your
+  fellow
+  sailors.
+  Right.
+  You
+  have
+  a
+  job
+  to
+  do.
+  You
+  have
+  a
+  job
+  to
+  do
+  it.
+  Right?
+  Do
+  it.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  And
+  being
+  on
+  the
+  sea
+  for
+  so
+  long,
+  you
+  ever
+  get
+  like
+  seasick
+  and
+  stuff
+  or
+  you
+  just
+  kind
+  of
+  get
+  used
+  to
+  it?
+  Oh,
+  wow,
+  that's
+  awesome.
+
+Customer:
+  Matter
+  of
+  fact,
+  that
+  could
+  be
+  a
+  reason
+  for
+  discharge,
+  right?
+  You
+  get
+  seasick?
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  yeah.
+  I've
+  always
+  thought,
+  I've
+  always
+  heard,
+  like,
+  Navy
+  SEAL
+  training,
+  that's
+  super
+  hard.
+
+Customer:
+  Yeah,
+  that's
+  probably,
+  that's
+  probably
+  the
+  most
+  elite
+  of.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  I
+  have
+  friends
+  that
+  wanted
+  to
+  do
+  that
+  and
+  they're
+  like,
+  they
+  were
+  like
+  training
+  for
+  the
+  training
+  and
+  it's
+  crazy
+  the
+  stuff
+  they
+  had
+  to
+  go
+  through.
+  So.
+
+Customer:
+  Yeah,
+  it
+  is.
+  I
+  lived
+  in
+  Coronado
+  for
+  a
+  while.
+  That's
+  where
+  they
+  had
+  the
+  basic
+  underwater
+  demolition
+  training
+  there.
+
+Alex - Oleksiy Yakovchuk:
+  Buds.
+
+Customer:
+  Wow.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  that's.
+  Yeah.
+  Thank
+  you
+  again
+  for
+  your
+  service.
+  So,
+  okay,
+  yeah,
+  I'm
+  gonna
+  go
+  over
+  what
+  I'll
+  be
+  doing.
+  So
+  we're
+  gonna
+  do
+  a
+  look
+  at
+  all
+  the
+  systems,
+  do
+  a
+  thorough
+  evaluation
+  of
+  all
+  four.
+  Let
+  me
+  check
+  them
+  for
+  three
+  things.
+  Proper
+  function,
+  kind
+  of
+  safety.
+  If
+  anything
+  is
+  out
+  of
+  the
+  ord,
+  do
+  you
+  want
+  me
+  to
+  bring
+  it
+  to
+  your
+  attention
+  or
+  keep
+  it
+  to
+  myself?
+
+Customer:
+  No,
+  no,
+  bring
+  it
+  to
+  my
+  attention,
+  of
+  course.
+  I
+  think
+  you'll
+  find
+  one
+  of
+  the
+  units
+  for
+  this
+  area
+  down
+  here
+  probably
+
+Alex - Oleksiy Yakovchuk:
+  getting
+  a
+  little
+  corroded,
+  but
+  on
+  the
+  coils
+  or.
+
+Customer:
+  Yeah,
+  okay.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  let's
+  go.
+  Let's
+  take
+  a
+  look,
+  see
+  how
+  it
+  looks.
+  And
+  I'll
+  see
+  if
+  I
+  can
+  pull
+  up
+  the
+  previous
+  pictures.
+  Maybe
+  we
+  can
+  compare
+  them,
+  see
+  how
+  it's
+  progressing.
+  But
+  if
+  anything
+  is
+  going
+  on,
+  I
+  also
+  will
+  not
+  do
+  any
+  work
+  without
+  your
+  approval.
+  So
+  if
+  you
+  do
+  approve
+  any
+  work
+  and
+  anything
+  does
+  need
+  to
+  be
+  done,
+  we
+  do
+  get
+  started
+  on
+  that
+  work
+  today.
+  Okay.
+  And
+  all
+  this
+  I
+  do
+  for
+  a
+  five
+  star
+  experience.
+  So
+  if
+  at
+  any
+  point
+  you
+  feel
+  like
+  I'm
+  not
+  meeting
+  that
+  expectation,
+  let
+  me
+  know.
+  I'll
+  make
+  corrections.
+
+Customer:
+  Okay,
+  Alex,
+  awesome.
+
+Alex - Oleksiy Yakovchuk:
+  Sound
+  fair?
+  Awesome.
+  Yeah.
+  Let
+  me
+  grab
+  my
+  tools,
+  come
+  in
+  and
+  out.
+
+Customer:
+  Don't
+  worry.
+
+Alex - Oleksiy Yakovchuk:
+  Okay,
+  I
+  appreciate
+  that.
+  I'm
+  gonna
+  turn
+  on
+  all
+  the
+  thermostats.
+  It's
+  gonna
+  start
+  cooling
+  off
+  in
+  here
+  and
+  then
+  I'll
+  try
+  to
+  keep
+  them
+  off.
+  As
+  much
+  as
+  I
+  can
+  outside.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Because
+  it's
+  already
+  kind
+  of
+  cold
+  outside.
+  I
+  don't
+  want
+  to
+  make
+  it
+  more
+  cold.
+
+Customer:
+  There's.
+  It's,
+  it's,
+  it's,
+  it's,
+  it's,
+  it's,
+  it's,
+  it's,
+  it's,
+  it's,
+  it's,
+  it's,
+  it's,
+  it's,
+  it's,
+  It's,
+  It's.
+  It,
+  It's,
+  It's,
+  It's.
+
+Alex - Oleksiy Yakovchuk:
+  Let
+  me
+  call
+  you
+  back.
+  I'm
+  finishing
+  this
+  force
+  system.
+
+Customer:
+  It's.
+  All
+  right.
+
+Alex - Oleksiy Yakovchuk:
+  I'm
+  all
+  finished
+  up.
+  There's
+  a
+  good
+  place
+  to
+  sit
+  down
+  and
+  go
+  over
+  the
+  pictures
+  and
+  stuff
+  like
+  that.
+
+Customer:
+  Oh,
+
+Alex - Oleksiy Yakovchuk:
+  Thank
+  you.
+
+Customer:
+  Oh,
+  sorry.
+
+Alex - Oleksiy Yakovchuk:
+  Thank
+  you
+  so
+  much.
+  All
+  right.
+
+Customer:
+  All
+  right.
+
+Alex - Oleksiy Yakovchuk:
+  Do
+  we
+  know
+  how
+  your
+  system
+  works
+  top
+  to
+  bottom?
+  Do
+  you
+  know
+  how
+  it
+  all
+  operates
+  as
+  one?
+  The
+  whole
+  system?
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  Okay.
+  Because
+  I
+  don't
+  want
+  to
+  bore
+  you
+  with
+  any
+  of
+  my
+  drawings
+  in
+  case
+  you
+  want
+  to
+  know
+  how
+  it
+  can
+  operate
+  so
+  I
+  can
+  draw
+  a
+  picture
+  for
+  you.
+  Okay.
+
+Customer:
+  So
+
+Alex - Oleksiy Yakovchuk:
+  what
+  I'm
+  gonna
+  go
+  over
+  is
+  the
+  condition
+  of
+  all
+  three
+  systems.
+  So
+  four
+  systems.
+  The
+  new
+  one
+  was
+  well
+  within
+  specifications.
+  It's
+  brand
+  new.
+  Absolutely
+  nothing
+  going
+  on
+  with
+  it.
+  It's
+  actually
+  a
+  very
+  high
+  efficiency
+  that
+  you
+  guys
+  have,
+  so
+  then
+  you'll
+  be
+  good
+  for
+  a
+  while.
+  I
+  want
+  to
+  go
+  over
+  a
+  couple
+  things
+  with
+  you.
+  For
+  the
+  older
+  systems,
+  I
+  do
+  have
+  a
+  lot
+  of
+  pictures,
+  so
+  I'm
+  gonna
+  go
+  over
+  the
+  main
+  stuff.
+  Okay.
+  So
+  the
+  main
+  things
+  where
+  your
+  voltage
+  switches
+  are
+  getting
+  on
+  three
+  older
+  units
+
+Customer:
+  outside.
+  Okay.
+  I
+  thought
+  they
+  replaced
+  some
+  of
+  them
+  within
+  the
+  past
+  couple
+  years.
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  over
+  time,
+  what
+  happens?
+  It
+  looks
+  like
+  this
+  one's
+  gonna
+  replace.
+  Doesn't
+  have
+  as
+  much,
+  but
+  this
+  one
+  has
+  slightly
+  more.
+  With
+  these
+  voltage
+  switches,
+  it's
+  more
+  of
+  just
+  because
+  when
+  the
+  system
+  runs
+  the
+  way
+  it
+  works,
+  it's
+  just
+  a
+  switch.
+  Right.
+  And
+  what
+  happens
+  when
+  it
+  gets
+  low
+  voltage
+  sent
+  to
+  it?
+  The
+  signal,
+  that
+  button
+  clicks
+  in,
+  which
+  allows
+  high
+  voltage
+  to
+  go
+  through
+  it.
+  So
+  when
+  that
+  button
+  clicks
+  in,
+  it
+  arcs
+  and
+  flashes,
+  which
+  is
+  what
+  causes
+  that
+  burning
+  and
+  pitting.
+  Now,
+  down
+  the
+  line,
+  what
+  could
+  happen
+  is
+  two
+  things
+  can
+  happen
+  down
+  the
+  line
+  is
+  it
+  can't
+  get
+  stuck.
+  Welded
+  together,
+  that
+  system
+  will
+  always
+  run.
+  Or
+  it
+  can
+  get
+  stuck,
+  pulled
+  out.
+  It
+  just
+  won't
+  kick
+  on.
+  So
+  that's
+  the
+  main
+  thing
+  with
+  these.
+  They
+  are
+  just
+  switches.
+  So
+  like
+  I
+  said,
+  it
+  clips
+  on
+  and
+  you
+  have
+  a
+  surge
+  of
+  high
+  voltage
+  going
+  through
+  it.
+  So
+  that's
+  why,
+  I
+  guess
+  burnt
+  to
+
+Customer:
+  get
+  it
+  like
+  that.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+  And
+  your
+  compressors
+  on
+  the
+  outside
+  compressors
+  were
+  pulling
+  more
+  power
+  than
+  what
+  it's
+  rated
+  for
+  the
+  three
+  older
+  systems.
+  So
+  this
+  one
+  was
+  pulling
+  97.6amps.
+  Okay.
+  This
+  one's
+  ready
+  to
+  get
+  the
+  highest
+  83.
+
+Customer:
+  So
+  97
+  was
+  pulling
+  more
+  amps.
+
+Alex - Oleksiy Yakovchuk:
+  Typically
+  with
+  age,
+  when
+  it
+  starts
+  to
+  get
+  older,
+  the
+  system
+  will
+  start
+  to
+  overwork.
+  And
+  the
+  compressors,
+  when
+  they
+  start
+  out,
+  they'll
+  start
+  pulling
+  a
+  lot
+  of
+  power
+  because
+  it's
+  older
+  equipment,
+  so
+  it
+  takes
+  more
+  to
+  kind
+  of
+  get
+  it
+  going.
+  So
+  what
+  happens
+  when
+  it
+  pulls
+  all
+  the
+  power,
+  your
+  compressor
+  on
+  the
+  inside?
+  Not
+  only
+  can
+  that
+  raise
+  your
+  electrical
+  bills
+  when
+  it
+  pulls
+  too
+  much
+  power
+  like
+  that,
+  but
+  internally,
+  the
+  compressor,
+  each
+  time
+  it
+  starts
+  up,
+  it's
+  going
+  to
+  keep
+  chipping
+  and
+  chipping
+  and
+  chipping.
+  A
+  ton
+  of
+  compressor
+  fails.
+  I
+  compare
+  this
+  to
+  kind
+  of
+  like
+  having
+  blood
+  pressure.
+  The
+  higher
+  that
+  number
+  is,
+  the
+  worse
+  it
+  is
+  for
+  that
+  system,
+  and
+  it's
+  going
+  to
+  keep
+  going
+  and
+  going
+  and
+  going.
+  The
+  other
+  system
+  pulling
+  133.1amps.
+  Okay,
+  so
+  133.1.
+
+Customer:
+  Which
+  system
+  is
+  that
+  part
+  of
+  the
+  house?
+
+Alex - Oleksiy Yakovchuk:
+  This
+  is
+  going
+  to
+  be
+  for
+  the
+  upstairs.
+
+Customer:
+  Upstairs,
+  that
+  end?
+
+Alex - Oleksiy Yakovchuk:
+  Yes,
+  right
+  there.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  this
+  one
+  is
+  rated
+  to
+  be
+  at
+  the
+  highest
+  113.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+  So
+  you
+  are
+  pulling
+  a
+  lot
+  of
+  power
+  on
+  this
+  one.
+  And
+  the
+  last
+  one
+  you're
+  pulling
+  135.4.
+  This
+  is
+  going
+  to
+  be
+  for
+  the.
+  This
+  going
+  for
+  the
+  downstairs.
+  Okay.
+  And
+  so
+  135.
+  And
+  start
+  it
+  for
+  1.
+  113
+  as
+  well.
+
+Customer:
+  What
+  about
+  this
+  area
+  right
+  here?
+  You
+  didn't
+  see
+  any.
+
+Alex - Oleksiy Yakovchuk:
+  The
+  kitchen.
+  That
+  was
+  the
+  kitchen
+  area.
+  That's
+  the
+  one
+  that
+  was
+  pulling
+  97.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  All
+  right.
+  All
+  right.
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  the
+  other
+  system
+  that
+  you
+  have,
+  the
+  high
+  efficiency
+  one,
+  it
+  runs
+  on
+  DC
+  voltage,
+  so
+  it's
+  not
+  the
+  same.
+  So
+  that
+  compressor
+  is
+  all
+  good,
+  because
+  the
+  way
+  that
+  system
+  works,
+  it's.
+  It
+  doesn't
+  pull
+  that
+  high
+  crazy
+  amount
+  of
+  power.
+  It's
+  a
+  way
+  lower
+  amperage,
+  which
+  is
+  why
+  there
+  are
+  several
+  energy
+  you
+  get
+  fishing.
+  So
+  up
+  in
+  the
+  attic,
+  I
+  did
+  clean
+  your
+  coils.
+  I
+  washed
+  them,
+  all
+  of
+  them
+  out.
+  Okay.
+  And
+  new
+  system,
+  old
+  systems
+  in
+  the
+  attic.
+  The
+  main
+  concerns
+  in
+  the
+  attic.
+  So
+  this
+  is
+  what
+  you're
+  going
+  to
+  have
+  coming
+  up
+  down
+  the
+  line.
+  You
+  just.
+  You
+  see
+  how
+  it's
+  getting
+  more
+  yellow
+  around
+  the
+  spot
+  resistor.
+  Yeah,
+  it's
+  getting
+  more
+  yellow
+  because
+  it's
+  getting
+  a
+  hot
+  spot.
+  Eventually,
+  what
+  could
+  happen
+  down
+  the
+  line
+  is
+  on
+  the
+  back
+  side
+  where
+  it
+  gets
+  the
+  hot
+  spot.
+  You're
+  gonna
+  See
+  where
+  it's
+  starting
+  to
+  get
+  more
+  yellow
+  here?
+  It's
+  very
+  light
+  tint.
+  I'll
+  show
+  you
+  the
+  different
+  picture.
+  You
+  can
+  see
+  a
+  little
+  bit
+  better.
+  I
+  think
+  it's
+  this
+  one
+  over
+  here.
+  You'll
+  have
+  a
+  yellow
+  tint.
+  You
+  see
+  how
+  it's
+  yellow.
+  So
+  eventually
+  gets
+  hot,
+  which
+  could
+  eventually
+  cause
+  these
+  solder
+  points
+  to
+  crack.
+  If
+  this
+  ever
+  does
+  crack,
+  it
+  could
+  cause
+  issues
+  for
+  both
+  heating
+  and
+  cooling.
+  Okay.
+  And
+  then
+  you
+  have
+  your
+  last.
+  This
+  one's
+  still.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Then
+  up
+  in
+  the
+  attic,
+  we're
+  checking
+  your
+  coils.
+  So
+  this
+  is
+  going
+  to
+  be.
+  Sorry,
+  you
+  have
+  so
+  many
+  systems.
+  I'm
+  trying
+  to.
+  This
+  is
+  going
+  to
+  be
+  for
+  the
+  downstairs.
+  Okay.
+  The
+  downstairs
+  unit.
+  I
+  mean,
+  you
+  have
+  a
+  little
+  bit
+  of
+  rust
+  form
+  in
+  there
+  and
+  you
+  have
+  some
+  forming
+  at
+  the
+  bottom.
+  That
+  started.
+  Okay.
+  Now
+  as
+  we
+  go
+  through
+  the
+  other
+  system,
+  this
+  is
+  going
+  to
+  be
+  for
+  your
+  upstairs
+  portion.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+  This
+  one
+  was
+  very,
+  very
+  rusted.
+  As
+  you
+  can
+  see.
+  The
+  reason
+  the
+  upstairs
+  gets
+  more
+  rust
+  is
+  because
+  when
+  it
+  gets
+  hot
+  here,
+  I
+  mean
+  even
+  when
+  the
+  house
+  is
+  cooling,
+  hot
+  air
+  rises.
+
+Customer:
+  Condensation.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  when
+  the
+  hot
+  air
+  rises,
+  which
+  is
+  why.
+  Because
+  it
+  has
+  to
+  work
+  longer,
+  which
+  it
+  creates
+  more
+  condensation
+  and
+  then
+  starts
+  rusting.
+  Now
+  this
+  rust
+  of
+  trade
+  rustles
+  to
+  metal,
+  corrodes
+  it.
+  So
+  when
+  this
+  does
+  corrode
+  through,
+  it
+  could
+  pop
+  a
+  refrigerant
+  leak.
+  If
+  that
+  happens,
+  the
+  home
+  will
+  not
+  happen.
+
+Customer:
+  That
+  was
+  the
+  main
+  reason
+  we
+  replaced
+  the.
+  In
+  the
+  master.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  yeah,
+  yeah.
+  With
+  stuff
+  like
+  this,
+  I
+  mean,
+  it's
+  like
+  I
+  said,
+  it's
+  very
+  hard
+  to
+  say
+  when
+  stuff
+  like
+  that
+  would
+  happen.
+  Typically
+  it's
+  midsummer
+  when
+  the
+  pressures
+  build
+  up.
+  Cuz
+  you
+  have
+  that
+  corrosion
+  happening.
+  The
+  pressure
+  gets
+  built
+  up.
+  But
+  it's
+  so
+  hot
+  outside
+  inside
+  the
+  system,
+  that's
+  when
+  it
+  pops.
+  Probably.
+
+Customer:
+  I
+  have
+  a,
+  a
+  whole
+  house
+  warranty.
+  So.
+  So
+  yeah,
+  I
+  made
+  a
+  decision
+  because
+  the,
+  the,
+  the
+  system
+  that
+  I
+  master
+  was
+  pretty
+  bad
+  last
+  year.
+  But
+  that
+  was
+  like
+  a
+  $25,000
+  to
+  replace.
+  Right.
+
+Alex - Oleksiy Yakovchuk:
+  They're
+  not
+  cheap.
+  And
+  this
+  is
+  a
+  little
+  bit
+  home
+  warranty
+  for
+  you.
+  Because
+  you
+  mentioned
+  you
+  have
+  home
+  warranties.
+  This
+  is.
+  We
+  don't
+  work
+  with
+  home
+  warranty
+  because
+  of
+  the
+  type
+  of
+  work
+  they
+  do.
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  This
+  is
+  inside
+  your
+  system.
+  You
+  see
+  the
+  start
+  device
+  here?
+
+Customer:
+  Yeah,
+  yeah.
+
+Alex - Oleksiy Yakovchuk:
+  This
+  is,
+  this
+  is
+  how
+  it's
+  supposed
+  to
+  be.
+  It's
+  supposed
+  to
+  be
+  strapped
+  down.
+
+Customer:
+  Down.
+
+Alex - Oleksiy Yakovchuk:
+  They
+  don't
+  strap
+  stuff
+  down.
+  Then
+  leave
+  wires
+  not
+  properly
+  sealed,
+  stuff
+  like
+  that.
+  Because
+  this
+  wire,
+  if
+  this
+  F
+  box
+  ever
+  tips,
+  touches
+  metal
+  or
+  anything,
+  it's
+  going
+  to
+  shorten
+  the
+  whole
+  system
+  if
+  you
+  look
+  at
+  the
+  next
+  one.
+  So
+  this
+  is.
+
+Customer:
+  I've
+  never
+  had
+  any
+  home
+  warranty
+  work
+  done.
+  All
+  the
+  work
+  has
+  ever
+  been
+  done
+  in
+  this
+  house
+  has
+  been
+  you
+  by
+  you
+  guys.
+
+Alex - Oleksiy Yakovchuk:
+  This
+  is
+  not
+  our
+  capacitors.
+  Whoever
+  replaced
+  this
+  is
+  not
+  the
+  brand
+  of
+  we
+  use.
+  We
+  use
+  Titan
+  hd.
+
+Customer:
+  Oh,
+  that's
+  right.
+  I
+  did
+  have
+  one
+  capacitor
+  done
+  about
+  three
+  years
+  ago.
+  Yeah.
+  Okay.
+  Yeah,
+  yeah.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  whoever
+  installed
+  this,
+  it's
+  supposed
+  to
+  be
+  strapped.
+
+Customer:
+  Okay,
+  that's
+  it.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  I'll
+  show
+  you
+  the
+  difference
+  when
+  it's
+  strapped.
+  This,
+  this
+  is
+  a
+  capacitor
+  we
+  replaced
+  here.
+  You
+  see
+  how
+  it's
+  strapped?
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  It's
+  not
+  supposed
+  to
+  be
+  strapped
+  down
+  because
+  you
+  have
+  like,
+  you
+  test
+  voltage
+  here
+  while
+  the
+  system
+  is
+  running.
+  You're
+  going
+  to
+  be
+  getting
+  like
+  370
+  volts
+  left
+  that
+  capacitor.
+  So
+  if
+  that
+  ever
+  touches
+  that
+  metal
+  and
+  touches
+  ground,
+  it's
+  going
+  to
+  short.
+  And
+  then
+  your
+  kitchen
+  also
+  rust
+  corroding.
+  Okay.
+  The
+  upstairs
+  system
+  was
+  the
+  worst
+  one.
+  When
+  you
+  said
+  you
+  have
+  a
+  whole
+  home
+  warranty,
+  what's
+  your
+  ultimate
+  goal
+  with
+  that?
+
+Customer:
+  My
+  ultimate
+  goal
+  with
+  the
+  homework?
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+
+Customer:
+  I'm
+  not
+  sure
+  I
+  understand
+  your
+  question.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  so
+  with
+  homework,
+  like
+  are
+  you
+  trying
+  to
+  have
+  them
+  replace
+  the
+  systems?
+  Like
+  what's
+  your
+  plan
+  with
+  that?
+
+Customer:
+  Well,
+  if
+  something
+  fails,
+  I
+  would
+  have
+  them
+  come
+  out
+  and
+  repair
+  it.
+
+Alex - Oleksiy Yakovchuk:
+  That's
+  what,
+  that's
+  what
+  I
+  would
+  do.
+  Have
+  you
+  ever
+  used
+  them
+  before
+  when
+  the
+  system
+  fails?
+
+Customer:
+  I've
+  never
+  had
+  a
+  system
+  fail.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  yeah.
+  With
+  home
+  warranty,
+  when
+  it
+  comes
+  to
+  H
+  vac
+  equipment,
+  they're
+  going
+  to
+  give
+  you
+  a
+  very
+  hard
+  time.
+
+Customer:
+  Yeah,
+  I'm
+  sure.
+  Say,
+  well,
+  you
+  didn't
+  maintain
+  it,
+  you
+  didn't
+  do
+  this,
+  you
+  didn't
+  do
+  that.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  cuz
+  they're
+  very
+  easy
+  with
+  like
+  appliances
+  around
+  the
+  house.
+  You
+  know,
+  it's
+  fridge,
+  microwave,
+  stuff
+  that's
+  cheap.
+  When
+  it
+  comes
+  to
+  units,
+  I
+  mean
+  you
+  saw
+  how
+  much
+  you
+  spent
+  on
+  the
+  other
+  unit
+  that,
+  that
+  they're
+  not
+  in
+  business
+  to
+  replace
+  your
+  equipment.
+  They're
+  going
+  to
+  do
+  everything
+  they
+  possibly
+  can't.
+  They
+  just
+  patch
+  it
+  along
+  and.
+  Yeah,
+  this
+  is
+  your
+  heat
+  exchanger.
+  You
+  see
+  these
+  dark
+  spots?
+  So
+  these
+  are
+  what
+  we
+  call
+  hot
+  spots.
+  This
+  is
+  the
+  main
+  heating
+  element
+  of
+  the
+  home.
+  What
+  happens
+  when
+  flames
+  ignite?
+  The
+  heat
+  exchanger
+  gets
+  very,
+  very
+  hot.
+  Now
+  what
+  happens
+  when
+  it
+  gets
+  very
+  hot?
+  That
+  typically
+  becomes
+  creates
+  the
+  hot
+  spots
+  and
+  becomes
+  the
+  weak
+  points
+  in
+  that
+  metal.
+  I'm
+  sure
+  you
+  know,
+  as
+  metal
+  gets
+  hot,
+  it
+  also
+  expands
+  when
+  it
+  Cools
+  off,
+  it
+  contracts.
+  So
+  with
+  that
+  expansion
+  contraction
+  happening
+  and
+  the
+  hot
+  spots
+  that
+  are
+  present
+  it
+  could
+  eventually
+  lead
+  to
+  a
+  crack
+
+Customer:
+  heat
+  exchanger
+  replaced
+  for
+  that
+  reason.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  well
+  it's
+  going
+  to
+  be
+  coming
+  up
+  in
+  the
+  future.
+  It's
+  not.
+  There's
+  no
+  cracks
+  visible
+  at
+  this
+  time.
+  But
+  I
+  bring
+  attention
+  because
+  the
+  hot
+  spots
+  cuz
+  this
+  ever
+  cracks
+  they'll
+  get
+  gases
+  in
+  the
+  whole
+  carbon
+  dioxide.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  now
+  it's
+  on
+  all
+  three
+  systems.
+  Okay.
+  This
+  one.
+  Maybe
+  have
+  on
+  this
+  one
+  as
+  well.
+  Okay.
+
+Customer:
+  Things
+  watch
+  out
+  for
+
+Alex - Oleksiy Yakovchuk:
+  any
+  questions
+  so
+  far.
+
+Customer:
+  No.
+
+Alex - Oleksiy Yakovchuk:
+  No.
+  I
+  need
+  about
+  20,
+  30
+  minutes
+  to
+  write
+  up
+  my
+  report.
+  I'll
+  be
+  back
+  inside
+  the
+  home
+  to
+  go
+  over
+  that
+  and
+  we'll
+  finish
+  up.
+  Okay.
+
+Customer:
+  Okay.
+  One
+  of
+  the
+  other
+  things
+  supposed
+  to
+  happen
+  today
+  is
+  another
+  time
+  technician
+  from
+  Sierra
+  will
+  come
+  out
+  and
+  flush
+  my
+  hot
+  water
+  heaters.
+  I
+  haven't
+  heard
+  anything
+  yet.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  so
+  they,
+  they'll
+  typically
+  come
+  out.
+  They
+  typically
+  come
+  out
+  either
+  before
+  or
+  after
+  us.
+  So
+  that
+  way
+  we're
+  not
+  in
+  each
+  other's
+  ways
+  and
+  stuff
+  just
+  in
+  case.
+  But
+  yeah.
+  So
+  after
+  I
+  leave
+  here
+  they'll
+  probably
+  give
+  you
+  a
+  call
+  whenever
+  somebody
+  frees
+  up.
+  But
+  they
+  should
+  be
+  here
+  today.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  It's
+  going
+  to
+  be
+  our
+  plumbing
+  department.
+  So
+  once,
+  once
+  they
+  get
+  here
+  then
+  I'll
+  go
+  over
+  on
+  that
+  side.
+
+Customer:
+  Okay,
+  good.
+  I
+  was
+  thinking.
+
+Alex - Oleksiy Yakovchuk:
+  Of
+  course,
+  no
+  problem.
+  Give
+  me
+  about
+  20,
+  30
+  minutes
+  to
+  write
+  this
+  up
+  and
+  I'll
+  be
+  back
+  inside.
+  Thank
+  you.
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  All
+  right.
+  I'm
+  all
+  finished.
+  He's
+  outside.
+  All
+  finished
+  up.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Do
+  you
+  want
+  to
+  finish
+  up
+  out
+  here?
+
+Customer:
+  Oh
+  sure.
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  It's
+  okay
+  if
+  I
+  sit
+  there?
+
+Customer:
+  There.
+
+Alex - Oleksiy Yakovchuk:
+  Perfect
+  today
+  it
+  is
+  nice.
+  Perfect
+  weather.
+  It's
+  so
+  hot
+  last
+  week.
+  Right.
+  And
+  thank
+  you
+  so
+  much
+  for
+  having
+  me
+  in
+  the
+  home
+  letting
+  me
+  do
+  the
+  maintenance.
+  I'm
+  just
+  going
+  to
+  go
+  over
+  everything.
+  The
+  three
+  older
+  systems,
+  the
+  new
+  one
+  is
+  well
+  within
+  specifications.
+  It's
+  just
+  the
+  older
+  ones
+  having
+  some
+  concerns
+  on
+  all
+  three
+  immediate
+  stuff
+  that
+  needs
+  to
+  get
+  done
+  today.
+  You
+  don't
+  have
+  anything
+  immediate
+  at
+  this
+  current
+  state.
+  Okay.
+  An
+  altery
+  system
+  systems
+  however
+  you
+  do
+  have
+  stuff
+  coming
+  up.
+  So
+  when
+  you
+  have
+  coming
+  up
+  on
+  all
+  three
+  systems
+  it's
+  going
+  to
+  be
+  those
+  coils
+  being
+  from
+  the
+  upstairs
+  being
+  the
+  worst
+  condition,
+  the
+  kitchen
+  being
+  the
+  second
+  worst.
+  And
+  then
+  the
+  downstairs
+  or
+  unit
+  is
+  going
+  to
+  be
+  the
+  least
+  cool
+  rusting
+  on
+  that
+  coil.
+  Okay.
+  And
+  then
+  you
+  have
+  the
+  heat
+  exchanger
+  had
+  hot
+  spots
+  on
+  all
+  three
+  systems.
+  I
+  did
+  check
+  it
+  today.
+  It's
+  on
+  safe
+  operation
+  but
+  if
+  ever
+  it
+  does
+  crack
+  in
+  the
+  feature
+  Feature
+  could
+  definitely
+  become
+  a
+  concern.
+  Compressor
+  was
+  drawing
+  more
+  power
+  than
+  it
+  should
+  when
+  it
+  starts
+  up
+  on
+  all
+  three
+  systems.
+  Yeah.
+  You
+  had
+  the
+  voltage
+  switches
+  that
+  were
+  burnt
+  and
+  pitted
+  and
+  your
+  control
+  boards
+  at
+  the
+  hot
+  spots.
+  These
+  were
+  still
+  in
+  safe
+  operation
+  as
+  of
+  today.
+  When
+  these
+  do
+  fail
+  in
+  the
+  future,
+  it's
+  gonna
+  be
+  over
+  8,600,
+  which
+  you
+  have
+  coming
+  up
+  per
+  system.
+  Okay.
+  Because
+  those
+  components
+  are
+  some
+  of
+  the
+  bigger
+  components,
+  especially
+  that
+  coil.
+  Typically
+  just
+  the
+  coil
+  itself.
+
+Customer:
+  What
+  are
+  you
+  doing
+  back
+  here?
+  They
+  don't
+  normally
+  come
+  around
+  here
+  that
+  much.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  then
+  that's
+  the
+  last
+  one
+  there.
+  Okay.
+  But
+  yes,
+  you
+  kind
+  of
+  have
+  the
+  same
+  things
+  going
+  on.
+  You
+  are
+  overpaying
+  about
+  8%
+  on
+  your
+  utility
+  bills
+  because
+  of
+  the
+  age
+  and
+  condition
+  of
+  those
+  systems.
+  They
+  do
+  pull
+  more
+  power.
+  They're
+  overworking,
+  they're
+  older,
+  so
+  they
+  take,
+  you
+  know,
+  more
+  energy
+  to
+  kind
+  of
+  get
+  moving
+  and
+  get
+  going.
+  The
+  last
+  option
+  would
+  be
+  to
+  see
+  all
+  your
+  options.
+  That
+  way
+  you
+  guys
+  can,
+  you
+  know,
+  see
+  what
+  replacement
+  costs
+  would
+  look
+  like
+  as
+  for
+  repairs
+  and
+  see
+  what
+  makes
+  the
+  most
+  sense
+  going
+  forward.
+  But
+  with
+  this,
+  I
+  mean,
+  I
+  know
+  you
+  saw
+  you
+  got
+  like
+  a
+  super
+  high
+  efficiency
+  unit.
+  Is
+  there
+  a
+  reason
+  you
+  like
+  that
+  one
+  more
+  than
+  just
+  the
+  basic
+  units
+  or.
+
+Customer:
+  Well,
+  because
+  of
+  its
+  high
+  efficiency,
+  growing
+  less
+  power.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+
+Customer:
+  And
+  cooling
+  better.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+
+Customer:
+  That
+  was
+  in
+  the.
+  The
+  master
+  bedroom
+  area
+  where
+  we
+  needed
+  our
+  comfort
+  the
+  most.
+
+Alex - Oleksiy Yakovchuk:
+  Right,
+  right.
+
+Customer:
+  Of
+  course,
+  the
+  other
+  units,
+  I
+  wouldn't
+  have
+  to
+  go.
+  So
+  super
+  efficient.
+  Right.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  Typically
+  the
+  master
+  bedroom
+  is
+  one
+  you're
+  going
+  to
+  want
+  to
+  be
+  the
+  best
+  one.
+  That's
+  where
+  you
+  get
+  sleep,
+  you
+  know,
+  of
+  course
+  you
+  don't
+  want
+  nothing.
+  Yeah.
+  The
+  other
+  systems,
+  I
+  mean,
+  you
+  probably
+  don't
+  need
+  something
+  that
+  crazy
+  high
+  efficiency
+  if
+  you
+  go
+  that
+  route
+  just
+  because,
+  I
+  mean,
+  it
+  does
+  help
+  you
+  save
+  an
+  electrical
+  bill
+  over
+  long
+  period
+  of
+  time,
+  but
+  that's
+  just
+  over
+  so
+  many
+  years
+  of
+  it
+  running.
+  Yeah.
+  You
+  know,
+  but.
+  Yeah.
+  What's
+  kind
+  of
+  your
+  thoughts
+  on
+  all
+  this?
+
+Customer:
+  Well,
+  you
+  know,
+  just
+  wait
+  and
+  see.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  It's
+  not
+  going
+  to
+  your
+  plan.
+  Just
+  kind
+  of
+  let
+  it
+  go
+  and
+  see
+  until
+  it
+  fails.
+
+Customer:
+  Yeah,
+  yeah,
+  pretty
+  much.
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  Okay.
+  And
+  yeah,
+  I
+  mean,
+  typically
+  with
+  stuff
+  like
+  that,
+  I
+  mean,
+  if
+  stuff
+  fails,
+  I
+  know
+  manufacturers,
+  the
+  longer
+  you
+  wait,
+  the
+  more
+  the
+  prices
+  do
+  go
+  up.
+
+Customer:
+  Higher
+  labor
+  cost.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  Because
+  summertime,
+  if
+  it
+  fails,
+  also
+  the
+  manufacturers
+  raise
+  their
+  price
+  prices
+  too,
+  because
+  supply
+  and
+  demand,
+  you
+  know,
+  when
+  everybody's
+  system
+  is
+  breaking,
+  they're
+  going
+  to
+  raise
+  those
+  prices
+  because
+  they
+  know
+  people
+  can't
+  live
+  without
+  ac.
+
+Customer:
+  Yeah.
+  That's
+  Why?
+  I
+  think
+  it
+  was
+  April
+  of
+  last
+  year.
+  I
+  went
+  ahead
+  and
+  made
+  the
+  decision.
+
+Alex - Oleksiy Yakovchuk:
+  Right.
+
+Customer:
+  For
+  all
+  those
+  reasons.
+
+Alex - Oleksiy Yakovchuk:
+  But
+  of
+  course,
+
+Customer:
+  I'm
+  not
+  so
+  quick
+  to
+  move
+  on
+  the
+  others.
+
+Alex - Oleksiy Yakovchuk:
+  Right,
+  of
+  course.
+  And
+  did
+  you
+  want
+  to
+  see
+  what
+  something
+  like
+  that
+  looks
+  like
+  today
+  for
+  the
+  others,
+  or
+  are
+  you
+  kind
+  of
+  just
+  price
+  wise
+  for
+  replacement
+  or
+  is
+  that
+  something
+  you're
+  just
+  kind
+  of.
+
+Customer:
+  Yeah,
+  I'll
+  hold
+  off
+  on
+  that.
+  I
+  want
+  to
+  get
+  myself
+  a
+  warrant.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  yeah.
+  After
+  all,
+  we
+  do
+  live
+  in
+  Vegas
+  now.
+  You
+  can
+  always
+  take
+  that
+  gamble.
+  But
+  yeah,
+  yeah.
+  Like
+  I
+  said,
+  the
+  only
+  thing
+  that's
+  going
+  to
+  be
+  really
+  up
+  against
+  you
+  is
+  going
+  to
+  be
+  the
+  price
+  increases.
+  So
+  the
+  longer
+  you
+  wait,
+  the
+  more
+  it's
+  going
+  to
+  cost.
+  I
+  just
+  see
+  a
+  signature
+  here.
+  I
+  went
+  over
+  all
+  this
+  with
+  you.
+  You
+  have
+  any
+  plans
+  on
+  if
+  they
+  break
+  down
+  on
+  you
+  mid
+  summer
+  or.
+
+Customer:
+  Well,
+  yeah,
+  I
+  have
+  three
+  other
+  units
+
+Alex - Oleksiy Yakovchuk:
+  and
+  stuff
+  like
+  that.
+  Like
+  that,
+  but
+  does
+  break
+  down.
+  So
+  just
+  hop
+  on
+  it
+  quick.
+  Because
+  when
+  you
+  have
+  one
+  unit
+  out
+  or
+  two,
+  it
+  can
+  start
+  to
+  cause
+  more
+  stress
+  on
+  the
+  other
+  units.
+  Kind
+  of
+  like
+  the
+  upstairs
+  unit
+  because
+  it's
+  over
+  working
+  because
+  all
+  that
+  hot
+  air
+  rises.
+  So
+  it's
+  gonna
+  be
+  overworking,
+  causing
+  more
+  stress
+  in
+  that
+  system.
+
+Customer:
+  It
+  I.
+  I
+  keep
+  all
+  the
+  temperatures
+  the
+  same
+  throughout
+  except
+  the
+  master
+  bedroom.
+  I
+  lower
+  that
+  at
+  night.
+  Close
+  the
+  door
+  at
+  it.
+  Michael.
+  During
+  the
+  daytime
+  heat
+  or
+  air
+  conditioner
+  came
+  at
+  the
+  same
+  temperature.
+  Would
+  I
+  reduce
+  less
+  stress
+  on
+  that
+  one
+  unit
+  if
+  I
+  raise
+  the
+  temperature
+
+Alex - Oleksiy Yakovchuk:
+  a
+  little
+  bit
+  on
+  the
+  upstairs?
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  probably
+  help
+  it
+  a
+  little
+  bit
+
+Customer:
+  because
+  I
+  don't
+  use
+  that
+  part
+  of
+  the
+  house
+  as
+  much
+  at
+  all.
+
+Alex - Oleksiy Yakovchuk:
+  Right.
+  Like
+  one
+  or
+  two
+  degrees
+  though,
+  because.
+  Because
+  if
+  you
+  go
+  too
+  high
+  up,
+  your
+  other
+  units.
+
+Customer:
+  All
+  right,
+  okay.
+  Okay.
+  Two
+  degrees,
+  I
+  understand.
+  Yeah,
+  yeah.
+  I,
+  I
+  don't
+  know
+  what
+  most
+  people
+  keep
+  their
+  summertime
+  temperatures.
+  I
+  keep
+  mine
+  at
+  78.
+
+Alex - Oleksiy Yakovchuk:
+  I
+  keep
+  mine
+  at
+  68,
+  but.
+  But
+  I
+  have
+  an
+  apartment,
+  so
+  I
+  abuse
+  that
+  system.
+  It's
+  not
+  mine.
+  Once
+  it's
+  mine,
+  maybe
+  I'll,
+  you
+  know,
+  I
+  also
+  work
+  in
+  the
+  heat
+  all
+  day,
+  so
+  the
+  last
+  thing
+  I
+  want
+  to
+  do
+  is
+  come
+  home
+  to
+  a
+  warm
+  house
+  and
+  I
+  want
+  to
+  be
+  in
+  the
+  cool
+  cold
+  air.
+
+Customer:
+  Yeah.
+  I
+  get
+  a
+  lot
+  of
+  my
+  friends
+  explain
+  about
+  the.
+  In
+  the
+  summertime,
+  five
+  or
+  six
+  hundred.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+
+Customer:
+  Electric
+  bills.
+  Some
+  of
+  them
+  have
+  pools.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+
+Customer:
+  And
+  I
+  think
+  my
+  highest
+  last
+  year
+  was
+  350.
+
+Alex - Oleksiy Yakovchuk:
+  Oh,
+  wow.
+
+Customer:
+  This
+  is
+  a
+  big
+  house.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  that's
+  a
+  big
+  house.
+  So
+  that's,
+  that's
+  pretty
+  good
+  for
+  this
+  size
+  house.
+  It's
+  not
+  bad.
+  Did
+  you
+  have
+  any
+  other
+  questions
+  for
+  me?
+
+Customer:
+  No,
+  Alex,
+  I
+  don't.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+  I
+  do
+  need
+  the
+  other
+  guys
+  to
+
+Customer:
+  get
+  the
+  water
+  heater
+  guides
+  out.
+  Yeah.
+  This
+  way
+  I
+  can
+  go
+  out
+  and
+  do
+  things
+  right.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  no,
+  that
+  should
+  be
+  coming
+  out
+  here
+  shortly.
+  I
+  mean,
+  just
+  typically,
+  once
+  I
+  finish
+  up,
+  they'll
+  send
+  them
+  out.
+  As
+  long
+  as
+  they're
+  all
+  available.
+  They
+  should
+  have
+  multiple
+  technicians
+  out,
+  so
+  once
+  one
+  comes
+  available,
+  they'll
+  come
+  out.
+
+Customer:
+  Oh,
+  I
+  did
+  ask
+  a
+  question.
+
+Alex - Oleksiy Yakovchuk:
+  Yes.
+
+Customer:
+  How
+  did
+  the
+  filters
+  look?
+
+Alex - Oleksiy Yakovchuk:
+  I
+  changed
+  them
+  all,
+  but
+  they
+  were
+  pretty
+  full.
+  So
+  those.
+  Those
+  two
+  right
+  there,
+  the
+  one.
+  Do
+  you
+  guys
+  use
+  a
+  humidifier
+  in
+  the
+  home?
+
+Customer:
+  Yeah,
+  we
+  do.
+
+Alex - Oleksiy Yakovchuk:
+  What
+  kind
+  of
+  water
+  you
+  use?
+  So
+  if
+  you
+  guys
+  keep
+  using
+  a
+  humidifier,
+  I
+  recommend
+  using
+  distilled
+  water
+  because
+  did
+  you
+  hear
+  how
+  loud
+  your
+  filter
+  was
+  in
+  your
+  room
+  when
+  the
+  system's
+  running
+  once
+  in
+  a
+  while?
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  it's.
+  It's
+  struggling
+  to.
+
+Customer:
+  It.
+
+Alex - Oleksiy Yakovchuk:
+  It's
+  suffocating
+  the
+  system
+  because
+  that
+  humidifier
+  dust,
+  when
+  I
+  ran
+  my
+  finger
+  on
+  it,
+  white
+  calcium
+  dust
+  came
+  off.
+
+Customer:
+  Oh,
+  wow.
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  that
+  calcium
+  builds
+  up
+  on
+  that
+  filter.
+  So
+  that's
+  a
+  new
+  system.
+  So
+  you
+  also
+  don't
+  want
+  to
+  cause
+  too
+  much
+  stress
+  on
+  it
+  because
+  it's
+  going
+  to
+  cause
+  it
+  to
+  overwork
+  with
+  stuff
+  like
+  that.
+  Would
+  recommend
+  if
+  you
+  guys
+  keep
+  using
+  that
+  humidifier
+  to
+  use
+  distilled
+  water
+  only.
+  Okay.
+
+Customer:
+  Because
+  we
+  have
+  water
+  conditioner
+  and
+  our
+  water
+  is
+  conditioned.
+
+Alex - Oleksiy Yakovchuk:
+  Right.
+
+Customer:
+  But
+  it's
+  not.
+
+Alex - Oleksiy Yakovchuk:
+  No,
+  it's
+  not
+  the
+  stove.
+  So
+  the
+  conditioned
+  water
+  will
+  spill,
+  produce
+  calcium,
+  you
+  know,
+  buildup.
+  Because
+  when.
+  When
+  the
+  vapor
+  goes,
+  you
+  know,
+  up
+  in
+  the
+  air,
+  it
+  does
+  have
+  calcium
+  particles
+  it
+  carries
+  with
+  it.
+  So
+  it
+  doesn't
+  matter
+  how
+  good
+  of
+  an
+  RO
+  system
+  you
+  got
+  or
+  conditioner,
+  you
+  know,
+  whatever
+  you
+  guys
+  got
+  on
+  that
+  system,
+  it's
+  still
+  going
+  to
+  produce
+  calcium.
+
+Customer:
+  Okay.
+  It's
+  good
+  advice.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  in
+  the
+  future,
+  if
+  you
+  ever
+  want
+  to
+  see
+  it,
+  when
+  you
+  take
+  that
+  filter
+  out,
+  let's
+  say
+  if
+  you
+  guys
+  run
+  tap
+  water.
+  Water,
+  Run
+  your
+  finger
+  on
+  that
+  filter,
+  you're
+  going
+  to
+  see
+  all
+  this.
+  I
+  can't
+  even
+  pull
+  it
+  from
+  the
+  back
+  of
+  my
+  van
+  and
+  show
+  you
+  I
+  still
+  have
+  it.
+  If
+  you
+  run
+  it,
+  you're
+  going
+  to
+  see
+  white,
+  puffy
+  calcium
+  dust
+  coming
+  off.
+  Okay.
+  And
+  that
+  calcium,
+  it
+  clogs
+  the
+  pores
+  where
+  the
+  filter
+  breathes.
+  So,
+  yeah,
+  when
+  they
+  can't
+  breathe,
+  it's
+  going
+  to
+  struggle.
+  I
+  noticed
+  that
+  mostly
+  on
+  your
+  master
+  bedroom
+  unit.
+  Is
+  that
+  where
+  you
+  guys
+  use
+  the
+  humidifier?
+
+Customer:
+  Yes.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+
+Customer:
+  Okay.
+  All
+  right.
+
+Alex - Oleksiy Yakovchuk:
+  I'm
+  trying
+  to
+  figure
+  cuz
+  the
+  other
+  two
+  that
+  have
+  us
+  much
+  calcium
+  buildup
+  there's
+  more
+  interest
+  dusty
+  these
+  two
+  and
+  then
+  this
+  one
+  over
+  here
+  to
+  the
+  left
+  side
+  was
+  try
+  to
+  clean
+  this
+  one.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+
+Customer:
+  Okay.
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  just
+  little
+  changes
+  but
+  yeah
+  with
+  the
+  humidifier
+  definitely
+  going
+  forward
+
+Customer:
+  that's
+  easy
+  to
+  do.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+
+Customer:
+  Cost
+  facility.
+
+Alex - Oleksiy Yakovchuk:
+  Yes.
+  And
+  that
+  way
+  you
+  guys
+  want
+  to
+  worry
+  about
+  putting
+  more
+  stress
+  on,
+  you
+  know,
+  a
+  new
+  system
+  and
+  causing
+  issues.
+  So
+  two
+  signatures
+  here
+  for
+  the
+  maintenance.
+  One
+  here.
+  And
+  one
+  more
+  here.
+
+Customer:
+  I
+  don't
+  think
+  it's
+  ever
+  possible.
+
+Alex - Oleksiy Yakovchuk:
+  No
+  worries.
+  Best
+  he
+  can.
+  I
+  appreciate
+  you.
+  Good
+  to
+  meet
+  you.
+
+Customer:
+  Okay,
+  well
+  thank
+  you
+  so
+  much.
+
+Alex - Oleksiy Yakovchuk:
+  No
+  worries.
+  We'll
+  see
+  you
+  in
+  the
+  future.
+  Okay.
+  You
+  have
+  a
+  good
+  day.
+  I
+  still
+  have
+  my
+  ladder,
+  my
+  tools
+  upstairs.
+  Let
+  me
+  grab
+  that
+  and
+  then
+  I'll
+  be
+  heading
+  out.
+  Okay.
+  Okay.
+  Awesome.
+  Thank
+  you.

@@ -1,0 +1,3163 @@
+TRANSCRIPT
+Rep:      Francisco Arreola Jr.
+Date:     2026-03-31
+Duration: 75 min
+RecId:    72a2aa8a-8493-497e-86a1-edd749815fd7-XYpMBXpv6TVg9okInQemgsAIw1B3
+Job:      No Title
+============================================================
+
+
+Customer:
+  It's.
+  It's.
+
+Francisco Arreola Jr.:
+  Excuse
+  me.
+  Do
+  you
+  have
+  the
+  key
+  for
+  the
+  lock
+  on
+  the
+  breaker
+  panel?
+
+Customer:
+  Yeah,
+  Here's.
+  You
+  done
+  with
+  the
+  electric
+  for
+  you
+  all.
+
+Francisco Arreola Jr.:
+  Take
+  a
+  look.
+
+Customer:
+  Thank
+  you.
+  It.
+  It's.
+  It's.
+  It's.
+  It's.
+  It's.
+  It's.
+  It's.
+  It's.
+  It's.
+  It's.
+
+Francisco Arreola Jr.:
+  Okay,
+  so
+  there
+  are
+  a
+  couple
+  things
+  that
+  I
+  heard.
+  So
+  this
+  one
+  doesn't
+  really
+  contribute
+  to
+  the.
+  The
+  system
+  operating,
+  but
+  the
+  disconnect
+  outside
+  is
+  broken.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  So
+  just
+  more
+  of
+  a
+  safety.
+  Just
+  take
+  care
+  of
+  that.
+  Now
+  get
+  into
+  the
+  mechanical
+  stuff.
+  Your
+  fan
+  motor
+  outside.
+  I
+  don't
+  know
+  if
+  you
+  heard
+  it
+  when
+  this
+  is
+  the
+  first
+  or
+  non.
+  That
+  kind
+  of
+  scraping
+  sound.
+  So
+  that
+  ring
+  that
+  we
+  have
+  built
+  up
+  there,
+  that's
+  gonna
+  be
+  oil
+  loss.
+
+Customer:
+  Oh,
+  okay.
+
+Francisco Arreola Jr.:
+  So
+  when
+  that
+  happens,
+  that's
+  already
+  a
+  red
+  flag.
+  It's
+  a.
+  There's
+  essentially
+  a
+  pocket
+  of
+  oil
+  there.
+  When
+  the
+  fan
+  overheats,
+  when
+  the
+  motor
+  overheats,
+  that
+  oil
+  leaks
+  out,
+  signaling
+  that
+  it's
+  already
+  overheated.
+  When
+  that
+  happens,
+  that
+  fan
+  will
+  seize
+  up,
+  won't
+  be
+  operational,
+  and
+  the
+  rest
+  of
+  the
+  system
+  can
+  get
+  damaged.
+
+Customer:
+  Got
+  it.
+  Okay.
+
+Francisco Arreola Jr.:
+  Because
+  the
+  main
+  job
+  of
+  this
+  fan
+  is
+  to
+  blow
+  away
+  all
+  the
+  heat
+  built
+  up
+  by
+  the
+  compressor.
+  So
+  if
+  the
+  fan
+  goes
+  down,
+  the
+  system
+  will
+  still
+  try
+  to
+  start
+  because
+  it
+  doesn't
+  know
+  that
+  the
+  fan
+  is
+  not
+  working.
+
+Customer:
+  Yeah,
+  yeah.
+
+Francisco Arreola Jr.:
+  And
+  at
+  that
+  point,
+  it
+  can
+  overheat
+  and
+  get
+  damaged.
+  So
+  definitely
+  a
+  concern
+  there
+  now.
+  And
+  add
+  no
+  rust
+  on
+  the
+  coils,
+  which
+  is
+  fine.
+  Do
+  you
+  have
+  aluminum
+  coils?
+  So
+  you
+  didn't
+  see
+  any
+  signs
+  of
+  a
+  leak
+  there?
+  Your
+  switch
+  is
+  starting.
+  I
+  don't
+  know
+  if
+  you
+  can
+  tell
+  there.
+
+Customer:
+  Yeah,
+  a
+  little
+  brown.
+
+Francisco Arreola Jr.:
+  Yeah,
+  a
+  little
+  starting
+  to
+  burn
+  up
+  there.
+  A
+  lot
+  of
+  these
+  things
+  are
+  normal
+  wear
+  and
+  tear
+  that
+  just
+  happen
+  over
+  time.
+
+Customer:
+  Sure.
+
+Francisco Arreola Jr.:
+  You
+  can
+  see
+  it
+  more
+  so
+  at
+  the
+  top
+  there.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  So
+  are
+  a
+  couple
+  things.
+
+Customer:
+  And
+  that's
+  for
+  the
+  ac.
+
+Francisco Arreola Jr.:
+  Yes.
+
+Customer:
+  Okay.
+  Got
+  you.
+
+Francisco Arreola Jr.:
+  Yeah.
+  So
+  this
+  switch,
+  when
+  you
+  turn
+  on
+  your
+  thermostat,
+  it
+  sends
+  a
+  signal
+  to
+  the
+  switch,
+  which
+  clicks
+  the
+  system
+  on.
+  That's
+  what
+  gives
+  you
+  power.
+  And
+  then.
+  Yeah,
+  I
+  tested
+  the
+  capacitor.
+  Testing
+  perfectly.
+  So
+  you
+  said
+  it
+  was
+  just
+  changed
+  out
+  about
+  a
+  week
+  ago,
+  right?
+
+Customer:
+  Yeah.
+  Yeah.
+
+Francisco Arreola Jr.:
+  So,
+  yeah,
+  a
+  couple
+  small
+  things.
+  Your
+  compressor
+  is
+  pulling
+  too
+  much
+  power.
+  The
+  big
+  issue
+  with
+  that
+  one
+  is
+  that
+  you
+  have
+  this.
+  This
+  part
+  installed
+  here,
+  which
+  is
+  dead
+  now,
+  right?
+  Yeah.
+  So
+  when
+  those
+  start
+  to
+  die,
+  being
+  attached
+  to
+  the
+  compressor,
+  it's
+  pretty
+  much
+  a
+  big
+  red
+  flag
+  that.
+  That
+  Compressor
+  is
+  on
+  its
+  last
+  leg.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  And
+  that
+  doesn't
+  mean
+  overnight
+  or
+  next
+  week
+  or
+  anything
+  like
+  that,
+  but
+  it's
+  just
+  sooner
+  rather
+  than
+  later,
+  for
+  sure.
+  This
+  is
+  a.
+  What's
+  called
+  a
+  hard
+  start.
+  It's
+  essentially
+  like
+  a
+  crutch
+  for
+  the
+  compressor.
+
+Customer:
+  Yeah.
+  It's
+  like
+  a
+  little
+  kick
+  or
+  whatever
+
+Francisco Arreola Jr.:
+  to
+  help
+  get
+  started.
+  Yeah.
+  It
+  helps
+  absorb,
+  like,
+  the
+  impact
+  that
+  the
+  compressor
+  takes.
+  So
+  kind
+  of
+  a
+  crutch
+  to
+  help
+  it
+  keep
+  going.
+  But
+  when,
+  again,
+  when
+  the
+  compressor
+  starts
+  to
+  take
+  these
+  out,
+  that's
+  when
+  you
+  know
+  that
+  compressor
+  is
+  like,
+  take.
+  It's
+  pretty
+  much
+  taking
+  as
+  much
+  as
+  it
+  can.
+  Yeah,
+  exactly.
+
+Customer:
+  On
+  its
+  way
+  out.
+  Yeah.
+  Yeah.
+  Okay.
+
+Francisco Arreola Jr.:
+  And
+  the
+  compressor
+  is
+  going
+  to
+  be
+  the
+  big
+  one
+  because
+  at
+  that
+  point,
+  being
+  a
+  part
+  of
+  the
+  refrigeration
+  cycle,
+  that's
+  where
+  you're
+  probably
+  looking
+  at
+  the
+  system,
+  as
+  opposed
+  to
+  just
+  being
+  able
+  to
+  patch
+  it
+  up.
+
+Customer:
+  Right.
+
+Francisco Arreola Jr.:
+  The
+  motor,
+  the
+  switch,
+  things
+  like
+  that.
+  Smaller
+  parts
+  that
+  are
+  easier
+  to
+  just
+  swap
+  out
+  because
+  they're
+  mechanical
+  or
+  electrical.
+  On
+  the
+  refrigeration
+  stuff,
+  in
+  this
+  case,
+  your
+  compressor,
+  that's
+  where
+  that
+  compressor
+  might
+  make
+  the
+  decision
+  for,
+  unfortunately.
+
+Customer:
+  But
+  then
+  does
+  that
+  mean
+  that
+  we
+  have
+  to
+  change
+  everything?
+  Like
+  the
+  furnace,
+  the
+  compressor
+  coil,
+  all
+  of
+  it.
+
+Francisco Arreola Jr.:
+  So
+  essentially
+  your
+  whole
+  outdoor
+  would
+  have
+  to
+  be
+  replaced.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  And
+  your
+  coil.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  That's
+  going
+  to
+  be
+  the
+  aluminum
+  piping
+  I
+  showed
+  you.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  So
+  those
+  two
+  would
+  have
+  to
+  be
+  taken
+  care
+  of.
+  I'm
+  not
+  too
+  sure
+  because
+  essentially
+  it
+  doesn't
+  have
+  anything
+  to
+  do
+  with
+  refrigeration.
+  But
+  as
+  long
+  as
+  it's
+  compatible
+  with
+  the
+  rest
+  of
+  the
+  system,
+  it
+  could
+  stay
+  in
+  place.
+
+Customer:
+  But
+  how
+  could
+  we
+  know
+  that?
+  Because
+  that's
+  going
+  to
+  make
+  a
+  big
+  difference.
+  Right.
+  Like,
+  because
+  that's
+  another
+  very
+  expensive
+  thing.
+  Right.
+
+Francisco Arreola Jr.:
+  I
+  mean,
+  you're
+  looking
+  at
+  each
+  one.
+  You're
+  probably
+  breaking
+  down
+  the
+  price
+  into
+  each
+  ones
+  that
+  they're.
+
+Customer:
+  Right.
+  So
+  that
+  would
+  make
+  a
+  big
+  difference
+  to
+  us,
+  wouldn't
+  it?
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  I
+  mean,
+  compressor
+  and
+  then
+  your
+  coil
+  and
+  then
+  your
+  furnace.
+
+Francisco Arreola Jr.:
+  Yeah.
+  So,
+  like,
+  I
+  know,
+  for
+  example,
+  compressors.
+  I
+  know
+  last
+  year
+  we
+  were
+  having
+  a
+  hard
+  time.
+  We're
+  getting
+  them
+  for
+  the
+  410.
+  That's
+  what
+  the
+  refrigeration.
+  Your
+  system
+  runs
+  on.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  People
+  were
+  waiting
+  two
+  or
+  three
+  months,
+  and
+  that
+  was
+  last
+  year.
+  So
+  I
+  don't
+  know
+  how
+  available
+  they
+  are
+  or
+  what
+  that
+  looks
+  like.
+
+Customer:
+  I
+  mean,
+  it'd
+  be
+  maybe
+  a
+  good
+  time
+  to
+  order.
+  What
+  if.
+  I
+  mean,
+  do
+  they
+  even
+  exist,
+  though?
+
+Francisco Arreola Jr.:
+  I
+  don't
+  even
+  know.
+  Yeah,
+  that's
+  the
+  problem.
+  I
+  don't
+  Think
+  that
+  we're
+  able
+  to
+  get
+  them
+  anymore?
+  I
+  think
+  last
+  year
+  was
+  pretty
+  much
+  like
+  the
+  last
+  of
+  it.
+  But
+  a
+  compressor,
+  you
+  started
+  off
+  at
+  around
+  5,000.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  And
+  then
+  that
+  is
+  just
+  the
+  compressor
+  itself
+  not
+  recharging
+  it
+  with
+  new
+  refrigerator.
+  Cuz
+  you
+  can't
+  use
+  the
+  old
+  stuff
+  because
+  if
+  it's
+  contaminated
+  or
+  something
+  like
+  that,
+  it
+  can
+  screw
+  it
+  up,
+  it
+  can
+  take
+  out
+  the
+  compressor
+  and
+  then
+  I
+  won't
+  use
+  this.
+
+Customer:
+  Yeah.
+  So
+  you
+  have
+  to
+  do
+  the
+  new
+  refrigerant.
+  And
+  it's
+  the
+  refrigerant
+  that's
+  the
+  problem.
+  Right?
+  That's
+  the
+  stuff
+  that
+  they
+  said
+  no
+  more.
+
+Francisco Arreola Jr.:
+  Well,
+  the
+  refrigerant
+  and
+  the
+  refrigeration
+  components
+  that
+  are
+  compatible.
+
+Customer:
+  Right.
+  Okay.
+
+Francisco Arreola Jr.:
+  So
+  pretty
+  much
+  all
+  of
+  it.
+
+Customer:
+  So
+  we
+  would
+  need
+  probably
+  to
+  update
+  the
+  system
+  then.
+
+Francisco Arreola Jr.:
+  Most
+  likely,
+  yeah.
+
+Customer:
+  Who's
+  to
+  say
+  they
+  can't
+  do
+  that
+  again
+  though?
+  You
+  know
+  what
+  I
+  mean?
+  That's
+  the
+  part
+  that
+  kills
+  me,
+  honest.
+
+Francisco Arreola Jr.:
+  They
+  probably
+  will
+  change
+  it
+  down
+  the
+  road.
+  But
+  for
+  example,
+  this
+  refrigerant
+  that
+  your
+  system
+  runs
+  on
+  now,
+  we
+  used
+  it
+  since
+  the
+  90s,
+  so
+  about
+  30
+  years.
+  And
+  that's
+  kind
+  of
+  the
+  lifespan
+  for
+  the
+  one
+  before
+  that
+  was
+  R22
+  and
+  that
+  one
+  came
+  out
+  in
+  the
+  50s.
+
+Customer:
+  Wow.
+
+Francisco Arreola Jr.:
+  So
+  they
+  do
+  last
+  a
+  while.
+
+Customer:
+  So
+  we'd
+  be
+  catching
+  it
+  kind
+  of
+  at
+  the
+  beginning
+  of
+  a
+  new
+  one.
+  I
+  mean
+  there's
+  no
+  telling.
+  Right.
+  I
+  guess
+  the
+  big
+  thing
+  would
+  be
+  knowing
+  if
+  that
+  furnace
+  would
+  have
+  to
+  go
+  too.
+
+Francisco Arreola Jr.:
+  Yeah,
+  I'm
+  not
+  too
+  sure
+  I
+  would.
+  With
+  cases
+  like
+  this
+  where
+  the
+  system's
+  already
+  having
+  issues.
+  Order.
+  I
+  always
+  do
+  recommend
+  speaking
+  to
+  an
+  equipment
+  specialist.
+  They
+  would
+  be
+  able
+  to
+  quote
+  you
+  on
+  what
+  a
+  new
+  system
+  would
+  cost.
+  And
+  they
+  could
+  go
+  into
+  more
+  detail
+  about
+  like
+  if
+  you
+  would
+  have
+  to
+  do
+  the
+  whole
+  thing
+  or
+  just
+  kind
+  of
+  bits
+  and
+  pieces.
+  Well,
+  I
+  mean,
+  two
+  out
+  of
+  three
+  for
+  sure,
+  but.
+  But
+  yeah,
+  I'm
+  not
+  too
+  sure
+  about
+
+Customer:
+  the
+  furnace
+  because
+  you
+  know,
+  like
+  paying
+  5
+  or
+  $7,000
+  is
+  a
+  whole
+  lot
+  better
+  than
+  having
+  to
+  come
+  up
+  with
+  $15,000.
+  You
+  know,
+  that's
+  kind
+  of
+  where
+  we're
+  at.
+  We're
+  like,
+  d***,
+  it's
+  a
+  lot
+  of
+  money.
+
+Francisco Arreola Jr.:
+  I
+  do
+  know
+  with
+  compressors
+  though
+  that
+  we
+  no
+  longer
+  warranty
+  them
+  because
+  say
+  this
+  was
+  five
+  years
+  ago,
+  we
+  replaced
+  your
+  compressor
+  and
+  there's
+  an
+  issue
+  where
+  it
+  goes
+  out
+  again.
+  We
+  would
+  just
+  replace
+  it.
+  And
+  now
+  that
+  they're
+  either
+  not
+  available
+  at
+  all
+  or
+  very
+  limited,
+  we
+  can't
+
+Customer:
+  really
+  guarantee
+  that
+  even
+  the
+  new
+  compressors,
+
+Francisco Arreola Jr.:
+  the
+  new,
+  the
+  newer
+  version
+  of
+  stuff.
+  Yeah,
+  you
+  wanted
+  to
+  replace
+  yours.
+  And
+  we
+  were
+  able
+  to
+  take
+  care
+  of
+  it.
+
+Customer:
+  Oh,
+  right,
+  right,
+  right.
+
+Francisco Arreola Jr.:
+  It
+  wouldn't
+  be
+  able
+  to
+  warranty
+  because
+  if
+  they
+  go
+  without
+  two
+  or
+  three
+  years.
+
+Customer:
+  Oh,
+  yeah.
+  You
+  don't
+  have
+  to
+  replace
+  it.
+  Well,
+  that
+  makes
+  a
+  lot
+  of
+  sense.
+  So,
+  yeah,
+  maybe
+  I
+  would
+  want
+  to
+  speak
+  with
+  a
+  specialist
+  and
+  just
+  see,
+  you
+  know,
+  where
+  we'd
+  be
+  at
+  for
+  stuff.
+  Because
+  given
+  that,
+  maybe
+  it
+  is
+  more
+  interesting
+  to
+  switch
+  to
+  the
+  new
+  system.
+  But
+  if
+  we
+  have
+  to
+  replace
+  the
+  furnace
+  too,
+  I
+  mean,
+  that
+  just
+  makes
+  such
+  a
+  big
+  difference,
+  isn't
+  it?
+
+Francisco Arreola Jr.:
+  It's
+  gonna.
+  It's
+  gonna
+  be
+  a.
+  I
+  don't
+  even
+  want
+  to
+  say
+  a
+  couple.
+  It's
+  gonna
+  be
+  a
+  big
+  chunk
+  of
+  it
+  for
+  sure.
+
+Customer:
+  And
+  it
+  seems
+  to
+  be
+  working.
+  We
+  haven't
+  had
+  any
+  issues
+  with
+  it.
+  Yeah.
+
+Francisco Arreola Jr.:
+  I
+  didn't
+  see
+  any
+  issues
+  with
+  the
+  furnace
+  itself.
+  I
+  saw
+  that
+  your
+  blower
+  was
+  replaced,
+  that
+  center
+  pan
+  in
+  the
+  attic.
+  And
+  I
+  didn't
+  see
+  any
+  issues
+  with
+  the
+  air
+  handler
+  either.
+  Most
+  of
+  the
+  issues
+  are
+  be
+  with
+  the
+  outdoor
+  unit,
+  but
+  unfortunately
+  that
+  adds
+  your
+  coil.
+  But
+  yeah.
+  The
+  air
+  handler
+  and
+  furnace.
+  I've
+  not
+  really
+  seen
+  anything
+  there.
+
+Customer:
+  Okay.
+  But
+  yeah,
+  it's
+  such
+  a
+  bummer
+  to
+  like,
+  get
+  rid
+  of
+  stuff
+  that
+  works.
+
+Francisco Arreola Jr.:
+  Right.
+
+Customer:
+  You
+  know
+  what
+  I
+  mean?
+
+Francisco Arreola Jr.:
+  No,
+  definitely.
+
+Customer:
+  So
+  I
+  don't
+  know.
+  What
+  do
+  you
+  suggest
+  from
+  here?
+  Should
+  we
+  speak
+  with
+  a
+  specialist
+  an.
+  An
+  equipment
+  specialist
+  and
+  see
+  what
+  they.
+
+Francisco Arreola Jr.:
+  I
+  can
+  get
+  you
+  some
+  prices
+  for
+  the
+  smaller
+  parts
+  like
+  the
+  fan
+  motor
+  and
+  the
+  switch.
+  I
+  know
+  you're
+  for
+  both
+  of
+  those.
+  You're
+  probably
+  looking
+  at
+  about
+  1500
+  ish,
+  give
+  or
+  take.
+  But
+  because
+  your
+  system's
+  older
+  and
+  that
+  compressor
+  is
+  kind
+  of
+  showing
+  some
+  bad
+  signs,
+  I
+  would.
+  I
+  recommend
+  not
+  just
+  putting
+  1500.
+  Let's
+  fix
+  this.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  Before
+  getting
+  all
+  your
+  information.
+  Because
+  say
+  that
+  ultimately
+  what
+  you
+  want
+  to
+  do.
+
+Customer:
+  Yeah.
+  I
+  mean,
+  I
+  would
+  rather
+  just.
+  Just
+  replace
+  the
+  unit,
+  frankly.
+  Right.
+  The
+  catch
+  for
+  me
+  is
+  when
+  we
+  get
+  into
+  having
+  to
+  change
+  everything.
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  I
+  understand.
+  We
+  got
+  to
+  do
+  the
+  coils
+  and
+  upgrade
+  to
+  a
+  newer
+  unit.
+  Like,
+  I
+  could
+  wrap
+  my
+  head
+  around
+  that,
+  you
+  know.
+
+Francisco Arreola Jr.:
+  Right.
+
+Customer:
+  And
+  I
+  think
+  financially
+  feasible
+  as
+  well.
+  It's
+  when
+  we
+  start
+  getting
+  into
+  like,
+  the
+  whole
+  thing.
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  Then
+  it's
+  like
+  crap,
+  you
+  know,
+  that
+  we
+  don't
+  have
+  that.
+  That's
+  this.
+  But
+  I
+  don't
+  want
+  to
+  put
+  a
+  bunch
+  of
+  money
+  into
+  fixing
+  it
+  and
+  then
+  have
+  it
+  die.
+
+Francisco Arreola Jr.:
+  Right.
+  Yeah.
+
+Customer:
+  And
+  it
+  could
+  definitely.
+  So
+  what
+  about
+  putting
+  a
+  new,
+  like,
+  Kickstarter
+  on
+  it?
+
+Francisco Arreola Jr.:
+  I
+  mean,
+  that
+  would
+  help
+  in
+  the
+  intermediate.
+  But
+  again,
+  it
+  is
+  like
+  a
+  Crush.
+  The
+  damage
+  is
+  already
+  done
+  to
+  the
+  compressor,
+  so
+  it's
+  not
+  going
+  to
+  cure
+  it.
+  That's
+  why
+  I
+  compare
+  it
+  to
+  a
+  crutch.
+  It'll
+  help
+  it
+  kind
+  of,
+  you
+  know,
+  limp
+  along.
+  Can't
+  say
+  for
+  how
+  long
+  or
+  anything
+  like
+  that.
+  That's
+  a
+  problem.
+
+Customer:
+  Yeah,
+  that's
+  the
+  thing.
+  If
+  we
+  could
+  even
+  just
+  get
+  through
+  this
+  summer,
+  I
+  think
+  it
+  would
+  be
+  a
+  whole
+  different
+  story
+  for
+  us,
+  you
+  know,
+  because
+  obviously
+  we're
+  not
+  going
+  to
+  use
+  the
+  system
+  really
+  in
+  the
+  winter,
+  so
+  that
+  would
+  actually
+  put
+  us
+  through
+  the
+  next
+  spring,
+  and
+  then,
+  you
+  know,
+  we
+  would
+  have
+  more
+  money
+  at
+  that
+  point.
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  But
+  if
+  we
+  were
+  able
+  to
+  just
+  swap
+  out
+  the
+  unit
+  and
+  the
+  coil,
+  then
+  maybe
+  we
+  could
+  do
+  it
+  now,
+  you
+  know.
+
+Francisco Arreola Jr.:
+  Well,
+  I
+  mean,
+  I
+  can
+  call
+  the
+  office
+  and
+  if
+  you
+  wanted
+  to
+  get
+  an
+  appointment
+  set
+  up
+  to
+  have
+  them
+  come
+  out,
+  they'll
+  sit
+  down
+  with
+  you
+  and
+  kind
+  of
+  go
+  over
+  everything,
+  all
+  your
+  possibilities
+  at
+  what
+  exactly
+  we
+  could
+  do
+  and
+  then
+  get
+  you,
+  like,
+  some
+  exact
+  numbers
+  as
+  to,
+  like,
+  what
+  that
+  would
+  like.
+
+Customer:
+  Okay.
+  It's
+  probably
+  a
+  good
+  idea
+  to
+  do
+  that.
+  Okay.
+
+Francisco Arreola Jr.:
+  When
+  would
+  you
+  be
+  available
+  in
+  your.
+
+Customer:
+  When
+  you
+  let
+  me
+  think
+  here.
+  So
+  how
+  long
+  would
+  it
+  be,
+  how
+  long
+  an
+  appointment
+  would
+  be?
+
+Francisco Arreola Jr.:
+  I
+  think
+  it's
+  normally
+  about
+  an
+  hour
+  to
+  hour
+  and
+  a
+  half.
+
+Customer:
+  An
+  hour
+  and
+  a
+  half
+  of
+  meeting
+  with
+  them
+  or
+  an
+  hour
+  and
+  a
+  half
+  of,
+  like,
+  them
+  looking
+  around
+  and
+  then
+  we
+  sit
+  down.
+
+Francisco Arreola Jr.:
+  Not
+  really
+  them
+  looking
+  around
+  because
+  they'll
+  go
+  off
+  my
+  report.
+
+Customer:
+  Oh,
+  I
+  got
+  you.
+
+Francisco Arreola Jr.:
+  They
+  will
+  look
+  at
+  the
+  space
+  just
+  to
+  see
+  if
+  the
+  new
+  opening
+  would
+  fit.
+  Your
+  attic
+  actually
+  isn't
+  that
+  bad
+  as
+  far
+  as,
+  like,
+  working
+  in
+  it.
+  It's
+  not
+  fun.
+  No.
+  But
+  it's
+  definitely,
+  like,
+  doable.
+
+Customer:
+  Right.
+  Would
+  be
+  better
+  if
+  you
+  didn't
+  have
+  to
+  do
+  it
+  when
+  it's
+  115
+  degrees.
+
+Francisco Arreola Jr.:
+  That
+  definitely
+  makes
+  a
+  difference.
+  But
+  just
+  because
+  new
+  equipment's
+  bigger
+  or
+  smaller,
+  depending
+  on
+  like,
+  just
+  the
+  make
+  and
+  stuff.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  Kind
+  of
+  like
+  ours.
+  They're
+  all
+  not
+  all
+  the
+  same.
+  Yeah.
+  So
+  they
+  would
+  look
+  in
+  terms
+  of
+  that
+  more
+  so
+  just
+  the
+  attic
+  space,
+  but.
+  And
+  then
+  just
+  sitting
+  down
+  with
+  you
+  and
+  I
+  mean,
+  honestly,
+  you
+  kind
+  of
+  really
+  dictate
+  how
+  that
+  goes.
+  Whatever
+  questions
+  you
+  have.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  Because
+  they'll
+  just
+  give
+  you,
+  like,
+  whatever
+  options
+  are
+  available.
+
+Customer:
+  Yeah.
+  Yeah.
+  I
+  mean,
+  I
+  know
+  next
+  Monday
+  or
+  Tuesday,
+  both
+  my
+  husband
+  and
+  I
+  are
+  around,
+  like
+  in
+  around
+  this
+  time,
+  you
+  know,
+  or
+  earlier,
+  like,
+  you
+  know,
+  four.
+  Ish.
+
+Francisco Arreola Jr.:
+  Yeah.
+  I
+  think
+  I
+  saw
+  today
+  you
+  preferred
+  like
+  an
+  after
+  four.
+
+Customer:
+  Yeah.
+  Because
+  we
+  pick
+  them
+  up.
+  The
+  thing
+  is,
+  I'm
+  Starting
+  a
+  new
+  job
+  and
+  I
+  work.
+  I
+  don't,
+  I
+  don't
+  know
+  what
+  time
+  I'm
+  gonna
+  finish
+  though.
+  I
+  might
+  finish
+  earlier,
+  you
+  know,
+  but
+  I'll
+  be
+  on
+  the
+  computer
+  and
+  I
+  don't
+  know
+  if
+  it'd
+  really
+  be
+  appropriate
+  for
+  me
+  to
+  step
+  away
+  and
+  have
+  an
+  hour
+  meeting
+  where
+  I'm
+  supposed
+  to
+  be
+  on
+  my
+  computer.
+  But
+  I
+  would
+  assume
+  that
+  I
+  will
+  be
+  done
+  by
+  like
+  4:00
+  clock
+  and
+
+Francisco Arreola Jr.:
+  see
+  if
+  we
+  have
+  anything
+  available
+  for
+  next
+  Mondays.
+  That'll
+  be
+  a
+  good
+  time.
+
+Customer:
+  Yeah.
+  Monday
+  or,
+  or
+  Tuesday?
+
+Francisco Arreola Jr.:
+  Monday
+  or
+  Tuesday
+  after.
+  After
+  four?
+
+Customer:
+  Yeah,
+  I
+  think
+  so.
+
+Francisco Arreola Jr.:
+  Next
+  Monday
+  would
+  be
+  the
+  sixth.
+
+Customer:
+  Sixth
+  or
+  the
+  seventh.
+  Yeah.
+
+Francisco Arreola Jr.:
+  Okay.
+  Let
+  me
+  step
+  out
+  and
+  just
+  call
+  office.
+
+Customer:
+  Sure.
+  Yeah.
+  I
+  mean
+  we
+  could
+  always
+  set
+  it
+  up.
+  It
+  doesn't
+  have
+  to
+  be
+  right
+  now.
+  I
+  can
+  run
+  it
+  by
+  him
+  too
+  and
+  see.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  You
+  know,
+  it
+  would
+  be
+  good.
+  That's
+  just
+  where
+  my,
+  my
+  head
+  is
+  going.
+  I'm
+  like,
+  yeah,
+  Monday,
+  Tuesday.
+
+Francisco Arreola Jr.:
+  Right.
+
+Customer:
+  He's
+  off.
+  I'll
+  be
+  around.
+  So.
+
+Francisco Arreola Jr.:
+  Okay,
+  perfect.
+  Let
+  me
+  step
+  out
+  just
+  like
+  10
+  minutes
+  or
+  so.
+
+Customer:
+  It's.
+  Okay.
+
+Francisco Arreola Jr.:
+  I'm
+  just
+  going
+  to
+  give
+  them
+  a
+  call
+  and
+  they
+  just
+  want
+  to
+  verify
+  with
+  you.
+
+Customer:
+  Yeah,
+
+Francisco Arreola Jr.:
+  Perfect.
+  So
+  I'll
+  get
+  that.
+  I'll
+  call
+  the
+  office
+  and
+  let
+  them
+  know
+  we
+  have
+  that
+  open
+  up.
+  Other
+  than
+  that
+  system's
+  running,
+  but
+  definitely
+  some
+  concerns.
+  I
+  over
+  to.
+  We
+  do.
+
+Customer:
+  How
+  much
+  does
+  like
+  one
+  of
+  those
+  Kickstarter
+  things
+  cost?
+  If
+  we
+  wanted
+  to
+  just
+  do
+  that?
+
+Francisco Arreola Jr.:
+  That
+  costs
+  about
+  700.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  It's
+  like
+  I
+  have
+  if
+  we
+  could
+
+Customer:
+  even
+  just
+  patch
+  it
+  like
+  for
+  the
+  summer.
+  Yeah,
+  but
+  I
+  don't
+  want
+  to
+  put
+  thousands
+  in
+  either.
+  Like
+  if
+  it
+  was
+  under
+  a
+  thousand
+  and
+  I
+  could
+  do
+  it
+  and
+  then
+  get
+  through
+  the
+  summer,
+  that'd
+  be
+  fine,
+  you
+  know,
+  but
+  there's
+  also
+  no
+  guarantee.
+
+Francisco Arreola Jr.:
+  Yeah,
+  I
+  mean
+  worst
+  case,
+  we
+  can
+  always
+  come
+  back
+  to
+  that.
+  But
+  that's
+  why
+  I
+  always
+  recommend
+  at
+  least
+  meeting
+  with
+  them
+  to
+  at
+  least
+  see
+  what
+  it
+  would
+  look
+  like.
+
+Customer:
+  Yeah,
+  I'd
+  like
+  to
+  hear
+  what
+  they
+  have
+  to
+  say.
+  Especially
+  if
+  there's
+  some
+  way
+  to
+  salvage
+  the
+  furnace.
+
+Francisco Arreola Jr.:
+  Right.
+  Yeah,
+  they'll
+  definitely
+  be
+  able
+  to
+  go
+  over
+  all
+  that.
+  All
+  those.
+  With
+  you.
+  And
+  then
+  again,
+  worst
+  case
+  scenario.
+  Yeah,
+  we
+  do
+  maybe
+  put
+  a
+  little
+  bit
+  of
+  money
+  into
+  it
+  to
+  try
+  to
+  just
+  limp
+  it
+  along.
+
+Customer:
+  Yeah,
+  yeah.
+  Cuz
+  sometimes
+  things
+  can
+  last
+  too,
+  like
+  surprisingly.
+  And
+  then
+  other,
+  other
+  times
+  they
+  just
+  die.
+
+Francisco Arreola Jr.:
+  So.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  Looks
+  like
+  I
+  have
+  two
+  emails
+  on
+  here.
+
+Customer:
+  You
+  can
+  use
+  mine,
+  that
+  is
+  my
+  husband's
+  email,
+  which
+  is
+  also
+  fine.
+  But
+  you
+  can,
+  you
+  can
+  use
+  mine.
+
+Francisco Arreola Jr.:
+  Okay,
+  perfect.
+
+Customer:
+  I'm
+  the
+  one
+  talking
+  to
+  you.
+  He'll
+  see
+  it
+  popping.
+  He'll.
+  He'll
+  be
+  like,
+  what'd
+  you
+  do?
+  So
+  I'll
+  tell
+  him
+  first.
+
+Francisco Arreola Jr.:
+  Okay,
+  no
+  worries.
+  Well,
+  we'll
+  get
+  you
+  set
+  up
+  for
+  Monday
+  4
+  and
+  6.
+  They'll
+  give
+  you
+  a
+  call
+  before.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  But
+  other
+  than
+  that,
+  I
+  don't
+  know
+  why
+  I
+  keep
+  putting
+  that
+  away.
+
+Customer:
+  Thanks
+  for
+  coming
+  out
+  and
+  looking
+  at
+  it.
+  No,
+  of
+  course
+  took
+  the
+  time
+  to
+  look
+  at
+  it.
+  I
+  appreciate
+  that.
+
+Francisco Arreola Jr.:
+  And
+  today's
+  no
+  charge
+  to
+  you,
+  and
+  that's
+  also
+  a
+  free
+  consultation
+  as
+  well,
+  so
+  you
+  don't
+  have
+  to
+  worry
+  about
+  that.
+  I'm
+  just
+  signed
+  down
+  at
+  the
+  box
+  and
+  if
+  you
+  hit
+  accept
+  top
+  right,
+  there'll
+  be
+  one
+  more
+  for
+  you.
+  Do
+  you
+  have
+  any
+  questions
+  for
+  me
+  before
+  I
+  go?
+
+Customer:
+  No,
+  no,
+  it's
+  good.
+  I
+  appreciate
+  it.
+
+Francisco Arreola Jr.:
+  I
+  did
+  lock
+  up
+  the
+  breaker.
+  I
+  gave
+  you
+  the
+  keys
+  back,
+  right?
+
+Customer:
+  Yes,
+  you
+  did.
+
+Francisco Arreola Jr.:
+  Grab
+  my.
+  My
+  tool
+  in
+  my.
+
+Customer:
+  Turn
+  the
+  light
+  on
+  for
+  that.
