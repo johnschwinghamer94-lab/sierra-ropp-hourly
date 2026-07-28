@@ -404,6 +404,7 @@ def _entity_tgls_today(today):
     # Candidates are leads created in the prior ~4 days whose source call has an
     # appointment TODAY and had none on the day the lead was created (a same-day
     # lead is already counted above — dedupe by source-call job id).
+    _src_ran_days = {}   # source job id -> set of appointment dates (for the ran-today check below)
     _seen_srcs = {L["src"] for L in leads}
     for lj in paged("/jpm/v2/tenant/{tenant}/jobs",
                     {"createdOnOrAfter": day0_minus4, "createdBefore": day0}):
@@ -429,6 +430,7 @@ def _entity_tgls_today(today):
             ad = _parse_dt(a.get("start"))
             if ad:
                 _days.add(ad.date())
+        _src_ran_days[src] = _days
         cdt = _parse_dt(lj.get("createdOn"))
         is_flip_today = (today_date in _days) and not (cdt and cdt.date() in _days)
         if not is_flip_today:
@@ -471,10 +473,27 @@ def _entity_tgls_today(today):
         by_tech[name] = by_tech.get(name, 0) + 1
         # Guard: skip TGLs with no resolvable source-call id -- never add a phantom call.
         src = L.get("src")
-        if src is not None:
-            src = str(src)
-            src_all.add(src)
-            src_by_tech.setdefault(name, set()).add(src)
+        if src is None:
+            continue
+        # John's rule (2026-07-28): a follow-up flip on a call that RAN a previous
+        # day adds the TGL only — the source call already counted as "ran" on the
+        # day it actually ran, so it must NOT join today's calls. Only sources
+        # with an appointment today go into the ran-today union. Fails open
+        # (counts the call) if the appointment lookup errors.
+        days = _src_ran_days.get(L["src"])
+        if days is None:
+            try:
+                r = st.api_get("/jpm/v2/tenant/{tenant}/appointments",
+                               {"jobId": L["src"], "pageSize": 50})
+                days = {ad.date() for ad in (_parse_dt(a.get("start")) for a in r.get("data", [])) if ad}
+            except Exception:
+                days = {today_date}
+            _src_ran_days[L["src"]] = days
+        if today_date not in days:
+            continue
+        src = str(src)
+        src_all.add(src)
+        src_by_tech.setdefault(name, set()).add(src)
     return len(leads), by_tech, src_all, src_by_tech
 
 
