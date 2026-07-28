@@ -526,5 +526,49 @@
         "plan": "coaching/plans/2026-07-20/Robert_Silinzy.html"
       }
     ]
-  }
+  },
+  "weekly": [
+    {
+      "week": "2026-07-26",
+      "label": "Jul 20–26 2026",
+      "index": "coaching/weekly/2026-07-26/_index.html",
+      "crossrep": "coaching/weekly/2026-07-26/crossrep.html",
+      "reps": {
+        "Andrew Alonso": "coaching/weekly/2026-07-26/Andrew_Alonso.html",
+        "Andrew Trujillo": "coaching/weekly/2026-07-26/Andrew_Trujillo.html",
+        "Benjamin Wyllie": "coaching/weekly/2026-07-26/Benjamin_Wyllie.html",
+        "Brandon Moreno": "coaching/weekly/2026-07-26/Brandon_Moreno.html",
+        "Cole Pantol": "coaching/weekly/2026-07-26/Cole_Pantol.html",
+        "Francisco Valencia": "coaching/weekly/2026-07-26/Francisco_Valencia.html",
+        "Joe Mendoza": "coaching/weekly/2026-07-26/Joe_Mendoza.html",
+        "Juan Tlatenchi": "coaching/weekly/2026-07-26/Juan_Tlatenchi.html",
+        "Mario Castro": "coaching/weekly/2026-07-26/Mario_Castro.html",
+        "Nathan Colquitt": "coaching/weekly/2026-07-26/Nathan_Colquitt.html",
+        "Nikko April": "coaching/weekly/2026-07-26/Nikko_April.html",
+        "Noah Weng": "coaching/weekly/2026-07-26/Noah_Weng.html",
+        "Robert Silinzy": "coaching/weekly/2026-07-26/Robert_Silinzy.html"
+      }
+    },
+    {
+      "week": "2026-07-05",
+      "label": "Jun 29–Jul 5 2026",
+      "index": "coaching/weekly/2026-07-05/_index.html",
+      "crossrep": "coaching/weekly/2026-07-05/crossrep.html",
+      "reps": {
+        "Andrew Trujillo": "coaching/weekly/2026-07-05/Andrew_Trujillo.html",
+        "Benjamin Wyllie": "coaching/weekly/2026-07-05/Benjamin_Wyllie.html",
+        "Brandon Moreno": "coaching/weekly/2026-07-05/Brandon_Moreno.html",
+        "Cole Pantol": "coaching/weekly/2026-07-05/Cole_Pantol.html",
+        "Dustin Romine": "coaching/weekly/2026-07-05/Dustin_Romine.html",
+        "Francisco Valencia": "coaching/weekly/2026-07-05/Francisco_Valencia.html",
+        "Joe Mendoza": "coaching/weekly/2026-07-05/Joe_Mendoza.html",
+        "Juan Tlatenchi": "coaching/weekly/2026-07-05/Juan_Tlatenchi.html",
+        "Mario Castro": "coaching/weekly/2026-07-05/Mario_Castro.html",
+        "Nathan Colquitt": "coaching/weekly/2026-07-05/Nathan_Colquitt.html",
+        "Nikko April": "coaching/weekly/2026-07-05/Nikko_April.html",
+        "Noah Weng": "coaching/weekly/2026-07-05/Noah_Weng.html",
+        "Robert Silinzy": "coaching/weekly/2026-07-05/Robert_Silinzy.html"
+      }
+    }
+  ]
 }
