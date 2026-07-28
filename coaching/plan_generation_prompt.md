@@ -140,6 +140,11 @@ Rules:
 - `headlineGap` and each `focus` entry must contain NO customer names and NO transcript quotes (quotes stay inside the HTML plans, not in coaching.json).
 - `plan` is the dashboard-relative path where the relay workflow publishes the HTML: `coaching/plans/<TARGET>/<Rep_Name with underscores>.html` (matches the filename saved in Step 5).
 - `dates` lists the dated folders under `plans/` newest-first, max 14 entries, so the dashboard can link to recent history.
+- PRESERVE FOREIGN KEYS (locked, 2026-07-28): if the existing coaching.json contains
+  `weekly` and/or `monthly` arrays (maintained by the weekly/monthly rollup jobs),
+  carry them over UNCHANGED into the new coaching.json. The daily rebuild must never
+  drop or modify them — earlier daily runs wiped the WEEKLY/MONTHLY dashboard views
+  by regenerating the file without these keys.
 - `history` is built MECHANICALLY from the filesystem, not from analysis: for EVERY dated folder under `plans/` (all of them, not just the last 14), list each `*.html` file except `_index.html`; the rep name is the filename with underscores converted to spaces and `.html` dropped; group entries per rep, newest date first. This powers the dashboard's click-a-name → all-their-plans view, so it must include every plan file that exists on disk.
 
 ## Step 7 — Report
