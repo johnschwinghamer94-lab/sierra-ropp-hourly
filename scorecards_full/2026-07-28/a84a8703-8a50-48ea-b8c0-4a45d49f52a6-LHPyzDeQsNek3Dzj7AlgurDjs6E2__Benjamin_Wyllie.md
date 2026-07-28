@@ -1,0 +1,1 @@
+**SKIP**: Routine maintenance-only call, not a genuine sales interaction. Customer explicitly stated "It's not having any problems, just regular maintenance." No sales opportunity or conversion to assess. (Transcript also cuts off mid-inspection.)
