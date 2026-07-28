@@ -80,7 +80,7 @@ except Exception:
     ROSTER = ["Alex - Oleksiy Yakovchuk", "Noah Weng", "Joe Mendoza", "Benjamin Wyllie",
               "Nikko April", "Andrew Trujillo", "Juan Tlatenchi", "David Canales",
               "Brandon Moreno", "Francisco Valencia", "Mario Castro", "Cole Pantol",
-              "Nathan Colquitt", "Robert Silinzy", "Andrew Alonso"]
+              "Nathan Colquitt", "Robert Silinzy", "Andrew Alonso", "Bradley Espinoza"]
 
 # ── Siro "not recording" check (John, 2026-07-25) ────────────────────────────
 # Per-cycle query of active Siro recordings, so Working-status Live Feed cards
