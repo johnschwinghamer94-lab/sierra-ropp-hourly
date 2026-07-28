@@ -1,1 +1,1 @@
-Near-empty transcript (insufficient content to score)
+Near-empty transcript (only 2 words of content), not a genuine customer interaction

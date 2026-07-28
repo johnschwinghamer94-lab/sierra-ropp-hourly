@@ -1,27 +1,28 @@
-# Scorecard: Cole Pantol
+# Coaching Card: Cole Pantol
 
-**Job:** 669046709
 **Date:** 2026-07-27
+**RecId:** 07c8ecac-4479-4d8c-bf2a-19ff88b17bf9-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
+**Job Number:** 669046709
 **Duration:** 22 min
 
 ## FSG Bands
 
-- **Welcome:** Weak
-- **Assessment:** Moderate
-- **Decision:** Weak
-- **Deliver:** Weak
+- **Welcome:** Solid
+- **Assessment:** Solid
+- **Decision:** Strong
+- **Deliver:** Moderate
 
 ## Critical Actions
 
-- Set Expectations: ✓
-- Asked Questions: ✗
-- Created Options: ✗
-- Handled Objections: ✗
+- **Expectations:** True
+- **Questions:** True
+- **Options:** False
+- **Objections:** False
 
 ## Outcome
 
-NO-CLOSE
+UNKNOWN
 
 ## Coaching Tip
 
-FIX — ask clarifying questions about system history and maintenance before assessing
+FIX — During assessment, Cole could have asked deeper discovery questions about the unit's maintenance history and the customer's comfort priorities before jumping to expectations, which would have given him better foundation for presenting options in the decision phase.

@@ -1,39 +1,28 @@
-# Scorecard: Nikko April (2026-07-27)
+# Coaching Card: Nikko April
 
-**Call Duration:** 18 min  
-**Job:** 669028877  
-**Outcome:** no-close
+**Date:** 2026-07-27
+**RecId:** 69cc5462-a617-42fc-ac02-01a63ab686a6-92hu453CMjMS3az2iJV9GyPLhsX2
+**Job Number:** 669028877
+**Duration:** 18 min
 
-## Bands
+## FSG Bands
 
-**Welcome: Strong**
-- Warm, professional greeting
-- Built rapport quickly with customer
-
-**Assessment: Strong**
-- Thorough diagnostic questioning
-- Identified root cause (sun exposure, inadequate shade)
-- Confirmed customer needs and preferences
-
-**Decision: Solid**
-- Presented solution clearly (sun shade option)
-- Customer understood recommendation
-- But did NOT secure firm commitment to proceed
-
-**Deliver: Solid**
-- Explained findings in customer-friendly terms
-- Educated on root cause and solution
-- Provided technical context
+- **Welcome:** Solid
+- **Assessment:** Strong
+- **Decision:** Moderate
+- **Deliver:** Solid
 
 ## Critical Actions
 
-✓ **Expectations:** Set clearly at start  
-✓ **Questions:** Strong diagnostic line of questioning  
-✓ **Options:** Presented sun shade solution  
-✓ **Objections:** Addressed concerns about recommendation
+- **Expectations:** True
+- **Questions:** True
+- **Options:** False
+- **Objections:** True
 
-## Coaching
+## Outcome
 
-**Gap:** Strong assessment identified the solution (sun shade), but call ends with tech saying "I'll document the findings" without scheduling next step. Missing close: "Should I have our shade specialist contact you this week, or would you like to discuss budget first?" The recommendation is solid; the follow-up commitment is the miss.
+NO-CLOSE
 
-**Strengths:** Excellent problem-solving, customer rapport, clear communication of technical findings.
+## Coaching Tip
+
+FIX — When customer said they need a full diagnostic of what's going on with the system, that was the moment to offer Option C: 'Let me get our service advisor involved to make sure we document everything and get you a complete recommendation on what needs attention.' Instead, you handed it back to them for approval, which shifts the buying decision onto them.

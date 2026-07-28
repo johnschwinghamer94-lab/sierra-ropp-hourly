@@ -1,19 +1,28 @@
-# Scorecard: Francisco Valencia - Markel Job #669125646
+# Coaching Card: Francisco Valencia
 
-## Bands
-- **Welcome**: Strong — Built immediate rapport with personal warmth ("I like your cute chair"), shared family stories to connect, immediately set friendly tone
-- **Assessment**: Solid — Quickly identified air leakage from return duct by showing the customer the problem ("see all this air?"), but limited discovery questions upfront before diagnosis
-- **Decision**: Solid — Proposed metal tape solution, customer agreed readily, no objections to handle. Explained potential escalation to mastic if needed. Limited options presented but appropriate for scope
-- **Deliver**: Strong — Fixed issue efficiently, demonstrated improvement to customer ("lot better than what it was"), explained benefit (air efficiency), customer expressed satisfaction
+**Date:** 2026-07-27
+**RecId:** 240c1bd1-f091-4876-a97b-9d79610a0d6b-b6xhRGsYH8eMOzcoHjFcmJrxoqp1
+**Job Number:** 669125646
+**Duration:** 19 min
+
+## FSG Bands
+
+- **Welcome:** Moderate
+- **Assessment:** Solid
+- **Decision:** Moderate
+- **Deliver:** Solid
 
 ## Critical Actions
-- **expectations**: true — Clarified this was warranty return work, manager already approved no-charge revisit
-- **questions**: false — Jumped to diagnosis quickly without asking initial discovery questions about comfort or other concerns
-- **options**: false — Single solution presented (metal tape), no alternatives discussed
-- **objections**: true — Customer cooperative throughout, no objections encountered
+
+- **Expectations:** False
+- **Questions:** True
+- **Options:** True
+- **Objections:** True
 
 ## Outcome
-no-close (warranty return visit, no new TGL created)
 
-## Gaps & Coaching
-This was efficient warranty work executed well. However, Francisco missed an opportunity during the zone/thermostat discussion. When customer mentioned "there's a bedroom there, but there's no control thermostat," Francisco didn't explore this further — e.g., asking about comfort in that space or discussing potential zone control upgrades. Even on warranty visits, discovering unmet needs can lead to follow-up sales.
+NO-CLOSE
+
+## Coaching Tip
+
+FIX — Ask for the 5-star review after confirming the fix works and air now flows properly to all rooms instead of leaking out at the unit.
