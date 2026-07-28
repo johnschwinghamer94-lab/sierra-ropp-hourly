@@ -1,0 +1,212 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Andrew Alonso &mdash; SILO Coaching Plan 2026-07-27</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;&middot;&nbsp;SILO</b><span class="tag">Daily Coaching Plan &middot; 2026-07-27</span></div>
+<div class="wrap">
+<div class="hero"><div class="ey">Daily Coaching Plan &middot; 2026-07-27 &middot; 2 gradeable calls &middot; 1 flip</div><h1 class="disp">Andrew Alonso</h1><p class="lede">He walked into a house where a pregnant woman had been to the emergency room twice because of the heat, and he did the two hardest things right: he stopped to get the deed-holder on the phone before he said a word about the system, and he left with a comfort advisor booked for one o'clock the next afternoon. On the shorter call the same day he built the same case and then let it end without asking for anything.</p></div>
+<div class="glance">
+<div class="g"><div class="k">Close Rate</div><div class="v grn">50%<small>1 of 2 flipped or closed</small></div></div>
+<div class="g"><div class="k">Calls Reviewed</div><div class="v">2 of 2<small><q>MORALES</q> flipped · one 14-min evaluation, no job number</small></div></div>
+<div class="g"><div class="k">Strongest</div><div class="v grn">Welcome<small>Empathy — Strong</small></div></div>
+<div class="g"><div class="k">Weakest</div><div class="v red">Decision<small>options never built on the short call</small></div></div>
+</div>
+<div class="legend"><span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span><span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span></div>
+<p class="note">Scored on strength bands, never numbers &mdash; the only figure anywhere is the close rate. Every band is anchored to something the rep actually said on tape. Non-customer segments (manager calls, peer chatter, personal conversation) are excluded from grading. ServiceTitan lead truth for 2026-07-27 and 2026-07-28 had not been generated when this ran, so flips are confirmed from the 2026-07-26 truth file where the job appears there and from explicit in-call Option&nbsp;C or advisor-appointment agreement otherwise.</p>
+
+<section><div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive">
+<div class="dh"><div class="k">Why the day split</div><h3>He closes when he asks. He asks about half the time.</h3></div>
+<div class="split"><div class="c said"><div class="lbl">What actually happened</div><p>On MORALES he ran the whole play — authorization, discovery, teaching, then a signed no-cost specialist ticket with a two-hour arrival window. On the 14-minute evaluation he explained what he found, said he would <q>get this together for the Comfort Advisor</q>, and stopped there.</p></div><div class="c should"><div class="lbl">What it means</div><p>Same tech, same skill, two different endings. The difference is a single sentence: naming a day and a time and waiting for the customer to answer. <b>Every call that reaches a finding gets an appointment attempt</b>, not just the long ones.</p></div></div>
+</div></section>
+
+<section><div class="sh"><div class="no">2</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div>
+<div class="rub">
+<div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+<div class="row"><div class="rb">Empathy</div><div><span class="b strong">Strong</span></div><div class="ev">Customer: <q>I literally went to the hospital yesterday because of how hot it was in the house.</q> Andrew: <q>No, I'm genuinely sorry… I will 1,000% get you guys a solution. That way we're not dealing with this no more.</q></div></div>
+<div class="row"><div class="rb">Expertise</div><div><span class="b strong">Strong</span></div><div class="ev">Stopped the whole visit to verify authority — <q>I can only discuss issues with whoever the homeowner is</q> — then got the deed-holder on a recorded line for verbal permission before disclosing anything.</div></div>
+<div class="row"><div class="rb">Setting expectations</div><div><span class="b strong">Strong</span></div><div class="ev">Told them plainly the call was recorded and why, and later set the follow-up frame: <q>he's gonna have the photos of all of this, that way he's on the same page as you guys and me.</q></div></div>
+<div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+<div class="row"><div class="rb">Required questions</div><div><span class="b strong">Strong</span></div><div class="ev">Hot spots, how long it has been going on, prior repairs, who pays the bill, power-bill range, and the goal question — <q>what are you guys looking to get out of the systems themselves? Reliability… are you guys looking for like efficiency with those crazy high power bills?</q></div></div>
+<div class="row"><div class="rb">Check-ins</div><div><span class="b strong">Strong</span></div><div class="ev">Asked for questions three separate times at the close: <q>do you guys got any questions? Like, I know it was a lot of info.</q></div></div>
+<div class="row"><div class="rb">How to check in</div><div><span class="b strong">Strong</span></div><div class="ev"><q>I just want to make you feel, you know, open. Einstein said the only wrong question is the one not asked.</q> Invitation, not interrogation.</div></div>
+<div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b wins">Strong on wins</span></span></div>
+<div class="row"><div class="rb">Building options</div><div><span class="b wins">Strong on wins</span></div><div class="ev">On MORALES he built the repair costs and routed the replacement conversation to the specialist. On the short evaluation the card records no options presented at all.</div></div>
+<div class="row"><div class="rb">Reconnecting</div><div><span class="b strong">Strong</span></div><div class="ev">Tied the specialist visit straight back to the reason they called — the family could not keep the house cool — and handled the filter question the same way: <q>Talk to the CA tomorrow when he gets here about what he can do about that.</q></div></div>
+<div class="row"><div class="rb">Explaining options</div><div><span class="b strong">Strong</span></div><div class="ev"><q>you're not signing for any numbers. I circled just the update quote</q> — no ambiguity about what a signature meant.</div></div>
+<div class="row"><div class="rb">Overcoming objections</div><div><span class="b strong">Strong</span></div><div class="ev">Money pressure was in the room all day. He removed a barrier instead of arguing: <q>they wanted me to charge you guys $39 for the diagnostic. I'm not about to charge you that… because I know you guys got enough going on.</q></div></div>
+<div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+<div class="row"><div class="rb">Be a nerd</div><div><span class="b strong">Strong</span></div><div class="ev">MERV ratings translated for a homeowner — <q>The higher the MERV rating, the more restrictive it is… Go for a Merv 11. It's just at that fine line where it's gonna catch it, but it's like gonna just let it go through</q> — plus the 200-square-inch-per-ton airflow math and a heat-load probe on the added return.</div></div>
+<div class="row"><div class="rb">5-star review</div><div><span class="b solid">Solid</span></div><div class="ev">Asked for referrals by name rather than a review: <q>if you refer people to my name and then they can call the office… Feel free to have anybody request me.</q></div></div>
+<div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b wins">Strong on wins</span></span></div>
+<div class="row"><div class="rb">Make the time valuable</div><div><span class="b strong">Strong</span></div><div class="ev">They understood their own house better at the end — which filter to buy, why the extra return was hurting them, what the specialist was coming to do.</div></div>
+<div class="row"><div class="rb">Help them decide</div><div><span class="b wins">Strong on wins</span></div><div class="ev">On MORALES he set them up to decide with the advisor and pre-loaded the questions. On the short call the decision was left entirely open.</div></div>
+</div>
+<div class="sh" style="margin-top:26px"><div class="no">3</div><h2>Critical Actions &mdash; pass rate</h2></div>
+<div class="rub">
+<div class="row"><div class="rb">Setting clear expectations</div><div><span class="b pass">Pass</span></div><div class="ev">Authorization, recording notice, and the next-day arrival window all stated out loud.</div></div>
+<div class="row"><div class="rb">Asking good questions</div><div><span class="b pass">Pass</span></div><div class="ev">Hot spots, history, prior repairs, bills, and the goal question on both calls.</div></div>
+<div class="row"><div class="rb">Creating good options</div><div><span class="b fail">Fail</span></div><div class="ev">On the 14-minute evaluation no options were presented and no appointment was requested — automatic fail on that call.</div></div>
+<div class="row"><div class="rb">Handling objections</div><div><span class="b pass">Pass</span></div><div class="ev">Met the cost pressure by waiving the diagnostic fee rather than defending it.</div></div>
+</div>
+<p class="note">A missed Critical Action is an automatic fail on that call regardless of bands. The flags above are day-level: a single failed call fails the action for the day.</p>
+</section>
+
+<section><div class="sh"><div class="no">4</div><h2>What went right &mdash; real strength, build on it</h2></div>
+<ul class="str">
+<li><b>He protected the customer and the company at once.</b> Refusing to discuss the system until the deed-holder authorized it, on a recorded line, is the kind of discipline that never shows up on a scoreboard and always shows up when something goes wrong.</li>
+<li><b>Empathy that led somewhere.</b> <q>No, I'm genuinely sorry</q> was followed immediately by <q>I will 1,000% get you guys a solution</q> — sympathy converted into a promise, then into a booked appointment.</li>
+<li><b>He handed the advisor a warm room.</b> <q>if you guys got questions, just because you're gonna be in your brains at higher state of mind… write them down, call me up. I got the answers before he gets here.</q> That is what a real handoff sounds like.</li>
+<li><b>Teaching that saves the customer money.</b> The MERV-11 recommendation and the extra-return problem both cost the customer nothing and buy years of trust.</li>
+</ul></section>
+
+<section><div class="sh"><div class="no">5</div><h2>The three gaps</h2><span class="hint">each one anchored to a real moment on tape</span></div>
+<div class="mom"><div class="top2"><span class="b weak">Weak</span><h4>Gap 1 &mdash; The short evaluation ended without an ask</h4></div>
+<div class="q"><b>Card evidence</b>Set the process — <q>I'll get this together for the Comfort Advisor</q> — then the call ended. No options, no appointment, no time named.</div>
+<div class="q"><b>What was available</b>The findings were already in hand. Everything needed for the ask was done.</div>
+<p class="fixline"><b>The fix</b> Finish every evaluation the same way you finished MORALES: "I want our comfort advisor out here with your options. He's got a one-to-three tomorrow — does that work, or is later better?" Then stop and let them answer.</p></div>
+<div class="mom"><div class="top2"><span class="b mod">Moderate</span><h4>Gap 2 &mdash; Two hundred and twenty minutes in one home</h4></div>
+<div class="q"><b>Duration</b>The MORALES visit ran three and a half hours.</div>
+<div class="q"><b>What it cost</b>Every hour in one house is an hour not spent on the next no-cool call in a heat wave.</div>
+<p class="fixline"><b>The fix</b> Nothing in the transcript was wasted — but the same result was reachable faster. Set yourself a checkpoint: findings and the appointment ask inside ninety minutes, then teaching for as long as the customer wants it.</p></div>
+<div class="mom"><div class="top2"><span class="b solid">Solid</span><h4>Gap 3 &mdash; The review ask became a referral ask</h4></div>
+<div class="q"><b>What he said</b><q>if you refer people to my name and then they can call the office.</q></div>
+<div class="q"><b>What is missing</b>The five-star request itself. Referrals are the follow-on, not the substitute.</div>
+<p class="fixline"><b>The fix</b> Ask for the review first, in the room, while the goodwill is live — then ask for referrals on top of it. You had a family that thanked you four times; that is the moment.</p></div>
+</section>
+
+<section><div class="sh"><div class="no">6</div><h2>This week&rsquo;s drill</h2></div>
+<div class="script" style="border-radius:14px"><div class="lbl">Findings, then a time — every call, not just the long ones</div>
+<p><b>Trigger:</b> you have finished the evaluation and you know what is wrong.</p>
+<p><b>Response, before you pack a tool:</b></p>
+<p class="say">"Here's what I found. I want our comfort advisor to walk you through the options with no cost and no commitment — I've got a one-to-three tomorrow. Does that work, or is later better?"</p>
+<p>Say it on the eight-minute calls, not just the three-hour ones. The short visits are where the whole board is losing flips.</p>
+</div></section>
+
+<section><div class="sh"><div class="no">7</div><h2>3-week training plan</h2></div>
+<div class="rub">
+<div class="row"><div class="rb">Week 1</div><div><b>Appointment ask on every call</b></div><div class="ev">Book, or attempt to book, a specialist slot on 100% of calls that reach a finding — including maintenance and short evaluations. Log the ask either way.</div></div>
+<div class="row"><div class="rb">Week 2</div><div><b>Time discipline</b></div><div class="ev">Findings plus appointment ask inside ninety minutes. Teach as long as you like after the calendar slot is set.</div></div>
+<div class="row"><div class="rb">Week 3</div><div><b>Review before referral</b></div><div class="ev">Ask for the five-star in the room on every call, then layer the referral ask on top.</div></div>
+</div></section>
+
+<section><div class="sh"><div class="no">8</div><h2>What we owe Andrew</h2></div>
+<ul class="str">
+<li><b>Back him on the fee waiver.</b> He gave away a diagnostic to a family in genuine distress and turned it into a booked lead. Tell him publicly that was the right call so he does not second-guess it.</li>
+<li><b>Give him a ride-along on short calls.</b> His long-call craft is not the problem; the eight-to-fifteen-minute visits are. Watch three of those with him.</li>
+<li><b>Show him the MORALES outcome.</b> He should see the ticket that came out of that handoff — the loop closing is what makes the ask automatic.</li>
+</ul></section>
+
+<div class="bottom"><div class="eyb">Bottom line</div><p>Andrew is one of the few people on this board who will stop a call cold to do the legally right thing, and then still leave with an appointment. The MORALES visit is a template — authorization, empathy, teaching, a named time, a waived fee, and a customer who thanked him four times on the way out. His whole gap is that the short calls do not get the same ending. Same words, shorter call. That is the entire adjustment.</p></div>
+<div class="foot">Sierra Air Conditioning &amp; Plumbing &middot; SILO Techs &middot; 2026-07-27 &middot; Strength bands only &mdash; close rate is the only number</div>
+</div></body></html>
