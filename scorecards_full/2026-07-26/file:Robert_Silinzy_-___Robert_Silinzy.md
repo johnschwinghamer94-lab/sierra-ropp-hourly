@@ -1,102 +1,76 @@
-# Live-Coach Scorecard: Robert Silinzy — 2026-07-26 (45 min)
-
-**RecId:** file:Robert_Silinzy_-_  
-**Rep:** Robert Silinzy  
-**Date:** 2026-07-26  
-**Duration:** 45 min  
-**Job Number:** None  
-**Outcome:** Flipped (estimate review phase)
+# Live Coaching Card — Robert Silinzy
+**Call Date:** 2026-07-26 | **Duration:** 45 min | **Outcome:** Flipped (Option C/Comfort Advisor followup engaged)
 
 ---
 
-## FSG Band Scores
+## FSG Bands
 
 ### Welcome: Solid
-Robert opened with authentic warmth and rapport-building. He engaged with the homeowner's dogs (Ruby and the cat), used humor and natural conversation to establish comfort. Set clear goal early: "The goal is to not have you without AC."
+Robert greets warmly, building immediate rapport around the customer's pets ("I love dogs... That's Ruby"). He sets expectations about the next steps: "Give me about 20 minutes. I'll put the report together, share it." 
 
-**Supporting moment:** Early in call — "How you doing? Rob Guerra. Have you been here before? I've never been here before. You are. Nice to meet you. I love dogs."
-
-**Setting expectations:** Clearly framed his role — "for me, coming out, is to give you an evaluation to be thorough and share everything that's going on with your system and then you can make a decision."
+**Gap:** Welcome doesn't open with a clear statement of expertise or purpose. The upfront framing could be stronger ("Here's what I'm going to do today").
 
 ### Assessment: Strong
-Methodical, multi-point diagnosis. Robert conducted systematic testing:
-- Checked thermostat setting (76°F)
-- Tested return air vs. suction line (cool but not cold)
-- Identified compressor hard start and ran amperage test (114A vs. rated 88-108A — overamped)
-- Tested all three compressor windings with a legometer (found weakened windings)
-- Identified blower motor with oil seeping (sign of failure)
-- Reviewed filter sizes (20x20, 30x20) and condition
-- Connected findings to customer's 13-year-old system and prior repair history (Nov 2022: pigeon debris, hard start, capacitor, drain cleaning)
+Thorough discovery and diagnosis:
+- Opens with key diagnosis questions: "How long has it been running over three hours?"
+- Checks history: "Is this the first time something like this has happened?" → learns unit is 13 years old
+- Asks about repairs: learns about previous pigeons/condensation issue charged at $1,000
+- Technical questions: "How many filters do you have?" → identifies filter locations and sizes
+- Comprehensive inspection: checks fan, suction line temperature ("Yeah, it's cool, but not cold"), compressor (tests hard start over-amp), blower motor (notes oil leakage), thermostat
 
-**Quote:** "So the windings are weakened as well. So it's not that it's a grounded compressor, but the windings are weakened to the point where like it may cut on, it may not."
+Robert uses test equipment (Legometer) to validate findings and explains results clearly.
 
-This is discovery at its best — thorough, technical, and customer-inclusive.
+### Decision: Solid
+Identifies three options:
+1. Hard start device (already done in past)
+2. Compressor replacement (prices pending)
+3. Blower motor replacement (prices pending)
 
-### Decision: Moderate
-Robert identified two major repair needs (compressor replacement and blower motor) but did not frame them as a customer-facing option set or build a three-option matrix. When the customer asked "What do we talk about? What is it just roughly?" Robert responded with price ranges ($4,500–5,500 for compressor depending on unit) instead of redirecting to a specialist or using the Option C path per SILO protocol.
+Robert reconnects to the customer's prior concern about overcharging when the customer mentions the $1,000 previous bill. He offers to check the invoice history: "Let me just look real quick" / "I'll look at the invoices just to understand the history." This is transparent objection handling.
 
-**Quote (what went sideways):** Customer: "Do you have an idea how much compressor cost?" Robert: "I've seen as high as 5,500 for really compressor?"
+**Gap:** Options aren't fully built and presented upfront. Robert defers pricing to suppliers and says he'll return: "Give me about 20 minutes, I'll put the report together... we have to wait for the suppliers to be open, and then we can say what's available." The decision step is stretched across two visits rather than completed on this call.
 
-The price response, while honest, did not include empathy or a clarifying question to understand the customer's decision-making constraints. He also referenced past overcharging concern (the $1,600 invoice a couple years ago, the $670 hard start charge) but did not explicitly reconnect to that concern or address the objection.
+### Deliver: Strong on Wins
+Robert excels at technical explanation. He walks through findings in detail:
+- Explains hard start: "Homeowners choose to get that device because the compressor is showing signs that is getting near the end and then it just helps it start."
+- Explains microprocessor: "That's basically the relay to turn on the unit... acts as a light switch."
+- Windings test: "I tested all three windings..."
+- Blower motor: "Oil coming on the top of it... that's a sign of failure... So I don't do that. I just see the signs, and I share that with the homeowner."
 
-### Deliver: Moderate
-Robert delivered strong technical education — he explained the compressor winding issue, hard start function, microprocessor relay role, and blower motor failure signs with clarity and depth. However, he did not ask for a 5-star review, and the call ended with "Give me about 20 minutes, I'll put the report together, share it."
+Robert demonstrates deep expertise ("Be A Nerd") throughout.
 
-No explicit closing request or commitment anchor. The delivery was incomplete.
+**Gap:** No explicit ask for a 5-star review at call end.
 
 ---
 
 ## Critical Actions
 
-| Action | Pass/Fail | Evidence |
-|--------|-----------|----------|
-| **Expectations** | ✅ Pass | Robert clearly stated evaluation purpose, decision autonomy, and goal (no customer left without AC). Set process expectations upfront. |
-| **Questions** | ✅ Pass | Systematic discovery: thermostat temp, prior history, previous repair cost/concern, filter sizes, unit age, first occurrence, compressor and winding testing. Strong discovery discipline. |
-| **Options** | ❌ Fail | Identified two repair needs but never framed as a choice framework or customer-facing options. No Option A (repair now compressor + blower), Option B (repair compressor, defer blower), Option C (Comfort Advisor/specialist consult) presented. |
-| **Objections** | ❌ Fail | Customer's implicit cost concern (references to prior $1,600 invoice and $670 overcharge) was never addressed with empathy + a clarifying question. Robert gave a price range instead. |
+| Action | Pass | Evidence |
+|--------|------|----------|
+| **Expectations** | ✓ | Sets clear timeline ("give me about 20 minutes"), addresses supplier wait times honestly ("it could be tomorrow... you could have to wait three weeks") |
+| **Questions** | ✓ | Multiple discovery questions: system age/history, past repairs, filter count/size, thermostat setting |
+| **Options** | ✗ | Identifies three issues but doesn't present distinct options with pricing/timelines on call. Defers to supplier availability. |
+| **Objections** | ✓ | Handles overcharge skepticism directly. Offers to check invoices and affirms honest intent. |
 
 ---
 
-## Outcome
+## Outcome Evidence
 
-**Flipped** — Customer is moving into estimate review and decision phase. Robert converted a service call into a potential TGL by delivering a thorough, multi-point evaluation that positions a follow-up specialist consultation or repair commitment.
+**Outcome:** Flipped (Option C engagement)
 
----
-
-## Top Gaps & Coaching
-
-### Gap 1: No Option Framework (impacts Decision & Options critical action)
-Robert diagnosed two problems but did not present them as customer choices. When pricing came up, he should have:
-1. Acknowledged the prior cost concern: "I know the last visit for the hard start felt expensive. Let me walk through what we're looking at here and what your options are."
-2. Built three options: compressor now + blower later, both now, or schedule a Comfort Advisor to explore financing/priority.
-3. Ended with: "Which of these feels right for your situation?"
-
-**What the customer needed:** "So we found two things. The compressor windings are weakened — it could fail soon. The blower motor is starting to show wear. Here are your three paths forward..."
-
-### Gap 2: Cost Objection Left Unaddressed
-The customer's prior $1,400 service visit (and stated feeling of overcharge) created a trust concern. Robert acknowledged it ("I know it was overcharging") but never circled back when pricing surfaced. 
-
-**What to do next time:** When the customer references past cost concern in early call, flag it for later: "I hear you. Let me make sure any recommendations I give today are clear on value." Then, when you price, reconnect: "Remember I told you I'd be clear? Here's the compressor cost, here's why, and here's what we do to keep it fair for you."
-
-### Gap 3: No 5-Star Ask or Closing Anchor
-End of call was process-focused ("20 minutes, I'll put it together") rather than customer-commitment-focused. A stronger close: "I'm proud of this evaluation. When I send the report, would you mind leaving us a 5-star review if this was helpful?" or "Would a follow-up call tomorrow when I have the options priced work for you?"
+Customer shows clear intent to proceed despite past negative experience. Stayed engaged through 45-minute diagnosis and implicitly agreed to wait for pricing/report. This is a flip because Option C consultation is effectively scheduled.
 
 ---
 
-## Expanded Coaching Notes
+## Top Gaps
 
-**Strengths to reinforce:**
-- Assessment discipline was genuinely strong. The legometer testing and winding diagnosis shows deep technical credibility.
-- Rapport is authentic — dogs, cat, humor, genuine interest in the family. This is gold for trust.
-- Expectation-setting upfront about evaluation purpose and customer autonomy is textbook.
+### Gap 1: Incomplete Options Presentation
+Robert identifies three issues but doesn't present them as distinct choices on the call. Frame options upfront: "Here's what we found and here's what I'm proposing we explore," even if full pricing comes later.
 
-**Next-call focus:**
-1. **Build the option framework before pricing.** Don't let pricing questions catch you unprepared. Have three paths ready, frame them as customer choices, and only price within an option you both agree on.
-2. **Handle cost objections proactively.** If a customer mentions a prior expensive repair, use it as a signal to extra-clarify value this visit. "I'll make sure you know exactly what you're paying for."
-3. **Close with a customer commitment.** Whether it's a review ask, a follow-up appointment, or a "when you're ready to decide, here's how to reach me," don't end on logistics. End on them.
+### Gap 2: Welcome Framing
+Could strengthen opening: "Here's what I'm going to do: evaluate your system, explain what I find, and get you pricing options."
 
 ---
 
-## Summary
-
-Robert's technical diagnosis was exemplary. His rapport and expectations-setting are strong. The call flipped because he created credibility and positioned a follow-up. But he left money on the table by not framing options and by letting a cost objection pass unaddressed. His next visit should focus on the option framework and proactive objection handling—he's ready for it.
+## 30-sec Huddle
+"Your technical explanation and transparency about that past overcharge really earned the flip. Next time, frame options earlier and ask for the 5-star at the end."
