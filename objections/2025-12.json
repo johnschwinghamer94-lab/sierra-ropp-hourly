@@ -1,0 +1,198 @@
+{
+  "month": "2025-12",
+  "items": [
+    {
+      "id": "0773edc0-bb9f-4275-96ad-b364cf943ef7-92hu453CMjMS3az2iJV9GyPLhsX2-1",
+      "type": "Doubt / Distrust",
+      "cust": "I am very skeptical... I don't want anything missed, and I don't want a week later for it to break down.",
+      "answer": "Understandable... No, you're fine... No, you're welcome to watch.",
+      "tech": "Nikko April",
+      "date": "2025-12-30",
+      "grade": "ok",
+      "closed": false,
+      "job": "601989759"
+    },
+    {
+      "id": "0773edc0-bb9f-4275-96ad-b364cf943ef7-92hu453CMjMS3az2iJV9GyPLhsX2-2",
+      "type": "Stall / Think About It",
+      "cust": "...they've been telling me that for a couple years about this. Coils that need to be changed... But I can't do it right now.",
+      "answer": "I understand. No, I understand... I'll just do the maintenance and I'll do all my paperwork and stuff in the car and then just email it over to you.",
+      "tech": "Nikko April",
+      "date": "2025-12-30",
+      "grade": "ok",
+      "closed": false,
+      "job": "601989759"
+    },
+    {
+      "id": "139edd97-460f-4a4c-ad0b-9864e16a85d3-XYpMBXpv6TVg9okInQemgsAIw1B3-1",
+      "type": "Spouse / Decision-Maker",
+      "cust": "I'll talk to her about it so you know, and then we'll just give you guys a call.",
+      "answer": "Tech arranged for the equipment specialist to visit Friday after 5pm with a callback confirmation.",
+      "tech": "Francisco Arreola Jr.",
+      "date": "2025-12-30",
+      "grade": "great",
+      "closed": false,
+      "job": "600144367"
+    },
+    {
+      "id": "5f8392c4-9a14-4474-9f4b-8315bb082e7d-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
+      "type": "Spouse / Decision-Maker",
+      "cust": "I mean the flat paid... but the only problem is trying to figure that out... right now, today, it's not going to be an option. I'd have to like discuss it with my wife and figure out what we want to do, finance wise.",
+      "answer": "I mean and like I'd be more than happy to follow up... is there like a time... next week or two weeks...",
+      "tech": "Andrew Trujillo",
+      "date": "2025-12-30",
+      "grade": "great",
+      "closed": false
+    },
+    {
+      "id": "7f5d11f1-8dd8-444a-8cd8-4edc6d9e6b42-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
+      "type": "Stall / Think About It",
+      "cust": "I just want to know how much. I don't want to do it now.",
+      "answer": "Not saying you have to do it. I don't do replacement, so I couldn't give you an accurate price. Whereas I could get somebody out here relatively quickly... no obligation.",
+      "tech": "Cole Pantol",
+      "date": "2025-12-30",
+      "grade": "great",
+      "closed": false,
+      "job": "601017336"
+    },
+    {
+      "id": "7f5d11f1-8dd8-444a-8cd8-4edc6d9e6b42-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
+      "type": "Stall / Think About It",
+      "cust": "I'm not gonna make any decisions today.",
+      "answer": "But you're not obligated to. But at least you have the information.",
+      "tech": "Cole Pantol",
+      "date": "2025-12-30",
+      "grade": "ok",
+      "closed": false,
+      "job": "601017336"
+    },
+    {
+      "id": "a56a330b-25cf-4898-a109-e8bcaf749e84-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
+      "type": "Price",
+      "cust": "Oh, come on, that's obscene... I'm sure you don't set these prices, but that's gotta be a joke.",
+      "answer": "I understand... I personally don't set these prices... please shoot me a number because I'm more than willing to talk with my higher ups...",
+      "tech": "Andrew Trujillo",
+      "date": "2025-12-30",
+      "grade": "ok",
+      "closed": false
+    },
+    {
+      "id": "a56a330b-25cf-4898-a109-e8bcaf749e84-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-2",
+      "type": "Doubt / Distrust",
+      "cust": "I've never talked to an H Vac company that wasn't five times more expensive than reasonable... it's a five year old home... didn't have to touch a thing.",
+      "answer": "There's something to be said... I appreciate you for allowing me to come into your home... If it were for me, in a perfect world... everyone would do everything for free...",
+      "tech": "Andrew Trujillo",
+      "date": "2025-12-30",
+      "grade": "ok",
+      "closed": false
+    },
+    {
+      "id": "bed76d22-464b-4bcb-bded-393bcb572035-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
+      "type": "Stall / Think About It",
+      "cust": "I'll skip that for now.",
+      "answer": "Okay.",
+      "tech": "Dustin Romine",
+      "date": "2025-12-30",
+      "grade": "poor",
+      "closed": false,
+      "job": "623618475"
+    },
+    {
+      "id": "f8592b24-37d3-4073-92c9-389be282a93d-kBmcjj1ucbYoWgDqILgiXfkLNzP2-1",
+      "type": "Stall / Think About It",
+      "cust": "Just nothing right now. I don't want to be in this business of replacing... here is coming, you know, maintenance, so I know where we stand.",
+      "answer": "Okay. Right. Yeah.",
+      "tech": "Ting Cheung",
+      "date": "2025-12-30",
+      "grade": "ok",
+      "closed": false,
+      "job": "623294044"
+    },
+    {
+      "id": "1904209e-2460-4737-a063-4e076a726004-XYpMBXpv6TVg9okInQemgsAIw1B3-1",
+      "type": "Price",
+      "cust": "So like I want to figure out something... and so like every month if it's two grand. Two grand, like it can't do that.",
+      "answer": "No, exactly... I would wait on just starting to put money into it.",
+      "tech": "Francisco Arreola Jr.",
+      "date": "2025-12-31",
+      "grade": "great",
+      "closed": false,
+      "job": "623794469"
+    },
+    {
+      "id": "701b84b8-0874-4cd3-bd84-151786fe3421-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
+      "type": "Price",
+      "cust": "But the $800 repair bill just doesn't make sense to me. I mean, I'm happy to spend money. Needs to be a good spend. 800 for that is just ridiculous to me.",
+      "answer": "We have a solution for it today though.",
+      "tech": "Cole Pantol",
+      "date": "2025-12-31",
+      "grade": "great",
+      "closed": false,
+      "job": "623468614"
+    },
+    {
+      "id": "701b84b8-0874-4cd3-bd84-151786fe3421-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
+      "type": "Stall / Think About It",
+      "cust": "Not right now. Yeah, we've got a couple things going over the next few weeks and stuff too. We need to get past that and then we'll see where we start shaking out and then where our time will be.",
+      "answer": "So the only reason I ask that is because when it comes to the beginning of the year, the manufacturers, they do up their prices... we do tend to see 15 to 20% increases on prices.",
+      "tech": "Cole Pantol",
+      "date": "2025-12-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "623468614"
+    },
+    {
+      "id": "74592a6e-689e-492a-9e4d-104ae43924ad-ZLjkNBMk4fMJ8rE1KZTobEMfb893-1",
+      "type": "Stall / Think About It",
+      "cust": "Not for now.",
+      "answer": "No, no. All right. Okay.",
+      "tech": "AJ-Alejandro Ruiz Padilla",
+      "date": "2025-12-31",
+      "grade": "poor",
+      "closed": false
+    },
+    {
+      "id": "8f1d73cd-90cd-4612-bcbf-f1003df53709-XYpMBXpv6TVg9okInQemgsAIw1B3-1",
+      "type": "Stall / Think About It",
+      "cust": "...nobody has like 10,000 laying around, buy a freaking air conditioner... I can't see us being like, yeah, okay, I'm gonna proactively replace it... We're going to wait for it to die kind of thing.",
+      "answer": "Yeah, I completely understand waiting for it to... go out.",
+      "tech": "Francisco Arreola Jr.",
+      "date": "2025-12-31",
+      "grade": "poor",
+      "closed": false,
+      "job": "623618161"
+    },
+    {
+      "id": "97755d2a-2043-480c-b05e-1610c46a72d3-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
+      "type": "Price",
+      "cust": "Yeah, that's a little bit more than I wanted to pay, especially like right after Christmas. I just don't want to pay that.",
+      "answer": "No, I understand... you get what you pay for... you're really protecting your system.",
+      "tech": "Andrew Trujillo",
+      "date": "2025-12-31",
+      "grade": "ok",
+      "closed": false
+    },
+    {
+      "id": "b7cbb750-b053-4cd2-85d7-4647cc51b46c-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
+      "type": "Stall / Think About It",
+      "cust": "Let's talk about it. But not immediately... When the summer comes, that's when. Later on? We got too much stuff going on I think.",
+      "answer": "Offered a shoulder-season discount pitch; call advanced to a locked appointment for 8 to 10 tomorrow.",
+      "tech": "Cole Pantol",
+      "date": "2025-12-31",
+      "grade": "great",
+      "closed": false,
+      "job": "623237222"
+    },
+    {
+      "id": "cb9f4e13-4a12-4d7c-8922-7d1dc2998623-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
+      "type": "Stall / Think About It",
+      "cust": "Right now, right now I don't want to do anything with it, you know, and maybe, you know, just hang on, hang tight and you know, give it another period of time to see.",
+      "answer": "So that's up to you... that's a fair decision. It's just, you have to keep in mind too, that like everything else, unfortunately, as time goes by, the prices of everything increases too.",
+      "tech": "Francisco Valencia",
+      "date": "2025-12-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "623456988"
+    }
+  ]
+}
