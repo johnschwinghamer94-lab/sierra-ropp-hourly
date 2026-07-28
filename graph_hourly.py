@@ -482,37 +482,46 @@ TAG_ROPP = 962027                 # "ROPP" tag type
 TAG_MGMT_REMOVED = 545867780      # "Management Removed ROPP" tag type
 
 
-def _ropp_clean(calls_set):
+def _ropp_clean(calls_set, tgl_sources=None):
     """John's rule (2026-07-22): a call only counts as 'ran' if it carries the ROPP
-    tag (962027) and is NOT flagged 'Management Removed ROPP' (545867780). Audit each
-    job in the calls set by its entity tagTypeIds and drop the no-ROPP and
-    management-removed jobs. TGL counts are unaffected. Fails OPEN (returns the set
-    unchanged) on API error, and keeps any job the API doesn't return, so the gauge
-    never crashes or silently under-counts."""
+    tag (962027) and is NOT flagged 'Management Removed ROPP' (545867780). John's
+    rule (2026-07-28): an OPEN call doesn't count as 'ran' yet either — it counts
+    once the tech closes it out (jobStatus Completed) or the moment it creates a
+    TGL (tgl_sources), whichever comes first. Audit each job in the calls set by
+    its entity record and drop the no-ROPP, management-removed, and still-open
+    jobs. TGL counts are unaffected. Fails OPEN (returns the set unchanged) on API
+    error, and keeps any job the API doesn't return, so the gauge never crashes or
+    silently under-counts."""
     import st_client as st
+    tgl_sources = tgl_sources or set()
     ids = [str(c) for c in calls_set if str(c).isdigit()]
     if not ids:
         return set(calls_set)
-    tags = {}
+    ent = {}
     try:
         for i in range(0, len(ids), 50):
             r = st.api_get("/jpm/v2/tenant/{tenant}/jobs",
                            {"ids": ",".join(ids[i:i+50]), "pageSize": 200})
             for j in r.get("data", []):
-                tags[str(j.get("id"))] = j.get("tagTypeIds") or []
+                ent[str(j.get("id"))] = j
     except Exception as e:
         print(f"ROPP tag audit failed ({e}); keeping unfiltered calls set")
         return set(calls_set)
     clean = set()
     for c in calls_set:
-        tt = tags.get(str(c))
-        if tt is None:                    # job not returned -> keep (fail open per job)
+        j = ent.get(str(c))
+        if j is None:                     # job not returned -> keep (fail open per job)
             clean.add(c)
-        elif TAG_MGMT_REMOVED in tt:      # management-removed -> drop
             continue
-        elif TAG_ROPP in tt:              # has ROPP tag -> keep
-            clean.add(c)
-        # else: no ROPP tag -> drop
+        tt = j.get("tagTypeIds") or []
+        if TAG_MGMT_REMOVED in tt:        # management-removed -> drop
+            continue
+        if TAG_ROPP not in tt:            # no ROPP tag -> drop
+            continue
+        # open call: not ran yet unless it already produced a TGL
+        if j.get("jobStatus") != "Completed" and c not in tgl_sources and str(c) not in {str(s) for s in tgl_sources}:
+            continue
+        clean.add(c)
     return clean
 
 
@@ -564,7 +573,7 @@ def main():
         # tag and is NOT "Management Removed ROPP". Audit the union; drop no-ROPP and
         # management-removed calls. TGL counts are unaffected -- a dropped call's TGL
         # still counts (it created a lead; the call just wasn't a ROPP call).
-        calls_set = _ropp_clean(calls_set)
+        calls_set = _ropp_clean(calls_set, tgl_sources=e_src_all)
         calls = len(calls_set)
         seen = set()
         for tec in techs:
