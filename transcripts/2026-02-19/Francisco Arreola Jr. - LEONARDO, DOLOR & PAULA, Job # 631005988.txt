@@ -1,0 +1,4180 @@
+TRANSCRIPT
+Rep:      Francisco Arreola Jr.
+Date:     2026-02-19
+Duration: 44 min
+RecId:    82d3dabf-f28e-4fe7-9fe8-0ee4bce4cff3-XYpMBXpv6TVg9okInQemgsAIw1B3
+Job:      LEONARDO, DOLOR & PAULA, Job # 631005988
+============================================================
+
+
+Customer:
+  Hey,
+  Francis.
+  Hey,
+  how
+  you
+  doing?
+
+Francisco Arreola Jr.:
+  What's.
+
+Customer:
+  What's
+  going
+  on?
+  Well,
+  I
+  told
+  you
+  I
+  will
+  replace
+  the
+  contactor.
+  Right.
+  So
+  I
+  did.
+
+Francisco Arreola Jr.:
+  Come
+  on.
+  Okay,
+  so
+  you
+  try
+  to
+  take
+  care
+  of
+  me
+  by
+  yourself?
+
+Customer:
+  Yeah,
+  I
+  do
+  have
+  a
+  license.
+  I'm
+  just
+  not
+  familiar
+  with
+  our
+  system.
+  Okay,
+  here's
+  the
+  old
+  one.
+  Okay.
+  I
+  did.
+  Hold
+  on.
+  Let
+  me
+  take
+  a.
+  Get
+  my.
+  So
+
+Francisco Arreola Jr.:
+  let
+  me
+  look
+  at
+  the
+  thermostat
+
+Customer:
+  over
+  here
+  real
+  quick.
+  Okay.
+  I
+  initial.
+  I
+  think
+  I.
+
+Francisco Arreola Jr.:
+  This
+  is
+  off.
+
+Customer:
+  Yeah,
+  yeah,
+  I
+  got.
+  I
+  got.
+  I
+  got
+  that.
+  It's
+  on
+  there.
+  Let
+  me.
+  Let
+  me
+  bring
+  it
+  up.
+  All
+  right.
+  Okay.
+
+Francisco Arreola Jr.:
+  Here's
+  the
+  breaker.
+
+Customer:
+  So
+  the
+  initial
+  one,
+  when
+  I
+  started
+  this,
+  this
+  was
+  flipped.
+  I
+  flipped
+  it
+  because
+  of
+  the.
+  Based
+  on
+  the
+  orientation
+  of
+  the
+  old
+  one.
+  I
+  was
+  actually
+  waiting
+  for
+  you
+  to
+  come.
+  I
+  was
+  like,
+  this
+  is
+  the
+  old
+  one.
+  Right.
+  So
+  I
+  followed
+  the
+  orientation.
+  But
+  the
+  new
+  one
+  that
+  I
+  bought,
+  the
+  contactor,
+  the
+  spring
+  that
+  turns
+  on
+  and
+  off
+  is
+  on
+  this
+  side
+  when
+  I
+  initially
+  installed
+  it.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  I
+  don't
+  think
+  it's
+  gonna
+  cause
+  any
+  issue
+  just
+  because
+  that's
+  a
+  contactor.
+  It's
+  a
+  spring.
+  Right.
+  So
+  I.
+  I
+  don't
+  know.
+  Please
+  correct
+  me
+  if
+  I'm
+  wrong.
+  So
+  when
+  I
+  did
+  that,
+  so.
+  So
+  when
+  I
+  wired
+  it,
+  it
+  was
+  like
+  this.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  So
+  when
+  I
+  put
+  it
+  back,
+  it's
+  making
+  humming
+  noise.
+  Took
+  it
+  out.
+  Took
+  it
+  out.
+  I
+  reverse
+  it
+  with
+  a
+  new
+  orientation
+  right
+  now.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  And
+  then
+  this
+  also
+  changed.
+
+Francisco Arreola Jr.:
+  Okay.
+  And
+  what
+  happened
+  when
+  you
+  fired
+  it
+  up?
+
+Customer:
+  I
+  fired
+  it
+  up.
+  It
+  won't.
+  I
+  start.
+  I
+  turn
+  it
+  on
+  to
+  cool.
+  I
+  press
+  the.
+
+Francisco Arreola Jr.:
+  Turn
+  the
+  thermostat
+  on.
+
+Customer:
+  The
+  thermostat
+  kicked
+  on.
+  This
+  doesn't
+  kick
+  in.
+
+Francisco Arreola Jr.:
+  So
+  now
+  this
+  isn't
+  turning
+  on
+  at
+  all.
+
+Customer:
+  No,
+  I
+  think
+  because
+  when
+  I
+  was
+  doing
+  this,
+  this
+  one
+  of
+  my
+  leads
+  touched
+  this.
+  Touch
+  this.
+  This
+  24
+  volts.
+  When
+  I
+  was
+  testing
+  this,
+  it
+  touched
+  that
+  2,
+  240.
+  So
+  that's
+  why
+  I
+  think.
+
+Francisco Arreola Jr.:
+  Well,
+  was
+  this
+  off
+  when
+  you
+  touched
+  it
+  or
+  when
+  I
+  touched
+  it?
+  Because.
+  No,
+  because
+  you
+  would
+  have
+  got
+  zapped.
+
+Customer:
+  Yeah,
+  well,
+  it
+  was
+  actually
+  on.
+  It
+  got
+  sapped
+  because
+  when
+  it
+  was
+  making.
+  It
+  was
+  making
+  that
+  humming
+  noise
+  like
+  that.
+
+Francisco Arreola Jr.:
+  Oh,
+  yeah,
+  I
+  see
+  the
+  big
+  scorch
+  mark
+  right
+  there.
+  Right.
+
+Customer:
+  So
+  when
+  it
+  was
+  doing
+  that,
+  I
+  was
+  trying
+  to
+  check
+  whether.
+  What's
+  the.
+  What's
+  the
+  voltage?
+
+Francisco Arreola Jr.:
+  I'm
+  getting?
+  240.
+
+Customer:
+  But
+  I
+  can
+  only
+  hold
+  because
+  my
+  hands
+  is
+  here
+  just
+  in
+  case.
+  So
+  I
+  was
+  doing
+  the
+  chopstick
+  like
+  this.
+
+Francisco Arreola Jr.:
+  So
+  this
+  contactor
+  definitely
+  got
+  damaged
+  again,
+  because
+  you
+  can
+  see
+  the
+  burn
+  mark
+  there.
+
+Customer:
+  But
+  yeah,
+  it
+  was.
+  It
+  was.
+  That's
+  the
+  lead.
+  That's
+  the
+  lead
+  of
+  my
+  tester
+  multimeter
+  touching
+  it.
+
+Francisco Arreola Jr.:
+  Yeah.
+  So
+  you
+  might
+  be
+  right
+  that
+  most
+  likely
+  the
+  board
+  got
+  damaged
+  as
+  well.
+  Especially
+  if
+  it's
+  not
+  turning
+  on
+  now.
+  All
+  wired
+  together.
+
+Customer:
+  Yep,
+  I
+  traced
+  it.
+
+Francisco Arreola Jr.:
+  Yeah.
+  So
+  I
+  mean
+  the
+  first
+  step
+  would
+  be
+  to
+  have
+  to
+  replace
+  the
+  contactor.
+  So
+  back
+  to
+  step
+  one
+  because
+  this
+  one's
+  already
+  damaged
+  so
+  we
+  can't
+  use
+  that
+  one
+  again.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  Depending
+  on
+  how
+  you
+  wired
+  it.
+  Assuming
+  you
+  wired
+  it
+  correctly.
+
+Customer:
+  But
+  if
+  you
+  did.
+  I
+  got
+  a
+  picture
+  before
+  I
+  touch
+  anything.
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  So.
+
+Francisco Arreola Jr.:
+  Now
+  because.
+  Because
+  if
+  it
+  was
+  humming,
+  that
+  means
+  that
+  the
+  motor
+  and
+  the
+  compressor
+  was
+  starting.
+  We're
+  trying
+  to
+  start
+  but
+  they
+  were
+  straining.
+  So
+  that
+  means
+  with
+  your
+  compressor
+  that
+  was
+  already
+  in
+  bad
+  shape
+  and
+  your
+  motor
+  that's
+  already
+  in
+  bad
+  shape,
+  that
+  just
+  made
+  it
+  worse.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  So
+  those
+  two
+  probably
+  took
+  more
+  damage
+  because
+  of
+  that.
+  So
+  definitely
+  have
+  to
+  take
+  care
+  of
+  the
+  contactor.
+
+Customer:
+  Well
+  the.
+  That
+  when
+  it
+  was
+  humming.
+  Right.
+  The
+  thermostat
+  is
+  not
+  even
+  kicked
+  on
+  the
+  both
+  thermostat
+  was
+  off
+  when
+  it
+  was
+  humming.
+  Yeah.
+  Yeah.
+
+Francisco Arreola Jr.:
+  So
+  that
+  means
+  you
+  definitely
+  wire
+  something
+  incorrectly
+  because
+  it
+  shouldn't
+  be
+  trying
+  to
+  turn
+  on
+  unless
+  it's
+  calling
+  for
+  signal.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  So
+  if
+  it
+  wasn't
+  even
+  calling
+  and
+  you're
+  getting
+  humming.
+
+Customer:
+  Yep.
+  I
+  was
+  thinking
+  whether
+  if
+  it
+  was
+  the
+  contactor
+  was
+  put
+  on
+  the
+  normally
+  close
+  instead
+  of
+  the
+  normally
+  open.
+
+Francisco Arreola Jr.:
+  Well,
+  this
+  is
+  still
+  off,
+  right?
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  Here's
+  the.
+  Okay,
+  I
+  just
+  want
+  to
+  make
+  sure.
+  Attention,
+  sir.
+
+Customer:
+  For
+  sure.
+  Yeah.
+
+Francisco Arreola Jr.:
+  So
+  you
+  definitely
+  caused
+  damage
+  to
+  the
+  rest
+  of
+  the
+  system.
+  Now
+  how
+  much
+  is
+  gonna
+  be
+  the
+  question?
+  Okay,
+  for
+  sure.
+  Contactor.
+  You're
+  already
+  looking
+  at
+  about
+  500
+  there.
+  The
+  fan
+  motor
+  like
+  I
+  told
+  you
+  before
+  was
+  like
+  a
+  thousand.
+  If
+  you
+  damage
+  the
+  compressor
+  even
+  more
+  because
+  if
+  it
+  doesn't
+  start
+  then
+  obviously
+  that's
+  a
+  big
+  problem.
+
+Customer:
+  Can
+  you
+  check
+  with
+  the
+  motherboard
+  first
+  whether
+  it's
+  working
+  or
+  not?
+
+Francisco Arreola Jr.:
+  Yeah,
+  I
+  can.
+  I'll
+  check
+  the.
+
+Customer:
+  The
+  motherboard
+  and
+  then
+  the
+  wiring
+  of
+  the
+  relay.
+  The
+  contactor,
+  if
+  it's
+  correct.
+  Cuz
+  are
+  you
+  familiar
+  with
+  the
+  Packard?
+  Packard?
+  Yeah,
+  yeah,
+  the.
+
+Francisco Arreola Jr.:
+  The
+  brand.
+
+Customer:
+  Yep.
+  Yeah.
+
+Francisco Arreola Jr.:
+  I
+  think
+  you
+  might
+  have
+  messed
+  up
+  the
+  first
+  time
+  and
+  got
+  it
+  right
+  the
+  second
+  time.
+  But
+  I
+  think
+  at
+  that
+  point.
+  Too
+  late
+  already.
+
+Customer:
+  So
+  all
+  the
+  configuration
+  of
+  the
+  big
+  wires
+  are
+  all
+  the
+  same
+  except
+  for
+  this
+  two.
+  Is
+  there
+  a
+  normally
+  closed,
+  normally
+  open
+  setup
+  on
+  this
+  two
+  leads
+  in
+  here?
+  No.
+  Or
+  it's
+  just
+  a
+  trigger
+  that's
+  just
+
+Francisco Arreola Jr.:
+  going
+  to
+  be
+  your
+  low
+  volt.
+  So
+  that
+  calls.
+  That
+  comes
+  from
+  the
+  board.
+
+Customer:
+  That
+  comes
+  from
+  the
+  board.
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  Yeah.
+  Can
+  you
+  check
+  the
+  board
+  first
+  and
+  see
+  whether.
+  How
+  far
+  the
+  damage
+  if
+  there
+  is
+  a
+  short
+  or.
+  Because
+  I'm
+  thinking
+  the
+  board
+  is
+  the
+  one
+  that
+  suffered
+  if
+  ever.
+  Because
+  it's
+  not
+  calling.
+  Even
+  the.
+  Even
+  the
+  heating
+  on
+  my
+  heating
+  is
+
+Francisco Arreola Jr.:
+  separate
+  because
+  he's
+  not
+  working
+  either.
+  Yeah.
+
+Customer:
+  The
+  pan
+  is
+  not
+  working
+  on
+  the
+  heat.
+  So
+  I
+  think
+  the
+  board
+  is
+  most
+  definitely.
+
+Francisco Arreola Jr.:
+  The
+  board
+  got
+  damaged
+  for
+  sure.
+
+Customer:
+  Yep.
+  So
+  if
+  we
+  can.
+
+Francisco Arreola Jr.:
+  Yeah.
+  So
+  let
+  me
+  grab
+  my.
+  My
+  ladder
+  and
+  stuff
+  and
+  let
+  me
+  head
+  up
+  there
+  for
+  now.
+
+Customer:
+  I
+  will
+  close
+  this.
+  Yeah.
+
+Francisco Arreola Jr.:
+  Close
+  it
+  up.
+  Especially
+  because
+  of
+  rain.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  No.
+
+Customer:
+  And
+  then
+  do
+  you
+  have
+  boards
+  on
+  your.
+
+Francisco Arreola Jr.:
+  I'll
+  have
+  to
+  check,
+  but
+  worst
+  case
+  scenario,
+  we
+  might
+  have
+  to
+  order
+  it
+  and
+  come
+  back
+  down.
+  But
+  we'll
+  see
+  the
+  full
+  extent
+  of
+  what
+  we're
+  looking
+  at.
+
+Customer:
+  Okay.
+  I'll.
+  I'll
+  be
+  with
+  you.
+  I'll
+  go
+  up
+  with
+  you
+  on
+  the.
+  Just
+  go
+  ahead.
+  No,
+  no
+  worries.
+
+Francisco Arreola Jr.:
+  Much.
+
+Customer:
+  Much.
+
+Francisco Arreola Jr.:
+  I'm
+  just
+  gonna
+  grab
+  my
+  bag
+  and
+  my
+  ladder.
+
+Customer:
+  Yep.
+
+Francisco Arreola Jr.:
+  And
+  then
+  am
+  I
+  meet
+  you
+  at
+  the
+  front.
+
+Customer:
+  Okay.
+  Yeah.
+  Were
+  you.
+  Were
+  you
+  on
+  another
+  call?
+  No,
+  I
+  was.
+
+Francisco Arreola Jr.:
+  Was
+  at
+  home.
+
+Customer:
+  Oh
+  yeah.
+
+Francisco Arreola Jr.:
+  Are
+  the
+  baby
+  gates.
+
+Customer:
+  It.
+  The.
+  The
+  inside
+  unit?
+
+Francisco Arreola Jr.:
+  Well,
+  sometimes
+  they
+  take
+  out
+  the
+  roof
+  now
+  sometimes
+  the
+  edges
+  has
+  to
+  be
+  made
+  a
+  little
+  bigger
+  and
+  then
+  they
+
+Customer:
+  repair
+  it
+  after
+  the
+  access.
+
+Francisco Arreola Jr.:
+  Yeah,
+  the
+  access.
+
+Customer:
+  Oh,
+  Are
+  you
+  far.
+  I
+  was
+  up
+  by
+  like
+  little
+  mountain.
+  I
+  was
+  waiting
+  for
+  the
+  report
+  yesterday
+  for
+  the.
+  All
+  the
+  stuff.
+  Huh.
+  I
+  don't
+  know
+  if
+  it
+  went
+  to
+  the
+  spam
+  or
+  whatever
+  it
+  went
+  to.
+
+Francisco Arreola Jr.:
+  Sometimes
+  it
+  goes
+  to
+  your
+  spam.
+
+Customer:
+  You
+  did
+  send
+  it
+  though,
+  right?
+
+Francisco Arreola Jr.:
+  Yeah,
+  because
+  I'm
+  trying.
+
+Customer:
+  I'll
+  hand
+  over
+  your
+  tool.
+  Hard.
+  It.
+
+Francisco Arreola Jr.:
+  All
+  right.
+
+Customer:
+  So.
+  All
+  right.
+
+Francisco Arreola Jr.:
+  Not
+  getting
+  any
+  power
+  right
+  now.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  Because
+  the
+  light's
+  off.
+
+Customer:
+  Might
+  have
+  burned
+  the
+  transformer.
+  Hopefully
+  there's
+  a
+  fuse
+  on
+  that.
+  Or
+  is
+  it
+  because
+  the
+  thermostat
+  is
+  off?
+  Do
+  you
+  want
+  me
+  to
+  turn
+  it
+  on?
+
+Francisco Arreola Jr.:
+  Yep.
+  You
+  burned
+  the
+  board.
+
+Customer:
+  Yep.
+  I
+  know
+  it.
+
+Francisco Arreola Jr.:
+  Yep.
+
+Customer:
+  All
+  right.
+  Yep.
+
+Francisco Arreola Jr.:
+  So.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  You
+  see
+  it
+  right
+  there?
+
+Customer:
+  Yeah,
+  I
+  saw
+  it.
+
+Francisco Arreola Jr.:
+  Yeah,
+  you
+  can
+  smell
+  it
+  too.
+  So
+  board
+  is
+  done.
+
+Customer:
+  Yep.
+
+Francisco Arreola Jr.:
+  Pop
+  it
+  back
+  into
+  place.
+  All
+  right.
+  So
+  we
+  can
+  head
+  back
+  down
+  and
+  talk
+  everything
+  over.
+  If
+  you
+  want
+  to
+  talk
+  to.
+  You
+  want
+  to
+  have
+  your
+  wife
+  sit
+  down?
+
+Customer:
+  No,
+  I
+  might
+  as
+  well
+  just
+  us,
+  cuz.
+  Okay.
+  I'm
+  already
+  in
+  big
+  trouble
+  with
+  her.
+  You
+  don't
+  want
+  to
+  make
+  it
+  bigger.
+  All
+  right,
+  well.
+
+Francisco Arreola Jr.:
+  So
+  it
+  honestly
+  just
+  comes
+  down
+  to
+  numbers
+  at
+  this
+  Point.
+
+Customer:
+  Okay,
+  Numbers
+  for
+  numbers,
+  board
+  numbers
+  for
+
+Francisco Arreola Jr.:
+  everything,
+  what
+  you
+  want
+  to
+  do.
+
+Customer:
+  All
+  right,
+  how
+  much
+  for
+  the
+  board?
+
+Francisco Arreola Jr.:
+  Let
+  me
+  check
+  for
+  you.
+
+Customer:
+  Do
+  we
+  have
+  the
+  board
+  in
+  stock?
+
+Francisco Arreola Jr.:
+  That's
+  the
+  most
+  I
+  can
+  check
+  if
+  I
+  have
+  the
+  board
+  in
+  my
+  van.
+
+Customer:
+  Oh,
+  hopefully
+  so.
+
+Francisco Arreola Jr.:
+  But
+  worst
+  case,
+  we'll
+  have
+  to
+  order
+  it
+  and
+  we'll
+  get
+  it
+  out
+  to
+  you.
+  But.
+
+Customer:
+  I
+  was
+  skimming
+  on
+  the
+  schematic.
+  I
+  kind
+  of
+  know
+  what
+  will
+  happen
+  already.
+  Okay.
+
+Francisco Arreola Jr.:
+  You
+  know,
+  I
+  mean,
+  yeah,
+  you
+  had
+  the
+  right
+  idea.
+
+Customer:
+  I
+  was
+  like
+  me
+  and
+  that
+  chopstick
+  multimeter.
+  And
+  it's
+  not
+  even.
+  God
+  dang
+  it.
+  I
+  just
+  did
+  the
+  bigger
+  system
+  than
+  this.
+
+Francisco Arreola Jr.:
+  Do
+  you
+  work
+  in
+  H
+  Vac?
+
+Customer:
+  I
+  do,
+  I
+  just
+  came
+  back
+  overseas.
+  Oh,
+  okay.
+  I
+  just
+  don't
+  have
+  the
+  time
+  to
+  play
+  with
+  it
+  cuz
+  you
+  know
+  how
+  it
+  is,
+  it's
+  always
+  busy.
+  So
+  whenever
+  it's.
+  It's
+  our
+  own
+  house,
+  you
+  don't
+  have
+  the
+  time
+  to
+  do
+  it.
+  No,
+  I
+  cuz
+  you're
+  on
+  the
+  home,
+  you
+  want
+  to
+  relax.
+  Right?
+
+Francisco Arreola Jr.:
+  I
+  hear
+  you.
+  All
+  right,
+  so
+  the
+  definitely.
+  The
+  parts
+  that
+  have
+  to
+  be
+  replaced
+  are
+  going
+  to
+  have
+  to
+  be
+  the
+  contactor
+  and
+  the
+  board.
+  Okay,
+  so
+  for
+  those
+  two,
+  you're
+  looking
+  at
+  REDACTED
+
+Customer:
+  For
+  the
+  board
+  itself
+  is
+  1100,
+  1233.
+  Ah,
+  yeah,
+  that's
+  including
+  the
+  20
+  off
+  because
+  we're
+  subscribed
+  for
+  the.
+
+Francisco Arreola Jr.:
+  Yeah.
+  Regular
+  price
+  would
+  be
+  1451.
+  Oh,
+  yeah.
+  So
+  you're
+  looking
+  at
+  about
+  1700
+  to
+  take
+  care
+  of
+  the
+  board
+  and
+  the
+  contactor.
+  Now
+  the
+  problem
+  with
+  that
+  is
+  the
+  board
+  obviously
+  is
+  connected
+  to
+  everything.
+  Like
+  you
+  said,
+  you
+  heard
+  the
+  humming
+  outside.
+  So
+  if
+  anything
+  else
+  got
+  damaged,
+  we
+  wouldn't
+  be
+  able
+  to
+  tell
+  until
+  we
+  start
+  to
+  slowly
+  like
+  try
+  to
+  fix
+  it
+  up
+  so
+  that
+  1700
+  can
+  start
+  to
+  add
+  up.
+
+Customer:
+  Is
+  it
+  1700?
+  How
+  much
+  was
+  it?
+
+Francisco Arreola Jr.:
+  REDACTED
+  For
+  the
+  board
+  and
+  the
+  contactor,
+  REDACTED
+
+Customer:
+  Okay,
+  so.
+  Okay,
+  let's
+  start
+  with
+  the
+  board.
+  Okay,
+  let's
+  do
+  it
+  one
+  by
+  one.
+
+Francisco Arreola Jr.:
+  Well,
+  again,
+  now
+  the
+  REDACTED
+
+Customer:
+  Let's
+  do
+  the
+  REDACTED
+
+Francisco Arreola Jr.:
+  Well,
+  we
+  have
+  to
+  do
+  the
+  contractor
+  as
+  well
+  because
+  you
+  burned
+  the
+  contact.
+
+Customer:
+  That's
+  both
+  of
+  them.
+  Yes.
+
+Francisco Arreola Jr.:
+  Okay.
+  Yeah.
+  Now
+  again,
+  we
+  can
+  do
+  the
+  board
+  and
+  the
+  contactor
+  for
+  that
+  much,
+  but
+  we
+  don't
+  know
+  how
+  much
+  what
+  else
+  got
+  damaged.
+
+Customer:
+  Okay,
+  I'm
+  with
+  you.
+  We're
+  gonna
+  check
+  it
+  together,
+  I
+  guess
+  because
+  it.
+  The
+  whole
+  unit
+  didn't
+  even
+  start
+  like
+  it
+  was
+  not
+  running.
+  It
+  was
+  running
+  at
+  heat
+  this
+  morning.
+  So
+  it's
+  not
+  that
+  it's
+  not
+  even
+  touching
+  the
+  the
+  outside
+  unit
+  because
+  it's
+  on.
+  What
+  do
+  you
+  call
+  that?
+  Natural
+  gas.
+  Yeah,
+  Heating.
+
+Francisco Arreola Jr.:
+  So.
+  Well,
+  yeah,
+  but
+  the
+  board
+  controls
+  everything,
+  so
+  that's
+  definitely
+  the
+  first
+  step.
+  Now,
+  again,
+  the
+  problem
+  is
+  if
+  you
+  want
+  to
+  spend
+  $2,000
+  and
+  hope
+  it
+  works.
+  But
+  again,
+  that
+  fan
+  motor
+  is
+  already
+  bad
+  as
+  well.
+
+Customer:
+  If
+  you're
+  talking
+  me
+  to
+  replacing
+  the
+  whole
+  system.
+
+Francisco Arreola Jr.:
+  Well,
+  no,
+  just
+  giving
+  you
+  all
+  your
+  options.
+  Because
+  like
+  I
+  said,
+  especially
+  with
+  your
+  system
+  being
+  15
+  years
+  old.
+
+Customer:
+  Yep.
+
+Francisco Arreola Jr.:
+  That's
+  a
+  lot
+  of
+  money
+  to
+  throw
+  into
+  an
+  old.
+  An
+  old
+  piece
+  of
+  machinery,
+  I
+  agree.
+
+Customer:
+  But
+  because,
+  yeah,
+  throw
+  out
+  17K.
+  Well,
+  you
+  replace
+  the
+  whole
+  thing.
+
+Francisco Arreola Jr.:
+  There's
+  payment
+  options
+  where
+  it
+  comes
+  down
+  to
+  like
+  150
+  bucks
+  a
+  month,
+  but
+  still.
+
+Customer:
+  You
+  mean
+  like
+  replacing
+  the
+  whole
+  system?
+  I'm
+  not
+  really
+  prepared
+  to
+  replace
+  the
+  whole
+  system
+  right
+  now.
+
+Francisco Arreola Jr.:
+  Well,
+  I.
+  I
+  always
+  suggest,
+  especially
+  with
+  older
+  systems,
+  to
+  get
+  all
+  your
+  options
+  before
+  you
+  just
+  start
+  throwing
+  money
+  at
+  it.
+  Because
+  again,
+  just
+  for
+  the
+  things
+  that
+  I
+  have
+  already
+  failed
+  and
+  are
+  on
+  the
+  verge
+  of
+  failure,
+  you're
+  looking
+  at
+  1600
+  just
+  for
+  these
+  two.
+  Hopefully
+  that
+  gets
+  it
+  up
+  and
+  running
+  that
+  fan
+  motor
+  is
+  just
+  a
+  matter
+  of
+  time.
+  That's
+  another
+  thousand.
+  Your
+  compressor,
+  even
+  with
+  the
+  hard
+  start,
+  was
+  still
+  over
+  amping,
+  so
+  that's
+  on
+  its
+  last
+  leg.
+  And
+  that's
+  going
+  to
+  be
+  the
+  pricey
+  one
+  because
+  of
+  the
+  refrigerant.
+  So
+  pretty
+  much,
+  once
+  that
+  compressor
+  goes
+  out,
+  you're
+  not
+  going
+  to
+  have
+  a
+  choice.
+
+Customer:
+  Why
+  is
+  the
+  refrigerant
+  so
+  expensive?
+
+Francisco Arreola Jr.:
+  That
+  is
+  above
+  me.
+  I'm
+  just
+  the
+  tech.
+  Yeah,
+  Yeah,
+  I
+  don't.
+  Yeah,
+  I
+  don't
+  do
+  the
+  regulations
+  and
+  all
+  that.
+
+Customer:
+  Yeah,
+  Just
+  asking.
+
+Francisco Arreola Jr.:
+  Yeah,
+  no,
+  I
+  know.
+  It's
+  definitely
+  expensive
+  for
+  sure.
+
+Customer:
+  I
+  just
+  did
+  one
+  outside,
+  so
+  that's
+  why
+  I
+  was
+  asking.
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  So,
+  yeah,
+  for
+  now,
+  let's.
+  Let's
+  work
+  together.
+  Let's
+  do
+  the
+  board
+  and
+  the
+  breaker,
+  if
+  you
+  don't
+  mind.
+  Are
+  you
+  gonna
+  use
+  the.
+
+Francisco Arreola Jr.:
+  The
+  older
+  version
+  of
+  what,
+  the
+  board?
+
+Customer:
+  No,
+  the
+  breaker.
+
+Francisco Arreola Jr.:
+  The
+  contactor.
+  Well,
+  you
+  have
+  a
+  single
+  pole.
+  I
+  have
+  to
+  see
+  if
+  I
+  have
+  it
+  on
+  my
+  truck
+  because
+  again,
+  worst
+  case,
+  we
+  have
+  to
+  order
+  it,
+  so.
+
+Customer:
+  Okay,
+
+Francisco Arreola Jr.:
+  but
+  you're
+  sure
+  you
+  don't
+  want
+  to
+  talk
+  to
+  anybody
+  about
+  getting
+  all
+  your
+  options.
+  That
+  way
+  you
+  don't
+  waste
+  money.
+  And
+  then,
+  you
+  know.
+
+Customer:
+  Not
+  for
+  now.
+  Not
+  for
+  now.
+  I
+  actually
+  am.
+
+Francisco Arreola Jr.:
+  Because
+  if
+  the
+  compressor
+  goes
+  out
+  this
+  year,
+  then
+  you
+  just
+  kind
+  of
+  wasted
+  all
+  this
+  money.
+  You
+  know
+  what
+  I
+  mean?
+  And
+  again,
+  that
+  compressor
+  is
+  in
+  bad
+  shape.
+  Before,
+  it
+  was
+  struggling
+  to
+  turn
+  on
+  after
+  you
+  tried
+  to
+  fix
+  it
+  up.
+  You
+  know
+  what
+  I
+  mean?
+  So
+  we
+  don't
+  know
+  how
+  much
+  damage
+  it
+  took,
+  but
+  it
+  definitely
+  got
+  hit.
+  That's
+  why,
+  like
+  I
+  said,
+  you
+  wanted
+  to
+  talk
+  to
+  your
+  wife
+  and
+  you
+  know,
+  make
+  the
+  best
+  decision
+  together.
+  Because
+  you
+  know,
+  like
+  me
+  personally,
+  if
+  I.
+  If
+  I
+  just
+  said,
+  hey
+  you,
+  yeah,
+  let's
+  just
+  start
+  throwing
+  money
+  at
+  this
+  thing
+  and
+  then
+  it
+  doesn't
+  work
+  and
+  then
+  my
+  wife's
+  gonna
+  be.
+  My
+  wife
+  would
+  be
+  mad.
+  Well,
+  that's
+  just
+  me.
+  That's
+  just
+  me
+  though.
+
+Customer:
+  Yep,
+  I
+  agree.
+  However,
+  I'm
+  not
+  ready.
+
+Francisco Arreola Jr.:
+  So
+  the
+  system
+  decides
+  for
+  you.
+
+Customer:
+  Yep,
+  that's
+  pretty
+  much
+  what
+  happened
+  this
+  morning.
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  So
+  yeah,
+  let's
+  see
+  if
+  you
+  have
+  that
+  board
+  and
+  all
+  that
+  stuff.
+
+Francisco Arreola Jr.:
+  Make
+  sure
+  I
+  got
+  everything
+  I
+  need
+  here.
+
+Customer:
+  Oh,
+  if
+  you
+  don't
+  mind.
+  Can
+  you
+  turn
+  off
+  the
+  light
+  there?
+  The.
+
+Francisco Arreola Jr.:
+  Yes,
+  we'll
+  do
+  it.
+
+Customer:
+  I
+  know
+  because
+  last
+  time
+  what
+  we
+  did
+  was
+  we
+  pulled.
+  We
+  didn't
+  even
+  open
+  the
+  pole.
+  We
+  just
+  extended
+  and
+  lay
+  it
+  on
+  the
+  side.
+  Yeah,
+  that's
+  how
+  they
+  did
+  it
+  last
+  time.
+  Let's
+  see
+  if
+  you
+  have
+  the
+  board.
+  I
+  also
+  noticed
+  one
+  of
+  the
+  cables
+  there,
+  the
+  yellow
+  one.
+  I
+  didn't
+  even
+  tug
+  it
+  on
+  the
+  side
+  came
+  off.
+  I'm
+  just
+  holding
+  it
+  like
+  this.
+  I
+  was
+  like
+  where.
+  It.
+  Schedule?
+  No,
+  we're
+  on
+  call.
+
+Francisco Arreola Jr.:
+  So
+  like
+  I
+  said,
+  I.
+  I
+  was
+  at
+  home.
+  Cuz
+  it's
+  slow
+  today
+  because
+  of
+  the
+  weather.
+  Exactly.
+
+Customer:
+  I
+  got
+  a
+  question
+  for
+  you.
+  For
+  the.
+  For
+  the
+  classes
+  in
+  there.
+  That's
+  the
+  one
+  supplying
+  for
+  both
+  the.
+  The
+  fan
+  and
+  the
+  compressor.
+
+Francisco Arreola Jr.:
+  Yes.
+
+Customer:
+  Right.
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  And
+  how
+  the
+  fan
+  currently
+  is
+  now
+  hooked
+  up
+  to
+  a
+  7.5
+  microfarad
+  capacitor.
+  But
+  some,
+  some
+  like
+  the
+  one
+  I
+  installed
+  last
+  time
+  was
+  a
+  5
+  microfarad
+  on
+  the.
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  Does
+  that
+  make
+  a
+  difference
+  whether
+  it's
+  7.5
+  or
+  5
+  microfarads?
+
+Francisco Arreola Jr.:
+  Yeah.
+  So
+  if
+  you
+  use
+  one
+  that's
+  weak,
+  it's
+  not
+  going
+  to
+  power
+  the
+  motor
+  properly.
+  So
+  it's
+  going
+  to
+  kill
+  the
+  motor
+  because
+  the
+  motor
+  is
+  in
+  a
+  strain
+  to
+  start
+  and
+  it
+  can
+  burn
+  out.
+
+Customer:
+  So
+  if
+  the
+  other
+  way
+  around
+  the
+  motor
+  is
+  intended
+  for
+  5
+  microbarad,
+  would
+  that
+  burn
+  that
+  motor
+  and
+  you
+  use
+
+Francisco Arreola Jr.:
+  a
+  cap
+  that's
+  higher?
+
+Customer:
+  Yes.
+
+Francisco Arreola Jr.:
+  Yeah,
+  same
+  thing.
+  Because
+  then
+  it's
+  supplying
+  too
+  much
+  power.
+  So
+  kind
+  of
+  like
+  how
+  you
+  burn
+  the
+  board.
+  Yeah.
+  So
+  I
+  don't
+  have
+  any
+  boards.
+
+Customer:
+  Unfortunately.
+  We
+  have
+  to
+  order
+  it.
+
+Francisco Arreola Jr.:
+  I
+  don't
+  know
+  how
+  long
+  it
+  would
+  take
+  to
+  get.
+  But
+  if
+  that's
+  what
+  you
+  want
+  to
+  move
+  forward
+  with.
+
+Customer:
+  Yeah,
+  we
+  can
+  definitely
+  get
+  the
+  order
+
+Francisco Arreola Jr.:
+  in
+  but
+  again,
+  yeah,
+  I
+  don't
+  know.
+  If
+  you
+  want
+  to
+  patch
+  up
+  a
+
+Customer:
+  15
+  year
+  old
+  unit,
+  I
+  agree.
+  However,
+  I
+  can't
+  afford
+  it.
+  So
+  I'm
+  just,
+  you
+  know,
+  trying
+  to
+
+Francisco Arreola Jr.:
+  get
+  by
+  while
+  we
+  wait
+  for
+  the
+  parts
+  to
+  come
+  in.
+  Did
+  you
+  want
+  to
+  talk
+  to
+  somebody?
+  We
+  can
+  have
+  them
+  come
+  out
+  today?
+
+Customer:
+  No,
+  I'm
+  good,
+  thank
+  you.
+  Because
+  I
+  actually
+  had
+  a
+  guy
+  talk
+  to
+  me,
+  a
+  sales
+  guy
+  that
+  talked
+  to
+  me
+  last
+  time.
+  I'm
+  replacing
+  the
+  unit.
+  The
+  whole
+  unit?
+  Yeah.
+
+Francisco Arreola Jr.:
+  If
+  you
+  want
+  to
+  patch
+  it
+  up,
+  take
+  care
+  of
+  it
+  for
+  you.
+
+Customer:
+  All
+  right.
+
+Francisco Arreola Jr.:
+  So
+  boarding
+  contactor,
+
+Customer:
+  What
+  is
+  the
+  board
+  called?
+
+Francisco Arreola Jr.:
+  It's
+  going
+  to
+  be
+  a
+  Bryant
+  board
+  for
+  your
+  system.
+  That's
+  the
+  type
+  of
+  system
+  you
+  have.
+  Why,
+  did
+  you
+  want
+  to
+  try
+  to
+  fix
+  that
+  by
+  yourself
+  too?
+
+Customer:
+  No,
+  I'm
+  just
+  wondering
+  what
+  it's
+  called
+  now.
+
+Francisco Arreola Jr.:
+  It's
+  just
+  your
+  control
+  board.
+  But
+  depending
+  on
+  what
+  system
+  you
+  have,
+  that's
+  the
+  meant
+  to
+  make
+  you
+  need.
+  All
+  right,
+  so
+  REDACTED
+  that'll
+  be
+  the
+  control
+  board
+  and
+  the
+  switch,
+  the
+  contactor.
+  So
+  today
+  I'm
+  gonna
+  have
+  to
+  collect
+  at
+  least
+  50%
+  of
+  that.
+  Okay,
+  so
+  about
+  8,
+  22
+  ish
+  is
+  the.
+
+Customer:
+  Do
+  you
+  have
+  the
+  contactor?
+
+Francisco Arreola Jr.:
+  No,
+  I
+  don't
+  have
+  the
+  contactor
+  either.
+  I
+  only
+  have
+  two
+  poles.
+  Oh,
+  by
+  the
+  way,
+  even
+  without
+  the
+  board,
+  there's
+  no
+  point
+  in
+  doing
+  the
+  contactor
+  because
+  the
+  board
+  is
+  the
+  heart.
+
+Customer:
+  Yeah.
+  Did
+  you.
+  So
+  everything
+  on
+  the
+  wiring
+  on
+  the
+  board,
+  on
+  the
+  contactor
+  was
+  right?
+
+Francisco Arreola Jr.:
+  It
+  looks
+  good.
+  I'm.
+  You
+  probably
+  got
+  it
+  wrong
+  the
+  first
+  time.
+  That's
+  why
+  it
+  was
+  humming.
+  And
+  then.
+  Then
+  yeah,
+  and
+  then
+  it
+  just
+  blew
+  the
+  board.
+  What
+  am
+  I
+  doing?
+
+Customer:
+  Let's
+  go.
+  Okay,
+  let
+  me
+  get
+  to
+  my
+  wallet
+  first.
+
+Francisco Arreola Jr.:
+  Well,
+  I
+  gotta
+  get
+  my
+  stuff.
+  Well,
+  yeah,
+  I
+  gotta
+  get
+  myself,
+  so.
+
+Customer:
+  Yeah,
+  yeah,
+  no
+  worries.
+
+Francisco Arreola Jr.:
+  This
+  will
+  agree
+  to
+  the
+  REDACTED
+  Okay,
+  so
+  if
+  you
+  want
+  to
+  sign
+  here
+  at
+  the
+  bottom.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  And
+  then
+  I'm
+  gonna
+  have
+  to
+  order
+  that.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  And
+  then
+  the
+  deposit
+  looks
+  like
+  we
+  have
+  a
+  MasterCard
+  ending
+  in
+  REDACTED
+
+Customer:
+  Can
+  I
+  change
+  it?
+  Yeah,
+  because
+  this
+  one
+  I
+  get
+  points.
+
+Francisco Arreola Jr.:
+  I
+  don't
+  know.
+
+Customer:
+  Plus
+  that
+  card
+  is
+  also
+  probably
+  expired
+  already.
+
+Francisco Arreola Jr.:
+  I
+  think
+  it
+  said
+  it
+  expired
+  in
+  29,
+  but
+  here
+  I
+  think
+  it's
+  much
+
+Customer:
+  better
+  to
+  do
+  this.
+
+Francisco Arreola Jr.:
+  Did
+  you
+  just
+  want
+  to
+  do
+  the
+  full
+  amount
+  or
+  just
+  the
+  half?
+
+Customer:
+  Half,
+  like
+  the
+  industry
+  stand.
+
+Francisco Arreola Jr.:
+  Let's
+  do
+  800.
+
+Customer:
+  Wow.
+  How
+  many
+  days
+  I
+  do
+  you
+  think
+  the
+  lead
+  time
+  would
+  be?
+
+Francisco Arreola Jr.:
+  That
+  I
+  can't
+  say
+  because
+  that's
+  the
+  parts
+  department.
+  So
+  as
+  soon
+  as
+  they
+  get
+  My
+  email.
+  They
+  send
+  the
+  order
+  out
+  and
+  then.
+  Yeah,
+  and
+  then.
+  And
+  then
+  that's
+  out
+  of
+  my
+  hands.
+  Okay,
+  perfect.
+  If
+  you
+  just
+  want
+  to
+  sign
+  to
+  approve
+  that
+  charge.
+  I
+  just
+  did
+  800.
+  Okay.
+  Just
+  so
+  it's
+  an
+  exact
+  amount.
+  Yep.
+  I'm.
+  The
+  A45
+  will
+  be
+  the
+  remaining
+  balance
+  once
+  we
+  take
+  care
+  of
+  the.
+  The
+  installations
+  for
+  you.
+  Okay.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  All
+  right,
+  so
+  let
+  me
+  clean
+  up
+  here.
+
+Customer:
+  All
+  right,
+  that's
+  it
+  for
+  the
+  meantime.
+  I
+  just
+  need
+  take
+  this
+  out.
+  Check
+  what
+  out?
+
+Francisco Arreola Jr.:
+  Yeah.
+  So
+  you
+  can
+  also
+  put
+  it
+  upside
+  down.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  And
+  that'll.
+  That
+  won't
+  supply
+  any
+  power.
+  Yeah.
+  But
+  again,
+  either
+  way,
+  with
+  the
+  board
+  being
+  damaged.
+  With
+  the
+  board
+  being
+  damaged,
+  it's
+  not
+  going
+  to
+  turn
+  on
+  anyway.
+
+Customer:
+  Yeah.
+  Can
+  you.
+  Can
+  you
+  reach
+  the.
+  The
+  other
+  one
+  or
+  it's
+  not.
+  It's
+  like
+  the
+  Diane
+  Hill.
+  Because
+  I
+  thought
+  we
+  were
+  gonna
+  go
+  back
+  and.
+
+Francisco Arreola Jr.:
+  Oh
+  no,
+  it's
+  way
+  back
+  there.
+
+Customer:
+  Okay.
+  Okay.
+  Do
+  you
+  mind
+  if
+  I
+  borrow
+  your
+  ladder
+  for
+  meantime?
+  I'll
+  just
+  pick
+  it
+  up.
+
+Francisco Arreola Jr.:
+  You
+  want
+  to
+  grab
+  or
+  not?
+
+Customer:
+  Yeah.
+  All
+  right,
+  Let
+  me
+  show
+  you
+  how.
+  How
+  the
+  other
+  technique,
+  it's.
+
+Francisco Arreola Jr.:
+  Yeah,
+  I
+  don't
+  like
+  doing
+  that
+  cuz
+  I
+  don't
+  want
+  to
+  damage
+  your
+  door.
+
+Customer:
+  Ah,
+  no
+  worries.
+  If
+  that
+  was
+  the.
+
+Francisco Arreola Jr.:
+  It's
+  okay
+  for
+  you
+  to
+  say
+  that
+  cuz
+  it's
+  your
+  door.
+
+Customer:
+  Well,
+  yeah,
+  it
+  opened
+  all
+  the
+  way.
+  Sorry,
+  my
+  bad.
+  It
+  has
+  a
+  limit
+  on
+  your
+  height.
+  Yeah.
+
+Francisco Arreola Jr.:
+  So
+  we
+  got
+  to
+  put
+  this
+  up
+  here.
+
+Customer:
+  Sorry,
+  man,
+  I
+  thought
+  it
+  was.
+  There
+  was
+  more.
+  Yeah.
+  Let's
+  do
+  one
+  at
+  a
+  time.
+  Okay,
+  thank
+  you.
+  I'm
+  gonna
+  do
+  this
+  side
+  and
+  then
+  lock
+  this
+  in.
+  Okay.
+  Do
+  you
+  guys
+  do
+  apprentice
+  stuff?
+
+Francisco Arreola Jr.:
+  Apprenticeship
+  programs?
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  I'm
+  not
+  too
+  sure.
+
+Customer:
+  Is
+  this
+  one.
+  Well,
+  I
+  appreciate
+  you
+  coming
+  here
+  earlier.
+  Okay,
+  thank
+  you.
+
+Francisco Arreola Jr.:
+  We
+  might
+  have
+  to
+  leave
+  it
+  up
+  there.
+  Yeah,
+  sure.
+  Just
+  to
+  be
+  safe.
+
+Customer:
+  I'll
+  use
+  it.
+  I'll
+  use
+  my
+  ladder.
+  Yeah,
+  that's
+  the
+  main
+  difference.
+  I
+  think
+  the
+  ladder
+  on
+  the
+  other
+  one
+  was
+  longer.
+  Yeah,
+  but
+  I'm
+  sorry.
+  No,
+  you're
+  good.
+
+Francisco Arreola Jr.:
+  They
+  gave
+  me
+  a
+  little
+  one.
+  All
+  right.
+  All
+  right.
+  So
+  I'll
+  email
+  to
+  get
+  that
+  order
+
+Customer:
+  going
+
+Francisco Arreola Jr.:
+  and
+  then
+  I'll
+  see
+  two
+  signatures
+  from
+  you.
+  If
+  you
+  just
+  want
+  to
+  sign
+  here
+  at
+  the
+  bottom.
+  This
+  is
+  just
+  how
+  we
+  diagnosed
+  it.
+
+Customer:
+  Yeah.
+  Two
+  signature,
+  right?
+
+Francisco Arreola Jr.:
+  Yeah,
+  it'll
+  be
+  one
+  more.
+  All
+  right,
+  perfect.
+
+Customer:
+  All
+  right.
+
+Francisco Arreola Jr.:
+  I
+  mean
+  it
+  varies.
+  Some
+  of
+  which
+  are
+  pretty
+  basic
+  parts.
+  Depends
+  on
+  the
+  manufacturer.
+
+Customer:
+  Doctor
+  who
+  unit.
+
+Francisco Arreola Jr.:
+  The
+  whole
+  unit.
+
+Customer:
+  The
+  whole
+  unit
+  is
+  floor,
+  right?
+
+Francisco Arreola Jr.:
+  What
+  do
+  you
+  mean?
+
+Customer:
+  Like
+  for
+  example,
+  depends
+  on
+  what
+  you're
+  ordering.
+
+Francisco Arreola Jr.:
+  Like
+  if
+  you're
+  replacing
+  your
+  whole
+  system.
+
+Customer:
+  Yeah,
+  usually.
+  We
+  usually
+  have
+  that
+  stock.
+
+Francisco Arreola Jr.:
+  That's
+  not
+  something
+  that
+  sells
+  frequently.
+  And
+  they'll
+  take
+  care
+  of
+  it,
+  like,
+  next
+  day.
+
+Customer:
+  Alrighty.
+
+Francisco Arreola Jr.:
+  All
+  right.
+  Thank
+  you.
+
+Customer:
+  You're
+  welcome.
+  Who
+  are
+  Muslim?
+  Are
+  they
+  going
+  to
+  contact
+  us
+  or.
+
+Francisco Arreola Jr.:
+  Yeah,
+  once
+  the
+  parts
+  arrive,
+  they'll
+  call
+  you
+  to
+  schedule
+  the
+  time
+  for
+  us
+
+Customer:
+  to
+  come
+  back
+  out.
+  Thank
+  you.
+  You're
+  welcome.
+  It,
+
+Francisco Arreola Jr.:
+  Dumbass.
+
+Customer:
+  It.
+  It's.
+  It's.
+  It's.
+  It's.
+  It's.
+  It's.
+  It's.
+  It.

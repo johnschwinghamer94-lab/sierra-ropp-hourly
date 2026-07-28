@@ -1,0 +1,2404 @@
+TRANSCRIPT
+Rep:      Francisco Arreola Jr.
+Date:     2026-03-25
+Duration: 130 min
+RecId:    3ca9e616-2c64-4ba5-9f8b-fcc970bda179-XYpMBXpv6TVg9okInQemgsAIw1B3
+Job:      Francisco - AC Unit Freezing Over - Airflow Restriction Issue
+============================================================
+
+
+Francisco Arreola Jr.:
+  How
+  you
+  doing?
+
+Customer:
+  Good.
+  Sorry.
+
+Francisco Arreola Jr.:
+  No
+  worries.
+  My
+  name
+  is
+  Francisco.
+
+Customer:
+  My
+  name
+  is
+  Francisco.
+
+Francisco Arreola Jr.:
+  Is
+  your
+  name
+  Jennifer?
+  Jennifer?
+
+Customer:
+  I
+  thought
+  you
+  said.
+  I
+  think
+  it
+  was
+  like
+  Francisco
+  with
+  Sierra.
+  Thought
+  you
+  were
+  giving
+  me
+  your
+  whole
+  name.
+
+Francisco Arreola Jr.:
+  I
+  was
+  like,
+  nice
+  to
+  meet
+  you.
+  Do
+  you
+  mind
+  if
+  I
+  could
+  name.
+  How's
+  your
+  day
+  been?
+
+Customer:
+  Hot.
+  Yeah.
+  Yeah.
+  It's
+  a
+  long
+  history.
+
+Francisco Arreola Jr.:
+  It's
+  starting
+  to
+  go
+  on.
+
+Customer:
+  So
+  my
+  air
+  AC
+  unit
+  that
+  keeps
+  freezing.
+  So
+  I
+  know,
+  because
+  this
+  is
+  my
+  third
+  summer.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  That
+  when
+  I
+  turn
+  off
+  my
+  AC
+  at
+  the
+  power
+  box
+  to
+  let
+  the
+  whole
+  thing
+  stop
+  and
+  I
+  let
+  it
+  drain
+  down.
+  Yeah.
+  It
+  will
+  turn
+  back
+  on
+  and
+  blow
+  out
+  cold
+  air
+  for
+  a
+  few
+  days.
+  Correct.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  So
+  just
+  to
+  let
+  you
+  know,
+  because,
+  like,
+  this
+  is
+  really
+  very
+  frustrating,
+  I
+  had
+  a
+  friend
+  that
+  I
+  used
+  to
+  work
+  with.
+  He
+  owns
+  an
+  AC
+  company.
+  So
+  like.
+  Or
+  he
+  does
+  ac,
+  and
+  I've
+  been
+  dealing
+  with
+  him.
+  And
+  he
+  was
+  out
+  on
+  Monday.
+  So
+  this
+  happened
+  on
+  Monday,
+  Sunday
+  night
+  in
+  the
+  Monday
+  morning.
+  So
+  I
+  messaged
+  him,
+  I
+  said,
+  hey,
+  it's
+  happening
+  again.
+  He
+  came
+  out
+  on
+  Monday
+  and
+  he
+  was
+  like,
+  I.
+  He
+  went
+  out
+  there,
+  he's
+  like,
+  I
+  don't.
+  I
+  can't
+  see
+  what's
+  causing
+  this.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  I
+  chat
+  gbt'd
+  what
+  could
+  cause
+  it
+  and
+  chatgpt,
+  which
+  I
+  understand
+  well,
+  and
+  it
+  said,
+  check
+  your
+  free.
+  Your
+  coolant
+  level
+  or
+  Freon
+  level
+  or
+  whatever.
+  So
+  I
+  said,
+  is
+  that
+  level.
+  Okay.
+  He
+  looked
+  at
+  it
+  and
+  he
+  put
+  in
+  four
+  pounds
+  of
+  Freon.
+  Is
+  it
+  freon
+  or
+  coolant?
+
+Francisco Arreola Jr.:
+  Refrigerant.
+
+Customer:
+  Refrigerant.
+  Sorry.
+
+Francisco Arreola Jr.:
+  No,
+  we
+  kind
+  of
+  use
+  all
+  three
+  entertainers.
+
+Customer:
+  So
+  he
+  put
+  in
+  four
+  pounds.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  That
+  was
+  Monday.
+  Monday.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  And
+  it's.
+
+Francisco Arreola Jr.:
+  And
+  he's
+  doing
+  it
+  again.
+
+Customer:
+  Correct.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  So
+  the
+  whole
+  s.
+  So
+  I'll
+  just
+  let
+  you
+  know.
+  It's
+  three
+  single
+  unit,
+  three
+  zones.
+  This
+  zone
+  three
+  summers
+  ago.
+  So
+  here's
+  one
+  zone
+  just
+  called
+  the
+  two
+  nuts
+  that
+  way.
+  Like,
+  this
+  is
+  my
+  daughter's
+  room.
+  So
+  I
+  apologize.
+  So
+  this
+  unit,
+  the.
+  The.
+  The
+  flap.
+  What
+  is
+  it
+  called?
+
+Francisco Arreola Jr.:
+  The
+  damper.
+
+Customer:
+  Damper,
+  yes.
+  The.
+  A
+  tech.
+  A
+  couple
+  of
+  years
+  ago,
+  there
+  was
+  a
+  problem
+  with
+  the
+  damper
+  opening
+  and
+  closing.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  And
+  at
+  the
+  time,
+  my.
+  My
+  daughter
+  was
+  moved
+  out.
+  She's
+  adult,
+  so
+  she.
+  This
+  room
+  was
+  not
+  being
+  used.
+
+Francisco Arreola Jr.:
+  Right.
+
+Customer:
+  So
+  he
+  was
+  like,
+  well,
+  we
+  can
+  replace
+  it,
+  or
+  we
+  can
+  just
+  cut
+  the
+  wire
+  and
+  leave
+  it
+  open
+  so
+  that
+  it.
+  You
+  know,
+  if
+  you
+  don't
+  use
+  the
+  room,
+  it's
+  not
+  that
+  big
+  of
+  a
+  deal.
+  So
+  this
+  unit
+  has
+  always
+  has
+  been
+  off.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  So
+  we
+  don't
+  run
+  this
+  Unit.
+
+Francisco Arreola Jr.:
+  Still
+  not
+  using
+  it
+  to
+  this
+  day.
+
+Customer:
+  We
+  have
+  not
+  used
+  it
+  since.
+  So
+  last
+  summer,
+  we
+  had
+  a
+  house
+  sitter
+  come
+  in,
+  and
+  she
+  stayed
+  in
+  this
+  room
+  when
+  she
+  turned
+  it
+  on,
+  and
+  I
+  was
+  like,
+  oh,
+  you
+  got
+  to
+  turn
+  the
+  unit
+  off.
+  Like,
+  don't
+  use
+  it.
+  So
+  we
+  had
+  it
+  run
+  once
+  last
+  summer,
+  but
+  it
+  has
+  not
+  been
+  used
+  in
+  a
+  year.
+
+Francisco Arreola Jr.:
+  Gotcha.
+  Okay.
+
+Customer:
+  Sorry.
+  Trying
+  to
+  give
+  you
+  the
+  history.
+  So
+  that's
+  not
+  like
+  we're
+  trying
+  to
+  solve
+  the
+  problem.
+  This
+  unit
+  has
+  a
+  date
+  damper.
+  Is
+  it
+  called
+  the
+  damper?
+  A
+  damper
+  that
+  comes
+  onto,
+  like,
+  over
+
+Francisco Arreola Jr.:
+  here
+  for
+  this
+  main
+  space.
+
+Customer:
+  For
+  this
+  main
+  space.
+  And
+  that
+  one
+  was.
+  It
+  is.
+
+Francisco Arreola Jr.:
+  I'm
+  sorry,
+  is
+  that.
+  Are
+  you
+  a
+  Harry
+  Potter
+  fan?
+
+Customer:
+  I'm
+  a
+  huge
+  Harry
+  Potter
+  fan.
+
+Francisco Arreola Jr.:
+  Did
+  you
+  actually
+  see
+  the
+  trailer?
+
+Customer:
+  Oh,
+  yes.
+  I
+  watched
+  it
+  like
+  50
+  times.
+
+Francisco Arreola Jr.:
+  I
+  just
+  saw
+  it
+  like
+  two
+  hours
+  ago.
+
+Customer:
+  Right.
+  This
+  is
+  kind
+  of
+  exciting.
+
+Francisco Arreola Jr.:
+  I'm
+  sorry
+  to
+  catch
+  up.
+  It's
+  okay.
+
+Customer:
+  So
+  when
+  we
+  first
+  moved
+  into
+  this
+  house,
+  this
+  room
+  and
+  this
+  room
+  get
+  horrible,
+  horrible
+  airflow.
+  I
+  almost
+  wonder
+  if
+  there's
+  no
+  insulation
+  in
+  the
+  walls.
+  There's
+  somebody
+  right
+  outside
+  the
+  door.
+
+Francisco Arreola Jr.:
+  I
+  know.
+  Sorry.
+
+Customer:
+  Okay,
+  so
+  we
+  called
+  Gettle
+  and
+  had
+  them
+  put
+  in.
+  And
+  Gettel
+  recommended
+  putting
+  in
+  another
+  duct.
+  Another
+  duct
+  into
+  this
+  room.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  Did
+  not
+  make
+  one
+  bit
+  of
+  difference.
+  And
+  so
+  that
+  room
+  also
+  has
+  a
+  duct.
+  And
+  then
+  here's
+  our
+  filters.
+  And
+  we
+  just
+  replaced
+  our
+  filters
+  like
+  two
+  weeks
+  ago.
+  So
+  they're
+  brand
+  new
+  air
+  filters.
+  Okay,
+  so
+  this
+  is
+  one
+  ac.
+
+Francisco Arreola Jr.:
+  Now,
+  this
+  zone,
+  is
+  that
+  these
+  bedrooms
+  as
+  well?
+  Correct.
+  Okay,
+  then
+  the
+  last
+  one's
+  going
+  to
+  use
+  the
+  master.
+
+Customer:
+  My
+  master.
+  And
+  then
+  here
+  is
+  our.
+  There's
+  obviously
+  there's.
+  There
+  has
+  to
+  be.
+  So,
+  you
+  know,
+  Google
+  and
+  YouTube
+  there.
+  Like,
+  we
+  were
+  looking
+  today
+  and
+  we
+  wondered
+  if
+  it
+  was
+  a
+  computer
+  damper
+  or
+  computer
+  thing
+  on
+  the
+  outside
+  of
+  the
+  AC
+  unit
+  that
+  needed
+  some
+  wires
+  or
+  like
+  that.
+  It's
+  actually
+  a
+  thermostat
+  electrical
+  issue,
+  not
+  an
+  AC
+  issue.
+
+Francisco Arreola Jr.:
+  Well,
+  for
+  it
+  to
+  be
+  freezing,
+  it's.
+  It's.
+  The
+  first
+  thing
+  is
+  going
+  to
+  be
+  airflow
+  because
+  as
+  your.
+  The
+  way
+  your
+  systems
+  work
+  is
+  it
+  pulls
+  in
+  air
+  from
+  the
+  home
+  through
+  your
+  filters.
+  It
+  either
+  gets
+  heated
+  or
+  cool,
+  depending
+  on
+  which
+  smoke
+  we're
+  running
+  the
+  system,
+  and
+  it
+  gets
+  blown
+  back
+  out.
+  So
+  that's
+  the
+  same
+  air
+  as
+  just
+  being
+  recycled,
+  right?
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  Now,
+  during
+  the
+  cooling
+  season
+  or
+  running
+  with
+  system
+  and
+  cooling,
+  that
+  compressor
+  in
+  your
+  coil
+  is
+  just
+  going
+  to
+  get
+  as
+  cold
+  as
+  possible,
+  because
+  that's
+  its
+  job.
+  And
+  the
+  warmer
+  air
+  that
+  you're
+  Pulling
+  from
+  the
+  home
+  actually
+  keeps
+  it
+  from
+  freezing.
+
+Customer:
+  Right.
+
+Francisco Arreola Jr.:
+  Does
+  that
+  make
+  sense?
+  So
+  if
+  there's
+  an
+  airflow
+  restriction.
+  Not
+  enough
+  to
+  kind
+  of
+  keep
+  that
+  at
+  a
+  medium
+  level.
+  It'll
+  get
+  cold
+  and
+  cold
+  according
+  to
+  it.
+
+Customer:
+  Well,
+  that's
+  what
+  one
+  of
+  the
+  things
+  said
+  was.
+  Like,
+  there
+  could
+  be
+  a.
+  A
+  filter
+  duct
+  issue
+  that's
+  causing
+  it,
+  too.
+
+Francisco Arreola Jr.:
+  Yeah,
+  it's
+  a
+  couple.
+  It
+  could
+  be
+  a
+  couple
+  things.
+  I
+  have
+  to
+  get
+  into
+  the
+  system.
+  I'll
+  show
+  you.
+
+Customer:
+  It's
+  in
+  here.
+  Just
+  to
+  let
+  you
+  know.
+  And
+  just
+  to
+  let
+  you
+  know,
+  we
+  just
+  had
+  a
+  plumber
+  come
+  out,
+  and
+  so
+  we
+  are.
+  That's
+  just
+  an
+  old
+  stain.
+  Okay.
+  There's
+  a.
+  The
+  fire
+  suppression
+  system
+  valve
+  is
+  right
+  there,
+  and
+  it
+  was
+  leaking,
+  so
+  the
+  plumber
+  came
+  out
+  a
+  couple
+  weeks
+  ago
+  to
+  fix
+  that.
+  So
+  I
+  just
+  wanted
+  you
+  to
+  know,
+  like,
+  word.
+  So.
+  So,
+  yeah,
+  the
+  AC
+  is
+  up
+  there.
+
+Francisco Arreola Jr.:
+  Okay.
+  So
+  other
+  than
+  airflow
+  with
+  those
+  two
+  areas
+  and
+  obviously
+  the
+  system
+  not
+  working
+  right
+  now,
+  do
+  you
+  have
+  any
+  other
+  concerns?
+  Have
+  you
+  had
+  any
+  other
+  issues
+  with
+  the
+  unit
+  in
+  the
+  time
+  he's
+  in
+  here?
+
+Customer:
+  No.
+  This.
+  The
+  whole
+  freezing
+  and
+  letting
+  it
+  drain.
+  And,
+  like,
+  we've
+  been
+  dealing
+  with
+  that.
+  This
+  is.
+  This
+  is
+  going
+  to
+  be
+  the
+  start
+  of
+  our
+  fourth
+  summer
+  that
+  we
+  have
+  had
+  to,
+  like,
+  last.
+  So,
+  like,
+  three
+  summers
+  ago,
+  we've
+  just.
+  We've
+  had
+  a
+  couple
+  people
+  come
+  out.
+  And
+  the
+  one
+  guy,
+  he
+  came
+  out,
+  he
+  was
+  like,
+  you
+  just
+  have
+  to
+  shut
+  it
+  off
+  and
+  let
+  it,
+  like,
+  drain
+  out.
+  And
+  it
+  didn't
+  actually
+  do
+  it
+  that
+  often.
+  Like,
+  it.
+  It
+  went,
+  like,
+  a
+  whole
+  season
+  without
+  it
+  happening.
+  And
+  then
+  two
+  years
+  ago,
+  it
+  happened
+  a
+  couple
+  times
+  last
+  summer,
+  it
+  happened
+  a
+  bunch
+  of
+  times.
+  And
+  it's
+  not
+  even
+  100
+  degrees
+  yet.
+  I
+  mean,
+  it
+  is
+  close
+  to
+  it,
+  but
+  it's,
+  like,
+  happening
+  now.
+
+Francisco Arreola Jr.:
+  And
+  so
+  right
+  now,
+  every.
+  For
+  the
+  past
+  couple
+  weeks,
+  you've
+  just
+  been,
+  like,
+  killing
+  the
+  main
+  power,
+  letting
+  it
+  fall,
+  and
+  then
+  plugging
+  it
+  back
+  in.
+  Okay.
+  And
+  how
+  long
+  have
+  you
+  lived
+  here?
+
+Customer:
+  We've
+  lived
+  in
+  this
+  house
+  for
+  seven
+  years.
+
+Francisco Arreola Jr.:
+  Seven
+  years.
+  All
+  right.
+  So.
+  And
+  so
+  not
+  the
+  whole
+  time
+  you've
+  been
+  here?
+  Maybe,
+  like,
+  about
+  half
+  the
+  time,
+  but
+
+Customer:
+  we
+  know,
+  like,
+  we've.
+  The
+  house
+  is,
+  I
+  think,
+  like,
+  13
+  years
+  old.
+  And
+  Sierra
+  just
+  replaced
+  our
+  neighbor's
+  AC
+  unit.
+  I
+  really
+  don't
+  want
+  to
+  do
+  that.
+  Like,
+  it
+  makes
+  me
+  want
+  to
+  vomit
+  thinking
+  about
+  it.
+  So
+  I'm
+  hoping
+  that
+  this
+  is
+  some
+  sort
+  of.
+  But
+  when
+  I.
+  When
+  my
+  friend
+  was
+  out
+  on
+  Monday,
+  he
+  is
+  a
+  man
+  of
+  very
+  few
+  words,
+  but
+  he
+  was
+  like,
+  I.
+  I
+  can't
+  see
+  what's
+  causing
+  it.
+
+Francisco Arreola Jr.:
+  Right.
+
+Customer:
+  So
+  I
+  was
+  just
+  like.
+  I
+  didn't
+  want
+  to
+  call
+  him
+  today
+  and
+  say
+  like
+  it's
+  happening
+  again
+  and
+  he
+  comes
+  out
+  and
+  he
+  doesn't
+  have
+  an
+  answer.
+  I
+  just
+  felt
+  like
+  maybe
+  somebody
+  else
+  can
+  come
+  out
+  and
+  look
+  and
+  see.
+
+Francisco Arreola Jr.:
+  No,
+  we'll
+  definitely.
+  I
+  will
+  take
+  a
+  look
+  at
+  the
+  whole
+  thing
+  top
+  to
+  bottom.
+  We'll
+  see
+  what's
+  going
+  on.
+  Now
+  I
+  won't
+  do
+  any
+  work
+  without
+  your
+  approval
+  and
+  just
+  do
+  a
+  thorough
+  evaluation,
+  kind
+  of
+  figure
+  out
+  what
+  the
+  problem
+  is
+  and
+  then
+  kind
+  of
+  go
+  from
+  there.
+  I'll
+  put
+  together
+  a
+  report
+  for
+  you
+  going
+  over
+  everything
+  and
+  then
+  kind
+  of
+  see
+  what
+  we're
+  getting
+  into.
+  Mali,
+  where
+  is
+  your
+  outdoor
+  system?
+
+Customer:
+  When
+  I
+  came
+  out
+  this
+  more
+  out
+  of
+  my
+  room
+  this
+  morning
+  I
+  was
+  like.
+  So.
+  And
+  it
+  like
+  pours.
+  So
+  we
+  always
+  know.
+  Cuz
+  it
+  will
+  drain
+  out
+  there
+  for
+  a
+  while
+  and
+  like
+  you
+  can
+  see
+  the
+  ground
+  as
+  well.
+
+Francisco Arreola Jr.:
+  You
+  mean
+  the
+  outside
+  starting
+  to
+  freeze?
+
+Customer:
+  I
+  honestly
+  have
+  never
+  even.
+  I
+  have
+  these
+  so
+  big.
+  I
+  guess
+  it's
+  the
+  fan.
+
+Francisco Arreola Jr.:
+  Well,
+  you
+  have
+  a
+  five
+  ton
+  system.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  So
+  that's
+  pretty
+  much
+  the
+  largest
+  you
+  can
+  do
+  for
+  residential.
+
+Customer:
+  Yeah.
+  I
+  was
+  wondering.
+  I
+  was
+  glad
+  you
+  said
+  that
+  cuz
+  of
+  course,
+  you
+  know,
+  I've
+  been
+  everything.
+  Like
+  what
+  kind
+  of
+  cool
+  thing.
+
+Francisco Arreola Jr.:
+  Yeah,
+  yeah.
+  So
+  you
+  have
+  a
+  five
+  ton.
+  When
+  it's
+  running,
+  is
+  everything
+  turning
+  on?
+
+Customer:
+  So
+  this,
+  that
+  was
+  the
+  one
+  thing
+  when
+  I
+  came
+  out
+  this
+  morning.
+  The
+  fan
+  is
+  running
+  like
+  you
+  can
+  hear
+  the
+  system
+  or
+  you
+  can
+  hear
+  this
+  running.
+
+Francisco Arreola Jr.:
+  Right.
+
+Customer:
+  But
+  the
+  cold
+  air
+  is
+  not
+  coming
+  out.
+  And
+  like
+  when
+  you
+  put
+  your
+  hand
+  over
+  it
+  because
+  it's
+  like
+  even
+  in
+  this,
+  in
+  the
+  winter
+  when
+  the
+  heat
+  is
+  coming
+  out,
+  you
+  can
+  feel
+  stuff
+  coming
+  out.
+  It's
+  not
+  pushing
+  through
+  the
+  vents.
+
+Francisco Arreola Jr.:
+  So
+  you're
+  not
+  getting
+  the.
+  Any
+  air
+  coming
+  out.
+
+Customer:
+  I'm
+  not
+  getting
+  any
+  air
+  coming.
+
+Francisco Arreola Jr.:
+  No
+  air
+  whatsoever.
+  I
+  did
+  not
+
+Customer:
+  to
+  be
+  honest
+  this
+  morning
+  I
+  don't
+  have.
+  No.
+  Well,
+  no,
+  I'm
+  so
+  Sierra
+  trying
+  to
+  think.
+  I
+  think
+  it's
+  that
+  you
+  can't
+  feel
+  any
+  air
+  coming
+  out
+  at
+  all.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  Cuz
+  the
+  second
+  that
+  it
+  drains
+  off
+  and
+  you
+  turn
+  it
+  back
+  on,
+  I
+  can
+  feel
+  but
+  maybe
+  I'm
+  just
+  not
+  feeling
+  cold
+  air.
+  So
+  then
+  I'm
+  not.
+
+Francisco Arreola Jr.:
+  Well,
+  I'm
+  gonna
+  turn
+  it
+  on.
+
+Customer:
+  Yeah,
+  for
+  sure.
+
+Francisco Arreola Jr.:
+  And
+  see
+  exactly
+  what's
+  doing
+  what.
+  So
+  it
+  may
+  freeze
+  over.
+  Yeah,
+  but
+  that'll
+  actually
+  help.
+
+Customer:
+  Is
+  it
+  something
+  that
+  you
+  may
+  need
+  to
+  come
+  out
+  when
+  it's
+  frozen
+  over
+  to
+  evaluate?
+
+Francisco Arreola Jr.:
+  Not
+  necessarily.
+  I
+  wondered.
+
+Customer:
+  I
+  was
+  like,
+  can't
+  have.
+  It's
+  been
+  defrosting
+  all
+  day.
+
+Francisco Arreola Jr.:
+  No,
+  not
+  necessarily,
+  but.
+  But
+  it
+  kind
+  of
+  helps
+  to
+  see
+  where
+  like
+  the
+  ice
+  starts
+  to
+  build
+  up
+  first.
+  Okay,
+  but.
+  But
+  overall,
+  I
+  mean,
+  you
+  know,
+  we
+  know
+  what
+  to
+  be
+  doing.
+  What.
+
+Customer:
+  Yeah.
+  And
+  then
+  that
+  one
+  guy
+  I
+  was
+  trying
+  to
+  look
+  on
+  here
+  just
+  now,
+  that
+  video,
+  I
+  saw
+  some
+  kind
+  of.
+  Some
+  sort
+  of
+  weird
+  box,
+  but
+  I
+  don't
+  any.
+
+Francisco Arreola Jr.:
+  Well,
+  there's
+  some
+  stuff
+  here,
+  here.
+  Electrical.
+  But
+  I'll
+  open
+  the
+  whole
+  thing
+  up.
+
+Customer:
+  And
+  I
+  think
+  about
+  like
+  I
+  work
+  in
+  a
+  field
+  and
+  people
+  say
+  like
+  I
+  chat
+  gbt.
+  And
+  I
+  was
+  like,
+  I'll
+  off.
+  Don't
+  chat.
+
+Francisco Arreola Jr.:
+  Yeah,
+  no,
+  I
+  mean
+  I'm
+  with
+  it.
+
+Customer:
+  Chat.
+
+Francisco Arreola Jr.:
+  GPT
+  is
+  very
+  helpful
+  sometimes.
+
+Customer:
+  Sometimes.
+
+Francisco Arreola Jr.:
+  I
+  mean,
+  honestly,
+  you.
+  You
+  have.
+  You
+  have
+  a
+  pretty
+  good
+  understanding
+  of
+  what
+  the.
+  Like
+  how
+  your
+  system
+  overall
+  works.
+  But.
+  But
+  yeah.
+  So
+  I
+  want
+  to
+  start
+  outside,
+  work
+  my
+  way
+  in.
+
+Customer:
+  Okay.
+  And
+  he's
+  just
+  going
+  to
+  whine.
+
+Francisco Arreola Jr.:
+  Okay,
+  no
+  worries.
+
+Customer:
+  Sorry.
+  You're.
+  He's
+  going
+  to
+  be
+  out
+  here
+  for
+  a
+  while.
+  Leave
+  him
+  safe.
+
+Francisco Arreola Jr.:
+  And
+  then
+  as
+  far
+  as
+  when
+  I
+  need
+  to
+  go
+  into
+  the
+  attic.
+
+Customer:
+  Yep.
+  Come
+  on
+  in.
+  No
+  need
+  to
+  knock
+  or
+  anything
+  like
+  that.
+
+Francisco Arreola Jr.:
+  Okay.
+  I'll
+  grab
+  my.
+  Do
+  I
+  need
+  to
+  be
+  careful
+  with
+  the
+  dogs?
+
+Customer:
+  Nope,
+  they
+  won't.
+  It's.
+  It's.
+  It's.
+  One.
+  It's.
+  Are
+  you
+  up
+  there?
+  Can
+  you
+  hear
+  me?
+  Sorry,
+  I
+  forgot
+  to
+  tell
+  you
+  one
+  thing.
+  That
+  last
+  summer
+  he
+  replaced
+  the
+  motor.
+  The.
+  The
+  motor
+  blower
+  thing.
+  Yes,
+  he
+  replaced
+  that
+  last
+  summer.
+
+Francisco Arreola Jr.:
+  Yes.
+  He
+  actually
+  dated
+  it.
+
+Customer:
+  Okay.
+  Sierra.
+  Out
+  of
+  all
+  the
+  things
+  I
+  told
+  you,
+  I
+  forgot
+  to
+  tell
+  you
+  that.
+  Okay,
+  I'll
+  let
+  you.
+
+Francisco Arreola Jr.:
+  There
+  is
+  a
+  lot
+  going
+  on.
+
+Customer:
+  All.
+  Outside.
+  It.
+  Was.
+  There.
+  It.
+  There.
+  It.
+  I.
+  It.
+  There.
+  There.
+  I
+  mean.
+  It.
+  That.
+  There.
+
+Francisco Arreola Jr.:
+  Yeah.
+  Now
+  the
+  only
+  thing
+  I
+  would
+  suggest
+  is.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  They
+  actually
+  deal
+  with.
+
+Customer:
+  That.
+  There.
+  That.
+  It's.
+  It's.
+  There's.
+  There.
+  Right.
+  Sorry.
+
+Francisco Arreola Jr.:
+  No,
+  I'm
+  sorry.
+  This
+  is
+  your.
+  It's
+  your
+  closet.

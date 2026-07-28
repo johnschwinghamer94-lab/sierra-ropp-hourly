@@ -1,0 +1,5178 @@
+TRANSCRIPT
+Rep:      AJ-Alejandro Ruiz Padilla
+Date:     2026-03-24
+Duration: 79 min
+RecId:    1a2118fe-8956-4248-92e4-cd0e75f5c5e7-ZLjkNBMk4fMJ8rE1KZTobEMfb893
+Job:      Karen - AC System Multiple Component Failures - Compressor and Fan Motor Oil Leaks
+============================================================
+
+
+Customer:
+  It's.
+
+AJ-Alejandro Ruiz Padilla:
+  Hello,
+  how
+  you
+  doing?
+  My
+  name's
+  aj.
+  What's
+  your
+  name?
+
+Customer:
+  Karen.
+
+AJ-Alejandro Ruiz Padilla:
+  Karen.
+  I
+  was
+  about
+  to
+  be
+  your
+  neighbor.
+  I
+  was
+  about
+  to
+  buy
+  that
+  house
+  right
+  there.
+  Yeah,
+  I
+  toured
+  it.
+  Like,
+  I
+  think.
+  Was
+  it
+  November?
+
+Customer:
+  Yeah.
+  Yes.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+
+Customer:
+  Something
+  right
+  before.
+
+AJ-Alejandro Ruiz Padilla:
+  I
+  was
+  trying.
+  I
+  was
+  trying
+  my
+  best
+  to
+  buy
+  it,
+  but
+  they.
+  Yeah,
+  I
+  was
+  competing
+  against
+  whoever
+  it
+  was.
+
+Customer:
+  Oh,
+  okay.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+  It
+  was
+  a
+  really
+  beautiful
+  home,
+  though.
+
+Customer:
+  It
+  was
+  on
+  sale
+  forever.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah,
+  I
+  know.
+  They
+  had
+  to
+  drop
+  their
+  pricing
+  a
+  bunch
+  of
+  times.
+  And
+  then
+  right
+  when
+  I
+  was
+  gonna
+  buy
+  it,
+  somebody
+  else
+  decided
+  to
+  want
+  to
+  buy
+  it.
+  So
+  I
+  was
+  like,
+  oh,
+  my
+  goodness.
+  I'm
+  not
+  joking.
+  Is
+  this
+  a
+  good
+  area?
+  You
+  like
+  it
+  here?
+
+Customer:
+  Here?
+
+AJ-Alejandro Ruiz Padilla:
+  I
+  liked
+  it
+  cuz
+  it
+  had
+  no
+  hoa
+  here.
+  And
+  I
+  was
+  like,
+  that's
+  what
+  we
+  wanted.
+
+Customer:
+  No
+  hoa
+  because
+  we
+  have
+  a
+  love
+  dog.
+  Don't
+  worry.
+  The
+  floor
+  is
+  filthy.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  I
+  step
+  in
+  a
+  bunch
+  of
+  yards
+  that
+  you
+  don't
+  ever
+  want
+  to
+  see.
+
+Customer:
+  Sorry.
+  Fine.
+
+AJ-Alejandro Ruiz Padilla:
+  You're
+  fine.
+  Let
+  me
+  close
+  this
+  up.
+  Yeah,
+  I
+  was.
+  I
+  was
+  so.
+  I
+  was
+  so
+  sad.
+  Cuz
+  also,
+  we
+  go
+  to
+  the
+  church
+  right
+  here.
+  So
+  we
+  were
+  super
+  stoked
+  for
+  that
+  house.
+  Yeah.
+  We
+  ended
+  up
+  buying
+  a
+  Henderson,
+  which
+  is.
+
+Customer:
+  Oh
+  my
+  God,
+  that's
+  so
+  cool.
+  Far
+  away.
+
+AJ-Alejandro Ruiz Padilla:
+  I
+  know,
+  I
+  know.
+  Because
+  we
+  also
+  go
+  to.
+  There's
+  two
+  different
+  churches.
+  Oh,
+  yeah,
+  we
+  want
+  one
+  over
+  there
+  now,
+  but.
+  But
+  we
+  ended
+  up
+  buying
+  over
+  there
+  and
+  it
+  was.
+  We
+  have
+  hoas
+  and
+  that.
+  See,
+  that's
+  what
+  I
+  feared.
+
+Customer:
+  And
+  yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  They
+  always
+  tell
+  me
+  something
+  about
+  my
+  truck.
+  I
+  know,
+  right?
+  Oh,
+  these
+  all
+  your
+  dogs?
+
+Customer:
+  Yes.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  my
+  goodness.
+
+Customer:
+  We
+  just
+  added
+  one.
+  She's
+  not
+  up
+  here
+  yet
+  because
+  we
+  only
+  had
+  her
+  two
+  weeks.
+
+AJ-Alejandro Ruiz Padilla:
+  But
+  do
+  you
+  foster
+  them
+  or
+  do
+  you
+  all
+  yours.
+  Wow.
+
+Customer:
+  Most
+  of
+  them
+  were
+  given
+  to.
+  This
+  one
+  was
+  free.
+  This
+  one
+  was
+  free.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  my
+  goodness.
+  They're
+  so
+  adorable.
+
+Customer:
+  This
+  one,
+  that
+  one,
+  and
+  the
+  new
+  one.
+  People
+  just
+  give
+  us
+  dogs.
+  They're
+  like,
+  you
+  take
+  care
+  of
+  your
+  dog
+
+AJ-Alejandro Ruiz Padilla:
+  puppies
+  in
+  these
+  photos.
+  Are
+  they
+  still
+  puppies
+  or.
+
+Customer:
+  No,
+  these
+  four
+  gone.
+  And
+  then
+  these
+  guys
+  are
+  current
+  ones.
+  These.
+  We
+  kind
+  of
+  went
+  crazy.
+  She's
+  from
+  October
+  of
+  2023.
+  We
+  got
+  her
+  in
+  February
+  of
+  24.
+  March
+  of
+  24.
+  They
+  gave
+  her
+  to
+  us
+  last
+  July.
+  And
+  then
+  we
+  just
+  got
+  a
+  golden
+  doodle.
+  These
+  are
+  all
+  little.
+  This
+  gold
+  is
+  gonna
+  be
+  huge.
+
+AJ-Alejandro Ruiz Padilla:
+  I
+  have
+  a
+  golden
+  doodle
+  too.
+  Would
+  you
+  have
+  a
+  standard
+  size
+  or
+  a
+  mini?
+
+Customer:
+  No.
+  Well,
+  her
+  dad
+  is
+  huge.
+  I
+  don't
+  know.
+  We
+  weren't
+  like
+  in
+  the
+  market.
+  Golden
+  doodlings
+  Her.
+  It's
+  my
+  mom's
+  work
+  friend.
+  Had
+  a
+  unplanned
+  litter.
+  And.
+  And
+  they're
+  both.
+  She
+  has
+  two,
+  obviously.
+  A
+  boy
+  and
+  a
+  girl.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+
+Customer:
+  But
+  the.
+  The
+  boy's
+  huge.
+  He's
+  like.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  really?
+
+Customer:
+  Yeah.
+  And
+  the
+  mom
+  is
+  not
+  like
+  a
+  little
+  one.
+  She's
+  like,
+  big,
+  but
+  not
+  as
+  big
+  as
+  the
+  dad.
+
+AJ-Alejandro Ruiz Padilla:
+  Got
+  it.
+
+Customer:
+  Yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  Wow.
+  Yeah.
+  I'm
+  very
+  good
+  with
+  dogs,
+  so
+  I
+  don't
+  mind
+  at
+  all.
+  Just
+  letting
+  you
+  know.
+
+Customer:
+  Yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  All
+  right.
+  Filters
+  right
+  there.
+  Right.
+
+Customer:
+  Is
+  there
+  any
+  way
+  you
+  can
+  change
+  them
+  for
+  me?
+  I
+  busted
+  my
+  knee
+  and
+  I
+  can't
+  get
+  up
+  there.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah,
+  no
+  way.
+  That's
+  part
+  of
+  your
+  maintenance.
+  If
+  you
+  have
+  them
+  for
+  you.
+  Yeah.
+  Yeah.
+  All
+  right.
+  And
+  then
+  since
+  this
+  one
+  system
+  in
+  the
+  house.
+
+Customer:
+  Yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  Is
+  it
+  on
+  the
+  roof?
+  Is
+  it
+  on
+  the
+  side
+  of
+  the
+  house?
+
+Customer:
+  Oh,
+  it's
+  on
+  the
+  side
+  of
+  the
+  house.
+  But
+  here's
+  the
+  crawl
+  space.
+
+AJ-Alejandro Ruiz Padilla:
+  Crawl
+  space
+  right
+  there.
+
+Customer:
+  I
+  don't
+  think
+  he's
+  did
+  look
+  at
+  the
+  crawl
+  space.
+  Right.
+  For
+  the
+  ac.
+
+AJ-Alejandro Ruiz Padilla:
+  We
+  do.
+  That's
+  the
+  app
+  up
+  there.
+  Yeah.
+
+Customer:
+  Okay.
+
+AJ-Alejandro Ruiz Padilla:
+  Do
+  you
+  know
+  the
+  age
+  of
+  the
+  home?
+
+Customer:
+  The
+  home
+  is
+  from
+  96.
+  The
+  AC
+  is
+  about
+  15
+  years.
+  It
+  was
+  five
+  years
+  old
+  when
+  we
+  bought
+  the
+  house.
+
+AJ-Alejandro Ruiz Padilla:
+  Okay.
+
+Customer:
+  We've
+  had
+  it
+  for
+  years.
+  About
+  16.
+
+AJ-Alejandro Ruiz Padilla:
+  Okay.
+  Yeah,
+  sounds
+  good.
+  Oh,
+  you
+  bought
+  in
+  2010,
+  then?
+
+Customer:
+  Yes.
+  No.
+  2015.
+
+AJ-Alejandro Ruiz Padilla:
+  2015.
+  Oh,
+  my
+  goodness.
+  A
+  good
+  time
+  to
+  buy
+  in
+  20.
+
+Customer:
+  15.
+  15.
+
+AJ-Alejandro Ruiz Padilla:
+  Wow.
+  Yeah.
+
+Customer:
+  But
+  they
+  told
+  us
+  that
+  the
+  AC
+  was
+  five
+  years
+  old
+  when
+  we
+  bought
+  it.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+  Wow.
+  When.
+  When
+  you
+  bought
+  this
+  house,
+  how
+  much
+  you
+  buy
+  for?
+
+Customer:
+  182.
+  181.
+
+AJ-Alejandro Ruiz Padilla:
+  Sierra,
+  my
+  goodness.
+  And
+  that
+  house
+  right
+  across,
+  when
+  I
+  was
+  looking,
+  it
+  was
+  at
+  500.
+
+Customer:
+  Yes.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+
+Customer:
+  I
+  think
+  they
+  sold
+  it
+  for
+  500.
+
+AJ-Alejandro Ruiz Padilla:
+  I
+  think
+  they
+  started
+  500.
+
+Customer:
+  Yeah,
+  I
+  think
+  they
+  started
+  like,
+  5:15
+  or
+  something
+  like
+  that.
+
+AJ-Alejandro Ruiz Padilla:
+  I
+  got
+  to
+  meet,
+  though,
+  he
+  was
+  a
+  firefighter
+  guy.
+
+Customer:
+  Yes.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+
+Customer:
+  They
+  were
+  great
+  neighbors.
+  They
+  were
+  absolutely
+  darling.
+  D***.
+
+AJ-Alejandro Ruiz Padilla:
+  See,
+  I'm
+  telling
+  you,
+  that's
+  the
+  one
+  house
+  that
+  we
+  look
+  back,
+  like,
+  we
+  were
+  just,
+  like,
+  we
+  wanted
+  that
+  house.
+  Ah.
+  It
+  is
+  what
+  it
+  is.
+  I
+  know.
+  It's
+  the
+  one
+  that
+  got
+  away.
+  And
+  then
+  any
+  repairs
+  or
+  maintenance
+  in
+  the
+  past
+  with
+  the
+  system,
+
+Customer:
+  I
+  mean,
+  nothing.
+  It
+  broke
+  down
+  a
+  couple
+  of
+  years
+  ago,
+  but
+  we
+  had
+  a
+  whole
+  warranty
+  and
+  he
+  came
+  out.
+  What's
+  weird
+  is
+  we
+  had
+  a
+  bunch
+  of
+  people
+  come
+  out
+  and
+  they
+  coded
+  us
+  all
+  for
+  new
+  systems,
+  but
+  the
+  home
+  warranty
+  guy,
+  because
+  it
+  couldn't
+  come
+  out
+  that
+  same
+  day,
+  it
+  was
+  like,
+  literally,
+  like
+  June
+  29th.
+  It
+  was
+  so
+  hot.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  my
+  God.
+
+Customer:
+  He
+  came
+  out
+  the
+  next
+  day,
+  but
+  he
+  fixed
+  it.
+  I
+  don't
+  know
+  what
+  he
+  did.
+
+AJ-Alejandro Ruiz Padilla:
+  Okay,
+  okay,
+  we'll
+  take
+  a
+  look.
+  We'll
+  check
+  it
+  all
+  out
+  for
+  you.
+
+Customer:
+  Oh,
+  wait.
+  He
+  got
+  it
+  going.
+  And.
+  Oh,
+  sometimes
+  the.
+  I
+  don't
+  know,
+  the
+  little
+  exhaust.
+  Like,
+  there's
+  one
+  up
+  top.
+  He
+  said,
+  like,
+  our
+  bottom
+  one
+  got
+  clogged,
+  and
+  so
+  the
+  top
+  one
+  started.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  okay.
+
+Customer:
+  Leaky.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+  Well,
+  we.
+  Part
+  of
+  the
+  maintenance.
+  We
+  kind
+  of
+  unclog
+  that
+  just
+  in
+  case.
+
+Customer:
+  Okay.
+
+AJ-Alejandro Ruiz Padilla:
+  So
+  I'll
+  run
+  a
+  little
+  bit
+  of
+  nitrogen
+  just
+  to
+  kind
+  of
+  get
+  it
+  all
+  out,
+  get
+  it
+  clean
+  for
+  you.
+  And
+  we
+  watch
+  the
+  outdoor
+  unit
+  as
+  well,
+  so.
+  Yeah.
+  Do
+  you
+  still
+  have
+  the
+  home
+  warranty
+  with
+  them?
+
+Customer:
+  No,
+  we
+  don't.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah,
+  that's.
+  And
+  back
+  in
+  the
+  day,
+  they
+  were
+  like,
+  you
+  know,
+  small
+  companies.
+  Now
+  they're
+  private
+  equities.
+  It's
+  insane.
+
+Customer:
+  We
+  kept
+  it
+  for
+  a
+  long
+  time,
+  but
+  then
+  it
+  ended
+  up
+  happening.
+  That,
+  like,
+  nothing
+  that
+  was.
+  That
+  happened
+  was,
+  like,
+  under
+  warranty.
+
+AJ-Alejandro Ruiz Padilla:
+  Exactly.
+
+Customer:
+  And
+  I'm
+  like,
+  okay.
+  And
+  then.
+  So
+  we
+  switched
+  because
+  we
+  had.
+  We
+  had
+  bfa.
+  It
+  was
+  like,
+  it's
+  like
+  a
+  mom
+  and
+  pop
+  kind
+  of.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+  Yeah.
+
+Customer:
+  We
+  switched
+  over
+  to,
+  like,
+  a.
+
+AJ-Alejandro Ruiz Padilla:
+  A
+  more.
+
+Customer:
+  Bigger
+  company.
+  But
+  then
+  what
+  they
+  ended
+  up
+  happening
+  was,
+  like,
+  only
+  parts
+  were
+  covered.
+  So,
+  like,
+  the
+  toilet
+  was
+  leaking
+  the
+  bottom
+  ring.
+  And
+  then
+  they're
+  like,
+  oh,
+  well,
+  the
+  ring
+  is
+  covered.
+  They're
+  like,
+  but
+  the
+  toilet
+  removal
+  is
+  not.
+  And
+  I'm
+  like,
+  so
+  it's
+  just
+  gonna
+  teleport
+  itself
+  back
+  on
+  there?
+  I
+  was
+  like,
+  like,
+  that's
+  dirty.
+
+AJ-Alejandro Ruiz Padilla:
+  That's
+  what
+  they
+  always
+  do.
+  Yeah.
+  I
+  used
+  to
+  work
+  for
+  American
+  Home
+  Show.
+  That's
+  my
+  first
+  company
+  ever.
+  And
+  I
+  was
+  like.
+  I
+  was
+  like,
+  oh,
+  my
+  good.
+  I'm
+  stoked
+  to
+  have
+  my
+  own
+  company.
+  I
+  mean,
+  to
+  start
+  a
+  company.
+  And
+  then
+  they
+  were
+  like,
+  yeah,
+  but
+  this
+  is
+  covered.
+  This
+  is
+  not
+  covered.
+  Most
+  of
+  the
+  stuff
+  isn't
+  covered.
+  And
+  I'm
+  like,
+  yeah,
+  that's
+  what
+  we
+
+Customer:
+  end
+  up
+  running
+  into.
+  Everything
+  wasn't
+  covered.
+  So
+  I'm
+  like,
+  so
+  I'm
+  paying
+  you,
+  like,
+  $800
+  a
+  year,
+  and
+  then
+  nothing's
+  covered.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+
+Customer:
+  And
+  then
+  I'm
+  still
+  paying
+  out
+  of
+  pocket.
+  And
+  I'm
+  like,
+  I
+  might
+  as
+  well
+  just
+  pay
+  out
+  of
+  pocket.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+
+Customer:
+  I
+  was
+  like,
+  it
+  just
+  didn't
+  make
+  sense.
+  Spend,
+  like,
+  the
+  800
+  bucks
+  a
+  year.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+
+Customer:
+  To
+  tell
+  me
+  everything's
+  not
+  covered.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah,
+  exactly.
+  So
+  how
+  you
+  hear
+  about
+  us?
+  Get
+  a
+  temperature
+  gun
+  real
+  quick.
+  But
+  my
+  tools.
+
+Customer:
+  Oh,
+  my.
+  That
+  thing
+  on
+  the
+  outside.
+  I
+  didn't
+  bring
+  no.
+
+AJ-Alejandro Ruiz Padilla:
+  Okay,
+  go
+  ahead.
+  Sorry.
+
+Customer:
+  This
+  thing
+  in
+  the
+  front,
+  whatever.
+  This
+  pressure
+  valve
+  we
+  found
+  you
+  to
+  plumbing.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  here.
+  My
+  tool.
+
+Customer:
+  Oh,
+  there
+  they
+  are.
+  Sorry.
+  That
+  thing
+  broke
+  bad
+  and
+  we
+  called
+  you
+  guys
+  out
+  for
+  okay
+  to
+  fix
+  that.
+  And
+  then
+  they
+  were
+  like,
+  oh,
+  you
+  want
+  to
+  get
+  on
+  our
+  plan
+  Nice.
+  And
+  do
+  the
+  whatever
+  the
+  16amonth
+  and
+  you
+  guys
+  do
+  the.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+
+Customer:
+  Water
+  heater
+  flush
+  and
+  the.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+
+Customer:
+  A.C.
+  twice
+  a
+  year.
+
+AJ-Alejandro Ruiz Padilla:
+  That's
+  good.
+  No,
+  that's
+  good
+  to
+  do
+  that.
+  Get
+  it
+  checked
+  out.
+  I
+  had
+  one
+  the
+  other
+  day.
+  They
+  didn't
+  know
+  they
+  had
+  a
+  gas
+  leak
+  this
+  whole
+  time.
+  And
+  it
+  was
+  like,
+  yeah.
+  And
+  I
+  was
+  like,
+  we
+  had
+  to
+  go
+  up
+  here
+  and
+  like.
+  Yeah,
+  their
+  bills
+  were
+  up
+  to
+  like.
+  They
+  were
+  like,
+  we
+  don't
+  understand.
+  We
+  don't
+  use
+  the
+  heater
+  right
+  now.
+  It's
+  up
+  to
+  like.
+
+Customer:
+  I
+  would
+  be
+  terrified.
+  That's
+  scary.
+
+AJ-Alejandro Ruiz Padilla:
+  It's
+  always
+  good
+  to
+  just
+  get
+  your
+  stuff
+  checked
+  out.
+
+Customer:
+  Yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  Cool
+  labels.
+
+Customer:
+  Thank
+  you.
+
+AJ-Alejandro Ruiz Padilla:
+  Let
+  me
+  get
+  a
+  couple
+  temperatures
+  through
+  the
+  home.
+  Okay,
+  no
+  worries.
+
+Customer:
+  My
+  mom's
+  sleeping
+  in
+  the
+  bedroom,
+  so
+  that.
+
+AJ-Alejandro Ruiz Padilla:
+  Okay,
+  sounds
+  good.
+  But
+  what
+  I'm
+  doing
+  is
+  I'm
+  look
+  at
+  the
+  system.
+  I'm
+  do
+  thorough
+  evaluation,
+  check
+  for
+  cleanliness,
+  operation
+  safety.
+  I
+  haven't
+  noticed
+  anything
+  on
+  system.
+  Do
+  you
+  want
+  to
+  let
+  you
+  know
+  about
+  it
+  or.
+  Yeah,
+  yeah.
+  Okay.
+  Up
+  a
+  little
+  report.
+  We'll
+  go
+  over
+  it
+  together.
+  We
+  do
+  agree
+  any
+  work
+  just
+  depends
+  on
+  parts
+  availability.
+  But
+  yeah,
+  if
+  you
+  give
+  me
+  a
+  five
+  star
+  at
+  the
+  end,
+  that'd
+  be
+  great.
+  Okay.
+  But
+  I
+  won't
+  go
+  in
+  that
+  one.
+  Yeah,
+  that
+  house
+  over
+  there.
+  The
+  only
+  problem
+  we
+  had
+  with
+  that
+  house
+  when
+  we
+  were
+  looking
+  at
+  it
+  is
+  the
+  pool.
+  They
+  have
+  a
+  pool,
+  right?
+
+Customer:
+  Yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  As
+  soon
+  as
+  you
+  walk
+  out,
+  the
+  pool
+  is
+  right
+  here.
+  It
+  was
+  about
+  2ft
+  away
+  from
+  the
+  door.
+
+Customer:
+  The
+  door,
+  yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  So
+  we
+  want
+  to
+  have
+  kid.
+  Well,
+  we
+  want
+  to
+  have
+  kids.
+  Right.
+
+Customer:
+  And
+  whatever.
+  That's
+  crazy.
+
+AJ-Alejandro Ruiz Padilla:
+  We're
+  like,
+  if
+  we
+  put
+  a
+  thing.
+  Thing
+  around
+  it,
+  we
+  can
+  do
+  it.
+  But
+  then
+  you
+  walk
+  out
+  and
+  it's
+  like
+  a
+  little
+  barrier.
+
+Customer:
+  Their
+  kids
+  were
+  big.
+  Their
+  kids
+  were
+  already
+  in
+  high
+  school.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  wow.
+
+Customer:
+  So
+  they
+  were
+  like.
+  Well,
+  they
+  had
+  done
+  a
+  ton
+  of
+  updates
+  on
+  that
+  house.
+  Not
+  upgrades,
+  but
+  like
+  they
+  always
+  kept
+  up
+  with
+  it.
+  Like
+  they
+  had
+  just
+  put
+  new
+  windows
+
+AJ-Alejandro Ruiz Padilla:
+  in
+  with
+  new
+  windows,
+  like
+  new
+  AC,
+  everything.
+  And
+  I
+  was
+  just
+  like,
+  oh,
+  yeah,
+  I
+  was
+  obsessed.
+  But
+  my
+  wife,
+  like,
+  see,
+  what
+  happened
+  is
+  we
+  saw
+  it.
+  I
+  was
+  like,
+  you
+  should
+  put
+  the
+  offer
+  in
+  today.
+  She's
+  like,
+  let's
+  just
+  wait
+  till
+  tomorrow
+  and
+  I
+  was
+  like,
+  okay,
+  great.
+  Tomorrow
+  comes,
+  I
+  put
+  the
+  offer
+  in,
+  and
+  then
+  they're
+  like,
+  yeah,
+  we
+  literally
+  just
+  got
+  an
+  offer
+  about
+  like
+  an
+  hour
+  ago.
+  Oh,
+  like,
+  there's.
+  It's
+  a
+  little
+  bit
+  better.
+  And
+  so
+  I
+  tried
+  competing,
+  and
+  they're
+  like,
+  yeah,
+  sorry.
+  There
+  still
+  is
+  better.
+  So
+  they.
+  I
+  was
+  too
+  busy
+  at
+  work,
+  and
+  by
+  the
+  time
+  I
+  got
+  off
+  work,
+  they
+  were
+  like,
+  we
+  already
+  accepted
+  it.
+  And
+  I
+  was
+  like,
+  oh,
+  you.
+  I
+  know,
+  but
+  I
+  liked
+  it,
+  cuz,
+  you
+  know,
+  firemen,
+  they
+  take
+  care
+  of
+  their
+  stuff,
+  so.
+
+Customer:
+  Yeah,
+  he
+  always
+  did
+  a
+  bunch
+  of
+  stuff
+  over
+  there.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+  He
+  also
+  had
+  really
+  cool
+  upgrades
+  with,
+  like,
+  some
+  plumbing
+  stuff
+  in
+  there.
+  So
+  I
+  was
+  like,
+  oh,
+  it's
+  really
+  nice.
+  And
+  you?
+  Born
+  and
+  raised
+  in
+  Vegas.
+  Where
+  you
+  from?
+
+Customer:
+  I
+  grew
+  up
+  here.
+
+AJ-Alejandro Ruiz Padilla:
+  I
+  never
+  hit
+  anybody
+  that's
+  ever
+  really.
+  It's
+  rare.
+  Did
+  you
+  go
+  to
+  high
+  school
+  here?
+
+Customer:
+  Yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  Which
+  one?
+
+Customer:
+  Bonanza.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  wow.
+  Okay.
+  Yeah.
+  Yeah.
+  My
+  wife
+  went
+  to
+  Rancho.
+
+Customer:
+  Rancho.
+  Okay.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+  So
+  she.
+  She
+  went
+  through
+  the.
+  The
+  ringer
+  there.
+  I
+  didn't
+  go
+  to
+  high
+  school
+  here,
+  but.
+  No,
+  Anaheim.
+
+Customer:
+  Oh,
+  okay.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+
+Customer:
+  So
+  just
+  turn
+  it
+  hard,
+  like.
+  Okay.
+
+AJ-Alejandro Ruiz Padilla:
+  All
+  right,
+  Let
+  me
+  look
+  outside.
+  All
+  right,
+  sounds
+  good.
+  Work
+  my
+  way
+  in.
+
+Customer:
+  Here.
+  It's.
+  It.
+  It's.
+  It's.
+  It's.
+
+AJ-Alejandro Ruiz Padilla:
+  I
+  know,
+  right?
+  It's.
+  It
+  does
+  wonders,
+  though,
+  I'll
+  tell
+  you
+  that.
+
+Customer:
+  We
+  have
+  the
+  big
+  one
+  in
+  the
+  garage.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  yeah,
+  yeah.
+
+Customer:
+  That's
+  how
+  I
+  changed
+  the
+  military.
+  My
+  knees
+  been
+  killing
+  me.
+
+AJ-Alejandro Ruiz Padilla:
+  Killing
+  you?
+
+Customer:
+  Yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  I
+  mean,
+  my
+  knees
+  are
+  already
+  killing
+  me,
+  and
+  I'm
+  already.
+  I'm
+  stopping
+  doing
+  this
+  for
+  what,
+  six
+  years
+  now?
+
+Customer:
+  Yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  No.
+
+Customer:
+  Take
+  care
+  of
+  them.
+  Nothing's
+  worse
+  than
+  when
+  your
+  knees
+  go,
+  man.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah,
+  no,
+  no,
+  but
+  these
+  are
+  good.
+
+Customer:
+  Sorry.
+
+AJ-Alejandro Ruiz Padilla:
+  Why
+  in
+  the
+  world
+  did
+  they
+  put
+  it
+  all
+  the
+  way
+  up
+  here?
+
+Customer:
+  Right?
+
+AJ-Alejandro Ruiz Padilla:
+  It's
+  crazy.
+
+Customer:
+  When
+  we
+  first
+  moved,
+  the
+  door
+  was
+  like
+  a
+  menace
+  to.
+  To
+  society.
+  We
+  had
+  to
+  have
+  that
+  whole
+  door
+  changed
+  out.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  my
+  goodness.
+
+Customer:
+  Because
+  if
+  you
+  opened
+  it
+  too
+  wide,
+  it
+  would
+  just
+  fall
+  off.
+  And
+  one
+  day
+  it
+  fell
+  off
+  and
+  almost
+  like,
+  thank
+  God
+  nobody
+  was
+  standing
+  here.
+  Could
+  have
+  killed
+  somebody.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  geez.
+  Yeah.
+
+Customer:
+  Thank
+  you.
+
+AJ-Alejandro Ruiz Padilla:
+  No
+  worries.
+  All
+  right,
+  I'm
+  going
+  hop
+  in
+  the
+  attic
+  and
+  take
+  a
+  look
+  at
+  everything
+  up
+  here.
+  I
+  did
+  have
+  some
+  concerns
+  outside,
+  but
+  let
+  me
+  look
+  at
+  everything,
+  and
+  I'll
+  go
+  right
+  at
+  the
+  end.
+  Okay.
+  This
+  is
+  so
+  weird.
+  And
+  they
+  put
+  it.
+  I
+  don't
+  know
+  where
+  they
+  would
+  have
+  put
+  it.
+  I
+  would
+  just
+  say,
+  just
+  so
+  they
+  don't
+  get
+  dirty.
+  I
+  don't
+  think
+  I'll
+  hit
+  them,
+  but.
+  I'll
+  be
+  on
+  up
+  there.
+  Okay.
+
+Customer:
+  It's
+  it,
+  It's,
+  It's.
+  Radio.
+  It's,
+  It's,
+  it's,
+  it's,
+  it's.
+
+AJ-Alejandro Ruiz Padilla:
+  You
+  got
+  a
+  moment
+  to
+  go
+  over
+  all
+  findings?
+  No
+  worries.
+  Right
+  here?
+  Yeah.
+  Okay.
+  All
+  right.
+  So
+  before
+  I
+  get
+  into
+  it,
+  I
+  am
+  just
+  gonna
+  draw
+  out,
+  sorry,
+  my
+  knees
+  or
+  knee
+  pads
+  underneath,
+  but
+  I'm
+  gonna
+  just
+  draw
+  how
+  the
+  system
+  works.
+  So
+  that
+  way
+  you
+  have
+  a
+  good
+  understanding
+  and
+  I
+  just
+  more
+  visualizer.
+  Okay.
+  But
+  you
+  do
+  have
+  the
+  outdoor
+  unit.
+  Then
+  you
+  get
+  a
+  copper
+  line
+  that
+  runs
+  all
+  the
+  way
+  up
+  through
+  the
+  wall
+  until
+  we
+  call
+  our
+  coil.
+  Okay.
+  And
+  then
+  we
+  have
+  what's
+  called
+  our
+  air
+  handler.
+  Okay.
+  So
+  this
+  is
+  kind
+  of
+  the
+  setup
+  a
+  little
+  bit.
+  But
+  this
+  out
+  here
+  has
+  your
+  compressor,
+  which
+  is
+  like
+  a
+  pump.
+  It
+  has
+  a
+  fan
+  motor,
+  other
+  bits
+  and
+  pieces,
+  but
+  this
+  compressor
+  pumps
+  what's
+  called
+  refrigerants
+  through
+  the
+  line.
+  Gets
+  it
+  nice
+  and
+  cold
+  up
+  in
+  here.
+  And
+  right
+  here,
+  this
+  is
+  your
+  coil.
+  It's
+  like
+  a
+  radiator.
+  It's
+  in
+  down
+  40
+  to
+  50
+  degrees.
+  And
+  you're
+  going
+  to
+  have
+  a
+  blower
+  that's
+  going
+  to
+  kick
+  on,
+  flare
+  right
+  past
+  it,
+  and
+  get
+  cold
+  air.
+  All
+  right.
+  Where
+  you
+  put
+  your
+  filters,
+  that
+  is
+  where
+  it's
+  always
+  sucking
+  in
+  there.
+  So
+  dehumidifies
+  the
+  house
+  grabs
+  it.
+  And
+  so
+  it
+  could
+  deliver
+  more
+  air
+  inside
+  your
+  home.
+  All
+  right,
+  questions
+  on
+  how
+  it
+  works
+  before
+  I
+  get
+  into
+  the
+  findings?
+
+Customer:
+  No.
+  Okay.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  and
+  then
+  how
+  your
+  heater
+  works,
+  you
+  have
+  these
+  tubes,
+  they
+  get
+  nice
+
+Customer:
+  and
+  toasty
+
+AJ-Alejandro Ruiz Padilla:
+  with
+  these
+  flames,
+  and
+  then
+  air
+  gets
+  blown
+  past
+  it.
+  And
+  it's
+  called
+  their
+  heat
+  exchangers.
+  Any
+  hot
+  air,
+  any
+  air
+  that
+  gets
+  moved
+  past
+  that
+  heat
+  exchanger
+  is.
+  You
+  know
+  how
+  to
+  explain
+  this?
+  It
+  warms
+  up
+  as
+  it
+  goes
+  through
+  it.
+  Does
+  that
+  make
+  sense?
+  Yeah.
+  Okay.
+  So
+  I
+  took
+  a
+  look
+  at
+  everything
+  outside.
+  I
+  did
+  see
+  our
+  fan
+  motor.
+  So
+  our
+  fan
+  motor
+  is
+  basically
+  like
+  the
+  radiator
+  fan
+  for
+  that
+  system.
+  It
+  is
+  leaking
+  oil.
+  Okay.
+  So
+  these
+  face
+  downwards.
+  So
+  these
+  tend
+  to
+  leak
+  out
+  a
+  little
+  bit
+  right
+  here
+  and
+  then
+  start
+  leaking
+  on
+  the
+  shaft.
+  You
+  could
+  have
+  still
+  how
+  kind
+  of
+  burnt
+  it
+  is.
+  So
+  when
+  it
+  starts
+  leaking
+  oil
+  or
+  getting
+  burnt
+  or
+  has
+  play
+  on
+  it,
+  it
+  does
+  mean
+  that
+  that
+  fan
+  motor
+  can
+  seize
+  up.
+  That's
+  what
+  keeps
+  everything
+  in
+  that
+  system
+  cooled
+  out
+  there.
+  It's
+  like
+  a
+  radiator
+  fan.
+  The
+  moment
+  seizes
+  up,
+  it
+  can
+  cause
+  it
+  to
+  overheat.
+  A
+  bunch
+  of
+  issues
+  with
+  that.
+  All
+  right,
+  questions
+  on
+  that?
+
+Customer:
+  No.
+
+AJ-Alejandro Ruiz Padilla:
+  I
+  then
+  did
+  took
+  a
+  look
+  at
+  your
+  compressor.
+  Your
+  compressor's
+  inside
+  of
+  Here,
+  that's
+  that
+  it
+  looks
+  small
+  from
+  here,
+  but
+  it's
+  like
+  a
+  0.5
+  view.
+  But
+  yeah,
+  the
+  compressor
+  is
+  like
+  the
+  main
+  heart
+  of
+  that
+  system.
+  So
+  I
+  check
+  two
+  things
+  while
+  I'm
+  in
+  there.
+  So
+  I
+  check
+  how
+  much
+  power
+  is
+  pulling
+  in.
+  All
+  right,
+  so
+  this
+  thing
+  is
+  rated
+  for
+  a
+  max
+  of
+  about
+  79amps.
+  That's
+  the
+  max.
+  It
+  is
+  pulling
+  about
+  90.
+  That
+  is
+  really
+  high.
+  So
+  once
+  it
+  starts
+  getting
+  to
+  those
+  numbers,
+  that's
+  not
+  healthy
+  for
+  the
+  compressor.
+  It
+  could
+  strain
+  it,
+  cause
+  issues
+  with
+  it,
+  stuff
+  of
+  that
+  sort
+  of.
+  And
+  then
+  took
+  a
+  second
+  reading,
+  which
+  also
+  tells
+  me
+  the
+  windings
+  of
+  the
+  compressor.
+  So
+  it'll
+  read
+  from
+  good
+  being
+  great
+  caution.
+  So,
+  like,
+  hey,
+  you
+  know,
+  not
+  looking
+  so
+  great
+  bad
+  doesn't
+  mean
+  that
+  it's
+  dead,
+  but
+  it
+  does
+  mean
+  that
+  they
+  really
+  burnt
+  the
+  windings
+  inside
+  of
+  it.
+
+Customer:
+  Okay.
+
+AJ-Alejandro Ruiz Padilla:
+  All
+  right.
+  When
+  we
+  have
+  combination
+  of
+  those
+  two,
+  kind
+  of
+  like,
+  say,
+  maybe
+  sooner
+  or
+  later,
+  it
+  might.
+  Definitely
+  might
+  give
+  you
+  an
+  issue
+  with
+  that
+  compressor.
+  Okay.
+  Questions
+  on
+  the
+  compressor?
+
+Customer:
+  No.
+  Okay.
+
+AJ-Alejandro Ruiz Padilla:
+  I
+  saw
+  the
+  repair.
+  I
+  think
+  they
+  did
+  back
+  in
+  the
+  day.
+  So
+  this
+  is.
+  This
+  is
+  what's
+  called
+  a
+  pressure
+  sensor.
+  All
+  right.
+  This
+  will
+  trip
+  the
+  unit
+  if.
+  If
+  there's
+  an
+  issue
+  with
+  the
+  refrigerant
+  or
+  something
+  along
+  the
+  line
+  of
+  that.
+  I
+  did
+  see
+  it
+  was
+  bypassed
+  and
+  just
+  chopped
+  off.
+  So
+  it's
+  a.
+  It's
+  a
+  temporary
+  solution,
+  but
+  not
+  a
+  forever
+  solution.
+  Yeah.
+  All
+  right,
+  so
+  they
+  did
+  pie
+  pass
+  that.
+  That's
+  that
+  safety
+  switch.
+  All
+  right,
+  Questions
+  on
+  the
+  outside?
+
+Customer:
+  No.
+
+AJ-Alejandro Ruiz Padilla:
+  Okay.
+  Inside.
+  This
+  is
+  your
+  control
+  board.
+  Your
+  control
+  boards,
+  like
+  the
+  main
+  motherboard
+  of
+  that
+  system.
+  So
+  if
+  you
+  see
+  right
+  here,
+  that
+  is
+  yellow
+  spots
+  or
+  browning.
+  Those
+  are
+  spots
+  that.
+  That
+  can
+  cause
+  a
+  short.
+  Cause
+  an
+  issue
+  with
+  the
+  control
+  board,
+  and
+  definitely
+  not
+  good.
+  Works
+  for
+  heating
+  and
+  your
+  cooling.
+  Blower.
+  Motor
+  blower.
+  Right
+  there.
+  See
+  that
+  spots
+  right
+  there?
+  That
+  is
+  oil.
+  So
+  same
+  thing
+  as
+  the
+  outdoor
+  motor.
+  It's
+  the
+  same
+  thing,
+  but
+  for
+  your
+  blower.
+  So
+  it's
+  like
+  a
+  wheel
+  in
+  it,
+  and
+  it
+  blows
+  air
+  inside,
+  so
+  it
+  can
+  seize
+  up
+  and
+  not
+  deliver
+  air.
+  Inside.
+  I
+  don't
+  know
+  if
+  you
+  ever
+  had
+  the
+  heating
+  maintenance
+  done,
+  but
+  I
+  just.
+
+Customer:
+  Yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  you
+  did
+  okay
+
+Customer:
+  last
+  year.
+
+AJ-Alejandro Ruiz Padilla:
+  Last
+  year.
+
+Customer:
+  Yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  Okay.
+  We
+  did
+  it.
+  Yeah.
+  Oh,
+  okay.
+  Well,
+  if
+  they
+  did
+  or
+  didn't
+  tell
+  you,
+  but
+  the
+  heat
+  exchangers,
+  these
+  tubes,
+  they
+  are.
+  They
+  usually
+  start
+  off
+  like
+  a
+  nice
+  shiny
+  gray.
+  They
+  start
+  to
+  get
+  flat
+  gray.
+  And
+  then
+  those
+  tubes
+  in
+  the
+  back,
+  the
+  elbows,
+  those
+  are
+  black
+  spots.
+  Okay,
+  let
+  me
+  see.
+  I
+  was
+  trying
+  to
+  get
+  a
+  good
+  spot
+  of
+  it.
+
+Customer:
+  There
+  you
+  go.
+
+AJ-Alejandro Ruiz Padilla:
+  All
+  right.
+  When
+  it
+  starts
+  building
+  black
+  spots,
+  those
+  are
+  spots
+  where
+  it's
+  kind
+  of
+  like
+  the
+  thinning
+  of
+  that
+  metal.
+  It
+  does
+  get
+  to
+  the
+  point
+  where
+  they
+  can't
+  thin
+  out
+  enough.
+  They
+  crack.
+  Sometimes
+  it
+  can
+  leak
+  out
+  on
+  one
+  de
+  gassers
+  gases
+  are
+  a
+  possibility
+  of
+  carbon
+  monoxide.
+  Okay,
+  so
+  questions
+  on
+  the
+  heater?
+
+Customer:
+  No.
+
+AJ-Alejandro Ruiz Padilla:
+  No
+  questions.
+  As
+  far
+  as
+  outside,
+  inside
+  of
+  the
+  system,
+  they
+  explain
+  it.
+  Good
+  thoughts?
+  No.
+
+Customer:
+  No
+  questions?
+
+AJ-Alejandro Ruiz Padilla:
+  No.
+  Okay,
+  I'm
+  gonna
+  build
+  out
+  a
+  report.
+  I'm
+  gonna
+  put
+  on
+  there
+  what
+  the
+  cost
+  of
+  the
+  compressor,
+  those
+  other
+  bits
+  and
+  pieces
+  inside
+  of
+  there.
+  Compressors
+  are
+  like
+  the
+  main
+  heart
+  of
+  that
+  system.
+  So
+  how
+  much
+  they
+  can
+  cost
+  can.
+  Can
+  vary
+  depending
+  on
+  size,
+  availability
+  and
+  all
+  that
+  kind
+  of
+  stuff.
+  But
+  it
+  is
+  the
+  main
+  heart
+  of
+  that
+  system.
+  I
+  can
+  range
+  depending.
+  So
+  I'll
+  give
+  you
+  a
+  cost
+  on
+  that.
+  It's
+  not
+  the
+  cheapest
+  parts.
+  I'm
+  gonna
+  be
+  honest
+  with
+  you.
+  Okay.
+  The
+  control
+  board.
+  I'll
+  put
+  that
+  on
+  the
+  report
+  as
+  well.
+  The
+  fan
+  motor
+  and
+  the
+  other
+  stuff
+  I
+  brought
+  up.
+  Okay.
+  Questions.
+
+Customer:
+  It
+  looks
+  like
+  you're
+  pointing
+  them.
+  We
+  need
+  a
+  new
+  system.
+
+AJ-Alejandro Ruiz Padilla:
+  So
+  with
+  the
+  system,
+  I
+  can
+  repair
+  anything
+  and
+  anything
+  out
+  there.
+  I
+  mainly.
+  I
+  mainly
+  repair
+  them.
+  So.
+  I
+  mean,
+  compressors,
+  if
+  you
+  want
+  to
+  replace
+  one,
+  usually
+  should
+  come
+  with
+  usually
+  like
+  a
+  six
+  month,
+  one
+  year
+  warranty,
+  but
+  I'll
+  double
+  check
+  for
+  you.
+  But
+  we
+  can
+  always
+  replace
+  the
+  compressor,
+  fan
+  motor,
+  rebuild
+  what
+  you
+  got
+  if
+  you
+  want.
+  I'll
+  get
+  your
+  cost
+  on
+  that.
+  Yeah.
+  And
+  you
+  just
+  tell
+  me
+  from
+  there.
+  Okay.
+  Give
+  me
+  like
+  10,
+  15
+  minutes
+  and
+  no
+  problem.
+  Write
+  that
+  up.
+  Okay.
+
+Customer:
+  Yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+  All
+  right.
+
+Customer:
+  You
+  guys
+  do
+  new
+  systems
+  too?
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah,
+  we
+  do
+  our
+  install
+  department.
+  They're
+  the
+  ones
+  that
+  mainly
+  focus
+  on
+  that.
+  But
+  yeah,
+  we
+  can
+  always
+  give
+  you
+  all
+  your
+  options.
+  Give
+  me
+  like
+  10,
+  15
+  minutes,
+  I'll
+  write
+  it
+  up.
+  Let
+  me
+  go
+  off
+  of
+  everything
+  that
+  I
+  going
+  off,
+  like
+  model,
+  serial
+  and
+  everything.
+  Did
+  I
+  explain
+  it
+  good?
+
+Customer:
+  Yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+  Okay,
+  perfect.
+  All
+  right,
+  I'll
+  be
+  right
+  back
+  then.
+
+Customer:
+  Okay.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+
+Customer:
+  And
+  just
+  open
+  the
+  door.
+
+AJ-Alejandro Ruiz Padilla:
+  Okay.
+
+Customer:
+  Yeah.
+  Don't
+  ring
+  the
+  door.
+
+AJ-Alejandro Ruiz Padilla:
+  Sounds
+  good.
+  I
+  put
+  the
+  temperature
+  up
+  for
+  now.
+  Chill
+  out
+  for
+  a
+  while.
+
+Customer:
+  Yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  And
+  then
+  when
+  I
+  come
+  back
+  in,
+  I
+  could
+  put
+  it
+  to
+  however
+  you
+  want
+  it.
+  Okay,
+  no
+  problem.
+
+Customer:
+  Thank
+  you.
+
+AJ-Alejandro Ruiz Padilla:
+  Did
+  you
+  toss
+  your
+  filters
+  already?
+
+Customer:
+  They're
+  just
+  in
+  the
+  garage.
+  It's
+  fine.
+
+AJ-Alejandro Ruiz Padilla:
+  Well,
+  I
+  can
+  toss
+  them
+  for
+  you.
+  You
+  sure?
+  Okay.
+  All
+  right.
+  All
+  right,
+  no
+  worries.
+  All
+  right.
+  Did
+  your
+  kids
+  go
+  to
+  Bonanza
+  too?
+
+Customer:
+  No,
+  they're
+  my
+  godsons.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  really?
+  Yeah,
+  I
+  Was
+  gonna
+  say
+  that
+  must
+  have
+  been
+  a
+  fuller
+  full
+  circle
+  effect.
+
+Customer:
+  That's
+  where
+  I
+  met
+  their
+  mother.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  no,
+  that's
+  cool.
+
+Customer:
+  Yeah,
+  she's
+  my
+  best
+  friend,
+  so
+  that's
+  awesome.
+
+AJ-Alejandro Ruiz Padilla:
+  So
+  I
+  did
+  put
+  everything
+  on
+  here.
+  Okay.
+  So
+  that
+  fan
+  motor,
+  control
+  board
+  motor,
+  how
+  much
+  that
+  adds
+  up
+  to?
+
+Customer:
+  Okay.
+
+AJ-Alejandro Ruiz Padilla:
+  It
+  does
+  come
+  with
+  a
+  one
+  year
+  warranty
+  through
+  the
+  manufacturer.
+  Compressor
+  is
+  the
+  more
+  expensive
+  part.
+  Is
+  about
+  5,
+  4,
+  7,
+  5.
+  Also
+  with
+  the
+  one
+  year
+  warranty,
+  heat
+  exchangers
+  for
+  this
+  system.
+  Unfortunately,
+  I
+  did
+  take
+  a
+  look.
+  They're
+  no
+  longer
+  manufacturing
+  it.
+  After
+  anything
+  above
+  like
+  15
+  so
+  years,
+  they
+  stop.
+  So
+  these
+  are
+  the
+  parts
+  that
+  are
+  available
+  that
+  we
+  could
+  swap
+  out.
+  I
+  can
+  always
+  order
+  the
+  compressor
+  for
+  you,
+  order
+  this
+  stuff
+  for
+  you.
+  So
+  it
+  won't
+  be
+  like
+  this
+  plus
+  this.
+
+Customer:
+  So
+  I'm
+  like,
+  what
+  about
+  a
+  new
+  system?
+  I
+  can't
+  imagine
+  it's
+  that
+  much
+  more
+  expensive.
+
+AJ-Alejandro Ruiz Padilla:
+  I
+  don't
+  know
+  how
+  much
+  they
+  cost,
+  but
+  I
+  mean,
+  I,
+  I,
+  we
+  can
+  definitely
+  give
+  you
+  that
+  cost.
+  I
+  would
+  say.
+  Yeah,
+  you
+  know,
+  to
+  each
+  their
+  own.
+  It's
+  your
+  house.
+
+Customer:
+  I
+  mean,
+  that's
+  $9,000.
+  I
+  can't
+  imagine
+  that
+  being.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah,
+  it
+  is
+  more.
+  It
+  is
+  a
+  pretty
+  chunk
+  of
+  what.
+  Yeah,
+  yeah.
+  So
+  I
+  mean,
+  let
+  me,
+  let
+  me
+  see.
+  I
+  have
+  a
+  couple
+  of
+  our
+  install
+  guys
+  out
+  in
+  the
+  field.
+  They
+  are
+  available,
+  they
+  can
+  come
+  out,
+  look
+  at
+  it,
+  at
+  least
+  give
+  you
+  a
+  cost
+  on
+  that.
+
+Customer:
+  Okay.
+
+AJ-Alejandro Ruiz Padilla:
+  Is
+  that
+  okay
+  with
+  you?
+  Probably
+  maybe
+  take
+  them
+  like
+  20,
+  30
+  minutes
+  to
+  get
+  down
+  here.
+  Yeah.
+  Okay.
+  Did
+  I
+  explain
+  this
+  good?
+  Yeah,
+  yeah.
+  And
+  it's,
+  it's
+  their
+  own
+  set
+  point.
+  I
+  mean,
+  is
+  this
+  like
+  a
+  long
+  term
+  home?
+  A
+  short
+  term
+  home?
+
+Customer:
+  It's
+  a
+  long
+  term
+  home.
+  Yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  Okay.
+  Yeah.
+  So
+  I
+  was
+  gonna
+  say
+  like,
+  if
+  it's
+  a
+  short
+  term,
+  you
+  can
+  always
+  repair
+  it,
+  give
+  it
+  to
+  the
+  next
+  person
+  the
+  issue.
+
+Customer:
+  Yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  But
+  if
+  it's
+  a
+  long
+  term.
+  Yeah.
+  Sometimes
+  you
+  might
+  want
+  to
+  consider
+  all
+  your.
+
+Customer:
+  Well,
+  I
+  want
+  to
+  know
+  how
+  much
+  the
+  new
+  system
+  is
+  considering.
+  That's
+  like
+  already
+  $9,000.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+  Yeah.
+  So
+  let
+  me
+  see.
+  I
+  think
+  I
+  might
+  have
+  a
+  couple
+  guys
+  in
+  the
+  field
+  opposite
+  of
+  me.
+  She
+  was
+  like
+  growing
+  up,
+  she
+  was
+  like
+  a,
+  like
+  on
+  this,
+  like,
+  you
+  know,
+  streets
+  and
+  grew
+  up
+  in
+  like
+  fifth
+  street
+  and
+  everything.
+  And
+  so
+  she's
+  like
+  street
+  smart.
+  I'm
+  not,
+  I'm
+  like,
+  he's
+  like,
+  I'm
+  good.
+  People
+  sometimes
+  like
+  when
+  they
+  see
+  your
+  old
+  photos,
+  they're
+  like,
+  how'd
+  you
+  guys
+  even
+  end
+  up
+  together?
+  I'm
+  like,
+  I
+  don't
+  know.
+
+Customer:
+  You're
+  like
+  the
+  fates
+  Aligned.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah.
+
+Customer:
+  Sorry,
+  I
+  don't
+  understand.
+  I
+  wasn't
+  talking
+  to
+  you.
+
+AJ-Alejandro Ruiz Padilla:
+  All
+  right.
+  Yeah.
+  So
+  we
+  do
+  have
+  a
+  guy
+  on
+  the
+  field.
+  Probably
+  about
+  like,
+  35,
+  40
+  minutes
+  to
+  be
+  here,
+  and
+  then
+  another
+  40
+  minutes
+  to
+  go
+  over
+  it
+  with
+  you.
+
+Customer:
+  Okay.
+
+AJ-Alejandro Ruiz Padilla:
+  All
+  right.
+  Let
+  me
+  get
+  a
+  signature
+  on
+  my
+  phone.
+  Just
+  acknowledgment,
+  everything
+  I
+  told
+  you.
+  Sorry,
+  don't
+  mean
+  that.
+
+Customer:
+  No
+  worries.
+
+AJ-Alejandro Ruiz Padilla:
+  So
+  then
+  you.
+  You
+  met
+  your
+  friend
+  through.
+  At
+  Bonanza.
+  You
+  guys
+  always
+  just
+  been
+  friends?
+
+Customer:
+  Yes.
+
+AJ-Alejandro Ruiz Padilla:
+  No
+  kidding.
+  Yes.
+  That's.
+  How
+  long
+  is
+  that
+  friendship?
+
+Customer:
+  Well,
+  it's
+  been
+  since.
+  How
+  old
+  was
+  I?
+  We
+  met
+  in
+  11th
+  grade,
+  so,
+  like,
+  almost
+  30
+  years
+  at
+  this
+  point.
+
+AJ-Alejandro Ruiz Padilla:
+  Wow.
+
+Customer:
+  Yeah.
+
+AJ-Alejandro Ruiz Padilla:
+  That's
+  insane.
+  Yeah.
+  I
+  sometimes
+  wish
+  I
+  still
+  had
+  friends
+  from
+  Cali,
+  but
+  when
+  my
+  parents
+  came
+  out
+  here,
+  it
+  was
+  freshman
+  year
+  of
+  my
+  school
+  year.
+  So
+  when
+  I
+  got
+  here,
+  I
+  don't
+  know
+  what
+  it
+  was,
+  but,
+  you
+  know,
+  I
+  was
+  the
+  nerdy
+  kid,
+  and,
+  like,
+  nobody
+  really
+  wanted
+  to
+  be
+  friends
+  with
+  me,
+  so
+  everybody
+  was
+  kind
+  of
+  like,
+  oh,
+  yeah,
+  he's
+  like
+  the
+  new
+  kid
+  or
+  something
+  like
+  that.
+  And
+  that's
+  funny.
+
+Customer:
+  I
+  mean,
+  I
+  made
+  my.
+  I
+  still
+  have
+  friends
+  from
+  high
+  school.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah,
+
+Customer:
+  I
+  still
+  came
+  out
+  with
+  a
+  few
+  other
+  things.
+
+AJ-Alejandro Ruiz Padilla:
+  Nice.
+  Yeah,
+  no,
+  that's.
+  That's
+  very
+  good.
+  Good
+  to
+  have
+  friends
+  like
+  that.
+
+Customer:
+  Right.
+
+AJ-Alejandro Ruiz Padilla:
+  All
+  right,
+  so
+  I
+  send
+  out
+  the
+  address.
+  They'll
+  be
+  on
+  the
+  way.
+
+Customer:
+  Okay.
+
+AJ-Alejandro Ruiz Padilla:
+  I'm
+  probably
+  just
+  gonna
+  wait
+  for
+  them
+  because
+  they
+  get
+  here,
+  I
+  can
+  show
+  them
+  the
+  unit.
+  When
+  it
+  does
+  come
+  down
+  to
+  that
+  stuff,
+  I
+  will
+  say,
+  you
+  know,
+  like,
+  not
+  trying
+  to
+  say
+  the
+  blessing
+  disguise
+  that
+  kind
+  of
+  got
+  now
+  that's
+  kind
+  of
+  going
+  on,
+  but,
+  like,
+  middle
+  summer,
+  it's
+  chaos.
+  So
+  it's.
+  Yeah,
+  unfortunately.
+
+Customer:
+  I
+  don't
+  know,
+  like,
+  I
+  want
+  the
+  clothes,
+  but
+  I
+  don't
+  know
+  if
+  we
+  can
+  actually
+  do
+  it
+  because
+  we
+  have
+  just.
+  We
+  had
+  to
+  buy
+  a
+  car
+  and
+  expand
+  it
+  quickly
+  and.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah,
+  I
+  get
+  it.
+
+Customer:
+  We
+  just
+  did
+  a
+  big
+  plumbing
+  thing
+  with
+  you
+  guys,
+  so.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah,
+  no,
+  I
+  get
+  it.
+
+Customer:
+  We're
+  a
+  little
+  tapped
+  out.
+  But
+  I
+  would
+  like
+  to
+  know
+  some
+  prices
+  first.
+
+AJ-Alejandro Ruiz Padilla:
+  Yeah,
+  yeah,
+  absolutely.
+  Can
+  always
+  give
+  you
+  the
+  cost,
+  but
+  I'm
+  saying
+  is,
+  like,
+  around
+  this
+  time,
+  pricing
+  is
+  a
+  lot
+  different
+  than
+  it
+  is
+  summer.
+  Summer.
+  These
+  manufacturers
+  are
+  cooks.
+  They
+  always
+  raise
+  their
+  prices
+  and
+  do
+  crazy
+  things.
+  So
+  they
+  can
+  always
+  show
+  you
+  what
+  it
+  looks
+  like,
+  at
+  least
+  that
+  we
+  know.
+  So.
+  Okay,
+  let
+  me
+  go
+  to
+  my
+  truck.
+  I'm
+  just
+  going
+  to
+  put
+  this
+  on
+  an
+  email
+  platform.
+
+Customer:
+  I'm
+  pretty
+  sure
+  you
+  do.
+
+AJ-Alejandro Ruiz Padilla:
+  Let's
+  see.
+  Just
+  in
+  case,
+  I
+  got
+  yani61cox.net.
+
+Customer:
+  Oh,
+  yeah,
+  that's
+  my
+  mom's.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  perfect.
+  Okay.
+  Do
+  you
+  want
+  your
+  email
+  on
+  here?
+
+Customer:
+  No,
+  that's
+  fine.
+
+AJ-Alejandro Ruiz Padilla:
+  No.
+
+Customer:
+  Okay.
+  All
+  right,
+  I
+  get.
+  I
+  get.
+  I
+  get
+  her
+  email.
+  She
+  never
+  checks
+  her
+  email.
+  I
+  check
+  her
+  email.
+
+AJ-Alejandro Ruiz Padilla:
+  Oh,
+  all
+  right,
+  then
+  let
+  me
+  go
+  to
+  my
+  truck.
+  I'll
+  just
+  write
+  up
+  my
+  email
+  and
+  then
+  I'll.
+  I'll.
+  I'll
+  wait
+  for
+  him.
+
+Customer:
+  Okay,
+  yeah,
+  no
+  problem.
+  Did
+  you
+  want
+  to
+  stay
+  in
+  the
+  house?
+  Air
+  conditioning
+  instead
+  of
+  your.
+
+AJ-Alejandro Ruiz Padilla:
+  It
+  sounds.
+  Yeah.
+  Give
+  me,
+  like,
+  10
+  minutes.
+  I
+  just
+  gotta
+  write
+  it
+  down.
+
+Customer:
+  Don't
+  worry.
+  Just
+  open
+  the
+  door.
+
+AJ-Alejandro Ruiz Padilla:
+  All
+  right.
+
+Customer:
+  Thank
+  you.

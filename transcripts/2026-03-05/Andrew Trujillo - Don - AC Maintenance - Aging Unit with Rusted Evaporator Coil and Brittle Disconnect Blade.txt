@@ -1,0 +1,3935 @@
+TRANSCRIPT
+Rep:      Andrew Trujillo
+Date:     2026-03-05
+Duration: 77 min
+RecId:    633d22ac-a570-4e47-a9a5-c67d26803d84-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
+Job:      Don - AC Maintenance - Aging Unit with Rusted Evaporator Coil and Brittle Disconnect Blade
+============================================================
+
+
+Andrew Trujillo:
+  Like
+  up
+  here?
+  Yeah.
+  Or
+  just
+  the
+  red
+  one
+  here.
+  Yeah.
+  Okay.
+  Sounds
+  good.
+  Appreciate
+  that,
+  Sierra.
+  Yeah.
+  So
+  want
+  to
+  let
+  you
+  know.
+  So,
+  as
+  part
+  of
+  our
+  cooling
+  maintenance,
+  we
+  do
+  a
+  thorough
+  evaluation.
+  That's
+  inside
+  and
+  outside.
+
+Customer:
+  Yeah.
+
+Andrew Trujillo:
+  When
+  it
+  comes
+  to
+  the
+  outside,
+  we
+  record
+  the
+  pressures
+  of
+  the
+  refrigerant.
+  The
+  thing
+  is,
+  is
+  that
+  the
+  weather
+  would
+  need
+  to
+  be
+  warmer
+  for
+  us
+  to
+  get
+  accurate
+  numbers
+  on
+  the.
+
+Customer:
+  Okay.
+  It's
+  on
+  its
+  last
+  leg
+  anyway,
+  so.
+  Yeah,
+  we're
+  just
+  riding
+  out
+  until
+  it
+  dies.
+
+Andrew Trujillo:
+  Okay.
+  For
+  sure.
+  I
+  just
+  want
+  to
+  make
+  sure.
+  Just
+  because
+  I
+  want
+  to
+  be
+  thorough
+  and
+  accurate
+  with
+  everything.
+  Give
+  me
+  a
+  moment.
+  I.
+  I'll
+  bring
+  my
+  van
+  up
+  and
+  then
+  we'll.
+  We'll
+  break
+  the
+  ice
+  a
+  little
+  bit.
+
+Customer:
+  All
+  right.
+
+Andrew Trujillo:
+  Thank
+  you,
+  sir.
+  Would
+  it
+  be
+  okay
+  to
+  come
+  in?
+
+Customer:
+  Of
+  course.
+
+Andrew Trujillo:
+  Thank
+  you.
+  Thank
+  you
+  very
+  much.
+  How's
+  the
+  night
+  been?
+  Not
+  too
+  bad.
+  Just.
+  I
+  almost
+  cancelled,
+  but
+  I
+  checked.
+
+Customer:
+  It
+  said
+  22
+  minutes.
+  When
+  I
+  first
+  checked.
+  10
+  minutes
+  later,
+  it
+  said
+  21
+  minutes.
+  And
+  then
+  another
+  10
+  minutes
+  said
+  21
+  minutes.
+
+Andrew Trujillo:
+  Oh,
+  gosh.
+
+Customer:
+  Yeah.
+  It's
+  not
+  you.
+  I
+  figured
+  you'd
+  be
+  here
+  soon
+  enough.
+
+Andrew Trujillo:
+  So
+  I'm
+  sure
+  you've
+  seen
+  this
+  before.
+  From
+  some
+  of
+  my
+  predecessors.
+  I
+  just
+  want
+  to
+  be
+  super
+  clear
+  so
+  you
+  know
+  what
+  to
+  expect
+  from
+  my
+  visit.
+  Since
+  it's
+  my
+  first
+  time,
+  I'll
+  just
+  need
+  a
+  grand
+  tour,
+  see
+  where
+  everything
+  is.
+  See
+  where
+  I'm
+  setting
+  up
+  shop.
+  So
+  things
+  like
+  attic
+  access
+  and
+  your
+  thermostats
+  and
+  of
+  course,
+  the
+  outside
+  unit
+  units.
+
+Customer:
+  Right.
+
+Andrew Trujillo:
+  I'll
+  jump
+  into
+  my
+  thorough
+  evaluation,
+  checking
+  to
+  make
+  sure
+  the
+  unit's
+  working
+  as
+  well
+  as
+  it
+  can
+  be.
+  With
+  the
+  conditioning
+  you
+  just
+  mentioned,
+  it's
+  pretty
+  aging,
+  but
+  I'll
+  go
+  through
+  as
+  accurate
+  as
+  I
+  can.
+  Okay.
+  As
+  far
+  as
+  bringing
+  up
+  mechanical
+  concerns,
+  would
+  you
+  like
+  me
+  to
+  bring
+  that
+  to
+  your
+  attention?
+
+Customer:
+  You
+  can,
+  but
+  like
+  I
+  said,
+  we're
+  just
+  riding
+  it
+  out.
+
+Andrew Trujillo:
+  Just.
+  Yeah,
+  okay.
+
+Customer:
+  But
+  I'd
+  rather
+  spend
+  a
+  couple
+  uncomfortable
+  days
+  and
+  buy
+  a
+  unit.
+  Years
+  before,
+  and
+  they've
+  already
+  told
+  me
+  like
+  two
+  or
+  three
+  years
+  ago,
+  Joe.
+  And
+  you
+  probably
+  know
+  him.
+  He
+  left
+  and
+  came
+  back.
+
+Andrew Trujillo:
+  Gotcha.
+  Yeah,
+  he's
+  pretty.
+  He's
+  good.
+  Yeah.
+
+Customer:
+  He's
+  very
+  thorough.
+
+Andrew Trujillo:
+  Absolutely.
+
+Customer:
+  Yeah.
+  But
+  anyway.
+
+Andrew Trujillo:
+  But,
+  you
+  know,
+  beyond
+  that,
+  I'll
+  create
+  a
+  full
+  report
+  so
+  that
+  way
+  we
+  know
+  where
+  we're
+  standing.
+  Beyond
+  my
+  maintenance.
+  We'll
+  always
+  make
+  sure
+  to
+  get
+  your
+  approval.
+  Beyond.
+  You
+  know,
+  just.
+  If
+  we
+  have
+  to
+  do
+  any
+  additional
+  work.
+
+Customer:
+  Okay.
+
+Andrew Trujillo:
+  Is
+  that
+  fair
+  for
+  you?
+  Yes,
+  sir.
+
+Customer:
+  Cool.
+
+Andrew Trujillo:
+  Overall,
+  just
+  want
+  to
+  make
+  sure
+  we're
+  Giving
+  you
+  a
+  good
+  five
+  star
+  experience.
+  If
+  at
+  any
+  point
+  I'm
+  not,
+  just
+  feel
+  free
+  to
+  stop
+  me.
+  Let
+  me
+  know.
+  Okay.
+  You
+  got
+  it.
+  Thank
+  you,
+  sir.
+  Do
+  you
+  mind
+  showing
+  me
+  around?
+
+Customer:
+  Sure.
+  Thank
+  you.
+  The
+  first
+  thermostat's
+  right
+  there
+  on
+  the
+  wall.
+  If
+  you
+  want,
+  turn
+  it
+  off
+  or.
+
+Andrew Trujillo:
+  How
+  long
+  you
+  guys
+  been
+  at
+  home?
+
+Customer:
+  Oh,
+  since
+  2014,
+  so.
+
+Andrew Trujillo:
+  Oh,
+  cool.
+  Yeah.
+  Is
+  this
+  like
+  a
+  long
+  term
+  home
+  for
+  you
+  guys?
+  Yeah,
+  it
+  has.
+
+Customer:
+  Well,
+  my
+  father
+  lived
+  with
+  us
+  for
+  a
+  while,
+  my
+  son
+  and
+  his
+  girlfriend,
+  so.
+  Okay.
+
+Andrew Trujillo:
+  Yeah.
+  That.
+
+Customer:
+  The
+  units.
+  What?
+  So
+  that
+  would
+  make
+  it
+  13
+  or
+  15
+  years
+  old
+  almost.
+
+Andrew Trujillo:
+  Yeah.
+
+Customer:
+  And
+  it
+  got
+  a
+  lot.
+  It
+  was
+  running
+  all
+  the
+  time.
+  And
+  one
+  unit
+  runs
+  upstairs
+  and
+  downstairs.
+  Yeah.
+  My
+  mother
+  was
+  always
+  home.
+  My
+  son
+  worked
+  from
+  home.
+
+Andrew Trujillo:
+  Yeah.
+
+Customer:
+  So,
+  yeah,
+  it's
+  been
+  amazing.
+  Yeah.
+
+Andrew Trujillo:
+  Okay,
+  nice.
+
+Customer:
+  So,
+  yeah,
+  when
+  it
+  goes,
+  the
+  same
+  type
+  of
+  unit's
+  available
+  because
+  it
+  works
+  real
+  well
+  too.
+
+Andrew Trujillo:
+  Yeah.
+  Have
+  you
+  guys
+  always
+  been
+  to
+  Vegas
+  or
+  where'd
+  you
+  come
+  from?
+
+Customer:
+  Oh,
+  yeah,
+  I've
+  been
+  here
+  for
+  50
+  years
+  now.
+  Oh,
+  cool.
+
+Andrew Trujillo:
+  Okay.
+  Where
+  are
+  you
+  from
+  originally?
+  Okay,
+  me
+  too.
+
+Customer:
+  Yeah.
+
+Andrew Trujillo:
+  Miss
+  it
+  a
+  little
+  bit.
+
+Customer:
+  Yeah,
+  some.
+  You
+  know,
+  some
+  parts
+  of
+  it.
+  Absolutely.
+  What
+  were
+  you
+  thinking
+  about
+  going
+  the
+  other
+  way?
+  Utah.
+  I'm
+  thinking
+  about
+  going
+  to
+  Utah.
+
+Andrew Trujillo:
+  There
+  you
+  go.
+  I
+  got
+  Zion
+  in
+  my
+  crosshairs.
+
+Customer:
+  Yeah,
+  we
+  were
+  there
+  almost.
+  Not
+  every
+  year,
+  but
+  we
+  used
+  to
+  go
+  to
+  California
+  as
+  a
+  vacation
+  and
+  we
+  started
+  going
+  to
+  Utah.
+
+Andrew Trujillo:
+  Works
+  regardless
+  there.
+
+Customer:
+  Yeah,
+  we
+  always
+  go
+  to
+  St.
+  George,
+  usually.
+
+Andrew Trujillo:
+  Okay.
+  Yeah,
+  nice.
+
+Customer:
+  And
+  go
+  up
+  to
+  Zion.
+  Yeah,
+  always
+  nice.
+  All
+  right.
+
+Andrew Trujillo:
+  How
+  long
+  you.
+  Yeah,
+  he'll
+  be
+  awesome.
+  Appreciate
+  that.
+  What
+  concerns
+  have
+  you
+  guys
+  had?
+  Just
+  throughout
+  the
+  years,
+  have
+  you
+  guys
+  had
+  any
+  issues
+  with
+  the
+  system
+  or.
+
+Customer:
+  Not
+  really,
+  no.
+  Like
+  I
+  said,
+  it's
+  been.
+
+Andrew Trujillo:
+  Yeah.
+
+Customer:
+  Impressive.
+  Yeah.
+
+Andrew Trujillo:
+  Yeah.
+
+Customer:
+  He
+  said
+  there
+  was
+  a
+  couple
+  things
+  he
+  could
+  replace.
+  It'd
+  be
+  about
+  6,
+  700
+  bucks.
+  And
+  I
+  said,
+  you
+  know
+  what,
+  Joe?
+  It's
+  probably
+  gonna
+  die.
+  And
+  if
+  you
+  just
+  told
+  me,
+  it's
+  probably
+  gonna
+  fail.
+  So
+  when
+  it
+  fails.
+  Yeah,
+  I
+  don't
+  want
+  to
+  put
+  something
+  that
+  sounds
+  last
+  leg.
+
+Andrew Trujillo:
+  I
+  don't
+  want
+  to
+  put
+  that
+  kind
+
+Customer:
+  of
+  money
+  into
+  it
+  when
+  it
+  doesn't
+  make
+  sense.
+
+Andrew Trujillo:
+  No,
+  exactly.
+
+Customer:
+  You
+  know,
+  that
+  was
+  two
+  years
+  ago,
+  I
+  think.
+
+Andrew Trujillo:
+  So
+  I
+  noticed
+  that
+  you
+  just
+  signed
+  up
+  with
+  our
+  membership.
+  Like,
+  you
+  came
+  out
+  a
+  couple
+  visited
+  you
+  guys
+  for
+  a
+  while.
+  Yeah,
+  here
+  and
+  there.
+
+Customer:
+  What.
+
+Andrew Trujillo:
+  What
+  finally
+  got
+  you?
+
+Customer:
+  Because
+  I
+  think
+  we
+  only
+  signed
+  up
+  once.
+
+Andrew Trujillo:
+  Okay.
+  Yeah,
+  Okay.
+  I
+  was
+  gonna
+  say,
+  I
+  mean,
+  like,
+  what.
+  What
+  really
+  got
+  you
+  guys,
+  like,
+  into
+  the
+  membership
+  where
+  it's
+  like,
+  hey,
+  just
+
+Customer:
+  as
+  if
+  it's
+  getting
+  older
+  and
+  you
+  know,
+  just.
+  It
+  does
+  make
+  sense.
+  We're
+  at
+  the
+  point
+  now,
+  but
+  like
+  I
+  said,
+  whatever.
+  You
+  guys
+  are
+  doing
+  the
+  work.
+
+Andrew Trujillo:
+  Yeah.
+  I
+  mean
+  you're
+  definitely
+  doing
+  the
+  good
+  work
+  by
+  just
+  happening.
+  Exactly,
+  exactly.
+  I
+  know.
+
+Customer:
+  It's
+  better
+  done
+  like
+  20
+  grand,
+  right?
+
+Andrew Trujillo:
+  Yeah,
+  probably.
+  How
+  many
+  people
+  in
+  the
+  outsell
+  can
+  controlled
+  therset?
+  You
+  mentioned
+  like
+  everyone
+  was
+  kind
+  of
+  passing
+  through.
+  Oh,
+  everyone,
+  always.
+
+Customer:
+  Yeah.
+  Now
+  it's
+  not
+  that
+  often.
+  Yeah.
+  We
+  don't
+  have
+  to
+  be
+  always
+  running
+  before.
+
+Andrew Trujillo:
+  Yeah.
+  Okay.
+
+Customer:
+  My
+  mother
+  always
+  too
+  hot,
+  too
+  cold.
+  So.
+  Yeah.
+
+Andrew Trujillo:
+  Is
+  it
+  just
+  the
+  one
+  thermostat
+  or
+  is
+  there
+  one
+  upstairs?
+  No,
+  there's
+  one.
+  Would
+  you
+  mind
+  showing
+  me?
+
+Customer:
+  Sure.
+
+Andrew Trujillo:
+  Thank
+  you.
+
+Customer:
+  Yes,
+  it's.
+  Yep.
+  So
+  it's
+  got
+  20
+  years
+  worth
+  of
+  units
+  in
+  15
+  years
+  for
+  sure.
+
+Andrew Trujillo:
+  Nice.
+
+Customer:
+  Not
+  nice.
+
+Andrew Trujillo:
+  I
+  mean.
+  Well,
+  I
+  mean,
+  I
+  suppose.
+  I
+  mean
+  it's.
+
+Customer:
+  I
+  know
+  that
+  it's
+  really
+  flat.
+  I
+  know
+  what
+  you
+  mean.
+  It
+  is
+  very.
+  You're
+  very
+  durable
+  apparently.
+  Yeah.
+
+Andrew Trujillo:
+  How
+  many
+  pets
+  you
+  got?
+
+Customer:
+  Just.
+
+Andrew Trujillo:
+  Just
+  the
+  one.
+  Well,
+  my.
+
+Customer:
+  My
+  son
+  had
+  a
+  couple
+  in
+  me.
+  Cool.
+  You
+  know
+  what
+  that
+  is?
+
+Andrew Trujillo:
+  Yes,
+  sir.
+  It's
+  my
+  favorite.
+  I
+  like
+  to.
+  I
+  like
+  to
+  think
+  of
+  this
+  job
+  as
+  like
+  every
+  day
+  it's
+  Christmas.
+
+Customer:
+  Yeah.
+
+Andrew Trujillo:
+  You
+  don't
+  know
+  what's
+  going
+  to
+  be
+  in
+  the
+  box.
+
+Customer:
+  120
+  degrees.
+  It's
+  awesome
+  up
+  there.
+
+Andrew Trujillo:
+  Oh
+  yeah.
+  No,
+  exactly.
+  Even
+  when
+  it's
+  like
+  about
+  80,
+  it
+  can
+  get.
+  Yeah.
+  You'd
+  be
+  surprised.
+
+Customer:
+  Brutal.
+  Imagine.
+
+Andrew Trujillo:
+  As
+  far
+  as
+  filters,
+  I
+  change
+  them.
+
+Customer:
+  Yeah.
+  I
+  change
+  them.
+  Probably
+  three
+  weeks
+  ago
+  I
+  was
+  vacuumed.
+  So
+  they're
+  good.
+
+Andrew Trujillo:
+  Okay.
+  Awesome.
+  That
+  would
+  definitely
+  help
+  with
+  the
+  lifespan
+  for
+  sure.
+
+Customer:
+  Yeah.
+
+Andrew Trujillo:
+  Yeah.
+
+Customer:
+  There's
+  the
+  other
+  ones
+  by
+  the
+  intermediate
+  ones
+  because
+  the
+  ones
+  are
+  too
+  restrictive.
+  Overworking.
+
+Andrew Trujillo:
+  Right.
+
+Customer:
+  Yeah.
+
+Andrew Trujillo:
+  Yeah.
+  You
+  really.
+  It
+  really
+  can
+  depend
+  because
+  some
+  are
+  too
+  thin,
+  some
+  are
+  too
+  thick.
+  Yeah.
+  What's.
+  What's
+  the
+  story
+  behind
+  the
+  paintings?
+
+Customer:
+  Oh,
+  just.
+  Yeah.
+  There's
+  one
+  of
+  the
+  cats
+  that
+  passed
+  my
+  son
+  and
+  our
+  border
+  collar
+  a
+  couple
+  years
+  ago.
+  Yeah,
+  he
+  made
+  it
+  to
+  14.
+  Just.
+  Actually
+  my
+  son's
+  girlfriend
+  painted
+  both
+  of
+  these
+  for
+  us.
+
+Andrew Trujillo:
+  I
+  like
+  that
+  actually.
+
+Customer:
+  Yeah,
+  it
+  does
+  look
+  quite
+  a
+  bit
+  like
+  him
+  too.
+  Yeah,
+  he's
+  a
+  cool
+  dog.
+  He
+  was
+  real
+  symmetrical
+  to.
+  Everyone
+  said
+  he
+  was
+  such
+  a
+  good
+  looking
+  dog.
+  All
+  his
+  coloring
+  was
+  just
+  symmetrical
+  perfectly
+  on
+  both
+  sides.
+
+Andrew Trujillo:
+  It
+  reminds
+  me
+  of.
+  It's
+  a
+  bit
+  of
+  a
+  nerdy
+  thing,
+  but
+  like
+  Frankenweenie,
+  like
+  it
+  looks
+  like
+  Sparky.
+
+Customer:
+  It
+  doesn't
+  look
+  exactly
+  like
+  him
+  obviously,
+  but
+  yeah,
+  it's
+  a
+  pretty
+  good.
+  It's
+  a
+  pretty
+  good
+  likeness.
+  He
+  was
+  a
+  cool
+  dog.
+  Freaking
+  spaz
+  though.
+
+Andrew Trujillo:
+  Yeah.
+  Really.
+
+Customer:
+  I'd
+  like
+  to
+  have
+  another
+  dog,
+  but
+  I.
+  I
+  work
+  so
+  many
+  hours,
+  by
+  the
+  time
+  I
+  get
+  home,
+  the
+  last
+  thing
+  I
+  want
+  to
+  do
+  is
+  walk
+  the
+  dog.
+  Border
+  Collie's
+  not
+  a
+  good
+  dog
+  to
+  have.
+
+Andrew Trujillo:
+  Yeah.
+
+Customer:
+  Because
+  they
+  used
+  to
+  just
+  go
+  nuts
+  when
+  I
+  came
+  for
+  a
+  walk.
+  Then
+  when
+  I
+  did.
+  Yeah,
+  the
+  guilt.
+  The
+  guilt.
+
+Andrew Trujillo:
+  Oh
+  yeah.
+  I.
+  That's.
+  I'm
+  the
+  same
+  way.
+  I
+  mean
+  I'm
+  a
+  cat
+  dad.
+  I've
+  had
+  four
+  at
+  one
+  time
+  and
+  I
+  have
+  two
+  now,
+  thankfully.
+  Like
+  everyone's
+  in
+  a
+  good
+  space
+  and
+  stuff
+  like
+  that,
+  like
+  had
+  to
+  lessen.
+  Yeah.
+
+Customer:
+  I
+  always
+  say
+  anyone
+  who
+  doesn't
+  like
+  cats
+  hasn't
+  had
+  a
+  catch.
+  Yeah.
+
+Andrew Trujillo:
+  I
+  was
+  gonna
+  say.
+  I'm
+  sure
+  they
+  are,
+  but
+  no,
+  I
+  love
+  them
+  and
+  I.
+  I
+  just
+  had
+  to
+  win
+  that.
+  Yeah.
+  Since
+  you
+  were
+  16
+  and.
+
+Customer:
+  Yeah.
+  So
+  it's
+  sad.
+  Yeah.
+
+Andrew Trujillo:
+  But
+  I
+  still
+  come
+  across
+  people,
+  they're
+
+Customer:
+  like,
+  oh,
+  they're
+  so
+  self
+  dependent.
+
+Andrew Trujillo:
+  It's
+  like
+  no,
+  no,
+  no.
+
+Customer:
+  Oh
+  no,
+  they're
+  not.
+  Get
+  up
+  and
+  feed
+  me.
+
+Andrew Trujillo:
+  Yeah.
+  What
+  do
+  you
+  do,
+  if
+  you
+  don't
+  mind
+  me
+  asking
+  for
+  a
+  small
+  company?
+
+Customer:
+  Slot
+  machines.
+
+Andrew Trujillo:
+  Oh,
+  cool.
+  Okay.
+
+Customer:
+  Yeah,
+  I
+  worked
+  for
+  the
+  manufacturer
+  for
+  like
+  30
+  years.
+
+Andrew Trujillo:
+  Oh,
+  wow.
+
+Customer:
+  Igt.
+
+Andrew Trujillo:
+  So
+  what
+  got
+  you
+  into
+  that?
+
+Customer:
+  Just
+  a
+  friend
+  and
+  I
+  took
+  electronics.
+  Yeah,
+  it
+  worked
+  out.
+  Had
+  a
+  good
+  run
+  with
+  the
+  sh.
+  Sure.
+  So
+  they
+  closed
+  operations.
+
+Andrew Trujillo:
+  This
+  is
+  my
+  wife
+  Mar.
+  How
+  you
+  doing,
+  ma'?
+
+Customer:
+  Am?
+
+Andrew Trujillo:
+  Love
+  to
+  meet
+  you.
+
+Customer:
+  Well,
+  she
+  knows
+  your
+  name
+  for
+  the
+  text.
+  I'm
+  just
+  leaving.
+  Text
+  said
+  you'd
+  be
+  hearing.
+
+Andrew Trujillo:
+  Again,
+  I
+  apologize
+  about
+  that.
+
+Customer:
+  No,
+  go
+  ahead.
+  Yeah,
+  the
+  units
+  right
+  behind
+  the
+  house,
+  just
+  awesome.
+
+Andrew Trujillo:
+  Thank
+  you.
+
+Customer:
+  Walk
+  out
+  the
+  garage,
+  take
+  two
+  lefts
+  and
+  you'll
+  see
+  it.
+
+Andrew Trujillo:
+  Appreciate
+  it,
+  sir.
+
+Customer:
+  No
+  problem.
+
+Andrew Trujillo:
+  As
+  far
+  as
+  coming
+  and
+  going,
+  best
+  door.
+  Just
+  remind
+  me
+  again.
+  Yeah.
+  This
+  one
+  here.
+  Yep.
+  And
+  then
+  would
+  you
+  like
+  me
+  to
+  knock
+  as
+  I'm
+  coming
+  back
+  in?
+
+Customer:
+  No,
+  that's
+  not
+  necessary.
+
+Andrew Trujillo:
+  Okay.
+
+Customer:
+  It.
+  I
+  got
+  it.
+
+Andrew Trujillo:
+  No
+  problem,
+  Don.
+  Appreciate
+  it
+  though.
+
+Customer:
+  It's.
+  It.
+  Larry.
+
+Andrew Trujillo:
+  I
+  gotta.
+  I
+  gotta
+  ask
+  him.
+  I'm
+  sure
+  it
+  came
+  from.
+  From
+  work,
+  but.
+
+Customer:
+  Oh
+  yeah.
+
+Andrew Trujillo:
+  Why.
+  Why
+  Alien?
+
+Customer:
+  Oh,
+  do
+  you
+  know.
+  You
+  know
+  what?
+  Just
+  thought
+  the
+  glass
+  is
+  cool.
+  I
+  gotta
+  set
+  it.
+  It's
+  called
+  game
+  King.
+  The
+  thing.
+  It's
+  only
+  off
+  now
+  because
+  the
+  free
+  playboard
+  kind
+  of
+  smoked.
+  So
+  I
+  have.
+  Oh
+  no,
+  I
+  have
+  another
+  one
+  ordered,
+  so.
+
+Andrew Trujillo:
+  Nice.
+
+Customer:
+  Yeah.
+  But
+  yeah,
+  the
+  boss
+  gave
+  everybody
+  one
+  for
+  Christmas
+  one
+  year,
+  so.
+
+Andrew Trujillo:
+  Nice.
+  I
+  dig
+  It.
+
+Customer:
+  Yeah,
+  just
+  the.
+  The
+  glass
+  is
+  kind
+  of
+  cool.
+  Yeah,
+  I
+  love
+  it.
+
+Andrew Trujillo:
+  The
+  sequel
+  is
+  one
+  of
+  my
+  favorites.
+  Yeah.
+  Oh,
+  yeah.
+  You
+  have
+  to
+  watch
+  the
+  extended
+  edition
+  specifically.
+  I
+  think
+  just.
+  There's
+  so
+  many
+  things
+  that
+  were
+  cut
+  and
+  I
+  think
+  probably
+  one
+  of
+  the
+  biggest
+  things
+  is
+  that
+  we
+  don't.
+
+Customer:
+  No.
+
+Andrew Trujillo:
+  Ripley's
+  name.
+  Yeah,
+  it's
+  Ellen.
+  And
+  unless
+  you're
+  watching
+  the
+  extended.
+  And
+  I
+  think
+  that's
+  just
+  like.
+  Why
+  would
+  you
+  cut
+  that?
+
+Customer:
+  Oh,
+  yeah.
+  But.
+
+Andrew Trujillo:
+  I
+  think
+  there's
+  like
+  six
+  in
+  the
+  franchise,
+  you
+  know.
+  Yeah.
+  They're
+  not
+  all
+  good
+  though.
+
+Customer:
+  I'm
+  guessing.
+
+Andrew Trujillo:
+  Resurrection.
+
+Customer:
+  Yeah,
+  they
+  can't
+  all
+  be
+  good.
+
+Andrew Trujillo:
+  Prometheus.
+  Yeah.
+  They
+  did
+  come
+  out
+  with
+  the
+  show
+  on
+  Goose
+  Boot.
+  That
+  is
+  good.
+  I
+  would
+  recommend
+  it.
+  It's
+  called
+  Alien
+  Earth
+  and
+  it.
+  Oh,
+  yeah.
+  A
+  lot
+  more
+  focus
+  on
+  like
+  the
+  Whan
+  Utani
+  aspect
+  one
+  episode.
+
+Customer:
+  I
+  want
+  to
+  give
+  it
+  another
+  try.
+
+Andrew Trujillo:
+  Yeah,
+  it
+  was
+  good.
+  Pilots
+  are
+  usually
+  pretty
+  hard
+  to
+  get
+  through,
+  but
+  this
+  one.
+  This
+  one
+  had
+  me
+  pretty
+  decent
+  up.
+
+Customer:
+  Landman's
+  pretty
+  good.
+  Landman
+  didn't
+  think
+  it
+  would
+  be.
+
+Andrew Trujillo:
+  Yeah,
+  I
+  don't
+  think
+  I
+  heard
+  that.
+  Billy.
+  Bl.
+  Sword.
+
+Customer:
+  It's
+  almost
+  like
+  Yellowstone,
+  which
+  I
+  couldn't
+  get
+  into.
+  But
+  we
+  went
+  to
+  Landman.
+  We're
+  about
+  seven
+  episodes
+  in.
+
+Andrew Trujillo:
+  It's
+  pretty
+  good.
+  Okay.
+  I'm
+  gonna
+  take
+  that.
+  Recommend.
+
+Customer:
+  It.
+  It's.
+  It's.
+  It's.
+  Their
+  lady
+  and
+  stupid.
+
+Andrew Trujillo:
+  And
+  they
+  have
+  one
+  of
+  the
+  smallest
+  brains.
+
+Customer:
+  Uses.
+
+Andrew Trujillo:
+  Now.
+  Do
+  you
+  guys
+  have
+  a
+  specific
+  schedule
+  set
+  for
+  the
+  service
+  at
+  all?
+  Okay.
+  Yeah.
+
+Customer:
+  Even.
+
+Andrew Trujillo:
+  Even
+  with
+  it
+  about
+  60
+  degrees,
+  it's
+  still
+  toasty
+  up
+  there.
+
+Customer:
+  Yeah.
+
+Andrew Trujillo:
+  Right
+  back
+  to
+  the
+  water.
+  You're
+  going
+  to
+  feel
+  this
+  Andrew
+
+Customer:
+  It.
+
+Andrew Trujillo:
+  That's
+  not
+  long.
+
+Customer:
+  That's
+  a
+  losing
+  battle
+  for
+  sure.
+  Yeah.
+
+Andrew Trujillo:
+  Yeah.
+  I.
+  Bit
+  of
+  a
+  nerdy
+  thing
+  for
+  me.
+  I
+  do
+  a
+  lot
+  of
+  research
+  on
+  the
+  Titanic.
+  Like,
+  I've
+  always
+  been
+  fascinated.
+  Fascinating.
+  Since
+  I
+  was
+  a
+  kid.
+  And
+  there's
+  a
+  book
+  that
+  I'm
+  reading
+  that
+  goes
+  into
+  like.
+  It
+  talks
+  about
+  what
+  that
+  cold
+  water
+  does
+  to
+  the
+  human
+  body.
+
+Customer:
+  Oh
+  yeah.
+
+Andrew Trujillo:
+  In
+  there.
+
+Customer:
+  Oh
+  yeah.
+  You.
+  They
+  could
+  tear
+  open
+  four
+  of
+  the
+  chambers,
+  but
+  they.
+  They
+  ripped
+  open
+  like
+  six
+  and
+  that.
+  That
+  was
+  just
+  too
+  many.
+  I'm
+  sure
+  you
+  know
+  that
+  though.
+
+Andrew Trujillo:
+  Yeah,
+  but
+  that's
+  what
+  Stu.
+  Well,
+  hopefully
+  within
+  another
+  week.
+  I
+  won't
+  be
+  supposed
+  to
+  be
+  in
+  about
+  low
+  60s
+  for
+  the
+  next
+  couple
+  days,
+  but
+  it's
+  going
+  to
+  get
+  back
+  up
+  to
+  the
+  80s
+  next
+  week.
+
+Customer:
+  Oh,
+  is
+  that
+  right?
+
+Andrew Trujillo:
+  Yeah.
+
+Customer:
+  It's.
+
+Andrew Trujillo:
+  Hey,
+  man.
+  So
+  I
+  was
+  pulling
+  out
+  the
+  blade
+  disconnect.
+  And
+  one
+  of
+  the
+  blades
+  came
+  off.
+  So
+  I
+  can
+  check
+  in
+  my
+  van
+  to
+  see
+  if
+  I
+  got
+  one.
+  But
+  if
+  I
+  don't,
+  will
+  be
+  that
+  process.
+  And
+  I'm
+  guessing
+  that
+  it's
+  no
+  charge
+  necessarily,
+  just
+  a
+  factor
+  of
+  the
+  unit.
+  Right.
+  Like,
+  I
+  wasn't
+  like,
+  I
+  didn't
+  like
+  eating
+  anything
+  out
+  or
+  like
+  fry
+  it.
+  Like
+  I
+  hold
+  it
+  like
+  normal.
+
+Customer:
+  Yeah.
+
+Andrew Trujillo:
+  Yeah.
+  Okay.
+  They
+  weren't.
+  No.
+
+Customer:
+  Yeah.
+
+Andrew Trujillo:
+  Okay.
+  Sounds
+  good.
+  Cool.
+  Thanks,
+  dude.
+
+Customer:
+  Peace.
+
+Andrew Trujillo:
+  Hey
+  there.
+  Yeah,
+  so
+  really
+  quick,
+  want
+  to
+  bring
+  something
+  up
+  to
+  you.
+  So
+  when
+  it
+  comes
+  to
+  the
+  older
+  units.
+  Yeah.
+  They
+  do
+  have
+  their
+  own.
+  Essentially
+  plug
+  in
+  the
+  wall,
+  send
+  the
+  high
+  voltage
+  in
+  with
+  older
+  units,
+  they
+  make
+  them
+  in
+  a
+  specific
+  fashion.
+  And
+  those
+  can
+  get
+  brittle
+  and
+  snap.
+
+Customer:
+  Yeah.
+
+Andrew Trujillo:
+  Which
+  is
+  what
+  happened
+  here.
+  So
+  this
+  disconnect
+  here.
+  Yeah.
+  As
+  I
+  was
+  bringing
+  that
+  out
+  just
+  so
+  I
+  can
+  kill
+  the
+  power
+  and
+  start
+  working
+  on
+  the
+  electricals,
+  that
+  blade
+  snapped.
+
+Customer:
+  Okay.
+
+Andrew Trujillo:
+  So
+  I
+  just
+  want
+  to
+  let
+  you
+  know
+  I'm
+  gonna
+  take
+  a
+  look
+  through
+  my
+  truck
+  and
+  see
+  if
+  I
+  have
+  a
+  replacement
+  of
+  this.
+  And
+  I'll
+  replace
+  that
+  out
+  free
+  of
+  charge
+  just
+  because
+  it
+  wasn't
+  any
+  sort
+  of
+  condition
+  of
+  that.
+  But
+  if
+  in
+  the
+  case
+  that
+  I
+  don't,
+  let's
+  reschedule
+  for
+  a
+  time
+  where
+  we
+  can
+  have
+  someone
+  coming
+  out.
+  If
+  not
+  me,
+  then
+  someone
+  else
+  will
+  come
+  through.
+  And
+  again,
+  we'll
+  repair
+  that
+  through
+  free
+  of
+  charge
+  for
+  you.
+
+Customer:
+  Oh,
+  is
+  it
+  gonna
+  be
+  without
+  power
+  or.
+
+Andrew Trujillo:
+  No,
+  it'll
+  be
+  right
+  now.
+  The
+  tech
+  unit
+  technically
+  still
+  has
+  power,
+  but
+  I
+  can
+  plug
+  that
+  back
+  in
+  and
+  it
+  should
+  have
+  the
+  full
+  power
+  there.
+  But
+  I'll.
+  We'll
+  see
+  where
+  we
+  can
+  go.
+
+Customer:
+  Okay.
+
+Andrew Trujillo:
+  I
+  just
+  want
+  to
+  bring
+  that
+  to
+  your
+  attention
+  first.
+
+Customer:
+  All
+  right.
+  Appreciate
+  it.
+
+Andrew Trujillo:
+  Yeah.
+
+Customer:
+  All
+  right.
+
+Andrew Trujillo:
+  So
+  nice.
+
+Customer:
+  I
+  like
+  that
+  it's
+  freaking
+  cold.
+
+Andrew Trujillo:
+  I
+  just,
+  you
+  know,
+  it.
+  This
+  is
+  going
+  to
+  be
+  now
+  my
+  second
+  because
+  I
+  just
+  moved
+  out
+  to
+  Vegas
+  about
+  two
+  years
+  ago.
+  This
+  is
+  coming
+  up
+  on
+  my
+  second
+  year
+  out
+  in
+  Vegas.
+  And
+  it.
+  It
+  still
+  surprises
+  me
+  how
+  it
+  can
+  be
+  like
+  40,
+  50,
+  and
+  then
+  immediately.
+
+Customer:
+  Oh,
+  my
+  God.
+
+Andrew Trujillo:
+  It's
+  pretty
+  bizarre.
+
+Customer:
+  But
+  our
+  weather's
+  better
+  than
+  most.
+
+Andrew Trujillo:
+  Now,
+  good
+  news
+  and
+  bad
+  news.
+  Bad
+  news,
+  I
+  won't
+  have
+  a
+  replacement
+  part
+  on
+  my
+  van
+  right
+  now.
+  Good
+  news
+  is
+  that
+  we
+  can
+  get
+  it
+  ordered,
+  get
+  it
+  switch
+  running
+  right
+  now.
+  It
+  has
+  the
+  full
+  power
+  it
+  needs
+  to
+  right
+  now.
+  It
+  just
+  in
+  order
+  to
+  do
+  all
+
+Customer:
+  the
+  stops
+  working,
+  though
+  there's
+  a
+  chance
+  it
+  has
+  to
+  do
+  with
+  that
+  starts
+  arcing
+  or
+  something.
+
+Andrew Trujillo:
+  It's
+  not
+  a
+  hazard
+  as
+  of
+  right
+  now.
+  No.
+  Salsy
+  it
+  up.
+  It's
+  good.
+  But
+  in
+  order
+  for
+  me
+  to
+  complete
+  the
+  maintenance,
+  I'll
+  have
+  to
+  have
+  the
+  powerfully
+  killed.
+  So
+  we'll
+  get
+  that
+  part
+  ordered,
+  come
+  out
+  soon
+  as
+  convenience.
+  What
+  time
+  works
+  out
+  best
+  for
+  you
+  in
+  terms
+  of
+  us
+  coming
+  back?
+
+Customer:
+  Yeah,
+  usually
+  in
+  the
+  evening.
+  Just
+  have
+  them
+  call
+  me
+  and
+  we'll
+  schedule
+  it.
+
+Andrew Trujillo:
+  Okay,
+  sounds
+  good.
+  But
+  we'll
+  get
+  that
+  done
+  ASAP
+  for
+  you.
+  I'll
+  just
+  need
+  a
+  couple
+  of
+  signatures
+  from
+  you.
+  Just
+  going
+  over.
+
+Customer:
+  See
+
+Andrew Trujillo:
+  now
+  the
+  first
+  one
+  here
+  is
+  going
+  to
+  be
+  an
+  authorization
+  that
+  you
+  allow
+  me
+  to
+  come
+  into
+  the
+  home.
+  And
+  again,
+  there's
+  no
+  charge
+  coming
+  to
+  this
+  since
+  today
+  is
+  compiled
+  with
+  your
+  membership.
+  Before
+  I
+  get
+  this
+  last
+  signature,
+  just
+  want
+  to
+  at
+  least
+  make
+  you
+  aware
+  in
+  terms
+  of
+  what
+  I
+  did
+  go
+  through
+  for
+  the
+  upstairs
+  is
+  going
+  to
+  be
+  the
+  attic
+  unit
+  cooling
+  box
+  is
+  going
+  to
+  be
+  behind
+  this
+  panel
+  right
+  here.
+
+Customer:
+  Seen
+  better
+  days.
+
+Andrew Trujillo:
+  Sure
+  it
+  has.
+  I'm
+  sure
+  it
+  has.
+  I
+  am
+  seeing
+  rust
+  accumulate
+  along
+  the
+  bottom.
+
+Customer:
+  Oh
+  yeah.
+
+Andrew Trujillo:
+  It's
+  also
+  affecting
+  the
+  downward
+  pan
+  here
+  as
+  well.
+
+Customer:
+  All
+  right,
+
+Andrew Trujillo:
+  see
+  it
+  along
+  the
+  faceplate
+  there?
+
+Customer:
+  Okay.
+  Right
+  at
+  20,000,
+  right.
+  Give
+  or
+  take.
+
+Andrew Trujillo:
+  Yeah.
+  Evaporator
+  coils
+  are
+  definitely
+  the
+  most.
+  Some
+  of
+  the
+  most
+  expensive
+  components
+  toward
+  it.
+
+Customer:
+  Yeah.
+  And
+  he
+  talked
+  about.
+  I
+  think
+  that
+  was
+  one
+  of
+  the
+  things
+  he
+  talked
+  about
+  replacing.
+  But
+  yeah,
+  once.
+  Once
+  we
+  have
+  the
+  first
+  major
+  problem,
+  it's.
+  Yeah.
+
+Andrew Trujillo:
+  Like
+  you
+  absolutely
+  could.
+  I
+  mean
+  the
+  big
+  thing
+  too
+  is
+  that
+  this
+  is
+  running
+  on
+  last
+  generation's
+  refrigerant
+  because
+  the
+  EPA
+  is
+  always
+  changing
+  laws
+  of
+  what
+  juice
+  goes
+  through
+  these.
+  You
+  probably
+  are
+  so
+  familiar
+  with
+  Freon.
+  That
+  been
+  like
+  a
+  big
+  coin
+  term.
+  Freon
+  was
+  like
+  liquid
+  gold
+  and
+  yeah,
+  that's
+  two
+  generations
+  ago.
+  But
+  control
+  board
+  here
+  motherboard
+  talks
+  to
+  everything
+  as
+  I'm
+  sure
+  you
+  know.
+  Seeing
+  some
+  hot
+  spots
+  around
+  that's
+  going
+  to
+  limit
+  communication.
+  It's
+  going
+  to
+  cut
+  off
+  your
+  cooling.
+  Yeah.
+
+Customer:
+  As
+  soon
+  as
+  something
+  like
+  that
+  fails,
+  we're
+  just
+  probably.
+
+Andrew Trujillo:
+  It's
+  time.
+  Yeah.
+  Trigger
+  because
+  yeah
+  you're
+  getting
+  decent
+  temperature
+  split.
+  So
+  it's
+  working
+  the
+  way
+  that
+  it
+  should
+  just
+  age.
+  Big
+  thing
+  I
+  noticed
+  up
+  there
+  just
+  apart,
+  you
+  know,
+  compiling
+  with
+  the
+  rust,
+  you
+  know,
+  oxidization
+  on.
+  On
+  that
+  downward
+  pan.
+  This
+  is
+  a
+  safety
+  pan
+  that's
+  right
+  above
+  your
+  ceiling.
+  So
+  if
+  there's
+  any,
+  you
+  know,
+  any
+  of
+  those
+  rust
+  coils,
+  you
+  know,
+  it
+  gets
+  too
+  deep,
+  leaks
+  through.
+  If
+  that
+  creed
+  leaks
+  through,
+  then
+  we'll
+  see
+  something.
+  Yeah,
+  it's
+  likely.
+  Have
+  you
+  ever
+  had
+  like
+  water
+  damage,
+  like
+  big
+  water
+  damage
+  like
+  that
+  in
+  the
+  past?
+
+Customer:
+  No,
+  not
+  here.
+
+Andrew Trujillo:
+  Yeah.
+  No.
+  Okay.
+  Ever?
+
+Customer:
+  No.
+
+Andrew Trujillo:
+  No.
+
+Customer:
+  Another
+  house
+  toilet
+  broke,
+  but
+  other
+  than
+  that,
+  okay.
+  Only
+  water
+  damage
+  overhead,
+  I
+  can
+  tell
+  you.
+
+Andrew Trujillo:
+  Water
+  in
+  the
+  ceiling,
+  it's
+  not
+  fun.
+  No.
+  Yeah.
+  Not
+  fun
+  to
+  deal
+  with.
+  But
+  then
+  again,
+  just
+  another.
+  Look
+  at
+  that.
+
+Customer:
+  So
+  that
+  could
+  happen
+  any
+  day
+  as
+  well,
+  huh?
+
+Andrew Trujillo:
+  With
+  these
+  disconnects.
+
+Customer:
+  Yeah.
+  Yeah.
+
+Andrew Trujillo:
+  I
+  mean,
+  they're.
+
+Customer:
+  They're
+  talking
+  about
+  the
+  water
+  leak
+  that
+  could.
+
+Andrew Trujillo:
+  Yeah.
+  I
+  mean,
+  with
+  the
+  rest,
+  it's
+  only
+  going
+  to
+  grow.
+  It's
+  a
+  dark,
+  damp,
+  you
+  know,
+  moisture
+  up
+  there.
+
+Customer:
+  So
+  it's.
+
+Andrew Trujillo:
+  Yeah,
+  it's
+  only
+  natural.
+  Okay,
+  so
+  I'll
+  just
+  need
+  one
+  last
+  John
+  Hancock
+  on
+  here.
+  This
+  is
+  just
+  an
+  acknowledgment
+  that
+  I
+  brought
+  up.
+  The
+  attention,
+  the
+  condition
+  of
+  the
+  system,
+  and
+  if
+  it's
+  me
+  coming
+  back
+  through,
+  we'll
+  go
+  over
+  everything
+  with
+  the
+  outdoor
+  system
+  as
+  well.
+  What
+  kind
+  of
+  questions
+  do
+  you
+  have
+  for
+  me?
+
+Customer:
+  Yeah,
+  we've.
+  I
+  think
+  you
+  covered
+  everything.
+
+Andrew Trujillo:
+  Okay,
+  sounds
+  good.
+
+Customer:
+  Another
+  water?
+
+Andrew Trujillo:
+  That'd
+  be
+  great.
+  Yeah.
+  I
+  appreciate
+  it.
+  Thank
+  you,
+  sir.
+  And
+  cream
+  soda.
+  Oh,
+  okay.
+  Now
+  you're
+  speaking
+  my
+  lingo,
+
+Customer:
+  But
+  it's
+  pretty
+  good.
+
+Andrew Trujillo:
+  I'll
+  take
+  it.
+
+Customer:
+  It's
+  very
+  sweet.
+
+Andrew Trujillo:
+  I'll
+  take
+  it.
+  Water,
+  too?
+  Yeah,
+  sure.
+  Why
+  not?
+  Thank
+  you
+  very
+  much.
+  You're
+  very
+  kind.
+  Appreciate
+  you
+  for
+  taking
+  the
+  time
+  out
+  of
+  your
+  evening,
+  for
+  letting
+  me
+  come
+  by.
+
+Customer:
+  Yeah.
+  Yes,
+  Sierra.
+
+Andrew Trujillo:
+  All
+  three.
+
+Customer:
+  You
+  guys,
+  well
+  trained
+  and
+  well
+  behaved.
+  So
+  we
+  do
+  our
+  best.
+
+Andrew Trujillo:
+  We'll
+  be
+  in
+  contact
+  with
+  you.
+  All
+  right?
+
+Customer:
+  All
+  right.
+
+Andrew Trujillo:
+  We're
+  for
+  dinner.
+  Much
+  appreciated,
+  sir.
+  Yes,
+  sir.
+  You
+  have
+  a
+  good
+  night.
+
+Customer:
+  All
+  right,
+  you,
+  too.
+
+Andrew Trujillo:
+  Thanks.
+
+Customer:
+  Good
+  to
+  meet
+  you.
+  Bye.
+
+Andrew Trujillo:
+  Bye.

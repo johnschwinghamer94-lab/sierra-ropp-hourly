@@ -1,0 +1,5621 @@
+TRANSCRIPT
+Rep:      Ting Cheung
+Date:     2026-03-22
+Duration: 99 min
+RecId:    16b54c33-27d4-4551-9fbf-a3710e225b70-kBmcjj1ucbYoWgDqILgiXfkLNzP2
+Job:      Samuel Pushmak, Job # 635766640
+============================================================
+
+
+Ting Cheung:
+  What's
+  going
+  on
+  here?
+
+Customer:
+  Good
+  afternoon,
+  sir.
+  How
+  you
+  doing?
+  My
+  name
+  is
+  King.
+
+Ting Cheung:
+  Nice
+  to
+  meet
+  you.
+
+Customer:
+  Sam.
+
+Ting Cheung:
+  Sam,
+  nice
+  to
+  meet
+  you.
+
+Customer:
+  Is
+  my
+  truck
+  parked
+  there
+  okay?
+
+Ting Cheung:
+  Yep.
+
+Customer:
+  Yeah,
+  yeah.
+
+Ting Cheung:
+  Perfect.
+  May
+  I
+  come
+  inside?
+
+Customer:
+  Yes,
+  sir.
+
+Ting Cheung:
+  Can
+  I
+  trouble
+  you
+  to
+  hold
+  this
+  for
+  me,
+  boss?
+  Yep.
+  Let
+  me
+  just
+  put
+  on
+  shoe
+  covers
+  real
+  quick.
+  What
+  you
+  can
+  expect
+  from
+  me
+  today,
+  boss?
+  Yeah.
+  Take
+  a
+  look
+  at
+  your
+  systems.
+  I'll
+  do
+  a
+  for
+  evaluation
+  of
+  it.
+  Focus
+  on
+  three
+  things.
+  Cleanliness,
+  functionality,
+  most
+  importantly,
+  safety.
+  And
+  after
+  that,
+  if
+  I
+  notice
+  anything,
+  would
+  you
+  want
+  me
+  to
+  bring
+  that
+  to
+  your
+  attention?
+
+Customer:
+  Yes,
+  please.
+  Perfect.
+
+Ting Cheung:
+  After
+  that,
+  step
+  into
+  my
+  van
+  for
+  about
+  20
+  minutes.
+  Just
+  put
+  together
+  the
+  pro
+  report
+  of
+  the
+  system's
+  help.
+  Report
+  that
+  back
+  to
+  you,
+  and
+  if
+  there's
+  work
+  to
+  be
+  done,
+  you
+  can
+  get
+  that
+  started
+  today.
+  But
+  we
+  won't
+  start
+  without
+  your
+  approval.
+
+Customer:
+  Okay.
+
+Ting Cheung:
+  Gotcha.
+
+Customer:
+  Sounds
+  good.
+
+Ting Cheung:
+  Once
+  again,
+  N
+  Sing,
+  we'll
+  give
+  you
+  that
+  five
+  star
+  experience.
+
+Customer:
+  Sounds
+  good.
+
+Ting Cheung:
+  Do
+  you
+  have
+  any
+  questions
+  for
+  me?
+
+Customer:
+  No.
+  Do
+  you
+  want
+  me
+  to
+  tell
+  you
+  kind
+  of
+  the
+  story?
+
+Ting Cheung:
+  Nice
+  to
+  meet
+  you.
+
+Customer:
+  Hi.
+  So
+  about
+  a
+  month
+  ago,
+  we
+  were
+  trying
+  to
+  use
+  big.
+  Oh,
+  sorry.
+  And
+  the
+  heater
+  stopped
+  working.
+
+Ting Cheung:
+  Okay.
+
+Customer:
+  And
+  so
+  I
+  had
+  all
+  my
+  work
+  tools
+  here,
+  so
+  I
+  checked
+  the
+  furnace.
+  Yeah.
+  So
+  the.
+  I
+  wasn't
+  getting
+  the
+  24.
+  From
+  the
+  board?
+  Yeah,
+  from
+  the
+  board.
+  And
+  so
+  when
+  I
+  went
+  up
+  there,
+  the
+  board
+  wasn't
+  actually
+  sending
+  240
+  to
+  the
+  transformer.
+  So
+  I
+  bypassed
+  the
+  board
+  and
+  ran
+  240
+  straight
+  to
+  the
+  transformer.
+  And
+  then
+  it
+  worked
+  for
+  maybe
+  four
+  or
+  five
+  days.
+
+Ting Cheung:
+  Okay.
+
+Customer:
+  And
+  then
+  it
+  stopped
+  working
+  again.
+  I
+  don't
+  want
+  my
+  multimeter
+  to
+  check,
+  but
+  I
+  hear
+  it
+  clicking
+  over.
+  So
+  I
+  think
+  because
+  I
+  can't
+  get
+  the
+  fan
+  to
+  turn
+  on
+  all
+  of
+  them.
+
+Ting Cheung:
+  The
+  fan,
+  the
+  blower.
+
+Customer:
+  The
+  blower.
+  Okay.
+  Yeah.
+  And
+  that's
+  all
+  I
+  checked.
+  And
+  then
+  we're
+  done
+  with
+  heat
+  now.
+  And
+  I.
+  I
+  went
+  to
+  turn
+  on
+  AC
+  and
+  it
+  wouldn't
+  turn
+  on
+  either.
+
+Ting Cheung:
+  So
+  the
+  outside
+  wouldn't
+  turn
+  on.
+  Condenser.
+
+Customer:
+  Neither.
+
+Ting Cheung:
+  Neither.
+
+Customer:
+  Neither.
+  Turn
+  on
+  the
+  fan
+  or
+  the
+  condenser.
+
+Ting Cheung:
+  You
+  think
+  it's
+  the
+  board
+  or.
+
+Customer:
+  That's
+  what
+  I
+  thought.
+
+Ting Cheung:
+  Okay.
+  Can
+  we
+  check
+  out
+  the
+  thermostat?
+
+Customer:
+  Yes,
+  absolutely.
+  You
+  can
+  look
+  at
+  everything.
+  And
+  I
+  just.
+  I
+  just
+  wanted
+  to
+  let
+  you
+  know
+  where
+  I.
+  Yeah,
+  yeah,
+  yeah,
+  yeah.
+  I
+  appreciate
+  that.
+  Yeah.
+
+Ting Cheung:
+  Thank
+  you
+  for
+  updating
+  me
+  because
+  the
+
+Customer:
+  board
+  definitely
+  was
+  not
+  doing
+  what
+  it
+
+Ting Cheung:
+  needed
+  to
+  do
+  other
+  than
+  the
+  AC
+  being
+  them.
+  How's
+  your
+  guys's
+  day
+  going?
+
+Customer:
+  Good.
+  How
+  about
+  you?
+
+Ting Cheung:
+  Going
+  all
+  right.
+  It's
+  A
+  nice
+  drive
+  up
+  here.
+
+Customer:
+  Yeah.
+  Yeah.
+  Sorry
+  you
+  have
+  to
+  do
+  that.
+
+Ting Cheung:
+  No,
+  no,
+  you're
+  good.
+  There's
+  a
+  nice
+  few.
+  Yeah.
+  What
+  keeps
+  you
+  guys
+  comfortable?
+
+Customer:
+  We
+  were
+  gonna
+  set
+  it
+  at
+  70.
+
+Ting Cheung:
+  That's
+  where
+  you
+  guys
+  usually
+  like
+  it
+  during
+  summertime.
+  Yeah.
+  Very
+  nice.
+  Okay.
+  Nice
+  and
+  cool.
+  Yeah.
+  And
+  how
+  does
+  that
+  look
+  usually
+  reflecting
+  on
+  your
+  guys's
+  energy
+  bill?
+
+Customer:
+  Not
+  too
+  bad,
+  not
+  too
+  bad.
+
+Ting Cheung:
+  What
+  about
+  when
+  you
+  get
+  real?
+  What's
+  like
+  your
+  highest
+  bill?
+
+Customer:
+  Probably
+  300.
+
+Ting Cheung:
+  300.
+  That's
+  like
+  throwing
+  200
+  peak
+  summer.
+  Okay.
+  Yeah.
+
+Customer:
+  And
+  we're
+  home
+  the
+  whole
+  time.
+  So
+  garage
+  just
+  shelters.
+
+Ting Cheung:
+  I'm
+  the
+  same
+  way.
+  I'm
+  like,
+  I
+  don't
+  want
+  to
+  go
+  outside.
+
+Customer:
+  Yeah,
+  exactly.
+  And
+  I
+  can
+  hear
+  the
+  relay
+  kick
+  over,
+  but
+  I
+  get
+  nothing.
+  And
+  even
+  going
+  to.
+
+Ting Cheung:
+  On.
+
+Customer:
+  I
+  can't
+  get.
+  Get
+  the.
+
+Ting Cheung:
+  Yeah.
+
+Customer:
+  The
+  fan
+  to
+  start
+  or
+  anything.
+
+Ting Cheung:
+  So.
+  Yeah.
+  Other
+  systems
+  up
+  there.
+
+Customer:
+  So
+  it
+  is.
+  But
+  the
+  entrance,
+  it's
+  actually
+  right
+  next
+  to.
+
+Ting Cheung:
+  How
+  you
+  doing?
+
+Customer:
+  I
+  got
+  a
+  big
+  one.
+  So
+  there's
+  an
+  entrance
+  right
+  here
+  and
+  the
+  unit
+  is
+  right.
+
+Ting Cheung:
+  Okay.
+  Yeah,
+  one's
+  just
+  more
+  for
+  depth
+  worker.
+  Yeah.
+  And
+  then
+  your
+  filters
+  gu.
+
+Customer:
+  Just
+  that
+  one
+  over
+  there,
+  one
+  over
+  that
+  unit
+  20x30.
+  Yes,
+  Sierra.
+  And
+  I
+  have
+  an
+  extra
+  one.
+  And
+  then
+  the
+  outside
+  unit
+  is
+  on
+  that
+  side.
+
+Ting Cheung:
+  You
+  mind
+  Cheung
+  me
+  where
+  we
+  can
+
+Customer:
+  just
+  leave
+  this
+  back?
+
+Ting Cheung:
+  How's
+  it
+  living
+  out
+  here?
+
+Customer:
+  I
+  like
+  it.
+  Yeah.
+  I
+  like
+  it
+  quiet.
+
+Ting Cheung:
+  Do
+  you
+  guys
+  live
+  out
+  here
+  originally
+  or
+  did
+  you
+  move
+  out
+  here?
+
+Customer:
+  Yeah,
+  so
+  when
+  we
+  were
+  kids,
+  we
+  grew
+  up
+  out
+  here.
+  And
+  then
+  I
+  was
+  in
+  the
+  military
+  for
+  eight
+  years.
+
+Ting Cheung:
+  Thank
+  you
+  for
+  your
+  service,
+  sir.
+  Army.
+
+Customer:
+  I
+  was
+  Navy
+  maybe.
+
+Ting Cheung:
+  Yeah,
+  I
+  wanted
+  to
+  join
+  the
+  Navy
+  when
+  I
+  was
+  in
+  high
+  school.
+  Yeah.
+  My
+  high
+  school
+  car
+  stuff.
+  Stop
+  me.
+
+Customer:
+  Oh,
+  there
+  you
+  go.
+  Yeah,
+  it
+  was
+  fun.
+  And
+  then
+  we
+  moved
+  back
+  out
+  here.
+
+Ting Cheung:
+  What
+  issues
+  you
+  have
+  noticed
+  with
+  the
+  system
+  in
+  the
+  past?
+
+Customer:
+  Like
+  nothing.
+
+Ting Cheung:
+  Nothing.
+
+Customer:
+  No
+  issues.
+
+Ting Cheung:
+  The
+  whole
+  15
+  years?
+
+Customer:
+  Yep.
+  Well,
+  I
+  mean,
+  I've
+  only
+  lived
+  here
+  for
+  three
+  years.
+  Okay.
+  But
+  they
+  told
+  me
+  they
+  had
+  no
+  problems
+  when
+  I
+  bought
+  it,
+  and
+  I
+  had
+  zero
+  issues.
+  And
+  even
+  this
+  winter
+  until.
+  Until
+  recently.
+  Yeah.
+
+Ting Cheung:
+  Yeah.
+
+Customer:
+  And
+  it
+  was.
+  The
+  thing
+  is,
+  it
+  was
+  running.
+  I
+  had
+  the
+  heat
+  on
+  all
+  winter.
+  It
+  was
+  fine.
+  And
+  then
+  one.
+  I
+  didn't
+  hear
+  anything.
+  I
+  just
+  woke
+  up
+  the
+  next
+  morning
+  and
+  was
+  like,
+  oh,
+  it's
+  kind
+  of
+  cold.
+
+Ting Cheung:
+  Okay.
+
+Customer:
+  And
+  I
+  looked
+  and
+  it
+  wasn't
+  like
+  October,
+  November,
+  December.
+  No,
+  that
+  was
+  last
+  month.
+  Yes.
+  Yeah.
+
+Ting Cheung:
+  March.
+  February.
+  Okay.
+  Nice.
+  Yeah,
+  the
+  heat
+  just
+  kind
+  of.
+
+Customer:
+  It
+  just
+  stopped.
+
+Ting Cheung:
+  Crept
+  up
+  on
+  us
+  this
+  week.
+
+Customer:
+  Exactly.
+  Yeah.
+  Yeah.
+
+Ting Cheung:
+  Yeah.
+  So
+  did
+  you
+  guys
+  have
+  to
+  run
+  the
+  AC
+  the
+  past
+  week?
+  This
+  week.
+  Did
+  you
+  turn
+  that
+  on
+  for
+  you
+  guys?
+  Was
+  that
+  working
+  for
+  you?
+
+Customer:
+  No,
+  I
+  went
+  to
+  turn
+  it
+  on
+  today
+  because
+  we
+  were
+  on
+  a
+  trip.
+
+Ting Cheung:
+  Okay.
+
+Customer:
+  And
+  I
+  hadn't
+  tried
+  it.
+
+Ting Cheung:
+  Where
+  did
+  you
+  guys
+  take
+  the
+  trip?
+
+Customer:
+  Disneyland.
+  Yeah.
+
+Ting Cheung:
+  Yeah.
+  Nice.
+
+Customer:
+  Nice.
+  Yeah.
+  So
+  I
+  came
+  back
+  and
+  when
+  to
+
+Ting Cheung:
+  turn
+  it
+  on
+  and
+  happiest
+  place
+  on
+  earth.
+
+Customer:
+  Yeah,
+  sure.
+  It
+  was
+  good
+  though.
+
+Ting Cheung:
+  Yeah.
+  You
+  like
+  Star
+  Wars
+  Land?
+  Yes.
+  Okay.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  What's
+  the
+  best
+  part
+  for
+  you?
+
+Customer:
+  Oh
+  yeah,
+  of
+  course,
+  of
+  course.
+
+Ting Cheung:
+  Right
+  next
+  to
+  you.
+  So
+  what
+  else
+  can
+  you
+  tell
+  me
+  about
+  the
+  system
+  in
+  the
+  past
+  three
+  years?
+  Like
+  this
+  has
+  been
+  running
+  smooth
+  for
+  you
+  guys?
+  Nothing's
+  no
+  trouble
+  at
+  all?
+
+Customer:
+  Yes,
+  no
+  trouble
+  nice
+  at
+  all.
+
+Ting Cheung:
+  Very
+  good.
+
+Customer:
+  Turned
+  on
+  every
+  time.
+  And
+
+Ting Cheung:
+  what
+  about
+  some
+  like
+  noise
+  concerns
+  you
+  guys
+  have
+  with
+  the
+  unit?
+  No
+  strange
+  smells
+  when
+  you
+  guys
+  run
+  into
+  heat,
+  air,
+  anything
+  like
+  that?
+  No,
+  no.
+
+Customer:
+  Yeah,
+  never
+  any
+  issues.
+
+Ting Cheung:
+  What
+  about
+  hot
+  spots
+  and
+  cold
+  spots
+  within
+  the
+  home?
+
+Customer:
+  No,
+  no,
+  that's
+  it.
+  Yeah.
+
+Ting Cheung:
+  Let
+  me
+  just
+  grab
+  my
+  tools.
+  I'll
+  start
+  on
+  the
+  outside
+  and
+  I'll
+  make
+  my
+  way
+  inside.
+
+Customer:
+  Okay,
+  awesome.
+  You
+  want
+  me
+  to
+  put
+  the
+  thermostat
+
+Ting Cheung:
+  in
+  any
+  place
+  and
+  then
+  what
+  made
+  you
+  take
+  us
+  out
+  of
+  all
+  the
+  other
+  companies?
+  I
+  know
+  you
+  schedule
+  the
+  appointment
+  for
+  Monday.
+
+Customer:
+  You
+  know,
+  I've
+  seen
+  your
+  guys
+  truck
+
+Ting Cheung:
+  around
+  and
+  even
+  in
+  parole.
+  Yeah.
+
+Customer:
+  And
+  so
+  then
+  I
+  call.
+  I
+  work
+  in
+  Vegas
+  too.
+  Okay.
+  What
+  do
+  you
+  do?
+  I'm
+  a
+  electrical
+  engineer.
+
+Ting Cheung:
+  Oh,
+  nice.
+
+Customer:
+  Okay,
+  so
+  definitely
+  I
+  was
+  messing
+  around.
+  Yeah.
+  But
+  yeah,
+  I
+  just,
+  I
+  see
+  your
+  guys
+  truck
+  all
+  the
+  time.
+  And
+  then
+  I
+  saw
+  you
+  guys
+  had
+  a
+  military
+  discount.
+
+Ting Cheung:
+  Thank
+  you
+  for
+  picking
+  up
+  at
+  all
+  the
+  other
+  companies.
+  Yeah,
+
+Customer:
+  But
+  you
+  were
+  in.
+  You
+  live
+  in
+  Vegas.
+
+Ting Cheung:
+  I
+  live
+  in
+  Vegas.
+
+Customer:
+  Yeah.
+  Yeah.
+
+Ting Cheung:
+  So
+  you
+  just
+  had
+  to
+  drive
+  one
+  hour
+  exactly.
+  Yeah.
+  Cuz
+  I
+  was
+  in
+  like
+  four
+  Apaches.
+
+Customer:
+  Oh,
+  perfect.
+  Kind
+  of
+  closer.
+  Yeah,
+  yeah.
+  And
+  then.
+  Yeah,
+  whatever
+  you
+  need.
+  Is
+  it
+  okay
+  if
+  I
+  come
+  in
+  and
+  out
+  guys?
+  Yep,
+  absolutely
+  perfect.
+
+Ting Cheung:
+  Let
+  me
+  just
+  grab
+  my
+  tools.
+  Okay.
+
+Customer:
+  Yep,
+  yeah,
+  that's
+  there.
+
+Ting Cheung:
+  Perfect.
+
+Customer:
+  And
+  it
+  can
+  stay
+  out.
+
+Ting Cheung:
+  Okay,
+  thank
+  you,
+  sir.
+  What
+  are
+  you
+  guys
+  smoking?
+
+Customer:
+  Got
+  a
+  brisket
+  and.
+  Yeah,
+  pork.
+
+Ting Cheung:
+  How
+  long
+  has
+  it
+  been
+  in
+  there?
+  I
+  was
+  working
+  on
+  it.
+  I
+  was
+  like
+  smelling
+  good.
+
+Customer:
+  Yeah,
+  my
+  father
+  in
+  law's
+  birthday
+  today.
+  Okay.
+
+Ting Cheung:
+  So
+  is
+  it
+  your
+  special
+  recipe?
+
+Customer:
+  Yeah.
+  Not
+  really.
+  Yes,
+  There's
+  blown
+  in
+  the
+  insulation
+  so
+  when
+  you
+  push
+  up
+  it
+  might
+  drop
+  down.
+  Okay.
+
+Ting Cheung:
+  I
+  have
+  a
+  drop
+  cloth,
+  don't
+  worry.
+
+Customer:
+  But
+  you're
+  fine
+  either
+  way.
+  We
+  can
+  clean
+  it
+  up
+
+Ting Cheung:
+  okay.
+
+Customer:
+  Got
+  water
+  too
+  if
+  you
+  want
+  to.
+  Water?
+
+Ting Cheung:
+  Oh
+  yeah.
+
+Customer:
+  I
+  love
+  water.
+  It's
+  hot
+  out
+  there.
+  Yeah.
+
+Ting Cheung:
+  Thank
+  you,
+  Sierra.
+
+Customer:
+  Hey
+  Luna,
+  where
+  did
+  mommy
+  put
+  the
+  water
+  bottles?
+
+Ting Cheung:
+  It's
+  nice
+  that
+  you
+  guys
+  got
+  the
+  fan
+  and
+  stuff
+  going.
+
+Customer:
+  So
+  it's
+  not
+  terrible.
+
+Ting Cheung:
+  Yeah.
+  Once
+  it
+  gets
+  to
+  like
+  that
+  90
+  and
+  100.
+  Yeah.
+
+Customer:
+  That's
+  when
+  it
+  gets
+  a
+  little
+  rough.
+
+Ting Cheung:
+  Yeah.
+  Okay.
+  So
+  he
+  just
+  want
+  to
+  know
+  so
+  far
+  first.
+  I
+  turn
+  off
+  the
+  power
+  to
+  the
+  system
+  first
+  and
+  I
+  check
+  the
+  inside.
+  Spider
+  loved
+  it.
+  I
+  cleaned
+  it
+  up
+  a
+  little
+  bit.
+  First
+  thing
+  I
+  noticed
+  is
+  the
+  switch.
+  You're
+  probably
+  familiar
+  with
+  this
+  thing.
+  Yeah.
+  We
+  got
+  the
+  voltage
+  distribution
+  switch.
+  Contactor
+  severely
+  burnt
+  in
+  the
+  front
+  and
+  the
+  bottom.
+  As
+  you
+  know,
+  there's
+  two
+  ways
+  it
+  can
+  fail.
+  One
+  is
+  that
+  it'll
+  make
+  contact.
+  The
+  electricity
+  is
+  going
+  to
+  weld
+  it
+  shut
+  and
+  it's
+  going
+  to
+  be
+  continuously
+  running
+  non
+  stop.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  Otherwise
+  is
+  that
+  it
+  just
+  won't
+  energize.
+  Yeah.
+  Continue
+  on.
+  Check
+  the
+  control
+  board.
+  Some
+  hot
+  spots
+  on
+  there.
+  It's
+  not.
+  It's
+  not
+  crazy
+  enough
+  where
+  it's
+  in
+  the
+  back.
+  This
+  the
+  defrost
+  board
+  right
+  here.
+  Yeah.
+  I
+  was
+  talking
+  about
+  the
+  furnace
+  earlier
+  because
+  I
+  thought
+  you
+  had
+  a
+  furnace
+  system
+  but
+  you
+  have
+  a
+  heat
+  pump.
+  Yeah.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  Check
+  the
+  motor
+  start
+  device,
+  the
+  capacitor.
+  This
+  on
+  the
+  compass
+  compressor
+  side
+  is
+  running
+  a
+  little
+  low.
+  Looks
+  like
+  it
+  had
+  a
+  rough
+  summer.
+  Fan
+  size
+  fine.
+  That's
+  when
+  I
+  pop
+  in
+  there
+  and
+  that's
+  when
+  I
+  notice
+  the
+  real
+  issue.
+  You
+  can
+  see
+  that.
+  Yeah.
+  Over
+  there.
+  Yes,
+  sir.
+  So
+  it
+  has
+  leaked
+  out
+  all
+  the
+  refrigerant
+  inside
+  the
+  system
+  itself.
+
+Customer:
+  Okay.
+
+Ting Cheung:
+  You
+  see
+  it's
+  all
+  oily
+  in
+  there.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  Yeah.
+  At
+  first
+  I
+  thought
+  you
+  bought
+  a
+  new
+  compressor
+  because
+  it
+  was
+  shiny.
+
+Customer:
+  Yeah.
+  Yeah.
+
+Ting Cheung:
+  I
+  gauged
+  up
+  to
+  it.
+  This
+  one
+  is
+  red
+  00.
+  I
+  did
+  get
+  the.
+  That
+  attacks
+  for
+  it.
+  And
+  then
+  I
+  did
+  try
+  to
+  start
+  it
+  up
+  once
+  just
+  to
+  kind
+  of
+  see
+  the
+  health
+  of
+  the
+  compressor
+  because
+  I
+  think
+  it's
+  been
+  running
+  on
+  a
+  little
+  bit
+  lower,
+  running
+  out
+  of
+  refrigerant.
+  But
+  it
+  was
+  still
+  running
+  for
+  a
+  little
+  bit.
+  So
+  we
+  check
+  it
+  by
+  checking
+  the
+  startup
+  amps
+  of
+  the
+  compressor,
+  the
+  lock
+  rotor
+  amps.
+  It's
+  rated
+  for
+  172.
+  Anything
+  over
+  that
+  car
+  over
+  amping.
+  So
+  it's
+  pulling
+  too
+  much
+  juice,
+  hurting
+  the
+  wirings
+  on
+  the
+  inside.
+  And
+  it
+  is
+  coming
+  at
+  200.
+  Okay.
+  Anytime
+  it
+  is
+  over,
+  there's
+  a
+  chance
+  of
+  it
+  locking
+  itself
+  up,
+  tripping
+  the
+  breaker.
+  So
+  there's
+  three
+  possible
+  ways.
+  If
+  that
+  compressor
+  starts
+  up
+  so
+  one
+  is
+  that
+  pull
+  too
+  much
+  power
+  will
+  actually
+  blow
+  the
+  pins
+  out.
+  And
+  another
+  way
+  spin
+  around.
+  Yeah.
+  And
+  then
+  all
+  the
+  refrigerant.
+  All
+  the
+  refrigerants
+  already
+  leaked
+  out.
+  And
+  then
+  another
+  way
+  is
+  that
+  I
+  would
+  just
+  pull
+  too
+  much
+  power
+  where
+  we'll
+  start
+  damaging
+  the
+  breaker
+  panel
+  as
+  well.
+
+Customer:
+  And
+  then.
+
+Ting Cheung:
+  Well,
+  if
+  you're
+  an
+  electrician.
+  Yeah,
+  but
+  you
+  gotta
+  call
+  us
+  back
+
+Customer:
+  for
+  that
+  as
+  well.
+
+Ting Cheung:
+  Third
+  one's
+  the
+  more
+  mild.
+  It
+  just
+  pulls
+  too
+  much
+  power,
+  locks
+  itself
+  up
+  and
+  then
+  that's
+  it
+  for
+  the
+  compressor.
+  It'll
+  ground
+  itself.
+
+Customer:
+  Yep.
+
+Ting Cheung:
+  Yeah,
+  that's
+  a
+  couple
+  issues
+  I
+  noticed
+  so
+  far.
+  Let
+  me
+  pop
+  up
+  there
+  and
+  let
+  me
+  give
+  you
+  the
+  full
+  scope
+  of
+  things.
+  Perfect.
+
+Customer:
+  Thank
+  you.
+  Yes,
+  sir.
+
+Ting Cheung:
+  You
+  got
+  any
+  questions
+  for
+  me?
+
+Customer:
+  So
+  out
+  there
+  we
+  got
+  to
+  replace
+  the
+  compressor.
+  Compressor.
+
+Ting Cheung:
+  Either
+  the
+  condenser
+  as
+  well.
+
+Customer:
+  Yeah.
+  Cuz
+  like.
+  Yeah.
+
+Ting Cheung:
+  I
+  don't
+  know
+  if
+  like
+  the
+  leak
+  is
+  in
+  like
+  the
+  coils
+  itself
+  and
+  the
+  denser
+  coils.
+
+Customer:
+  Yeah,
+  I
+  gotcha.
+  Yeah.
+  Odd.
+
+Ting Cheung:
+  I
+  don't
+  know
+  if
+  the
+  compressor
+  is
+  still
+  good,
+  but
+  it
+  started
+  up.
+  I
+  just
+  started
+  up
+  real
+  quick
+  to.
+
+Customer:
+  Just
+  to
+  check
+  the
+  amps.
+
+Ting Cheung:
+  Yeah.
+  Yeah.
+  I
+  don't
+  know
+  if
+  it
+  runs
+  properly.
+  Once
+  we
+  get
+  it
+  all
+  up
+  and
+  going.
+  Yeah.
+  Let
+  me
+  pop
+  up
+  there.
+  Let
+  me
+  check
+  out
+  your
+  other
+  coils
+  and
+  stuff
+  and
+  then
+  I'll
+  give
+  you
+  the
+  full
+  scope
+  of
+  things
+  like
+  that.
+
+Customer:
+  Sounds
+  good.
+  Thank
+  you.
+
+Ting Cheung:
+  It's.
+  Can
+  I
+  use
+  one
+  of
+  your
+  paper
+  nap.
+
+Customer:
+  Oh,
+  yeah.
+
+Ting Cheung:
+  Thank
+  you,
+  sir.
+
+Customer:
+  Is
+  it
+  bad
+  up
+  there?
+
+Ting Cheung:
+  It's
+  hot
+  up
+  there.
+
+Customer:
+  Yeah.
+  Sorry.
+  No,
+  no,
+  no.
+
+Ting Cheung:
+  I'm
+  sorry.
+
+Customer:
+  How's
+  it
+  look?
+
+Ting Cheung:
+  Yeah,
+  I'll
+  show
+  you
+  right
+  now.
+  Okay.
+
+Customer:
+  That's
+  not
+  that.
+  That's
+  the
+  part
+  of
+  the
+  job
+  that's
+  not
+  fun.
+
+Ting Cheung:
+  Yeah.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  Winter
+  time,
+  not
+  so
+  bad.
+
+Customer:
+  Yeah,
+  yeah.
+
+Ting Cheung:
+  Continuing
+  on.
+  Do
+  you
+  have
+  this
+  little
+  replace?
+  It
+  looks
+  like
+  it's
+  been
+  replaced
+  recently.
+  Okay.
+
+Customer:
+  I
+  think
+  they
+  might
+  have
+  replaced
+  it
+
+Ting Cheung:
+  before
+  you
+  moved
+  in.
+  Yeah.
+
+Customer:
+  Because
+  I
+  saw
+  that
+  box
+  up
+  there
+  too.
+
+Ting Cheung:
+  Yeah.
+  The.
+  For
+  the.
+  Wheel.
+  So
+  that
+  is
+  pretty
+  rusted
+  on
+  the
+  wheel.
+  Start
+  running
+  a
+  little
+  low.
+  Looks
+  like
+  it
+  had
+  rough
+  summer.
+  And
+  that's
+  when
+  I
+  noticed
+  the
+  coils
+  super
+  rusted.
+  Yes.
+  Go
+  outside.
+  You
+  got
+  any
+  questions
+  for
+  me?
+  Anything
+  I
+  just
+  showed
+  you.
+
+Customer:
+  No.
+  Yeah.
+
+Ting Cheung:
+  I'll
+  go
+  build
+  the
+  estimates
+  for
+  repairing
+  the
+  system
+  for
+  you.
+  Okay.
+
+Customer:
+  Okay,
+  sounds
+  good.
+
+Ting Cheung:
+  Thank
+  you.
+
+Customer:
+  If
+  you.
+  If
+  you
+  want
+  to
+  know
+  the
+  water,
+  let
+  me
+  know.
+
+Ting Cheung:
+  You
+  got
+  any
+  questions
+  about
+  foot.
+
+Customer:
+  No,
+  no,
+  I
+  see
+  it.
+
+Ting Cheung:
+  Okay.
+
+Customer:
+  Thanks
+  for
+  taking
+  the
+  pictures.
+
+Ting Cheung:
+  Yeah,
+  of
+  course.
+
+Customer:
+  Yeah,
+  I'll.
+
+Ting Cheung:
+  We'll
+  talk
+  after
+  you
+  show
+  me
+  the
+  numbers
+  and
+  everything.
+
+Customer:
+  Yep.
+
+Ting Cheung:
+  Okay,
+  copy
+  that.
+
+Customer:
+  Awesome.
+  I
+  appreciate
+  it.
+
+Ting Cheung:
+  Give
+  me
+  like
+  20
+  minutes.
+  Okay,
+  boss.
+
+Customer:
+  Yeah,
+  you're
+  good.
+  No
+  rush.
+
+Ting Cheung:
+  Yes,
+  sir.
+  If
+  you're
+  a
+  golden
+  doodle.
+
+Customer:
+  Yeah,
+  he's
+  a
+  mini.
+
+Ting Cheung:
+  Hello.
+  You're
+  hypoallergenic.
+  You
+  got
+  anybody
+  that's
+  allergic
+  to,
+  like,
+  pet
+  dander?
+
+Customer:
+  Yeah,
+  my
+  wife.
+  Okay.
+
+Ting Cheung:
+  Yeah.
+
+Customer:
+  So
+  we
+  have
+  him
+  and
+  then
+  miniature
+  schnauzer.
+  The
+  same
+  thing.
+
+Ting Cheung:
+  They're
+  also
+  high
+  point.
+
+Customer:
+  Yeah.
+  They
+  don't
+  lose
+  hair
+  and
+  we
+  don't
+  like
+  cleaning
+  the
+  hair,
+  so.
+
+Ting Cheung:
+  Trust
+  me.
+  I
+  have
+  a.
+  My
+  white
+  German
+  shepherd.
+
+Customer:
+  Oh.
+
+Ting Cheung:
+  I'm
+  always
+  cleaning
+  hair
+  non
+  stop,
+  man.
+
+Customer:
+  She's
+  beautiful.
+
+Ting Cheung:
+  Yeah.
+
+Customer:
+  Wow,
+  that's
+  awesome.
+  Yeah.
+  Yeah.
+  See,
+  that's
+  like
+  me.
+  I
+  love
+  the.
+  I
+  love
+  to
+  pay
+  your
+  dog.
+
+Ting Cheung:
+  Big
+  dogs,
+  like,
+  medium
+  size
+  big
+  dogs
+  are
+  fine.
+  Like,
+  but
+  Chihuahuas
+  a
+  little.
+  I'm
+  like,
+  I'm
+  just
+  scared.
+  Like,
+  roll
+  over,
+  sleep
+  on
+  them.
+
+Customer:
+  I
+  like
+  big
+  dogs.
+  I
+  just
+  can't
+  do
+  the
+  hair.
+
+Ting Cheung:
+  The
+  hair.
+  Yeah,
+  yeah.
+
+Customer:
+  But
+  that's
+  awesome,
+  man.
+
+Ting Cheung:
+  She's
+  beautiful.
+  I
+  probably
+  won't
+  get
+  another
+  super
+  hairy
+  dog.
+
+Customer:
+  Yeah,
+  these
+  guys
+  are
+  awesome.
+  But
+  you
+  do
+  got
+  to
+  cut
+  their
+  hair
+  all
+  the
+  time.
+
+Ting Cheung:
+  Yeah.
+  Just
+  get
+  a
+  very
+  good
+  groomer,
+  right?
+
+Customer:
+  Yeah,
+  exactly.
+  That.
+  Your
+  wife
+  take
+  care
+  of
+  that,
+  right
+  it.
+  Oh,
+  yeah,
+  yeah,
+  yeah,
+  yeah.
+  I'll
+  be
+  right
+  back.
+  Okay.
+
+Ting Cheung:
+  That.
+  It?
+  Your
+  call
+  has
+  been
+  forwarded
+  to
+  voicemail.
+  The
+  person
+  you're
+  trying
+  to
+  reach
+  is
+  not.
+
+Customer:
+  Jose.
+
+Ting Cheung:
+  I
+  need
+  a
+  little
+  help
+  with
+  building
+  this
+  estimate.
+  So
+  I
+  got
+  like
+  a.
+  You
+  saw
+  in
+  the
+  service.
+  Super
+  leaky
+  outside.
+  Yeah,
+  I'm
+  in
+  pahrump,
+  dude.
+  Yeah,
+  this
+  is
+  the
+  Pamph.
+  Call.
+  Super
+  leaky.
+  I
+  went
+  inside.
+  Coils
+  are
+  leaking,
+  I
+  think.
+
+Customer:
+  Sorry.
+
+Ting Cheung:
+  Coils
+  are
+  definitely
+  leaking.
+  Inside.
+  And
+  then
+  I
+  was
+  just.
+  I'm
+  going
+  to
+  build
+  it
+  like
+  a.
+  Was
+  it
+  leak
+  search,
+  right?
+  Yeah,
+  the
+  leak
+  search.
+  Okay,
+  cool.
+  It's
+  R22.
+  Oh,
+  God.
+  Okay.
+  So
+  good
+  week.
+  Saturday
+  was
+  not
+  so
+  good.
+  That's
+  okay.
+  Sunday's
+  better.
+  Up
+  multiple
+  times.
+  And
+  I
+  got
+  yelled
+  at
+  by.
+  Right.
+  Yeah.
+  Super
+  zero
+  down.
+
+Customer:
+  There's
+  nothing
+  in
+  it.
+
+Ting Cheung:
+  That's
+  cool.
+  Let's
+  get
+  this
+  done.
+
+Customer:
+  What's
+  that?
+  I
+  got
+  everything
+  all
+  filled
+  out
+  for
+  you
+  guys.
+  Cool.
+
+Ting Cheung:
+  Got
+  a
+  place
+  where
+  we
+  can
+  sit
+
+Customer:
+  and
+  go
+  over
+  everything?
+
+Ting Cheung:
+  Yes,
+  sir.
+
+Customer:
+  We
+  can
+  go
+  over
+  it.
+  There
+  you
+  go.
+  D
+  I
+  N
+  G
+  O.
+  Yeah.
+  That's
+  why.
+
+Ting Cheung:
+  You
+  want
+  to
+  join
+  us
+  now?
+
+Customer:
+  Yes.
+
+Ting Cheung:
+  So
+  this
+  is
+  kind
+  of
+  what
+  your
+  guys's
+  system
+  looks
+  like
+  up
+  there.
+  So
+  you
+  got
+  the
+  outside
+  one
+  that
+  you
+  guys
+  see
+  all
+  the
+  time.
+  You
+  got
+  the
+  one
+  in
+  the
+  attic.
+  Just
+  so
+  you
+  guys
+  is
+  a
+  little
+  bit
+  different.
+  You
+  just
+  don't
+  have
+  the
+  furnace.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  You
+  guys
+  run
+  on
+  a
+  heat
+  pump.
+  So
+  it
+  cycles
+  that
+  refrigerant
+  and
+  the
+  heat
+  pumps
+  out
+  here,
+  Right,
+  the
+  heat
+  pumps
+  out
+  here.
+  Yeah.
+  And
+  then
+  you
+  just
+  got
+  the
+  coil
+  and
+  the
+  blower
+  up
+  there.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  And
+  your
+  control
+  board.
+  Let
+  me
+  just
+  kind
+  of
+  update
+  her
+  on
+  what's
+  going
+  on
+  as
+  well.
+  Okay.
+  All
+  right.
+  So
+  biggest
+  issue
+  we're
+  having
+  right
+  now
+  is
+  we
+  have
+  completely
+  leaked
+  out
+  all
+  the
+  refrigerant
+  and.
+  Engage
+  up
+  to
+  the
+  system.
+  It's
+  completely
+  flat.
+
+Customer:
+  Okay.
+
+Ting Cheung:
+  So
+  we
+  gotta
+  find
+  out
+  where
+  the
+  leak
+  is
+  coming
+  from
+  first.
+  You
+  guys
+  got
+  a
+  five
+  ton
+  unit,
+  it's
+  about
+  19
+  years
+  old.
+  So
+  the
+  most
+  immediate
+  repair
+  is
+  going
+  to
+  be
+  starting
+  with
+  finding
+  out
+  where
+  the
+  leak
+  is
+  coming
+  from
+  and
+  that
+  switch
+  as
+  well.
+  Okay.
+  With
+  those
+  two,
+  it
+  comes
+  out
+  to
+  1309.
+  Now
+  this
+  is
+  the
+  first
+  step.
+  Do
+  that
+  research.
+  You
+  guys
+  got
+  any
+  questions
+  about
+  that?
+
+Customer:
+  No.
+  Where
+  does
+  that
+  lead
+  though?
+
+Ting Cheung:
+  That
+  lead.
+  Okay,
+  continue.
+  So
+  there's
+  two
+  ways
+  after
+  the
+  leak
+  search
+  can
+  go.
+  Once
+  we
+  find
+  the
+  leak
+  and
+  it's
+  in
+  a
+  repairable
+  spot,
+  we
+  move
+  it
+  up
+  from
+  a
+  leak
+  search,
+  the
+  824
+  to
+  a
+  leak
+  search
+  and
+  repair.
+  That's
+  when
+  we
+  just
+  salted
+  the
+  lines.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  Just
+  sealed
+  it
+  back
+  in.
+  And
+  now
+  the
+  problem
+  with
+  that
+  is
+  you
+  guys
+  have
+  the
+  first
+  generation
+  refrigerator.
+  Yeah,
+  it's
+  R22.
+  And
+  I
+  don't
+  know
+  if
+  you
+  guys
+  know
+  that
+  has
+  been
+  phased
+  out
+  a
+  long
+  time
+  ago.
+  Let's
+  move
+  on
+  to
+  this
+  one.
+  And
+  as
+  of
+  last
+  year,
+  this
+  one
+  has
+  also
+  been
+  phased
+  out.
+  And
+  now
+  we're
+  actually
+  on
+  the.
+  Originally
+  called
+  a
+  tool.
+  So
+  this
+  is
+  the
+  most
+  current
+  stuff.
+  And
+  what
+  that
+  means
+  for
+  you
+  guys
+  is
+  that
+  this
+  refrigerator
+  is
+  they're
+  no
+  longer
+  manufacturing
+  this
+  R22
+  refrigerant.
+  Hence
+  the
+  price
+  on
+  it.
+  So
+  you
+  guys
+  have
+  13
+  pounds
+  of
+  that
+  does
+  come
+  out
+  of
+  7,644.
+  So
+  if
+  we
+  can
+  find
+  the
+  leak,
+  we
+  can
+  repair
+  it.
+  Slap
+  13
+  pounds
+  back
+  in,
+  which
+  does
+  come
+  out
+  to
+  be
+  9075.
+  Okay.
+  And
+  now
+  if
+  we
+  can
+  find
+  the
+  leak
+  or
+  it's
+  in
+  a
+  non
+  repair
+  terrible
+  spot,
+  then
+  we
+  just
+  got
+  to
+  replace
+  the
+  whole
+  condenser
+  coil.
+  And
+  that
+  would
+  be
+  a
+  different
+  compensation.
+  But
+  you
+  guys
+  also
+  have
+  the
+  evaporator
+  coil
+  as
+  well.
+  So
+  for
+  future.
+  We
+  did
+  notice
+  that
+  compressor
+  is
+  pulling
+  high
+  mounts
+  power.
+  You
+  notice
+  that
+  evaporated
+  coil
+  has
+  a
+  lot
+  of
+  rust
+  on
+  built
+  up
+  on
+  it
+  and
+  they
+  seem
+  to
+  be
+  safe
+  working
+  order.
+  Right
+  now.
+  But
+  we
+  won't
+  know
+  until
+  we
+  pump
+  it
+  up
+  and
+  get
+  it
+  all
+  fixed.
+  Yep.
+  So
+  if
+  they
+  do
+  fail
+  or
+  when
+  we
+  fix
+  it
+  and
+  we
+  found
+  out
+  that
+  it's
+  fail,
+  it
+  will
+  cost
+  around
+  another
+  8,500
+  to
+  get
+  that
+  coil
+  replaced
+  as
+  well.
+
+Customer:
+  And
+  that's
+  for
+  the
+  evaporator
+  coil.
+  How
+  much
+  is
+  new
+  condenser
+  coil?
+
+Ting Cheung:
+  That's
+  a
+  great
+  question.
+  Here,
+  let
+  me
+  finish
+  this
+  real
+  quick.
+  So
+  the
+  compressor
+  itself,
+  if
+  that
+  locks
+  up
+  on
+  you
+  guys
+  or
+  it's
+  the
+  leak
+  is
+  coming
+  from
+  the
+  compressor
+  itself
+  and
+  it's
+  4742
+  again
+  with
+  the
+  refrigerant.
+  That's
+  pump
+  that
+  up
+  to
+  12
+  386.
+  Okay.
+  And
+  I
+  did
+  do
+  an
+  energy
+  analysis
+  for
+  you
+  guys.
+  That
+  system
+  is.
+  You
+  guys
+  are
+  overpaying
+  on
+  utilities
+  by
+  around
+  34%.
+  Which
+  is
+  probably
+  why
+  you
+  told
+  me
+  your
+  highest
+  summer
+  bill
+  is
+  around
+  $300.
+  So
+  now
+  you
+  guys
+  have
+  a
+  19
+  year
+  old
+  unit.
+  You
+  guys
+  have
+  1309
+  right
+  now.
+  But
+  that's
+  just
+  the
+  first
+  step
+  in
+  getting
+  the
+  system
+  going.
+  All
+  while
+  you
+  guys
+  knowing
+  that
+  you
+  guys
+  have
+  85
+  up
+  to
+  $20,000
+  coming
+  up
+  in
+  future
+  repairs.
+  All
+  while
+  you
+  guys
+  are
+  overpaying
+  on
+  utilities
+  by
+  around
+  34%.
+  I
+  did
+  put
+  in
+  that
+  third
+  option
+  for
+  you
+  guys.
+  Before
+  you
+  guys
+  pull
+  the
+  trigger
+  on
+  repairing
+  it,
+  I
+  want
+  to
+  see.
+  You
+  guys
+  want
+  to
+  compare
+  repairing
+  the
+  system
+  versus
+  replacing
+  it.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  Where
+  are
+  you
+  guys
+  parts?
+
+Customer:
+  What's
+  like
+  a
+  ballpark
+  to
+  replace
+  it?
+
+Ting Cheung:
+  I'm
+  the
+  repair
+  tech,
+  so
+  I
+  have
+  all
+  the
+  repair
+  repair
+  pricing
+  for
+  you.
+  So
+  it'll
+  just
+  be
+  meeting
+  with
+  our
+  install
+  team.
+  They'll
+  come
+  out,
+  measure
+  the
+  size
+  of
+  your
+  guys's
+  unit,
+  check
+  out
+  the
+  crawl
+  space,
+  and
+  they'll
+  be
+  able
+  to
+  sit
+  down
+  with
+  you
+  guys.
+  Kind
+  of
+  like
+  how
+  I
+  am
+  right
+  now.
+  And
+  then
+  they'll
+  go
+  over
+  different
+  brands
+  of
+  units,
+  fresh
+  warranties
+  and.
+  Yeah,
+  okay.
+
+Customer:
+  Yeah,
+  I'd
+  want
+  to
+  talk
+  to
+  them.
+
+Ting Cheung:
+  Yeah,
+  okay,
+  copy
+  that.
+  Let
+  me
+  schedule
+  that
+  up
+  for
+  you
+  guys.
+  You
+  guys
+  got
+  any
+  questions
+  about
+  anything?
+  I
+  just
+  went
+  over.
+
+Customer:
+  No,
+  no,
+  I
+  know.
+  We
+  gotta
+  find
+  where
+  the
+  leaks
+  come
+  from.
+  Let's
+  find
+  a
+  leak
+  or
+  place
+  find
+  the
+  leak
+  and
+  then
+  repair
+  it.
+
+Ting Cheung:
+  Yeah.
+  So
+  this
+  be.
+  Yeah.
+  So
+  it
+  would
+  be
+  a
+  leak
+  search
+  and
+  then
+  once
+  we
+  find
+  the
+  leak,
+  it's
+  in
+  the
+  repairable
+  spot,
+  it
+  will
+  bump
+  it
+  into
+  a
+  research
+  and
+  repair.
+  But
+  if
+  we
+  can't
+  find
+  it
+  and
+  it's
+  in
+  either
+  the
+  compressor
+  or
+  the
+  evaporator
+  coil
+  itself,
+  then
+  It'll
+  be
+  that
+  85
+  or
+  that
+  $4,000
+  added
+  into
+  that
+  7,000.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  Because
+  either
+  way,
+  this
+  $7,000
+  is
+  not.
+  Yeah,
+  yeah.
+  I
+  was
+  surprised
+  what
+  I
+  pulled
+  it
+  out
+  because
+  I
+  know
+  at
+  least
+  this
+  is
+  nearing
+  half
+  a
+  unit,
+  so.
+
+Customer:
+  Yeah.
+  Yeah.
+
+Ting Cheung:
+  When
+  you're,
+  like,
+  comparing,
+  like,
+  the
+  refrigerant
+  is
+  more
+  than
+  the
+  compressor
+  itself,
+  it's
+  kind
+  of
+  crazy.
+
+Customer:
+  Yeah,
+  yeah.
+
+Ting Cheung:
+  You
+  said
+  it
+  was
+  working
+  for
+  a
+  couple
+  days
+  when
+  you
+  guys
+  got
+  back
+  from
+  Disneyland,
+  right?
+
+Customer:
+  No,
+  no,
+  it
+  worked.
+  The
+  heater
+  worked
+  a
+  couple
+  days
+  when
+
+Ting Cheung:
+  I
+
+Customer:
+  jumped
+  over
+  to
+  that
+  transformer
+  and
+  then
+  turned
+  it
+  on
+  and
+  it
+  worked
+  for
+  a
+  couple
+  days
+  and
+  then
+  it
+  stopped
+  working.
+
+Ting Cheung:
+  How
+  long
+  were
+  you
+  guys
+  in
+  Disneyland
+  for?
+  Almost
+  70.
+
+Customer:
+  A
+  whole
+  week.
+
+Ting Cheung:
+  Nice.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  You
+  guys
+  staying
+  at
+  the
+  hotel
+  in
+  there
+  too?
+  Yeah,
+  I
+  love
+  the
+  Disney
+  Hotel.
+  I
+  went
+  when
+  I
+  was
+  a
+  little
+  kid
+  in
+  the
+  Hong
+  Kong.
+  Disneyland.
+
+Customer:
+  Oh,
+  really?
+
+Ting Cheung:
+  Yeah,
+  it
+  was
+  just
+  like
+  the
+  rooms.
+  It
+  was
+  like.
+  As
+  a
+  kid,
+  you're,
+  like,
+  super
+  cool
+  and
+  especially
+  at
+  night
+  when
+  you
+  go
+  to,
+  like,
+  the
+  buffets
+  and
+  all
+  that
+  stuff,
+  the
+  mini
+  pancakes
+  and
+  stuff.
+  Definitely
+  a
+  great
+  experience.
+  That's
+  awesome
+  that
+  you
+  guys
+  went.
+
+Customer:
+  Yeah.
+  Last
+  time
+  for
+  a
+  while.
+  Until
+  next
+  time.
+  Yeah.
+
+Ting Cheung:
+  Take
+  a
+  little
+  water.
+  Thank
+  you
+  so
+  much.
+  Just
+  texting
+  my
+  install
+  team
+  manager.
+  We'll
+  see
+  if
+  we
+  have
+  a
+  install
+  team
+  specialist
+  out
+  today.
+
+Customer:
+  Perfect.
+
+Ting Cheung:
+  So
+  you
+  would
+  say
+  you
+  work
+  down
+  in
+  Vegas
+  as
+  well?
+
+Customer:
+  Yeah,
+  over
+  on
+  Raiders
+  Way.
+
+Ting Cheung:
+  Okay.
+  Do
+  you
+  guys
+  feel
+  like
+  residential
+  homes
+  or
+  like.
+
+Customer:
+  No,
+  industrial.
+
+Ting Cheung:
+  Okay,
+  nice.
+  And
+  then
+  once
+  you
+  guys
+  get
+  to
+  like.
+  I
+  don't
+  know
+  if
+  it's
+  different.
+  I
+  don't
+  know
+  much
+  about
+  electrical.
+  Once
+  you
+  guys
+  get
+  to,
+  like,
+  the
+  lineman
+  level,
+  you
+  guys
+  make
+  pretty
+  good
+  money
+  there.
+
+Customer:
+  Yeah,
+  yeah,
+  it's
+  kind
+  of
+  a
+  different.
+  Oh,
+  different,
+  yeah.
+  But
+  yeah,
+  they
+  do
+  good.
+
+Ting Cheung:
+  They
+  make
+  like,
+  around,
+  like,
+  Dr.
+  Money.
+
+Customer:
+  Yeah,
+  yeah.
+
+Ting Cheung:
+  Just
+  dangerous.
+  Right?
+
+Customer:
+  Dangerous.
+  They're
+  gone
+  all
+  the
+  time.
+  That's
+  the
+  thing.
+  It's
+  a
+  lot
+  of
+  travel.
+  And
+  we
+  can
+  have
+  the
+  meeting
+  tomorrow
+
+Ting Cheung:
+  too,
+  In
+  a
+  second.
+  She's
+  usually
+  pretty
+  good,
+  but
+  it
+  is
+  a
+  Sunday,
+  so.
+
+Customer:
+  Yeah,
+  makes
+  sense.
+
+Ting Cheung:
+  Whose
+  birthday
+  was
+  it?
+
+Customer:
+  It's
+  her.
+  Her
+  dad's.
+  So
+  we're
+  going
+  to
+  take
+  those
+  over
+
+Ting Cheung:
+  in
+  a
+  little
+  bit.
+
+Customer:
+  Yeah,
+  that's
+  why
+  we're
+  cooking.
+
+Ting Cheung:
+  Okay.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  For
+  the
+  brisket.
+  Yes.
+
+Customer:
+  Okay.
+
+Ting Cheung:
+  Hopefully
+  I'm
+  not
+  holding
+  you
+  guys.
+
+Customer:
+  No,
+  no,
+  not
+  at
+  all.
+  We
+  were
+  going
+  to
+  have
+  a
+  beer
+  and
+  the
+  AC.
+
+Ting Cheung:
+  Okay.
+
+Customer:
+  It's
+  like
+  90
+  degrees.
+
+Ting Cheung:
+  Do
+  they
+  also
+  live
+  in
+  Pampas?
+
+Customer:
+  Yeah,
+  they
+  just
+  live
+  down
+  the
+  street.
+  Small
+  town.
+
+Ting Cheung:
+  My
+  co
+  worker
+  actually
+  lives
+  somewhere
+  here.
+
+Customer:
+  Oh,
+  yeah?
+
+Ting Cheung:
+  Yeah.
+
+Customer:
+  Nice.
+
+Ting Cheung:
+  Yeah.
+  Yeah.
+  So
+  the
+  meeting's
+  gonna
+  be
+  about
+  an
+  hour
+  to
+  an
+  hour
+  30
+  minutes
+  of
+  your
+  guys
+  time
+  to
+  just
+  measure
+  this
+  outside
+  unit,
+  check
+  out
+  the
+  crossways,
+  sit
+  down
+  with
+  you
+  guys
+  and
+  go
+  over
+  everything.
+
+Customer:
+  So.
+  Yeah,
+  and
+  yes
+  sir,
+  we'll
+  probably
+  do
+  that
+  meeting
+  tomorrow.
+
+Ting Cheung:
+  Okay.
+  Right.
+  Because
+  you
+  guys
+  got
+  to
+  go
+  to
+  a
+  birthday.
+
+Customer:
+  Yeah.
+  And
+  then
+  can
+  we
+  hold
+  on
+  to
+  this?
+
+Ting Cheung:
+  So
+  I
+  have
+  to
+  turn
+  this
+  back
+  in
+  the
+  office,
+  but
+  okay,
+  yeah,
+  I'll
+  just
+  send
+  you
+  guys
+  an
+  email
+  copy
+  of
+  everything.
+  I'll
+  grab
+  you.
+
+Customer:
+  That
+  way
+  I
+  have
+  when
+  they
+  talk
+  to
+  us
+  about
+  those
+  prices.
+
+Ting Cheung:
+  Okay.
+  Okay.
+  We
+  can
+  set
+  you
+  up
+  for
+  tomorrow.
+  And
+  then
+  he's
+  looking
+  up
+  for
+  the
+  time
+  frames
+  right
+  now,
+  see
+  what
+  we
+  got
+  available.
+
+Customer:
+  Okay,
+  thank
+  you.
+
+Ting Cheung:
+  Signature
+  approving
+  the
+  install
+  team
+  to
+  come
+  out
+  tomorrow
+  for
+  you
+  guys.
+  Okay.
+  So
+  for
+  today's
+  visit
+  it
+  will
+  be
+  200.
+  Wait,
+  you
+  guys
+  get
+  the
+  10%.
+  So
+  let
+  me
+  actually
+  call
+  dispatch,
+  I'll
+  go
+  apply
+  that.
+  Okay,
+  let
+  me
+  go
+  do
+  that
+  real
+  quick
+  here.
+
+Customer:
+  Yes,
+  sir.
+  Thank
+  you.
+
+Ting Cheung:
+  Hey
+  James,
+  this
+  is
+  King.
+  Can
+  you
+  help
+  me
+  out
+  on
+  my.
+  On
+  my
+  diagnosis,
+  on
+  my
+  estimate
+  where
+  it
+  says
+  service,
+  can
+  you
+  apply
+  a
+  10%
+  military
+  discount
+  to
+  IT
+  service
+  the
+  $200
+  one.
+  Yeah.
+  Yep.
+  Okay.
+  Military
+  discount.
+  All
+  righty.
+
+Customer:
+  You're
+  good.
+
+Ting Cheung:
+  Perfect.
+  Thank
+  you,
+  sir.
+
+Customer:
+  And
+  then
+  do
+  you
+  guys
+  take
+  card?
+
+Ting Cheung:
+  Yes,
+  we
+  do.
+
+Customer:
+  Okay.
+
+Ting Cheung:
+  Yes.
+  And
+  we
+  have
+  8
+  to
+  10
+  tomorrow.
+  That
+  good
+  for
+  you
+  guys?
+  That's
+  the
+  only
+  time
+  slot
+  left.
+
+Customer:
+  Yes.
+  Eight,
+  ten
+  in
+  the
+  morning.
+  Eight
+  to
+  ten
+  in
+  the
+  morning.
+  I
+  just
+  go
+  to
+  work
+  after.
+  No,
+  he'll
+  come
+  here.
+  I'll
+  be
+  coming
+  all.
+  Yeah,
+  that
+  works.
+  Thank
+  you.
+
+Ting Cheung:
+  I'm
+  not
+  sure
+  she
+  gets
+  it
+  yet.
+  So.
+  Visa
+  mask.
+  Visa.
+  Thank
+  you.
+  It.
+  What
+  is
+  your
+
+Customer:
+  REDACTED
+
+Ting Cheung:
+  A
+  couple
+  more
+  signatures.
+  This
+  one
+  Just
+  saying
+  I
+  went
+  through
+  this
+  little
+  paper
+  with
+  you.
+  This
+  one
+  you're
+  saying
+  you
+  guys
+  allow
+  me
+  into
+  the
+  home
+  today.
+  The
+  next
+  one
+  saying
+  came
+  in,
+  diagnosed
+  the
+  system
+  for
+  you
+  guys.
+  Yes.
+  And
+  make
+  sure
+  I
+  have
+  an
+  email.
+  So
+  I'm
+  going
+  to
+  send
+  a
+  copy
+  of
+  all
+  the
+  pictures
+  and
+  everything
+  I
+  did
+  today
+  over
+  the
+  evening.
+  Okay.
+  Are
+  you
+  the.
+  Just
+  the
+  email
+  for
+  you
+  spell
+  it
+  wrong.
+
+Customer:
+  T
+  u
+  c
+  s
+  n
+  a
+  k.
+
+Ting Cheung:
+  N
+  a
+  k.
+  T
+  u
+  c
+  s
+  n
+  a
+  k.
+
+Customer:
+  You
+  can
+  use
+  this
+  right
+  here.
+
+Ting Cheung:
+  N
+  c
+  u
+  c
+  s
+  n
+  s
+
+Customer:
+  n
+  a
+  k.
+  Yes.
+  G.
+
+Ting Cheung:
+  Okay,
+  one
+  more
+  time.
+  Yes,
+  sir.
+  All
+  right,
+  I'll
+  have
+  the
+  girls
+  delete
+  that
+  one.
+  Okay,
+  perfect.
+  And
+  then
+  you're
+  going
+  to
+  get
+  all
+  the
+  pictures.
+  Everything
+  I
+  did
+  today.
+  So
+  as
+  that's
+  that
+  little
+  video
+  as
+  well.
+
+Customer:
+  Awesome.
+  And
+  this.
+
+Ting Cheung:
+  Yeah,
+  I'm
+  going
+  to
+  take
+  a
+  picture
+  of
+  it.
+
+Customer:
+  Perfect.
+  All
+  right.
+  Thank
+  you.
+
+Ting Cheung:
+  No
+  worries
+  sir.
+
+Customer:
+  This
+  that
+  I
+  can
+  look
+  the
+  prices
+  again.
+
+Ting Cheung:
+  Yeah,
+  of
+  course.
+  You
+  guys
+  have
+  no
+  questions
+  for
+  me
+  before
+  I
+  head
+  out?
+
+Customer:
+  No.
+  So
+  they'll
+  come.
+  They'll
+  come
+  tomorrow
+  morning
+  and
+  then
+  once
+  we
+  decide
+  we
+  just
+  call
+  again
+  on
+
+Ting Cheung:
+  the
+  come
+  tomorrow
+  morning.
+  You
+  can
+  let
+  him
+  know.
+  Yeah.
+  And
+  then
+  if
+  you
+  guys
+  need
+  some
+  time
+  to
+  motor
+  over
+  just
+  let
+  him
+  know.
+  Yeah.
+
+Customer:
+  Cool.
+  Awesome.
+  Thank
+  you
+  so
+  much.
+
+Ting Cheung:
+  No
+  worries.
+  I'm
+  just
+  going
+  to
+  break
+  down
+  my
+  ladder
+  real
+  quick.
+  Yep.
+
+Customer:
+  It.
+
+Ting Cheung:
+  Can
+  I
+  ask
+  you
+  guys
+  for
+  a
+  quick
+  review?
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  We're
+  doing
+  a
+  can
+  drive
+  that
+  Sierra
+  just
+  giving
+  back
+  to
+  the
+  less
+  fortunate
+  kids.
+  If
+  you're
+  wondering
+  if
+  you
+  guys
+  have
+  any
+  spare
+  canned
+  food
+  that
+  you
+  guys
+  don't
+  want
+  or.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  Not
+  going
+  to
+  eat
+
+Customer:
+  have
+  a
+  bag
+  to
+  put
+  it
+  in.
+
+Ting Cheung:
+  Thank
+  you
+  guys.
+
+Customer:
+  Appreciate
+  you
+  guys.
+  Yeah.
+  That's
+  awesome.
+  How
+  long
+  they
+  put
+  on
+  that?
+
+Ting Cheung:
+  This
+  whole
+  month
+  we've
+  been
+  doing
+  it
+  so
+  that's
+  cool.
+  Just
+  trying
+  to
+  collect
+  as
+  much
+  we
+  got
+  a
+  big
+  cardboard
+  box
+  full
+  of
+  hands
+  off.
+  Yeah.
+  Why
+  did
+  turn
+  it
+  in.
+
+Customer:
+  Much
+  fan
+  food
+  but
+  thank
+  you
+  guys.
+
+Ting Cheung:
+  Appreciate
+  you
+  guys
+  so
+  much.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  I
+  didn't
+  notice
+  you
+  have
+  been
+  mening
+  that
+  day.
+
+Customer:
+  Yeah.
+  Awesome.
+  I
+  buil
+  it.
+  Yeah.
+  You
+  built
+  it.
+  No.
+  Thank
+  you
+  so
+  much.
+  I
+  really
+  appreciate
+  it.
+  Of
+  course.
+  Of
+  course.
+  You
+  want
+  me
+  to
+  carry
+  some?
+  If
+  you
+  can
+  get
+  out
+  the
+  order
+
+Ting Cheung:
+  for
+  me
+  that
+  be
+  awesome.
+  Thank
+  you
+  guys.
+
+Customer:
+  Sunday
+  already
+  had
+  to
+  come
+  out
+  on
+  a
+  Sunday.
+  I
+  was
+  today.
+  Okay.
+  Okay.
+
+Ting Cheung:
+  You
+  guys
+  have
+  a
+  great
+  one.
+
+Customer:
+  Okay.
+  You
+  too.
+  Safe
+  travels.
+
+Ting Cheung:
+  Thank
+  you.
+
+Customer:
+  Thank
+  you.
+
+Ting Cheung:
+  Samuel
+  has
+  scheduled
+  us
+  out
+  today
+  for
+  a
+  ac
+  issue
+  for
+  one
+  comfort
+  system
+  period.
+  Sam
+  mentioned
+  no
+  plans
+  in
+  moving
+  comma
+  Therefore
+  I
+  conducted
+  a
+  thorough
+  evaluation
+  period.
+  Giving
+  him
+  a
+  report
+  of
+  the
+  system's
+  health.
+  After
+  my
+  evaluation
+  the
+  most
+  immediate
+  repair
+  at
+  this
+  time
+  is
+  going
+  to
+  be
+  doing
+  a
+  leak
+  search
+  with
+  soap
+
+Customer:
+  and
+
+Ting Cheung:
+  the
+  voltage
+  distribution
+  switch
+  period
+  for
+  future
+  concerns.
+  We
+  notice
+  the
+  compressor
+  is
+  over
+  amping.

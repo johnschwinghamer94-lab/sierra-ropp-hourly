@@ -1,0 +1,3658 @@
+TRANSCRIPT
+Rep:      Francisco Arreola Jr.
+Date:     2026-02-28
+Duration: 61 min
+RecId:    4012caab-ec5a-411f-906a-a190053f4e0a-XYpMBXpv6TVg9okInQemgsAIw1B3
+Job:      Francisco Sierra - HVAC System Maintenance and R454 Coil Mismatch Issue
+============================================================
+
+
+Francisco Arreola Jr.:
+  Hello.
+  How
+  you
+  doing?
+
+Customer:
+  Hi.
+  Good.
+
+Francisco Arreola Jr.:
+  My
+  name
+  is
+  Francisco
+  Sierra.
+  We're
+  taking
+  a
+  look
+  at
+  64.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  And
+  your
+  name
+  is?
+
+Customer:
+  Vitali.
+  Vitali.
+  Nice
+  to
+  meet
+  you.
+
+Francisco Arreola Jr.:
+  Nice
+  to
+  meet
+  you.
+  I
+  just
+  parked
+  across
+  the
+  street
+  there.
+  Is
+  that
+  okay?
+  You're
+  more
+  than
+  welcome
+  to
+  move
+  it,
+
+Customer:
+  like
+  right
+  in
+  front
+  of
+  the
+  house.
+  Is
+  that
+  okay?
+  Yeah,
+  yeah.
+  We're
+  not
+  going
+  anywhere
+  this
+  morning.
+
+Francisco Arreola Jr.:
+  All
+  right,
+  sounds
+  good.
+  Do
+  you
+  mind
+  if
+  I
+  come
+  in?
+  I'm
+  sorry,
+  I
+  didn't
+  get
+  your
+  name.
+
+Customer:
+  My
+  name
+  is
+  Brianne
+  Brienne.
+
+Francisco Arreola Jr.:
+  Nice
+  to
+  meet
+  you.
+  What's
+  this
+  guy's
+  name?
+
+Customer:
+  Oh,
+  this
+  is
+  Charlie.
+
+Francisco Arreola Jr.:
+  Charlie.
+
+Customer:
+  He's
+  almost
+  14.
+  So
+  are
+  you
+  good
+  with
+  dogs?
+  Yeah.
+  Okay.
+  Look
+  how.
+  Cocker
+  spaniel.
+  Yep,
+  yep.
+  He's
+  very
+  chill.
+  14,
+  almost
+  14.
+  Yeah,
+  buddy.
+  Yeah,
+  he'll
+  just
+  tell
+  you
+  hi.
+
+Francisco Arreola Jr.:
+  No,
+  no
+  worries.
+
+Customer:
+  I
+  love
+  dogs.
+
+Francisco Arreola Jr.:
+  I
+  had
+  a
+  conual
+  poodle
+  mix
+  growing
+  up.
+
+Customer:
+  Gosh.
+  So
+  any
+  health
+  issues?
+
+Francisco Arreola Jr.:
+  He
+  made
+  it
+  to
+  about
+  1212
+  and
+  then
+  it
+  kind
+  of
+  all
+  hit
+  him
+  at
+  once
+  at
+  the
+  end.
+  It
+  was
+  his
+  liver,
+  if
+  I
+  remember
+  correctly.
+
+Customer:
+  Oh,
+  yeah,
+  yeah,
+  yeah.
+  He
+  has
+  liver
+  issues.
+
+Francisco Arreola Jr.:
+  Oh,
+  does
+  he?
+
+Customer:
+  He's
+  had
+  allergies
+  issues
+  his
+  whole
+  life.
+  Sensitivities.
+  But
+  good
+  dog.
+  Like,
+  so
+  loyal.
+  Not
+  a
+  runner.
+
+Francisco Arreola Jr.:
+  Normally
+  they
+  have
+  longer.
+  A
+  longer
+  coat,
+  don't
+  they?
+
+Customer:
+  Yes,
+  but
+  for
+  the
+  allergies
+  that
+  keep
+  them
+  short
+  because
+  he's
+  so
+  itchy
+  and
+  stuff.
+  I
+  prefer
+  it
+  that
+  way.
+  Yeah.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  Easier
+  to
+  spray
+  them,
+  to
+  wash
+  them.
+
+Francisco Arreola Jr.:
+  No,
+  definitely.
+  And
+  their
+  hair
+  isn't
+  getting
+  naughty
+  and
+  stuff
+  like
+  that,
+  right?
+
+Customer:
+  Yeah.
+  I
+  was
+  wondering.
+  I
+  know
+  you're
+  here
+  for
+  winter
+  maintenance,
+  right?
+  Can
+  you
+  switch
+  it
+  to
+  summer
+  maintenance?
+  Because
+  it's
+  like.
+  It's
+  like
+  we're.
+
+Francisco Arreola Jr.:
+  Well,
+  yeah,
+  I
+  can
+  take
+  a
+  look
+  at
+  both.
+  I'll
+  check
+  both
+  sides
+  of
+  the
+  system.
+  I'll
+  check
+  everything
+  from
+  top
+  to
+  bottom
+  for
+  you.
+
+Customer:
+  Yeah,
+  I'm
+  like.
+  We
+  were
+  like.
+  We
+  turned
+  on.
+  It
+  was
+  so
+  hot
+  the
+  other
+  day.
+  I'm
+  like,
+  oh,
+  my
+  gosh.
+  Embarrassing
+  that
+  we
+  turn
+  on
+  the
+  air
+  conditioner
+  for
+  like
+  the
+  night
+  just
+  to
+  get
+  through
+  it.
+  So
+  I'm
+  like,
+  man,
+  I'm
+  like,
+  we're
+  not
+  gonna
+  using
+  the
+  heater
+  if
+  I
+
+Francisco Arreola Jr.:
+  have
+  it
+  off
+  last
+  week.
+  Or
+  was
+  it
+  two
+  weeks
+  ago?
+  It's
+  kind
+  of
+  cold.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  We're
+  in
+  the
+  80s.
+
+Customer:
+  The
+  three
+  days
+  of
+  our
+  winter,
+  you
+  know?
+  Exactly.
+
+Francisco Arreola Jr.:
+  Other
+  weather's
+  up
+  and
+  down,
+  but.
+  No,
+  definitely.
+
+Customer:
+  I'll
+  check.
+
+Francisco Arreola Jr.:
+  I'll
+  check
+  out
+  both
+  for
+  you.
+
+Customer:
+  Right.
+  And
+  I
+  have
+  the
+  side
+  gate.
+  Our
+  side
+  gate's
+  over
+  there.
+  And
+  I
+  don't
+  know
+  if
+  you've
+  been
+  to
+  our
+  house
+  before.
+
+Francisco Arreola Jr.:
+  No,
+  I
+  have
+  not.
+  First
+  time.
+
+Customer:
+  Okay.
+  And
+  then
+  the
+  ASC
+  units
+  on
+  this
+  side
+  have
+  it
+  over
+  here.
+  More
+  than
+  that
+  way.
+  And
+  then
+  I'll
+  show
+  you
+  the
+  laundry
+  room,
+  please.
+  It's
+  upstairs.
+
+Francisco Arreola Jr.:
+  I
+  see
+  one
+  thermostat
+  here.
+  How
+  many
+  for
+  the
+  home?
+
+Customer:
+  Two.
+  Two?
+  Yeah.
+
+Francisco Arreola Jr.:
+  And
+  I'll
+  kind
+  of
+  ask
+  you
+  for
+  both.
+  But
+  for
+  the
+  heating
+  side,
+  when
+  we're
+  a
+  little
+  colder,
+  what
+  do
+  we
+  normally
+  keep
+  it
+  set
+  as
+  far
+  as
+  the
+  heater
+  goes.
+
+Customer:
+  Oh,
+  for
+  heater.
+
+Francisco Arreola Jr.:
+  Oh,
+  gosh.
+
+Customer:
+  What
+  do
+  we
+  keep?
+  Like,
+  69.
+
+Francisco Arreola Jr.:
+  Okay.
+  So
+  not
+  pretty
+  low,
+  not
+  too
+  hot.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  All
+  right.
+  And
+  what
+  about
+  first
+  summer?
+  Like,
+  say,
+  oh,
+  once
+  we
+  get
+  mid
+  summer,
+  what
+  are
+  we.
+
+Customer:
+  Okay,
+  so
+  I
+  think
+  we
+  keep
+  it
+  at
+  75.
+  76.
+
+Francisco Arreola Jr.:
+  Okay.
+  So
+  cooler
+  household
+  overall.
+
+Customer:
+  Yeah.
+  Our
+  smooth,
+  even
+  77.
+  I
+  think
+  it's
+  probably
+  77.
+  I
+  think
+  75
+  is
+  for
+  night
+  time.
+  It's
+  because
+  I
+  have
+  enough
+  schedule.
+  I
+  can't
+  remember.
+  So
+  you're
+  right.
+  I
+  think
+  it's
+  like
+  77
+  during
+  the
+  day.
+  70.
+
+Francisco Arreola Jr.:
+  And
+  I
+  saw
+  in
+  my
+  notes
+  that
+  we
+  had
+  some
+  repairs
+  done
+  in
+  the
+  past.
+
+Customer:
+  Yes,
+  that's
+  correct.
+
+Francisco Arreola Jr.:
+  Look
+  like
+  there
+  was
+  some
+  issues
+  with
+  the.
+
+Customer:
+  Yes,
+  we
+  have
+  not.
+  I
+  mean,
+  nothing
+  has
+  become
+  of
+  it
+  yet.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  We
+  haven't
+  hit
+  summer,
+  but,
+  I
+  mean,
+  we
+  got
+  them
+  back
+  out
+  to
+  kind
+  of
+  correct
+  some
+  of
+  the
+  issues.
+
+Francisco Arreola Jr.:
+  But
+  did
+  they
+  take
+  care
+  of
+  that
+  for
+  you?
+
+Customer:
+  Yes.
+  Okay.
+  Yes,
+  as
+  far
+  as
+  we
+  know.
+  But
+  even
+  if
+  there
+  was
+  a
+  future
+  issue,
+  we're
+  not
+  going
+  to
+  call
+  them
+  again.
+  We're
+  just,
+  like,
+  going
+  to
+  eat
+  it.
+
+Francisco Arreola Jr.:
+  Bad
+  experience.
+
+Customer:
+  There's
+  some
+  things
+  that
+  were
+  just.
+  I
+  think.
+  I
+  can't
+  remember
+  the
+  details.
+  Like,
+  I
+  think
+  there's
+  like
+  the
+  leveling
+  or
+  something
+  where
+  the
+  water
+  was
+  backing
+  up.
+
+Francisco Arreola Jr.:
+  Yeah,
+  that
+  sounds
+  right.
+
+Customer:
+  And
+  so
+  they
+  came
+  back.
+  We
+  were
+  like,
+  oh,
+  well,
+  it's
+  not
+  technically
+  supposed
+  to
+  be
+  like.
+  Of
+  course
+  we
+  told
+  them,
+  like,
+  oh,
+  use,
+  like,
+  old
+  parts
+  or
+  something.
+  And
+  we
+  didn't
+  know
+  that.
+
+Francisco Arreola Jr.:
+  Was
+  it
+  a
+  home
+  warranty
+  that
+  took
+  care
+  of
+  it
+  for
+  you?
+
+Customer:
+  No,
+  no,
+  it
+  wasn't
+  just
+  an
+  outside
+  company.
+  Yes.
+
+Francisco Arreola Jr.:
+  So
+  but
+  they
+  came
+  back
+  and
+  kind
+  of
+  took
+  care
+  of
+  some
+  kind
+  of
+
+Customer:
+  took
+  care
+  of
+  it.
+  So,
+  like,
+  so
+  from
+  what
+  I
+  understand,
+  it
+  was
+  fixed.
+  So
+  we'll
+  see
+  how
+  the
+  summer
+  goes.
+  Because
+  it
+  was
+  kind
+  of
+  like
+  towards
+  the
+  end
+  of
+  the
+  summer
+  where,
+  like,
+  everything
+  was
+  finally
+  kind
+  of
+  resolved.
+
+Francisco Arreola Jr.:
+  Right.
+
+Customer:
+  But
+  I'm
+  like,
+  we'll
+  see
+  how
+  this
+  year
+  goes.
+
+Francisco Arreola Jr.:
+  But
+  during
+  last
+  summer,
+  though,
+  did
+  you
+  notice
+  anything.
+  Any
+  issues
+  with
+  the
+  unit
+  while
+  you
+  ran?
+  Anything
+  like
+  that?
+
+Customer:
+  No,
+  it's
+  just
+  like
+  the
+  outside
+  we
+  saw
+  like,
+  the
+  cooling
+  of,
+  like,
+  the
+  pipe.
+  Like
+  water
+  was
+  pouring
+  out
+  from
+  the
+  upstairs
+  pipe,
+  which
+  is
+  like
+  the
+  secondary
+  one,
+  I
+  think.
+  And
+  it
+  should
+  be
+  like
+  the
+  lower
+  one.
+
+Francisco Arreola Jr.:
+  Exactly.
+
+Customer:
+  And
+  we're
+  like,
+  that's
+  not
+  right.
+
+Francisco Arreola Jr.:
+  Okay,
+  so
+  after
+  they
+  take
+  care
+  of
+  it,
+  did
+  you
+  notice.
+  Did
+  that
+  clear
+  up?
+
+Customer:
+  I
+  think
+  it
+  cleared
+  up.
+  All
+  right.
+
+Francisco Arreola Jr.:
+  We
+  said
+  that
+  was
+  also
+  at
+  the
+  end
+  of
+  summer.
+
+Customer:
+  Yeah,
+  it's
+  at
+  the
+  end
+  of
+  summer.
+  So
+  I'm
+  like,
+  we
+  could
+  really
+  notice
+  it,
+  like
+  when
+  it
+  was
+  way
+  hotter.
+  So
+  I'm
+  like,
+  we'll
+  see
+  how
+  this
+  summer
+  goes
+  and
+  see
+  if
+  they
+  actually
+  fixed
+  it
+  or
+  whatever.
+
+Francisco Arreola Jr.:
+  All
+  right,
+  I'll
+  definitely
+  take
+  a
+  look
+  at
+  that.
+  I
+  will
+  be
+  running
+  the
+  system.
+
+Customer:
+  Yes.
+
+Francisco Arreola Jr.:
+  I'll
+  be
+  running
+  both
+  sides
+  heating
+  and
+  cooling
+  to
+  get
+  the
+  system
+  running
+  overall.
+  I'll
+  be
+  performing
+  a
+  thorough
+  evaluation
+  of
+  the
+  whole
+  thing.
+  I'm
+  checking
+  cleanliness,
+  safety
+  operations,
+  making
+  sure
+  everything's
+  up
+  to
+  par
+  on
+  those
+  three
+  areas.
+  Now
+  I
+  know
+  you
+  had
+  those
+  repairs
+  in,
+  so
+  I'll
+  take
+  a
+  look
+  at
+  that.
+  See.
+  See
+  if
+  they
+  kind
+  of
+  took
+  care
+  of
+  that
+  for
+  you,
+  how
+  they
+  left
+  it.
+  Now,
+  since
+  it's
+  not
+  super
+  hot
+  when
+  I
+  run
+  the
+  cooling,
+  you
+  probably
+  won't
+  get
+  a
+  lot
+  of
+  condensation
+  buildups.
+
+Customer:
+  Yeah.
+  You
+  won't
+  truly
+  get
+  it.
+  Yeah.
+  Until
+  it's
+  like.
+
+Francisco Arreola Jr.:
+  Until
+  we
+  get
+  more
+  into
+  the
+  hotter
+  weather,
+  like
+  90s,
+  100.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  But
+  I'll
+  run
+  the
+  system,
+  make
+  sure
+  it
+  turns
+  on
+  and
+  off
+  properly.
+  Things
+  like
+  that.
+  All
+  the
+  safety
+  take
+  effect.
+
+Customer:
+  I
+  could
+  have
+  you
+  guys
+  out
+  or
+  just
+  wait
+  and
+  then
+  have
+  you
+  guys
+  out
+  for
+  the
+  cooling
+  as
+  it
+  gets
+  hotter.
+  Is
+  that.
+
+Francisco Arreola Jr.:
+  I
+  mean,
+  when
+  the
+  system.
+  When
+  it
+  does
+  get
+  hotter,
+  the
+  system
+  is.
+  That's
+  when
+  it's
+  really
+  truly
+  running
+  the
+  way
+  it
+  should
+  be
+  in
+  terms
+  of
+  efficiency
+  and
+  things
+  like
+  that.
+  So
+  with
+  kind
+  of
+  like
+  low
+  80s,
+  mid-80s,
+  we
+  can
+  definitely
+  get
+  it
+  going
+  and
+  we'll
+  be
+  able
+  to
+  check
+  everything
+  out.
+  But
+  as
+  far
+  as
+  like
+  in
+  your
+  case,
+  with
+  the
+  condensation
+  buildup.
+  Yeah,
+  we
+  probably
+  won't
+  see
+  a
+  lot
+  of
+  that
+  because
+  that
+  condensation
+  happens
+  when.
+  When
+  it
+  gets
+  really
+  hot.
+
+Customer:
+  Yeah,
+  it's
+  when.
+
+Francisco Arreola Jr.:
+  So
+  might
+  not
+  see
+  it
+  today
+  because
+  I
+  think.
+  And
+  especially
+  with
+  early
+  morning.
+  I
+  think
+  we're
+  over
+  yet
+  right
+  now.
+
+Customer:
+  I
+  know,
+  right?
+  Yeah,
+  I
+  have
+  a
+  67.
+  Yeah.
+
+Francisco Arreola Jr.:
+  So
+  I
+  think
+  we're
+  looks
+  like
+  70ish.
+  So
+  again
+  with
+  the
+  conversation.
+
+Customer:
+  We're
+  not
+  gonna
+  get.
+
+Francisco Arreola Jr.:
+  Might
+  not
+  be
+  able
+  to
+  see
+  a
+  lot
+  of
+  that
+  today.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  So
+  we
+  can't
+  always
+  come
+  Back
+  out
+  to
+  take
+  care
+  of
+  the
+  cooling
+  later
+  when
+  it
+  gets
+  a
+  little
+  warm.
+  But
+  I
+  can
+  also
+  knock
+  it
+  out
+  for
+  you
+  today
+  while
+  I'm
+  here.
+
+Customer:
+  Okay.
+  Let
+  me
+  ask
+  my
+  husband
+  what
+  to
+  do.
+
+Francisco Arreola Jr.:
+  So
+  mechanically
+  I
+  can
+  check
+  everything
+  out
+  for
+  you,
+  run
+  the
+  system
+  in
+  both
+  modes,
+  but
+  with
+  the.
+  Which
+  is
+  bringing
+  some
+  of
+  the
+  issue
+  you
+  had
+  with
+  the
+  condensation
+  in
+  the
+  past.
+  I
+  most
+  likely
+  won't
+  be
+  seeing
+  a
+  lot
+  of
+  that
+  because
+  it's
+  not.
+  Not
+  that
+  hot
+  outside.
+  So
+  I
+  can
+  definitely
+  get
+  this.
+
+Customer:
+  Yeah,
+  it
+  is
+  checked
+  out
+  and
+  next
+  time
+  it'll
+  probably
+  be
+  AC
+  time,
+  so.
+  Yeah.
+  Okay,
+
+Francisco Arreola Jr.:
+  Well
+  I'll
+  check
+  everything,
+  but
+  it
+  won't.
+  I
+  most
+  likely
+  won't
+  be
+  able
+  to
+  build
+  up
+  that
+  connotation.
+
+Customer:
+  Yeah,
+  yeah.
+  If
+  you
+  don't
+  see
+  that,
+  then
+  the
+  next
+  time.
+  Okay,
+  that
+  works
+  great.
+
+Francisco Arreola Jr.:
+  Other
+  than
+  that.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  So
+  I'll
+  check
+  for
+  some
+  clean
+  room
+  safety
+  operation.
+  Now
+  if
+  I
+  notice
+  anything
+  with
+  the
+  unit,
+  would
+  you
+  like
+  that
+  brought
+  to
+  your
+  attention?
+
+Customer:
+  Yeah.
+  Okay.
+  Yeah,
+  there
+  might
+  be
+  some
+  issues
+  that
+  they're
+  aware
+  of.
+
+Francisco Arreola Jr.:
+  Told
+  them
+  about.
+
+Customer:
+  Yeah,
+  that's
+  a
+  weird
+  part.
+  Like
+  they
+  know.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  Cuz
+  you
+  guys
+  repaired
+  though,
+  was
+  it
+  last
+  year?
+
+Customer:
+  Yes,
+  it
+  was
+  last
+  and
+  they
+  kind
+
+Francisco Arreola Jr.:
+  of
+  came
+  out,
+  patched
+  it
+  up
+  a
+  little
+  bit.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  Okay.
+  Yeah,
+  they
+  replaced
+  the
+  coil.
+
+Customer:
+  The
+  coil
+  they
+  had
+  rusted
+  to
+  the
+  rope,
+  but
+  they
+  kind
+  of
+  jerry
+  rigged
+  the
+  wrong
+  size
+  coil
+  onto
+  the
+  thing.
+  It
+  works,
+  but
+  it's
+  not
+  like
+  off
+
+Francisco Arreola Jr.:
+  the
+  code
+  like
+  already.
+  So.
+
+Customer:
+  Yeah,
+  we
+  weren't
+  really
+  aware,
+  but
+  now
+  it's
+  going
+  to
+  be
+  too
+  expensive
+  to
+  this.
+  So
+  it
+  works
+  just
+  fine.
+
+Francisco Arreola Jr.:
+  So
+  we're
+  aware
+  of
+  that.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  All
+  right,
+  well
+  again,
+  if
+  there
+  is
+  anything,
+  I'll
+  bring
+  it
+  to
+  your
+  attention.
+  I
+  won't
+  do
+  any
+  work
+  without
+  your
+  approval,
+  but
+  if
+  there
+  is
+  anything
+  that
+  needs
+  to
+  get
+  started,
+  we
+  can't
+  get
+  that
+  going
+  today
+  for
+  you.
+
+Customer:
+  All
+  right,
+  sounds
+  good.
+  Thank
+  you.
+
+Francisco Arreola Jr.:
+  Other
+  than
+  that,
+  I'll
+  start
+  outside,
+  so.
+
+Customer:
+  Yeah,
+  outside.
+  Yeah,
+  the
+  door.
+  I
+  want
+  to
+  just
+  come
+  and
+  go,
+
+Francisco Arreola Jr.:
+  you
+  know,
+  and
+  then
+  once
+  I
+  need
+  to
+  come
+  inside
+  is
+  knock
+  within,
+  come
+  in.
+
+Customer:
+  Yeah,
+  no
+  you're
+  not.
+  Yeah.
+  All
+  right,
+  perfect.
+
+Francisco Arreola Jr.:
+  And
+  then
+  so
+  again,
+  once
+  I'm
+  done
+  go
+  over
+  that
+  with
+  you
+  and
+  during
+  my
+  time
+  here,
+  if
+  I'm
+  making
+  too
+  much
+  noise
+  in
+  your
+  way,
+  anything
+  like
+  that,
+  please
+  feel
+  free
+  to
+  let
+  me
+  know.
+
+Customer:
+  Okay.
+  It's,
+  It's,
+  It's,
+  It's
+  interesting.
+  It's,
+  it's,
+  it's,
+  it's,
+  it's,
+  it's,
+  it's,
+  it's,
+  it's,
+  It's,
+  it's,
+  it's
+  it's.
+
+Francisco Arreola Jr.:
+  All
+  finished
+  up.
+  So
+  I
+  checked
+  systems
+  on
+  mechanically,
+  systems
+  running
+  both
+  heating
+  and
+  cooling.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  Giving
+  a
+  good
+  temperature
+  to
+  it,
+  meaning
+  higher
+  coming
+  out
+  of
+  heating
+  and
+  cold
+  air
+  coming
+  out
+  cooling.
+  Now
+  again
+  with
+  the
+  condensation,
+  it's
+  not
+  really
+  warm
+  enough
+  to
+  get
+  that
+  to
+  start
+  building
+  up.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  So
+  when
+  we
+  come
+  back
+  out
+  in
+  summer,
+  we'll
+  be
+  able
+  to
+  see
+  that
+  better.
+
+Customer:
+  Right.
+
+Francisco Arreola Jr.:
+  But
+  again,
+  mechanically
+  I'm
+  not
+  seeing
+  any
+  concerns
+  with
+  the
+  system.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  I
+  did
+  see
+  the
+  coil,
+  so
+  I'm
+  not
+  sure
+  if
+  you're
+  aware,
+  but
+  they
+  gave
+  you
+  a
+  different,
+  different
+  kind
+  of
+  coil.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  So
+  what
+  your
+  system
+  runs
+  on
+  is
+  called
+  R410.
+
+Customer:
+  That's
+  right.
+  That
+  was
+  what
+  we.
+  That's
+  what
+  we
+  were
+  told
+  and.
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  By
+  you
+  guys.
+  And
+  then
+  we
+  went
+  back
+  to
+  them
+  and
+  then.
+  Yeah.
+
+Francisco Arreola Jr.:
+  Yes.
+  So
+  the
+  reason
+  for
+  that.
+  So
+  R410
+  is
+  the
+  refrigerant
+  that
+  your
+  system
+  runs,
+  that's
+  going
+  to
+  be
+  what
+  gives
+  you
+  your
+  cooling.
+
+Customer:
+  Let
+  me
+  get
+  my
+  husband
+  down
+  here.
+  So
+  he's
+  not
+  repeating.
+  And.
+
+Francisco Arreola Jr.:
+  So
+  I
+  was
+  talking
+  about
+  that
+  mechanically
+  I'm
+  not
+  seeing
+  any
+  issues
+  as
+  far
+  as
+  like
+  the
+  motors,
+  things
+  like
+  that.
+  So
+  this
+  is
+  running
+  in
+  both
+  heating
+  and
+  cooling.
+  Not
+  able
+  to
+  build
+  that
+  condensation
+  because
+  it's
+  not
+  quite
+  hot
+  enough
+  yet.
+
+Customer:
+  But.
+  Right.
+
+Francisco Arreola Jr.:
+  So
+  we're
+  not
+  seeing
+  that.
+  But
+  with
+  the
+  coil
+  that
+  was
+  replaced,
+  they
+  gave
+  you
+  a
+  different
+  kind
+  of
+  coil.
+  Your
+  system
+  originally
+  runs
+  on
+  R410,
+  which
+  is
+  the
+  kind
+  of
+  refrigerant.
+  The
+  coil
+  that
+  they
+  gave
+  you
+  is
+  for
+  R454.
+  So
+  R410
+  as
+  of
+  last
+  year
+  is
+  no
+  longer
+  manufactured.
+  So
+  the
+  parts
+  are
+  no
+  longer
+  made.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  And
+  if
+  they
+  are
+  able
+  to
+  find
+  them,
+  they're
+  a
+  little
+  more
+  expensive
+  because
+  again,
+  they're
+  obsolete.
+  So
+  I
+  imagine
+  that's
+  why
+  they
+  gave
+  you
+  the
+  different
+  coil.
+  But
+  the
+  issue
+  with
+  that
+  now
+  is
+  that
+  the
+  refrigerants
+  operate
+  at
+  different
+  pressures.
+  So
+  you
+  have
+  a
+  low
+  pressure,
+  high
+  pressure
+  side
+  of
+  each
+  of
+  the
+  system.
+  So
+  the
+  coil
+  is
+  specifically
+  designed
+  to
+  operate
+  at
+  the
+  pressure
+  for
+  that
+  refrigerant.
+  So
+  with
+  that
+  coil
+  being
+  different
+  than
+  what
+  is
+  running
+  through
+  your
+  system,
+  that
+  can
+  cause.
+  That
+  can
+  lead
+  to
+  some
+  issues.
+  So
+  also
+  depends
+  on.
+  So
+  pretty
+  much
+  when
+  you
+  replace
+  the
+  coil
+  or
+  any
+  part
+  of
+  the
+  refrigerant
+  cycle,
+  you
+  essentially
+  weld
+  it
+  back
+  together.
+  You
+  kind
+  of
+  cut
+  it
+  with
+  the,
+  with
+  the
+  flames,
+  remove
+  it
+  and
+  then
+  weld
+  it
+  back
+  together
+  to
+  install
+  the
+  new
+  component.
+  So
+  depending
+  on
+  how
+  solid
+  their
+  weld,
+  their
+  brace
+  points
+  are,
+  as
+  long
+  as
+  those
+  are
+  secure
+  and
+  things
+  like
+  that
+  there
+  shouldn't
+  be
+  any
+  immediate
+  leaks.
+  But
+  again,
+  with
+  the
+  difference
+  in
+  pressures
+  when
+  the
+  system
+  is
+  operating,
+  that
+  can
+  lead
+  to
+  issues
+  down
+  the
+  road.
+  Now,
+  again,
+  again,
+  it's
+  not
+  something
+  that
+  is
+  going
+  to
+  happen
+  overnight
+  again,
+  as
+  long
+  as
+  they
+  properly
+  sealed
+  all
+  the
+  joints
+  and
+  stuff
+  like
+  that.
+  But
+  with
+  when,
+  especially
+  during
+  summer,
+  when
+  it
+  gets
+  hot
+  and
+  those
+  pressures
+  increase
+  and
+  stuff
+  like
+  that,
+  that
+  can
+  lead
+  to
+  issues
+  where
+  you
+  can
+  see
+  leaks
+  in
+  the
+  system.
+  At
+  that
+  point,
+  depending
+  on
+  how
+  much
+  refrigerant
+  you're
+  losing,
+  you
+  either
+  won't
+  have
+  any
+  cooling
+  or
+  not
+  as
+  efficient.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  You
+  might
+  not
+  notice
+  it
+  at
+  first.
+  Kind
+  of
+  might
+  start
+  slow,
+  where
+  you
+  realize
+  you
+  set
+  the
+  thermostats
+  at
+  maybe
+  70,
+  and
+  it's
+  kind
+  of
+  taken
+  a
+  while
+  to
+  get
+  there,
+  and
+  then
+  eventually
+  kind
+  of
+  just
+  doesn't
+  get
+  there
+  at
+  all.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  So
+  that's
+  something
+  that
+  you
+  can
+  definitely
+  have
+  issues
+  with
+  because
+  of
+  the
+  mismatch
+  components.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  But
+  again,
+  mechanically,
+  not
+  seeing
+  anything
+  else
+  that
+  needs
+  immediate
+  attention.
+  Nothing
+  that's
+  failed
+  as
+  of
+  this
+  moment.
+  That's
+  gonna
+  be
+  the
+  main
+  concern
+  there
+  with
+  that.
+  With
+  that
+  coil.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  Any
+  questions
+  for
+  me
+  about
+  that
+  one?
+
+Customer:
+  No,
+  I
+  think
+  we're.
+  I
+  think
+  I.
+  Now
+  that
+  you
+  bring
+  it
+  up
+  that
+  I
+  dropped
+  my
+  memory
+  about
+  it.
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  So
+  that's.
+
+Francisco Arreola Jr.:
+  That's
+  the
+  only
+  thing.
+  And
+  with
+  the
+  new
+  coil,
+  the
+  R454,
+  it's
+  kind
+  of.
+  It's
+  kind
+  of
+  hard
+  to
+  tell
+  when
+  those
+  pressures
+  will
+  really
+  start
+  to,
+  you
+  know,
+  like,
+  act
+  up
+  and
+  give
+  back
+  oil
+  issues.
+  But
+  again,
+  with
+  the
+  difference
+  in
+  pressures,
+  it
+  not
+  being
+  designed
+  for
+  that.
+  It's
+  kind
+  of
+  one
+  of
+  those
+  things
+  where
+  it's
+  just
+  a
+  matter
+  of
+  time.
+
+Customer:
+  And
+  again,
+  it
+  could
+  be
+  a
+  big
+
+Francisco Arreola Jr.:
+  leak
+  kind
+  of
+  right
+  out
+  the
+  gate,
+  or
+  kind
+  of
+  kind
+  of
+  slow.
+  Kind
+  of
+  a
+  slow
+  burn
+  where
+  you
+  kind
+  of
+  don't
+  see
+  it
+  at
+  first,
+  you
+  don't
+  realize
+  it
+  at
+  first,
+  until
+  eventually
+  one
+  day,
+  you're
+  saying
+  it's
+  just
+  not.
+
+Customer:
+  And
+  to
+  fix
+  it,
+  we
+  would
+  have
+  to
+  probably
+  replace
+  the
+  whole
+  system.
+
+Francisco Arreola Jr.:
+  Right.
+
+Customer:
+  So
+  it's
+  obsolete.
+
+Francisco Arreola Jr.:
+  Since
+  you
+  have
+  the
+  R454
+  coil
+  now,
+  you
+  would
+  essentially
+  just
+  have
+  to
+  match
+  the
+  outdoor
+  unit
+  with
+  that
+  coil.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  Because
+  the
+  rest
+  of
+  the
+  refrigerant
+  cycle
+  is
+  going
+  to
+  be
+  the
+  outdoor
+  system,
+  which
+  is
+  your
+  compressor.
+  That
+  black
+  cylinder
+  unit
+  middle.
+  That's
+  gonna
+  be
+  like
+  the
+  engine
+  of
+  the
+  unit.
+  That's
+  what
+  pumps
+  all
+  the
+  refrigerant
+  throughout
+  the
+  systems.
+  And
+  then
+  the.
+  The
+  outdoor
+  box
+  itself
+  is
+  actually
+  the
+  other
+  half
+  of
+  the
+  coil.
+
+Customer:
+  Okay.
+  So.
+  So
+  we
+  don't
+  have
+  to
+  replace
+  any
+  of
+  the
+  upstairs
+  components.
+  Just
+  the.
+
+Francisco Arreola Jr.:
+  Yeah.
+  As
+  long
+  as
+  that
+  coil
+  was
+  installed
+  properly
+  and
+  those
+  brace
+  points
+  are,
+  you
+  know,
+  securely
+  sealed
+  and
+  things
+  like
+  that,
+  that
+  coil
+  itself
+  should
+  be
+  good.
+  It's
+  a
+  20.
+  It's
+  a
+  new
+  coil,
+  20,
+  25
+  coil.
+  Now,
+  it's
+  just
+  that
+  it's
+  mismatched.
+
+Customer:
+  Has.
+  Yeah.
+  Okay.
+
+Francisco Arreola Jr.:
+  So,
+  for
+  example,
+  this
+  outdoor
+  component
+  is
+  designed
+  to
+  withstand
+  the
+  refrigerant
+  that
+  is
+  holding,
+  but
+  the.
+  The
+  coil
+  in
+  the
+  attic
+  is
+  not.
+  So
+  that
+  can
+  lead
+  to
+  issues
+  with
+  the
+  coil,
+  given
+  that
+  it
+  can
+  start
+  to
+  spring
+  those
+  leaks
+  because
+  it's
+  not
+  designed
+  to
+  withstand
+  those
+  pressures.
+  But
+  as
+  far
+  as
+  components
+  here
+  with
+  leaks
+  outside
+  of
+  like
+  something
+  hitting
+  the
+  unit
+  or
+  something
+  like
+  that,
+  I
+  don't
+  see
+  any
+  reason
+  why
+  that
+  would
+  happen
+  there.
+
+Customer:
+  It's
+  going
+  to.
+
+Francisco Arreola Jr.:
+  To
+  be
+  with
+  the
+  coil
+  being
+  the
+  concern
+  because
+  it's
+  the
+  wrong.
+  The
+  wrong
+  piece.
+
+Customer:
+  Yeah.
+  And
+  if
+  it
+  springs
+  a
+  leak,
+  tough
+  to
+  replace
+  the
+  coil.
+
+Francisco Arreola Jr.:
+  So
+  if
+  it
+  springs
+  a
+  leak,
+  depending
+  on
+  where
+  it
+  is,
+  it
+  can
+  either
+  be
+  repaired
+  or
+  not.
+  So
+  that's
+  going
+  to
+  be
+  kind
+  of
+  the
+  same
+  thing
+  where
+  we
+  take
+  a
+  torch
+  to
+  it.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  And
+  just
+  pretty
+  much
+  cover
+  with
+  metal,
+  weld
+  it
+  together
+  to
+  secure
+  that.
+  But
+  if
+  it's
+  in
+  an
+  area
+  where
+  we
+  can't
+  take
+  a
+  torch
+  to
+  it,
+  it
+  where
+  there's
+  all
+  the
+  capillary
+  tubes
+  and
+  things
+  like
+  that,
+  other
+  parts
+  of
+  the
+  unit,
+  then
+  that
+  would
+  be
+  that
+  as
+  well.
+  I
+  don't
+  know
+  if
+  you
+  got
+  any
+  warranties
+  with
+  that
+  coil.
+
+Customer:
+  Can't
+  remember.
+
+Francisco Arreola Jr.:
+  Yeah,
+  I
+  don't
+  know.
+
+Customer:
+  Yeah,
+  I
+  don't
+  know
+  if
+  so.
+
+Francisco Arreola Jr.:
+  Okay,
+  cool.
+  But
+  that's.
+  That's
+  pretty
+  much
+  what
+  you're
+  doing
+  that
+  with
+  you.
+
+Customer:
+  It's
+  just.
+
+Francisco Arreola Jr.:
+  That's
+  going
+  to
+  be
+  the
+  main
+  concern.
+  It's
+  going
+  to
+  be
+  that
+  coil.
+
+Customer:
+  Okay.
+  All
+  right.
+  All
+  right.
+
+Francisco Arreola Jr.:
+  Any
+  other
+  questions
+  for
+  me?
+
+Customer:
+  What
+  was
+  the
+  average
+  life
+  of,
+  like,
+  the
+  unit?
+  Isn't
+  it
+  like
+  10
+  years?
+
+Francisco Arreola Jr.:
+  So
+  the
+  average
+  is
+  about
+  10
+  to
+  12.
+  Now,
+  there's
+  outliers.
+  I've
+  seen
+  units
+  go
+  out
+  of
+  like
+  7
+  years
+  of
+  age,
+  and
+  then
+  there's
+  some
+  that
+  kind
+  of
+  make
+  it
+  past
+  that
+  point
+  for,
+  you
+  know,
+  15
+  to
+  18.
+  So
+  the
+  average
+  is
+  about
+  10
+  to
+  12.
+  Also
+  depends
+  on
+  how
+  much
+  you're
+  using
+  it,
+  how
+  much
+  you're
+  asking
+  from
+  it.
+  You
+  know,
+  if
+  you're
+  trying
+  to
+  keep
+  the
+  house
+  at
+  65
+  and
+  it's
+  120
+  outside,
+  that's
+  definitely
+  going
+  to
+  work
+  that
+  system
+  more
+  as
+  opposed
+  to
+  keeping
+  it
+  at
+  80
+  when
+  it's
+  only
+  95.
+  So
+  kind
+  of
+  lifestyle
+  takes
+  a
+  part
+  into
+  it.
+  But
+  I
+  see
+  that
+  you
+  had
+  a
+  couple
+  things
+  put
+  on
+  the
+  outer
+  unit
+  that
+  help
+  also
+  take
+  care
+  of
+  that
+  as
+  far
+  as
+  your
+  switch
+  and
+  a
+  hard
+  start.
+  So
+  I
+  definitely.
+  Those
+  two
+  are
+  still
+  working.
+  Those
+  help
+  preserve
+  that
+  life.
+
+Customer:
+  So
+  that's
+  why.
+
+Francisco Arreola Jr.:
+  So
+  mechanically
+  not
+  seeing
+  any
+  concern.
+  It's
+  just
+  going
+  to
+  be
+  with
+  the
+  coil
+  and.
+  And
+  that's
+  only
+  going
+  to
+  be
+  because
+  it's
+  the.
+  If
+  they
+  had
+  put
+  the
+  right
+  one
+  in
+  design
+  to
+  match
+  the
+  system,
+  you'd
+  probably
+  be
+  worry
+  free.
+
+Customer:
+  Great.
+  Well,
+  it's
+  fantastic
+  we
+  did
+  that
+  about
+  it.
+  Yeah.
+
+Francisco Arreola Jr.:
+  So
+  that's
+  gonna
+  be
+  the
+  only
+  thing
+  there.
+  Now
+  before
+  I
+  get
+  out
+  here,
+  just
+  need
+  a
+  couple
+  signatures
+  from
+  me,
+  if
+  you
+  don't
+  mind.
+  It's
+  just
+  gonna
+  be
+  an
+  authorization.
+  Just
+  so
+  you
+  allowed
+  me
+  into
+  the
+  home
+  to
+  work
+  on
+  the
+  system.
+  And
+  one
+  more.
+  Just
+  an
+  acknowledgment.
+  Just
+  that
+  we
+  took
+  care
+  of
+  that
+  maintenance
+  for
+  you.
+  And
+  then
+  just
+  let
+  me
+  double
+  check
+  that
+  we
+  have
+  a
+  good
+  email.
+  I
+  have
+  this
+  one
+  at
+  the
+  top
+  there.
+
+Customer:
+  Yep,
+  that's
+  it.
+
+Francisco Arreola Jr.:
+  Perfect.
+  So
+  I
+  will
+  send
+  everything
+  over
+  that
+  way
+  as
+  well
+  as
+  a
+  copy
+  of
+  my
+  report.
+  Now,
+  any
+  questions
+  for
+  me
+  before
+  I
+  go?
+
+Customer:
+  Thank
+  you.
+  You're
+  welcome.

@@ -1,0 +1,6610 @@
+TRANSCRIPT
+Rep:      Alex - Oleksiy Yakovchuk
+Date:     2026-01-28
+Duration: 37 min
+RecId:    96b81222-7443-4921-a907-41376e79e00a-QSgW0Qp6bKP82NeJl9A5ckCGhts1
+Job:      Joe - Lennox HVAC System Maintenance - Inducer Motor Issues and Heat Exchanger Hot Spots
+============================================================
+
+
+Alex - Oleksiy Yakovchuk:
+  You
+  don't
+  have
+  a
+  jacket?
+  Oh,
+  no,
+  I
+  left
+  my
+  belt
+  at
+  home.
+  Dude,
+  that's
+  the
+  worst.
+  Who
+  the
+  other
+  pleasure
+  speaking
+  with.
+  Oh,
+  no
+  worries,
+  Joe.
+  Guys.
+  Good
+  to
+  meet
+  you
+  guys.
+  Oh,
+  no
+  worries.
+  I'm
+  Alex.
+  I
+  do
+  have
+  a
+  Ben
+  with
+  me
+  as
+  well
+  today.
+  He's
+  training
+  and
+  stuff.
+  So
+  is
+  it
+  okay
+  if
+  you
+  come
+  inside?
+
+Customer:
+  Yeah,
+  A.
+
+Alex - Oleksiy Yakovchuk:
+  Thank
+  you
+  so
+  much.
+
+Customer:
+  You
+  got.
+
+Alex - Oleksiy Yakovchuk:
+  Fur?
+
+Customer:
+  I'll
+  show
+  you
+  if
+  you
+  need
+  me
+  to,
+  but
+  I
+  think.
+
+Alex - Oleksiy Yakovchuk:
+  How's
+  it
+  going?
+
+Customer:
+  I'm
+  good,
+  I'm
+  good.
+
+Alex - Oleksiy Yakovchuk:
+  Good
+  to
+  meet
+  you.
+
+Customer:
+  Upstairs,
+  down
+  the
+  hall
+  you'll
+  see
+  the
+  washer
+  and
+  dryer.
+  There's
+  like
+  a
+  little
+  laundry
+  room
+  behind
+  it.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+
+Customer:
+  Or
+  where
+  I
+  put
+  towels.
+  That's
+  where
+  the
+  furthest
+  thing
+  is.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+  And
+  how
+  many
+  thermostats
+  do
+  you
+  guys
+  have?
+  4.
+  Do
+  you
+  mind
+  showing
+  me
+  all
+  the
+  locations
+  for
+  those?
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  This
+  is
+  a
+  super
+  cool
+  artwork.
+  Heck
+  yeah.
+  That's
+  awesome.
+
+Customer:
+  One
+  right
+  there.
+
+Alex - Oleksiy Yakovchuk:
+  Huh?
+
+Customer:
+  One
+  in
+  here.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  you
+  guys
+  are
+  the
+  original
+  homeowners?
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+
+Customer:
+  One
+  in
+  here.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+
+Customer:
+  Two
+  upstairs.
+  Let
+  me
+  get
+  this
+  off
+  my
+  hands.
+
+Alex - Oleksiy Yakovchuk:
+  No
+  worries.
+  Take
+  your
+  time
+  cooking
+  breakfast.
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  But
+  I
+  start
+  smelling
+  all
+  that
+  food.
+  I'm
+  about
+  to
+  start
+  smelling
+  all
+  that
+  food.
+  You
+  guys
+  have
+  a
+  nice
+  house.
+  It's
+  laid
+  out.
+  Very
+  nice.
+  Gotcha.
+  Okay,
+  so
+  we're
+  the
+  original
+  ones
+  to
+  install
+  that
+  system.
+
+Customer:
+  Yes.
+
+Alex - Oleksiy Yakovchuk:
+  How's
+  that
+  been
+  holding
+  up
+  for
+  you?
+
+Customer:
+  Not
+  so
+  great.
+  No,
+  the
+  one
+  downstairs
+  already
+  blew
+  and
+  we
+  already
+  been
+  here.
+  It
+  blew
+  at
+  seven
+  and
+  a
+  half
+  years.
+
+Alex - Oleksiy Yakovchuk:
+  Oh,
+  wow.
+
+Customer:
+  Yeah,
+  tell
+  me
+  about
+  it.
+
+Alex - Oleksiy Yakovchuk:
+  Did
+  it
+  blow
+  mid
+  summer
+  or.
+
+Customer:
+  Yes.
+
+Alex - Oleksiy Yakovchuk:
+  What
+  was
+  that
+  experience
+  like
+  for
+  you?
+
+Customer:
+  High.
+
+Alex - Oleksiy Yakovchuk:
+  High.
+  I
+  can't
+  imagine.
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  Sorry
+  you
+  have
+  to
+  go
+  through
+  that.
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  These
+  systems
+  that
+  you
+  guys
+  have
+  here,
+  these,
+  you
+  know,
+  these
+  are
+  the
+  builder
+  grade
+  units.
+  So
+  I
+  mean,
+  average
+  what
+  you
+  get
+  on
+  these,
+  like
+  8
+  to
+  12
+  years.
+
+Customer:
+  Oh,
+  I
+  could
+  because
+  I
+  had
+  many
+  new
+  houses
+  where
+  the
+  whole
+  unit
+  had
+  to
+  be
+  changed.
+
+Alex - Oleksiy Yakovchuk:
+  Right.
+
+Customer:
+  Something,
+  you
+  know,
+  to
+  be
+  fixed
+  is
+  one.
+  So
+  here's
+  another
+  one,
+  72.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  the
+  other.
+
+Customer:
+  I
+  have
+  you
+  here,
+  if
+  you
+  don't
+  mind.
+  Do
+  I
+  have
+  it
+  on
+  the
+  best.
+  Auto,
+  heat,
+  whatever.
+  Because
+  circulation.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  I
+  just
+  keep
+  it
+  on
+  hold
+  auto.
+  Because
+  it
+  just
+  kicks
+  on
+  when
+  the
+  system
+  kicks
+  on.
+
+Customer:
+  Okay.
+  All
+  right.
+  So
+  that
+  and
+  this.
+  This
+  means
+  nothing,
+  this
+  one,
+  right?
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  that's
+  just
+  the
+  menu.
+
+Customer:
+  Okay.
+  So
+  auto
+  is
+  the
+  thing.
+  Because
+  sometimes
+  I
+  get
+  it
+  confused
+  with
+  circulation.
+
+Alex - Oleksiy Yakovchuk:
+  Right.
+
+Customer:
+  And
+  that's
+  the
+  form
+  right
+  there.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+  And
+  you
+  mentioned
+  other
+  homes.
+  Are
+  all
+  the
+  other
+  homes
+  we're
+  here
+  in
+  Vegas
+  or
+  you
+  guys
+  moved
+  Vegas?
+  Yeah.
+
+Customer:
+  I've
+  had
+  at
+  least
+  10
+  in
+  Vegas.
+
+Alex - Oleksiy Yakovchuk:
+  You
+  guys
+  move
+  around
+  quite
+  a
+  bit,
+  huh?
+  Yeah.
+  Originally
+  from
+  Vegas
+  or.
+
+Customer:
+  Oh,
+  this
+  was
+  a
+  circulation.
+  How
+  did
+  that
+  happen?
+
+Alex - Oleksiy Yakovchuk:
+  Vegas?
+
+Customer:
+  No,
+  we
+  from
+  the
+  Washington,
+  D.C.
+  area.
+
+Alex - Oleksiy Yakovchuk:
+  Okay,
+  nice.
+  What
+  brought
+  you
+  guys
+  out
+  here
+  originally?
+
+Customer:
+  Change
+  Vine
+  Investing.
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  All
+  right.
+  And
+  then
+  you
+  have
+  the
+  attic
+  here.
+  Both
+  systems
+  are
+  up
+  there.
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+  And
+  is
+  it
+  doing
+  a
+  good
+  job
+  keeping
+  temperature
+  throughout
+  the
+  house
+  in
+  each
+  one
+  of
+  the
+  rooms?
+  Huh.
+  And
+  you
+  mentioned
+  when
+  you
+  had.
+  You
+  had
+  a
+  breakdown,
+  what
+  exactly
+  broke
+  down?
+  Do
+  you
+  remember?
+
+Customer:
+  No,
+  I
+  don't
+  know
+  all
+  that
+  kind
+  of
+  stuff,
+  but
+  they
+  had
+  to
+  get
+  a
+  whole
+  new
+  unit.
+
+Alex - Oleksiy Yakovchuk:
+  Okay,
+  so
+  you
+  guys
+  had
+  a
+  whole
+  unit
+  replaced?
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  Oh,
+  wow.
+
+Customer:
+  Yeah.
+  Okay,
+  so
+  we
+  had
+  that.
+  I.
+  I
+  don't
+  think
+  this
+  is
+  tall
+  enough
+  for
+  you,
+  but
+  I
+  do
+  have
+  a
+  ladder
+  behind
+  this
+  door.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+  I'll
+  bring
+  my
+  own
+  lottery.
+  I
+  have
+  it.
+
+Customer:
+  Cool.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  Okay.
+  And
+  the
+  other
+  system,
+  that's
+  older,
+  no
+  weird
+  noises,
+  weird
+  smells,
+  nothing
+  like
+  that.
+  Okay.
+
+Customer:
+  That's
+  all
+  I
+  want.
+  You
+  guys,
+  the
+  maintenance
+  and
+  stuff,
+  see
+  what's
+  what.
+
+Alex - Oleksiy Yakovchuk:
+  Right.
+  And
+  the
+  other
+  unit
+  that
+  was
+  replaced
+  was
+  replaced
+  by
+  us
+  or.
+
+Customer:
+  Well,
+  I
+  don't
+  know
+  the
+  name
+  of
+  the
+  company,
+  but.
+  What
+  your
+  company.
+  I
+  have
+  a
+  warranty.
+
+Alex - Oleksiy Yakovchuk:
+  Force.
+
+Customer:
+  Warranty.
+  So
+  somebody,
+  they
+  said.
+
+Alex - Oleksiy Yakovchuk:
+  Gotcha.
+  How's
+  your
+  experience
+  with
+  that
+  then?
+
+Customer:
+  It's
+  okay.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  they
+  replace
+  both
+  inside,
+  outside,
+  or
+  just
+  the
+  outside
+  portion?
+
+Customer:
+  No,
+  they
+  did
+  have
+  something
+  up
+  here.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+
+Customer:
+  And
+  then
+  something
+  down
+  there.
+  The
+  whole
+  thing
+  because
+  of
+  some
+  fuel
+  changes
+  over
+  from
+  what
+  they
+  used
+  to
+  use
+  in
+  the
+  oil.
+  I
+  don't
+  know
+  the
+  terminology.
+
+Alex - Oleksiy Yakovchuk:
+  Refrigerant.
+
+Customer:
+  Yeah.
+  So
+  they
+  had
+  to
+  change
+  the
+  whole
+  thing.
+  And
+  I.
+  I
+  checked
+  with
+  several
+  people.
+  All
+  of
+  them
+  said
+  the
+  same
+  thing.
+
+Alex - Oleksiy Yakovchuk:
+  Right.
+  Okay.
+  Well,
+  yeah,
+  I
+  mean,
+  what
+  we'll
+  do
+  today,
+  we'll
+  do
+  the
+  maintenance
+  on
+  both
+  of
+  the
+  systems.
+  We'll
+  check
+  everything
+  out,
+  you
+  know,
+  make
+  sure
+  everything,
+  even
+  the
+  new
+  system,
+  make
+  sure
+  it's
+  all
+  installed
+  to
+  code.
+  If
+  anything
+  is
+  going
+  on
+  with
+  any
+  of
+  the
+  systems.
+  That's
+  something
+  you
+  want
+  me
+  to
+  go
+  bring
+  to
+  your
+  attention
+  or.
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+  I
+  also
+  won't
+  do
+  anything
+  without
+  your
+  approval,
+  so
+  if
+  anything
+  does
+  need
+  to
+  be
+  done,
+  you
+  were
+  to
+  approve
+  anything,
+  then
+  we
+  get
+  started
+  on
+  that
+  work.
+
+Customer:
+  Okay?
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  Yeah.
+  You
+  have
+  a
+  question?
+  Of
+  course.
+  Any
+  questions?
+  Concerns
+  for
+  me
+  and
+  Ben?
+  Oh,
+  the
+  last
+  thing.
+  Do
+  you
+  mind
+  showing
+  me
+  the
+  outside
+  unit
+  as
+  well?
+
+Customer:
+  Yeah,
+  I
+  will.
+  Okay.
+  Okay.
+  I'm
+  gonna
+  be
+  right
+  behind
+  you.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+
+Customer:
+  My
+  husband.
+  Let's
+  go
+  at
+  that
+  from
+  where
+  he
+  is.
+  And
+  it's
+  the
+  slide.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+  Back
+  this
+  way.
+  Oh,
+  Okay.
+  I
+  thought
+  she's
+  coming
+  down.
+  Hey,
+  for
+  the
+  outside
+  units,
+  is
+  that
+  gonna
+  be
+  on?
+  Wait
+  a
+  second.
+  You
+  gotta
+  ask
+  her.
+  Okay,
+  so
+  just
+  ask
+  her
+  to
+  show
+  me
+  outside.
+  Yeah,
+  okay.
+
+Customer:
+  Oh,
+  oh,
+  show
+  you.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  no
+  worries.
+  God.
+  And
+  she
+  told
+  me
+  to
+  ask
+  you
+  for
+  the
+  outside
+  units,
+  where
+  those
+  are
+  at.
+  Appreciate
+  that.
+  Oh,
+  no
+  problem.
+  And
+  is
+  this
+  door
+  gonna
+  be
+  the
+  best
+  way
+  for
+  me
+  to
+  access
+  the
+  outside
+  units?
+  Yes.
+  Yeah.
+  Okay.
+  No
+  worries.
+  You're
+  okay.
+  All
+  right,
+  awesome.
+  I'm
+  gonna
+  grab
+  my
+  tools,
+  I
+  see
+  where
+  they're
+  at,
+  and
+  then
+  we'll
+  probably
+  start
+  outside,
+  finishing
+  the
+  attic,
+  and
+  go
+  from
+  there.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Sound
+  good?
+  Any
+  questions
+  for
+  me?
+  No.
+  Awesome.
+  Any
+  questions?
+  You
+  got
+  to
+  ask
+  her.
+  Okay.
+  God.
+  Thank
+  you.
+  I
+  got
+  a
+  brain
+  injury.
+  Oh,
+  no.
+  Yeah.
+  So
+  you
+  gotta
+  after
+  everything,
+  right?
+  Of
+  course,
+  of
+  course.
+  Thank
+  you.
+
+Customer:
+  Would
+  you
+  like
+  me
+  to
+  close
+  this.
+
+Alex - Oleksiy Yakovchuk:
+  Or
+  keep
+  it
+  open?
+  Close
+  it.
+  Okay.
+  Yeah,
+  he
+  showed
+  us.
+  Yes.
+  I'm
+  gonna
+  grab
+  my
+  tools
+  and
+  I'm
+  gonna
+  start
+  with
+  the
+  outside
+  and
+  I'll
+  finish
+  up
+  in
+  the
+  attic.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+  Oh,
+  no.
+  Okay,
+  thank
+  you.
+  Yes.
+  We're
+  finishing
+  up.
+  I
+  do
+  still
+  have
+  to
+  write
+  my
+  report
+  up,
+  but
+  I'm
+  gonna
+  go
+  over
+  the
+  pictures
+  with
+  you.
+  Okay.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  my
+  ladder
+  is
+  still
+  up
+  there,
+  so
+  I'll
+  just
+  grab
+  that
+  one,
+  come
+  back
+  in
+  so
+  time.
+
+Customer:
+  Oh,
+  okay.
+
+Alex - Oleksiy Yakovchuk:
+  Do
+  you
+  have
+  a
+  minute
+  to
+  go
+  picture
+  where's
+  going
+  to
+  place
+  for
+  you?
+  And
+  here
+  is.
+  Okay.
+
+Customer:
+  Uhhuh.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  let
+  me
+  show
+  you
+  here.
+  So
+  you
+  do
+  have
+  two
+  systems.
+  There's
+  quite
+  a
+  bit
+  of
+  pictures.
+  I'm
+  going
+  to
+  go
+  over
+  the
+  main
+  things.
+  Okay.
+  So
+  for
+  the
+  home
+  warranty,
+  they
+  didn't
+  replace
+  the
+  outside
+  condenser.
+  Okay.
+  And
+  they
+  also
+  replaced
+  that
+  coil
+  in
+  the
+  attic,
+  which.
+  This
+  is
+  the
+  model
+  serial
+  numbers
+  of
+  the
+  coil.
+  However,
+  the
+  furnace
+  is
+  still
+  original.
+  So
+  the
+  furnace
+  in
+  the
+  attic
+  is
+  still
+  original
+  to
+  the
+  Lennox
+  system.
+  So
+  they
+  don't
+  replace
+  the
+  whole
+  system.
+  They
+  replaced
+  just
+  half
+  of
+  it.
+
+Customer:
+  Right.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  you
+  were
+  aware
+  of
+  that?
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+  Another
+  furnace
+  was
+  still
+  left.
+  Gotcha.
+  So
+  the
+  main
+  things
+  for
+  the
+  older
+  unit
+  outside,
+  you
+  do
+  have
+  your
+  voltage
+  switch.
+  See
+  this
+  right
+  here,
+  how
+  it's
+  burnt
+  and
+  pinning?
+  Yeah.
+  So
+  this
+  happens
+  whenever
+  electricity
+  gets
+  sent
+  to
+  that
+  system
+  outside.
+  This
+  button
+  clicks
+  in,
+  it
+  creates
+  contact,
+  electricity
+  passes
+  through
+  it,
+  arcs
+  and
+  flashes,
+  which
+  is
+  what
+  causes
+  this.
+  Now,
+  with
+  this
+  happening,
+  what
+  can
+  happen
+  in
+  the
+  future
+  is
+  it
+  can
+  get
+  stuck,
+  welded
+  shut,
+  that
+  system
+  would
+  just
+  constantly
+  stay
+  on
+  or
+  it
+  gets
+  stuck,
+  pulled
+  out,
+  and
+  just
+  won't
+  kick
+  on.
+  So
+  I
+  wanted
+  to
+  bring
+  that
+  to
+  your
+  attention.
+  And
+  then.
+
+Customer:
+  So
+  that's
+  that
+  darkness
+  around
+  it.
+
+Alex - Oleksiy Yakovchuk:
+  Correct.
+  So
+  it's
+  supposed
+  to
+  be
+  a
+  copper
+  color.
+  You
+  see,
+  there's
+  just
+  a
+  copper
+  color
+  around
+  it
+  and
+  it's
+  all
+  burnt
+  emitted.
+
+Customer:
+  Oh,
+  and
+  what
+  is
+  that
+  called?
+
+Alex - Oleksiy Yakovchuk:
+  The
+  voltage
+  distribution
+  switch.
+
+Customer:
+  That's
+  outside.
+
+Alex - Oleksiy Yakovchuk:
+  Yes,
+  that's
+  outside
+  on
+  the
+  old
+  unit.
+  Okay.
+  So
+  the
+  newer
+  one
+  looks
+  good
+  because
+  that's
+  brand
+  new.
+  Yeah.
+  But
+  yeah,
+  the
+  older
+  one,
+  it
+  does
+  have
+  burning.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Then
+  you
+  have
+  what
+  we
+  call
+  your
+  compressor.
+  Okay.
+  So
+  your
+  compressor
+  is
+  like
+  the
+  heartbeat
+  system.
+  So
+  it
+  pumps
+  all
+  that
+  refrigerant
+  up
+  into
+  the
+  attic
+  and
+  gets
+  the
+  coil
+  that
+  you
+  had
+  replaced
+  place
+  very
+  cold
+  for
+  the
+  summertime.
+  And
+  then
+  as
+  warm
+  air
+  from
+  the
+  house
+  goes
+  past
+  the
+  cold
+  coil,
+  it
+  gets
+  colder
+  in
+  the
+  house.
+  On
+  this
+  compressor
+  that
+  you
+  have
+  here,
+  it
+  is
+  pulling
+  148amps.
+  Okay.
+  The
+  highest
+  that
+  this
+  should
+  be
+  is
+  134.
+  Okay.
+  So
+  5
+  to
+  10
+  of
+  a
+  difference
+  is
+  okay.
+  But
+  once
+  it
+  starts
+  going
+  above
+  the
+  10
+  range
+  and
+  above
+  it's
+  going
+  to
+  start,
+  that
+  means
+  that
+  compressor
+  is
+  kind
+  of
+  like
+  nearing
+  the
+  end
+  of
+  its
+  life.
+  With
+  this
+  pulling
+  too
+  much
+  power.
+  Yeah.
+  With
+  this
+  pulling
+  too
+  much
+  power,
+  not
+  only
+  does
+  it
+  cause
+  your
+  electrical
+  bill
+  to
+  go
+  up,
+  but
+  it's
+  just
+  going
+  to
+  keep
+  chipping
+  and
+  chipping
+  at
+  that
+  compressor
+  until
+  it
+  fails.
+  Any
+  thoughts
+  on
+  this?
+
+Customer:
+  Well,
+  I
+  think
+  your
+  guys
+  already
+  did
+  all
+  this
+  with
+  me,
+  actually.
+  After
+  they
+  put
+  it
+  in,
+  Sierra
+  came
+  over
+  and
+  they
+  told
+  me
+  they
+  thought
+  maybe
+  a
+  couple
+  years
+  left
+  on
+  that.
+  And
+  that's
+  it.
+  That's
+  what
+  they
+  told.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  So
+  it's.
+  It's
+  hard
+  to
+  say
+  because
+  it's
+  a
+  mechanical
+  component.
+  So
+  it's
+  just.
+  With
+  that,
+  it
+  could
+  be
+  a
+  couple
+  months,
+  could
+  be
+  a
+  year.
+  I
+  mean,
+  who
+  knows?
+  It's
+  hard
+  to
+  say
+  when
+  we
+  know
+  it's
+  pulling
+  a
+  lot
+  of
+  power
+  like
+  that.
+  It's
+  just.
+  We
+  just
+  know
+  it's
+  taking
+  damage.
+  And
+  it's
+  been
+  doing
+  that
+  for
+  the
+  last
+  eight
+  years,
+  you
+  know,
+  because
+  these
+  systems
+  that
+  we
+  installed
+  here,
+  so
+  these
+  are
+  just
+  a
+  builder
+  grade
+  unit.
+  So
+  we
+  just
+  install
+  whatever
+  the
+  builder
+  has
+  us
+  installed.
+  Of
+  course,
+  the
+  builders.
+  And
+  they're
+  gonna
+  try
+  to
+  save
+  money
+  and
+  stuff.
+  So
+  who.
+  Who
+  originally
+  built
+  the
+  home?
+  The
+  builders.
+  And
+  in
+  the
+  attic,
+  your
+  heat
+  exchangers.
+  On
+  both
+  systems,
+  you
+  had
+  hot
+  spots.
+  You
+  see,
+  I
+  have
+  dark
+  spots
+  here.
+  So
+  this
+  is
+  the
+  main
+  heating
+  element
+  of
+  the
+  house.
+  You
+  have
+  it
+  here.
+  You
+  have
+  spots
+  here.
+  This
+  is
+  the
+  main
+  heating
+  element
+  of
+  the
+  house.
+  What
+  happens
+  when
+  it.
+  The
+  furnace
+  kicks
+  on?
+  It
+  gets
+  very
+  hot.
+
+Customer:
+  That's
+  the
+  furnace?
+
+Alex - Oleksiy Yakovchuk:
+  Yes.
+  So
+  this
+  inside
+  the
+  furnace
+  this
+  is
+  the
+  little
+  metal
+  plates
+  that
+  heat
+  the
+  home
+  up
+  because
+  the
+  burners
+  kick
+  on.
+  So
+  the
+  burners
+  will
+  be
+  on
+  this
+  side.
+  They'll
+  kick
+  on,
+  the
+  flames
+  will
+  start
+  going
+  into
+  here.
+  Okay.
+  And
+  those
+  flames,
+  they
+  produce
+  carbon
+  monoxide
+  and
+  all
+  that
+  exhaust
+  through
+  your
+  inducer
+  motor.
+  Now
+  when
+  it
+  gets
+  very
+  hot,
+  it
+  starts
+  creating
+  the
+  hot
+  spots
+  where
+  there's
+  the
+  least
+  amount
+  of
+  airflow
+  going
+  past.
+  So
+  these
+  are
+  like
+  the
+  weak
+  points
+  in
+  that
+  system.
+  Now,
+  I'm
+  sure,
+  you
+  know,
+  as
+  metal
+  gets
+  hot,
+  it
+  expands.
+  When
+  it
+  cools
+  off,
+  it
+  contracts.
+  So
+  with
+  that
+  expansion
+  contraction
+  happening
+  and
+  the
+  hot
+  spots
+  you
+  have,
+  what
+  can
+  happen
+  down
+  the
+  line
+  is
+  it
+  can
+  create
+  a
+  crack.
+  And
+  if
+  it
+  ever
+  does
+  crack,
+  those
+  unwanted
+  gases
+  like
+  the
+  carbon
+  monoxide
+  can
+  start
+  coming
+  into
+  the
+  house.
+  I
+  didn't
+  see
+  any
+  cracks
+  today.
+  I
+  just
+  want
+  to
+  bring
+  it
+  to
+  attention
+  because
+  of
+  the
+  hot
+  spots
+  they're
+  having.
+  Any
+  thoughts
+  on
+  that,
+  questions?
+  This
+  is
+  what
+  we
+  call
+  your
+  evaporative
+  coil.
+  The
+  new
+  one
+  looks
+  good.
+  This
+  is
+  the
+  older
+  system.
+  Okay.
+  You
+  have
+  rusting
+  going
+  up
+  that
+  coil.
+  Now,
+  I'm
+  sure
+  you
+  know,
+  rust
+  corrodes
+  metal.
+  Now
+  when
+  that
+  corrosion
+  happening,
+  eventually
+  what's
+  going
+  to
+  happen?
+  It's
+  going
+  to
+  pop
+  a
+  refrigerant
+  leak
+  if
+  it
+  happens.
+  For
+  from
+  where
+  it's
+  resting,
+  we
+  unfortunately
+  cannot
+  repair
+  over
+  us.
+  So
+  if
+  that
+  does
+  happen,
+  that
+  whole
+  component
+  would
+  have
+  to
+  go
+  replace.
+
+Customer:
+  What's.
+  What's
+  that
+  component?
+
+Alex - Oleksiy Yakovchuk:
+  Evaporative
+  coil.
+
+Customer:
+  And
+  it's
+  part
+  of.
+
+Alex - Oleksiy Yakovchuk:
+  That's
+  gonna
+  be
+  part
+  of
+  the
+  cooling.
+
+Customer:
+  Side
+  that
+  had
+  anything
+  to
+  do
+  with
+  the
+  furnace.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  we
+  check
+  the
+  furnace.
+  So
+  as
+  you
+  can
+  see
+  here,
+  I'm
+  checking.
+  This
+  is
+  on.
+  Just
+  on
+  the
+  other
+  side
+  of
+  that
+  component.
+  So
+  we
+  do
+  a
+  whole
+  thorough
+  system
+  check.
+  Just
+  because
+  when
+  we
+  come
+  out
+  here,
+  we
+  do
+  a
+  full
+  thorough
+  system
+  evaluation.
+
+Customer:
+  So
+  if
+  there
+  was
+  a
+  new
+  furnace,
+  I
+  would
+  still
+  have
+  that
+  problem.
+  Yes.
+
+Alex - Oleksiy Yakovchuk:
+  Because
+  that's.
+  That's
+  the
+  coil.
+  So
+  they
+  replaced
+  the
+  coil
+  and
+  the
+  condenser
+  for
+  that
+  new
+  unit.
+  So
+  the
+  coil
+  and
+  the
+  other
+  unit
+  is
+  brand
+  new
+  on
+  this
+  system.
+  It's
+  all
+  original.
+  The
+  furnace
+  coil
+  and
+  that
+  service.
+
+Customer:
+  Okay.
+  So
+  that
+  was
+  the
+  coil.
+  So
+  if
+  that
+  new.
+  That
+  other
+  system
+  get
+  placed,
+  replaced,
+  that
+  would
+  take
+  care
+  of
+  that.
+  So
+  situation.
+
+Alex - Oleksiy Yakovchuk:
+  Yes.
+  If
+  you
+  replace
+  that
+  system
+  and
+  replace
+  that
+  quote.
+  Correct.
+
+Customer:
+  Then
+  you
+  have
+  to
+  deal
+  with
+  the
+  furnace.
+
+Alex - Oleksiy Yakovchuk:
+  Correct.
+  So
+  you
+  can
+  either
+  do
+  half
+  or
+  the
+  whole
+  thing.
+  If
+  you
+  do
+  the
+  whole
+  thing,
+  you
+  typically
+  get
+  more
+  warranties.
+  If
+  you
+  do
+  half,
+  you
+  get
+  half
+  the
+  warranties.
+  So.
+  Because
+  typically
+  when
+  you
+  do
+  like
+  a
+  replacement
+  on
+  a
+  Full
+  system,
+  you
+  get
+  10
+  year
+  parts,
+  three
+  years
+  labor,
+  half,
+  you
+  get
+  five
+  year
+  parts.
+  So
+  that's
+  what
+  we
+  got
+  there.
+  And
+  also
+  your.
+  Your
+  where
+  is.
+  Wasn't
+  this
+  one.
+  So
+  your
+  inducer
+  motors,
+  okay,
+  this
+  one
+  was
+  pulling
+  1.41amps.
+  Okay.
+  And
+  the
+  other
+  one
+  was
+  pulling
+  1.51amps.
+  Okay.
+
+Customer:
+  Both
+  of
+  these
+  inducers
+  deducer
+  is
+  part
+  of
+  what.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  the
+  inducer
+  is
+  what
+  exhausts.
+  It
+  gets
+  fresh
+  air
+  in
+  from
+  the
+  outside
+  into
+  that
+  furnace
+  and
+  exhaust
+  all
+  the
+  carbon
+  monoxide
+  out
+  of
+  your
+  house.
+
+Customer:
+  So
+  is
+  that
+  part
+  of
+  the
+  furnace?
+
+Alex - Oleksiy Yakovchuk:
+  Correct.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  the
+  inducer
+  is
+  rated
+  to
+  be
+  at
+  the
+  highest
+  1.2amps.
+  Okay.
+  You're
+  at
+  1.41
+  and
+  1.51.
+  And
+  let
+  me
+  show
+  you
+  the
+  other
+  one.
+  Right
+  here.
+  And
+  this
+  one
+  is
+  also
+  1.2,
+  as
+  you
+  can
+  see.
+  So
+  when
+  it's
+  running
+  like
+  that,
+  with
+  drawing
+  a
+  lot
+  of
+  power,
+  it's
+  overworking,
+  which
+  will
+  also
+  cause
+  that
+  motor
+  to
+  seize
+  up
+  and
+  fail
+  if
+  it
+  keeps
+  running
+  like
+  that
+  for
+  a
+  long,
+  long
+  periods
+  of
+  time.
+  So,
+  yeah,
+  so
+  the
+  bottom
+  line,
+  because.
+
+Customer:
+  I
+  probably
+  will
+  need
+  a
+  new
+  unit
+  and
+  a
+  new
+  furnace.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  my
+  job
+  is
+  to
+  give
+  you
+  the
+  repair
+  pricing.
+  Go
+  over
+  that
+  information
+  with
+  you.
+  Is
+  that
+  something?
+  Because
+  I
+  know
+  you
+  guys
+  replace
+  that
+  one.
+  Is
+  there
+  a
+  reason
+  they
+  only
+  replace
+  half
+  of
+  it
+  and
+  not
+  the
+  whole
+  thing?
+  The
+  first.
+
+Customer:
+  Yeah.
+  Because
+  only
+  half
+  of
+  it
+  stopped
+  working.
+
+Alex - Oleksiy Yakovchuk:
+  Issues.
+
+Customer:
+  Yeah,
+  yeah,
+  yeah,
+  stop.
+  It
+  stopped
+  working.
+  So
+  I
+  had
+  to
+  replace
+  it.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+
+Customer:
+  But
+  I
+  didn't
+  replace
+  the
+  one
+  that
+  was
+  still
+  working.
+
+Alex - Oleksiy Yakovchuk:
+  Right?
+  Yeah.
+  Because
+  the
+  furnace,
+  I
+  mean,
+  it's
+  still
+  working.
+  It
+  has
+  some
+  issues
+  going
+  on.
+  So
+  it's
+  my
+  job
+  to,
+  you
+  know,
+  just
+  go
+  over
+  that
+  information
+  with
+  you
+  so
+  you're
+  aware
+  of
+  what's
+  going
+  on.
+
+Customer:
+  So
+  the
+  furnace
+  could
+  be
+  repaired,
+  you
+  could
+  repair
+  it.
+
+Alex - Oleksiy Yakovchuk:
+  But
+  if
+  you
+  have
+  to
+  repair
+  that
+  heat
+  exchanger,
+  you
+  have
+  to
+  replace.
+  Because
+  typically
+  when
+  you
+  cracks,
+  you
+  can't
+  just
+  repair
+  it.
+  You
+  have
+  to
+  replace
+  that
+  heat
+  exchanger.
+  That
+  heat
+  exchanger
+  is
+  one
+  of
+  the
+  most
+  expensive
+  components
+  in
+  that
+  system.
+  So
+  at
+  that
+  stage,
+  you
+  know,
+  we
+  can
+  always
+  order
+  that
+  heat
+  exchanger
+  if
+  they
+  still
+  have
+  the
+  parts
+  available.
+  Because
+  these
+  systems
+  are
+  the
+  older
+  systems,
+  they
+  no
+  longer
+  make
+  manufacturing
+  needs.
+  They
+  switch
+  the
+  refrigerants,
+  all
+  that
+  stuff.
+  So
+  the
+  parts.
+  And
+  it'll
+  start
+  getting
+  harder
+  to
+  get
+  as
+  to,
+  you
+  know,
+  the
+  newer
+  units.
+  So
+  we
+  have
+  to
+  reach
+  out
+  to
+  the
+  manufacturers,
+  see
+  if
+  you
+  can
+  still
+  get
+  it.
+  And
+  if
+  you
+  can't
+  get
+  it,
+  it's
+  just
+  a
+  heat
+  exchanger.
+  You're
+  probably
+  Looking
+  like
+  anywhere
+  between
+  six
+  to
+  eight.
+
+Customer:
+  Six
+  to
+  eight?
+  What?
+  Six
+  to
+  eight?
+  Okay,
+  I
+  suppose.
+  Right.
+
+Alex - Oleksiy Yakovchuk:
+  Well,
+  I'm
+  gonna.
+  I'm
+  still
+  gonna
+  write
+  this
+  all
+  on
+  paper
+  for
+  you.
+  So
+  you
+  have
+  that
+  information.
+
+Customer:
+  Cuz
+  that's
+  better
+  for
+  me.
+  Cuz
+  all
+  this
+  coming
+  in
+  my
+  head
+  is
+  too
+  much.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  of
+  course.
+
+Customer:
+  For
+  me
+  to
+  know
+  what.
+  What
+  you're.
+  Sounds
+  like.
+  I.
+  I
+  probably
+  will
+  need
+  a
+  new
+  furnace
+  soon
+  and
+  a
+  new
+  unit
+  up
+  there.
+  So.
+  A
+  new
+  unit
+  and
+  a
+  new
+  furnace
+  will
+  take
+  care
+  of
+  all
+  this
+  stuff
+  you're
+  talking
+  about.
+  Okay.
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+
+Customer:
+  Okay.
+  You
+  put
+  it
+  in
+  a
+  report
+  and
+  let
+  me.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  So
+  yeah,
+  I'm
+  going
+  to
+  write
+  up
+  some
+  options
+  for
+  the
+  repairs.
+  Go
+  over
+  that
+  information
+  with
+  you.
+  So
+  you
+  have
+  that,
+  you
+  know,
+  as
+  drawn
+  out
+  if
+  you
+  want,
+  can
+  actually
+  come
+  back.
+  Do
+  you
+  know
+  how
+  your
+  system
+  works,
+  how
+  the
+  new
+  one
+  works,
+  how
+  the
+  whole
+  system
+  operates?
+  Because
+  if
+  you
+  want,
+  I
+  can
+  draw
+  a
+  whole
+  picture
+  for
+  you
+  and
+  kind
+  of
+  show
+  you
+  how
+  each
+  component
+  works.
+  Yeah,
+  that's
+  up
+  to
+  you.
+  But.
+
+Customer:
+  And
+  be
+  honest,
+  I
+  have
+  tinnitus,
+  which
+  is
+  like
+  lots
+  of
+  sounds
+  and
+  stuff.
+  So
+  when
+  you're
+  talking
+  and
+  all
+  that,
+  I
+  can't
+  resist
+  receive
+  all
+  that
+  information
+  for
+  myself.
+  Because
+  writing
+  it
+  down
+  where
+  I
+  could
+  stop
+  and
+  look
+  at
+  it,
+  of
+  course.
+  And
+  go
+  over
+  with
+  my
+  daughter
+  is
+  better
+  for
+  me.
+
+Alex - Oleksiy Yakovchuk:
+  Right,
+  yeah,
+  of
+  course.
+  Yeah,
+  we'll
+  get
+  that
+  written
+  down
+  for
+  you.
+  And
+  you
+  mention
+  your
+  daughter.
+  Is
+  she
+  here
+  or
+  does
+  she
+  want
+  to
+  be
+  part
+  of
+  that
+  conversation
+  when
+  I
+  go
+  over
+  that
+  with
+  you
+  or.
+  No,
+  no,
+  no,
+  I'm
+  just.
+
+Customer:
+  She's.
+  She's.
+  I'm
+  just
+  gonna
+  send
+  it
+  to.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  What
+  does
+  she
+  do?
+
+Customer:
+  What
+  did
+  she
+  do?
+  Yeah,
+  one's
+  a
+  dermatologist,
+  but
+  the
+  other
+  one
+  is
+  kind
+  of
+  like
+  in
+  the.
+  Like
+  me,
+  I'm
+  interior
+  decorated.
+  So
+  they're
+  kind
+  of
+  like
+  in
+  the
+  builder
+  world,
+  they're
+  kind
+  of
+  understand
+  that
+  they
+  can
+  ask
+  questions
+  to
+  other
+  people.
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  Do
+  you
+  still
+  do
+  interior
+  decoration?
+
+Customer:
+  I
+  try
+  not
+  to,
+  but
+  I
+  am
+  tired.
+
+Alex - Oleksiy Yakovchuk:
+  Gotcha.
+
+Customer:
+  Kind
+  of.
+  But
+  that's
+  what
+  I
+  did
+  actually
+  for
+  Lennar.
+  I
+  did
+  all
+  their
+  houses.
+
+Alex - Oleksiy Yakovchuk:
+  Oh,
+  wow.
+  You
+  got
+  incredible
+  taste.
+  Oh,
+  yeah.
+  Very
+  good.
+
+Customer:
+  Thank
+  you
+  very
+  much.
+  Thank
+  you.
+  So
+  I
+  try
+  to
+  not
+  to
+  do
+  too
+  much
+  of
+  anything
+  right
+  tonight.
+  It's
+  just
+  overwhelming.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  yeah,
+  I
+  understand.
+  Yeah.
+  But
+  I
+  was
+  gonna
+  say
+  in
+  the
+  future
+  when
+  I
+  buy
+  my
+  house,
+  I
+  was
+  gonna
+  see
+  if
+  you
+  help
+  me
+  out,
+  but.
+  But
+  you're
+  retired,
+  so
+  get
+  a
+  house.
+  Yeah,
+  yeah,
+  working
+  on
+  it.
+  Right,
+  of
+  course.
+  But
+  I'll
+  be
+  right
+  back.
+  Okay.
+  Give
+  me
+  about
+  1520
+  minutes
+  to
+  write
+  my
+  report
+  up.
+  Do
+  you
+  have
+  any
+  questions
+  about
+  anything
+  going
+  over
+  so
+  far
+  or
+  any
+  concerns?
+  Get
+  it.
+  All
+  right.
+
+Customer:
+  All
+  that
+  you
+  said.
+  Sounds
+  like
+  soon
+  I'm
+  gonna
+  need
+  a
+  new
+  unit
+  and
+  I'm
+  gonna
+  need
+  a
+  new
+  furnace.
+  Yeah,
+  that's
+  what
+  my
+  head
+  is
+  saying
+  so
+  far.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  we'll
+  go
+  over
+  all
+  that
+  information.
+  Let
+  me
+  write
+  up
+  the.
+  The
+  repairs
+  for
+  you.
+  So
+  you
+  have
+  that,
+  and
+  I'll
+  be
+  back.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+  I'll
+  see
+  you
+  shortly.
+
+Customer:
+  Drinking?
+
+Alex - Oleksiy Yakovchuk:
+  I
+  do
+  not.
+  If
+  you
+  have
+  a
+  water,
+  I'd
+  love
+  a
+  water.
+  Thank
+  you
+  so
+  much.
+  I
+  got
+  options
+  now.
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  Oh,
+  I'll
+  do
+  the
+  flavor.
+  Is
+  that
+  ice
+  water?
+  This
+  is.
+
+Customer:
+  This
+  one.
+
+Alex - Oleksiy Yakovchuk:
+  Oh,
+  that's.
+
+Customer:
+  I've
+  been
+  trying
+  to
+  get
+  this.
+  You
+  want
+  regular?
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  no,
+  that
+  works
+  for
+  me.
+  Thank
+  you
+  so
+  much.
+
+Customer:
+  Get
+  rid
+  of
+  it
+  then.
+
+Alex - Oleksiy Yakovchuk:
+  You
+  know,
+  I
+  was
+  saying.
+
+Customer:
+  I
+  was
+  trying
+  to
+  find.
+  It's
+  almost
+  like
+  your
+  rail.
+  Oh,
+  okay.
+
+Alex - Oleksiy Yakovchuk:
+  I've
+  never
+  seen
+  this
+  flavor.
+
+Customer:
+  Oh,
+  that's
+  the
+  best
+  one.
+
+Alex - Oleksiy Yakovchuk:
+  Good
+  to
+  know.
+  I
+  was
+  always
+  getting,
+  like,
+  the
+  mixed
+  berry
+  one,
+  and.
+  Yeah,
+  you
+  have
+  that
+  too
+  much.
+  You
+  get
+  a
+  little
+  tired
+  of
+  it.
+
+Customer:
+  Yeah,
+  that
+  is
+  the
+  one.
+  You
+  see
+  one
+  or
+  two
+  of
+  them
+  used
+  to
+  be
+  in
+  those
+  packets.
+  They
+  stopped
+  selling.
+  They
+  just
+  got
+  them
+  back
+  on
+  Amazon.
+
+Alex - Oleksiy Yakovchuk:
+  So.
+  Good
+  to
+  know.
+
+Customer:
+  DEFRI
+  is
+  full
+  of
+  them.
+
+Alex - Oleksiy Yakovchuk:
+  I'm
+  going
+  to
+  start
+  looking
+  for
+  these
+  in
+  Amazon.
+
+Customer:
+  Oh,
+  that's
+  the
+  best.
+
+Alex - Oleksiy Yakovchuk:
+  Thank
+  you
+  so
+  much.
+  Appreciate
+  it.
+  Yeah,
+  thank
+  you
+  for
+  the
+  hospitality.
+
+Customer:
+  It.
+
+Alex - Oleksiy Yakovchuk:
+  How
+  you
+  doing?
+  Let
+  me
+  just
+  add
+  this
+  code
+  real
+  quick.
+  System
+  maintenance.
+
+Customer:
+  It.
+
+Alex - Oleksiy Yakovchuk:
+  I'm
+  all
+  finished
+  up.
+  Yes.
+  I'm
+  going
+  to
+  go
+  over
+  all
+  this
+  information
+  with
+  you.
+  Would
+  you
+  have
+  a
+  minute
+  to
+  sit
+  down
+  somewhere
+  and
+  go
+  over
+  this?
+
+Customer:
+  Oh,
+  there's.
+
+Alex - Oleksiy Yakovchuk:
+  That's
+  the
+  whole
+  other
+  side
+  of
+  the
+  world.
+  You
+  guys
+  go
+  out
+  there
+  often
+  to
+  visit
+  or.
+
+Customer:
+  I've
+  never
+  been
+  there.
+
+Alex - Oleksiy Yakovchuk:
+  No.
+
+Customer:
+  No.
+
+Alex - Oleksiy Yakovchuk:
+  Any
+  clims
+  are
+  going?
+
+Customer:
+  Nope.
+
+Alex - Oleksiy Yakovchuk:
+  Right
+  here
+  Is
+  okay
+  if
+  I
+  sit?
+  Yeah.
+
+Customer:
+  Oh,
+  yeah.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  what
+  we
+  have,
+  I
+  do
+  have
+  one
+  sheet
+  for
+  each
+  system.
+  Okay.
+  So
+  the
+  other
+  system,
+  obviously
+  the
+  condenser
+  and
+  the
+  coil
+  replaced.
+  I'm
+  gonna
+  go
+  around
+  this.
+  Okay.
+  So
+  for
+  the
+  media
+  repairs,
+  we
+  do
+  have
+  that
+  inducer
+  motor
+  that
+  was
+  pulling
+  high
+  amounts
+  of
+  power
+  while
+  it's
+  running,
+  and
+  that
+  was
+  on
+  both
+  systems.
+  Okay.
+  So
+  for
+  that,
+  you're
+  looking
+  at
+  1084.
+
+Customer:
+  That's
+  the
+  most
+  immediate
+  repair,
+  and
+  that's
+  in
+  what,
+  the
+  furnaces.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  then
+  the
+  future,
+  what
+  you
+  have
+  coming
+  up,
+  two.
+  Yeah.
+  So
+  you
+  have
+  one
+  furnace
+  for
+  each
+  system.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  the
+  second
+  system
+  you
+  do
+  have,
+  that
+  coil
+  was
+  Rusting.
+  And
+  your
+  heat
+  exchanger
+  had
+  hot
+  spots
+  and
+  compressor
+  pour
+  high
+  amounts
+  of
+  power
+  when
+  it
+  starts
+  up.
+  And
+  these
+  are
+  still
+  all
+  working
+  as
+  of
+  today.
+  But
+  when
+  these
+  components
+  do
+  fill,
+  I
+  don't
+  want
+  to
+  overwhelm
+  you
+  with
+  the
+  price
+  because
+  these
+  are
+  all
+  the
+  bigger
+  components
+  in
+  that
+  system.
+  It's
+  going
+  to
+  be
+  over
+  8,600.
+
+Customer:
+  And
+  that's
+  for
+  what?
+  I
+  mean
+  that's
+  in.
+
+Alex - Oleksiy Yakovchuk:
+  That's
+  just
+  repairs.
+
+Customer:
+  That's
+  just
+  repairs
+  that's
+  coming
+  up.
+  How
+  much
+  is
+  a
+  new
+  one?
+
+Alex - Oleksiy Yakovchuk:
+  So
+  that's
+  what
+  this
+  last
+  option
+  is.
+  Because
+  of
+  all
+  that
+  you
+  do
+  have
+  going
+  on.
+  You
+  know,
+  this
+  last
+  option
+  is
+  that
+  I
+  get
+  all
+  your
+  options.
+  So
+  that
+  way
+  you
+  can
+  compare
+  and
+  contrast.
+
+Customer:
+  This
+  is
+  in
+  what
+  though?
+  This
+  is
+  not
+  in
+  the
+  furnace.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  the
+  coil
+  is
+  just
+  the
+  coil
+  in
+  the
+  attic.
+  Then
+  you
+  have
+  those
+  rusting.
+  Remember
+  I
+  showed
+  you.
+
+Customer:
+  Yeah,
+  but
+  what
+  is
+  that?
+  Part
+  of
+  what?
+  Maybe
+  I
+  shouldn't
+  say
+  that.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  So
+  let
+  me
+  just
+  draw
+  this
+  so
+  you
+  know
+  how
+  it
+  works
+  right
+  here.
+
+Customer:
+  Is
+  it
+  in
+  the
+  furnace?
+
+Alex - Oleksiy Yakovchuk:
+  It's.
+  It's
+  part
+  of
+  that
+  whole
+  system.
+  Correct.
+  So
+  it's
+  all
+  connected.
+  It's
+  all
+  connected.
+  Okay.
+  And
+  then
+  the
+  furnace,
+  where
+  the
+  coil
+  is,
+  it
+  connects
+  to
+  the
+  outside.
+
+Customer:
+  Okay,
+  okay,
+  okay.
+
+Alex - Oleksiy Yakovchuk:
+  But
+  I
+  also
+  did
+  energy
+  efficiency
+  analysis.
+  You
+  were
+  overpaying
+  about
+  8%
+  because
+  of
+  the
+  conditioning
+  system.
+  That
+  second
+  system,
+  air
+  conditioning
+  and
+  coil
+  are
+  new.
+  So.
+  So
+  you
+  have
+  just
+  the
+  inducer
+  motor,
+  1084.
+  And
+  you
+  do
+  have
+  that
+  heat
+  exchanger
+  that's
+  coming
+  up
+  in
+  the
+  future.
+  But
+  just
+  that
+  heat
+  exchanger
+  is
+  going
+  to
+  be
+  around
+  6500.
+
+Customer:
+  So
+  why
+  is
+  it
+  1084
+  if
+  it's
+  new?
+
+Alex - Oleksiy Yakovchuk:
+  So
+  the
+  furnace
+  is
+  original.
+  They
+  replaced
+  the
+  AC
+  portion.
+
+Customer:
+  That's
+  part
+  of
+  the
+  fur.
+  That's
+  part.
+  That
+  gets
+  me.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  Cuz
+  they
+  never
+  replaced
+  the
+  furnace.
+  Replace
+  the
+  condenser
+  and
+  it's
+  two
+  furnaces.
+
+Customer:
+  So
+  that's
+  why
+  you
+  have
+  front
+  page.
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  But
+  for
+  this
+  option,
+  you
+  know,
+  it
+  doesn't
+  cost
+  you
+  anything
+  to
+  at
+  least
+  get
+  somebody
+  out
+  here.
+  So
+  you
+  have
+  all
+  that
+  information
+  and
+  then
+  you
+  can
+  kind
+  of,
+  you
+  know,
+  have
+  something
+  to
+  compare
+  and
+  contrast
+  with.
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  Okay.
+  That's
+  something
+  you
+  guys
+  want
+  to
+  see.
+  What,
+  what
+  something
+  like
+  that
+  would
+  look
+  like.
+  Get
+  all
+  your
+  options
+  kind
+  of,
+  you
+  know,
+  compare,
+  contrast
+  the
+  two.
+
+Customer:
+  But
+  that
+  is
+  my
+  options.
+  Right.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  this
+  last
+  option
+  is
+  prices
+  for
+  the
+  whole
+  system
+  replacement.
+
+Customer:
+  Right.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  that
+  way
+  you
+  have
+  that
+  information,
+  but
+  they
+  don't
+  give
+  me
+  access
+  to
+  that
+  information.
+
+Customer:
+  Oh,
+  I
+  have
+  that
+  information
+  because
+  they
+  came
+  out
+  here
+  when
+  it
+  broke.
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  From
+  us
+  yeah.
+
+Customer:
+  Should
+  be
+  in
+  your
+  system
+  because
+  they
+  came
+  out
+  here
+  and
+  did
+  that
+  and
+  gave
+  me
+  options
+  to
+  buy
+  the
+  whole
+  new
+  system.
+
+Alex - Oleksiy Yakovchuk:
+  You
+  have
+  our
+  equipment
+  specialists
+  out
+  here.
+
+Customer:
+  I
+  don't
+  know
+  what
+  you
+  want
+  to
+  call
+  them,
+  but
+  it
+  was
+  from
+  your
+  company.
+  Because
+  I
+  was
+  gonna
+  go
+  with
+  them
+  until
+  I
+  got
+  that
+  price.
+  And
+  I'm
+  like,
+  I
+  think
+  I'm
+  gonna
+  go
+  with
+  the
+  warranty.
+  They
+  even
+  suggest.
+  Yeah,
+  if
+  you
+  go
+  to
+  get
+  it.
+
+Alex - Oleksiy Yakovchuk:
+  How
+  much
+  did
+  you
+  pay
+  with
+  the
+  warranty,
+  if
+  you
+  don't
+  mind
+  me
+  asking
+  for
+  the
+  outside?
+
+Customer:
+  Grand.
+
+Alex - Oleksiy Yakovchuk:
+  Five
+  grand
+  for
+  both.
+  Yeah.
+  So
+  that's
+  only
+  half
+  the
+  system.
+  I
+  don't
+  ever
+  see
+  a
+  quote
+  from
+  us.
+  I
+  see
+  that
+  they've
+  offered.
+
+Customer:
+  It
+  came
+  to
+  like
+  $17,000.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  I
+  know
+  I
+  gotta
+  see.
+  I
+  think
+  that
+  was
+  just
+  a
+  technician
+  clothing.
+  So
+  they're
+  not
+  gonna
+  have
+  the
+  accurate
+  information
+  because
+  they
+  quit.
+  The
+  equipment
+  specialists
+  are
+  the
+  ones
+  that
+  price
+  that
+  out.
+  Because
+  if
+  it
+  was
+  a
+  technician
+  that
+  came
+  out
+  here
+  and
+  he.
+  Because
+  we
+  don't
+  get
+  access
+  to
+  that
+  price
+  book.
+  So
+  they're
+  probably
+  just
+  ballparking
+  it.
+
+Customer:
+  But
+  yeah,
+  somebody
+  else
+  called
+  me,
+  he
+  came
+  out,
+  did
+  all
+  that
+  stuff,
+  and
+  somebody
+  else
+  called
+  me
+  from
+  your
+  company.
+
+Alex - Oleksiy Yakovchuk:
+  Let
+  me
+  take
+  a
+  look,
+  because
+  I
+  do
+  see
+  you
+  had
+  a
+  estimate
+  from
+  Ryan,
+  but
+  it
+  was
+  canceled.
+  Now
+  it's
+  August
+  20th
+  of
+  2025.
+  I
+  don't
+  see
+  any,
+  like,
+  full
+  final
+  prices.
+  Typically
+  when
+  they
+  put
+  a
+  price
+  in,
+  they'll
+  show
+  up
+  on
+  here.
+
+Customer:
+  It
+  was
+  high.
+  Yeah,
+  I
+  know.
+  And
+  that
+  was
+  just
+  for
+  the
+  one
+  unit,
+  right?
+  So
+  the
+  one
+  I
+  had
+  replaced.
+  That's
+  what
+  I
+  said.
+  Nah,
+  I'm
+  just
+  gonna
+  go
+  with
+  the
+  warranty
+  company
+  that
+  I
+  have.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  well,
+  I
+  mean,
+  right
+  now
+  they
+  are
+  in
+  their
+  slow
+  season,
+  too.
+  They're
+  going
+  to
+  be
+  able
+  to
+  work
+  out
+  probably
+  something
+  with
+  you,
+  you
+  know,
+  it
+  wouldn't
+  hurt.
+  At
+  least
+  get
+  those
+  options
+  so
+  you
+  know
+  what
+  you're
+  looking
+  at.
+  But
+  like
+  I
+  said,
+  if
+  I
+  had,
+  you
+  know,
+  something
+  in
+  my
+  history
+  where
+  you
+  have
+  a
+  set
+  price,
+  then
+  maybe,
+  like,
+  can't
+  just
+  take
+  it
+  from
+  there.
+  But
+  yeah,
+  then
+  I
+  don't
+  see
+  a
+  full
+  set
+  price
+  in
+  my
+  history.
+  So,
+  you
+  know,
+  if
+  we
+  get
+  somebody
+  out
+  here,
+  they
+  can
+  at
+  least
+  go.
+
+Customer:
+  Gave
+  it
+  to
+  me.
+  So
+  that's
+  how
+  I
+  know.
+  I
+  know
+  it
+  was
+  $17,000.
+  And
+  I'm
+  like,
+  that's
+  a
+  lot
+  of
+  money.
+  So
+  I'm
+  gonna
+  go
+  with
+  the
+  warranty,
+  pay
+  roughly
+  five
+  grand
+  and
+  get
+  this
+  thing
+  fixed.
+  When
+  the
+  other
+  one
+  break.
+  The
+  other
+  one
+  break,
+  I'm
+  gonna
+  have
+  to
+  do
+  the
+  same
+  thing
+  over
+  again.
+
+Alex - Oleksiy Yakovchuk:
+  Do
+  they
+  give
+  you
+  warranties
+  with
+  that
+  system
+  or
+  what's
+  like
+  what
+  do
+  you,
+  what?
+
+Customer:
+  Oh,
+  it's
+  nothing
+  much.
+  One
+  year
+  on
+  something
+  is
+  one
+  year,
+  something
+  is
+  five
+  years,
+  I
+  believe.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  it's
+  five
+  year
+  parts,
+  one
+  year
+  labor.
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  when
+  we
+  replace
+  the
+  system,
+  we
+  give
+  you
+  10
+  your
+  parts,
+  three
+  years
+  labor.
+
+Customer:
+  Yeah.
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  I
+  mean
+  would
+  you
+  want
+  to
+  see
+  what
+  something
+  like
+  that
+  looks
+  like
+  at
+  today's
+  pricing?
+  Because
+  I
+  mean,
+  you
+  might
+  be
+  able
+  to
+  negotiate
+  with
+  them
+  and
+  see
+  what
+  they
+  can
+  do
+  for
+  you.
+  At
+  least
+  that
+  way
+  you
+  have
+  that
+  information.
+  Cuz
+  I
+  don't
+  want,
+  you
+  know,
+  with
+  this
+  information
+  repair.
+  Yeah.
+  Cuz
+  you're
+  not
+  going
+  to
+  have,
+  you
+  know,
+  the
+  full
+  picture
+  without,
+  you
+  know,
+  seeing
+  what
+  they're
+  doing.
+  At
+  least
+  that
+  way
+  you
+  can
+  have
+  an
+  idea
+  and
+  you
+  know,
+  kind
+  of
+  make
+  a
+  decision
+  from
+  there.
+
+Customer:
+  Well,
+  I
+  kind
+  of
+  have
+  an
+  idea.
+  Let
+  me
+  think
+  about
+  it.
+  Yeah,
+  and
+  I'll
+  let
+  them
+  know
+  I
+  want
+  them
+  to
+  come
+  out
+  and
+  do
+  all
+  that.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  So
+  for
+  them
+  to
+  come
+  out,
+  I
+  would
+  have
+  to
+  also
+  submit
+  this
+  file
+  to
+  them
+  so
+  they
+  know
+  what
+  they're
+  walking
+  into.
+  Because
+  without
+  this,
+  you
+  know,
+  my
+  file
+  going
+  to
+  them,
+  they're
+  not
+  gonna
+  know
+  what
+  they're
+  walking
+  into,
+  what's
+  going
+  on.
+  Because
+  they
+  could
+  better
+  tailor
+  it,
+  you
+  know,
+  to
+  what
+  you
+  need
+  based
+  off
+  the
+  information.
+
+Customer:
+  Are
+  you
+  leaving
+  me
+  a
+  copy
+  of
+  that?
+
+Alex - Oleksiy Yakovchuk:
+  So
+  this
+  I
+  do
+  have
+  to
+  turn
+  into
+  my
+  manager.
+  Okay,
+  but
+  so
+  we
+  have
+  a
+  different
+  department,
+  they
+  have
+  a
+  separate
+  manager.
+  But
+  for
+  something
+  like
+  this,
+  I
+  mean,
+  you
+  don't
+  have
+  time
+  today
+  for
+  them
+  to
+  come
+  out
+  and
+  go
+  over
+  that
+  with
+  you.
+
+Customer:
+  No,
+  definitely
+  not.
+  No,
+  no.
+  And
+  I
+  would.
+  I'll
+  talk
+  to
+  my
+  daughter
+  and
+  stuff.
+
+Alex - Oleksiy Yakovchuk:
+  Let
+  me
+  see.
+
+Customer:
+  But
+  you're
+  not
+  leaving
+  me
+  a
+  copy
+  of
+  that.
+
+Alex - Oleksiy Yakovchuk:
+  I'm
+  gonna
+  email
+  all
+  this
+  over.
+
+Customer:
+  Oh,
+  that's
+  good.
+  That's
+  all
+  I
+  want
+  to
+  do
+  right
+  now.
+
+Alex - Oleksiy Yakovchuk:
+  Of
+  course.
+
+Customer:
+  That's
+  it.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  And
+  your
+  daughter,
+  if
+  you
+  guys
+  go
+  this
+  route,
+  is
+  she
+  going
+  to
+  want
+  to
+  be
+  involved
+  in
+  that
+  conversation?
+
+Customer:
+  No,
+  she
+  gonna
+  be
+  involved
+  in
+  the
+  money
+  part
+  of
+  it,
+  so.
+
+Alex - Oleksiy Yakovchuk:
+  Right,
+  yeah,
+  yeah.
+  So
+  I
+  do
+  need
+  a
+  signature
+  here
+  that
+  went
+  over
+  this
+  with
+  you.
+  Do
+  you
+  want
+  me
+  to
+  give
+  you
+  a
+  call
+  in
+  a
+  couple
+  days
+  a
+  week
+  to
+  check
+  in?
+  Gives
+  you
+  some
+  time
+  to
+  talk
+  to
+  your
+  daughter.
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  When
+  would
+  be
+  a
+  good
+  time
+  to
+  call
+  you?
+
+Customer:
+  Like
+  a
+  couple
+  days
+  from
+  now,
+  you
+  know.
+  Oh,
+  oh,
+  time
+  wise
+  during
+  the
+  day?
+  I
+  don't
+  know.
+  But
+  yeah,
+  couple
+  days.
+  Couple
+  days,
+  yeah,
+  like
+  Tuesday
+  or
+  whatever.
+  She'll
+  probably
+  come
+  over
+  this
+  weekend
+  so.
+
+Alex - Oleksiy Yakovchuk:
+  Give
+  you
+  a
+  call
+  Tuesday
+  Then
+  okay.
+  Yeah,
+  so
+  I'll
+  call
+  you
+  next
+  Tuesday
+  morning.
+  Afternoon.
+
+Customer:
+  Afternoon.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  I'll
+  give
+  you
+  a
+  call
+  Tuesday
+  afternoon,
+  check
+  in
+  with
+  you
+  guys
+  if
+  that's
+  something
+  you
+  guys
+  still
+  want
+  to
+  do.
+  You
+  know,
+  we'll
+  get
+  the
+  equipment
+  specialist
+  out
+  here,
+  go
+  over
+  the
+  option
+  with
+  you.
+  Or
+  if
+  you
+  guys
+  want
+  to
+  do
+  repairs,
+  I
+  can
+  order
+  the
+  parts
+  and
+  come
+  back
+  out.
+
+Customer:
+  Yeah.
+  Okay.
+  The
+  only
+  thing
+  I
+  will
+  probably
+  do
+  is
+  tell
+  you
+  whether
+  or
+  not
+  I
+  want
+  the.
+
+Alex - Oleksiy Yakovchuk:
+  The
+  pricing.
+
+Customer:
+  Yeah.
+  For
+  the
+  other
+  thing.
+  Because
+  I
+  have
+  nothing
+  to
+  compare
+  it
+  to,
+  just
+  looking
+  at
+  that.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  But
+  also,
+  at
+  least
+  with
+  the
+  pricing,
+  you
+  know,
+  you
+  have
+  the
+  other
+  people's
+  prices
+  too,
+  you
+  can
+  at
+  least
+  compare.
+  There
+  are
+  prices,
+  different
+  estimates,
+  so.
+
+Customer:
+  I
+  know.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+
+Customer:
+  So
+  I'll
+  check
+  it
+  out
+  and
+  see
+  what's
+  what.
+
+Alex - Oleksiy Yakovchuk:
+  All
+  right.
+  And
+  yeah,
+  so
+  talk
+  to
+  your
+  daughter.
+  I'll
+  give
+  you
+  a
+  call
+  Tuesday.
+  We'll
+  go
+  from
+  there.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Any
+  questions
+  for
+  me
+  or
+  anything?
+
+Customer:
+  No,
+  it's
+  a
+  lot.
+
+Alex - Oleksiy Yakovchuk:
+  There's
+  a
+  lot
+  of
+  information.
+
+Customer:
+  Yeah,
+  he
+  was
+  broke,
+  I
+  was
+  working.
+  Or
+  see
+  how
+  much
+  it
+  cost.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  of
+  course.
+  And
+  for
+  stuff
+  like
+  this
+  too,
+  if
+  you
+  ever
+  get
+  this
+  option,
+  they
+  really
+  have
+  painting
+  plans
+  for
+  you
+  guys.
+  So
+  you
+  have
+  to
+  like
+  pay
+  straight
+  out
+  of
+  the
+  pocket.
+  A
+  lot
+  of
+  people
+  go
+  that
+  route
+  as
+  well.
+  And
+  you
+  said
+  somebody
+  called
+  you
+  from
+  our
+  company?
+
+Customer:
+  Yeah,
+  after
+  the
+  guy
+  came
+  out,
+  he
+  called
+  me
+  several
+  times.
+
+Alex - Oleksiy Yakovchuk:
+  True.
+  Remember
+  who
+  you
+  spoke
+  with
+  or.
+  No,
+  no
+  signature.
+  Cuz
+  typically
+  they
+  don't
+  give
+  us
+  technicians
+  access
+  to
+  that
+  information.
+  So
+  you
+  have
+  to
+  have
+  an
+  equipment
+  specialist
+  come
+  out
+  to
+  size
+  it
+  all.
+
+Customer:
+  Up
+  close
+  it
+  was
+  17.
+  That's
+  in
+  my
+  mind.
+
+Alex - Oleksiy Yakovchuk:
+  So
+  yeah.
+  Yeah.
+  Cuz
+  like
+  I
+  said
+  right
+  now.
+  We'll
+  talk
+  Tuesday,
+  see
+  what
+  you
+  want
+  to
+  do.
+  Right
+  now
+  they're
+  going
+  to
+  have
+  more
+  room
+  to
+  negotiate
+  with
+  them.
+  So
+  I
+  just
+  want
+  to
+  help
+  you
+  out.
+  Cuz
+  summer
+  comes
+  around,
+  manufacturers
+  tend
+  to
+  rise
+  their
+  prices.
+  Oh,
+  I
+  know
+  all
+  that
+  goes
+  up.
+
+Customer:
+  Anyway.
+  At
+  least
+  I
+  had
+  a
+  warranty.
+  It
+  helps.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  But
+  yeah.
+  Okay.
+  Anything
+  else
+  for
+  me?
+
+Customer:
+  Nope.
+
+Alex - Oleksiy Yakovchuk:
+  Thank
+  you
+  so
+  much.
+
+Customer:
+  So
+  did
+  you
+  do.
+  Oh,
+  I
+  do
+  have.
+  Do
+  you.
+  Did
+  you
+  do
+  anything?
+  What
+  did
+  you
+  do?
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+
+Customer:
+  So
+  they
+  needed
+  any
+  cooling
+  or.
+
+Alex - Oleksiy Yakovchuk:
+  Oh
+  no.
+  So
+  the
+  coolant,
+  if
+  it's
+  ever
+  leaking,
+  coolant,
+  that's
+  not
+  good,
+  then
+  that
+  means
+  it
+  has
+  a
+  leak.
+  The
+  coolant
+  we
+  check
+  in
+  the
+  summertime
+  what
+  we
+  do
+  today
+  on
+  the
+  furnace,
+  we
+  check
+  all
+  the
+  components,
+  make
+  sure
+  it's
+  all
+  working.
+  And
+  we
+  clean
+  your
+  flame
+  sensor.
+  So
+  these
+  are
+  your
+  flame
+  sensors.
+  Here,
+  let
+  me
+  show
+  you.
+  So
+  we
+  clean
+  these
+  sensors
+  off
+  to
+  make
+  sure
+  they
+  weren't
+  that
+  dirty
+  to
+  begin
+  with.
+  But
+  if
+  it
+  gets
+  built
+  up,
+  the
+  other
+  one's
+  a
+  little
+  dirtier.
+  Let
+  me
+  show
+  you.
+  The
+  other
+  one
+  was.
+
+Customer:
+  So
+  it
+  didn't
+  need
+  any
+  kind
+  of
+  special
+  fluids
+  or
+  anything
+  like
+  that?
+
+Alex - Oleksiy Yakovchuk:
+  No.
+  Like
+  I
+  said,
+  the
+  most
+  immediate
+  thing
+  you
+  do
+  have
+  going
+  on
+  is
+  maybe
+  those
+  inducer
+  motors,
+  because
+  when
+  they
+  pull
+  high
+  amounts
+  of
+  power
+  like
+  that,
+  it's.
+  It's
+  gonna
+  go
+  out
+  at
+  some
+  point.
+  But
+  you
+  can
+  see
+  here,
+  you
+  can
+  see
+  how
+  it
+  has
+  a
+  little
+  bit
+  of
+  build
+  up
+  on
+  here.
+  We
+  do
+  clean
+  these
+  off
+  to
+  make
+  sure
+  that
+  your.
+  Your
+  sensor
+  can
+  sense
+  the
+  flame
+  and
+  the
+  furnace
+  could
+  keep
+  running
+  because
+  this
+  gets
+  too
+  built
+  up.
+
+Customer:
+  Okay.
+  Yeah,
+  I
+  just
+  want
+  to.
+  The
+  maintenance
+  was
+  about.
+
+Alex - Oleksiy Yakovchuk:
+  In
+  the
+  summertime,
+  we
+  clean
+  the
+  outside
+  condenser
+  coils,
+  but
+  the
+  winter
+  time,
+  we
+  clean
+  the
+  flame
+  sensors
+  got.
+  So
+  that's
+  what
+  we
+  take
+  care
+  of
+  in
+  the
+  winter.
+
+Customer:
+  All
+  righty.
+
+Alex - Oleksiy Yakovchuk:
+  Anything
+  else
+  for
+  me?
+
+Customer:
+  Nope.
+
+Alex - Oleksiy Yakovchuk:
+  What's
+  your
+  thoughts
+  on
+  all
+  of
+  this?
+
+Customer:
+  None.
+
+Alex - Oleksiy Yakovchuk:
+  None.
+
+Customer:
+  I
+  just
+  being
+  honest.
+
+Alex - Oleksiy Yakovchuk:
+  None.
+  Yeah,
+  of
+  course.
+  I.
+  I
+  respect
+  honesty.
+  So.
+  Yeah.
+
+Customer:
+  Yeah.
+  So.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  we'll
+  talk
+  Tuesday
+  there.
+  Okay.
+
+Customer:
+  Okay.
+
+Alex - Oleksiy Yakovchuk:
+  Thank
+  you.
+
+Customer:
+  Nice
+  to
+  meet
+  you.
+
+Alex - Oleksiy Yakovchuk:
+  Nice
+  to
+  meet
+  you.
+
+Customer:
+  Nice
+  to
+  meet
+  you.
+
+Alex - Oleksiy Yakovchuk:
+  Thank
+  you.
+  I'm
+  just
+  going
+  to
+  grab
+  my
+  ladder
+  and
+  we'll
+  see
+  you.
+  Oh,
+  yeah,
+  yeah,
+  we'll
+  talk
+  Tuesday.
+  Okay.
+
+Customer:
+  All
+  right.
+
+Alex - Oleksiy Yakovchuk:
+  Actually,
+  hey,
+  Ben,
+  can
+  you
+  close
+  that
+  ladder
+  up?
+
+Customer:
+  Oh,
+  yeah.
+
+Alex - Oleksiy Yakovchuk:
+  Your
+  ladder.
+  Before
+  I
+  leave,
+  I
+  want
+  to
+  confirm
+  your.
+  Your
+  phone
+  number
+  and
+  email.
+  So
+  this
+  going
+  to
+  be
+  a
+  good
+  number
+  to
+  call
+  you
+  on
+  Tuesday?
+
+Customer:
+  Yeah,
+  that's
+  my
+  daughter.
+  My
+  other
+  daughter.
+  That's
+  my
+  daughter's
+  number.
+  The
+  other
+  one
+  I
+  talking.
+  Okay.
+  Yeah,
+  that's
+  good.
+
+Alex - Oleksiy Yakovchuk:
+  And
+  then
+  this
+  is
+  a
+  good
+  email.
+
+Customer:
+  Yep.
+
+Alex - Oleksiy Yakovchuk:
+  Okay,
+  so
+  I'll
+  email
+  everything
+  over
+  to
+  here
+  and
+  we.
+  We'll
+  give
+  you
+  a
+  call
+  Tuesday.
+
+Customer:
+  Okay,
+  cool.
+  All
+  right.
+  Thank
+  you.
+
+Alex - Oleksiy Yakovchuk:
+  No
+  problem.
+
+Customer:
+  See,
+  I
+  might
+  have
+  to
+  paint
+  up
+  there
+  once
+  all
+  this
+  gets
+  finished.
+  Terrible.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah.
+  Like
+  the
+  wallpaper.
+  Where?
+  Right
+  here.
+  Oh,
+  this
+  tile?
+
+Customer:
+  Yeah.
+
+Alex - Oleksiy Yakovchuk:
+  Very
+  nice.
+  Couldn't
+  even
+  tell.
+  You
+  did
+  a
+  really
+  good
+  job
+  with
+  this
+  house.
+
+Customer:
+  Oh,
+  thank
+  you.
+
+Alex - Oleksiy Yakovchuk:
+  Yeah,
+  all
+  the
+  artwork
+  is
+  very
+  good
+  with
+  the
+  whole
+  aesthetic
+  of
+  the
+  home.
+  I
+  could
+  see
+  why
+  did
+  an
+  interior
+  design,
+  you
+  know,
+  like
+  decoration.
+  Interior
+  decoration.
+
+Customer:
+  You
+  ask
+  me
+  about
+  that.
+  I
+  got
+  you.
+  You
+  ask
+  me
+  about
+  furnace.
+
+Alex - Oleksiy Yakovchuk:
+  Right
+  there.
+  Thank
+  you.
+  Thank
+  you.
+  Have
+  a
+  good
+  one.
+
+Customer:
+  It.
+
+Alex - Oleksiy Yakovchuk:
+  That
+  door
+  is
+  open.
+  Huh.
+  Did
+  you
+  notice
+  when
+  that.
+  When
+  that
+  all
+  went
+  wrong?

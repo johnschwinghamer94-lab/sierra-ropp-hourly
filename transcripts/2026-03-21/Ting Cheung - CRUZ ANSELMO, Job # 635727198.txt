@@ -1,0 +1,1843 @@
+TRANSCRIPT
+Rep:      Ting Cheung
+Date:     2026-03-21
+Duration: 85 min
+RecId:    c4c1963a-cf2c-4725-ac51-2ef74cb0fe84-kBmcjj1ucbYoWgDqILgiXfkLNzP2
+Job:      CRUZ ANSELMO, Job # 635727198
+============================================================
+
+
+Customer:
+  Fernando.
+  Yeah.
+
+Ting Cheung:
+  All
+  right.
+  Nice
+  to
+  meet
+  you,
+  man.
+  Name's
+  Ting.
+  Okay.
+  All
+  right.
+  How
+  are
+  we
+  doing?
+  Good,
+  how
+  are
+  you?
+  All
+  right.
+  It's
+  my
+  truck.
+  Park
+  right
+  there.
+
+Customer:
+  Okay?
+
+Ting Cheung:
+  Yeah,
+  yeah.
+
+Customer:
+  You're
+  good?
+
+Ting Cheung:
+  All
+  right,
+  perfect.
+  May
+  I
+  come
+  inside,
+  Sierra,
+  of
+  course.
+  Can
+  I
+  cover
+  and
+  hold
+  this
+  real
+  quick?
+  Thank
+  you,
+  sir.
+
+Customer:
+  I
+  need
+  two
+  covers
+  real
+  quick.
+
+Ting Cheung:
+  What
+  you
+  got
+  there
+  is
+  a
+  little
+  agenda
+  sheet.
+  This
+  is
+  what
+  you
+  can
+  expect
+  from
+  me
+  today.
+  May,
+  take
+  a
+  look
+  at
+  your
+  system.
+  I'll
+  do
+  a
+  thorough
+  evaluation
+  of
+  it.
+  I'll
+  focus
+  on
+  three
+  things.
+  Cleanliness,
+  functionality,
+  and
+  most
+  importantly,
+  safety.
+  Okay.
+  Okay.
+  If
+  I
+  notice
+  anything
+  that
+  needs
+  your
+  concern,
+  would
+  you
+  want
+  me
+  to
+  let
+  you
+  know?
+  Yeah.
+  All
+  right,
+  perfect.
+  After
+  that,
+  I'll
+  step
+  in
+  my
+  van
+  for
+  about
+  20
+  minutes.
+  I'll
+  just
+  put
+  together
+  the
+  system's
+  health
+  and
+  I'll
+  report
+  that
+  back
+  to
+  you.
+  Okay?
+  Okay.
+  Won't
+  do
+  any
+  work
+  without
+  your
+  approval.
+  If
+  there's
+  work
+  to
+  be
+  done,
+  we
+  can
+  definitely
+  get
+  that
+  started
+  today.
+  Once
+  again,
+  my
+  name
+  is
+  Ting.
+  I'm
+  here
+  to
+  give
+  you
+  a
+  five
+  star
+  experience.
+  So
+  if
+  any
+  point
+  you
+  feel
+  like
+  I'm
+  not
+  meeting
+  that
+  boss,
+  you
+  let
+  me
+  know.
+  Okay?
+
+Customer:
+  All
+  right.
+
+Ting Cheung:
+  Give
+  me
+  a
+  rundown
+  what's
+  going
+  on,
+  boss?
+
+Customer:
+  So
+  I
+  have
+  a
+  friend
+  that
+  used
+  to
+  be
+  an
+  AC
+  tech.
+
+Ting Cheung:
+  Yes,
+  sir.
+
+Customer:
+  He
+  installed
+  the
+  outside
+  unit.
+  The
+  condenser
+  operator.
+  It
+  was
+  about
+  last
+  year.
+
+Ting Cheung:
+  Last
+  year.
+  So
+  this
+  is
+  brand
+  new.
+
+Customer:
+  The
+  actual
+  condenser
+  isn't
+  brand
+  new.
+  Okay.
+  Probably
+  like
+  four
+  years
+  old.
+
+Ting Cheung:
+  So
+  new
+  furnace.
+
+Customer:
+  New
+  furnace.
+
+Ting Cheung:
+  Okay.
+
+Customer:
+  New,
+  new
+  evaporator.
+  So
+  the.
+  The
+  condenser
+  is
+  a
+  few
+  years
+  old.
+  That
+  one
+  is
+  new.
+  The
+  problem
+  I
+  was
+  having,
+  I
+  thought
+  it
+  was
+  a
+  capacitor.
+  I
+  measured.
+  It
+  has
+  two
+  in
+  the
+  condenser.
+
+Ting Cheung:
+  Okay.
+  You
+  already
+  checked
+  it
+  out?
+  I
+  checked.
+
+Customer:
+  I
+  checked
+  out
+  the
+  condenser.
+  One
+  of
+  them
+  was
+  that
+  it
+  was
+  measuring
+  like
+  10.
+  Was
+  it
+  microfarads?
+  And
+  it
+  was
+  an
+  80.
+  So
+  I
+  changed
+  that
+  one
+  out.
+
+Ting Cheung:
+  Okay.
+
+Customer:
+  And
+  took
+  picture.
+  Did
+  all
+  the
+  wiring
+  how
+  it
+  was.
+  I
+  don't
+  know
+  if
+  it
+  was
+  correct.
+  It
+  turned
+  on.
+  I
+  was
+  like.
+  I
+  thought
+  that
+  was
+  a
+  problem.
+
+Ting Cheung:
+  Okay.
+
+Customer:
+  Next
+  day,
+  off
+  again.
+
+Ting Cheung:
+  Breaker
+  or
+  not
+  turning
+  on
+  at
+  all?
+
+Customer:
+  Not
+  turning
+  on.
+  And
+  it
+  tripped
+  the
+  fan
+  breaker.
+
+Ting Cheung:
+  The
+  fan
+  breaker.
+  Fan.
+
+Customer:
+  Breaker.
+  Not
+  ac.
+  Breaker.
+  Fan.
+  I
+  don't
+  know.
+  It's
+  marked
+  fan
+  on
+  there.
+  I'm
+  guessing
+  when
+  I
+  turned
+  it
+  off,
+  it
+  turned
+  off
+  the
+  power
+  in
+  the
+  evaporator
+  unit.
+
+Ting Cheung:
+  Okay.
+  So
+  it
+  had.
+
+Customer:
+  I'm
+  pretty
+  sure.
+
+Ting Cheung:
+  Okay.
+  The
+  120.
+  Okay.
+
+Customer:
+  So
+  recently
+  he
+  just
+  told
+  me,
+  check
+  the
+  24
+  volts
+  what's
+  your
+  friend
+  today?
+  He's
+  home.
+  He's.
+  I
+  don't
+  know
+  what
+  he's
+  doing.
+  It's
+  because
+  I
+  work.
+  He's
+  a
+  welder
+  now.
+  I
+  worked
+  with
+  him.
+  Yeah,
+  he
+  used
+  to
+  be.
+  So
+  now
+  he's
+  always
+  working
+  and
+  stuff,
+  so
+  I
+  can't
+  check
+  it
+  out.
+  But
+  he
+  usually
+  will,
+  like,
+  tell
+  me
+  what
+  to
+  do.
+  And
+  he
+  just
+  told
+  me
+  to
+  check
+  the
+  20
+  if
+  it's
+  getting
+  24
+  volts
+  to
+  the
+  contactor.
+  And
+  it
+  was.
+  Yeah.
+  So
+  he's
+  like,
+  okay.
+  So
+  it's
+  probably
+  the
+  thermostat.
+  And
+  this.
+
+Ting Cheung:
+  Is
+  this
+  the
+  only
+  thermostat
+  in
+  the
+  hole?
+  Yes,
+  it's
+  the.
+
+Customer:
+  There.
+  Right.
+  But
+  he.
+  I
+  was,
+  like,
+  telling
+  him
+  everything,
+  and
+  he's
+  like,
+  it
+  might.
+  It
+  sounds
+  to
+  him.
+  He
+  wasn't
+  even
+  here.
+  It
+  was
+  just
+  the
+  information
+  to
+  him.
+  He
+  said
+  it
+  sounds.
+  It
+  could
+  be
+  like
+  a
+  high
+  or
+  low
+  pressure
+  switch
+  that
+  stopping
+  it
+  from
+  turning
+  on.
+
+Ting Cheung:
+  Maybe
+  it's
+  leaking,
+  not
+  sure.
+  Okay.
+  If
+  you
+  pop
+  up
+  there,
+  it's
+  actually
+  attic.
+
+Customer:
+  The
+  attic
+  access
+  is
+  right
+  here.
+
+Ting Cheung:
+  How
+  long
+  have
+  you
+  lived
+  here
+  for?
+
+Customer:
+  About
+  two
+  years.
+
+Ting Cheung:
+  Okay,
+  and
+  you're
+  renting
+  it
+  from.
+
+Customer:
+  Yes,
+  I'm
+  renting
+  it
+  from
+  Cruz.
+  Yeah,
+  he's
+  my
+  friend.
+
+Ting Cheung:
+  He's
+  your
+  friend?
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  Okay.
+
+Customer:
+  Okay.
+
+Ting Cheung:
+  All
+  right.
+  There.
+  Where
+  does
+  that
+  go?
+  Where
+  does
+  that
+  other
+  one
+  go?
+  Oh,
+  you
+  have
+  no
+  idea.
+
+Customer:
+  I
+  didn't
+  even
+  know.
+  Perfect.
+
+Ting Cheung:
+  All
+  that.
+
+Customer:
+  That's
+  the
+  lights.
+  Oh,
+  that's
+  so.
+
+Ting Cheung:
+  Oh,
+  that's
+  just
+  funny.
+
+Customer:
+  Okay.
+
+Ting Cheung:
+  And
+  where
+  are
+  your
+  filters
+  located?
+
+Customer:
+  Boss,
+  filters
+  are
+  up
+  there.
+  I
+  was
+  gonna
+  change
+  them
+  the
+  other
+  day,
+  I
+  think.
+  Cruisermo
+  Cruise
+  homeowner.
+  Yeah,
+  the
+  tall
+  ladder.
+
+Ting Cheung:
+  Okay.
+  Was
+  the
+  homeowner.
+  Does
+  he
+  live
+  here
+  or,
+  like,
+  around
+  here?
+
+Customer:
+  He
+  lives
+  close
+  here,
+  kind
+  of
+  probably
+  like,
+  15
+  minutes
+  away.
+  He
+  lives
+  close
+  to,
+  like,
+  Rampart
+  Casino.
+
+Ting Cheung:
+  Okay.
+  But.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  You
+  work
+  with
+  him
+  too?
+
+Customer:
+  No,
+  no,
+  no,
+  no.
+  He's
+  just
+  a
+  really,
+  really
+  good
+  friend.
+
+Ting Cheung:
+  Oh,
+  nice.
+
+Customer:
+  And
+  so
+  he
+  lets
+  me
+  rent
+  here.
+
+Ting Cheung:
+  That's
+  nice.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  And
+  the
+  two
+  years
+  you
+  live
+  here,
+  what
+  issues
+  have
+  you
+  noticed
+  in
+  the
+  past,
+  obviously,
+  since
+  you
+  guys
+  replaced
+  the
+  system
+  there.
+
+Customer:
+  Only
+  issue
+  was
+  that
+  when
+  I
+  replaced
+  the
+  evaporator,
+  the
+  evaporator
+  had
+  a
+  leak.
+  So
+  at
+  that
+  time,
+  I
+  replaced.
+
+Ting Cheung:
+  Did
+  you
+  guys
+  just
+  replace
+  the
+  coil
+  itself
+  or,
+  like,
+  the
+  entire
+  furnace?
+  Like
+  the
+  entire
+  air
+  handler,
+  just.
+
+Customer:
+  No,
+  the
+  entire
+  air
+  handle.
+
+Ting Cheung:
+  You
+  did?
+  Okay.
+  Yeah.
+
+Customer:
+  Okay.
+  But
+  the
+  fan
+  that
+  pushes
+  the
+  blower.
+  That's
+  the
+  old.
+  That's
+  the
+  old.
+  But
+  the.
+  The
+  furnace
+  is
+  new.
+  When
+  we
+  replace
+  that,
+  the
+  compressor
+  on
+  the
+  condenser
+  blew
+  out.
+
+Ting Cheung:
+  I
+  Don't
+  make
+  a
+  whole.
+  Sorry,
+  I
+  don't
+  make
+  a
+  whole
+  lot
+  of
+  sense
+  to
+  me.
+  Because
+  when
+  you
+  replace
+  the
+  air
+  handler,
+  the
+  blower
+  will
+  be
+  new
+  too,
+  correct?
+
+Customer:
+  Or.
+
+Ting Cheung:
+  Yeah,
+  well,
+  I'm.
+
+Customer:
+  This
+  is
+  the
+  part
+  I'm
+  not.
+  I
+  don't
+  know,
+  cuz
+  I'm
+  not
+  that
+  like,
+  familiar
+  with
+  it.
+
+Ting Cheung:
+  Yes,
+  sir.
+
+Customer:
+  It's
+  the
+  evaporator.
+  So
+  this
+  is
+  the
+  new.
+  The
+  evaporator.
+
+Ting Cheung:
+  If
+  I
+  move
+  that.
+  Yeah,
+  that's
+  the.
+  Okay,
+  so
+  just
+  the
+  coil
+  itself.
+  Okay,
+  so
+  the
+  air
+  handle
+  is
+  still
+  okay?
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  Okay,
+  so
+  it
+  was
+  just
+  the
+  evap.
+  Okay.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  Okay.
+
+Customer:
+  That's
+  the
+  part
+  that
+  got
+  replaced.
+
+Ting Cheung:
+  Okay.
+
+Customer:
+  Up
+  there.
+  That's
+  how
+  it
+  is.
+
+Ting Cheung:
+  Okay,
+  I
+  see
+  it.
+  It's
+  mismatching.
+  Okay.
+
+Customer:
+  So
+  that's
+  when
+  we
+  replaced.
+  And
+  also
+  this
+  commands
+  outside.
+
+Ting Cheung:
+  How
+  old
+  was
+  it
+  before
+  you
+  guys
+  slapped
+  that
+  one
+  in?
+
+Customer:
+  Yeah,
+  since.
+  I
+  don't
+  know.
+  I
+  don't
+  know.
+  I
+  didn't
+  ask.
+
+Ting Cheung:
+  Okay.
+
+Customer:
+  I
+  just
+  told
+  him
+  I'm
+  replacing
+  him.
+  He
+  was
+  like,
+  go
+  ahead.
+
+Ting Cheung:
+  Okay,
+  can
+  we
+  look
+  at
+  the
+  outside
+  system
+  real
+  quick?
+  All
+  right,
+  which
+  way
+  is
+  the
+  best
+  way?
+
+Customer:
+  So
+  just
+  because
+  of
+  the
+  dog,
+  if
+  you
+  need
+  me
+  to
+  like
+  open
+  the
+  gate.
+
+Ting Cheung:
+  I
+  don't
+  mind
+  dogs
+  here
+  if
+  they
+  can.
+  They
+  hold
+  screwdriver.
+  You're
+  a
+  welder
+  too?
+
+Customer:
+  Yeah,
+  I'm
+  a
+  welder.
+
+Ting Cheung:
+  Nice.
+
+Customer:
+  You
+  know
+  how
+  old
+  the
+  system
+  is
+  from
+  when
+  I.
+
+Ting Cheung:
+  Okay,
+  2012.
+  About
+  14
+  years
+  old.
+
+Customer:
+  2012.
+  But
+  the
+  lady,
+  I
+  got
+  it
+  from
+  her
+  husband's
+  ancient
+  tech
+  and
+  he
+  had.
+  He
+  had
+  these
+  brand
+  new
+  that
+  he's
+  got.
+  And
+  again,
+  the
+  2019,
+  like
+  2016
+  or
+  something
+  like
+  that.
+
+Ting Cheung:
+  Okay.
+
+Customer:
+  So
+  yeah,
+  it's
+  a
+  ton
+  sol,
+  but
+  it's
+  like
+  a
+  few
+  years
+  old
+  because
+
+Ting Cheung:
+  it
+  wasn't
+  packing,
+  it
+  wasn't
+  running,
+  but.
+
+Customer:
+  Yeah,
+  it
+  wasn't
+  running,
+  but
+  it's
+  a
+  2016.
+
+Ting Cheung:
+  Okay.
+  And
+  you
+  said
+  there's
+  power
+  to
+  this
+  right
+  now?
+  Yes.
+
+Customer:
+  I
+  don't
+  have
+  the
+  thermostat
+  on
+  because
+  I
+  didn't
+  want
+  that
+  forward
+  or,
+  you
+  know,
+  just
+  working
+  for
+  no
+  reason.
+
+Ting Cheung:
+  Yeah.
+  But
+  yeah,
+  especially
+  right
+  there.
+  Oh,
+  it's
+  a
+  nice
+  little
+  bar
+  right
+  here.
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  Pretty
+  cool.
+  I'll
+  wait
+  for
+  you.
+  Right?
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  Replaced
+  last
+  year.
+  Okay.
+  During
+  summertime
+  that
+  it
+  started
+  leaking
+  or.
+  Yeah,
+  yeah.
+  Usually
+  when
+  it
+  first.
+
+Customer:
+  The
+  hottest
+  times
+  around.
+
+Ting Cheung:
+  You're
+  talking
+  about.
+  This
+  is
+  the
+  120
+  you
+  said
+  this
+  trip
+  went.
+
+Customer:
+  Yes,
+  that
+  one
+  was
+  trip.
+
+Ting Cheung:
+  I
+  know
+  this
+  looks
+  like
+  fan,
+  but
+  it's
+  FAU.
+  It's
+  like
+  4th
+  Air
+  Unit.
+
+Customer:
+  I
+  thought
+  I
+  saw.
+
+Ting Cheung:
+  Yeah.
+  So
+  that
+  one
+  trip,
+  you
+  said
+  when
+  you
+  did.
+
+Customer:
+  When
+  you
+  did
+  what
+  When
+  I
+  changed
+  the
+  capacity.
+
+Ting Cheung:
+  You
+  changed
+  capacity?
+
+Customer:
+  Capacity.
+  I.
+  I
+  was
+  like,
+  why
+  isn't
+  it.
+  And
+  I
+  come
+  over
+  here.
+  I
+  was
+  like,
+  flipped
+  it.
+  And
+  then
+  after
+  I
+  flipped
+  it,
+  I
+  called
+  my
+  friend.
+  He's
+  like,
+  yeah,
+  you
+  should
+  probably.
+  Probably
+  shouldn't
+  have
+  done
+  it
+  because
+  there's
+  a
+  short
+  circuit
+  somewhere.
+  That's
+  the
+  reason
+  they
+  messed
+  with
+  the
+  breaker.
+  He's
+  like,
+  so
+  you
+  don't
+  want
+  to
+  accidentally
+  mess
+  up.
+  And
+  then
+  he
+  said.
+
+Ting Cheung:
+  He
+  said,
+  you
+  got
+  a
+  24.
+  4
+  short.
+
+Customer:
+  No,
+  you
+  didn't
+  say
+  that.
+  I
+  just
+  told
+  him
+  what
+  happened.
+  He
+  was
+  like,
+  oh,
+  you
+  should.
+  Probably
+  shouldn't
+  have
+  flipped
+  that.
+  That.
+  That
+  breaker.
+  He's
+  like,
+  you
+  never
+  know
+  what
+  could
+  have.
+  Could
+  have
+  made
+  that
+  go
+  off.
+  Yeah,
+  you
+  could
+  probably,
+  you
+  know,
+  mess
+  something
+  else
+  up
+  so
+  I
+  don't.
+
+Ting Cheung:
+  All
+  right,
+  let
+  me
+  just
+  take
+  a
+  look
+  at
+  everything.
+  I'll
+  start
+  on
+  the
+  outside,
+  and
+  I'll
+
+Customer:
+  make
+  my
+  way
+  inside.
+
+Ting Cheung:
+  Okay.
+  All
+  right.
+  You
+  got
+  any
+  questions
+  for
+  me
+  before
+  I
+  get
+  started?
+
+Customer:
+  Just
+  in
+  case,
+  like,
+  if
+  you
+  lose,
+  like.
+  Like
+  a
+  recharge,
+  do
+  you
+  guys
+  charge
+  for,
+  like,
+  pound?
+
+Ting Cheung:
+  We
+  do
+  charge
+  by
+  pound.
+
+Customer:
+  And
+  if
+  I
+  have
+  my
+  own
+  tank,
+  do
+  you
+  guys
+  charge
+  my
+  pound
+  or
+  is
+  it
+  the
+  same?
+
+Ting Cheung:
+  I
+  have
+  to
+  ask
+  my
+  manager
+  about
+  that.
+
+Customer:
+  I
+  do
+  have
+  a
+  tank
+  of
+  R410.
+
+Ting Cheung:
+  Oh,
+  this
+  is
+  on
+  R22?
+
+Customer:
+  Yeah.
+
+Ting Cheung:
+  Okay.
+  And
+  is
+  that
+  coil
+  rated
+  for
+  R20,
+  too?
+
+Customer:
+  Yes.
+
+Ting Cheung:
+  Okay.
+  Is
+  that
+  the
+  box
+  that
+  it
+  came
+  in?
+  No.
+
+Customer:
+  Okay.
+
+Ting Cheung:
+  All
+  right,
+  let
+  me
+  grab
+  my
+  tools.
+  I'll
+  start
+  on
+  the
+  outside.
+  If
+  you
+  have
+  any
+  questions,
+  feel
+  free
+  to
+  ask
+  me.
+  Okay.
+  All
+  right.
+  Sam,
+  It's.
+  Ra.
+  There.

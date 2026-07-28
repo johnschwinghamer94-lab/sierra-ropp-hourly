@@ -1,0 +1,3164 @@
+TRANSCRIPT
+Rep:      Francisco Arreola Jr.
+Date:     2026-01-03
+Duration: 57 min
+RecId:    ccbd5442-011a-4751-bb33-c052a9e5c85f-XYpMBXpv6TVg9okInQemgsAIw1B3
+Job:      Job # 623987686
+============================================================
+
+
+Customer:
+  It.
+  How
+  you
+  doing?
+
+Francisco Arreola Jr.:
+  How
+  you
+  doing?
+  Good.
+  Tracy
+  Rock,
+  my
+  name
+  is.
+  Nice
+  to
+  meet
+  you.
+
+Customer:
+  Nice
+  to
+  meet
+  you.
+  I
+  don't
+  know
+  if
+  you've
+  been
+  here
+  before
+  or
+  not.
+  Have
+  not.
+  Okay.
+
+Francisco Arreola Jr.:
+  So
+  what's
+  up?
+
+Customer:
+  You
+  wanted
+  to.
+  Okay.
+  What
+  happened?
+  There's
+  two
+  units
+  up
+  here.
+  They're
+  18
+  years
+  old.
+  You
+  guys
+  do.
+  They're
+  both
+  Brian's.
+  All
+  right.
+  The
+  north
+  end,
+  you
+  could
+  hear
+  compressor
+  come
+  on.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  And
+  run.
+  30,
+  45
+  seconds,
+  shut
+  back
+  off.
+  Okay.
+  Nowhere.
+  Okay.
+  I'm
+  not
+  a
+  tech
+  tech.
+  Like
+  you
+  have
+  an
+  automotive
+  guy,
+  right?
+  I
+  don't
+  do
+  them
+  on
+  a
+  motor.
+
+Francisco Arreola Jr.:
+  Okay,
+  gotcha.
+
+Customer:
+  So
+  I
+  went
+  up
+  there,
+  open
+  it
+  up,
+  pull
+  the
+  wrong
+  panel
+  first.
+  Well,
+  of
+  course,
+  when
+  the
+  compressor
+  comes
+  on,
+  it
+  does
+  get
+  good
+  and
+  warm.
+  Okay.
+  Nowhere.
+  So
+  I
+  pull
+  the
+  other
+  panel.
+  The
+  blower
+  motor
+  jerk.
+  Okay.
+  Not
+  starts,
+  but
+  it
+  would.
+  Right.
+  It
+  was
+  free.
+  So
+  I
+  went
+  down
+  and
+  I
+  got
+  a
+  capacitor
+  Last
+  night,
+  trying
+  to
+  see
+  if
+  it
+  tripped.
+  Maybe
+  I
+  wired
+  it,
+  put
+  it
+  in
+  wrong.
+  But
+  I
+  ended
+  up
+  with
+  fan
+  running
+  continuously.
+  The
+  fan
+  motor
+  did
+  run.
+  Okay.
+
+Francisco Arreola Jr.:
+  The
+  blower
+  motor,
+  the
+  blower
+  motor,
+  the
+  blower.
+
+Customer:
+  So
+  now
+  the
+  blower
+  motor
+  wouldn't
+  shut
+  off.
+  Okay.
+  So
+  as
+  it
+  stands
+  right
+  now,
+  I've
+  got
+  some
+  tools
+  up
+  there.
+  I'll
+  go
+  up
+  and
+  get
+  out
+  of
+  there.
+  The
+  disconnect
+  is
+  full.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  And
+  the
+  new
+  capacitor
+  is
+  sitting
+  in
+  there.
+  Wired
+  maybe
+  Right.
+  Maybe
+  not.
+
+Francisco Arreola Jr.:
+  Right.
+
+Customer:
+  The
+  old
+  capacitors
+  up
+  there.
+  And
+  I
+  have
+  a
+  picture
+  of
+  how
+  the
+  wires
+  are
+  on
+  the
+  old
+  capacity.
+
+Francisco Arreola Jr.:
+  Did
+  you
+  test
+  the
+  old
+  capacitor?
+
+Customer:
+  No.
+
+Francisco Arreola Jr.:
+  Just.
+  All
+  right.
+
+Customer:
+  No.
+  No
+  worries.
+  Why
+  you're
+  here.
+  Right.
+  Okay.
+
+Francisco Arreola Jr.:
+  And
+  then
+  prior
+  to
+  changing
+  out
+  the
+  crash,
+  you
+  said
+  the
+  blower
+  motor
+  was
+  spinning
+  when
+  you
+  try
+  to
+  just
+  move
+  it
+  by
+  hand.
+
+Customer:
+  Oh,
+  yeah.
+  If
+  you
+  move
+  by
+  hand
+  with
+  no
+  power
+  on.
+  It
+  was
+  very
+  brief.
+
+Francisco Arreola Jr.:
+  But
+  was
+  it
+  running
+  when
+  the
+  system
+  was
+  trying
+  to
+  start?
+
+Customer:
+  No,
+  it
+  wouldn't.
+  When
+  the
+  compressor
+  came
+  on
+  and
+  the
+  condenser
+  fan
+  came
+  out
+  like
+  it
+  should.
+  Right.
+  It
+  produced
+  heat.
+  Right.
+  Okay.
+  It
+  did
+  not
+  With
+  a
+  blower
+  motor
+  would
+  just
+  sit
+  there
+  and
+  jerk.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  It
+  didn't
+  rotate.
+
+Francisco Arreola Jr.:
+  So
+  try
+  to
+  move.
+
+Customer:
+  Correct.
+  You
+  can
+  see
+  it
+  was
+  getting
+  power,
+  but
+  it
+  wasn't
+  moving.
+  Then
+  when
+  I
+  put
+  the
+  wire.
+  Put
+  the
+  new
+  capacitor
+  on,
+  I
+  purchased
+  today's
+  arch.
+  And
+  then
+  the
+  blower
+  motor
+  ran.
+  Right.
+  But
+  it
+  wouldn't
+  shut
+  off
+  correctly.
+  So
+  either
+  had
+  it
+  wrong
+  or
+  something
+  else
+  wrong.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  Now
+  it
+  doesn't
+  want
+  to
+  kick
+  on.
+  So
+  I
+  just
+  pull
+  the
+  service
+  disconnect.
+  And
+  I
+  know
+  if
+  there's
+  a
+  smaller
+  fuse
+  in
+  there
+  somewhere
+  below.
+  Oh,
+  wow.
+  Yeah,
+  the
+  circuit.
+  That's
+  what
+  you're
+  here
+  for.
+
+Francisco Arreola Jr.:
+  And
+  now.
+  Now,
+  after
+  it
+  was
+  running
+  contingency,
+  now
+  it
+  doesn't
+  want
+  to
+  turn
+  on
+  at
+  all.
+
+Customer:
+  I
+  didn't.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  I
+  knew
+  I
+  was
+  over
+  my
+  head.
+  It
+  wasn't
+  going
+  to
+  work
+  last
+  night,
+  and
+  I
+  went
+  ahead
+  and
+  switched
+  off.
+
+Francisco Arreola Jr.:
+  All
+  right,
+  Sounds
+  good.
+
+Customer:
+  You
+  can
+  put
+  your
+  header
+  up
+  here
+  or
+  you
+  go
+  in
+  the
+  back.
+  Okay.
+
+Francisco Arreola Jr.:
+  Either
+  up
+  here
+  or
+  the
+  back
+  with
+  the.
+  I
+  thought
+  I
+  kind
+  of
+  saw
+  them.
+
+Customer:
+  Yeah,
+  you
+  got.
+  You
+  go
+  this
+  way.
+  You
+  got
+  across
+  the
+  car.
+  Okay.
+  And
+  then
+  there's
+  a
+  little
+  pony
+  wall.
+  Right
+  there
+  where
+  they're
+  at.
+  Gotcha.
+  So
+  now
+  if
+  you're
+  on
+  the
+  back
+  side,
+  where
+  I
+  go
+  up
+  on.
+  I've
+  got
+  a
+  ladder
+  and
+  there's
+  a
+  wooden
+  deck
+  that'll
+  hold
+  you.
+  All
+  right.
+  And
+  you
+  don't
+  have
+  to
+  go
+  on
+  top,
+  but
+  it's
+  up
+  to
+  you.
+
+Francisco Arreola Jr.:
+  No,
+  I'd
+  rather
+  you.
+  So
+  I
+  don't
+  have
+  to
+  do
+  the
+  tile?
+
+Customer:
+  Yeah.
+  Okay.
+  Come
+  on
+  around.
+  I'll
+  show
+  you.
+  I
+  got
+  a
+  loud.
+  It's
+  probably
+  not.
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  But
+  anyway.
+
+Francisco Arreola Jr.:
+  And
+  then
+  you
+  notice
+  this
+  first.
+  Yesterday.
+
+Customer:
+  Yesterday
+  afternoon.
+  Okay.
+  My
+  western
+  was
+  pulled
+  back
+  here.
+  The
+  thermostat's
+  up,
+  and
+  I
+  heard
+  it
+  run.
+  But
+  then
+  keep
+  going.
+  This
+  is
+  the
+  black
+  door.
+  Two
+  by
+  fours.
+  Okay.
+  Got.
+  It's
+  heavily
+  framed.
+  Gotcha.
+  So
+  you
+  throw
+  a
+  ladder
+  up
+  here,
+  and
+  then
+  you
+  can
+  walk
+  right
+  up
+  that
+  pony
+  wall.
+  There's
+  a
+  pony
+  walk
+  about
+  three
+  feet
+  maybe.
+  And
+  then.
+  And
+  then
+  it's
+  a
+  spray
+  on
+  roofing
+  where
+  the
+  AC
+  is.
+  Right
+  there.
+  Yeah,
+  they're
+  right
+  there.
+
+Francisco Arreola Jr.:
+  Sounds
+  good.
+
+Customer:
+  And
+  it's
+  the
+  north
+  one.
+  And
+  as
+  I
+  said
+  right
+  now
+  the
+  disconnect
+  has
+  been
+  reversed.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  And
+  I'm
+  gonna
+  go
+  up
+  there
+  and
+  get
+  my
+  tools
+  and
+  stuff
+  that
+  I.
+
+Francisco Arreola Jr.:
+  Knocked
+  up
+  here
+  on
+  the
+  left.
+
+Customer:
+  Yes.
+  Got
+  north
+  side.
+
+Francisco Arreola Jr.:
+  And
+  as
+  far
+  as
+  the
+  other
+  one.
+  No
+  issues
+  there.
+
+Customer:
+  No
+  issues.
+  I
+  mean,
+  you
+  won't
+  look
+  at.
+  You
+  can't.
+  But
+  it's
+  working
+  perfectly
+  fine.
+
+Francisco Arreola Jr.:
+  All
+  right,
+  Sounds
+  good.
+
+Customer:
+  Gates
+  along.
+  Okay.
+  That's
+  good
+  enough
+  for
+  you?
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  Let
+  me
+  grab.
+  I
+  don't
+  care.
+  All
+  right.
+  Let
+  me
+  grab
+  my
+  stuff.
+
+Francisco Arreola Jr.:
+  I'll
+  be
+  right
+  back.
+
+Customer:
+  Already
+  there.
+  Of
+  course.
+  Now,
+  do
+  you
+  need
+  a
+  picture
+  how
+  the
+  wires
+  were
+  on
+  that?
+  I
+  have
+  it
+  on
+  my
+  phone.
+  I
+  know.
+  You
+  know
+  your
+  business.
+  Yeah.
+  I
+  mean.
+  Was
+  that.
+  Anyway,
+  so
+  this
+  is
+  how
+  I
+  did.
+  This
+  to
+  figure
+  it
+  out.
+  And
+  see,
+  this
+  one's
+  labeled.
+  This
+  one.
+  I
+  went
+  by
+  the
+  number
+  of
+  connectors,
+  so
+  probably
+  I
+  did
+  it
+  Wrong.
+
+Francisco Arreola Jr.:
+  You
+  should
+  be.
+  Okay.
+
+Customer:
+  Okay.
+  But
+  anyway,
+  let
+  me.
+
+Francisco Arreola Jr.:
+  Yeah,
+  let
+  me
+  see
+  the
+  pictures.
+
+Customer:
+  I
+  could
+  have
+  very
+  well
+  blown
+  the
+  capacitor.
+  Or
+  if
+  there's
+  a
+  small
+  fuse
+  going
+  to
+  the
+  thermostat,
+  I
+  could
+  have
+  done
+  too.
+
+Francisco Arreola Jr.:
+  Now
+  you're
+  looking.
+
+Customer:
+  Okay,
+  here's
+  the
+  original
+  on
+  the
+  old
+  capacitor.
+
+Francisco Arreola Jr.:
+  You
+  had
+  one,
+  one.
+  And
+  here
+  was
+  three.
+
+Customer:
+  Here's
+  three
+  yellows.
+  Yeah,
+  yeah,
+  you're
+  looking
+  right.
+  Okay.
+  But
+  anyway,
+  that's.
+  That's
+  how
+  it
+  was.
+  Obviously
+  been
+  working
+  for
+  10
+  years.
+  Out
+  of
+  there.
+  Right
+  out
+  of
+  the
+  panel.
+  There's
+  the
+  panel.
+  Okay.
+  So
+  can
+  I
+  do
+  anything
+  for
+  you?
+  We
+  get
+  out
+  of
+  your
+  way?
+  No.
+
+Francisco Arreola Jr.:
+  Yeah,
+  I'll
+  check
+  it
+  out
+  and
+  see.
+
+Customer:
+  Okay.
+  Do
+  you
+  want.
+  Do
+  you
+  want
+  the
+  thermostat
+  set?
+  Any
+  particular
+  place?
+
+Francisco Arreola Jr.:
+  Yeah,
+  can
+  you
+  please
+  have
+  that
+  just
+  set
+  to
+  on.
+  Yeah.
+
+Customer:
+  75
+  or
+  something
+  like
+  that?
+
+Francisco Arreola Jr.:
+  Yeah.
+  Just
+  to
+  make
+  sure
+  it
+  stays
+  running.
+
+Customer:
+  Okay.
+  That
+  way
+  if
+  you
+  need
+  something,
+  you
+  can
+  holler
+  you.
+  It's.
+  It's.
+  It's.
+  It.
+  It's.
+  It's.
+  It's.
+  It's.
+  It's.
+  It's.
+  It's.
+  It's,
+  It's.
+  It's.
+
+Francisco Arreola Jr.:
+  This
+  is
+  not
+  ideal.
+
+Customer:
+  It's.
+  It's.
+
+Francisco Arreola Jr.:
+  So
+  nothing
+  you
+  did.
+  So
+  the
+  capacitors
+  pressure
+  and
+  the
+  connector
+  panel.
+  So
+  what
+  you
+  have
+  for
+  your
+  blower.
+
+Customer:
+  Meaning
+  that
+  it
+  doesn't
+  like
+  false
+  modulate.
+  Yeah.
+
+Francisco Arreola Jr.:
+  So
+  the
+  problem
+  with
+  those
+  is
+  the
+  module.
+
+Customer:
+  Module.
+
+Francisco Arreola Jr.:
+  Once
+  that
+  module
+  fails,
+  that's
+  when
+  the
+  motor
+  goes
+  out.
+  So
+  it
+  won't
+  seize
+  up
+  like
+  a
+  standard
+  motor.
+  So
+  I
+  turned
+  it
+  on
+  running.
+  The
+  fan
+  will
+  run
+  and
+  then
+  it'll
+  stop
+  and
+  then
+  it'll
+  start
+  to
+  do
+  that
+  clicking.
+  And
+  that's
+  gonna
+  be
+  because
+  of
+  the
+  module.
+  Okay.
+  So
+  the
+  first
+  step
+  would
+  be
+  to
+  get
+  that
+  EC
+  inverter
+  replaced.
+  Now
+  the
+  only
+  problem
+  though
+  is
+  that
+  since
+  the
+  blower
+  was
+  failed,
+  we
+  don't
+  know
+  how
+  long
+  exactly.
+  Could
+  you
+  say
+  you
+  notice
+  it
+  yesterday?
+
+Customer:
+  Yeah,
+  it
+  just
+  started.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  So
+  it
+  would
+  have
+  been
+  yesterday.
+  So.
+
+Francisco Arreola Jr.:
+  Yeah,
+  if
+  it
+  was
+  just
+  yesterday.
+  The
+  compressor
+  definitely
+  took
+  some
+  damage.
+  We
+  just
+  don't
+  know
+  how
+  much
+  to
+  get
+  that.
+  It
+  needs
+  that
+  airflow
+  of
+  the
+  blower
+  and
+  everything
+  to
+  keep
+  it.
+
+Customer:
+  But
+  it
+  was
+  shutting
+  off
+  on
+  high
+  pressure.
+  Yeah.
+
+Francisco Arreola Jr.:
+  So
+  first
+  step
+  will
+  be
+  the
+  blower
+  for
+  sure.
+  Now,
+  with
+  the
+  age
+  of
+  the
+  system,
+  there's.
+  I
+  noticed
+  the
+  other
+  panel
+  is
+  leaking
+  oil.
+  Oil
+  is
+  starting
+  to
+  develop
+  some
+  rust.
+  Your
+  voltage
+  switch
+  is
+  burned.
+  And
+  then
+  again,
+  the
+  compressor
+  would
+  be
+  the
+  main
+  secondary
+  concern
+  because
+  it
+  definitely,
+  you
+  know,
+  works
+  hand
+  in
+  hand
+  with
+  everything
+  else.
+  Okay,
+  but.
+  But
+  I
+  can
+  get
+  you
+  some
+  pricing
+  for
+  the.
+  For
+  the
+  motor,
+  but
+  I
+  know
+  those
+  motors
+  are
+  typically
+  a
+  little
+  more
+  expensive.
+
+Customer:
+  Okay.
+  They're.
+  I
+  know.
+
+Francisco Arreola Jr.:
+  Regular
+  price
+  is
+  like
+  3,000.
+
+Customer:
+  Really?
+  Yeah.
+  That's
+  pricey
+  for
+  a
+  freaking
+  blower
+  motor.
+  I
+  know.
+  What's
+  the
+  unit
+  now?
+  I
+  mean,
+  everything's
+  gone
+  up
+  12
+  grand
+  to
+  be
+  50
+  probably
+  ballpark
+  in
+  it.
+
+Francisco Arreola Jr.:
+  Yeah.
+  Givers
+  if
+  you
+  want.
+  Yeah,
+  you
+  can
+  talk
+  to
+  somebody.
+
+Customer:
+  Well,
+  yeah,
+  I
+  can
+  call
+  RJ
+  or
+  Cole.
+
+Francisco Arreola Jr.:
+  Yeah,
+  exactly.
+
+Customer:
+  But
+  I
+  mean,
+  by
+  the
+  same
+  token,
+  I
+  mean,
+  you
+  know,
+  I
+  do
+  your
+  trucks.
+  I
+  charge
+  you
+  guys
+  money,
+  so.
+
+Francisco Arreola Jr.:
+  No,
+  exactly.
+  Oh,
+  yeah.
+
+Customer:
+  Okay.
+  So.
+  Okay,
+  so
+  right
+  now,
+  obviously
+  you
+  don't
+  have
+  the
+  motor
+  with
+  you.
+  I
+  do
+  not.
+
+Francisco Arreola Jr.:
+  That
+  part
+  would
+  have
+  to
+  be
+  ordered.
+
+Customer:
+  So
+  you
+  don't
+  even
+  have
+  it
+  in
+  the
+  shop?
+
+Francisco Arreola Jr.:
+  Yeah,
+  so
+  we
+  have
+  to.
+
+Customer:
+  Okay,
+  then
+  go
+  ahead.
+  So
+  right
+  now
+  it's
+  down.
+  Nothing
+  we
+  can
+  do
+  temporarily.
+  Right.
+  And
+  that's
+  a
+  matter
+  whether
+  we
+  patch
+  it
+  it
+  or
+  replace
+  it.
+  Yeah.
+  Okay,
+  well,
+  give
+  me.
+  Get
+  some
+  numbers
+  worked
+  up.
+
+Francisco Arreola Jr.:
+  Okay.
+
+Customer:
+  Yeah,
+  because
+  that's
+  gonna
+  make
+  it
+  in
+  next
+  week
+  anyway.
+  I
+  hate
+  to
+  call
+  them
+  guys
+  on
+  a
+  weekend.
+  I
+  got
+  your
+  cell
+  phone.
+
+Francisco Arreola Jr.:
+  No
+  worries,
+  I'll
+  call.
+  I
+  don't
+  know
+  if
+  you
+  know
+  who
+  Ryan
+  is.
+  I'll
+  give
+  Ryan
+  a
+  call.
+
+Customer:
+  I've
+  been
+  kind
+  of
+  semi
+  retired.
+  My
+  son
+  Nick
+  runs
+  the
+  shop.
+
+Francisco Arreola Jr.:
+  Okay,
+  gotcha.
+  Okay.
+
+Customer:
+  But
+  yeah,
+  everybody
+  knows
+  Nick.
+
+Francisco Arreola Jr.:
+  Yeah,
+  I
+  was
+  actually.
+  Yeah,
+  I
+  know.
+  I
+  was
+  actually
+  there
+  because
+  I
+  was
+  on
+  vacation
+  for
+  a
+  week
+  and
+  then
+  I
+  try
+  to
+  come
+  back
+  this
+  Monday
+  and
+  my
+  battery
+  died.
+
+Customer:
+  Okay.
+  Yeah,
+  well,
+  Nick,
+  my
+  son,
+  runs
+  the
+  office.
+  You
+  know,
+  he's
+  been
+  running
+  for
+  a
+  couple
+  years
+  now
+  around
+  me.
+  So.
+  Yeah,
+  whatever.
+  There's
+  nothing
+  we
+  can
+  do
+  today.
+  There's
+  nothing
+  we
+  can
+  do
+  today.
+  So
+  we
+  get
+  it
+  figured
+  out
+  and
+  go
+  from
+  there.
+
+Francisco Arreola Jr.:
+  Yeah,
+  I'll
+  call
+  Ryan,
+  see
+  what
+  replacement
+  out
+  look
+  like,
+  and
+  then,
+  yeah,
+  replace.
+  See
+  what
+  better
+  for
+  you.
+  All
+  right,
+  just
+  give
+  me
+  a
+  second.
+  Thank
+  you,
+  sir.
+  I
+  appreciate
+  that.
+
+Customer:
+  No
+  problem.
+
+Francisco Arreola Jr.:
+  I'll
+  be
+  right
+  back.
+
+Customer:
+  Yeah,
+  It's
+  it.
+  It's
+  it.
+  It's.
+  You're
+  good.
+  Don't
+  worry
+  about.
+  Oh,
+  he
+  doesn't
+  want
+  to
+  come
+  in
+  with
+  his
+  boots
+  on.
+  I
+  got
+  it.
+  Oh,
+  gotcha.
+  Okay.
+  I'm
+  not
+  gonna
+  leave.
+  Yeah,
+  you
+  can
+  come
+  on
+  out.
+  Okay.
+  Stay
+  here.
+
+Francisco Arreola Jr.:
+  What
+  kind
+  of
+  dog's
+  the
+  big
+  guy?
+
+Customer:
+  He's
+  just
+  a
+  mutt.
+
+Francisco Arreola Jr.:
+  Oh,
+  is
+  he?
+
+Customer:
+  Yeah,
+  he's
+  kind
+  of
+  rough
+  right
+  now.
+  He's
+  16.
+  He's
+  getting
+  old.
+  Oh,
+  he's
+  old.
+  He's
+  not
+  feeling
+  well
+  either.
+
+Francisco Arreola Jr.:
+  No,
+  I
+  Don't
+  really
+  understand.
+  So
+  I
+  talked
+  to
+  my
+  managers.
+  So
+  unfortunately
+  I
+  just
+  give
+  you
+  some
+  wrong
+  pricing
+  on
+  that
+  motor.
+  4,000
+  is
+  regular
+  price.
+  Talk
+  to
+  my
+  manager.
+
+Customer:
+  Nice.
+
+Francisco Arreola Jr.:
+  They
+  threw
+  a
+  discount,
+  dropping
+  it
+  down
+  to
+  about
+  27.
+  If
+  you
+  wanted
+  to
+  take
+  care
+  of
+  that.
+  Now,
+  the
+  only
+  other
+  issue
+  is
+  with
+  the
+  other
+  concerns
+  with
+  the
+  system.
+  That
+  would
+  be.
+  I
+  don't
+  want
+  to
+  say
+  temporary
+  because
+  I'm
+  not
+  saying
+  it'll
+  be
+  months
+  or
+  you
+  know,
+  could
+  be.
+  Could
+  be
+  a
+  while.
+  But
+  there's
+  definitely
+  just
+  going
+  to
+  be
+  one
+  repair
+  of
+  many
+  that
+  are
+  going
+  to
+  be
+  upcoming.
+
+Customer:
+  And
+  again,
+  that
+  could
+  be.
+  Right.
+  Well,
+  they're
+  11
+  years
+  old.
+
+Francisco Arreola Jr.:
+  Yeah.
+  Much
+  later
+  down
+  the
+  road.
+  But
+  at
+  some
+  point
+  in
+  time.
+
+Customer:
+  Well,
+  since
+  we
+  can't
+  do
+  anything
+  today.
+  Yeah.
+  I
+  mean,
+  three,
+  four
+  grand
+  is
+  a
+  lot
+  of
+  money
+  to
+  spend
+  on
+  that
+  unit.
+  In
+  my
+  opinion.
+  You're
+  right
+  there
+  at
+  the
+  point
+  you
+  got
+  to
+  question
+  it.
+  I'll
+  probably.
+  Since
+  we
+  can't
+  do
+  it,
+  I'll
+  probably
+  get
+  told
+  RJ
+  or
+  Cole
+  on
+  Monday.
+  Okay.
+  And
+  talk
+  to
+  them.
+  Just
+  see
+  what
+  they
+  do.
+  We
+  may
+  just
+  put
+  two
+  units
+  on.
+
+Francisco Arreola Jr.:
+  Yeah,
+  I
+  did.
+  I
+  did
+  ask
+  Ryan.
+  He
+  handles
+  the
+  new
+  installs
+  and
+  things
+  like
+  that.
+  He
+  said
+  our
+  typical
+  pricing
+  for
+  these
+  systems,
+  you're
+  looking
+  at
+  over
+  20
+  grand.
+
+Customer:
+  Yeah.
+  Each.
+  That.
+
+Francisco Arreola Jr.:
+  That's
+  what.
+  That's
+  what
+  I
+  was
+  saying.
+  Yeah.
+
+Customer:
+  I'm
+  not.
+  I'm
+  just.
+
+Francisco Arreola Jr.:
+  I'm
+  just
+  the
+  fixer
+  guy.
+
+Customer:
+  Okay.
+
+Francisco Arreola Jr.:
+  But
+  he
+  said
+  probably
+  knock
+  that
+  down
+  probably
+  to
+  like
+  12
+  fish
+  or
+  so.
+  But
+  again,
+  we
+  can't
+  do
+  anything
+  today.
+
+Customer:
+  Yeah.
+  Talk
+  to
+  rj.
+  Yeah,
+  I'll
+  pursue
+  that
+  on
+  Monday.
+  There's
+  no
+  reason
+  to
+  get
+  excited
+  about
+  today.
+  We
+  got
+  one
+  working.
+  I
+  got
+  a
+  fireplace.
+
+Francisco Arreola Jr.:
+  A
+  little
+  bit
+  of
+  information
+  in.
+
+Customer:
+  Right.
+  And
+  you
+  got.
+  That'll
+  be
+  in
+  records.
+  Right.
+  I
+  have
+  them
+  review
+  it
+  it
+  and
+  see.
+  I
+  mean
+  it's
+  worth
+  doing.
+  You
+  know,
+  we
+  can
+  fix
+  it.
+  I'm
+  not
+  opposed
+  to
+  do
+  it.
+  Yeah.
+  But
+  I
+  hate
+  to
+  throw
+  money
+  away.
+
+Francisco Arreola Jr.:
+  No,
+  I
+  agree.
+  You
+  know,
+  with
+  the
+  agents.
+  Is
+  at
+  that
+  point
+  where
+  you
+  live
+  in
+  Vegas.
+  Exactly.
+
+Customer:
+  So
+  I
+  have
+  a
+  question.
+  If
+  say
+  we
+  chose
+  to
+  replace.
+  Are
+  those
+  in
+  town
+  or
+  are
+  those
+  something
+  that
+  would
+  have
+  to
+  be
+  ordered
+  as
+  well?
+
+Francisco Arreola Jr.:
+  I
+  can't
+  say
+  for
+  sure.
+  But
+  typically
+  the.
+  With
+  new
+  installs
+  we
+  kind
+  of
+  have
+  that
+  on
+  hand.
+  It's
+  not
+  something
+  that
+  you
+  kind
+  of
+  throw
+  out
+  a
+  lot
+  like
+  small
+  parts.
+  Typically
+  we
+  kind
+  of
+  have
+  a.
+
+Customer:
+  So
+  to
+  speak.
+
+Francisco Arreola Jr.:
+  Now,
+  I
+  can't
+  say
+  for
+  sure
+  because
+  that's
+  out
+  of
+  my
+  department.
+  But
+  most.
+
+Customer:
+  I'm
+  not
+  going
+  to
+  hold
+  you
+  down
+  to
+  it?
+  I'm
+  just.
+  Yeah.
+  Most
+  likely
+  somewhere
+  in
+  town.
+  Most
+  likely.
+
+Francisco Arreola Jr.:
+  But
+  usually.
+  Yeah,
+  usually
+  they're
+  pretty
+  quick
+  on.
+
+Customer:
+  I
+  appreciate
+  it.
+
+Francisco Arreola Jr.:
+  Of
+  course.
+
+Customer:
+  Yeah.
+  I
+  wish
+  I
+  could.
+  Bill
+  for
+  us
+  now
+  or
+  they
+  going
+  to
+  film
+  me?
+
+Francisco Arreola Jr.:
+  Oh,
+  no,
+  no.
+  You're
+  good.
+
+Customer:
+  Yeah.
+  Okay.
+
+Francisco Arreola Jr.:
+  Yes.
+  No
+  service,
+  nothing
+  like
+  that.
+  And
+  then
+  I
+  have
+  the
+  option
+  for
+  the
+  motor
+  on
+  there.
+  On
+  the
+  notes.
+  I
+  also
+  kind
+  of
+  broke
+  down
+  what
+  I'm
+  seeing
+  as
+  far
+  as
+  the
+  future
+  stuff.
+  That
+  way
+  it's
+  all
+  on
+  there.
+
+Customer:
+  Right.
+  They
+  can
+  see
+  where
+  we're
+  at.
+
+Francisco Arreola Jr.:
+  You
+  do,
+  exactly.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  But
+  no,
+  you
+  guys
+  are
+  good
+  for.
+
+Customer:
+  We're
+  not
+  moving
+  out
+  of
+  the
+  house,
+  so.
+  Right.
+  You
+  know.
+  So
+  we're
+  going
+  to
+  put
+  10
+  grand
+  in
+  the
+  next
+  five
+  years,
+  you
+  know,
+  patching
+  these
+  things.
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  Maybe
+  it's
+  better
+  to
+  spend
+  money.
+
+Francisco Arreola Jr.:
+  No,
+  for
+  sure.
+
+Customer:
+  So
+  that's
+  kind
+  of
+  where
+  we're
+  at.
+  All
+  right.
+  All
+  right.
+  Thank
+  you,
+  sir.
+
+Francisco Arreola Jr.:
+  Any
+  questions
+  for
+  you
+  before
+  I
+  go?
+  Anything
+  else?
+  Give
+  to
+  us.
+
+Customer:
+  Not
+  even
+  loan
+  us,
+  just
+  give
+  it
+  to
+  us.
+  Know.
+
+Francisco Arreola Jr.:
+  Trust
+  me,
+  I
+  understand.
+  These
+  things
+  are.
+
+Customer:
+  I'm
+  just
+  trying
+  to
+  lighten
+  it
+  up
+  a
+  little
+  bit.
+  No,
+  I
+  get
+  it.
+
+Francisco Arreola Jr.:
+  When
+  I
+  first
+  got
+  into
+  this
+  trade
+  and
+  it
+  was
+  just
+  like.
+  I'm
+  sorry,
+  that's
+  how
+  much.
+  Like
+  that's.
+
+Customer:
+  I
+  get
+  it.
+  I
+  get
+  it.
+  Car
+  repairs,
+  same
+  thing.
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  You
+  go
+  into
+  three,
+  four
+  grand
+  real
+  quick.
+
+Francisco Arreola Jr.:
+  Yeah.
+
+Customer:
+  And
+  I
+  didn't
+  used
+  to.
+
+Francisco Arreola Jr.:
+  Yeah,
+  exactly.
+  Where
+  we
+  live
+  now.
+  And
+  unfortunately
+  it's
+  kind
+  of
+  a
+  necessity.
+
+Customer:
+  Well,
+  you
+  can't
+  get
+  by
+  without
+  it.
+  I
+  mean.
+  Yeah,
+  there's
+  no
+  reason.
+
+Francisco Arreola Jr.:
+  In
+  the
+  cold,
+  you
+  can
+  kind
+  of
+  put.
+  You
+  can
+  kind
+  of
+  push.
+
+Customer:
+  Oh,
+  yeah.
+  This
+  isn't
+  bad.
+  Yeah.
+  If
+  it
+  was
+  110
+  outside,
+  you
+  need
+  to
+  work.
+
+Francisco Arreola Jr.:
+  Yeah,
+  for
+  sure.
+
+Customer:
+  Yeah.
+  You
+  can't
+  get
+  by.
+  But
+  this
+  is
+  not
+  bad
+  because
+  the
+  one
+  works
+  with
+  the
+  fireplace
+  on
+  it.
+
+Francisco Arreola Jr.:
+  You
+  can
+  always
+  bundle
+  up,
+  but
+  once
+  it
+  gets
+  hot,
+  that's
+  a
+  different
+  story
+  for
+  sure.
+
+Customer:
+  But.
+  All
+  right.
+
+Francisco Arreola Jr.:
+  I'll
+  put
+  together
+  my
+  report.
+  I
+  don't
+  know
+  if
+  I
+  have
+  an
+  email
+  on
+  here
+  for
+  you.
+  That
+  way
+  I
+  can
+  send
+  a
+  copy
+  to
+  you
+  as
+  well.
+  Looks
+  like
+  I
+  do
+  have
+  this
+  one
+  here.
+
+Customer:
+  Yeah,
+  that's
+  Captain
+  Good.
+  Okay.
+  Perfect.
+
+Francisco Arreola Jr.:
+  Yeah.
+  So
+  I
+  will
+  get
+  all
+  that
+  nice
+  and
+  detailed.
+  That
+  way
+  when
+  you
+  give
+  them
+  a
+  call,
+  they'll
+  know
+  exactly.
+
+Customer:
+  I'll
+  get
+  with
+  them
+  next
+  week.
+  We'll
+  see
+  what
+  we
+  can
+  do.
+
+Francisco Arreola Jr.:
+  All
+  right,
+  Perfect.
+
+Customer:
+  See
+  what
+  they
+  recommend.
+  Like
+  I
+  said,
+  I
+  hate
+  to
+  spend
+  a
+  bunch
+  of
+  money.
+  If
+  you're
+  going
+  to
+  be
+  here
+  every
+  six
+  months
+  spending
+  three
+  grand
+  right.
+  No,
+  it's
+  foolish.
+  Yeah.
+
+Francisco Arreola Jr.:
+  And
+  they.
+  And
+  they
+  fixes.
+
+Customer:
+  I
+  mean
+  if
+  it
+  was
+  only
+  like
+  2
+  years
+  old
+  that
+  would
+  be.
+
+Francisco Arreola Jr.:
+  Oh
+  no,
+  for
+  sure.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  That's
+  a
+  different
+  story.
+
+Customer:
+  Yeah.
+
+Francisco Arreola Jr.:
+  Again
+  change
+  that
+  kind
+  of
+  like
+  a
+  car.
+  Like
+  you
+  want
+  money
+  to
+  an
+  old.
+
+Customer:
+  Car
+  you
+  got
+  what's
+  wrong
+  with
+  it
+  and
+  how
+  well
+  are
+  you
+  fixing
+  exactly?
+  You
+  know,
+  are
+  you
+  going
+  to
+  get
+  your
+  money
+  out
+  now
+  you
+  got
+  to
+  drive
+  that
+  car,
+  right.
+  You're
+  not
+  going
+  to
+  sell
+  car
+  money
+  back.
+  Same
+  thing
+  with
+  these.
+  Not
+  only
+  that,
+  but
+  I'm
+  sure
+  the
+  new
+  units
+  are
+  more
+  efficient.
+
+Francisco Arreola Jr.:
+  No,
+  for
+  sure.
+
+Customer:
+  Electricity.
+
+Francisco Arreola Jr.:
+  Exactly.
+
+Customer:
+  Okay.
+  So
+  all
+  right.
+  Okay,
+  thanks.
+
+Francisco Arreola Jr.:
+  That's
+  fine.
+
+Customer:
+  Appreciate
+  you
+  very
+  much.
+  We
+  appreciate
+  you.
+  The.
+
+Francisco Arreola Jr.:
+  Is
+  that
+  a
+  duck?
+  Big
+  a**
+  bird.
+  G******.
+  Age
+  peacocks.
+  What
+  the
+  peacock
+  now.
+  You
+  better
+  move
+  peacock.
