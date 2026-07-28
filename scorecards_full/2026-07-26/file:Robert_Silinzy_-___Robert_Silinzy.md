@@ -1,76 +1,24 @@
-# Live Coaching Card — Robert Silinzy
-**Call Date:** 2026-07-26 | **Duration:** 45 min | **Outcome:** Flipped (Option C/Comfort Advisor followup engaged)
+# Coaching Card: Robert Silinzy
+**Call Date:** 2026-07-26 | **Duration:** 45 min | **Job:** [empty/unknown]
 
----
-
-## FSG Bands
-
-### Welcome: Solid
-Robert greets warmly, building immediate rapport around the customer's pets ("I love dogs... That's Ruby"). He sets expectations about the next steps: "Give me about 20 minutes. I'll put the report together, share it." 
-
-**Gap:** Welcome doesn't open with a clear statement of expertise or purpose. The upfront framing could be stronger ("Here's what I'm going to do today").
-
-### Assessment: Strong
-Thorough discovery and diagnosis:
-- Opens with key diagnosis questions: "How long has it been running over three hours?"
-- Checks history: "Is this the first time something like this has happened?" → learns unit is 13 years old
-- Asks about repairs: learns about previous pigeons/condensation issue charged at $1,000
-- Technical questions: "How many filters do you have?" → identifies filter locations and sizes
-- Comprehensive inspection: checks fan, suction line temperature ("Yeah, it's cool, but not cold"), compressor (tests hard start over-amp), blower motor (notes oil leakage), thermostat
-
-Robert uses test equipment (Legometer) to validate findings and explains results clearly.
-
-### Decision: Solid
-Identifies three options:
-1. Hard start device (already done in past)
-2. Compressor replacement (prices pending)
-3. Blower motor replacement (prices pending)
-
-Robert reconnects to the customer's prior concern about overcharging when the customer mentions the $1,000 previous bill. He offers to check the invoice history: "Let me just look real quick" / "I'll look at the invoices just to understand the history." This is transparent objection handling.
-
-**Gap:** Options aren't fully built and presented upfront. Robert defers pricing to suppliers and says he'll return: "Give me about 20 minutes, I'll put the report together... we have to wait for the suppliers to be open, and then we can say what's available." The decision step is stretched across two visits rather than completed on this call.
-
-### Deliver: Strong on Wins
-Robert excels at technical explanation. He walks through findings in detail:
-- Explains hard start: "Homeowners choose to get that device because the compressor is showing signs that is getting near the end and then it just helps it start."
-- Explains microprocessor: "That's basically the relay to turn on the unit... acts as a light switch."
-- Windings test: "I tested all three windings..."
-- Blower motor: "Oil coming on the top of it... that's a sign of failure... So I don't do that. I just see the signs, and I share that with the homeowner."
-
-Robert demonstrates deep expertise ("Be A Nerd") throughout.
-
-**Gap:** No explicit ask for a 5-star review at call end.
-
----
+## Bands
+- **Welcome:** Solid — Warm greeting ("How you doing? Rob Guerra"), small talk about dogs builds rapport, sets basic expectations about evaluation process ("goal is to give you an evaluation to be thorough and share everything")
+- **Assessment:** Strong — Excellent diagnostic questions ("Is this the first time something like this has happened?" "Any repairs?"), thorough technical testing (windings, capacitor, hard start device, blower motor inspection), checks thermostat and filters
+- **Decision:** Solid — Connects to service history and previous overcharging concern, explains technical findings related to compressor issues and age of unit (13 years), redirects pricing question to proper channel ("give me about 20 minutes, I'll put the report together, share it"); SILO pricing rule applied correctly
+- **Deliver:** Solid — Strong technical explanation ("hard start," "windings are weakened," oil leak sign on blower motor indicates failure), educates on how devices help older compressor start, shares company values ("goal is to not have you without AC")
 
 ## Critical Actions
+- **expectations** ✓ Yes — Clearly sets expectations: "goal is to give you an evaluation to be thorough and share everything...then you can make a decision"
+- **questions** ✓ Yes — Diagnostic questions about first occurrence, repair history, thermostat settings, filter sizes; technical testing questions
+- **options** ? Partial — Moving toward options ("I'll look at the prices for the compressor and blower motor") but call ends before options are formally presented
+- **objections** ✓ Yes — Handles price concern from previous service by explaining he'll review invoices; manages timeline objection ("I don't want to promise you next week if you end up waiting three months")
 
-| Action | Pass | Evidence |
-|--------|------|----------|
-| **Expectations** | ✓ | Sets clear timeline ("give me about 20 minutes"), addresses supplier wait times honestly ("it could be tomorrow... you could have to wait three weeks") |
-| **Questions** | ✓ | Multiple discovery questions: system age/history, past repairs, filter count/size, thermostat setting |
-| **Options** | ✗ | Identifies three issues but doesn't present distinct options with pricing/timelines on call. Defers to supplier availability. |
-| **Objections** | ✓ | Handles overcharge skepticism directly. Offers to check invoices and affirms honest intent. |
-
----
-
-## Outcome Evidence
-
-**Outcome:** Flipped (Option C engagement)
-
-Customer shows clear intent to proceed despite past negative experience. Stayed engaged through 45-minute diagnosis and implicitly agreed to wait for pricing/report. This is a flip because Option C consultation is effectively scheduled.
-
----
+## Outcome
+Unknown — No job number in transcript header; call moves toward estimate/TGL path but no explicit agreement captured before end of call.
 
 ## Top Gaps
+1. **Missing closed loop on next steps:** Robert says "give me 20 minutes" but doesn't confirm customer will wait, reschedule, or agree to Comfort Advisor appointment. Call ends without "so here's what we're doing next..."
+2. **No 5-star review request:** Strong technical call but no ask for the review.
 
-### Gap 1: Incomplete Options Presentation
-Robert identifies three issues but doesn't present them as distinct choices on the call. Frame options upfront: "Here's what we found and here's what I'm proposing we explore," even if full pricing comes later.
-
-### Gap 2: Welcome Framing
-Could strengthen opening: "Here's what I'm going to do: evaluate your system, explain what I find, and get you pricing options."
-
----
-
-## 30-sec Huddle
-"Your technical explanation and transparency about that past overcharge really earned the flip. Next time, frame options earlier and ask for the 5-star at the end."
+## Notes
+Transcript quality is degraded (word-by-word format). Customer concerns about previous overcharging are handled tactfully. Robert demonstrates strong technical knowledge but could strengthen close with explicit next-steps confirmation.
