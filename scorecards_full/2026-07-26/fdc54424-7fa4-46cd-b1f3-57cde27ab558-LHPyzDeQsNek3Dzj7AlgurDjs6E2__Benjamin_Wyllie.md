@@ -1,27 +1,40 @@
-# Call Scorecard
+# Scorecard: Benjamin Wyllie - PARRISH
+
 **Date:** 2026-07-26  
-**Duration:** 50 min  
-**Rep:** Benjamin Wyllie  
-**Customer:** Parrish Revocable Trust (Parrish Walter Glenn & Diane Pogach)  
 **Job:** 669038012  
-**RecId:** fdc54424-7fa4-46cd-b1f3-57cde27ab558-LHPyzDeQsNek3Dzj7AlgurDjs6E2  
+**Duration:** 50 min  
+**Outcome:** No-close
 
-## Outcome (TGL Truth)
-**Lead Generated:** NO  
-**Status:** Diagnostic incomplete - unable to assess TGL status
+## FSG Scoring
 
-## Call Summary
-Call quality appears compromised. Transcript shows minimal technical diagnostic work. Rep discusses compressor motor start device voltage parameters with customer, but conversation becomes dominated by personal anecdotes (calling 311 for emergency, daughter-in-law advice about closing doors to guest room, etc.). Insufficient customer-facing diagnostic content for proper evaluation. Call ends abruptly without clear next steps or closure.
+### Welcome: Solid
+- Professional approach but limited personal rapport development
+- Focus shifted quickly to technical issue
 
-## Triage Decision
-**Status:** SKIPPED - Insufficient customer-facing diagnostic content
+### Assessment: Strong
+- Identified motor start device failure clearly
+- Explained technical concept well: compared to car battery dying, startup delay
+- Tested device readings: "35 plus or minus 6%, yours hit 32.9, it was in that failed state"
+- Customer shared their stress (woke up 3am to buzzing, called 311)
 
-## Notes
-Call transcript quality suggests either: (1) poor recording quality affecting transcription, (2) incomplete capture of diagnostic work, or (3) non-standard call structure. Recommend review of source recording before formal scoring.
+**Evidence:** Technical diagnosis was sound and explained clearly
 
-## FSG Assessment
-Unable to score FSG competencies due to insufficient diagnostic and sales activity in transcript.
+### Decision: Solid
+- Explained what the problem is, but gap in presenting options/solutions
+- Customer took action on their own (called 311) rather than waiting for proposal
+- No commitment to repair/evaluation captured
 
-## Overall Score
-**Band:** Unable to assess  
-**Assessment:** Call does not contain sufficient customer-facing diagnostic work or sales activity for formal FSG scoring. Recommend transcript review and resubmission if complete recording available.
+### Deliver: N/A
+
+## Critical Actions
+
+- **Expectations:** ✓ Assessment explained, but next steps unclear
+- **Questions:** ✗ Limited discovery about what they want to do next, budget, timeline
+- **Options:** ✗ No options presented before customer moved to 311 call
+- **Objections:** N/A
+
+## Key Gaps
+After diagnosing (excellent technical work), Ben needed to reconnect and ask: "What would you like to do here?" before walking away. Customer was stressed and uncertain—that's when options matter most.
+
+## Coaching Notes
+Gap between diagnosis and decision. Ben's technical explanation was clear and helpful, but he left the customer in a "now what?" state. Should have bridged to "Here are your options" before departing, even if to schedule follow-up proposal.
