@@ -1,22 +1,34 @@
-# Call Scorecard
+# SILO Tech Call Scorecard
 
-**Recorded**: 2026-07-27 | **Duration**: 98 min | **Tech**: Andrew Trujillo | **Job**: 668949771
-**RecId**: b5f04dd6-b087-4c43-80c4-7f77edec2afc-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
+**Rep:** Andrew Trujillo
+**Job #:** 668949771
+**Date:** 2026-07-27
+**Duration:** 98 min
+**RecId:** b5f04dd6-b087-4c43-80c4-7f77edec2afc-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
 
-## Outcome
-**UNKNOWN**
+## Call Overview
+98-minute call covering system evaluation and customer consultation.
 
-## FSG Bands
-- **Welcome**: Solid
-- **Assessment**: Solid
-- **Decision**: Solid
-- **Deliver**: Solid
+## FSG Steps
+| Step | Status |
+|------|--------|
+| Welcome | ✗ |
+| Assessment | ✗ |
+| Decision | ✗ |
+| Deliver | ✗ |
 
 ## Critical Actions
-- **Expectations**: ✓ Pass
-- **Questions**: ✓ Pass
-- **Options**: ✓ Pass
-- **Objections**: ✓ Pass
+| Action | Completed |
+|--------|-----------|
+| Expectations Set | ✗ |
+| Questions Asked | ✗ |
+| Options Presented | ✗ |
+| Objections Handled | ✗ |
 
-## Coaching Tip
-FIX — While you provided good technical education about refrigerant phases and system pressures, you didn't clearly articulate which repair option the customer should prioritize or when they could expect resolution.
+## Results
+**Outcome:** UNKNOWN
+**Band:** Weak
+**Tip:** FIX: Focus on establishing clear expectations and asking diagnostic questions.
+
+---
+*Generated: 2026-07-28T13:48:34.736271*

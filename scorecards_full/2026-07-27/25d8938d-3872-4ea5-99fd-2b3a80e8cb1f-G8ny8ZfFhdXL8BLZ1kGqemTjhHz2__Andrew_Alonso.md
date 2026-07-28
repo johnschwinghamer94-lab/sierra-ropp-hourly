@@ -1,22 +1,34 @@
-# Call Scorecard
+# SILO Tech Call Scorecard
 
-**Recorded**: 2026-07-27 | **Duration**: 133 min | **Tech**: Andrew Alonso | **Job**: 669083742
-**RecId**: 25d8938d-3872-4ea5-99fd-2b3a80e8cb1f-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
+**Rep:** Andrew Alonso
+**Job #:** 669083742
+**Date:** 2026-07-27
+**Duration:** 133 min
+**RecId:** 25d8938d-3872-4ea5-99fd-2b3a80e8cb1f-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
 
-## Outcome
-**UNKNOWN**
+## Call Overview
+133-minute call covering system evaluation and customer consultation.
 
-## FSG Bands
-- **Welcome**: Solid
-- **Assessment**: Strong
-- **Decision**: Moderate
-- **Deliver**: Solid
+## FSG Steps
+| Step | Status |
+|------|--------|
+| Welcome | ✗ |
+| Assessment | ✗ |
+| Decision | ✓ |
+| Deliver | ✗ |
 
 ## Critical Actions
-- **Expectations**: ✓ Pass
-- **Questions**: ✓ Pass
-- **Options**: ✗ Fail
-- **Objections**: ✗ Fail
+| Action | Completed |
+|--------|-----------|
+| Expectations Set | ✗ |
+| Questions Asked | ✓ |
+| Options Presented | ✓ |
+| Objections Handled | ✗ |
 
-## Coaching Tip
-FIX — Customer expressed frustration with previous shoddy work but hadn't received options or next steps. You identified drain line clogs and mechanical issues but didn't present a prioritized repair plan she could act on.
+## Results
+**Outcome:** UNKNOWN
+**Band:** Weak
+**Tip:** FIX: Focus on establishing clear expectations and asking diagnostic questions.
+
+---
+*Generated: 2026-07-28T13:48:34.732755*

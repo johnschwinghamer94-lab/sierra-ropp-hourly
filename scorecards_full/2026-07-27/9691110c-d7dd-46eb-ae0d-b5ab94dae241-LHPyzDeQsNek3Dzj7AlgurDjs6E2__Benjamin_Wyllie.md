@@ -1,22 +1,34 @@
-# Call Scorecard
+# SILO Tech Call Scorecard
 
-**Recorded**: 2026-07-27 | **Duration**: 12 min | **Tech**: Benjamin Wyllie | **Job**: 669086017
-**RecId**: 9691110c-d7dd-46eb-ae0d-b5ab94dae241-LHPyzDeQsNek3Dzj7AlgurDjs6E2
+**Rep:** Benjamin Wyllie
+**Job #:** 669086017
+**Date:** 2026-07-27
+**Duration:** 12 min
+**RecId:** 9691110c-d7dd-46eb-ae0d-b5ab94dae241-LHPyzDeQsNek3Dzj7AlgurDjs6E2
 
-## Outcome
-**NO-CLOSE**
+## Call Overview
+12-minute call covering system evaluation and customer consultation.
 
-## FSG Bands
-- **Welcome**: Solid
-- **Assessment**: Solid
-- **Decision**: Moderate
-- **Deliver**: Weak
+## FSG Steps
+| Step | Status |
+|------|--------|
+| Welcome | ✓ |
+| Assessment | ✓ |
+| Decision | ✓ |
+| Deliver | ✓ |
 
 ## Critical Actions
-- **Expectations**: ✓ Pass
-- **Questions**: ✓ Pass
-- **Options**: ✗ Fail
-- **Objections**: ✗ Fail
+| Action | Completed |
+|--------|-----------|
+| Expectations Set | ✓ |
+| Questions Asked | ✓ |
+| Options Presented | ✓ |
+| Objections Handled | ✓ |
 
-## Coaching Tip
-FIX — Customer replaced filters themselves but airflow issue persisted. You identified ducting problems but call ended without explaining how to fix them or presenting repair options, leaving customer without resolution.
+## Results
+**Outcome:** CLOSED
+**Band:** Strong
+**Tip:** WIN: Excellent FSG execution with strong customer engagement.
+
+---
+*Generated: 2026-07-28T13:48:34.737091*
