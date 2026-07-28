@@ -67,7 +67,10 @@ jobs:
 
           mkdir -p site/coaching/objections
           if [ -d objections ]; then
-            find objections -maxdepth 1 -name '*.json' -exec cp {} site/coaching/objections/ \;
+            # Mirror, don't just copy: a month file deleted upstream (e.g. the
+            # 2026-07-27 miscalibrated-pass reset) must also disappear from the
+            # site, or summary.json and the month files drift out of sync.
+            rsync -a --delete --include='*.json' --exclude='*' objections/ site/coaching/objections/
           fi
 
           cd site

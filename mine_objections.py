@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Objection mining per coaching/objection_mining_prompt.md"""
+"""DEPRECATED regex-based objection miner — do not use for production mining.
+
+This script produced the miscalibrated 2026-07-27 first pass (over-extraction,
+zero "great" grades) that had to be reset (commit d06e1a6). Production mining is
+the "SILO objection miner (nightly)" cloud routine, which follows
+coaching/objection_mining_prompt.md (including its CALIBRATION section) with
+model judgment rather than these keyword regexes. Kept only as a reference for
+the objections/ file formats."""
 import os
 import json
 import re
@@ -340,7 +347,7 @@ def main():
         with open(STATE_FILE) as f:
             mined_state = json.load(f)
 
-    all_folders = sorted(TRANSCRIPTS_DIR.glob("*/"))
+    all_folders = sorted(p for p in TRANSCRIPTS_DIR.iterdir() if p.is_dir())
     to_mine = [f for f in all_folders if f.name not in mined_state][:20]
 
     if not to_mine:
