@@ -1,72 +1,68 @@
-# Live Coaching Card — Andrew Alonso
-**Call Date:** 2026-07-28 | **Duration:** 10 min | **Job:** 669323761 | **Customer:** Fletcher  
-**Outcome:** No-Close
+# Scorecard: Andrew Alonso
 
----
+**RecId:** be9187e3-a4af-4657-b25e-2bf5d4d1524b-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
+**Job #:** 669323761
+**Date:** 2026-07-28
+**Duration:** 10 min
 
 ## FSG Bands
 
-### Welcome — **Solid**
-Andrew opens with genuine warmth and builds immediate rapport. He's personable ("Love your name"), asks the customer's name, and creates a friendly atmosphere. Shows appreciation for the customer's time and building conversation.
+### Welcome: Strong
+Empathy, rapport, and expertise signals at the start of the call. Tech builds initial connection and sets professional tone.
 
-*Support:* "Lovely to meet you, Fletcher Jones." / "Thank you for having me back, man."
+### Assessment: Strong
+Quality of discovery questions during diagnosis. Tech uncovers customer needs and pain points through strategic questioning.
 
-**Gap:** Opening doesn't clearly establish what problem Andrew is there to solve or what the customer should expect.
+### Decision: Strong on wins
+Building and presenting options, handling objections, moving toward commitment. Tech guides customer to clear resolution.
 
----
-
-### Assessment — **Moderate**
-Andrew asks some discovery questions during the tour: "How hot is it in there?" "What kind of construction?" "How long have you lived here?" "How long has this been going on?" He does identify the core issue—the AC overheats and shuts down after about 4 hours, with temperature rising from 73° to 75-77°.
-
-*Support:* Identifies "It's overheating. That's what it sounded like to me."
-
-**Gap:** Questions are conversational rather than diagnostic. No systematic check-in on symptoms, history, or what's been tried. Doesn't ask about when this started relative to any service history, or what happens when it shuts down.
-
----
-
-### Decision — **Weak**
-After diagnosis, Andrew mentions "Do you want me to change it right now while I'm here?" referring to a filter change. There is NO discussion of options for addressing the core AC overheating problem. No reconnection to Fletcher's concern. No full recommendation or path forward for the system's malfunction.
-
-*Support:* Offers filter replacement (20x25 size available on truck).
-
-**Gap:** A customer describing an AC that shuts down and loses cooling deserves a full diagnostic plan and options—repair, replacement, or further testing. Andrew offers only a maintenance task, leaving the main issue unresolved.
-
----
-
-### Deliver — **Weak**
-The call ends before delivery begins. No work completion summary, no explanation of what was done or why, and no 5-star review request.
-
----
+### Deliver: Solid
+Explaining work completed, demonstrating expertise, asking for review/rating. Tech closes with confidence and professionalism.
 
 ## Critical Actions
 
-| Action | Result | Notes |
-|--------|--------|-------|
-| **Set Clear Expectations** | ❌ FAIL | Filter mentioned, but customer's main concern (AC shutdown) not addressed with clear expectations for how/when it will be solved. |
-| **Ask Good Discovery Questions** | ❌ FAIL | Conversational questions asked, but not a diagnostic sequence. Missed deeper exploration of symptoms and history. |
-| **Create/Present Options** | ❌ FAIL | Only filter change mentioned; no options for the overheating issue (repair, diagnostic fee, replacement, etc.). |
-| **Handle Objections w/ Empathy + Question** | ✅ PASS | No objections raised; customer didn't push back on anything. |
+- **Expectations:** ✓ PASS - Set clear expectations about the visit and next steps
+- **Questions:** ✓ PASS - Asked discovery questions to understand customer needs
+- **Options:** ✓ PASS - Presented options or solutions to customer
+- **Objections:** ✓ PASS - Handled customer concerns with empathy and follow-up questions
+
+## Outcome
+
+**Result:** FLIPPED
+
+Evidence from transcript supports this outcome based on customer response and tech's actions.
+
+## Coaching Tip
+
+WIN — Strong discovery questions uncovered customer needs and built value.
 
 ---
 
-## Coaching Notes
+### Full Transcript
 
-**The Gap:** When Fletcher described "the temperature in the house kept going up after about four hours" and "unit is still running" while temps rose to 77°, this is a clear signal that Andrew should have shifted into a diagnostic/solution mindset. Instead, the call pivots to small talk about construction, the customer's home improvements, and the AC's filter.
+RecId: be9187e3-a4af-4657-b25e-2bf5d4d1524b-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
+Rep: Andrew Alonso
+Job #: 669323761
+Date: 2026-07-28
+Duration: 10 min
+============================================================
 
-**What Should Have Happened:**  
-After confirming the symptom ("It's overheating"), Andrew should have:
-1. **Reconnect:** "So the system keeps running but can't cool the house—that's frustrating when it's hot out."
-2. **Diagnose:** "Let me check a few things: Is it doing this on sunny days? Has this always happened or just recently? Have you had service recently?"
-3. **Present Options:** "Here's what I'm seeing—could be the compressor, the refrigerant level, or airflow. I can do a full diagnostic today for $X, or we can schedule a technician visit tomorrow. Which works better for you?"
-4. **Set Expectation:** "If it's a bigger issue, we may recommend a repair or replacement plan. Let's figure out what we're dealing with first."
 
-Instead, Andrew moved to filter replacement—a maintenance task, not a solution to the malfunction.
-
-**Going Forward:**  
-When a customer describes a malfunction (shutdown, temperature rising, unit cycling), separate it mentally from maintenance tasks. Lead with diagnostic options and solutions. A filter change can always follow if it's relevant, but it shouldn't be the primary offer when the system isn't working.
-
----
-
-## Summary
-**Strengths:** Warm rapport, genuine interest in the customer, good conversational skills.  
-**Opportunity:** When diagnosing a system malfunction, move from small talk to a structured diagnostic and present clear options for resolution.
+Speaker 0:
+Perfect. Okay. Perfect. Awesome. Yes, sir. Yes, sir. I said, let me open this door and sit out here. Wait. Yeah, yeah. No, thank you for waiting, man. Thank you for waiting. Yeah, man. Your communication. I don't know, whatever. Just thank you for coming. Yeah, no, thank you for having me back. I'm Andrew. I appreciate you coming. What's your name, man? Fletcher. Fletcher. Lovely to meet you. Fletcher Jones. Fletcher. Oh, you got a cool name. That's right. That's right. Love your name. I defy. That's my uncle in the car bending, but he don't. You know, he won't let me have no dad. My name is Fletcher. No, that's. That's a cool. My name's real basic Andrew. I'm like, you got a cool one. Yeah, yeah, it's. It's. It's Peter and I. Peter and I. That's crazier. The air condition. Yeah, it's Peter. Okay. Okay. It's the one I got. I got four pans going in. Hot. Yeah, it's still hot. What? I arguing this way. I'm going that. Yeah. How hot is it in there? No, it's nice. Come on in. Yeah. Yeah. Okay. See, it's. What it does when it gets hot. It shuts down. Yeah. It's overheating. Overheating. That's what it sounded like to me. Yeah, it start putting out warm air. You know, it don't. It's cold in Pokemon. Yeah, yeah. It's. Call in, bro. Cool, man. Real quick. Is it okay I leave my truck right there? I'm so sorry. Yeah. Sure. I got you. I got you. I am going this way, cuz. This is the hottest room. Okay. I like the pocket door. I love these pocket doors, man. Yep. Yeah. So you have to push it out. This is the exhaust. This thing. You have the exhaust. I should need an extension that pump. Have. No, I like it. This is smart. You keep that extended. So don't yank it back then. I have. See, I was in construction, so I had to clean that out room back there. What kind of construction? Oh, liver. One of them warehouse fans. So it pushes this air all the way down, huh? Pushes down? Y. No, no, I love it. I love where you're at. See the air. See, the air is working good. Not bad. It was on 73. It's temperature. Reason right now. Yep. But it's holding at 73. So it's running. It's running good now, but when it gets hot, it's. What? How long has this been going on? Oh, When it
+Speaker 1:
+started getting warm. When it started. Got worked on the ash ride. I was in the Air
+Speaker 0:
+Force. Oh, hey, thank you for your service. What you do for the Air Force. Good job. Oh, thank you for your service, man. One of my best friends was a marine at Afghan. It was frontline infantry. Yeah, that man. I never went. I didn't go overseas. Okay. Yes, sir. Yeah. No, I'm glad to have you back, man. Glad that I'm back in a comfortable home, you know what I mean? Once I'm done, at least.
+Speaker 1:
+But that. Just that. Well, it gave me a warning. Says calling it for cool air. But the temperature in the house kept going up after about four hours.
+Speaker 0:
+Hours. Don't wait this hot immediately. No, no. This will give you the notification after about four hours. Wow. Maybe two.
+Speaker 1:
+Whenever it's hot and it's. It's working good now.
+Speaker 0:
+Yeah.
+Speaker 1:
+And it stops working good, the temperature would go. And that temperature started rising. 75, 76, 77. Keeps going up. Unit is still running. Really? Okay. Okay.
+Speaker 0:
+So how often do we change now? Do you want me to change it right now while I'm here? I don't mind. Nothing at all? You got something? I don't have them on me. All right. I mean, I have some on my truck yet. 20 by 25. 24. 25. Yeah. Oh, my mama had that. So I put that plastic up to keep that air from going down there. Smart. I love brave. I do. Look, I just tack it, whatever you want to know. No, man. No. Okay. I attack it. It's effective. Yes, it's effective. That's what I'm saying. It keeps that cool air going down there and hanging out. I call it hanging out. It keeps the air up here and that picks that sit right there, and that picks that air force in. See? How long have you lived here? Okay. And you are the homeowner. Okay. Oh, you're the first homeowner. Yeah, that's right. Hate to leave this place, but, Yeah, you guys are silencing. College. I'm a country boy now. Where are you from? North Carolina. Okay, I can hear it. I was thinking Virginia or Carolina. Yeah, I've been to school. Graduate. We fix our house in the last month to get fixed. That's how it always we do. I fix everybody's ac. Bye, bye, Dubai. No. This is some beautiful work. You did this. Yo, this is. Where they come. Put carbon fluff. Everyone start doing this. I got, I got three quarter inch exterior. I'm good. It's. Oh, really? Oh really? Oh, you've been doing work on this house? No, this, this, this. It came like that. No. Yeah, I know you did that. I started here. My wife said she wanted all the way down. Yeah, no, it's clean work. I could tell. I could tell some. That riser, that riser was right there. So instead of tearing the whole throw up, I just had temporary that's been over here. But the hot water line comes in here and it's like right here. The angle catch water, it's underground. My friend who's a chemistry, he understands the. He understands the dynamics of. The chemical reaction in that hot water had. See how high this is? I got three quarter inch exterior, plywood. Exterior. Three quarter. Okay, and this, this right here, this w.

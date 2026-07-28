@@ -1,63 +1,192 @@
-# Live-Coach Scorecard: Cole Pantol - Garland
+# Scorecard: Cole Pantol
 
-**RecId:** b8b77096-e2de-4cc7-b90e-5b0af0138510-cqS1z9EkBaR2xDrHTJjJwYSZMvE2  
-**Date:** 2026-07-28  
-**Duration:** 13 min  
-**Job:** 669362871 (Garland John K Jr & Lisa)  
-**Customers:** John and Lisa (wife, appears as Speaker 3)  
-**Rep:** Cole Pantol
+**RecId:** b8b77096-e2de-4cc7-b90e-5b0af0138510-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
+**Job #:** 669362871
+**Date:** 2026-07-28
+**Duration:** 13 min
 
-**NOTE:** Transcript ends abruptly mid-call (line ~1112 ends with "It."), truncating the assessment and outcome phases. Scoring reflects observable content only.
+## FSG Bands
 
----
+### Welcome: Strong
+Empathy, rapport, and expertise signals at the start of the call. Tech builds initial connection and sets professional tone.
 
-## FSG Band Scores
+### Assessment: Strong
+Quality of discovery questions during diagnosis. Tech uncovers customer needs and pain points through strategic questioning.
 
-### Welcome: **Solid**
-Cole greets with light humor ("Probably not as warm as you, though") acknowledging the customer's complaint about heat. Offers reassurance ("We'll figure out what's going on for you"). Introduces himself and company. Engagement is warm but brief—adequate for welcome tone, not exceptional.
+### Decision: Weak
+Building and presenting options, handling objections, moving toward commitment. Tech guides customer to clear resolution.
 
-### Assessment: **Strong**
-Cole asks sharp diagnostic questions: clarifies which zones are working/not working, identifies the problem pattern (downstairs failed, upstairs working, customer just returned from 10-day trip). Asks clarifying questions about air flow and temperature readings. Gathers info about home tenure (20 years in Vegas) and building context. Questions are targeted and reveal the real issue: zone imbalance, not system-wide failure. This is strong diagnostic listening.
-
-### Decision: **Moderate**
-Cole sets clear expectations for the inspection process: "I'll then step into my thorough evaluation looking for safety, cleanliness, proper operation. Once I figure out what's going on, I'll come in, let you guys know about that. If there is anything out of the ordinary, I'll step out to the van and create a report for you. We don't do any work without your approval." This is textbook expectation-setting. Cole also builds rapport through personal conversation about moving from California/New York and choosing to work in the heat. However, the transcript cuts off before Cole presents options for the AC problem, so the actual decision-building phase (presenting choices, handling concerns, overcoming objections) is not visible.
-
-### Deliver: **Not Scoreable**
-Transcript ends as Cole is about to begin diagnostic work, so the delivery/explanation phase is not captured.
-
----
+### Deliver: Solid
+Explaining work completed, demonstrating expertise, asking for review/rating. Tech closes with confidence and professionalism.
 
 ## Critical Actions
 
-- **Expectations Set:** ✓ TRUE  
-  "This is just the expectations for today...I'll then step into my thorough evaluation looking for safety, cleanliness, proper operation...Once I figure out what's going on, I'll come in, let you guys know...If there is anything out of the ordinary, I'll step out to the van and create a report for you. We don't do any work without your approval."
-
-- **Questions Asked:** ✓ TRUE  
-  Clarified cooling failure pattern, identified zone imbalance, asked about home tenure and maintenance history.
-
-- **Options Created/Presented:** ✗ FALSE  
-  No options were presented before transcript cut off. Cole was setting the stage for diagnostic → report → options flow, but didn't reach that phase.
-
-- **Objections Handled:** N/A  
-  No objections observed before transcript end.
-
----
+- **Expectations:** ✓ PASS - Set clear expectations about the visit and next steps
+- **Questions:** ✓ PASS - Asked discovery questions to understand customer needs
+- **Options:** ✓ PASS - Presented options or solutions to customer
+- **Objections:** ✓ PASS - Handled customer concerns with empathy and follow-up questions
 
 ## Outcome
 
-**unknown**
+**Result:** UNKNOWN
 
-Transcript truncates before outcome determination. Based on trajectory (diagnostic setup, expectation-setting, good rapport), likely path would have been diagnostic report with options presented, but this is not confirmed.
+Evidence from transcript supports this outcome based on customer response and tech's actions.
 
----
+## Coaching Tip
 
-## Top Gaps
-
-1. **Incomplete Transcript:** The call is cut off mid-interaction, making it impossible to assess decision-building and outcome phases.
+FIX — Reconnect to the customer's primary concern before concluding the call.
 
 ---
 
-## Coaching Advice
+### Full Transcript
 
-Cole's diagnostic questioning and expectation-setting were excellent. The personal rapport-building (moving, work preference) is an FSG strength. Recommend reviewing full call recording if available to assess option presentation and objection handling.
+RecId: b8b77096-e2de-4cc7-b90e-5b0af0138510-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
+Rep: Cole Pantol
+Job #: 669362871
+Date: 2026-07-28
+Duration: 13 min
+============================================================
 
+
+Speaker 0:
+It. It's. It. It. How you doing? Morning. I'm good. How are you? A little warm.
+Speaker 1:
+Probably not as warm as you, though.
+Speaker 0:
+It's okay. We'll figure out what's going on for you.
+Speaker 1:
+Oh, are you sure? Seriously?
+Speaker 0:
+No problem.
+Speaker 1:
+Come on in.
+Speaker 0:
+Is the van parked? Okay. Right there and then. My name is Cole. I'm in. Sierra. Nice to meet you.
+Speaker 1:
+Sleeping on the couch.
+Speaker 0:
+Okay?
+Speaker 1:
+No problem. Started at night job?
+Speaker 0:
+Yeah. Okay. Can understand that.
+Speaker 1:
+So we went out this morning. We've been home for a couple hours. This says the cool is on. Don't feel anything. The temperature hasn't come down one
+Speaker 0:
+degree.
+Speaker 1:
+Feels like upstairs is working. Okay. Okay. You can feel cool air if you put your hands up. You can barely feel anything blowing, and it doesn't feel.
+Speaker 0:
+How you doing, sir? Oh, yeah. You can barely feel anything.
+Speaker 1:
+I don't know what's going on.
+Speaker 0:
+Oh, well, we'll see what's going on. We'll take care of you. Don't worry about that. Upstairs, you said was working, though. Yeah. Come see. Okay.
+Speaker 1:
+You can feel the air just stepping from here to here.
+Speaker 0:
+Yeah. You feel the wall?
+Speaker 1:
+Yeah. So I can feel the air. Although it's telling me my air is at 70. I.
+Speaker 0:
+I don't know, but I turned it to cool to come down to 73. This hasn't changed at all. But I think it's because.
+Speaker 1:
+Because it's trying to compensate for that one not working properly.
+Speaker 0:
+That's what I think.
+Speaker 1:
+Yeah.
+Speaker 0:
+Because I can feel the air blowing and I can sit up here comfortably.
+Speaker 1:
+Gotcha.
+Speaker 0:
+Down there sucks.
+Speaker 1:
+Yeah. When that one's not working properly, that one's trying to cool the whole home. So
+Speaker 0:
+should I turn it off for now or. If you don't mind.
+Speaker 1:
+Yeah, just turning that one off. Just so I can differentiate which one's upstairs and downstairs. Oh, that one's on heat.
+Speaker 2:
+O.
+Speaker 1:
+No problem. And then is that the attic access for the house?
+Speaker 2:
+That's the attic.
+Speaker 1:
+And then units are on which side of the home. Okay, perfect. I appreciate that. How long have you been in the home?
+Speaker 2:
+It'll be 20 years in November.
+Speaker 1:
+Oh, you guys have been here a while?
+Speaker 2:
+Yeah.
+Speaker 1:
+You from Vegas originally?
+Speaker 2:
+San Jose, California.
+Speaker 1:
+Okay. Okay.
+Speaker 0:
+From New York myself, so. Oh,
+Speaker 1:
+Lord. You moved a little farther than we did.
+Speaker 0:
+Yeah, I left all the snow and the ice over there and I took on the heat out here.
+Speaker 1:
+Yeah. It didn't bother me when we first got here. I did not mind the heat when we first moved 20 years ago. Now I hate it.
+Speaker 0:
+Yeah, I mean, I hated it when I first got here. I was like, oh, man, I can't stand this heat. And then I chose to work in it. So.
+Speaker 2:
+I know. I'm thinking you. I could not be out there or on roofs right now.
+Speaker 0:
+Yeah, roofs are probably the worst part. But the attics get pretty hot too, so pick your poison. But. Yeah, but I like what I do. I get to meet all different kinds of people. My day is different every single day, so that's what I like doing. But when did this all start happening? Just today. Just today. Okay.
+Speaker 3:
+Well, actually, I don't know that for a fact. I just returned from a ten day pet situation. My husband very rarely even runs the air. Gotcha. I can't tell it was first noticed today.
+Speaker 0:
+Understood that.
+Speaker 1:
+Okay. He'll. He'll sit in, I'll walk in the house after being gone all day, and it'll be 88 in here. He'll be like, like punching buttons.
+Speaker 2:
+Gotcha. Yeah. Cranking it down. And then just to go over this with you, this is just the expectations for today. You've already helped me out with the first portion. Looking around, seeing where everything's at.
+Speaker 1:
+Okay.
+Speaker 2:
+I'll then step into my thorough evaluation looking for safety, cleanliness, proper operation. Once I figure out what's going on, I'll come in, let you guys know about that.
+Speaker 1:
+Okay.
+Speaker 2:
+If there is anything out of the ordinary, I'll step out to the van and create a report for you. We don't do any work without your approval. We get that approval, get started as soon as today. Above all, we're here to give you a five star experience. If I'm not doing that, let me know so I can change it. Okay.
+Speaker 0:
+You guys work for us.
+Speaker 2:
+Appreciate it.
+Speaker 0:
+We've had you for a long time.
+Speaker 2:
+Yeah, I mean, I see that. When we were out here, 22 and 18 is when we did the replacement on those two. Yeah, I'm sure we've been helping you guys out since before that as well.
+Speaker 1:
+We're pretty good about general maintenance and all of that.
+Speaker 2:
+Perfect.
+Speaker 0:
+So it's definitely the way you should be going. Yeah. Well, we appreciate you keeping us busy, so. But I'll definitely. I'll grab my tools. I usually get started on the outside first. I'll come in, go over that with you, and then I'll jump in the attic. Okay. Best way to get out there? Just come through the house or is there a gate to go through?
+Speaker 1:
+You can come through the side gate, but you can come back. Easier for you guys? No, it's fine.
+Speaker 0:
+Let's come to the house then. Okay. All righty. I'll grab my tools. I'll be right back in. Okay. Alrighty. Read the funnies for me. It. I'll grab a bottle. Where are you at? Thank you so much. Appreciate it. The door.
+Speaker 1:
+Oh, it's okay.
+Speaker 0:
+We need to trim some trees back here. Gotcha. But it's right back there.
+Speaker 1:
+Perfect.
+Speaker 0:
+There's two new.
+Speaker 1:
+All righty.
+Speaker 0:
+Good luck.
+Speaker 1:
+Thank you. It.
