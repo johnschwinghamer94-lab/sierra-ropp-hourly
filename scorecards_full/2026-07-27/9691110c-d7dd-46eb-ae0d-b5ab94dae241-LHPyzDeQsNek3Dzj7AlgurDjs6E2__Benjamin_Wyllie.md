@@ -1,34 +1,22 @@
-# Scorecard: Benjamin Wyllie (2026-07-27)
+# Call Scorecard
 
-**Call Duration:** 12 min  
-**Job:** 669086017  
-**Outcome:** unknown (call cut short)
+**Recorded**: 2026-07-27 | **Duration**: 12 min | **Tech**: Benjamin Wyllie | **Job**: 669086017
+**RecId**: 9691110c-d7dd-46eb-ae0d-b5ab94dae241-LHPyzDeQsNek3Dzj7AlgurDjs6E2
 
-## Bands
+## Outcome
+**NO-CLOSE**
 
-**Welcome: Strong**
-- Professional greeting and introduction
-- Clear statement of purpose and scope
-
-**Assessment: Solid**
-- Asked diagnostic questions early
-- Engaged customer in problem identification
-
-**Decision: Weak**
-- Call ends before options are presented
-- No evidence of customer decision or commitment
-
-**Deliver: Weak**
-- Limited explanation provided before call cut short
-- No summary or next steps communicated
+## FSG Bands
+- **Welcome**: Solid
+- **Assessment**: Solid
+- **Decision**: Moderate
+- **Deliver**: Weak
 
 ## Critical Actions
+- **Expectations**: ✓ Pass
+- **Questions**: ✓ Pass
+- **Options**: ✗ Fail
+- **Objections**: ✗ Fail
 
-✓ **Expectations:** Set at start  
-✓ **Questions:** Good diagnostic questions asked  
-✗ **Options:** Not presented (call too short)  
-✗ **Objections:** Not addressed (call too short)
-
-## Coaching
-
-**Note:** This appears to be an incomplete call (12 min, abruptly ends). Insufficient data to coach meaningfully. Recommend following up with Benjamin to confirm completion status and understanding of call dynamics if this represents pattern.
+## Coaching Tip
+FIX — Customer replaced filters themselves but airflow issue persisted. You identified ducting problems but call ended without explaining how to fix them or presenting repair options, leaving customer without resolution.
