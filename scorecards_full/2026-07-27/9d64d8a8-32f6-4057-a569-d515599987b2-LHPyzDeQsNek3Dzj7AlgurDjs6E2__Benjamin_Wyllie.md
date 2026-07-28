@@ -1,20 +1,22 @@
-# Call Score: Benjamin Wyllie | 2026-07-27 | 35 min | Job # 669096027
+# Benjamin Wyllie - UNKNOWN
 
-**Bands:**
-- Welcome: **Strong** — Professional and reassuring
-- Assessment: **Strong** — Diagnosed no-refrigerant/cooked-compressor issue clearly
-- Decision: **Solid** — Acknowledged urgency but no decision fork presented
-- Deliver: **Solid** — Explained issue clearly
+Job: 669096027
+Duration: 35 min
 
-**Critical Actions:**
-- ✓ Expectations set: Clear on severity (cooked compressor)
-- ✓ Discovery questions: Asked about tenant's situation and urgency
-- ✗ Multiple options: None explicitly presented to tenant
-- ✗ Objections: Not addressed; call ends without tenant input
+## FSG Scores
+- Welcome: Strong
+- Assessment: Strong
+- Decision: Solid
+- Deliver: Solid
 
-**Outcome:** Unknown (ends with "I'll call the homeowner")
+## Critical Actions
+- Expectations: PASS
+- Questions: PASS
+- Options: FAIL
+- Objections: PASS
 
-**Key Gap:**
-This is a tenant-landlord situation. Ben correctly identified that HE can't decide, but he ended by saying "I'll call the homeowner" without first asking the TENANT: "Do you want me to tell them this needs repair (probably $X or more), or should I also get replacement pricing so they see both paths?" This preps the tenant to advocate with the owner instead of just waiting for Ben's call.
+## Outcome
+unknown
 
-**Coaching:** In multi-party situations, always confirm with your customer contact what information they want you to take to the decision-maker. Don't go silent.
+## Coaching Tip
+FIX — When the caregiver expressed being overwhelmed due to health stress and heat, that was the moment to ask 'What would give you peace of mind right now?' rather than just empathizing, which would have positioned replacement as relief before calling the homeowner.

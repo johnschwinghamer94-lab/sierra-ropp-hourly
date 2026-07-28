@@ -1,20 +1,22 @@
-# Call Score: Benjamin Wyllie | 2026-07-27 | 38 min | Job # 669058978
+# Benjamin Wyllie - NO-CLOSE
 
-**Bands:**
-- Welcome: **Strong** — Built trust
-- Assessment: **Strong** — Systematically diagnosed four separate issues
-- Decision: **Solid** — Broke down costs clearly but didn't close decision loop
-- Deliver: **Solid** — Explained each repair cost but no follow-up commitment
+Job: 669058978
+Duration: 38 min
 
-**Critical Actions:**
-- ✓ Expectations set
-- ✓ Discovery questions: Identified customer's time constraint ("maybe a year or two")
-- ✓ Multiple options: Presented repair costs ($1300 + $600 + $5000 + $3600 ≈ $9k)
-- ✓ Objections: Acknowledged customer's reluctance (implied in "maybe a year or two")
+## FSG Scores
+- Welcome: Solid
+- Assessment: Strong
+- Decision: Moderate
+- Deliver: Solid
 
-**Outcome:** Unknown (no clear path forward)
+## Critical Actions
+- Expectations: PASS
+- Questions: PASS
+- Options: FAIL
+- Objections: FAIL
 
-**Key Gap:**
-Customer's "maybe a year or two" is a hesitation signal, not acceptance. Ben should have asked: "Is $1300 to keep it running another month or so worth it to you right now, or would you rather I bring in a replacement specialist to show you what a new system costs?" This creates a binary choice and closes the ambiguity.
+## Outcome
+no-close
 
-**Coaching:** When a customer responds with vague timing ("maybe next year"), treat it as uncertainty and present a clear decision fork, not acceptance of the big number.
+## Coaching Tip
+FIX — When the customer revealed his class starts tomorrow and can't afford $7,000 in repairs, that opened the door to reframe this as 'certainty instead of hoping repairs hold through finals' and present replacement as the only real path forward.

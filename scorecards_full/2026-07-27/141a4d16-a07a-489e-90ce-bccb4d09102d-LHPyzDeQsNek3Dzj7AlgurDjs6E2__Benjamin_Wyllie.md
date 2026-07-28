@@ -1,20 +1,22 @@
-# Call Score: Benjamin Wyllie | 2026-07-27 | 8 min | Job # 669045485
+# Benjamin Wyllie - UNKNOWN
 
-**Bands:**
-- Welcome: **Strong** — Empathetic opening
-- Assessment: **Strong** — Identified EPA refrigerant restriction issue
-- Decision: **Solid** — Explained constraint but no follow-up path offered
-- Deliver: **Solid** — Clear explanation of EPA limits
+Job: 669045485
+Duration: 8 min
 
-**Critical Actions:**
-- ✓ Expectations set
-- ✓ Discovery questions: Asked about customer's concern about insurance/pricing
-- ✗ Multiple options: None presented; only constraint explained
-- ✓ Objections: Handled pricing/EPA concern with education
+## FSG Scores
+- Welcome: Solid
+- Assessment: Strong
+- Decision: Solid
+- Deliver: Solid
 
-**Outcome:** Unknown (ends at handoff)
+## Critical Actions
+- Expectations: PASS
+- Questions: PASS
+- Options: FAIL
+- Objections: PASS
 
-**Key Gap:**
-After explaining EPA restriction, Ben needed to ask: "So does it make sense to bring in a replacement specialist to walk through your options, or would you like me to schedule that follow-up?" This closes the loop and signals next steps.
+## Outcome
+unknown
 
-**Coaching:** Always end with a question that commits to forward momentum, even if you're handing off to someone else.
+## Coaching Tip
+FIX — After identifying the compressor is likely bad, Ben should have quoted replacement pricing immediately so the customer could compare against insurance costs.

@@ -1,20 +1,22 @@
-# Call Score: Brandon Moreno | 2026-07-27 | 36 min | Job # 667671831
+# Brandon Moreno - UNKNOWN
 
-**Bands:**
-- Welcome: **Strong** — Warm greeting and established trust
-- Assessment: **Solid** — Started diagnosis but call cuts mid-attic-access
-- Decision: **Solid** — No root cause identified yet
-- Deliver: **Strong** — Good rapport and customer comfort
+Job: 667671831
+Duration: 36 min
 
-**Critical Actions:**
-- ✓ Expectations set
-- ✓ Discovery questions: Asked about issues and access
-- ✗ Multiple options: None yet (diagnosis incomplete)
-- ✗ Objections: None raised yet
+## FSG Scores
+- Welcome: Strong
+- Assessment: Solid
+- Decision: Unknown
+- Deliver: Unknown
 
-**Outcome:** Unknown (call incomplete)
+## Critical Actions
+- Expectations: PASS
+- Questions: PASS
+- Options: FAIL
+- Objections: FAIL
 
-**Key Gap:**
-Call cuts before root cause is identified. Damper malfunction, zone-balancing problem, failed compressor—all possible but undiagnosed. Brandon built great rapport but needs to complete the inspection and diagnosis BEFORE stepping away, so when the customer is ready to decide, options are clear and ready.
+## Outcome
+unknown
 
-**Coaching:** Don't step away mid-diagnosis. Finish your assessment, present options, THEN go about your day. The customer shouldn't have to start the conversation over when you call back.
+## Coaching Tip
+FIX — The strong expectations you set up front need to carry through diagnosis—when you find the root problem, pause and confirm the customer understands before jumping to technical details, so they're mentally ready to commit to your solution.
