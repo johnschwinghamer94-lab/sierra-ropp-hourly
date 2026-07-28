@@ -66,7 +66,7 @@ Rate each section and its behaviors:
 - Two Key Objectives
 - 4 Critical Actions (Pass/Fail): Setting clear expectations, Asking good questions, Creating good options, Handling objections
 
-**Number rule — read carefully:** The ONLY number allowed anywhere in the report is the **close-rate percentage** = (rep's closed/flipped calls ÷ their gradeable calls), e.g. "44%". Do NOT output a total score, a /170, a points value, an A–F grade, or a grade %. Every category is a word band.
+**Number rule — read carefully:** The ONLY number allowed anywhere in the report is the **close-rate percentage** = (rep's TGLs created ÷ calls ran on the TARGET date, from `tgl_truth/conv.json` — the dashboard's own numbers), e.g. "44%". Do NOT output a total score, a /170, a points value, an A–F grade, or a grade %. Every category is a word band.
 
 **Outcome ground truth (ServiceTitan overrides transcript impressions):** close
 rate = flipped-or-closed calls ÷ gradeable calls, where "flipped" is
@@ -81,6 +81,13 @@ sounded ambiguous or soft; no truth-file hit AND no clear in-call Option
 C/CA-appointment agreement means it is NOT a flip, even if the tech felt
 good about the call. ST is authoritative — John's conversion rates must
 reflect real TGL creation.
+The HEADLINE Close Rate shown in the plan's stat tile and in the spec's
+`closeRate` field, however, comes from the dashboard's own arithmetic, not
+this per-call flip count: use `tgl_truth/conv.json` `days[TARGET][rep]` =
+tgls ÷ calls, rounded to the nearest whole percent. If the rep is missing
+from `conv.json` for TARGET, or is present with `calls` = 0, fall back to
+the old flipped-calls ÷ gradeable-calls method above and append
+"(from graded calls)" to the tile value so the source is clear.
 **Every band must be backed by a real quote** from that rep's transcripts — the
 Evidence quotes inside the scorecards ARE transcript quotes and satisfy this rule.
 Any missed Critical Action = automatic FAIL on that call regardless of bands. Flag it prominently.
@@ -135,7 +142,7 @@ Write `coaching.json` at the repository root (overwrite if it exists), JSON, usi
 ```
 Rules:
 - Band values must be ONLY the five words Strong / Strong on wins / Solid / Moderate / Weak — never numbers.
-- `closeRate` is the ONLY number-bearing field (a percent string, e.g. "44%"), computed per the OUTCOME GROUND TRUTH rule in Step 4 (`tgl_truth/<TARGET>.json` + `<TARGET+1>.json` override transcript impressions in both directions).
+- `closeRate` is the ONLY number-bearing field (a percent string, e.g. "44%"), computed from `tgl_truth/conv.json` `days[TARGET][rep]` = tgls ÷ calls, rounded to the nearest whole percent (the dashboard's own numbers) per the OUTCOME GROUND TRUTH rule in Step 4; falls back to the flipped-calls ÷ gradeable-calls method (with "(from graded calls)" appended) only when the rep is missing from `conv.json` for TARGET or has `calls` = 0. The per-call flip/no-flip determination from `tgl_truth/<TARGET>.json` + `<TARGET+1>.json` still governs annotations and quotes elsewhere in the plan.
 - `critical` values are booleans — true means the rep passed that critical action on ALL of their gradeable calls that day.
 - `headlineGap` and each `focus` entry must contain NO customer names and NO transcript quotes (quotes stay inside the HTML plans, not in coaching.json).
 - `plan` is the dashboard-relative path where the relay workflow publishes the HTML: `coaching/plans/<TARGET>/<Rep_Name with underscores>.html` (matches the filename saved in Step 5).
