@@ -1,28 +1,22 @@
-# Scoring Card - Robert Silinzy
+# Robert_Silinzy - 668942368
+Date: 2026-07-26
+Duration: 33 min
+RecId: 9e36bd50-3e4b-4d5a-96f6-ab3c218633f0-Dmp0XntHegO0HaJZZRXRfWYS5Wi1
 
-**Recording ID:** 9e36bd50-3e4b-4d5a-96f6-ab3c218633f0-Dmp0XntHegO0HaJZZRXRfWYS5Wi1
-**Job:** 668942368
-**Date:** 2026-07-26
-**Duration:** 33 minutes
-
-## FSG Steps
-
-- Welcome: Solid
-- Assessment: Solid
-- Decision: Solid
-- Deliver: Moderate
+## FSG Scores
+- Welcome: Strong
+- Assessment: Strong
+- Decision: Weak
+- Deliver: Weak
 
 ## Critical Actions
-
-- Expectations: ✓
-- Questions: ✓
-- Options: ✓
-- Objections: ✓
+- Expectations: True
+- Questions: True
+- Options: False
+- Objections: False
 
 ## Outcome
+flipped
 
-FLIPPED
-
-## Coaching Note
-
-WIN — Presented options and secured approval; moving forward with solution.
+## Coaching Tip
+WIN — Robert's clear technical explanation ('contactor is burned and pitted, windings are starting to get weakened, amperage 15 to 16 amps') established credibility that converted the customer despite household stress.

@@ -1,27 +1,22 @@
-# Scorecard: Andrew Trujillo
+# Andrew_Trujillo - None
+Date: 2026-07-26
+Duration: 127 min
+RecId: b6839754-8cf8-4bf8-9cf0-10d2c1b7836d-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
 
-**Job:** null  
-**Date:** 2026-07-26  
-**Duration:** 127 min
-
-## FSG Bands
-
-- **Welcome:** Strong
-- **Assessment:** Strong
-- **Decision:** Strong on wins
-- **Deliver:** Strong
+## FSG Scores
+- Welcome: Strong
+- Assessment: Strong
+- Decision: Solid
+- Deliver: Moderate
 
 ## Critical Actions
-
-- Set Expectations: ✓
-- Asked Questions: ✓
-- Created Options: ✓
-- Handled Objections: ✓
+- Expectations: True
+- Questions: True
+- Options: True
+- Objections: True
 
 ## Outcome
-
-FLIPPED
+unknown
 
 ## Coaching Tip
-
-WIN — consistently reconnected to pain points and offered clear options
+FIX — Despite 127-minute thorough call and options presented, no TGL created; missing either clear appointment confirmation or reconnection on customer priority/urgency.
