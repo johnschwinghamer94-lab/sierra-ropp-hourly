@@ -4778,6 +4778,80 @@
       "grade": "great",
       "closed": true,
       "job": "656582180"
+    },
+    {
+      "id": "3e636d56-5674-422f-876f-f4b74c7babb6-92hu453CMjMS3az2iJV9GyPLhsX2-1",
+      "type": "Price",
+      "cust": "Yeah, I know. And that's the whole thing. It's either way, it's expensive.",
+      "answer": "Yeah. So your compressor, if that does not turn on, replacing the compressor out of warranty is a huge job... those all come with the compressor... you're going to need seven pounds of refrigerant.",
+      "tech": "Nikko April",
+      "date": "2026-07-28",
+      "grade": "ok",
+      "closed": false,
+      "job": "669272395"
+    },
+    {
+      "id": "50006df2-b1c8-4f3e-b7cc-40e020230efb-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
+      "type": "Competitor",
+      "cust": "They just want thousands and thousands of dollars and, you know, you need a new unit. You need this unit.",
+      "answer": "Yeah. But I mean, you know, disregarding, you know, new unit aside, in terms of maintaining what we currently have, have they given you solutions or, you know, ideas of what we can do to minimize?",
+      "tech": "Andrew Trujillo",
+      "date": "2026-07-28",
+      "grade": "ok",
+      "closed": false,
+      "job": "669385688"
+    },
+    {
+      "id": "78bbd3b6-e19d-4ba6-98d1-6f260f8c6c8b-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
+      "type": "Competitor",
+      "cust": "So yeah, I think we're gonna probably be repair, we'll talk, my wife, maybe talk to the guys in my department because, well, this guy named Weldy owns a AC company so...",
+      "answer": "Friends and family will always be a lot better than us. The only difference is that Sierra does everything by the book... there's a lot of companies out there that will go underbid us... the main thing that a lot of these companies do is they reuse a lot of the material that's already there... they might not bring it up to code.",
+      "tech": "Francisco Valencia",
+      "date": "2026-07-28",
+      "grade": "ok",
+      "closed": false,
+      "job": "669242368"
+    },
+    {
+      "id": "9c3bda7b-8648-473b-9e95-913f74258103-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
+      "type": "Stall / Think About It",
+      "cust": "I'm not ready to buy another air condition, okay? I just had windows put in... and I don't want to buy air conditioner. So if you can keep it running for another year I give you two bottles of water...",
+      "answer": "No one ever wakes up and says, hey, I'm ready to draw that kind of money. But my job here is again just to make sure everything's running safely the way it needs to... we're giving you the options in terms of what we can do to help you out... make sure you're getting the best deal possible.",
+      "tech": "Andrew Trujillo",
+      "date": "2026-07-28",
+      "grade": "ok",
+      "closed": false
+    },
+    {
+      "id": "bbf880be-c8b6-43e1-bd76-046209b162d0-g2M7csV6deOB5LCNP4trAUmVb3H2-1",
+      "type": "Price",
+      "cust": "I just don't want to spend $30,000 on a new AC unit until it actually breaks and then I'll call you guys in an emergency.",
+      "answer": "Yeah, okay. Are you going to be here or do you just want me to send over the quote?",
+      "tech": "David Canales",
+      "date": "2026-07-28",
+      "grade": "poor",
+      "closed": false
+    },
+    {
+      "id": "ed3b96c5-076b-43bc-8ee0-d70eb7d7c43a-C8GrpPB0IyRgskhBGU9g6yM2FpE3-1",
+      "type": "Stall / Think About It",
+      "cust": "I'm going through the loops of the insurance because she does have home insurance and she has home warranty... I'm trying to go through the loops. They're saying... it looks like potentially from the warranty, we're going to be able to get somewhere.",
+      "answer": "Yes, and even with home warranty, from what I've seen, they normally wait till multiple things fail, and when they do, it's still pricey... I also gave you the option to see what we can do for you so you can compare the price.",
+      "tech": "Nathan  Colquitt",
+      "date": "2026-07-28",
+      "grade": "great",
+      "closed": false
+    },
+    {
+      "id": "f892612b-f18f-477a-83bd-b7f421bbf652-Dmp0XntHegO0HaJZZRXRfWYS5Wi1-1",
+      "type": "Competitor",
+      "cust": "Well, these guys are right here the very next day.",
+      "answer": "No, it's not about how it's convenient. I'm saying as far as like the component, your compressor is working a little bit harder because of everything that's going on... we can have somebody come out so you can speak with somebody. That way you can compare, contrast, and see where you are compared to home warranty.",
+      "tech": "Robert Silinzy",
+      "date": "2026-07-28",
+      "grade": "great",
+      "closed": false,
+      "job": "669308940"
     }
   ]
 }
