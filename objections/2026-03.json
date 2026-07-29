@@ -1,0 +1,114 @@
+{
+  "month": "2026-03",
+  "items": [
+    {
+      "id": "9fcf9408-ccb0-4f6a-a8a2-a3376f7ddba4-QSgW0Qp6bKP82NeJl9A5ckCGhts1-1",
+      "type": "Stall / Think About It",
+      "cust": "Okay, we have a lot to think about, don't we?",
+      "answer": "Oh, yeah, definitely... at least that way you guys can get all your information before you guys just start putting money into the system because it is up there in age. If you guys want to see what replacement cost looks like today, I could have our equipment specialist come back out and give you guys today's pricing.",
+      "tech": "Alex - Oleksiy Yakovchuk",
+      "date": "2026-03-31",
+      "grade": "great",
+      "closed": false,
+      "job": "635707202"
+    },
+    {
+      "id": "3184b83b-d63b-48fa-a87a-774b709a0217-QSgW0Qp6bKP82NeJl9A5ckCGhts1-1",
+      "type": "Spouse / Decision-Maker",
+      "cust": "My daughter also owns this house and she doesn't want to do anything until something breaks because we have a home warranty. That's where we're at.",
+      "answer": "I'm still going to write everything up. Have you guys ever used home warranty in the past?... With home warranty, sometimes they'll keep you waiting for weeks before they come out for parts. We're still here for you. If they're taking two weeks to come out here, give us a call.",
+      "tech": "Alex - Oleksiy Yakovchuk",
+      "date": "2026-03-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "631308210"
+    },
+    {
+      "id": "c29804c8-59fc-4189-9210-748922bedd42-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
+      "type": "Stall / Think About It",
+      "cust": "I'm not going to do anything... Not right now, because I just getting settled in, so.",
+      "answer": "Yeah, I totally get it. Just want to make sure we're getting the best information we can. I'm happy to follow up with you at some point later in the week or next week, if that sounds all right.",
+      "tech": "Andrew Trujillo",
+      "date": "2026-03-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "635057804"
+    },
+    {
+      "id": "3997d36f-cbca-4210-a8f8-570f8fa38437-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
+      "type": "Stall / Think About It",
+      "cust": "You know, I'll reach out to them when I feel like I want to do that.",
+      "answer": "Got you. Okay.",
+      "tech": "Cole Pantol",
+      "date": "2026-03-31",
+      "grade": "poor",
+      "closed": false,
+      "job": "635326711"
+    },
+    {
+      "id": "e5851aa9-91bf-422b-b085-ce52eea31146-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
+      "type": "Stall / Think About It",
+      "cust": "I'm ready to sell this house as it is and I don't want to stay here, so I'm definitely not going to put a new unit in.",
+      "answer": "Gotcha. Yeah, it's just when the inspector comes through and everything, I mean, last thing you want is like a hiccup or anything with the unit because then you might have to be discounting the house or replacing the unit at that time.",
+      "tech": "Cole Pantol",
+      "date": "2026-03-31",
+      "grade": "ok",
+      "closed": false
+    },
+    {
+      "id": "2749b092-81cd-46e2-be15-31628eba2bcb-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
+      "type": "Price",
+      "cust": "I mean, I don't think I'm gonna do a repair for $9,000... So that's pretty crazy.",
+      "answer": "If it was five years old, it'll be considerable. But just because your system is from 1995, then it's just not liable because repairs probably get you another season or two. But for what you're paying, you might as well pay for that towards something that's a little newer, for sure.",
+      "tech": "Francisco Valencia",
+      "date": "2026-03-31",
+      "grade": "great",
+      "closed": false,
+      "job": "637161976"
+    },
+    {
+      "id": "db4aa0d7-1bbe-419f-89a0-0207adf2647a-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
+      "type": "Stall / Think About It",
+      "cust": "Let's not go there. Let's replace the filter. Let me think about it. Let me look at my calendar. Let me call Sierra and see.",
+      "answer": "Okay. So I'll tell you what. I'll call you June 1st, and then just to confirm the appointment for June 4th. And if anything has changed, you can let me know and then we can adjust it for you.",
+      "tech": "Francisco Valencia",
+      "date": "2026-03-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "633946845"
+    },
+    {
+      "id": "519cba83-2405-472e-85fb-27878d53311a-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
+      "type": "Doubt / Distrust",
+      "cust": "I think the issue has been every time we've had the service, they always tell us something different. So he doesn't quite know what to believe.",
+      "answer": "No, by all means. Right, I hear you. I definitely understand where you're coming from... I'm here to help you guys out. So I definitely get where you're coming from and his mindset. I'll get everything sent over to you.",
+      "tech": "Joe Mendoza",
+      "date": "2026-03-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "633514557"
+    },
+    {
+      "id": "9c460a8e-8c53-4b4a-8bad-992980a4f636-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
+      "type": "Doubt / Distrust",
+      "cust": "I'm not going to sign on anything until I speak to them and I don't know if this is true but I've been told that every time someone comes out they get a bonus for getting someone to buy a new system from our company.",
+      "answer": "Don't believe everything you hear... We've been around a long time, since 1987. And our guys, we're not going to lie, steal, or cheat from anybody. Whether you do repairs or a replacement, that's all we want to do, is make sure it's working.",
+      "tech": "Joe Mendoza",
+      "date": "2026-03-31",
+      "grade": "great",
+      "closed": false,
+      "job": "634953341"
+    },
+    {
+      "id": "3e45d008-2924-4f86-813b-51d826a52e59-kBmcjj1ucbYoWgDqILgiXfkLNzP2-1",
+      "type": "Stall / Think About It",
+      "cust": "I feel like you're pushing me a little too much... and when I feel that way, then the garage door comes down.",
+      "answer": "Yeah, I'll stop... I'm just trying to figure out what's stopping you from taking care of the system going into summertime. I'm just trying to give you information, Jim, not trying to do anything that you don't want to do.",
+      "tech": "Ting Cheung",
+      "date": "2026-03-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "637054604"
+    }
+  ]
+}

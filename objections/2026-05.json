@@ -5456,6 +5456,60 @@
       "date": "2026-05-29",
       "grade": "ok",
       "closed": false
+    },
+    {
+      "id": "0c41aa97-cae3-4fd2-a935-5251c9f737fa-f4dx65lewNTPydNXjgypLVFAcbk1-1",
+      "type": "Price",
+      "cust": "I just hope you're not as, like, way too overpriced than the ones that would quote us... but I will take into consideration your guy was saying, hey, you guys have been around for a long time.",
+      "answer": "It's very important on who puts it in, how they do it... if he puts it in, it's not gonna come out right. We've seen it with other companies where we literally have a tab in our price book for a reinstallation.",
+      "tech": "Brandon Moreno",
+      "date": "2026-05-31",
+      "grade": "great",
+      "closed": false
+    },
+    {
+      "id": "c8fd0277-a564-4440-9ea8-8332c455fa41-F8ZeOm4TrkOymEC2UFNijyrobEp2-1",
+      "type": "Price",
+      "cust": "I mean, say regular visit the $150, but I don't want to pay $250 because you're coming today.",
+      "answer": "Oh no, no, no, no, we're not, we're not charging you anything extra just because it's a weekend. You get the same.",
+      "tech": "Mario Castro",
+      "date": "2026-05-31",
+      "grade": "great",
+      "closed": false,
+      "job": "648713275"
+    },
+    {
+      "id": "c8fd0277-a564-4440-9ea8-8332c455fa41-F8ZeOm4TrkOymEC2UFNijyrobEp2-2",
+      "type": "Stall / Think About It",
+      "cust": "So money-wise, I cannot suddenly have a cash. Okay, so have to think about that.",
+      "answer": "Postponed. No, that's fine. It was, it was because we were doing the systems and everything else. I just figured I'd check.",
+      "tech": "Mario Castro",
+      "date": "2026-05-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "648713275"
+    },
+    {
+      "id": "3d68c639-e868-4b20-96e6-ed24c74478f1-F8ZeOm4TrkOymEC2UFNijyrobEp2-1",
+      "type": "Spouse / Decision-Maker",
+      "cust": "I think we should talk this over first. I mean, that is a good amount of money.",
+      "answer": "If it's a money thing, there's other options... the first 3 months is no interest, no payments... on the single stage, Lennox you're at $24,240... 8.5% after the first 90 days.",
+      "tech": "Mario Castro",
+      "date": "2026-05-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "648755313"
+    },
+    {
+      "id": "086090cd-c754-4b6c-8eb6-2b3a4c5f9088-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
+      "type": "Spouse / Decision-Maker",
+      "cust": "If I can get all of them, because I have to ask my daughter, I don't have money.",
+      "answer": "I can write it all down if you want to take a picture with your phone... when she comes back into town I can give you guys a call as well, go over it over the phone.",
+      "tech": "Dustin Romine",
+      "date": "2026-05-30",
+      "grade": "ok",
+      "closed": false,
+      "job": "645924146"
     }
   ]
 }
