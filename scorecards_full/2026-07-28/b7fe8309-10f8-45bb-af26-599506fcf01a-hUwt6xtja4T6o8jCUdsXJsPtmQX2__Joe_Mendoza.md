@@ -1,0 +1,1 @@
+SKIP: Near-empty transcript—insufficient content for scoring
