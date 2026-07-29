@@ -1,0 +1,1 @@
+Non-scoreable: Heavily corrupted audio transcript with unrelated content (song lyrics, foreign language, poor speech recognition quality). Cannot assess FSG performance against reliable call content.
