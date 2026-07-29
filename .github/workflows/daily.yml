@@ -86,8 +86,20 @@ jobs:
             echo "no TGL truth change"
           else
             git commit -m "TGL truth $(date -u +'%F %H:%M')"
-            git pull --rebase || echo "pull --rebase failed"
-            git push || echo "push skipped"
+            # Heal push races instead of silently dropping the truth update —
+            # the old "|| echo push skipped" lost EVERY update once concurrent
+            # commits made the rebase conflict (found 2026-07-28: daily truth
+            # files silently stopped for 2 days). Truth files are regenerated
+            # fresh each run, so on conflict OUR copies win.
+            n=0
+            until git push -q origin main; do
+              n=$((n+1)); [ "$n" -gt 3 ] && { echo "truth push failed after 3 heals"; break; }
+              if ! git pull --rebase --autostash -q; then
+                git checkout --theirs tgl_truth/ 2>/dev/null || true
+                git add tgl_truth/ 2>/dev/null || true
+                GIT_EDITOR=true git rebase --continue || git rebase --abort
+              fi
+            done
           fi
       - name: Refresh duplicate-ticket exclusions (once daily · 14:00 UTC)
         continue-on-error: true          # a refresher failure keeps the last good list; never breaks the build
