@@ -1,1 +1,0 @@
-Not scoreable — recording error or corrupted file. Transcript contains only two words ("That. It?") with no genuine customer interaction content.
