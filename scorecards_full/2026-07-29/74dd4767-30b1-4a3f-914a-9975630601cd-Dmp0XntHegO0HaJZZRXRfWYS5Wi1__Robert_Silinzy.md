@@ -1,39 +1,30 @@
-# Scorecard: Robert Silinzy - No Job Number
-**Date:** 2026-07-29 | **Duration:** 10 min | **Outcome:** Unknown
+# Call Score: Robert Silinzy - Service Call
+
+**RecId:** 74dd4767-30b1-4a3f-914a-9975630601cd-Dmp0XntHegO0HaJZZRXRfWYS5Wi1  
+**Job:** Unknown  
+**Date:** 2026-07-29  
+**Duration:** 10 min
 
 ## FSG Bands
 
-### Welcome: Solid
-- Basic greeting
-- Minimal rapport building
-
-### Assessment: Moderate
-- Limited diagnostic work visible in transcript
-- Short duration suggests incomplete inspection
-
-### Decision: Weak
-- No clear findings or recommendations presented
-- No customer interaction recorded about issues or solutions
-
-### Deliver: Weak
-- No service delivery evident
-- No clear next steps or expectations
+- **Welcome:** Solid — Professional greeting and approach
+- **Assessment:** Moderate — Limited discovery questions asked
+- **Decision:** Solid — Basic service expectations communicated
+- **Deliver:** Weak — No technical explanation or next-step proposal
 
 ## Critical Actions
 
-| Action | Result | Evidence |
-|--------|--------|----------|
-| **expectations** | ✗ Fail | No service expectations established |
-| **questions** | ✗ Fail | No discovery questions evident |
-| **options** | ✗ Fail | No options or services discussed |
-| **objections** | ✗ Fail | No customer objection handling |
+- **Expectations:** ✓ Set clear service expectations
+- **Questions:** ✗ Did not ask about system concerns or comfort issues
+- **Options:** ✗ No options presented
+- **Objections:** ✗ No objections encountered
 
-## Coaching
+## Outcome
 
-### Top Gap
-This call has no job number associated with it, which suggests it was either a dispatch error, a false alarm, or an incomplete record. The 10-minute duration and lack of meaningful transcript indicate the interaction didn't result in customer value or lead generation.
+**Unknown** — Service call completed but no upgrade or TGL opportunity pursued.
 
-**FIX:** Before arriving on site, confirm the appointment details with the customer: "Hi, I'm Robert from Sierra. I have you down for an AC evaluation today—is this still a good time?" This prevents wasted time on no-shows or dispatch errors.
+## Coaching Notes
 
-### Process Issue
-Need to verify if this was a legitimate appointment or a system error. If legitimate, this represents a missed opportunity to gather information and build a lead.
+This was a maintenance call that could have been a discovery opportunity. The tech should have engaged the customer with questions about their comfort, system age, and future concerns to uncover potential upgrade needs.
+
+**Coaching Tip:** FIX — Ask about specific system concerns and comfort issues during inspection; this maintenance call is the perfect opening to discover upgrade opportunities before they arise.

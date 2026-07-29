@@ -1,1 +1,1 @@
-Incomplete transcript — ends abruptly after 120 lines. Incoherent content, non-scoreable.
+Not a customer interaction — transcript contains internal chatter unrelated to service delivery

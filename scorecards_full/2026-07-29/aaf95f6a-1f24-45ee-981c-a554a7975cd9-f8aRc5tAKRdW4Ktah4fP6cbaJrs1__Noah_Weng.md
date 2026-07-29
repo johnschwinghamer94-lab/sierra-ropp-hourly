@@ -1,1 +1,1 @@
-SKIP: Not a genuine customer interaction - corrupted transcription with unrelated personal conversation, embedded ad, and minimal service content.
+Corrupted/garbled transcript with interspersed advertisement; insufficient genuine customer interaction to score FSG process
