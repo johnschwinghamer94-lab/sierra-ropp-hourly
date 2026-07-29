@@ -1,0 +1,242 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Andrew Trujillo — SILO Coaching Plan 2026-07-28</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;·&nbsp;SILO</b><span class="tag">Daily Coaching Plan · 2026-07-28</span></div>
+<div class="wrap">
+<div class="hero">
+  <div class="ey">Two for two · a competitor in the driveway and he still won it</div>
+  <h1 class="disp">Andrew Trujillo</h1>
+  <p class="lede">On the TROUTMAN job the customer told Andrew, out loud, that a second AC company was coming the same day — and then asked him about heat pumps. Both of those are the whole call. ServiceTitan says he won it anyway.</p>
+</div>
+
+<div class="glance">
+  <div class="g"><div class="k">Close Rate</div><div class="v grn">100% (from graded calls)<small>2 of 2 flipped · ServiceTitan confirmed</small></div></div>
+  <div class="g"><div class="k">Calls Reviewed</div><div class="v">2<small>one recording unusable</small></div></div>
+  <div class="g"><div class="k">Strongest Section</div><div class="v grn">Welcome<small>Strong</small></div></div>
+  <div class="g"><div class="k">Weakest Section</div><div class="v red">Deliver<small>Solid</small></div></div>
+</div>
+<div class="legend">
+  <span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span>
+  <span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span>
+</div>
+<p class="note">Scored on strength bands, never numbers — the only figure anywhere is the close rate. One of his three recordings is unusable and was not scored. The DERR recording runs nearly three hours. The dashboard&#x27;s own conversion file had not been refreshed for 2026-07-28 when this plan was built, so this rate is counted from the graded calls themselves.</p>
+
+<section id="verdict">
+<div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive">
+  <div class="dh"><div class="k">Why it flipped</div><h3>The expectation script did the work before the competitor showed up.</h3></div>
+  <div class="split">
+    <div class="c said"><div class="lbl">What actually happened</div><p>Before any tools came out he said <q>I want to make sure I&#x27;m setting expectations as far as my visit</q>, asked permission to raise anything he found, and closed the loop with <q>the last thing I want to do is just do the repair and then give you a surprise bill</q>. Then the customer volunteered <q>I have somebody else coming today, too. Just another air conditioning company</q>.</p></div>
+    <div class="c should"><div class="lbl">What it means</div><p>A customer who has already lined up a second opinion is telling you the standard you are being measured against. Andrew had set his standard first, which is why he was still in the running — and why ServiceTitan shows the lead on his ticket.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="calls">
+<div class="sh"><div class="no">2</div><h2>The day&#x27;s calls</h2><span class="hint">outcome per gradeable call</span></div>
+<div class="rub">
+  <div class="row"><div class="rb">TROUTMAN · Job # 669261059 &lt;i&gt;· 48 min&lt;/i&gt;</div><div><span class="b strong">Flipped</span></div><div class="ev">No-cool overnight. Full expectation script, deep discovery on filters, solar and usage. Competitor disclosed by the customer; heat-pump interest raised. Recording ends mid-visit. ServiceTitan lead confirmed.</div></div>
+  <div class="row"><div class="rb">DERR RONALD · Job # 669385688 &lt;i&gt;· 168 min&lt;/i&gt;</div><div><span class="b strong">Flipped</span></div><div class="ev">Long full-system visit. Discovery, options and commitment all reached. ServiceTitan lead confirmed.</div></div>
+</div>
+</section>
+
+<section id="rubric">
+<div class="sh"><div class="no">3</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div>
+<div class="rub">
+  <div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+  <div class="row"><div class="rb">Empathy</div><div><span class="b strong">Strong</span></div><div class="ev">Opened on the customer&#x27;s problem, not his own process: <q>can you tell me about what&#x27;s going on today?</q></div></div>
+  <div class="row"><div class="rb">Expertise</div><div><span class="b strong">Strong</span></div><div class="ev">Located the return and the run length by eye before touching anything — <q>assuming the unit is just going to be right up here, it has the least amount of travel</q>.</div></div>
+  <div class="row"><div class="rb">Setting Expectations</div><div><span class="b strong">Strong</span></div><div class="ev">The most complete script on the board: <q>I&#x27;m going to be looking at the full system... If I happen to come across other concerns... would it be okay if I bring that to your attention?</q> and <q>I want to make sure I&#x27;m getting that approval on that. So the last thing I want to do is just do the repair and then give you a surprise bill</q>.</div></div>
+  <div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+  <div class="row"><div class="rb">Required Questions</div><div><span class="b strong">Strong</span></div><div class="ev">Filters (<q>How often are we swapping out your filters?</q>), prior inspection and what the last tech actually said, thermostat behaviour, and the energy question — <q>what are your energy goals looking like?</q></div></div>
+  <div class="row"><div class="rb">Check-Ins</div><div><span class="b strong">Strong</span></div><div class="ev">Asked what the customer wanted from the visit — <q>Any expectations that you have of me today, anything that you&#x27;re hoping to get out of my visit?</q> — and got <q>Cool air would be good</q> plus the heat-pump question.</div></div>
+  <div class="row"><div class="rb">How to Check-In</div><div><span class="b solid">Solid</span></div><div class="ev">Permission-based and unhurried. Once he is into the readings the check-in cadence thins out.</div></div>
+  <div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b wins">Strong on wins</span></span></div>
+  <div class="row"><div class="rb">Building Options</div><div><span class="b wins">Strong on wins</span></div><div class="ev">DERR: options built and carried to commitment across the long visit.</div></div>
+  <div class="row"><div class="rb">Reconnecting</div><div><span class="b solid">Solid</span></div><div class="ev">He captured the customer&#x27;s real goal early; the recording ends before he brings it back at the report.</div></div>
+  <div class="row"><div class="rb">Explaining Options</div><div><span class="b wins">Strong on wins</span></div><div class="ev">Frames the report as a shared decision — <q>We can look that through and see what the best option is</q>.</div></div>
+  <div class="row"><div class="rb">Overcoming Objections</div><div><span class="b mod">Moderate</span></div><div class="ev">The competitor disclosure — <q>I have somebody else coming today</q> — draws an <q>Okay</q> and no follow-up question on tape.</div></div>
+  <div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Be A Nerd</div><div><span class="b solid">Solid</span></div><div class="ev">Explains airflow and return placement in plain terms; the heavier teaching happens after the TROUTMAN recording cuts.</div></div>
+  <div class="row"><div class="rb">5-Star Review</div><div><span class="b na">Off-tape</span></div><div class="ev">Not reached on either usable recording.</div></div>
+  <div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b strong">Strong</span></span></div>
+  <div class="row"><div class="rb">Flip the call</div><div><span class="b strong">Strong</span></div><div class="ev">Two gradeable jobs, two ServiceTitan leads.</div></div>
+  <div class="row"><div class="rb">Help them decide</div><div><span class="b wins">Strong on wins</span></div><div class="ev">He surfaced the heat-pump question the customer was already carrying — that is the customer starting to decide out loud.</div></div>
+</div>
+
+<div class="sh" style="margin-top:26px"><div class="no">4</div><h2>Critical Actions — pass rate</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Setting clear expectations</div><div><span class="b pass">Pass</span></div><div class="ev">Full script including the no-surprise-bill line, on tape.</div></div>
+  <div class="row"><div class="rb">Asking good questions</div><div><span class="b pass">Pass</span></div><div class="ev">Filters, prior service, thermostat, energy, and the customer&#x27;s own goal for the visit.</div></div>
+  <div class="row"><div class="rb">Creating good options</div><div><span class="b pass">Pass</span></div><div class="ev">Both jobs produced a ServiceTitan lead.</div></div>
+  <div class="row"><div class="rb">Handling objections</div><div><span class="b pass">Pass</span></div><div class="ev">Won the job with a competitor booked the same day — though the objection itself is not worked on tape.</div></div>
+</div>
+</section>
+
+<section id="strengths">
+<div class="sh"><div class="no">5</div><h2>What Andrew did right — real strength, build on it</h2></div>
+<ul class="str">
+  <li><b>Best expectation script on the board.</b> Scope, permission, report, approval and the no-surprise-bill promise, delivered without sounding recited.</li>
+  <li><b>He asks what the customer wants from him.</b> <q>Any expectations that you have of me today?</q> is a question almost nobody else asks, and it is what surfaced the heat-pump conversation.</li>
+  <li><b>Discovery reaches money.</b> He got to solar, contracted kilowatt rates and the July bill without it feeling like a sales question.</li>
+  <li><b>He wins against a live competitor.</b> The customer had a second company booked for the same day and the lead still landed on his ticket.</li>
+</ul>
+</section>
+
+<section id="gaps">
+<div class="sh"><div class="no">6</div><h2>The three gaps</h2><span class="hint">each one in Andrew&#x27;s own calls</span></div>
+<div class="mom">
+  <div class="top2"><span class="b mod">Moderate</span><h4>Gap 1 — The competitor was named and never worked</h4></div>
+  <div class="q"><b>Customer, TROUTMAN</b><q>I have somebody else coming today, too. Just another air conditioning company. To get so I have two perspectives on the thing.</q></div>
+  <div class="q"><b>Andrew</b><q>Okay.</q> — then straight on to the next question.</div>
+  <p class="fixline"><b>The fix</b> That sentence is an invitation, not a threat. One question turns it around: <q>Good — what are you hoping they tell you that I haven&#x27;t yet?</q> Now you know exactly what you are being compared on, and you get to answer it first.</p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b solid">Solid</span><h4>Gap 2 — A replacement signal went by unbooked</h4></div>
+  <div class="q"><b>Customer</b><q>The other thing we might talk about is a heat pump versus an AC unit. I&#x27;m happy to consider that too.</q></div>
+  <div class="q"><b>Andrew</b><q>What kind of brings you to like to that idea?</q> — good question, then the thread drops.</div>
+  <p class="fixline"><b>The fix</b> A customer raising heat pump versus AC unprompted is a customer already shopping for a system. That is the specialist appointment, in the room, that day: <q>Let&#x27;s get our equipment specialist out to price both so you can compare properly — is later today or tomorrow better?</q></p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b na">Off-tape</span><h4>Gap 3 — One recording is unusable</h4></div>
+  <div class="q"><b>Third recording</b>unrelated news and political audio spliced through the middle — the call cannot be scored.</div>
+  <p class="fixline"><b>The fix</b> Nothing on him, but it costs him a graded call. Flag corrupted recordings the same day so the visit can be scored from notes rather than lost.</p>
+</div>
+</section>
+
+<section id="plan">
+<div class="sh"><div class="no">7</div><h2>Three-week training plan</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Week 1</div><div><span class="b solid">Turn the competitor</span></div><div class="ev"><b>Drill:</b> When another company is mentioned, answer with a question about what they hope to hear, before anything else.<br><b>Proof it worked:</b> A follow-up question on tape every time a competitor comes up.</div></div>
+  <div class="row"><div class="rb">Week 2</div><div><span class="b solid">Signal to slot</span></div><div class="ev"><b>Drill:</b> Any mention of replacement, heat pumps or new systems gets converted to a booked specialist visit before the topic changes.<br><b>Proof it worked:</b> Every replacement mention ends in a date and time.</div></div>
+  <div class="row"><div class="rb">Week 3</div><div><span class="b solid">Close the loop</span></div><div class="ev"><b>Drill:</b> Bring the customer&#x27;s stated goal back verbatim when presenting the report.<br><b>Proof it worked:</b> Their own words repeated at the decision step on every call.</div></div>
+</div>
+</section>
+
+<section id="owe">
+<div class="sh"><div class="no">8</div><h2>What we owe Andrew Trujillo</h2></div>
+<ul class="str">
+  <li>A fix for whatever spliced foreign audio into his third recording — it cost him a graded call.</li>
+  <li>Recognition that he beat a same-day second opinion; that is the hardest kind of lead to earn.</li>
+  <li>A conversion number that reflects his day. The dashboard file had not been refreshed for this date, so this rate is counted from his own graded calls.</li>
+</ul>
+</section>
+
+<div class="bottom">
+  <div class="eyb">Bottom line</div>
+  <p>Andrew&#x27;s front half is the model for the team — nobody sets expectations more completely, and almost nobody asks the customer what they want from the visit. The two moments he let go were both handed to him by the customer: a competitor in the driveway and a heat-pump question. Neither needed a harder sell. Both needed one more question and a date on the calendar.</p>
+</div>
+
+<div class="foot">Sierra · SILO daily coaching plan · 2026-07-28 · Scored on strength bands — close rate is the only number</div>
+</div></body></html>

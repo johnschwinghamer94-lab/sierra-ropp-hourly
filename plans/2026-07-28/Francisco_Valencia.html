@@ -1,0 +1,246 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Francisco Valencia — SILO Coaching Plan 2026-07-28</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;·&nbsp;SILO</b><span class="tag">Daily Coaching Plan · 2026-07-28</span></div>
+<div class="wrap">
+<div class="hero">
+  <div class="ey">Four calls · elite diagnostics, three visits with no path forward</div>
+  <h1 class="disp">Francisco Valencia</h1>
+  <p class="lede">Francisco is the best service-history detective on the board — he reconstructs what every previous technician did and finds the mistake. Three times on the same day, he reached the right answer and then left without telling the customer what to do about it.</p>
+</div>
+
+<div class="glance">
+  <div class="g"><div class="k">Close Rate</div><div class="v ">25% (from graded calls)<small>1 of 4 · one maintenance close</small></div></div>
+  <div class="g"><div class="k">Calls Reviewed</div><div class="v">4<small>three diagnostics, no options</small></div></div>
+  <div class="g"><div class="k">Strongest Section</div><div class="v grn">Assessment<small>Strong</small></div></div>
+  <div class="g"><div class="k">Weakest Section</div><div class="v red">Decision<small>Moderate</small></div></div>
+</div>
+<div class="legend">
+  <span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span>
+  <span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span>
+</div>
+<p class="note">Scored on strength bands, never numbers — the only figure anywhere is the close rate. One of the four is a filter-only maintenance call the customer had pre-decided. The dashboard&#x27;s own conversion file had not been refreshed for 2026-07-28 when this plan was built, so this rate is counted from the graded calls themselves.</p>
+
+<section id="verdict">
+<div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive">
+  <div class="dh"><div class="k">The pattern</div><h3>Right diagnosis, no destination.</h3></div>
+  <div class="split">
+    <div class="c said"><div class="lbl">What actually happened</div><p>PERIES: <q>whoever has been coming out here was doing a lot of guessing games because what you have out there is a restriction</q> — a prior Sierra tech had added refrigerant to a restriction, making it worse. The call ends with no recovery plan, no warranty conversation and no escalation.</p></div>
+    <div class="c should"><div class="lbl">What it means</div><p>Three separate customers got a correct, hard-won diagnosis and nothing to act on. On SUAREZ the customer said <q>I&#x27;m not ready to spend that</q> about a number that was never actually named. The diagnostic skill is not in question; the twenty minutes after it is missing.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="calls">
+<div class="sh"><div class="no">2</div><h2>The day&#x27;s calls</h2><span class="hint">outcome per gradeable call</span></div>
+<div class="rub">
+  <div class="row"><div class="rb">Filter replacement · Mark 16 &lt;i&gt;· 26 min&lt;/i&gt;</div><div><span class="b strong">Closed</span></div><div class="ev">Bilingual maintenance call. Switched to Spanish throughout, respected a declined inspection, completed the work, signature and receipt arranged.</div></div>
+  <div class="row"><div class="rb">BELZER JOHN · Job # 669242368 &lt;i&gt;· 142 min&lt;/i&gt;</div><div><span class="b weak">No-close</span></div><div class="ev">Two-system membership maintenance. Restoration priced; customer named a friend in the trade and left to consult his wife. No specialist visit offered.</div></div>
+  <div class="row"><div class="rb">SUAREZ CRISTETA · Job # 669280243 &lt;i&gt;· 32 min&lt;/i&gt;</div><div><span class="b weak">No-close</span></div><div class="ev">Failed compressor diagnosed, warranty limits explained. No repair price presented, no financing, no next step.</div></div>
+  <div class="row"><div class="rb">PERIES / SURVASE · Job # 669280898 &lt;i&gt;· 26 min&lt;/i&gt;</div><div><span class="b weak">No-close</span></div><div class="ev">Refrigerant restriction identified and traced to a prior technician&#x27;s error. No resolution path offered.</div></div>
+</div>
+</section>
+
+<section id="rubric">
+<div class="sh"><div class="no">3</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div>
+<div class="rub">
+  <div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Empathy</div><div><span class="b strong">Strong</span></div><div class="ev">The filter call is a masterclass — greeted in the customer&#x27;s own language and stayed there: <q>Miguel, un gusto. Se cuida, okay. Nos vemos la próxima.</q></div></div>
+  <div class="row"><div class="rb">Expertise</div><div><span class="b strong">Strong</span></div><div class="ev">BELZER: read the household off the equipment — <q>It looks like you guys spend more time down here than you guys do up there. At least from what the condition of that unit looks like.</q></div></div>
+  <div class="row"><div class="rb">Setting Expectations</div><div><span class="b weak">Weak</span></div><div class="ev">On PERIES he opens straight into a tour with no scope statement — the closest thing to expectations is <q>We&#x27;ll take a look at it and see what&#x27;s going on</q>. BELZER has the same problem.</div></div>
+  <div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+  <div class="row"><div class="rb">Required Questions</div><div><span class="b strong">Strong</span></div><div class="ev">PERIES: reconstructed the whole service history — who changed the filter, when the landlord checked it, which technician came two weeks ago and which came yesterday.</div></div>
+  <div class="row"><div class="rb">Check-Ins</div><div><span class="b strong">Strong</span></div><div class="ev">BELZER: usage patterns, which system runs harder, and the customer&#x27;s own concerns checked repeatedly through a long visit.</div></div>
+  <div class="row"><div class="rb">How to Check-In</div><div><span class="b solid">Solid</span></div><div class="ev">Personal questions land naturally — <q>How long have you been a firefighter for?</q> — and build genuine rapport mid-visit.</div></div>
+  <div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b mod">Moderate</span></span></div>
+  <div class="row"><div class="rb">Building Options</div><div><span class="b weak">Weak</span></div><div class="ev">Three diagnostics, no options built on any of them. SUAREZ: a compressor failure diagnosed and no price ever stated.</div></div>
+  <div class="row"><div class="rb">Reconnecting</div><div><span class="b weak">Weak</span></div><div class="ev">BELZER: the customer names his real hesitation and it is answered with a comparison rather than a question.</div></div>
+  <div class="row"><div class="rb">Explaining Options</div><div><span class="b solid">Solid</span></div><div class="ev">The filter call is clean and clear: scope confirmed, price accepted, work completed.</div></div>
+  <div class="row"><div class="rb">Overcoming Objections</div><div><span class="b weak">Weak</span></div><div class="ev"><q>I&#x27;m not ready to spend that</q> and a competitor in the customer&#x27;s own department both went unworked.</div></div>
+  <div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Be A Nerd</div><div><span class="b solid">Solid</span></div><div class="ev">BELZER: <q>A bad compressor or that fan motor, since it just has a lot more oil loss, it has a chance of overheating itself</q> — clear cause and effect. The other diagnostics get less explanation than they deserve.</div></div>
+  <div class="row"><div class="rb">5-Star Review</div><div><span class="b weak">Weak</span></div><div class="ev">No review ask on any of the four, including the one that closed cleanly.</div></div>
+  <div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b mod">Moderate</span></span></div>
+  <div class="row"><div class="rb">Make the time valuable</div><div><span class="b solid">Solid</span></div><div class="ev">The filter customer got an excellent experience; the diagnostic customers got an answer with nothing attached.</div></div>
+  <div class="row"><div class="rb">Help them decide</div><div><span class="b weak">Weak</span></div><div class="ev">Three customers were left holding a diagnosis and no decision.</div></div>
+</div>
+
+<div class="sh" style="margin-top:26px"><div class="no">4</div><h2>Critical Actions — pass rate</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Setting clear expectations</div><div><span class="b fail">Fail</span></div><div class="ev">No scope statement on PERIES or BELZER; <q>we&#x27;ll take a look at it</q> is not an expectation.</div></div>
+  <div class="row"><div class="rb">Asking good questions</div><div><span class="b pass">Pass</span></div><div class="ev">Service-history reconstruction on PERIES is the best discovery work of the day.</div></div>
+  <div class="row"><div class="rb">Creating good options</div><div><span class="b fail">Fail</span></div><div class="ev">No options presented on three of four calls. Automatic fail on each.</div></div>
+  <div class="row"><div class="rb">Handling objections</div><div><span class="b fail">Fail</span></div><div class="ev">A named competitor and an explicit price objection both went unanswered.</div></div>
+</div>
+</section>
+
+<section id="strengths">
+<div class="sh"><div class="no">5</div><h2>What Francisco did right — real strength, build on it</h2></div>
+<ul class="str">
+  <li><b>He reconstructs what everyone else did.</b> On PERIES he mapped four separate service visits and found the error inside them — that is genuinely rare diagnostic discipline.</li>
+  <li><b>Language as trust.</b> Switching into Spanish and staying there for a full visit changed the customer&#x27;s whole experience, and the transaction was frictionless because of it.</li>
+  <li><b>He respects a no.</b> The filter customer declined an inspection and got excellent service inside that boundary, with no pressure and no sulking.</li>
+  <li><b>He reads the house.</b> Telling a customer which of their two systems does the work, from the condition of the equipment alone, is credibility you cannot fake.</li>
+</ul>
+</section>
+
+<section id="gaps">
+<div class="sh"><div class="no">6</div><h2>The three gaps</h2><span class="hint">each one in Francisco&#x27;s own calls</span></div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Gap 1 — Three diagnoses, zero destinations</h4></div>
+  <div class="q"><b>PERIES</b>restriction found, prior tech&#x27;s error identified — no recovery plan, no warranty claim, no escalation offered.</div>
+  <div class="q"><b>SUAREZ</b>compressor failure diagnosed — no repair price ever named.</div>
+  <div class="q"><b>BELZER</b>restoration priced — no specialist visit offered.</div>
+  <p class="fixline"><b>The fix</b> Every diagnostic ends the same way from now on: here is what I found, here is what it costs to fix, and here is the person who can price the alternative. On PERIES specifically: <q>I&#x27;m escalating this to my manager because refrigerant was added to a restriction. Let me find out what we can do to make it right.</q></p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Gap 2 — The competitor got a lecture instead of a question</h4></div>
+  <div class="q"><b>Customer, BELZER</b><q>I think we&#x27;re gonna probably be repair, we&#x27;ll talk about my wife, maybe talk to the guys in my department, because this guy named Weldy owns an AC company.</q></div>
+  <div class="q"><b>Francisco</b><q>friends and family will always be a lot better than us</q> — then a comparison of how Sierra does things by the book.</div>
+  <p class="fixline"><b>The fix</b> Comparing yourself to his friend is a fight you cannot win. Ask instead: <q>What matters most in this decision — the price, or knowing it&#x27;s done right and backed?</q> Then offer the specialist so he can compare like for like. A question keeps him thinking; a comparison makes him defensive.</p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Gap 3 — The Welcome step goes missing on diagnostics</h4></div>
+  <div class="q"><b>PERIES</b>opens by asking for a tour of the unit locations, straight into technical work.</div>
+  <div class="q"><b>BELZER</b>expertise established, scope never stated.</div>
+  <p class="fixline"><b>The fix</b> The customers who get his full opening get his best calls. Scope, permission to raise findings, report and approval, five-star intent — the same four lines the maintenance call gets, on every diagnostic.</p>
+</div>
+</section>
+
+<section id="plan">
+<div class="sh"><div class="no">7</div><h2>Three-week training plan</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Week 1</div><div><span class="b solid">Script the diagnostics</span></div><div class="ev"><b>Drill:</b> Run the full expectation script on diagnostic calls, not just maintenance.<br><b>Proof it worked:</b> A scope statement on tape on every call.</div></div>
+  <div class="row"><div class="rb">Week 2</div><div><span class="b solid">Name the number</span></div><div class="ev"><b>Drill:</b> No diagnostic ends without a price or a specialist appointment offered out loud.<br><b>Proof it worked:</b> A price or a booked visit on every diagnostic recording.</div></div>
+  <div class="row"><div class="rb">Week 3</div><div><span class="b solid">Question, don&#x27;t compare</span></div><div class="ev"><b>Drill:</b> When a competitor or a friend in the trade comes up, respond with a question about their decision criteria.<br><b>Proof it worked:</b> A question on tape every time a competitor is named.</div></div>
+</div>
+</section>
+
+<section id="owe">
+<div class="sh"><div class="no">8</div><h2>What we owe Francisco Valencia</h2></div>
+<ul class="str">
+  <li>An escalation path for the PERIES job — a Sierra technician added refrigerant to a restriction, and Francisco should not be the one carrying that conversation alone.</li>
+  <li>Recognition of what bilingual service is worth. The filter call was a better customer experience than most closes on the board.</li>
+  <li>A conversion number that reflects his day. The dashboard file had not been refreshed for this date, so this rate is counted from his own graded calls.</li>
+</ul>
+</section>
+
+<div class="bottom">
+  <div class="eyb">Bottom line</div>
+  <p>Francisco&#x27;s diagnostic work is not the problem and never has been — he found things on three separate calls that other technicians had missed for weeks. What none of those three customers got was a number, a person or a date. Add the last twenty minutes to the call he is already running well, and this becomes one of the stronger days on the board rather than one of the quietest.</p>
+</div>
+
+<div class="foot">Sierra · SILO daily coaching plan · 2026-07-28 · Scored on strength bands — close rate is the only number</div>
+</div></body></html>
