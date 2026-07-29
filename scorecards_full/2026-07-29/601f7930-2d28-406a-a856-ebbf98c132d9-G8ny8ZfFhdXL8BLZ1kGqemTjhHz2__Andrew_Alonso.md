@@ -1,0 +1,1 @@
+Incomplete transcript — cuts off mid-sentence after incomplete diagnosis and extensive personal conversation. Non-scoreable.

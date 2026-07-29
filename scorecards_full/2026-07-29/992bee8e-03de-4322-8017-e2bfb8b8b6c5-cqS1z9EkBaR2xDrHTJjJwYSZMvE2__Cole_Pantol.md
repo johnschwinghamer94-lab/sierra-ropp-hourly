@@ -1,0 +1,1 @@
+Incomplete transcript — ends abruptly after 120 lines. Incoherent content, non-scoreable.
