@@ -18,7 +18,7 @@
 
 ## Outcome
 
-**Closed** - Customer committed to schedule estimate appointment
+**FLIPPED** - Customer agreed to Option C (estimate appointment/next step)
 
 ## Key Strengths
 

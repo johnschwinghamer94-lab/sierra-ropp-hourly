@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-28
 **Duration:** 9 min
-**Outcome:** CLOSED
+**Outcome:** NO-CLOSE
 **RecId:** a84a8703-8a50-48ea-b8c0-4a45d49f52a6-LHPyzDeQsNek3Dzj7AlgurDjs6E2
 
 ## FSG Scores
