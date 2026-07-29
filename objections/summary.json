@@ -1,55 +1,55 @@
 {
-  "generated": "2026-07-28T23:15:00Z",
+  "generated": "2026-07-29T00:41:43Z",
   "window": {
     "start": "2025-12-30",
     "end": "2026-07-27"
   },
   "totals": {
-    "total": 1669,
-    "great": 500,
-    "ok": 909,
-    "poor": 260
+    "total": 1752,
+    "great": 527,
+    "ok": 951,
+    "poor": 274
   },
   "types": {
     "Price": {
-      "total": 500,
-      "great": 173,
-      "ok": 266,
-      "poor": 61
+      "total": 531,
+      "great": 182,
+      "ok": 281,
+      "poor": 68
     },
     "Stall / Think About It": {
-      "total": 488,
-      "great": 139,
-      "ok": 247,
-      "poor": 102
+      "total": 503,
+      "great": 144,
+      "ok": 255,
+      "poor": 104
     },
     "Doubt / Distrust": {
-      "total": 337,
-      "great": 70,
-      "ok": 212,
-      "poor": 55
+      "total": 360,
+      "great": 79,
+      "ok": 224,
+      "poor": 57
     },
     "System Too Old": {
-      "total": 39,
+      "total": 41,
       "great": 15,
-      "ok": 22,
-      "poor": 2
+      "ok": 23,
+      "poor": 3
     },
     "Competitor": {
-      "total": 103,
-      "great": 30,
-      "ok": 55,
+      "total": 108,
+      "great": 32,
+      "ok": 58,
       "poor": 18
     },
     "Spouse / Decision-Maker": {
-      "total": 188,
-      "great": 70,
-      "ok": 99,
-      "poor": 19
+      "total": 194,
+      "great": 71,
+      "ok": 102,
+      "poor": 21
     },
     "Other": {
-      "total": 14,
-      "great": 3,
+      "total": 15,
+      "great": 4,
       "ok": 8,
       "poor": 3
     }
