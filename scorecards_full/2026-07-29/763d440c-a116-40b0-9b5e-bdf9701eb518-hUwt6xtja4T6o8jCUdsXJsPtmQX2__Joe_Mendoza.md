@@ -1,0 +1,1 @@
+Unscorable: Transcript ends mid-call without completion of assessment, decision phase, or outcome determination

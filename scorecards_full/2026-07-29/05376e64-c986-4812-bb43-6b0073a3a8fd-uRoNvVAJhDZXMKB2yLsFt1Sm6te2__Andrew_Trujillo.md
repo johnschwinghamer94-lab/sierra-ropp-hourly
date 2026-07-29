@@ -1,0 +1,1 @@
+Unscorable: No job number in header; transcription heavily corrupted with mixed languages and gibberish

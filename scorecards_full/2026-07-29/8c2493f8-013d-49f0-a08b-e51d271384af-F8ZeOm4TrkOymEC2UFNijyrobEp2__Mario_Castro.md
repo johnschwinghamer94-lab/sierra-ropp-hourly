@@ -1,0 +1,1 @@
+Unscorable: Transcript is mostly internal team banter and personal conversation without customer engagement on service decision
