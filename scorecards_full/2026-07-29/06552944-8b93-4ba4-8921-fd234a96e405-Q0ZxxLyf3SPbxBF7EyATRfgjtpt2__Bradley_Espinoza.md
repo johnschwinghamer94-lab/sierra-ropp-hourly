@@ -1,0 +1,1 @@
+Skip: Call predominantly personal conversation (genealogy, family background, plants, birds). Brief AC diagnostic at start (filters, thermostat check, outdoor unit) overwhelmed by ~90% personal chatter. Not a focused customer service interaction.
