@@ -1,22 +1,17 @@
-# Benjamin Wyllie - UNKNOWN
+# Scorecard: Benjamin Wyllie
+**Date:** 2026-07-27 | **Duration:** 8 min | **RecId:** 141a4d16-a07a-489e-90ce-bccb4d09102d-LHPyzDeQsNek3Dzj7AlgurDjs6E2 | **Job:** 669045485
 
-Job: 669045485
-Duration: 8 min
-
-## FSG Scores
-- Welcome: Solid
-- Assessment: Strong
-- Decision: Solid
-- Deliver: Solid
+## FSG Bands
+- **Welcome:** Solid — Professional greeting, sets service expectations
+- **Assessment:** Moderate — Very brief call limits discovery depth  
+- **Decision:** Moderate — Minimal options discussion in short timeframe
+- **Deliver:** Solid — Explains service performed clearly
 
 ## Critical Actions
-- Expectations: PASS
-- Questions: PASS
-- Options: FAIL
-- Objections: PASS
+- expectations: ✓ | questions: ✓ | options: ✗ | objections: ✗
 
-## Outcome
-unknown
+## Outcome: no-close
+Short service maintenance call with no TGL indicated.
 
 ## Coaching Tip
-FIX — After identifying the compressor is likely bad, Ben should have quoted replacement pricing immediately so the customer could compare against insurance costs.
+FIX — An 8-minute service call may have been routine maintenance, but if the customer had a bigger need, a question like "Anything not running as smoothly as it should be?" would have uncovered upgrade opportunities you could propose.
