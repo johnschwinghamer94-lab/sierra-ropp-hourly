@@ -26,7 +26,8 @@ lines, not from a JSON metadata blob:
   replaced with underscores>` instead. This same id — real RecId or the
   `file:...` pseudo-id — is what goes in the card's `"recId"` field, in the
   full private card's filename, and in the `livecards/<recId>.card.json`
-  filename.
+  filename. Apply the Title Case normalization from "Filename casing +
+  dedupe" below to this pseudo-id too.
 - `jobNumber`: parsed from the `Job:` header line, e.g. `"Job # 12345"` →
   `"12345"`; `null` if the line is missing or has no job number.
 - `dateCreated`: value of the `Date:` header line.
@@ -124,6 +125,18 @@ below is the only place customer context and quotes are allowed.
 ```
 scorecards_full/<dateCreated first 10 chars, PT date of the call>/<recId>__<Rep_Name_with_underscores>.md
 ```
+
+**Filename casing + dedupe (required):**
+
+- Normalize the name component before building any filename: convert any
+  ALL-CAPS word in the rep/customer name portion to Title Case (e.g. `PRUET`
+  -> `Pruet`). Apply the same normalization to the transcript-derived
+  pseudo-recId fallback.
+- Before writing a scorecard, list the existing files in
+  `scorecards_full/<date>/` and compare names case-insensitively. If a file
+  whose recId prefix matches this call already exists in ANY casing,
+  overwrite that exact existing path — never create a new file. Filenames
+  differing only by case collide on macOS/Windows checkouts.
 
 containing: each band with 1-2 supporting quotes, each critical action
 pass/fail with the moment it happened, the outcome evidence, the top 1-2 gaps
