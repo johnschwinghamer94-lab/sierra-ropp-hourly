@@ -122,21 +122,42 @@ def _siro_mint_token(api_key, client_id, client_secret, user_id):
 
 
 def _siro_fetch_recordings(token):
-    r = requests.get(f"{SIRO_API_BASE}/recordings?teamId={SIRO_TEAM_ID}&limit=50",
-                      headers={"x-siro-auth-token": token, "User-Agent": SIRO_UA}, timeout=30)
-    if r.status_code == 401:
-        raise PermissionError("401")
-    r.raise_for_status()
-    return r.json().get("data", [])
+    """All of today's recordings (newest-first, cursor-paginated). A single
+    limit=50 page misses most of the day by noon on a 56-tech team — that
+    produced false NOT RECORDING alerts (J Boothe, 7/30)."""
+    local_mid = datetime.now().astimezone().replace(hour=0, minute=0, second=0, microsecond=0)
+    cutoff = local_mid.astimezone(timezone.utc).isoformat()
+    results, cursor = [], None
+    for _ in range(12):  # safety cap: 600 recordings/day is far beyond reality
+        url = f"{SIRO_API_BASE}/recordings?limit=50"  # org-wide: Q42L8L = SILO-only, service techs live outside it
+        if cursor:
+            url += f"&cursor={cursor}"
+        r = requests.get(url, headers={"x-siro-auth-token": token, "User-Agent": SIRO_UA}, timeout=30)
+        if r.status_code == 401:
+            raise PermissionError("401")
+        r.raise_for_status()
+        data = r.json()
+        recs, cursor = data.get("data", []), data.get("cursor")
+        stop = False
+        for rec in recs:
+            if (rec.get("dateCreated") or "") >= cutoff or (rec.get("result") or "").strip().lower() == "in progress":
+                results.append(rec)
+            else:
+                stop = True
+                break
+        if stop or not cursor:
+            break
+    return results
 
 
-_siro_norm = lambda s: " ".join((s or "").lower().split())
+import re as _re
+_siro_norm = lambda s: " ".join(_re.sub(r"\(.*?\)|[^a-z ]", " ", (s or "").lower()).split())
 
 
 def _siro_rec_dt(rec):
     """Best-effort creation/start timestamp for a Siro recording object —
     field name isn't pinned down in our docs, so try the plausible ones."""
-    for k in ("createdAt", "createdOn", "startedAt", "startTime", "created", "start"):
+    for k in ("dateCreated", "createdAt", "createdOn", "startedAt", "startTime", "created", "start"):
         v = rec.get(k)
         if v:
             dt = parse_utc(v) if isinstance(v, str) and ("T" in v or "Z" in v) else None
@@ -218,12 +239,22 @@ def _siro_match(tech_name, siro_data):
         return None
     if norm in siro_data:
         return siro_data[norm]
-    first = norm.split()[0] if norm.split() else ""
-    if first:
-        for k, v in siro_data.items():
-            kparts = k.split()
-            if kparts and kparts[0] == first:
-                return v
+    # strict fallback: last names must match, first names must be compatible
+    # (equal or initial/prefix). A bare first-name fallback mismatched Juan
+    # Bernal <- Juan Tlatenchi on 7/30 — never match on first name alone.
+    tp = norm.split()
+    if len(tp) < 2:
+        return None
+    tf, tl = tp[0], tp[-1]
+    for k, v in siro_data.items():
+        kp = k.split()
+        if len(kp) < 2:
+            continue
+        kf, kl = kp[0], kp[-1]
+        if kl != tl:
+            continue
+        if kf == tf or kf.startswith(tf) or tf.startswith(kf):
+            return v
     return None
 
 
