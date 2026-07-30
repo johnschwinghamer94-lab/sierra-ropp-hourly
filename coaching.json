@@ -967,5 +967,29 @@
         "Robert Silinzy": "coaching/weekly/2026-07-05/Robert_Silinzy.html"
       }
     }
+  ],
+  "monthly": [
+    {
+      "month": "2026-07",
+      "label": "July 2026",
+      "index": "coaching/monthly/2026-07/_index.html",
+      "crossrep": "coaching/monthly/2026-07/crossrep.html",
+      "reps": {
+        "Noah Weng": "coaching/monthly/2026-07/Noah_Weng.html",
+        "Andrew Alonso": "coaching/monthly/2026-07/Andrew_Alonso.html",
+        "Francisco Valencia": "coaching/monthly/2026-07/Francisco_Valencia.html",
+        "Robert Silinzy": "coaching/monthly/2026-07/Robert_Silinzy.html",
+        "Mario Castro": "coaching/monthly/2026-07/Mario_Castro.html",
+        "Brandon Moreno": "coaching/monthly/2026-07/Brandon_Moreno.html",
+        "Benjamin Wyllie": "coaching/monthly/2026-07/Benjamin_Wyllie.html",
+        "Joe Mendoza": "coaching/monthly/2026-07/Joe_Mendoza.html",
+        "Cole Pantol": "coaching/monthly/2026-07/Cole_Pantol.html",
+        "Dustin Romine": "coaching/monthly/2026-07/Dustin_Romine.html",
+        "Andrew Trujillo": "coaching/monthly/2026-07/Andrew_Trujillo.html",
+        "Nathan Colquitt": "coaching/monthly/2026-07/Nathan_Colquitt.html",
+        "Nikko April": "coaching/monthly/2026-07/Nikko_April.html",
+        "Juan Tlatenchi": "coaching/monthly/2026-07/Juan_Tlatenchi.html"
+      }
+    }
   ]
 }
