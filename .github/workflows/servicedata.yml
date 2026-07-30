@@ -1,0 +1,44 @@
+name: Service Dashboard Pulse Data (cloud)
+on:
+  schedule:
+    # Light refresh ~every 15 min, 7 AM-11 PM PT (14-23,0-6 UTC covers the
+    # PDT offset window; a couple of extra pre-7a/post-11p ticks land
+    # harmlessly since the FC report simply reflects whatever's posted).
+    - cron: "*/15 14-23,0-6 * * *"
+    # Full rebuild once/day at 5:35 AM PT (12:35 UTC) — refreshes monthly
+    # series, mtd/ytd, and the 9-week series ahead of the day's light ticks.
+    - cron: "35 12 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "light or full"
+        required: false
+        default: "light"
+concurrency:
+  group: servicedata
+  cancel-in-progress: false
+jobs:
+  servicedata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      TZ: America/Los_Angeles
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install --quiet -r requirements.txt
+      - id: mode
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "flag=${{ github.event.inputs.mode == 'full' && '' || '--light' }}" >> "$GITHUB_OUTPUT"
+          elif [ "$(date -u +%H)" = "12" ]; then
+            echo "flag=" >> "$GITHUB_OUTPUT"
+          else
+            echo "flag=--light" >> "$GITHUB_OUTPUT"
+          fi
+      - env:
+          ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+          SERVICEDATA_CLOUD: "1"
+        run: python service_data.py ${{ steps.mode.outputs.flag }}
