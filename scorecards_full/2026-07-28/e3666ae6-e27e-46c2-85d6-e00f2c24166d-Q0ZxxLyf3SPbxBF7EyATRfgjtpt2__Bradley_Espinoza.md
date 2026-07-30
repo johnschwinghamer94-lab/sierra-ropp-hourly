@@ -10,15 +10,23 @@ unknown
 
 ## FSG Bands
 - Welcome: Strong
+  Note: Strong rapport building with personal conversation
 - Assessment: Strong
-- Decision: Weak
+  Note: Thorough discovery with multiple questions
+- Decision: Moderate
+  Note: Some options mentioned but not clearly framed
 - Deliver: Solid
+  Note: Clear next steps and closing
 
 ## Critical Actions
 - Expectations Set: True
-- Questions Asked: True
+- Questions Asked: True (31 questions detected)
 - Options Presented: True
 - Objections Handled: True
 
 ## Coaching Tip
-FIX — Present options earlier; guide customer to decision
+FIX — Present options more clearly; guide to decision
+
+## Analytics
+- Duration: 103 minutes
+- Dialog length: 7612 characters

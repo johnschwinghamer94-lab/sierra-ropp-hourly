@@ -10,15 +10,23 @@ flipped
 
 ## FSG Bands
 - Welcome: Strong
+  Note: Strong rapport building with personal conversation
 - Assessment: Strong
+  Note: Thorough discovery with multiple questions
 - Decision: Solid
+  Note: Clear options and recommendations presented
 - Deliver: Solid
+  Note: Clear next steps and closing
 
 ## Critical Actions
 - Expectations Set: True
-- Questions Asked: True
+- Questions Asked: True (53 questions detected)
 - Options Presented: True
 - Objections Handled: True
 
 ## Coaching Tip
-WIN — Rep built rapport and discovered customer needs
+WIN — Started with excellent rapport building
+
+## Analytics
+- Duration: 51 minutes
+- Dialog length: 33819 characters

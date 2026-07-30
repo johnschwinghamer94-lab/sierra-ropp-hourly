@@ -6,16 +6,16 @@
   "duration": "48 min",
   "outcome": "flipped",
   "fsb": {
-    "welcome": "Strong",
+    "welcome": "Solid",
     "assessment": "Strong",
     "decision": "Solid",
     "deliver": "Moderate"
   },
   "critical_actions": {
-    "expectations": true,
+    "expectations": false,
     "questions": true,
     "options": true,
     "objections": true
   },
-  "tip": "WIN \u2014 Rep built rapport and discovered customer needs"
+  "tip": "WIN \u2014 Built sufficient rapport to convert to lead"
 }

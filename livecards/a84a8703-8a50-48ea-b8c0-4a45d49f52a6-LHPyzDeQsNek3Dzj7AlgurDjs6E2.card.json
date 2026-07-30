@@ -12,10 +12,10 @@
     "deliver": "Moderate"
   },
   "critical_actions": {
-    "expectations": true,
+    "expectations": false,
     "questions": true,
     "options": true,
     "objections": true
   },
-  "tip": "FIX \u2014 Present options earlier; guide customer to decision"
+  "tip": "FIX \u2014 Present options more clearly; guide to decision"
 }

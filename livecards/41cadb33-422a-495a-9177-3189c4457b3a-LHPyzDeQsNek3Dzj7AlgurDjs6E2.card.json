@@ -6,10 +6,10 @@
   "duration": "7 min",
   "outcome": "flipped",
   "fsb": {
-    "welcome": "Solid",
+    "welcome": "Strong",
     "assessment": "Strong",
     "decision": "Weak",
-    "deliver": "Solid"
+    "deliver": "Moderate"
   },
   "critical_actions": {
     "expectations": true,
@@ -17,5 +17,5 @@
     "options": true,
     "objections": true
   },
-  "tip": "WIN \u2014 Rep built rapport and discovered customer needs"
+  "tip": "WIN \u2014 Started with excellent rapport building"
 }
