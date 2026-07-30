@@ -52,7 +52,7 @@ LOG = SCRIPT_DIR / "servicefeed_log.txt"
 PUB_REPO = "johnschwinghamer94-lab/sierra-ropp-dashboard"
 MAX_MIN = int(os.environ.get("SERVICEFEED_MAX_MIN", "310"))
 
-CYCLE_SECS = 90
+CYCLE_SECS = 60   # near-live board (John 7/30)
 DAY_START = (6, 50)
 DAY_END = (23, 59)
 
