@@ -88,7 +88,7 @@ _SIRO_LOCAL_OAUTH_APP = Path.home() / ".siro_oauth_app.json"
 _SIRO_LOCAL_TEST_USER_ID = "RKnwDLk8seVkMrLIhDdnSOVsEu73"
 _SIRO_TOKEN = {"tok": None}
 _SIRO_CACHE = {"ts": 0.0, "data": None}   # data: {norm_full_name: {"n": int, "starts": [datetime]}}
-SIRO_REFRESH_SECS = 300
+SIRO_REFRESH_SECS = 90   # near-live: REC-now badge tracks in-progress recordings
 
 
 def _siro_creds():
@@ -181,17 +181,22 @@ def fetch_siro_today():
         today_local = datetime.now().astimezone().date()
         out = {}
         for rec in recs:
+            live = (rec.get("result") or "").strip().lower() == "in progress"
             dt = _siro_rec_dt(rec)
-            if not dt or dt.date() != today_local:
+            # in-progress = happening now, keep it even if the timestamp field is absent
+            if not live and (not dt or dt.date() != today_local):
                 continue
             fn = _siro_norm(rec.get("repFirstName"))
             ln = _siro_norm(rec.get("repLastName"))
             full = _siro_norm(f"{fn} {ln}").strip()
             if not full:
                 continue
-            ent = out.setdefault(full, {"n": 0, "starts": []})
+            ent = out.setdefault(full, {"n": 0, "starts": [], "live": False})
             ent["n"] += 1
-            ent["starts"].append(dt)
+            if dt:
+                ent["starts"].append(dt)
+            if live:
+                ent["live"] = True
         _SIRO_CACHE["ts"] = now_ts
         _SIRO_CACHE["data"] = out
         return out
@@ -552,6 +557,7 @@ def build(state):
         if siro_data is not None and techs:
             n_total = 0
             rec_flag = False
+            live_flag = False
             matched_any = False
             win_start = (start_l - timedelta(minutes=15)) if start_l else None
             win_end = done_l if (status == "Done" and done_l) else now
@@ -561,14 +567,16 @@ def build(state):
                     continue
                 matched_any = True
                 n_total += ent["n"]
+                if ent.get("live"):
+                    live_flag = True
                 if win_start:
                     for st_dt in ent["starts"]:
                         if win_start <= st_dt <= win_end:
                             rec_flag = True
             if matched_any:
-                siro = {"n": n_total, "rec": rec_flag}
+                siro = {"n": n_total, "rec": rec_flag, "recNow": live_flag}
             else:
-                siro = {"n": 0, "rec": False}
+                siro = {"n": 0, "rec": False, "recNow": False}
 
         cards.append({
             "jobId": jid, "jobNumber": j.get("jobNumber", ""),
