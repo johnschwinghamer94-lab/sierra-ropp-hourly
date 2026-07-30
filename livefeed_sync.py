@@ -827,8 +827,8 @@ def sheet_name(full):
     return _SHEET_NAMES.get(full) or (full.split()[0].upper() if full else "")
 
 # These techs bonus under another manager — never logged to John's sheet.
-SHEET_EXCLUDE = {"Andrew Alonso", "Brandon Moreno", "Cole Pantol", "Francisco Valencia",
-                 "Mario Castro", "Nathan Colquitt", "Robert Silinzy"}
+SHEET_EXCLUDE = {"Andrew Alonso", "Bradley Espinoza", "Brandon Moreno", "Cole Pantol",
+                 "Francisco Valencia", "Mario Castro", "Nathan Colquitt", "Robert Silinzy"}
 
 # Tickets created in error that must NEVER appear as TGLs — board, count, bonus
 # sheet, events. Distinct from canceled TGLs (can:true), which DO still count
@@ -852,7 +852,7 @@ def _load_tgl_oneoff_exclusions():
         return {}
 
 # Manager B (2026-07-21): the OTHER manager's bonus sheet — a copy of John's,
-# same Apps Script. His 7 techs (SHEET_EXCLUDE) route here instead of being
+# same Apps Script. His 8 techs (SHEET_EXCLUDE) route here instead of being
 # skipped. Env SHEET_WEBHOOK_B overrides; this default is his deployed webhook.
 SHEET_WEBHOOK_B_DEFAULT = ("https://script.google.com/macros/s/AKfycbwpeVWuKpqYxwva_"
                            "8xfJC8cNpRB84vBcxJVetg3KAz-Q95CMIrhihdEFRr7025SUkbJVw/exec")
