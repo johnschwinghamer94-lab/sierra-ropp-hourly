@@ -330,7 +330,7 @@
     },
     {
       "rep": "Cole Pantol",
-      "reason": "ZHANG recording runs about one minute \u2014 insufficient for genuine customer interaction."
+      "reason": "ZHANG recording runs about one minute — insufficient for genuine customer interaction."
     },
     {
       "rep": "Joe Mendoza",
@@ -885,7 +885,7 @@
   "weekly": [
     {
       "week": "2026-07-26",
-      "label": "Jul 20\u201326 2026",
+      "label": "Jul 20–26 2026",
       "index": "coaching/weekly/2026-07-26/_index.html",
       "crossrep": "coaching/weekly/2026-07-26/crossrep.html",
       "reps": {
@@ -905,8 +905,29 @@
       }
     },
     {
+      "week": "2026-07-19",
+      "label": "Jul 13–19 2026",
+      "index": "coaching/weekly/2026-07-19/_index.html",
+      "crossrep": "coaching/weekly/2026-07-19/crossrep.html",
+      "reps": {
+        "Andrew Alonso": "coaching/weekly/2026-07-19/Andrew_Alonso.html",
+        "Andrew Trujillo": "coaching/weekly/2026-07-19/Andrew_Trujillo.html",
+        "Benjamin Wyllie": "coaching/weekly/2026-07-19/Benjamin_Wyllie.html",
+        "Brandon Moreno": "coaching/weekly/2026-07-19/Brandon_Moreno.html",
+        "Cole Pantol": "coaching/weekly/2026-07-19/Cole_Pantol.html",
+        "Francisco Valencia": "coaching/weekly/2026-07-19/Francisco_Valencia.html",
+        "Joe Mendoza": "coaching/weekly/2026-07-19/Joe_Mendoza.html",
+        "Juan Tlatenchi": "coaching/weekly/2026-07-19/Juan_Tlatenchi.html",
+        "Mario Castro": "coaching/weekly/2026-07-19/Mario_Castro.html",
+        "Nathan Colquitt": "coaching/weekly/2026-07-19/Nathan_Colquitt.html",
+        "Nikko April": "coaching/weekly/2026-07-19/Nikko_April.html",
+        "Noah Weng": "coaching/weekly/2026-07-19/Noah_Weng.html",
+        "Robert Silinzy": "coaching/weekly/2026-07-19/Robert_Silinzy.html"
+      }
+    },
+    {
       "week": "2026-07-12",
-      "label": "Jul 6\u201312 2026",
+      "label": "Jul 6–12 2026",
       "index": "coaching/weekly/2026-07-12/_index.html",
       "crossrep": "coaching/weekly/2026-07-12/crossrep.html",
       "reps": {
@@ -927,7 +948,7 @@
     },
     {
       "week": "2026-07-05",
-      "label": "Jun 29\u2013Jul 5 2026",
+      "label": "Jun 29–Jul 5 2026",
       "index": "coaching/weekly/2026-07-05/_index.html",
       "crossrep": "coaching/weekly/2026-07-05/crossrep.html",
       "reps": {
