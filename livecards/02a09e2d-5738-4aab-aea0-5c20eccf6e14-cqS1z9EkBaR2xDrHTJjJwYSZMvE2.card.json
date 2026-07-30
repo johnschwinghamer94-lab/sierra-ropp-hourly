@@ -1,15 +1,1 @@
-{
-  "recId": "02a09e2d-5738-4aab-aea0-5c20eccf6e14-cqS1z9EkBaR2xDrHTJjJwYSZMvE2",
-  "tech": "Cole Pantol",
-  "job": "669583604",
-  "date": "2026-07-29",
-  "duration": "17 min",
-  "outcome": "flipped",
-  "bands": {
-    "welcome": "Solid",
-    "assessment": "Solid",
-    "decision": "Solid",
-    "deliver": "Moderate"
-  },
-  "tip": "WIN \u2014 Clearly explained compressor damage (bad reading, excess startup current) and escalated to Comfort Advisor for replacement quote"
-}
+{"recId": "02a09e2d-5738-4aab-aea0-5c20eccf6e14-cqS1z9EkBaR2xDrHTJjJwYSZMvE2", "tech": "Cole Pantol", "jobNumber": "669583604", "dateCreated": "2026-07-29", "durationMin": 17, "bands": {"welcome": "Strong", "assessment": "Strong", "decision": "Strong", "deliver": "Moderate"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "unknown", "tip": "FIX — Cole diagnosed a bad capacitor with failing compressor and presented repair options, but without pricing details or a clear next step to move the customer toward approval, the call ended without capturing intent to proceed."}
