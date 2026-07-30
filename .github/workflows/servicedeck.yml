@@ -1,0 +1,27 @@
+name: Service Classic Deck Refresh (cloud)
+on:
+  schedule:
+    # 5:40 AM PT (12:40 UTC) — right after servicedata's 5:35 AM full rebuild,
+    # so the classic deck's SERVICE_DATA blob reflects the day's fresh caches.
+    - cron: "40 12 * * *"
+    # 1:10 PM PT (20:10 UTC) — midday refresh.
+    - cron: "10 20 * * *"
+  workflow_dispatch:
+concurrency:
+  group: servicedeck
+  cancel-in-progress: false
+jobs:
+  servicedeck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TZ: America/Los_Angeles
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install --quiet -r requirements.txt
+      - env:
+          ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+        run: python service_deck_refresh.py
