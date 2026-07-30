@@ -58,6 +58,8 @@ def refresh_caches():
     """Refresh only the Service report caches (skips staging_fetch's CA reports —
     not needed for the classic SERVICE_DATA blob)."""
     import staging_fetch as sf
+    # cache/ isn't a tracked dir, so a fresh Actions checkout doesn't have it
+    (Path(sf.__file__).resolve().parent / "cache").mkdir(exist_ok=True)
     today, ytd_from, _mtd_from = sf._date_range()
     print(f"Refreshing Service caches — YTD {ytd_from} -> {today}")
     sf.fetch_service(today, ytd_from)
