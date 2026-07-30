@@ -1,0 +1,159 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SILO Coaching Plans — 2026-07-29</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;·&nbsp;SILO</b><span class="tag">Daily Index · 2026-07-29</span></div>
+<div class="wrap">
+<div class="hero">
+  <div class="ey">Silo Techs · daily coaching plans</div>
+  <h1 class="disp">2026-07-29</h1>
+  <p class="lede">12 techs scored across 30 gradeable customer calls. Every band traces to a line in that tech&#x27;s own recording. Close rate is the only number on any page.</p>
+</div>
+<div class="legend">
+  <span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span>
+  <span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span>
+</div>
+<p class="note">The dashboard&#x27;s own conversion file (tgl_truth/conv.json) has no entry for 2026-07-29 and there is no tgl_truth/2026-07-29.json or tgl_truth/2026-07-30.json on disk yet, so every close rate here is counted from the graded calls themselves — flipped-or-closed divided by gradeable calls, using a clear in-call Option C or specialist-appointment agreement as the test for a flip. Both recordings filed under the following day&#x27;s folder carry that day&#x27;s own date stamp, so nothing was pulled back into 2026-07-29. The dominant pattern of the day is mechanical, not behavioural: on fifteen of the thirty gradeable calls the recording stops as the tech leaves to get tools, before any option could be presented.</p>
+
+<section id="reps">
+<div class="sh"><div class="no">1</div><h2>Techs scored</h2><span class="hint">close rate · strongest / weakest · headline gap</span></div>
+<div class="rub">
+  <div class="row" style="grid-template-columns:170px 90px 150px 1fr"><div class="rb"><a href="Andrew_Alonso.html" style="color:var(--navy);text-decoration:none">Andrew Alonso</a></div><div class="rb">25% (from graded calls)</div><div><span class="b strong">Strong</span> <span class="b solid">Solid</span></div><div class="ev">Two short calls ran with no expectations script and no option, and the review promised in the Welcome is never asked for at the close.</div></div>
+  <div class="row" style="grid-template-columns:170px 90px 150px 1fr"><div class="rb"><a href="Bradley_Espinoza.html" style="color:var(--navy);text-decoration:none">Bradley Espinoza</a></div><div class="rb">0% (from graded calls)</div><div><span class="b strong">Strong</span> <span class="b mod">Moderate</span></div><div class="ev">A stated budget constraint was met with sympathy and no question, and no no-cost specialist path was offered.</div></div>
+  <div class="row" style="grid-template-columns:170px 90px 150px 1fr"><div class="rb"><a href="Brandon_Moreno.html" style="color:var(--navy);text-decoration:none">Brandon Moreno</a></div><div class="rb">33% (from graded calls)</div><div><span class="b strong">Strong</span> <span class="b mod">Moderate</span></div><div class="ev">Options are priced but never linked to the problem the customer already agreed they had, and both maintenance visits ended with nothing offered.</div></div>
+  <div class="row" style="grid-template-columns:170px 90px 150px 1fr"><div class="rb"><a href="Cole_Pantol.html" style="color:var(--navy);text-decoration:none">Cole Pantol</a></div><div class="rb">0% (from graded calls)</div><div><span class="b strong">Strong</span> <span class="b mod">Moderate</span></div><div class="ev">Correct diagnoses end with the specialist suggested rather than booked, and the options promised at the door are never delivered.</div></div>
+  <div class="row" style="grid-template-columns:170px 90px 150px 1fr"><div class="rb"><a href="David_Canales.html" style="color:var(--navy);text-decoration:none">David Canales</a></div><div class="rb">0% (from graded calls)</div><div><span class="b strong">Strong</span> <span class="b weak">Weak</span></div><div class="ev">The expectations script lands twenty minutes into the visit, and a customer&#x27;s stated midnight emergency was never brought back as a reason to act.</div></div>
+  <div class="row" style="grid-template-columns:170px 90px 150px 1fr"><div class="rb"><a href="Francisco_Valencia.html" style="color:var(--navy);text-decoration:none">Francisco Valencia</a></div><div class="rb">50% (from graded calls)</div><div><span class="b strong">Strong</span> <span class="b mod">Moderate</span></div><div class="ev">The specialist was dispatched without a confirmed day and window, and the longest call of the day ended with the case built and no next step asked for.</div></div>
+  <div class="row" style="grid-template-columns:170px 90px 150px 1fr"><div class="rb"><a href="Joe_Mendoza.html" style="color:var(--navy);text-decoration:none">Joe Mendoza</a></div><div class="rb">33% (from graded calls)</div><div><span class="b strong">Strong</span> <span class="b solid">Solid</span></div><div class="ev">A stated hesitation was answered with a business card instead of a question, and a long-tenured customer with a hassle objection was never offered a maintenance plan.</div></div>
+  <div class="row" style="grid-template-columns:170px 90px 150px 1fr"><div class="rb"><a href="Juan_Tlatenchi.html" style="color:var(--navy);text-decoration:none">Juan Tlatenchi</a></div><div class="rb">0% (from graded calls)</div><div><span class="b strong">Strong</span> <span class="b mod">Moderate</span></div><div class="ev">An off-site decision-maker was identified in the first two minutes and handled with a written report instead of a phone call, and a verbal yes left the house without a date.</div></div>
+  <div class="row" style="grid-template-columns:170px 90px 150px 1fr"><div class="rb"><a href="Nathan_Colquitt.html" style="color:var(--navy);text-decoration:none">Nathan Colquitt</a></div><div class="rb">0% (from graded calls)</div><div><span class="b strong">Strong</span> <span class="b weak">Weak</span></div><div class="ev">A customer named the exact product she wanted, was told Sierra carries it, and it never became an option on her report.</div></div>
+  <div class="row" style="grid-template-columns:170px 90px 150px 1fr"><div class="rb"><a href="Nikko_April.html" style="color:var(--navy);text-decoration:none">Nikko April</a></div><div class="rb">25% (from graded calls)</div><div><span class="b strong">Strong</span> <span class="b wins">Strong on wins</span></div><div class="ev">A customer who volunteered that she needed a service got an explanation instead of a booking, and three priced options were handed over without asking which one fitted.</div></div>
+  <div class="row" style="grid-template-columns:170px 90px 150px 1fr"><div class="rb"><a href="Noah_Weng.html" style="color:var(--navy);text-decoration:none">Noah Weng</a></div><div class="rb">0% (from graded calls)</div><div><span class="b solid">Solid</span> <span class="b weak">Weak</span></div><div class="ev">The customer twice said she doubted the problem could be fixed and was never told it could, and the visit ran with no expectations script and no option.</div></div>
+  <div class="row" style="grid-template-columns:170px 90px 150px 1fr"><div class="rb"><a href="Robert_Silinzy.html" style="color:var(--navy);text-decoration:none">Robert Silinzy</a></div><div class="rb">0% (from graded calls)</div><div><span class="b strong">Strong</span> <span class="b weak">Weak</span></div><div class="ev">A thermostat found running on heat in July was corrected silently instead of being shown to the customer, and neither maintenance visit offered anything at all.</div></div>
+</div>
+</section>
+
+<section id="skipped">
+<div class="sh"><div class="no">2</div><h2>Recordings not scored</h2></div>
+<div class="rub">
+  <div class="row" style="grid-template-columns:200px 1fr"><div class="rb">Andrew Trujillo</div><div class="ev">No job number and the transcription is heavily corrupted with mixed languages and gibberish; not scoreable.</div></div>
+  <div class="row" style="grid-template-columns:200px 1fr"><div class="rb">Benjamin Wyllie</div><div class="ev">Internal team chatter with no customer interaction present.</div></div>
+  <div class="row" style="grid-template-columns:200px 1fr"><div class="rb">Mario Castro</div><div class="ev">Mostly internal team banter and personal conversation; no customer engagement on a service decision.</div></div>
+  <div class="row" style="grid-template-columns:200px 1fr"><div class="rb">Cole Pantol</div><div class="ev">ZHANG recording runs about one minute — insufficient for genuine customer interaction.</div></div>
+  <div class="row" style="grid-template-columns:200px 1fr"><div class="rb">Joe Mendoza</div><div class="ev">JOSEPH ROZAR recording ends mid-call before the assessment or any outcome.</div></div>
+  <div class="row" style="grid-template-columns:200px 1fr"><div class="rb">Noah Weng</div><div class="ev">SMITH recording is corrupted and garbled with spliced advertisement audio; not scoreable.</div></div>
+</div>
+</section>
+
+<div class="foot">Sierra · SILO daily coaching index · 2026-07-29 · Scored on strength bands — close rate is the only number</div>
+</div></body></html>
