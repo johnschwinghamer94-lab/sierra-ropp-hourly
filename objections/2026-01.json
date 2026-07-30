@@ -1889,6 +1889,160 @@
       "grade": "poor",
       "closed": false,
       "job": "625813139"
+    },
+    {
+      "id": "244e9a4b-28a7-4841-91dc-3acfa14de7df-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
+      "type": "Stall / Think About It",
+      "cust": "I'm not gonna do any repairs right now. But I mean, you could do it.",
+      "answer": "But I can build a report at least.",
+      "tech": "Cole Pantol",
+      "date": "2026-01-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "627536433"
+    },
+    {
+      "id": "244e9a4b-28a7-4841-91dc-3acfa14de7df-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
+      "type": "Price",
+      "cust": "And the last time the guy came out he was like a system Update is like $20,000.",
+      "answer": "I mean, I specialize in repairs. I'm not entirely sure it does go based off size of the home... there's three, four different tiers of systems, but sadly, I just don't know the prices on that. That's what these guys are for.",
+      "tech": "Cole Pantol",
+      "date": "2026-01-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "627536433"
+    },
+    {
+      "id": "4b20f7bc-26ab-430f-b4f2-ead481c64eb1-XYpMBXpv6TVg9okInQemgsAIw1B3-1",
+      "type": "Price",
+      "cust": "So for right now, because right now I'm not gonna drop 30, 60 grand right now. There's no way. I mean, I'd love to, but it's just obviously got 60 grand laying around.",
+      "answer": "I'll say before you kind of start throwing money at it. Equipment specialist that way, see what that would look like. I know there's financing options, things like that. And then worst case, we come back and take care of the repairs after the fact. I hate for you to jump at the repairs...",
+      "tech": "Francisco Arreola Jr.",
+      "date": "2026-01-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "628036337"
+    },
+    {
+      "id": "4b20f7bc-26ab-430f-b4f2-ead481c64eb1-XYpMBXpv6TVg9okInQemgsAIw1B3-2",
+      "type": "Stall / Think About It",
+      "cust": "I'll make another appointment. I have to get some money free up before I actually get this stuff taken care of.",
+      "answer": "Did you want to meet with an equipment specialist just to see what that would be instead of throwing... That way you at least get that info and then sit on it for like a week or so before we jump out repairs.",
+      "tech": "Francisco Arreola Jr.",
+      "date": "2026-01-31",
+      "grade": "great",
+      "closed": false,
+      "job": "628036337"
+    },
+    {
+      "id": "6b577e1e-9f8f-4e83-b411-6498cb7e74e1-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
+      "type": "Doubt / Distrust",
+      "cust": "All these parts that you mentioned can be replaced. But is it... is it really going to be worth it? Because maybe there's stuff behind there or something that is going to come out, you know, break down again.",
+      "answer": "I mean, you're 100, right. Every single component on these systems is replaceable. It is just a matter of whether it makes sense.",
+      "tech": "Cole Pantol",
+      "date": "2026-01-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "628130618"
+    },
+    {
+      "id": "6b577e1e-9f8f-4e83-b411-6498cb7e74e1-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
+      "type": "Doubt / Distrust",
+      "cust": "So the 8,000 is not really like guarantee also. Right.",
+      "answer": "You could put 8,000 into the unit and something else could still fail... That's why I'm kind of leaning towards the replacement side. Just cuz I really don't want you guys to be in that position where you're putting a ton of money into this.",
+      "tech": "Cole Pantol",
+      "date": "2026-01-31",
+      "grade": "great",
+      "closed": false,
+      "job": "628130618"
+    },
+    {
+      "id": "9f96f7ea-f1de-4bda-aa7f-948d9d7505c7-XYpMBXpv6TVg9okInQemgsAIw1B3-1",
+      "type": "Stall / Think About It",
+      "cust": "I don't think I don't need to get it done today. Right. Like, maybe.",
+      "answer": "No. So system's still turning on. It's operational. But definitely with the things we're seeing... some parts have already failed, and some are right on the edge there.",
+      "tech": "Francisco Arreola Jr.",
+      "date": "2026-01-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "628020684"
+    },
+    {
+      "id": "9f96f7ea-f1de-4bda-aa7f-948d9d7505c7-XYpMBXpv6TVg9okInQemgsAIw1B3-2",
+      "type": "Spouse / Decision-Maker",
+      "cust": "I don't know. I don't know. I'm going to talk to my family about it. Just see what they've done in their homes, you know, just to get an idea.",
+      "answer": "",
+      "tech": "Francisco Arreola Jr.",
+      "date": "2026-01-31",
+      "grade": "poor",
+      "closed": false,
+      "job": "628020684"
+    },
+    {
+      "id": "a2a87cc4-8cd6-4006-88f9-3179ca9efefa-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
+      "type": "Stall / Think About It",
+      "cust": "Let's just. Let's just pause on that. Let me figure out what I'm gonna do.",
+      "answer": "Yeah, absolutely. So I don't want to take up more of your time. So if I can steal an autograph on the bottom of these two, that we went over everything together today. While you do that, let me change out those filters for you.",
+      "tech": "Joe Mendoza",
+      "date": "2026-01-31",
+      "grade": "poor",
+      "closed": false,
+      "job": "628038476"
+    },
+    {
+      "id": "a8adc662-a707-4fa4-a63a-a325fffd91da-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
+      "type": "Price",
+      "cust": "No, you're absolutely right. I've thought of all that... it's just, it's a money issue right now, you know, I just don't want to pay interest on anything.",
+      "answer": "So that's primarily what all these are for. Just giving you some options.",
+      "tech": "Dustin Romine",
+      "date": "2026-01-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "626628700"
+    },
+    {
+      "id": "a8adc662-a707-4fa4-a63a-a325fffd91da-GFg7TsAzwnexN1iJ489ReAY05wf1-2",
+      "type": "Stall / Think About It",
+      "cust": "I can't today, unfortunately... I got another set of guys coming from you guys for the plumbing... this is just not a good day for that. But I can make time another time...",
+      "answer": "We hate that to come back and charge you 25% more due to the demand of the products and everything.",
+      "tech": "Dustin Romine",
+      "date": "2026-01-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "626628700"
+    },
+    {
+      "id": "aaa0d7ad-9290-4c7d-a608-b14b4ce09640-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
+      "type": "Price",
+      "cust": "I don't have a number. It's just 451 is a lot.",
+      "answer": "Let me give my manager a call, see what we can do for you... I talked to my manager because they would just get an additional 10% off. So with the filters and the motor circulation, we got 561.",
+      "tech": "Dustin Romine",
+      "date": "2026-01-31",
+      "grade": "great",
+      "closed": false,
+      "job": "628117195"
+    },
+    {
+      "id": "dfc7639c-9fd8-43fa-8e42-1fedf281cf0a-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
+      "type": "Doubt / Distrust",
+      "cust": "My dad always said, do not fix anything that's not broken. When it breaks, fix it... I'm not gonna do it. When it breaks, you guys, I'll be calling you, and you'll be working to get that air or heat.",
+      "answer": "I appreciate that, and I can respect that... that philosophy of, if it ain't broke, don't fix it. I completely understand where you're coming from with that. You find yourself in a peculiar situation though, because you're looking to sell this home in this next 12 weeks or so.",
+      "tech": "Joe Mendoza",
+      "date": "2026-01-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "573475458"
+    },
+    {
+      "id": "dfc7639c-9fd8-43fa-8e42-1fedf281cf0a-hUwt6xtja4T6o8jCUdsXJsPtmQX2-2",
+      "type": "Price",
+      "cust": "But this is a lot of money. This requires a loan. Yeah. Which I have excellent credit. I'm not one bit worried about that.",
+      "answer": "Yeah, and I'm not worried about that either. I just would hate for you to start dumping money into this thing and then still have to take care of these other repairs... even putting $5,000 into 21 year old systems, it just... You were putting a very expensive band aid.",
+      "tech": "Joe Mendoza",
+      "date": "2026-01-31",
+      "grade": "great",
+      "closed": false,
+      "job": "573475458"
     }
   ]
 }
