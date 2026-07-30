@@ -1,0 +1,1 @@
+**SKIPPED** — Transcript corrupted/incomplete; no coherent customer interaction. Filename empty of customer/job info; transcript body is fragmented gibberish with no speaker turns or meaningful dialogue.
