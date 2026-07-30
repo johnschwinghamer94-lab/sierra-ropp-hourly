@@ -1,72 +1,30 @@
-# Scorecard: Juan Tlatenchi — 2026-07-29
+# Call Scorecard: Juan Tlatenchi - (No Job Number)
 
-**RecId:** e125b799-ead9-4103-8138-d79b6114cc43-rvlRRFBXT4diudowFnwcEo0gzE42  
-**Job:** (No job number in transcript)  
 **Date:** 2026-07-29  
 **Duration:** 10 min  
-**Customer:** Marcello (name mentioned during call)  
+**RecId:** e125b799-ead9-4103-8138-d79b6114cc43-rvlRRFBXT4diudowFnwcEo0gzE42  
+**Job:** (No job number provided)  
+**Customer:** Marcello, new AC installation, major home remodeling
 
----
+## Performance Summary
 
-## FSG Bands
+Juan arrived to evaluate airflow distribution issue in new AC system. Customer just completed new AC install and extensive remodeling. Main problem: losing airflow to bedroom in back corner of house. Customer's friend taped some vents during remodeling, capped return vent. Suspected metal box with hoses may be leaking. Customer is experienced (Ferrari tech background), doesn't trust HVAC service upsells—heard about Sierra from Costco but "dreads those places." Friendly discussion about property (1-acre, city view, workshop). Customer skeptical of pricing—has friends doing AC work cheaply. Juan offered to run evaluation, take pictures, assess airflow and ductwork issues. Customer interested but price-conscious.
 
-**Welcome: Solid**
-- Opened with "Good to meet you" and basic rapport
-- Moved quickly to diagnosis: "So what's going on?"
-- **Gap:** No clear expectations set about call timeline, next steps, or process
+### Band Scores
 
-**Assessment: Solid**
-- Asked customer to show the problem area and bedroom location
-- Investigated attic access, checked ducting, observed specific issues (capped vents, metal box/hoses)
-- Followed up with questions about return air location and prior modifications
-- **Strength:** Thorough physical inspection of the system
+**WELCOME: Solid** — Friendly greeting, engaged with customer context  
+**ASSESSMENT: Solid** — Identified airflow loss location, understood recent work context, noted potential leak  
+**DECISION: Moderate** — Offered evaluation but no pricing framework or options yet  
+**DELIVER: Moderate** — Described process, will run tests, customer willing but skeptical
 
-**Decision: Moderate**
-- No options presented during the call
-- Customer raised price concern: "I'm taking estimates now that it's way too high"
-- **Gap:** Rep didn't build value or present specific options to overcome price objection; deferred all recommendations to later callback
-
-**Deliver: Weak**
-- No work was completed during the call (diagnostic only)
-- No explanation of work performed or findings explained to customer
-- No 5-star review request
-
----
-
-## Critical Actions
-
-| Action | Pass | Evidence |
-|--------|------|----------|
-| **Expectations** | ✗ | Rep never explained timeline for follow-up, pricing process, or whether callback would be an Option C appointment |
-| **Questions** | ✓ | Asked "what's going on," probed bedroom airflow issue, questioned past modifications and duct routing |
-| **Options** | ✗ | No multiple options presented during the call |
-| **Objections** | ✗ | Customer's price concern ("taking estimates...way too high") not met with solution-oriented response; instead deferred to evaluation |
-
----
+### Critical Actions
+- **Expectations:** ✓ Yes
+- **Questions:** ✓ Yes
+- **Options:** ✗ No (not yet reached)
+- **Objections:** ✓ Yes (price skepticism, competitor comparison)
 
 ## Outcome
+Unknown — Evaluation pending, completion contingent on price reasonableness
 
-**No-Close (Outcome: Unknown)**
-
-Customer did not commit to a specific service during the call. Rep is scheduling a diagnostic evaluation with recommendations to follow. No TGL confirmed (Job field empty; cannot verify against truth file). Customer is still gathering estimates from competitors.
-
----
-
-## Top Gaps
-
-1. **Missing expectations framing:** When committing to the evaluation, rep should have clarified whether this would be an Option C appointment and when recommendations would be delivered. This sets urgency for the follow-up conversation.
-
-2. **Reactive pricing vs. value:** When customer mentioned high estimates, rep should have explored what those competitors quoted (replacement vs. repair) and positioned the diagnostic as a way to avoid oversized solutions. Instead, rep accepted the deferral without addressing the concern.
-
----
-
-## Coaching Notes
-
-This was a solid diagnostic call with good technical investigation. Juan asked the right questions in the attic and understood the airflow routing. The gap is in the sales framework after the diagnosis: when the customer expressed price concerns, this was the moment to build value by positioning options (repair vs. replacement, different approaches) rather than deferring everything to a later callback. A second visit to deliver recommendations is fine, but that conversation needs to start on THIS call so the customer knows what they're committing to.
-
----
-
-## Next Steps for Scorer/Manager
-
-- Check ServiceTitan for this customer to see if a TGL was created post-call (ticket may be typed under a different job number or as a pending callback)
-- If callback happened: score the recommendation call when transcript arrives
+## Coaching Tip
+FIX — Customer is price-sensitive and has competitive options; need ROI-focused pitch and competitive pricing to close. Frame solutions as energy efficiency/comfort gains, not just fixes.

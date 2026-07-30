@@ -1,38 +1,30 @@
-# Score Card: Brandon Moreno
+# Call Scorecard: Brandon Moreno - Ruiz
 
-**Call Info:**
-- RecId: f07846ae-7a4b-49e8-9cdb-c2ebdcdf14bc-f4dx65lewNTPydNXjgypLVFAcbk1
-- Date: 2026-07-29
-- Duration: 40 min
-- Job #: 538032342
+**Date:** 2026-07-29  
+**Duration:** 40 min  
+**RecId:** f07846ae-7a4b-49e8-9cdb-c2ebdcdf14bc-f4dx65lewNTPydNXjgypLVFAcbk1  
+**Job:** RUIZ JANET C/O TRUSTEE CLARK COUNTY TREASURER (538032342)  
+**Customer:** Janet, 3 golden doodles, scheduled early to beat heat
 
-## Bands
+## Performance Summary
 
-### Welcome: Strong
-- Greeted customer warmly and professionally
-- Introduced self and company (Sierra)
+Brandon introduced himself professionally, engaged with customer rapport. Explained maintenance process: physical inspection, photos/videos, thorough evaluation. Asked about service history—customer mentioned sister uses Sierra, had previous low refrigerant issue 2 years ago. Main issue: AC doesn't keep up in afternoon heat, temperature climbs despite setting at 72. Brandon will do full evaluation and provide report. Promised 5-star experience. Call ended with work in progress (ladder going in).
 
-### Assessment: Solid
-- Asked relevant discovery questions
-- Checked customer availability
+### Band Scores
 
-### Decision: Moderate
-- Transcript ends before decision phase shown
+**WELCOME: Strong** — Professional greeting, explained shoe covers, established trust  
+**ASSESSMENT: Strong** — Identified specific problem (cooling lag in heat), asked about service history, refrigerant history  
+**DECISION: Moderate** — Mentioned evaluation and potential work today but no options framework yet  
+**DELIVER: Moderate** — Professional process, in-progress, momentum maintained
 
-### Deliver: Moderate
-- Explained process and next steps clearly
+### Critical Actions
+- **Expectations:** ✓ Yes  
+- **Questions:** ✓ Yes
+- **Options:** ✗ No (not yet reached)
+- **Objections:** ✗ No (none raised)
 
-## Critical Actions
+## Outcome
+Unknown — Inspection in progress
 
-- **Expectations (PASS):** Set clear expectations about approval process and next steps
-- **Questions (PASS):** Asked qualifying questions about service history and constraints
-- **Options (FAIL):** Not shown - call incomplete
-- **Objections (FAIL):** Not shown - call incomplete
-
-## Outcome: UNKNOWN
-
-Transcript is incomplete. Call cuts off during or before decision phase.
-
-## Coaching Notes
-
-The transcript ends before completion, preventing full assessment. Video/audio playback or complete transcript needed to score final bands accurately.
+## Coaching Tip
+WIN — Professional approach, systematic diagnosis, customer confidence high. FIX — Move proposal in front of customer while engaged; don't let momentum die during inspection.

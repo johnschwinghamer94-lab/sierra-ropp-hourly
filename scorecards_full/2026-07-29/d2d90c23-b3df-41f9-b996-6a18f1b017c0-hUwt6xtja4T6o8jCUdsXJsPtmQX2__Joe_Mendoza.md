@@ -1,102 +1,56 @@
-# Live-Coach Card: Joe Mendoza
-**Job #:** 669427145  
+# Scorecard: Joe Mendoza - MEYERS Thomas/Mary Moni Job 669427145
 **Date:** 2026-07-29  
 **Duration:** 34 min  
-**Outcome:** Flipped (TGL created; $366 lid replacement work agreed)
+**RecId:** d2d90c23-b3df-41f9-b996-6a18f1b017c0-hUwt6xtja4T6o8jCUdsXJsPtmQX2  
 
----
+## FSG Scoring
 
-## FSG Bands
+### Welcome: Solid
+Joe greets customer (Tom), introduces self, parks appropriately, asks permission ("Let me check. How's it going?").
 
-**Welcome: Strong**
-- Warm, confident introduction establishing immediate rapport
-- Built connection on shared interests and community ties
-- Quickly established expertise: "I know exactly what that noise is" (shroud deterioration)
-- Set tone of partnership: "I completely hear where you're coming from"
+### Assessment: Strong
+Joe asks key diagnostic questions:
+- "Which one was that one?" (identifies which of two outdoor units making noise)
+- "When was the last time...we've had it maintained?"
+- Learns customer has two units (installed 2021, one warranty repair earlier)
+- Discovers customer bias against service calls ("afraid someone's gonna touch something with this and make it go down")
+- Learns customer has spent $11k-$13k on these units in 8 years
+- Learns customer objection to maintenance hassle ("constantly calling")
 
-**Assessment: Strong**
-- Comprehensive discovery questions:
-  - How long have you owned the home? (Since 2005, original owners)
-  - What's the noise behavior? (Loud from upstairs unit; customer correctly shut it off to prevent damage)
-  - Unit condition and warranty? (5 years old, 10-year Costco warranty, lid broken, shroud deteriorated)
-- Showed physical evidence and explained mechanism clearly
-- Validated customer knowledge: "Good call on shutting it down. We didn't want to damage the actual fan itself"
+Joe shows strong empathy: "I completely hear where you're coming from" and "I definitely hear where you're coming from."
 
-**Decision: Strong on Wins**
-- Successfully handled customer objection about membership programs ("I completely hear where you're coming from... overzealous")
-- Presented alternative: tune-up promotions without pushy membership commitment
-- Offered clear options: $366 warranty-covered lid replacement vs. $1,200 if out of warranty
-- Secured customer agreement: "All right, we have to do it"
-- Collected deposit ($39 service fee) to lock in commitment
+### Decision: Strong
+Joe positions multiple options:
+- Suggests membership services as one path
+- Notes alternative: "There are different types of promotions going on for different tune-ups"
+- Asks manager about warranty coverage on the shroud/lid repair
+- Discusses two paths: order a proper lid (clean fix) vs. drill holes workaround (temporary, looks "janky")
+- Customer concerned about durability; Joe says "I want to make sure that if...we can get the lid, see how long it's going to take"
+- Explores warranty coverage implications
 
-**Deliver: Strong**
-- Excellent technical education: Explained fan damage risk, coil damage potential, refrigerant issues
-- Showed problem-solving: Removed shroud to allow unit operation while awaiting lid delivery
-- Closed with positive rapport building and confidence in the solution
-- Left customer satisfied with clear timeline and expectations
-
----
+### Deliver: Moderate
+Joe communicates the fix path, discusses warranty scope, confirms the 2021 install date. Ends with customer signing approval: "Okay, sign for the transaction." Joe commits: "All right, so I'll get that order for you guys."
 
 ## Critical Actions
 
-**Expectations:** ✅ True
-- Clear expectations set throughout: warranty coverage, cost ($366 vs $1,200), deposit requirement, timeline (lid delivery/installation)
-- Customer understood the problem and the path forward
+| Action | Pass/Fail | Evidence |
+|--------|-----------|----------|
+| **Expectations** | ✓ TRUE | Set expectations that warranty would be reviewed, explained lid replacement as proper fix vs workaround |
+| **Questions** | ✓ TRUE | Asked which unit, maintenance history, discovered customer fears and prior spending, learned about resistance to service |
+| **Options** | ✓ TRUE | Presented: membership, promotions, warranty path, lid order vs temporary drill-hole fix |
+| **Objections** | ✓ TRUE | Customer objection: "afraid someone's gonna touch something" + "it's more of a hassle". Joe answered with empathy ("I completely hear") and by positioning warranty coverage & specific fix path |
 
-**Questions:** ✅ True
-- Multiple discovery questions gathering home history, problem diagnosis, warranty status, and customer concerns
-- Checked in throughout: "Sound familiar?" "Any other issues we should look at?"
+## Outcome
+**FLIPPED or CLOSED**  
+Customer signed a transaction and agreed to an order ("I'll get that order for you guys"). Appears to be approval for lid repair/replacement work. Outcome is ambiguous—could be same-day work approval (CLOSED) or scheduled appointment (FLIPPED). Transcript ends after approval but before clarity on timing. Defaulting to **UNKNOWN** pending ServiceTitan confirmation.
 
-**Options:** ✅ True
-- Presented two clear options: $366 (warranty) vs $1,200 (if out of warranty)
-- Also offered alternative to membership concerns (tune-up promotions)
-- Customer chose the $366 path with clear agreement
+## Top Moments
 
-**Objections:** ✅ True
-- Customer/family expressed concern about membership programs being "intrusive" and pushy
-- Joe handled with empathy and question: "I completely hear where you're coming from. Have you had that experience with other companies?"
-- Offered direct solution: alternative promotions without membership pressure
-- Converted objection into agreement
+1. **Empathetic objection handling (excellent):** When customer said "I'm afraid someone's gonna touch something...it's more of a hassle," Joe didn't defend or pitch harder. Instead: "I completely hear where you're coming from...absolutely." Then pivoted to specific fix (lid replacement) and warranty scope, which addressed the underlying fear (cost of mistakes).
 
----
+2. **Option-building around trust:** Instead of saying "Let me service your system," Joe said "Here's the specific part that's noisy. Here's how we fix it right (new lid) vs. a workaround. Here's what warranty covers." This reframes from "general maintenance hassle" to "specific solution to a specific problem."
 
-## Outcome Evidence
+## Coaching
 
-**Flipped / TGL Created**
-- Customer agreed to $366 lid replacement during the call
-- Deposit collected ($39 service fee)
-- Work order captured
-- This is a clear **flipped** outcome: moved from service call to committed repair work
+**WIN —** Customer was resistant ("afraid of touching something") and had prior bad experiences ($11k+ spent). Joe empathized directly ("I completely hear"), pivoted to a specific fix (shroud lid replacement), discussed warranty coverage, and the customer signed up. When objection lands, acknowledge it as real, then offer the specific next step.
 
----
-
-## Gap Analysis & Strengths
-
-**What Went Right (Reinforce This):**
-
-1. **Objection Handling Mastery:** The membership objection could have been a deal-killer. Instead, Joe:
-   - Validated the concern ("I completely hear where you're coming from")
-   - Asked a clarifying question to understand their specific pain
-   - Offered a direct alternative (promotions, not membership)
-   - Moved forward without losing the customer
-
-2. **Expertise Demonstrated:** Joe showed he understood the exact problem (shroud, lid, fan risk) and had a clear solution. Customer could trust his recommendation.
-
-3. **Full FSG Execution:** All four phases were completed:
-   - Welcome: Built connection and trust
-   - Assessment: Gathered facts and validated customer knowledge
-   - Decision: Handled objection and presented options with customer agreement
-   - Deliver: Educated on the technical "why" and next steps
-
-4. **Empathy-First Approach:** Rather than defensive ("No, our membership is great"), Joe led with understanding, which dissolved the resistance.
-
-**Coaching Note:**
-This is a model call for the decision phase. The customer came in skeptical about HVAC companies in general. Joe's strategy of validating first, then offering an alternative, then presenting the warranty advantage ($366 vs $1,200) created a win-win. Replay this call as an example of objection handling through empathy and problem-solving rather than pushback.
-
----
-
-## Action Items
-
-- **Reinforce:** This is your go-to objection-handling playbook for skeptical or burnt-out customers
-- **Model:** Share this call in next team huddle as an example of "listen first, solve second" selling
-- **Replicate:** On future membership-hesitant customers, lead with this same empathy-and-alternative approach

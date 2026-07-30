@@ -1,67 +1,30 @@
-# Scorecard: Nikko April — Job 667868055 (2026-07-29)
+# Call Scorecard: Nikko April - Eldemerdash
 
-**RecId:** b9852057-a803-4007-a61b-aecdbcd55d39-92hu453CMjMS3az2iJV9GyPLhsX2  
-**Customer:** Al  
+**Date:** 2026-07-29  
 **Duration:** 22 min  
-**Outcome:** no-close  
+**RecId:** b9852057-a803-4007-a61b-aecdbcd55d39-92hu453CMjMS3az2iJV9GyPLhsX2  
+**Job:** ELDEMERDASH, ALAA-ELDIN A TRS (667868055)  
+**Customer:** Al, first-time customer, home built 2006, has 3 units (multiple zones)
 
----
+## Performance Summary
 
-## FSG Bands
+Nikko arrived for cooling maintenance. Customer showed him unit locations (2 outside on each side), filters in multiple locations, attic access in 2 places, multiple thermostats (main + 2 upstairs). Nikko educated customer on filters: recommended MERV 7 from Home Depot instead of Costco MERV 13 (too restrictive, damages system). Explained maintenance importance: regular coil washing + monthly filter changes extends life to 12 years vs 8-10 without. Advised on thermostat management: keep multiple thermostats within 3 degrees, turning one off doesn't save energy if same unit. Made humidifier recommendation (use distilled water to avoid mineral buildup). Customer on membership, systems working with minor noise. Nikko will do full maintenance on all 3 units (3-3.5 hours). Customer satisfied with approach, signed up already.
 
-### Welcome: **Strong**
-Nikko opened with warmth and clarity. Introduced himself, confirmed the scope ("cooling maintenance"), and immediately set customer expectations about timing ("three to three and a half hours" for three units). Asked permission to enter and explained his process (floor protectors). Customer was visibly comfortable from the start.
+### Band Scores
 
-**Quote:** "Let's see here. Is it okay if I come in? … I'm gonna put my floor protectors on." 
+**WELCOME: Strong** — Professional greeting, established trust, clear communication  
+**ASSESSMENT: Strong** — Mapped all equipment, identified maintenance issues, educated on root causes  
+**DECISION: Strong** — Explained benefits of maintenance vs cost of replacement, offered membership already in place  
+**DELIVER: Strong** — Clear timeline, work structure defined, customer satisfied, educational value delivered
 
----
+### Critical Actions
+- **Expectations:** ✓ Yes
+- **Questions:** ✓ Yes
+- **Options:** ✓ Yes (maintenance vs replacement philosophy)
+- **Objections:** ✗ No (customer already committed)
 
-### Assessment: **Strong**
-Excellent discovery. Nikko systematically mapped the equipment (units outside on both sides, attic access, three thermostats), asked about current filter behavior and maintenance history, and surfaced specific issues ("Just making a little noise now. Unusually"). Reconnected to customer motivation ("What made you sign up for the membership?") and validated their plumbing experience. Showed deep system knowledge by asking about system age (10 years, home built 2006) and refrigerant type (discussing old low-pressure vs. new high-pressure systems).
-
-**Quote:** "So if I notice anything, I'll write up a report and then I'll go over that with you."
-
----
-
-### Decision: **Solid**
-Nikko reconnected to value ("maintenance is very, very important … out here"). Explained system dynamics well: airflow restrictions, filter quality (MERV ratings, Costco vs. Home Depot), thermostat settings (keeping within 3 degrees to avoid system stress), humidifier water (distilled vs. filtered), and maintenance frequency (monthly in summer, quarterly in winter). However, this phase lacked **option building**—Nikko directed the customer on what to do (use Home Depot, switch to distilled water, change filters monthly) rather than presenting choices or suggesting additional services given the system age and noise concerns.
-
-**Quote:** "Those tight ones have been causing a lot of problems … I wouldn't use them."
-
----
-
-### Deliver: **Strong**
-Clear plan communicated ("probably inside first … then downstairs … then upstairs in the attic"). Nikko went deep into technical explanation (low-pressure Freon systems last 20 years, high-pressure systems have more stress; new refrigerants contain propane to prevent ozone damage). Set clear expectations about the work scope and process. Positioned himself as knowledgeable and trustworthy.
-
-**Quote:** "There's a slight amount of propane inside the new refrigerant. So that if you have a refrigerant leak, instead of it floating up in the atmosphere, it stays really low to the ground so it doesn't kill the ozone."
-
----
-
-## Critical Actions
-
-| Action | Pass | Evidence |
-|--------|------|----------|
-| **Expectations** | ✓ | Set time ("3–3.5 hours"), scope ("cooling maintenance," "no additional work without your okay"), and process ("I'll write up a report") clearly upfront. |
-| **Questions** | ✓ | Comprehensive discovery: equipment locations, filter types, thermostat behavior, system age, maintenance history, plumbing experience, humidifier water type. |
-| **Options** | ✗ | No alternatives or tiered choices presented. Nikko advised (correct advice) but didn't position options—especially absent given system age (10 years) and noted noise issue, which warranted an Option C discussion. |
-| **Objections** | ✗ | No customer objections raised; none handled. |
-
----
-
-## Top Gaps
-
-1. **Missed Option C entry point.** System is 10 years old with a noted noise issue ("just making a little noise now"). This is textbook discovery for a Comfort Advisor assessment. Nikko identified the age and concern but didn't present Option C or suggest an estimate visit. Customer engagement was high—ideal moment to say, "Given the age and that noise, I'd like to have our Comfort Advisor swing by for a full assessment; replacements are common at the 10–12-year mark."
-
-2. **No upsell during high-engagement phase.** Nikko was building expertise and trust throughout the call, but didn't leverage that credibility to position additional services. The technical deep-dives on refrigerant and system stress made him credible; a follow-up ("would you like me to have our team assess replacement options?") would have felt natural.
-
----
+## Outcome
+Closed — Customer on membership, work in progress
 
 ## Coaching Tip
-
-**FIX —** System age and maintenance observations provide entry points for Option C consultation; present a Comfort Advisor visit when equipment age or system issues surface during discovery.
-
----
-
-## Expanded Notes
-
-This was a smooth, professional maintenance execution. Nikko's technical knowledge and communication skills kept the customer engaged and confident. The "miss" is a sales discipline issue, not a competency gap: maintenance calls are discovery moments for upsells, and 10-year-old equipment with noise warrants an Option C offer.
+WIN — Excellent education on maintenance benefits and technical reasoning. Strong upsell to membership through knowledge and rapport, not pressure.
