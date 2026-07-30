@@ -1,1 +1,21 @@
-{"recId": "a84a8703-8a50-48ea-b8c0-4a45d49f52a6-LHPyzDeQsNek3Dzj7AlgurDjs6E2", "tech": "Benjamin Wyllie", "jobNumber": 668184362, "dateCreated": "2026-07-28", "durationMin": 9, "bands": {"welcome": "Strong", "assessment": "Strong", "decision": "Solid", "deliver": "Solid"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "no-close", "tip": "FIX \u2014 Ask more questions and clarify customer needs"}
+{
+  "rec_id": "a84a8703-8a50-48ea-b8c0-4a45d49f52a6-LHPyzDeQsNek3Dzj7AlgurDjs6E2",
+  "date": "2026-07-28",
+  "rep": "Benjamin Wyllie",
+  "job": "668184362",
+  "duration": "9 min",
+  "outcome": "unknown",
+  "fsb": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Moderate",
+    "deliver": "Moderate"
+  },
+  "critical_actions": {
+    "expectations": true,
+    "questions": true,
+    "options": true,
+    "objections": true
+  },
+  "tip": "FIX \u2014 Present options earlier; guide customer to decision"
+}

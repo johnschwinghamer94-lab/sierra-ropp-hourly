@@ -1,1 +1,21 @@
-{"recId": "d434fa3c-a4af-444b-b1c0-e9dbea042810-uRoNvVAJhDZXMKB2yLsFt1Sm6te2", "tech": "Andrew Trujillo", "jobNumber": 669261059, "dateCreated": "2026-07-28", "durationMin": 48, "bands": {"welcome": "Solid", "assessment": "Strong", "decision": "Strong", "deliver": "Solid"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "flipped", "tip": "WIN \u2014 Successfully transitioned customer to next step"}
+{
+  "rec_id": "d434fa3c-a4af-444b-b1c0-e9dbea042810-uRoNvVAJhDZXMKB2yLsFt1Sm6te2",
+  "date": "2026-07-28",
+  "rep": "Andrew Trujillo",
+  "job": "669261059",
+  "duration": "48 min",
+  "outcome": "flipped",
+  "fsb": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Solid",
+    "deliver": "Moderate"
+  },
+  "critical_actions": {
+    "expectations": true,
+    "questions": true,
+    "options": true,
+    "objections": true
+  },
+  "tip": "WIN \u2014 Rep built rapport and discovered customer needs"
+}

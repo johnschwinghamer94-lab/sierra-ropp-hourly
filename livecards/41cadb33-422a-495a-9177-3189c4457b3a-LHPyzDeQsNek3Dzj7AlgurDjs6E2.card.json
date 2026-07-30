@@ -1,1 +1,21 @@
-{"recId": "41cadb33-422a-495a-9177-3189c4457b3a-LHPyzDeQsNek3Dzj7AlgurDjs6E2", "tech": "Benjamin Wyllie", "jobNumber": 669423667, "dateCreated": "2026-07-28", "durationMin": 7, "bands": {"welcome": "Strong", "assessment": "Strong", "decision": "Solid", "deliver": "Solid"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "flipped", "tip": "WIN \u2014 Successfully transitioned customer to next step"}
+{
+  "rec_id": "41cadb33-422a-495a-9177-3189c4457b3a-LHPyzDeQsNek3Dzj7AlgurDjs6E2",
+  "date": "2026-07-28",
+  "rep": "Benjamin Wyllie",
+  "job": "669423667",
+  "duration": "7 min",
+  "outcome": "flipped",
+  "fsb": {
+    "welcome": "Solid",
+    "assessment": "Strong",
+    "decision": "Weak",
+    "deliver": "Solid"
+  },
+  "critical_actions": {
+    "expectations": true,
+    "questions": true,
+    "options": true,
+    "objections": true
+  },
+  "tip": "WIN \u2014 Rep built rapport and discovered customer needs"
+}

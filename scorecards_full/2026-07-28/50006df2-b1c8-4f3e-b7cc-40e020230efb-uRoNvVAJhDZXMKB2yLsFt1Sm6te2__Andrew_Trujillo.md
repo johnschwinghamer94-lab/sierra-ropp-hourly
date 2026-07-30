@@ -1,24 +1,24 @@
-# Andrew Trujillo - Job #669385688
+# Call Scorecard
+RecId: 50006df2-b1c8-4f3e-b7cc-40e020230efb-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
+Rep: Andrew Trujillo
+Date: 2026-07-28
+Job: 669385688
+Duration: 117 min
 
-**Date:** 2026-07-28
-**Duration:** 117 min
-**Outcome:** FLIPPED
-**RecId:** 50006df2-b1c8-4f3e-b7cc-40e020230efb-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
+## Outcome
+flipped
 
-## FSG Scores
-
-- **Welcome:** Strong
-- **Assessment:** Strong
-- **Decision:** Strong
-- **Deliver:** Solid
+## FSG Bands
+- Welcome: Strong
+- Assessment: Strong
+- Decision: Solid
+- Deliver: Solid
 
 ## Critical Actions
-
-- **Set Expectations:** ✓
-- **Asked Discovery Questions:** ✓
-- **Created/Presented Options:** ✓
-- **Handled Objections with Empathy:** ✓
+- Expectations Set: True
+- Questions Asked: True
+- Options Presented: True
+- Objections Handled: True
 
 ## Coaching Tip
-
-WIN — Successfully transitioned customer to next step
+WIN — Rep built rapport and discovered customer needs

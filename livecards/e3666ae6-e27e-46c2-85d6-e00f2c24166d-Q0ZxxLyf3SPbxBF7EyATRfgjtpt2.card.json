@@ -1,1 +1,21 @@
-{"recId": "e3666ae6-e27e-46c2-85d6-e00f2c24166d-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2", "tech": "Bradley Espinoza", "jobNumber": 668731624, "dateCreated": "2026-07-28", "durationMin": 103, "bands": {"welcome": "Strong", "assessment": "Strong", "decision": "Solid", "deliver": "Solid"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "no-close", "tip": "FIX \u2014 Ask more questions and clarify customer needs"}
+{
+  "rec_id": "e3666ae6-e27e-46c2-85d6-e00f2c24166d-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2",
+  "date": "2026-07-28",
+  "rep": "Bradley Espinoza",
+  "job": "668731624",
+  "duration": "103 min",
+  "outcome": "unknown",
+  "fsb": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Weak",
+    "deliver": "Solid"
+  },
+  "critical_actions": {
+    "expectations": true,
+    "questions": true,
+    "options": true,
+    "objections": true
+  },
+  "tip": "FIX \u2014 Present options earlier; guide customer to decision"
+}
