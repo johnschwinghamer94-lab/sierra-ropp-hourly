@@ -1,1 +1,15 @@
-{"recId": "5afcff31-05b3-4b11-8ba9-2c2f32c3ac7e-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2", "tech": "Andrew Alonso", "jobNumber": "661923490", "dateCreated": "2026-07-29", "durationMin": 120, "bands": {"welcome": "Strong", "assessment": "Strong", "decision": "Strong on wins", "deliver": "Strong"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "flipped", "tip": "WIN — When the customer expressed worry about investing in a motor repair on an aging system, Andrew empathized with that concern and pivoted to Option C (Comfort Advisor replacement consultation), which earned the scheduled appointment."}
+{
+  "recId": "5afcff31-05b3-4b11-8ba9-2c2f32c3ac7e-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2",
+  "tech": "Andrew Alonso",
+  "job": "661923490",
+  "date": "2026-07-29",
+  "duration": "120 min",
+  "outcome": "flipped",
+  "bands": {
+    "welcome": "Solid",
+    "assessment": "Solid",
+    "decision": "Solid",
+    "deliver": "Solid"
+  },
+  "tip": "WIN \u2014 Systematic 120-minute diagnostic covered multiple components and issues; customer ready for Comfort Advisor estimate appointment"
+}

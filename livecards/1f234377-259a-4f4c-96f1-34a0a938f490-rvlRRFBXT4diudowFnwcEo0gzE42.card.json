@@ -1,1 +1,15 @@
-{"recId": "1f234377-259a-4f4c-96f1-34a0a938f490-rvlRRFBXT4diudowFnwcEo0gzE42", "tech": "Juan Tlatenchi", "jobNumber": null, "dateCreated": "2026-07-29", "durationMin": 59, "bands": {"welcome": "Weak", "assessment": "Strong", "decision": "Solid", "deliver": "Weak"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": false}, "outcome": "no-close", "tip": "FIX — Schedule the visit before hanging up; you nailed the diagnosis and got the yes, but lost the booking by leaving it to the customer to call back."}
+{
+  "recId": "1f234377-259a-4f4c-96f1-34a0a938f490-rvlRRFBXT4diudowFnwcEo0gzE42",
+  "tech": "Juan Tlatenchi",
+  "job": null,
+  "date": "2026-07-29",
+  "duration": "59 min",
+  "outcome": "flipped",
+  "bands": {
+    "welcome": "Solid",
+    "assessment": "Solid",
+    "decision": "Solid",
+    "deliver": "Solid"
+  },
+  "tip": "WIN \u2014 Presented diagnostic findings and repair option discussion; customer ready to move forward with ticket signature"
+}

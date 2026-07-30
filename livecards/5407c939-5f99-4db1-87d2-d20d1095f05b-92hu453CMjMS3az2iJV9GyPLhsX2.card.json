@@ -1,1 +1,15 @@
-{"recId": "5407c939-5f99-4db1-87d2-d20d1095f05b-92hu453CMjMS3az2iJV9GyPLhsX2", "tech": "Nikko April", "jobNumber": "667655564", "dateCreated": "2026-07-29", "durationMin": 107, "bands": {"welcome": "Strong", "assessment": "Strong", "decision": "Strong on wins", "deliver": "Strong"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "closed", "tip": "WIN — When the customer hesitated about joining the membership today, you offered timing flexibility ('you can sign up in winter') then locked in value with specifics ('save 15% on repairs, get an extra year warranty'), which converted the objection into a yes."}
+{
+  "recId": "5407c939-5f99-4db1-87d2-d20d1095f05b-92hu453CMjMS3az2iJV9GyPLhsX2",
+  "tech": "Nikko April",
+  "job": "667655564",
+  "date": "2026-07-29",
+  "duration": "107 min",
+  "outcome": "flipped",
+  "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Strong",
+    "deliver": "Strong"
+  },
+  "tip": "WIN \u2014 Lengthy comprehensive diagnostic identified multiple system issues and maintenance gaps; customer agreed to recommended service plan"
+}
