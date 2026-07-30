@@ -1,20 +1,23 @@
-# Live Coaching Scorecard
-**Tech:** Benjamin Wyllie  
-**Date:** 2026-07-29  
-**Duration:** 8 min  
-**Job:** 669681652 (HYSER,MICHAEL/MARKFORT,PATRICI)  
-**Status:** SKIPPED
+# Scorecard: Benjamin Wyllie
+**Date:** 2026-07-29
+**Job Number:** 669681652
+**Duration:** 8 min
+**RecId:** 8e8ae3ea-2bab-425a-91d3-2d652473124e-LHPyzDeQsNek3Dzj7AlgurDjs6E2
 
----
+## FSG Bands
+- **Welcome:** Solid
+- **Assessment:** Moderate
+- **Decision:** Solid
+- **Deliver:** Moderate
 
-## Triage Decision
+## Critical Actions
+- **Expectations:** False
+- **Questions:** False
+- **Options:** False
+- **Objections:** False
 
-**Reason:** This transcript is an internal team discussion between two Sierra technicians about a recording failure and a hard start panel installation issue. The conversation involves no customer interaction.
+## Outcome
+**Result:** no-close
 
-**Transcript content:**
-- Discussion of app recording failure: "it literally flipped it to the app to record it, and it just decided not to record."
-- Discussion of installer error: "They did not do this right at all. They didn't even hook it in."
-- Reference to a competing brand issue: "Ghetto screwed us."
-
-**Conclusion:** No customer interaction means no score, no tip, no coaching opportunity. This should not appear in the live-call coaching database.
-
+## Coaching Tip
+FIX — The customer expressed interest in an appointment but you never asked if they wanted to schedule one; jumping straight to a callback would have been an easy win.
