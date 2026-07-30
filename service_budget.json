@@ -1,0 +1,15 @@
+{
+  "month": "2026-08",
+  "monthNote": "CONFIRMED by John 2026-07-30: this is the AUGUST 2026 budget. Update this file each month from the budget sheet.",
+  "techCountNote": "The 41 techs on the budget's Service line includes SILO techs whose parts revenue is sold into the service dept — so revenue actuals for pace tracking = invoiced $ on the Service+Maintenance BUs regardless of tech (which is how service_data.py already computes it). The dashboard roster stays the 25 2A/2B techs.",
+  "revenueTarget": 755333,
+  "dailyRevTarget": 35968,
+  "workingDays": 21,
+  "budgetTechCount": 41,
+  "callsRanPerDayPerTech": 2.75,
+  "ranCallsPerDay": 112.8,
+  "avgTicketTarget": 390,
+  "callsNeeded": 2367.75,
+  "rolloverRule": "daily commitment = (revenueTarget - MTD actual) / remaining working days — a missed day automatically raises the next day's number",
+  "source": "John's budget sheet screenshot, Service line, provided 2026-07-30"
+}
