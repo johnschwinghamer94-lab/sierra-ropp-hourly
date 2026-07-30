@@ -546,6 +546,32 @@ def _ropp_clean(calls_set, tgl_sources=None):
 
 def main():
     n = _now(); today = n.date().isoformat(); hh = f"{n.hour:02d}"
+
+    # Bootstrap watchdog for the Service dashboard relays. GitHub's native
+    # cron is unreliable for newly added workflow files (servicefeed.yml
+    # missed every morning tick on 7/30), so the first servicefeed session
+    # of the day may never start on its own. This job is driven dependably
+    # by cron-job.org, so it kicks the service workflows during ops hours.
+    # Sessions self-arm their successors and the workflows' concurrency
+    # groups collapse redundant dispatches, so extra kicks are harmless.
+    def _kick(wf, note, inputs=None):
+        try:
+            body = {"ref": "main"}
+            if inputs:
+                body["inputs"] = inputs
+            r = requests.post(
+                f"https://api.github.com/repos/{SELF}/actions/workflows/{wf}/dispatches",
+                headers=GH, json=body)
+            print(f"Kicked {wf} ({note}) -> HTTP {r.status_code}")
+        except Exception as e:
+            print(f"WARN: could not dispatch {wf}:", e)
+
+    hm = (n.hour, n.minute)
+    if (6, 35) <= hm <= (23, 45):
+        _kick("servicefeed.yml", "service live-feed relay bootstrap")
+    if (7, 0) <= hm <= (23, 0) and n.minute % 15 < 3:
+        _kick("servicedata.yml", "pulse light refresh")  # no inputs -> --light
+
     rev_rows = tgl_rows = sch_rows = None
 
     # PREFERRED: pull today's reports live from the ServiceTitan API.
