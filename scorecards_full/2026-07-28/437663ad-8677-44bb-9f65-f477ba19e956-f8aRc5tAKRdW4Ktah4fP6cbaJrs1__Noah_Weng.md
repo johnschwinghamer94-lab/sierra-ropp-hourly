@@ -1,19 +1,22 @@
-# Scorecard
-**Tech**: Noah Weng
-**Job**: 669334306
-**Outcome**: flipped
+# Coaching Card: Noah Weng
 
-## FSG Steps
+**Job #:** 669334306
+**Date:** 2026-07-28
+
+## FSG Bands
 - **welcome**: Strong
 - **assessment**: Strong
-- **decision**: Solid
+- **decision**: Strong
 - **deliver**: Strong on wins
 
 ## Critical Actions
-- **expectations**: ✓
-- **questions**: ✓
-- **options**: ✓
-- **objections**: ✓
+- expectations: true
+- questions: true
+- options: true
+- objections: false
 
-## Coaching
-WIN — tech maintained professionalism and clarified next steps
+## Outcome
+flipped
+
+## Coaching Tip
+WIN — Excellent rapport building addressing customer's relocation concerns; positioned repair-vs-replacement decision based on customer timeline.

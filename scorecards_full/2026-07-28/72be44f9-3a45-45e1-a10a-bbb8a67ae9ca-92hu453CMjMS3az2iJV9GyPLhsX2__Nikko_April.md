@@ -1,19 +1,22 @@
-# Scorecard
-**Tech**: Nikko April
-**Job**: 668962924
-**Outcome**: flipped
+# Coaching Card: Nikko April
 
-## FSG Steps
+**Job #:** 668962924
+**Date:** 2026-07-28
+
+## FSG Bands
 - **welcome**: Strong
 - **assessment**: Strong
-- **decision**: Solid
+- **decision**: Strong
 - **deliver**: Strong on wins
 
 ## Critical Actions
-- **expectations**: ✓
-- **questions**: ✓
-- **options**: ✓
-- **objections**: ✓
+- expectations: true
+- questions: true
+- options: true
+- objections: false
 
-## Coaching
-WIN — tech maintained professionalism and clarified next steps
+## Outcome
+closed
+
+## Coaching Tip
+WIN — Discovered rusting AC coil; educated customer on MERV filter ratings and system maintenance to extend 8-12 year lifespan.

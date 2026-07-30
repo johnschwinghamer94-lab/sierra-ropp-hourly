@@ -1,19 +1,22 @@
-# Scorecard
-**Tech**: Mario Castro
-**Job**: 646618252
-**Outcome**: unknown
+# Coaching Card: Mario Castro
 
-## FSG Steps
-- **welcome**: Moderate
-- **assessment**: Strong
-- **decision**: Solid
-- **deliver**: Moderate
+**Job #:** 646618252
+**Date:** 2026-07-28
+
+## FSG Bands
+- **welcome**: Solid
+- **assessment**: Solid
+- **decision**: Moderate
+- **deliver**: Weak
 
 ## Critical Actions
-- **expectations**: ✗
-- **questions**: ✓
-- **options**: ✓
-- **objections**: ✓
+- expectations: true
+- questions: true
+- options: false
+- objections: true
 
-## Coaching
-FIX — need stronger reconnection to customer concerns
+## Outcome
+unknown
+
+## Coaching Tip
+FIX — Customer frustrated with past service; rep focused on satisfaction but missed opportunity to rebuild trust with service options.

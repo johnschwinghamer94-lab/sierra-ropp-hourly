@@ -1,19 +1,22 @@
-# Scorecard
-**Tech**: Nikko April
-**Job**: 669261077
-**Outcome**: unknown
+# Coaching Card: Nikko April
 
-## FSG Steps
-- **welcome**: Moderate
+**Job #:** 669261077
+**Date:** 2026-07-28
+
+## FSG Bands
+- **welcome**: Solid
 - **assessment**: Strong
 - **decision**: Solid
 - **deliver**: Moderate
 
 ## Critical Actions
-- **expectations**: ✗
-- **questions**: ✓
-- **options**: ✓
-- **objections**: ✓
+- expectations: true
+- questions: true
+- options: true
+- objections: true
 
-## Coaching
-FIX — need stronger reconnection to customer concerns
+## Outcome
+unknown
+
+## Coaching Tip
+FIX — Blower motor failure identified; clarify replacement timeline and cost with customer before follow-up to improve close rate.

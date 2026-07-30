@@ -1,19 +1,22 @@
-# Scorecard
-**Tech**: Noah Weng
-**Job**: 669361595
-**Outcome**: flipped
+# Coaching Card: Noah Weng
 
-## FSG Steps
+**Job #:** 669361595
+**Date:** 2026-07-28
+
+## FSG Bands
 - **welcome**: Strong
 - **assessment**: Strong
-- **decision**: Moderate
+- **decision**: Strong
 - **deliver**: Strong on wins
 
 ## Critical Actions
-- **expectations**: ✓
-- **questions**: ✓
-- **options**: ✓
-- **objections**: ✓
+- expectations: true
+- questions: true
+- options: true
+- objections: false
 
-## Coaching
-WIN — tech maintained professionalism and clarified next steps
+## Outcome
+flipped
+
+## Coaching Tip
+WIN — Diagnosed previous contractor's substandard electrical work; explained proper repair vs poor short-term fix; customer approved system replacement.

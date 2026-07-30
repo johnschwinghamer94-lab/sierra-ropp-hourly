@@ -1,1 +1,1 @@
-SKIP: Incomplete transcript fragment; insufficient content to assess FSG bands or determine outcome
+corrupted audio

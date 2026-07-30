@@ -1,19 +1,22 @@
-# Scorecard
-**Tech**: Nikko April
-**Job**: 667701980
-**Outcome**: flipped
+# Coaching Card: Nikko April
 
-## FSG Steps
-- **welcome**: Moderate
+**Job #:** 667701980
+**Date:** 2026-07-28
+
+## FSG Bands
+- **welcome**: Strong
 - **assessment**: Strong
 - **decision**: Solid
-- **deliver**: Strong on wins
+- **deliver**: Solid
 
 ## Critical Actions
-- **expectations**: ✓
-- **questions**: ✓
-- **options**: ✓
-- **objections**: ✓
+- expectations: true
+- questions: true
+- options: true
+- objections: false
 
-## Coaching
-WIN — tech maintained professionalism and clarified next steps
+## Outcome
+flipped
+
+## Coaching Tip
+WIN — Rep quickly established rapport over climate differences, diagnosed no-cool issue, guided customer through diagnostic for repairs.
