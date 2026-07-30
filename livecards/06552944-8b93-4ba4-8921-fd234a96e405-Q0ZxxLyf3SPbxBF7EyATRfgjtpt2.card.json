@@ -1,15 +1,1 @@
-{
-  "recId": "06552944-8b93-4ba4-8921-fd234a96e405-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2",
-  "tech": "Bradley Espinoza",
-  "job": "668949835",
-  "date": "2026-07-29",
-  "duration": "37 min",
-  "outcome": "no-close",
-  "bands": {
-    "welcome": "Solid",
-    "assessment": "Solid",
-    "decision": "Moderate",
-    "deliver": "Solid"
-  },
-  "tip": "FIX \u2014 Found motor start device issue but didn't build option around previous maintenance concerns; ended at inspection phase"
-}
+{"recId": "06552944-8b93-4ba4-8921-fd234a96e405-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2", "tech": "Bradley Espinoza", "jobNumber": "668949835", "dateCreated": "2026-07-29", "durationMin": 37, "bands": {"welcome": "Strong", "assessment": "Solid", "decision": "Moderate", "deliver": "Solid"}, "critical": {"expectations": true, "questions": true, "options": false, "objections": false}, "outcome": "no-close", "tip": "FIX — Tech clearly set expectations (tour, thorough evaluation, cleanliness/functionality/safety checks) and asked discovery questions about filter changes, but transcript cuts off before any concerns were identified or options presented."}

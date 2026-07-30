@@ -1,30 +1,49 @@
-# Call Score: Andrew Alonso - Brooklyn Irish
-
-**RecId:** d130a502-2935-41e4-a33d-74d6c6df5120-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2  
-**Job:** 669503650  
+# Live Coaching Scorecard
+**Tech:** Andrew Alonso  
 **Date:** 2026-07-29  
-**Duration:** 8 min
+**Duration:** 8 min  
+**Job:** 669503650 (Brooklyn Irish)  
+**Outcome:** No-close
 
-## FSG Bands
+---
 
-- **Welcome:** Solid — Pleasant greeting and initial rapport established
-- **Assessment:** Strong — Good diagnostic questioning to understand the cooling issue
-- **Decision:** Weak — Failed to present options or next steps
-- **Deliver:** Weak — No explanation of findings or action plan
+## FSG Scoring
+
+### Welcome — **Solid**
+- Tech greeted customer warmly ("Oh, nice. Y.") and showed interest in their situation.
+
+### Assessment — **Moderate**
+- Asked basic questions: tenure (1 year), filter replacement frequency, hot/cold room identification.
+- **Gap:** Did not inspect or discuss the outdoor unit where the high-pitch noise originates.
+
+### Decision — **Moderate**
+- Offered filter change during visit, mentioned filter frequency (up to 3 months, recommend 1 month).
+- **Gap:** No diagnosis of the AC problem (high-pitch noise, no cold air, 90° inside).
+
+### Deliver — **Weak**
+- Transitioned to personal conversation (high school graduation, age, bedroom temperature) rather than developing options.
+- Did not return to the core issue or present a solution path.
+
+---
 
 ## Critical Actions
+- **Expectations:** ✗ FALSE — No clarity on what would happen next or what caused the problem.
+- **Questions:** ✗ FALSE — Discovery was surface-level; did not probe the noise or failure mode.
+- **Options:** ✗ FALSE — Filter replacement is maintenance, not a solution to the AC failure.
+- **Objections:** ✗ FALSE — No objections handled because no options were presented.
 
-- **Expectations:** ✗ No clear next steps communicated
-- **Questions:** ✓ Effective diagnostic questions asked
-- **Options:** ✗ No options presented to customer
-- **Objections:** ✗ No objections encountered or handled
+---
 
-## Outcome
+## Coaching
 
-**No Close** — Call ended without commitment or scheduled appointment.
+**The problem:** Customer reported an emergency situation (high-pitch noise, zero cooling, 90° inside on a hot day), but tech treated it as a routine maintenance visit. This is a broken AC at 90 inside—a clear option moment was missed.
 
-## Coaching Notes
+**What should have happened:** 
+1. **Reconnect:** "Hearing that high-pitched noise and losing all your cold air overnight is urgent. Let me check your outdoor unit to see what's happening."
+2. **Diagnose:** Test outdoor unit (fan motor, compressor, refrigerant pressure) to isolate the issue.
+3. **Present:** "Here's what I found, here's what it will cost to fix, and here's what we need to do to get you cool again today."
 
-The tech diagnosed the problem well but lost the opportunity when ending the call. After identifying the thermostat issue, the tech should have clearly explained findings and proposed a next step (Option C, service visit, etc.). The customer was likely expecting guidance on what to do next.
+**Missed opportunity:** The customer's frustration ("It's like 90 degrees inside") was a door to build value, not a cue to change the subject to high school dates.
 
-**Coaching Tip:** FIX — After diagnosing the thermostat issue and assessing the cooling problem, present your findings and explain what needs to happen next—don't leave without a clear next-step plan.
+**Reinforce:** When a customer opens with an emergency, it's your highest-value moment. Diagnose it thoroughly before pivoting to rapport.
+
