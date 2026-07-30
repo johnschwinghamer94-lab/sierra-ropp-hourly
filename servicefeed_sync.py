@@ -37,6 +37,8 @@ import base64, json, os, sys, time, urllib.request, urllib.error
 from datetime import datetime, date, timedelta, timezone
 from pathlib import Path
 
+import requests
+
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import st_client as st
 
@@ -67,6 +69,157 @@ def _is_membership_item(sku):
     if nm.startswith("SAM") or nm.startswith("PLSAM"):
         return True
     return any(x in disp for x in ("membership", "maintenance agreement", "service agreement"))
+
+
+# ── Siro call-recording status (John, 2026-07-30) ───────────────────────────
+# Minimal port of livefeed_sync.py's Siro client (same mint/auth pattern,
+# same team id, same UA). Cached module-lifetime token; recordings list is
+# cached and refreshed at most every 5 minutes (the relay cycles every ~90s,
+# don't hammer Siro every cycle). FAILS OPEN on any error (creds absent,
+# network, 4xx): returns None, and the caller sets siro:null on every job /
+# siroToday:null on the payload rather than ever crashing the relay.
+SIRO_TEAM_ID = "Q42L8L"
+SIRO_TOKEN_URL_FMT = "https://functions.siro.ai/api-externalApi/v1/core/oauth/apps/{client_id}/access-token"
+SIRO_API_BASE = "https://api.siro.ai/v1/core"
+SIRO_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+           "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
+_SIRO_LOCAL_API_KEY = Path.home() / ".siro_api_key"
+_SIRO_LOCAL_OAUTH_APP = Path.home() / ".siro_oauth_app.json"
+_SIRO_LOCAL_TEST_USER_ID = "RKnwDLk8seVkMrLIhDdnSOVsEu73"
+_SIRO_TOKEN = {"tok": None}
+_SIRO_CACHE = {"ts": 0.0, "data": None}   # data: {norm_full_name: {"n": int, "starts": [datetime]}}
+SIRO_REFRESH_SECS = 300
+
+
+def _siro_creds():
+    api_key = os.environ.get("SIRO_API_KEY")
+    client_id = os.environ.get("SIRO_CLIENT_ID")
+    client_secret = os.environ.get("SIRO_CLIENT_SECRET")
+    user_id = os.environ.get("SIRO_USER_ID")
+    if not api_key and _SIRO_LOCAL_API_KEY.exists():
+        try:
+            api_key = _SIRO_LOCAL_API_KEY.read_text().strip()
+        except OSError:
+            pass
+    if (not client_id or not client_secret) and _SIRO_LOCAL_OAUTH_APP.exists():
+        try:
+            app = json.loads(_SIRO_LOCAL_OAUTH_APP.read_text())
+            client_id = client_id or app.get("clientID")
+            client_secret = client_secret or app.get("clientSecret")
+        except (OSError, json.JSONDecodeError):
+            pass
+    if not user_id and _SIRO_LOCAL_API_KEY.exists() and _SIRO_LOCAL_OAUTH_APP.exists():
+        user_id = _SIRO_LOCAL_TEST_USER_ID
+    return api_key, client_id, client_secret, user_id
+
+
+def _siro_mint_token(api_key, client_id, client_secret, user_id):
+    url = SIRO_TOKEN_URL_FMT.format(client_id=client_id)
+    r = requests.post(url, json={"clientSecret": client_secret, "userId": user_id, "scope": "read"},
+                       headers={"Authorization": f"Bearer {api_key}", "User-Agent": SIRO_UA}, timeout=30)
+    r.raise_for_status()
+    return r.json()["accessToken"]
+
+
+def _siro_fetch_recordings(token):
+    r = requests.get(f"{SIRO_API_BASE}/recordings?teamId={SIRO_TEAM_ID}&limit=50",
+                      headers={"x-siro-auth-token": token, "User-Agent": SIRO_UA}, timeout=30)
+    if r.status_code == 401:
+        raise PermissionError("401")
+    r.raise_for_status()
+    return r.json().get("data", [])
+
+
+_siro_norm = lambda s: " ".join((s or "").lower().split())
+
+
+def _siro_rec_dt(rec):
+    """Best-effort creation/start timestamp for a Siro recording object —
+    field name isn't pinned down in our docs, so try the plausible ones."""
+    for k in ("createdAt", "createdOn", "startedAt", "startTime", "created", "start"):
+        v = rec.get(k)
+        if v:
+            dt = parse_utc(v) if isinstance(v, str) and ("T" in v or "Z" in v) else None
+            if dt:
+                return dt
+            try:
+                # epoch seconds/millis fallback
+                num = float(v)
+                if num > 1e12:
+                    num /= 1000.0
+                return datetime.fromtimestamp(num, tz=timezone.utc).astimezone()
+            except Exception:
+                continue
+    return None
+
+
+def fetch_siro_today():
+    """Today's (local/PT) Siro recordings, grouped by normalized rep full
+    name: {"n": count, "starts": [aware local datetimes]}. Cached at most
+    SIRO_REFRESH_SECS; returns None (and logs once) on any failure or when
+    creds are unavailable — caller must degrade silently."""
+    now_ts = time.time()
+    if _SIRO_CACHE["data"] is not None and now_ts - _SIRO_CACHE["ts"] < SIRO_REFRESH_SECS:
+        return _SIRO_CACHE["data"]
+    api_key, client_id, client_secret, user_id = _siro_creds()
+    if not all([api_key, client_id, client_secret, user_id]):
+        log("siro: creds absent — siro:null this cycle")
+        _SIRO_CACHE["ts"] = now_ts
+        _SIRO_CACHE["data"] = None
+        return None
+    try:
+        tok = _SIRO_TOKEN["tok"]
+        if not tok:
+            tok = _siro_mint_token(api_key, client_id, client_secret, user_id)
+            _SIRO_TOKEN["tok"] = tok
+        try:
+            recs = _siro_fetch_recordings(tok)
+        except PermissionError:
+            tok = _siro_mint_token(api_key, client_id, client_secret, user_id)
+            _SIRO_TOKEN["tok"] = tok
+            recs = _siro_fetch_recordings(tok)
+        today_local = datetime.now().astimezone().date()
+        out = {}
+        for rec in recs:
+            dt = _siro_rec_dt(rec)
+            if not dt or dt.date() != today_local:
+                continue
+            fn = _siro_norm(rec.get("repFirstName"))
+            ln = _siro_norm(rec.get("repLastName"))
+            full = _siro_norm(f"{fn} {ln}").strip()
+            if not full:
+                continue
+            ent = out.setdefault(full, {"n": 0, "starts": []})
+            ent["n"] += 1
+            ent["starts"].append(dt)
+        _SIRO_CACHE["ts"] = now_ts
+        _SIRO_CACHE["data"] = out
+        return out
+    except Exception as ex:
+        log("siro FAILED (fail-open, siro:null): " + repr(ex)[:150])
+        _SIRO_CACHE["ts"] = now_ts
+        _SIRO_CACHE["data"] = None
+        return None
+
+
+def _siro_match(tech_name, siro_data):
+    """Tolerant match of a roster tech name to a Siro rep entry — exact
+    normalized full-name match first, else first-name match against any
+    Siro entry's first token. None if no Siro data / no match."""
+    if siro_data is None:
+        return None
+    norm = _siro_norm(tech_name)
+    if not norm:
+        return None
+    if norm in siro_data:
+        return siro_data[norm]
+    first = norm.split()[0] if norm.split() else ""
+    if first:
+        for k, v in siro_data.items():
+            kparts = k.split()
+            if kparts and kparts[0] == first:
+                return v
+    return None
 
 
 def log(msg):
@@ -276,7 +429,7 @@ def build(state):
     if first_run_of_day:
         keep_roster = state.get("roster")
         state.clear()
-        state.update({"date": dkey, "jobs": {}, "feed": []})
+        state.update({"date": dkey, "jobs": {}, "feed": [], "hourly": {}})
         if keep_roster:
             state["roster"] = keep_roster
     seen = state["jobs"]
@@ -291,6 +444,8 @@ def build(state):
         by_job.setdefault(a["jobId"], a)
 
     RANK = {"Working": 0, "Dispatched": 1, "Hold": 2, "Scheduled": 3, "Done": 4}
+    siro_data = fetch_siro_today()   # one Siro check per cycle (fail-open -> None)
+    siro_techs_seen = set()
     cards = []
     on_site = 0
     opt_total = opt_count = 0
@@ -388,6 +543,33 @@ def build(state):
 
         photos = photo_count(jid)
 
+        # Siro recording status (John, 2026-07-30): "n" = tech's recordings
+        # today, "rec" = any recording started within the job's onsite window
+        # (appt start - 15min .. now/done). null when Siro data unavailable.
+        siro = None
+        if techs:
+            siro_techs_seen.update(techs)
+        if siro_data is not None and techs:
+            n_total = 0
+            rec_flag = False
+            matched_any = False
+            win_start = (start_l - timedelta(minutes=15)) if start_l else None
+            win_end = done_l if (status == "Done" and done_l) else now
+            for t in techs:
+                ent = _siro_match(t, siro_data)
+                if not ent:
+                    continue
+                matched_any = True
+                n_total += ent["n"]
+                if win_start:
+                    for st_dt in ent["starts"]:
+                        if win_start <= st_dt <= win_end:
+                            rec_flag = True
+            if matched_any:
+                siro = {"n": n_total, "rec": rec_flag}
+            else:
+                siro = {"n": 0, "rec": False}
+
         cards.append({
             "jobId": jid, "jobNumber": j.get("jobNumber", ""),
             "tech": ", ".join(techs), "team": ", ".join(team_set),
@@ -406,6 +588,7 @@ def build(state):
             "membershipOffered": membership_offered_job,
             "membershipSold": membership_sold_job,
             "photos": photos,
+            "siro": siro,
         })
 
     cards.sort(key=lambda c: c["startIso"])
@@ -416,11 +599,30 @@ def build(state):
     del feed[60:]
     state["date"] = dkey
 
+    # hour-by-hour cumulative KPI snapshots for the day: each entry is the
+    # state as of the end of that hour; current hour overwrites live until it
+    # closes out. Feeds the dashboard HXH tab.
+    done_ct = sum(1 for c in cards if c["stages"].get("done"))
+    hrs = state.setdefault("hourly", {})
+    hrs[str(now.hour)] = {
+        "h": now.hour, "jobs": len(cards), "done": done_ct,
+        "opts": opt_count, "optsTotal": int(opt_total),
+        "signed": len(signed_jobs), "signedTotal": int(signed_total),
+        "leads": leads_set_n, "mems": memberships_sold,
+    }
+
+    siro_today = None
+    if siro_data is not None:
+        recorded = sum(1 for t in siro_techs_seen
+                       if (_siro_match(t, siro_data) or {}).get("n", 0) >= 1)
+        siro_today = {"recorded": recorded, "of": len(siro_techs_seen)}
+
     payload = {
         "date": dkey,
         "day": now.strftime("%A, %B %d").upper(),
         "generated": now_s,
         "generatedMs": int(time.time() * 1000),
+        "siroToday": siro_today,
         "kpis": {
             "jobsToday": len(cards),
             "onSiteNow": on_site,
@@ -431,6 +633,7 @@ def build(state):
             "leadsSet": leads_set_n,
             "membershipsSold": memberships_sold,
         },
+        "hours": [hrs[k] for k in sorted(hrs, key=int)],
         "jobs": cards,
         "activity": feed,
         "updated": now_s,

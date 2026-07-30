@@ -28,5 +28,9 @@ jobs:
       - env:
           ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+          SIRO_API_KEY: ${{ secrets.SIRO_API_KEY }}
+          SIRO_CLIENT_ID: ${{ secrets.SIRO_CLIENT_ID }}
+          SIRO_CLIENT_SECRET: ${{ secrets.SIRO_CLIENT_SECRET }}
+          SIRO_USER_ID: ${{ secrets.SIRO_USER_ID }}
           SERVICEFEED_CLOUD: "1"
         run: python servicefeed_sync.py
