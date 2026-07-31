@@ -4852,6 +4852,144 @@
       "grade": "great",
       "closed": false,
       "job": "669308940"
+    },
+    {
+      "id": "5afcff31-05b3-4b11-8ba9-2c2f32c3ac7e-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2-1",
+      "type": "Spouse / Decision-Maker",
+      "cust": "Oh, that'll be just the two of us. I cannot be just me... Because I don't really understand... about the AC thing.",
+      "answer": "I have to get a signature for whatever you want to do if you're not doing anything. But we are super busy, right? We're getting a lot of breakdowns. So what I can do is schedule it for Saturday or Sunday... at least I have you on the schedule.",
+      "tech": "Andrew Alonso",
+      "date": "2026-07-29",
+      "grade": "great",
+      "closed": false,
+      "job": "661923490"
+    },
+    {
+      "id": "06552944-8b93-4ba4-8921-fd234a96e405-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2-1",
+      "type": "Price",
+      "cust": "I cannot get the payment plan because I cannot afford it is because my husband died... I don't have credit card anymore.",
+      "answer": "I'm sorry to hear that... if I can, I'll stay until it dropped, the air condition... it will just signal, I guess... but if not, well, then that's the time that I will maybe deal with it. But so far so good.",
+      "tech": "Bradley Espinoza",
+      "date": "2026-07-29",
+      "grade": "poor",
+      "closed": false,
+      "job": "668949835"
+    },
+    {
+      "id": "829e6d1d-dd59-4832-9f4b-75e80b0bfcbd-f4dx65lewNTPydNXjgypLVFAcbk1-1",
+      "type": "Doubt / Distrust",
+      "cust": "We're not talking totally broke.",
+      "answer": "Well, outside there is a concern. Let me show you what we're looking at, and we'll sit down at the end to go over all this... Freon doesn't look like it's leaking anything. I checked your compressor... right now this guy is starting to pull excess power.",
+      "tech": "Brandon Moreno",
+      "date": "2026-07-29",
+      "grade": "ok",
+      "closed": false
+    },
+    {
+      "id": "829e6d1d-dd59-4832-9f4b-75e80b0bfcbd-f4dx65lewNTPydNXjgypLVFAcbk1-2",
+      "type": "Spouse / Decision-Maker",
+      "cust": "Well, I'll probably go with. See what, Pete, if you write something up for us, and then we can go from there... What's the best number I could reach back?... I trust you give him all the info, but.",
+      "answer": "It really just depends on if you guys are looking at the whole picture... if you guys are open to seeing what a quote looks like as far as starting fresh, that's going to be a different guy that comes out... gives you guys an estimate... we could always come back to do the cleaning. Or if you guys just need some time for it to simmer.",
+      "tech": "Brandon Moreno",
+      "date": "2026-07-29",
+      "grade": "ok",
+      "closed": false
+    },
+    {
+      "id": "02a09e2d-5738-4aab-aea0-5c20eccf6e14-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
+      "type": "Price",
+      "cust": "Then just a roundabout estimate, it doesn't have to be, but on average what would it cost to replace the system?... am I looking at 10 grand? Am I looking at 15 grand versus 5 grand?",
+      "answer": "So I don't see the replacement side, I just work in the repairs... I would say it's going to be more than five grand just because they did just the outside portion for you, but that's my assumption... I can always get them out here and they can take a look at it and see what that price would be for you guys.",
+      "tech": "Cole Pantol",
+      "date": "2026-07-29",
+      "grade": "great",
+      "closed": false,
+      "job": "669583604"
+    },
+    {
+      "id": "1e8b153b-bd5d-4eaf-9551-bda8bc19aa4c-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
+      "type": "Price",
+      "cust": "If I get that first one done, the fan order... And then we end up getting a new system that's gone. That, that thousand's gone. Right?",
+      "answer": "That's why I always tell my homeowners... once you get into the fan motor, blower motor, compressors, coils, you're gambling... dumping that money and hoping for a return... compare with Jeremy's price before you start digging into a thousand, then $5,500 later, it makes more sense to scrap it and start from scratch.",
+      "tech": "Francisco Valencia",
+      "date": "2026-07-29",
+      "grade": "great",
+      "closed": false,
+      "job": "669106053"
+    },
+    {
+      "id": "8b9e9853-0e5e-4195-8fdc-cc4893badc13-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
+      "type": "Stall / Think About It",
+      "cust": "None yet. I gotta think about it.",
+      "answer": "I completely understand wanting to think about it. It's a lot of money to put into this, especially because you just put money into it 2 years ago... I'll leave you my business card. If you have any questions, you can always reach out, and then we can go from there.",
+      "tech": "Joe Mendoza",
+      "date": "2026-07-29",
+      "grade": "ok",
+      "closed": false,
+      "job": "669591718"
+    },
+    {
+      "id": "d2d90c23-b3df-41f9-b996-6a18f1b017c0-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
+      "type": "Doubt / Distrust",
+      "cust": "It's very intrusive and\u2014... they constantly want to fix something. It's always a lot of money. In all those years that we had this, we never had anybody come out... I'm more worried that you're coming out and you're effing it up. Honest to God, I really.",
+      "answer": "The membership services. Well, what you can do also... it's also an option if you don't want to commit to the membership. You can... there are different times that there's different types of promotions going on for different tune-ups. And you can always call in and say, 'Hey, listen.'",
+      "tech": "Joe Mendoza",
+      "date": "2026-07-29",
+      "grade": "ok",
+      "closed": false,
+      "job": "669427145"
+    },
+    {
+      "id": "d2d90c23-b3df-41f9-b996-6a18f1b017c0-hUwt6xtja4T6o8jCUdsXJsPtmQX2-2",
+      "type": "System Too Old",
+      "cust": "But we're not replacing it because it's working great in the summer... And I don't mind freezing in the winter or just using that... Until it's not producing air, we're gonna ride with it.",
+      "answer": "Yeah, no, and that's fine. You know, what I would recommend, especially since it's getting up there in age... I know we're having an issue with this one. I would have us come back for\u2014I would sign up for the membership, have us come back and take her out.",
+      "tech": "Joe Mendoza",
+      "date": "2026-07-29",
+      "grade": "ok",
+      "closed": false,
+      "job": "669427145"
+    },
+    {
+      "id": "e125b799-ead9-4103-8138-d79b6114cc43-rvlRRFBXT4diudowFnwcEo0gzE42-1",
+      "type": "Doubt / Distrust",
+      "cust": "I dread those places, cuz. I know you guys will come back at like 10 GS, replace it all, but whatever... I'm taking estimates now that it's way too high. I have one of my boys coming into it for sure.",
+      "answer": "All right, well, like I said, oh, it's a decent price... I'll let you guys just do just a mic. Repairs that we can do. Whatever if it's a little crazier. It all depends on the price... Well, I'll take a look at it. Do you have any time constraints?",
+      "tech": "Juan Tlatenchi",
+      "date": "2026-07-29",
+      "grade": "poor",
+      "closed": false
+    },
+    {
+      "id": "1f234377-259a-4f4c-96f1-34a0a938f490-rvlRRFBXT4diudowFnwcEo0gzE42-1",
+      "type": "Price",
+      "cust": "I can't afford a new unit.",
+      "answer": "Well, look, we have payment plans for everything, so\u2014",
+      "tech": "Juan Tlatenchi",
+      "date": "2026-07-29",
+      "grade": "ok",
+      "closed": false
+    },
+    {
+      "id": "575f8e75-8a8a-4780-8334-c65bfc9cb3d7-rvlRRFBXT4diudowFnwcEo0gzE42-1",
+      "type": "Spouse / Decision-Maker",
+      "cust": "My aunt Tori. Owns the house... she's gonna be dealing with her case... but you're more than welcome to come down and tell me a little bit of it. She's the big decision maker... decide if anything gets done or whatnot.",
+      "answer": "Right. So she... But she's mainly the decision maker... Okay. And then you think we'll be able to get on the phone or.",
+      "tech": "Juan Tlatenchi",
+      "date": "2026-07-29",
+      "grade": "ok",
+      "closed": false
+    },
+    {
+      "id": "5407c939-5f99-4db1-87d2-d20d1095f05b-92hu453CMjMS3az2iJV9GyPLhsX2-1",
+      "type": "Stall / Think About It",
+      "cust": "And I can get this $16 a month later.",
+      "answer": "You can? Yeah. The only reason I gave you the option now if you wanted me to wash the coils out. Then if you joined it, I would wash them. If you want to join in the winter time, call us for the maintenance. Yeah, we can sign you up.",
+      "tech": "Nikko April",
+      "date": "2026-07-29",
+      "grade": "great",
+      "closed": false,
+      "job": "667655564"
     }
   ]
 }
