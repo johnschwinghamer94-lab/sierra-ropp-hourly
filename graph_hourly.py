@@ -569,6 +569,7 @@ def main():
     hm = (n.hour, n.minute)
     if (5, 15) <= hm <= (23, 45):
         _kick("servicefeed.yml", "service live-feed relay bootstrap")
+        _kick("livefeed.yml", "silo live-feed relay bootstrap")
     if (7, 0) <= hm <= (23, 0) and n.minute % 15 < 3:
         _kick("servicedata.yml", "pulse light refresh")  # no inputs -> --light
 

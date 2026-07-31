@@ -60,7 +60,7 @@ TAG_ROPP = 962027                 # "ROPP" tag type
 TAG_MGMT_REMOVED = 545867780      # "Management Removed ROPP" tag type
 
 CYCLE_SECS = 90
-DAY_START = (6, 50)     # local (PC is Vegas time)
+DAY_START = (5, 30)     # local (PC is Vegas time) — widened from 6:50 (John 7/31)
 # extended to midnight 2026-07-26 (John) — late-typed TGL tickets must count on the day's board
 DAY_END = (23, 59)      # techs regularly work past 8 PM in season — track them; run to midnight
 
@@ -1146,7 +1146,7 @@ def cloud_main():
     by the workflow so datetime.now() is Vegas time). Concurrency is handled by
     the workflow's concurrency group — no PID lock here."""
     now = datetime.now()
-    if (now.hour, now.minute) < (6, 35) or (now.hour, now.minute) > DAY_END:
+    if (now.hour, now.minute) < (5, 15) or (now.hour, now.minute) > DAY_END:
         log("outside ops window — session exits")
         return
     fp = Path.home() / ".servicetitan" / "sierra.json"
