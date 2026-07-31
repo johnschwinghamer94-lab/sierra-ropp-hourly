@@ -596,6 +596,7 @@ def build(state):
             n_total = 0
             rec_flag = False
             live_now = False
+            live_tech = False   # any non-zombie live recording, even from a prior stop
             matched_any = False
             win_start = (start_l - timedelta(minutes=45)) if start_l else None
             win_end = done_l if (status == "Done" and done_l) else now
@@ -605,6 +606,8 @@ def build(state):
                     continue
                 matched_any = True
                 n_total += ent["n"]
+                if ent.get("live"):
+                    live_tech = True
                 if win_start:
                     for st_dt in ent["starts"]:
                         if win_start <= st_dt <= win_end:
@@ -618,9 +621,9 @@ def build(state):
             if live_now:
                 rec_flag = True   # recording this visit right now = visit recorded
             if matched_any:
-                siro = {"n": n_total, "rec": rec_flag, "recNow": live_now}
+                siro = {"n": n_total, "rec": rec_flag, "recNow": live_now, "liveTech": live_tech}
             else:
-                siro = {"n": 0, "rec": False, "recNow": False}
+                siro = {"n": 0, "rec": False, "recNow": False, "liveTech": False}
 
         cards.append({
             "jobId": jid, "jobNumber": j.get("jobNumber", ""),
