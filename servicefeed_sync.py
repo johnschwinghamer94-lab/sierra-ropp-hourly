@@ -217,12 +217,14 @@ def fetch_siro_today():
             full = _siro_norm(f"{fn} {ln}").strip()
             if not full:
                 continue
-            ent = out.setdefault(full, {"n": 0, "starts": [], "live": False})
+            ent = out.setdefault(full, {"n": 0, "starts": [], "live": False, "liveStarts": []})
             ent["n"] += 1
             if dt:
                 ent["starts"].append(dt)
             if live:
                 ent["live"] = True
+                if dt:
+                    ent["liveStarts"].append(dt)
         _SIRO_CACHE["ts"] = now_ts
         _SIRO_CACHE["data"] = out
         return out
@@ -593,7 +595,7 @@ def build(state):
         if siro_data is not None and techs:
             n_total = 0
             rec_flag = False
-            live_flag = False
+            live_now = False
             matched_any = False
             win_start = (start_l - timedelta(minutes=45)) if start_l else None
             win_end = done_l if (status == "Done" and done_l) else now
@@ -603,16 +605,20 @@ def build(state):
                     continue
                 matched_any = True
                 n_total += ent["n"]
-                if ent.get("live"):
-                    live_flag = True
                 if win_start:
                     for st_dt in ent["starts"]:
                         if win_start <= st_dt <= win_end:
                             rec_flag = True
-            if live_flag and status == "Working":
-                rec_flag = True   # actively recording on the active visit = recorded
+                    # recNow only when a live recording STARTED during THIS visit —
+                    # a tech-level live flag lit jobs the recording didn't belong to
+                    # (Fabian 7/31: recorder left running from a prior stop)
+                    for ldt in ent.get("liveStarts", []):
+                        if win_start <= ldt <= win_end:
+                            live_now = True
+            if live_now:
+                rec_flag = True   # recording this visit right now = visit recorded
             if matched_any:
-                siro = {"n": n_total, "rec": rec_flag, "recNow": live_flag}
+                siro = {"n": n_total, "rec": rec_flag, "recNow": live_now}
             else:
                 siro = {"n": 0, "rec": False, "recNow": False}
 
