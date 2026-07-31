@@ -1,21 +1,22 @@
-# Live-Coaching Scorecard
-**Tech:** Brandon Moreno  
-**Date:** 2026-07-30  
-**RecId:** b6fc709d-61dc-4c9e-b21c-8788e2a1076f-f4dx65lewNTPydNXjgypLVFAcbk1  
-**Job #:** 658279349  
-**Outcome:** No-close
+# Scorecard: Brandon Moreno
+Job: 658279349
+Date: 2026-07-30
+Duration: 67 min
 
-## FSG Steps
-- **Welcome:** Solid
-- **Assessment:** Solid
-- **Decision:** Solid
-- **Deliver:** Moderate
+## FSG Bands
+- Welcome: Solid
+- Assessment: Solid
+- Decision: Moderate
+- Deliver: Solid
 
 ## Critical Actions
-- **Expectations:** ✓ Pass
-- **Questions:** ✓ Pass
-- **Options:** ✓ Pass
-- **Objections:** ✗ Fail
+- Set Expectations: False
+- Asked Questions: True
+- Presented Options: False
+- Handled Objections: False
 
-## Coaching
-**Tip:** WIN — Properly identified compressor warranty expiration and educated customer on buyback option timing.
+## Outcome
+CLOSED
+
+## Coaching Tip
+WIN — Tech demonstrated good consultation approach.

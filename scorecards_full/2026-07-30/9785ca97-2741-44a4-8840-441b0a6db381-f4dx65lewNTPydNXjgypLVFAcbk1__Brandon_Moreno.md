@@ -1,22 +1,22 @@
-# Live-Coaching Scorecard
-**Tech:** Brandon Moreno  
-**Date:** 2026-07-30  
-**Duration:** 35 min  
-**RecId:** 9785ca97-2741-44a4-8840-441b0a6db381-f4dx65lewNTPydNXjgypLVFAcbk1  
-**Job #:** 669976974  
-**Outcome:** Unknown
+# Scorecard: Brandon Moreno
+Job: 669976974
+Date: 2026-07-30
+Duration: 35 min
 
-## FSG Steps
-- **Welcome:** Solid
-- **Assessment:** Strong
-- **Decision:** Solid
-- **Deliver:** Weak
+## FSG Bands
+- Welcome: Solid
+- Assessment: Solid
+- Decision: Moderate
+- Deliver: Solid
 
 ## Critical Actions
-- **Expectations:** ✓ Pass
-- **Questions:** ✓ Pass
-- **Options:** ✗ Fail
-- **Objections:** ✓ Pass
+- Set Expectations: False
+- Asked Questions: True
+- Presented Options: False
+- Handled Objections: False
 
-## Coaching
-**Tip:** FIX — High-pressure lockout from failed fans indicates systemic failure requiring major compressor/component replacement.
+## Outcome
+CLOSED
+
+## Coaching Tip
+WIN — Tech demonstrated good consultation approach.
