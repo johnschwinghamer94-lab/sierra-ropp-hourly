@@ -1,0 +1,242 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>David Canales — SILO Coaching Plan 2026-07-30</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;·&nbsp;SILO</b><span class="tag">Daily Coaching Plan · 2026-07-30</span></div>
+<div class="wrap">
+<div class="hero">
+  <div class="ey">One gradeable call · a membership signed · a hot bedroom nobody solved</div>
+  <h1 class="disp">David Canales</h1>
+  <p class="lede">David is the easiest tech in the fleet to have in your house, and it converted — a $16-a-month membership plus a plumbing lead out of a routine maintenance visit. The customer also told him three times that one room stays too hot, and that never became anything.</p>
+</div>
+<div class="glance">
+  <div class="g"><div class="k">Close Rate</div><div class="v grn">100% (from graded calls)<small>1 of 1 flipped</small></div></div>
+  <div class="g"><div class="k">Calls Reviewed</div><div class="v">1<small>68 min · one further recording unusable</small></div></div>
+  <div class="g"><div class="k">Strongest Section</div><div class="v grn">Welcome<small>Strong</small></div></div>
+  <div class="g"><div class="k">Weakest Section</div><div class="v red">Decision<small>Solid</small></div></div>
+</div>
+<div class="legend">
+  <span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span>
+  <span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span>
+</div>
+<p class="note">Scored on strength bands, never numbers — the only figure anywhere is the close rate. A second 199-minute recording from the same day is unrecoverable and is listed as skipped rather than graded. The dashboard conversion file has not been refreshed past 2026-07-28.</p>
+
+<section id="verdict">
+<div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive">
+  <div class="dh"><div class="k">The room that stayed hot</div><h3>He signed the membership and left the actual complaint unsolved.</h3></div>
+  <div class="split">
+    <div class="c said"><div class="lbl">What actually happened</div><p>The customer raised the same thing more than once: one upstairs room gets too hot in summer and does not cool well. David acknowledged it — <q>Okay, so it gets hot. What about wintertime?</q> — checked it during the inspection, and reported that <q>everything checks out.</q></p></div>
+    <div class="c should"><div class="lbl">What it means</div><p>The membership was a genuine flip and the right sale. But the customer&#x27;s own stated problem never got a cause or a fix. One follow-up — is it a duct run, a damper, a return-air problem? — would have turned a satisfied customer into a second, larger opportunity, and would have made the membership feel like a solution rather than a subscription.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="calls">
+<div class="sh"><div class="no">2</div><h2>The day&#x27;s calls</h2><span class="hint">outcome per gradeable call</span></div>
+<div class="rub">
+  <div class="row"><div class="rb">AC Maintenance and Membership Signup · 68 min</div><div><span class="b strong">Strong</span></div><div class="ev">Flipped. Membership signed at $16 a month for twice-yearly service, plus an agreed follow-up for water heater flushing that creates a plumbing lead.</div></div>
+</div>
+</section>
+
+<section id="rubric">
+<div class="sh"><div class="no">3</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div>
+<div class="rub">
+  <div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+  <div class="row"><div class="rb">Empathy</div><div><span class="b strong">Strong</span></div><div class="ev">Genuine rapport with a long-haul truck driver whose family is home while he is away — boats, fishing, shared ground found quickly and honestly.</div></div>
+  <div class="row"><div class="rb">Expertise</div><div><span class="b strong">Strong</span></div><div class="ev"><q>I&#x27;m gonna take a look at your unit and your ductwork. I&#x27;m gonna do a thorough evaluation. So I know we&#x27;re just here to do maintenance, but I&#x27;m gonna check safety, reliability, and cleanliness of the system.</q></div></div>
+  <div class="row"><div class="rb">Setting Expectations</div><div><span class="b strong">Strong</span></div><div class="ev">Scope stated up front, no time pressure confirmed with the customer, and the five-star standard named — <q>I&#x27;m here for a 5-star experience.</q></div></div>
+  <div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+  <div class="row"><div class="rb">Required Questions</div><div><span class="b strong">Strong</span></div><div class="ev">System performance — <q>How&#x27;s everything been working?</q> — temperature holding, filter replacement frequency (every three to six months), and system age all covered.</div></div>
+  <div class="row"><div class="rb">Check-Ins</div><div><span class="b solid">Solid</span></div><div class="ev">Followed up when the customer raised the hot room, but did not return to it after the inspection.</div></div>
+  <div class="row"><div class="rb">How to Check-In</div><div><span class="b solid">Solid</span></div><div class="ev">Explained system specifications and measurements to the customer in plain terms and confirmed the system was operating within spec.</div></div>
+  <div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Building Options</div><div><span class="b solid">Solid</span></div><div class="ev">The membership presented clearly at $16 a month for spring and fall service, with the plumbing division mentioned as an available follow-up.</div></div>
+  <div class="row"><div class="rb">Reconnecting</div><div><span class="b mod">Moderate</span></div><div class="ev">Reconnected the membership to the burden of remembering maintenance — <q>that takes that thing out of your mind</q> — but never reconnected to the hot bedroom, which was the customer&#x27;s actual complaint.</div></div>
+  <div class="row"><div class="rb">Explaining Options</div><div><span class="b solid">Solid</span></div><div class="ev">The membership value landed: the customer responded positively to having maintenance taken off his plate while he is on the road.</div></div>
+  <div class="row"><div class="rb">Overcoming Objections</div><div><span class="b weak">Weak</span></div><div class="ev">The hot-room concern was raised repeatedly, acknowledged, and never resolved with a cause or an option — an automatic fail on that call.</div></div>
+  <div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Be A Nerd</div><div><span class="b solid">Solid</span></div><div class="ev">System specifications and measurements explained; the customer left knowing his equipment was healthy. The explanation did not extend to the one thing he had asked about.</div></div>
+  <div class="row"><div class="rb">5-Star Review</div><div><span class="b weak">Weak</span></div><div class="ev">The five-star standard was stated early and never collected, despite a smooth payment, a membership and a warm close.</div></div>
+  <div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Make the time valuable</div><div><span class="b strong">Strong</span></div><div class="ev">A driver who is away for long stretches now has scheduled maintenance he does not have to remember, and a plumbing service lined up.</div></div>
+  <div class="row"><div class="rb">Help them decide</div><div><span class="b solid">Solid</span></div><div class="ev">He got a real decision on the membership. He did not get one on the problem the customer actually called about.</div></div>
+</div>
+
+<div class="sh" style="margin-top:26px"><div class="no">4</div><h2>Critical Actions — pass rate</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Setting clear expectations</div><div><span class="b pass">Pass</span></div><div class="ev">Scope, evaluation criteria and the five-star promise stated up front, with no time pressure confirmed.</div></div>
+  <div class="row"><div class="rb">Asking good questions</div><div><span class="b pass">Pass</span></div><div class="ev">Performance, temperature holding, filter schedule and system age, with follow-ups when the customer raised concerns.</div></div>
+  <div class="row"><div class="rb">Creating good options</div><div><span class="b pass">Pass</span></div><div class="ev">Membership presented with clear value, plus the plumbing service as a named next step.</div></div>
+  <div class="row"><div class="rb">Handling objections</div><div><span class="b fail">Fail</span></div><div class="ev">The recurring hot-room concern was acknowledged and never addressed with a cause, an option or a follow-up question.</div></div>
+</div>
+</section>
+
+<section id="strengths">
+<div class="sh"><div class="no">5</div><h2>What David did right — real strength, build on it</h2></div>
+<ul class="str">
+  <li><b>He makes customers feel genuinely heard.</b> The rapport is not technique — it is real interest, and it is why a maintenance visit turned into a recurring relationship.</li>
+  <li><b>He sells the membership on the right axis.</b> Not price, not discounts — <q>that takes that thing out of your mind.</q> For a driver who is out on the road for weeks, that is the exact benefit that matters.</li>
+  <li><b>He creates work for other departments.</b> The water heater flush agreement is a plumbing lead nobody asked him to generate.</li>
+  <li><b>He states the standard early.</b> <q>I&#x27;m here for a 5-star experience</q> is said before he touches anything, which sets the tone for the whole visit.</li>
+</ul>
+</section>
+
+<section id="gaps">
+<div class="sh"><div class="no">6</div><h2>The three gaps</h2><span class="hint">each one in David&#x27;s own calls</span></div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Gap 1 — The customer&#x27;s own complaint went unanswered</h4></div>
+  <div class="q"><b>Customer, more than once</b>One upstairs room gets too hot in summer and does not cool well.</div>
+  <div class="q"><b>David</b><q>Okay, so it gets hot. What about wintertime?</q> then moved to the inspection.</div>
+  <div class="q"><b>At the close</b><q>everything checks out</q> — with no explanation of the hot room.</div>
+  <p class="fixline"><b>The fix</b> One follow-up changes the whole visit. <q>Let&#x27;s figure out why. Is that room at the end of a long duct run, or is there a damper? Let me check the airflow at that vent before I write anything up.</q> Then it becomes a finding with a price, not a subscription.</p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b mod">Moderate</span><h4>Gap 2 — Sixty-five per cent rapport, thirty-five per cent system</h4></div>
+  <div class="q"><b>The balance</b>Roughly forty minutes on fishing, boating and trucking routes against roughly twenty-five on diagnosis and the membership.</div>
+  <div class="q"><b>The upside</b>It is genuinely why he closed.</div>
+  <p class="fixline"><b>The fix</b> Not a fault — a ratio. Keep the conversation and move it alongside the tools rather than instead of them. The extra fifteen minutes of diagnosis is where the hot room gets solved.</p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Gap 3 — A membership signed and no review asked</h4></div>
+  <div class="q"><b>On tape</b>Payment processed smoothly, signatures explained, next steps for plumbing agreed.</div>
+  <div class="q"><b>What is missing</b>No five-star request at any point after the standard was named at the start.</div>
+  <p class="fixline"><b>The fix</b> The moment after the payment goes through is the peak of the visit. <q>That&#x27;s you sorted for the year. If today was five-star, a review would genuinely help me.</q></p>
+</div>
+</section>
+
+<section id="plan">
+<div class="sh"><div class="no">7</div><h2>Three-week training plan</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Week 1</div><div><span class="b solid">Solve the stated complaint</span></div><div class="ev"><b>Drill:</b> Whatever the customer names as their problem gets a cause or a written next step before the visit ends — no exceptions.<br><b>Proof it worked:</b> Every customer-stated complaint traceable to a finding or a report line.</div></div>
+  <div class="row"><div class="rb">Week 2</div><div><span class="b solid">Diagnosis first, stories alongside</span></div><div class="ev"><b>Drill:</b> Reach the diagnostic work early and carry the conversation while the tools are moving.<br><b>Proof it worked:</b> Diagnosis underway within the first third of every visit.</div></div>
+  <div class="row"><div class="rb">Week 3</div><div><span class="b solid">Collect at the peak</span></div><div class="ev"><b>Drill:</b> The review ask goes in immediately after payment or signature.<br><b>Proof it worked:</b> A five-star request audible on every completed visit.</div></div>
+</div>
+</section>
+
+<section id="owe">
+<div class="sh"><div class="no">8</div><h2>What we owe David Canales</h2></div>
+<ul class="str">
+  <li>A usable recording of his second visit. The 199-minute recording from the same day is unrecoverable, so most of his day cannot be graded at all.</li>
+  <li>A conversion number that reflects his day; the dashboard file has not been refreshed past 2026-07-28.</li>
+  <li>Credit for the plumbing lead, which shows up in no HVAC metric anywhere.</li>
+</ul>
+</section>
+
+<div class="bottom">
+  <div class="eyb">Bottom line</div>
+  <p>David closed the only gradeable call he has on tape, and closed it on exactly the right benefit for that customer. The one thing missing is the thing the customer actually mentioned first. Solve the hot room and the membership stops being a subscription and becomes the start of a plan.</p>
+</div>
+
+<div class="foot">Sierra · SILO daily coaching plan · 2026-07-30 · Scored on strength bands — close rate is the only number</div>
+</div></body></html>
