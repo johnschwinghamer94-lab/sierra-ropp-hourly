@@ -1,0 +1,1 @@
+Skip: Call interrupted by pest hazard (wasps at outdoor unit); tech correctly ceased work; insufficient completed interaction to score

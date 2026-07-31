@@ -1,0 +1,1 @@
+Skip: Transcript incomplete/truncated; call cuts off during inspection phase; insufficient completed interaction to score
