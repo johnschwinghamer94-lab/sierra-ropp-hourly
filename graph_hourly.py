@@ -567,7 +567,7 @@ def main():
             print(f"WARN: could not dispatch {wf}:", e)
 
     hm = (n.hour, n.minute)
-    if (6, 35) <= hm <= (23, 45):
+    if (5, 15) <= hm <= (23, 45):
         _kick("servicefeed.yml", "service live-feed relay bootstrap")
     if (7, 0) <= hm <= (23, 0) and n.minute % 15 < 3:
         _kick("servicedata.yml", "pulse light refresh")  # no inputs -> --light

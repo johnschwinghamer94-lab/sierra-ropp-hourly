@@ -29,7 +29,7 @@ Runs in TWO environments (same file, keep private repo & servicetitan/ in sync):
     proven cloud machinery.
 
 Usage:
-    python servicefeed_sync.py            # loop: one cycle / 90s, 06:50-midnight
+    python servicefeed_sync.py            # loop: one cycle / 90s, 05:30-midnight
     python servicefeed_sync.py --once     # single cycle now (ignores time window)
     python servicefeed_sync.py --dry      # single cycle, print JSON, no write
 """
@@ -53,7 +53,7 @@ PUB_REPO = "johnschwinghamer94-lab/sierra-ropp-dashboard"
 MAX_MIN = int(os.environ.get("SERVICEFEED_MAX_MIN", "310"))
 
 CYCLE_SECS = 60   # near-live board (John 7/30)
-DAY_START = (6, 50)
+DAY_START = (5, 30)   # widened from 6:50 (John 7/31)
 DAY_END = (23, 59)
 
 SERVICE_BU_ID = 333
@@ -817,7 +817,7 @@ def cloud_main():
     by the workflow so datetime.now() is Vegas time). Concurrency is handled by
     the workflow's concurrency group — no PID lock here."""
     now = datetime.now()
-    if (now.hour, now.minute) < (6, 35) or (now.hour, now.minute) > DAY_END:
+    if (now.hour, now.minute) < (5, 15) or (now.hour, now.minute) > DAY_END:
         log("outside ops window — session exits")
         return
     fp = Path.home() / ".servicetitan" / "sierra.json"

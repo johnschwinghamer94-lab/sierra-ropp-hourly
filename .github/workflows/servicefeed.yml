@@ -4,6 +4,8 @@ on:
     # PT = UTC-7. Dense 6:50-9a start window (GitHub skips single ticks),
     # then re-arm every 2 h through midnight. concurrency keeps one active
     # session + one queued, so extra ticks collapse harmlessly.
+    - cron: "30,35,45 12 * * *"   # 5:30a PT day start (John 7/31)
+    - cron: "0,15,30 13 * * *"
     - cron: "50,55 13 * * *"
     - cron: "0,15,30,45 14,15 * * *"
     - cron: "0 16,18,20,22,0,2,4 * * *"
