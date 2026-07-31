@@ -20,14 +20,21 @@ transcripts carry a header block with `RecId:`, `Job:`, `Date:`, and
 `Duration:` lines before the transcript body — parse these fields from those
 lines, not from a JSON metadata blob:
 
-- `recId`: value of the `RecId:` header line (the Siro recording UUID). If
-  that line is missing or empty (older transcripts predate this header), use
-  the pseudo-id `"file:" + <transcript filename without .txt, spaces
-  replaced with underscores>` instead. This same id — real RecId or the
-  `file:...` pseudo-id — is what goes in the card's `"recId"` field, in the
-  full private card's filename, and in the `livecards/<recId>.card.json`
-  filename. Apply the Title Case normalization from "Filename casing +
-  dedupe" below to this pseudo-id too.
+- `recId`: value of the `RecId:` header line, copied VERBATIM. This is a
+  machine id (`<uuid>-<FirebaseUserId>`); the Firebase suffix is
+  case-SENSITIVE mixed case. NEVER alter its casing, never Title-Case any
+  part of it, never re-type it from memory — copy the exact characters
+  from the header. (A one-letter case slip here creates two filenames that
+  collide on Mac/Windows checkouts and wedges every git pull.)
+  If the `RecId:` line is missing or empty (older transcripts predate this
+  header), build the pseudo-id `noid_<transcript filename>` instead: drop
+  the `.txt` extension, then replace every character that is not a letter,
+  digit, dot, underscore, or hyphen (spaces, colons, commas, `#`, `&`, …)
+  with a single underscore and collapse runs of underscores. NEVER put a
+  colon in a filename — the old `file:` pseudo-ids broke Windows
+  checkouts. This same id — real RecId or `noid_...` pseudo-id — goes in
+  the card's `"recId"` field, the full private card's filename, and the
+  `livecards/<recId>.card.json` filename.
 - `jobNumber`: parsed from the `Job:` header line, e.g. `"Job # 12345"` →
   `"12345"`; `null` if the line is missing or has no job number.
 - `dateCreated`: value of the `Date:` header line.
@@ -43,7 +50,7 @@ customer-facing interaction. If un-scorable, print exactly this and nothing
 else:
 
 ```
-{"recId": "<from RecId header, or file:<filename> if missing>", "tech": "<rep name>", "skip": true, "reason": "<one line>"}
+{"recId": "<from RecId header, or noid_<filename> if missing>", "tech": "<rep name>", "skip": true, "reason": "<one line>"}
 ```
 
 ## Scoring spec (SILO convention — WORD BANDS ONLY, never numbers, never points, never grades)
@@ -128,15 +135,23 @@ scorecards_full/<dateCreated first 10 chars, PT date of the call>/<recId>__<Rep_
 
 **Filename casing + dedupe (required):**
 
-- Normalize the name component before building any filename: convert any
-  ALL-CAPS word in the rep/customer name portion to Title Case (e.g. `PRUET`
-  -> `Pruet`). Apply the same normalization to the transcript-derived
-  pseudo-recId fallback.
-- Before writing a scorecard, list the existing files in
-  `scorecards_full/<date>/` and compare names case-insensitively. If a file
-  whose recId prefix matches this call already exists in ANY casing,
-  overwrite that exact existing path — never create a new file. Filenames
-  differing only by case collide on macOS/Windows checkouts.
+- Title Case applies ONLY to the human-name portion of a filename (the
+  `__<Rep_Name>` suffix, and rep/customer/job words inside a `noid_...`
+  pseudo-id): convert ALL-CAPS words there to Title Case (e.g. `PRUET` ->
+  `Pruet`).
+- NEVER apply any casing change to the recId itself: the
+  `<uuid>-<FirebaseUserId>` must appear in the filename byte-identical to
+  the `RecId:` header value.
+- Allowed filename characters: letters, digits, `.`, `_`, `-`. If a built
+  filename contains anything else (colon, comma, `#`, `&`, space, …),
+  replace each run of disallowed characters with one underscore.
+- Before writing EITHER output file, list the existing files in the target
+  directory (`scorecards_full/<date>/` for the private card, `livecards/`
+  for the compact card) and compare full filenames case-insensitively. If
+  an existing file matches case-insensitively — or its recId/uuid prefix
+  matches this call in ANY casing — overwrite that exact existing path;
+  never create a second file. Filenames differing only by case collide on
+  macOS/Windows checkouts and wedge git pulls.
 
 containing: each band with 1-2 supporting quotes, each critical action
 pass/fail with the moment it happened, the outcome evidence, the top 1-2 gaps

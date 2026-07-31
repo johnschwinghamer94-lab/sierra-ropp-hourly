@@ -70,9 +70,16 @@ def main():
     except Exception:
         cur = []
 
-    byid = {c["recId"]: c for c in cur}
+    # Dedupe case-insensitively: a case-mangled recId twin must replace,
+    # not duplicate, its sibling card.
+    byid = {}
+    for c in cur:
+        byid[str(c["recId"]).lower()] = c
     for c in new:
-        byid[c["recId"]] = c
+        k = str(c["recId"]).lower()
+        prev = byid.get(k)
+        if prev is None or c.get("dateCreated", "") >= prev.get("dateCreated", ""):
+            byid[k] = c
 
     cutoff = (datetime.now(timezone.utc) - timedelta(hours=48)).isoformat()
     cards = [c for c in byid.values() if c.get("dateCreated", "") >= cutoff]
