@@ -201,9 +201,14 @@ def fetch_siro_today():
             recs = _siro_fetch_recordings(tok)
         today_local = datetime.now().astimezone().date()
         out = {}
+        now_utc = datetime.now(timezone.utc)
         for rec in recs:
             live = (rec.get("result") or "").strip().lower() == "in progress"
             dt = _siro_rec_dt(rec)
+            # zombie guard: an in-progress recording older than 3h is a stuck
+            # upload (11.6h zombie seen 7/31), not an active call
+            if live and dt and (now_utc - dt.astimezone(timezone.utc)).total_seconds() > 3*3600:
+                live = False
             # in-progress = happening now, keep it even if the timestamp field is absent
             if not live and (not dt or dt.date() != today_local):
                 continue
@@ -590,7 +595,7 @@ def build(state):
             rec_flag = False
             live_flag = False
             matched_any = False
-            win_start = (start_l - timedelta(minutes=15)) if start_l else None
+            win_start = (start_l - timedelta(minutes=45)) if start_l else None
             win_end = done_l if (status == "Done" and done_l) else now
             for t in techs:
                 ent = _siro_match(t, siro_data)
@@ -604,6 +609,8 @@ def build(state):
                     for st_dt in ent["starts"]:
                         if win_start <= st_dt <= win_end:
                             rec_flag = True
+            if live_flag and status == "Working":
+                rec_flag = True   # actively recording on the active visit = recorded
             if matched_any:
                 siro = {"n": n_total, "rec": rec_flag, "recNow": live_flag}
             else:
