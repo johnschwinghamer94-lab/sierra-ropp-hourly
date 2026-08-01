@@ -2,17 +2,6 @@
   "month": "2026-01",
   "items": [
     {
-      "id": "49e53aa6-d435-4740-9b75-66bc48908eec-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
-      "type": "Stall / Think About It",
-      "cust": "No, they can't. They can't give me a call. Because, I don't know, at the top of my head, just have them give me a call.",
-      "answer": "I can give you a call. I mean, what would be a best time to get you a call on when to schedule it? ... Friday, before 12. No problem.",
-      "tech": "Cole Pantol",
-      "date": "2026-01-02",
-      "grade": "ok",
-      "closed": false,
-      "job": "623763104"
-    },
-    {
       "id": "49e53aa6-d435-4740-9b75-66bc48908eec-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
       "type": "Doubt / Distrust",
       "cust": "That's something that you should have brought up in the beginning, right?",
@@ -588,17 +577,6 @@
       "closed": false
     },
     {
-      "id": "b588b853-9f95-4229-822b-f4db96028617-EEysxQbMq9cgRrQMAWov1pJGJGx2-1",
-      "type": "Price",
-      "cust": "Absolutely. How much is the full exchange of the system?",
-      "answer": "Ballparks get pricey... I don't deal with those numbers because I've seen some go for as much as 50, 60,000 and some as little as 14, 15,000... that's why we have option C, doesn't cost you guys anything to have an equipment specialist come out and talk about those numbers.",
-      "tech": "Jaden Szelestey",
-      "date": "2026-01-10",
-      "grade": "great",
-      "closed": false,
-      "job": "624984837"
-    },
-    {
       "id": "d6504ee2-f4b6-4636-9bc7-267704769974-EEysxQbMq9cgRrQMAWov1pJGJGx2-1",
       "type": "Stall / Think About It",
       "cust": "And then when he does come out, I don't want to. Will he accept that? We think about it.",
@@ -680,17 +658,6 @@
       "type": "Stall / Think About It",
       "cust": "I'm trying to think... I'm trying to really utilize the home warranty... now that you tapped it, now I gotta wait for the air not to work... and then call them... and they'll come and fix it for me.",
       "answer": "Yeah. And just like last time we talked about it.",
-      "tech": "Joe Mendoza",
-      "date": "2026-01-11",
-      "grade": "ok",
-      "closed": false,
-      "job": "624264309"
-    },
-    {
-      "id": "e7132321-1a69-4180-9723-ecb1a718a19a-hUwt6xtja4T6o8jCUdsXJsPtmQX2-2",
-      "type": "System Too Old",
-      "cust": "My system is old, right?... So what does that mean as for repairs to my system? What cannot be repaired because my system is old? Or are there still things in place to keep my old lady running?",
-      "answer": "So anything that doesn't have to do with the refrigeration side of everything can be fixed. So if a compressor goes out, if the coil goes out, that's where things get a little dicey because the refrigerant you guys are on... was phased out in 2020.",
       "tech": "Joe Mendoza",
       "date": "2026-01-11",
       "grade": "ok",
@@ -940,17 +907,6 @@
       "job": "624864438"
     },
     {
-      "id": "0f93021a-08df-4088-9d3f-0b81a58069da-EEysxQbMq9cgRrQMAWov1pJGJGx2-1",
-      "type": "Spouse / Decision-Maker",
-      "cust": "So it's my girlfriend, so I don't know if you need to put her name down because this is her act. She actually owns a home.",
-      "answer": "Gotcha. Okay, so... I just put your name, cuz that's who we checked in with today. But everything will get sent over to her.",
-      "tech": "Jaden Szelestey",
-      "date": "2026-01-13",
-      "grade": "great",
-      "closed": false,
-      "job": "624530217"
-    },
-    {
       "id": "375dc75a-8757-4efb-96a5-161ff7381bd6-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
       "type": "Stall / Think About It",
       "cust": "Would you guys be interested in getting that complimentary quote? ... Not yet... Until we have to. Yeah.",
@@ -1165,17 +1121,6 @@
       "tech": "Cole Pantol",
       "date": "2026-01-14",
       "grade": "ok",
-      "closed": false,
-      "job": "624254818"
-    },
-    {
-      "id": "64a65510-0588-4db4-b1bd-f0be4b4dfffa-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
-      "type": "Other",
-      "cust": "If you can take pictures of it, show them... I'll pull the trigger on three new units. Then we ain't got a problem, we don't have to do anything of this [visit].",
-      "answer": "Unfortunately, we do have to come out to take a look at everything... I can call up with you in three weeks to see if you have time to have them come out.",
-      "tech": "Cole Pantol",
-      "date": "2026-01-14",
-      "grade": "great",
       "closed": false,
       "job": "624254818"
     },
@@ -1825,17 +1770,6 @@
       "job": "626112708"
     },
     {
-      "id": "dcc6f58d-c1a8-4e76-bd88-f32263fd2d9a-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
-      "type": "Price",
-      "cust": "And if you got a whole new system, then how much would that be like if you replaced both systems?",
-      "answer": "That is a definite question for our equipment specialist. Can get you the exacts on everything... we'd hate for you guys to spend this $3,000 to get everything running and then one of these major components causes issues.",
-      "tech": "Dustin Romine",
-      "date": "2026-01-17",
-      "grade": "great",
-      "closed": false,
-      "job": "623984703"
-    },
-    {
       "id": "f2b12bc1-2ec1-4a81-8da4-342851a6e358-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
       "type": "Price",
       "cust": "Somebody quoted me like well over 50 grand. I mean, I'm not gonna spend 50 grand, so it's not happening like ever.",
@@ -1994,17 +1928,6 @@
       "type": "Price",
       "cust": "No, you're absolutely right. I've thought of all that... it's just, it's a money issue right now, you know, I just don't want to pay interest on anything.",
       "answer": "So that's primarily what all these are for. Just giving you some options.",
-      "tech": "Dustin Romine",
-      "date": "2026-01-31",
-      "grade": "ok",
-      "closed": false,
-      "job": "626628700"
-    },
-    {
-      "id": "a8adc662-a707-4fa4-a63a-a325fffd91da-GFg7TsAzwnexN1iJ489ReAY05wf1-2",
-      "type": "Stall / Think About It",
-      "cust": "I can't today, unfortunately... I got another set of guys coming from you guys for the plumbing... this is just not a good day for that. But I can make time another time...",
-      "answer": "We hate that to come back and charge you 25% more due to the demand of the products and everything.",
       "tech": "Dustin Romine",
       "date": "2026-01-31",
       "grade": "ok",
@@ -2282,17 +2205,6 @@
       "closed": false
     },
     {
-      "id": "80371dac-263e-41b5-97ec-48efbd699e08-QSgW0Qp6bKP82NeJl9A5ckCGhts1-1",
-      "type": "Price",
-      "cust": "Oh yeah, well I need to, I need that out the door price for the whole unit.",
-      "answer": "Gotcha. Yeah, I could get somebody here. Typically it's like 30 to 45 minutes for them to come out here. They'll go over the price and with you... depending on how many questions you have, it's going to be about 45 minutes to an hour and a half.",
-      "tech": "Alex - Oleksiy Yakovchuk",
-      "date": "2026-01-20",
-      "grade": "great",
-      "closed": false,
-      "job": "626433706"
-    },
-    {
       "id": "c9a8d6a2-f12d-4d1c-86ad-3cdcc16ee20f-QSgW0Qp6bKP82NeJl9A5ckCGhts1-1",
       "type": "Doubt / Distrust",
       "cust": "I appreciate it. There's a couple times it's like, stop trying to talk me into this. I said no twice already. No.",
@@ -2390,17 +2302,6 @@
       "grade": "great",
       "closed": false,
       "job": "623529587"
-    },
-    {
-      "id": "282b761f-ca27-4963-b4c1-1d9bde6493b6-EEysxQbMq9cgRrQMAWov1pJGJGx2-1",
-      "type": "Price",
-      "cust": "No, no, I, I understand that but what's it cost?",
-      "answer": "So I don't have ballparks for that, but what I can do. Let's get through these sheets in there. That kind of, that gets answered essentially at the end.",
-      "tech": "Jaden Szelestey",
-      "date": "2026-01-20",
-      "grade": "ok",
-      "closed": false,
-      "job": "626441351"
     },
     {
       "id": "282b761f-ca27-4963-b4c1-1d9bde6493b6-EEysxQbMq9cgRrQMAWov1pJGJGx2-2",
@@ -2781,17 +2682,6 @@
       "job": "625105156"
     },
     {
-      "id": "aab65e6f-18fe-4a64-b854-557908b6a764-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
-      "type": "Price",
-      "cust": "So how much it cost with a new one, replace with a new one?",
-      "answer": "I have no clue. I just do repairs... If you want I can get someone out here to give you a quote on what that looks like.",
-      "tech": "Cole Pantol",
-      "date": "2026-01-29",
-      "grade": "great",
-      "closed": false,
-      "job": "627515377"
-    },
-    {
       "id": "aab65e6f-18fe-4a64-b854-557908b6a764-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
       "type": "Spouse / Decision-Maker",
       "cust": "Not really. I don't think that just... you can send all this to my email and I will discuss with my wife.",
@@ -2891,17 +2781,6 @@
       "job": "627537061"
     },
     {
-      "id": "10132617-0062-469e-a436-e1208fb33bb7-GDqCZxyrIfY2Folxq4Byd39NzuW2-1",
-      "type": "Price",
-      "cust": "Anyhow. Yeah. How much does it cost?",
-      "answer": "So, honestly, I don't have the prices for new duck work. My job is to see what's going on... If you do want pricing, we can always get a comfort advisor to come out here and talk to you about replacing.",
-      "tech": "Mario Castro",
-      "date": "2026-01-29",
-      "grade": "great",
-      "closed": false,
-      "job": "627700165"
-    },
-    {
       "id": "3f7f0640-4df4-4f37-8549-89a1feb0f3db-kBmcjj1ucbYoWgDqILgiXfkLNzP2-1",
       "type": "Doubt / Distrust",
       "cust": "No, I don't want to sign it... I'm not signing it with numbers on it because people may confuse and say, oh, you agree to these numbers, and so forth.",
@@ -2927,17 +2806,6 @@
       "type": "Price",
       "cust": "Yeah, I'm not... I think they quoted us one time before 26,000. I ain't spending 26,000 on something.",
       "answer": "They're calling you 26,000 for one system. That sounds way too expensive... it's going to be a lot cheaper than that. 26,000 is probably like some of the highest efficiency units. So they have good deals going on right now too, because it's their slow season.",
-      "tech": "Alex - Oleksiy Yakovchuk",
-      "date": "2026-01-28",
-      "grade": "ok",
-      "closed": false,
-      "job": "625423104"
-    },
-    {
-      "id": "a8d4cf66-968b-4f2b-8972-459368cceca7-QSgW0Qp6bKP82NeJl9A5ckCGhts1-2",
-      "type": "Stall / Think About It",
-      "cust": "Why don't you give us a call? Why don't we talk about what we want to get done. And he's got to look at his schedule to see what doctor's appointments he has to go to and stuff.",
-      "answer": "Yeah, because the only other thing I could do is if you guys want to get on the schedule. So at least you're locked in if that works for you... But at least that way I can submit this information.",
       "tech": "Alex - Oleksiy Yakovchuk",
       "date": "2026-01-28",
       "grade": "ok",
@@ -2992,17 +2860,6 @@
       "tech": "Cole Pantol",
       "date": "2026-01-28",
       "grade": "ok",
-      "closed": false,
-      "job": "626660147"
-    },
-    {
-      "id": "b38f93f8-3a90-4962-ae23-e49953293701-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
-      "type": "Stall / Think About It",
-      "cust": "I just need to get my stuff done here. Yeah, right. Wait, today's not a good day.",
-      "answer": "What would be a good day for you guys?... If it works for you guys, I can give you a call around the 1st of February and then see what works best for you guys.",
-      "tech": "Cole Pantol",
-      "date": "2026-01-28",
-      "grade": "great",
       "closed": false,
       "job": "626660147"
     },
@@ -3345,17 +3202,6 @@
       "job": "627078849"
     },
     {
-      "id": "cfe02032-01b2-446f-ad2e-2cd3966f65f4-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
-      "type": "Price",
-      "cust": "So what is the price of option 2?... I want to know how much... So we don't know how much option two costs and we don't know how much the new unit costs.",
-      "answer": "I can figure out what it would be for a new furnace. I would just have to call the office and have them... I can call the office and have them make a ticket if you guys want.",
-      "tech": "Cole Pantol",
-      "date": "2026-01-26",
-      "grade": "ok",
-      "closed": false,
-      "job": "627252047"
-    },
-    {
       "id": "cfe02032-01b2-446f-ad2e-2cd3966f65f4-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
       "type": "Price",
       "cust": "We paid 12,000 for this. Crap. What?",
@@ -3420,28 +3266,6 @@
       "grade": "great",
       "closed": false,
       "job": "627213726"
-    },
-    {
-      "id": "231e50d1-fc04-4ab8-bccb-0cd558d4de28-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
-      "type": "Price",
-      "cust": "How much your ac?",
-      "answer": "That is a great question. So they vary... I don't know exact numbers. What I would recommend, that's going to be the last option, is talking to one of them, just kind of getting an idea of what kind of promos they have going on.",
-      "tech": "Francisco Valencia",
-      "date": "2026-01-26",
-      "grade": "great",
-      "closed": false,
-      "job": "627264775"
-    },
-    {
-      "id": "231e50d1-fc04-4ab8-bccb-0cd558d4de28-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-2",
-      "type": "Stall / Think About It",
-      "cust": "I'll probably call the office to schedule it because tomorrow I actually have to go into... probably on a different day.",
-      "answer": "Yeah, I mean, Sunday or Monday work for you. I can see if they have something the next Monday. Let me just call the girl that schedules it for them and make sure that they have something around, that the spot's open.",
-      "tech": "Francisco Valencia",
-      "date": "2026-01-26",
-      "grade": "ok",
-      "closed": false,
-      "job": "627264775"
     },
     {
       "id": "bd3bbfb9-e75f-401d-9fee-163b175dc803-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
@@ -3530,17 +3354,6 @@
       "grade": "great",
       "closed": false,
       "job": "599908435"
-    },
-    {
-      "id": "36d8131d-8b69-42bf-b431-3ac430626cdd-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
-      "type": "Other",
-      "cust": "I think the important thing to keep in mind here is like basically all of this is going to have to go through a home warranty company... wanting to get an idea in terms of your recommendation and the write up so that we could send it over to them.",
-      "answer": "Okay, yeah, I totally get that. Some of them can be pretty particular when it comes to certain components... usually for a lot of home warranties they'll wait until the component is completely failed before they start reviewing your case... I'll have a full write up in terms of what I would recommend, and you'll have a copy by the end of the day.",
-      "tech": "Andrew Trujillo",
-      "date": "2026-01-23",
-      "grade": "ok",
-      "closed": false,
-      "job": "623446016"
     },
     {
       "id": "e7c6ffa8-b68b-48b7-8ada-d9a3d8f49a86-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
@@ -3844,17 +3657,6 @@
       "grade": "ok",
       "closed": false,
       "job": "626032829"
-    },
-    {
-      "id": "dc3cd493-f0b4-4f3e-b0c0-96825ba988fd-XYpMBXpv6TVg9okInQemgsAIw1B3-1",
-      "type": "Price",
-      "cust": "Okay, well, give me the price code on the buyback thing. What I'm looking at.",
-      "answer": "Well, I'd have to get an equipment specialist out to talk to you. I don't have the access to that. Those prices. So when would be a good time to get somebody else to talk to you?",
-      "tech": "Francisco Arreola Jr.",
-      "date": "2026-01-21",
-      "grade": "great",
-      "closed": false,
-      "job": "624241599"
     },
     {
       "id": "dc3cd493-f0b4-4f3e-b0c0-96825ba988fd-XYpMBXpv6TVg9okInQemgsAIw1B3-2",

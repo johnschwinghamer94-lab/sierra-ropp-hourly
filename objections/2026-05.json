@@ -872,17 +872,6 @@
       "job": "640173519"
     },
     {
-      "id": "cdf7263f-021c-474d-89ef-0d27e651e8c7-92hu453CMjMS3az2iJV9GyPLhsX2-3",
-      "type": "Other",
-      "cust": "I don't know how long I'm gonna live. It's up to God.",
-      "answer": "Hey, you don't... my biggest thing is I don't want to see you... getting in a spot where you're breaking down or chances to break down. It's like peace of mind and reliability, you know?",
-      "tech": "Nikko April",
-      "date": "2026-05-05",
-      "grade": "ok",
-      "closed": false,
-      "job": "640173519"
-    },
-    {
       "id": "ce029ca9-27f1-4b81-9666-5a0b5959016b-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
       "type": "Price",
       "cust": "especially since I don't have a spouse finances anymore other than Social Security",
@@ -1352,16 +1341,6 @@
       "job": "643326424"
     },
     {
-      "id": "4efb2db8-76df-40c4-a7f3-8bb97074412b-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
-      "type": "Price",
-      "cust": "What's it for a new one?",
-      "answer": "That's a great question. I don't have prices in terms of that, but, you know, I do have the option C where you can talk to one of our guys for free. They can give you that free quote. They can at least break all the numbers down so you can put apples to apples.",
-      "tech": "Andrew Trujillo",
-      "date": "2026-05-07",
-      "grade": "great",
-      "closed": false
-    },
-    {
       "id": "4efb2db8-76df-40c4-a7f3-8bb97074412b-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-2",
       "type": "Spouse / Decision-Maker",
       "cust": "Let me talk with him again and then let's. Let me give you guys a call.",
@@ -1570,28 +1549,6 @@
       "job": "640674961"
     },
     {
-      "id": "cd3a9d56-5e4e-4a65-ab08-ff7f02116b92-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-3",
-      "type": "Price",
-      "cust": "Give us the best price.",
-      "answer": "That's out of my power that's going to longtime customer... they'll look at, hey, oh, hey, Ryan took care of him like a couple years back.",
-      "tech": "Andrew Trujillo",
-      "date": "2026-05-07",
-      "grade": "ok",
-      "closed": false,
-      "job": "640674961"
-    },
-    {
-      "id": "d74e8201-fa60-4025-90e3-c772eabd47ae-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
-      "type": "Price",
-      "cust": "So what's the price of the room? Because everybody we talk to, they say it's about five or six. So what is the price of.",
-      "answer": "So I just do the repairs. But like on that bottom of that sheet that I gave you, there was the option C, where I can get one of my equipment specials out here to give you an idea on what it would look like for a new system.",
-      "tech": "Cole Pantol",
-      "date": "2026-05-07",
-      "grade": "great",
-      "closed": false,
-      "job": "643490738"
-    },
-    {
       "id": "d74e8201-fa60-4025-90e3-c772eabd47ae-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
       "type": "Stall / Think About It",
       "cust": "Not yet. Cuz we're this helping my sister and all this stuff is really taking all the energy... We were going to just wait... a while, you know, till we can till more situated and stuff.",
@@ -1669,17 +1626,6 @@
       "job": "640280679"
     },
     {
-      "id": "34a9cf7b-a450-4023-a902-fb1afeb602a0-QSgW0Qp6bKP82NeJl9A5ckCGhts1-1",
-      "type": "Price",
-      "cust": "Great. What's the cost of these units? ... Yeah, ballpark though, just curiosity.",
-      "answer": "It's not my department... After I go over all that with you, we can have our equipment specialist come out and go over that with you... I don't have a price cuz there's so many different range of units... if that's something you want to look into, we can ask somebody to give you that price.",
-      "tech": "Alex - Oleksiy Yakovchuk",
-      "date": "2026-05-08",
-      "grade": "great",
-      "closed": false,
-      "job": "643572382"
-    },
-    {
       "id": "34a9cf7b-a450-4023-a902-fb1afeb602a0-QSgW0Qp6bKP82NeJl9A5ckCGhts1-2",
       "type": "Stall / Think About It",
       "cust": "I mean, I can't pull the trigger on anything right now on this like that... it's a bit excessive right now.",
@@ -1755,28 +1701,6 @@
       "grade": "great",
       "closed": false,
       "job": "641031070"
-    },
-    {
-      "id": "53b990c2-0958-47c0-aa86-49d0f69cbf31-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
-      "type": "Stall / Think About It",
-      "cust": "No, no, no, no. Just send it over, text it to us.",
-      "answer": "I mean, I can email it. I mean, usually email. Yeah, usually I go over with them.",
-      "tech": "Cole Pantol",
-      "date": "2026-05-08",
-      "grade": "poor",
-      "closed": false,
-      "job": "641031070"
-    },
-    {
-      "id": "5cf64c7c-b7b2-4593-9cad-743519d17d70-XYpMBXpv6TVg9okInQemgsAIw1B3-1",
-      "type": "System Too Old",
-      "cust": "That kid is over, like, seven years old.",
-      "answer": "Yeah, well, it just happens on some issues.",
-      "tech": "Francisco Arreola Jr.",
-      "date": "2026-05-08",
-      "grade": "ok",
-      "closed": false,
-      "job": "641672694"
     },
     {
       "id": "5cf64c7c-b7b2-4593-9cad-743519d17d70-XYpMBXpv6TVg9okInQemgsAIw1B3-2",
@@ -1859,17 +1783,6 @@
       "type": "Doubt / Distrust",
       "cust": "I mean, I don't know now. Not too concerned. I mean, it's a little bit off. Yeah, yeah, yeah.",
       "answer": "Okay, well, it doesn't matter if it's a little. It could be one off and still cause an issue.",
-      "tech": "Benjamin Wyllie",
-      "date": "2026-05-08",
-      "grade": "ok",
-      "closed": false,
-      "job": "641110305"
-    },
-    {
-      "id": "d422f996-a4b5-41ff-a713-9890c52413e4-LHPyzDeQsNek3Dzj7AlgurDjs6E2-2",
-      "type": "Stall / Think About It",
-      "cust": "You know, probably not today. I mean, maybe they can set up an appointment or something.",
-      "answer": "Okay. The furthest I can schedule out is the total of a week.",
       "tech": "Benjamin Wyllie",
       "date": "2026-05-08",
       "grade": "ok",
@@ -3365,17 +3278,6 @@
       "closed": false
     },
     {
-      "id": "d2198016-b874-4583-b066-63308f5d5604-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
-      "type": "Stall / Think About It",
-      "cust": "Can we follow up on that after? We got some stuff to do.",
-      "answer": "Yeah, that's... I can give you a call later today or tomorrow and see if that works out. See, we can schedule a time for you.",
-      "tech": "Andrew Trujillo",
-      "date": "2026-05-18",
-      "grade": "ok",
-      "closed": false,
-      "job": "642220279"
-    },
-    {
       "id": "ea505e3c-6c2d-4c0f-9aa4-e1a7c9970422-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
       "type": "Spouse / Decision-Maker",
       "cust": "I have not consented... I wouldn't sign this just now. I'll call him in the evening and sign it. I'll discuss it with my husband and we decide by this evening.",
@@ -4408,16 +4310,6 @@
       "job": "642853057"
     },
     {
-      "id": "df7f407f-5e3d-462f-a2fe-e7380549b4b6-QSgW0Qp6bKP82NeJl9A5ckCGhts1-1",
-      "type": "Price",
-      "cust": "Let me, give me a price for a brand new unit... Give me a ballpark figure. It's 5 tons... I'm not trying to cool down the sun, I'm just trying to cool me down... a ballpark figure, what roughly?",
-      "answer": "Yeah, so that's not\u2014 that won't be my department though, but, um, I do give you that option just because at least you can compare and contrast, right?",
-      "tech": "Alex - Oleksiy Yakovchuk",
-      "date": "2026-05-23",
-      "grade": "great",
-      "closed": false
-    },
-    {
       "id": "df7f407f-5e3d-462f-a2fe-e7380549b4b6-QSgW0Qp6bKP82NeJl9A5ckCGhts1-2",
       "type": "Price",
       "cust": "This is $1,200?... Are you serious? $1,200 for a fan motor?... I'm going to have to get a second opinion.",
@@ -4524,17 +4416,6 @@
       "grade": "poor",
       "closed": false,
       "job": "642020042"
-    },
-    {
-      "id": "eb413bc8-49bd-4eaf-ab6c-a4a7f5c07e56-QSgW0Qp6bKP82NeJl9A5ckCGhts1-1",
-      "type": "Price",
-      "cust": "So how much is this? How much in the unit?",
-      "answer": "So for this, I'd have to have our equipment specialist come out because that's not my department... My job is to give you information. If you want to see what this looks like, we can have somebody come here before you make that decision.",
-      "tech": "Alex - Oleksiy Yakovchuk",
-      "date": "2026-05-24",
-      "grade": "great",
-      "closed": false,
-      "job": "646370819"
     },
     {
       "id": "04f80c48-2054-47dc-9bbf-a893869829fb-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",

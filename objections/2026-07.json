@@ -46,17 +46,6 @@
       "job": "660658777"
     },
     {
-      "id": "loveduval-667927248-1",
-      "type": "Stall / Think About It",
-      "cust": "How much longer do you think? Because we really do.",
-      "answer": "We get that reaction from a lot of our homeowners. They're like, I'll be gone by then...for Jordan to come out, would you guys have time today for him to come out? And I'll just give you at least that information.",
-      "tech": "Francisco Valencia",
-      "date": "2026-07-22",
-      "grade": "ok",
-      "closed": false,
-      "job": "667927248"
-    },
-    {
       "id": "andrew-alonso-casis-valdez-celi-nonna-manlosa-job-667694713-1",
       "type": "Stall / Think About It",
       "cust": "we're not gonna\u2014 if none of these are fatal right now. I've talked about it with my wife... it's a gamble that if we pay for it and we've already... lost the money, you know what I mean?",
@@ -87,17 +76,6 @@
       "date": "2026-07-23",
       "grade": "great",
       "closed": false
-    },
-    {
-      "id": "brandon-moreno-ardizzone-francesca-marissa-job-668368900-1",
-      "type": "Price",
-      "cust": "Do you happen to have like an idea of like what we'd be looking at cost wise if we didn't place a system?",
-      "answer": "It really comes because we do different brands. So we don't just have one system... I want to make sure you guys have that correct information so you guys at least see like what's the real cost, see what options are available as far as payments so you guys could make educated decisions.",
-      "tech": "Brandon Moreno",
-      "date": "2026-07-23",
-      "grade": "great",
-      "closed": true,
-      "job": "668368900"
     },
     {
       "id": "brandon-moreno-higgins-michael-carla-job-668424605-1",
@@ -535,17 +513,6 @@
       "job": "666865649"
     },
     {
-      "id": "cole-pantol-rhein-rachell-job-666865649-2",
-      "type": "Price",
-      "cust": "I mean, how much is a new air conditioner? I mean, ballpark. Do you have any idea even of a ballpark?... You don't know what they cost?",
-      "answer": "I just work on the repair side. No, it's different for every home. I'm not entirely sure on what they cost. Looks like the guy they're sending out is Jordan.",
-      "tech": "Cole Pantol",
-      "date": "2026-07-17",
-      "grade": "great",
-      "closed": true,
-      "job": "666865649"
-    },
-    {
       "id": "cole-pantol-job-na-1",
       "type": "Price",
       "cust": "We have the house up for sale. So we're not interested in spending, like, thousands of dollars... We're not gonna spend thousands of dollars on that issue right now. But if you want to get a quote, we can get a quote.",
@@ -832,17 +799,6 @@
       "tech": "Andrew Trujillo",
       "date": "2026-07-20",
       "grade": "ok",
-      "closed": true,
-      "job": "667314150"
-    },
-    {
-      "id": "andrew-trujillo-rost-darwin-d-lauren-m-job-667314150-2",
-      "type": "Price",
-      "cust": "I want two things. I want repair current system and I want replace current system. If it's going to be. I want to know the price point for both.",
-      "answer": "Again, I'm completely beside the pricing of systems. I come through and do diagnosis. That's a completely separate department... with everything in mind... have the option where you can talk to one of our specialists. Completely for free.",
-      "tech": "Andrew Trujillo",
-      "date": "2026-07-20",
-      "grade": "great",
       "closed": true,
       "job": "667314150"
     },
@@ -1445,17 +1401,6 @@
       "job": "665825188"
     },
     {
-      "id": "cole-pantol-chanes-rodriguez-giovanni-etal-cox-tinei-ann-job-666184692-1",
-      "type": "Price",
-      "cust": "Uh, insurance, how does this, you know, does the insurance or our home warranty, is it, are they gonna be able to help cover, or, um, we pay a deductible off of everything?",
-      "answer": "Uh, we don't work with the home warranty... Um, we're just a private company, right? As far as home warranty though, I've never seen them actually cover anything on R22, right? Right, they're really good for small things like little capacitors.",
-      "tech": "Cole Pantol",
-      "date": "2026-07-15",
-      "grade": "ok",
-      "closed": true,
-      "job": "666184692"
-    },
-    {
       "id": "cole-pantol-chanes-rodriguez-giovanni-etal-cox-tinei-ann-job-666184692-2",
       "type": "Spouse / Decision-Maker",
       "cust": "You know what, let me\u2014 you know what, I'm gonna have to have my wife present for that, and she's not going to be here. Um, she usually makes the financial decisions.",
@@ -1531,28 +1476,6 @@
       "grade": "ok",
       "closed": false,
       "job": "665816381"
-    },
-    {
-      "id": "joe-mendoza-arzounian-hripsik-job-665816381-3",
-      "type": "Doubt / Distrust",
-      "cust": "Yes, is there something like cleaning compressor? Cleaning compressor or something grounding it or something?",
-      "answer": "No, so it's not grounded. So inside there's a thermal\u2014 there's like a little solenoid inside that compressor that shuts itself out to protect itself... Residential equipment doesn't work that way. It's welded shut, so it's designed to be replaced.",
-      "tech": "Joe Mendoza",
-      "date": "2026-07-15",
-      "grade": "ok",
-      "closed": false,
-      "job": "665816381"
-    },
-    {
-      "id": "joe-mendoza-dominguez-adele-job-666873392-1",
-      "type": "Price",
-      "cust": "So then how much does a new unit cost?",
-      "answer": "And that's where the equipment specialist comes in. So right now they're running a lot of rebates and incentives for system replacements. I don't have those numbers... Let me get the equipment specialist out here. It takes them about 40 minutes... that way you guys can both get together and decide.",
-      "tech": "Joe Mendoza",
-      "date": "2026-07-15",
-      "grade": "great",
-      "closed": true,
-      "job": "666873392"
     },
     {
       "id": "joe-mendoza-dominguez-adele-job-666873392-2",
@@ -1769,17 +1692,6 @@
       "grade": "ok",
       "closed": true,
       "job": "666896334"
-    },
-    {
-      "id": "robert-silinzy-chaudhary-arun-verma-swati-job-665730643-1",
-      "type": "Price",
-      "cust": "How much if I, if I were to replace both the units upstairs and downstairs, like the whole shebang, how much would it cost?",
-      "answer": "And that's, that's the part. So I'm just a tech, so my, my expertise is like the components, knowing how they operate. So, uh, the equipment specialist, uh, this is no charge, there's no obligation. They'll come out to you... that way you'll have full understanding of where the cost for repairs versus replace, and then they can share everything.",
-      "tech": "Robert Silinzy",
-      "date": "2026-07-15",
-      "grade": "great",
-      "closed": true,
-      "job": "665730643"
     },
     {
       "id": "andrew-alonso-fulop-suzanne-revocable-trust-fulop-suzanne-trs-job-661412867-1",
@@ -2784,16 +2696,6 @@
       "closed": false
     },
     {
-      "id": "juan-tlatenchi-rodney-hartman-2",
-      "type": "Price",
-      "cust": "...what it's going to cost us for any of these. How much do you guys\u2014",
-      "answer": "I don't have pricing. Um, I can get them out here just to discuss that, and then that way you guys can decide, you know, let's go ahead and do the repairs right now, or is it better to just go ahead and just pay? Uh, at least you guys have all the options to make that decision.",
-      "tech": "Juan Tlatenchi",
-      "date": "2026-07-11",
-      "grade": "great",
-      "closed": false
-    },
-    {
       "id": "juan-tlatenchi-rodney-hartman-3",
       "type": "Doubt / Distrust",
       "cust": "...that ain't been in there for a year. Right. And that's a h*** of a bill for refrigerant.",
@@ -3138,17 +3040,6 @@
       "job": "661815106"
     },
     {
-      "id": "4a3df932-0cfb-4b3e-bd9a-7b0eb31d3a57-hUwt6xtja4T6o8jCUdsXJsPtmQX2-2",
-      "type": "Price",
-      "cust": "I need a price on that.",
-      "answer": "So let me call Ryan real quick, but he is going to ask, you know, hey, if he can get you down where he can probably help you out, is this something we can take care of today?",
-      "tech": "Joe Mendoza",
-      "date": "2026-07-06",
-      "grade": "great",
-      "closed": true,
-      "job": "661815106"
-    },
-    {
       "id": "8d1647cf-5713-4a3d-a565-185421e4a600-rvlRRFBXT4diudowFnwcEo0gzE42-1",
       "type": "Price",
       "cust": "I'd have to think about it because I don't want to throw... money out for, you know, or throw out bad money for good money... I wasn't expecting this. I had a whole unit installed in Culver City for this much.",
@@ -3367,17 +3258,6 @@
       "job": "662121255"
     },
     {
-      "id": "beaa851c-91ad-4bb2-8580-08407ed57bdd-f8aRc5tAKRdW4Ktah4fP6cbaJrs1-3",
-      "type": "Price",
-      "cust": "Of course, I like your salesperson comes out and tell me the new unit, if we don't change the heating system, only the cooling system and put it on the financing, is how much is that?",
-      "answer": "That's the conversation you would have with him. I personally don't have any of that information... I can go ahead and have somebody come out here like right now.",
-      "tech": "Noah Weng",
-      "date": "2026-07-07",
-      "grade": "great",
-      "closed": true,
-      "job": "662121255"
-    },
-    {
       "id": "41a0ba68-220e-414f-9765-894751061b6a-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
       "type": "Price",
       "cust": "Yeah, so, well, why is the control board so expensive, Andrew? They're like $200 online.",
@@ -3530,16 +3410,6 @@
       "grade": "great",
       "closed": true,
       "job": "662021360"
-    },
-    {
-      "id": "e0eec4e2-4324-41d2-a34d-7b85c67a7a4f-rvlRRFBXT4diudowFnwcEo0gzE42-1",
-      "type": "Price",
-      "cust": "That's what I'm asking, how much would cost me more or less to change the whole unit?",
-      "answer": "Yeah, that I don't have the price for that. I only have prices for repairs. And that's why if we can get someone out here, he'll be able to discuss the different tier ratings.",
-      "tech": "Juan Tlatenchi",
-      "date": "2026-07-08",
-      "grade": "great",
-      "closed": false
     },
     {
       "id": "5b14b5e6-2f06-487d-8b7a-3c83604a5c00-rvlRRFBXT4diudowFnwcEo0gzE42-1",
@@ -3976,17 +3846,6 @@
       "job": "663983412"
     },
     {
-      "id": "d2f5bcff-e086-427e-aa6f-de1601c28a7c-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
-      "type": "Price",
-      "cust": "Just ballpark, what do two new systems cost?",
-      "answer": "That's the tough part. Yeah, I specialize in the repair, the diagnostic, and the maintenance. Our equipment specialists, they have the exacts... they can get you that exact information, work out things like financing.",
-      "tech": "Dustin Romine",
-      "date": "2026-07-10",
-      "grade": "great",
-      "closed": false,
-      "job": "661863994"
-    },
-    {
       "id": "d2f5bcff-e086-427e-aa6f-de1601c28a7c-GFg7TsAzwnexN1iJ489ReAY05wf1-2",
       "type": "Stall / Think About It",
       "cust": "And I'm going on a family vacation, so next week won't work. But yeah, but we will, but we will call and find out and get some price comparisons.",
@@ -4201,16 +4060,6 @@
       "job": "660926264"
     },
     {
-      "id": "dcbe09a4-ff61-48c2-97fa-e47b655db9c4-rvlRRFBXT4diudowFnwcEo0gzE42-1",
-      "type": "Price",
-      "cust": "Okay, so you don't have a price for this? ... You have like a ballpark number? I have no idea.",
-      "answer": "No, I wouldn't want to set you up with a false expectation, okay, just because I don't have those numbers at all. I can have someone out here in the next 30 minutes, 30 to an hour, and they could go over that with you in just more detail.",
-      "tech": "Juan Tlatenchi",
-      "date": "2026-07-04",
-      "grade": "great",
-      "closed": false
-    },
-    {
       "id": "6b94fabb-35a7-49a5-b6fb-91dccbbb8e41-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
       "type": "System Too Old",
       "cust": "Well, she was asking about why would we replace, uh, he's talking about doing replacing both compressors as opposed to getting a whole new unit. But there's nothing wrong with the old\u2014",
@@ -4332,17 +4181,6 @@
       "job": "661478766"
     },
     {
-      "id": "af493b9c-374f-480b-9af7-b1edc72f12ac-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
-      "type": "Spouse / Decision-Maker",
-      "cust": "No, we'll call you up to ask for somebody to come here. So you don't have to schedule it for us because my wife works.",
-      "answer": "I mean, we work pretty late. We work until midnight. So that's usually when we schedule one of these guys out, their manager prefers when the technician that's at the site does it.",
-      "tech": "Francisco Valencia",
-      "date": "2026-07-03",
-      "grade": "ok",
-      "closed": false,
-      "job": "661008869"
-    },
-    {
       "id": "41e7c116-c467-4c57-b160-505f1b880d1d-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
       "type": "Stall / Think About It",
       "cust": "I haven't decided if I'm going to do the membership because I know I would get discounted on future services too. So yeah, I'll just pay my fee today for the cleaning.",
@@ -4363,17 +4201,6 @@
       "grade": "ok",
       "closed": false,
       "job": "660655879"
-    },
-    {
-      "id": "5932bc64-0303-4f90-a3a3-cddebdc988e6-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
-      "type": "Spouse / Decision-Maker",
-      "cust": "I think we might need to set that up for a different day.",
-      "answer": "That's perfectly understandable. And then definitely, it's probably a conversation you want your wife involved with as well. So when's a good day that both of you guys are available?",
-      "tech": "Dustin Romine",
-      "date": "2026-07-03",
-      "grade": "great",
-      "closed": true,
-      "job": "661112421"
     },
     {
       "id": "a354257f-bee8-4ddb-88d6-845edb03b495-C8GrpPB0IyRgskhBGU9g6yM2FpE3-1",
@@ -4650,17 +4477,6 @@
       "job": "661416986"
     },
     {
-      "id": "a888d213-4235-4c4b-9a94-c2389550cc09-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
-      "type": "Doubt / Distrust",
-      "cust": "So can you tell me from the last maintenance to this, how are they compared?",
-      "answer": "Oh yeah, we got a picture in there. This looks like the one that we're looking at right here. So again, similar trend as compared to right now.",
-      "tech": "Andrew Trujillo",
-      "date": "2026-07-01",
-      "grade": "ok",
-      "closed": false,
-      "job": "649314458"
-    },
-    {
       "id": "a888d213-4235-4c4b-9a94-c2389550cc09-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-2",
       "type": "Stall / Think About It",
       "cust": "Well, I would like I would like to know the cost and then decide. Not today, but call you guys and let you know.",
@@ -4894,17 +4710,6 @@
       "date": "2026-07-29",
       "grade": "ok",
       "closed": false
-    },
-    {
-      "id": "02a09e2d-5738-4aab-aea0-5c20eccf6e14-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
-      "type": "Price",
-      "cust": "Then just a roundabout estimate, it doesn't have to be, but on average what would it cost to replace the system?... am I looking at 10 grand? Am I looking at 15 grand versus 5 grand?",
-      "answer": "So I don't see the replacement side, I just work in the repairs... I would say it's going to be more than five grand just because they did just the outside portion for you, but that's my assumption... I can always get them out here and they can take a look at it and see what that price would be for you guys.",
-      "tech": "Cole Pantol",
-      "date": "2026-07-29",
-      "grade": "great",
-      "closed": false,
-      "job": "669583604"
     },
     {
       "id": "1e8b153b-bd5d-4eaf-9551-bda8bc19aa4c-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",

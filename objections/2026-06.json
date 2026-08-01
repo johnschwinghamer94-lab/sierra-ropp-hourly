@@ -574,32 +574,10 @@
       "job": "660654407"
     },
     {
-      "id": "fa0266f3-21b3-43c7-b916-d0bb578f50bb-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-2",
-      "type": "Doubt / Distrust",
-      "cust": "Is there any benefit to the warranty, you know, on an existing unit?",
-      "answer": "if it was a capacitor, we were able to change it under warranty, just labor. But, uh, leaks don't\u2014 they don't warranty anything.",
-      "tech": "Francisco Valencia",
-      "date": "2026-06-29",
-      "grade": "ok",
-      "closed": false,
-      "job": "660654407"
-    },
-    {
       "id": "40ba4cad-5fb6-4543-86bc-bb87f4cb5c91-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
       "type": "Stall / Think About It",
       "cust": "I don't know, because I have a warranty and I don't know what that includes.",
       "answer": "home warranty will only react if it's broken ductwork, they won't take care of it... for repairs, either your fan motor has to be completely broken and then they'll give you the repair of it.",
-      "tech": "Francisco Valencia",
-      "date": "2026-06-29",
-      "grade": "poor",
-      "closed": false,
-      "job": "660136322"
-    },
-    {
-      "id": "40ba4cad-5fb6-4543-86bc-bb87f4cb5c91-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-2",
-      "type": "Stall / Think About It",
-      "cust": "Oh, we'll have to check later.",
-      "answer": "Okay, so you guys don't want to see if something's available now, is what you're saying? Okay.",
       "tech": "Francisco Valencia",
       "date": "2026-06-29",
       "grade": "poor",
@@ -1278,17 +1256,6 @@
       "job": "660053440"
     },
     {
-      "id": "4b70af87-8fa9-49f3-bdac-bce6feec71fa-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-2",
-      "type": "Stall / Think About It",
-      "cust": "Would you want to just think about it? I don't want to rush you. Can we do it on a Monday? Is that better to wait till Monday?",
-      "answer": "it's honestly, it's ripping off the bandage and then just going with it. It's not... third Friday or Monday, it's still gonna be... the same thing",
-      "tech": "Francisco Valencia",
-      "date": "2026-06-25",
-      "grade": "great",
-      "closed": true,
-      "job": "660053440"
-    },
-    {
       "id": "4b70af87-8fa9-49f3-bdac-bce6feec71fa-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-3",
       "type": "Doubt / Distrust",
       "cust": "the thing is too, I'm not very trusting of people... assuming that the people that come out are trying to look at things",
@@ -1439,17 +1406,6 @@
       "tech": "Andrew Trujillo",
       "date": "2026-06-24",
       "grade": "ok",
-      "closed": false,
-      "job": "639575928"
-    },
-    {
-      "id": "47541a1f-271f-404f-8448-ec2e7ddb634f-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-2",
-      "type": "Price",
-      "cust": "How much does the whole unit cost?",
-      "answer": "That's a great question. I mean, I don't have the exact prices on my end because I just focus on maintenance and diagnosis... I do have the option here where you can have that discussion with one of our specialists. It's completely free. It doesn't obligate you to buy any unit.",
-      "tech": "Andrew Trujillo",
-      "date": "2026-06-24",
-      "grade": "great",
       "closed": false,
       "job": "639575928"
     },
@@ -2490,16 +2446,6 @@
       "closed": false
     },
     {
-      "id": "1918daf5-18b4-4b84-a593-761699b24159-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2-1",
-      "type": "Stall / Think About It",
-      "cust": "I don't want to waste nobody's time, you know what I mean? I don't want to waste your time or the guy's time... I don't want to make anybody upset.",
-      "answer": "Full transparency, folks, you are not wasting our time. Like, we do this all day. You are not wasting our time... you are not wasting nobody's time, man.",
-      "tech": "Andrew Alonso",
-      "date": "2026-06-18",
-      "grade": "ok",
-      "closed": false
-    },
-    {
       "id": "1197429c-321e-4211-8de8-dfc55d106b3d-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
       "type": "Doubt / Distrust",
       "cust": "That's what we're looking for, maintenance. We're not looking for a sales pitch... spare us the sales pitch... we've been this route a lot.",
@@ -2844,16 +2790,6 @@
       "tech": "Andrew Trujillo",
       "date": "2026-06-15",
       "grade": "poor",
-      "closed": false
-    },
-    {
-      "id": "11a870fc-fb8a-47da-a9bb-16f732b40e2f-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-2",
-      "type": "Price",
-      "cust": "How about if you were to replace it with paint, how much would it be?",
-      "answer": "That's a great question, but for me, I don't have the price points on hand... I have listed off here the option C where you guys can have that discussion completely free. There's no obligation to buy a new unit...",
-      "tech": "Andrew Trujillo",
-      "date": "2026-06-15",
-      "grade": "great",
       "closed": false
     },
     {
@@ -3297,17 +3233,6 @@
       "closed": false
     },
     {
-      "id": "dd00af06-12c2-4128-804e-2d458c82968e-f8aRc5tAKRdW4Ktah4fP6cbaJrs1-1",
-      "type": "Spouse / Decision-Maker",
-      "cust": "She'll be here. If her eyes will be open, I don't know, just because... she sleeps during the day because she works at night.",
-      "answer": "So what would be a good time for everybody to kind of be here so we could\u2014... So I'll go ahead and call the office and see what we can get you scheduled for tomorrow.",
-      "tech": "Noah Weng",
-      "date": "2026-06-12",
-      "grade": "great",
-      "closed": false,
-      "job": "650881141"
-    },
-    {
       "id": "2ba3ae38-a217-418c-a30e-ce7506c30853-f4dx65lewNTPydNXjgypLVFAcbk1-1",
       "type": "Stall / Think About It",
       "cust": "Right now we have the medical things going on, so we're going to be starting something... We're hoping that Sierra will last through that. That's going to be a 5-week thing.",
@@ -3326,17 +3251,6 @@
       "date": "2026-06-12",
       "grade": "ok",
       "closed": false
-    },
-    {
-      "id": "50ac7651-e5c5-4b7d-8afe-69c1cf6e8c6a-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
-      "type": "Price",
-      "cust": "How much is it to replace all of this stuff?",
-      "answer": "That's something maybe they would have to get a comfort advisor out to sit down. Okay, lots of options, and I highly recommend\u2014",
-      "tech": "Cole Pantol",
-      "date": "2026-06-12",
-      "grade": "great",
-      "closed": false,
-      "job": "650829291"
     },
     {
       "id": "50ac7651-e5c5-4b7d-8afe-69c1cf6e8c6a-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
@@ -4497,17 +4411,6 @@
       "job": "646349319"
     },
     {
-      "id": "fe2fda7a-28d8-4214-82aa-314d5c163bd1-F8ZeOm4TrkOymEC2UFNijyrobEp2-1",
-      "type": "Price",
-      "cust": "Do you have any ballpark idea how much it is?... Is it like $20,000 or something like that?",
-      "answer": "No, I do not... I'm not 100% sure because everything gets tailored to what you need and what you do with your unit... I wish I could give you a ballpark, but I don't want to give you a number and then be completely off and then you get mad at me.",
-      "tech": "Mario Castro",
-      "date": "2026-06-10",
-      "grade": "ok",
-      "closed": false,
-      "job": "649884110"
-    },
-    {
       "id": "04f0c0aa-12a2-42fc-8d82-dbb500477b24-C8GrpPB0IyRgskhBGU9g6yM2FpE3-1",
       "type": "Price",
       "cust": "You're talking about $9,200... minimum to just fix what's there. I mean, a whole brand new unit might cost\u2014how much is a whole brand new unit?",
@@ -5077,17 +4980,6 @@
       "job": "650132357"
     },
     {
-      "id": "8df0885a-7ed3-4c7e-8a6f-582341d0a275-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
-      "type": "Price",
-      "cust": "I'd rather get a price, kind of like a ballpark... but like, is it $6,000? Is it $12,000? Is it $50,000? Those are huge differences in prices.",
-      "answer": "Absolutely. I can understand that. I generally don't know what they cost. I just do the repair side, right? They would have to come out and they take about an hour of your time and they'll give you a concrete price on what it looks like.",
-      "tech": "Cole Pantol",
-      "date": "2026-06-09",
-      "grade": "great",
-      "closed": false,
-      "job": "650132357"
-    },
-    {
       "id": "8df0885a-7ed3-4c7e-8a6f-582341d0a275-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-3",
       "type": "System Too Old",
       "cust": "I just think it's pointless paying $8,000 for repairs when I can just\u2014 and it's 10 years old... it's gonna go out in 2 years, or different components are gonna go out... I don't want to deal with that.",
@@ -5119,17 +5011,6 @@
       "grade": "poor",
       "closed": false,
       "job": "649762461"
-    },
-    {
-      "id": "567f3071-73e0-4377-82f7-d44e494148d4-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
-      "type": "Stall / Think About It",
-      "cust": "I will do it tomorrow.",
-      "answer": "Okay, what's a good time tomorrow?",
-      "tech": "Dustin Romine",
-      "date": "2026-06-09",
-      "grade": "great",
-      "closed": false,
-      "job": "650083200"
     },
     {
       "id": "6919df2f-d24e-4a70-aa6a-0aa48e56d085-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
@@ -5238,17 +5119,6 @@
       "grade": "great",
       "closed": false,
       "job": "645440380"
-    },
-    {
-      "id": "18bfaa68-4e18-4988-af88-20ed9392906c-F8ZeOm4TrkOymEC2UFNijyrobEp2-1",
-      "type": "Price",
-      "cust": "If I do tier 3, the upgraded one, and then I finance it, can you give me like a 5% discount if I do it today?",
-      "answer": "Let's do it. All right, if he gives me your 5% discount on this one, then we'll get signed up on the other one.",
-      "tech": "Mario Castro",
-      "date": "2026-06-09",
-      "grade": "great",
-      "closed": false,
-      "job": "649981736"
     },
     {
       "id": "210f480e-6390-41be-88ce-1df4f3d3454e-C8GrpPB0IyRgskhBGU9g6yM2FpE3-1",
@@ -5448,17 +5318,6 @@
       "job": "642049268"
     },
     {
-      "id": "6d24bb5b-cc59-4577-9838-9a4b72e8dade-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-2",
-      "type": "Price",
-      "cust": "How much would it cost to replace the ductwork?",
-      "answer": "That is the wrong\u2014 you're asking the wrong person... it's going to be one of our equipment guys, similar guy that came last time for replacing the system... they would tell you, hey, this is the price of it... that's something that you guys can choose to do.",
-      "tech": "Francisco Valencia",
-      "date": "2026-06-08",
-      "grade": "great",
-      "closed": false,
-      "job": "642049268"
-    },
-    {
       "id": "4e404751-97cf-42ae-b6ab-eaa14008dcbc-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
       "type": "Other",
       "cust": "If you don't mind, just, just the coils cleaning outside?",
@@ -5490,17 +5349,6 @@
       "grade": "ok",
       "closed": false,
       "job": "649391152"
-    },
-    {
-      "id": "3da49c80-6449-4ed7-993c-b57cd9ec018d-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
-      "type": "Price",
-      "cust": "So yeah, so you recommend if I we went for the whole thing, then it would cost us\u2014",
-      "answer": "That's a great question for the equipment specialist. So I don't have pricing for a brand new system. I'm your fix-it guy, I'm your technician... The equipment specialist would have the information of what a new system costs, what different incentives are available to you, as well as additional discounts for replacement based on your membership status.",
-      "tech": "Joe Mendoza",
-      "date": "2026-06-08",
-      "grade": "great",
-      "closed": false,
-      "job": "634237021"
     },
     {
       "id": "f6d83443-add3-41d0-9f97-826f768b4b5d-92hu453CMjMS3az2iJV9GyPLhsX2-1",
@@ -5657,17 +5505,6 @@
       "job": "649181927"
     },
     {
-      "id": "17c3b01f-3448-4494-bbd9-ce280e5d1026-92hu453CMjMS3az2iJV9GyPLhsX2-1",
-      "type": "Price",
-      "cust": "That's what I'm going to do. So I'll call the ladies at the office to get them give me an estimate on how much it'll cost to replace the whole\u2014 I could set that up for you.",
-      "answer": "Yeah, they do have to come out and take measurements. Because of the setup, being a trailer, there's no charge because you're getting information on replacement. So I could set it up\u2014 do you want to set it up today when you come home?",
-      "tech": "Nikko April",
-      "date": "2026-06-05",
-      "grade": "great",
-      "closed": false,
-      "job": "649588277"
-    },
-    {
       "id": "37b0992b-f6c5-41d3-a8ec-84f7da4de4d3-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
       "type": "Doubt / Distrust",
       "cust": "I always feel ill-equipped to be able to... what decision am I supposed to make? Maybe somebody else, a different company, comes in here and says similar things, but maybe not as comprehensive, maybe not as well informed, but still, other things I will not really be able to absorb.",
@@ -5685,16 +5522,6 @@
       "tech": "Andrew Trujillo",
       "date": "2026-06-04",
       "grade": "poor",
-      "closed": false
-    },
-    {
-      "id": "37b0992b-f6c5-41d3-a8ec-84f7da4de4d3-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-3",
-      "type": "Price",
-      "cust": "There's no inexpensive, even half measure of a Band-Aid solution. I would\u2014 that, that makes a lot of sense.",
-      "answer": "I would argue that doing any repairs on this current system is a half measure in and of itself, because if that compressor gives way and just cracks from taking way too much power day in and day out, then what's the point of even doing those repairs?",
-      "tech": "Andrew Trujillo",
-      "date": "2026-06-04",
-      "grade": "ok",
       "closed": false
     },
     {

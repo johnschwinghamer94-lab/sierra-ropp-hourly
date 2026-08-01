@@ -167,17 +167,6 @@
       "job": "627538889"
     },
     {
-      "id": "c250d58b-b3d7-4a37-a679-79a52abaa439-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
-      "type": "Price",
-      "cust": "How much is a new unit, total new unit today?",
-      "answer": "I do specialize in repairs, so I couldn't give you a concrete answer on like how much those cost just because based off the sizing of the system. But I just do repairs. That's something they could answer if you wanted them to come out to give me an idea.",
-      "tech": "Cole Pantol",
-      "date": "2026-02-02",
-      "grade": "great",
-      "closed": false,
-      "job": "627538889"
-    },
-    {
       "id": "f7ba2e57-62b4-4ed6-8389-91926c4063eb-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
       "type": "Doubt / Distrust",
       "cust": "I mean, the rust, really, 15 years to pay them off, to pay off the solar, those two new units. And the attic was 15 years for the whole thing. So it doesn't make sense that it would not even last the time that it would take to pay off the whole thing.",
@@ -252,17 +241,6 @@
       "grade": "ok",
       "closed": false,
       "job": "623488088"
-    },
-    {
-      "id": "5c83e8bc-0e4c-46f7-8b6a-44eec452a6f9-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
-      "type": "Price",
-      "cust": "How do you know like a price range of how much the systems cost?",
-      "answer": "That would be a question primarily for the equipment specialist. They have the exacts on everything, direct connections with the installation team. If you guys are interested I can see if we have somebody available, get them out within the hour.",
-      "tech": "Dustin Romine",
-      "date": "2026-02-03",
-      "grade": "great",
-      "closed": false,
-      "job": "628328099"
     },
     {
       "id": "652f3f25-c8c0-4641-a6c8-0a9a9adf5b8f-GDqCZxyrIfY2Folxq4Byd39NzuW2-1",
@@ -974,16 +952,6 @@
       "closed": false
     },
     {
-      "id": "b0a56bb9-66f9-4b6a-97f1-9e5bfe8dbfda-QSgW0Qp6bKP82NeJl9A5ckCGhts1-2",
-      "type": "Price",
-      "cust": "You never gave me a price on this whole thing.",
-      "answer": "Yeah, I'm mainly just the field sup, so I don't work on that side, but we could see if someone's out in the field that can give you that price, and we can look at that route.",
-      "tech": "Alex - Oleksiy Yakovchuk",
-      "date": "2026-02-09",
-      "grade": "great",
-      "closed": false
-    },
-    {
       "id": "b385517b-123b-420d-98f0-d3ad732c0a85-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
       "type": "Doubt / Distrust",
       "cust": "We've already replaced this unit twice. We just did it fairly recently too.",
@@ -1323,17 +1291,6 @@
       "job": "629520815"
     },
     {
-      "id": "3419d24b-6940-40a9-98a7-77f38a7f119c-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
-      "type": "Stall / Think About It",
-      "cust": "I think we can just move forward with the repairs and then they can come out and we can talk at some point. It doesn't have to be even today. It can be another time.",
-      "answer": "Okay, so just get it scheduled. So if they are available today, do you want them to come out or do you want to schedule it?... the repair is probably going to take us roughly about an hour... so if we were to call him, probably be here before we were done.",
-      "tech": "Dustin Romine",
-      "date": "2026-02-12",
-      "grade": "great",
-      "closed": false,
-      "job": "629348154"
-    },
-    {
       "id": "8ec692da-7e03-4aa5-ad87-c0a467cad9a9-XYpMBXpv6TVg9okInQemgsAIw1B3-1",
       "type": "Stall / Think About It",
       "cust": "Okay. All right. I will go ahead and review this and I'll let you know.",
@@ -1409,17 +1366,6 @@
       "grade": "ok",
       "closed": false,
       "job": "627823557"
-    },
-    {
-      "id": "5718ca92-806a-40aa-8eca-55ce80b66948-ZLjkNBMk4fMJ8rE1KZTobEMfb893-1",
-      "type": "Stall / Think About It",
-      "cust": "Yeah, okay, that one I will ponder on. But I'm sure that's probably a good number.",
-      "answer": "That's what he told me, show him the discount, because he can't show this to other customers... cuz you're a friend of Darren, he took off all the margins or anything that would be made on the job.",
-      "tech": "AJ-Alejandro Ruiz Padilla",
-      "date": "2026-02-13",
-      "grade": "great",
-      "closed": false,
-      "job": "629862006"
     },
     {
       "id": "7bdc4d35-5ec5-47f0-af2b-434eb11a5cec-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
@@ -1999,17 +1945,6 @@
       "job": "630838557"
     },
     {
-      "id": "7061be2c-6601-45e8-97fb-04bea7280cb1-ZLjkNBMk4fMJ8rE1KZTobEMfb893-1",
-      "type": "Doubt / Distrust",
-      "cust": "So the person coming out today would be like a salesperson, not the repair tech?",
-      "answer": "No, our install guys, they would have our install guys. The ones that install the stuff would have to get their eyes on it, look at it and see, hey, what it takes to do over with the system.",
-      "tech": "AJ-Alejandro Ruiz Padilla",
-      "date": "2026-02-19",
-      "grade": "ok",
-      "closed": false,
-      "job": "630990450"
-    },
-    {
       "id": "7061be2c-6601-45e8-97fb-04bea7280cb1-ZLjkNBMk4fMJ8rE1KZTobEMfb893-2",
       "type": "Doubt / Distrust",
       "cust": "Wouldn't need that. Yeah, if I were to have insurance. I mean, they have insurance, but I don't think it covers appliances.",
@@ -2063,39 +1998,6 @@
       "grade": "great",
       "closed": false,
       "job": "630989830"
-    },
-    {
-      "id": "b121c5aa-2574-4da5-803f-669bd36d728a-F8ZeOm4TrkOymEC2UFNijyrobEp2-1",
-      "type": "Price",
-      "cust": "Give me a quote for the lower unit... Yeah, we're gonna replace it. Right.",
-      "answer": "I can't give you the prices. I don't have the price for the replacement. I just... educate you on everything that's going on in your system... Yes, I can always set that up for you and have them come out here and quote you on that.",
-      "tech": "Mario Castro",
-      "date": "2026-02-19",
-      "grade": "great",
-      "closed": false,
-      "job": "630632400"
-    },
-    {
-      "id": "b121c5aa-2574-4da5-803f-669bd36d728a-F8ZeOm4TrkOymEC2UFNijyrobEp2-2",
-      "type": "Stall / Think About It",
-      "cust": "So you're looking maybe until summer. All right. So. Yeah, so I need a... I need pictures of those things.",
-      "answer": "Yes, sir. I'll write the report right now. I still get the video... I'll send everything to you, sir.",
-      "tech": "Mario Castro",
-      "date": "2026-02-19",
-      "grade": "poor",
-      "closed": false,
-      "job": "630632400"
-    },
-    {
-      "id": "c48a1d65-4a65-43db-919c-94a3c8ac19d8-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
-      "type": "Price",
-      "cust": "Did you get me a price on a new unit for that one?",
-      "answer": "Yeah, I mean, so I don't give you those prices because I'm just a maintenance repair guy... we would have to have someone come out because they would have to measure it, see the size of it. And then once they have all that stuff, then they'll just give you a price.",
-      "tech": "Francisco Valencia",
-      "date": "2026-02-19",
-      "grade": "ok",
-      "closed": false,
-      "job": "629912876"
     },
     {
       "id": "c48a1d65-4a65-43db-919c-94a3c8ac19d8-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-2",
@@ -2334,16 +2236,6 @@
       "closed": false
     },
     {
-      "id": "224be4f3-66aa-4a4a-99cc-13f6355d03bb-QSgW0Qp6bKP82NeJl9A5ckCGhts1-1",
-      "type": "Price",
-      "cust": "He said gases will come into our home. I mean obviously. What is, I mean what is the cost? Like let's if we decided to replace an AC unit.",
-      "answer": "So for that, that's not going to be my department. Let me go over the repairs first. If you guys decide to kind of see what that looks like, you can touch base.",
-      "tech": "Alex - Oleksiy Yakovchuk",
-      "date": "2026-02-23",
-      "grade": "ok",
-      "closed": false
-    },
-    {
       "id": "7d66bf6d-a88b-4580-ade0-f1b4066e3350-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
       "type": "Price",
       "cust": "Okay, So 10,000 is a little rich. Can you guys help me out?",
@@ -2351,16 +2243,6 @@
       "tech": "Joe Mendoza",
       "date": "2026-02-23",
       "grade": "great",
-      "closed": false
-    },
-    {
-      "id": "7d66bf6d-a88b-4580-ade0-f1b4066e3350-hUwt6xtja4T6o8jCUdsXJsPtmQX2-2",
-      "type": "Doubt / Distrust",
-      "cust": "So what you're saying is you're suggesting a replacement.",
-      "answer": "I'm suggesting you at least get all of your information. That way you can.",
-      "tech": "Joe Mendoza",
-      "date": "2026-02-23",
-      "grade": "ok",
       "closed": false
     },
     {
@@ -2852,16 +2734,6 @@
       "grade": "ok",
       "closed": false,
       "job": "632264308"
-    },
-    {
-      "id": "f25d15a5-0dad-43ed-ba5b-a242cb16b89f-ZLjkNBMk4fMJ8rE1KZTobEMfb893-1",
-      "type": "Price",
-      "cust": "Can't give me the price now.",
-      "answer": "I mainly work in repairs. Our install guys... would have to see what fits in the attic, what kind of unit we can or can't put in there... I did have a couple guys out in the field be here within 30, 40 minutes to at least give you that price, if you're okay with that.",
-      "tech": "AJ-Alejandro Ruiz Padilla",
-      "date": "2026-02-27",
-      "grade": "great",
-      "closed": false
     },
     {
       "id": "f25d15a5-0dad-43ed-ba5b-a242cb16b89f-ZLjkNBMk4fMJ8rE1KZTobEMfb893-2",

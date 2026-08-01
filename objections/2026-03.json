@@ -1396,17 +1396,6 @@
       "job": "634853005"
     },
     {
-      "id": "459f332c-8836-4e81-acb2-4cec993d9ef3-QSgW0Qp6bKP82NeJl9A5ckCGhts1-1",
-      "type": "Other",
-      "cust": "Wait a minute. You say you don't work with or you don't. Your company does not accept home warranty.",
-      "answer": "We don't work with home warranty because of the type of work they do... So the way it would have to work is they would have to pay you, and then you could pay us.",
-      "tech": "Alex Yakovchuk",
-      "date": "2026-03-17",
-      "grade": "ok",
-      "closed": false,
-      "job": "634587876"
-    },
-    {
       "id": "15a400a7-c590-4885-8581-cb084b46ace1-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
       "type": "Doubt / Distrust",
       "cust": "I think what I was expecting today was you guys come in, you look it over, you turn, top it up, and we're kind of good with some flags. And we didn't get to that today.",
@@ -1592,17 +1581,6 @@
       "grade": "ok",
       "closed": false,
       "job": "633768167"
-    },
-    {
-      "id": "30733d53-2d17-4bc0-85a8-78f2a0b03ad9-QSgW0Qp6bKP82NeJl9A5ckCGhts1-1",
-      "type": "Price",
-      "cust": "Just give me a estimate.",
-      "answer": "For me it's hard to say just because I don't want to give you false information \u2014 they have so many different systems they work with. But it's no cost, no obligation to get [the equipment specialist] here to give you that information, so you can at least see what the actual cost is.",
-      "tech": "Alex Yakovchuk",
-      "date": "2026-03-18",
-      "grade": "ok",
-      "closed": false,
-      "job": "634530036"
     },
     {
       "id": "30733d53-2d17-4bc0-85a8-78f2a0b03ad9-QSgW0Qp6bKP82NeJl9A5ckCGhts1-2",
@@ -1952,17 +1930,6 @@
       "tech": "Dustin Romine",
       "date": "2026-03-19",
       "grade": "ok",
-      "closed": false,
-      "job": "634673660"
-    },
-    {
-      "id": "58654dac-2b1f-452e-899c-9632d7c3b588-GFg7TsAzwnexN1iJ489ReAY05wf1-3",
-      "type": "Price",
-      "cust": "What about, let's just say total replacement cost, a new air conditioner and a new furnace... So your estimation, give or take it would be how much?",
-      "answer": "That's a great question... they're the experts on all that, I'm the repair guy... they have direct contact with our solutions to anything special, rebates. It's a great conversation with the equipment specialist... no charge for that visit.",
-      "tech": "Dustin Romine",
-      "date": "2026-03-19",
-      "grade": "great",
       "closed": false,
       "job": "634673660"
     },
@@ -2358,17 +2325,6 @@
       "job": "633492251"
     },
     {
-      "id": "fc348ed0-822a-47dd-adac-ee0cf1ecdaff-QSgW0Qp6bKP82NeJl9A5ckCGhts1-1",
-      "type": "Price",
-      "cust": "But how much is a new one?",
-      "answer": "So that's not my department. I'm going go over the repairs with you guys. If you guys want to see what something like that looks like before you go invest money, you can definitely get somebody here to go over that with you... that way you guys have your options.",
-      "tech": "Alex - Oleksiy Yakovchuk",
-      "date": "2026-03-21",
-      "grade": "great",
-      "closed": false,
-      "job": "635065169"
-    },
-    {
       "id": "56d1d696-c797-4498-9680-fab985af1892-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
       "type": "Price",
       "cust": "Updating the system would involve changing everything out. We're talking thousands of dollars, right?",
@@ -2507,28 +2463,6 @@
       "grade": "ok",
       "closed": false,
       "job": "635746435"
-    },
-    {
-      "id": "913b4390-726f-4300-99a9-75c5caffd16f-kBmcjj1ucbYoWgDqILgiXfkLNzP2-1",
-      "type": "Price",
-      "cust": "I just like to know the price for sure because that way... I know it's getting to that point, I'm like, yeah, I have no idea what, what it's going to cost, you know.",
-      "answer": "Yes, I'm the repair tech, so I have repair pricing for you. If you want an estimate on a brand new system, our install team will provide that information... they'll sit down with you, go over the economy, premium, and top of the line units with fresh warranties as well.",
-      "tech": "Ting Cheung",
-      "date": "2026-03-22",
-      "grade": "great",
-      "closed": false,
-      "job": "635752316"
-    },
-    {
-      "id": "16b54c33-27d4-4551-9fbf-a3710e225b70-kBmcjj1ucbYoWgDqILgiXfkLNzP2-1",
-      "type": "Price",
-      "cust": "What's like a ballpark to replace it?",
-      "answer": "I'm the repair tech, so I have all the repair pricing for you. It'll just be meeting with our install team. They'll come out, measure the size of your unit, check out the crawl space, and sit down with you guys... go over different brands of units, fresh warranties.",
-      "tech": "Ting Cheung",
-      "date": "2026-03-22",
-      "grade": "great",
-      "closed": false,
-      "job": "635766640"
     },
     {
       "id": "c894d7e5-e0dc-47a4-9074-4e5348649f76-QSgW0Qp6bKP82NeJl9A5ckCGhts1-1",
@@ -3467,17 +3401,6 @@
       "job": "635877232"
     },
     {
-      "id": "1f76f2e9-c6b8-4aa6-93f8-9b652521b240-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
-      "type": "Price",
-      "cust": "That's a joke. Okay, good. So what do I owe you?",
-      "answer": "Just a 79 for the visit.",
-      "tech": "Cole Pantol",
-      "date": "2026-03-26",
-      "grade": "poor",
-      "closed": false,
-      "job": "635877232"
-    },
-    {
       "id": "15caedbd-7008-4db2-a02f-4826837be978-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
       "type": "Price",
       "cust": "That's crazy. That's more than the car.",
@@ -4152,17 +4075,6 @@
       "tech": "Joe Mendoza",
       "date": "2026-03-30",
       "grade": "ok",
-      "closed": false,
-      "job": "635237777"
-    },
-    {
-      "id": "25a0661e-d3c1-4211-bf70-ee78dd486024-hUwt6xtja4T6o8jCUdsXJsPtmQX2-2",
-      "type": "Price",
-      "cust": "How much are units?",
-      "answer": "That is a great question... because of the age and condition of your system, because of the overworking of components, is why I have this option on here, which would be speaking with an equipment specialist... this is my least risk option.",
-      "tech": "Joe Mendoza",
-      "date": "2026-03-30",
-      "grade": "great",
       "closed": false,
       "job": "635237777"
     },
@@ -4995,16 +4907,6 @@
       "cust": "How come you guys don't break how much the unit and how much for the taxes? ... So we cannot find the taxes then.",
       "answer": "Because there's no taxes on what we do... there is no sales tax. So the price you get is the price you pay. That's the one thing I love about Sierra, the price transparency... we give you everything up front. If anything comes up, we're not going to come back and say we didn't see this.",
       "tech": "Joe Mendoza",
-      "date": "2026-03-09",
-      "grade": "great",
-      "closed": false
-    },
-    {
-      "id": "dcd1d33d-6278-4d54-8548-881a9c973f6d-1",
-      "type": "Spouse / Decision-Maker",
-      "cust": "But it'd be about an hour and a half before he comes back.",
-      "answer": "I can definitely send out an email. I'll still go over the report with you and everything... do you guys want me to give you a call in an hour and a half or two hours just so I can go over it with them?",
-      "tech": "Cole Pantol",
       "date": "2026-03-09",
       "grade": "great",
       "closed": false
