@@ -1,1 +1,1 @@
-Mostly personal conversation with customer (North Carolina travel, casino stories, retirement); minimal HVAC work or diagnosis shown.
+Transcript is mostly personal conversation with minimal service content and cuts off mid-sentence
