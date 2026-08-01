@@ -1,28 +1,12 @@
-# Coaching Card: Robert Silinzy
+# Call Score: b3fdee6d-bcd7-4b7d-8f1d-da64858c5330-Dmp0XntHegO0HaJZZRXRfWYS5Wi1
 
-**RecId:** b3fdee6d-bcd7-4b7d-8f1d-da64858c5330-Dmp0XntHegO0HaJZZRXRfWYS5Wi1  
+**Tech:** Robert Silinzy  
 **Date:** 2026-08-01  
 **Duration:** 113 min  
-**Job Number:** 670256332
+**Job:** 670256332  
 
-## FSG Bands
+## Scoring
+- **Outcome:** unknown
+- **Tip:** FIX — Transcript too fragmented to assess coaching; requires audio review
 
-- **Welcome:** Strong on wins
-- **Assessment:** Strong
-- **Decision:** Solid
-- **Deliver:** Strong
-
-## Critical Actions
-
-- **Expectations:** ✓
-- **Questions:** ✓
-- **Options:** ✗
-- **Objections:** ✗
-
-## Outcome
-
-**UNKNOWN**
-
-## Coaching Tip
-
-FIX — Excellent technical education and rapport-building, but no explicit Option C or comfort advisor appointment mentioned; close with clear next step
+Bands: see livecards/b3fdee6d-bcd7-4b7d-8f1d-da64858c5330-Dmp0XntHegO0HaJZZRXRfWYS5Wi1.card.json

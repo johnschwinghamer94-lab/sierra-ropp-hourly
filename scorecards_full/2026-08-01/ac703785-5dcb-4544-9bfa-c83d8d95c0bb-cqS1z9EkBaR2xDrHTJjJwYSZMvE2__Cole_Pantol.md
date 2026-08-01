@@ -1,28 +1,12 @@
-# Coaching Card: Cole Pantol
+# Call Score: ac703785-5dcb-4544-9bfa-c83d8d95c0bb-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
 
-**RecId:** ac703785-5dcb-4544-9bfa-c83d8d95c0bb-cqS1z9EkBaR2xDrHTJjJwYSZMvE2  
+**Tech:** Cole Pantol  
 **Date:** 2026-08-01  
 **Duration:** 6 min  
-**Job Number:** 670417884
+**Job:** 670417884  
 
-## FSG Bands
+## Scoring
+- **Outcome:** no-close
+- **Tip:** FIX — Move from inspection to explaining options faster
 
-- **Welcome:** Strong
-- **Assessment:** Moderate
-- **Decision:** Weak
-- **Deliver:** Weak
-
-## Critical Actions
-
-- **Expectations:** ✓
-- **Questions:** ✓
-- **Options:** ✗
-- **Objections:** ✗
-
-## Outcome
-
-**NO-CLOSE**
-
-## Coaching Tip
-
-FIX — Call ended before diagnosis; always complete assessment and present at least one option/comfort advisor appointment before leaving customer
+Bands: see livecards/ac703785-5dcb-4544-9bfa-c83d8d95c0bb-cqS1z9EkBaR2xDrHTJjJwYSZMvE2.card.json
