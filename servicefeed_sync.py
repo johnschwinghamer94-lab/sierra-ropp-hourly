@@ -843,6 +843,20 @@ def cloud_main():
     cloud_seed_state()
     log("cloud session started (cap %d min)" % MAX_MIN)
     arm_next()                        # successor waits in the queue from minute one
+    # DEAD-MAN SWITCH (2026-07-31): both relays froze mid-cycle at 8:36p when a
+    # ServiceTitan call hung without a timeout — sessions sat "running" but
+    # silent for hours. A daemon thread hard-exits if no loop iteration
+    # completes for 10 min; the queued successor then takes over immediately.
+    import threading, socket
+    socket.setdefaulttimeout(90)
+    _beat = {"t": time.time()}
+    def _deadman():
+        while True:
+            time.sleep(30)
+            if time.time() - _beat["t"] > 600:
+                log("DEADMAN: no completed loop in 10 min — exiting for the queued successor")
+                os._exit(3)
+    threading.Thread(target=_deadman, daemon=True).start()
     t0 = time.time()
     last_push = 0.0
     while True:
@@ -864,6 +878,7 @@ def cloud_main():
                 log("cycle -> " + str(r))
             except Exception as ex:
                 log("cycle ERROR: " + repr(ex)[:300])
+        _beat["t"] = time.time()
         time.sleep(CYCLE_SECS)
 
 
