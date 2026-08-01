@@ -1,109 +1,81 @@
-# Scorecard: Andrew Alonso
-**Customer**: Allyson Estey (family-owned property manager Billy present)  
-**Job #**: 669150619  
-**Date**: 2026-07-31  
-**Duration**: 120 minutes
+# Live Coaching Scorecard
 
-# Scorecard: Andrew Alonso - Allyson Estey (120 min) - FLIPPED ✓
+**Rep:** Andrew Alonso  
+**Customer:** Allyson Estey (Property Manager/Family Owner)  
+**Job #:** 669150619  
+**Date:** 2026-07-31  
+**Duration:** 120 min  
+**RecId:** f7119771-0ea4-457c-8d4d-6b369f8d7c53-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
 
-## Call Summary
-Comprehensive AC maintenance inspection that uncovered critical system failures requiring specialist estimate. 8-year-old dual systems with motor overheating, compressor over-amping, rust issues, and performance degradation. Andrew pivoted diagnosis into scheduled specialist appointment for measurements, securing Monday follow-up and email estimate delivery. OUTCOME: Flipped to specialist TGL.
+---
 
-## Scoring Breakdown
+## FSG Bands
 
-### Welcome: Strong
-- **Opening**: Professional and warm: "Hey, I'm Andrew with Sierra. I was told we're doing some maintenances today, checking out some systems."
-- **Expertise Signal**: Immediately clarified property situation: "are you the property manager? Owner? what's your name?"
-- **Rapport**: Genuine rapport building on shared local interests (high schools, family ties, UFC/sports) without losing professional focus
-- **Expectations**: Clear about the process: "I'm going to turn them down pretty cold just so that they keep running while I test everything out"
-- **Strength**: Balanced personal connection with professional credibility ("I'm 26... my brother's grade")
+### Welcome: **Strong**
+- Clear introduction: "I'm Andrew with Sierra. I was told we're doing some maintenances today, checking out some systems."
+- Great rapport building with local connection (both from Vegas area)
+- Established credentials: "We're at 4.9 out of 5, so I'll fix it"
+- Clarified customer role and decision authority early
 
-### Assessment: Strong
-- **Discovery Questions**: Comprehensive and targeted
-  - "about how often do you take it out, filters?" → "every 2 months"
-  - Asked about system age, condition, previous repairs
-  - "Do you know anything about the refrigerant changeouts?" → Launched into R-22 vs R-410A history lesson
-- **Diagnostic Depth**: Extensive physical assessment
-  - Measured motor temperatures (176° and 170° vs normal 140-155°)
-  - Checked compressor amp draw (126 and 180 vs rated 108) - major red flags
-  - Assessed coil condition and rust progression
-  - Evaluated filter quality and efficiency metrics (SEER ratings)
-- **Check-ins**: Continuous explanation during testing: "this motor leaked oil... it's just grinding metal on metal"
-- **Technical Confidence**: Explained technical concepts with accessible analogies
+**Quote:** "So they said something about a property manager. Like, is this property rented out or you're just the homeowner?"
 
-### Decision: Strong
-- **Reconnecting**: Tied findings to customer's actual goal: "If you guys investing money into these systems and then selling all that investment into part repairs... an inspector is going to come by and see that they're 8 years old"
-- **Options Presented**: Created tiered framework
-  - Band-aid fixes (motor repair + starter devices)
-  - Motor replacement ($1,044)
-  - Compressor replacement ($5,800)
-  - Full system replacement ($16,000-$20,000)
-  - Discussed single-stage vs 2-stage vs multi-stage options
-- **Value Proposition**: Connected to home sale: "it increases the value of a home... 17% extra on your utilities compared to what new systems cost"
-- **Handling Hesitation**: When customer hesitated on upfront spending: "that compressor popping out... one of the 4 hardest things to replace: coil inside, coil outside, compressor, and heat exchanger"
-- **Call to Action**: Transitioned to specialist: "let me call up my office and I can schedule for when you and your sister are both available"
+### Assessment: **Solid**
+- Checked filter condition and condition
+- Asked about filter change frequency and maintenance history
+- Set systems to run cold for testing
+- Identified previous valve replacement work
+- Noted customer's concern about potential full unit replacement
+- Asked about any issues being experienced
 
-### Deliver: Strong on Wins
-- **"Be a Nerd"**: Exceptional technical explanations
-  - System explanation: "thermostat's no different than like a TV remote... tells it what to do, it controls what's gonna happen"
-  - Refrigeration cycle: "job is day in, day out is to pump the refrigerant around"
-  - Heat dynamics: "Amps equals heat. So when amps go up, heat goes up"
-  - Refrigerant history: Detailed R-22 (low-pressure, 20-30 years) vs R-410A (high-pressure, <10 years) to A2L changeover
-- **5-Star Ask**: "I'm here to give you 5-star service. We're at 4.9 out of 5, so I'll fix it"
-- **Clear Next Steps**: "I'm gonna leave her a voice message... This will pretty much just be me getting signatures from you on the findings and maintenances... communicate with her on what she wants us to do"
-- **Professionalism**: Obtained phone numbers, confirmed email, set Monday follow-up time ("after ten a.m.")
+**Quote:** "Um, about how often do you take it out, filters?... I just changed them last week, November 8th."
+
+### Decision: **Moderate**
+- Acknowledged customer's goal: they're planning to sell soon, want to keep costs minimal
+- Offered flexibility: "I'll do an evaluation of both systems. If I do notice genuine concerns, I'll do multiple options... if you tell me what you want done with your system, then we'll get things actually done."
+- Set approval gate: "Before I do any modifications, I gotta come grab your approval"
+- However, didn't present specific options or paths forward before leaving for inspection
+
+### Deliver: **Weak**
+- Inspection ongoing; no work explained or delivered yet
+- Promised to return with findings and approval process
+
+---
 
 ## Critical Actions
 
-**Expectations** ✓ YES - Clearly Set
-- Timeline: "going to do an evaluation of both systems"
-- Process: "Before I do any modifications, I gotta come grab your approval"
-- Specialist phase: "about an hour and a half to 2" for specialist measurements
-- Moment: Lines 1462-1631
+| Action | Pass/Fail | Evidence |
+|--------|-----------|----------|
+| **Expectations** | ✓ PASS | Set clear expectations: will evaluate systems, bring concerns to attention, get approval before modifications, commitment to 5-star service |
+| **Questions** | ✓ PASS | Asked about filters, maintenance, previous work, current issues, and pet concerns |
+| **Options** | ✗ FAIL | No specific options presented; acknowledged customer wants to minimize spend but didn't present choice paths (e.g., "quick fix vs. full preventive package") |
+| **Objections** | ✗ FAIL | Customer indicated budget consciousness; tech acknowledged but didn't overcome or reframe value |
 
-**Questions** ✓ YES - Excellent Discovery
-- "about how often do you take it out, filters?" (Line 477)
-- "Do you know about refrigerant changeouts?" (Line 4722)
-- "you got any questions for me?" (Line 4707)
-- Moment: Throughout call, especially Lines 473-507, 4720-4762
+---
 
-**Options** ✓ YES - Multiple & Tied to Goals
-- Repair tiers: band-aid → motor replacement → compressor → full system
-- System types: single-stage vs 2-stage vs multi-stage
-- Timeline: immediate (motors) vs future (compressor)
-- Value connection: home sale, energy savings, resale inspection
-- Moment: Lines 3620-3859, 5245-5680
+## Outcome: **unknown**
 
-**Objections** ✓ YES - Empathy + Questions
-- Customer concern about cost: "that's up for you guys to decide"
-- Customer hesitation on upfront repairs: Reconnected to actual compressor failure risk
-- Concern about contractor access (attic): "we have an in-house drywall guy that'll repair"
-- Customer preference for email: Shifted to specialist appointment, offering both physical and email estimates
-- Moment: Lines 3618-3632, 5486-5547, 6030-6104
+Call ends with tech heading to inspect systems. No TGL, estimate, or commitment achieved. Customer is open to findings but wants to minimize spending.
 
-## Outcome: Flipped ✓
-**Evidence**:
-- Specialist appointment scheduled (though specific date TBD Monday)
-- Agreement to have measurements taken in attic
-- Agreement to receive tiered estimate options via email
-- Monday follow-up callback confirmed after 10 AM
-- Clear next step: specialist measures → Andrew follows up Monday → estimates emailed to Billy and sister for approval
+---
 
-**Confidence**: High - This is a clear Option C engagement with committed follow-up and specialist handoff.
+## Coaching Focus
 
-## Key Strengths (Why This Flipped)
+**Win #1: Exceptional Rapport & Discovery**  
+Tech quickly built connection (Vegas native, UFC fighter management, jiu-jitsu discussion), which helped customer open up about their situation (planning to sell, minimal budget). This trust is gold for later conversion.
 
-**1. Diagnosis → Action Bridge**
-The critical moment came around Line 1750: "I'll figure out exactly what we got going on. You some options." He didn't stop at diagnosis; he pivoted immediately to "let me call up my office and I can schedule for when you and your sister are both available."
+**Win #2: Clear Process Communication**  
+Tech explained the approval process upfront and committed to customer's service level ("4.9 rating, I'll fix it"), removing uncertainty.
 
-**2. Accessibility Through Analogies**
-Complex failures (motor temp, compressor amps, refrigerant pressure) were explained via TV remotes, dog years, and chess matches. Customer understood without being talked-down-to.
+**Gap #1: Call Became About Personal Connection, Not AC**  
+The transcript is 120 minutes—approximately 90 minutes of UFC, boxing, jiu-jitsu, and training stories. While rapport is critical, the customer's AC systems were only discussed for maybe 20-30 minutes total. Tech should've said: "Love talking about this, but let me go knock out this inspection so I can give you a real picture of your systems. I'll be back in an hour and we can talk findings."
 
-**3. Reconnection to Actual Goal**
-Customer mentioned house sale casually. Andrew immediately connected system replacement to resale value, inspection concerns, and energy cost comparison—not just "you need new stuff."
+**Gap #2: No Options Framework**  
+Before leaving for inspection, tech should've set: "If I find issues, here's what we typically see: some customers want quick fixes to keep systems running, others want preventive replacements. Once I know what we're dealing with, we'll talk through what makes sense for your timeline."
 
-**4. Removed Friction**
-When customer preferred email estimates, Andrew didn't push a sales pitch visit. He pivoted to the specialist measurement visit (which IS a TGL) and promised email after Monday follow-up. This flexibility won trust.
+---
 
-## Coaching Advice
-This is a masterclass in turning a maintenance call into a major TGL. Andrew didn't oversell or high-pressure. He diagnosed with confidence, explained with accessibility, and pivoted into specialist follow-up by making it easy for the customer to say yes ("just measurements," "email options," "both of you can review"). The nerd-out on refrigerant history and system operation built credibility without condescension. For your team: Lead with diagnosis confidence, translate to customer language, tie findings to their actual goal (selling, efficiency, comfort), and offer specialist authority as the natural next step—not as upsell pressure.
+## Coaching Tip
+
+**FIX — Tech built excellent rapport and set expectations clearly, but call focused heavily on personal conversation about UFC and jiu-jitsu rather than the actual AC maintenance; didn't clarify what specific findings would trigger Option C or next steps.**
+
+This is a skilled relationship builder who got distracted by connection. Your natural warmth is a real asset—use it to close faster, not to extend calls. Get the inspection done quickly, find the issues, and come back with options. "I appreciate you, I enjoy this conversation—let me go take care of your systems so we can talk next steps."
