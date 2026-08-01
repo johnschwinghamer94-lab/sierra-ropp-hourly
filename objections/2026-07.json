@@ -4990,6 +4990,92 @@
       "grade": "great",
       "closed": false,
       "job": "667655564"
+    },
+    {
+      "id": "4176ef90-d6b7-4102-ab21-3abf9815ed20-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2-1",
+      "type": "Price",
+      "cust": "I know there's a couple of things that they said from before, but I can't afford to replace the f****** system right now. Not for the way the prices are going.",
+      "answer": "Okay. Yeah. Yeah. You've already got a quote from us. Yeah, we got a quote. All right.",
+      "tech": "Andrew Alonso",
+      "date": "2026-07-30",
+      "grade": "poor",
+      "closed": false,
+      "job": "667917186"
+    },
+    {
+      "id": "a7430643-1535-4754-944c-6d8aef46e49a-LHPyzDeQsNek3Dzj7AlgurDjs6E2-1",
+      "type": "Doubt / Distrust",
+      "cust": "No, no, no. The guy come in instead of check it out first before he do anything. He say, you know, you probably need to get a new one. And not the same.",
+      "answer": "No. I appreciate y'all calling us back.",
+      "tech": "Benjamin Wyllie",
+      "date": "2026-07-30",
+      "grade": "ok",
+      "closed": false,
+      "job": "669892310"
+    },
+    {
+      "id": "7ac5d218-5d25-4db8-8f0d-e82e52b7769d-F8ZeOm4TrkOymEC2UFNijyrobEp2-1",
+      "type": "Price",
+      "cust": "Cuz I know if we do like, you know, I know it's gonna be expensive.",
+      "answer": "Oh, yeah, yeah, yeah. But like I said, I'm just here to give you all the information so you're aware of what's going on in your home right now.",
+      "tech": "Mario Castro",
+      "date": "2026-07-30",
+      "grade": "ok",
+      "closed": false,
+      "job": "650643839"
+    },
+    {
+      "id": "7fab097c-30b7-4f1e-b3c8-9c3803c35683-92hu453CMjMS3az2iJV9GyPLhsX2-1",
+      "type": "Stall / Think About It",
+      "cust": "No, I'd rather wait, see what happens.",
+      "answer": "Waiting. Wait. I want to try and get the most use out of it that I can. And I get it.",
+      "tech": "Nikko April",
+      "date": "2026-07-30",
+      "grade": "ok",
+      "closed": false,
+      "job": "667041528"
+    },
+    {
+      "id": "0c99db11-93db-4266-8857-1babc85ba499-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
+      "type": "Stall / Think About It",
+      "cust": "I can't today. But let's. I'll shelf it for now and I'll worry about it here soon. But we'll look at it.",
+      "answer": "Okay. Eventually. Is there a good time that I can have someone calling out? I just want to make sure that we're taking care of you.",
+      "tech": "Andrew Trujillo",
+      "date": "2026-07-30",
+      "grade": "great",
+      "closed": false
+    },
+    {
+      "id": "79a81caf-9f4c-4897-ac93-c6eb1768c371-LHPyzDeQsNek3Dzj7AlgurDjs6E2-1",
+      "type": "Price",
+      "cust": "Wouldn't it be cheaper just to replace the entire thing?",
+      "answer": "For a long term solution? Yes. Like if you want to keep on spending money into an older unit, then yeah... Which is why I did give you the option to speak to one of our install specialists just about what that price looks like. So you can compare and contrast.",
+      "tech": "Benjamin Wyllie",
+      "date": "2026-07-30",
+      "grade": "great",
+      "closed": false,
+      "job": "669688104"
+    },
+    {
+      "id": "79a81caf-9f4c-4897-ac93-c6eb1768c371-LHPyzDeQsNek3Dzj7AlgurDjs6E2-2",
+      "type": "Stall / Think About It",
+      "cust": "Well, let me think about it and see, you know... No, no, no. That's... That really nothing to ask. I just want to see that, and I'm going to discuss it with someone.",
+      "answer": "Yeah, discuss it. What questions do you have? Because I know you said you want to think about it, so it's...",
+      "tech": "Benjamin Wyllie",
+      "date": "2026-07-30",
+      "grade": "ok",
+      "closed": false,
+      "job": "669688104"
+    },
+    {
+      "id": "df8d40d1-2919-43ac-97f8-8025ebf37dcd-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2-1",
+      "type": "System Too Old",
+      "cust": "My main concern is that, you know, with the systems being eight years old, I don't want you to invest too much money into the systems if they're getting towards the end of their life.",
+      "answer": "No, I, I understand and I appreciate that and I, I totally understand. You're right. It's better to do long term fixes than patchwork.",
+      "tech": "Bradley Espinoza",
+      "date": "2026-07-30",
+      "grade": "ok",
+      "closed": false
     }
   ]
 }

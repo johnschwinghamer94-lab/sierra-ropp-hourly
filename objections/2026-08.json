@@ -1,0 +1,26 @@
+{
+  "month": "2026-08",
+  "items": [
+    {
+      "id": "6dab1c3f-0247-4c2b-a266-d7ad81060692-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
+      "type": "Other",
+      "cust": "So, like, like if, if we opt out io1 right now,",
+      "answer": "You're more than welcome to. I can at least give you the information, give you a brochure to go.",
+      "tech": "Andrew Trujillo",
+      "date": "2026-08-01",
+      "grade": "poor",
+      "closed": false
+    },
+    {
+      "id": "bb8882a0-aa45-4094-bcd1-2ecaf5e0dbb5-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
+      "type": "System Too Old",
+      "cust": "Yeah, well, we think no more repair. Just, I guess, a replacement price.",
+      "answer": "...the way it usually works we come out I take a look at the systems do evaluation see what the repairs cost and then I call out my comfort advisor and you can come out and give you guys a replacement cost if you guys don't want to do the repairs...",
+      "tech": "Cole Pantol",
+      "date": "2026-08-01",
+      "grade": "great",
+      "closed": false,
+      "job": "670390447"
+    }
+  ]
+}
