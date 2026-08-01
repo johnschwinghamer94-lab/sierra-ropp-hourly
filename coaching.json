@@ -74,7 +74,7 @@
       },
       "headlineGap": "Two short visits ended before any option existed, and the consultation won on the long call was agreed without a date attached.",
       "focus": [
-        "Week 1: State the destination \u2014 priced choices on return \u2014 before every tool run.",
+        "Week 1: State the destination — priced choices on return — before every tool run.",
         "Week 2: Name and confirm a specific day for every specialist visit accepted.",
         "Week 3: Ask for the review during the closing conversation, not after it."
       ],
@@ -396,15 +396,15 @@
   "skipped": [
     {
       "rep": "David Canales",
-      "reason": "199-minute recording \u2014 audio unrecoverable, no assessable dialogue."
+      "reason": "199-minute recording — audio unrecoverable, no assessable dialogue."
     },
     {
       "rep": "Noah Weng",
-      "reason": "Job # 669991681, 6-minute recording \u2014 no customer dialogue captured."
+      "reason": "Job # 669991681, 6-minute recording — no customer dialogue captured."
     },
     {
       "rep": "Robert Silinzy",
-      "reason": "Job # 669917690 \u2014 transcript corrupted and unintelligible from partway through."
+      "reason": "Job # 669917690 — transcript corrupted and unintelligible from partway through."
     }
   ],
   "dates": [
@@ -1012,7 +1012,7 @@
   "weekly": [
     {
       "week": "2026-07-26",
-      "label": "Jul 20\u201326 2026",
+      "label": "Jul 20–26 2026",
       "index": "coaching/weekly/2026-07-26/_index.html",
       "crossrep": "coaching/weekly/2026-07-26/crossrep.html",
       "reps": {
@@ -1033,7 +1033,7 @@
     },
     {
       "week": "2026-07-19",
-      "label": "Jul 13\u201319 2026",
+      "label": "Jul 13–19 2026",
       "index": "coaching/weekly/2026-07-19/_index.html",
       "crossrep": "coaching/weekly/2026-07-19/crossrep.html",
       "reps": {
@@ -1054,7 +1054,7 @@
     },
     {
       "week": "2026-07-12",
-      "label": "Jul 6\u201312 2026",
+      "label": "Jul 6–12 2026",
       "index": "coaching/weekly/2026-07-12/_index.html",
       "crossrep": "coaching/weekly/2026-07-12/crossrep.html",
       "reps": {
@@ -1075,7 +1075,7 @@
     },
     {
       "week": "2026-07-05",
-      "label": "Jun 29\u2013Jul 5 2026",
+      "label": "Jun 29–Jul 5 2026",
       "index": "coaching/weekly/2026-07-05/_index.html",
       "crossrep": "coaching/weekly/2026-07-05/crossrep.html",
       "reps": {
@@ -1105,17 +1105,17 @@
         "Noah Weng": "coaching/monthly/2026-07/Noah_Weng.html",
         "Andrew Alonso": "coaching/monthly/2026-07/Andrew_Alonso.html",
         "Francisco Valencia": "coaching/monthly/2026-07/Francisco_Valencia.html",
-        "Robert Silinzy": "coaching/monthly/2026-07/Robert_Silinzy.html",
-        "Mario Castro": "coaching/monthly/2026-07/Mario_Castro.html",
         "Brandon Moreno": "coaching/monthly/2026-07/Brandon_Moreno.html",
         "Benjamin Wyllie": "coaching/monthly/2026-07/Benjamin_Wyllie.html",
-        "Joe Mendoza": "coaching/monthly/2026-07/Joe_Mendoza.html",
+        "Juan Tlatenchi": "coaching/monthly/2026-07/Juan_Tlatenchi.html",
         "Cole Pantol": "coaching/monthly/2026-07/Cole_Pantol.html",
         "Dustin Romine": "coaching/monthly/2026-07/Dustin_Romine.html",
         "Andrew Trujillo": "coaching/monthly/2026-07/Andrew_Trujillo.html",
+        "Joe Mendoza": "coaching/monthly/2026-07/Joe_Mendoza.html",
+        "Robert Silinzy": "coaching/monthly/2026-07/Robert_Silinzy.html",
+        "Mario Castro": "coaching/monthly/2026-07/Mario_Castro.html",
         "Nathan Colquitt": "coaching/monthly/2026-07/Nathan_Colquitt.html",
-        "Nikko April": "coaching/monthly/2026-07/Nikko_April.html",
-        "Juan Tlatenchi": "coaching/monthly/2026-07/Juan_Tlatenchi.html"
+        "Nikko April": "coaching/monthly/2026-07/Nikko_April.html"
       }
     }
   ]
