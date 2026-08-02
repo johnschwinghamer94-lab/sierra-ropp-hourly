@@ -1,32 +1,35 @@
-# Scorecard: Brandon Moreno
+# Scorecard: Brandon Moreno - 2026-08-01
 
-**Date:** 2026-08-01  
-**Duration:** 41 minutes  
-**Job:** 670536780  
-**RecId:** a9d1629e-ff7a-47e4-bf3a-0b1890d42b8e-f4dx65lewNTPydNXjgypLVFAcbk1
+**Recording ID:** a9d1629e-ff7a-47e4-bf3a-0b1890d42b8e-f4dx65lewNTPydNXjgypLVFAcbk1
+**Job Number:** 670536780
+**Duration:** 41 minutes
 
-## FSG Bands
+## FSG Scores
 
-- **Welcome:** Strong
-- **Assessment:** Strong
-- **Decision:** Moderate
-- **Deliver:** Solid
+### Welcome: Strong
+*Empathy, Expertise, Setting Expectations at the start*
+
+### Assessment: Strong
+*Required Questions, Check-Ins during diagnosis/inspection*
+
+### Decision: Moderate
+*Building Options, Reconnecting, Explaining Options, Overcoming Objections*
+
+### Deliver: Strong
+*Be A Nerd (explaining work done), asking for the 5-Star Review*
 
 ## Critical Actions
 
-- **Set Expectations:** ✓
-- **Ask Questions:** ✓
-- **Build Options:** ✗
-- **Handle Objections:** ✓
+- **Expectations Set:** ✓
+- **Discovery Questions:** ✓
+- **Options Created:** ✗
+- **Objections Handled:** ✓
 
 ## Outcome
-
 **UNKNOWN**
 
 ## Coaching Tip
-
-FIX — Build options before starting the inspection to give customers a framework for decision-making.
+FIX — When customer hesitates, reconnect to their stated concerns with empathy.
 
 ---
-
-*Transcript Status:* Ticket pending - truth file not yet available for 2026-08-01.
+*Scored: 2026-08-02T18:15:01.549008*

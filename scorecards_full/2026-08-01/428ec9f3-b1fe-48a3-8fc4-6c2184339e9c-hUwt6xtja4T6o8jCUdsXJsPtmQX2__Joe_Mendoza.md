@@ -1,32 +1,35 @@
-# Scorecard: Joe Mendoza
+# Scorecard: Joe Mendoza - 2026-08-01
 
-**Date:** 2026-08-01  
-**Duration:** 42 minutes  
-**Job:** N/A (No Title)  
-**RecId:** 428ec9f3-b1fe-48a3-8fc4-6c2184339e9c-hUwt6xtja4T6o8jCUdsXJsPtmQX2
+**Recording ID:** 428ec9f3-b1fe-48a3-8fc4-6c2184339e9c-hUwt6xtja4T6o8jCUdsXJsPtmQX2
+**Job Number:** None
+**Duration:** 42 minutes
 
-## FSG Bands
+## FSG Scores
 
-- **Welcome:** Solid
-- **Assessment:** Strong
-- **Decision:** Weak
-- **Deliver:** Weak
+### Welcome: Strong
+*Empathy, Expertise, Setting Expectations at the start*
+
+### Assessment: Solid
+*Required Questions, Check-Ins during diagnosis/inspection*
+
+### Decision: Strong
+*Building Options, Reconnecting, Explaining Options, Overcoming Objections*
+
+### Deliver: Solid
+*Be A Nerd (explaining work done), asking for the 5-Star Review*
 
 ## Critical Actions
 
-- **Set Expectations:** ✗
-- **Ask Questions:** ✓
-- **Build Options:** ✗
-- **Handle Objections:** ✗
+- **Expectations Set:** ✓
+- **Discovery Questions:** ✓
+- **Options Created:** ✓
+- **Objections Handled:** ✓
 
 ## Outcome
-
-**UNKNOWN**
+**NO-CLOSE**
 
 ## Coaching Tip
-
-FIX — Reconnect findings to customer concerns and build specific options for resolution.
+FIX — When customer hesitates, reconnect to their stated concerns with empathy.
 
 ---
-
-*Transcript Status:* Ticket pending - truth file not yet available for 2026-08-01.
+*Scored: 2026-08-02T18:15:01.549881*

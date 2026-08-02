@@ -1,27 +1,35 @@
-# Score: 6dab1c3f-0247-4c2b-a266-d7ad81060692-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
+# Scorecard: Andrew Trujillo - 2026-08-01
 
-**Tech:** Andrew Trujillo  
-**Date:** 2026-08-01  
-**Duration:** 23 min  
-**Job:** None specified in header  
+**Recording ID:** 6dab1c3f-0247-4c2b-a266-d7ad81060692-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
+**Job Number:** None
+**Duration:** 23 minutes
 
-## Summary
-Diagnostic call where tech identified multiple system issues but no repair commitment or next steps were captured before call ended.
+## FSG Scores
 
-## Scoring
+### Welcome: Strong
+*Empathy, Expertise, Setting Expectations at the start*
 
-**Bands:**
-- Welcome: Solid (friendly intro, set expectations)
-- Assessment: Strong (thorough questions about prior service history, system components)
-- Decision: Moderate (no clear options presented or reconnection to customer concerns)
-- Deliver: Solid (explained compressor issue clearly)
+### Assessment: Strong
+*Required Questions, Check-Ins during diagnosis/inspection*
 
-**Critical Actions:**
-- Expectations: ✓ Set clear expectations about what would be inspected
-- Questions: ✓ Asked detailed discovery questions about prior repairs
-- Options: ✓ Somewhat (mentioned units but no options package offered)
-- Objections: ✗ No objections encountered/handled
+### Decision: Solid
+*Building Options, Reconnecting, Explaining Options, Overcoming Objections*
 
-**Outcome:** Unknown (no close or flip indicated)
+### Deliver: Solid
+*Be A Nerd (explaining work done), asking for the 5-Star Review*
 
-**Coaching Tip:** Need to capture next steps or repair commitment; thorough diagnosis loses value without clear path forward to customer decision.
+## Critical Actions
+
+- **Expectations Set:** ✓
+- **Discovery Questions:** ✓
+- **Options Created:** ✓
+- **Objections Handled:** ✓
+
+## Outcome
+**UNKNOWN**
+
+## Coaching Tip
+FIX — When customer hesitates, reconnect to their stated concerns with empathy.
+
+---
+*Scored: 2026-08-02T18:15:01.548694*
