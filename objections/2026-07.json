@@ -4881,6 +4881,81 @@
       "date": "2026-07-30",
       "grade": "ok",
       "closed": false
+    },
+    {
+      "id": "f7119771-0ea4-457c-8d4d-6b369f8d7c53-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2-1",
+      "type": "Spouse / Decision-Maker",
+      "cust": "Sister, she's probably not available right now... But if you could send an email, the fix is on.",
+      "answer": "We've communicated with you before on repairs... Okay. Yeah, yeah. I'm still gonna. I still have to try and reach out to her.",
+      "tech": "Andrew Alonso",
+      "date": "2026-07-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "669150619"
+    },
+    {
+      "id": "5936a071-823d-4309-84d7-37a4339660ed-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
+      "type": "Price",
+      "cust": "I know I'm gonna have to replace all this eventually, but the key is I gotta keep her happy... I'm not gonna spend, you know, five or six grand in a hole... I'm not going to spend that right now.",
+      "answer": "You asked me how much the systems go for. When it comes to my department, I just focus on doing diagnostics and repairs. We have a department here with Sierra that can give you the prices for free... really apples to apples of what it's going to be to get you up and running. And I can get someone out here tonight...",
+      "tech": "Andrew Trujillo",
+      "date": "2026-07-31",
+      "grade": "great",
+      "closed": false,
+      "job": "670153026"
+    },
+    {
+      "id": "5936a071-823d-4309-84d7-37a4339660ed-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-2",
+      "type": "Competitor",
+      "cust": "We're gonna have another company come out tomorrow... I don't know if they have a different. I don't know. You know, I don't doubt your competence and your honesty.",
+      "answer": "Well, I mean, like I said, you got it completely free. There's no obligation.",
+      "tech": "Andrew Trujillo",
+      "date": "2026-07-31",
+      "grade": "ok",
+      "closed": false,
+      "job": "670153026"
+    },
+    {
+      "id": "97d11e1f-011e-462a-9870-db9fc423cee8-LHPyzDeQsNek3Dzj7AlgurDjs6E2-1",
+      "type": "Doubt / Distrust",
+      "cust": "I'd like to save you a whole bunch of work, but... I know you guys got to do what you got to do for the landlord as well, but it's like I've seen the videos, I've seen the pictures of the gauge of the refrigerant... I understand what the problem is.",
+      "answer": "Well, no, it's pushing cold air out without a doubt. So this one's working.",
+      "tech": "Benjamin Wyllie",
+      "date": "2026-07-31",
+      "grade": "poor",
+      "closed": false,
+      "job": "670259040"
+    },
+    {
+      "id": "47c834ce-db26-4c9f-aee9-457f57bab333-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2-1",
+      "type": "Doubt / Distrust",
+      "cust": "For the last two years, I've had you guys out here twice already, so you're number three. I have had the same problem all three years... you guys have not said or fixed it... I have a 7 degree split... It's cost me $1,000 every year.",
+      "answer": "Okay. Mind if I turn it down a bit and get it going?",
+      "tech": "Bradley Espinoza",
+      "date": "2026-07-31",
+      "grade": "poor",
+      "closed": false,
+      "job": "669624395"
+    },
+    {
+      "id": "28aa1fc2-c463-4cef-ae33-f66706ad96d8-g2M7csV6deOB5LCNP4trAUmVb3H2-1",
+      "type": "Stall / Think About It",
+      "cust": "Yeah, I think at this time I'll postpone the repairs, and yeah, I don't mind talking to somebody about, you know, what... I definitely like your company. I just have to think about what to do.",
+      "answer": "You can talk to him and just\u2014he can come out, run numbers, and just see what it is. I would hate to see you put in $1,000 even, and if... just the compressor goes out... you're talking about... $4,000, somewhere around there.",
+      "tech": "David Canales",
+      "date": "2026-07-31",
+      "grade": "great",
+      "closed": false
+    },
+    {
+      "id": "1df1f142-3495-44dc-8e6f-118683df094b-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
+      "type": "Price",
+      "cust": "So we're looking almost 12 grand for Band-Aids.",
+      "answer": "I'll get someone out here tomorrow morning-tomorrow afternoon to give you that information. And then if everything makes sense, I can't promise you anything, but we may be able to take care of you either install the same day or the following day just to get you guys back up and running.",
+      "tech": "Joe Mendoza",
+      "date": "2026-07-31",
+      "grade": "great",
+      "closed": false
     }
   ]
 }
