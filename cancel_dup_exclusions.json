@@ -382,6 +382,12 @@
   "669977724",
   "669980797",
   "670167154",
+  "670245455",
+  "670255436",
+  "670256214",
+  "670257119",
+  "670282552",
+  "670287212",
   "670513776"
  ],
  "keptBothCanceled": [
@@ -397,9 +403,9 @@
   "667846153",
   "670289936"
  ],
- "trueDupsTotal": 394,
- "excludedCount": 383,
+ "trueDupsTotal": 400,
+ "excludedCount": 389,
  "asOf": "2026-08-02",
  "rule": "Exclude a canceled Estimate/TGL ticket only if a duplicate TGL ticket exists at the same location within 21 days AND that partner job was not canceled. If both are canceled it still counts.",
- "note": "* 394 true duplicate TGL tickets identified in cancellations. 383 excluded here (duplicate of a job that was completed). 11 retained (both tickets canceled)."
+ "note": "* 400 true duplicate TGL tickets identified in cancellations. 389 excluded here (duplicate of a job that was completed). 11 retained (both tickets canceled)."
 }
