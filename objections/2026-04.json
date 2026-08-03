@@ -2015,17 +2015,6 @@
       "job": "640884989"
     },
     {
-      "id": "f873c51e-aad2-49e0-86b1-61e68028ab88-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
-      "type": "Price",
-      "cust": "What makes that so expensive?",
-      "answer": "It's a matter of me knowing how to install it. As far as rerouting that wire from the actual contactor to the motor start device itself... Replacing the wire because the actual wire that's burnt up, you can't see inside of that wire.",
-      "tech": "Cole Pantol",
-      "date": "2026-04-29",
-      "grade": "ok",
-      "closed": false,
-      "job": "637812826"
-    },
-    {
       "id": "49c15e0f-2cdf-404f-b56b-cdff3a8e564a-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
       "type": "Price",
       "cust": "It's not budget wise for me. But as far as importance of the things that are... would need to be replaced and. Or fixed whatever. Which would you think is the most important if it was you?",
@@ -2056,17 +2045,6 @@
       "date": "2026-04-29",
       "grade": "great",
       "closed": false
-    },
-    {
-      "id": "7996b82a-754b-439c-b00c-b793b58bd006-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
-      "type": "Price",
-      "cust": "I think what are you doing for $7,000?",
-      "answer": "It's that the coils are. It's a big part of the system. The coils, they're not cheap themselves. You have to replace all the refrigerant in the system and then they're very labor intensive... they're one of the vital components of your cooling system.",
-      "tech": "Dustin Romine",
-      "date": "2026-04-29",
-      "grade": "ok",
-      "closed": false,
-      "job": "640573615"
     },
     {
       "id": "3de53652-592a-458d-93c8-ba8a18c4a247-kBmcjj1ucbYoWgDqILgiXfkLNzP2-1",
@@ -2439,17 +2417,6 @@
       "grade": "great",
       "closed": false,
       "job": "632761804"
-    },
-    {
-      "id": "38dde303-9c81-4807-936e-43b7feb89bc7-kBmcjj1ucbYoWgDqILgiXfkLNzP2-1",
-      "type": "Price",
-      "cust": "So you don't know what a replacement cost is?",
-      "answer": "Yeah, I'm the repair tech. So our install team will just have to come out, measure the size of that unit... and then you'll be able to see.",
-      "tech": "Ting Cheung",
-      "date": "2026-04-08",
-      "grade": "great",
-      "closed": false,
-      "job": "634916549"
     },
     {
       "id": "addb0cac-be98-4b55-98b9-75ff1492a40e-ZLjkNBMk4fMJ8rE1KZTobEMfb893-1",
