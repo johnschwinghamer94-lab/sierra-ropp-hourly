@@ -1,8 +1,1 @@
-{
-  "recId": "fb754c4b-b4c3-476f-a431-d0cb18bb9fdc-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2",
-  "tech": "Bradley_Espinoza",
-  "date": "2026-08-02",
-  "jobNumber": "670579878",
-  "outcome": "unknown",
-  "tip": "FIX \u2014 Need deeper assessment and option building to move customer forward."
-}
+{"recId": "fb754c4b-b4c3-476f-a431-d0cb18bb9fdc-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2", "tech": "Bradley Espinoza", "jobNumber": "670579878", "dateCreated": "2026-08-02", "durationMin": 106, "bands": {"welcome": "Solid", "assessment": "Strong", "decision": "Moderate", "deliver": "Moderate"}, "critical": {"expectations": false, "questions": true, "options": false, "objections": false}, "outcome": "flipped", "tip": "WIN \u2014 By diagnosing both compressor failures with specific measurements and recommending his boss come out for the estimate, Bradley secured the appointment that turned this into a TGL."}

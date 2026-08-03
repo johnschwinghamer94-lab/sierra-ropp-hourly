@@ -1,23 +1,30 @@
-# Call Score Card
+# Scorecard: Joe Mendoza
 
-**Call:** ac31be8b-c95c-48a3-8907-b1842f780a2b-hUwt6xtja4T6o8jCUdsXJsPtmQX2
-**Tech:** Joe_Mendoza
+**Recording ID:** ac31be8b-c95c-48a3-8907-b1842f780a2b-hUwt6xtja4T6o8jCUdsXJsPtmQX2
+**Job Number:** 670585841
 **Date:** 2026-08-02
+**Duration:** 49 minutes
 
-## FSG Assessment
-- Welcome: Solid
-- Assessment: Solid  
-- Decision: Moderate
-- Deliver: Moderate
+## FSG Scoring
+
+| Step | Band |
+|------|------|
+| Welcome | Solid |
+| Assessment | Strong |
+| Decision | Solid |
+| Deliver | Moderate |
 
 ## Critical Actions
-- Expectations: No
-- Questions: Yes
-- Options: No
-- Objections: No
+
+| Action | Status |
+|--------|--------|
+| Expectations | ✓ Pass |
+| Questions | ✓ Pass |
+| Options | ✓ Pass |
+| Objections | ✓ Pass |
 
 ## Outcome
-Unknown (ticket pending or check TGL truth)
+**FLIPPED**
 
-## Coaching Note
-Need deeper engagement on options and objections handling.
+## Coaching Tip
+WIN — Joe's patient diagnosis of the original unit and confident recommendation to schedule a specialist visit ('we'll see you soon') overcame the customer's age-related concerns and secured the upgrade appointment.

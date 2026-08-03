@@ -1,23 +1,30 @@
-# Call Score Card
+# Scorecard: Brandon Moreno
 
-**Call:** 40ccf033-4ad0-4249-b848-34b6e2cc5a38-f4dx65lewNTPydNXjgypLVFAcbk1
-**Tech:** Brandon_Moreno
+**Recording ID:** 40ccf033-4ad0-4249-b848-34b6e2cc5a38-f4dx65lewNTPydNXjgypLVFAcbk1
+**Job Number:** 670547353
 **Date:** 2026-08-02
+**Duration:** 37 minutes
 
-## FSG Assessment
-- Welcome: Solid
-- Assessment: Solid  
-- Decision: Moderate
-- Deliver: Moderate
+## FSG Scoring
+
+| Step | Band |
+|------|------|
+| Welcome | Solid |
+| Assessment | Strong |
+| Decision | Solid |
+| Deliver | Moderate |
 
 ## Critical Actions
-- Expectations: No
-- Questions: Yes
-- Options: No
-- Objections: No
+
+| Action | Status |
+|--------|--------|
+| Expectations | ✓ Pass |
+| Questions | ✓ Pass |
+| Options | ✓ Pass |
+| Objections | ✗ Fail |
 
 ## Outcome
-Unknown (ticket pending or check TGL truth)
+**UNKNOWN**
 
-## Coaching Note
-Need deeper engagement on options and objections handling.
+## Coaching Tip
+FIX — The transcript ends mid-diagnosis without confirming the estimate appointment, but Brandon's approach of thorough inspection with clear no-approval policy and realistic expectations positioned him well to close this into a TGL.

@@ -1,23 +1,30 @@
-# Call Score Card
+# Scorecard: Joe Mendoza
 
-**Call:** f5f41a8b-fd5e-4333-b5c5-f5354747c8a4-hUwt6xtja4T6o8jCUdsXJsPtmQX2
-**Tech:** Joe_Mendoza
+**Recording ID:** f5f41a8b-fd5e-4333-b5c5-f5354747c8a4-hUwt6xtja4T6o8jCUdsXJsPtmQX2
+**Job Number:** 670584078
 **Date:** 2026-08-02
+**Duration:** 53 minutes
 
-## FSG Assessment
-- Welcome: Solid
-- Assessment: Solid  
-- Decision: Moderate
-- Deliver: Moderate
+## FSG Scoring
+
+| Step | Band |
+|------|------|
+| Welcome | Solid |
+| Assessment | Strong |
+| Decision | Solid |
+| Deliver | Moderate |
 
 ## Critical Actions
-- Expectations: No
-- Questions: Yes
-- Options: No
-- Objections: No
+
+| Action | Status |
+|--------|--------|
+| Expectations | ✓ Pass |
+| Questions | ✓ Pass |
+| Options | ✓ Pass |
+| Objections | ✓ Pass |
 
 ## Outcome
-Unknown (ticket pending or check TGL truth)
+**FLIPPED**
 
-## Coaching Note
-Need deeper engagement on options and objections handling.
+## Coaching Tip
+WIN — By presenting immediate repairs ($39 fee) alongside the larger replacement option, then securing agreement to send follow-up details tomorrow, Joe created confidence and a clear path to decision.

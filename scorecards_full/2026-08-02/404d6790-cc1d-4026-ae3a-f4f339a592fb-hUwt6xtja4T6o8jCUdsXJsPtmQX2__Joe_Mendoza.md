@@ -1,23 +1,30 @@
-# Call Score Card
+# Scorecard: Joe Mendoza
 
-**Call:** 404d6790-cc1d-4026-ae3a-f4f339a592fb-hUwt6xtja4T6o8jCUdsXJsPtmQX2
-**Tech:** Joe_Mendoza
+**Recording ID:** 404d6790-cc1d-4026-ae3a-f4f339a592fb-hUwt6xtja4T6o8jCUdsXJsPtmQX2
+**Job Number:** 670517832
 **Date:** 2026-08-02
+**Duration:** 25 minutes
 
-## FSG Assessment
-- Welcome: Solid
-- Assessment: Solid  
-- Decision: Moderate
-- Deliver: Moderate
+## FSG Scoring
+
+| Step | Band |
+|------|------|
+| Welcome | Solid |
+| Assessment | Strong |
+| Decision | Solid |
+| Deliver | Moderate |
 
 ## Critical Actions
-- Expectations: No
-- Questions: Yes
-- Options: No
-- Objections: No
+
+| Action | Status |
+|--------|--------|
+| Expectations | ✓ Pass |
+| Questions | ✓ Pass |
+| Options | ✓ Pass |
+| Objections | ✗ Fail |
 
 ## Outcome
-Unknown (ticket pending or check TGL truth)
+**FLIPPED**
 
-## Coaching Note
-Need deeper engagement on options and objections handling.
+## Coaching Tip
+WIN — Joe's empathetic acknowledgment that heat failures 'usually happen' when it's hot, combined with 'you guys will get a call,' transformed the emergency into a scheduled appointment and secured the TGL.

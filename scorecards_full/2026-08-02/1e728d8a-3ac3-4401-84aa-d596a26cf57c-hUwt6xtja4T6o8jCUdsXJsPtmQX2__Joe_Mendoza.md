@@ -1,23 +1,30 @@
-# Call Score Card
+# Scorecard: Joe Mendoza
 
-**Call:** 1e728d8a-3ac3-4401-84aa-d596a26cf57c-hUwt6xtja4T6o8jCUdsXJsPtmQX2
-**Tech:** Joe_Mendoza
+**Recording ID:** 1e728d8a-3ac3-4401-84aa-d596a26cf57c-hUwt6xtja4T6o8jCUdsXJsPtmQX2
+**Job Number:** 670545860
 **Date:** 2026-08-02
+**Duration:** 21 minutes
 
-## FSG Assessment
-- Welcome: Solid
-- Assessment: Solid  
-- Decision: Moderate
-- Deliver: Moderate
+## FSG Scoring
+
+| Step | Band |
+|------|------|
+| Welcome | Solid |
+| Assessment | Strong |
+| Decision | Solid |
+| Deliver | Moderate |
 
 ## Critical Actions
-- Expectations: No
-- Questions: Yes
-- Options: No
-- Objections: No
+
+| Action | Status |
+|--------|--------|
+| Expectations | ✓ Pass |
+| Questions | ✓ Pass |
+| Options | ✓ Pass |
+| Objections | ✗ Fail |
 
 ## Outcome
-Unknown (ticket pending or check TGL truth)
+**FLIPPED**
 
-## Coaching Note
-Need deeper engagement on options and objections handling.
+## Coaching Tip
+WIN — Joe's quick diagnosis of the refrigerant issue and confident 'See you guys Friday' close secured an immediate service appointment despite the customer's frustration from the heat emergency.

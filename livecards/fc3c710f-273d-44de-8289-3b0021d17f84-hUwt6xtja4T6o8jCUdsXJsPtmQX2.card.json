@@ -1,8 +1,1 @@
-{
-  "recId": "fc3c710f-273d-44de-8289-3b0021d17f84-hUwt6xtja4T6o8jCUdsXJsPtmQX2",
-  "tech": "Joe_Mendoza",
-  "date": "2026-08-02",
-  "jobNumber": "670548181",
-  "outcome": "unknown",
-  "tip": "FIX \u2014 Need deeper assessment and option building to move customer forward."
-}
+{"recId": "fc3c710f-273d-44de-8289-3b0021d17f84-hUwt6xtja4T6o8jCUdsXJsPtmQX2", "tech": "Joe Mendoza", "jobNumber": "670548181", "dateCreated": "2026-08-02", "durationMin": 37, "bands": {"welcome": "Solid", "assessment": "Moderate", "decision": "Weak", "deliver": "Weak"}, "critical": {"expectations": false, "questions": true, "options": false, "objections": false}, "outcome": "no-close", "tip": "FIX \u2014 Joe diagnosed a leak but then told the customer to 'talk on Monday' instead of clearly proposing next steps (repair or estimate), leaving the path forward ambiguous."}

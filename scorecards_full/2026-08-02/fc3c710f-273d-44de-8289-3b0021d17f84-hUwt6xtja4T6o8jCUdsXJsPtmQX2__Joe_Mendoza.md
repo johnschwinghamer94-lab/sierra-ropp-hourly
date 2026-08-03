@@ -1,23 +1,30 @@
-# Call Score Card
+# Scorecard: Joe Mendoza
 
-**Call:** fc3c710f-273d-44de-8289-3b0021d17f84-hUwt6xtja4T6o8jCUdsXJsPtmQX2
-**Tech:** Joe_Mendoza
+**Recording ID:** fc3c710f-273d-44de-8289-3b0021d17f84-hUwt6xtja4T6o8jCUdsXJsPtmQX2
+**Job Number:** 670548181
 **Date:** 2026-08-02
+**Duration:** 37 minutes
 
-## FSG Assessment
-- Welcome: Solid
-- Assessment: Solid  
-- Decision: Moderate
-- Deliver: Moderate
+## FSG Scoring
+
+| Step | Band |
+|------|------|
+| Welcome | Solid |
+| Assessment | Moderate |
+| Decision | Weak |
+| Deliver | Weak |
 
 ## Critical Actions
-- Expectations: No
-- Questions: Yes
-- Options: No
-- Objections: No
+
+| Action | Status |
+|--------|--------|
+| Expectations | ✗ Fail |
+| Questions | ✓ Pass |
+| Options | ✗ Fail |
+| Objections | ✗ Fail |
 
 ## Outcome
-Unknown (ticket pending or check TGL truth)
+**NO-CLOSE**
 
-## Coaching Note
-Need deeper engagement on options and objections handling.
+## Coaching Tip
+FIX — Joe diagnosed a leak but then told the customer to 'talk on Monday' instead of clearly proposing next steps (repair or estimate), leaving the path forward ambiguous.
