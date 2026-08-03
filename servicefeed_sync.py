@@ -878,6 +878,16 @@ def cloud_main():
                 log("cycle -> " + str(r))
             except Exception as ex:
                 log("cycle ERROR: " + repr(ex)[:300])
+                # stale-credential zombie guard (8/3): a session holding a revoked
+                # token fails every publish without hanging — the dead-man never
+                # fires. Bail after 10 straight failures; successor gets fresh secrets.
+                _errs = globals().setdefault("_consec_errs", [0])
+                _errs[0] += 1
+                if _errs[0] >= 10:
+                    log("10 consecutive cycle errors — exiting for a fresh session")
+                    os._exit(4)
+            else:
+                globals().setdefault("_consec_errs", [0])[0] = 0
         _beat["t"] = time.time()
         time.sleep(CYCLE_SECS)
 

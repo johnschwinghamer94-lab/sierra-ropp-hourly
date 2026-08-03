@@ -1195,6 +1195,14 @@ def cloud_main():
                 log("cycle -> " + str(r))
             except Exception as ex:
                 log("cycle ERROR: " + repr(ex)[:300])
+                # stale-credential zombie guard (8/3) — see servicefeed_sync
+                _errs = globals().setdefault("_consec_errs", [0])
+                _errs[0] += 1
+                if _errs[0] >= 10:
+                    log("10 consecutive cycle errors — exiting for a fresh session")
+                    os._exit(4)
+            else:
+                globals().setdefault("_consec_errs", [0])[0] = 0
             keep_hourly_fresh()
         _beat["t"] = time.time()
         time.sleep(CYCLE_SECS)
