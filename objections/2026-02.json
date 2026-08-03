@@ -779,32 +779,10 @@
       "job": "628376280"
     },
     {
-      "id": "12b130e6-2cf0-4563-ae9c-b2788717a373-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
-      "type": "Other",
-      "cust": "Are you serious? Because it's gonna be like 60 degrees... Is there like a waiver I could sign to not do that?",
-      "answer": "There's a waiver. I mean, you signed it last time we came out. Yeah, I can have you sign the waiver.",
-      "tech": "Cole Pantol",
-      "date": "2026-02-07",
-      "grade": "ok",
-      "closed": false,
-      "job": "628376280"
-    },
-    {
       "id": "2d09c5f4-2e31-4a9e-9450-bd3aee674e64-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
       "type": "Stall / Think About It",
       "cust": "We'll probably take a day or two and just kind of weigh our options and figure out what to do.",
       "answer": "I'm going send you guys this and I'm going to send you guys the pictures over by email Anyway. So we do everything digitally. So pictures, email, invoices, all that gets sent over by email.",
-      "tech": "Francisco Valencia",
-      "date": "2026-02-07",
-      "grade": "ok",
-      "closed": false,
-      "job": "627415622"
-    },
-    {
-      "id": "2d09c5f4-2e31-4a9e-9450-bd3aee674e64-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-2",
-      "type": "Doubt / Distrust",
-      "cust": "Do you think it's stepping over the... Like do you think it's not?",
-      "answer": "I, I personally wouldn't invest into it when it breaks. Just cuz at that point point you're just going to be dumping money down the drain.",
       "tech": "Francisco Valencia",
       "date": "2026-02-07",
       "grade": "ok",
@@ -961,17 +939,6 @@
       "grade": "ok",
       "closed": false,
       "job": "627964191"
-    },
-    {
-      "id": "e34656b0-d622-4cb5-a33e-a987c228d61c-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
-      "type": "Stall / Think About It",
-      "cust": "And I told him I'll decline that. I'm not there yet. I don't even want to talk about that yet. I know it's expensive... I'm just not ready to commit to that yet.",
-      "answer": "",
-      "tech": "Andrew Trujillo",
-      "date": "2026-02-09",
-      "grade": "poor",
-      "closed": false,
-      "job": "601814075"
     },
     {
       "id": "e34656b0-d622-4cb5-a33e-a987c228d61c-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-2",
@@ -1529,17 +1496,6 @@
       "tech": "Alex Yakovchuk",
       "date": "2026-02-15",
       "grade": "ok",
-      "closed": false,
-      "job": "629778668"
-    },
-    {
-      "id": "5a06b7b2-453b-41d2-933b-c4cb7f7c8550-QSgW0Qp6bKP82NeJl9A5ckCGhts1-2",
-      "type": "Price",
-      "cust": "Average. It's only $20,000. You want to do it now? Oh, yeah, sure. How much does a new unit cost?",
-      "answer": "So that's not my department. We give you guys options for repairs first so that way you guys can see what that looks like. The last option here, my equipment specialists come out, they have to size the unit up, and they can go over different options with you guys... it doesn't cost you anything to get that information",
-      "tech": "Alex Yakovchuk",
-      "date": "2026-02-15",
-      "grade": "great",
       "closed": false,
       "job": "629778668"
     },

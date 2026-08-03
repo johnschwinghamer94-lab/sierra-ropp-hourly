@@ -24,17 +24,6 @@
       "job": "623901517"
     },
     {
-      "id": "96ce588d-4628-4c07-999b-f9b0acaef8ce-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
-      "type": "Doubt / Distrust",
-      "cust": "I mean, so you either replace it or you wait till it dies?",
-      "answer": "Those are some of the options, yes... What I'll do is, like, the end, I'll do a whole report for you guys, kind of go over pricing with you as well. If anything makes sense... If not, we wait.",
-      "tech": "Cole Pantol",
-      "date": "2026-01-02",
-      "grade": "ok",
-      "closed": false,
-      "job": "623243498"
-    },
-    {
       "id": "a27daa17-e0d9-4125-9930-f4662760bb94-kBmcjj1ucbYoWgDqILgiXfkLNzP2-1",
       "type": "Price",
       "cust": "He said, I didn't expect it to be as much as it was, you know, basically about $4,000. Just to put a band aid on this thing right now.",
@@ -815,17 +804,6 @@
       "tech": "Francisco Valencia",
       "date": "2026-01-12",
       "grade": "ok",
-      "closed": false,
-      "job": "625123213"
-    },
-    {
-      "id": "a891720e-8511-4c87-83b7-725c3534dd7b-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-2",
-      "type": "Stall / Think About It",
-      "cust": "Just bought a house.",
-      "answer": "Yeah, no, I get you.",
-      "tech": "Francisco Valencia",
-      "date": "2026-01-12",
-      "grade": "poor",
       "closed": false,
       "job": "625123213"
     },
@@ -2152,17 +2130,6 @@
       "job": "623841819"
     },
     {
-      "id": "ad21ca57-320f-4579-ad74-22be0c99258a-ZLjkNBMk4fMJ8rE1KZTobEMfb893-1",
-      "type": "Price",
-      "cust": "Compassion because of what I went through.",
-      "answer": "No, I... I feel you. I promise you. I really do. And then that's some real crazy crap.",
-      "tech": "AJ-Alejandro Ruiz Padilla",
-      "date": "2026-01-20",
-      "grade": "poor",
-      "closed": false,
-      "job": "626346759"
-    },
-    {
       "id": "ad21ca57-320f-4579-ad74-22be0c99258a-ZLjkNBMk4fMJ8rE1KZTobEMfb893-2",
       "type": "Price",
       "cust": "Okay. So obviously that new way is a lot of money.",
@@ -2236,17 +2203,6 @@
       "grade": "great",
       "closed": false,
       "job": "626340824"
-    },
-    {
-      "id": "0baf6b13-955a-473a-b4b2-a0027473424d-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
-      "type": "Stall / Think About It",
-      "cust": "Today will be hard for me. I have a big event that I'm working on right now, and I'm flying out tomorrow for it, so it's probably just better if we wait.",
-      "answer": "Can go, what, in March? What day would be best to give you a call?",
-      "tech": "Cole Pantol",
-      "date": "2026-01-20",
-      "grade": "ok",
-      "closed": false,
-      "job": "626229007"
     },
     {
       "id": "4714be84-8807-475e-a984-f6db23f1a008-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",

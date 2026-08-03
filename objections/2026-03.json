@@ -2769,17 +2769,6 @@
       "job": "635170027"
     },
     {
-      "id": "044ae0cb-86cd-49cb-989c-6dcb6f656b7c-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-3",
-      "type": "Price",
-      "cust": "What's crucial? What happens if I just tell you I can't do it?",
-      "answer": "I mean that's your decision.",
-      "tech": "Andrew Trujillo",
-      "date": "2026-03-24",
-      "grade": "poor",
-      "closed": false,
-      "job": "635170027"
-    },
-    {
       "id": "98dc17e3-012f-4391-8643-fa433b0b745e-LHPyzDeQsNek3Dzj7AlgurDjs6E2-1",
       "type": "Stall / Think About It",
       "cust": "I get it, I get it, I get it. Yeah, I just don't have time for it... I gotta go through my options in my brain.",
@@ -2797,17 +2786,6 @@
       "tech": "Cole Pantol",
       "date": "2026-03-24",
       "grade": "great",
-      "closed": false,
-      "job": "636246771"
-    },
-    {
-      "id": "0d46dd9c-c5db-4258-9b46-4cbda1dc9ec0-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
-      "type": "Price",
-      "cust": "Okay, give me the price for this one so I can get it figured out. I think I'm imagining that replacing air conditioning units is thousands and thousands and thousands.",
-      "answer": "So I do specialize just in repairs. I don't know exactly because it's based off the home's... size units. But what I can do is I can just get the pricing for this.",
-      "tech": "Cole Pantol",
-      "date": "2026-03-24",
-      "grade": "ok",
       "closed": false,
       "job": "636246771"
     },
@@ -2907,17 +2885,6 @@
       "grade": "ok",
       "closed": false,
       "job": "635129701"
-    },
-    {
-      "id": "f901b478-fbf1-440e-8c59-f56e02b32c19-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
-      "type": "Price",
-      "cust": "Oh, it just depends on the price. Can I afford it? Can I do it?",
-      "answer": "Okay. Yeah.",
-      "tech": "Joe Mendoza",
-      "date": "2026-03-24",
-      "grade": "poor",
-      "closed": false,
-      "job": "636063984"
     },
     {
       "id": "8776d2fc-f3ff-4ed7-ad1f-64947caea46f-F8ZeOm4TrkOymEC2UFNijyrobEp2-1",
