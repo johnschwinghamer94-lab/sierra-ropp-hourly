@@ -57,17 +57,6 @@
       "job": "638534394"
     },
     {
-      "id": "590499c4-a4b6-4fdc-80e6-080c24b97008-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
-      "type": "Stall / Think About It",
-      "cust": "No.",
-      "answer": "",
-      "tech": "Joe Mendoza",
-      "date": "2026-05-01",
-      "grade": "poor",
-      "closed": false,
-      "job": "640688956"
-    },
-    {
       "id": "59c6d3fa-4a57-4e66-8666-d85faeb069b1-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
       "type": "Stall / Think About It",
       "cust": "Now, as far as the representative coming out, I really don't want to get into that at this particular time. We're going to go with what we've got through this summer and we're going to see what develops.",
@@ -1779,17 +1768,6 @@
       "job": "634132759"
     },
     {
-      "id": "d422f996-a4b5-41ff-a713-9890c52413e4-LHPyzDeQsNek3Dzj7AlgurDjs6E2-1",
-      "type": "Doubt / Distrust",
-      "cust": "I mean, I don't know now. Not too concerned. I mean, it's a little bit off. Yeah, yeah, yeah.",
-      "answer": "Okay, well, it doesn't matter if it's a little. It could be one off and still cause an issue.",
-      "tech": "Benjamin Wyllie",
-      "date": "2026-05-08",
-      "grade": "ok",
-      "closed": false,
-      "job": "641110305"
-    },
-    {
       "id": "dda60436-d782-4598-8e79-b332bf3c9682-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
       "type": "Stall / Think About It",
       "cust": "So we realized that we can't do that immediately... So we're gonna call in a couple of days to get that done, I think.",
@@ -3016,17 +2994,6 @@
       "tech": "Francisco Arreola Jr.",
       "date": "2026-05-16",
       "grade": "ok",
-      "closed": false,
-      "job": "635777153"
-    },
-    {
-      "id": "0b88d345-a1f4-4d4c-b8e2-61544c23540e-XYpMBXpv6TVg9okInQemgsAIw1B3-2",
-      "type": "Price",
-      "cust": "Oh, me. A salesman would have to come out. I mean just send me a quote.",
-      "answer": "I got it.",
-      "tech": "Francisco Arreola Jr.",
-      "date": "2026-05-16",
-      "grade": "poor",
       "closed": false,
       "job": "635777153"
     },
@@ -4557,16 +4524,6 @@
       "grade": "ok",
       "closed": false,
       "job": "643019488"
-    },
-    {
-      "id": "0c3aa8e0-33e3-402c-a906-d7d0546c11dc-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
-      "type": "Doubt / Distrust",
-      "cust": "But that was already taken care of before. That hesitation when it came on.",
-      "answer": "Rating should be higher than anything than 112. Right now I'm reading 117. This is telling us that compressor is intaking way too much power when it turns on, and that's going to cause damage for it.",
-      "tech": "Andrew Trujillo",
-      "date": "2026-05-26",
-      "grade": "ok",
-      "closed": false
     },
     {
       "id": "10e798e2-a96f-4d06-9b17-74e2605df828-XYpMBXpv6TVg9okInQemgsAIw1B3-1",
