@@ -1,0 +1,1 @@
+Incomplete call - ends during initial inspection before options presented or close attempted
