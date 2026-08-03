@@ -1,34 +1,110 @@
-# Brandon Moreno - LANZA SHAWN-MARIE, Job # 670666878
+# SILO Scorecard: Brandon Moreno - Job #670666878
+
 **Date:** 2026-08-03 | **Duration:** 52 min | **RecId:** 2909ad8a-fc1f-4f16-97cd-5d7434c6d33d-f4dx65lewNTPydNXjgypLVFAcbk1
 
 ## Outcome
-**FLIPPED** — Scheduled specialist appointment for replacement estimates.
+**FLIPPED** — Scheduled specialist appointment for free multi-system assessment and replacement estimates.
 
-## FSG Bands
+---
 
-### Welcome (Strong)
-Brandon greets professionally with shoe covers, identifies himself, and immediately addresses the customer's living situation (tile flooring). He demonstrates courtesy and builds rapport—asking about the house history while walking through ("You've seen the area change up like crazy over the years, huh?"). He establishes expertise by mentioning historical records: "Yeah, I got the notes on this house from 2001. So about the year of the house." This grounds his credibility. He sets clear expectations for the path forward: either a quick fix or the equipment specialist for estimates. **Supporting moments:** "I'm gonna start outside first...Best case scenario, if it's a quick fix, I'll just check in with you. And worst case, I'll just take a look at everything so that when they come out, they're able to kind of give you an assessment."
+## FSG BANDS
 
-### Assessment (Solid)
-Brandon asks critical discovery questions: time constraints ("Are you on like any type of time constraints for today?"), maintenance history ("Has it gotten fixed before?"), system age and operation ("Where do you usually keep it set?"), and distribution concerns ("Is there any parts of the home like warmer, colder or are you pretty even?"). He performs a thorough inspection: checks thermostats, examines the attic, verifies the outside unit. He diagnoses the core issue: the motor has failed and the system is overheating. **Supporting moment:** "So when's the last time you had anyone? Take a look...had somebody up a few days ago...they made it come back and code again. It failed just a few weeks later."
+### Welcome: **STRONG**
 
-### Decision (Solid)
-Brandon identifies the problem clearly—"The system failed, so it's not able to cool itself down"—and explains why replacement is necessary: "it's going to nickel and dime you eventually, and they stop making a lot of parts for this type of system." He presents two options: attempt a quick repair or schedule the specialist for a full replacement estimate. When the customer expresses concern about parts costs, he handles it with logic: "I understand it's 25 years old. Let me just get some pictures...we'll figure out a good time for you as far as estimates." The customer appears to have already decided on replacement, and Brandon affirms this path is sensible given the system age and prior repair history.
+Brandon greets professionally with shoe covers, identifies himself clearly ("I'm Brandon with Sierra"), and addresses the customer's living situation without hesitation (tile flooring means no carpet covers needed). Excellent rapport-building and courtesy throughout. He establishes expertise immediately by referencing Sierra's historical records: "Yeah, I got the notes on this house from 2001. So about the year of the house... Looks like we originally did the installations here." This grounds his credibility and sets a strong foundation.
 
-### Deliver (Solid)
-Brandon explains technical details effectively—"That motor that pulls over here. The system failed, so it's not able to cool itself down...There's a good chance the actual, like, heart of the system or like its engine, is it going to be able to pump on or reliably cool down." This is solid "Be A Nerd" behavior, explaining the compressor/motor failure in accessible terms. He also explains the valve inspection ("Let me get some pictures of the attic"). However, the visible transcript does not show a request for a 5-star review before closing, which is a gap.
+**Expectations set clearly:** "Best case scenario, if it's a quick fix, I'll just check in with you. And worst case, I'll just set you up with our equipment guy...different replacement options available."
 
-## Critical Actions
-- **Expectations:** ✓ Clear two-path expectation set: "worst case, I'll just set you up with our equipment guy. That way he could go over with you another day on your time so you can look at, you know, different replacement options available."
-- **Questions:** ✓ Solid discovery: time constraints, prior service history, system age, thermostat settings, room temperature variance.
-- **Options:** ✓ Two paths presented: quick fix attempt vs. specialist consultation.
-- **Objections:** ✓ Customer's concern about repair costs handled with empathy and logic—Brandon doesn't fold but explains why replacement makes sense at this age.
+**Supporting Moments:**
+- Professional opener with permission request and transparency about shoe covers
+- "I read some of the notes downstairs" — demonstrated prep work
+- Friendly rapport: asked about area changes, engaged with pets naturally
+- Clear dual-path framing for the appointment
 
-## Coaching Tip
-**WIN — Confidently set up the specialist follow-up by proposing "I'll just set you up with our equipment guy" after clearly explaining the motor failure and why replacement made sense, converting a repair call into an upgrade consultation path.** The customer said "That's awesome" to the specialist plan, and you earned that by connecting the diagnosis (age, failed parts) to the recommendation (specialist estimates). This is the moment to repeat on every call where the system is beyond economical repair.
+---
 
-## Notes
-- Transcript appears to truncate around line 1391; however, sufficient content visible to score.
-- System is 25 years old, previously repaired ($129 service ~10 years ago).
-- Strong rapport-building around pets (Moonbeam and Boogie) kept conversation warm and customer engaged.
-- Customer time-constrained (12:30 departure), which Brandon accommodated well in his plan.
+### Assessment: **STRONG**
+
+Brandon conducts thorough discovery with seven key questions spanning timeline, history, constraints, and system state:
+
+1. **"Has it gotten fixed before?"** — repair history → prior $129 repair
+2. **"Do you know when it went out on you last night?"** — timeline → 7pm failure
+3. **"Are you on like any type of time constraints for today?"** — customer need → 12:30 departure
+4. **"Where do you usually keep it set?"** — thermostat → 78°F, locked
+5. **"Is it turned on right now?"** — operating status → turned off to avoid hot air
+6. **"Is there any parts of the home like warmer, colder or are you pretty even?"** — comfort distribution → 2 rooms in sun, upstairs and kitchen warmer
+7. **"When's the last time you had anyone take a look?"** — service history → few days ago, failed again
+
+Brandon also maintains good check-ins during the physical inspection: "I'm going to start with the outside first...I'll keep in mind of the time with you." Identifies that upstairs unit is holding cool and focuses diagnostic effort on the failing downstairs motor.
+
+**Gap:** None significant; very thorough assessment phase.
+
+---
+
+### Decision: **SOLID**
+
+**Problem Identification (Reconnection):**
+- "The system failed, so it's not able to cool itself down. Outside unit can't cool itself down. It's not able to cool the home down."
+- Technical depth: "That motor... There's a good chance the actual, like, heart of the system or like its engine, is it going to be able to pump on or reliably cool down."
+
+**Objection Handling (Empathy):**
+- Customer concern: "If I replace that, I'm going to replace the whole unit... not parts of it."
+- Brandon validates: "Yeah, it's going to nickel and dime you eventually, and they stop making a lot of parts for this type of system."
+- Reassures and reasons: "I understand it's 25 years old."
+
+**Options Presented:**
+- Path A: Quick fix (if motor-only replacement viable)
+- Path B: Specialist appointment for full assessment and replacement options
+- Defers pricing/package details to specialist (correct per SILO protocol)
+
+**Outcome of Decision Phase:**
+- Customer accepted specialist appointment: "Sounds great"
+- Brandon will take pictures and document findings for specialist
+
+**Gap:** No explicit Option A vs. Option B pricing or replacement packages shown (correctly deferred to specialist, though mentioning "different replacement options available" sets stage for multi-option presentation).
+
+---
+
+### Deliver: **SOLID**
+
+**Technical Explanation (Be A Nerd):**
+- Clear motor failure narrative: "That motor that pulls over here. The system failed, so it's not able to cool itself down."
+- Explained compressor/cooling dynamics in customer-friendly language
+- Mentioned documentation: "Let me just get some pictures... I'm still going to write out as far as like, what it looks like as far as repairing it. At least you have those costs."
+
+**Handoff to Specialist:**
+- "Worst case, I'll just take a look at everything so that when they come out, they're able to kind of give you an assessment, and then it's no cost. They'll go ahead, get you estimates for the one system and the two while they're already here."
+- Clear logistics: "We'll schedule out with your time, like, whatever works, availability wise."
+
+**Gap:** No visible 5-star review request in transcript. Transcript truncates at line 1391 mid-thought, so closing sequence may be incomplete.
+
+---
+
+## CRITICAL ACTIONS
+
+| Action | Pass/Fail | Evidence |
+|--------|-----------|----------|
+| **Expectations** | ✓ TRUE | "Best case scenario...quick fix... Worst case...equipment guy...different replacement options available" |
+| **Questions** | ✓ TRUE | 7 discovery questions spanning timeline, history, constraints, system state, comfort, service history |
+| **Options** | ✓ TRUE | Two paths: quick fix attempt vs. specialist consultation with free estimate |
+| **Objections** | ✓ TRUE | Handled nickel-and-diming concern: "Yeah, it's going to nickel and dime you eventually" + explained parts scarcity for 25-year-old systems |
+
+---
+
+## COACHING TIP
+
+**WIN** — You executed a textbook motor-failure diagnosis to specialist-appointment flip by clearly explaining why a 25-year repair would fail, validating the customer's cost concern ("it's going to nickel and dime you"), and then proposing the specialist without hesitation. The customer's "Sounds great" response proved you built enough trust to earn the deferral. Repeat this move every time a 20+ year system has a failed compressor: diagnose confidently, acknowledge the age-and-parts problem, then offer the specialist path as the smart financial play.
+
+---
+
+## TRANSCRIPT NOTES
+
+- **Duration:** Call shows 52 min in header; transcript truncates at line 1391 ("It's it."), suggesting incomplete recording or transcription cutoff. Sufficient content exists to score all FSG bands.
+- **Speaker Labels:** Some speaker transitions appear mislabeled in the raw transcript (e.g., Speaker 1 says "I'm the repair tech"), but customer identity is clear from content flow.
+- **Customer Context (private):** 25-year homeowner, two cats (Moonbeam, Boogie), time-constrained (12:30 departure), system is original 2001 installation, prior $129 repair, upstairs unit still functional.
+
+---
+
+## SUMMARY ASSESSMENT
+
+Brandon converted a repair call into a successful specialist appointment (flipped outcome) through strong rapport, thorough diagnosis, and clear explanation of the economic logic behind replacement. All four critical actions were present. Minor gap: no audible 5-star review ask (transcript incomplete). Overall performance: high-quality diagnostic and transition call.

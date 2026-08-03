@@ -8,35 +8,45 @@
 ## FSG Bands
 
 **Welcome: Solid**  
-David greets Victoria warmly ("Nice to meet you") and shows empathy ("So what seems to be going on?"). Sets expectations by outlining the diagnostic approach: filter check, then full system evaluation once ice melts.
+David greets the customer warmly and shows empathy throughout the introduction. He clearly sets expectations by outlining the diagnostic approach: confirm filter history, explain the icing problem, and conduct a full system evaluation once the unit thaws. This frames the interaction as methodical and professional.
 
 **Assessment: Strong**  
-Asks focused discovery questions:
-- "When's the last time you replaced your filters?" (discovers "never")
-- Diagnoses the problem systematically: explains icing causes (air flow issues, refrigerant leak, fan motor issues)
-- Communicates clearly about why he must wait for ice to melt before full diagnosis
+David executes focused discovery questioning, starting with the critical filter maintenance question ("When's the last time you replaced your filters?"). He systematically diagnoses the problem space by explaining the three main causes of icing (air flow issues, refrigerant leaks, fan motor failure). He communicates clearly about the thaw timeline and why a full diagnosis requires the unit to be operational.
 
 **Decision: Solid**  
-Explains options implicitly: either check what he can now while waiting, or wait for complete thaw. No pricing or close opportunity in this diagnostic phase. Sets expectations that he'll need customer approval before proceeding with further work.
+While this is a diagnostic-only call with no close opportunity, David explains his diagnostic options clearly: what he can check while the ice melts versus what requires a complete thaw. He sets the expectation that further work will require discussion before proceeding. For a diagnostic interaction, this level of clarity about next steps and customer involvement is appropriate.
 
 **Deliver: Moderate**  
-Limited opportunity since this is mid-diagnostic. Does show technical knowledge ("refrigerant," "fan motor," "system eval") but the call cuts off before he can explain findings or ask for the 5-star review.
+Limited opportunity since the call is mid-diagnostic. David demonstrates technical knowledge by naming specific failure modes (refrigerant, fan motor, airflow) and system diagnostic tools (gauges). However, the call cuts off before he can fully explain his findings, educate the customer on preventive measures, or ask for the 5-star review.
 
 ## Critical Actions
 
-- **Expectations:** ✓ True — Sets clear expectation that he'll wait for ice to melt and do a full evaluation
-- **Questions:** ✓ True — Asks about filter history and understands the immediate problem
-- **Options:** ✗ False — No options presented (diagnostic only, no close opportunity)
-- **Objections:** N/A — No objections to handle in a diagnostic call
+- **Expectations:** ✓ True — Sets clear expectation about thaw timeline and full evaluation process
+- **Questions:** ✓ True — Asks the key discovery question about filter replacement history
+- **Options:** ✗ False — No options presented (diagnostic phase, not sales)
+- **Objections:** ✗ False — No objections to handle in this diagnostic call
 
 ## Outcome
 
-**Unknown** — Call continues off-transcript. No job was booked, but this is a diagnostic-only call structure.
+**Unknown** — No TGL or appointment booked in the transcript. The call continues off-transcript; ground truth files for 2026-08-03 do not show a TGL entry.
 
 ## Coaching Tip
 
-FIX — While the diagnosis is methodical, the filter discovery ("never") was a missed teaching moment. David could have built more value by explaining how filter maintenance prevents exactly this icing problem, setting up an upsell or preventive-visit conversation. Example: "This is why regular filter changes are so important — they prevent exactly what we're seeing here today."
+FIX — When the customer revealed never replacing filters, David missed the opportunity to educate on how maintenance prevents the icing they're experiencing, which would have softened upcoming repair costs.
 
 ## Detailed Notes
 
-David handles the technical side well: he understands the icing causes and knows the system needs to thaw before full diagnosis. His communication is clear and reassuring to Victoria. However, he missed the opportunity to educate the customer on preventive maintenance as a value-add, which could have softened the blow of upcoming repair costs or positioned a maintenance plan as a future touchpoint.
+**Strengths:**
+- Clear technical diagnosis and explanation of root causes
+- Methodical approach to problem-solving (wait for thaw, then test)
+- Professional, reassuring communication that sets customer confidence
+
+**Missed Teaching Moment:**
+When the customer disclosed "never" replacing filters, David could have pivoted to a brief preventive maintenance education: "This is exactly why regular filter maintenance is so important—it prevents the icing problem you're seeing right now. When we finish the diagnosis, we should talk about a maintenance plan to avoid this in the future." This move would have:
+1. Built value by connecting maintenance to the current problem
+2. Positioned a future touchpoint (maintenance visits/plans)
+3. Softened the incoming repair estimate conversation
+4. Demonstrated consultative expertise, not just technical fix-it
+
+**What Should Have Happened:**
+The filter discovery was the setup for a reconnecting FSG move—turning maintenance compliance into a customer education moment and future business opportunity. David's diagnostic skills are strong, but this call needed a brief value-building pivot to transition from "here's what's wrong" to "here's how to prevent it next time."

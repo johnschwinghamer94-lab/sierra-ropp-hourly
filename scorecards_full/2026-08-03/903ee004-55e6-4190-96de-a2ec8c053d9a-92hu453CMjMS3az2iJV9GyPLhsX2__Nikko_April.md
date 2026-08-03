@@ -3,7 +3,7 @@
 **Date:** 2026-08-03  
 **Duration:** 69 min  
 **RecId:** 903ee004-55e6-4190-96de-a2ec8c053d9a-92hu453CMjMS3az2iJV9GyPLhsX2  
-**Outcome:** Flipped (estimate committed)
+**Outcome:** No-Close (soft interest, no commitment)
 
 ---
 
@@ -29,7 +29,7 @@
 
 **Gap:** Some assessment blended into technical education on MERV ratings; could have firmed up the pain point ("How long has this temperature difference been frustrating you?") before jumping to solutions.
 
-### Decision: Strong on wins
+### Decision: Solid
 **Evidence:** Nikko presented THREE distinct solutions with honest cost-benefit reasoning, then backed them with technical depth. This gave the customer real agency and moved them from stuck ("we need a permanent fix") to hopeful ("let's get an estimate").
 
 **Options presented:**
@@ -72,14 +72,16 @@
 
 ## Outcome Analysis
 
-**Trigger:** Customer agreed to request an estimate for zoning or damper work before summer heat peak.
+**What was said:** Customer expressed soft, non-committal interest in getting an estimate.
 - "Perhaps we'll ask at some point for you guys to come and give us an estimate."
 - "Before it gets too hot."
 - Nikko: "Yeah. Yeah, we could do that."
 
-**Classification:** FLIPPED — Commitment to Option C (estimate/Comfort Advisor visit)
+**Classification:** NO-CLOSE — No appointment scheduled, no callback committed, no contact info secured
 
-**TGL Truth Status:** tgl_truth files for 2026-08-03 and 2026-08-04 not yet populated (ticket pending). Per spec, call is marked "flipped" pending ServiceTitan confirmation.
+**TGL Truth Status:** No TGL entry exists in tgl_truth files for 2026-08-03 or 2026-08-04. Job 670597358 not found in any historical tgl_truth file. No ServiceTitan confirmation of estimate appointment creation.
+
+**Why This Matters:** The customer had clear needs (comfort issue spanning 5 years, electrical safety concern, system aging), was highly engaged throughout the 69-minute call, and expressed timeline pressure ("before it gets too hot"). At the moment of interest, the tech had the opportunity to secure a committed appointment but accepted a vague "perhaps someday" response instead.
 
 ---
 
@@ -95,7 +97,7 @@
 
 ## Coaching Tip
 
-**WIN — You presented three concrete solutions (room sensor, damper, zoning) with honest cost reasoning, then backed it with technical depth on filters and electrical safety. Customer went from "we need a permanent fix" to "let's get an estimate" because you gave them real choices instead of one expensive path.**
+**FIX — When customer said "perhaps we'll ask at some point for you guys to come and give us an estimate...before it gets too hot," that was the close moment. They had identified the problem (5 years of temperature struggle), timeline pressure (summer heat coming), and you'd already built trust and presented solutions. The move: "Great—let's lock that in now while you're thinking about it. I can have my office send you estimate options tomorrow, or we can schedule it right here. What works for your schedule?" Don't let soft interest slip into the indefinite future—commit it to a calendar date or callback before you leave.**
 
 ---
 

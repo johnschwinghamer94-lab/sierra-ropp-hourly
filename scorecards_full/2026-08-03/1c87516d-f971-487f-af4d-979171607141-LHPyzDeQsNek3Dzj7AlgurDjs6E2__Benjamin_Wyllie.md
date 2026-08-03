@@ -43,7 +43,7 @@
 - ✅ **Expectations Set:** Yes — "Show me where thermostats are, filters, attic access, outside unit. Going to do thorough evaluation...write up full report...Mandy can decide."
 - ✅ **Questions Asked:** Yes — Timing, history, service record, ownership timeline.
 - ❌ **Options Presented:** No — Ben stopped at diagnosis without moving to solution.
-- ✅ **Objections Handled:** Yes (minor) — Customer asks "Is it for sure 89?" Ben clarifies: "It's for sure $89. It wouldn't go towards anything else."
+- ❌ **Objections Handled:** No — Price clarification question ("Is it for sure 89?") is not an objection; customer accepted terms without resistance.
 
 ## Outcome & Coaching
 **Outcome:** no-close  

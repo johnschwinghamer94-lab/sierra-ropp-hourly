@@ -1,17 +1,1 @@
-{
-  "recId": "95b95737-8cca-48ee-9afc-6bbf1cf2dfff-cqS1z9EkBaR2xDrHTJjJwYSZMvE2",
-  "tech": "Cole Pantol",
-  "date": "2026-08-03",
-  "jobNumber": "670683252",
-  "durationMin": 7,
-  "outcome": "unknown",
-  "welcome": "Solid",
-  "assessment": "Solid",
-  "decision": "Moderate",
-  "deliver": "Weak",
-  "expectations": true,
-  "questions": true,
-  "options": false,
-  "objections": false,
-  "tip": "FIX — When the customer reveals urgency (tenant moving in), acknowledge the pressure with empathy and ask a follow-up question about timeline to build options that address their real deadline, not just the diagnostic plan."
-}
+{"recId": "95b95737-8cca-48ee-9afc-6bbf1cf2dfff-cqS1z9EkBaR2xDrHTJjJwYSZMvE2", "tech": "Cole Pantol", "jobNumber": "670683252", "dateCreated": "2026-08-03", "durationMin": 7, "bands": {"welcome": "Solid", "assessment": "Solid", "decision": "Moderate", "deliver": "Weak"}, "critical": {"expectations": true, "questions": true, "options": false, "objections": false}, "outcome": "unknown", "tip": "FIX — When customer revealed deadline urgency (tenant moving in), Cole should have asked a follow-up question about required timeline to build options addressing the real priority, not just schedule a standard diagnostic."}
