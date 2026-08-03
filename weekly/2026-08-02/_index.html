@@ -1,0 +1,130 @@
+<title>SILO Weekly Rollup 2026-07-27 … 2026-08-02 — NOT GENERATED</title>
+<style>
+body{background:#0d1428;color:#e8edfb;font:15px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+margin:0;padding:40px 20px}
+.wrap{max-width:900px;margin:0 auto}
+h1,h2,h3{color:#f5c518;line-height:1.25}
+h1{font-size:26px;margin:0 0 6px} h2{font-size:19px;margin:34px 0 10px;border-bottom:1px solid #24304f;padding-bottom:6px}
+h3{font-size:16px;margin:22px 0 8px}
+.sub{color:#9fb0d4;margin:0 0 24px;font-size:14px}
+.alert{background:#2a1520;border:1px solid #f87171;border-left:4px solid #f87171;border-radius:6px;padding:16px 20px;margin:22px 0}
+.alert b{color:#f87171}
+.fix{background:#101c30;border:1px solid #2c3d63;border-left:4px solid #4ade80;border-radius:6px;padding:16px 20px;margin:22px 0}
+.fix b{color:#4ade80}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:14px}
+th,td{border:1px solid #24304f;padding:7px 10px;text-align:left}
+th{background:#16203a;color:#f5c518;font-weight:600}
+td.note{color:#9fb0d4;font-size:13px}
+code{background:#16203a;padding:1px 6px;border-radius:4px;font-size:13px;color:#cfe0ff}
+pre{background:#0a1120;border:1px solid #24304f;border-radius:6px;padding:14px;overflow-x:auto;font-size:13px;color:#cfe0ff}
+ul{padding-left:20px} li{margin:6px 0}
+.foot{color:#7f90b4;font-size:12.5px;border-top:1px solid #24304f;margin-top:36px;padding-top:14px}
+.tag{display:inline-block;background:#2a1520;border:1px solid #f87171;color:#f87171;border-radius:4px;
+padding:3px 10px;font-size:12px;font-weight:600;letter-spacing:.4px}
+.scroll{overflow-x:auto}
+</style>
+<div class="wrap">
+<span class="tag">RUN BLOCKED — NO REPORTS PUBLISHED</span>
+<h1>SILO Weekly Coaching Rollup</h1>
+<p class="sub">Sierra Air Conditioning &amp; Plumbing · Las Vegas · window 2026-07-27 … 2026-08-02 ·
+generated Sun 2026-08-02 PT</p>
+
+<div class="alert">
+<b>No per-rep coaching reports were generated this week.</b> ServiceTitan TGL ground truth
+(<code>tgl_truth/&lt;date&gt;.json</code>) has not been committed since <b>2026-07-28</b>. Five of the seven
+window days have no truth file at all, so <b>62% of the week's calls (147 of 236) have no verifiable
+outcome</b>. Under the locked rule that close/flip rates come from verified outcomes and
+<i>never from transcript impressions alone</i>, the rollup cannot be produced correctly — so it was not
+produced at all rather than shipped with wrong numbers against named technicians.
+</div>
+
+<h2>Why transcripts can't substitute for truth</h2>
+<p>2026-07-27 is the only day in the window with complete truth coverage. Testing a
+transcript-evidence read against the verified outcomes for that day:</p>
+<ul>
+<li><b>8 of 9</b> verified flips would have been <b>missed</b> — the calls produced a TGL in ServiceTitan
+but do not read as an upgrade conversation.</li>
+<li><b>8 of 25</b> non-flips would have been <b>falsely counted</b> as flips.</li>
+</ul>
+<p>This is exactly the failure the monthly spec anticipates — <i>"truth wins over vibes every time,
+whichever direction it cuts."</i> Outcome labels are not just the headline rates: the band key
+(<code>Strong on wins</code>) and the whole of Section 7 are defined by the positive-outcome / no-move
+split. With outcomes unknown, every band built on them would be unsound.</p>
+<p class="sub">Method note: the 8-of-9 figure comes from a keyword-marker proxy over the full transcript
+text, not a line-by-line read. Treat it as directional. It does not change the conclusion — no proxy
+recovers ground truth for the 62% of the week that has none.</p>
+
+<h2>Truth coverage by day</h2>
+<div class="scroll">
+<table>
+<tr><th>Date</th><th>Calls</th><th>With Job #</th><th>Verified flips</th><th>Coverage</th><th>Note</th></tr>
+<tr><td><code>2026-07-27</code></td><td>42</td><td>34</td><td>9</td><td><b style='color:#4ade80'>FULL</b></td><td class='note'>07-27 + 07-28 both present</td></tr><tr><td><code>2026-07-28</code></td><td>47</td><td>40</td><td>16</td><td><b style='color:#f5c518'>PARTIAL</b></td><td class='note'>07-29 missing — late-typed tickets unknowable</td></tr><tr><td><code>2026-07-29</code></td><td>36</td><td>27</td><td>0</td><td><b style='color:#f87171'>NONE</b></td><td class='note'>no truth file</td></tr><tr><td><code>2026-07-30</code></td><td>38</td><td>33</td><td>0</td><td><b style='color:#f87171'>NONE</b></td><td class='note'>no truth file</td></tr><tr><td><code>2026-07-31</code></td><td>40</td><td>34</td><td>0</td><td><b style='color:#f87171'>NONE</b></td><td class='note'>no truth file</td></tr><tr><td><code>2026-08-01</code></td><td>17</td><td>11</td><td>0</td><td><b style='color:#f87171'>NONE</b></td><td class='note'>no truth file</td></tr><tr><td><code>2026-08-02</code></td><td>16</td><td>13</td><td>0</td><td><b style='color:#f87171'>NONE</b></td><td class='note'>no truth file</td></tr>
+</table>
+</div>
+<p class="sub">Coverage requires the call's own date file <b>and</b> the next day's (tickets are typed late).
+Only 2026-07-27 satisfies both. Total verified flips in window: <b>25</b>, all on 07-27/07-28.</p>
+
+<h2>Root cause</h2>
+<p><code>tgl_truth.py</code> is <b>working correctly</b> and runs every hour. The most recent run generated
+all five missing days (07-29=21, 07-30=24, 07-31=25, 08-01=9, 08-02=8 TGLs). The data is not lost — it
+is being discarded before it is committed.</p>
+<p>In <code>.github/workflows/daily.yml</code>, step <b>"TGL ground truth (trailing 8 days)"</b>, the inline
+<code>ytd_sources.json</code> heredoc crashes:</p>
+<pre>File "&lt;stdin&gt;", line 17, in &lt;module&gt;
+AttributeError: 'list' object has no attribute 'get'</pre>
+<p><code>cache/tgls_created.json</code> holds a list of lists, not a list of dicts. The step runs under
+<code>bash -e</code>, so this non-zero exit aborts the step <b>before</b> its <code>git add tgl_truth/</code> /
+<code>commit</code> / <code>push</code> ever run. A later step's <code>git status</code> in the same run confirms it —
+<code>tgl_truth/2026-07-29.json</code> … <code>2026-08-02.json</code> sit there <b>untracked</b>. The step is
+<code>continue-on-error: true</code>, so the workflow reports success and nothing surfaces.</p>
+
+<div class="fix">
+<b>Fix — one line.</b> The heredoc is the only unguarded command in that step; the two lines above it
+already use the guard idiom. Append the same guard:
+<pre>python - &lt;&lt;'PYEOF' || echo "ytd_sources failed"
+  ...
+PYEOF</pre>
+Because <code>tgl_truth.py</code> rewrites the trailing 35 days on every run, <b>the first run after this fix
+backfills all five missing days automatically</b>. No recovery work is needed. Re-run the weekly rollup
+afterwards for correct numbers.
+</div>
+
+<h2>Second issue — transcripts with no Job #</h2>
+<p>44 of 236 window transcripts (19%) carry no ServiceTitan job number, so they can never be
+truth-matched even once the workflow is fixed: 27 have a blank <code>Job:</code> header, and 17 carry a
+descriptive title instead of a job number (e.g. <code>Job: Scott - HVAC Summer Maintenance - …</code>).
+This is concentrated, not spread evenly — <b>Juan Tlatenchi's 13 calls are all title-only</b>, so he has
+no verifiable outcomes at all, and Andrew Trujillo is missing 6 of 12. Worth a separate look at the
+capture path for those recordings.</p>
+
+<h2>Per-rep call inventory (work pending, not graded)</h2>
+<p class="sub">Transcripts are complete and in place for all 13 active roster reps with calls this week.
+Only the outcome layer is missing. This inventory is what the rollup will grade on re-run.</p>
+<div class="scroll">
+<table>
+<tr><th>Technician</th><th>Calls</th><th>With Job #</th><th>No Job #</th><th>On truth-covered days</th><th>Verified flips</th></tr>
+<tr><td>Joe Mendoza</td><td>31</td><td>27</td><td>4</td><td>8</td><td>2</td></tr><tr><td>Cole Pantol</td><td>20</td><td>20</td><td>0</td><td>9</td><td>4</td></tr><tr><td>Nathan  Colquitt</td><td>19</td><td>17</td><td>2</td><td>6</td><td>2</td></tr><tr><td>Benjamin Wyllie</td><td>17</td><td>17</td><td>0</td><td>9</td><td>3</td></tr><tr><td>Brandon Moreno</td><td>17</td><td>15</td><td>2</td><td>6</td><td>3</td></tr><tr><td>Nikko April</td><td>17</td><td>17</td><td>0</td><td>7</td><td>2</td></tr><tr><td>Robert Silinzy</td><td>16</td><td>15</td><td>1</td><td>8</td><td>1</td></tr><tr><td>Andrew Alonso</td><td>15</td><td>14</td><td>1</td><td>5</td><td>3</td></tr><tr><td>Francisco Valencia</td><td>14</td><td>12</td><td>2</td><td>9</td><td>0</td></tr><tr><td>Juan Tlatenchi</td><td>13</td><td style='color:#f87171'>0</td><td>13</td><td>3</td><td>0</td></tr><tr><td>Andrew Trujillo</td><td>12</td><td>6</td><td>6</td><td>6</td><td>2</td></tr><tr><td>Noah Weng</td><td>12</td><td>12</td><td>0</td><td>3</td><td>3</td></tr><tr><td>Mario Castro</td><td>11</td><td>11</td><td>0</td><td>4</td><td>0</td></tr>
+</table>
+</div>
+<p class="sub">Roster reps with no calls in the window: Dustin Romine, Jaden Szelestey, Alex Yakovchuk.
+Present in transcripts but not on the SILO roster (excluded): Bradley Espinoza, David Canales.</p>
+
+<h2>Monthly MTD rollup — also blocked</h2>
+<p><code>coaching/monthly_rollup_prompt.md</code> is present, so step 9 was not auto-skipped, but it could not
+run. Its primary input is this week's weekly rollup (not produced), and it requires
+<code>tgl_truth</code> for every calendar day of the target month — August MTD is 08-01 and 08-02, both of
+which have zero truth. <code>coaching.json</code> was deliberately left untouched: no <code>weekly</code> or
+<code>monthly</code> entry was prepended, so downstream consumers are not fed a rollup that does not exist.</p>
+
+<h2>What happens next</h2>
+<ul>
+<li>Apply the one-line guard in <code>.github/workflows/daily.yml</code>.</li>
+<li>Let one hourly run complete — it backfills <code>tgl_truth/</code> for 07-29 … 08-02 on its own.</li>
+<li>Re-run this weekly rollup. It will produce the 13 per-rep reports, <code>crossrep.html</code>, the
+August MTD refresh, and the <code>coaching.json</code> update, with verified close rates throughout.</li>
+</ul>
+
+<p class="foot">Sierra Air Conditioning &amp; Plumbing · SILO Weekly Coaching Rollup · V7.5 evidence-banded ·
+window 2026-07-27 … 2026-08-02 · 236 transcripts indexed, 0 graded, 25 outcomes verified ·
+no coaching reports published this run</p>
+</div>
