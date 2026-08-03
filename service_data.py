@@ -990,38 +990,84 @@ def _light_escalation_reason(old):
     return None
 
 
+def _run_ropp_week_review():
+    """Run the SILO/ROPP half of weekreview.yml — the same invocation the workflow
+    uses. Out of process so it inherits the env untouched and so a failure over
+    there cannot take this light run down with it."""
+    import subprocess
+    r = subprocess.run([sys.executable, os.path.join(HERE, "ropp_week_review.py"),
+                        "--week-review"],
+                       cwd=HERE, capture_output=True, text=True, timeout=1500)
+    for ln in (r.stdout or "").splitlines()[-15:]:
+        log("    ropp_week_review | " + ln)
+    if r.returncode:
+        raise RuntimeError("ropp_week_review.py exited %d: %s"
+                           % (r.returncode, (r.stderr or "").strip()[-400:]))
+
+
+def _week_review_weeks(local_name):
+    """weeks{} out of a week-review file, seeded from the dashboard repo in cloud
+    mode (the runner's checkout has no state of its own)."""
+    path = os.path.join(HERE, local_name)
+    if CLOUD:
+        cloud_seed_files([(path, local_name)])
+    try:
+        return json.load(open(path)).get("weeks") or {}
+    except Exception:
+        return {}
+
+
+# weekreview.yml runs TWO scripts; the catch-up has to cover both or the half it
+# skips silently rots. week_review_main() is this module's (weekreview.json,
+# service dept); ropp_week_review.py owns weekreview_silo.json (SILO/ROPP).
+_WEEK_REVIEW_TARGETS = (("weekreview.json", lambda: week_review_main()),
+                        ("weekreview_silo.json", _run_ropp_week_review))
+
+
 def _maybe_week_review_catchup():
     """Self-heal weekreview.yml's native crons from inside the 3-min light
     run: if it's past Sun 8:30pm PT and this week's prelim hasn't been
     written yet, run it inline; if it's past Mon 6:00am PT and this week is
-    still audit=='prelim', finalize it inline. No-op the rest of the time
-    (one time check); idempotent once weekreview.json reflects the right
-    state (next light run's check naturally falls through)."""
+    still audit=='prelim' -- or was never written at all -- finalize it
+    inline. No-op the rest of the time (one time check); idempotent once the
+    week-review file reflects the right state (next light run's check
+    naturally falls through).
+
+    The 'never written at all' case is not hypothetical: it is what happened to
+    weekreview.json for the week of 2026-07-27. The Monday branch used to
+    require an existing entry, so when Sunday's cron was the one that got
+    skipped there was nothing to finalize, the catch-up logged 'nothing to do',
+    and the week stayed missing forever. A skipped Sunday is exactly when
+    Monday's pass matters most.
+    """
     weekday = TODAY.weekday()   # Mon=0 .. Sun=6
     is_sun_eve = weekday == 6 and NOW.time() >= dt.time(20, 30)
     is_mon_am = weekday == 0 and NOW.time() >= dt.time(6, 0)
     if not (is_sun_eve or is_mon_am):
         return
-    wr_path = os.path.join(HERE, "weekreview.json")
-    if CLOUD:
-        cloud_seed_files([(wr_path, "weekreview.json")])
-    try:
-        wr = json.load(open(wr_path))
-    except Exception:
-        wr = {"weeks": {}}
     ref = TODAY if is_sun_eve else (TODAY - dt.timedelta(days=1))
     monday = ref - dt.timedelta(days=ref.weekday())
     key = monday.isoformat()
-    entry = (wr.get("weeks") or {}).get(key)
-    if is_sun_eve and not entry:
-        log("light run: week-review catch-up — %s prelim missing, running inline" % key)
-        week_review_main()
-    elif is_mon_am and entry and entry.get("audit") == "prelim":
-        log("light run: week-review catch-up — %s still prelim past Mon 6am, finalizing inline" % key)
-        week_review_main()
-    else:
-        log("light run: week-review catch-up — %s already %s, nothing to do" %
-            (key, entry.get("audit") if entry else "missing (not yet due)"))
+
+    for local_name, runner in _WEEK_REVIEW_TARGETS:
+        entry = _week_review_weeks(local_name).get(key)
+        if is_sun_eve and not entry:
+            why = "prelim missing"
+        elif is_mon_am and not entry:
+            why = "never written — Sunday's run was skipped"
+        elif is_mon_am and entry.get("audit") == "prelim":
+            why = "still prelim past Mon 6am"
+        else:
+            log("light run: week-review catch-up — %s %s already %s, nothing to do"
+                % (local_name, key, entry.get("audit") if entry else "missing (not yet due)"))
+            continue
+        log("light run: week-review catch-up — %s %s %s, running inline"
+            % (local_name, key, why))
+        try:
+            runner()
+        except Exception as ex:
+            # one target failing must not stop the other from being healed
+            log("light run: week-review catch-up — %s failed: %s" % (local_name, ex))
 
 
 def main():

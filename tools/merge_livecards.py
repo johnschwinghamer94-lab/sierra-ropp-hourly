@@ -14,12 +14,31 @@ Port of CLAUDE STUFF/LIVE COACH/merge_cards.py + extract_card.py validation.
 import glob
 import json
 import os
+import re
 import sys
 import time
 from datetime import datetime, timedelta, timezone
 
 BANDS = {"Strong", "Strong on wins", "Solid", "Moderate", "Weak"}
 OUTCOMES = {"closed", "flipped", "no-close", "unknown"}
+
+
+def norm_tech(name):
+    """Canonical tech name: underscores and runs of whitespace collapse to one space.
+
+    The live-coach writer emits the same rep under several spellings -- 'Joe Mendoza'
+    and 'Joe_Mendoza', 'Nathan Colquitt' / 'Nathan_Colquitt' / 'Nathan  Colquitt'
+    (double space). The scorecard view groups by this field, so each variant renders
+    as a separate person: on 2026-08-03 the feed carried 17 spellings for 12 techs and
+    Joe Mendoza's 10 cards showed up as two reps with 4 and 6.
+
+    Normalizing here rather than in the writer heals the whole feed on the next relay
+    -- including cards already published -- and keeps working if the writer starts
+    emitting a new variant. Only whitespace and underscores are touched, so
+    'AJ-Alejandro Ruiz Padilla', 'Alex - Oleksiy Yakovchuk' and 'Mike (Jiangtao) Li'
+    survive intact.
+    """
+    return re.sub(r"[\s_]+", " ", name).strip() if isinstance(name, str) else name
 
 
 def load_card(path):
@@ -48,6 +67,9 @@ def load_card(path):
     if c.get("outcome") not in OUTCOMES:
         c["outcome"] = "unknown"
 
+    if c.get("tech"):
+        c["tech"] = norm_tech(c["tech"])
+
     return c
 
 
@@ -70,6 +92,17 @@ def main():
     except Exception:
         cur = []
 
+    # carried-forward cards predate normalization, so heal them too -- otherwise a
+    # card that stays inside the 48h window but gets no fresh livecard keeps its old
+    # spelling and goes on splitting that rep in the view
+    healed = 0
+    for c in cur:
+        if c.get("tech"):
+            fixed = norm_tech(c["tech"])
+            if fixed != c["tech"]:
+                c["tech"] = fixed
+                healed += 1
+
     byid = {c["recId"]: c for c in cur}
     for c in new:
         byid[c["recId"]] = c
@@ -89,7 +122,10 @@ def main():
         f.write(json.dumps(out, separators=(",", ":")))
     os.replace(tmp, dst)
 
-    print(f"scorecards.json: {len(cards)} cards ({len(new)} new, {len(cur)} prior)")
+    techs = {c["tech"] for c in cards if c.get("tech")}
+    print(f"scorecards.json: {len(cards)} cards ({len(new)} new, {len(cur)} prior) "
+          f"across {len(techs)} techs"
+          + (f"; normalized {healed} carried-forward tech name(s)" if healed else ""))
 
 
 if __name__ == "__main__":
