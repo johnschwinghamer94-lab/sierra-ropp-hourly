@@ -317,7 +317,9 @@ def chunked_get(path, ids, extra=None):
 # ── roster (dynamic, cached once/day) ───────────────────────────────────────
 
 def fetch_roster():
-    """{tech_name: '2A'|'2B'} for active BU-333 techs on the two target teams."""
+    """{lower(tech_name): '2A'|'2B'} for active BU-333 techs on the two target
+    teams. Keyed lower-case so lookups are case-insensitive (PRUET/Pruet
+    landmine) — use roster_team() to read it, never roster.get() directly."""
     techs = paged("/settings/v2/tenant/{tenant}/technicians", {})
     roster = {}
     for t in techs:
@@ -327,8 +329,16 @@ def fetch_roster():
             continue
         team = SERVICE_TEAMS.get(t.get("team"))
         if team:
-            roster[t.get("name", "").strip()] = team
+            nm = (t.get("name") or "").strip()
+            if nm:
+                roster[nm.lower()] = team
     return roster
+
+
+def roster_team(roster, name):
+    """Case-insensitive team lookup; '' (unassigned) when the tech isn't on
+    the 2A/2B roster snapshot — never used to gate inclusion, only labeling."""
+    return roster.get((name or "").strip().lower(), "")
 
 
 def get_roster(state):
@@ -407,17 +417,38 @@ def fetch_today(roster):
         asg += paged("/dispatch/v2/tenant/{tenant}/appointment-assignments",
                      {"appointmentIds": ",".join(str(x) for x in aids[i:i + 50])})
         time.sleep(0.15)
+    # tech_by_appt tracks EVERY assigned tech (not gated on the 2A/2B roster
+    # snapshot) — the roster gate here was dropping real signed-today revenue
+    # from techs doing HVAC-Service work who aren't in that narrow snapshot
+    # (e.g. Bradley Espinoza $9,798, 8/3). Job inclusion below is decided by
+    # the job's own business unit, not by who's on the roster; roster is only
+    # consulted for the cosmetic 2A/2B team label on a card.
     tech_by_appt = {}
     for a in asg:
-        if a.get("active") and a.get("technicianName") in roster:
+        if a.get("active") and a.get("technicianName"):
             tech_by_appt.setdefault(a["appointmentId"], []).append(a["technicianName"])
 
-    svc_appts = [a for a in appts if a["id"] in tech_by_appt]
+    # fetch jobs for ALL of today's appointments (bounded to today, cheap) so
+    # we can decide inclusion by business unit rather than by tech roster.
+    all_job_ids = sorted({a["jobId"] for a in appts})
+    if not all_job_ids:
+        return today, [], {}, {}, {}, {}, []
+    jobs_all = {j["id"]: j for j in chunked_get("/jpm/v2/tenant/{tenant}/jobs", all_job_ids)}
+
+    # HVAC-Service job (BU 333) → always in; roster-tech job on any other BU
+    # (e.g. HVAC-Maintenance 342817560) → in, per doc note above; else out.
+    def _is_tracked(a):
+        j = jobs_all.get(a["jobId"])
+        if j and j.get("businessUnitId") == SERVICE_BU_ID:
+            return True
+        return any(roster_team(roster, t) for t in tech_by_appt.get(a["id"], []))
+
+    svc_appts = [a for a in appts if _is_tracked(a)]
     job_ids = sorted({a["jobId"] for a in svc_appts})
     if not job_ids:
         return today, [], {}, {}, {}, {}, []
 
-    jobs = {j["id"]: j for j in chunked_get("/jpm/v2/tenant/{tenant}/jobs", job_ids)}
+    jobs = {jid: jobs_all[jid] for jid in job_ids if jid in jobs_all}
     cust_ids = sorted({j.get("customerId") for j in jobs.values() if j.get("customerId")})
     custs = {c["id"]: c.get("name", "") for c in chunked_get("/crm/v2/tenant/{tenant}/customers", cust_ids)}
 
@@ -501,7 +532,7 @@ def build(state):
     for jid, appt in by_job.items():
         j = jobs.get(jid, {})
         techs = sorted(set(sum((tech_by_appt.get(a["id"], []) for a in svc_appts if a["jobId"] == jid), [])))
-        team_set = sorted({roster.get(t, "") for t in techs} - {""})
+        team_set = sorted({roster_team(roster, t) for t in techs} - {""})
         cust = custs.get(j.get("customerId"), "") or "—"
         status = appt.get("status") or "Scheduled"
         if j.get("jobStatus") == "Completed" or status == "Done":
