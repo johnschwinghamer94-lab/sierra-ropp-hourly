@@ -206,13 +206,25 @@ is applied consistently (`daily_actual` = 20,602,949 / 214 = 96,275 ✓).
 
 ## Suggested order of work
 
-1. **`_maybe_week_review_catchup()`** — one-line condition change, plus a
-   catch-up path for `ropp_week_review.py`. Restores last week's numbers on both
-   week-review tabs.
-2. **Name normalization** on livecard write + a one-time backfill of the 258
-   existing cards. Un-splits four reps on the scorecard tab.
+**Fixed** (see the commits on this branch):
+
+1. ~~**`_maybe_week_review_catchup()`**~~ — the Monday branch now fires when the
+   entry is missing entirely, not only when a prelim exists, and the catch-up
+   covers `ropp_week_review.py`/`weekreview_silo.json` as well as
+   `weekreview.json`. The next light run past Monday 6 AM writes the 7/27 week
+   to both tabs.
+2. ~~**Name normalization**~~ — done in `tools/merge_livecards.py` rather than at
+   the writer, which heals cards already published and keeps working if the
+   live-coach writer emits a new variant. No backfill of the 258 livecard files
+   is needed: the merge re-reads them all and normalizes carried-forward cards
+   too. Verified against the live feed — 17 spellings collapse to 12 techs, card
+   count unchanged.
+
+**Still open:**
+
 3. **Assign or bucket Alex - Oleksiy Yakovchuk** so the team views sum to the
-   combined total.
+   combined total. Needs a call on which team he belongs to (or whether an
+   "unassigned" row is the right answer), so it is not a mechanical fix.
 4. **Tighten the full-rebuild escalation** at month boundaries so a missed cron
    on the 1st cannot show last month's MTD for a full day.
 5. **Reconcile `budget.monthActualSoFar` with `mtd.revenue`**, then delete or
