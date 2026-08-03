@@ -1,32 +1,26 @@
-# Scorecard: David Canales
+# Call Scorecard
 
-**Date:** 2026-08-02  
-**Duration:** 87 minutes  
-**Job:** N/A (No Title)  
+**Tech:** David_Canales
 **RecId:** e43c616e-1994-448e-bde7-32965430982b-g2M7csV6deOB5LCNP4trAUmVb3H2
+**Date:** 2026-08-02
+**Duration:** 87 min
+**Job #:** null
+**Outcome:** no-close
 
 ## FSG Bands
 
-- **Welcome:** Moderate
-- **Assessment:** Strong
-- **Decision:** Moderate
+- **Welcome:** Solid
+- **Assessment:** Solid
+- **Decision:** Weak
 - **Deliver:** Weak
 
 ## Critical Actions
 
-- **Set Expectations:** ✗
-- **Ask Questions:** ✓
-- **Build Options:** ✗
-- **Handle Objections:** ✗
-
-## Outcome
-
-**UNKNOWN**
+- Expectations: false
+- Questions: true
+- Options: false
+- Objections: false
 
 ## Coaching Tip
 
-FIX — Clearly explain findings and give customers a framework for next steps.
-
----
-
-*Transcript Status:* Ticket pending - truth file not yet available for 2026-08-02.
+FIX — When the customer asked about having air tonight, that was the moment to explain the 35-year-old system finding and present an estimate appointment rather than saying 'well, we'll see' and deferring to the landlord.

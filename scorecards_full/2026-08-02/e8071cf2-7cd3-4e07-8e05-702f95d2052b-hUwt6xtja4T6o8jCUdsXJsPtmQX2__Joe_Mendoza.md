@@ -1,32 +1,26 @@
-# Scorecard: Joe Mendoza
+# Call Scorecard
 
-**Date:** 2026-08-02  
-**Duration:** 7 minutes  
-**Job:** 670554921  
+**Tech:** Joe_Mendoza
 **RecId:** e8071cf2-7cd3-4e07-8e05-702f95d2052b-hUwt6xtja4T6o8jCUdsXJsPtmQX2
+**Date:** 2026-08-02
+**Duration:** 7 min
+**Job #:** 670554921
+**Outcome:** flipped
 
 ## FSG Bands
 
 - **Welcome:** Solid
-- **Assessment:** Solid
-- **Decision:** Weak
-- **Deliver:** Weak
+- **Assessment:** Strong
+- **Decision:** Strong
+- **Deliver:** Moderate
 
 ## Critical Actions
 
-- **Set Expectations:** ✗
-- **Ask Questions:** ✓
-- **Build Options:** ✗
-- **Handle Objections:** ✗
-
-## Outcome
-
-**UNKNOWN**
+- Expectations: true
+- Questions: true
+- Options: false
+- Objections: true
 
 ## Coaching Tip
 
-FIX — After diagnosis, build options and reconnect to customer's stated concerns.
-
----
-
-*Transcript Status:* Ticket pending - truth file not yet available for 2026-08-02.
+WIN — Responded to cost objection with empathy and commitment to independent diagnostic verification instead of defending prior company, converting skeptic to willing participant.
