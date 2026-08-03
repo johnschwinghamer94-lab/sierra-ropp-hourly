@@ -16,6 +16,11 @@ on:
         type: boolean
         required: false
         default: false
+      recompute:
+        description: "Rebuild the SILO records/ranks block from the weeks already on file (no report fetches)"
+        type: boolean
+        required: false
+        default: false
 concurrency:
   group: weekreview
   cancel-in-progress: false
@@ -34,7 +39,7 @@ jobs:
         with: { python-version: "3.12" }
       - run: pip install --quiet -r requirements.txt
       - name: Service week review (skipped during a SILO backfill)
-        if: ${{ github.event.inputs.backfill_from == '' }}
+        if: ${{ github.event.inputs.backfill_from == '' && github.event.inputs.recompute != 'true' }}
         env:
           ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
@@ -47,8 +52,11 @@ jobs:
           SERVICEDATA_CLOUD: "1"
           BACKFILL_FROM: ${{ github.event.inputs.backfill_from }}
           OVERWRITE: ${{ github.event.inputs.overwrite }}
+          RECOMPUTE: ${{ github.event.inputs.recompute }}
         run: |
-          if [ -n "$BACKFILL_FROM" ]; then
+          if [ "$RECOMPUTE" = "true" ]; then
+            python ropp_week_review.py --recompute
+          elif [ -n "$BACKFILL_FROM" ]; then
             EXTRA=""
             [ "$OVERWRITE" = "true" ] && EXTRA="--overwrite"
             python ropp_week_review.py --backfill-from "$BACKFILL_FROM" $EXTRA

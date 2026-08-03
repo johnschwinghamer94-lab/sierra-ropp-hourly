@@ -294,6 +294,23 @@ def week_deltas(cur, prior):
     return {k: round(cur.get(k, 0) - prior.get(k, 0), 2) for k in _WEEK_DELTA_KEYS}
 
 
+def _normalize_week(entry):
+    """Fill in metrics a week predates. tglRate arrived after the first entries were
+    written, and it is pure arithmetic on numbers those entries already carry -- so
+    derive it rather than refetch, which would overwrite an audited week's numbers
+    and its re-audit note just to add a ratio.
+
+    Only ever DERIVES; never overwrites a value the engine actually computed.
+    """
+    d = entry.get("dept") or {}
+    if "tglRate" not in d and "tgls" in d and "callsRan" in d:
+        d["tglRate"] = U.rate(d["tgls"], d["callsRan"])
+    for t in entry.get("techs") or []:
+        if "tglRate" not in t and "tgls" in t and "callsRan" in t:
+            t["tglRate"] = U.rate(t["tgls"], t["callsRan"])
+    return entry
+
+
 def recompute_records(wr):
     """Rebuild the cross-week ranking block: a per-week `ranks` entry for every
     metric plus a top-level `records` with the full series and the best/worst week.
@@ -310,6 +327,16 @@ def recompute_records(wr):
     """
     weeks = wr.get("weeks") or {}
     keys = sorted(weeks)
+    for k in keys:
+        _normalize_week(weeks[k])
+    # a week written before a metric existed also has no delta for it; the series is
+    # right here, so fill it from the week before rather than leaving a blank chip
+    for i, k in enumerate(keys[1:], 1):
+        d, pd_ = weeks[k].get("dept") or {}, weeks[keys[i - 1]].get("dept") or {}
+        dl = d.setdefault("deltas", {})
+        for m in _WEEK_DELTA_KEYS:
+            if m not in dl and m in d and m in pd_:
+                dl[m] = round(d[m] - pd_[m], 2)
     series = []
     for k in keys:
         d = weeks[k].get("dept") or {}
@@ -533,8 +560,39 @@ def backfill_main():
             print("  best %-15s %-12s %s" % (lbl, b["label"], format(b["value"], ",")))
 
 
+def recompute_main():
+    """Re-derive the records/ranks block from the weeks already on file and republish.
+    Touches no report and no week's own numbers -- use it after adding a derived
+    metric, when refetching would rewrite audited weeks for no reason."""
+    log("start SILO records recompute" + (" [CLOUD]" if CLOUD else ""))
+    wr_path = os.path.join(HERE, "weekreview_silo.json")
+    if CLOUD:
+        cloud_bootstrap_creds()
+        cloud_seed_files([(wr_path, "weekreview_silo.json")])
+    wr = json.load(open(wr_path))
+    wr.setdefault("weeks", {})
+    if wr["weeks"]:
+        wr["latest"] = max(wr["weeks"])
+    recompute_records(wr)
+    with open(wr_path + ".tmp", "w") as f:
+        json.dump(wr, f, separators=(",", ":"))
+    os.replace(wr_path + ".tmp", wr_path)
+    log("wrote %s (%d weeks on record)" % (wr_path, len(wr["weeks"])))
+    if CLOUD:
+        cloud_publish_files([(wr_path, "weekreview_silo.json")])
+        log("cloud: published weekreview_silo.json to dashboard repo")
+    rec = wr.get("records", {})
+    print("\n%d weeks on record (%s .. %s)" % (rec.get("count", 0), rec.get("first"), rec.get("last")))
+    for m_, lbl, _ in RANKED_METRICS:
+        b = rec.get("best", {}).get(m_)
+        if b:
+            print("  best %-15s %-12s %s" % (lbl, b["label"], format(b["value"], ",")))
+
+
 if __name__ == "__main__":
-    if "--backfill-from" in sys.argv:
+    if "--recompute" in sys.argv:
+        recompute_main()
+    elif "--backfill-from" in sys.argv:
         backfill_main()
     elif "--week-review" in sys.argv:
         week_review_main()
