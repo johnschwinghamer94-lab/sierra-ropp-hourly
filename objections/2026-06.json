@@ -3021,16 +3021,6 @@
       "closed": false
     },
     {
-      "id": "cbdc7771-3487-4407-b50f-e52f3aabb6b6-f8aRc5tAKRdW4Ktah4fP6cbaJrs1-2",
-      "type": "Stall / Think About It",
-      "cust": "I'm in an okay position to wait. A, until she comes back, and then B, not gonna lie, full transparency, I'm gonna get one more quote, right? Your Goodman quote is the same as the highest quote I have gotten from elsewhere.",
-      "answer": "",
-      "tech": "Noah Weng",
-      "date": "2026-06-12",
-      "grade": "poor",
-      "closed": false
-    },
-    {
       "id": "a9984355-808d-4976-b921-456003045448-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
       "type": "Price",
       "cust": "I couldn't afford you if it costs $7,000 or $800 for a snooper. I can't afford to replace the unit... You'd want $30,000 to change the units out, and it's not worth that. I got money to pay for it, I'm just not willing to give my money away.",
@@ -3260,17 +3250,6 @@
       "tech": "Cole Pantol",
       "date": "2026-06-12",
       "grade": "ok",
-      "closed": false,
-      "job": "650829291"
-    },
-    {
-      "id": "50ac7651-e5c5-4b7d-8afe-69c1cf6e8c6a-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-3",
-      "type": "Spouse / Decision-Maker",
-      "cust": "Hey babe, let's don't get anybody out when you turn the van on.",
-      "answer": "",
-      "tech": "Cole Pantol",
-      "date": "2026-06-12",
-      "grade": "poor",
       "closed": false,
       "job": "650829291"
     },
