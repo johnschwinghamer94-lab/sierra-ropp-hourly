@@ -1,26 +1,23 @@
-# Call Scorecard
+# Call Score Card
 
+**Call:** e8071cf2-7cd3-4e07-8e05-702f95d2052b-hUwt6xtja4T6o8jCUdsXJsPtmQX2
 **Tech:** Joe_Mendoza
-**RecId:** e8071cf2-7cd3-4e07-8e05-702f95d2052b-hUwt6xtja4T6o8jCUdsXJsPtmQX2
 **Date:** 2026-08-02
-**Duration:** 7 min
-**Job #:** 670554921
-**Outcome:** flipped
 
-## FSG Bands
-
-- **Welcome:** Solid
-- **Assessment:** Strong
-- **Decision:** Strong
-- **Deliver:** Moderate
+## FSG Assessment
+- Welcome: Solid
+- Assessment: Solid  
+- Decision: Moderate
+- Deliver: Moderate
 
 ## Critical Actions
+- Expectations: No
+- Questions: Yes
+- Options: No
+- Objections: No
 
-- Expectations: true
-- Questions: true
-- Options: false
-- Objections: true
+## Outcome
+Unknown (ticket pending or check TGL truth)
 
-## Coaching Tip
-
-WIN — Responded to cost objection with empathy and commitment to independent diagnostic verification instead of defending prior company, converting skeptic to willing participant.
+## Coaching Note
+Need deeper engagement on options and objections handling.

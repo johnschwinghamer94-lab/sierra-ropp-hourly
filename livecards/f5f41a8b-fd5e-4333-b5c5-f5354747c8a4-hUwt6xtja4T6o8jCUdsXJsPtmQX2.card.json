@@ -1,1 +1,8 @@
-{"recId": "f5f41a8b-fd5e-4333-b5c5-f5354747c8a4-hUwt6xtja4T6o8jCUdsXJsPtmQX2", "tech": "Joe_Mendoza", "jobNumber": 670584078, "dateCreated": "2026-08-02", "durationMin": 53, "bands": {"welcome": "Solid", "assessment": "Solid", "decision": "Solid", "deliver": "Solid"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "no-close", "tip": "FIX — Customer hesitated on the back-unit repair when recognizing the front would still be down; tech missed reconnecting to the value of partial cooling with a check-in question like 'which matters more—cooling part of the house today or handling both together?'"}
+{
+  "recId": "f5f41a8b-fd5e-4333-b5c5-f5354747c8a4-hUwt6xtja4T6o8jCUdsXJsPtmQX2",
+  "tech": "Joe_Mendoza",
+  "date": "2026-08-02",
+  "jobNumber": "670584078",
+  "outcome": "unknown",
+  "tip": "FIX \u2014 Need deeper assessment and option building to move customer forward."
+}

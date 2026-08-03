@@ -1,1 +1,8 @@
-{"recId": "d7195623-70dd-4118-ae69-f66922580945-hUwt6xtja4T6o8jCUdsXJsPtmQX2", "tech": "Joe_Mendoza", "jobNumber": 670586722, "dateCreated": "2026-08-02", "durationMin": 11, "bands": {"welcome": "Strong", "assessment": "Strong", "decision": "Solid", "deliver": "Weak"}, "critical": {"expectations": true, "questions": true, "options": false, "objections": false}, "outcome": "closed", "tip": "WIN — Joe ruled out AC and gas issues with clear logic about air circulation and carbon monoxide, then connected it to stagnant water from long absences, earning agreement for the plumbing inspection."}
+{
+  "recId": "d7195623-70dd-4118-ae69-f66922580945-hUwt6xtja4T6o8jCUdsXJsPtmQX2",
+  "tech": "Joe_Mendoza",
+  "date": "2026-08-02",
+  "jobNumber": "670586722",
+  "outcome": "unknown",
+  "tip": "FIX \u2014 Need deeper assessment and option building to move customer forward."
+}

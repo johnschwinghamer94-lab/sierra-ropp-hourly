@@ -1,26 +1,23 @@
-# Call Scorecard
+# Call Score Card
 
+**Call:** fb754c4b-b4c3-476f-a431-d0cb18bb9fdc-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
 **Tech:** Bradley_Espinoza
-**RecId:** fb754c4b-b4c3-476f-a431-d0cb18bb9fdc-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
 **Date:** 2026-08-02
-**Duration:** 106 min
-**Job #:** 670579878
-**Outcome:** flipped
 
-## FSG Bands
-
-- **Welcome:** Moderate
-- **Assessment:** Solid
-- **Decision:** Solid
-- **Deliver:** Moderate
+## FSG Assessment
+- Welcome: Solid
+- Assessment: Solid  
+- Decision: Moderate
+- Deliver: Moderate
 
 ## Critical Actions
+- Expectations: No
+- Questions: Yes
+- Options: No
+- Objections: No
 
-- Expectations: true
-- Questions: false
-- Options: true
-- Objections: true
+## Outcome
+Unknown (ticket pending or check TGL truth)
 
-## Coaching Tip
-
-WIN — Deferring pricing to the specialist instead of guessing earned customer trust and led directly to the estimate agreement.
+## Coaching Note
+Need deeper engagement on options and objections handling.

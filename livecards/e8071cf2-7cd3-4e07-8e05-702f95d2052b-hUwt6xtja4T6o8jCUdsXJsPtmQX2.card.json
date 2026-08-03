@@ -1,1 +1,8 @@
-{"recId": "e8071cf2-7cd3-4e07-8e05-702f95d2052b-hUwt6xtja4T6o8jCUdsXJsPtmQX2", "tech": "Joe_Mendoza", "jobNumber": 670554921, "dateCreated": "2026-08-02", "durationMin": 7, "bands": {"welcome": "Solid", "assessment": "Strong", "decision": "Strong", "deliver": "Moderate"}, "critical": {"expectations": true, "questions": true, "options": false, "objections": true}, "outcome": "flipped", "tip": "WIN — Responded to cost objection with empathy and commitment to independent diagnostic verification instead of defending prior company, converting skeptic to willing participant."}
+{
+  "recId": "e8071cf2-7cd3-4e07-8e05-702f95d2052b-hUwt6xtja4T6o8jCUdsXJsPtmQX2",
+  "tech": "Joe_Mendoza",
+  "date": "2026-08-02",
+  "jobNumber": "670554921",
+  "outcome": "unknown",
+  "tip": "FIX \u2014 Need deeper assessment and option building to move customer forward."
+}

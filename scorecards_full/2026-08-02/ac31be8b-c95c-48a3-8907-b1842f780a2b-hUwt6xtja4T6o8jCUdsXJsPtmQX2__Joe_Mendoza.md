@@ -1,26 +1,23 @@
-# Call Scorecard
+# Call Score Card
 
+**Call:** ac31be8b-c95c-48a3-8907-b1842f780a2b-hUwt6xtja4T6o8jCUdsXJsPtmQX2
 **Tech:** Joe_Mendoza
-**RecId:** ac31be8b-c95c-48a3-8907-b1842f780a2b-hUwt6xtja4T6o8jCUdsXJsPtmQX2
 **Date:** 2026-08-02
-**Duration:** 49 min
-**Job #:** 670585841
-**Outcome:** flipped
 
-## FSG Bands
-
-- **Welcome:** Strong
-- **Assessment:** Strong
-- **Decision:** Strong
-- **Deliver:** Solid
+## FSG Assessment
+- Welcome: Solid
+- Assessment: Solid  
+- Decision: Moderate
+- Deliver: Moderate
 
 ## Critical Actions
+- Expectations: No
+- Questions: Yes
+- Options: No
+- Objections: No
 
-- Expectations: true
-- Questions: true
-- Options: true
-- Objections: true
+## Outcome
+Unknown (ticket pending or check TGL truth)
 
-## Coaching Tip
-
-WIN — Joe didn't discount when customer objected to $1,784 pricing; instead he reframed to specialist quote to let them compare repair vs. replacement costs.
+## Coaching Note
+Need deeper engagement on options and objections handling.

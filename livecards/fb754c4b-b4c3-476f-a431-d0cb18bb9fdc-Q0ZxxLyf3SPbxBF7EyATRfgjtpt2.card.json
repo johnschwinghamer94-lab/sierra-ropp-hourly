@@ -1,1 +1,8 @@
-{"recId": "fb754c4b-b4c3-476f-a431-d0cb18bb9fdc-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2", "tech": "Bradley_Espinoza", "jobNumber": 670579878, "dateCreated": "2026-08-02", "durationMin": 106, "bands": {"welcome": "Moderate", "assessment": "Solid", "decision": "Solid", "deliver": "Moderate"}, "critical": {"expectations": true, "questions": false, "options": true, "objections": true}, "outcome": "flipped", "tip": "WIN — Deferring pricing to the specialist instead of guessing earned customer trust and led directly to the estimate agreement."}
+{
+  "recId": "fb754c4b-b4c3-476f-a431-d0cb18bb9fdc-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2",
+  "tech": "Bradley_Espinoza",
+  "date": "2026-08-02",
+  "jobNumber": "670579878",
+  "outcome": "unknown",
+  "tip": "FIX \u2014 Need deeper assessment and option building to move customer forward."
+}
