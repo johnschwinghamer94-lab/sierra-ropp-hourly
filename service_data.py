@@ -115,13 +115,11 @@ def cloud_bootstrap_creds():
 
 
 _CLOUD_SEEDED = {}
-def cloud_seed(path_data, path_hist):
-    """Pull the previous run's servicedata.json + servicedata_history.json
-    from the dashboard repo into the working dir so --light mode's cache
-    reuse works on a fresh runner. 404 (first run) is fine — caller falls
-    back to a full run."""
-    for local_path, repo_name in ((path_data, "servicedata.json"),
-                                   (path_hist, "servicedata_history.json")):
+def cloud_seed_files(pairs):
+    """Pull each (local_path, repo_name) pair from the dashboard repo into the
+    working dir so --light mode's cache reuse works on a fresh runner. 404
+    (first run) is fine — caller falls back to a full run."""
+    for local_path, repo_name in pairs:
         txt = gh_fetch(repo_name)
         _CLOUD_SEEDED[repo_name] = txt
         if txt:
@@ -132,11 +130,10 @@ def cloud_seed(path_data, path_hist):
                 pass
 
 
-def cloud_publish(path_data, path_hist):
-    """Push servicedata.json + servicedata_history.json back to the dashboard
-    repo, skip-if-unchanged vs. what cloud_seed() pulled at session start."""
-    for local_path, repo_name in ((path_data, "servicedata.json"),
-                                   (path_hist, "servicedata_history.json")):
+def cloud_publish_files(pairs):
+    """Push each (local_path, repo_name) pair back to the dashboard repo,
+    skip-if-unchanged vs. what cloud_seed_files() pulled at session start."""
+    for local_path, repo_name in pairs:
         try:
             with open(local_path, "r", encoding="utf-8") as f:
                 new_txt = f.read()
@@ -145,6 +142,14 @@ def cloud_publish(path_data, path_hist):
         if new_txt == _CLOUD_SEEDED.get(repo_name):
             continue
         gh_put(repo_name, new_txt, "Service data " + dt.datetime.now(TZ).strftime("%Y-%m-%d %H:%M:%S"))
+
+
+def cloud_seed(path_data, path_hist):
+    cloud_seed_files([(path_data, "servicedata.json"), (path_hist, "servicedata_history.json")])
+
+
+def cloud_publish(path_data, path_hist):
+    cloud_publish_files([(path_data, "servicedata.json"), (path_hist, "servicedata_history.json")])
 
 TZ = ZoneInfo("America/Los_Angeles")
 NOW = dt.datetime.now(TZ)
@@ -583,26 +588,51 @@ def _weekly_cache_path(monday):
     return os.path.join(SCRATCH, "fc_week_%s.json" % monday.isoformat())
 
 
-def fetch_fc_week_dept(monday, sunday, roster):
+# Weeks currently tracked by weekreview.json with audit=="prelim" must NEVER
+# be read from / written to the fc_week_*.json cache — a Sunday-evening
+# prelim pull is known-incomplete (posting batches land overnight) and the
+# Monday final re-audit needs a genuinely fresh fetch. Populated once at the
+# top of week_review_main(); stays {} for normal (non-week-review) runs, so
+# the historical 9-week series keeps its old always-cache behavior.
+_WR_AUDIT = {}
+
+
+def _week_cache_allowed(monday):
+    return _WR_AUDIT.get(monday.isoformat()) != "prelim"
+
+
+def fc_week_agg(monday, sunday, roster):
+    """Per-tech FC agg (fc_tech_rows shape) for an arbitrary Mon-Sun week,
+    cached to scratchpad forever UNLESS that week is currently tracked in
+    weekreview.json with audit=='prelim' (see _WR_AUDIT note above)."""
     cache = _weekly_cache_path(monday)
-    if os.path.exists(cache):
+    allow_cache = _week_cache_allowed(monday)
+    if allow_cache and os.path.exists(cache):
         try:
-            return json.load(open(cache))
+            payload = json.load(open(cache))
+            if isinstance(payload, dict) and "_tech_agg" in payload:
+                return payload["_tech_agg"]
         except Exception:
             pass
     c, rows = fc_window(monday, sunday)
     agg = fc_tech_rows(c, rows, roster)
+    if allow_cache:
+        try:
+            with open(cache + ".tmp", "w") as f:
+                json.dump({"_tech_agg": agg}, f)
+            os.replace(cache + ".tmp", cache)
+        except Exception:
+            pass
+    return agg
+
+
+def fetch_fc_week_dept(monday, sunday, roster):
+    agg = fc_week_agg(monday, sunday, roster)
     dept = {"opp": sum(a["opp"] for a in agg.values()),
             "converted": sum(a["converted"] for a in agg.values()),
             "rev": sum(a["rev"] for a in agg.values()),
             "membOpp": sum(a["membOpp"] for a in agg.values()),
             "membSold": sum(a["membSold"] for a in agg.values())}
-    try:
-        with open(cache + ".tmp", "w") as f:
-            json.dump(dept, f)
-        os.replace(cache + ".tmp", cache)
-    except Exception:
-        pass
     return dept
 
 
@@ -732,6 +762,268 @@ def dept_summary(w, fc_agg, sales_dept, rev_bucket):
     }
 
 
+# ── 10. week review (Sunday-evening prelim + Monday-morning final re-audit) ─
+# Mon-Sun week containing YESTERDAY: a Sunday-evening run (cron in LA tz)
+# still sees TODAY==that week's Sunday -> prelim; a Monday-or-later run sees
+# TODAY > that week's Sunday -> final. --week YYYY-MM-DD overrides to review
+# an arbitrary (already-Monday) week, e.g. for backfill/testing.
+def bucket_sales_weeks(ests, job_tech, windows):
+    """windows: {name: (frm, to)} -> ({name: {tech: {"sales":,"n":}}}, {name: dept_total})."""
+    sales_by_tech = {w: defaultdict(lambda: {"sales": 0.0, "n": 0}) for w in windows}
+    sales_dept = {w: 0.0 for w in windows}
+    for e in ests:
+        d = parse_ts(e.get("soldOn"))
+        if not d:
+            continue
+        d = d.date()
+        tech = job_tech.get(e.get("jobId"))
+        if not tech:
+            continue
+        sub = num(e.get("subtotal"))
+        for w, (frm, to) in windows.items():
+            if frm <= d <= to:
+                sales_dept[w] += sub
+                sales_by_tech[w][tech]["sales"] += sub
+                sales_by_tech[w][tech]["n"] += 1
+    return sales_by_tech, sales_dept
+
+
+def week_dept_summary(fc_agg, sales_dept_val, rev_total):
+    opp = sum(a["opp"] for a in fc_agg.values())
+    converted = sum(a["converted"] for a in fc_agg.values())
+    jobs = sum(a["jobs"] for a in fc_agg.values())
+    membOpp = sum(a["membOpp"] for a in fc_agg.values())
+    membSold = sum(a["membSold"] for a in fc_agg.values())
+    leads = sum(a["leads"] for a in fc_agg.values())
+    oppW = sum(a["oppW"] for a in fc_agg.values())
+    sales_val = sales_dept_val
+    return {
+        "opps": int(opp), "converted": int(converted),
+        "closeRate": round(converted / opp * 1000) / 10 if opp else 0,
+        "sales": round(sales_val),
+        "avgSale": round(sales_val / converted) if converted else 0,
+        "revenue": round(rev_total),
+        "jobs": int(jobs), "avgTicket": round(rev_total / jobs) if jobs else 0,
+        "membershipsSold": int(membSold), "membershipOpps": int(membOpp),
+        "membershipConv": round(membSold / membOpp * 1000) / 10 if membOpp else 0,
+        "leadsSet": leads,
+        "optionsPerOpp": round(oppW / opp, 2) if opp else 0,
+    }
+
+
+def week_tech_rows(fc_agg, sales_bucket, roster):
+    rows = []
+    for name, info in roster.items():
+        fc = fc_agg.get(name)
+        if not fc:
+            continue
+        sb = sales_bucket.get(name, {"sales": 0.0, "n": 0})
+        opp, converted, jobs, rev = fc["opp"], fc["converted"], fc["jobs"], fc["rev"]
+        leads, membSold, membOpp, oppW = fc["leads"], fc["membSold"], fc["membOpp"], fc["oppW"]
+        sales_val = sb["sales"]
+        if not (opp or jobs or sales_val or leads):
+            continue
+        rows.append({
+            "name": name, "team": info["team"],
+            "opps": int(opp), "closeRate": round(converted / opp * 1000) / 10 if opp else 0,
+            "avgSale": round(sales_val / converted) if converted else 0,
+            "sales": round(sales_val),
+            "membershipsSold": int(membSold), "membershipOpps": int(membOpp),
+            "membershipConv": round(membSold / membOpp * 1000) / 10 if membOpp else 0,
+            "leadsSet": leads, "revenue": round(rev), "jobs": int(jobs),
+            "avgTicket": round(rev / jobs) if jobs else 0,
+            "optionsPerOpp": round(oppW / opp, 2) if opp else 0,
+        })
+    rows.sort(key=lambda r: -r["revenue"])
+    return rows
+
+
+_WEEK_DELTA_KEYS = ["sales", "revenue", "opps", "converted", "closeRate", "avgSale",
+                     "jobs", "avgTicket", "membershipsSold", "membershipConv",
+                     "leadsSet", "optionsPerOpp"]
+
+
+def week_deltas(cur, prior):
+    return {k: round(cur.get(k, 0) - prior.get(k, 0), 2) for k in _WEEK_DELTA_KEYS}
+
+
+def build_audit_note(prelim_dept, final_dept):
+    """Human sentence quantifying what changed vs. Sunday's prelim pass."""
+    parts = []
+    sales_delta = round(final_dept.get("sales", 0) - prelim_dept.get("sales", 0))
+    if sales_delta:
+        parts.append("%s$%s sales" % ("+" if sales_delta >= 0 else "-", format(abs(sales_delta), ",")))
+    mem_delta = final_dept.get("membershipsSold", 0) - prelim_dept.get("membershipsSold", 0)
+    if mem_delta:
+        parts.append("%s%d membership%s" % ("+" if mem_delta >= 0 else "-", abs(mem_delta),
+                                              "" if abs(mem_delta) == 1 else "s"))
+    if not parts:
+        rev_delta = round(final_dept.get("revenue", 0) - prelim_dept.get("revenue", 0))
+        if rev_delta:
+            parts.append("%s$%s revenue" % ("+" if rev_delta >= 0 else "-", format(abs(rev_delta), ",")))
+    if not parts:
+        return "no material change from Sunday's preliminary pull"
+    return " / ".join(parts) + " posted after Sunday review"
+
+
+def week_review_main():
+    week_arg = None
+    if "--week" in sys.argv:
+        week_arg = dt.date.fromisoformat(sys.argv[sys.argv.index("--week") + 1])
+    log("start week-review" + (" [CLOUD]" if CLOUD else ""))
+
+    wr_path = os.path.join(HERE, "weekreview.json")
+    if CLOUD:
+        cloud_bootstrap_creds()
+        cloud_seed_files([(wr_path, "weekreview.json")])
+        log("cloud: seeded weekreview.json from dashboard repo")
+
+    try:
+        wr = json.load(open(wr_path))
+    except Exception:
+        wr = {"weeks": {}, "latest": None}
+    wr.setdefault("weeks", {})
+
+    global _WR_AUDIT
+    _WR_AUDIT = {k: v.get("audit") for k, v in wr["weeks"].items()}
+
+    if week_arg:
+        monday = week_arg - dt.timedelta(days=week_arg.weekday())
+    else:
+        yesterday = TODAY - dt.timedelta(days=1)
+        monday = yesterday - dt.timedelta(days=yesterday.weekday())
+    sunday = monday + dt.timedelta(days=6)
+    key = monday.isoformat()
+    label = "%d/%d-%d/%d" % (monday.month, monday.day, sunday.month, sunday.day)
+    audit = "prelim" if TODAY == sunday else "final"
+    log("week %s (%s): %s..%s  audit=%s" % (key, label, monday, sunday, audit))
+
+    prior_monday = monday - dt.timedelta(weeks=1)
+    prior_sunday = prior_monday + dt.timedelta(days=6)
+
+    roster = fetch_roster()
+    log("roster: %d techs" % len(roster))
+
+    log("FC v1 report x2 (current + prior week)")
+    cur_fc = fc_week_agg(monday, sunday, roster)
+    prior_fc = fc_week_agg(prior_monday, prior_sunday, roster)
+
+    log("sold estimates (sales$, entity-precise, both weeks)")
+    ests = paged("/sales/v2/tenant/{tenant}/estimates", {"soldAfter": utc_iso(prior_monday)})
+    ests = [e for e in ests if e.get("soldOn") and e.get("businessUnitId") in DEPT_BUS]
+    job_ids = {e["jobId"] for e in ests if e.get("jobId")}
+    job_tech = fetch_job_tech_map(job_ids, roster)
+    week_windows = {"cur": (monday, sunday), "prior": (prior_monday, prior_sunday)}
+    sales_by_tech, sales_dept = bucket_sales_weeks(ests, job_tech, week_windows)
+
+    log("invoices (revenue$, both weeks)")
+    invs = []
+    for bu in DEPT_BUS:
+        invs += paged("/accounting/v2/tenant/{tenant}/invoices",
+                       {"businessUnitId": bu, "invoicedOnOrAfter": utc_iso(prior_monday)})
+        time.sleep(0.3)
+    cur_rev = revenue_for_range(invs, monday, sunday)
+    prior_rev = revenue_for_range(invs, prior_monday, prior_sunday)
+
+    cur_dept = week_dept_summary(cur_fc, sales_dept["cur"], cur_rev)
+    prior_dept = week_dept_summary(prior_fc, sales_dept["prior"], prior_rev)
+    cur_dept["deltas"] = week_deltas(cur_dept, prior_dept)
+    cur_techs = week_tech_rows(cur_fc, sales_by_tech["cur"], roster)
+
+    prior_entry = wr["weeks"].get(key)
+    if audit == "final" and prior_entry and prior_entry.get("audit") == "prelim":
+        auditNote = build_audit_note(prior_entry["dept"], cur_dept)
+    elif audit == "final" and week_arg and not prior_entry:
+        auditNote = "generated retroactively"
+    elif audit == "final":
+        auditNote = "finalized (no prior prelim run)"
+    else:
+        auditNote = "preliminary — Sunday evening pull; will re-audit Monday morning"
+
+    wr["weeks"][key] = {"label": label, "generated": NOW.isoformat(), "audit": audit,
+                         "dept": cur_dept, "techs": cur_techs, "auditNote": auditNote}
+    wr["latest"] = key
+
+    with open(wr_path + ".tmp", "w") as f:
+        json.dump(wr, f, separators=(",", ":"))
+    os.replace(wr_path + ".tmp", wr_path)
+    log("wrote %s (week %s, audit=%s)" % (wr_path, key, audit))
+
+    if CLOUD:
+        cloud_publish_files([(wr_path, "weekreview.json")])
+        log("cloud: published weekreview.json to dashboard repo")
+
+    log("DONE in %.1fs" % (time.time() - _T0))
+    print("\nWeek %s (%s) audit=%s — %s" % (key, label, audit, auditNote))
+    print("dept: sales $%s | revenue $%s | opps %d | close %.1f%% | membSold %d" % (
+        format(cur_dept["sales"], ","), format(cur_dept["revenue"], ","),
+        cur_dept["opps"], cur_dept["closeRate"], cur_dept["membershipsSold"]))
+    print("deltas vs prior week:", cur_dept["deltas"])
+    print("techs: %d rows; top 3:" % len(cur_techs),
+          [(t["name"], t["revenue"], t["closeRate"]) for t in cur_techs[:3]])
+
+
+# ── self-healing guards (2026-08-02 incident: GitHub native cron silently
+# skipped the 5:35 AM full rebuild, Aug 2 06:46->14:09 UTC gap, so 3-min
+# light runs kept republishing July's MTD block into August) ───────────────
+def _light_escalation_reason(old):
+    """Return a reason string if a --light run should be promoted to a full
+    run, else None. Cheap: three dict lookups + one timestamp parse."""
+    cur_month = MONTHS[TODAY.month - 1]
+    if old.get("mtdMonth") != cur_month:
+        return "mtd month stale (seeded=%r, current=%r)" % (old.get("mtdMonth"), cur_month)
+    monthly = old.get("monthly") or []
+    if not any(m.get("month") == cur_month for m in monthly):
+        return "monthly[] missing current month %r" % cur_month
+    lfr = old.get("lastFullRun")
+    if not lfr:
+        return "no lastFullRun stamp found"
+    try:
+        last = dt.datetime.fromisoformat(lfr)
+        if last.tzinfo is None:
+            last = last.replace(tzinfo=TZ)
+        age_h = (NOW - last).total_seconds() / 3600
+        if age_h > 26:
+            return "lastFullRun stale (%.1fh old)" % age_h
+    except Exception:
+        return "lastFullRun stamp unparsable (%r)" % lfr
+    return None
+
+
+def _maybe_week_review_catchup():
+    """Self-heal weekreview.yml's native crons from inside the 3-min light
+    run: if it's past Sun 8:30pm PT and this week's prelim hasn't been
+    written yet, run it inline; if it's past Mon 6:00am PT and this week is
+    still audit=='prelim', finalize it inline. No-op the rest of the time
+    (one time check); idempotent once weekreview.json reflects the right
+    state (next light run's check naturally falls through)."""
+    weekday = TODAY.weekday()   # Mon=0 .. Sun=6
+    is_sun_eve = weekday == 6 and NOW.time() >= dt.time(20, 30)
+    is_mon_am = weekday == 0 and NOW.time() >= dt.time(6, 0)
+    if not (is_sun_eve or is_mon_am):
+        return
+    wr_path = os.path.join(HERE, "weekreview.json")
+    if CLOUD:
+        cloud_seed_files([(wr_path, "weekreview.json")])
+    try:
+        wr = json.load(open(wr_path))
+    except Exception:
+        wr = {"weeks": {}}
+    ref = TODAY if is_sun_eve else (TODAY - dt.timedelta(days=1))
+    monday = ref - dt.timedelta(days=ref.weekday())
+    key = monday.isoformat()
+    entry = (wr.get("weeks") or {}).get(key)
+    if is_sun_eve and not entry:
+        log("light run: week-review catch-up — %s prelim missing, running inline" % key)
+        week_review_main()
+    elif is_mon_am and entry and entry.get("audit") == "prelim":
+        log("light run: week-review catch-up — %s still prelim past Mon 6am, finalizing inline" % key)
+        week_review_main()
+    else:
+        log("light run: week-review catch-up — %s already %s, nothing to do" %
+            (key, entry.get("audit") if entry else "missing (not yet due)"))
+
+
 def main():
     light = "--light" in sys.argv
     log("start — roster" + (" [LIGHT]" if light else "") + (" [CLOUD]" if CLOUD else ""))
@@ -752,6 +1044,11 @@ def main():
             old = json.load(open(path))
         except Exception:
             log("WARNING: --light requested but no existing servicedata.json found — falling back to full run")
+            light = False
+    if light:
+        reason = _light_escalation_reason(old)
+        if reason:
+            log("light run escalated to full: %s" % reason)
             light = False
 
     live_windows = {"today": WINDOWS["today"], "wtd": WINDOWS["wtd"]} if light else WINDOWS
@@ -818,6 +1115,15 @@ def main():
 
     out = {"updated": NOW.isoformat(), "techs": {}, "monthly": monthly, "board": board,
            "techDaily": tech_daily, "weekly": weekly, "budget": budget}
+    # self-healing stamps (see _light_escalation_reason): mtdMonth/lastFullRun
+    # only advance on a genuine full run; light runs carry the prior values
+    # forward so a stale seed is detectable on the NEXT light run.
+    if light:
+        out["mtdMonth"] = (old or {}).get("mtdMonth")
+        out["lastFullRun"] = (old or {}).get("lastFullRun")
+    else:
+        out["mtdMonth"] = MONTHS[TODAY.month - 1]
+        out["lastFullRun"] = NOW.isoformat()
     for w in WINDOWS:
         if light and w in ("mtd", "ytd"):
             out[w] = old.get(w, {})
@@ -862,6 +1168,12 @@ def main():
         cloud_publish(path, hist_path)
         log("cloud: published servicedata.json / servicedata_history.json to dashboard repo")
 
+    if light:
+        try:
+            _maybe_week_review_catchup()
+        except Exception as ex:
+            log("week-review catch-up skipped (error): %s" % ex)
+
     log("DONE in %.1fs" % (time.time() - _T0))
     print("\nToday: sales $%s | revenue $%s | opps %d | close %.1f%% | jobs %d" % (
         format(out["today"]["sales"], ","), format(out["today"]["revenue"], ","),
@@ -874,4 +1186,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if "--week-review" in sys.argv:
+        week_review_main()
+    else:
+        main()

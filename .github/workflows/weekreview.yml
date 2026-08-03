@@ -1,0 +1,32 @@
+name: Service Dashboard Week Review (cloud)
+on:
+  schedule:
+    # Sunday 8:30 PM PT (03:30 UTC Monday) -> prelim pass for the week just ending
+    - cron: "30 3 * * 1"
+    # Monday 6:00 AM PT (13:00 UTC Monday) -> final re-audit vs Sunday's prelim
+    - cron: "0 13 * * 1"
+  workflow_dispatch: {}
+concurrency:
+  group: weekreview
+  cancel-in-progress: false
+jobs:
+  weekreview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TZ: America/Los_Angeles
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install --quiet -r requirements.txt
+      - env:
+          ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+          SERVICEDATA_CLOUD: "1"
+        run: python service_data.py --week-review
+      - env:
+          ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+          SERVICEDATA_CLOUD: "1"
+        run: python ropp_week_review.py --week-review
