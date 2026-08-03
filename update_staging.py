@@ -33,6 +33,9 @@ def _replace_const(html, name, value_json, path_label):
     pat = re.compile(r"^const " + re.escape(name) + r" = .*;$", re.MULTILINE)
     n = len(pat.findall(html))
     if n != 1:
+        if n == 0:
+            print(f"  {path_label}: no 'const {name}' — page doesn't carry that deck, skipping")
+            return html
         raise RuntimeError(f"{path_label}: expected exactly 1 occurrence of 'const {name} = ...;', found {n}")
     return pat.sub(lambda m: f"const {name} = {value_json};", html, count=1)
 
@@ -99,20 +102,26 @@ def main():
 
         # PACE_DATA / DEPT_PACE_DATA: replace whole line verbatim from index.html
         pat_pace = re.compile(r"^const PACE_DATA = .*;$", re.MULTILINE)
-        if len(pat_pace.findall(html)) != 1:
-            raise RuntimeError(f"{fname}: PACE_DATA const not found exactly once")
-        html = pat_pace.sub(lambda m: pace_line, html, count=1)
+        _n = len(pat_pace.findall(html))
+        if _n > 1:
+            raise RuntimeError(f"{fname}: PACE_DATA const found {_n} times")
+        if _n == 1:
+            html = pat_pace.sub(lambda m: pace_line, html, count=1)
 
         pat_dept = re.compile(r"^const DEPT_PACE_DATA = .*;$", re.MULTILINE)
-        if len(pat_dept.findall(html)) != 1:
-            raise RuntimeError(f"{fname}: DEPT_PACE_DATA const not found exactly once")
-        html = pat_dept.sub(lambda m: dept_pace_line, html, count=1)
+        _n = len(pat_dept.findall(html))
+        if _n > 1:
+            raise RuntimeError(f"{fname}: DEPT_PACE_DATA const found {_n} times")
+        if _n == 1:
+            html = pat_dept.sub(lambda m: dept_pace_line, html, count=1)
 
         # LIVE_ROPP footer badge
         pat_live = re.compile(r"^window\.LIVE_ROPP = .*;$", re.MULTILINE)
-        if len(pat_live.findall(html)) != 1:
-            raise RuntimeError(f"{fname}: window.LIVE_ROPP not found exactly once")
-        html = pat_live.sub(lambda m: f"window.LIVE_ROPP = {live_ropp_json};", html, count=1)
+        _n = len(pat_live.findall(html))
+        if _n > 1:
+            raise RuntimeError(f"{fname}: window.LIVE_ROPP found {_n} times")
+        if _n == 1:
+            html = pat_live.sub(lambda m: f"window.LIVE_ROPP = {live_ropp_json};", html, count=1)
 
         # STAGING footer timestamp (both "STAGING · test.html" occurrences)
         html = html.replace("STAGING \u00b7 test.html",
