@@ -449,9 +449,10 @@ def _cal_weeks_for_month(year, month, today):
 
 def build_weekly_conv(today, all_names):
     # True Mon-Sun calendar weeks (replaces old day-of-month W1-W4 chunks).
-    # NOTE: source rows below are still filtered to the current month only, so
-    # cross-month weeks (e.g. "Jun 29-Jul 5") will only reflect the current-month
-    # days within them (Jul 1-5), not the prior-month spillover days (Jun 29-30).
+    # Cross-month weeks (e.g. "Jun 29-Jul 5") DO include the prior-month spillover
+    # days: inclusion is window-based (week_idx(d) matches one of week_starts,
+    # which already covers the straddle week per _cal_weeks_for_month) rather than
+    # a same-month test, so straddle weeks show their full Mon-Sun activity.
     week_starts = _cal_weeks_for_month(YEAR, today.month, today)
     labels = [_cal_week_label(ws) for ws in week_starts]
     n_weeks = len(week_starts)
@@ -467,14 +468,14 @@ def build_weekly_conv(today, all_names):
     SUB = sub_by_srcjob()
     for grp, r in iter_grouped(load_rows("ROPP_TGLs_Created.xlsx"), "Assigned Technicians", 1):
         tech = resolve(r[3]) or resolve(grp); d = to_date(r[5])
-        if not tech or d is None or d.year != YEAR or d.month != today.month: continue
+        if not tech or d is None or d > today: continue
         i = week_idx(d)
         if i is None: continue
         per[tech][i]["tgls"] += 1; per[tech][i]["revenue"] += SUB.get(jobkey(r[1]), 0.0)
     for grp, r in iter_grouped(load_rows("Revenue_By_JobType.xlsx"), "Assigned Technicians", 3):
         if jobkey(r[3]) not in _rev_clean_set(): continue
         tech = resolve(r[7]) or resolve(grp); d = to_date(r[4])
-        if not tech or d is None or d.year != YEAR or d.month != today.month: continue
+        if not tech or d is None or d > today: continue
         i = week_idx(d)
         if i is None: continue
         per[tech][i]["calls"] += 1
