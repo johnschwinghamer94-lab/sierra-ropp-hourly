@@ -87,28 +87,6 @@
       "closed": false
     },
     {
-      "id": "bed76d22-464b-4bcb-bded-393bcb572035-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
-      "type": "Stall / Think About It",
-      "cust": "I'll skip that for now.",
-      "answer": "Okay.",
-      "tech": "Dustin Romine",
-      "date": "2025-12-30",
-      "grade": "poor",
-      "closed": false,
-      "job": "623618475"
-    },
-    {
-      "id": "f8592b24-37d3-4073-92c9-389be282a93d-kBmcjj1ucbYoWgDqILgiXfkLNzP2-1",
-      "type": "Stall / Think About It",
-      "cust": "Just nothing right now. I don't want to be in this business of replacing... here is coming, you know, maintenance, so I know where we stand.",
-      "answer": "Okay. Right. Yeah.",
-      "tech": "Ting Cheung",
-      "date": "2025-12-30",
-      "grade": "ok",
-      "closed": false,
-      "job": "623294044"
-    },
-    {
       "id": "1904209e-2460-4737-a063-4e076a726004-XYpMBXpv6TVg9okInQemgsAIw1B3-1",
       "type": "Price",
       "cust": "So like I want to figure out something... and so like every month if it's two grand. Two grand, like it can't do that.",
@@ -140,16 +118,6 @@
       "grade": "ok",
       "closed": false,
       "job": "623468614"
-    },
-    {
-      "id": "74592a6e-689e-492a-9e4d-104ae43924ad-ZLjkNBMk4fMJ8rE1KZTobEMfb893-1",
-      "type": "Stall / Think About It",
-      "cust": "Not for now.",
-      "answer": "No, no. All right. Okay.",
-      "tech": "AJ-Alejandro Ruiz Padilla",
-      "date": "2025-12-31",
-      "grade": "poor",
-      "closed": false
     },
     {
       "id": "8f1d73cd-90cd-4612-bcbf-f1003df53709-XYpMBXpv6TVg9okInQemgsAIw1B3-1",

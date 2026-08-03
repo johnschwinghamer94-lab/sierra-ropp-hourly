@@ -1,15 +1,4 @@
 {
   "month": "2026-08",
-  "items": [
-    {
-      "id": "6dab1c3f-0247-4c2b-a266-d7ad81060692-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
-      "type": "Other",
-      "cust": "So, like, like if, if we opt out io1 right now,",
-      "answer": "You're more than welcome to. I can at least give you the information, give you a brochure to go.",
-      "tech": "Andrew Trujillo",
-      "date": "2026-08-01",
-      "grade": "poor",
-      "closed": false
-    }
-  ]
+  "items": []
 }
