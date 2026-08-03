@@ -25,3 +25,8 @@ jobs:
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
           SERVICEDATA_CLOUD: "1"
         run: python service_data.py --week-review
+      - env:
+          ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+          SERVICEDATA_CLOUD: "1"
+        run: python ropp_week_review.py --week-review
