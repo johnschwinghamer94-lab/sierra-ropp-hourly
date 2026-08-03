@@ -5,14 +5,27 @@ on:
     - cron: "30 3 * * 1"
     # Monday 6:00 AM PT (13:00 UTC Monday) -> final re-audit vs Sunday's prelim
     - cron: "0 13 * * 1"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      backfill_from:
+        description: "SILO history backfill: first Monday to rebuild (YYYY-MM-DD). Blank = normal weekly run."
+        required: false
+        default: ""
+      overwrite:
+        description: "Backfill only — rebuild weeks already on record instead of skipping them"
+        type: boolean
+        required: false
+        default: false
 concurrency:
   group: weekreview
   cancel-in-progress: false
 jobs:
   weekreview:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # A backfill walks one week at a time through the Reporting API; 20 min covers the
+    # weekly run but not a season of history, and a timeout mid-backfill wastes the
+    # whole pull. The normal run still finishes in ~2 min regardless of this ceiling.
+    timeout-minutes: 90
     env:
       TZ: America/Los_Angeles
     steps:
@@ -20,13 +33,25 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install --quiet -r requirements.txt
-      - env:
+      - name: Service week review (skipped during a SILO backfill)
+        if: ${{ github.event.inputs.backfill_from == '' }}
+        env:
           ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
           SERVICEDATA_CLOUD: "1"
         run: python service_data.py --week-review
-      - env:
+      - name: SILO week review — weekly run or history backfill
+        env:
           ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
           SERVICEDATA_CLOUD: "1"
-        run: python ropp_week_review.py --week-review
+          BACKFILL_FROM: ${{ github.event.inputs.backfill_from }}
+          OVERWRITE: ${{ github.event.inputs.overwrite }}
+        run: |
+          if [ -n "$BACKFILL_FROM" ]; then
+            EXTRA=""
+            [ "$OVERWRITE" = "true" ] && EXTRA="--overwrite"
+            python ropp_week_review.py --backfill-from "$BACKFILL_FROM" $EXTRA
+          else
+            python ropp_week_review.py --week-review
+          fi

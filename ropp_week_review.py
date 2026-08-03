@@ -254,6 +254,10 @@ def week_metrics(monday, sunday):
             "tgls": int(a["tgls"]),
             "tglRevenue": round(a["tglRevenue"]),
             "callsRan": int(a["callsRan"]),
+            # TGLs per call ran — the department's headline "TGL rate". Derived here
+            # rather than in the browser so the week-over-week ranking below scores it
+            # off the same numbers every other metric is scored off.
+            "tglRate": U.rate(a["tgls"], a["callsRan"]),
             "caCloseRate": U.rate(a["estSold"], a["estRan"]),
             "conversion": U.rate(a["tglsSold"], a["tgls"]),
         }
@@ -272,11 +276,78 @@ def week_metrics(monday, sunday):
     return dept_out, techs_out
 
 
-_WEEK_DELTA_KEYS = ["tgls", "tglRevenue", "callsRan", "caCloseRate", "conversion"]
+_WEEK_DELTA_KEYS = ["tgls", "tglRevenue", "callsRan", "tglRate", "caCloseRate", "conversion"]
+
+# Metrics the week-over-week board ranks. (key, label, format) — all higher-is-better,
+# which is why worst/best need no per-metric direction flag.
+RANKED_METRICS = [
+    ("tgls",        "TGLs generated", "count"),
+    ("tglRate",     "TGL rate",       "pct"),
+    ("tglRevenue",  "TGL revenue",    "money"),
+    ("callsRan",    "Calls ran",      "count"),
+    ("caCloseRate", "CA close rate",  "pct"),
+    ("conversion",  "TGL conversion", "pct"),
+]
 
 
 def week_deltas(cur, prior):
     return {k: round(cur.get(k, 0) - prior.get(k, 0), 2) for k in _WEEK_DELTA_KEYS}
+
+
+def recompute_records(wr):
+    """Rebuild the cross-week ranking block: a per-week `ranks` entry for every
+    metric plus a top-level `records` with the full series and the best/worst week.
+
+    Rebuilt from scratch on every write, never incrementally patched. A Monday
+    re-audit changes that week's numbers, which can change every other week's rank
+    and can unseat a record -- an incremental update would leave stale badges behind.
+
+    Per metric per week:
+      rank/of    - standing across all weeks on record, 1 = best
+      best       - the all-time best value and the week that holds it
+      priorBest  - best among STRICTLY EARLIER weeks (None for the oldest week)
+      isNewHigh  - beat every week before it, which is what "new N-week high" means
+    """
+    weeks = wr.get("weeks") or {}
+    keys = sorted(weeks)
+    series = []
+    for k in keys:
+        d = weeks[k].get("dept") or {}
+        row = {"week": k, "label": weeks[k].get("label", k), "audit": weeks[k].get("audit")}
+        for m, _, _ in RANKED_METRICS:
+            row[m] = d.get(m, 0)
+        series.append(row)
+
+    n = len(series)
+    records = {"count": n, "first": keys[0] if keys else None, "last": keys[-1] if keys else None,
+               "metrics": [{"key": m, "label": lbl, "format": f} for m, lbl, f in RANKED_METRICS],
+               "series": series, "best": {}, "worst": {}}
+    for wk in weeks.values():
+        wk.pop("ranks", None)
+    if not series:
+        wr["records"] = records
+        return wr
+
+    for m, _, _ in RANKED_METRICS:
+        hi = max(series, key=lambda r: r[m])
+        lo = min(series, key=lambda r: r[m])
+        records["best"][m] = {"value": hi[m], "week": hi["week"], "label": hi["label"]}
+        records["worst"][m] = {"value": lo[m], "week": lo["week"], "label": lo["label"]}
+
+        order = sorted(series, key=lambda r: -r[m])
+        rank_of = {r["week"]: i + 1 for i, r in enumerate(order)}
+        for r in series:
+            prior = [x[m] for x in series if x["week"] < r["week"]]
+            pb = max(prior) if prior else None
+            weeks[r["week"]].setdefault("ranks", {})[m] = {
+                "rank": rank_of[r["week"]], "of": n,
+                "best": records["best"][m]["value"],
+                "bestWeek": records["best"][m]["label"],
+                "priorBest": pb,
+                "isNewHigh": pb is not None and r[m] > pb,
+            }
+    wr["records"] = records
+    return wr
 
 
 def build_audit_note(prelim_dept, final_dept):
@@ -348,12 +419,13 @@ def week_review_main():
 
     wr["weeks"][key] = {"label": label, "generated": NOW.isoformat(), "audit": audit,
                          "dept": cur_dept, "techs": cur_techs, "auditNote": auditNote}
-    wr["latest"] = key
+    wr["latest"] = max(wr["weeks"])
 
+    recompute_records(wr)
     with open(wr_path + ".tmp", "w") as f:
         json.dump(wr, f, separators=(",", ":"))
     os.replace(wr_path + ".tmp", wr_path)
-    log("wrote %s (week %s, audit=%s)" % (wr_path, key, audit))
+    log("wrote %s (week %s, audit=%s, %d weeks on record)" % (wr_path, key, audit, len(wr["weeks"])))
 
     if CLOUD:
         cloud_publish_files([(wr_path, "weekreview_silo.json")])
@@ -369,9 +441,104 @@ def week_review_main():
           [(t["name"], t["tglRevenue"], t["conversion"]) for t in cur_techs[:3]])
 
 
+_METRIC_CACHE = {}
+def week_metrics_cached(monday, sunday):
+    """week_metrics() memoized on the Monday. In a backfill each week is both its own
+    'current' and the next week's 'prior', so this halves the report fetches."""
+    if monday not in _METRIC_CACHE:
+        _METRIC_CACHE[monday] = week_metrics(monday, sunday)
+    return _METRIC_CACHE[monday]
+
+
+def backfill_main():
+    """Populate history: every completed week from --backfill-from through the last
+    finished one, so the dashboard has a real week-over-week series to rank and chart.
+
+    Existing entries are left alone unless --overwrite is passed -- a backfill must not
+    silently clobber a week that was already audited against its Sunday prelim.
+
+    Publishes ONCE at the end (in a finally, so a timeout still ships the weeks that
+    did land) rather than per week, to keep the dashboard repo history readable.
+    """
+    start = dt.date.fromisoformat(sys.argv[sys.argv.index("--backfill-from") + 1])
+    overwrite = "--overwrite" in sys.argv
+    log("start SILO backfill from %s%s%s"
+        % (start, " [OVERWRITE]" if overwrite else "", " [CLOUD]" if CLOUD else ""))
+
+    wr_path = os.path.join(HERE, "weekreview_silo.json")
+    if CLOUD:
+        cloud_bootstrap_creds()
+        cloud_seed_files([(wr_path, "weekreview_silo.json")])
+        log("cloud: seeded weekreview_silo.json from dashboard repo")
+    try:
+        wr = json.load(open(wr_path))
+    except Exception:
+        wr = {"weeks": {}, "latest": None}
+    wr.setdefault("weeks", {})
+
+    first = start - dt.timedelta(days=start.weekday())
+    yesterday = TODAY - dt.timedelta(days=1)
+    last = yesterday - dt.timedelta(days=yesterday.weekday())   # last COMPLETED week
+    mondays = []
+    m = first
+    while m <= last:
+        mondays.append(m)
+        m += dt.timedelta(weeks=1)
+    log("%d week(s) in range %s .. %s" % (len(mondays), first, last))
+
+    written, skipped = [], []
+    try:
+        for i, monday in enumerate(mondays):
+            key = monday.isoformat()
+            sunday = monday + dt.timedelta(days=6)
+            if key in wr["weeks"] and not overwrite:
+                skipped.append(key)
+                log("[%d/%d] %s already on record (audit=%s) — skipping"
+                    % (i + 1, len(mondays), key, wr["weeks"][key].get("audit")))
+                continue
+            log("[%d/%d] %s .. %s" % (i + 1, len(mondays), monday, sunday))
+            cur_dept, cur_techs = week_metrics_cached(monday, sunday)
+            prior_monday = monday - dt.timedelta(weeks=1)
+            prior_dept, _ = week_metrics_cached(prior_monday, prior_monday + dt.timedelta(days=6))
+            cur_dept["deltas"] = week_deltas(cur_dept, prior_dept)
+            wr["weeks"][key] = {
+                "label": "%d/%d-%d/%d" % (monday.month, monday.day, sunday.month, sunday.day),
+                "generated": NOW.isoformat(), "audit": "final",
+                "dept": cur_dept, "techs": cur_techs,
+                "auditNote": "generated retroactively (history backfill)"}
+            written.append(key)
+            log("      TGLs %d | $%s | calls %d | TGL rate %.1f%% | CA close %.1f%%"
+                % (cur_dept["tgls"], format(cur_dept["tglRevenue"], ","), cur_dept["callsRan"],
+                   cur_dept["tglRate"], cur_dept["caCloseRate"]))
+            time.sleep(1)
+    finally:
+        if wr["weeks"]:
+            wr["latest"] = max(wr["weeks"])
+            recompute_records(wr)
+            with open(wr_path + ".tmp", "w") as f:
+                json.dump(wr, f, separators=(",", ":"))
+            os.replace(wr_path + ".tmp", wr_path)
+            log("wrote %s (%d weeks on record)" % (wr_path, len(wr["weeks"])))
+            if CLOUD:
+                cloud_publish_files([(wr_path, "weekreview_silo.json")])
+                log("cloud: published weekreview_silo.json to dashboard repo")
+
+    log("DONE in %.1fs" % (time.time() - _T0))
+    print("\nBackfill: %d written, %d skipped, %d weeks on record"
+          % (len(written), len(skipped), len(wr["weeks"])))
+    rec = wr.get("records", {})
+    for m_, lbl, _ in RANKED_METRICS:
+        b = rec.get("best", {}).get(m_)
+        if b:
+            print("  best %-15s %-12s %s" % (lbl, b["label"], format(b["value"], ",")))
+
+
 if __name__ == "__main__":
-    if "--week-review" in sys.argv:
+    if "--backfill-from" in sys.argv:
+        backfill_main()
+    elif "--week-review" in sys.argv:
         week_review_main()
     else:
         print("usage: ropp_week_review.py --week-review [--week YYYY-MM-DD]")
+        print("       ropp_week_review.py --backfill-from YYYY-MM-DD [--overwrite]")
         sys.exit(1)
