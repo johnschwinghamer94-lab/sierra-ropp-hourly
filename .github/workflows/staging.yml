@@ -1,0 +1,59 @@
+name: "Staging refresh (hourly · live API)"
+on:
+  workflow_dispatch:
+  schedule:
+    # PT = UTC-7 (PDT). 6a-10p PT ≈ 13:40-23:40 UTC and 00:40-05:40 UTC next day.
+    - cron: "40 13-23 * * *"
+    - cron: "40 0-5 * * *"
+concurrency:
+  group: staging
+  cancel-in-progress: false
+jobs:
+  staging-refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      TZ: America/Los_Angeles
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+      - run: pip install --quiet -r requirements.txt
+      # cache/ is untracked — a fresh checkout doesn't have it (same crash as servicedeck's first run)
+      - run: mkdir -p cache
+      - name: Clone dashboard repo (staging targets test2.html / test_service.html)
+        env:
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+        run: |
+          git clone "https://x-access-token:${DASHBOARD_TOKEN}@github.com/johnschwinghamer94-lab/sierra-ropp-dashboard" "${{ github.workspace }}/site"
+      - name: Refresh prod caches (estimate.json, tgls_created.json, etc.)
+        env:
+          ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
+        run: python cloud_fetch.py
+      - name: Refresh staging caches (CA Conversion, Field Conversion, Memberships, IAQ)
+        env:
+          ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
+        run: python staging_fetch.py
+      - name: Splice fresh data into test2.html / test_service.html
+        env:
+          STAGING_DASHBOARD_REPO: ${{ github.workspace }}/site
+        run: python update_staging.py
+      - name: Commit + push staging pages (if changed)
+        env:
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+        run: |
+          cd site
+          git config user.email "johnschwinghamer94@gmail.com"
+          git config user.name "John Schwinghamer"
+          if git status --porcelain -- test2.html test_service.html | grep -q .; then
+            git add test2.html test_service.html
+            git commit -m "Staging refresh $(date +'%Y-%m-%d %H:%M %Z') (cloud · live API)"
+            n=0
+            until git push -q origin main; do
+              n=$((n+1)); [ "$n" -gt 1 ] && { echo "push failed after retry"; exit 1; }
+              git pull --rebase -q origin main
+            done
+            echo "pushed staging refresh"
+          else
+            echo "no changes — skipping push"
+          fi
