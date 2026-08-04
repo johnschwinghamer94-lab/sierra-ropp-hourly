@@ -4,6 +4,8 @@ on:
     paths:
       - "plans/**"
       - "coaching.json"
+      - "plans_service/**"
+      - "service_coaching.json"
       - "weekly/**"
       - "monthly/**"
       - "objections/**"
@@ -29,12 +31,14 @@ jobs:
           path: site
       - name: Relay coaching.json, plans, and weekly rollups to the site
         run: |
-          if [ ! -f coaching.json ]; then
-            echo "No coaching.json in this repo — nothing to relay."
+          if [ ! -f coaching.json ] && [ ! -f service_coaching.json ]; then
+            echo "No coaching.json or service_coaching.json in this repo — nothing to relay."
             exit 0
           fi
 
-          cp coaching.json site/coaching.json
+          if [ -f coaching.json ]; then
+            cp coaching.json site/coaching.json
+          fi
           mkdir -p site/coaching/plans
           if [ -d plans ]; then
             for d in plans/*/; do
@@ -42,6 +46,19 @@ jobs:
               date_name=$(basename "$d")
               mkdir -p "site/coaching/plans/$date_name"
               rsync -a "$d" "site/coaching/plans/$date_name/"
+            done
+          fi
+
+          if [ -f service_coaching.json ]; then
+            cp service_coaching.json site/service_coaching.json
+          fi
+          mkdir -p site/coaching/plans_service
+          if [ -d plans_service ]; then
+            for d in plans_service/*/; do
+              [ -d "$d" ] || continue
+              date_name=$(basename "$d")
+              mkdir -p "site/coaching/plans_service/$date_name"
+              rsync -a "$d" "site/coaching/plans_service/$date_name/"
             done
           fi
 
@@ -76,7 +93,9 @@ jobs:
           cd site
           git config user.name "coaching-relay"
           git config user.email "actions@github.com"
-          git add coaching.json coaching/plans coaching/weekly coaching/monthly coaching/objections
+          for p in coaching.json coaching/plans service_coaching.json coaching/plans_service coaching/weekly coaching/monthly coaching/objections; do
+            [ -e "$p" ] && git add "$p"
+          done
           if git diff --cached --quiet; then
             echo "No staged changes — nothing to commit."
             exit 0

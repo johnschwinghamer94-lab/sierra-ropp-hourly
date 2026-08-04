@@ -49,6 +49,7 @@ import requests
 HERE = Path(__file__).resolve().parent
 STATE_FILE = HERE / "siro_pull_state.json"
 DRY_OUTPUT_DIR = HERE / "siro_dry_output"
+SERVICE_ROSTER_FILE = HERE / "coaching" / "service_roster.txt"
 # In-repo mirror of every pulled transcript, committed by the workflow so the
 # claude.ai cloud routines (plan generation / scoring) can read transcripts
 # straight from the repo without holding any credentials. Owner-approved
@@ -189,10 +190,68 @@ def build_transcript(token, rec):
 _safe = lambda s: re.sub(r'[<>:"/\\|?*\r\n]', '', s).strip()
 
 
-def transcript_filename(rec):
+def transcript_filename(rec, prefix=""):
     rep = f"{rec.get('repFirstName','')} {rec.get('repLastName','')}".strip() or "Unknown"
     title = (rec.get("title") or "").strip()
-    return f"{_safe(rep)} - {_safe(title)}.txt"[:120]
+    return f"{prefix}{_safe(rep)} - {_safe(title)}.txt"[:120]
+
+
+# ── service-tech roster matching (mirrors the Mac poller's approach EXACTLY —
+# see "SILO TRANSCRIPTS/siro_livecoach_poll.py" _name_key/get_service_roster —
+# last-name + first-initial matching only, never bare first-name matching) ────
+def _norm_name(s):
+    return re.sub(r"\s+", " ", (s or "")).strip().lower()
+
+
+def _name_key(s):
+    """(first-initial, last-name) key for cross-source rep matching. Handles
+    roster entries that are only "J Boothe" (initial + last) as well as full
+    names like "Jonathan Boothe" — matches on last name + first-initial only,
+    NEVER on first name alone (e.g. "Juan Bernal" must not match "Juan
+    Tlatenchi" — different last names)."""
+    toks = _norm_name(s).replace("(", " ").replace(")", " ").split()
+    if not toks:
+        return None
+    first, last = toks[0], toks[-1]
+    if not first or not last:
+        return None
+    return (first[0], last)
+
+
+def load_service_roster_keys():
+    """Match-keys from coaching/service_roster.txt in this repo — the roster
+    itself is committed and refreshed by hand/roster script, not fetched live."""
+    if not SERVICE_ROSTER_FILE.exists():
+        return set()
+    names = [ln.strip() for ln in SERVICE_ROSTER_FILE.read_text(encoding="utf-8").splitlines()
+             if ln.strip() and not ln.strip().startswith("#")]
+    return {k for k in (_name_key(n) for n in names) if k}
+
+
+def list_recordings_orgwide(token):
+    """All recordings newer than LOOKBACK_DAYS, org-wide (no teamId filter) —
+    used for the Service-tech pass, since Service techs' recordings live
+    outside the SILO team (TEAM_ID)."""
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=LOOKBACK_DAYS)).isoformat()
+    results, cursor = [], None
+    while True:
+        url = f"{API_BASE}/recordings?limit=50"
+        if cursor:
+            url += f"&cursor={cursor}"
+        r = requests.get(url, headers={"x-siro-auth-token": token, "User-Agent": UA}, timeout=60)
+        r.raise_for_status()
+        data = r.json()
+        recs, cursor = data.get("data", []), data.get("cursor")
+        stop = False
+        for rec in recs:
+            if rec.get("dateCreated", "") >= cutoff:
+                results.append(rec)
+            else:
+                stop = True
+                break
+        if stop or not cursor:
+            break
+    return results
 
 
 # ── state ────────────────────────────────────────────────────────────────────
@@ -266,6 +325,56 @@ def graph_upload(tok, rel_path, content_bytes):
     r.raise_for_status()
 
 
+def pull_recordings(pending, token, gtok, args, prefix="", tag=""):
+    """Shared pull/mirror/upload loop for one batch of pending recordings.
+    Identical logic to the original single-pass main() body; `prefix` is only
+    used for the filename ("svc__" for the Service pass) so SILO output is
+    byte-for-byte unchanged. Returns (pulled, skipped_exists, errors, mirrored, state_updates)."""
+    pulled = skipped_exists = errors = mirrored = 0
+    state_updates = {}
+    for rec in pending:
+        rid = rec.get("id")
+        rep = f"{rec.get('repFirstName','')} {rec.get('repLastName','')}".strip() or "Unknown"
+        title = (rec.get("title") or "").strip()
+        try:
+            text = build_transcript(token, rec)
+            if text is None:
+                print(f"  PENDING (no utterances yet){tag}: {rep} — {title[:50]}")
+                continue
+            date_str = rec.get("dateCreated", "")[:10]
+            fname = transcript_filename(rec, prefix=prefix)
+            content = text.encode("utf-8")
+
+            if args.dry:
+                folder = DRY_OUTPUT_DIR / date_str
+                folder.mkdir(parents=True, exist_ok=True)
+                (folder / fname).write_bytes(content)
+                print(f"  DRY WROTE{tag}: {date_str}/{fname}")
+                pulled += 1
+            else:
+                repo_file = TRANSCRIPTS_DIR / date_str / fname
+                if not repo_file.exists():
+                    repo_file.parent.mkdir(parents=True, exist_ok=True)
+                    repo_file.write_bytes(content)
+                    mirrored += 1
+                    pulled += 1
+                    print(f"  MIRRORED{tag}: transcripts/{date_str}/{fname}")
+                if gtok:
+                    rel_path = f"{GRAPH_FOLDER}/{date_str}/{fname}"
+                    if graph_item_exists(gtok, rel_path):
+                        print(f"  SKIP (already exists on OneDrive){tag}: {rel_path}")
+                        skipped_exists += 1
+                    else:
+                        graph_upload(gtok, rel_path, content)
+                        print(f"  UPLOADED{tag}: {rel_path}")
+            state_updates[rid] = datetime.now(timezone.utc).isoformat()
+        except Exception as e:
+            print(f"  ERROR on recording {rid} ({rep} — {title[:50]}){tag}: {e}")
+            errors += 1
+            continue
+    return pulled, skipped_exists, errors, mirrored, state_updates
+
+
 # ── main ─────────────────────────────────────────────────────────────────────
 def main():
     ap = argparse.ArgumentParser()
@@ -331,52 +440,51 @@ def main():
     elif args.dry:
         DRY_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    pulled = skipped_exists = errors = mirrored = 0
-    for rec in pending:
-        rid = rec.get("id")
-        rep = f"{rec.get('repFirstName','')} {rec.get('repLastName','')}".strip() or "Unknown"
-        title = (rec.get("title") or "").strip()
-        try:
-            text = build_transcript(token, rec)
-            if text is None:
-                print(f"  PENDING (no utterances yet): {rep} — {title[:50]}")
-                continue
-            date_str = rec.get("dateCreated", "")[:10]
-            fname = transcript_filename(rec)
-            content = text.encode("utf-8")
+    # ── PASS 1: SILO team (TEAM_ID) — unchanged behavior, never service-tagged.
+    pulled, skipped_exists, errors, mirrored, updates = pull_recordings(pending, token, gtok, args)
+    state["done"].update(updates)
 
-            if args.dry:
-                folder = DRY_OUTPUT_DIR / date_str
-                folder.mkdir(parents=True, exist_ok=True)
-                (folder / fname).write_bytes(content)
-                print(f"  DRY WROTE: {date_str}/{fname}")
-                pulled += 1
-            else:
-                repo_file = TRANSCRIPTS_DIR / date_str / fname
-                if not repo_file.exists():
-                    repo_file.parent.mkdir(parents=True, exist_ok=True)
-                    repo_file.write_bytes(content)
-                    mirrored += 1
-                    pulled += 1
-                    print(f"  MIRRORED: transcripts/{date_str}/{fname}")
-                if gtok:
-                    rel_path = f"{GRAPH_FOLDER}/{date_str}/{fname}"
-                    if graph_item_exists(gtok, rel_path):
-                        print(f"  SKIP (already exists on OneDrive): {rel_path}")
-                        skipped_exists += 1
-                    else:
-                        graph_upload(gtok, rel_path, content)
-                        print(f"  UPLOADED: {rel_path}")
-            state["done"][rid] = datetime.now(timezone.utc).isoformat()
+    # ── PASS 2: org-wide (no teamId) — Service techs live outside team TEAM_ID.
+    # Only recordings whose rep matches coaching/service_roster.txt (by
+    # last-name + first-initial, mirroring the Mac poller's _name_key — NEVER
+    # bare first-name matching) get pulled here, filename-prefixed "svc__".
+    # Everyone else in the org-wide feed (plumbing, CSRs, other departments)
+    # is silently skipped — org-wide results must NEVER pull untagged, and any
+    # per-recording error here must not affect the SILO pass above (already
+    # complete by this point). Shares the same `state["done"]` dedupe so a
+    # recording can never be processed twice across passes/runs.
+    svc_pulled = svc_skipped_exists = svc_errors = svc_mirrored = 0
+    roster_keys = load_service_roster_keys()
+    if roster_keys:
+        try:
+            org_recs = list_recordings_orgwide(token)
         except Exception as e:
-            print(f"  ERROR on recording {rid} ({rep} — {title[:50]}): {e}")
-            errors += 1
-            continue
+            print(f"NOTE: Service org-wide list failed (SILO pass unaffected): {e}")
+            org_recs = []
+        org_pending = [r for r in org_recs
+                       if (r.get("durationInMilliseconds") or 0) >= MIN_DURATION_MS
+                       and r.get("id") not in state["done"]]
+        svc_pending = []
+        for r in org_pending:
+            rep = f"{r.get('repFirstName','')} {r.get('repLastName','')}".strip()
+            key = _name_key(rep)
+            if key and key in roster_keys:
+                svc_pending.append(r)
+        print(f"{len(org_recs)} org-wide recording(s) in the last {LOOKBACK_DAYS} day(s), "
+              f"{len(org_pending)} ready (≥5 min) & not yet pulled, "
+              f"{len(svc_pending)} match the Service roster")
+        svc_pulled, svc_skipped_exists, svc_errors, svc_mirrored, svc_updates = pull_recordings(
+            svc_pending, token, gtok, args, prefix="svc__", tag=" [SERVICE]")
+        state["done"].update(svc_updates)
+    else:
+        print("NOTE: coaching/service_roster.txt is empty or missing — Service pass skipped.")
 
     if not args.dry:
         save_state(state)
     print(f"Done — {pulled} pulled, {skipped_exists} skipped (already on OneDrive), "
-          f"{mirrored} mirrored into transcripts/, {errors} error(s).")
+          f"{mirrored} mirrored into transcripts/, {errors} error(s). "
+          f"Service: {svc_pulled} pulled, {svc_skipped_exists} skipped, "
+          f"{svc_mirrored} mirrored, {svc_errors} error(s).")
     return 0
 
 
