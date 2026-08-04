@@ -171,6 +171,18 @@ def log(msg):
     print("[%6.1fs] %s" % (time.time() - _T0, msg))
 
 
+# membership / SAM item pattern — verbatim port of servicefeed_sync.py's
+# _is_membership_item() (sku.name starts with SAM/PLSAM, or displayName
+# mentions Membership / Maintenance Agreement / Service Agreement) so both
+# engines agree on what counts as a membership offer.
+def _is_membership_item(sku):
+    nm = (sku.get("name") or "").upper()
+    disp = (sku.get("displayName") or "").lower()
+    if nm.startswith("SAM") or nm.startswith("PLSAM"):
+        return True
+    return any(x in disp for x in ("membership", "maintenance agreement", "service agreement"))
+
+
 def num(v):
     try:
         return float(v or 0)
@@ -327,6 +339,110 @@ def fetch_sold_estimates_recent():
     return ests
 
 
+# ── 3b. membership OFFER detection — entity precision, Today/WTD only (rides
+# the same window-start budget as fetch_sold_estimates_recent). An OFFER =
+# a membership/SAM item present on ANY estimate for a job, sold or unsold —
+# the FC report's MembershipConversionRate can't see unsold estimates, so this
+# distinguishes "tech never offered" from "tech offered and lost the sale".
+# Detection helper is a verbatim port of servicefeed_sync.py's
+# _is_membership_item() so both engines agree.
+def fetch_membership_offer_estimates():
+    """All (sold or unsold) dept-BU estimates created since WTD_START — same
+    window start fetch_sold_estimates_recent() uses. createdOnOrAfter verified
+    live against sales/v2/estimates (2026-08-04 probe): returns creation-date-
+    filtered rows including unsold ones, unlike soldAfter."""
+    ests = paged("/sales/v2/tenant/{tenant}/estimates", {"createdOnOrAfter": utc_iso(WTD_START)})
+    ests = [e for e in ests if e.get("businessUnitId") in DEPT_BUS]
+    log("membership-offer estimates WTD-to-date (dept BUs only): %d rows" % len(ests))
+    return ests
+
+
+# ── 3c. tech CALL universe — entity precision, Today/WTD only. The
+# membershipOfferRate denominator must come from the SAME population type as
+# the numerator (entity jobs, not the FC report's "Opportunity" definition —
+# those are two different job sets and mixing them produced >100% offer rates
+# on 2026-08-04). Denominator = every dept-BU job with an appointment in the
+# window, whether or not the tech ever built an estimate on it (a tech who
+# built nothing offered nothing, and that must count against him). Same
+# appointment -> job -> BU join board_counts()/build_calls_board() already use.
+#
+# EXCLUSIONS (2026-08-04, second pass): a raw "every dept appointment" count
+# capped the dept rate at ~36% even for a perfectly-pitching team, because
+# most maintenance visits are SAM membership-COVERED — the customer already
+# has a membership, there's nothing to offer. Two carve-outs, narrower than
+# build_calls_board()'s is_maint flag (which lumps all BU_MAINT + tune-ups
+# together — too broad here, plain tune-ups ARE real membership opportunities
+# and must stay in the denominator):
+#   - SAM-covered visit: job type name contains "sam" (e.g. "SAM Cooling
+#     Service (1 System) 4-7 Yrs") — no offer possible, member already covered.
+#   - part-install: job type name contains both "part" and "install" — a
+#     parts drop-off, not a sales call (same exemption dashboard alerts use).
+def _is_sam_covered_jobtype(jt_name):
+    return "sam" in (jt_name or "").lower()
+
+
+def _is_part_install_jobtype(jt_name):
+    nm = (jt_name or "").lower()
+    return "part" in nm and "install" in nm
+
+
+def fetch_tech_call_universe():
+    """dept-BU appointments (not canceled) starting in WTD_START..TODAY, minus
+    SAM-covered-visit and part-install job types (see module doc above).
+    Returns (dept_appts, excl_counts) where excl_counts = {"sam": n, "partInstall": n}
+    for the sanity-check report."""
+    frm = dt.datetime.combine(WTD_START, dt.time.min, tzinfo=TZ).astimezone(dt.timezone.utc)
+    to = dt.datetime.combine(TODAY + dt.timedelta(days=1), dt.time.min, tzinfo=TZ).astimezone(dt.timezone.utc)
+    iso = lambda d: d.strftime("%Y-%m-%dT%H:%M:%SZ")
+    appts = paged("/jpm/v2/tenant/{tenant}/appointments", {"startsOnOrAfter": iso(frm), "startsBefore": iso(to)})
+    appts = [a for a in appts if a.get("status") != "Canceled"]
+    job_ids = sorted({a["jobId"] for a in appts if a.get("jobId")})
+    jobs = {j["id"]: j for j in chunked_get("/jpm/v2/tenant/{tenant}/jobs", job_ids)}
+    jts = fetch_job_types()
+    dept_appts = [a for a in appts if jobs.get(a.get("jobId"), {}).get("businessUnitId") in DEPT_BUS]
+
+    kept, excl_sam, excl_pi = [], 0, 0
+    for a in dept_appts:
+        j = jobs.get(a.get("jobId"), {})
+        jt_name = jts.get(j.get("jobTypeId"), "") or ""
+        if _is_sam_covered_jobtype(jt_name):
+            excl_sam += 1
+            continue
+        if _is_part_install_jobtype(jt_name):
+            excl_pi += 1
+            continue
+        kept.append(a)
+
+    log("tech call universe: %d dept-BU appts kept (of %d total, %d jobs) — "
+        "excluded %d SAM-covered, %d part-install" %
+        (len(kept), len(appts), len(job_ids), excl_sam, excl_pi))
+    return kept, {"sam": excl_sam, "partInstall": excl_pi}
+
+
+def bucket_call_universe(dept_appts, job_tech):
+    """{window: {tech: set(jobIds run)}}, {window: set(jobIds run)} — every
+    dept-BU job a tech ran in the window (appointment-scoped), the
+    membershipOfferRate DENOMINATOR. Bucketed on the appointment's start date."""
+    out = {w: defaultdict(set) for w in ENTITY_SALES_WINDOWS}
+    dept = {w: set() for w in ENTITY_SALES_WINDOWS}
+    for a in dept_appts:
+        jid = a.get("jobId")
+        if not jid:
+            continue
+        d = parse_ts(a.get("start"))
+        if not d:
+            continue
+        d = d.date()
+        tech = job_tech.get(jid)
+        for w in ENTITY_SALES_WINDOWS:
+            frm, to = WINDOWS[w]
+            if frm <= d <= to:
+                dept[w].add(jid)
+                if tech:
+                    out[w][tech].add(jid)
+    return out, dept
+
+
 def fetch_job_tech_map(job_ids, roster):
     """job id -> roster tech name, via job.firstAppointmentId -> appointment-assignments."""
     job_ids = sorted(set(job_ids))
@@ -375,6 +491,43 @@ def bucket_sales(ests, job_tech):
                 dept[w] += sub
                 out[w][tech]["sales"] += sub
                 out[w][tech]["n"] += 1
+    return out, dept
+
+
+def bucket_membership_offers(ests, job_tech, call_dept):
+    """{window: {tech: set(jobIds offered)}}, {window: set(jobIds offered)} —
+    today/wtd only (entity-precise, same budget as bucket_sales). A job counts
+    as "offered" in a window if ANY of its estimates created in that window's
+    date range carries a membership/SAM item, sold or not. Bucketed on the
+    estimate's createdOn date (mirrors bucket_sales' use of soldOn).
+
+    call_dept = {window: set(jobIds)} from bucket_call_universe() — the SAME
+    denominator population used for membershipOfferJobs. Offers are gated to
+    jid in call_dept[w] so "offered" is a construction-time STRICT SUBSET of
+    "ran" (offered <= offerJobs always holds; can't offer on a job the tech
+    didn't run this window). See fetch_tech_call_universe() doc for why the
+    numerator and denominator must share one job population."""
+    out = {w: defaultdict(set) for w in ENTITY_SALES_WINDOWS}
+    dept = {w: set() for w in ENTITY_SALES_WINDOWS}
+    for e in ests:
+        items = e.get("items") or []
+        skus = [(i.get("sku") or {}) for i in items]
+        if not any(_is_membership_item(s) for s in skus):
+            continue
+        jid = e.get("jobId")
+        if not jid:
+            continue
+        d = parse_ts(e.get("createdOn"))
+        if not d:
+            continue
+        d = d.date()
+        tech = job_tech.get(jid)
+        for w in ENTITY_SALES_WINDOWS:
+            frm, to = WINDOWS[w]
+            if frm <= d <= to and jid in call_dept.get(w, ()):
+                dept[w].add(jid)
+                if tech:
+                    out[w][tech].add(jid)
     return out, dept
 
 
@@ -838,7 +991,7 @@ def budget_block(invs_for_month):
 
 
 # ── assembly ─────────────────────────────────────────────────────────────────
-def tech_rows_for_window(w, fc_agg, sales_bucket, roster):
+def tech_rows_for_window(w, fc_agg, sales_bucket, roster, offer_bucket=None, call_bucket=None):
     entity_sales = w in ENTITY_SALES_WINDOWS
     rows = []
     for name, info in roster.items():
@@ -868,12 +1021,27 @@ def tech_rows_for_window(w, fc_agg, sales_bucket, roster):
             "avgTicket": round(rev / jobs) if jobs else 0,
             "optionsPerOpp": round(oppW / opp, 2) if opp else 0,
         }
+        if offer_bucket is not None and call_bucket is not None:
+            offered = len(offer_bucket.get(name, ()))
+            offer_jobs = len(call_bucket.get(name, ()))
+            assert offered <= offer_jobs, (
+                "membershipOffered > membershipOfferJobs for %s (%d > %d) — "
+                "numerator/denominator population mismatch" % (name, offered, offer_jobs))
+            row["membershipOffered"] = offered
+            row["membershipOfferJobs"] = offer_jobs
+            row["membershipOfferRate"] = round(offered / offer_jobs * 1000) / 10 if offer_jobs else 0
+            row["membershipCloseOnOffer"] = round(membSold / offered * 1000) / 10 if offered else None
+        else:
+            row["membershipOffered"] = None
+            row["membershipOfferJobs"] = None
+            row["membershipOfferRate"] = None
+            row["membershipCloseOnOffer"] = None
         rows.append(row)
     rows.sort(key=lambda r: -r["revenue"])
     return rows
 
 
-def dept_summary(w, fc_agg, sales_dept, rev_bucket):
+def dept_summary(w, fc_agg, sales_dept, rev_bucket, offer_dept=None, call_dept_set=None):
     entity_sales = w in ENTITY_SALES_WINDOWS
     opp = sum(a["opp"] for a in fc_agg.values())
     converted = sum(a["converted"] for a in fc_agg.values())
@@ -883,7 +1051,7 @@ def dept_summary(w, fc_agg, sales_dept, rev_bucket):
     leads = sum(a["leads"] for a in fc_agg.values())
     rev = rev_bucket["total"]
     sales_val = sales_dept if entity_sales else sum(a["rev"] for a in fc_agg.values())
-    return {
+    out = {
         "opps": int(opp), "converted": int(converted),
         "closeRate": round(converted / opp * 1000) / 10 if opp else 0,
         "sales": round(sales_val), "salesIsApprox": not entity_sales,
@@ -894,6 +1062,22 @@ def dept_summary(w, fc_agg, sales_dept, rev_bucket):
         "membershipConv": round(membSold / membOpp * 1000) / 10 if membOpp else 0,
         "leadsSet": leads,
     }
+    if offer_dept is not None and call_dept_set is not None:
+        offered = len(offer_dept)
+        offer_jobs = len(call_dept_set)
+        assert offered <= offer_jobs, (
+            "dept membershipOffered > membershipOfferJobs (%d > %d) — "
+            "numerator/denominator population mismatch" % (offered, offer_jobs))
+        out["membershipOffered"] = offered
+        out["membershipOfferJobs"] = offer_jobs
+        out["membershipOfferRate"] = round(offered / offer_jobs * 1000) / 10 if offer_jobs else 0
+        out["membershipCloseOnOffer"] = round(membSold / offered * 1000) / 10 if offered else None
+    else:
+        out["membershipOffered"] = None
+        out["membershipOfferJobs"] = None
+        out["membershipOfferRate"] = None
+        out["membershipCloseOnOffer"] = None
+    return out
 
 
 # ── 10. week review (Sunday-evening prelim + Monday-morning final re-audit) ─
@@ -1197,11 +1381,22 @@ def main():
 
     log("sold estimates (sales$, today/wtd entity-precise)")
     ests = fetch_sold_estimates_recent()
+
+    log("membership-offer estimates (today/wtd entity-precise)")
+    offer_ests = fetch_membership_offer_estimates()
+
+    log("tech call universe (today/wtd entity-precise — offer-rate denominator)")
+    call_appts, call_excl = fetch_tech_call_universe()
+
     job_ids = {e["jobId"] for e in ests if e.get("jobId")}
+    job_ids |= {e["jobId"] for e in offer_ests if e.get("jobId")}
+    job_ids |= {a["jobId"] for a in call_appts if a.get("jobId")}
     log("  unique jobs to resolve tech for: %d" % len(job_ids))
     job_tech = fetch_job_tech_map(job_ids, roster)
     log("  resolved tech for %d jobs" % len(job_tech))
     sales_by_window, sales_dept = bucket_sales(ests, job_tech)
+    call_by_window, call_dept = bucket_call_universe(call_appts, job_tech)
+    offer_by_window, offer_dept = bucket_membership_offers(offer_ests, job_tech, call_dept)
 
     if light:
         # small invoice pull: covers WTD (for revenue bucket) and, if today
@@ -1277,12 +1472,25 @@ def main():
     for w in WINDOWS:
         if light and w in ("mtd", "ytd"):
             out[w] = old.get(w, {})
+            out[w].setdefault("membershipOffered", None)
+            out[w].setdefault("membershipOfferJobs", None)
+            out[w].setdefault("membershipOfferRate", None)
+            out[w].setdefault("membershipCloseOnOffer", None)
             out["techs"][w] = old.get("techs", {}).get(w, [])
+            for row in out["techs"][w]:
+                row.setdefault("membershipOffered", None)
+                row.setdefault("membershipOfferJobs", None)
+                row.setdefault("membershipOfferRate", None)
+                row.setdefault("membershipCloseOnOffer", None)
             continue
         sd = sales_dept.get(w, 0.0)
-        out[w] = dept_summary(w, fc_by_window[w], sd, rev_by_window[w])
+        od = offer_dept.get(w) if w in ENTITY_SALES_WINDOWS else None
+        cd = call_dept.get(w) if w in ENTITY_SALES_WINDOWS else None
+        out[w] = dept_summary(w, fc_by_window[w], sd, rev_by_window[w], offer_dept=od, call_dept_set=cd)
         sb = sales_by_window.get(w, {})
-        out["techs"][w] = tech_rows_for_window(w, fc_by_window[w], sb, roster)
+        ob = offer_by_window.get(w) if w in ENTITY_SALES_WINDOWS else None
+        cb = call_by_window.get(w) if w in ENTITY_SALES_WINDOWS else None
+        out["techs"][w] = tech_rows_for_window(w, fc_by_window[w], sb, roster, offer_bucket=ob, call_bucket=cb)
 
     with open(path + ".tmp", "w") as f:
         json.dump(out, f, separators=(",", ":"))
@@ -1333,6 +1541,14 @@ def main():
         out["mtd"]["opps"], out["mtd"]["closeRate"], out["mtd"]["jobs"], out["mtd"]["membershipsSold"]))
     print("board:", board)
     print("top 3 MTD techs:", [(t["name"], t["revenue"], t["closeRate"]) for t in out["techs"]["mtd"][:3]])
+    print("membershipOfferJobs exclusions (WTD-to-date pull): SAM-covered=%d | part-install=%d" % (
+        call_excl["sam"], call_excl["partInstall"]))
+    print("today offer: offered=%s offerJobs=%s rate=%s closeOnOffer=%s" % (
+        out["today"].get("membershipOffered"), out["today"].get("membershipOfferJobs"),
+        out["today"].get("membershipOfferRate"), out["today"].get("membershipCloseOnOffer")))
+    print("wtd   offer: offered=%s offerJobs=%s rate=%s closeOnOffer=%s" % (
+        out["wtd"].get("membershipOffered"), out["wtd"].get("membershipOfferJobs"),
+        out["wtd"].get("membershipOfferRate"), out["wtd"].get("membershipCloseOnOffer")))
 
 
 if __name__ == "__main__":
