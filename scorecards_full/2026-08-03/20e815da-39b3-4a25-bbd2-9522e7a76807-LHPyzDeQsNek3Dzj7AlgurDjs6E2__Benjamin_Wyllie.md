@@ -1,18 +1,24 @@
-# Scorecard: Job # 670711113 (23 min) — Benjamin Wyllie
+# Scorecard: Benjamin Wyllie
 
-**Outcome:** flipped (scheduled specialist visit)
+**RecId**: 20e815da-39b3-4a25-bbd2-9522e7a76807-LHPyzDeQsNek3Dzj7AlgurDjs6E2
+**Job**: 670711113
+**Date**: 2026-08-03
+**Duration**: 23 min
 
-## FSG Scores
-- **Welcome:** Solid — Quick, professional intro with appropriate tone for sale-scenario urgency
-- **Assessment:** Strong — Identified R-22 refrigerant leak, immediately explained 2025 ban impact, clear diagnosis
-- **Decision:** Strong — Explained why repair impossible, presented specialist visit as next step for replacement quote
-- **Deliver:** Strong on wins — Clearly closed the loop: spec visit = replacement pricing = home sale negotiation tool
+## Performance Bands
+- **Welcome**: Solid
+- **Assessment**: Strong
+- **Decision**: Strong
+- **Deliver**: Strong
 
 ## Critical Actions
-- ✓ **Expectations set:** Home sale context, need quote for replacement
-- ✓ **Questions asked:** Confirmed system age, clarified customer's sale timeline
-- ✓ **Options created:** Specialist visit (only viable path given ban)
-- ✓ **Objections handled:** Implicitly handled cost concern by tying to sale proceeds
+- **Expectations**: ✓
+- **Questions**: ✓
+- **Options**: ✓
+- **Objections**: ✓
 
-## Coaching
-**WIN:** Clearly explained the R-22 refrigerant ban made the leak unrepairable, then immediately scheduled the specialist visit so the homeowner could get replacement pricing to negotiate the sale—connected the problem directly to the solution path. The conciseness and direct path-to-close moved fast without losing the customer.
+## Outcome
+**CLOSED**
+
+## Coaching Tip
+WIN — Customer agreement and completed sale shows effective recommendations.

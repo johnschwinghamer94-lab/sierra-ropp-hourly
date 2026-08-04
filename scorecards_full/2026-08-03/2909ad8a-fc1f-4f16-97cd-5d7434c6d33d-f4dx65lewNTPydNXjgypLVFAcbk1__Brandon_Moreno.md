@@ -1,25 +1,24 @@
-# Scorecard: Job # 670666878 (52 min) — Brandon Moreno
+# Scorecard: Brandon Moreno
 
-**Outcome:** flipped
+**RecId**: 2909ad8a-fc1f-4f16-97cd-5d7434c6d33d-f4dx65lewNTPydNXjgypLVFAcbk1
+**Job**: 670666878
+**Date**: 2026-08-03
+**Duration**: 52 min
 
-## FSG Scores
-- **Welcome:** Solid — Natural greeting, shoe covers offer, reading dispatch notes
-- **Assessment:** Strong — Good questions on comfort, home layout, system performance history
-- **Decision:** Strong — Clear explanation of motor failure; presented replacement as necessary; offered Comfort Advisor appointment
-- **Deliver:** Solid — Good technical analogy ("heart of the system"); explained why replacement vs repair made sense
+## Performance Bands
+- **Welcome**: Solid
+- **Assessment**: Strong
+- **Decision**: Solid
+- **Deliver**: Strong
 
 ## Critical Actions
-- ✓ **Expectations set:** Explained best and worst case scenarios
-- ✓ **Questions asked:** Years in home, temperature zones, prior service
-- ✓ **Options created:** Clearly positioned Comfort Advisor for estimates
-- ✓ **Objections handled:** Customer expressed concern about replacement cost; tech addressed with "will nickel and dime you eventually"
+- **Expectations**: ✗
+- **Questions**: ✓
+- **Options**: ✓
+- **Objections**: ✓
 
-## Winning Moment
-Tech: "Worst case, I'll take a look at everything so that when they come out, they're able to give you an assessment... They'll go ahead, get you estimates for the one system and the two while they're already here."
+## Outcome
+**FLIPPED**
 
-Customer: "Sounds great."
-
-This is a TGL. Customer agreed to Comfort Advisor estimate visit.
-
-## Coaching
-**WIN:** Excellent job explaining the motor failure and pivot to Comfort Advisor without being pushy. "Sounds great" = scheduled estimate appointment. Keep this pattern—diagnostic clarity + confident Comfort Advisor recommendation = flips.
+## Coaching Tip
+WIN — Successfully guided customer to next step commitment.

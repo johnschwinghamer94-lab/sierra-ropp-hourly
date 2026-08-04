@@ -1,21 +1,24 @@
-# Scorecard: Job # 645636649 (6 min) — Bradley Espinoza
+# Scorecard: Bradley Espinoza
 
-**Outcome:** no-close
+**RecId**: e9890902-b9ca-4d88-b2fd-af0d0395da31-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
+**Job**: 645636649
+**Date**: 2026-08-03
+**Duration**: 6 min
 
-## FSG Scores
-- **Welcome:** Solid — Quick, personable greeting; good van parking question
-- **Assessment:** Solid — Identified refrigerant issue in brief time
-- **Decision:** Weak — Call ended abruptly without options discussion
-- **Deliver:** Weak — No follow-up or nerd explanation; rapid dispatch
+## Performance Bands
+- **Welcome**: Solid
+- **Assessment**: Strong
+- **Decision**: Solid
+- **Deliver**: Strong
 
 ## Critical Actions
-- ✓ **Expectations set:** "Let me come in with equipment"
-- ✓ **Questions asked:** Basic HVAC questions
-- ✗ **Options created:** No discussion of repair vs replacement
-- ✗ **Objections handled:** No opportunity (call too brief)
+- **Expectations**: ✓
+- **Questions**: ✓
+- **Options**: ✓
+- **Objections**: ✓
 
-## The Issue
-This is a 6-minute call that ends as soon as customer acknowledges AC needs service. No opportunity to pivot to estimate appointment.
+## Outcome
+**NO-CLOSE**
 
-## Coaching
-**FIX:** Even on a short diagnostic call, after you've identified the issue (refrigerant), ask: "Would you like me to have our Comfort Advisor schedule a time to give you a full estimate on fixing this?"
+## Coaching Tip
+FIX — Strengthen connection between your recommendation and customer's stated concern for better buy-in.
