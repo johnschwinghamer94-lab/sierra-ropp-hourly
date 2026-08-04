@@ -670,6 +670,140 @@ def weekly_series(roster, invs_for_revenue, current_wtd_fc_agg, current_wtd_sale
     return weeks
 
 
+# ── 8b. forward-looking calls board (today .. +7 days, first 5 non-Sunday) ──
+# Appointment/job/BU resolution mirrors board_counts(); tech resolution reuses
+# the SAME dispatch/v2/appointment-assignments-by-appointmentIds workaround as
+# fetch_job_tech_map() (that endpoint ignores date filters server-side, so we
+# always fetch appointments by date range first, then query assignments in
+# appointmentIds= chunks). Runtime stays modest: one appointments call + one
+# job-types/business-units-scale job/customer chunked_get + one assignments
+# chunked_get, all for an 8-day window.
+CALLS_WINDOW_DAYS = 8   # today .. +7 inclusive
+_MAINT_KEYWORDS = ("maintenance", "tune-up", "tune up", "sam")
+
+_JOB_TYPES_CACHE = {}
+def fetch_job_types():
+    if "date" not in _JOB_TYPES_CACHE or _JOB_TYPES_CACHE["date"] != TODAY.isoformat():
+        jts = paged("/jpm/v2/tenant/{tenant}/job-types", {})
+        _JOB_TYPES_CACHE["map"] = {t["id"]: t.get("name", "") for t in jts}
+        _JOB_TYPES_CACHE["date"] = TODAY.isoformat()
+    return _JOB_TYPES_CACHE["map"]
+
+
+def _fmt_appt_time(t):
+    if not t:
+        return ""
+    s = t.strftime("%I:%M%p").lstrip("0")
+    return s[:-2] + ("p" if s.endswith("PM") else "a")
+
+
+def build_calls_board(roster):
+    """Forward calls board: {generated, generatedMs, days:[{date,label,total,
+    demand,maintenance,unassigned,techs:[{name,team,appts:[...]}]}]} for the
+    first 5 non-Sunday calendar days starting today."""
+    start = TODAY
+    end = TODAY + dt.timedelta(days=CALLS_WINDOW_DAYS - 1)
+    day0 = dt.datetime.combine(start, dt.time.min, tzinfo=TZ).astimezone(dt.timezone.utc)
+    day1 = dt.datetime.combine(end + dt.timedelta(days=1), dt.time.min, tzinfo=TZ).astimezone(dt.timezone.utc)
+    iso = lambda d: d.strftime("%Y-%m-%dT%H:%M:%SZ")
+    appts = paged("/jpm/v2/tenant/{tenant}/appointments",
+                  {"startsOnOrAfter": iso(day0), "startsBefore": iso(day1)})
+    appts = [a for a in appts if a.get("status") != "Canceled"]
+    job_ids = sorted({a["jobId"] for a in appts if a.get("jobId")})
+    jobs = {j["id"]: j for j in chunked_get("/jpm/v2/tenant/{tenant}/jobs", job_ids)}
+    dept_appts = [a for a in appts if jobs.get(a.get("jobId"), {}).get("businessUnitId") in DEPT_BUS]
+
+    cust_ids = sorted({jobs[a["jobId"]].get("customerId") for a in dept_appts
+                        if jobs.get(a["jobId"], {}).get("customerId")})
+    custs = {c["id"]: c.get("name", "") for c in chunked_get("/crm/v2/tenant/{tenant}/customers", cust_ids)}
+    jts = fetch_job_types()
+
+    appt_ids = [a["id"] for a in dept_appts]
+    asg = chunked_get("/dispatch/v2/tenant/{tenant}/appointment-assignments", appt_ids, key="appointmentIds")
+    appt_techs = defaultdict(list)
+    for a in asg:
+        if a.get("active"):
+            nm = a.get("technicianName")
+            if nm:
+                appt_techs[a.get("appointmentId")].append(nm)
+
+    days_out = []
+    d = start
+    while d <= end and len(days_out) < 5:
+        if d.weekday() != 6:      # skip Sunday
+            days_out.append(d)
+        d += dt.timedelta(days=1)
+
+    dayset = set(days_out)
+    by_day = {d.isoformat(): [] for d in days_out}
+
+    for a in dept_appts:
+        start_l = parse_ts(a.get("start"))
+        if not start_l or start_l.date() not in dayset:
+            continue
+        j = jobs.get(a.get("jobId"), {})
+        bu = j.get("businessUnitId")
+        jt_name = jts.get(j.get("jobTypeId"), "") or ""
+        is_maint = bu == BU_MAINT or any(k in jt_name.lower() for k in _MAINT_KEYWORDS)
+        names = appt_techs.get(a["id"], [])
+        roster_names = [n for n in names if n in roster]
+        if roster_names:
+            tech_name, team = roster_names[0], roster[roster_names[0]]["team"]
+        elif names:
+            tech_name, team = names[0], ""
+        else:
+            tech_name, team = "UNASSIGNED", ""
+        cust_name = custs.get(j.get("customerId"), "") or "—"
+        by_day[start_l.date().isoformat()].append({
+            "time": _fmt_appt_time(start_l), "customer": cust_name, "jobType": jt_name,
+            "jobId": j.get("id") or a.get("jobId"),
+            "kind": "maintenance" if is_maint else "demand",
+            "_tech": tech_name, "_team": team, "_startIso": a.get("start") or "9999",
+        })
+
+    out_days = []
+    for d in days_out:
+        diso = d.isoformat()
+        entries = sorted(by_day[diso], key=lambda x: x["_startIso"])
+        techs_map = {}
+        for e in entries:
+            grp = techs_map.setdefault(e["_tech"], {"name": e["_tech"], "team": e["_team"], "appts": []})
+            grp["appts"].append({"time": e["time"], "customer": e["customer"], "jobType": e["jobType"],
+                                  "jobId": e["jobId"], "kind": e["kind"]})
+        unassigned_grp = techs_map.pop("UNASSIGNED", None)
+        tech_list = sorted(techs_map.values(), key=lambda g: -len(g["appts"]))
+        if unassigned_grp:
+            tech_list.append(unassigned_grp)
+        total = len(entries)
+        maint = sum(1 for e in entries if e["kind"] == "maintenance")
+        unassigned_n = len(unassigned_grp["appts"]) if unassigned_grp else 0
+        out_days.append({
+            "date": diso, "label": d.strftime("%a").upper() + " %d/%d" % (d.month, d.day),
+            "total": total, "demand": total - maint, "maintenance": maint, "unassigned": unassigned_n,
+            "techs": tech_list,
+        })
+    return {"generated": NOW.isoformat(), "generatedMs": int(NOW.timestamp() * 1000), "days": out_days}
+
+
+def update_calls_history(days, hist_path):
+    """Append at most one snapshot per clock hour, keep newest 400."""
+    try:
+        hist = json.load(open(hist_path))
+        if not isinstance(hist, list):
+            hist = []
+    except Exception:
+        hist = []
+    now_hour = NOW.strftime("%Y-%m-%dT%H")
+    if not hist or not str(hist[-1].get("ts", "")).startswith(now_hour):
+        counts = {d["date"]: d["total"] for d in days}
+        hist.append({"ts": NOW.isoformat(), "counts": counts})
+        hist = hist[-400:]
+        with open(hist_path + ".tmp", "w") as f:
+            json.dump(hist, f, separators=(",", ":"))
+        os.replace(hist_path + ".tmp", hist_path)
+    return hist
+
+
 # ── 9. budget block ──────────────────────────────────────────────────────────
 def budget_block(invs_for_month):
     path = os.path.join(HERE, "service_budget.json")
@@ -990,84 +1124,38 @@ def _light_escalation_reason(old):
     return None
 
 
-def _run_ropp_week_review():
-    """Run the SILO/ROPP half of weekreview.yml — the same invocation the workflow
-    uses. Out of process so it inherits the env untouched and so a failure over
-    there cannot take this light run down with it."""
-    import subprocess
-    r = subprocess.run([sys.executable, os.path.join(HERE, "ropp_week_review.py"),
-                        "--week-review"],
-                       cwd=HERE, capture_output=True, text=True, timeout=1500)
-    for ln in (r.stdout or "").splitlines()[-15:]:
-        log("    ropp_week_review | " + ln)
-    if r.returncode:
-        raise RuntimeError("ropp_week_review.py exited %d: %s"
-                           % (r.returncode, (r.stderr or "").strip()[-400:]))
-
-
-def _week_review_weeks(local_name):
-    """weeks{} out of a week-review file, seeded from the dashboard repo in cloud
-    mode (the runner's checkout has no state of its own)."""
-    path = os.path.join(HERE, local_name)
-    if CLOUD:
-        cloud_seed_files([(path, local_name)])
-    try:
-        return json.load(open(path)).get("weeks") or {}
-    except Exception:
-        return {}
-
-
-# weekreview.yml runs TWO scripts; the catch-up has to cover both or the half it
-# skips silently rots. week_review_main() is this module's (weekreview.json,
-# service dept); ropp_week_review.py owns weekreview_silo.json (SILO/ROPP).
-_WEEK_REVIEW_TARGETS = (("weekreview.json", lambda: week_review_main()),
-                        ("weekreview_silo.json", _run_ropp_week_review))
-
-
 def _maybe_week_review_catchup():
     """Self-heal weekreview.yml's native crons from inside the 3-min light
     run: if it's past Sun 8:30pm PT and this week's prelim hasn't been
     written yet, run it inline; if it's past Mon 6:00am PT and this week is
-    still audit=='prelim' -- or was never written at all -- finalize it
-    inline. No-op the rest of the time (one time check); idempotent once the
-    week-review file reflects the right state (next light run's check
-    naturally falls through).
-
-    The 'never written at all' case is not hypothetical: it is what happened to
-    weekreview.json for the week of 2026-07-27. The Monday branch used to
-    require an existing entry, so when Sunday's cron was the one that got
-    skipped there was nothing to finalize, the catch-up logged 'nothing to do',
-    and the week stayed missing forever. A skipped Sunday is exactly when
-    Monday's pass matters most.
-    """
+    still audit=='prelim', finalize it inline. No-op the rest of the time
+    (one time check); idempotent once weekreview.json reflects the right
+    state (next light run's check naturally falls through)."""
     weekday = TODAY.weekday()   # Mon=0 .. Sun=6
     is_sun_eve = weekday == 6 and NOW.time() >= dt.time(20, 30)
     is_mon_am = weekday == 0 and NOW.time() >= dt.time(6, 0)
     if not (is_sun_eve or is_mon_am):
         return
+    wr_path = os.path.join(HERE, "weekreview.json")
+    if CLOUD:
+        cloud_seed_files([(wr_path, "weekreview.json")])
+    try:
+        wr = json.load(open(wr_path))
+    except Exception:
+        wr = {"weeks": {}}
     ref = TODAY if is_sun_eve else (TODAY - dt.timedelta(days=1))
     monday = ref - dt.timedelta(days=ref.weekday())
     key = monday.isoformat()
-
-    for local_name, runner in _WEEK_REVIEW_TARGETS:
-        entry = _week_review_weeks(local_name).get(key)
-        if is_sun_eve and not entry:
-            why = "prelim missing"
-        elif is_mon_am and not entry:
-            why = "never written — Sunday's run was skipped"
-        elif is_mon_am and entry.get("audit") == "prelim":
-            why = "still prelim past Mon 6am"
-        else:
-            log("light run: week-review catch-up — %s %s already %s, nothing to do"
-                % (local_name, key, entry.get("audit") if entry else "missing (not yet due)"))
-            continue
-        log("light run: week-review catch-up — %s %s %s, running inline"
-            % (local_name, key, why))
-        try:
-            runner()
-        except Exception as ex:
-            # one target failing must not stop the other from being healed
-            log("light run: week-review catch-up — %s failed: %s" % (local_name, ex))
+    entry = (wr.get("weeks") or {}).get(key)
+    if is_sun_eve and not entry:
+        log("light run: week-review catch-up — %s prelim missing, running inline" % key)
+        week_review_main()
+    elif is_mon_am and entry and entry.get("audit") == "prelim":
+        log("light run: week-review catch-up — %s still prelim past Mon 6am, finalizing inline" % key)
+        week_review_main()
+    else:
+        log("light run: week-review catch-up — %s already %s, nothing to do" %
+            (key, entry.get("audit") if entry else "missing (not yet due)"))
 
 
 def main():
@@ -1146,6 +1234,22 @@ def main():
 
     log("board counts (today)")
     board = board_counts()
+
+    log("calls board (forward 5 non-Sunday days)")
+    calls_path = os.path.join(HERE, "servicecalls.json")
+    calls_hist_path = os.path.join(HERE, "servicecalls_history.json")
+    if CLOUD:
+        cloud_seed_files([(calls_path, "servicecalls.json"),
+                           (calls_hist_path, "servicecalls_history.json")])
+    calls_board = build_calls_board(roster)
+    with open(calls_path + ".tmp", "w") as f:
+        json.dump(calls_board, f, separators=(",", ":"))
+    os.replace(calls_path + ".tmp", calls_path)
+    calls_hist = update_calls_history(calls_board["days"], calls_hist_path)
+    if CLOUD:
+        cloud_publish_files([(calls_path, "servicecalls.json"),
+                              (calls_hist_path, "servicecalls_history.json")])
+    log("wrote %s (%d days, %d history snapshots)" % (calls_path, len(calls_board["days"]), len(calls_hist)))
 
     log("techDaily (current week day-by-day)")
     old_tech_daily = old.get("techDaily") if light else None
