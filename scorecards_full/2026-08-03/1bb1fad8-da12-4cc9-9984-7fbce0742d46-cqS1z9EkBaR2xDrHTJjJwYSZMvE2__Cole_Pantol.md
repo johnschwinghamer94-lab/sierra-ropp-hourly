@@ -1,1 +1,1 @@
-Incomplete call - ends during initial inspection before options presented or close attempted
+Skipped: Incomplete transcript—evaluation cuts off mid-way during system check, no conclusion or outcome possible

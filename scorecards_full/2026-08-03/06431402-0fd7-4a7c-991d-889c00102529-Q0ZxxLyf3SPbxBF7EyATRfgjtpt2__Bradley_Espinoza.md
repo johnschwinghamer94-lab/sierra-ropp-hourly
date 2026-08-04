@@ -1,21 +1,18 @@
-# Scorecard: Bradley Espinoza
-RecId: 06431402-0fd7-4a7c-991d-889c00102529-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
-Job: 668501603
-Date: 2026-08-03
-Duration: 90 min
-Outcome: closed
+# Scorecard: Job # 668501603 (90 min) — Bradley Espinoza
 
-## FSG Bands
-- Welcome: Strong
-- Assessment: Strong
-- Decision: Solid
-- Deliver: Solid
+**Outcome:** no-close
+
+## FSG Scores
+- **Welcome:** Solid — Good rapport, established as thorough inspector
+- **Assessment:** Strong — Deep system evaluation, identified musty smell risk, previous weld repair history
+- **Decision:** Moderate — Presented diagnosis but missed the maintenance/protection plan opportunity
+- **Deliver:** Strong on wins — Explained findings clearly, showed good technical depth
 
 ## Critical Actions
-- Expectations: PASS
-- Questions: PASS
-- Options: FAIL
-- Objections: PASS
+- ✓ **Expectations set:** Thorough evaluation scope confirmed
+- ✓ **Questions asked:** Multiple check-ins on comfort and maintenance history
+- ✗ **Options created:** No maintenance plan or seasonal service offered
+- ✗ **Objections handled:** Customer's concern about future reliability not addressed with preventive options
 
-## Coaching Tip
-WIN — Addressed customer concern about musty smell with empathy and thorough inspection plan; built trust through systematic approach and follow-up inspection of attic, closing maintenance service.
+## Coaching
+**FIX:** Customer explicitly said they want to 'make sure everything's going to be running smooth' and mentioned the musty smell and previous year's weld repair—perfect opening for a seasonal maintenance or protection plan, but tech focused on diagnosis only instead of reconnecting to the risk. When they say "keep it running smooth," that's the cue for quarterly checks or a service contract.

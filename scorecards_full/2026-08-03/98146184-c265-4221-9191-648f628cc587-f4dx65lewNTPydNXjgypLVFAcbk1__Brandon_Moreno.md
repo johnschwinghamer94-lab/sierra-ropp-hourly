@@ -1,21 +1,18 @@
-# Scorecard: Brandon Moreno
-RecId: 98146184-c265-4221-9191-648f628cc587-f4dx65lewNTPydNXjgypLVFAcbk1
-Job: 670746240
-Date: 2026-08-03
-Duration: 52 min
-Outcome: no-close
+# Scorecard: Job # 670746240 (52 min) — Brandon Moreno
 
-## FSG Bands
-- Welcome: Strong
-- Assessment: Strong
-- Decision: Solid
-- Deliver: Moderate
+**Outcome:** flipped (scheduled replacement visit)
+
+## FSG Scores
+- **Welcome:** Strong — Quick rapport, handled skepticism well
+- **Assessment:** Strong — Identified oil leak and capillary tube failure with video evidence
+- **Decision:** Strong — Used evidence to overcome "another company already looked at this" objection
+- **Deliver:** Strong on wins — Clear next step (specialist quote), set expectations on cost-of-doing-nothing
 
 ## Critical Actions
-- Expectations: PASS
-- Questions: PASS
-- Options: FAIL
-- Objections: PASS
+- ✓ **Expectations set:** Explained specialist role and replacement timeline
+- ✓ **Questions asked:** Explored cooling cost concerns, previous service history
+- ✓ **Options created:** Specialist visit with clear outcome path
+- ✓ **Objections handled:** Overcame competitor skepticism with technical evidence
 
-## Coaching Tip
-FIX — Customer mentioned previous technician's report but Brandon didn't fully reconnect to that objection or rebuild confidence; should have explicitly addressed why Sierra's deeper inspection adds value over prior visit to flip this into Option C appointment.
+## Coaching
+**WIN:** Customer mentioned cooling costs of $2,300/year and another company's failed visit; tech responded with video evidence and detailed failure explanation (oil leak, capillary failure) that justified specialist visit, turning skepticism into buy-in. The video proof shifted the conversation from "prove it" to "fix it."

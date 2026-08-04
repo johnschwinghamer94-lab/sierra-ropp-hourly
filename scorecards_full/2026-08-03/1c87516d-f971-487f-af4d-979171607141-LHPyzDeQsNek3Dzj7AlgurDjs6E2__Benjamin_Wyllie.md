@@ -1,21 +1,18 @@
-# Scorecard: Benjamin Wyllie
-RecId: 1c87516d-f971-487f-af4d-979171607141-LHPyzDeQsNek3Dzj7AlgurDjs6E2
-Job: 670586826
-Date: 2026-08-03
-Duration: 104 min
-Outcome: flipped
+# Scorecard: Job # 670586826 (104 min) — Benjamin Wyllie
 
-## FSG Bands
-- Welcome: Strong
-- Assessment: Strong
-- Decision: Strong on wins
-- Deliver: Strong
+**Outcome:** no-close
+
+## FSG Scores
+- **Welcome:** Solid — Empathy and expertise established, clear intro with property manager context understood
+- **Assessment:** Solid — Thorough inspection of compressor, identified oil leak from years without service, educated on system age (2014)
+- **Decision:** Moderate — No options presented; deferred all decisions to property manager Mandy without presenting Option C timeline
+- **Deliver:** Moderate — Good technical explanation of compressor damage, but no follow-up plan or urgency on specialist visit
 
 ## Critical Actions
-- Expectations: PASS
-- Questions: PASS
-- Options: PASS
-- Objections: PASS
+- ✓ **Expectations set:** Clear scope (thorough evaluation, write report, manager decides direction)
+- ✓ **Questions asked:** Discovery of previous repairs, tenant concerns, venting issues
+- ✗ **Options created:** No replacement options or specialist appointment scheduled
+- ✗ **Objections handled:** No objections arose (property manager removed from immediate decision)
 
-## Coaching Tip
-WIN — Expertly walked through multiple system failures with pictures and technical detail; customer approved evaluation-to-repair-quote process and scheduled installer appointment, demonstrating value of thorough inspection over basic pass/fail checks.
+## Coaching
+**FIX:** When the property manager will make the decision, reconnect to the compressor damage urgency and present the Option C timeline for bringing her into a consultation call before sending the written report. The risk window (mid-summer failure) should trigger an immediate specialist visit, not a delayed report-and-wait cycle.

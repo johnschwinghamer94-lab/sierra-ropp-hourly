@@ -1,21 +1,18 @@
-# Scorecard: Brandon Moreno
-RecId: 2909ad8a-fc1f-4f16-97cd-5d7434c6d33d-f4dx65lewNTPydNXjgypLVFAcbk1
-Job: 670666878
-Date: 2026-08-03
-Duration: 52 min
-Outcome: flipped
+# Scorecard: Job # 670666878 (52 min) — Brandon Moreno
 
-## FSG Bands
-- Welcome: Strong
-- Assessment: Strong
-- Decision: Solid
-- Deliver: Solid
+**Outcome:** flipped (scheduled equipment visit)
+
+## FSG Scores
+- **Welcome:** Strong — Great rapport, calm presence under time pressure
+- **Assessment:** Strong — Diagnosed capacitor issue, methodical troubleshooting
+- **Decision:** Strong — Presented two clear paths (quick fix attempt vs. specialist), customer chose specialist visit
+- **Deliver:** Solid — Confirmed visit details but brief on what to expect
 
 ## Critical Actions
-- Expectations: PASS
-- Questions: PASS
-- Options: PASS
-- Objections: FAIL
+- ✓ **Expectations set:** Explained time constraint, two options available
+- ✓ **Questions asked:** Confirmed the 12:30 hard deadline
+- ✓ **Options created:** Quick fix vs. full specialist evaluation
+- ✓ **Objections handled:** Time pressure handled by offering immediate action
 
-## Coaching Tip
-WIN — Customer has 25-year-old system and budget concern but Brandon offered immediate quick-fix option plus installer consultation for replacement, giving customer choice and control over timing and investment.
+## Coaching
+**WIN:** Tech respected the hard 12:30 deadline constraint and immediately offered two paths (quick fix or specialist), which removed hesitation and led straight to scheduling an equipment visit—the constraint became the unlock. By validating the customer's time limit first, you removed the friction that usually stops a flip.

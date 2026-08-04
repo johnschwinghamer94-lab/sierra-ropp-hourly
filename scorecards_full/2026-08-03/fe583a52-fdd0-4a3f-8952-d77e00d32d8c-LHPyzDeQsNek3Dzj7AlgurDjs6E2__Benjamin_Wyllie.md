@@ -1,21 +1,18 @@
-# Scorecard: Benjamin Wyllie
-RecId: fe583a52-fdd0-4a3f-8952-d77e00d32d8c-LHPyzDeQsNek3Dzj7AlgurDjs6E2
-Job: 670721123
-Date: 2026-08-03
-Duration: 8 min
-Outcome: unknown
+# Scorecard: Job # 670721123 (8 min) — Benjamin Wyllie
 
-## FSG Bands
-- Welcome: Strong
-- Assessment: Solid
-- Decision: Moderate
-- Deliver: Weak
+**Outcome:** no-close
+
+## FSG Scores
+- **Welcome:** Solid — Brief but professional
+- **Assessment:** Solid — Identified thermostat unresponsive, ran reset diagnostic
+- **Decision:** Moderate — Reset failed but no replacement option presented
+- **Deliver:** Moderate — Asked if customer wants a quote but didn't commit to it or schedule
 
 ## Critical Actions
-- Expectations: PASS
-- Questions: PASS
-- Options: FAIL
-- Objections: FAIL
+- ✗ **Expectations set:** No clear expectations around next steps
+- ✓ **Questions asked:** Confirmed thermostat unresponsive
+- ✗ **Options created:** No replacement option or installation scheduling
+- ✗ **Objections handled:** N/A
 
-## Coaching Tip
-FIX — Call ended during initial assessment before customer concerns were fully explored or options presented; customer mentioned previous service failure but tech didn't reconnect to that objection or build confidence in Sierra's approach.
+## Coaching
+**FIX:** When the thermostat failed the manual reset, should have immediately presented a replacement option and attempted to schedule installation rather than ending with just a quote request. The moment it fails is the moment customers are most receptive to "we have a tech available" language.
