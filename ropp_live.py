@@ -32,12 +32,34 @@ CONFIG = {
     "ROPP_Estimate_TGLs.xlsx": ("estimate",      False, None,                   None),
 }
 
-def _tgl_jobset():
+_TGLSET = {}
+def _tgl_jobset(to=None):
     """Job#s in the TGLs-Created report — the emailed ESTIMATE keeps only estimates
-    whose source lead job is one of these (a real ROPP TGL), not a job-type filter."""
-    c = json.load(open(os.path.join(HERE, "cache", "tgls_created.json")))
-    j = c["fields"].index("JobNumber")
-    return {U.jobkey(r[j]) for r in c["rows"] if U.jobkey(r[j])}
+    whose source lead job is one of these (a real ROPP TGL), not a job-type filter.
+
+    Prefers cache/tgls_created.json, which cache_reports() refreshes YTD — that is the
+    PC/Mac path and stays a pure disk read. There is no cache/ in the cloud (it is
+    gitignored, so a runner checkout starts without one), which used to make every
+    ESTIMATE conversion die on FileNotFoundError and is why ropp_week_review.py could
+    never run in Actions. Fall back to fetching the same report live.
+
+    ⚠ The live span is ALWAYS Jan 1 -> `to`, NEVER the caller's own [frm,to]. An
+    estimate scheduled this week is routinely generated from a TGL created weeks
+    earlier; narrowing this set to the caller's window would drop those estimates on
+    the floor and silently under-count Ran/Sold on the CA close rate. YTD is exactly
+    what the cache holds, so both paths filter against the same population.
+    """
+    path = os.path.join(HERE, "cache", "tgls_created.json")
+    if os.path.exists(path):
+        c = json.load(open(path))
+        j = c["fields"].index("JobNumber")
+        return {U.jobkey(r[j]) for r in c["rows"] if U.jobkey(r[j])}
+    to = to or dt.date.today().isoformat()
+    if to not in _TGLSET:            # one fetch per run, not one per ESTIMATE conversion
+        fields, rows = _fetch_report("tgls_created", U.YEAR_START.isoformat(), to)
+        j = fields.index("JobNumber")
+        _TGLSET[to] = {U.jobkey(r[j]) for r in rows if U.jobkey(r[j])}
+    return _TGLSET[to]
 # Excel header labels (row 0) — must carry the substrings the ESTIMATE header-detector needs.
 EST_HEADER = ["Job #","Job Type","Assigned Technicians","Lead Generated From Source Technician",
               "Lead Generated From Source Job Number","Scheduled Date","Created Date",
@@ -47,12 +69,12 @@ def _convert(canon):
     cache = json.load(open(os.path.join(HERE, "cache", CONFIG[canon][0] + ".json")))
     return _convert_rows(canon, cache["fields"], cache["rows"])
 
-def _convert_rows(canon, fields, rows):
+def _convert_rows(canon, fields, rows, tgl_to=None):
     cfg = CONFIG[canon]
     idx = {f: i for i, f in enumerate(fields)}
     rows = [[_cell(c) for c in r] for r in rows]
     if canon == "ROPP_Estimate_TGLs.xlsx":
-        tgl_set = _tgl_jobset(); si = idx["LeadGeneratedFromSourceJobNumber"]
+        tgl_set = _tgl_jobset(tgl_to); si = idx["LeadGeneratedFromSourceJobNumber"]
         rows = [r for r in rows if U.jobkey(r[si]) in tgl_set]   # source lead job is a ROPP TGL
         return [EST_HEADER] + rows                            # flat: no leading blank, no groups
     # grouped: header + per-tech group headers + ['']+row
@@ -100,8 +122,11 @@ def _fetch_report(cache_name, frm, to):
 
 def fetch_report_rows(canonical, frm, to):
     """Live-fetch a report for [frm,to] and return Excel-shaped rows (no cache).
-    Used by the 15-min Today-tab job to pull today's Revenue/TGLs/Scheduled from the API."""
-    return _convert_rows(canonical, *_fetch_report(CONFIG[canonical][0], frm, to))
+    Used by the 15-min Today-tab job to pull today's Revenue/TGLs/Scheduled from the API.
+
+    `to` is threaded into the ESTIMATE report's TGL-jobset filter as its upper bound
+    (the lower bound stays Jan 1 — see _tgl_jobset); the other four reports ignore it."""
+    return _convert_rows(canonical, *_fetch_report(CONFIG[canonical][0], frm, to), tgl_to=to)
 def cache_reports(frm=None, to=None):
     """Refresh cache/*.json from the live Reporting API (paced, 429-backoff).
     Defaults to YTD-through-today so scheduled daily runs stay current."""
