@@ -1,0 +1,31 @@
+# Active Sierra SERVICE tech roster (dispatch teams 2A/2B) for cloud coaching jobs.
+# Source: servicedata.json (dashboard repo) techs.ytd[] entries where team is 2A or 2B,
+# fetched 2026-08-04 from
+# https://raw.githubusercontent.com/johnschwinghamer94-lab/sierra-ropp-dashboard/main/servicedata.json
+# SILO reps (coaching/silo_roster.txt) are deliberately excluded — Service techs live
+# outside the Siro SILO team (Q42L8L) and are matched via a second org-wide API pass.
+AJ Munoz
+Adrian Muniz
+Brodie Josefsen
+Bryce Hurley
+Chris Thomas
+Christopher Moreno
+Corey Reding
+Fabian Pantoja
+J Boothe
+Jack Jonathon Vanos
+Jasmine Jones
+Jose Huesca
+Joseph Byrd
+Josue Arciga
+Juan Bernal
+Kevin Rodriguez
+Mario Conant
+Matthew Arnold
+Matthew Graves
+Michael Washington
+Mike (Jiangtao) Li
+Pedro Manzanares
+Stanley Kim
+Tyler Battershell
+Xavier Paredes

@@ -38,9 +38,24 @@ HEAD = """<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name=
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 {style}</head><body>
-<div class="top"><div class="mk">S</div><b>Sierra&nbsp;·&nbsp;SILO</b><span class="tag">{tag}</span></div>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;·&nbsp;{brand}</b><span class="tag">{tag}</span></div>
 <div class="wrap">
 """
+
+# dept-specific labels — SILO values preserved EXACTLY so existing (silo) specs render
+# byte-identical output; "service" is the new Service-tech rubric counterpart.
+DEPT_BRAND = {"silo": "SILO", "service": "Service"}
+DEPT_FOOT_PLAN = {
+    "silo": "Sierra · SILO daily coaching plan · %s · Scored on strength bands — close rate is the only number",
+    "service": "Sierra · Service daily coaching plan · %s · Scored on strength bands — close rate is the only number",
+}
+DEPT_FOOT_INDEX = {
+    "silo": "Sierra · SILO daily coaching index · %s · Scored on strength bands — close rate is the only number",
+    "service": "Sierra · Service daily coaching index · %s · Scored on strength bands — close rate is the only number",
+}
+DEPT_INDEX_TITLE = {"silo": "SILO Daily Coaching — %s", "service": "Service Daily Coaching — %s"}
+DEPT_INDEX_H1 = {"silo": "Silo Techs — %s", "service": "Service Techs — %s"}
+DEPT_OUT_DIR = {"silo": "plans", "service": "plans_service"}
 
 LEGEND = """<div class="legend">
   <span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span>
@@ -79,10 +94,12 @@ def row(label, chip, evidence):
             '<div class="ev">%s</div></div>\n' % (rich(label), chip, rich(evidence)))
 
 
-def render_plan(rep, date):
+def render_plan(rep, date, dept="silo"):
     name = rep["name"]
-    parts = [HEAD.format(title="%s — SILO Coaching Plan %s" % (html.escape(name), date),
+    brand = DEPT_BRAND.get(dept, "SILO")
+    parts = [HEAD.format(title="%s — %s Coaching Plan %s" % (html.escape(name), brand, date),
                          style=style_block(),
+                         brand=brand,
                          tag="Daily Coaching Plan · %s" % date)]
     a = parts.append
 
@@ -176,20 +193,21 @@ def render_plan(rep, date):
     a('</ul>\n</section>\n\n')
 
     a('<div class="bottom">\n  <div class="eyb">Bottom line</div>\n  <p>%s</p>\n</div>\n\n' % rich(rep["bottom"]))
-    a('<div class="foot">Sierra · SILO daily coaching plan · %s · Scored on strength bands — close rate is the only number</div>\n'
-      % date)
+    a('<div class="foot">%s</div>\n' % (DEPT_FOOT_PLAN.get(dept, DEPT_FOOT_PLAN["silo"]) % date))
     a('</div></body></html>\n')
     return "".join(parts)
 
 
-def render_index(spec):
+def render_index(spec, dept="silo"):
     date = spec["date"]
-    parts = [HEAD.format(title="SILO Daily Coaching — %s" % date,
+    brand = DEPT_BRAND.get(dept, "SILO")
+    parts = [HEAD.format(title=DEPT_INDEX_TITLE.get(dept, DEPT_INDEX_TITLE["silo"]) % date,
                          style=style_block(),
+                         brand=brand,
                          tag="Daily Index · %s" % date)]
     a = parts.append
     a('<div class="hero">\n  <div class="ey">Daily Coaching Plans · %s</div>\n' % date)
-    a('  <h1 class="disp">Silo Techs — %s</h1>\n' % date)
+    a('  <h1 class="disp">%s</h1>\n' % (DEPT_INDEX_H1.get(dept, DEPT_INDEX_H1["silo"]) % date))
     a('  <p class="lede">%s</p>\n</div>\n' % rich(spec["indexLede"]))
     a(LEGEND)
     a('<p class="note">%s</p>\n\n' % rich(spec["indexNote"]))
@@ -214,7 +232,7 @@ def render_index(spec):
         a(row("None", '<span class="b na">—</span>', "Every recording on the day was a gradeable customer call."))
     a('</div>\n</section>\n\n')
 
-    a('<div class="foot">Sierra · SILO daily coaching index · %s · Scored on strength bands — close rate is the only number</div>\n' % date)
+    a('<div class="foot">%s</div>\n' % (DEPT_FOOT_INDEX.get(dept, DEPT_FOOT_INDEX["silo"]) % date))
     a('</div></body></html>\n')
     return "".join(parts)
 
@@ -222,16 +240,20 @@ def render_index(spec):
 def main():
     spec = json.loads(pathlib.Path(sys.argv[1]).read_text(encoding="utf-8"))
     date = spec["date"]
-    out = REPO / "plans" / date
+    # dept is opt-in via a top-level "dept" key in the spec; absent/"silo" keeps
+    # SILO behavior byte-identical to before this key existed.
+    dept = spec.get("dept", "silo")
+    out_dirname = DEPT_OUT_DIR.get(dept, "plans")
+    out = REPO / out_dirname / date
     out.mkdir(parents=True, exist_ok=True)
     for old in out.glob("*.html"):
         old.unlink()
     written = []
     for rep in spec["reps"]:
         p = out / (rep["name"].replace(" ", "_") + ".html")
-        p.write_text(render_plan(rep, date), encoding="utf-8")
+        p.write_text(render_plan(rep, date, dept=dept), encoding="utf-8")
         written.append(p.name)
-    (out / "_index.html").write_text(render_index(spec), encoding="utf-8")
+    (out / "_index.html").write_text(render_index(spec, dept=dept), encoding="utf-8")
     written.append("_index.html")
 
     # guard: the close rate must be the only number-bearing string in a plan
