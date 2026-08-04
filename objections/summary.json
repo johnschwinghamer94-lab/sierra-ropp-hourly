@@ -1,13 +1,13 @@
 {
-  "generated": "2026-08-04T04:41:07Z",
+  "generated": "2026-08-04T12:43:53Z",
   "window": {
     "start": "2025-12-30",
     "end": "2026-08-02"
   },
   "totals": {
-    "total": 2855,
-    "great": 863,
-    "ok": 1542,
+    "total": 2850,
+    "great": 861,
+    "ok": 1539,
     "poor": 450
   },
   "types": {
@@ -18,20 +18,20 @@
       "poor": 129
     },
     "Stall / Think About It": {
-      "total": 816,
+      "total": 814,
       "great": 237,
-      "ok": 432,
+      "ok": 430,
       "poor": 147
     },
     "Doubt / Distrust": {
-      "total": 583,
-      "great": 139,
-      "ok": 358,
+      "total": 581,
+      "great": 138,
+      "ok": 357,
       "poor": 86
     },
     "System Too Old": {
-      "total": 80,
-      "great": 29,
+      "total": 79,
+      "great": 28,
       "ok": 41,
       "poor": 10
     },

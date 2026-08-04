@@ -1322,17 +1322,6 @@
       "job": "625381852"
     },
     {
-      "id": "5799d669-8ede-492b-af6d-a02bc6b7a56e-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-2",
-      "type": "Stall / Think About It",
-      "cust": "Well. I. I think we can just do these two.",
-      "answer": "Are you sure on that? Again... the last thing that I would want for you guys is we come up to the summer, and that compressor... we are seeing that the resistance on that component is increasing.",
-      "tech": "Andrew Trujillo",
-      "date": "2026-01-15",
-      "grade": "ok",
-      "closed": false,
-      "job": "625381852"
-    },
-    {
       "id": "9525e8b2-ed3a-4953-bf21-1c7309f3862d-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
       "type": "Price",
       "cust": "A lot.",
@@ -2895,17 +2884,6 @@
       "grade": "poor",
       "closed": false,
       "job": "627332849"
-    },
-    {
-      "id": "9f32225f-be5b-4134-88c0-28688526d133-kBmcjj1ucbYoWgDqILgiXfkLNzP2-1",
-      "type": "Stall / Think About It",
-      "cust": "Nothing. Just email it to me.",
-      "answer": "Are you sure, Sierra. You don't want to see the pricing?... Because it is part of my job to go over it with you guys. Are you sure, boss?",
-      "tech": "Ting Cheung",
-      "date": "2026-01-28",
-      "grade": "ok",
-      "closed": false,
-      "job": "627615786"
     },
     {
       "id": "fe7f02e4-ba66-4286-abe0-833519ea4548-kBmcjj1ucbYoWgDqILgiXfkLNzP2-1",
