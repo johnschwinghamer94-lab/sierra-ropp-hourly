@@ -1,22 +1,23 @@
-# Scorecard: Benjamin Wyllie - Job # 670421065
-**Date:** 2026-08-04 | **Duration:** 51 min | **Outcome:** no-close
+# Scorecard f8d5831b-7b94-48fb-8b2c-163c9187dee4-LHPyzDeQsNek3Dzj7AlgurDjs6E2
+- Tech: Benjamin Wyllie
+- Job: 670421065
+- Date: 2026-08-04
+- Duration: 51m
 
 ## FSG Bands
-- **Welcome:** Solid — Set expectations but could have been more specific about options review timeline
-- **Assessment:** Solid — Good diagnostic questioning, clear findings on motor start device failure ($557 repair)
-- **Decision:** Moderate — Presented repair option but failed to close on it; pivoted to future problems without reconnecting to the immediate need
-- **Deliver:** Solid — Explained the motor start device function and failure cascade clearly
+- Welcome: Strong
+- Assessment: Strong
+- Decision: Solid
+- Deliver: Solid
 
 ## Critical Actions
-- ✓ Expectations: Clearly explained diagnostic process
-- ✓ Questions: Asked about timeline and repair history  
-- ✓ Options: Presented the $557 immediate repair as primary option
-- ✓ Objections: Addressed customer hesitation, but lost momentum
+- Expectations: True
+- Questions: True
+- Options: True
+- Objections: True
 
-## Gaps & Coaching
-**#1: Missing close on immediate repair** — Customer expressed interest in the $557 motor start device fix but when they paused, you pivoted to discussing future compressor replacement instead of asking "Would you like to go ahead and take care of that today?" This direct closing question is critical when an option is on the table.
+## Outcome
+flipped
 
-**#2: Lost urgency** — The customer's AC is failing now; discussing future problems dilutes the sense that immediate action matters. Reconnect each future option back to the current breakdown.
-
-## Recommendation
-Focus on closing the urgent option before pivoting to future paths. With the next similar situation: present the immediate fix, confirm understanding of the problem and cost, then ask for the decision directly before introducing other possibilities.
+## Tip
+WIN — Tech successfully transitioned customer to specialist consultation for larger decision.
