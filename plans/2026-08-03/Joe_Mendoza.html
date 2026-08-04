@@ -1,0 +1,262 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Joe Mendoza &mdash; SILO Coaching Plan 2026-08-03</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;&middot;&nbsp;SILO</b><span class="tag">Daily Coaching Plan &middot; 2026-08-03</span></div>
+<div class="wrap">
+
+<div class="hero">
+  <div class="ey">6 calls &middot; 204 minutes on tape &middot; the heaviest board on the day</div>
+  <h1 class="disp">Joe Mendoza</h1>
+  <p class="lede">Nobody on this day out-diagnosed him and nobody out-worked him. Three separate customers named their pain out loud &mdash; a doubling power bill, a quote that felt wrong, nineteen years and still running &mdash; and each time the pain got an explanation instead of a question.</p>
+</div>
+<div class="glance">
+  <div class="g"><div class="k">Close Rate</div><div class="v red">17% (from graded calls)<small>1 of 6 flipped</small></div></div>
+  <div class="g"><div class="k">Calls Reviewed</div><div class="v">6<small>8 min to 60 min &middot; all customer-facing</small></div></div>
+  <div class="g"><div class="k">Strongest Section</div><div class="v grn">Assessment<small>Strong</small></div></div>
+  <div class="g"><div class="k">Weakest Section</div><div class="v red">Decision<small>Moderate</small></div></div>
+</div>
+<div class="legend">
+  <span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span>
+  <span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span>
+</div>
+<p class="note">Scored on strength bands, never numbers &mdash; the only figure anywhere is the close rate. The dashboard conversion file has not been refreshed past 2026-07-28 and no ServiceTitan truth file exists for this day, so the close rate here is computed from the graded calls themselves. A flip is an Option&nbsp;C hand-off, a specialist or comfort-advisor appointment, or work authorised in the call. The live scoring pass recorded a second flip on the 8-minute Gubler call, on the basis that the customer agreed to a full evaluation. Agreeing to the evaluation we were dispatched to perform is not an Option&nbsp;C hand-off and there is no ServiceTitan ticket to confirm it, so that call is counted as a no-close here.</p>
+<section id="verdict">
+<div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive">
+  <div class="dh"><div class="k">What the day turned on</div><h3>He explains the pain instead of asking about it.</h3></div>
+  <div class="split">
+    <div class="c said"><div class="lbl">What actually happened</div><p>The one that flipped went the other way. On the Folk call he made the future concrete &mdash; <q>There are other components on the way out, like a rusted coil, fan motor, leaking oil&hellip; I would hate for her to be in a situation where we fix it now. And before summer ends, she has to call me back out because something else happened</q> &mdash; and the son said it back to him: <q>fixing something now and they keep fixing stuff will probably cost more than what a whole new unit is.</q> Specialist there in thirty minutes.</p></div>
+    <div class="c should"><div class="lbl">What flips it</div><p>On the other five, the same information arrived as a lecture. Power bills doubling to $400 and heading for $700, a $3,000 repair that <q>from a common sense perspective</q> felt off, a nineteen-year-old system with several cancelled specialist appointments &mdash; all answered with facts. The Folk move is the model: make the future concrete, then stop talking and let the customer say the conclusion.</p></div>
+  </div>
+</div>
+</section>
+<section id="calls">
+<div class="sh"><div class="no">2</div><h2>The day&rsquo;s calls</h2><span class="hint">outcome per gradeable call</span></div>
+<div class="rub">
+  <div class="row"><div class="rb">Folk &middot; Job 670599153</div><div><span class="b strong">Flipped</span></div><div class="ev">Mismatched 2002 coil and 2022 condenser, refrigerant restriction, compressor at its rated limit. Repair priced honestly, the future named, the decision-making son brought in, specialist on site inside thirty minutes.</div></div>
+  <div class="row"><div class="rb">Oraee &middot; Job 670627978</div><div><span class="b weak">No close</span></div><div class="ev">Three options built properly and the price defended without folding &mdash; <q>We&rsquo;re right in the margin of exactly what it costs.</q> Customer left to shop it. Clean loss, no credibility spent.</div></div>
+  <div class="row"><div class="rb">Hankin &middot; Job 670516287</div><div><span class="b weak">No close</span></div><div class="ev">Textbook gauge diagnosis of non-condensables. Three paths offered. The $3,000 objection turned into a debate about equipment costs instead of a question.</div></div>
+  <div class="row"><div class="rb">Bost &middot; Job 670711971</div><div><span class="b weak">No close</span></div><div class="ev">Power bills doubled to $400 and trending toward $700 on an aging system. The pain was acknowledged and never connected to a path.</div></div>
+  <div class="row"><div class="rb">Cedola &middot; Job 669585498</div><div><span class="b weak">No close</span></div><div class="ev">Nine years of history, a 19-year-old system, $300&ndash;350 monthly bills and several cancelled specialist appointments. <q>It&rsquo;s working. I don&rsquo;t need to replace it</q> ended the conversation.</div></div>
+  <div class="row"><div class="rb">Gubler &middot; Job 670672000</div><div><span class="b weak">No close</span></div><div class="ev">Eight minutes. Damper cost hesitation handled well and the evaluation agreed &mdash; but no Option C, no specialist, no work authorised on the recording.</div></div>
+</div>
+</section>
+<section id="rubric">
+<div class="sh"><div class="no">3</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div>
+<div class="rub">
+
+  <div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+  <div class="row"><div class="rb">Empathy</div><div><span class="b strong">Strong</span></div><div class="ev">Reads the human situation first, every time. To a recently widowed customer facing surgery: <q>I&rsquo;m sorry you&rsquo;re going through this, especially with everything that&rsquo;s been going on.</q> To another: <q>It&rsquo;s got to be frustrating to be in this heat without any air conditioner actually working.</q></div></div>
+  <div class="row"><div class="rb">Expertise</div><div><span class="b strong">Strong</span></div><div class="ev">Established inside two minutes on all six, and often through history rather than claims: <q>I did see that. We&rsquo;ve been coming out for quite some time now.</q></div></div>
+  <div class="row"><div class="rb">Setting expectations</div><div><span class="b strong">Strong</span></div><div class="ev">The full promise on every call: <q>today what we do is we conduct a thorough evaluation of the entire system</q>, with the fifteen-point scope and the approval boundary spelled out where it mattered.</div></div>
+
+  <div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+  <div class="row"><div class="rb">Required questions</div><div><span class="b strong">Strong</span></div><div class="ev">Ownership, onset, service history, prior contractors, end goal &mdash; asked on all six. The best of them: <q>What&rsquo;s your end goal with today&rsquo;s visit? What is it that you&rsquo;re looking to accomplish?</q> and, on a customer with a history of cancelling: <q>I also saw that you&rsquo;ve had several appointments with equipment specialists as well, and they were cancelled. Any particular reason why?</q></div></div>
+  <div class="row"><div class="rb">Check-ins</div><div><span class="b strong">Strong</span></div><div class="ev">Consistent structure &mdash; outdoor unit, attic, then a sit-down &mdash; and on the Folk call he brought the absent decision-maker into the room mid-visit rather than after.</div></div>
+  <div class="row"><div class="rb">How to check in</div><div><span class="b strong">Strong</span></div><div class="ev">Reasons attached to every request, including the diagnostic roadmap: <q>Let me go hook up my gauges. Let me see what&rsquo;s going on with it. Let me see if we do need refrigerant, and then we&rsquo;ll go from there.</q></div></div>
+  <div class="row"><div class="rb">Draw the picture</div><div><span class="b strong">Strong</span></div><div class="ev">The best teaching on the board. Gauge behaviour made visible &mdash; <q>The system&rsquo;s running. It shouldn&rsquo;t be like that. Should be a steady line all the way across</q> &mdash; plus refrigerant history, nitrogen purging and why a mismatched system voids the refrigerant warranty.</div></div>
+  <div class="row"><div class="rb">Keep it simple</div><div><span class="b strong">Strong</span></div><div class="ev">Cause and effect every time, and honest about limits &mdash; the warranty exclusion on mismatched equipment was volunteered, not extracted.</div></div>
+  <div class="row"><div class="rb">Get customer to diagnose</div><div><span class="b wins">Strong on wins</span></div><div class="ev">Reached it on Folk, where the son stated the economics himself. Elsewhere the explanations landed and the customer stayed the audience.</div></div>
+
+  <div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b mod">Moderate</span></span></div>
+  <div class="row"><div class="rb">Building options</div><div><span class="b mod">Moderate</span></div><div class="ev">Excellent on three &mdash; A/B/C named with figures on Oraee, repair-versus-replace on Folk, three paths on Hankin. Nothing built at all on Bost, Cedola or Gubler, including on a nineteen-year-old system with $350 monthly bills.</div></div>
+  <div class="row"><div class="rb">Reconnecting</div><div><span class="b wins">Strong on wins</span></div><div class="ev">When he does it, it wins: on Folk the recommendation was tied to the customer&rsquo;s own need &mdash; <q>She would have peace of mind of knowing that when she&rsquo;s in her home watching her show, she&rsquo;s going to be comfortable.</q> On Bost and Cedola the stated pain was never connected to anything.</div></div>
+  <div class="row"><div class="rb">Explaining options</div><div><span class="b strong">Strong</span></div><div class="ev">Prices stated plainly and defended without discounting: <q>Call any reputable company in town. We&rsquo;re right in the margin of exactly what it costs.</q> No burying, no flinching, no folding.</div></div>
+  <div class="row"><div class="rb">Zip it</div><div><span class="b mod">Moderate</span></div><div class="ev">Holds the silence after a price on the calls that work. On Hankin he filled the pause after the objection with equipment-cost reasoning and the conversation turned adversarial.</div></div>
+  <div class="row"><div class="rb">Overcoming objections</div><div><span class="b mod">Moderate</span></div><div class="ev">Handled properly on Oraee and Gubler &mdash; <q>I definitely hear the hesitation</q>, then a reframe rather than a discount. Failed on Bost, Cedola and Hankin, where facts were used to prove the customer wrong. Automatic fail on three calls.</div></div>
+
+  <div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b mod">Moderate</span></span></div>
+  <div class="row"><div class="rb">Be a nerd</div><div><span class="b strong">Strong</span></div><div class="ev">Refrigerant phase-out history, restriction mechanics, warranty limits, why the previous installer&rsquo;s shortcut caused today&rsquo;s failure. Every customer left better informed than they arrived.</div></div>
+  <div class="row"><div class="rb">5-star review</div><div><span class="b weak">Weak</span></div><div class="ev">Not seeded and not asked on any of the six, including the flip and two visits that ended in signatures.</div></div>
+
+  <div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b wins">Strong on wins</span></span></div>
+  <div class="row"><div class="rb">Make the time valuable</div><div><span class="b strong">Strong</span></div><div class="ev">Six calls, six customers who understood their own equipment better afterwards, and documentation promised and delivered: <q>I&rsquo;m going to write everything up for you so you have it for your records.</q></div></div>
+  <div class="row"><div class="rb">Help them decide</div><div><span class="b mod">Moderate</span></div><div class="ev">Decided with the customer on Folk. On Cedola the visit ended with two signatures and no conversation about what he had actually found: <q>Autograph number one is that I showed up to your home. Autograph number two is that the maintenance is complete.</q></div></div>
+
+</div>
+
+<div class="sh" style="margin-top:26px"><div class="no">4</div><h2>Critical Actions &mdash; pass rate</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Setting clear expectations</div><div><span class="b pass">Pass</span></div><div class="ev">Six for six. The most consistent behaviour on his board.</div></div>
+  <div class="row"><div class="rb">Asking good questions</div><div><span class="b pass">Pass</span></div><div class="ev">Six for six, including the end-goal question and the cancelled-appointments question that almost nobody thinks to ask.</div></div>
+  <div class="row"><div class="rb">Creating good options</div><div><span class="b fail">Fail</span></div><div class="ev">Passed on Folk, Oraee and Hankin. Failed on Bost, Cedola and Gubler &mdash; three customers with clear pain and no path.</div></div>
+  <div class="row"><div class="rb">Handling objections</div><div><span class="b fail">Fail</span></div><div class="ev">Passed on Folk, Oraee and Gubler. Failed on Bost, Cedola and Hankin, where the objection was answered with evidence instead of a question.</div></div>
+</div>
+</section>
+<section id="strengths">
+<div class="sh"><div class="no">5</div><h2>What Joe did right &mdash; real strength, build on it</h2></div>
+<ul class="str">
+  <li><b>He makes the future concrete, and that is what flipped his one call.</b> <q>There are other components on the way out, like a rusted coil, fan motor, leaking oil&hellip; before summer ends, she has to call me back out because something else happened.</q> The son finished the thought himself and the specialist was there in thirty minutes.</li>
+  <li><b>He does not discount under pressure.</b> Told $854 was three times what was expected, he answered with market position, not a lower number: <q>Call any reputable company in town. We&rsquo;re right in the margin of exactly what it costs.</q> He lost that call without losing credibility.</li>
+  <li><b>He asks the question nobody asks.</b> <q>I also saw that you&rsquo;ve had several appointments with equipment specialists as well, and they were cancelled. Any particular reason why?</q> That is a genuinely brave question and the answer was the key to the whole call.</li>
+  <li><b>He brings the absent decision-maker into the room.</b> On the Folk call he got the son on the phone mid-visit and re-explained the problem to him directly, rather than leaving the customer to relay it.</li>
+  <li><b>Six calls, 204 minutes, and the diagnostic quality never dropped.</b> The gauge work on his fifth call was as careful as on his first.</li>
+</ul>
+</section>
+<section id="gaps">
+<div class="sh"><div class="no">6</div><h2>The gaps</h2><span class="hint">each one in Joe&rsquo;s own calls</span></div>
+
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Power bills doubling toward $700, answered with the system&rsquo;s age</h4></div>
+  <div class="q"><b>Customer</b>Power bills have doubled to $400 and are trending toward $700 a month.</div>
+  <div class="q"><b>Joe</b>Explained that the system is eight-plus years old and running inefficiently.</div>
+  <div class="q"><b>What never happened</b>No option, no specialist offer, no next step attached to the customer's own stated financial pain.</div>
+  <p class="fixline"><b>The fix</b> That customer told him the problem, the number and the direction it is heading. The explanation was correct and it went nowhere. <q>Those bills are the system telling you what it costs to keep it. Let me get a comfort advisor out at no charge to show you what the efficiency difference actually looks like against a $700 month &mdash; when are you both home?</q> Pain plus a date is a flip; pain plus a fact is a visit.</p>
+</div>
+
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>&ldquo;It&rsquo;s working. I don&rsquo;t need to replace it&rdquo; &mdash; and three signals were sitting right there</h4></div>
+  <div class="q"><b>Customer</b>"It's working. I don't need to replace it."</div>
+  <div class="q"><b>Also true on that call</b>A 19-year-old system, $300–350 monthly bills, and several equipment-specialist appointments booked and cancelled over the years.</div>
+  <div class="q"><b>Joe's response</b>Explained the value of maintenance — "make sure they don't break down... everything runs smoothly" — and moved on.</div>
+  <div class="q"><b>How the visit ended</b>"Autograph number one is that I showed up to your home. Autograph number two is that the maintenance is complete." No findings recap, no next step.</div>
+  <p class="fixline"><b>The fix</b> He had already found the door &mdash; he asked why the appointments were cancelled. The answer needed one more question, not a maintenance pitch: <q>Fair enough &mdash; it is running. With bills at $350 a month on nineteen-year-old equipment, what happens to your budget if it goes out in August?</q> That is not pressure, it is arithmetic the customer does for himself. And whatever he decides, the visit should never end on two signatures with no account of what was found.</p>
+</div>
+
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>A price objection turned into a debate he won and a job he lost</h4></div>
+  <div class="q"><b>Customer</b>"$3,000 does seem, from a common sense perspective, a little off." — plus a $500 floor unit and a friend quoting $1,000.</div>
+  <div class="q"><b>Joe</b>Answered with BTU requirements and equipment costs.</div>
+  <div class="q"><b>Result</b>The conversation turned adversarial and the customer left with three referrals and no commitment.</div>
+  <p class="fixline"><b>The fix</b> When a customer says a number feels wrong, they are telling you about a feeling, not asking for a lesson. Ask before you answer: <q>What&rsquo;s your biggest concern here &mdash; is it the amount, or whether the repair is even worth it on a system this age?</q> Those are two completely different objections with two different answers, and guessing wrong turns a consultation into an argument.</p>
+</div>
+
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Six calls, two sets of signatures, and no five-star ask</h4></div>
+  <div class="q"><b>Pattern</b>204 minutes on tape, one flip, one repair conversation that reached signature, and not one review seeded or requested.</div>
+  <p class="fixline"><b>The fix</b> He gives the evaluation promise on every single call. Add the clause: <q>and at the end I&rsquo;ll ask how I did &mdash; if it&rsquo;s not five stars, tell me before I leave.</q> On the Folk call he had a family who had just been rescued in thirty minutes. That review was free and nobody collected it.</p>
+</div>
+</section>
+<section id="plan">
+<div class="sh"><div class="no">7</div><h2>Three-week training plan</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Week 1</div><div><span class="b solid">Week 1</span></div><div class="ev"><b>Drill:</b> Pain gets a question, not a fact. Any sentence about bills, cost, or how long something has lasted is answered with a question and, where relevant, a no-cost specialist date &mdash; never with an explanation alone.<br><b>Proof it worked:</b> Manager hears a question following every customer-stated pain point this week; two comfort-advisor dates booked off financial pain.</div></div>
+  <div class="row"><div class="rb">Week 2</div><div><span class="b solid">Week 2</span></div><div class="ev"><b>Drill:</b> Ask before you answer on price. Every price objection gets &lsquo;what&rsquo;s your biggest concern here?&rsquo; before any figure, comparison or equipment-cost explanation.<br><b>Proof it worked:</b> No call this week contains a cost justification that was not preceded by a question.</div></div>
+  <div class="row"><div class="rb">Week 3</div><div><span class="b solid">Week 3</span></div><div class="ev"><b>Drill:</b> No visit ends on signatures alone. Every completed call gets a findings recap, a named next step, and the five-star ask.<br><b>Proof it worked:</b> Every completed visit this week has a recap in the notes and a review requested before leaving.</div></div>
+</div>
+</section>
+<section id="owe">
+<div class="sh"><div class="no">8</div><h2>What we owe Joe Mendoza</h2></div>
+<ul class="str">
+  <li>Six calls in a day and a scoring pass that credited him with a flip he did not get. His real number is honest work and he deserves to be coached against the truth, not a generous count.</li>
+  <li>Specialist availability that matches what he promises &mdash; his one flip happened because somebody could genuinely be there in thirty minutes.</li>
+  <li>Credit for the two hardest things in this trade: he holds his price when it is challenged, and he tells customers inconvenient truths about warranties and mismatched equipment. Neither is coachable and he already has both.</li>
+</ul>
+</section>
+<div class="bottom">
+  <div class="eyb">Bottom line</div>
+  <p>Joe is the strongest diagnostician and the strongest teacher on this board, and he will not discount when he is pushed &mdash; that combination is rare and it is not what is costing him. What is costing him is a reflex: when a customer names their pain, he explains it. On the one call where he made the future concrete and then stopped talking, the customer&rsquo;s own son closed it for him and a specialist was on site in half an hour. That is the same technician, one habit different. Ask the question, then be quiet, and this becomes the best day on the team.</p>
+</div>
+<div class="foot">Sierra &middot; SILO daily coaching plan &middot; 2026-08-03 &middot; Scored on strength bands &mdash; close rate is the only number</div>
+</div></body></html>

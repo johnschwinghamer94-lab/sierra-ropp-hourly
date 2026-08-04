@@ -1,0 +1,248 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>David Canales &mdash; SILO Coaching Plan 2026-08-03</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;&middot;&nbsp;SILO</b><span class="tag">Daily Coaching Plan &middot; 2026-08-03</span></div>
+<div class="wrap">
+
+<div class="hero">
+  <div class="ey">1 call &middot; iced-up coil &middot; diagnostic phase on tape</div>
+  <h1 class="disp">David Canales</h1>
+  <p class="lede">A textbook first ninety seconds: he saw the ice, asked the one question that explains most icing, and got the answer <b>"never."</b> Then the most valuable sentence available to him went unsaid.</p>
+</div>
+<div class="glance">
+  <div class="g"><div class="k">Close Rate</div><div class="v red">0% (from graded calls)<small>0 of 1 flipped</small></div></div>
+  <div class="g"><div class="k">Calls Reviewed</div><div class="v">1<small>75-minute visit &middot; recording degrades early</small></div></div>
+  <div class="g"><div class="k">Strongest Section</div><div class="v grn">Assessment<small>Strong</small></div></div>
+  <div class="g"><div class="k">Weakest Section</div><div class="v red">Deliver<small>Moderate</small></div></div>
+</div>
+<div class="legend">
+  <span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span>
+  <span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span>
+</div>
+<p class="note">Scored on strength bands, never numbers &mdash; the only figure anywhere is the close rate. The dashboard conversion file has not been refreshed past 2026-07-28 and no ServiceTitan truth file exists for this day, so the close rate here is computed from the graded calls themselves. A flip is an Option&nbsp;C hand-off, a specialist or comfort-advisor appointment, or work authorised in the call. The recording carries a 75-minute duration but the usable audio ends shortly after the gauges go on, so the findings, options and outcome are off-tape. Bands reflect only what is audible.</p>
+<section id="verdict">
+<div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive">
+  <div class="dh"><div class="k">What the call turned on</div><h3>The right question, asked immediately &mdash; and the answer left on the floor.</h3></div>
+  <div class="split">
+    <div class="c said"><div class="lbl">What actually happened</div><p>Ice on the coil, and within a minute: <q>First, I just gotta ask, when&rsquo;s the last time you replaced your filters?</q> The answer was <q>Never.</q> David&rsquo;s reply was <q>Okay, so let me start with that</q>, and the conversation moved to thaw logistics.</p></div>
+    <div class="c should"><div class="lbl">What flips it</div><p>&lsquo;Never&rsquo; is not a data point, it is the explanation the customer is standing in front of. <q>That&rsquo;s almost certainly what we&rsquo;re looking at here &mdash; a starved coil freezes, and it&rsquo;s been starving for years. Once it thaws I&rsquo;ll confirm it, and then let&rsquo;s talk about how we keep it from happening again.</q> That sentence turns a repair visit into a maintenance conversation before the price is ever mentioned.</p></div>
+  </div>
+</div>
+</section>
+<section id="calls">
+<div class="sh"><div class="no">2</div><h2>The day&rsquo;s calls</h2><span class="hint">outcome per gradeable call</span></div>
+<div class="rub">
+  <div class="row"><div class="rb">Homeowner &middot; no job number</div><div><span class="b na">Partial</span></div><div class="ev">Iced coil on arrival, filters never replaced in the customer&rsquo;s time in the house. Correct diagnostic sequence &mdash; shut down, thaw, then gauges &mdash; but the usable recording ends as the gauges go on, so no options stage or outcome exists on tape.</div></div>
+</div>
+</section>
+<section id="rubric">
+<div class="sh"><div class="no">3</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div>
+<div class="rub">
+
+  <div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Empathy</div><div><span class="b solid">Solid</span></div><div class="ev">Easy and correct: name exchanged, permission asked &mdash; <q>Is it okay if I come in?</q> &mdash; and the problem invited immediately with <q>So what seems to be going on?</q></div></div>
+  <div class="row"><div class="rb">Expertise</div><div><span class="b solid">Solid</span></div><div class="ev">Demonstrated by knowing what the ice meant before touching anything, and by refusing to guess: <q>I can&rsquo;t do nothing if it&rsquo;s iced up&hellip; a full evaluation, it&rsquo;s going to have to thaw out completely.</q></div></div>
+  <div class="row"><div class="rb">Setting expectations</div><div><span class="b solid">Solid</span></div><div class="ev">The shape of the visit was explained honestly, including the wait: shut it down, let it thaw, then a full system evaluation with gauges. Access was agreed cleanly &mdash; <q>Is it okay if I just let myself in and out?</q></div></div>
+
+  <div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+  <div class="row"><div class="rb">Required questions</div><div><span class="b strong">Strong</span></div><div class="ev">The single highest-yield question in the book, asked first: <q>when&rsquo;s the last time you replaced your filters?</q> Answer: <q>Never.</q> That is the diagnosis handed over in the first minute.</div></div>
+  <div class="row"><div class="rb">Check-ins</div><div><span class="b solid">Solid</span></div><div class="ev">Narrated every move &mdash; <q>I&rsquo;m letting it thaw out right now&hellip; I&rsquo;m gonna go check outside&hellip; while this thaws out more</q> &mdash; so the customer was never left wondering what was happening or why it was slow.</div></div>
+  <div class="row"><div class="rb">How to check in</div><div><span class="b solid">Solid</span></div><div class="ev">Requests carried their reasons. The thaw wait, which is the most frustrating part of an icing call, was explained before it became a problem.</div></div>
+  <div class="row"><div class="rb">Draw the picture</div><div><span class="b strong">Strong</span></div><div class="ev">The differential named plainly: <q>it can be air flow. Flow issues. It could be a leak in the refrigerant. It could be fan motor up in the attics not working.</q> Three causes, in the customer&rsquo;s language, and she asked a follow-up question &mdash; the sign it landed.</div></div>
+  <div class="row"><div class="rb">Keep it simple</div><div><span class="b strong">Strong</span></div><div class="ev"><q>the unit should never be icing</q> is the whole problem stated in six words. No jargon anywhere on the tape.</div></div>
+  <div class="row"><div class="rb">Get customer to diagnose</div><div><span class="b mod">Moderate</span></div><div class="ev">She asked <q>What causes that?</q> &mdash; an open door &mdash; and got a list rather than a question back. She never connected &lsquo;never changed the filters&rsquo; to the ice herself.</div></div>
+
+  <div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Building options</div><div><span class="b na">Off-tape</span></div><div class="ev">Recording ends before the report stage; no options are on the recording.</div></div>
+  <div class="row"><div class="rb">Reconnecting</div><div><span class="b mod">Moderate</span></div><div class="ev">The filter answer was acknowledged and not returned to. It is the one fact that would have connected every later recommendation back to something she said herself.</div></div>
+  <div class="row"><div class="rb">Explaining options</div><div><span class="b solid">Solid</span></div><div class="ev">What he did explain, he explained well &mdash; what could be checked during the thaw versus what needed the system running, and why the difference mattered to her.</div></div>
+  <div class="row"><div class="rb">Overcoming objections</div><div><span class="b na">Off-tape</span></div><div class="ev">No objection was raised on the audible portion of the call.</div></div>
+
+  <div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b mod">Moderate</span></span></div>
+  <div class="row"><div class="rb">Be a nerd</div><div><span class="b solid">Solid</span></div><div class="ev">Correct and confident on the mechanism &mdash; icing causes, gauge work, why a frozen coil cannot be diagnosed &mdash; but the teaching stops at the failure and never reaches prevention.</div></div>
+  <div class="row"><div class="rb">5-star review</div><div><span class="b na">Off-tape</span></div><div class="ev">Not reached on the audible portion of the recording.</div></div>
+
+  <div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Make the time valuable</div><div><span class="b solid">Solid</span></div><div class="ev">She understood what ice on a coil means and why the wait was necessary. That is real value from an unfinished visit.</div></div>
+  <div class="row"><div class="rb">Help them decide</div><div><span class="b mod">Moderate</span></div><div class="ev">Nothing on tape moved her toward a decision, and the maintenance conversation that was sitting right there never opened.</div></div>
+
+</div>
+
+<div class="sh" style="margin-top:26px"><div class="no">4</div><h2>Critical Actions &mdash; pass rate</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Setting clear expectations</div><div><span class="b pass">Pass</span></div><div class="ev">Thaw timeline, evaluation scope and access all set before work started.</div></div>
+  <div class="row"><div class="rb">Asking good questions</div><div><span class="b pass">Pass</span></div><div class="ev">The filter question first, before anything else &mdash; the correct opening move on an icing call.</div></div>
+  <div class="row"><div class="rb">Creating good options</div><div><span class="b fail">Fail</span></div><div class="ev">No options on the recording. The maintenance path opened by &lsquo;never&rsquo; was never built.</div></div>
+  <div class="row"><div class="rb">Handling objections</div><div><span class="b fail">Fail</span></div><div class="ev">No objection surfaced on the audible portion; nothing was worked.</div></div>
+</div>
+</section>
+<section id="strengths">
+<div class="sh"><div class="no">5</div><h2>What David did right &mdash; real strength, build on it</h2></div>
+<ul class="str">
+  <li><b>He asked the right question first.</b> Ice on the coil, and inside a minute: <q>when&rsquo;s the last time you replaced your filters?</q> That is the correct opening move and most techs get there ten minutes later.</li>
+  <li><b>He refused to guess.</b> <q>I can&rsquo;t do nothing if it&rsquo;s iced up&hellip; a full evaluation, it&rsquo;s going to have to thaw out completely.</q> Diagnosing through ice would have been faster and wrong.</li>
+  <li><b>He gave her the whole differential in plain words.</b> <q>It can be air flow&hellip; a leak in the refrigerant&hellip; fan motor up in the attics not working.</q> She asked a follow-up, which means it landed.</li>
+  <li><b>He managed the wait.</b> Every step narrated while the coil thawed, so the slowest part of the visit never felt like nothing was happening.</li>
+  <li><b>Permission before entry, every time.</b> <q>Is it okay if I come in?</q> and <q>Is it okay if I just let myself in and out?</q> Small, and it is why the visit stayed easy.</li>
+</ul>
+</section>
+<section id="gaps">
+<div class="sh"><div class="no">6</div><h2>The gaps</h2><span class="hint">each one in David&rsquo;s own calls</span></div>
+
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>&ldquo;Never&rdquo; was the whole conversation, and it lasted four seconds</h4></div>
+  <div class="q"><b>David</b>"First, I just gotta ask, when's the last time you replaced your filters?"</div>
+  <div class="q"><b>Customer</b>"Never. I've lived in the house backwards... and I have no idea when they replaced them."</div>
+  <div class="q"><b>David</b>"Okay, so let me start with that." — then straight to thaw logistics.</div>
+  <p class="fixline"><b>The fix</b> She told him the system has never been maintained, in front of a coil that is frozen solid because it is starving. Connect the two out loud while the ice is still on it: <q>That&rsquo;s very likely what we&rsquo;re looking at &mdash; a filter that restricted for years starves the coil and the coil freezes. Once it thaws I&rsquo;ll confirm it. And whatever the repair turns out to be, let&rsquo;s also talk about keeping this from happening again.</q> That is the maintenance-plan conversation opening itself, before any repair number exists to argue about.</p>
+</div>
+
+<div class="mom">
+  <div class="top2"><span class="b mod">Moderate</span><h4>She asked how it works and got a list instead of a question</h4></div>
+  <div class="q"><b>Customer</b>"Cool. What causes that?"</div>
+  <div class="q"><b>David</b>"So it can be air flow. Flow issues. It could be a leak in the refrigerant. It could be fan motor up in the attics not working."</div>
+  <div class="q"><b>What was missing</b>"...and based on what you just told me about the filters, which one of those would you bet on?"</div>
+  <p class="fixline"><b>The fix</b> The list is accurate and it is his to give. But when a customer asks an open question, the cheapest way to make the answer theirs is to hand it back: <q>Given what you just told me about the filters &mdash; which of those three sounds most likely to you?</q> When she says &lsquo;the airflow&rsquo;, the diagnosis is hers and every recommendation afterwards is easier.</p>
+</div>
+
+<div class="mom">
+  <div class="top2"><span class="b mod">Moderate</span><h4>One call on the board, and the tape ends at the gauges</h4></div>
+  <div class="q"><b>Pattern</b>A 75-minute visit with usable audio ending shortly after "I got my gauges here, so I'm gonna hook them up and see."</div>
+  <div class="q"><b>Consequence</b>No findings conversation, no options and no outcome exist for the day's only recording.</div>
+  <p class="fixline"><b>The fix</b> Some of this is our equipment. What he can control is putting the decision on tape early: before going out to the unit, say what he is checking and what each answer will mean for her choices. Even a truncated recording then contains the customer&rsquo;s real options.</p>
+</div>
+</section>
+<section id="plan">
+<div class="sh"><div class="no">7</div><h2>Three-week training plan</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Week 1</div><div><span class="b solid">Week 1</span></div><div class="ev"><b>Drill:</b> Connect the maintenance answer to the failure in front of you, out loud, within thirty seconds of hearing it &mdash; and use it to open the prevention conversation before any repair price exists.<br><b>Proof it worked:</b> Manager hears the connection made on every call this week where service history is poor or absent.</div></div>
+  <div class="row"><div class="rb">Week 2</div><div><span class="b solid">Week 2</span></div><div class="ev"><b>Drill:</b> Hand open questions back. When a customer asks what causes something, give the differential and then ask which one they would bet on given what they have just told you.<br><b>Proof it worked:</b> At least one customer-stated diagnosis on tape per call this week.</div></div>
+  <div class="row"><div class="rb">Week 3</div><div><span class="b solid">Week 3</span></div><div class="ev"><b>Drill:</b> Say the decision before you leave the room. State what you are checking and what each outcome means for their choices, so the options exist on the recording even if the ending does not.<br><b>Proof it worked:</b> The sentence is audible on every call; every completed visit ends with two named paths.</div></div>
+</div>
+</section>
+<section id="owe">
+<div class="sh"><div class="no">8</div><h2>What we owe David Canales</h2></div>
+<ul class="str">
+  <li>Recording equipment that lasts the visit. A 75-minute call with a few audible minutes gives him almost no credit for a day&rsquo;s work and gives us nothing to coach from.</li>
+  <li>More than one call on tape. Judging a technician on a single truncated recording is not a fair read of anyone, and this plan should be treated as a partial picture.</li>
+  <li>Credit for the diagnostic discipline. He would not diagnose through ice even though it would have been quicker, and that is exactly the standard we ask for.</li>
+</ul>
+</section>
+<div class="bottom">
+  <div class="eyb">Bottom line</div>
+  <p>On the audible portion, David does the two hardest things right: he asks the highest-yield question first and he refuses to diagnose through ice when guessing would have been faster. What he leaves behind is the easiest value in the trade &mdash; a customer who has never changed a filter, standing next to a frozen coil, being told why the two are connected. Say that sentence and the maintenance conversation opens itself. The rest of the read on him is limited by the recording, not by him.</p>
+</div>
+<div class="foot">Sierra &middot; SILO daily coaching plan &middot; 2026-08-03 &middot; Scored on strength bands &mdash; close rate is the only number</div>
+</div></body></html>
