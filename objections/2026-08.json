@@ -1,4 +1,60 @@
 {
   "month": "2026-08",
-  "items": []
+  "items": [
+    {
+      "id": "fc3c710f-273d-44de-8289-3b0021d17f84-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
+      "type": "Stall / Think About It",
+      "cust": "No, I have to get back. I'm gonna have to get back with you, bro... You gotta wrap my head around it.",
+      "answer": "You're gonna have to get back with me? No, I hear you... I'll file this away for you guys for now. I'm gonna waive the service fee since you guys are members... I'll give you guys a call in a couple of days, see where you guys are at.",
+      "tech": "Joe Mendoza",
+      "date": "2026-08-02",
+      "grade": "ok",
+      "closed": false,
+      "job": "670548181"
+    },
+    {
+      "id": "fc3c710f-273d-44de-8289-3b0021d17f84-hUwt6xtja4T6o8jCUdsXJsPtmQX2-2",
+      "type": "Spouse / Decision-Maker",
+      "cust": "No, I think we're probably going to try to run another credit check. I got one more person that needs to be here. She's not here... she's in the hospital.",
+      "answer": "Oh my goodness. I'm so sorry... Yeah, take the weekend to think about it. I'll give you guys a call on Monday, and then we'll go from there, see where she — that other person is — to try to get you guys a new system.",
+      "tech": "Joe Mendoza",
+      "date": "2026-08-02",
+      "grade": "ok",
+      "closed": false,
+      "job": "670548181"
+    },
+    {
+      "id": "ac31be8b-c95c-48a3-8907-b1842f780a2b-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
+      "type": "Price",
+      "cust": "You think this thing would land somewhere around $10K or under?",
+      "answer": "No, any reputable company in town, I can't get equipment for $10,000... we're all gonna be within $600 of each other... if you're looking for someone to get this done on the cheaper side... it's completely up to you.",
+      "tech": "Joe Mendoza",
+      "date": "2026-08-02",
+      "grade": "great",
+      "closed": false,
+      "job": "670585841"
+    },
+    {
+      "id": "ac31be8b-c95c-48a3-8907-b1842f780a2b-hUwt6xtja4T6o8jCUdsXJsPtmQX2-2",
+      "type": "Stall / Think About It",
+      "cust": "But, uh, on that kind of a thing, I'm probably gonna have to get more quotes.",
+      "answer": "Yeah, no, absolutely. Most homeowners, they opt to do that... They want to compare apples to apples, which is totally fair... What we provide is information. So the more information you have from us... you can decide what makes the most sense.",
+      "tech": "Joe Mendoza",
+      "date": "2026-08-02",
+      "grade": "great",
+      "closed": false,
+      "job": "670585841"
+    },
+    {
+      "id": "f5f41a8b-fd5e-4333-b5c5-f5354747c8a4-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
+      "type": "Competitor",
+      "cust": "Normally Bombard Mechanical does my work... Bombard is the one that switched this one out for me... If it comes to I have to get a new one, I'll probably go to Bombard and see what they will give it to me for.",
+      "answer": "It's up to you if you have— I don't want to step on anybody's toes. If you have someone that can come out and take care of you, by all means, you have the ability to call them out here and see what they can do for you.",
+      "tech": "Joe Mendoza",
+      "date": "2026-08-02",
+      "grade": "poor",
+      "closed": false,
+      "job": "670584078"
+    }
+  ]
 }
