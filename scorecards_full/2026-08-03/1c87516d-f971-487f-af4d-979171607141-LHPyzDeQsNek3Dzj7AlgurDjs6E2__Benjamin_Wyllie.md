@@ -3,16 +3,19 @@
 **Outcome:** no-close
 
 ## FSG Scores
-- **Welcome:** Solid — Empathy and expertise established, clear intro with property manager context understood
-- **Assessment:** Solid — Thorough inspection of compressor, identified oil leak from years without service, educated on system age (2014)
-- **Decision:** Moderate — No options presented; deferred all decisions to property manager Mandy without presenting Option C timeline
-- **Deliver:** Moderate — Good technical explanation of compressor damage, but no follow-up plan or urgency on specialist visit
+- **Welcome:** Strong — Established rapport, set expectations clearly ("go over everything with Mandy, then she decides")
+- **Assessment:** Strong — Deep investigation of system history, tenant setup, prior repairs, oil leak
+- **Decision:** Solid — Explained findings thoroughly but property manager deferral meant no close-the-loop moment
+- **Deliver:** Moderate — Good technical explanation of compressor damage but no urgency for immediate specialist visit
 
 ## Critical Actions
-- ✓ **Expectations set:** Clear scope (thorough evaluation, write report, manager decides direction)
-- ✓ **Questions asked:** Discovery of previous repairs, tenant concerns, venting issues
-- ✗ **Options created:** No replacement options or specialist appointment scheduled
-- ✗ **Objections handled:** No objections arose (property manager removed from immediate decision)
+- ✓ **Expectations set:** Thorough tour, evaluation, report, then manager decides
+- ✓ **Questions asked:** How long here, prior issues, tenant considerations, service history
+- ✗ **Options created:** No replacement timeline or specialist appointment offered despite compressor damage
+- ✗ **Objections handled:** No objections—but that's the gap; no push for follow-up
+
+## Key Moment
+Tech: "My compressor has already taken a lot of damage." This was the opening to say "I'd like our specialist to give Mandy a replacement assessment before we send the full report."
 
 ## Coaching
-**FIX:** When the property manager will make the decision, reconnect to the compressor damage urgency and present the Option C timeline for bringing her into a consultation call before sending the written report. The risk window (mid-summer failure) should trigger an immediate specialist visit, not a delayed report-and-wait cycle.
+**FIX:** When property owner is deferring decisions to manager, don't just send a report. Offer to schedule a 3-way call with the Comfort Advisor *before* the written report so Mandy hears the urgency directly and can approve next steps immediately.

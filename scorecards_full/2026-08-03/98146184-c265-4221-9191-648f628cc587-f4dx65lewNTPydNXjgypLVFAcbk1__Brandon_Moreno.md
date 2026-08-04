@@ -1,18 +1,21 @@
 # Scorecard: Job # 670746240 (52 min) — Brandon Moreno
 
-**Outcome:** flipped (scheduled replacement visit)
+**Outcome:** unknown
 
 ## FSG Scores
-- **Welcome:** Strong — Quick rapport, handled skepticism well
-- **Assessment:** Strong — Identified oil leak and capillary tube failure with video evidence
-- **Decision:** Strong — Used evidence to overcome "another company already looked at this" objection
-- **Deliver:** Strong on wins — Clear next step (specialist quote), set expectations on cost-of-doing-nothing
+- **Welcome:** Solid — Good greeting, empathy for customer frustration
+- **Assessment:** Strong — Thorough diagnosis; identified compressor issue and explained air handler concerns
+- **Decision:** Solid — Presented options but didn't close with appointment confirmation
+- **Deliver:** Solid — Good technical explanations; offered to send videos for reference
 
 ## Critical Actions
-- ✓ **Expectations set:** Explained specialist role and replacement timeline
-- ✓ **Questions asked:** Explored cooling cost concerns, previous service history
-- ✓ **Options created:** Specialist visit with clear outcome path
-- ✓ **Objections handled:** Overcame competitor skepticism with technical evidence
+- ✓ **Expectations set:** Explained what would happen during diagnosis
+- ✓ **Questions asked:** How long issue, temperature comfort, prior repairs
+- ✓ **Options created:** Discussed repair implications, replacement necessity
+- ✗ **Objections handled:** No explicit close—call trails off without scheduled follow-up
+
+## The Gap
+Tech did excellent option exploration but never said "Let me get you scheduled with our Comfort Advisor" or "When would be good for an estimate appointment?" Customer left without confirmed next step.
 
 ## Coaching
-**WIN:** Customer mentioned cooling costs of $2,300/year and another company's failed visit; tech responded with video evidence and detailed failure explanation (oil leak, capillary failure) that justified specialist visit, turning skepticism into buy-in. The video proof shifted the conversation from "prove it" to "fix it."
+**FIX:** You nailed the diagnosis and options discussion. Now add the close: "Based on what we found, I'd like to get you on the books with our Comfort Advisor so you can see exact pricing and pick the timing that works for you." Schedule the TGL on the call.

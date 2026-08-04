@@ -3,16 +3,22 @@
 **Outcome:** no-close
 
 ## FSG Scores
-- **Welcome:** Solid — Brief but professional
-- **Assessment:** Solid — Identified thermostat unresponsive, ran reset diagnostic
-- **Decision:** Moderate — Reset failed but no replacement option presented
-- **Deliver:** Moderate — Asked if customer wants a quote but didn't commit to it or schedule
+- **Welcome:** Solid — Personable greeting, good conversation rapport (bumper sticker compliment, tattoo comment)
+- **Assessment:** Solid — Identified thermostat failure ("that thermostat is dunzo")
+- **Decision:** Moderate — Customer asked for quote but tech didn't redirect to Comfort Advisor
+- **Deliver:** Weak — Diagnosis clear but call ended without next steps
 
 ## Critical Actions
-- ✗ **Expectations set:** No clear expectations around next steps
-- ✓ **Questions asked:** Confirmed thermostat unresponsive
-- ✗ **Options created:** No replacement option or installation scheduling
-- ✗ **Objections handled:** N/A
+- ✓ **Expectations set:** Offered to check system
+- ✓ **Questions asked:** History of issue, prior service attempts
+- ✗ **Options created:** Customer said "you're just wanting a quote on what a new one would be?" — perfect moment to redirect to Option C
+- ✗ **Objections handled:** No objection handling (opportunity to convert quote request to estimate appointment)
+
+## Gap
+Customer: "So you're just wanting a quote on what a new one would be?"  
+Tech response: [Call ends abruptly]
+
+This is THE moment. Customer opened the door. Should have said: "Great—let me get our Comfort Advisor to give you options on that thermostat and make sure we're looking at the right solution for your setup."
 
 ## Coaching
-**FIX:** When the thermostat failed the manual reset, should have immediately presented a replacement option and attempted to schedule installation rather than ending with just a quote request. The moment it fails is the moment customers are most receptive to "we have a tech available" language.
+**FIX:** When a customer asks for a quote, that's your cue for Option C. "Let me have our specialist schedule a time to give you a full quote and discuss whether this is the best option for your system."
