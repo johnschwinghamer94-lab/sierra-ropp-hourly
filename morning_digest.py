@@ -106,11 +106,14 @@ def build_yesterday_service(sd, sd_err, target_date_iso):
     """servicedata.json's 'today' bucket is only usable as 'yesterday' data
     if its own 'updated' timestamp's calendar date == target business day
     (i.e. the digest is running the next morning before servicedata.py has
-    rolled to a new day). servicedata.json does not retain a second day of
-    revenue/close-rate history among the fields this engine is allowed to
-    read, so vsPriorDay deltas are computed only where a second data point
-    genuinely exists (none does here) — reported null with a stated reason
-    rather than guessed."""
+    rolled to a new day). If the bucket is NOT dated to the target business
+    day, this engine has no other genuine closed-day source for Service
+    figures (servicecalls.json/servicefeed.json don't carry revenue/close
+    rate) — so every field is reported null rather than letting a live
+    partial day masquerade as a confirmed closed day. servicedata.json also
+    does not retain a second day of revenue/close-rate history, so
+    vsPriorDay deltas are always null — reported with a stated reason rather
+    than guessed."""
     notes = []
     if sd is None:
         return None, [f"servicedata.json unavailable: {sd_err}"]
@@ -128,9 +131,15 @@ def build_yesterday_service(sd, sd_err, target_date_iso):
         notes.append(
             f"servicedata.json's 'today' bucket is dated {upd_date or 'unknown'}, "
             f"not the target business day {target_date_iso} — Service Pulse had not rolled to a "
-            "new day (or is ahead of it) at digest run time, so service.yesterday reflects the most "
-            "recent available snapshot instead of a confirmed closed day."
+            "new day (or is ahead of it) at digest run time, and this engine has no other closed-day "
+            "Service revenue/close-rate source, so service.yesterday is null rather than presenting "
+            "a live partial day as a confirmed closed day."
         )
+        result = {
+            "revenue": None, "calls": None, "closeRate": None, "avgTicket": None,
+            "membershipsSold": None, "membershipOfferRate": None, "vsPriorDay": None,
+        }
+        return result, notes
 
     result = {
         "revenue": today_blk.get("revenue"),
@@ -150,24 +159,37 @@ def build_yesterday_service(sd, sd_err, target_date_iso):
 
 
 def build_yesterday_silo(hourly, hourly_err, conv, conv_err, target_date_iso):
+    """SILO yesterday figures must come from a genuine CLOSED day, never a
+    live partial one. hourly.json only ever exposes a live 'today' bucket —
+    it is usable ONLY when its own 'date' field equals the target business
+    day (i.e. the digest ran before hourly.py rolled to the next day).
+    Otherwise, calls/tgls/rate are sourced from tgl_truth/conv.json's
+    per-tech day record for the target date (aggregated across techs), which
+    is the ServiceTitan-derived record of a closed day. Revenue has no
+    closed-day source in conv.json, so it is null whenever hourly.json can't
+    supply it. If neither source can supply the target day, every field is
+    null with a note — never a fabricated/live zero."""
     notes = []
     result = {"calls": None, "tgls": None, "rate": None, "revenue": None, "vsPriorDay": None}
 
+    hourly_usable = False
     if hourly is None:
         notes.append(f"hourly.json unavailable: {hourly_err}")
     else:
         h_date = hourly.get("date")
-        today_blk = hourly.get("today") or {}
-        if h_date != target_date_iso:
+        if h_date == target_date_iso:
+            hourly_usable = True
+            today_blk = hourly.get("today") or {}
+            result["calls"] = today_blk.get("calls")
+            result["tgls"] = today_blk.get("tgls")
+            result["rate"] = today_blk.get("rate")
+            result["revenue"] = today_blk.get("rev")
+        else:
             notes.append(
                 f"hourly.json is dated {h_date}, not the target business day {target_date_iso} — "
-                "SILO yesterday numbers reflect the most recent available snapshot instead of a "
-                "confirmed closed day."
+                "it only ever exposes a live 'today' bucket, so it cannot be used for SILO yesterday "
+                "figures; falling back to tgl_truth/conv.json for a genuine closed-day record."
             )
-        result["calls"] = today_blk.get("calls")
-        result["tgls"] = today_blk.get("tgls")
-        result["rate"] = today_blk.get("rate")
-        result["revenue"] = today_blk.get("rev")
 
     if conv is None:
         notes.append(f"tgl_truth/conv.json unavailable: {conv_err}")
@@ -176,18 +198,34 @@ def build_yesterday_silo(hourly, hourly_err, conv, conv_err, target_date_iso):
         cur = days.get(target_date_iso)
         prior_date = prev_business_day(dt.date.fromisoformat(target_date_iso)).isoformat()
         prior = days.get(prior_date)
-        if cur:
-            cur_calls = sum((v.get("calls") or 0) for v in cur.values())
-            cur_tgls = sum((v.get("tgls") or 0) for v in cur.values())
-            cur_rate = round(cur_tgls / cur_calls * 100, 1) if cur_calls else None
-            # only overwrite calls/tgls/rate from conv.json if hourly.json
-            # didn't already give us same-day figures
-            if result["calls"] is None:
-                result["calls"] = cur_calls
-            if result["tgls"] is None:
-                result["tgls"] = cur_tgls
-            if result["rate"] is None:
-                result["rate"] = cur_rate
+        if not hourly_usable:
+            if cur:
+                cur_calls = sum((v.get("calls") or 0) for v in cur.values())
+                cur_tgls = sum((v.get("tgls") or 0) for v in cur.values())
+                if cur_calls:
+                    result["calls"] = cur_calls
+                    result["tgls"] = cur_tgls
+                    result["rate"] = round(cur_tgls / cur_calls * 100, 1)
+                    notes.append(
+                        f"SILO yesterday calls/tgls/rate sourced from tgl_truth/conv.json for "
+                        f"{target_date_iso} (closed-day record) — hourly.json could not supply the "
+                        "target business day."
+                    )
+                else:
+                    notes.append(
+                        f"SILO yesterday calls/tgls/rate are null — tgl_truth/conv.json has no "
+                        f"per-tech data yet for {target_date_iso} (empty day record), and hourly.json "
+                        "could not supply the target business day either."
+                    )
+            else:
+                notes.append(
+                    f"SILO yesterday calls/tgls/rate are null — tgl_truth/conv.json has no day record "
+                    f"for {target_date_iso}, and hourly.json could not supply the target business day either."
+                )
+            notes.append(
+                "SILO yesterday.revenue is null — tgl_truth/conv.json does not carry revenue and "
+                "hourly.json could not supply the target business day."
+            )
         if cur and prior:
             prior_calls = sum((v.get("calls") or 0) for v in prior.values())
             prior_tgls = sum((v.get("tgls") or 0) for v in prior.values())
