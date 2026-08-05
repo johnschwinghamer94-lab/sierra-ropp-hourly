@@ -371,25 +371,38 @@ def build_risks(sd, servicecalls, sc_hist, feed, health, sd_budget_target, notes
         notes.append(f"recording-compliance risk skipped — {co_err}")
 
     # ── membership offer rate ───────────────────────────────────────────
+    # STANDARD (John, 2026-08-05): every eligible call gets a membership offer,
+    # so 90%+ is the bar; 70-89 medium, under 70 high. Measured WEEK TO DATE,
+    # never today's partial day — at 8 AM barely anything has closed and the
+    # old rule fired "high" on a 0% that only meant "the day just started".
     if sd:
-        today_blk = sd.get("today") or {}
-        offer_rate = today_blk.get("membershipOfferRate")
-        if offer_rate is not None and offer_rate < 60:
+        wtd_blk = sd.get("wtd") or {}
+        offer_rate = wtd_blk.get("membershipOfferRate")
+        offered = wtd_blk.get("membershipOffered")
+        elig = wtd_blk.get("membershipOfferJobs")
+        if offer_rate is not None and elig and offer_rate < 90:
             risks.append({
-                "severity": "high" if offer_rate < 40 else "medium",
-                "area": "pipeline",
+                "severity": "high" if offer_rate < 70 else "medium",
+                "area": "membership",
                 "dept": "service",
-                "text": f"Service membership offer rate is {offer_rate}% dept-wide — well below a healthy target.",
-                "metric": {"offerRate": offer_rate},
+                "text": (f"Membership offered on {offered} of {elig} eligible calls this week "
+                         f"({offer_rate}%) — the standard is every eligible call."),
+                "metric": {"offerRate": offer_rate, "offered": offered, "eligible": elig},
             })
-        for t in (sd.get("techs", {}).get("today") or []):
-            if t.get("membershipOfferJobs") and t.get("membershipOfferRate") == 0:
+        # Per-tech: week to date, and only with enough volume to mean something.
+        # A 1-job sample is a coin flip, not a finding.
+        MIN_JOBS = 3
+        for t in (sd.get("techs", {}).get("wtd") or []):
+            jobs = t.get("membershipOfferJobs") or 0
+            rate = t.get("membershipOfferRate")
+            if jobs >= MIN_JOBS and rate == 0:
                 risks.append({
-                    "severity": "medium",
-                    "area": "pipeline",
+                    "severity": "high",
+                    "area": "membership",
                     "dept": "service",
-                    "text": f"{t.get('name')} offered a membership on 0% of {t.get('membershipOfferJobs')} jobs today.",
-                    "metric": {"tech": t.get("name"), "jobs": t.get("membershipOfferJobs")},
+                    "text": (f"{t.get('name')} has not offered a membership once this week "
+                             f"— {jobs} eligible calls."),
+                    "metric": {"tech": t.get("name"), "eligibleCalls": jobs},
                 })
     else:
         notes.append("membership-offer risk skipped — servicedata.json unavailable.")
