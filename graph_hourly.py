@@ -618,6 +618,14 @@ def main():
     if (5, 15) <= hm <= (23, 45):
         _kick("servicefeed.yml", "service live-feed relay bootstrap")
         _kick("livefeed.yml", "silo live-feed relay bootstrap")
+        # Same new-workflow cron problem for the Field Pro attribution
+        # correlator added 8/5. It is kicked on EVERY ops-hours run rather than
+        # on a minute%20 gate: this job is driven every ~15 min, so a modular
+        # gate lands unevenly (:00 and :45 only) and would leave 60-minute
+        # holes, which is longer than servicefeed's FP_ATTRIB_MAX_AGE_MIN and
+        # would stand the NOT RECORDING alert down for no reason. Each run is
+        # ~2 report calls and the concurrency group collapses duplicates.
+        _kick("fieldpro_attrib.yml", "Field Pro recording attribution correlator")
     if (7, 0) <= hm <= (23, 0) and n.minute % 15 < 3:
         _kick("servicedata.yml", "pulse light refresh")  # no inputs -> --light
 

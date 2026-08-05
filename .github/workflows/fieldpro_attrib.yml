@@ -1,0 +1,57 @@
+name: Field Pro attribution correlator (cloud)
+
+# Correlates the blank-JobNumber Field Pro recording sessions into per-tech job
+# windows and publishes fieldpro_attrib.json to the dashboard repo, which is
+# what makes the service board's NOT RECORDING alert safe to run at all.
+#
+# CADENCE — every 20 min through the service day. Reasoning:
+#   * servicefeed_sync.py will not accuse a job until FP_SETTLE_MIN (20 min)
+#     after it completes, so a correlator lagging up to 20 min costs nothing —
+#     the verdict is ready by the time the relay is willing to read it.
+#   * servicefeed_sync's FP_ATTRIB_MAX_AGE_MIN is 75 min, so THREE consecutive
+#     missed ticks still leave the alert armed; a fourth stands it down rather
+#     than letting it fire on a stale opinion.
+#   * cost is tiny and self-limiting: pass 1 is a single unfiltered report call,
+#     and pass 2 only queries technicians who have a COMPLETED job with no
+#     direct attribution — 5 techs per call (a hard API cap). Measured live on
+#     2026-08-05: 2 report calls, 65 seconds, for the whole board.
+#
+# BOOTSTRAP — GitHub's native cron does NOT fire for a newly added workflow
+# file (servicefeed.yml missed every morning tick on 7/30 and health.yml /
+# coaching_outcomes.yml / digest.yml never fired their first scheduled tick).
+# graph_hourly.py — which cron-job.org drives reliably — dispatches this
+# workflow on every ops-hours run; see the _kick() block in its main(). The
+# concurrency group collapses the duplicates, so the belt and the suspenders
+# cost nothing. Do NOT remove that kick on the assumption the cron below works.
+on:
+  schedule:
+    # 12-06 UTC ~= 5 AM - 11 PM PT. Deliberately wider than the service day so
+    # the last jobs of the night still get a verdict written.
+    - cron: "*/20 12-23,0-6 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: fieldpro-attrib
+  cancel-in-progress: false
+
+jobs:
+  correlate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      TZ: America/Los_Angeles   # date.today() must be VEGAS-today: the report's
+                                # completion-date filter is UTC and rolls at 5 PM PT
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install --quiet -r requirements.txt
+      # No continue-on-error. If this fails it must go red: the artifact then
+      # goes stale, servicefeed_sync stands the alert down, and nobody is
+      # accused. A silently-skipped correlator is the failure mode that would
+      # matter, and it cannot happen quietly.
+      - env:
+          ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+          FPATTRIB_CLOUD: "1"
+        run: python fieldpro_attrib.py

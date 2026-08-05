@@ -338,14 +338,26 @@ def _siro_match(tech_name, siro_data):
 #     CONCLUSION: a job's ABSENCE from the job-attributed stream does NOT prove
 #     the tech wasn't recording — it may only mean ServiceTitan failed to tie
 #     that recording to a job. PRESENCE is solid evidence; ABSENCE is not
-#     evidence at all. That asymmetry is why FP_ACCUSE_OK is False below and why
-#     the full-screen NOT RECORDING takeover is currently disabled.
+#     evidence at all.
 #
-#     To reopen this: find a query that returns the app-telemetry recording
-#     events WITH a usable job/appointment key (or correlate blank-job
-#     "Recording started" rows against the same tech's "Technician Arrived on
-#     the Appointment" rows, which DO carry a job number). Until then, do not
-#     flip FP_ACCUSE_OK.
+#  7. *** THE GAP IS NOW CLOSED — fieldpro_attrib.py (2026-08-05) ***
+#     The blank-job recording rows DO carry a RecordingId, which groups them
+#     into recording SESSIONS, and the same technician-filtered stream carries
+#     "Technician Arrived on the Appointment" / "Technician Completed the Job"
+#     rows that DO have a job number. fieldpro_attrib.py builds per-tech job
+#     windows from those and correlates each orphan session into the window it
+#     starts inside, publishing fieldpro_attrib.json — a per-job verdict with
+#     the event times and the rule that fired, so a disputed flag can be
+#     audited after the fact. This file merges that artifact below; the direct
+#     job-attributed signal stays authoritative and the correlator only fills
+#     the blank-job gap.
+#
+#     Replayed against the closed days 8/3 and 8/4: every one of the four
+#     known-positive cases (Aaron Davis 662208158, Juan Tlatenchi 667723254 /
+#     668790087 / 671039859) resolves as RECORDING via the window rule, and the
+#     residual — sessions that could not be placed on any window — is small and
+#     is ITSELF handled: a tech with an unplaced real session cannot be accused
+#     that day at all (verdict "unknown", reason "uncorrelated-session").
 #
 # Reports 636320211 / 634963669 describe the same recordings but lag 9-10+
 # hours. They must never be used for anything live.
@@ -359,13 +371,22 @@ FP_SETTLE_MIN = 20        # a finished job must be this old before "no rows"
 
 # THE ACCUSATION SWITCH. False = fieldpro_state() never returns "none", so the
 # full-screen NOT RECORDING takeover in service.html (which fires only on
-# "none") is unreachable. It is False because of fact 6: absence from the
-# job-attributed stream does not prove a tech wasn't recording, and this alert
-# names a person on a wall-mounted screen in front of the whole department.
-# Do not flip this until the attribution gap in fact 6 is closed and the flagged
-# list has been re-verified against a full day of real data.
-FP_ACCUSE_OK = False
+# "none") is unreachable.
+#
+# Even with this True the ONLY thing that can produce "none" is an explicit
+# `"v":"none"` verdict from fieldpro_attrib.json, on a fresh artifact, for a
+# job that is Done + settled. A missing artifact, a stale one, a job the
+# correlator marked "unknown" for ANY reason, or a Field Pro report failure all
+# fall through to "unverified", which no alert reads. There is no code path
+# from "we don't know" to an accusation.
+FP_ACCUSE_OK = True
+# The correlator runs every 20 min. An artifact older than this is not trusted
+# to ACCUSE (its "recording" verdicts are still honoured — a positive doesn't
+# rot, and a job absent from a stale artifact simply resolves unknown).
+FP_ATTRIB_MAX_AGE_MIN = 75
+FP_ATTRIB_REFRESH_SECS = 300
 _FP_CACHE = {"ts": 0.0, "data": None}
+_FP_ATTRIB_CACHE = {"ts": 0.0, "data": None}
 
 
 def _fp_local(ts):
@@ -468,26 +489,80 @@ def fetch_fieldpro_today():
         return None
 
 
-def fieldpro_state(fp, job_number, job_id, status, completed_local, now):
+def fetch_fieldpro_attrib():
+    """{job_number: verdict} from fieldpro_attrib.py's side artifact, or None.
+
+    None = the correlator's opinion is unavailable this cycle, which degrades
+    every job to the pre-correlator behaviour (positive evidence still counts,
+    nothing can be accused). Never a fabricated empty dict: {} would read as
+    "the correlator ran and cleared everybody", and an accusation must never
+    come from a missing file.
+
+    Cloud reads it from the dashboard repo (where fieldpro_attrib.py publishes
+    it); local reads the file next to this script. Day-gated: an artifact for
+    another date is discarded outright.
+    """
+    now_ts = time.time()
+    if now_ts - _FP_ATTRIB_CACHE["ts"] < FP_ATTRIB_REFRESH_SECS:
+        return _FP_ATTRIB_CACHE["data"]
+    _FP_ATTRIB_CACHE["ts"] = now_ts
+    try:
+        if CLOUD:
+            txt = gh_fetch("fieldpro_attrib.json")
+        else:
+            p = SCRIPT_DIR / "fieldpro_attrib.json"
+            txt = p.read_text(encoding="utf-8") if p.exists() else None
+        if not txt:
+            _FP_ATTRIB_CACHE["data"] = None
+            warn_throttled("fpattrib", "Field Pro attribution artifact MISSING — the "
+                           "correlator's verdicts are unavailable, NOT RECORDING cannot alert")
+            return None
+        j = json.loads(txt)
+        if j.get("day") != date.today().isoformat():
+            _FP_ATTRIB_CACHE["data"] = None
+            warn_throttled("fpattrib", "Field Pro attribution artifact is for %s, not today "
+                           "— ignored, NOT RECORDING cannot alert" % j.get("day"))
+            return None
+        age_min = (now_ts * 1000 - (j.get("generatedMs") or 0)) / 60000.0
+        j["_ageMin"] = age_min
+        if not j.get("ok"):
+            log("Field Pro attribution is PARTIAL — streams failed for %s; their jobs stay "
+                "unknown" % ", ".join(j.get("failedTechs") or []))
+        _FP_ATTRIB_CACHE["data"] = j
+        return j
+    except Exception as ex:
+        _FP_ATTRIB_CACHE["data"] = None
+        warn_throttled("fpattrib", "Field Pro attribution artifact FAILED to load — NOT "
+                       "RECORDING cannot alert: %s" % repr(ex)[:180])
+        return None
+
+
+def fieldpro_state(fp, attrib, job_number, job_id, status, completed_local, now):
     """(state, entry) for one card. state is one of:
 
-      "recording"  — ServiceTitan logged Field Pro activity on this job number.
-                     Solid positive evidence.
-      "unverified" — the job is finished, settled, and carries ZERO job-attributed
-                     Field Pro rows. This is NOT "the tech didn't record" — see
-                     fact 6, the recording may simply never have been tied to a
-                     job. Informational only; must not alert.
-      "none"       — same as "unverified" but asserted as a real violation.
-                     ONLY produced when FP_ACCUSE_OK is True, and it is the only
-                     state the red alert reacts to. Currently unreachable.
+      "recording"  — ServiceTitan logged Field Pro activity on this job number,
+                     or fieldpro_attrib.py correlated a blank-job recording
+                     session into this job's on-site window. Positive evidence.
+      "unverified" — the job is finished and settled, and nothing — neither the
+                     direct job-attributed rows nor the correlator — could
+                     establish a recording either way. NOT an accusation.
+      "none"       — an asserted violation: the correlator saw this tech arrive
+                     and complete this job and saw ZERO recording activity
+                     anywhere in that window, on a fresh artifact. This is the
+                     only state the red alert reacts to.
       "unknown"    — everything else: report unavailable, job still running,
                      "Done" with no completedOn, or finished too recently for
                      the report to have caught up.
 
-    Every ambiguity lands on a non-accusing state on purpose. Note that ANY Field
-    Pro row counts as "recording", not just "Recording initiated": 2 of the 369
-    jobs sampled across 8/4-8/5 carried a "Recording stopped" with no matching
-    initiate. Ambiguous evidence must never become a public accusation.
+    Precedence is deliberate. The DIRECT signal wins whenever it exists — it is
+    ServiceTitan's own job attribution and needs no inference. The correlator is
+    consulted only where direct evidence is absent, which is exactly the gap it
+    was built for. Every ambiguity lands on a non-accusing state.
+
+    Note that ANY Field Pro row counts as "recording", not just "Recording
+    initiated": 2 of the 369 jobs sampled across 8/4-8/5 carried a "Recording
+    stopped" with no matching initiate. Ambiguous evidence must never become a
+    public accusation.
     """
     if fp is None:
         return "unknown", None
@@ -500,7 +575,22 @@ def fieldpro_state(fp, job_number, job_id, status, completed_local, now):
         return "unknown", None
     if (now - completed_local).total_seconds() < FP_SETTLE_MIN * 60:
         return "unknown", None
-    return ("none" if FP_ACCUSE_OK else "unverified"), None
+    # No direct row. Ask the correlator (fact 7).
+    a = ((attrib or {}).get("jobs") or {}).get(str(job_number or ""))
+    if a and a.get("v") == "recording":
+        # A blank-job recording session landed inside this job's on-site
+        # window. Carry the rule + times so the card can show WHY.
+        ev = (a.get("ev") or [{}])[0]
+        return "recording", {"initiated": True, "stopped": None, "n": len(a.get("ev") or []),
+                             "firstInitiated": None, "lastEvent": None,
+                             "via": a.get("rule"), "t0": ev.get("t0"), "t1": ev.get("t1")}
+    if (FP_ACCUSE_OK and a and a.get("v") == "none"
+            and (attrib or {}).get("_ageMin", 1e9) <= FP_ATTRIB_MAX_AGE_MIN):
+        return "none", {"initiated": False, "stopped": False, "n": 0,
+                        "firstInitiated": None, "lastEvent": None,
+                        "via": a.get("rule"), "arr": a.get("arr"), "done": a.get("end")}
+    # a is None / "unknown" / a stale artifact -> we do not know. Say so.
+    return "unverified", None
 
 
 def log(msg):
@@ -800,6 +890,7 @@ def build(state):
     RANK = {"Working": 0, "Dispatched": 1, "Hold": 2, "Scheduled": 3, "Done": 4}
     siro_data = fetch_siro_today()   # one Siro check per cycle (fail-open -> None)
     fp_data = fetch_fieldpro_today() # ST Field Pro recordings (None = UNKNOWN, never 0)
+    fp_attrib = fetch_fieldpro_attrib()  # fieldpro_attrib.py's correlated verdicts (None = UNKNOWN)
     siro_techs_seen = set()
     cards = []
     on_site = 0
@@ -940,7 +1031,8 @@ def build(state):
         # ServiceTitan Field Pro recording truth for this card. `rec.state` is
         # the ONLY thing the NOT RECORDING alert is allowed to read; it is
         # "unknown" for anything in flight or unverifiable (see fieldpro_state).
-        rec_state, rec_ent = fieldpro_state(fp_data, j.get("jobNumber"), jid, status, done_l, now)
+        rec_state, rec_ent = fieldpro_state(fp_data, fp_attrib, j.get("jobNumber"), jid,
+                                            status, done_l, now)
         rec = {
             "src": "st",
             "state": rec_state,
@@ -949,6 +1041,10 @@ def build(state):
             "first": fmt_t(rec_ent["firstInitiated"]) if (rec_ent and rec_ent["firstInitiated"]) else None,
             "last": fmt_t(rec_ent["lastEvent"]) if (rec_ent and rec_ent["lastEvent"]) else None,
             "n": rec_ent["n"] if rec_ent else 0,
+            # "via" is null for the direct job-attributed signal and names the
+            # correlation rule when the verdict came from fieldpro_attrib.py —
+            # this is the audit trail for a disputed flag.
+            "via": (rec_ent or {}).get("via"),
         }
 
         cards.append({
@@ -1014,6 +1110,12 @@ def build(state):
                      "unverified": sc.get("unverified", 0) + sc.get("none", 0),
                      "pending": sc.get("unknown", 0),
                      "accusing": FP_ACCUSE_OK,
+                     # correlator health, for the health pill / diagnosis: how
+                     # many of today's confirmed recordings needed correlating,
+                     # and how stale its opinion is. null = artifact unavailable,
+                     # which means nothing can be accused this cycle.
+                     "correlated": sum(1 for c in cards if c["rec"].get("via")),
+                     "attribAgeMin": round(fp_attrib["_ageMin"], 1) if fp_attrib else None,
                      "src": "ServiceTitan Field Pro"}
 
     payload = {
