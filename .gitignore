@@ -5,3 +5,4 @@ siro_dry_output/
 __pycache__/
 health.json
 coaching_outcomes.json
+digest.json

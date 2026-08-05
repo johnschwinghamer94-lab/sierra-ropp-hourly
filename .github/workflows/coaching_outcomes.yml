@@ -1,0 +1,26 @@
+name: "Coaching outcomes + recording compliance"
+on:
+  schedule:
+    # 11:30 PM PT — end-of-day capture: servicefeed.json is live-only, so the
+    # day's recording compliance must be snapshotted before it rolls over.
+    - cron: "30 6 * * *"
+    # 6:25 AM PT — refresh right before the morning digest reads it.
+    - cron: "25 13 * * *"
+  workflow_dispatch:
+concurrency:
+  group: coaching-outcomes
+  cancel-in-progress: false
+jobs:
+  outcomes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TZ: America/Los_Angeles
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install --quiet -r requirements.txt
+      - env:
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+        run: python coaching_outcomes.py
