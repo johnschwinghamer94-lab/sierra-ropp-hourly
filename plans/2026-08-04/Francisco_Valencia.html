@@ -1,0 +1,243 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Francisco Valencia &mdash; SILO Coaching Plan 2026-08-04</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;&middot;&nbsp;SILO</b><span class="tag">Daily Coaching Plan &middot; 2026-08-04</span></div>
+<div class="wrap">
+
+<div class="hero">
+  <div class="ey">6 calls &middot; 208 minutes on tape &middot; three flips</div>
+  <h1 class="disp">Francisco Valencia</h1>
+  <p class="lede">On his two long calls he is one of the best technicians on this team &mdash; three options built, the cost conversation reframed, and the customer choosing replacement themselves. On his four short ones the same person barely gets past the diagnosis. The gap between them is almost entirely time on site.</p>
+</div>
+<div class="glance">
+  <div class="g"><div class="k">Close Rate</div><div class="v grn">50% (from graded calls)<small>3 of 6 flipped</small></div></div>
+  <div class="g"><div class="k">Calls Reviewed</div><div class="v">6<small>7 min to 106 min &middot; all customer-facing</small></div></div>
+  <div class="g"><div class="k">Strongest Section</div><div class="v grn">Assessment<small>Strong on wins</small></div></div>
+  <div class="g"><div class="k">Weakest Section</div><div class="v red">Decision<small>Moderate</small></div></div>
+</div>
+<div class="legend"><span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span><span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span></div>
+<p class="note">Scored on strength bands, never numbers &mdash; the only figure anywhere is the close rate. The dashboard conversion file has no entry for this day, so the close rate here is computed from the graded calls themselves. A flip is an Option&nbsp;C hand-off, a specialist or comfort-advisor appointment, or work authorised in the call, confirmed against the ServiceTitan truth file where a job number exists. Evening calls filed under the following day&rsquo;s folder are graded here, on the day they were run.</p>
+<section id="verdict">
+<div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive">
+  <div class="dh"><div class="k">What the day turned on</div><h3>Long calls flip. Short calls stop at the finding.</h3></div>
+  <div class="split">
+    <div class="c said"><div class="lbl">What actually happened</div><p>On Padilla, 57 minutes, he built three real options and reframed the cost himself: <q>It only makes sense to do repairs on the older system&hellip; if you guys are planning to keep the house.</q> On Arbuckle, seven minutes, the customer said the upstairs unit was struggling and asked about replacing it &mdash; and the answer was to see the repair technician first.</p></div>
+    <div class="c should"><div class="lbl">What flips it</div><p>Nothing about the short calls prevents the same ending. The Arbuckle customer had already named the product: <q>Then let&rsquo;s get you a number for that. I&rsquo;ll book our comfort advisor to come out and price the replacement on the upstairs unit &mdash; no charge, no obligation &mdash; while the repair team handles the immediate fix.</q> Seven minutes is enough time to say that.</p></div>
+  </div>
+</div>
+</section>
+<section id="calls">
+<div class="sh"><div class="no">2</div><h2>The day&rsquo;s calls</h2><span class="hint">outcome per gradeable call</span></div>
+<div class="rub">
+  <div class="row"><div class="rb">Padilla &middot; Job 671012464</div><div><span class="b strong">Flipped</span></div><div class="ev">57 minutes. Fan motor out, compressor overheating, three options built with costs and timelines, and the daughter agreeing to replacement. Lead typed the same day.</div></div>
+  <div class="row"><div class="rb">Rister &middot; Job 670881547</div><div><span class="b strong">Flipped</span></div><div class="ev">106 minutes. 20-year-old R22 system, failed fan motor, oil leakage. Options and financing tiers presented, pricing correctly routed to the comfort advisor, and Jose brought in to quote.</div></div>
+  <div class="row"><div class="rb">Shackelford &middot; Job 671187754</div><div><span class="b strong">Flipped</span></div><div class="ev">16-minute evening call. Good discovery and an empathetic response to a budget concern; lead typed that night, but no alternative path was named in the call.</div></div>
+  <div class="row"><div class="rb">Lippe Trust &middot; Job 671021874</div><div><span class="b weak">No close</span></div><div class="ev">14 minutes. Strong assessment, evaluation approved, and the customer left without knowing what happened next.</div></div>
+  <div class="row"><div class="rb">Arbuckle &middot; Job 670792735</div><div><span class="b weak">No close</span></div><div class="ev">7 minutes. Customer said the older upstairs unit was struggling and asked about replacement. Deflected to the repair path; no advisor offered.</div></div>
+  <div class="row"><div class="rb">Casillas &middot; Job 671210348</div><div><span class="b weak">No close</span></div><div class="ev">8-minute evening call. No expectations set and no path offered after the customer reacted to cost.</div></div>
+</div>
+</section>
+<section id="rubric">
+<div class="sh"><div class="no">3</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div>
+<div class="rub">
+
+  <div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Empathy</div><div><span class="b wins">Strong on wins</span></div><div class="ev">Excellent where he has time &mdash; on Padilla he remembered the prior visit and connected over children: <q>I have three kiddos myself&hellip; I know that things never stay where they need to be.</q> On the short calls the warmth is present but generic.</div></div>
+  <div class="row"><div class="rb">Expertise</div><div><span class="b strong">Strong</span></div><div class="ev">Consistent across all six. He explains failure chains rather than naming parts, and customers follow him.</div></div>
+  <div class="row"><div class="rb">Setting expectations</div><div><span class="b solid">Solid</span></div><div class="ev">Textbook on the long calls: <q>I&rsquo;m gonna start outside first. And then I&rsquo;ll finish just by taking a look at the attic stuff. And then I&rsquo;ll give you a report, and then you just let me know what you guys want to do with that information.</q> Absent entirely on Casillas, which is the automatic fail below.</div></div>
+
+  <div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b wins">Strong on wins</span></span></div>
+  <div class="row"><div class="rb">Required questions</div><div><span class="b wins">Strong on wins</span></div><div class="ev">Outstanding on the long calls &mdash; onset, symptoms, tenure, long-term intent, maintenance history. Compressed to symptoms only on the short ones.</div></div>
+  <div class="row"><div class="rb">Check-ins</div><div><span class="b wins">Strong on wins</span></div><div class="ev">On Padilla he stayed connected the whole way through, right down to <q>It&rsquo;s a little toasty outside.</q> On the seven- and eight-minute calls there is no time for it to happen.</div></div>
+  <div class="row"><div class="rb">How to check in</div><div><span class="b solid">Solid</span></div><div class="ev">Access and permission handled cleanly throughout.</div></div>
+  <div class="row"><div class="rb">Draw the picture</div><div><span class="b strong">Strong</span></div><div class="ev">The best explanation on his day and one of the best on the team: <q>your fan motor is out and it&rsquo;s overheating your compressor and that&rsquo;s why it sounds like it&rsquo;s about to explode</q>, then the mechanism &mdash; <q>The fan motor is in charge of helping cool off that compressor&hellip; it becomes like an oven in there.</q></div></div>
+  <div class="row"><div class="rb">Get customer to diagnose</div><div><span class="b wins">Strong on wins</span></div><div class="ev">On Padilla the customer reached the conclusion herself: <q>Not spending money in water repairs, chasing good money with bad money.</q> That is the model working exactly as designed.</div></div>
+
+  <div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b mod">Moderate</span></span></div>
+  <div class="row"><div class="rb">Building options</div><div><span class="b mod">Moderate</span></div><div class="ev">Three real options on Padilla, repair-versus-replacement with financing tiers on Rister &mdash; and nothing built on the other four calls.</div></div>
+  <div class="row"><div class="rb">Reconnecting</div><div><span class="b mod">Moderate</span></div><div class="ev">Excellent on the long calls, where findings tie back to how long the customer plans to stay. On Arbuckle a direct replacement enquiry was routed away rather than reconnected.</div></div>
+  <div class="row"><div class="rb">Explaining options</div><div><span class="b solid">Solid</span></div><div class="ev">Clear and honest where options exist. Correctly routes replacement pricing to the comfort advisor, which is the SILO process working as intended.</div></div>
+  <div class="row"><div class="rb">Overcoming objections</div><div><span class="b solid">Solid</span></div><div class="ev">Strong on Padilla, where the cost concern was validated and then reframed. Handled empathetically on Shackelford. Not worked at all on Casillas.</div></div>
+
+  <div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b mod">Moderate</span></span></div>
+  <div class="row"><div class="rb">Be a nerd</div><div><span class="b strong">Strong</span></div><div class="ev">Genuinely excellent &mdash; furnace components, coils as a radiator, the compressor as a pump, the R22 phase-out, why a capacitor band prolongs compressor life.</div></div>
+  <div class="row"><div class="rb">5-star review</div><div><span class="b weak">Weak</span></div><div class="ev">Not asked on any of the six calls, including two long visits that both produced leads.</div></div>
+
+  <div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Make the time valuable</div><div><span class="b wins">Strong on wins</span></div><div class="ev">The long visits are outstanding value. The seven- and eight-minute calls left customers holding a symptom and no plan.</div></div>
+  <div class="row"><div class="rb">Help them decide</div><div><span class="b mod">Moderate</span></div><div class="ev">Three of six ended with a decision in motion; three ended with the customer holding the next move.</div></div>
+</div>
+<div class="sh" style="margin-top:26px"><div class="no">4</div><h2>Critical Actions &mdash; pass rate</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Setting clear expectations</div><div><span class="b fail">Fail</span></div><div class="ev">Passed on five. Automatic fail on Casillas &mdash; no scope, no plan, no report frame.</div></div>
+  <div class="row"><div class="rb">Asking good questions</div><div><span class="b pass">Pass</span></div><div class="ev">Six for six. Even on the shortest calls the symptom and history questions get asked.</div></div>
+  <div class="row"><div class="rb">Creating good options</div><div><span class="b fail">Fail</span></div><div class="ev">Passed on Padilla and Rister. Failed on the other four, including the call where the customer asked about replacement directly.</div></div>
+  <div class="row"><div class="rb">Handling objections</div><div><span class="b fail">Fail</span></div><div class="ev">Worked well on Padilla and Shackelford; the cost reaction on Casillas ended the call rather than opening it.</div></div>
+</div>
+</section>
+<section id="strengths">
+<div class="sh"><div class="no">5</div><h2>What Francisco did right &mdash; real strength, build on it</h2></div>
+<ul class="str">
+  <li><b>He explains the failure chain, not the part.</b> <q>The fan motor is in charge of helping cool off that compressor. When it&rsquo;s not spinning, then that compressor overheats itself, and it starts hurting the internal wiring because it becomes like an oven in there.</q> The customer can retell that to their spouse.</li>
+  <li><b>He gets the customer to say the conclusion.</b> On Padilla it was the customer who said <q>chasing good money with bad money</q> &mdash; the strongest close on his day, and it came out of her mouth, not his.</li>
+  <li><b>He follows the SILO process on pricing correctly.</b> Replacement numbers get routed to the comfort advisor rather than guessed at in the driveway. That is the process working, and it is why Rister flipped.</li>
+  <li><b>His expectations line is complete.</b> <q>Then I&rsquo;ll give you a report, and then you just let me know what you guys want to do with that information.</q> Scope, sequence, and the decision left with the customer.</li>
+  <li><b>He builds real options when he has the time.</b> Three tiers on Padilla, each with a cost and a timeline &mdash; that is a complete Decision step and he owns it.</li>
+</ul>
+</section>
+<section id="gaps">
+<div class="sh"><div class="no">6</div><h2>The gaps</h2><span class="hint">each one in Francisco&rsquo;s own calls</span></div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>A customer asked about replacing the unit and was sent back to repair</h4></div>
+  <div class="q"><b>The situation</b>Arbuckle &middot; Job 670792735 &mdash; two systems, the older upstairs one had failed a week earlier and the customer said it was struggling and asked about replacing it.</div>
+  <div class="q"><b>What happened</b>Deflected to the repair technician first. No comfort-advisor appointment offered. Seven minutes on site.</div>
+  <div class="q"><b>For contrast</b>On Padilla, with 57 minutes, the same technician built three options and got a replacement agreed.</div>
+  <p class="fixline"><b>The fix</b> The customer had already made the enquiry &mdash; all that was needed was to accept it: <q>Let me get our comfort advisor out to price the upstairs replacement, no charge, while the repair side handles the immediate problem. You&rsquo;ll have both numbers in front of you.</q> That sentence takes fifteen seconds and it is the difference between his best calls and his shortest ones.</p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b mod">Moderate</span><h4>Short calls lose the whole back half of the model</h4></div>
+  <div class="q"><b>The pattern</b>Padilla 57 min and Rister 106 min &mdash; both flipped, both with options built. Arbuckle 7 min, Casillas 8 min, Lippe 14 min &mdash; none flipped, no options built on any.</div>
+  <div class="q"><b>Lippe specifically</b>The evaluation was approved and the customer was left <q>uncertain about next steps</q> &mdash; a call that had already earned the right to name one.</div>
+  <p class="fixline"><b>The fix</b> The Decision step is not a function of call length; it is a function of habit. Even a fourteen-minute visit ends with two sentences: what I found, and the two things you can do about it. Set a rule &mdash; no call, however short, ends without a named next step and a date.</p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Six calls, three leads, and no five-star ask anywhere</h4></div>
+  <div class="q"><b>Pattern</b>208 minutes of tape, two long and genuinely impressive visits, three leads typed &mdash; and not one review requested.</div>
+  <div class="q"><b>Rister in particular</b>Two curious, engaged customers, 106 minutes of patient explanation and a comfort advisor brought to the house.</div>
+  <p class="fixline"><b>The fix</b> His own scorecard flags it and it is the cheapest win on his list. Attach it to the report promise he already makes: <q>I&rsquo;ll get the report over to you &mdash; and once Jose has been out, if we&rsquo;ve earned it, a review helps more families like yours find us.</q></p>
+</div>
+</section>
+<section id="plan">
+<div class="sh"><div class="no">7</div><h2>Three-week training plan</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Week 1</div><div><span class="b solid">Week 1</span></div><div class="ev"><b>Drill:</b> Replacement mention = advisor booked. Any time a customer raises replacing anything, offer the no-cost advisor visit before leaving the property.<br><b>Proof it worked:</b> Every call this week with a replacement mention ends with an advisor offer on tape and the answer logged.</div></div>
+  <div class="row"><div class="rb">Week 2</div><div><span class="b solid">Week 2</span></div><div class="ev"><b>Drill:</b> Short calls get the same ending as long ones. No visit, however brief, ends without a named next step and a date.<br><b>Proof it worked:</b> Manager can point to a named next step on every call under twenty minutes this week.</div></div>
+  <div class="row"><div class="rb">Week 3</div><div><span class="b solid">Week 3</span></div><div class="ev"><b>Drill:</b> Add the five-star ask to the report promise he already gives, on every call.<br><b>Proof it worked:</b> Review requested on every completed visit; response logged either way.</div></div>
+</div>
+</section>
+<section id="owe">
+<div class="sh"><div class="no">8</div><h2>What we owe Francisco Valencia</h2></div>
+<ul class="str">
+  <li>The Padilla call played back to the team &mdash; the failure-chain explanation and the customer reaching the &lsquo;good money after bad&rsquo; conclusion herself is the best assessment-to-decision run on this day.</li>
+  <li>Comfort-advisor availability at short notice, because his short calls are exactly where an advisor offer would change the outcome and there is no time to arrange one later.</li>
+  <li>Backing on the SILO pricing process. He routes replacement pricing to the advisor correctly and should never be coached to do otherwise &mdash; the coaching is about offering the visit sooner, not about quoting.</li>
+</ul>
+</section>
+<div class="bottom">
+  <div class="eyb">Bottom line</div>
+  <p>Francisco&rsquo;s long calls are among the best work on this team: real options, a failure chain the customer can repeat, and a cost conversation the customer closes herself. His short calls are a different technician &mdash; symptom, diagnosis, goodbye. On a seven-minute visit a customer asked about replacing a unit and was sent back to repair. The skill is not in question; the habit is. Every call, however short, needs the same last two sentences.</p>
+</div>
+<div class="foot">Sierra &middot; SILO daily coaching plan &middot; 2026-08-04 &middot; Scored on strength bands &mdash; close rate is the only number</div>
+</div></body></html>

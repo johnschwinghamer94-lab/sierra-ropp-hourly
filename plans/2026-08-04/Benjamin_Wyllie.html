@@ -1,0 +1,242 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Benjamin Wyllie &mdash; SILO Coaching Plan 2026-08-04</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;&middot;&nbsp;SILO</b><span class="tag">Daily Coaching Plan &middot; 2026-08-04</span></div>
+<div class="wrap">
+
+<div class="hero">
+  <div class="ey">5 calls &middot; 282 minutes on tape &middot; four flips</div>
+  <h1 class="disp">Benjamin Wyllie</h1>
+  <p class="lede">The best conversion day on the board, and it came from the hardest kind of call &mdash; two of his flips were properties where the person who decides was not in the room. He got the hand-off right both times. What is still missing is what the person in front of him gets to choose from.</p>
+</div>
+<div class="glance">
+  <div class="g"><div class="k">Close Rate</div><div class="v grn">80% (from graded calls)<small>4 of 5 flipped</small></div></div>
+  <div class="g"><div class="k">Calls Reviewed</div><div class="v">5<small>8 min to 86 min &middot; all customer-facing</small></div></div>
+  <div class="g"><div class="k">Strongest Section</div><div class="v grn">Assessment<small>Strong</small></div></div>
+  <div class="g"><div class="k">Weakest Section</div><div class="v red">Decision<small>Moderate</small></div></div>
+</div>
+<div class="legend"><span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span><span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span></div>
+<p class="note">Scored on strength bands, never numbers &mdash; the only figure anywhere is the close rate. The dashboard conversion file has no entry for this day, so the close rate here is computed from the graded calls themselves. A flip is an Option&nbsp;C hand-off, a specialist or comfort-advisor appointment, or work authorised in the call, confirmed against the ServiceTitan truth file where a job number exists. Evening calls filed under the following day&rsquo;s folder are graded here, on the day they were run.</p>
+<section id="verdict">
+<div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive">
+  <div class="dh"><div class="k">What the day turned on</div><h3>Four flips out of five, and the decision still belongs to somebody who is not in the house.</h3></div>
+  <div class="split">
+    <div class="c said"><div class="lbl">What actually happened</div><p>On both rental calls the close is the same sentence. On the Goh call: <q>I&rsquo;m gonna go give him a call. I&rsquo;m gonna write my full report out, let him know about the things I&rsquo;m seeing. It&rsquo;s up to him at that point of what he wants to do.</q> On Hampton: <q>I&rsquo;ll go over it with Mary Lou. It&rsquo;s of course up to her about which direction she wants to go.</q></p></div>
+    <div class="c should"><div class="lbl">What flips it</div><p>Both of those calls produced a lead, so the hand-off itself is working &mdash; that is the Option&nbsp;C flip and it should not be coached away. The upgrade is what travels with the report. An absent owner cannot choose between paths that were never written down: <q>I&rsquo;ll put two directions in the report for Mary Lou &mdash; the repair, and a no-cost specialist visit for the replacement number &mdash; so she has something to pick between when I call.</q></p></div>
+  </div>
+</div>
+</section>
+<section id="calls">
+<div class="sh"><div class="no">2</div><h2>The day&rsquo;s calls</h2><span class="hint">outcome per gradeable call</span></div>
+<div class="rub">
+  <div class="row"><div class="rb">Goh &middot; Job 671186381</div><div><span class="b strong">Flipped</span></div><div class="ev">Rental. Upstairs unit hit 92&deg;, recovered on its own, and a blown fuse the tenant had already replaced himself. Full report and a call to the landlord; lead typed the same evening.</div></div>
+  <div class="row"><div class="rb">Hampton &middot; Job 671122507</div><div><span class="b strong">Flipped</span></div><div class="ev">Three previous companies, a compressor running constantly, a $400 bill on 1,400 square feet and an owner already <q>pricing out different scenarios</q>. Lead typed the same evening.</div></div>
+  <div class="row"><div class="rb">Cody/Merz &middot; Job 670421065</div><div><span class="b strong">Flipped</span></div><div class="ev">Clean transition to a specialist consultation for the bigger decision &mdash; all four critical actions passed.</div></div>
+  <div class="row"><div class="rb">Hern &middot; Job 670880120</div><div><span class="b strong">Flipped</span></div><div class="ev">Same pattern, same result: strong welcome and assessment, specialist consultation set up for the larger decision.</div></div>
+  <div class="row"><div class="rb">Williams &middot; Job 670053083</div><div><span class="b weak">No close</span></div><div class="ev">8 minutes. Strong assessment for the time available, but the call ended without a next step or a decision timeline.</div></div>
+</div>
+</section>
+<section id="rubric">
+<div class="sh"><div class="no">3</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div>
+<div class="rub">
+
+  <div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Empathy</div><div><span class="b solid">Solid</span></div><div class="ev">Warm and fast on every call &mdash; <q>Very, very nice to meet you. This is my partner, Juan</q> &mdash; and he moves straight into the customer&rsquo;s story rather than his own.</div></div>
+  <div class="row"><div class="rb">Expertise</div><div><span class="b solid">Solid</span></div><div class="ev">Established by handling the awkward parts calmly, including a tenant who had already replaced a fuse with the wrong size and needed telling without being embarrassed.</div></div>
+  <div class="row"><div class="rb">Setting expectations</div><div><span class="b strong">Strong</span></div><div class="ev">Textbook and unprompted, even mid-call on Hampton: <q>let me just go over the expectations with you real quick, because I am in your home, so I want you to let you know&hellip; I shouldn&rsquo;t be here past 6:30.</q> And the five-star promise is in it: <q>And then we do this all for five star experience.</q></div></div>
+
+  <div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+  <div class="row"><div class="rb">Required questions</div><div><span class="b strong">Strong</span></div><div class="ev">Onset, history, tenure, filters, bills &mdash; all of it, on every call. <q>How often are we replacing these filters?</q>, <q>your bill is $400. How many square feet is this?</q></div></div>
+  <div class="row"><div class="rb">Check-ins</div><div><span class="b strong">Strong</span></div><div class="ev">Constantly brings the customer along and checks the constraint before committing: <q>Am I on any time constraints right now?</q></div></div>
+  <div class="row"><div class="rb">How to check in</div><div><span class="b strong">Strong</span></div><div class="ev">Permission and boundaries handled cleanly &mdash; parking, entry, and on the rental calls, who he is allowed to talk to and in what order.</div></div>
+  <div class="row"><div class="rb">Draw the picture</div><div><span class="b strong">Strong</span></div><div class="ev">On Hampton he let the tenant assemble it: three companies, a compressor that <q>won&rsquo;t, like, stop running</q>, and a house drifting from 72 to 81 by evening.</div></div>
+  <div class="row"><div class="rb">Keep it simple</div><div><span class="b strong">Strong</span></div><div class="ev">Bills, square footage and run-times turned into one plain conclusion the customer could repeat back to the owner.</div></div>
+
+  <div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b mod">Moderate</span></span></div>
+  <div class="row"><div class="rb">Building options</div><div><span class="b mod">Moderate</span></div><div class="ev">Two of the flips were clean specialist hand-offs with the options built. On the two rental calls nothing was written down for the absent decision-maker to choose between.</div></div>
+  <div class="row"><div class="rb">Reconnecting</div><div><span class="b mod">Moderate</span></div><div class="ev">He gathers the goal well and then routes it to the owner instead of tying it to a recommendation in the room.</div></div>
+  <div class="row"><div class="rb">Explaining options</div><div><span class="b mod">Moderate</span></div><div class="ev">Where a path existed he explained it clearly. Where the decision-maker was absent, the explanation became a promise to explain later.</div></div>
+  <div class="row"><div class="rb">Overcoming objections</div><div><span class="b mod">Moderate</span></div><div class="ev">Hampton arrived with an owner already pricing scenarios and three failed companies behind her &mdash; the strongest opening on his day, and it was reported rather than worked.</div></div>
+
+  <div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Be a nerd</div><div><span class="b solid">Solid</span></div><div class="ev">Comfortable, correct and unhurried &mdash; the fuse conversation on Goh was handled without making the customer feel foolish, which is harder than it sounds.</div></div>
+  <div class="row"><div class="rb">5-star review</div><div><span class="b solid">Solid</span></div><div class="ev">Seeded properly in the Hampton expectations line &mdash; <q>we do this all for five star experience</q> &mdash; but not collected at the end of any call.</div></div>
+
+  <div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Make the time valuable</div><div><span class="b strong">Strong</span></div><div class="ev">Five customers, five accurate diagnoses, four leads. Nobody on his day got a wasted visit.</div></div>
+  <div class="row"><div class="rb">Help them decide</div><div><span class="b mod">Moderate</span></div><div class="ev">He reliably gets the decision to the right person. He does not yet give that person anything to decide from.</div></div>
+</div>
+<div class="sh" style="margin-top:26px"><div class="no">4</div><h2>Critical Actions &mdash; pass rate</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Setting clear expectations</div><div><span class="b pass">Pass</span></div><div class="ev">Five for five, including the mid-call reset on Hampton when the homeowner turned out to be off site.</div></div>
+  <div class="row"><div class="rb">Asking good questions</div><div><span class="b pass">Pass</span></div><div class="ev">Five for five. Bills, tenure, filters, onset, prior companies &mdash; the assessment is the strongest part of his day.</div></div>
+  <div class="row"><div class="rb">Creating good options</div><div><span class="b fail">Fail</span></div><div class="ev">Passed on the two specialist hand-offs, failed on Hampton and Goh, where the report went to an absent owner with no paths attached.</div></div>
+  <div class="row"><div class="rb">Handling objections</div><div><span class="b fail">Fail</span></div><div class="ev">Hampton&rsquo;s three-companies-and-a-$400-bill opening was the clearest objection on anyone&rsquo;s day and it was routed to the owner rather than answered.</div></div>
+</div>
+</section>
+<section id="strengths">
+<div class="sh"><div class="no">5</div><h2>What Ben did right &mdash; real strength, build on it</h2></div>
+<ul class="str">
+  <li><b>He resets expectations the moment the situation changes.</b> When Hampton turned out to be an absent-owner call, he stopped and re-set the frame in the room: <q>let me just go over the expectations with you real quick, because I am in your home.</q> Most technicians skip that once the plan has already changed.</li>
+  <li><b>The five-star promise is built into his opening.</b> <q>And then we do this all for five star experience.</q> It is seeded, it is natural, and it costs him nothing to collect at the end.</li>
+  <li><b>He protects the customer&rsquo;s time.</b> <q>Am I on any time constraints right now?&hellip; I shouldn&rsquo;t be here past 6:30.</q> Asked before committing, honoured afterwards.</li>
+  <li><b>He handles the awkward correction well.</b> A tenant had replaced a blown fuse with the wrong part. Ben got the fact he needed without making the customer defensive &mdash; on a call that still flipped.</li>
+  <li><b>Four flips in a day, three of them on properties where the decision-maker was absent.</b> That is the hardest version of the Option&nbsp;C hand-off and he is doing it repeatedly.</li>
+</ul>
+</section>
+<section id="gaps">
+<div class="sh"><div class="no">6</div><h2>The gaps</h2><span class="hint">each one in Ben&rsquo;s own calls</span></div>
+<div class="mom">
+  <div class="top2"><span class="b mod">Moderate</span><h4>The report goes to the owner with nothing to choose between</h4></div>
+  <div class="q"><b>Ben, Goh</b>"I'm gonna go give him a call. I'm gonna write my full report out, let him know about the things I'm seeing. It's up to him at that point of what he wants to do."</div>
+  <div class="q"><b>Ben, Hampton</b>"I'll go over it with Mary Lou. It's of course up to her about which direction she wants to go."</div>
+  <div class="q"><b>What was known by then</b>Three previous companies, a compressor running non-stop, $400 a month on 1,400 square feet, and an owner already pricing out scenarios.</div>
+  <p class="fixline"><b>The fix</b> The hand-off is right and it flipped both calls &mdash; keep it. What is missing is the content of the hand-off. <q>I&rsquo;m going to put two directions in front of Mary Lou: the repair, and a no-cost visit from our comfort advisor for the replacement number. That way when I call her she&rsquo;s choosing between two things instead of waiting on me.</q> The absent owner is a reason to build the options more carefully, not a reason to skip them.</p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b mod">Moderate</span><h4>The strongest objection of his day was passed along instead of answered</h4></div>
+  <div class="q"><b>Tenant, Hampton</b>"There's been, like, three different companies out here&hellip; it's staying at 72 right now, but usually by this time, it's already at like, 76, 77, and it gets all the way to 80, 81, and it won't, like, stop running."</div>
+  <div class="q"><b>Also on tape</b>"I don't know if it's the whole unit that she's going to do or if it's just the one thing" &mdash; the tenant relaying the owner's live deliberation.</div>
+  <p class="fixline"><b>The fix</b> Three companies have already failed this customer, and the owner is mid-decision. That is not a report; that is a reason to be in the room when she chooses: <q>Three companies and it&rsquo;s still doing this &mdash; that tells me she needs one visit that ends the guessing. Let me get our advisor out with me so she gets the repair number and the replacement number in the same conversation.</q></p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Four flips and not one five-star ask collected</h4></div>
+  <div class="q"><b>Ben, in the opening</b>"And then we do this all for five star experience."</div>
+  <div class="q"><b>Pattern</b>Seeded on the calls where he gives the full expectations line, collected on none of the five &mdash; including four visits that produced a lead.</div>
+  <p class="fixline"><b>The fix</b> He has already done the hard half. The easy half is one sentence on the way out: <q>Before I go &mdash; did I give you that five-star experience? If I did, would you mind saying so in a review?</q> Four leads in a day is the best review-collection position anyone on the team had.</p>
+</div>
+</section>
+<section id="plan">
+<div class="sh"><div class="no">7</div><h2>Three-week training plan</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Week 1</div><div><span class="b solid">Week 1</span></div><div class="ev"><b>Drill:</b> Two written paths for every absent decision-maker. Whenever the person who decides is not in the room, the repair path and the no-cost advisor visit both go in the report before he calls them.<br><b>Proof it worked:</b> Every absent-owner call this week has two named directions in the notes and a stated hand-off method.</div></div>
+  <div class="row"><div class="rb">Week 2</div><div><span class="b solid">Week 2</span></div><div class="ev"><b>Drill:</b> Answer the objection in the room, then route it. When a customer or tenant reports failed prior companies or an owner mid-decision, respond to it before promising to relay it.<br><b>Proof it worked:</b> Manager can point to a specific sentence answering the objection on every call where one was raised.</div></div>
+  <div class="row"><div class="rb">Week 3</div><div><span class="b solid">Week 3</span></div><div class="ev"><b>Drill:</b> Collect the five-star ask he already seeds. The promise is in his opening on most calls; the ask goes at the door on all of them.<br><b>Proof it worked:</b> Review requested on every completed visit, and the response logged either way.</div></div>
+</div>
+</section>
+<section id="owe">
+<div class="sh"><div class="no">8</div><h2>What we owe Benjamin Wyllie</h2></div>
+<ul class="str">
+  <li>Comfort-advisor availability that can be offered while he is still standing in the property &mdash; his flips depend on a lead being typeable the same evening, and on this day that worked four times.</li>
+  <li>His absent-owner hand-off played back to the team. Three of his four flips came from properties where the decision-maker was off site, which is the situation most technicians treat as a dead end.</li>
+  <li>A standard two-path report template for rentals, so the option-building does not have to be reinvented in the van on every rental call.</li>
+</ul>
+</section>
+<div class="bottom">
+  <div class="eyb">Bottom line</div>
+  <p>This is the strongest conversion day on the board and it is not luck &mdash; the expectations line, the discovery and the hand-off are all repeatable, and he ran them on properties where the decision-maker was not even present. He should not be coached for &lsquo;not closing&rsquo;; he flipped four out of five. The one thing to add is content in the hand-off: two written directions travelling with every report, so the person who decides is choosing rather than waiting.</p>
+</div>
+<div class="foot">Sierra &middot; SILO daily coaching plan &middot; 2026-08-04 &middot; Scored on strength bands &mdash; close rate is the only number</div>
+</div></body></html>

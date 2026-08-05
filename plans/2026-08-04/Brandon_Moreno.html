@@ -1,0 +1,242 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brandon Moreno &mdash; SILO Coaching Plan 2026-08-04</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;&middot;&nbsp;SILO</b><span class="tag">Daily Coaching Plan &middot; 2026-08-04</span></div>
+<div class="wrap">
+
+<div class="hero">
+  <div class="ey">5 calls &middot; 147 minutes on tape &middot; three flips</div>
+  <h1 class="disp">Brandon Moreno</h1>
+  <p class="lede">Three of five turned into leads, which is a good day &mdash; and every one of them turned on somebody else picking the call up afterwards. In the room, the Decision and Deliver steps barely happen: four of his five calls end before any option is named.</p>
+</div>
+<div class="glance">
+  <div class="g"><div class="k">Close Rate</div><div class="v grn">60% (from graded calls)<small>3 of 5 flipped</small></div></div>
+  <div class="g"><div class="k">Calls Reviewed</div><div class="v">5<small>9 min to 68 min &middot; all customer-facing</small></div></div>
+  <div class="g"><div class="k">Strongest Section</div><div class="v grn">Assessment<small>Solid</small></div></div>
+  <div class="g"><div class="k">Weakest Section</div><div class="v red">Decision<small>Weak</small></div></div>
+</div>
+<div class="legend"><span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span><span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span></div>
+<p class="note">Scored on strength bands, never numbers &mdash; the only figure anywhere is the close rate. The dashboard conversion file has no entry for this day, so the close rate here is computed from the graded calls themselves. A flip is an Option&nbsp;C hand-off, a specialist or comfort-advisor appointment, or work authorised in the call, confirmed against the ServiceTitan truth file where a job number exists. Evening calls filed under the following day&rsquo;s folder are graded here, on the day they were run.</p>
+<section id="verdict">
+<div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive">
+  <div class="dh"><div class="k">What the day turned on</div><h3>The leads are real. The conversations that produced them stop at the diagnosis.</h3></div>
+  <div class="split">
+    <div class="c said"><div class="lbl">What actually happened</div><p>The pattern is the same on four of five calls. On Prayers: <q>I&rsquo;ll reach out to the management and they&rsquo;ll reach out to you</q> &mdash; a customer who had been fighting an 87&deg; house for weeks, and a previous technician who had already failed to fix it, told only that somebody would be in touch. On Magana, the customer said they were keeping the property &mdash; <q>we&rsquo;re going to run it out</q> &mdash; and the answer was <q>oh, okay.</q></p></div>
+    <div class="c should"><div class="lbl">What flips it</div><p>The hand-off is the right move and it is producing leads &mdash; that part stays. What is missing is thirty seconds of substance before it: <q>Based on what I&rsquo;m seeing this is likely a replacement conversation, not another repair. Our specialist will call you within 24 hours with the options and the numbers, and here&rsquo;s what I expect them to say.</q> Same hand-off, and the customer is no longer waiting in the dark.</p></div>
+  </div>
+</div>
+</section>
+<section id="calls">
+<div class="sh"><div class="no">2</div><h2>The day&rsquo;s calls</h2><span class="hint">outcome per gradeable call</span></div>
+<div class="rub">
+  <div class="row"><div class="rb">Pham &middot; Job 670544357</div><div><span class="b strong">Flipped</span></div><div class="ev">68 minutes. Opened on home-warranty friction, which Brandon correctly named as outside Sierra&rsquo;s scope. Lead typed the same evening &mdash; but the customer&rsquo;s own goal, <q>make sure it lasts longer</q>, was never converted into a path.</div></div>
+  <div class="row"><div class="rb">Yacono &middot; Job 670608665</div><div><span class="b strong">Flipped</span></div><div class="ev">The best-run call of his day. Assessment Strong, options presented, clean transition to a specialist consultation, all four critical actions passed.</div></div>
+  <div class="row"><div class="rb">Magana Trust &middot; Job 671013539</div><div><span class="b strong">Flipped</span></div><div class="ev">11 minutes. Expectations set well &mdash; <q>I&rsquo;m going to do a thorough evaluation&hellip; head to toe exactly what&rsquo;s going on</q> &mdash; and a callback scheduled. The owner&rsquo;s plan to keep the property went unexplored.</div></div>
+  <div class="row"><div class="rb">Allstun &middot; Job 670841908</div><div><span class="b weak">No close</span></div><div class="ev">48 minutes. Solar installation had caused electrical problems and indoor temperatures were sitting at 81&deg;. The dots were never connected into a recommendation.</div></div>
+  <div class="row"><div class="rb">Prayers LLC &middot; Job 671148803</div><div><span class="b weak">No close</span></div><div class="ev">9 minutes. Weeks of failure, a previous technician who did not fix it, the house at 80&ndash;87&deg;, and no expectations set at all before the hand-off to management.</div></div>
+</div>
+</section>
+<section id="rubric">
+<div class="sh"><div class="no">3</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div>
+<div class="rub">
+
+  <div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b mod">Moderate</span></span></div>
+  <div class="row"><div class="rb">Empathy</div><div><span class="b mod">Moderate</span></div><div class="ev">Friendly and easy, but the customer&rsquo;s frustration is rarely acknowledged out loud. On the Prayers call &mdash; weeks of failed cooling &mdash; there is no recognition of what that has been like.</div></div>
+  <div class="row"><div class="rb">Expertise</div><div><span class="b solid">Solid</span></div><div class="ev">Introduces himself and the job plainly: <q>I&rsquo;m Brandon with Sierra. I&rsquo;m here for check the air conditioning.</q> Correct and clear, if minimal.</div></div>
+  <div class="row"><div class="rb">Setting expectations</div><div><span class="b mod">Moderate</span></div><div class="ev">Strong on Magana &mdash; <q>I&rsquo;m going to do a thorough evaluation&hellip; head to toe exactly what&rsquo;s going on</q> &mdash; and absent entirely on Prayers, which is the automatic fail below.</div></div>
+
+  <div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Required questions</div><div><span class="b solid">Solid</span></div><div class="ev">Asked on all five. <q>Does the thermostat usually give you, like, a lockout, or are you able to control it on the phone?</q> and <q>Are you guys planning on, like, moving back here or?</q></div></div>
+  <div class="row"><div class="rb">Check-ins</div><div><span class="b mod">Moderate</span></div><div class="ev">Location and access questions are consistent; the deeper &lsquo;what would make you confident&rsquo; check-in is missing throughout.</div></div>
+  <div class="row"><div class="rb">How to check in</div><div><span class="b solid">Solid</span></div><div class="ev">Permission handled properly &mdash; <q>You mind if I come in?</q> &mdash; on every call.</div></div>
+  <div class="row"><div class="rb">Draw the picture</div><div><span class="b mod">Moderate</span></div><div class="ev">On Yacono the findings were laid out well enough to earn a specialist visit. On Allstun the solar-to-electrical-to-81-degrees chain was never drawn for the customer.</div></div>
+  <div class="row"><div class="rb">Get customer to diagnose</div><div><span class="b weak">Weak</span></div><div class="ev">The Magana customer volunteered their whole ownership plan and it was received as small talk rather than as the assessment answer it was.</div></div>
+
+  <div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b weak">Weak</span></span></div>
+  <div class="row"><div class="rb">Building options</div><div><span class="b weak">Weak</span></div><div class="ev">Built on one call out of five. Four calls ended with a hand-off, a callback or a goodbye and no named path.</div></div>
+  <div class="row"><div class="rb">Reconnecting</div><div><span class="b weak">Weak</span></div><div class="ev">The Pham customer said what they wanted &mdash; <q>make sure it lasts longer</q> &mdash; and it was not tied to anything. That sentence is a maintenance plan or a replacement conversation, spoken aloud.</div></div>
+  <div class="row"><div class="rb">Explaining options</div><div><span class="b weak">Weak</span></div><div class="ev">On Prayers the next step was <q>I&rsquo;ll reach out to the management and they&rsquo;ll reach out to you</q> &mdash; no timeline, no expectation of what would be offered.</div></div>
+  <div class="row"><div class="rb">Overcoming objections</div><div><span class="b mod">Moderate</span></div><div class="ev">The home-warranty complication on Pham was correctly identified as out of scope, but the conversation stopped there rather than pivoting to direct value.</div></div>
+
+  <div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b weak">Weak</span></span></div>
+  <div class="row"><div class="rb">Be a nerd</div><div><span class="b weak">Weak</span></div><div class="ev">Diagnoses tend to stay in his head. Customers on the Allstun and Prayers calls never heard what he suspected or why.</div></div>
+  <div class="row"><div class="rb">5-star review</div><div><span class="b weak">Weak</span></div><div class="ev">Not seeded and not asked on any of the five calls.</div></div>
+
+  <div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b mod">Moderate</span></span></div>
+  <div class="row"><div class="rb">Make the time valuable</div><div><span class="b mod">Moderate</span></div><div class="ev">Three leads out of five is real value to the business. Two customers learned very little about their own systems.</div></div>
+  <div class="row"><div class="rb">Help them decide</div><div><span class="b weak">Weak</span></div><div class="ev">Only the Yacono call gave a customer something to decide. The rest were told to wait for a call.</div></div>
+</div>
+<div class="sh" style="margin-top:26px"><div class="no">4</div><h2>Critical Actions &mdash; pass rate</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Setting clear expectations</div><div><span class="b fail">Fail</span></div><div class="ev">Passed on four. Automatic fail on Prayers &mdash; no scope, no timeline, no approval frame, on the call with the most frustrated customer of his day.</div></div>
+  <div class="row"><div class="rb">Asking good questions</div><div><span class="b pass">Pass</span></div><div class="ev">Five for five. Thermostat behaviour, ownership plans, system access, history &mdash; the questions are consistently there.</div></div>
+  <div class="row"><div class="rb">Creating good options</div><div><span class="b fail">Fail</span></div><div class="ev">Passed only on Yacono. Four calls ended with no option built or presented.</div></div>
+  <div class="row"><div class="rb">Handling objections</div><div><span class="b fail">Fail</span></div><div class="ev">The warranty friction on Pham and the ownership plan on Magana were both real openings, and neither was worked.</div></div>
+</div>
+</section>
+<section id="strengths">
+<div class="sh"><div class="no">5</div><h2>What Brandon did right &mdash; real strength, build on it</h2></div>
+<ul class="str">
+  <li><b>His expectations line, when he gives it, is excellent.</b> <q>I&rsquo;m going to do a thorough evaluation&hellip; head to toe exactly what&rsquo;s going on.</q> Plain, confident, and it tells the customer exactly what they are getting.</li>
+  <li><b>He asks the ownership question.</b> <q>Are you guys planning on, like, moving back here or?</q> That is the question that decides whether a system is worth investing in, and most technicians never ask it.</li>
+  <li><b>He is honest about scope.</b> On the Pham call he told the customer straight that Sierra does not work through their home warranty rather than letting them discover it later.</li>
+  <li><b>Three leads out of five.</b> Whatever the conversations lacked, three customers ended the day connected to somebody who could help them &mdash; and the Yacono call shows he can run the whole model when he chooses to.</li>
+</ul>
+</section>
+<section id="gaps">
+<div class="sh"><div class="no">6</div><h2>The gaps</h2><span class="hint">each one in Brandon&rsquo;s own calls</span></div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>A customer who had been hot for weeks was handed to management with nothing explained</h4></div>
+  <div class="q"><b>The situation</b>AC set at 79&deg; and unresponsive, reset every two hours, then dead. Indoors at 80&ndash;87&deg;. A technician had already been out and not fixed it.</div>
+  <div class="q"><b>Brandon</b>"I'll reach out to the management and they'll reach out to you."</div>
+  <div class="q"><b>Also</b>No expectations were set on this call at all &mdash; no scope, no timeline, no approval frame.</div>
+  <p class="fixline"><b>The fix</b> This customer had already been let down once and needed clarity more than they needed a referral. <q>Here is what I think is happening, here is what it will probably take to fix it, and you will hear from our specialist by tomorrow afternoon with options and pricing.</q> The hand-off can stay exactly as it is &mdash; it just has to carry a diagnosis, an expectation and a deadline with it.</p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>The customer said what they wanted and it went nowhere</h4></div>
+  <div class="q"><b>Customer, Pham</b>"make sure it lasts longer"</div>
+  <div class="q"><b>Customer, Magana</b>"No, we're going to run it out" &mdash; on being asked whether they were moving back.</div>
+  <div class="q"><b>Brandon, Magana</b>"Oh, okay."</div>
+  <p class="fixline"><b>The fix</b> Both of those sentences are the assessment answering itself. &lsquo;Make it last longer&rsquo; is a maintenance-plan conversation or a replacement conversation, and &lsquo;we&rsquo;re going to run it out&rsquo; means this owner intends to keep spending on this property. The follow-up is one question: <q>What would need to happen for you to feel confident this system will get you there?</q> Then build the option out of their answer.</p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Solar work, electrical faults and an 81-degree house, never connected out loud</h4></div>
+  <div class="q"><b>The call</b>Allstun &middot; Job 670841908 &mdash; 48 minutes. Solar installation had caused electrical problems; indoor temperatures were sitting at 81&deg;.</div>
+  <div class="q"><b>What the customer got</b>No recommendation. The chain from the solar work to the electrical fault to the temperature was never drawn for them.</div>
+  <p class="fixline"><b>The fix</b> The customer had already done the hard part &mdash; they told him about the solar work and the temperature in the same breath. All that was needed was to say the connection out loud and attach a path: <q>The solar work and what I&rsquo;m seeing on the electrical side are the same story, and that is why the house is sitting at 81. This needs a proper power audit &mdash; let me get that scheduled so we fix the cause, not the symptom.</q></p>
+</div>
+</section>
+<section id="plan">
+<div class="sh"><div class="no">7</div><h2>Three-week training plan</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Week 1</div><div><span class="b solid">Week 1</span></div><div class="ev"><b>Drill:</b> Never hand off empty. Before saying anyone will call, state the suspected problem, the likely path and a specific timeframe.<br><b>Proof it worked:</b> Every hand-off this week contains a diagnosis, an expected next step and a named deadline; manager can quote all three.</div></div>
+  <div class="row"><div class="rb">Week 2</div><div><span class="b solid">Week 2</span></div><div class="ev"><b>Drill:</b> Follow the goal sentence. Whenever a customer says what they want from the system &mdash; last longer, keep the property, get through the summer &mdash; ask the confidence question and build the option out of the answer.<br><b>Proof it worked:</b> Every call this week where a goal is stated has a follow-up question and a named path in the notes.</div></div>
+  <div class="row"><div class="rb">Week 3</div><div><span class="b solid">Week 3</span></div><div class="ev"><b>Drill:</b> Set expectations on every call without exception, including the short ones, and seed the five-star ask inside it.<br><b>Proof it worked:</b> Expectations given on every call; review seeded on all of them and asked for on every completed visit.</div></div>
+</div>
+</section>
+<section id="owe">
+<div class="sh"><div class="no">8</div><h2>What we owe Brandon Moreno</h2></div>
+<ul class="str">
+  <li>The Yacono call played back to him alongside Prayers &mdash; same technician, same day, and the difference between them is entirely in the last five minutes.</li>
+  <li>A specialist response-time commitment he can actually quote. He cannot promise a 24-hour callback if nobody will confirm one.</li>
+  <li>Credit for the ownership question. It is the right question, asked unprompted, and the coaching is about what to do with the answer &mdash; not about asking it.</li>
+</ul>
+</section>
+<div class="bottom">
+  <div class="eyb">Bottom line</div>
+  <p>Three flips out of five is a genuinely good day, and the hand-off instinct behind them is right &mdash; nobody should coach that out of him. The problem is what the customer holds after he leaves. On four of five calls that was nothing: no diagnosis said out loud, no path named, no timeframe. He is one habit away from a much better day, and it is the same thirty seconds every time &mdash; here is what I think is wrong, here is what happens next, here is when.</p>
+</div>
+<div class="foot">Sierra &middot; SILO daily coaching plan &middot; 2026-08-04 &middot; Scored on strength bands &mdash; close rate is the only number</div>
+</div></body></html>

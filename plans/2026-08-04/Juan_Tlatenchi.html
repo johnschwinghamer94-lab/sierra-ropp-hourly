@@ -1,0 +1,236 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Juan Tlatenchi &mdash; SILO Coaching Plan 2026-08-04</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;&middot;&nbsp;SILO</b><span class="tag">Daily Coaching Plan &middot; 2026-08-04</span></div>
+<div class="wrap">
+
+<div class="hero">
+  <div class="ey">2 calls &middot; 32 minutes on tape &middot; no flips</div>
+  <h1 class="disp">Juan Tlatenchi</h1>
+  <p class="lede">Two short evening calls and the same shape on both: a friendly greeting, good discovery questions, and then straight into the inspection with no roadmap and no ending. The questions he asks are genuinely good &mdash; they just are not attached to anything yet.</p>
+</div>
+<div class="glance">
+  <div class="g"><div class="k">Close Rate</div><div class="v red">0% (from graded calls)<small>0 of 2 flipped</small></div></div>
+  <div class="g"><div class="k">Calls Reviewed</div><div class="v">2<small>8 min and 24 min &middot; both customer-facing</small></div></div>
+  <div class="g"><div class="k">Strongest Section</div><div class="v grn">Assessment<small>Solid</small></div></div>
+  <div class="g"><div class="k">Weakest Section</div><div class="v red">Decision<small>Weak</small></div></div>
+</div>
+<div class="legend"><span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span><span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span></div>
+<p class="note">Scored on strength bands, never numbers &mdash; the only figure anywhere is the close rate. The dashboard conversion file has no entry for this day, so the close rate here is computed from the graded calls themselves. A flip is an Option&nbsp;C hand-off, a specialist or comfort-advisor appointment, or work authorised in the call, confirmed against the ServiceTitan truth file where a job number exists. Evening calls filed under the following day&rsquo;s folder are graded here, on the day they were run.</p>
+<section id="verdict">
+<div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive">
+  <div class="dh"><div class="k">What the day turned on</div><h3>The inspection starts before the customer has been told what it is for.</h3></div>
+  <div class="split">
+    <div class="c said"><div class="lbl">What actually happened</div><p>On both calls the sequence is greeting, a few questions, then work. The closest thing to a roadmap on either was <q>I&rsquo;ll figure out what the primary issue is&hellip; and then just kind of note down any possible things that might come up so we can prevent visits like these</q> &mdash; said after the inspection had already begun, and never followed by a review of what was found.</p></div>
+    <div class="c should"><div class="lbl">What flips it</div><p>The roadmap costs ten seconds and it changes what the customer expects from the rest of the visit: <q>Here&rsquo;s how today works &mdash; I&rsquo;ll check the indoor and outdoor units, then we&rsquo;ll sit down and I&rsquo;ll walk you through what I found and the options for it. I won&rsquo;t do anything without your approval.</q> Without it, the customer has no reason to expect a conversation at the end.</p></div>
+  </div>
+</div>
+</section>
+<section id="calls">
+<div class="sh"><div class="no">2</div><h2>The day&rsquo;s calls</h2><span class="hint">outcome per gradeable call</span></div>
+<div class="rub">
+  <div class="row"><div class="rb">Evening call &middot; no job number</div><div><span class="b weak">No close</span></div><div class="ev">8 minutes. Good discovery &mdash; <q>How long ago did you start noticing the issue?</q>, <q>You had any major repairs done on it?</q> &mdash; then straight to the attic with no roadmap and no closing review.</div></div>
+  <div class="row"><div class="rb">Late evening call &middot; no job number</div><div><span class="b weak">No close</span></div><div class="ev">24 minutes. Same pattern. No expectations set, no scope clarified, and the call ended without a summary or a next step.</div></div>
+</div>
+</section>
+<section id="rubric">
+<div class="sh"><div class="no">3</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div>
+<div class="rub">
+
+  <div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b mod">Moderate</span></span></div>
+  <div class="row"><div class="rb">Empathy</div><div><span class="b solid">Solid</span></div><div class="ev">Genuinely pleasant and quick to use names: <q>Good evening. How are you?&hellip; What was your name? Lisa. Lisa. I&rsquo;m Juan. Nice to meet you.</q> Customers respond well to him.</div></div>
+  <div class="row"><div class="rb">Expertise</div><div><span class="b mod">Moderate</span></div><div class="ev">Competent and calm, but the customer is never told what makes this inspection different from the ones they have had before.</div></div>
+  <div class="row"><div class="rb">Setting expectations</div><div><span class="b weak">Weak</span></div><div class="ev">Not given on either call. No scope, no sequence, no approval promise, no indication that there will be a conversation at the end.</div></div>
+
+  <div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Required questions</div><div><span class="b strong">Strong</span></div><div class="ev">The strongest part of his day, and asked naturally: <q>you said you keep it at 72. How long ago did you start noticing the issue?</q>, <q>You had any major repairs done on it?</q>, <q>First time it&rsquo;s giving you some trouble?</q></div></div>
+  <div class="row"><div class="rb">Check-ins</div><div><span class="b mod">Moderate</span></div><div class="ev">Permission to enter and to move through the house handled properly. No check-ins during the inspection itself.</div></div>
+  <div class="row"><div class="rb">How to check in</div><div><span class="b solid">Solid</span></div><div class="ev">Parking, entry and attic access all asked for politely and clearly.</div></div>
+  <div class="row"><div class="rb">Draw the picture</div><div><span class="b weak">Weak</span></div><div class="ev">The customer volunteered a comparison &mdash; <q>I&rsquo;ve had other people come and they go and inspect all this other stuff</q> &mdash; and it was not used to explain what he does differently.</div></div>
+
+  <div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b weak">Weak</span></span></div>
+  <div class="row"><div class="rb">Building options</div><div><span class="b weak">Weak</span></div><div class="ev">No options built or presented on either call.</div></div>
+  <div class="row"><div class="rb">Reconnecting</div><div><span class="b weak">Weak</span></div><div class="ev">Nothing to reconnect to, because no findings were reviewed with the customer before the calls ended.</div></div>
+  <div class="row"><div class="rb">Explaining options</div><div><span class="b weak">Weak</span></div><div class="ev">Not reached on either call.</div></div>
+  <div class="row"><div class="rb">Overcoming objections</div><div><span class="b weak">Weak</span></div><div class="ev">No objection arose, because nothing was ever proposed to object to.</div></div>
+
+  <div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b weak">Weak</span></span></div>
+  <div class="row"><div class="rb">Be a nerd</div><div><span class="b weak">Weak</span></div><div class="ev">No explanation of findings on either call before departure.</div></div>
+  <div class="row"><div class="rb">5-star review</div><div><span class="b weak">Weak</span></div><div class="ev">Not seeded and not asked on either call.</div></div>
+
+  <div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b weak">Weak</span></span></div>
+  <div class="row"><div class="rb">Make the time valuable</div><div><span class="b mod">Moderate</span></div><div class="ev">The inspections were real work; the customers just never heard the result of them.</div></div>
+  <div class="row"><div class="rb">Help them decide</div><div><span class="b weak">Weak</span></div><div class="ev">Neither customer was given anything to decide.</div></div>
+</div>
+<div class="sh" style="margin-top:26px"><div class="no">4</div><h2>Critical Actions &mdash; pass rate</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Setting clear expectations</div><div><span class="b fail">Fail</span></div><div class="ev">Failed on both calls. No scope, no sequence, no approval frame, no promise of a review conversation.</div></div>
+  <div class="row"><div class="rb">Asking good questions</div><div><span class="b pass">Pass</span></div><div class="ev">Passed on both. Onset, setpoint, repair history &mdash; asked naturally and answered fully.</div></div>
+  <div class="row"><div class="rb">Creating good options</div><div><span class="b fail">Fail</span></div><div class="ev">Failed on both. No option or path presented on either call.</div></div>
+  <div class="row"><div class="rb">Handling objections</div><div><span class="b fail">Fail</span></div><div class="ev">No opportunity arose on either call, because nothing was proposed.</div></div>
+</div>
+</section>
+<section id="strengths">
+<div class="sh"><div class="no">5</div><h2>What Juan did right &mdash; real strength, build on it</h2></div>
+<ul class="str">
+  <li><b>His discovery questions are the right ones.</b> <q>How long ago did you start noticing the issue?</q> and <q>You had any major repairs done on it?</q> &mdash; onset and history, asked in the first two minutes, without a script showing.</li>
+  <li><b>He listens back.</b> <q>So it&rsquo;s been kind of running under this condition for a while.</q> That is the customer&rsquo;s own answer reflected back, which is what makes people keep talking.</li>
+  <li><b>He gets names immediately and uses them.</b> Both customers were on first-name terms with him inside a minute, on evening calls where people are tired.</li>
+  <li><b>He explains the preventive intent.</b> <q>note down any possible things that might come up so we can prevent visits like these</q> &mdash; the right idea, and it belongs at the start of the call rather than in the middle.</li>
+</ul>
+</section>
+<section id="gaps">
+<div class="sh"><div class="no">6</div><h2>The gaps</h2><span class="hint">each one in Juan&rsquo;s own calls</span></div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>No roadmap on either call</h4></div>
+  <div class="q"><b>Both calls</b>Greeting, a few questions, then straight into the inspection. No scope, no sequence, no approval promise, no mention that there would be a conversation at the end.</div>
+  <div class="q"><b>The closest he came</b>"I'll figure out what the primary issue is&hellip; and then just kind of note down any possible things that might come up" &mdash; said mid-inspection, not up front.</div>
+  <p class="fixline"><b>The fix</b> Ten seconds, at the door, before anything else: <q>Here&rsquo;s what today looks like &mdash; I&rsquo;ll check the indoor and outdoor units and take some readings, then we&rsquo;ll sit down and I&rsquo;ll walk you through what I found and what your options are. I won&rsquo;t do anything without your approval.</q> That sentence is what makes the customer expect an ending, and expecting it is most of getting it.</p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Both calls ended without a review of what was found</h4></div>
+  <div class="q"><b>Pattern</b>32 minutes across two customers, and neither was told what the inspection turned up before he left.</div>
+  <div class="q"><b>Consequence</b>No option could be built, no objection could surface, and no next step existed &mdash; the whole back half of the model is missing rather than done badly.</div>
+  <p class="fixline"><b>The fix</b> The ending is a fixed three-part move and it does not depend on what was found: here is what I found, here is what I&rsquo;d do about it, which of these do you want to start with. Practise it out loud until it happens without thinking, then it will survive a long evening.</p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>A customer compared him to previous technicians and it was left on the table</h4></div>
+  <div class="q"><b>Customer</b>"I've had other people come and they go and inspect all this other stuff. I like to focus on this because it's on the AC."</div>
+  <div class="q"><b>What happened</b>Acknowledged, and the conversation moved on.</div>
+  <p class="fixline"><b>The fix</b> That is a customer describing what they value and inviting him to explain what he does differently. <q>That makes sense &mdash; and what I do is a bit different. I&rsquo;ll look at the whole system, not just the symptom, because the thing that&rsquo;s causing this is usually somewhere else. Then I&rsquo;ll show you everything I find and you decide what&rsquo;s worth doing.</q> Expertise, expectations and permission in three sentences.</p>
+</div>
+</section>
+<section id="plan">
+<div class="sh"><div class="no">7</div><h2>Three-week training plan</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Week 1</div><div><span class="b solid">Week 1</span></div><div class="ev"><b>Drill:</b> Roadmap at the door, every call, before anything else. Scope, sequence, review conversation, approval promise.<br><b>Proof it worked:</b> Manager can quote the roadmap from the first minute of every call this week; no inspection starts without it.</div></div>
+  <div class="row"><div class="rb">Week 2</div><div><span class="b solid">Week 2</span></div><div class="ev"><b>Drill:</b> Fixed ending on every call: what I found, what I&rsquo;d do, which do you want to start with.<br><b>Proof it worked:</b> All three elements present at the end of every call, regardless of what was found.</div></div>
+  <div class="row"><div class="rb">Week 3</div><div><span class="b solid">Week 3</span></div><div class="ev"><b>Drill:</b> Seed and collect the five-star ask, starting with the roadmap that now opens every call.<br><b>Proof it worked:</b> Review seeded on every call and asked for on every completed visit.</div></div>
+</div>
+</section>
+<section id="owe">
+<div class="sh"><div class="no">8</div><h2>What we owe Juan Tlatenchi</h2></div>
+<ul class="str">
+  <li>A written roadmap script he can carry, plus a ride-along on a call where somebody runs it properly &mdash; this is a repeatable habit to install, not a personality problem.</li>
+  <li>Job numbers on his recordings. Neither of his calls carried one, which makes outcome verification impossible and may be hiding results he is already getting.</li>
+  <li>Credit for the discovery. His questions are already right, and that is the harder half to teach.</li>
+</ul>
+</section>
+<div class="bottom">
+  <div class="eyb">Bottom line</div>
+  <p>Juan is doing the difficult part well &mdash; customers like him, and his onset and history questions are exactly the right ones, asked without a script showing. What is missing is the frame around them. Neither customer was told what the visit was for at the start or what it found at the end, so there was never a moment where a decision could happen. Two sentences, one at the door and one before leaving, would change both of these calls completely.</p>
+</div>
+<div class="foot">Sierra &middot; SILO daily coaching plan &middot; 2026-08-04 &middot; Scored on strength bands &mdash; close rate is the only number</div>
+</div></body></html>
