@@ -1,22 +1,18 @@
-# Scorecard: Bradley Espinoza
-Date: 2026-08-04
-Job: 670170738
-Duration: 86 min
+# Live Scorecard — Bradley Espinoza
+**RecId:** 149008f7-e1b9-4895-8337-e0a6991d78f3-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2  
+**Job:** 670170738 | **Date:** 2026-08-04 | **Duration:** 86 min | **Outcome:** unknown
 
-## Bands
-- Welcome: Strong
-- Assessment: Solid
-- Decision: Solid
-- Deliver: Moderate
+## FSG Bands
+- **welcome:** Strong
+- **assessment:** Solid
+- **decision:** Moderate
+- **deliver:** Moderate
 
 ## Critical Actions
-- Expectations: ✓
-- Questions: ✓
-- Options: ✗
-- Objections: ✓
+- ✓ expectations set
+- ✓ good discovery questions
+- ✗ options not created/presented
+- ✗ objections not handled
 
-## Outcome
-UNKNOWN
-
-## Coaching Tip
-FIX — Customer had negative experience with Legacy's incomplete tune-up; differentiate Sierra by highlighting synchronization, lubrication, and timing that others missed.
+## Coaching
+Maintenance tune-up call. Explained expectations clearly but didn't identify or present any upgrade/repair options. Even on preventive visits, look for opportunities to reconnect to long-term system health and present solutions.

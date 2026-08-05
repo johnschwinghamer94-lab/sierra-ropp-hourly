@@ -1,22 +1,18 @@
-# Scorecard: Tyler Battershell
-Date: 2026-08-03
-Job: None
-Duration: 49 min
+# Live Scorecard — Tyler Battershell
+**RecId:** 60e087da-5230-4833-a8dd-b756cca142ce-CfTWI6dOqBStQVuiFmPhv9mrmVb2  
+**Date:** 2026-08-03 | **Duration:** 49 min | **Outcome:** no-close
 
-## Bands
-- Welcome: Solid
-- Assessment: Strong
-- Decision: Strong
-- Deliver: Solid
+## FSG Bands
+- **welcome:** Strong
+- **assessment:** Strong
+- **decision:** Strong
+- **deliver:** Moderate
 
 ## Critical Actions
-- Expectations: ✓
-- Questions: ✓
-- Options: ✓
-- Objections: ✓
+- ✓ expectations set
+- ✓ good discovery questions
+- ✓ options created/presented
+- ✓ objections handled
 
-## Outcome
-NO-CLOSE
-
-## Coaching Tip
-FIX — Customer expected $200-300 but quote was $449-509; address the price expectation gap early in the diagnosis, before presenting options, to validate their concern.
+## Coaching
+Customer expressed price concern ("We gotta get other quotes"). When boyfriend asked about better deals, that was the close moment. Should have offered: "The membership actually saves you money AND gives you warranty protection—let me show you the numbers."
