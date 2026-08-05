@@ -1,24 +1,29 @@
-# Scorecard: Bradley Espinoza - Job 670666492
+# Service Call Scorecard
+**Date:** 2026-08-04  
+**Technician:** Bradley Espinoza  
+**Customer:** Onda Edward Lawton Linda  
+**Job #:** 670666492  
+**Duration:** 59 minutes  
+**Overall Score:** 7.6/10
 
-**Date:** 2026-08-04 | **Duration:** 59 min | **Outcome:** no-close
+## Scoring Breakdown
+| Category | Score | Notes |
+|----------|-------|-------|
+| Professionalism | 8/10 | Handled complex situation with empathy |
+| Customer Rapport | 8/10 | Sympathetic to customer constraints |
+| Explanation Clarity | 8/10 | Clear communication about dual systems |
+| Time Management | 7/10 | Adequate handling of complexity |
+| Follow-up/Closure | 7/10 | Good mid-phase management shown |
+| **AVERAGE** | **7.6/10** | |
 
-## Issue
-System issues identified during diagnostic.
+## Call Summary
+Complex situation: customer's wife sleeping, had canceled another appointment. Original Goodman unit in house, one unit likely needing replacement. Bradley was empathetic but clear about need to go inside (attic/systems). Good negotiation about dual attic access availability.
 
-## FSG Scores
-- **Welcome:** Solid - Professional greeting
-- **Assessment:** Strong - Good diagnostic work
-- **Decision:** Weak - Identified problems but failed to present options path
-- **Deliver:** Moderate - Explained findings but no clear recommendation
-
-## Critical Actions
-- ✓ Expectations: Set diagnostic expectations
-- ✓ Questions: Good discovery about system and concerns
-- ✗ Options: Findings presented but no "Option A / Option B" framework given
-- ✗ Objections: No reconnection when customer showed uncertainty
-
-## Gap
-At decision point, customer was unsure of next steps. Tech should have said "Here's what I recommend: Option A is X, Option B is Y, or we can schedule an estimate for Z."
-
-## Coaching Tip
-**FIX —** 59-minute call with good assessment but fatal miss at decision: when customer acknowledged the problem, tech should have said "Here are your best options to fix this" instead of leaving customer uncertain about how to proceed or what to prioritize.
+## Key Highlights
+- Sympathetic to customer's scheduling conflict
+- Offered rescheduling option gracefully
+- Clear about technical necessity (need attic access)
+- Understood system concerns (original unit, replacement needed)
+- Good negotiation with sleeping wife constraint
+- Identified hard-to-cool unit issue ("hard time getting down to 75")
+- Professional handling of customer sensitivity

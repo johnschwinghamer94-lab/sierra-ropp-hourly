@@ -1,24 +1,28 @@
-# Scorecard: Brandon Moreno - Job 670841908
+# Service Call Scorecard
+**Date:** 2026-08-04  
+**Technician:** Brandon Moreno  
+**Customer:** Allstun James  
+**Job #:** 670841908  
+**Duration:** 48 minutes  
+**Overall Score:** 6.8/10
 
-**Date:** 2026-08-04 | **Duration:** 48 min | **Outcome:** no-close
+## Scoring Breakdown
+| Category | Score | Notes |
+|----------|-------|-------|
+| Professionalism | 7/10 | Friendly but less structured |
+| Customer Rapport | 8/10 | Personable and engaging |
+| Explanation Clarity | 7/10 | Communication gaps in technical explanation |
+| Time Management | 6/10 | Somewhat meandering approach |
+| Follow-up/Closure | 6/10 | Unclear follow-up plan |
+| **AVERAGE** | **6.8/10** | |
 
-## Issue
-AC system problem identified during diagnostic.
+## Call Summary
+Complex situation: recent solar panel installation caused electrical issues. Customer noted: lights not working, microwave timing displays off, temperatures at 81F upstairs. Brandon was friendly but communication about causation (solar → electrical surge → HVAC impact) lacked clarity. Thermostat not hooked to internet with complex settings visible.
 
-## FSG Scores
-- **Welcome:** Solid - Professional start
-- **Assessment:** Solid - Conducted discovery; identified issue
-- **Decision:** Moderate - Good diagnostic but didn't build/present options
-- **Deliver:** Moderate - Explained problem; no clear recommendation
-
-## Critical Actions
-- ✓ Expectations: Set inspection expectations
-- ✓ Questions: Asked about system and issue history
-- ✗ Options: Didn't present repair vs. replacement or tiered solutions
-- ✗ Objections: When customer acknowledged problem, tech didn't present path forward
-
-## Gap
-Classic pattern: good discovery, identified problem, then... silence. No "So here's what we do next."
-
-## Coaching Tip
-**FIX —** When customer acknowledged the AC problem, that was the open door. Tech should have said "Let me walk you through your best options to fix this—we can do X, Y, or Z" instead of leaving customer to figure out next steps. Transition from diagnosis to decision got lost.
+## Key Highlights
+- Personable demeanor ("Love these belts")
+- Friendly with customer's family details
+- Agreed to check both systems and upstairs
+- Didn't panic about microwave (customer said it still works)
+- Less structured approach than other technicians
+- Communication gaps about electrical surge impact
