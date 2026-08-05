@@ -21,6 +21,3 @@ flipped
 
 ## Coaching Tip
 WIN — Joseph presented multiple options (repair vs replacement), explained trade-offs clearly, and secured customer agreement to proceed with repairs plus specialist estimate for replacement path.
-
----
-*Scored by cloud scorer 2026-08-05 01:31*

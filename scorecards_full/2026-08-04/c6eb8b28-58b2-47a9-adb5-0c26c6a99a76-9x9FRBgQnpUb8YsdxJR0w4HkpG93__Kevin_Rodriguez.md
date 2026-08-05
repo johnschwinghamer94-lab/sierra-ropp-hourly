@@ -21,6 +21,3 @@ no-close
 
 ## Coaching Tip
 FIX — When customer mentioned previous repair concerns, deeper questioning about satisfaction with that work and current system performance would have uncovered whether upgrade discussion was warranted.
-
----
-*Scored by cloud scorer 2026-08-05 01:31*

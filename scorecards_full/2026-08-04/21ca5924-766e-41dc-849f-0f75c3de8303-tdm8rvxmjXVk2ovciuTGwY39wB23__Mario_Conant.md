@@ -21,6 +21,3 @@ flipped
 
 ## Coaching Tip
 WIN — Mario presented membership program with clear value positioning, addressed cost-benefit objections, and guided customer to schedule service with commitment to maintenance agreement.
-
----
-*Scored by cloud scorer 2026-08-05 01:31*

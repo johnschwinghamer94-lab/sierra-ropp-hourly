@@ -20,7 +20,4 @@
 no-close
 
 ## Coaching Tip
-FIX — When customer described previous repair work, deeper questions about system performance and upgrade options would have revealed whether a replacement discussion was warranted given age and recurring issues.
-
----
-*Scored by cloud scorer 2026-08-05 01:31*
+FIX — When customer described previous repair work, deeper questions about system performance and upgrade options would have revealed whether replacement discussion was warranted.
