@@ -573,6 +573,17 @@ def main():
     if (7, 0) <= hm <= (23, 0) and n.minute % 15 < 3:
         _kick("servicedata.yml", "pulse light refresh")  # no inputs -> --light
 
+    # Same new-workflow cron problem for the observability stack added 8/5:
+    # health.yml / coaching_outcomes.yml / digest.yml never fired their first
+    # scheduled tick. Kick them from here (which cron-job.org drives reliably).
+    # Concurrency groups collapse duplicates, so extra kicks are harmless.
+    if n.minute % 20 < 3:
+        _kick("health.yml", "pipeline health check")
+    if hm >= (23, 25) or (6, 20) <= hm <= (6, 40):
+        _kick("coaching_outcomes.yml", "outcomes capture / refresh")
+    if (6, 30) <= hm <= (6, 50):
+        _kick("digest.yml", "morning digest")
+
     rev_rows = tgl_rows = sch_rows = None
 
     # PREFERRED: pull today's reports live from the ServiceTitan API.
