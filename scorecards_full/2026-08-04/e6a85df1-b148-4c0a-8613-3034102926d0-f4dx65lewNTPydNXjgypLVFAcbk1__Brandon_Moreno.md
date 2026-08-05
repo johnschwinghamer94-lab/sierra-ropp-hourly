@@ -1,18 +1,24 @@
-# Live Scorecard — Brandon Moreno
-**RecId:** e6a85df1-b148-4c0a-8613-3034102926d0-f4dx65lewNTPydNXjgypLVFAcbk1  
-**Job:** 670841908 | **Date:** 2026-08-04 | **Duration:** 48 min | **Outcome:** unknown
+# Scorecard: Brandon Moreno - Job 670841908
 
-## FSG Bands
-- **welcome:** Moderate
-- **assessment:** Solid
-- **decision:** Weak
-- **deliver:** Weak
+**Date:** 2026-08-04 | **Duration:** 48 min | **Outcome:** no-close
+
+## Issue
+AC system problem identified during diagnostic.
+
+## FSG Scores
+- **Welcome:** Solid - Professional start
+- **Assessment:** Solid - Conducted discovery; identified issue
+- **Decision:** Moderate - Good diagnostic but didn't build/present options
+- **Deliver:** Moderate - Explained problem; no clear recommendation
 
 ## Critical Actions
-- ✓ expectations set
-- ✓ good discovery questions
-- ✗ options not created/presented
-- ✗ objections not handled
+- ✓ Expectations: Set inspection expectations
+- ✓ Questions: Asked about system and issue history
+- ✗ Options: Didn't present repair vs. replacement or tiered solutions
+- ✗ Objections: When customer acknowledged problem, tech didn't present path forward
 
-## Coaching
-Customer had legitimate concern: solar installation caused electrical issues, AC temps at 81. Tech didn't connect dots to recommendation. When customer mentioned solar work + air temp spikes, should say: "This needs a professional power audit—here's what I'd recommend to get this safe and working right."
+## Gap
+Classic pattern: good discovery, identified problem, then... silence. No "So here's what we do next."
+
+## Coaching Tip
+**FIX —** When customer acknowledged the AC problem, that was the open door. Tech should have said "Let me walk you through your best options to fix this—we can do X, Y, or Z" instead of leaving customer to figure out next steps. Transition from diagnosis to decision got lost.

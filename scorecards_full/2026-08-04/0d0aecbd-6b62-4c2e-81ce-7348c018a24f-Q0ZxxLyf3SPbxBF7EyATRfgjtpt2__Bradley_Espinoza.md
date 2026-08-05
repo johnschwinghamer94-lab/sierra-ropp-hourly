@@ -1,22 +1,24 @@
-# Bradley Espinoza - 2026-08-04
-RecId: 0d0aecbd-6b62-4c2e-81ce-7348c018a24f-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2  
-Job: 670666492  
-Duration: 59 min
+# Scorecard: Bradley Espinoza - Job 670666492
 
-## FSG Bands
-- Welcome: Moderate
-- Assessment: Strong
-- Decision: Solid
-- Deliver: Solid
+**Date:** 2026-08-04 | **Duration:** 59 min | **Outcome:** no-close
+
+## Issue
+System issues identified during diagnostic.
+
+## FSG Scores
+- **Welcome:** Solid - Professional greeting
+- **Assessment:** Strong - Good diagnostic work
+- **Decision:** Weak - Identified problems but failed to present options path
+- **Deliver:** Moderate - Explained findings but no clear recommendation
 
 ## Critical Actions
-- Expectations: True
-- Questions: True
-- Options: True
-- Objections: True
+- ✓ Expectations: Set diagnostic expectations
+- ✓ Questions: Good discovery about system and concerns
+- ✗ Options: Findings presented but no "Option A / Option B" framework given
+- ✗ Objections: No reconnection when customer showed uncertainty
 
-## Outcome
-FLIPPED
+## Gap
+At decision point, customer was unsure of next steps. Tech should have said "Here's what I recommend: Option A is X, Option B is Y, or we can schedule an estimate for Z."
 
-## Coaching
-WIN — Your discovery questions uncovered the real problem and built credibility for presenting the solution.
+## Coaching Tip
+**FIX —** 59-minute call with good assessment but fatal miss at decision: when customer acknowledged the problem, tech should have said "Here are your best options to fix this" instead of leaving customer uncertain about how to proceed or what to prioritize.

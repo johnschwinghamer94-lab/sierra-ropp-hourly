@@ -1,23 +1,24 @@
-# Scorecard e217f372-7691-4823-bef3-c47a8b59847a-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
-- Tech: Bradley Espinoza
-- Job: 670243678
-- Date: 2026-08-04
-- Duration: 60m
+# Scorecard: Bradley Espinoza - Job 670243678
 
-## FSG Bands
-- Welcome: Strong
-- Assessment: Strong
-- Decision: Moderate
-- Deliver: Moderate
+**Date:** 2026-08-04 | **Duration:** 60 min | **Outcome:** FLIPPED
+
+## Issue
+Cooling system upgrade needed; customer concerned about cost.
+
+## FSG Scores
+- **Welcome:** Strong - Built rapport and credibility
+- **Assessment:** Strong - Thorough diagnostic; understood customer concerns
+- **Decision:** Strong - Built options framework around customer budget/preferences
+- **Deliver:** Solid - Clear on what replacement entails
 
 ## Critical Actions
-- Expectations: True
-- Questions: True
-- Options: True
-- Objections: True
+- ✓ Expectations: Clear about diagnostic and options process
+- ✓ Questions: Deep discovery about customer's cooling concerns and priorities
+- ✓ Options: Multiple upgrade paths presented with pricing context
+- ✓ Objections: Addressed cost concerns by showing value; customer ready to discuss with Comfort Advisor
 
-## Outcome
-closed
+## Win
+Tech built genuine understanding of customer's needs, then showed multiple options that addressed those specific concerns. Customer saw clear value and moved to financing conversation.
 
-## Tip
-WIN — Tech closed the deal on system upgrade or repair.
+## Coaching Tip
+**WIN —** When customer expressed cost concern, tech didn't retreat but instead showed tiered options tied directly to what customer cared about. That "here's what each investment gets you" approach turned hesitation into commitment.

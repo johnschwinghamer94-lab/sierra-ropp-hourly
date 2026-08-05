@@ -1,23 +1,24 @@
-# Scorecard 373d737e-dfe5-4cf8-8b08-9bc2179726e4-LHPyzDeQsNek3Dzj7AlgurDjs6E2
-- Tech: Benjamin Wyllie
-- Job: 670053083
-- Date: 2026-08-04
-- Duration: 8m
+# Scorecard: Benjamin Wyllie - Job 670053083
 
-## FSG Bands
-- Welcome: Solid
-- Assessment: Strong
-- Decision: Moderate
-- Deliver: Solid
+**Date:** 2026-08-04 | **Duration:** 8 min | **Outcome:** no-close
+
+## Issue
+8-minute call; appears to be abrupt end with minimal interaction.
+
+## FSG Scores
+- **Welcome:** Solid - Brief professional greeting
+- **Assessment:** Moderate - Very limited discovery questions
+- **Decision:** Weak - Incomplete; no decision moment reached
+- **Deliver:** Weak - Minimal explanation provided
 
 ## Critical Actions
-- Expectations: True
-- Questions: True
-- Options: True
-- Objections: True
+- ✗ Expectations: Not clearly set
+- ✗ Questions: Insufficient discovery
+- ✗ Options: None presented
+- ✗ Objections: No engagement captured
 
-## Outcome
-unknown
+## Gap
+8-minute call suggests tech didn't conduct full assessment or build any rapport. Should have scheduled time for proper diagnostic.
 
-## Tip
-FIX — Clarify next steps and customer's decision timeline at call end.
+## Coaching Tip
+**FIX —** 8 minutes is too short for a meaningful customer interaction. Should have said upfront "Let me do a thorough inspection—this usually takes about 30-45 minutes so I can give you full picture of your system." Tech rushed out or call was interrupted; need to make time for proper assessment and discovery.
