@@ -9,11 +9,15 @@ through:
 Service techs run both HVAC - Service (333) and HVAC - Maintenance (342817560)
 jobs; the job's own BU is carried for display, not filtered on.
 
-Entity APIs only (never the rate-limited reporting API):
+Entity APIs for everything the board is built from:
     settings/v2/technicians (roster), jpm/appointments + jobs,
     dispatch/appointment-assignments, crm/customers, sales/estimates
     (options = active unsold; signed = soldOn today), forms/v2 job attachments
     (photo count probe).
+ONE reporting-API call, on a 5-minute cache: report 635369650 (Field Pro
+    recordings). ServiceTitan exposes call-recording status nowhere else, and
+    the reporting API is rate-limited, so it is fetched once per FP_REFRESH_SECS
+    for the whole board and never per job — see fetch_fieldpro_today().
 
 Runs in TWO environments (same file, keep private repo & servicetitan/ in sync):
   Windows (default, no env): publishes servicefeed.json LOCALLY only
@@ -71,7 +75,15 @@ def _is_membership_item(sku):
     return any(x in disp for x in ("membership", "maintenance agreement", "service agreement"))
 
 
-# ── Siro call-recording status (John, 2026-07-30) ───────────────────────────
+# ── Siro call-recording status (John, 2026-07-30) — INFORMATIONAL ONLY ──────
+# DEMOTED 2026-08-05: Siro is NOT how Sierra's service techs record. They record
+# through ServiceTitan's Field Pro feature in the ST Mobile app, so a service
+# tech with no Siro recording is the normal case, not a violation. This block
+# used to feed the full-screen NOT RECORDING takeover and was therefore publicly
+# accusing techs of skipping a tool they never use. The card's `siro` field is
+# kept (unchanged shape) as a soft in-flight indicator — see the `rec` field and
+# fetch_fieldpro_today() below for the signal the alert actually runs on.
+#
 # Minimal port of livefeed_sync.py's Siro client (same mint/auth pattern,
 # same team id, same UA). Cached module-lifetime token; recordings list is
 # cached and refreshed at most every 5 minutes (the relay cycles every ~90s,
@@ -263,6 +275,232 @@ def _siro_match(tech_name, siro_data):
         if kf == tf or kf.startswith(tf) or tf.startswith(kf):
             return v
     return None
+
+
+# ── ServiceTitan Field Pro call recording (John, 2026-08-05) ────────────────
+# The real source of truth for "did this visit get recorded", and the ONLY
+# thing allowed to raise the NOT RECORDING red alert.
+#
+# Source: Reporting API report 635369650 "Field Pro Recordings Diagnostics",
+# category "other", params From / To / TechnicianIds / IncludeAppEvents.
+# Columns: Timestamp, JobNumber, Technician, RecordingId, Source, Event, Data.
+#
+# FIVE MEASURED FACTS (all verified against live data 2026-08-05). Every one of
+# them is load-bearing for not false-accusing a tech — re-measure before you
+# "simplify" any of them.
+#
+#  1. Technician is the literal string "Unknown technician" and RecordingId is
+#     null on 100% of rows. Both columns are dead weight. JobNumber is populated
+#     on every row and is the only usable identity, so the join is PER JOB.
+#     Never match on tech name — name matching is exactly what produced the
+#     earlier crop of false positives (Juan Bernal <- Juan Tlatenchi, 7/30).
+#
+#  2. TIMEZONE TRAP: Timestamp is UTC digits wearing a WRONG "-07:00" suffix.
+#     Proof: job 669192850's "Recording stopped" row reads
+#     2026-08-04T23:53:18-07:00 while the job's own completedOn is
+#     2026-08-04T23:53:18.649Z — identical digits. Parse the digits as UTC and
+#     convert to local; discard the printed offset. Anchor: job 671253374 reads
+#     2026-08-05T16:25:24-07:00 and is truly 9:25:24 AM PDT.
+#
+#  3. From/To filter on the JOB'S COMPLETION DATE, not on the event timestamp.
+#     A job completed 8/4 drags ALL of its recording events along even if they
+#     happened in June. The corollary is the dangerous one: A JOB WITH NO
+#     completedOn RETURNS NO ROWS AT ALL. Measured 8/5 11:37a — 17 of 17
+#     finished service jobs were in the report; 0 of the 25 jobs that had a tech
+#     standing on site right then were. "Absent from the report" therefore means
+#     "not finished yet" far more often than it means "not recording", and every
+#     in-flight job MUST resolve UNKNOWN.
+#
+#  4. Once a job completes, the report catches up almost immediately. Measured
+#     8/5: job 667725614 completed 18:49:14Z and was present in a pull taken
+#     88 seconds later. FP_SETTLE_MIN below is ~14x that margin.
+#
+#  5. Event values are full sentences ("Recording initiated from the
+#     ServiceTitan Mobile app"), so match on substring, never equality.
+#
+#  6. *** THE ATTRIBUTION GAP — why this signal may not accuse anyone yet ***
+#     The default (unfiltered) pull returns only job-attributed rows: Event
+#     "Recording initiated/stopped from the ServiceTitan Mobile app" with a
+#     populated JobNumber. Pass TechnicianIds and the report ALSO returns the
+#     mobile app's own telemetry — "Recording started / paused / resumed /
+#     interrupted / stopped / cancelled", "consentStatusChange", "User logged
+#     in", "Technician Arrived on the Appointment", "Technician Completed the
+#     Job" — and on those rows JOBNUMBER IS BLANK for every recording event.
+#
+#     Measured 8/5 on 8/4 data: Aaron Davis's job 662208158 has NO job-attributed
+#     recording row, so a per-job join says "never recorded". His technician-
+#     filtered stream shows "Technician Arrived on the Appointment" at 21:57:25
+#     and "Recording started" SIXTEEN SECONDS LATER at 21:57:41, under a blank
+#     JobNumber. He was recording. Same story for Juan Tlatenchi (jobs 667723254
+#     / 668790087 / 671039859). Of the 14 jobs a naive per-job rule would have
+#     flagged on 8/4, at least 5 are provably false.
+#
+#     CONCLUSION: a job's ABSENCE from the job-attributed stream does NOT prove
+#     the tech wasn't recording — it may only mean ServiceTitan failed to tie
+#     that recording to a job. PRESENCE is solid evidence; ABSENCE is not
+#     evidence at all. That asymmetry is why FP_ACCUSE_OK is False below and why
+#     the full-screen NOT RECORDING takeover is currently disabled.
+#
+#     To reopen this: find a query that returns the app-telemetry recording
+#     events WITH a usable job/appointment key (or correlate blank-job
+#     "Recording started" rows against the same tech's "Technician Arrived on
+#     the Appointment" rows, which DO carry a job number). Until then, do not
+#     flip FP_ACCUSE_OK.
+#
+# Reports 636320211 / 634963669 describe the same recordings but lag 9-10+
+# hours. They must never be used for anything live.
+FP_REPORT_CATEGORY = "other"
+FP_REPORT_ID = 635369650
+FP_REFRESH_SECS = 300     # the relay cycles every 60s; the reporting API is rate
+                          # limited (it answers 409 when you crowd it), so one
+                          # board-wide pull every 5 min, never one per job
+FP_SETTLE_MIN = 20        # a finished job must be this old before "no rows"
+                          # is allowed to mean "no recording" (fact 4)
+
+# THE ACCUSATION SWITCH. False = fieldpro_state() never returns "none", so the
+# full-screen NOT RECORDING takeover in service.html (which fires only on
+# "none") is unreachable. It is False because of fact 6: absence from the
+# job-attributed stream does not prove a tech wasn't recording, and this alert
+# names a person on a wall-mounted screen in front of the whole department.
+# Do not flip this until the attribution gap in fact 6 is closed and the flagged
+# list has been re-verified against a full day of real data.
+FP_ACCUSE_OK = False
+_FP_CACHE = {"ts": 0.0, "data": None}
+
+
+def _fp_local(ts):
+    """Field Pro Timestamp -> aware local datetime. The digits are UTC and the
+    '-07:00' suffix in the string is wrong (fact 2) — slice the offset off and
+    label the digits UTC. None if unparseable."""
+    if not ts:
+        return None
+    try:
+        return datetime.fromisoformat(str(ts)[:19]).replace(tzinfo=timezone.utc).astimezone()
+    except Exception:
+        return None
+
+
+def fetch_fieldpro_today():
+    """{job_number: {"initiated","stopped","firstInitiated","lastEvent","n"}} for
+    today's jobs, or None when the report could not be read.
+
+    None is NOT "nobody recorded" — it is UNKNOWN, and every caller must turn it
+    into a state that cannot alert. Publishing a fabricated zero here puts a
+    tech's name on a full-screen accusation on the wall, so a failed fetch
+    degrades loudly (throttled log) and never quietly.
+
+    Cached FP_REFRESH_SECS; a failure caches None for the same interval so a
+    broken report can't be hammered 60x an hour.
+
+    Window is [today, today+1]. From/To key off the job's completion date
+    (fact 3) and it is not pinned down whether ServiceTitan evaluates that date
+    in UTC or in tenant-local time; a one-day overshoot satisfies both readings.
+    The extra jobs are harmless because the join is by job number.
+    """
+    now_ts = time.time()
+    if now_ts - _FP_CACHE["ts"] < FP_REFRESH_SECS:
+        return _FP_CACHE["data"]
+    today = date.today()
+    frm, to = today.isoformat(), (today + timedelta(days=1)).isoformat()
+    try:
+        rows, fields, page = [], None, 1
+        while page <= 10:            # safety cap; a full day is ~600 rows
+            # The reporting API answers 409 Conflict when too many report runs
+            # are in flight for the tenant, and st_client only retries 429/5xx.
+            # graph_hourly / service_data / ropp_live share that budget, so
+            # collisions are routine. A 409 that reaches the caller costs the
+            # board its recording signal for a full FP_REFRESH_SECS, so absorb
+            # a couple here — failing to UNKNOWN is safe but not free.
+            for attempt in range(3):
+                try:
+                    r = st.run_report(FP_REPORT_CATEGORY, FP_REPORT_ID,
+                                      [{"name": "From", "value": frm}, {"name": "To", "value": to}],
+                                      page=page, page_size=5000)
+                    break
+                except urllib.error.HTTPError as ex:
+                    if ex.code != 409 or attempt == 2:
+                        raise
+                    time.sleep(5)
+            fields = [f["name"] for f in (r.get("fields") or [])] or fields
+            rows += r.get("data", [])
+            if not r.get("hasMore") or not r.get("data"):
+                break
+            page += 1
+            time.sleep(1)
+        # A real Reporting-API response ALWAYS carries a field list, even for a
+        # window with zero rows. A missing field list means a malformed/empty
+        # 200 body, which would otherwise read as "not one tech recorded today"
+        # and light up every card on the board. Zero ROWS is still legal (at
+        # 5:30am nothing has completed yet) — zero FIELDS is a fetch failure.
+        if not fields:
+            raise RuntimeError("no field list in the report response")
+        ix = {f: i for i, f in enumerate(fields)}
+        for need in ("Timestamp", "JobNumber", "Event"):
+            if need not in ix:
+                raise RuntimeError("report is missing the %s column" % need)
+        out = {}
+        for row in rows:
+            jn = str(row[ix["JobNumber"]] or "").strip()
+            if not jn:
+                continue
+            ev = str(row[ix["Event"]] or "").lower()
+            dtl = _fp_local(row[ix["Timestamp"]])
+            ent = out.setdefault(jn, {"initiated": False, "stopped": False,
+                                      "firstInitiated": None, "lastEvent": None, "n": 0})
+            ent["n"] += 1
+            if "initiated" in ev:
+                ent["initiated"] = True
+                if dtl and (ent["firstInitiated"] is None or dtl < ent["firstInitiated"]):
+                    ent["firstInitiated"] = dtl
+            elif "stopped" in ev:
+                ent["stopped"] = True
+            if dtl and (ent["lastEvent"] is None or dtl > ent["lastEvent"]):
+                ent["lastEvent"] = dtl
+        _FP_CACHE["ts"] = now_ts
+        _FP_CACHE["data"] = out
+        return out
+    except Exception as ex:
+        _FP_CACHE["ts"] = now_ts
+        _FP_CACHE["data"] = None
+        warn_throttled("fieldpro", "Field Pro report %d FAILED — recording status is "
+                       "UNKNOWN for every job this cycle, NOT RECORDING cannot alert: %s"
+                       % (FP_REPORT_ID, repr(ex)[:180]))
+        return None
+
+
+def fieldpro_state(fp, job_number, job_id, status, completed_local, now):
+    """(state, entry) for one card. state is one of:
+
+      "recording"  — ServiceTitan logged Field Pro activity on this job number.
+                     Solid positive evidence.
+      "unverified" — the job is finished, settled, and carries ZERO job-attributed
+                     Field Pro rows. This is NOT "the tech didn't record" — see
+                     fact 6, the recording may simply never have been tied to a
+                     job. Informational only; must not alert.
+      "none"       — same as "unverified" but asserted as a real violation.
+                     ONLY produced when FP_ACCUSE_OK is True, and it is the only
+                     state the red alert reacts to. Currently unreachable.
+      "unknown"    — everything else: report unavailable, job still running,
+                     "Done" with no completedOn, or finished too recently for
+                     the report to have caught up.
+
+    Every ambiguity lands on a non-accusing state on purpose. Note that ANY Field
+    Pro row counts as "recording", not just "Recording initiated": 2 of the 369
+    jobs sampled across 8/4-8/5 carried a "Recording stopped" with no matching
+    initiate. Ambiguous evidence must never become a public accusation.
+    """
+    if fp is None:
+        return "unknown", None
+    ent = fp.get(str(job_number or "")) or fp.get(str(job_id or ""))
+    if ent:
+        return "recording", ent
+    if status != "Done" or not completed_local:
+        # Still running, or marked Done with no completedOn. Either way the
+        # report keys off completion (fact 3) and physically cannot list it.
+        return "unknown", None
+    if (now - completed_local).total_seconds() < FP_SETTLE_MIN * 60:
+        return "unknown", None
+    return ("none" if FP_ACCUSE_OK else "unverified"), None
 
 
 def log(msg):
@@ -561,6 +799,7 @@ def build(state):
 
     RANK = {"Working": 0, "Dispatched": 1, "Hold": 2, "Scheduled": 3, "Done": 4}
     siro_data = fetch_siro_today()   # one Siro check per cycle (fail-open -> None)
+    fp_data = fetch_fieldpro_today() # ST Field Pro recordings (None = UNKNOWN, never 0)
     siro_techs_seen = set()
     cards = []
     on_site = 0
@@ -698,6 +937,20 @@ def build(state):
             else:
                 siro = {"n": 0, "rec": False, "recNow": False, "liveTech": False}
 
+        # ServiceTitan Field Pro recording truth for this card. `rec.state` is
+        # the ONLY thing the NOT RECORDING alert is allowed to read; it is
+        # "unknown" for anything in flight or unverifiable (see fieldpro_state).
+        rec_state, rec_ent = fieldpro_state(fp_data, j.get("jobNumber"), jid, status, done_l, now)
+        rec = {
+            "src": "st",
+            "state": rec_state,
+            "initiated": bool(rec_ent["initiated"]) if rec_ent else None,
+            "stopped": bool(rec_ent["stopped"]) if rec_ent else None,
+            "first": fmt_t(rec_ent["firstInitiated"]) if (rec_ent and rec_ent["firstInitiated"]) else None,
+            "last": fmt_t(rec_ent["lastEvent"]) if (rec_ent and rec_ent["lastEvent"]) else None,
+            "n": rec_ent["n"] if rec_ent else 0,
+        }
+
         cards.append({
             "jobId": jid, "jobNumber": j.get("jobNumber", ""),
             "tech": ", ".join(techs), "team": ", ".join(team_set),
@@ -717,6 +970,7 @@ def build(state):
             "membershipSold": membership_sold_job,
             "photos": photos,
             "siro": siro,
+            "rec": rec,
         })
 
     cards.sort(key=lambda c: c["startIso"])
@@ -745,12 +999,30 @@ def build(state):
                        if (_siro_match(t, siro_data) or {}).get("n", 0) >= 1)
         siro_today = {"recorded": recorded, "of": len(siro_techs_seen)}
 
+    # Field Pro rollup for the header chip. Deliberately publishes a COUNT of
+    # confirmed recordings and NO denominator: any X/Y framing would silently
+    # assert that the Y-X remainder failed to record, and per fact 6 that claim
+    # is not supported (a recording can exist without being tied to a job).
+    # `unverified` and `pending` are carried separately for diagnosis.
+    # null when the report is unavailable — never a fabricated zero.
+    rec_today = None
+    if fp_data is not None:
+        sc = {}
+        for c in cards:
+            sc[c["rec"]["state"]] = sc.get(c["rec"]["state"], 0) + 1
+        rec_today = {"recorded": sc.get("recording", 0),
+                     "unverified": sc.get("unverified", 0) + sc.get("none", 0),
+                     "pending": sc.get("unknown", 0),
+                     "accusing": FP_ACCUSE_OK,
+                     "src": "ServiceTitan Field Pro"}
+
     payload = {
         "date": dkey,
         "day": now.strftime("%A, %B %d").upper(),
         "generated": now_s,
         "generatedMs": int(time.time() * 1000),
         "siroToday": siro_today,
+        "recToday": rec_today,
         "kpis": {
             "jobsToday": len(cards),
             "onSiteNow": on_site,
