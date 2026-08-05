@@ -495,11 +495,25 @@ def bucket_sales(ests, job_tech):
 
 
 def bucket_membership_offers(ests, job_tech, call_dept):
-    """{window: {tech: set(jobIds offered)}}, {window: set(jobIds offered)} —
-    today/wtd only (entity-precise, same budget as bucket_sales). A job counts
+    """{window: {tech: set(jobIds offered)}}, {window: set(jobIds offered)},
+    {window: {tech: set(jobIds sold-on-offer)}}, {window: set(jobIds sold-on-offer)}
+    — today/wtd only (entity-precise, same budget as bucket_sales). A job counts
     as "offered" in a window if ANY of its estimates created in that window's
     date range carries a membership/SAM item, sold or not. Bucketed on the
     estimate's createdOn date (mirrors bucket_sales' use of soldOn).
+
+    A job additionally counts as "sold-on-offer" if that same membership-
+    carrying estimate is SOLD, using the identical test servicefeed_sync.py
+    uses for membership_sold_job: soldOn present, or status name == "sold".
+    This numerator (membershipSoldOnOffer) MUST be built from this same
+    entity population as membershipOffered — it cannot come from membSold
+    (the Field Conversion report figure used elsewhere for membershipsSold),
+    because that report counts a different, broader population and is a
+    rounded product (opportunities x report conversion rate). Pairing FC-
+    report membSold with this entity-derived offered count produced
+    close-on-offer rates over 100% (e.g. Chris Thomas 1 offered / 6 "sold" =
+    600%) — found 2026-08-04. Only a same-population subset is a valid
+    numerator for a close-ON-OFFER rate.
 
     call_dept = {window: set(jobIds)} from bucket_call_universe() — the SAME
     denominator population used for membershipOfferJobs. Offers are gated to
@@ -509,6 +523,8 @@ def bucket_membership_offers(ests, job_tech, call_dept):
     numerator and denominator must share one job population."""
     out = {w: defaultdict(set) for w in ENTITY_SALES_WINDOWS}
     dept = {w: set() for w in ENTITY_SALES_WINDOWS}
+    sold_out = {w: defaultdict(set) for w in ENTITY_SALES_WINDOWS}
+    sold_dept = {w: set() for w in ENTITY_SALES_WINDOWS}
     for e in ests:
         items = e.get("items") or []
         skus = [(i.get("sku") or {}) for i in items]
@@ -522,13 +538,19 @@ def bucket_membership_offers(ests, job_tech, call_dept):
             continue
         d = d.date()
         tech = job_tech.get(jid)
+        st_name = ((e.get("status") or {}).get("name") or "").lower()
+        sold = bool(e.get("soldOn")) or st_name == "sold"
         for w in ENTITY_SALES_WINDOWS:
             frm, to = WINDOWS[w]
             if frm <= d <= to and jid in call_dept.get(w, ()):
                 dept[w].add(jid)
                 if tech:
                     out[w][tech].add(jid)
-    return out, dept
+                if sold:
+                    sold_dept[w].add(jid)
+                    if tech:
+                        sold_out[w][tech].add(jid)
+    return out, dept, sold_out, sold_dept
 
 
 # ── 4. invoices (revenue$, BU split) — YTD span, bucketed ──────────────────
@@ -991,7 +1013,8 @@ def budget_block(invs_for_month):
 
 
 # ── assembly ─────────────────────────────────────────────────────────────────
-def tech_rows_for_window(w, fc_agg, sales_bucket, roster, offer_bucket=None, call_bucket=None):
+def tech_rows_for_window(w, fc_agg, sales_bucket, roster, offer_bucket=None, call_bucket=None,
+                          sold_bucket=None):
     entity_sales = w in ENTITY_SALES_WINDOWS
     rows = []
     for name, info in roster.items():
@@ -1030,18 +1053,25 @@ def tech_rows_for_window(w, fc_agg, sales_bucket, roster, offer_bucket=None, cal
             row["membershipOffered"] = offered
             row["membershipOfferJobs"] = offer_jobs
             row["membershipOfferRate"] = round(offered / offer_jobs * 1000) / 10 if offer_jobs else 0
-            row["membershipCloseOnOffer"] = round(membSold / offered * 1000) / 10 if offered else None
+            sold_on_offer = len(sold_bucket.get(name, ())) if sold_bucket is not None else 0
+            assert sold_on_offer <= offered, (
+                "membershipSoldOnOffer > membershipOffered for %s (%d > %d) — "
+                "a sold-with-membership job must be a subset of offered" % (name, sold_on_offer, offered))
+            row["membershipSoldOnOffer"] = sold_on_offer
+            row["membershipCloseOnOffer"] = round(sold_on_offer / offered * 1000) / 10 if offered else None
         else:
             row["membershipOffered"] = None
             row["membershipOfferJobs"] = None
             row["membershipOfferRate"] = None
+            row["membershipSoldOnOffer"] = None
             row["membershipCloseOnOffer"] = None
         rows.append(row)
     rows.sort(key=lambda r: -r["revenue"])
     return rows
 
 
-def dept_summary(w, fc_agg, sales_dept, rev_bucket, offer_dept=None, call_dept_set=None):
+def dept_summary(w, fc_agg, sales_dept, rev_bucket, offer_dept=None, call_dept_set=None,
+                  sold_dept_set=None):
     entity_sales = w in ENTITY_SALES_WINDOWS
     opp = sum(a["opp"] for a in fc_agg.values())
     converted = sum(a["converted"] for a in fc_agg.values())
@@ -1071,11 +1101,17 @@ def dept_summary(w, fc_agg, sales_dept, rev_bucket, offer_dept=None, call_dept_s
         out["membershipOffered"] = offered
         out["membershipOfferJobs"] = offer_jobs
         out["membershipOfferRate"] = round(offered / offer_jobs * 1000) / 10 if offer_jobs else 0
-        out["membershipCloseOnOffer"] = round(membSold / offered * 1000) / 10 if offered else None
+        sold_on_offer = len(sold_dept_set) if sold_dept_set is not None else 0
+        assert sold_on_offer <= offered, (
+            "dept membershipSoldOnOffer > membershipOffered (%d > %d) — "
+            "a sold-with-membership job must be a subset of offered" % (sold_on_offer, offered))
+        out["membershipSoldOnOffer"] = sold_on_offer
+        out["membershipCloseOnOffer"] = round(sold_on_offer / offered * 1000) / 10 if offered else None
     else:
         out["membershipOffered"] = None
         out["membershipOfferJobs"] = None
         out["membershipOfferRate"] = None
+        out["membershipSoldOnOffer"] = None
         out["membershipCloseOnOffer"] = None
     return out
 
@@ -1396,7 +1432,8 @@ def main():
     log("  resolved tech for %d jobs" % len(job_tech))
     sales_by_window, sales_dept = bucket_sales(ests, job_tech)
     call_by_window, call_dept = bucket_call_universe(call_appts, job_tech)
-    offer_by_window, offer_dept = bucket_membership_offers(offer_ests, job_tech, call_dept)
+    offer_by_window, offer_dept, sold_on_offer_by_window, sold_on_offer_dept = \
+        bucket_membership_offers(offer_ests, job_tech, call_dept)
 
     if light:
         # small invoice pull: covers WTD (for revenue bucket) and, if today
@@ -1475,22 +1512,28 @@ def main():
             out[w].setdefault("membershipOffered", None)
             out[w].setdefault("membershipOfferJobs", None)
             out[w].setdefault("membershipOfferRate", None)
+            out[w].setdefault("membershipSoldOnOffer", None)
             out[w].setdefault("membershipCloseOnOffer", None)
             out["techs"][w] = old.get("techs", {}).get(w, [])
             for row in out["techs"][w]:
                 row.setdefault("membershipOffered", None)
                 row.setdefault("membershipOfferJobs", None)
                 row.setdefault("membershipOfferRate", None)
+                row.setdefault("membershipSoldOnOffer", None)
                 row.setdefault("membershipCloseOnOffer", None)
             continue
         sd = sales_dept.get(w, 0.0)
         od = offer_dept.get(w) if w in ENTITY_SALES_WINDOWS else None
         cd = call_dept.get(w) if w in ENTITY_SALES_WINDOWS else None
-        out[w] = dept_summary(w, fc_by_window[w], sd, rev_by_window[w], offer_dept=od, call_dept_set=cd)
+        sdset = sold_on_offer_dept.get(w) if w in ENTITY_SALES_WINDOWS else None
+        out[w] = dept_summary(w, fc_by_window[w], sd, rev_by_window[w], offer_dept=od, call_dept_set=cd,
+                               sold_dept_set=sdset)
         sb = sales_by_window.get(w, {})
         ob = offer_by_window.get(w) if w in ENTITY_SALES_WINDOWS else None
         cb = call_by_window.get(w) if w in ENTITY_SALES_WINDOWS else None
-        out["techs"][w] = tech_rows_for_window(w, fc_by_window[w], sb, roster, offer_bucket=ob, call_bucket=cb)
+        soldb = sold_on_offer_by_window.get(w) if w in ENTITY_SALES_WINDOWS else None
+        out["techs"][w] = tech_rows_for_window(w, fc_by_window[w], sb, roster, offer_bucket=ob, call_bucket=cb,
+                                                sold_bucket=soldb)
 
     with open(path + ".tmp", "w") as f:
         json.dump(out, f, separators=(",", ":"))
