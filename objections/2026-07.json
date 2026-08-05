@@ -237,17 +237,6 @@
       "job": "668735887"
     },
     {
-      "id": "benjamin-wyllie-668882435-1",
-      "type": "Price",
-      "cust": "But you can't give me an estimate on the new? On the whole system?",
-      "answer": "No, you have to go upstairs... They have to get that pricing out and the sizing to make sure it's correct so it fits your home specifically. Which is why I did give you the option to speak to one of our install specialists.",
-      "tech": "Benjamin Wyllie",
-      "date": "2026-07-25",
-      "grade": "great",
-      "closed": false,
-      "job": "668882435"
-    },
-    {
       "id": "benjamin-wyllie-difillippo-668749440-1",
       "type": "Doubt / Distrust",
       "cust": "It just seems unreal that they could really do it today. I don't want to be disappointed.",
@@ -1424,17 +1413,6 @@
       "job": "665895414"
     },
     {
-      "id": "francisco-valencia-bickram-dudhnauth-chris-etal-salazar-tessa-royce-job-666303445-1",
-      "type": "Stall / Think About It",
-      "cust": "Um, yeah, yeah, we'll work on it. No, I want to start with the thermostat first.",
-      "answer": "So you don't want to have one of the retro guys come out and just give you guys an estimate?",
-      "tech": "Francisco Valencia",
-      "date": "2026-07-15",
-      "grade": "ok",
-      "closed": true,
-      "job": "666303445"
-    },
-    {
       "id": "francisco-valencia-fellous-jean-luc-job-665815728-1",
       "type": "Doubt / Distrust",
       "cust": "Well, my unit's 20 years old and works perfectly fine, so\u2014",
@@ -2566,28 +2544,6 @@
       "job": "665368098"
     },
     {
-      "id": "robert-silinzy-lee-julia-yuching-job-664054031-1",
-      "type": "Doubt / Distrust",
-      "cust": "So you are saying if this is fixed, everything is fine?",
-      "answer": "It could be. I mean, I can't... I can't, but I can't do a maintenance, so I don't want 100% safe. But obviously this is no good.",
-      "tech": "Robert Silinzy",
-      "date": "2026-07-12",
-      "grade": "ok",
-      "closed": false,
-      "job": "664054031"
-    },
-    {
-      "id": "robert-silinzy-lee-julia-yuching-job-664054031-2",
-      "type": "Stall / Think About It",
-      "cust": "Oh, I might be leaving, I might be moving to another state.",
-      "answer": "Oh, gotcha.",
-      "tech": "Robert Silinzy",
-      "date": "2026-07-12",
-      "grade": "poor",
-      "closed": false,
-      "job": "664054031"
-    },
-    {
       "id": "brandon-moreno-pinato-joseph-m-lila-g-job-662097408-1",
       "type": "Price",
       "cust": "Not at the moment. I mean, we've got a home, but we've got medical\u2014unfortunately, a lot of medical bills... I just gotta figure out what's what right now. It's about 7 grand, right, as far as patching what you have?... how much is a whole new unit up there?",
@@ -3037,16 +2993,6 @@
       "tech": "Juan Tlatenchi",
       "date": "2026-07-06",
       "grade": "ok",
-      "closed": false
-    },
-    {
-      "id": "8d1647cf-5713-4a3d-a565-185421e4a600-rvlRRFBXT4diudowFnwcEo0gzE42-2",
-      "type": "Stall / Think About It",
-      "cust": "Okay, yeah, that's fine. I don't mind to think about it.",
-      "answer": "Yeah, you want to set something up for tomorrow morning? What works for you?",
-      "tech": "Juan Tlatenchi",
-      "date": "2026-07-06",
-      "grade": "great",
       "closed": false
     },
     {
@@ -3836,17 +3782,6 @@
       "job": "663983412"
     },
     {
-      "id": "d2f5bcff-e086-427e-aa6f-de1601c28a7c-GFg7TsAzwnexN1iJ489ReAY05wf1-2",
-      "type": "Stall / Think About It",
-      "cust": "And I'm going on a family vacation, so next week won't work. But yeah, but we will, but we will call and find out and get some price comparisons.",
-      "answer": "Not a problem.",
-      "tech": "Dustin Romine",
-      "date": "2026-07-10",
-      "grade": "ok",
-      "closed": false,
-      "job": "661863994"
-    },
-    {
       "id": "73fd0739-832a-494c-bf34-883c8932fe9f-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
       "type": "Doubt / Distrust",
       "cust": "I did do business with Legacy Air for a few years, but I quit... every time they come in and check the air... they say 'well you really should do this'... I'm just an old lady living on a fixed income, right?",
@@ -3955,16 +3890,6 @@
       "closed": false
     },
     {
-      "id": "43694627-1a6e-43df-8e80-4a06692ff740-rvlRRFBXT4diudowFnwcEo0gzE42-1",
-      "type": "Price",
-      "cust": "I just want\u2014 I'm not ready to pay a whole bunch of money right now.",
-      "answer": "",
-      "tech": "Juan Tlatenchi",
-      "date": "2026-07-10",
-      "grade": "poor",
-      "closed": false
-    },
-    {
       "id": "8439d422-266b-43e4-9c55-27973c7882fc-rvlRRFBXT4diudowFnwcEo0gzE42-1",
       "type": "Stall / Think About It",
       "cust": "I don't want to do anything because it's not broke yet, right? I don't want to rush anything like that.",
@@ -3972,16 +3897,6 @@
       "tech": "Juan Tlatenchi",
       "date": "2026-07-10",
       "grade": "poor",
-      "closed": false
-    },
-    {
-      "id": "8439d422-266b-43e4-9c55-27973c7882fc-rvlRRFBXT4diudowFnwcEo0gzE42-2",
-      "type": "Price",
-      "cust": "I'd be curious on what a new unit cost versus putting the parts on that s***... if it means put a new one in versus putting all kinds of parts on this, yeah, then I'd be willing to.",
-      "answer": "the thing is, we're already looking at those things... So, but on this, to find out what a new one costs, you want me to set an appointment up for you?",
-      "tech": "Juan Tlatenchi",
-      "date": "2026-07-10",
-      "grade": "ok",
       "closed": false
     },
     {
@@ -4365,17 +4280,6 @@
       "tech": "Dustin Romine",
       "date": "2026-07-02",
       "grade": "great",
-      "closed": true,
-      "job": "658084492"
-    },
-    {
-      "id": "304050cf-4563-439d-8d02-04c92e0a5b3d-GFg7TsAzwnexN1iJ489ReAY05wf1-2",
-      "type": "Doubt / Distrust",
-      "cust": "So what if I do this, talk to him, and I'm like, um, no, I just want to just fix this? Am I gonna\u2014 Will I get charged another fee for you guys to come out and fix it?",
-      "answer": "Okay, no charge... And then he'll set that up and everything. We can probably get that out, knocked out the same day, if not the next day.",
-      "tech": "Dustin Romine",
-      "date": "2026-07-02",
-      "grade": "ok",
       "closed": true,
       "job": "658084492"
     },
@@ -4915,17 +4819,6 @@
       "grade": "poor",
       "closed": false,
       "job": "670259040"
-    },
-    {
-      "id": "47c834ce-db26-4c9f-aee9-457f57bab333-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2-1",
-      "type": "Doubt / Distrust",
-      "cust": "For the last two years, I've had you guys out here twice already, so you're number three. I have had the same problem all three years... you guys have not said or fixed it... I have a 7 degree split... It's cost me $1,000 every year.",
-      "answer": "Okay. Mind if I turn it down a bit and get it going?",
-      "tech": "Bradley Espinoza",
-      "date": "2026-07-31",
-      "grade": "poor",
-      "closed": false,
-      "job": "669624395"
     },
     {
       "id": "28aa1fc2-c463-4cef-ae33-f66706ad96d8-g2M7csV6deOB5LCNP4trAUmVb3H2-1",

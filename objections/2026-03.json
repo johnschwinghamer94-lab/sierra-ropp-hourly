@@ -1001,17 +1001,6 @@
       "job": "634234762"
     },
     {
-      "id": "5f8fd9d9-3966-42e4-8317-f07af46cc176-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
-      "type": "Doubt / Distrust",
-      "cust": "Nobody showed up, nobody called, nobody text. And I called twice... I understand emergencies. You need to have the courtesy to tell me that you're going to be either late or not at all.",
-      "answer": "Yeah, that gets annoying. Definitely apologize for the inconvenience. I'm glad we can get out to you today and make sure everything's right... When I'm writing up the report, I can definitely give my manager a call, let them know, and then he can push it down there.",
-      "tech": "Dustin Romine",
-      "date": "2026-03-14",
-      "grade": "ok",
-      "closed": false,
-      "job": "632011084"
-    },
-    {
       "id": "5f8fd9d9-3966-42e4-8317-f07af46cc176-GFg7TsAzwnexN1iJ489ReAY05wf1-2",
       "type": "Price",
       "cust": "But you know it's not that old. Yeah. So I'm not spending 10, 11 [thousand].",
@@ -1163,17 +1152,6 @@
       "grade": "great",
       "closed": false,
       "job": "634588803"
-    },
-    {
-      "id": "83ded2dc-11ef-4326-bd8f-0735e96342ab-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
-      "type": "Price",
-      "cust": "Yeah, you don't have a price on that. You just tell them to give me a call. I want to just know that price so I won't do anything until I have that as well.",
-      "answer": "So I will say... even with the future costs, adding these two together, you're already 60, 70% of the way. Rough estimate, you're not looking much farther off from the values.",
-      "tech": "Andrew Trujillo",
-      "date": "2026-03-16",
-      "grade": "ok",
-      "closed": false,
-      "job": "633437856"
     },
     {
       "id": "83ded2dc-11ef-4326-bd8f-0735e96342ab-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-2",
@@ -1680,17 +1658,6 @@
       "grade": "ok",
       "closed": false,
       "job": "633118763"
-    },
-    {
-      "id": "eec128a3-8047-4c6b-ab59-63e21bf106cb-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
-      "type": "Price",
-      "cust": "Yeah, it is expensive, but it's... It's the price.",
-      "answer": "It is one of those things \u2014 it's a very vital supporting part of that compressor. We want to make sure it gets installed properly, gets the right specifications, and everything's wired up correctly.",
-      "tech": "Dustin Romine",
-      "date": "2026-03-18",
-      "grade": "ok",
-      "closed": false,
-      "job": "634606998"
     },
     {
       "id": "eec128a3-8047-4c6b-ab59-63e21bf106cb-GFg7TsAzwnexN1iJ489ReAY05wf1-2",
@@ -2443,17 +2410,6 @@
       "job": "635746435"
     },
     {
-      "id": "3f78eb9b-8507-44cf-bfcc-94090fa03990-kBmcjj1ucbYoWgDqILgiXfkLNzP2-2",
-      "type": "System Too Old",
-      "cust": "And then. But you think it's wise to fix all that stuff?",
-      "answer": "In my honest opinion, I don't. Just because say your system is running on R22 and let's say if this brings a leak or the compressor locks up, a pound of those refrigerants costs a couple hundred bucks for just one pound and your system holds thirteen... I'll let you look at it, do some numbers, and make the best decision possible.",
-      "tech": "Ting Cheung",
-      "date": "2026-03-22",
-      "grade": "ok",
-      "closed": false,
-      "job": "635746435"
-    },
-    {
       "id": "c894d7e5-e0dc-47a4-9074-4e5348649f76-QSgW0Qp6bKP82NeJl9A5ckCGhts1-1",
       "type": "Price",
       "cust": "I think I'm going to have to take my chances. I just can't right now... I don't even think, even if I were to finance it because if there's any kind of APR, I'm not going to want to do that.",
@@ -2572,17 +2528,6 @@
       "grade": "poor",
       "closed": false,
       "job": "633689413"
-    },
-    {
-      "id": "eedd126f-1c03-4cd7-8517-57f97bf7a904-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
-      "type": "Price",
-      "cust": "I'm getting a headache. No, I seriously, I can feel my blood pressure going up.",
-      "answer": "Option C is what I call my least risk option... This option doesn't commit you to replacing the system... What we want is for our homeowners to have everything in front of them.",
-      "tech": "Joe Mendoza",
-      "date": "2026-03-23",
-      "grade": "great",
-      "closed": false,
-      "job": "634519459"
     },
     {
       "id": "eedd126f-1c03-4cd7-8517-57f97bf7a904-hUwt6xtja4T6o8jCUdsXJsPtmQX2-2",
@@ -2841,17 +2786,6 @@
       "grade": "ok",
       "closed": false,
       "job": "636171927"
-    },
-    {
-      "id": "d95de101-12d1-4a46-8922-736c43be9c7e-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
-      "type": "Doubt / Distrust",
-      "cust": "My only concern is whether or not you don't think it'll make it to the winter.",
-      "answer": "Well, I don't have the crystal ball to be like, hey, Charles, you have another week, two weeks, a month before this happens. Typically when it does happen though, it's when it's being used the most... which is never ideal because that's when you need it.",
-      "tech": "Francisco Valencia",
-      "date": "2026-03-24",
-      "grade": "ok",
-      "closed": false,
-      "job": "632611850"
     },
     {
       "id": "13ea4fbb-42f6-41ca-9afe-f6a5ca75b8bd-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",

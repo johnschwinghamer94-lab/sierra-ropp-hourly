@@ -340,17 +340,6 @@
       "job": "627000370"
     },
     {
-      "id": "1627c5fc-2ba5-401b-a382-c4899e607130-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
-      "type": "Price",
-      "cust": "And they actually just pull the whole system out and start all over. Wouldn't that be cheaper?",
-      "answer": "I don't know about cheaper, but when it does come to the age of these units, that's where a lot of homeowners start to have that conversation. These are just a couple parts on the system \u2014 still a lot more going on that could fail down the road that's not failing at the moment.",
-      "tech": "Cole Pantol",
-      "date": "2026-02-04",
-      "grade": "great",
-      "closed": false,
-      "job": "628506730"
-    },
-    {
       "id": "1627c5fc-2ba5-401b-a382-c4899e607130-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
       "type": "Spouse / Decision-Maker",
       "cust": "I'm going to talk to my son too... Can you leave this with me?... I will call after I talk to my son. I'll call and when I make a decision.",
@@ -500,17 +489,6 @@
       "tech": "Cole Pantol",
       "date": "2026-02-05",
       "grade": "ok",
-      "closed": false,
-      "job": "628818753"
-    },
-    {
-      "id": "a2a65894-1f6d-42d4-9643-2684c7d46421-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
-      "type": "Price",
-      "cust": "Well, I'll talk to my husband. Any rough ballpark about how much their system would be.",
-      "answer": "I just do the repairs. It does go based on the home, on the size of the unit. So it's not something that I could roughly even give a price because it does vary... They'd come out, sit down, go over stuff with you, answer all your questions.",
-      "tech": "Cole Pantol",
-      "date": "2026-02-05",
-      "grade": "great",
       "closed": false,
       "job": "628818753"
     },
@@ -1258,17 +1236,6 @@
       "job": "629520815"
     },
     {
-      "id": "8ec692da-7e03-4aa5-ad87-c0a467cad9a9-XYpMBXpv6TVg9okInQemgsAIw1B3-1",
-      "type": "Stall / Think About It",
-      "cust": "Okay. All right. I will go ahead and review this and I'll let you know.",
-      "answer": "Yeah, again, I would say sooner rather than later because your warranty is pretty close. So we can always get somebody out.",
-      "tech": "Francisco Arreola Jr.",
-      "date": "2026-02-12",
-      "grade": "ok",
-      "closed": false,
-      "job": "629667698"
-    },
-    {
       "id": "c6c2b3fc-b04c-4508-86f3-620c016a10a4-QSgW0Qp6bKP82NeJl9A5ckCGhts1-1",
       "type": "Doubt / Distrust",
       "cust": "I don't know, like, we don't know what... Skeptical. Because we just had our plumbing thing done and, you know, I feel like you're going to come in and it's going to be another twenty thousand dollar job... I'm just feeling. I'm skeptical.",
@@ -1333,17 +1300,6 @@
       "grade": "ok",
       "closed": false,
       "job": "627823557"
-    },
-    {
-      "id": "7bdc4d35-5ec5-47f0-af2b-434eb11a5cec-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-1",
-      "type": "Price",
-      "cust": "It sounds to me that it's cheaper to just replace the whole thing.",
-      "answer": "Well, it might, which is why I do have option C right here. You could speak with one of our install specialists... so that way you can compare and contrast, apples to apples, and it's a free consultation for them to come through.",
-      "tech": "Andrew Trujillo",
-      "date": "2026-02-13",
-      "grade": "ok",
-      "closed": false,
-      "job": "629451539"
     },
     {
       "id": "7bdc4d35-5ec5-47f0-af2b-434eb11a5cec-uRoNvVAJhDZXMKB2yLsFt1Sm6te2-2",
@@ -1678,17 +1634,6 @@
       "type": "Doubt / Distrust",
       "cust": "The technician that was here before... he was trying to push to buy a new unit... I don't like that... it was scare tactics.",
       "answer": "No, 100%... I'm not here to sell you anything you don't need... I'll give you the report and let you know what will happen if you leave it, but the rest is up to you guys.",
-      "tech": "Nikko April",
-      "date": "2026-02-18",
-      "grade": "ok",
-      "closed": false,
-      "job": "628716068"
-    },
-    {
-      "id": "3a87f75c-c1e9-47cb-9e75-d2127a3e7ffa-92hu453CMjMS3az2iJV9GyPLhsX2-2",
-      "type": "Stall / Think About It",
-      "cust": "We have already plans, we have to go to California... we're not gonna wait till June... definitely before end of March or beginning of April.",
-      "answer": "I would push more towards March \u2014 once you get closer to summer prices go up... visit it now while pricing is really good, no obligation, you can think about it.",
       "tech": "Nikko April",
       "date": "2026-02-18",
       "grade": "ok",
@@ -2180,16 +2125,6 @@
       "grade": "great",
       "closed": false,
       "job": "630091422"
-    },
-    {
-      "id": "a62222b5-c5e1-4fe4-ab28-3fc1615e2b0d-EEysxQbMq9cgRrQMAWov1pJGJGx2-1",
-      "type": "Price",
-      "cust": "Well, I have a question because if I were to do this, it's still leaking and all that extra stuff, right?",
-      "answer": "So option B is going to be future repair...roughly cost around 8 to 10,000...we are overpaying by approximately 18%...$3,200 is a lot of money along with having eight to $10,000...is why we have our option C, which would be speak to somebody about updating your system to the standards of today.",
-      "tech": "Jaden Szelestey",
-      "date": "2026-02-22",
-      "grade": "great",
-      "closed": false
     },
     {
       "id": "7d66bf6d-a88b-4580-ade0-f1b4066e3350-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",

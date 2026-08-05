@@ -5242,17 +5242,6 @@
       "job": "645911189"
     },
     {
-      "id": "47a8badf-f579-4a2c-871c-134b6f51f245-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
-      "type": "Doubt / Distrust",
-      "cust": "is there anything that can be done? ... we automatically assume that the compressor needs to be replaced. Is there anything that can be done to address the fact that's drawn too many amps?",
-      "answer": "There's nothing we can do to lower those amps because that damage has already been done to the compressor. There's no way to open it up or even put anything on there to make that number like a safe number.",
-      "tech": "Cole Pantol",
-      "date": "2026-06-08",
-      "grade": "ok",
-      "closed": false,
-      "job": "630509098"
-    },
-    {
       "id": "5e2861eb-7829-45cf-a62b-baf91602f511-GFg7TsAzwnexN1iJ489ReAY05wf1-1",
       "type": "Stall / Think About It",
       "cust": "I think I'm gonna skip on that right now. Um, just let me think about everything...I usually like to get different quotes...I just compete prices. Do you guys do a price match or anything?",
@@ -5383,17 +5372,6 @@
       "grade": "great",
       "closed": false,
       "job": "649631997"
-    },
-    {
-      "id": "da0f63f0-86d2-4498-805f-d8ebb046731e-LHPyzDeQsNek3Dzj7AlgurDjs6E2-1",
-      "type": "Price",
-      "cust": "Does your company\u2014 do they price match?",
-      "answer": "No, not that I know of at least, but that is a question for the partnership or something like that. Yeah, I'm just the repair guy.",
-      "tech": "Benjamin Wyllie",
-      "date": "2026-06-05",
-      "grade": "ok",
-      "closed": false,
-      "job": "649477944"
     },
     {
       "id": "657f38b4-1941-4e28-8b3c-dbe82c0ca212-LHPyzDeQsNek3Dzj7AlgurDjs6E2-1",

@@ -1333,17 +1333,6 @@
       "job": "624107025"
     },
     {
-      "id": "9525e8b2-ed3a-4953-bf21-1c7309f3862d-hUwt6xtja4T6o8jCUdsXJsPtmQX2-2",
-      "type": "Stall / Think About It",
-      "cust": "I have so much work to do... Let's see. How about they give me a call?",
-      "answer": "Oh, no, no. So they have to measure everything out because systems have gotten a little bit bigger... the whole visit takes about 60 to 90 minutes.",
-      "tech": "Joe Mendoza",
-      "date": "2026-01-15",
-      "grade": "great",
-      "closed": false,
-      "job": "624107025"
-    },
-    {
       "id": "a66e974d-141e-4dc3-8347-de4cb1cbf718-GDqCZxyrIfY2Folxq4Byd39NzuW2-1",
       "type": "Spouse / Decision-Maker",
       "cust": "I'll talk to my husband and then we'll decide what we want to do.",
@@ -1636,17 +1625,6 @@
       "grade": "ok",
       "closed": false,
       "job": "624286670"
-    },
-    {
-      "id": "8fce2b6c-d36a-473d-ab80-724096838c9b-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
-      "type": "Stall / Think About It",
-      "cust": "Looks like a little bit later?",
-      "answer": "Not right now. I mean, what's your plan if that piece does fail?... The last thing I want to see is you just spend more money than what you need to do.",
-      "tech": "Cole Pantol",
-      "date": "2026-01-17",
-      "grade": "ok",
-      "closed": false,
-      "job": "626124558"
     },
     {
       "id": "923cf6ce-29e7-409e-9af6-6854860115bd-92hu453CMjMS3az2iJV9GyPLhsX2-1",
@@ -2236,17 +2214,6 @@
       "grade": "poor",
       "closed": false,
       "job": "626291407"
-    },
-    {
-      "id": "4a6497e4-cd3b-4fed-bf63-64ed9cee3b8c-EEysxQbMq9cgRrQMAWov1pJGJGx2-1",
-      "type": "Price",
-      "cust": "Possibly you have some leeway to give a little bit better discount... Can you look at that and tell me what would be the best, best, best price you can give me?",
-      "answer": "So we were at 172. The best that we can do, since that is already a discounted price, is we can get it down to 150. Does that work for you?",
-      "tech": "Jaden Szelestey",
-      "date": "2026-01-20",
-      "grade": "great",
-      "closed": false,
-      "job": "623529587"
     },
     {
       "id": "282b761f-ca27-4963-b4c1-1d9bde6493b6-EEysxQbMq9cgRrQMAWov1pJGJGx2-2",

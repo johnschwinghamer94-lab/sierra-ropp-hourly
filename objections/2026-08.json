@@ -24,17 +24,6 @@
       "job": "670548181"
     },
     {
-      "id": "ac31be8b-c95c-48a3-8907-b1842f780a2b-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
-      "type": "Price",
-      "cust": "You think this thing would land somewhere around $10K or under?",
-      "answer": "No, any reputable company in town, I can't get equipment for $10,000... we're all gonna be within $600 of each other... if you're looking for someone to get this done on the cheaper side... it's completely up to you.",
-      "tech": "Joe Mendoza",
-      "date": "2026-08-02",
-      "grade": "great",
-      "closed": false,
-      "job": "670585841"
-    },
-    {
       "id": "ac31be8b-c95c-48a3-8907-b1842f780a2b-hUwt6xtja4T6o8jCUdsXJsPtmQX2-2",
       "type": "Stall / Think About It",
       "cust": "But, uh, on that kind of a thing, I'm probably gonna have to get more quotes.",
@@ -99,17 +88,6 @@
       "grade": "ok",
       "closed": false,
       "job": "670243678"
-    },
-    {
-      "id": "015cd1e8-2a18-41a0-8abe-faffb8850633-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
-      "type": "System Too Old",
-      "cust": "And because of the age, is repair even a realistic option?",
-      "answer": "So, like, I would say we can repair anything, but 20 years repairs on it. That money that you spend on it, it's like spending good money for bad money, essentially... let's get someone out here that can talk to you about possibly starting from scratch again.",
-      "tech": "Francisco Valencia",
-      "date": "2026-08-04",
-      "grade": "ok",
-      "closed": false,
-      "job": "670881547"
     },
     {
       "id": "ff9a00ae-9f86-412f-b40a-fa39b9b4585e-hUwt6xtja4T6o8jCUdsXJsPtmQX2-1",
@@ -204,17 +182,6 @@
       "type": "Doubt / Distrust",
       "cust": "Don't. Don't bend me over today. Just get it.",
       "answer": "No, no. 100%, no. But I don't want to see you put a motor in it and then find out the blower motor fails a week later. You're like, who's just out here? So we check out everything every time.",
-      "tech": "Nikko April",
-      "date": "2026-08-04",
-      "grade": "great",
-      "closed": false,
-      "job": "671206899"
-    },
-    {
-      "id": "4e30956e-80a2-4a52-b719-2385a3197e8d-92hu453CMjMS3az2iJV9GyPLhsX2-2",
-      "type": "Price",
-      "cust": "So you can't give somebody a call and say, how much is one of those?",
-      "answer": "They have to come out, go up in your attic... Sierra doesn't do that. They come out, they inspect everything, give you the price. And that price is what? It doesn't change... there's no charge for them to do that.",
       "tech": "Nikko April",
       "date": "2026-08-04",
       "grade": "great",
