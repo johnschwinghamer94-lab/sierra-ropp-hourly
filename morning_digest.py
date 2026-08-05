@@ -211,6 +211,25 @@ def build_yesterday_silo(hourly, hourly_err, conv, conv_err, target_date_iso):
     return result, notes
 
 
+# health.json 'checks[].key' -> which deck it belongs to. Keys that are
+# genuinely shared infrastructure (neither deck exclusively) map to "both";
+# everything else is judged by what the check actually monitors.
+HEALTH_CHECK_DEPT = {
+    "livefeed": "silo",           # SILO live feed
+    "servicefeed": "service",     # Service live feed
+    "hourly": "silo",             # ROPP hourly capture (SILO)
+    "servicedata": "service",     # Service Pulse data
+    "servicecalls": "service",    # Calls board (Service)
+    "scorecards": "silo",         # SILO live scorecards
+    "servicecards": "service",    # Service live scorecards
+    "coaching": "silo",           # SILO daily plans
+    "service_coaching": "service",  # Service daily plans
+    "tgl_conv": "silo",           # ServiceTitan TGL truth — feeds SILO flip-rate/coach data
+    "tgl_truth_daily": "silo",    # TGL truth daily files — same lineage as tgl_conv
+    "deck_blob": "service",       # Service classic deck blob
+}
+
+
 def build_risks(sd, servicecalls, sc_hist, feed, health, sd_budget_target, notes):
     risks = []
 
@@ -254,6 +273,7 @@ def build_risks(sd, servicecalls, sc_hist, feed, health, sd_budget_target, notes
                     risks.append({
                         "severity": "high" if total < avg * 0.65 else "medium",
                         "area": "board",
+                        "dept": "service",
                         "text": (f"{d.strftime('%A')} {d.strftime('%-m/%-d')} has {total} booked vs "
                                  f"~{round(avg)} typical for that weekday — {gap} short with "
                                  f"{days_out} day{'s' if days_out != 1 else ''} to fill."),
@@ -278,6 +298,7 @@ def build_risks(sd, servicecalls, sc_hist, feed, health, sd_budget_target, notes
                 risks.append({
                     "severity": "high" if unassigned >= 5 else "medium",
                     "area": "board",
+                    "dept": "service",
                     "text": f"{day.get('label', day.get('date'))} has {unassigned} unassigned appointment"
                             f"{'s' if unassigned != 1 else ''} still on the board.",
                     "metric": {"date": day.get("date"), "unassigned": unassigned},
@@ -295,6 +316,7 @@ def build_risks(sd, servicecalls, sc_hist, feed, health, sd_budget_target, notes
             risks.append({
                 "severity": "high" if dept_pct < 75 else "medium",
                 "area": "recording",
+                "dept": "service",
                 "text": f"Service recording compliance is {dept_pct}% over the last 7 days — below the 90% target.",
                 "metric": {"deptPct": dept_pct},
             })
@@ -303,6 +325,7 @@ def build_risks(sd, servicecalls, sc_hist, feed, health, sd_budget_target, notes
                 risks.append({
                     "severity": "high",
                     "area": "recording",
+                    "dept": "service",
                     "text": f"{tech} recorded 0% of {t.get('eligible')} eligible jobs over the last 7 days.",
                     "metric": {"tech": tech, "eligible": t.get("eligible"), "pct": 0},
                 })
@@ -317,6 +340,7 @@ def build_risks(sd, servicecalls, sc_hist, feed, health, sd_budget_target, notes
             risks.append({
                 "severity": "high" if offer_rate < 40 else "medium",
                 "area": "pipeline",
+                "dept": "service",
                 "text": f"Service membership offer rate is {offer_rate}% dept-wide — well below a healthy target.",
                 "metric": {"offerRate": offer_rate},
             })
@@ -325,6 +349,7 @@ def build_risks(sd, servicecalls, sc_hist, feed, health, sd_budget_target, notes
                 risks.append({
                     "severity": "medium",
                     "area": "pipeline",
+                    "dept": "service",
                     "text": f"{t.get('name')} offered a membership on 0% of {t.get('membershipOfferJobs')} jobs today.",
                     "metric": {"tech": t.get("name"), "jobs": t.get("membershipOfferJobs")},
                 })
@@ -339,6 +364,7 @@ def build_risks(sd, servicecalls, sc_hist, feed, health, sd_budget_target, notes
                 risks.append({
                     "severity": "high" if c["status"] == "dead" else "low",
                     "area": "pipeline",
+                    "dept": HEALTH_CHECK_DEPT.get(c.get("key"), "both"),
                     "text": f"{c.get('label')} is {c['status']}: {c.get('note')}",
                     "metric": {"key": c.get("key"), "status": c.get("status")},
                 })
@@ -361,6 +387,7 @@ def build_risks(sd, servicecalls, sc_hist, feed, health, sd_budget_target, notes
                     risks.append({
                         "severity": "high" if gap < -0.15 * expected_share else "medium",
                         "area": "pipeline",
+                        "dept": "service",
                         "text": (f"August is behind pace: ${mtd_actual:,.0f} MTD vs ~${expected_share:,.0f} "
                                  f"expected through {elapsed_days} of {working_days} working days "
                                  f"(${abs(gap):,.0f} short)."),
@@ -370,6 +397,7 @@ def build_risks(sd, servicecalls, sc_hist, feed, health, sd_budget_target, notes
                     risks.append({
                         "severity": "low",
                         "area": "pipeline",
+                        "dept": "service",
                         "text": (f"August is ahead of pace: ${mtd_actual:,.0f} MTD vs ~${expected_share:,.0f} "
                                  f"expected through {elapsed_days} of {working_days} working days "
                                  f"(+${gap:,.0f})."),
@@ -472,6 +500,103 @@ def build_wins(sd, sc, co, notes):
     return wins[:3]
 
 
+def build_silo_coach_focus(coaching_silo, coaching_silo_err, conv, conv_err, target_date_iso, notes):
+    """Rank SILO reps by genuine weakness using coaching.json's own bands/
+    critical/headlineGap/closeRate, cross-checked against real flip rates
+    (calls -> TGLs) from tgl_truth/conv.json where available. Plan link comes
+    straight from coaching.json's per-rep 'plan' field (coaching/plans/<date>/
+    <First_Last>.html) when present."""
+    if coaching_silo is None:
+        notes.append(f"siloCoachFocus unavailable — coaching.json unavailable: {coaching_silo_err}")
+        return []
+
+    flip_by_tech = {}
+    if conv:
+        days = conv.get("days") or {}
+        cur = days.get(target_date_iso) or {}
+        for tech, v in cur.items():
+            calls = v.get("calls") or 0
+            tgls = v.get("tgls") or 0
+            if calls >= 3:
+                flip_by_tech[tech] = {"calls": calls, "tgls": tgls, "rate": round(tgls / calls * 100, 1)}
+    elif conv_err:
+        notes.append(f"siloCoachFocus flip-rate evidence skipped — tgl_truth/conv.json: {conv_err}")
+
+    band_weight = {"Weak": 3, "Moderate": 2, "Solid": 1, "Strong on wins": 0, "Strong": 0}
+    scored = []
+    for rep in coaching_silo.get("reps") or []:
+        name = rep.get("name")
+        critical = rep.get("critical") or {}
+        failed = [k for k, v in critical.items() if v is True]
+        bands = rep.get("bands") or {}
+        weak_bands = [k for k, v in bands.items() if band_weight.get(v, 0) >= 2]
+        score = len(failed) * 10 + sum(band_weight.get(v, 0) for v in bands.values())
+        if score == 0 and not failed:
+            continue
+        evidence_bits = []
+        if failed:
+            evidence_bits.append(f"failed critical flags: {', '.join(failed)}")
+        if weak_bands:
+            evidence_bits.append(f"weak/moderate bands: {', '.join(weak_bands)}")
+        if rep.get("closeRate"):
+            evidence_bits.append(f"close rate {rep['closeRate']}")
+        flip = flip_by_tech.get(name)
+        if flip:
+            evidence_bits.append(f"flip rate {flip['rate']}% ({flip['tgls']}/{flip['calls']} calls)")
+        scored.append({
+            "tech": name,
+            "reason": rep.get("headlineGap") or "Coaching plan flagged critical gaps.",
+            "evidence": "; ".join(evidence_bits) if evidence_bits else "See coaching plan for detail.",
+            "planLink": rep.get("plan"),
+            "_score": score,
+        })
+
+    scored.sort(key=lambda r: r["_score"], reverse=True)
+    top = scored[:5]
+    for r in top:
+        del r["_score"]
+    return top
+
+
+def build_silo_wins(coaching_silo, conv, target_date_iso, notes):
+    """SILO wins: standout flip rates (real volume via tgl_truth/conv.json)
+    or improved coaching bands (Strong / Strong on wins) with real close-rate
+    evidence from coaching.json. Empty array if nothing honestly qualifies —
+    never fabricated."""
+    wins = []
+    if conv:
+        days = conv.get("days") or {}
+        cur = days.get(target_date_iso) or {}
+        candidates = []
+        for tech, v in cur.items():
+            calls = v.get("calls") or 0
+            tgls = v.get("tgls") or 0
+            if calls >= 5:
+                rate = round(tgls / calls * 100, 1)
+                candidates.append((tech, calls, tgls, rate))
+        if candidates:
+            best = max(candidates, key=lambda c: c[3])
+            if best[3] >= 40:
+                wins.append({
+                    "tech": best[0],
+                    "text": f"{best[0]} flipped {best[2]} of {best[1]} calls to TGLs ({best[3]}%) on {target_date_iso}.",
+                })
+    else:
+        notes.append("siloWins flip-rate check skipped — tgl_truth/conv.json unavailable.")
+
+    if coaching_silo:
+        for rep in coaching_silo.get("reps") or []:
+            bands = rep.get("bands") or {}
+            if bands and all(v in ("Strong", "Strong on wins") for v in bands.values()) and rep.get("calls", 0) and rep.get("calls") >= 2:
+                wins.append({
+                    "tech": rep.get("name"),
+                    "text": f"{rep.get('name')} graded Strong across every stage on {rep.get('calls')} calls "
+                            f"({rep.get('closeRate')}).",
+                })
+
+    return wins[:3]
+
+
 def build_health_summary():
     hjson, err = HEALTH_JSON_HOLDER["val"]
     if not hjson:
@@ -557,10 +682,18 @@ def main():
     notes.extend(yl_notes)
 
     risks = build_risks(sd, servicecalls, sc_hist, feed, (co, co_err), None, notes)
-    coach_focus = build_coach_focus(sc_coaching, sc_coaching_err, co, co_err, notes)
-    wins = build_wins(sd, sc_coaching, co, notes)
+    service_coach_focus = build_coach_focus(sc_coaching, sc_coaching_err, co, co_err, notes)
+    service_wins = build_wins(sd, sc_coaching, co, notes)
+    silo_coach_focus = build_silo_coach_focus(coaching_silo, coaching_silo_err, conv, conv_err, target_date_iso, notes)
+    silo_wins = build_silo_wins(coaching_silo, conv, target_date_iso, notes)
     health_summary, h_notes = build_health_summary()
     notes.extend(h_notes)
+    notes.append(
+        "DEPRECATED: top-level 'coachFocus'/'wins' are aliases for "
+        "'serviceCoachFocus'/'serviceWins' kept for one release for backward "
+        "compatibility — new consumers should read the dept-specific fields "
+        "(serviceCoachFocus/serviceWins/siloCoachFocus/siloWins) directly."
+    )
 
     gen = NOW
     payload = {
@@ -569,8 +702,13 @@ def main():
         "forDate": target_date_iso,
         "yesterday": {"service": yest_service, "silo": yest_silo},
         "risks": risks,
-        "coachFocus": coach_focus,
-        "wins": wins,
+        "serviceCoachFocus": service_coach_focus,
+        "serviceWins": service_wins,
+        "siloCoachFocus": silo_coach_focus,
+        "siloWins": silo_wins,
+        # deprecated aliases — mirror service arrays, kept for one release
+        "coachFocus": service_coach_focus,
+        "wins": service_wins,
         "health": health_summary,
         "notes": notes,
     }
