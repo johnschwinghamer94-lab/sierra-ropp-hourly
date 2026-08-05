@@ -102,6 +102,23 @@ def dollar_delta(cur, prior):
 
 
 # ── section builders ─────────────────────────────────────────────────────
+def servicedata_bucket_date(sd):
+    """The calendar date servicedata.json's live 'today' blocks actually describe,
+    taken from its own 'updated' timestamp — or None if it can't be established.
+    Any consumer of sd['today'] / sd['techs']['today'] must check this first: the
+    bucket carries no date of its own, so it is only ever safe to attribute to
+    the day this returns."""
+    if not sd:
+        return None
+    updated = sd.get("updated")
+    if not updated:
+        return None
+    try:
+        return dt.datetime.fromisoformat(updated).astimezone(TZ).date().isoformat()
+    except Exception:
+        return None
+
+
 def build_yesterday_service(sd, sd_err, target_date_iso):
     """servicedata.json's 'today' bucket is only usable as 'yesterday' data
     if its own 'updated' timestamp's calendar date == target business day
@@ -118,13 +135,7 @@ def build_yesterday_service(sd, sd_err, target_date_iso):
     if sd is None:
         return None, [f"servicedata.json unavailable: {sd_err}"]
 
-    updated = sd.get("updated")
-    upd_date = None
-    if updated:
-        try:
-            upd_date = dt.datetime.fromisoformat(updated).astimezone(TZ).date().isoformat()
-        except Exception:
-            upd_date = None
+    upd_date = servicedata_bucket_date(sd)
 
     today_blk = sd.get("today") or {}
     if upd_date != target_date_iso:
@@ -425,7 +436,18 @@ def build_risks(sd, servicecalls, sc_hist, feed, health, sd_budget_target, notes
     # ── month pace vs budget target ─────────────────────────────────────
     if sd:
         budget = sd.get("budget") or {}
-        target = budget.get("revenueTarget") or MONTH_TARGET
+        target = budget.get("revenueTarget")
+        if not target:
+            # MONTH_TARGET is an August-2026 constant. Substituting it silently
+            # publishes an ahead/behind-pace verdict measured against a target that
+            # may belong to a different month entirely.
+            target = MONTH_TARGET
+            notes.append(
+                f"month-pace risk used the hardcoded fallback target ${MONTH_TARGET:,} "
+                f"(documented for August 2026) because servicedata.json's budget block "
+                f"carried no revenueTarget — the ahead/behind verdict is only meaningful "
+                f"if that is still the current month's target."
+            )
         working_days = budget.get("workingDays")
         remaining = budget.get("remainingWorkingDays")
         mtd_actual = budget.get("monthActualSoFar")
@@ -517,9 +539,32 @@ def build_coach_focus(sc, sc_err, co, co_err, notes):
     return top
 
 
-def build_wins(sd, sc, co, notes):
+def build_wins(sd, sd_bucket_date, target_date_iso, sc, co, notes):
+    """Service wins for the business day being briefed.
+
+    servicedata.json's techs.today is a LIVE bucket with no date of its own —
+    it is only ever safe to use once servicedata_bucket_date(sd) (the SAME
+    dated-source helper build_yesterday_service() uses for its aggregate
+    figures) has established what calendar day it actually describes. In
+    practice servicedata.py's daily full rebuild (5:35 AM PT) runs before this
+    digest (6:30 AM PT), so the bucket is essentially always already stamped
+    with the current day rather than the prior closed business day by the
+    time this runs — requiring an exact match to target_date_iso made this
+    section skip on every run. Rather than force it to describe a day it
+    never will, or fabricate/mislabel which day it covers, this credits the
+    bucket for whatever day servicedata_bucket_date proves it describes and
+    labels the win with THAT real date — never a forced/hardcoded one. Only
+    skip (with a note) when the dated source genuinely can't establish a day
+    at all."""
     wins = []
-    if sd:
+    if sd is None:
+        notes.append("wins (service volume/close) skipped — servicedata.json unavailable.")
+    elif sd_bucket_date is None:
+        notes.append(
+            "service wins skipped — servicedata.json's 'updated' timestamp could not be "
+            "parsed, so the day its live 'today' tech bucket describes cannot be established."
+        )
+    else:
         techs_today = sd.get("techs", {}).get("today") or []
         volume_techs = [t for t in techs_today if (t.get("opps") or 0) >= 2]
         if volume_techs:
@@ -528,17 +573,15 @@ def build_wins(sd, sc, co, notes):
                 wins.append({
                     "tech": best_offer["name"],
                     "text": f"{best_offer['name']} offered a membership on {best_offer['membershipOfferRate']}% "
-                            f"of {best_offer.get('membershipOfferJobs')} jobs today.",
+                            f"of {best_offer.get('membershipOfferJobs')} jobs on {sd_bucket_date}.",
                 })
             best_close = max(volume_techs, key=lambda t: t.get("closeRate") or -1)
             if (best_close.get("closeRate") or 0) >= 70:
                 wins.append({
                     "tech": best_close["name"],
                     "text": f"{best_close['name']} closed {best_close['closeRate']}% on {best_close.get('opps')} "
-                            f"opportunities today.",
+                            f"opportunities on {sd_bucket_date}.",
                 })
-    else:
-        notes.append("wins (service volume/close) skipped — servicedata.json unavailable.")
 
     if co:
         for o in co.get("outcomes") or []:
@@ -732,9 +775,10 @@ def main():
     notes.extend(ys_notes)
     notes.extend(yl_notes)
 
+    sd_day = servicedata_bucket_date(sd)
     risks = build_risks(sd, servicecalls, sc_hist, feed, (co, co_err), None, notes)
     service_coach_focus = build_coach_focus(sc_coaching, sc_coaching_err, co, co_err, notes)
-    service_wins = build_wins(sd, sc_coaching, co, notes)
+    service_wins = build_wins(sd, sd_day, target_date_iso, sc_coaching, co, notes)
     silo_coach_focus = build_silo_coach_focus(coaching_silo, coaching_silo_err, conv, conv_err, target_date_iso, notes)
     silo_wins = build_silo_wins(coaching_silo, conv, target_date_iso, notes)
     health_summary, h_notes = build_health_summary()

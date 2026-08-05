@@ -42,8 +42,11 @@ import st_client as st
 try:
     from zoneinfo import ZoneInfo
     PT = ZoneInfo("America/Los_Angeles")
-except Exception:
-    PT = None  # fall back to naive local time is not acceptable here — fail loud instead
+except Exception as _e:
+    # Output files are named by PACIFIC date. A silent UTC fallback files every
+    # late-afternoon TGL under tomorrow's date. Fail loud instead.
+    raise SystemExit("tgl_truth: America/Los_Angeles timezone unavailable (%s) — refusing "
+                     "to write PT-named files from UTC dates." % _e)
 
 OUT_DIR = HERE / "tgl_truth"
 
@@ -138,6 +141,17 @@ def main():
     if src_ids:
         for j in chunked_get("/jpm/v2/tenant/{tenant}/jobs", src_ids):
             src_numbers[j["id"]] = j.get("jobNumber", "")
+
+    # Zero TGLs across a 35-day window is not possible for this business; it means
+    # the jobs query came back empty (filter/permission change). Writing anyway
+    # would blank all 35 daily files and every consumer would read "no TGLs" as
+    # fact. Refuse and leave the last good files in place.
+    if total == 0 and any((OUT_DIR / f"{d.isoformat()}.json").exists() for d in trailing_dates):
+        raise SystemExit(
+            "tgl_truth: REFUSING TO WRITE — 0 lead jobs matched across %s..%s while dated "
+            "files already exist. That is an empty/failed query, not a real zero; existing "
+            "files are left untouched. Check the jobs query and job-type names."
+            % (trailing_dates[0].isoformat(), trailing_dates[-1].isoformat()))
 
     OUT_DIR.mkdir(exist_ok=True)
     generated = now_pt().isoformat()

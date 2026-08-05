@@ -49,7 +49,16 @@ def _estdetail(est, mtd=False):
         if sch and sch.year==YEAR and sch.month<=nmonths: d["mo"][sch.month-1]+=sub
     return det
 
-def _cas(conv, tl, ml, det):
+DATA_GAPS=[]
+def _cas(conv, tl, ml, det, label="YTD"):
+    # A CA absent from a source report silently renders as 0% close / $0 avg —
+    # identical on screen to a CA who genuinely closed nothing. Record which CA is
+    # missing from which report so a zero can be told apart from a gap.
+    for c in CAS:
+        miss=[nm for nm,src in (("CA Conversion",conv),("Tech Leads",tl),("Mkt Leads",ml)) if c not in src]
+        if miss:
+            DATA_GAPS.append(f"{label}: {c} missing from {', '.join(miss)} — that CA's close "
+                             "rate / averages render as 0, not as 'no data'")
     cas=[]
     for c in CAS:
         cv=conv.get(c); t=tl.get(c); m=ml.get(c); d=det[c]
@@ -86,8 +95,12 @@ def _dept(cas, rng):
 def build():
     est=_load("estimate")
     nmonths = TODAY.month
-    cas_ytd=_cas(_rowmap(_load("ca_conversion")),_rowmap(_load("ca_techleads")),_rowmap(_load("ca_mktleads")),_estdetail(est,False))
-    cas_mtd=_cas(_rowmap(_load("ca_conversion_mtd")),_rowmap(_load("ca_techleads_mtd")),_rowmap(_load("ca_mktleads_mtd")),_estdetail(est,True))
+    DATA_GAPS.clear()
+    if not est["rows"]:
+        raise RuntimeError("ca_live: cache/estimate.json holds 0 rows — refusing to build a "
+                           "CA deck of $0/0 opportunities from an empty report cache.")
+    cas_ytd=_cas(_rowmap(_load("ca_conversion")),_rowmap(_load("ca_techleads")),_rowmap(_load("ca_mktleads")),_estdetail(est,False),"YTD")
+    cas_mtd=_cas(_rowmap(_load("ca_conversion_mtd")),_rowmap(_load("ca_techleads_mtd")),_rowmap(_load("ca_mktleads_mtd")),_estdetail(est,True),"MTD")
     ytd_range = f"Jan 1 – {MON_ABBR[TODAY.month-1]} {TODAY.day}, {YEAR}"
     mtd_range = f"{MONTHS[TODAY.month-1]} 1 – {TODAY.day}, {YEAR}"
     ytd=_dept(cas_ytd,ytd_range); mtd=_dept(cas_mtd,mtd_range)
@@ -117,10 +130,13 @@ def build():
        "weekly":[{"label":f"{k.month}/{k.day}","total":round(weekly[k])} for k in sorted(weekly)],
        "leadGen":[],"mtd":{**mtd,"month":MONTHS[TODAY.month-1]}}
     D.update(ytd)   # YTD fields at top level (default view)
+    if DATA_GAPS:
+        D["dataGaps"]=list(DATA_GAPS)
     return D
 
 if __name__ == "__main__":
     D=build(); open(os.path.join(HERE,"ca_sales_data.json"),"w").write(json.dumps(D,separators=(",",":")))
+    for g in D.get("dataGaps",[]): print("  WARN:",g)
     print("YTD: total $%s mkt $%s tgl $%s | MTD(Jul): total $%s mkt $%s tgl $%s"%(
         format(D["total"],","),format(D["mktTotal"],","),format(D["tglTotal"],","),
         format(D["mtd"]["total"],","),format(D["mtd"]["mktTotal"],","),format(D["mtd"]["tglTotal"],",")))

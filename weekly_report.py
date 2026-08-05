@@ -26,11 +26,21 @@ REP_SCHEDULED, REP_CANCEL = ("technician", 660537364), ("technician", 642928003)
 def run_rep(rep, F, T, dt=1):
     for _ in range(8):
         try:
-            return st.run_report(rep[0], rep[1], [{"name": "DateType", "value": dt},
+            r = st.run_report(rep[0], rep[1], [{"name": "DateType", "value": dt},
                 {"name": "From", "value": F}, {"name": "To", "value": T}], page=1, page_size=5000)
         except urllib.error.HTTPError as e:
             if e.code == 429: time.sleep(15); continue
             raise
+        # Only page 1 is ever read. If the report has more, every count in this
+        # PDF is silently truncated — and a low number in a weekly report reads
+        # as a bad week, not as a bug.
+        if r.get("hasMore"):
+            raise RuntimeError(
+                "report %s/%s returned more than one page (5000 rows) for %s..%s — this "
+                "script only reads page 1, so continuing would silently under-count every "
+                "figure in the weekly PDF. Add pagination before re-running."
+                % (rep[0], rep[1], F, T))
+        return r
     raise RuntimeError("report retries")
 def _flds(r): return [f["name"] if isinstance(f, dict) else f for f in r["fields"]]
 def _vjob(s): s = str(s).strip(); return s.isdigit() and len(s) >= 6

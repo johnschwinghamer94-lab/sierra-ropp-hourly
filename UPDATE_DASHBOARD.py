@@ -27,10 +27,18 @@ def _load_cancel_exclusions():
     """Job numbers to drop from the Cancellation count: true duplicate TGL tickets whose
     partner job was NOT canceled (a real duo ticket that resolved). Maintained by
     refresh_dup_exclusions.py. Fail-safe: excludes nothing if the file is missing/bad."""
+    p = SCRIPT_DIR / "cancel_dup_exclusions.json"
+    if not p.exists():
+        return set()
     try:
-        d = json.loads((SCRIPT_DIR / "cancel_dup_exclusions.json").read_text())
+        d = json.loads(p.read_text())
         return set(str(x).strip() for x in d.get("exclude", []))
-    except Exception:
+    except Exception as e:
+        # Present-but-unreadable is different from absent: the file exists, so
+        # exclusions are EXPECTED, and swallowing this inflates the cancellation
+        # count on the Cancellations tab with no visible sign.
+        print("WARN: cancel_dup_exclusions.json exists but could not be read (%s) — "
+              "duplicate-TGL cancellations will NOT be excluded this build." % e)
         return set()
 CANCEL_EXCLUDE = _load_cancel_exclusions()
 _CANCEL_EXCLUDED_COUNT = 0   # set during parse_all, read by build_cancel
@@ -137,11 +145,19 @@ def to_date(v):
     if isinstance(v, datetime): return v.date()
     if isinstance(v, date):     return v
     try:    return datetime.strptime(str(v)[:10], "%Y-%m-%d").date()
-    except: return None
+    except (ValueError, TypeError): return None
+
+# Count of report cells that would not parse as a number and were treated as 0.0.
+# Every one of these is silently missing revenue, so the total is reported at the
+# end of the build instead of disappearing one cell at a time.
+_FNUM_BAD = []
 
 def fnum(v):
     try:    return float(v)
-    except: return 0.0
+    except (ValueError, TypeError):
+        if v not in (None, ""):
+            _FNUM_BAD.append(repr(v)[:40])
+        return 0.0
 
 def is_maint(bu): return "Maintenance" in str(bu or "")
 def is_svc(bu):   return "Service" in str(bu or "")
@@ -236,7 +252,11 @@ def sub_by_srcjob():
     d = {}
     try:
         rows = load_rows("ROPP_Estimate_TGLs.xlsx")
-    except Exception:
+    except Exception as e:
+        # The two reports price TGLs differently, so a silent swap changes every
+        # revenue figure on the page. Say which one is actually being used.
+        print("  NOTE: ROPP_Estimate_TGLs unavailable (%s) — TGL revenue falls back to "
+              "ROPP_TGLs_Scheduled col10, which prices TGLs differently." % e)
         rows = None
     if rows:
         hdr = [str(c or "").strip().lower() for c in rows[0]]
@@ -262,7 +282,9 @@ def tgl_estimates():
     ESTIMATE AC/TGLS report (header-detected cols; flat or grouped). Fallback to Scheduled."""
     try:
         rows = load_rows("ROPP_Estimate_TGLs.xlsx")
-    except Exception:
+    except Exception as e:
+        print("  NOTE: ROPP_Estimate_TGLs unavailable (%s) — TGL estimates fall back to "
+              "ROPP_TGLs_Scheduled." % e)
         rows = None
     out = []
     if rows:
@@ -623,10 +645,22 @@ def _end(html, i):
         k+=1
     return -1
 
+# Consts the template did not contain, so their data block could NOT be injected.
+# A skipped block leaves the PREVIOUS values baked into the template — the page
+# still renders and still looks current (the header date is rewritten either
+# way), so a renamed/removed const silently publishes yesterday's numbers.
+# Collected here and turned into a hard failure before the file is written.
+_SKIPPED_CONSTS = []
+
+def _skip(name, kind):
+    _SKIPPED_CONSTS.append(name)
+    print("  (SKIP) %s — const not found in template; its %s would keep the "
+          "template's OLD baked-in values" % (name, kind))
+
 def replace_const(html, name, value):
     js=json.dumps(value,ensure_ascii=False)
     m=re.search(r'const\s+'+re.escape(name)+r'\s*=\s*',html)
-    if not m: print("  (skip)",name); return html
+    if not m: _skip(name, "data block"); return html
     i=m.end()
     if html[i] in '{[': k=_end(html,i); return html[:i]+js+html[k+1:]
     j=html.index(';',i); return html[:i]+js+html[j:]
@@ -634,7 +668,7 @@ def replace_const(html, name, value):
 def js_obj(d): return "{"+",".join(k+":"+json.dumps(v) for k,v in d.items())+"}"
 def replace_raw(html, name, raw):
     m=re.search(r'const\s+'+re.escape(name)+r'\s*=\s*',html)
-    if not m: print("  (skip)",name); return html
+    if not m: _skip(name, "totals block"); return html
     i=m.end()
     if html[i]=='{': k=_end(html,i); return html[:i]+raw+html[k+1:]
     j=html.index(';',i); return html[:i]+raw+html[j:]
@@ -642,7 +676,7 @@ def replace_raw(html, name, raw):
 def replace_list(html, name, lst):
     arr="["+",".join('"'+n.replace('"','\\"')+'"' for n in lst)+"]"
     m=re.search(r'const\s+'+re.escape(name)+r'\s*=\s*\[',html)
-    if not m: print("  (skip)",name); return html
+    if not m: _skip(name, "name list"); return html
     i=m.end()-1; k=_end(html,i); return html[:i]+arr+html[k+1:]
 
 def patch_sets(html):
@@ -672,6 +706,23 @@ def main():
     names=[n for n in techs if "," not in n]
     AT = build_allteams(techs)
     at_s, at_n, at_a = alltotals(AT)
+    # An empty input set is indistinguishable from "a real zero" once it reaches
+    # the page: every tile renders 0 calls / 0 TGLs / $0 / 0.0% and looks like a
+    # confident answer on a wall display. A year-to-date department board is never
+    # legitimately all-zero, so treat it as the failed fetch it actually is.
+    if not techs or (at_a["ytd_c"] == 0 and at_a["ytd_t"] == 0):
+        raise SystemExit(
+            "REFUSING TO BUILD: the source reports yielded no usable rows "
+            "(%d techs, %d YTD calls, %d YTD TGLs). That is a failed fetch/empty cache, "
+            "not a real zero — publishing it would put 0 calls / 0 TGLs / $0 on the "
+            "dashboard as if it were fact. Check SILO_Reports/ (or the API cache when "
+            "ROPP_SOURCE=api) and re-run." % (len(techs), at_a["ytd_c"], at_a["ytd_t"]))
+    if at_a["ytd_t"] > 0 and at_a["ytd_rev"] == 0:
+        raise SystemExit(
+            "REFUSING TO BUILD: %d YTD TGLs but $0 YTD revenue — the TGL revenue join "
+            "(ROPP_Estimate_TGLs, with ROPP_TGLs_Scheduled as fallback) produced nothing. "
+            "Publishing would show every revenue/pace tile at $0. Check those two reports."
+            % at_a["ytd_t"])
     blocks = {
         "INITIAL_DATA": build_initial(techs),
         "CANCEL_DATA": build_cancel(techs,cancel,today,months),
@@ -696,8 +747,19 @@ def main():
     html=patch_sets(html)
     cur=today.strftime("%b ")+str(today.day)+", "+str(YEAR)
     html=re.sub(r'Jan 1 [-–] [A-Z][a-z]{2} \d{1,2}, \d{4}', "Jan 1 – "+cur, html)
+    if _SKIPPED_CONSTS:
+        raise SystemExit(
+            "REFUSING TO WRITE the dashboard: %d const(s) were not found in template %s "
+            "and therefore kept the template's OLD values while the header date was "
+            "rewritten to today — that publishes stale numbers under a fresh date. "
+            "Missing: %s. Fix the template (or the const name) and re-run."
+            % (len(_SKIPPED_CONSTS), tmpl.name, ", ".join(_SKIPPED_CONSTS)))
     out=a.out or (f"ROPP_Dashboard_{YEAR}_DEPARTMENT_Sierra_"+today.strftime('%b%d')+".html")
     (SCRIPT_DIR/out).write_text(html,encoding="utf-8")
+    if _FNUM_BAD:
+        print("WARN: %d report cell(s) were not numeric and were counted as $0 "
+              "(revenue is understated by whatever they held): %s"
+              % (len(_FNUM_BAD), ", ".join(sorted(set(_FNUM_BAD))[:8])))
     print("DEPT YTD:", at_a['ytd_c'], "calls /", at_a['ytd_t'], "TGLs /", at_a['ytd_rate'], "%  MTD",
           at_a['mtd_c'], "/", at_a['mtd_t'], "/", at_a['mtd_rate'], "%")
     print("Saved:", SCRIPT_DIR/out)

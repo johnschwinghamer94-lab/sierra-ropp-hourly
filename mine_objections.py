@@ -184,8 +184,11 @@ def check_closed(job_num, call_date):
         tgls = truth.get("tgls", {})
         if numeric_id in tgls:
             return True
-    except:
-        pass
+    except (ValueError, TypeError) as e:
+        # Unparseable transcript date — the next-day TGL check is skipped, so this
+        # call can only ever be graded "not closed". Say so instead of vanishing.
+        print(f"  note: next-day TGL check skipped for job {numeric_id} — bad call date "
+              f"{call_date!r} ({e})", file=sys.stderr)
 
     # Check YTD sources
     ytd = load_ytd_sources()
@@ -268,16 +271,23 @@ def merge_into_month_file(objections):
     """Merge objections into appropriate month files."""
     by_month = {}
 
+    dropped = 0
     for obj in objections:
         date_str = obj["date"]
         try:
             month = date_str[:7]  # YYYY-MM
-        except:
+        except (TypeError, KeyError):
+            dropped += 1
             continue
 
         if month not in by_month:
             by_month[month] = []
         by_month[month].append(obj)
+
+    if dropped:
+        print(f"  WARN: {dropped} objection(s) had no usable date and were dropped — "
+              "they are missing from the month files and from every summary total.",
+              file=sys.stderr)
 
     for month, objs in by_month.items():
         month_file = OBJECTIONS_DIR / f"{month}.json"
@@ -355,6 +365,7 @@ def main():
         return
 
     all_objections = []
+    failed_folders = []
 
     for folder in to_mine:
         try:
@@ -363,6 +374,10 @@ def main():
             all_objections.extend(objs)
             mined_state[folder.name] = datetime.utcnow().isoformat() + "Z"
         except Exception as e:
+            # Not marked mined, so it retries next run — but say so plainly at the
+            # end too, or a folder that fails every time just never shows up in the
+            # objection stats and nobody notices.
+            failed_folders.append((folder.name, str(e)))
             print(f"Error mining {folder.name}: {e}", file=sys.stderr)
 
     # Merge into month files
@@ -398,6 +413,11 @@ def main():
     print(f"  ok: {grades['ok']}")
     print(f"  poor: {grades['poor']}")
     print(f"\nFolders remaining unmined: {remaining}")
+    if failed_folders:
+        print(f"\nWARN: {len(failed_folders)} folder(s) FAILED and contributed nothing to the "
+              "counts above (they stay unmined and will be retried):")
+        for name, err in failed_folders:
+            print(f"  {name}: {err}")
 
 if __name__ == "__main__":
     main()

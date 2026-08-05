@@ -36,6 +36,12 @@ FOLDER = "CLAUDE STUFF/SILO_Reports"
 GH = {"Authorization": "token " + GHTOK, "Accept": "application/vnd.github+json"}
 PUBAPI = "https://api.github.com/repos/" + PUB + "/contents/"
 
+# Anything that made this tick's numbers less trustworthy than a clean run.
+# Published into hourly.json as "degraded" so the condition is visible in the
+# artifact (not just in an Actions log nobody reads), and any non-empty list
+# exits the process nonzero so the workflow goes red.
+DEGRADED = []
+
 
 def _load_tgl_oneoff_exclusions():
     """One-off manual TGL corrections by John (e.g. a lead ticket typed today
@@ -45,10 +51,20 @@ def _load_tgl_oneoff_exclusions():
     Safe to prune entries older than ~30 days ("added" field)."""
     try:
         p = Path(__file__).resolve().parent / "tgl_oneoff_exclusions.json"
+        if not p.exists():
+            return {}
         with open(p, "r") as f:
             data = json.load(f)
-        return data if isinstance(data, dict) else {}
-    except Exception:
+        if not isinstance(data, dict):
+            print(f"WARN: {p.name} is not a JSON object — ignoring it; "
+                  "John's manual TGL corrections are NOT being applied this run.")
+            return {}
+        return data
+    except Exception as e:
+        # Silently returning {} here re-counts TGLs John has already corrected
+        # away, so say which file is broken.
+        print(f"WARN: could not read tgl_oneoff_exclusions.json ({e}) — "
+              "John's manual TGL corrections are NOT being applied this run.")
         return {}
 
 
@@ -292,10 +308,14 @@ def _ensure_st_creds():
         return True
     raw = os.environ.get("ST_CREDS_JSON", "")
     if not raw.strip():
+        print("NOTE: ST_CREDS_JSON not set and no ~/.servicetitan/sierra.json — "
+              "ServiceTitan today-fetch unavailable, using the OneDrive Excel path.")
         return False
     try:
         json.loads(raw)
-    except Exception:
+    except Exception as e:
+        print(f"WARN: ST_CREDS_JSON is present but not valid JSON ({e}) — "
+              "ServiceTitan today-fetch unavailable, using the OneDrive Excel path.")
         return False
     fp.parent.mkdir(parents=True, exist_ok=True); fp.write_text(raw); os.chmod(fp, 0o600)
     return True
@@ -383,6 +403,9 @@ def _entity_tgls_today(today):
 
     jts = {x["id"]: x.get("name", "") for x in paged("/jpm/v2/tenant/{tenant}/job-types", {})}
     oneoff_exclusions = _load_tgl_oneoff_exclusions()
+    _skipped_flip_lookup = []     # flip-day candidates dropped by an appointment-lookup error
+    _unresolved_techs = []        # TGLs whose owning tech could not be resolved
+    _assumed_ran_today = []       # source calls counted as ran-today because the lookup failed
 
     # Same-day lens: lead ticket created today.
     leads = []
@@ -423,7 +446,10 @@ def _entity_tgls_today(today):
             r = st.api_get("/jpm/v2/tenant/{tenant}/appointments",
                            {"jobId": src, "pageSize": 50})
             appts_src = r.get("data", [])
-        except Exception:
+        except Exception as e:
+            # Fails CLOSED: this candidate is dropped, so a burst of these
+            # UNDERCOUNTS today's TGLs. Name it rather than vanishing.
+            _skipped_flip_lookup.append(f"lead job {lj.get('jobNumber','?')} src {src}: {e}")
             continue
         _days = set()
         for a in appts_src:
@@ -468,7 +494,12 @@ def _entity_tgls_today(today):
                 names = [a.get("technicianName") for a in r.get("data", [])
                          if a.get("active") and a.get("technicianName")]
                 name = names[0] if names else "Unassigned"
-            except Exception:
+                if name == "Unassigned":
+                    _unresolved_techs.append(f"src {L['src']}: no active assignment")
+            except Exception as e:
+                # The TGL still counts dept-wide, but it lands on "Unassigned"
+                # instead of the tech who earned it.
+                _unresolved_techs.append(f"src {L['src']}: {e}")
                 name = "Unassigned"
         by_tech[name] = by_tech.get(name, 0) + 1
         # Guard: skip TGLs with no resolvable source-call id -- never add a phantom call.
@@ -486,7 +517,10 @@ def _entity_tgls_today(today):
                 r = st.api_get("/jpm/v2/tenant/{tenant}/appointments",
                                {"jobId": L["src"], "pageSize": 50})
                 days = {ad.date() for ad in (_parse_dt(a.get("start")) for a in r.get("data", [])) if ad}
-            except Exception:
+            except Exception as e:
+                # Documented fail-open: assume the source call ran today, which
+                # can OVERCOUNT calls-ran (and so understate close rate).
+                _assumed_ran_today.append(f"src {L['src']}: {e}")
                 days = {today_date}
             _src_ran_days[L["src"]] = days
         if today_date not in days:
@@ -494,6 +528,16 @@ def _entity_tgls_today(today):
         src = str(src)
         src_all.add(src)
         src_by_tech.setdefault(name, set()).add(src)
+    for lbl, bucket, effect in (
+            ("flip-day candidates skipped (appointment lookup failed)", _skipped_flip_lookup,
+             "TGLs may be UNDERCOUNTED"),
+            ("TGLs attributed to Unassigned (tech unresolved)", _unresolved_techs,
+             "per-tech TGL credit is wrong"),
+            ("source calls assumed ran-today (appointment lookup failed)", _assumed_ran_today,
+             "calls-ran may be OVERCOUNTED")):
+        if bucket:
+            print(f"  WARN: {len(bucket)} {lbl} — {effect}: " + "; ".join(bucket[:5])
+                  + (" ..." if len(bucket) > 5 else ""))
     return len(leads), by_tech, src_all, src_by_tech
 
 
@@ -562,7 +606,11 @@ def main():
             r = requests.post(
                 f"https://api.github.com/repos/{SELF}/actions/workflows/{wf}/dispatches",
                 headers=GH, json=body)
-            print(f"Kicked {wf} ({note}) -> HTTP {r.status_code}")
+            # A 4xx here means the relay never got kicked — the live feeds simply
+            # never start. Prefix it WARN so it is greppable in the Actions log.
+            tagn = "" if r.status_code < 300 else "WARN: dispatch REJECTED — "
+            print(f"{tagn}Kicked {wf} ({note}) -> HTTP {r.status_code}"
+                  + ("" if r.status_code < 300 else f" {r.text[:200]}"))
         except Exception as e:
             print(f"WARN: could not dispatch {wf}:", e)
 
@@ -592,7 +640,8 @@ def main():
             rev_rows, tgl_rows, sch_rows = _st_today(today)
             print("Today source: ServiceTitan Reporting API")
         except Exception as e:
-            print(f"ServiceTitan today-fetch failed ({e}); falling back to OneDrive Excel")
+            print(f"WARN: ServiceTitan today-fetch failed ({e}); falling back to the "
+                  "OneDrive Excel today-only exports (same reports, slower to land)")
             rev_rows = None
 
     # FALLBACK: today-only Excel exports from OneDrive via Graph (original behavior).
@@ -649,7 +698,21 @@ def main():
         techs.sort(key=lambda x: (-x["tgls"], -x["calls"], x["name"]))
         print(f"TGL lens: entity created-today ({e_tot}); calls ROPP-audited ({calls})")
     except Exception as e:
-        print(f"entity TGL count failed ({e}); keeping report lens")
+        # The entity lens IS the definition of the published numbers (TGLs count on
+        # their creation day; calls are ROPP-tag-audited). The report lens is a
+        # DIFFERENT definition — scheduled-date TGLs and an unaudited calls set — so
+        # falling back silently republishes the gauge under numbers that do not match
+        # what the dashboard claims to show, and freezes those wrong values into
+        # hourly_state.json's hour bucket for the rest of the day. Publish the
+        # fallback (a frozen board is not better than a flagged one) but mark the
+        # artifact degraded and fail the run so Actions goes red and emails.
+        DEGRADED.append(f"entity TGL/ROPP-audit lens failed ({type(e).__name__}: {e}) — "
+                        "calls/TGLs on this tick come from the REPORT lens "
+                        "(scheduled-date TGLs, calls NOT ROPP-tag-audited) and do not "
+                        "match the dashboard's stated definition.")
+        print("ERROR: entity TGL count failed (%s); FELL BACK to the report lens — "
+              "published calls/TGLs for this tick use a different definition and are "
+              "not ROPP-tag-audited." % e)
     sched = sched_metrics(sch_rows) if sch_rows else None
 
     st, _ = pget("hourly_state.json")
@@ -672,6 +735,8 @@ def main():
     out = {"date": today, "updated": n.strftime("%I:%M %p").lstrip("0"),
            "generatedMs": int(n.timestamp() * 1000),   # health banner reads this
            "today": today_block, "hours": series}
+    if DEGRADED:
+        out["degraded"] = list(DEGRADED)
 
     _, ssha = pget("hourly_state.json")
     pput("hourly_state.json", st, ssha, f"Cloud(graph) hourly state {today} {hh}:00")
@@ -693,6 +758,14 @@ def main():
         except Exception as e:
             print("WARN: could not dispatch daily.yml:", e)
 
+    if DEGRADED:
+        print("DEGRADED RUN — published numbers are not fully trustworthy:")
+        for d in DEGRADED:
+            print("  * " + d)
+        return 1
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    import sys as _sys
+    _sys.exit(main() or 0)

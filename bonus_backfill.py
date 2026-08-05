@@ -99,9 +99,11 @@ def post(row, url):
             last = e
             print(f"  post retry {attempt + 1}/3 after {type(e).__name__}: {e}")
             _time.sleep(10 * (attempt + 1))
-    print(f"  WARN: post gave up after 3 attempts ({type(last).__name__}) — row skipped, nightly run will heal it")
+    print(f"  WARN: post gave up after 3 attempts ({type(last).__name__}: {last}) — row NOT written")
+    FAILED_POSTS.append((row.get("jobNumber"), f"{type(last).__name__}: {last}"))
     return None
 
+FAILED_POSTS = []
 posted = 0
 skipped_b = 0
 for t in sorted(chosen, key=lambda x: (x["date"], x["t"])):
@@ -127,10 +129,25 @@ for t in sorted(chosen, key=lambda x: (x["date"], x["t"])):
               f"{'CANCELED' if canceled else ('SAME DAY' if sd else 'SCHEDULED')}"
               f"{'  [B]' if other else ''}")
     else:
-        post({"op": "update", "jobNumber": t["src"], "ran": ran, "sold": sold,
-              "sameDay": sd, "canceled": canceled}, url)
+        # Count the row as filled only if the webhook actually accepted it —
+        # incrementing regardless reported "filled 42" when some of those 42 were
+        # given up on after 3 retries and never reached the sheet.
+        if post({"op": "update", "jobNumber": t["src"], "ran": ran, "sold": sold,
+                 "sameDay": sd, "canceled": canceled}, url) is None:
+            continue
     posted += 1
 
 print(f"bonus_backfill {start}..{end}: {len(tgls)} leads -> {len(chosen)} calls; "
       f"{'DRY, would fill' if DRY else 'filled'} {posted}"
-      f"{f'; skipped {skipped_b} (no SHEET_WEBHOOK_B)' if skipped_b else ''}.")
+      f"{f'; skipped {skipped_b} (no SHEET_WEBHOOK_B)' if skipped_b else ''}"
+      f"{f'; FAILED {len(FAILED_POSTS)}' if FAILED_POSTS else ''}.")
+
+if FAILED_POSTS:
+    # Rows that exhausted their retries are missing from the bonus sheet. Exiting 0
+    # here made a partly-written backfill indistinguishable from a complete one.
+    import sys as _sys
+    print("FAILED rows (not written to the sheet — re-run this backfill for the same range):",
+          file=_sys.stderr)
+    for jobnum, err in FAILED_POSTS:
+        print(f"  job {jobnum}: {err}", file=_sys.stderr)
+    _sys.exit(1)

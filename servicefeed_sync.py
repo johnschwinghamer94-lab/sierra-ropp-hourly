@@ -277,6 +277,21 @@ def log(msg):
         pass
 
 
+_WARN_ONCE = {}
+def warn_throttled(key, msg, every=300):
+    """log(msg) at most once per `every` seconds per key — see livefeed_sync."""
+    now = time.time()
+    if now - _WARN_ONCE.get(key, 0) >= every:
+        _WARN_ONCE[key] = now
+        log(msg)
+
+
+# Publish results that mean "the artifact did NOT land". A cycle returning one
+# of these is a FAILURE even though nothing raised — see cloud_main(). Kept in
+# lockstep with livefeed_sync.py so the two relays count errors identically.
+PUBLISH_FAILURE_RESULTS = {"PUSH FAILED"}
+
+
 def fmt_t(dt_local):
     s = dt_local.strftime("%I:%M%p").lstrip("0")
     return s[:-2] + ("p" if s.endswith("PM") else "a")
@@ -296,6 +311,14 @@ def paged(path, params, tenant="SIE"):
     out, page = [], 1
     while True:
         r = st.api_get(path, dict(params, page=page, pageSize=500), tenant)
+        # A real ServiceTitan list response always carries page/pageSize/hasMore
+        # even when data is empty. A completely empty dict means st_client got a
+        # 2xx with an empty body — treat that as a fetch FAILURE, not as "no
+        # jobs today", so it counts toward the consecutive-error guard instead
+        # of publishing an empty board. (data:[] on a real response is still a
+        # legitimate empty result and passes through.)
+        if not r:
+            raise RuntimeError("empty response body from " + path + " (page %d)" % page)
         out += r.get("data", [])
         if not r.get("hasMore"):
             return out
@@ -368,8 +391,16 @@ def _lookups(today):
 
 # ── photo count probe ───────────────────────────────────────────────────────
 
-_PHOTO_ENDPOINT_OK = None  # None = untested, True/False once known this session
+_PHOTO_ENDPOINT_OK = None  # None = untested, True once known good this session
 def photo_count(job_id, tenant="SIE"):
+    """Attachment count for a job, or None when it can't be determined (the UI
+    renders nothing rather than a confident 0).
+
+    A failure used to latch _PHOTO_ENDPOINT_OK=False for the WHOLE 5-hour
+    session with no log line, so one transient timeout on one job silently
+    blanked the photo column for every job until the session rolled. Now: a
+    4xx that means "this tenant/endpoint doesn't serve attachments" still
+    latches off (once, loudly); anything else is treated as a per-job blip."""
     global _PHOTO_ENDPOINT_OK
     if _PHOTO_ENDPOINT_OK is False:
         return None
@@ -390,8 +421,19 @@ def photo_count(job_id, tenant="SIE"):
                 break
             page += 1
         return n
-    except Exception:
-        _PHOTO_ENDPOINT_OK = False
+    except urllib.error.HTTPError as ex:
+        if ex.code in (401, 403, 404, 501):
+            _PHOTO_ENDPOINT_OK = False
+            log("photo probe DISABLED for this session — attachments endpoint returned "
+                "HTTP %d on job %s; every card's photo count will be null" % (ex.code, job_id))
+        else:
+            warn_throttled("photos", "WARN photo probe failed on job %s (HTTP %d) — "
+                           "photos:null for that card only" % (job_id, ex.code))
+        return None
+    except Exception as ex:
+        # transient (timeout / network): do NOT blind the whole session for it
+        warn_throttled("photos", "WARN photo probe failed on job %s — photos:null for "
+                       "that card only: %s" % (job_id, repr(ex)[:120]))
         return None
 
 
@@ -831,9 +873,19 @@ def arm_next():
 
 
 def load_state():
+    """A MISSING state file is normal (first run / fresh runner). A file that
+    exists but won't parse is not: it silently restarts the day — stage times
+    reset to checkmarks and the day's hour-by-hour KPI series is lost. Never
+    crash the relay for it (the successor would re-crash on the same file and
+    the board would stay dark), but make it impossible to miss in the log."""
     try:
         return json.loads(STATE.read_text(encoding="utf-8"))
-    except Exception:
+    except FileNotFoundError:
+        return {}
+    except Exception as ex:
+        log("STATE CORRUPT: %s exists but did not parse (%s) — starting from an EMPTY "
+            "state. Stage times and today's hour-by-hour series are lost. Fix or delete "
+            "the file." % (STATE.name, repr(ex)[:150]))
         return {}
 
 
@@ -901,24 +953,33 @@ def cloud_main():
                 arm_next()            # belt & suspenders: re-arm on the way out too
             break
         if in_window(now):
+            # A cycle counts as FAILED when it raises *or* when it returns a
+            # publish-failure sentinel. "Nothing raised" is not the same as
+            # "the artifact landed": treating it that way would RESET the
+            # consecutive-error counter on a failed publish, so repeated
+            # publish failures could never reach the guard below.
+            failed = False
             try:
                 hb = time.time() - last_push > 240
                 r = cycle(force_heartbeat=hb)
                 if r == "pushed":
                     last_push = time.time()
-                log("cycle -> " + str(r))
+                failed = str(r) in PUBLISH_FAILURE_RESULTS
+                log(("cycle PUBLISH FAILURE -> " if failed else "cycle -> ") + str(r))
             except Exception as ex:
                 log("cycle ERROR: " + repr(ex)[:300])
-                # stale-credential zombie guard (8/3): a session holding a revoked
-                # token fails every publish without hanging — the dead-man never
-                # fires. Bail after 10 straight failures; successor gets fresh secrets.
-                _errs = globals().setdefault("_consec_errs", [0])
+                failed = True
+            # stale-credential zombie guard (8/3): a session holding a revoked
+            # token fails every publish without hanging — the dead-man never
+            # fires. Bail after 10 straight failures; successor gets fresh secrets.
+            _errs = globals().setdefault("_consec_errs", [0])
+            if failed:
                 _errs[0] += 1
                 if _errs[0] >= 10:
-                    log("10 consecutive cycle errors — exiting for a fresh session")
+                    log("10 consecutive cycle failures — exiting for a fresh session")
                     os._exit(4)
             else:
-                globals().setdefault("_consec_errs", [0])[0] = 0
+                _errs[0] = 0
         _beat["t"] = time.time()
         time.sleep(CYCLE_SECS)
 

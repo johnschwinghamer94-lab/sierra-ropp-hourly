@@ -82,15 +82,39 @@ def main():
     dst = sys.argv[2]
 
     new = []
-    for p in sorted(glob.glob(os.path.join(livecards_dir, "*.card.json"))):
+    rejected = 0
+    found = sorted(glob.glob(os.path.join(livecards_dir, "*.card.json")))
+    for p in found:
         c = load_card(p)
         if c is not None:
             new.append(c)
+        else:
+            rejected += 1
+    if found and not new:
+        # Every card on disk failed validation. Each one printed its own warning,
+        # but the merge would still finish "successfully" and republish the old
+        # cards under a fresh generated timestamp — making a totally broken writer
+        # look like a quiet afternoon on the health banner.
+        print(f"warning: all {len(found)} card file(s) in {livecards_dir} were rejected — "
+              "no new cards merged; scorecards.json will only carry cards from earlier runs "
+              "while reporting a fresh generated time.", file=sys.stderr)
 
-    try:
-        cur = json.load(open(dst, encoding="utf-8")).get("cards", [])
-    except Exception:
+    # A missing scorecards.json is the first run — start empty. A PRESENT but
+    # unreadable one is a different thing entirely: swallowing it silently drops
+    # every carried-forward card, and since the merge then writes the file back
+    # out, the 48h window on the Live Feed quietly collapses to just whatever
+    # cards this run happened to find. Refuse rather than truncate.
+    if not os.path.exists(dst):
+        print(f"note: {dst} does not exist yet — starting a new scorecards file")
         cur = []
+    else:
+        try:
+            cur = json.load(open(dst, encoding="utf-8")).get("cards", [])
+        except Exception as e:
+            print(f"FATAL: {dst} exists but could not be parsed ({e}). Refusing to overwrite "
+                  "it, because doing so would silently delete every carried-forward card and "
+                  "shrink the Live Feed's 48h window to this run's cards only.", file=sys.stderr)
+            sys.exit(1)
 
     # carried-forward cards predate normalization, so heal them too -- otherwise a
     # card that stays inside the 48h window but gets no fresh livecard keeps its old
@@ -130,8 +154,8 @@ def main():
     os.replace(tmp, dst)
 
     techs = {c["tech"] for c in cards if c.get("tech")}
-    print(f"scorecards.json: {len(cards)} cards ({len(new)} new, {len(cur)} prior) "
-          f"across {len(techs)} techs"
+    print(f"scorecards.json: {len(cards)} cards ({len(new)} new, {len(cur)} prior, "
+          f"{rejected} rejected) across {len(techs)} techs"
           + (f"; normalized {healed} carried-forward tech name(s)" if healed else ""))
 
 

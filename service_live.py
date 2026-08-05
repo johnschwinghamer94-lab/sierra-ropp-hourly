@@ -63,6 +63,11 @@ def agg(ts):
 
 def build():
     tm=_team_map()
+    if not tm:
+        # Every tech's team label comes from here; an empty map silently collapses
+        # the whole team breakdown into one unlabeled "Other" bucket.
+        print("  WARN: service_fieldconv cache produced no team labels — the team split on "
+              "the deck will show every tech under 'Other'.")
     # membership rows: per-tech (all + July) and per-month dept
     memb=_load("service_memberships"); MF=memb["fields"]; iSold=MF.index("SoldBy"); iSoldOn=MF.index("SoldOn")
     msold_all=Counter(); msold_jul=Counter(); memb_mo=defaultdict(int)

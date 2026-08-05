@@ -313,13 +313,16 @@ def observation_date(sd_live, feed):
         try:
             return dt.date.fromisoformat(d)
         except ValueError:
-            pass
+            print("  WARN: servicefeed.json 'date' is unparseable (%r) — falling through to "
+                  "servicedata's timestamp for the observation date." % d)
     u = (sd_live or {}).get("updated")
     if u:
         try:
             return dt.datetime.fromisoformat(u).date()
         except ValueError:
-            pass
+            print("  WARN: servicedata.json 'updated' is unparseable (%r) — assuming the live "
+                  "artifacts describe TODAY, which is the exact assumption this function "
+                  "exists to avoid making blindly." % u)
     return TODAY
 
 
@@ -1050,9 +1053,24 @@ def main():
         if os.path.exists(lp):
             try:
                 prev_json = json.load(open(lp))
-            except Exception:
-                prev_json = None
+            except Exception as e:
+                # `panel` is this engine's own bootstrapped dataset — captured from
+                # the live artifacts one run at a time and re-derivable from
+                # nothing (the docstring: "cannot be backfilled"). Swallowing a
+                # parse error resets it to a single day and then publishes that
+                # over the accumulated sample the regression depends on.
+                raise SystemExit(
+                    "REFUSING TO RUN: the remote coaching_roi.json was unavailable and the local "
+                    "fallback %s exists but could not be parsed (%s). Continuing would reset the "
+                    "self-captured `panel` to today only and publish it over the accumulated "
+                    "sample, which cannot be backfilled. Fix or remove that file deliberately."
+                    % (lp, e))
     prev_panel = (prev_json or {}).get("panel", {})
+    # Losing the panel is silent in the output otherwise: the engine simply reports
+    # "insufficient data" as if it had always been early days.
+    if prev_json is not None and not prev_panel:
+        print("  WARN: a prior coaching_roi.json was found but carries NO panel days — "
+              "the self-captured sample is starting over from this run.")
 
     days = (outcomes_doc or {}).get("days", {})
     outcomes = (outcomes_doc or {}).get("outcomes", [])

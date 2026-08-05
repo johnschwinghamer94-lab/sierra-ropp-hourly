@@ -37,8 +37,12 @@ sys.path.insert(0, str(HERE))
 try:
     from zoneinfo import ZoneInfo
     PT = ZoneInfo("America/Los_Angeles")
-except Exception:
-    PT = None  # fall back to naive local time is not acceptable here — fail loud instead
+except Exception as _e:
+    # Every day key in conv.json is a PACIFIC calendar date. Falling back to UTC
+    # silently shifts the boundary 7-8h, so evening calls land on the wrong day
+    # and per-day flip rates quietly disagree with the dashboard. Fail loud.
+    raise SystemExit("tgl_conv: America/Los_Angeles timezone unavailable (%s) — refusing "
+                     "to bucket days in UTC, which would misdate every evening call." % _e)
 
 import UPDATE_DASHBOARD as U
 
@@ -92,6 +96,22 @@ def main():
         days[dkey][tech]["calls"] += 1
 
     out_days = {dkey: dict(techs) for dkey, techs in days.items()}
+
+    # A 40-day window in which no tech ran a single call is not a slow month, it
+    # is an empty input set (missing cache, failed report fetch). Writing it would
+    # overwrite the good conv.json with all-zero days, and every consumer —
+    # coaching plans, morning_digest's SILO section, siloWins — would then quote
+    # 0 calls / 0 TGLs / 0% as fact. This is exactly how the headline coaching
+    # metric froze for nine days. Refuse, keep the last good file, exit nonzero.
+    total_calls = sum(t["calls"] for techs in out_days.values() for t in techs.values())
+    total_tgls = sum(t["tgls"] for techs in out_days.values() for t in techs.values())
+    if total_calls == 0 and total_tgls == 0:
+        raise SystemExit(
+            "tgl_conv: REFUSING TO WRITE conv.json — 0 calls and 0 TGLs across the whole "
+            "%s..%s window. That is a failed/empty source read, not a real zero; the "
+            "existing conv.json is left untouched. Check ROPP_TGLs_Created.xlsx and "
+            "Revenue_By_JobType.xlsx (or the API cache when ROPP_SOURCE=api)."
+            % (trailing_dates[0].isoformat(), trailing_dates[-1].isoformat()))
 
     OUT_DIR.mkdir(exist_ok=True)
     payload = {

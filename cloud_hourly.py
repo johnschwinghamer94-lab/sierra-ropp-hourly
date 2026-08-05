@@ -57,10 +57,29 @@ def _find(*subs):
 
 
 def count_today():
+    """Today's distinct calls + TGLs from the newest Power Automate uploads.
+
+    HARD FAIL when a report file is absent. Previously a missing upload fell
+    through to `0`, and the 0 was published to hourly.json as a real figure —
+    a confident "0 calls / 0 TGLs / 0%" on the wall display, indistinguishable
+    from a genuinely quiet hour, plus a poisoned hourly_state.json bucket that
+    turns the next hour's delta into a bogus spike. A missing input is NOT a
+    zero: refuse to publish and let the workflow go red / the page's staleness
+    meter do its job. (An EMPTY report file is still a legitimate 0 — that is a
+    real reading and passes through.)"""
     rev = _find("revenue")
     tgl = _find("tgls", "created") or _find("tgls")
-    calls = sum(1 for _ in _grouped(_rows(rev), 3)) if rev else 0
-    tgls  = sum(1 for _ in _grouped(_rows(tgl), 1)) if tgl else 0
+    missing = [n for n, p in (("revenue", rev), ("tgls-created", tgl)) if not p]
+    if missing:
+        have = sorted(os.path.basename(p) for p in glob.glob("hourly_reports/*.xlsx"))
+        raise SystemExit(
+            "ABORT: no %s report in hourly_reports/ — refusing to publish a "
+            "fabricated 0 for today. Present files: %s"
+            % (" or ".join(missing), ", ".join(have) or "(none)"))
+    calls = sum(1 for _ in _grouped(_rows(rev), 3))
+    tgls = sum(1 for _ in _grouped(_rows(tgl), 1))
+    print("inputs: revenue=%s (%d calls) | tgls=%s (%d tgls)"
+          % (os.path.basename(rev), calls, os.path.basename(tgl), tgls))
     return calls, tgls
 
 
@@ -69,11 +88,21 @@ def rate(a, b):
 
 
 def get(path):
+    """(obj, sha) from the dashboard repo; (None, None) only for a genuine 404.
+
+    Any OTHER non-200 now raises. Collapsing every failure to (None, None) meant
+    a transient GitHub 5xx/401 on the hourly_state.json read looked identical to
+    "file doesn't exist yet": main() would reset the state to an empty {} and
+    republish hourly.json with ONLY the current hour, silently discarding the
+    whole day's accumulated hour-by-hour series."""
     r = requests.get(API + path, headers=H)
     if r.status_code == 200:
         j = r.json()
         return json.loads(base64.b64decode(j["content"])), j["sha"]
-    return None, None
+    if r.status_code == 404:
+        return None, None
+    raise RuntimeError("GitHub GET %s failed: HTTP %d %s"
+                       % (path, r.status_code, r.text[:200]))
 
 
 def put(path, obj, sha, msg):

@@ -71,6 +71,17 @@ def build_blob():
     D = service_live.build()
     blob = json.dumps(D, separators=(",", ":"))
     assert "</script" not in blob.lower(), "unsafe </script sequence in SERVICE_DATA JSON"
+    # service_live.build() reads the caches unconditionally and happily returns a
+    # fully-formed deck of zeros if a cache came back empty. That deck publishes
+    # cleanly (the regex splice succeeds, the date range says today) and puts
+    # "0 techs / $0 / 0%" on the wall as a real answer. Refuse instead.
+    dept = D.get("dept") or {}
+    if not dept.get("techs") or not dept.get("rev"):
+        raise RuntimeError(
+            "REFUSING TO PUBLISH: SERVICE_DATA built with %s techs and $%s YTD revenue — "
+            "that is an empty/failed report cache, not a real zero. The live deck keeps its "
+            "previous blob. Check the cache/service_*.json refresh above."
+            % (dept.get("techs"), dept.get("rev")))
     return D, blob
 
 

@@ -65,7 +65,11 @@ try:  # historical backfill: workflow_dispatch can override via SIRO_LOOKBACK_DA
       # 400 (Sierra has used Siro since 2025 — John 2026-07-28; objection mining wants full history)
     LOOKBACK_DAYS = min(400, int(os.environ.get("SIRO_LOOKBACK_DAYS", "").strip() or LOOKBACK_DAYS))
 except ValueError:
-    pass
+    # Silently ignoring a typo'd backfill override means a dispatch asked for 400
+    # days, got 3, and reported success — the backfill just never happened.
+    print("WARN: SIRO_LOOKBACK_DAYS=%r is not an integer — IGNORED, using the default "
+          "%d-day lookback. A backfill dispatch will NOT have backfilled."
+          % (os.environ.get("SIRO_LOOKBACK_DAYS"), LOOKBACK_DAYS))
 STATE_PRUNE_DAYS = 14      # keep pulled-ids in state for N days, then drop
 MIN_DURATION_MS = 300_000  # skip recordings under 5 minutes — same floor as both
                            # Mac writers (siro_livecoach_poll / siro_download_mac)
@@ -259,8 +263,11 @@ def load_state():
     if STATE_FILE.exists():
         try:
             return json.loads(STATE_FILE.read_text())
-        except (OSError, json.JSONDecodeError):
-            pass
+        except (OSError, json.JSONDecodeError) as e:
+            # Recoverable (dedupe also falls back to file-existence checks), but
+            # it means this run re-examines every recording in the window.
+            print(f"WARN: {STATE_FILE.name} could not be read ({e}) — starting from an empty "
+                  "pulled-ids state; every recording in the lookback window will be re-checked.")
     return {"done": {}}
 
 
@@ -485,6 +492,22 @@ def main():
           f"{mirrored} mirrored into transcripts/, {errors} error(s). "
           f"Service: {svc_pulled} pulled, {svc_skipped_exists} skipped, "
           f"{svc_mirrored} mirrored, {svc_errors} error(s).")
+
+    # Per-recording errors self-heal: state["done"] is only updated on success, so
+    # a failed recording is retried next run. That is genuine resilience and stays
+    # green. But a run where EVERY attempt failed is an outage wearing a success
+    # exit code — the transcripts simply never arrive and the coaching plans get
+    # thinner with nothing going red.
+    total_errors = errors + svc_errors
+    total_pulled = pulled + svc_pulled
+    if total_errors and not total_pulled:
+        print(f"FAILED: {total_errors} recording(s) errored and NOT ONE was pulled — "
+              "treating this as an outage, not a partial run. Transcripts for these calls "
+              "are missing until a later run succeeds.", file=sys.stderr)
+        return 1
+    if total_errors:
+        print(f"WARN: {total_errors} recording(s) errored (retried automatically next run, "
+              "since state is only marked on success).")
     return 0
 
 

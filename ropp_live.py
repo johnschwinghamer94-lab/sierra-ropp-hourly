@@ -118,6 +118,15 @@ def _fetch_report(cache_name, frm, to):
         fields = [f["name"] for f in r["fields"]]; out += r.get("data", [])
         if not r.get("hasMore") or not r.get("data"): break
         page += 1; time.sleep(1)
+    # A valid Reporting-API response ALWAYS carries a field list, even for a
+    # window with zero data rows. An empty `fields` means a malformed/empty 200
+    # body (st_client returns {} for an empty payload), and every caller would
+    # silently turn that into "report has no rows" -> a real-looking 0 on the
+    # dashboard. Zero ROWS stays legal (a narrow window can genuinely be empty).
+    if not fields:
+        raise RuntimeError("report %s [%s..%s] returned no field list — "
+                           "malformed/empty API response, refusing to treat it as 0 rows"
+                           % (cache_name, frm, to))
     return fields, out
 
 def fetch_report_rows(canonical, frm, to):
@@ -151,9 +160,20 @@ def cache_reports(frm=None, to=None):
             fields=[f["name"] for f in r.get("fields",[])]; rows+=r.get("data",[])
             if not r.get("hasMore") or not r.get("data"): break
             page+=1; time.sleep(1)
-        # Atomic write (tmp + replace): a run killed mid-write can never leave a
-        # corrupt cache file behind. Compact separators keep the files ~20% smaller.
+        # Never let a bad fetch overwrite a good cache with an empty one. The
+        # cache IS the ROPP builder's input: a field-less (malformed 200) or
+        # zero-row result written here would silently rebuild the whole
+        # dashboard out of nothing and publish confident 0s. cache_reports() is
+        # only ever called for a YTD span, so 0 rows is never legitimate.
         path = os.path.join(HERE, "cache", name + ".json")
+        if not fields:
+            raise RuntimeError("report %s [%s..%s] returned no field list — "
+                               "refusing to overwrite cache/%s.json" % (name, frm, to, name))
+        if not rows and os.path.exists(path):
+            raise RuntimeError("report %s [%s..%s] returned 0 rows — refusing to "
+                               "overwrite the existing cache/%s.json (a YTD report is "
+                               "never empty; this is a fetch failure, not a real zero)"
+                               % (name, frm, to, name))
         with open(path + ".tmp", "w") as f:
             json.dump({"fields": fields, "rows": rows, "dateType": dt_}, f, separators=(",", ":"))
         os.replace(path + ".tmp", path)

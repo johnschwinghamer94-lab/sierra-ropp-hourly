@@ -164,6 +164,13 @@ def build_today_row_from_live(name, sd_live, feed):
             if siro and siro.get("rec"):
                 recorded += 1
     out["recorded"] = recorded
+    # Persist eligible directly. It used to be reconstructed from recorded/pct in
+    # build_compliance, which divides by zero-safe-but-wrong logic when pct == 0:
+    # a tech who recorded 0 of 8 jobs reconstructed to eligible == 0 and dropped
+    # OUT of the department denominator entirely — the worst offenders were the
+    # ones made invisible, and morning_digest's "recorded 0% of N eligible jobs"
+    # risk (which tests `eligible`) could never fire for them.
+    out["eligible"] = eligible
     out["recordedPct"] = round(recorded / eligible * 100, 1) if eligible else None
     opps = out["callsRun"]
     out["lowVolume"] = (opps is None) or (opps < 2)
@@ -186,6 +193,7 @@ def build_history_row(rec):
         "membershipOfferRate": None,
         "optionsPerOpp": None,
         "recorded": None,              # recording history didn't exist before this engine
+        "eligible": None,
         "recordedPct": None,
         "lowVolume": (opps is None) or (opps < 2),
     }
@@ -232,17 +240,29 @@ def build_days(sd_hist, sd_live, feed, prev_days):
 def build_compliance(days):
     cutoff = TODAY - dt.timedelta(days=7)
     window_dates = [d for d in days if dt.date.fromisoformat(d) > cutoff and dt.date.fromisoformat(d) <= TODAY]
-    # recorded/eligible aren't stored separately on the row — recordedPct +
-    # recorded reconstruct eligible (eligible isn't persisted directly since
-    # the row schema only stores recorded + recordedPct).
+    # `eligible` is persisted on the row as of 2026-08-05. Rows written before
+    # that only carry recorded + recordedPct, so they still get reconstructed —
+    # but a 0% row from that era reconstructs to eligible 0 and is skipped rather
+    # than silently contributing a phantom "0 of 0" that flatters the department
+    # average. New rows carry the true denominator and count properly.
     per_tech = {}
+    skipped_legacy_zero = 0
     for d in window_dates:
         for name, row in days[d].items():
             recorded = row.get("recorded")
             pct = row.get("recordedPct")
-            if recorded is None or pct is None:
+            if recorded is None:
                 continue
-            eligible = round(recorded / (pct / 100)) if pct else recorded
+            eligible = row.get("eligible")
+            if eligible is None:
+                if pct is None:
+                    continue
+                if not pct:
+                    skipped_legacy_zero += 1
+                    continue
+                eligible = round(recorded / (pct / 100))
+            if not eligible:
+                continue
             e = per_tech.setdefault(name, {"recorded": 0, "eligible": 0})
             e["recorded"] += recorded
             e["eligible"] += eligible
@@ -255,7 +275,13 @@ def build_compliance(days):
         dept_eligible += e["eligible"]
     dept = {"recorded": dept_recorded, "eligible": dept_eligible,
             "pct": round(dept_recorded / dept_eligible * 100, 1) if dept_eligible else None}
-    return {"windowDays": window_dates, "techs": out_techs, "dept": dept}
+    if skipped_legacy_zero:
+        print("  NOTE: %d pre-2026-08-05 tech-day row(s) recorded 0%% and carry no stored "
+              "`eligible`, so their job count is unknown and they are excluded from the "
+              "compliance denominator — dept pct is therefore optimistic for those days."
+              % skipped_legacy_zero)
+    return {"windowDays": window_dates, "techs": out_techs, "dept": dept,
+            "legacyZeroRowsExcluded": skipped_legacy_zero}
 
 
 # ── 3. coaching focus -> metric classification ──────────────────────────────
@@ -378,8 +404,16 @@ def main():
         if os.path.exists(local_path):
             try:
                 prev_json = json.load(open(local_path))
-            except Exception:
-                prev_json = None
+            except Exception as e:
+                # `days` is an APPENDED fact table — the only copy of per-tech
+                # history this engine has. Swallowing a parse error here resets it
+                # to whatever today alone can supply and then publishes that over
+                # the good copy, silently deleting weeks of accumulated data.
+                raise SystemExit(
+                    "REFUSING TO RUN: the remote coaching_outcomes.json was unavailable and the "
+                    "local fallback %s exists but could not be parsed (%s). Continuing would "
+                    "rebuild the `days` fact table from today only and publish it over the "
+                    "accumulated history. Fix or remove that file deliberately." % (local_path, e))
     prev_days = (prev_json or {}).get("days", {})
 
     print("  servicedata_history.json: %d days" % len(sd_hist))

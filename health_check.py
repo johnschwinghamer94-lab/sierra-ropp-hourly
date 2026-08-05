@@ -113,6 +113,24 @@ def outside_ops_check(key, label, note="outside ops hours"):
     return make_check(key, label, "ok", None, None, None, note)
 
 
+# An artifact this old is dead no matter what time it is. Without this floor the
+# "outside ops hours" branch returned a flat "ok" for ANY age, so a feed that
+# died Friday afternoon read green all weekend and every night — the check was
+# structurally incapable of reporting the multi-day outage it exists to catch.
+HARD_DEAD_MIN = 24 * 60
+
+
+def offhours_check(key, label, age_min, budget_min, last_iso):
+    """Result for a check evaluated outside its ops window: 'ok' (the producer
+    isn't expected to be running), unless the artifact is stale beyond the
+    absolute floor, which is a real outage at any hour."""
+    if age_min is not None and age_min > HARD_DEAD_MIN:
+        return make_check(key, label, "dead", age_min, budget_min, last_iso,
+                          f"outside ops hours, but the artifact is {round(age_min / 60)}h old "
+                          f"(> {HARD_DEAD_MIN // 60}h) — this is a real outage, not an off-hours lull.")
+    return make_check(key, label, "ok", age_min, budget_min, last_iso, "outside ops hours")
+
+
 # ---------------------------------------------------------------------------
 # Individual checks. Each returns a check dict; each must catch its own
 # exceptions and degrade to a "dead" check rather than crash the run.
@@ -135,8 +153,7 @@ def check_generated_ms_feed(key, label, filename, budget_min, window, dead_note,
                            f"could not fetch/parse {filename}: {e}. {dead_note}")
 
     if not ops:
-        return make_check(key, label, "ok", age_min, budget_min, last.isoformat(),
-                           "outside ops hours")
+        return offhours_check(key, label, age_min, budget_min, last.isoformat())
 
     st = status_for(age_min, budget_min)
     note = "fresh" if st == "ok" else (warn_note if st == "warn" else dead_note)
@@ -186,7 +203,7 @@ def check_servicedata():
         return make_check(key, label, "dead", None, budget_min, None,
                            f"could not fetch/parse servicedata.json: {e}. Service Pulse numbers on the dashboard are stale.")
     if not ops:
-        return make_check(key, label, "ok", age_min, budget_min, last.isoformat(), "outside ops hours")
+        return offhours_check(key, label, age_min, budget_min, last.isoformat())
     st = status_for(age_min, budget_min)
     note = "fresh" if st == "ok" else ("Service Pulse data running behind." if st == "warn"
                                         else "Service Pulse numbers on the dashboard are stale.")
@@ -212,7 +229,7 @@ def check_servicecalls():
         return make_check(key, label, "dead", None, budget_min, None,
                            f"could not fetch/parse servicecalls.json: {e}. Calls board is stale or missing.")
     if not ops:
-        return make_check(key, label, "ok", age_min, budget_min, last.isoformat(), "outside ops hours")
+        return offhours_check(key, label, age_min, budget_min, last.isoformat())
     st = status_for(age_min, budget_min)
     note = "fresh" if st == "ok" else ("Calls board running behind." if st == "warn"
                                         else "Calls board is stale.")
@@ -492,16 +509,27 @@ def main():
     print()
     print(f"worst={worst}  counts={counts}")
 
+    publish_failed = None
     if os.environ.get("DASHBOARD_TOKEN", "").strip():
         try:
             publish_health(payload_text)
             print("Published health.json to " + PUB_REPO)
         except Exception as e:
-            print(f"WARN — could not publish health.json to dashboard repo: {e}", file=sys.stderr)
+            publish_failed = e
+            # The smoke alarm must never fail quietly. A swallowed PUT leaves the
+            # PREVIOUS health.json standing on the dashboard: the banner keeps
+            # showing the last successful run's statuses (quite possibly all-green)
+            # while this run's real findings never reach anyone, and the workflow
+            # exits 0 so nobody is emailed. Surface it and go red.
+            print(f"FATAL — could not publish health.json to {PUB_REPO}: {e}. "
+                  "The dashboard is still serving the PREVIOUS health.json, so its health "
+                  "banner is STALE and may show green while checks are dead. "
+                  f"This run's own findings were worst={worst} counts={counts}.",
+                  file=sys.stderr)
     else:
         print("DASHBOARD_TOKEN not set — skipping publish (wrote local health.json only).")
 
-    sys.exit(1 if counts["dead"] else 0)
+    sys.exit(1 if (counts["dead"] or publish_failed) else 0)
 
 
 if __name__ == "__main__":

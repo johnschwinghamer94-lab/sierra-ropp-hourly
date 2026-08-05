@@ -55,6 +55,25 @@ def fetch_report(cat, rid, params, label):
 
 def write_cache(name, fields, rows, extra=None):
     path = os.path.join(HERE, "cache", name + ".json")
+    # A report that suddenly returns 0 rows (parameter/permission/report-id drift)
+    # is silent here: the empty result overwrites a good cache, then service_live /
+    # ca_live build a deck of $0 and 0% from it and it gets published as fact.
+    # Regressing from data to no-data is never legitimate — refuse and keep the
+    # last good cache. ALLOW_EMPTY_CACHE=1 overrides for a genuine empty period.
+    if not rows and not os.environ.get("ALLOW_EMPTY_CACHE"):
+        try:
+            with open(path) as f:
+                prev_rows = len(json.load(f).get("rows") or [])
+        except (OSError, ValueError):
+            prev_rows = 0
+        if prev_rows:
+            raise RuntimeError(
+                "cache/%s.json: report returned 0 rows but the existing cache holds %d — "
+                "refusing to overwrite good data with an empty result (that publishes a $0 "
+                "deck). Check the report id/params. Set ALLOW_EMPTY_CACHE=1 to override."
+                % (name, prev_rows))
+        print(f"  WARN: {name} returned 0 rows and there was no prior cache — "
+              "downstream decks will show zeros for it.")
     payload = {"fields": fields, "rows": rows}
     if extra:
         payload.update(extra)
@@ -158,6 +177,15 @@ def fetch_service_monthly(today):
             cur_fields, cur_rows = fields, rows
         time.sleep(1)
     path = os.path.join(HERE, "cache", "service_monthly.json")
+    if not cur_rows:
+        # Legitimate on the 1st of a month before any job completes, so this is a
+        # loud note rather than a refusal — but it means the whole MTD half of the
+        # Service deck will render zeros, which must not pass unremarked.
+        print(f"  WARN: FC v1 returned 0 rows for the CURRENT month ({MONTHS[today.month-1]}) — "
+              "every MTD figure on the Service deck will be 0/$0 this build.")
+    if not monthly:
+        raise RuntimeError("service_monthly: no months built at all — refusing to write an "
+                           "empty monthly series over the existing cache.")
     payload = {"monthly": monthly, "cur_fields": cur_fields, "cur_rows": cur_rows}
     with open(path + ".tmp", "w") as f:
         json.dump(payload, f, separators=(",", ":"))

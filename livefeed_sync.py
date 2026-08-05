@@ -203,6 +203,20 @@ def log(msg):
     except Exception:
         pass
 
+_WARN_ONCE = {}
+def warn_throttled(key, msg, every=300):
+    """log(msg) at most once per `every` seconds per key. Per-lead API failures
+    would otherwise print once per lead per 90 s cycle and blow out the 400 KB
+    log — but they must not be silent either, so they get named on a throttle."""
+    now = time.time()
+    if now - _WARN_ONCE.get(key, 0) >= every:
+        _WARN_ONCE[key] = now
+        log(msg)
+
+# Publish results that mean "the artifact did NOT land". A cycle that returns
+# one of these is a FAILURE even though nothing raised — see cloud_main().
+PUBLISH_FAILURE_RESULTS = {"PUSH FAILED"}
+
 def fmt_t(dt_local):
     s = dt_local.strftime("%I:%M%p").lstrip("0")
     return s[:-2] + ("p" if s.endswith("PM") else "a")
@@ -221,6 +235,14 @@ def paged(path, params, tenant="SIE"):
     out, page = [], 1
     while True:
         r = st.api_get(path, dict(params, page=page, pageSize=500), tenant)
+        # A real ServiceTitan list response always carries page/pageSize/hasMore
+        # even when data is empty. A completely empty dict means st_client got a
+        # 2xx with an empty body — treat that as a fetch FAILURE, not as "no
+        # jobs today", so it counts toward the consecutive-error guard instead
+        # of publishing an empty board. (data:[] on a real response is still a
+        # legitimate empty result and passes through.)
+        if not r:
+            raise RuntimeError("empty response body from " + path + " (page %d)" % page)
         out += r.get("data", [])
         if not r.get("hasMore"):
             return out
@@ -406,7 +428,12 @@ def fetch_today():
             try:
                 appts_src = st.api_get("/jpm/v2/tenant/{tenant}/appointments",
                                        {"jobId": src, "pageSize": 50}).get("data", [])
-            except Exception:
+            except Exception as ex:
+                # skipping this candidate can UNDER-count today's TGLs (a flipped
+                # pre-booked lead silently won't land on the board) — say so.
+                warn_throttled("flipday", "WARN flip-day check failed for lead %s "
+                               "(src call %s) — candidate skipped, today's TGL count "
+                               "may be low: %s" % (lj.get("jobNumber", "?"), src, repr(ex)[:120]))
                 continue
             _days = set()
             for a in appts_src:
@@ -798,7 +825,13 @@ def lead_sameday(lead_id, ref_iso):
             d = r.get("data") or []
             dtl = parse_utc(d[0].get("start")) if d else None
             _LEAD_APPT[lead_id] = dtl.date().isoformat() if dtl else None
-        except Exception:
+        except Exception as ex:
+            # NOT cached, so it retries next cycle — but this cycle's payload
+            # coerces None to sd:false, i.e. a genuine SAME DAY ($30) TGL can
+            # render/post as SCHEDULED ($10). Name it rather than guess quietly.
+            warn_throttled("sameday", "WARN same-day lookup failed for lead %s — SAME DAY "
+                           "flag unknown this cycle (renders as scheduled): %s"
+                           % (lead_id, repr(ex)[:120]))
             return None
     v = _LEAD_APPT[lead_id]
     return None if v is None else v == ref_iso
@@ -817,8 +850,12 @@ def lead_ca(lead_id):
         if names:
             _LEAD_CA[lead_id] = names[0]
             return names[0]
-    except Exception:
-        pass
+    except Exception as ex:
+        # falls through to ran="Y"/"" instead of the "RYAN EMAIL" special case,
+        # so a failure here writes a wrong value into the bonus sheet's D column
+        warn_throttled("leadca", "WARN CA lookup failed for lead %s — bonus-sheet "
+                       "'ran' column falls back to the generic rule: %s"
+                       % (lead_id, repr(ex)[:120]))
     return None
 
 # sheet shows first names; the only non-obvious mapping on the roster
@@ -843,13 +880,24 @@ def _load_tgl_oneoff_exclusions():
     script (each of the two synced copies — repo + servicetitan/ — finds its own
     local file); tolerates a missing/invalid file (returns {} — behaves as
     before). Safe to prune entries older than ~30 days ("added" field)."""
+    p = Path(__file__).resolve().parent / "tgl_oneoff_exclusions.json"
     try:
-        p = Path(__file__).resolve().parent / "tgl_oneoff_exclusions.json"
         with open(p, "r") as f:
             data = json.load(f)
-        return data if isinstance(data, dict) else {}
-    except Exception:
+    except FileNotFoundError:
+        return {}                      # normal: no manual corrections in force
+    except Exception as ex:
+        # present but unreadable silently RE-ENABLES every excluded TGL — they
+        # come back onto the board, into the count, and onto the bonus sheet.
+        warn_throttled("oneoff", "WARN %s exists but could not be read (%s) — ALL one-off "
+                       "TGL exclusions are inactive this cycle; the TGL count may be high"
+                       % (p.name, repr(ex)[:120]))
         return {}
+    if not isinstance(data, dict):
+        warn_throttled("oneoff", "WARN %s is not a JSON object — one-off TGL exclusions "
+                       "inactive this cycle; the TGL count may be high" % p.name)
+        return {}
+    return data
 
 # Manager B (2026-07-21): the OTHER manager's bonus sheet — a copy of John's,
 # same Apps Script. His 8 techs (SHEET_EXCLUDE) route here instead of being
@@ -1112,14 +1160,33 @@ def publish(payload, force_heartbeat=False):
     git("commit", "-q", "-m", "Live feed " + payload["generated"])
     if git("push", "-q", "origin", "main", check=False).returncode:
         git("pull", "--rebase", "-q", check=False)
-        if git("push", "-q", "origin", "main", check=False).returncode:
+        p2 = git("push", "-q", "origin", "main", check=False)
+        if p2.returncode:
+            # The board is now STALE while the log looked like any other tick.
+            # Log the git stderr and return the failure sentinel, which the
+            # loops count as an error (see PUBLISH_FAILURE_RESULTS).
+            log("PUSH FAILED (rc=%d) — livefeed.json is committed locally but NOT "
+                "published; the board is stale: %s"
+                % (p2.returncode, (p2.stderr or "").strip()[:300]))
             return "PUSH FAILED"
     return "pushed"
 
 def load_state():
+    """Persisted stage times + the bonus-sheet ledger. A MISSING file is normal
+    (first run / fresh runner). A file that exists but won't parse is not: it
+    silently restarts the day — stage times reset to checkmarks AND the "sheet"
+    ledger is lost, so every TGL already logged today gets posted to the bonus
+    sheet a second time. Never crash the relay for it (the successor would just
+    re-crash on the same file and the board would stay dark all day), but make
+    it impossible to miss in the log."""
     try:
         return json.loads(STATE.read_text(encoding="utf-8"))
-    except Exception:
+    except FileNotFoundError:
+        return {}
+    except Exception as ex:
+        log("STATE CORRUPT: %s exists but did not parse (%s) — starting from an EMPTY "
+            "state. Stage times are lost and today's TGLs may be DOUBLE-POSTED to the "
+            "bonus sheet. Fix or delete the file." % (STATE.name, repr(ex)[:150]))
         return {}
 
 def save_state(state):
@@ -1187,22 +1254,33 @@ def cloud_main():
         if tick % SELF_UPDATE_EVERY == 0:
             check_self_update()       # re-execs in place if a newer commit landed
         if in_window(now):
+            # A cycle counts as FAILED when it raises *or* when it returns a
+            # publish-failure sentinel. The old `else: reset` assumed "nothing
+            # raised == success", so a cycle that came back "PUSH FAILED"
+            # RESET the consecutive-error counter instead of advancing it —
+            # repeated publish failures could never reach the guard that hands
+            # off to a fresh session, and the board would sit stale behind a
+            # log full of ordinary-looking "cycle -> ..." lines.
+            failed = False
             try:
                 hb = time.time() - last_push > 240
                 r = cycle(force_heartbeat=hb)
                 if r == "pushed":
                     last_push = time.time()
-                log("cycle -> " + str(r))
+                failed = str(r) in PUBLISH_FAILURE_RESULTS
+                log(("cycle PUBLISH FAILURE -> " if failed else "cycle -> ") + str(r))
             except Exception as ex:
                 log("cycle ERROR: " + repr(ex)[:300])
-                # stale-credential zombie guard (8/3) — see servicefeed_sync
-                _errs = globals().setdefault("_consec_errs", [0])
+                failed = True
+            # stale-credential zombie guard (8/3) — see servicefeed_sync
+            _errs = globals().setdefault("_consec_errs", [0])
+            if failed:
                 _errs[0] += 1
                 if _errs[0] >= 10:
-                    log("10 consecutive cycle errors — exiting for a fresh session")
+                    log("10 consecutive cycle failures — exiting for a fresh session")
                     os._exit(4)
             else:
-                globals().setdefault("_consec_errs", [0])[0] = 0
+                _errs[0] = 0
             keep_hourly_fresh()
         _beat["t"] = time.time()
         time.sleep(CYCLE_SECS)
@@ -1242,7 +1320,8 @@ def main():
                     r = cycle(force_heartbeat=hb)
                     if r == "pushed":
                         last_push = time.time()
-                    log("cycle -> " + str(r))
+                    log(("cycle PUBLISH FAILURE -> " if str(r) in PUBLISH_FAILURE_RESULTS
+                         else "cycle -> ") + str(r))
                 except Exception as ex:
                     log("cycle ERROR: " + repr(ex)[:300])
             time.sleep(CYCLE_SECS)

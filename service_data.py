@@ -126,19 +126,30 @@ def cloud_seed_files(pairs):
             try:
                 with open(local_path, "w", encoding="utf-8") as f:
                     f.write(txt)
-            except Exception:
-                pass
+            except Exception as ex:
+                # non-fatal (callers fall back to a full run), but name it —
+                # a silent seed failure looks exactly like "first run ever"
+                log("WARNING: could not write seeded %s to %s: %r — this run will "
+                    "behave as if the file were absent" % (repo_name, local_path, ex))
 
 
 def cloud_publish_files(pairs):
     """Push each (local_path, repo_name) pair back to the dashboard repo,
-    skip-if-unchanged vs. what cloud_seed_files() pulled at session start."""
+    skip-if-unchanged vs. what cloud_seed_files() pulled at session start.
+
+    An unreadable artifact is now a HARD failure. Every caller writes the file
+    immediately before publishing it, so a read error here means the artifact
+    this run was supposed to produce doesn't exist — and silently `continue`ing
+    published nothing while the run still exited 0, leaving the dashboard on
+    yesterday's data behind a green workflow. Go red instead."""
     for local_path, repo_name in pairs:
         try:
             with open(local_path, "r", encoding="utf-8") as f:
                 new_txt = f.read()
-        except Exception:
-            continue
+        except Exception as ex:
+            log("PUBLISH FAILED: cannot read %s (target %s): %r" % (local_path, repo_name, ex))
+            raise RuntimeError("refusing to exit 0 without publishing %s — %s unreadable: %r"
+                               % (repo_name, local_path, ex))
         if new_txt == _CLOUD_SEEDED.get(repo_name):
             continue
         gh_put(repo_name, new_txt, "Service data " + dt.datetime.now(TZ).strftime("%Y-%m-%d %H:%M:%S"))
@@ -260,6 +271,17 @@ def run_report_all(cat, rid, parameters):
             break
         page += 1
         time.sleep(0.5)
+    # The Field Conversion report is the source of EVERY close-rate / opps /
+    # membership figure on the Service dashboard. A valid response always
+    # carries a field list even when the window has zero rows; an empty
+    # `fields` means a malformed/empty 200 body, which fc_tech_rows() would
+    # quietly turn into agg={} and publish as a confident all-zero day
+    # (close 0%, opps 0, sales $0). Zero ROWS is still legal — a "today"
+    # window at 5:35 AM genuinely has none.
+    if not fields:
+        raise RuntimeError(
+            "report %s/%s returned no field list for %r — malformed/empty API "
+            "response; refusing to publish it as a zero day" % (cat, rid, parameters))
     return fields, out
 
 
@@ -984,7 +1006,13 @@ def budget_block(invs_for_month):
     path = os.path.join(HERE, "service_budget.json")
     try:
         cfg = json.load(open(path))
-    except Exception:
+    except FileNotFoundError:
+        log("budget block: no service_budget.json — publishing budget:null (UI hides the card)")
+        return None
+    except Exception as ex:
+        # present but unreadable is NOT the same as "no budget configured"
+        log("WARNING: service_budget.json exists but could not be parsed (%r) — "
+            "publishing budget:null; the budget card will silently disappear" % ex)
         return None
     import calendar
     y, m = (int(x) for x in cfg["month"].split("-"))
