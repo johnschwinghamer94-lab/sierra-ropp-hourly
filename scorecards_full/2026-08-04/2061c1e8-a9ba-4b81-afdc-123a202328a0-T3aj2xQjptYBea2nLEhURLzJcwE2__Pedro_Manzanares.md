@@ -1,0 +1,1 @@
+**Skip:** Transcript is severely corrupted with injected non-customer content (TV scripts, baseball discussion, music lyrics, military stories, comedy routines); unusable for scoring genuine service interaction.
