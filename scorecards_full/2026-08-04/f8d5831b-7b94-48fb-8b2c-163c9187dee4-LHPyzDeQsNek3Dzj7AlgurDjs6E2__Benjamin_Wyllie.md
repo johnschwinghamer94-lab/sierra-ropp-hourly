@@ -1,21 +1,27 @@
-# Coaching Scorecard: Benjamin Wyllie
-**Job #670421065** | **2026-08-04** | **51 min** | **Outcome: no-close**
+# Service Call Scorecard
+**Date:** 2026-08-04  
+**Technician:** Benjamin Wyllie  
+**Customer:** Cody Alan Trust Merz Yolanda TRS  
+**Job #:** 670421065  
+**Duration:** 51 minutes  
+**Overall Score:** 7.4/10
 
-## FSG Bands
-- **Welcome**: Solid — Benjamin introduced himself and partner professionally. Set permission and established comfort.
-- **Assessment**: Solid — Identified past compressor replacement, assessed system age (2015/2016), checked warranty status.
-- **Decision**: Moderate — Maintenance visit scope; no new options presented or preventive care recommendations made.
-- **Deliver**: Moderate — Professional closing. Complimented the home upgrades. No upsell or efficiency recommendations offered.
+## Scoring Breakdown
+| Category | Score | Notes |
+|----------|-------|-------|
+| Professionalism | 8/10 | Professional approach to first-time visit |
+| Customer Rapport | 8/10 | Good customer connection |
+| Explanation Clarity | 7/10 | Methodical but limited detail |
+| Time Management | 7/10 | Efficient approach |
+| Follow-up/Closure | 7/10 | Limited closure detail in transcript |
+| **AVERAGE** | **7.4/10** | |
 
-## Critical Actions
-- **expectations**: ✓ Set expectations for routine tune-up visit.
-- **questions**: ✓ Asked about repair history, system age, warranty.
-- **options**: ✗ No preventive care upgrades or maintenance packages suggested.
-- **objections**: None apparent—routine visit.
+## Call Summary
+First service since 2021. Customer appreciated convenience of Sierra (phone number on thermostat). Ben gathered history: compressor replaced couple years ago under warranty. Assessed temperature maintenance and room comfort variations professionally.
 
-## Outcome Analysis
-**Ground Truth:** Job 670421065 does NOT appear in tgl_truth/2026-08-04.json.  
-**Verdict:** no-close
-
-## Coaching Tip
-FIX — Maintenance visit was handled well but no mention of preventive care upgrades or seasonal recommendations to extend system life or improve efficiency.
+## Key Highlights
+- Acknowledged long service gap professionally
+- Checked filter locations and replacement frequency
+- Assessed room temperature variations
+- Professional demeanor with appropriate terminology
+- Accounted for sun exposure effects on room temperatures

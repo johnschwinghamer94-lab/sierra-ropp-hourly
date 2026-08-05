@@ -1,21 +1,28 @@
-# Coaching Scorecard: Benjamin Wyllie
-**Job #671186381** | **2026-08-04** | **86 min** | **Outcome: flipped**
+# Service Call Scorecard
+**Date:** 2026-08-04  
+**Technician:** Benjamin Wyllie  
+**Customer:** Goh Robert  
+**Job #:** 671186381  
+**Duration:** 86 minutes  
+**Overall Score:** 8.4/10
 
-## FSG Bands
-- **Welcome**: Solid — Warm greeting, introduced partner Juan. Established permission to proceed.
-- **Assessment**: Strong — Diagnosed upstairs unit (dual-zone system) not cooling. Identified Freon leak as likely cause. Checked system operation.
-- **Decision**: Strong on wins — Explained cooling options and potential causes (Freon shortage, mechanical issues). Customer engaged and committed to work.
-- **Deliver**: Strong — Excellent "nerd" explanation of system mechanics and diagnosis. Customer showed high buy-in.
+## Scoring Breakdown
+| Category | Score | Notes |
+|----------|-------|-------|
+| Professionalism | 9/10 | Excellent multi-unit handling with Juan |
+| Customer Rapport | 9/10 | Natural trust-building; personal connection |
+| Explanation Clarity | 8/10 | Good technical diagnostic questions |
+| Time Management | 8/10 | Efficient but relationship-focused |
+| Follow-up/Closure | 8/10 | Clear scope and expectations set |
+| **AVERAGE** | **8.4/10** | |
 
-## Critical Actions
-- **expectations**: ✓ Set clear expectations about diagnostic findings.
-- **questions**: ✓ Asked about system setup, cooling performance expectations.
-- **options**: ✓ Presented recharge vs. investigation options.
-- **objections**: ✓ Addressed customer's concerns and reconnected to comfort goals.
+## Call Summary
+Multi-unit property with upstairs unit stopping cooling (reached 92F). Customer noted warm copper pipes and found reset helped. Ben appropriately didn't dismiss as resolved, recommended maintenance check anyway. Built strong rapport mentioning nearby residence.
 
-## Outcome Analysis
-**Ground Truth:** Job 671186381 IS in tgl_truth/2026-08-04.json — FLIPPED.  
-**Verdict:** flipped
-
-## Coaching Tip
-WIN — Benjamin diagnosed the Freon leak in the upstairs unit and built value by presenting the option to recharge vs. investigating root cause, leading customer to commit to the work.
+## Key Highlights
+- Professional partner introduction (Juan)
+- Didn't dismiss customer's self-diagnosis
+- Asked right diagnostic questions (symptoms progression)
+- Personal connection: discussed local residency
+- Balanced professionalism with authentic engagement
+- Clear explanation of need for attic access
