@@ -1,23 +1,31 @@
-# Scorecard: AJ Munoz - Job #666873422
+# Coaching Scorecard: AJ Munoz
 
-**Date:** 2026-08-05  
-**Duration:** 6 min  
-**RecId:** b9ec3350-2911-43bc-85ec-d08d05134621-6IIvBXgqsvMmPqdeG9H3OuK0B342
+**Job:** 666873422
+**Date:** 2026-08-05
+**Duration:** 6 min
+**Outcome:** CLOSED
 
-## FSG Bands
-- **Welcome:** Solid
+## FSG Coaching Bands
+
+- **Welcome:** Strong
 - **Assessment:** Solid
-- **Decision:** Weak
+- **Decision:** Solid
 - **Deliver:** Weak
 
 ## Critical Actions
-- Expectations set: ✓
-- Discovery questions: ✓
-- Options presented: ✓
-- Objections handled: ✗
 
-## Outcome
-**UNKNOWN**
+- Expectations: ✓
+- Questions: ✓
+- Options: ✗
+- Objections: ✗
+
+## Call Outcome
+
+**Result:** closed
 
 ## Coaching Tip
-FIX — Offered filter upsell before fully scoping the service request and confirming customer priorities.
+
+WIN — Quick, professional maintenance opener with clear name introduction and purpose statement set foundation for efficient call.
+
+---
+*Generated: 2026-08-05*

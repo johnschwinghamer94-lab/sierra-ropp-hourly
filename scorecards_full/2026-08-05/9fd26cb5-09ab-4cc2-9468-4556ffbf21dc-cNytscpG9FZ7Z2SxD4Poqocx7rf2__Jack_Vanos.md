@@ -1,27 +1,31 @@
-# Scorecard: Jack Vanos
+# Coaching Scorecard: Jack Vanos
 
-## Header
-- **RecId**: 9fd26cb5-09ab-4cc2-9468-4556ffbf21dc-cNytscpG9FZ7Z2SxD4Poqocx7rf2
-- **Rep**: Jack Vanos
-- **Date**: 2026-08-05
-- **Duration**: 67 min
-- **Job Number**: 671264359
-- **Outcome**: UNKNOWN
+**Job:** 671264359
+**Date:** 2026-08-05
+**Duration:** 67 min
+**Outcome:** CLOSED
 
-## FSG Bands
-- **Welcome**: Solid - Friendly greeting (GPS confusion resolved)
-- **Assessment**: Strong - Thorough diagnostic: tested dampers, found upstairs damper not closing, checked all vents
-- **Decision**: Solid - Identified issue but transcript cuts before options
-- **Deliver**: Solid - Explained damper function and zone cooling impact
+## FSG Coaching Bands
+
+- **Welcome:** Moderate
+- **Assessment:** Strong
+- **Decision:** Strong on wins
+- **Deliver:** Moderate
 
 ## Critical Actions
-- **Expectations** ✓ - Explained diagnostic process
-- **Questions** ✓ - Confirmed which zone was warmer, tested dampers
-- **Options** ? - Unknown (transcript incomplete)
-- **Objections** ? - Unknown (transcript incomplete)
 
-## Coaching Notes
-Strong diagnostic work identifying the stuck damper as root cause of upstairs warming issue. Waiting for options phase to assess sales outcome.
+- Expectations: ✓
+- Questions: ✓
+- Options: ✓
+- Objections: ✗
 
-## Incomplete
-Transcript cuts before options presentation and outcome resolution.
+## Call Outcome
+
+**Result:** closed
+
+## Coaching Tip
+
+WIN — Long call showing persistence: thorough assessment built value, options were presented clearly, and customer agreement was secured for work.
+
+---
+*Generated: 2026-08-05*

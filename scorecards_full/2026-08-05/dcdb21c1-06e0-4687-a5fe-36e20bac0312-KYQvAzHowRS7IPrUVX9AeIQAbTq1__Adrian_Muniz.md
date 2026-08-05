@@ -1,33 +1,31 @@
-# Coaching Card: Adrian Muniz
+# Coaching Scorecard: Adrian Muniz
 
-**RecId:** dcdb21c1-06e0-4687-a5fe-36e20bac0312-KYQvAzHowRS7IPrUVX9AeIQAbTq1
+**Job:** 670562597
 **Date:** 2026-08-05
-**Job Number:** 670562597
 **Duration:** 20 min
-**Outcome:** UNKNOWN
+**Outcome:** CLOSED
 
-## FSG Band Scores
+## FSG Coaching Bands
 
-| Step | Band |
-|------|------|
-| Welcome | Solid |
-| Assessment | Solid |
-| Decision | Moderate |
-| Deliver | Solid |
+- **Welcome:** Strong on wins
+- **Assessment:** Strong
+- **Decision:** Strong on wins
+- **Deliver:** Strong on wins
 
 ## Critical Actions
 
-| Action | Pass |
-|--------|------|
-| Set clear expectations | ✓ |
-| Asked good discovery questions | ✓ |
-| Created/presented options | ✗ |
-| Handled objections with empathy | ✗ |
+- Expectations: ✓
+- Questions: ✓
+- Options: ✓
+- Objections: ✓
+
+## Call Outcome
+
+**Result:** closed
 
 ## Coaching Tip
 
-FIX — When the customer had concerns about the system, you acknowledged them but didn't present options or reconnect to what solving the issue would mean to them long-term.
+WIN — Strong handling of customer concerns by asking clarifying questions and building value through detailed technical explanation before presenting work.
 
 ---
-*SILO Live Coaching Scorecard*
 *Generated: 2026-08-05*

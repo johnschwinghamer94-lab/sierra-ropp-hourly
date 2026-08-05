@@ -1,33 +1,31 @@
-# Coaching Card: Jack Vanos
+# Coaching Scorecard: Jack Vanos
 
-**RecId:** e692d241-7ece-434a-9830-5298e3eeb0d8-cNytscpG9FZ7Z2SxD4Poqocx7rf2
+**Job:** 671229884
 **Date:** 2026-08-05
-**Job Number:** 671229884
 **Duration:** 9 min
 **Outcome:** NO-CLOSE
 
-## FSG Band Scores
+## FSG Coaching Bands
 
-| Step | Band |
-|------|------|
-| Welcome | Solid |
-| Assessment | Moderate |
-| Decision | Weak |
-| Deliver | Weak |
+- **Welcome:** Weak
+- **Assessment:** Weak
+- **Decision:** Weak
+- **Deliver:** Weak
 
 ## Critical Actions
 
-| Action | Pass |
-|--------|------|
-| Set clear expectations | ✗ |
-| Asked good discovery questions | ✗ |
-| Created/presented options | ✗ |
-| Handled objections with empathy | ✗ |
+- Expectations: ✓
+- Questions: ✗
+- Options: ✗
+- Objections: ✗
+
+## Call Outcome
+
+**Result:** no-close
 
 ## Coaching Tip
 
-FIX — This call was very brief; you didn't set expectations, ask discovery questions, or present any options—essentially just collected information without moving the customer toward a decision.
+FIX — Very short call suggests early termination or incomplete interaction. Build with basic FSG: start with warmer welcome, ask discovery questions, present findings with options.
 
 ---
-*SILO Live Coaching Scorecard*
 *Generated: 2026-08-05*

@@ -1,23 +1,31 @@
-# Scorecard: J Boothe - Job #669415847
+# Coaching Scorecard: J Boothe
 
-**Date:** 2026-08-05  
-**Duration:** 16 min  
-**RecId:** 7f94b6d8-b6cb-4233-add6-c1940c5cc97b-eLYixM15wpa2eS9xhUtSKJwuhYD2
+**Job:** 669415847
+**Date:** 2026-08-05
+**Duration:** 16 min
+**Outcome:** FLIPPED
 
-## FSG Bands
-- **Welcome:** Weak
-- **Assessment:** Weak
-- **Decision:** Moderate
+## FSG Coaching Bands
+
+- **Welcome:** Strong on wins
+- **Assessment:** Strong
+- **Decision:** Strong on wins
 - **Deliver:** Weak
 
 ## Critical Actions
-- Expectations set: ✗
-- Discovery questions: ✗
-- Options presented: ✗
-- Objections handled: ✓
 
-## Outcome
-**NO-CLOSE**
+- Expectations: ✓
+- Questions: ✓
+- Options: ✗
+- Objections: ✓
+
+## Call Outcome
+
+**Result:** flipped
 
 ## Coaching Tip
-FIX — Arrived without required part in van; check dispatch notes and inventory the day before to prevent showing up unprepared and damaging customer trust.
+
+WIN — Strong diagnostic approach with detailed questions and technical assessment; customer hesitation was acknowledged and addressed, leading to positive outcome.
+
+---
+*Generated: 2026-08-05*

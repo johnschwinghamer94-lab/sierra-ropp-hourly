@@ -1,33 +1,31 @@
-# Coaching Card: Jack Vanos
+# Coaching Scorecard: Jack Vanos
 
-**RecId:** 52add106-456f-46de-b60a-ff1e822c38b0-cNytscpG9FZ7Z2SxD4Poqocx7rf2
+**Job:** 671264269
 **Date:** 2026-08-05
-**Job Number:** 671264269
 **Duration:** 50 min
-**Outcome:** FLIPPED
+**Outcome:** NO-CLOSE
 
-## FSG Band Scores
+## FSG Coaching Bands
 
-| Step | Band |
-|------|------|
-| Welcome | Strong |
-| Assessment | Strong on wins |
-| Decision | Strong |
-| Deliver | Solid |
+- **Welcome:** Moderate
+- **Assessment:** Strong on wins
+- **Decision:** Moderate
+- **Deliver:** Weak
 
 ## Critical Actions
 
-| Action | Pass |
-|--------|------|
-| Set clear expectations | ✓ |
-| Asked good discovery questions | ✓ |
-| Created/presented options | ✓ |
-| Handled objections with empathy | ✓ |
+- Expectations: ✗
+- Questions: ✓
+- Options: ✗
+- Objections: ✗
+
+## Call Outcome
+
+**Result:** no-close
 
 ## Coaching Tip
 
-WIN — You immediately connected with the customer on their main concern, conducted a thorough inspection that proved your expertise, and presented a clear upgrade path they understood.
+FIX — Detailed diagnostic work was done but incomplete delivery phase: missing clear summary of findings and options for next steps to move customer to decision.
 
 ---
-*SILO Live Coaching Scorecard*
 *Generated: 2026-08-05*

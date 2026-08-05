@@ -1,24 +1,31 @@
-# Scorecard: J Boothe
+# Coaching Scorecard: J Boothe
 
-## Header
-- **RecId**: f3359b8c-a4e1-47e7-b8ce-ba222525cf07-eLYixM15wpa2eS9xhUtSKJwuhYD2
-- **Rep**: J Boothe
-- **Date**: 2026-08-05
-- **Duration**: 11 min
-- **Job Number**: 669541927
-- **Outcome**: NO-CLOSE
+**Job:** 669541927
+**Date:** 2026-08-05
+**Duration:** 11 min
+**Outcome:** FLIPPED
 
-## FSG Bands
-- **Welcome**: Solid - Professional greeting
-- **Assessment**: Solid - Brief discussion of filter replacement
-- **Decision**: Moderate - Acknowledged prior work (Xavier mentioned humidifier issue)
-- **Deliver**: Moderate - Showed old/new filter, panels replaced
+## FSG Coaching Bands
+
+- **Welcome:** Weak
+- **Assessment:** Moderate
+- **Decision:** Strong
+- **Deliver:** Weak
 
 ## Critical Actions
-- **Expectations** ✓ - Confirmed pre-existing commitment
-- **Questions** ✓ - Asked about service fee/prior work
-- **Options** ✗ - No new options
-- **Objections** ✗ - N/A
 
-## Outcome
-Pre-committed maintenance (filter replacement). Tech acknowledged this was prior arrangement and executed smoothly but no additional sales opportunity pursued.
+- Expectations: ✓
+- Questions: ✗
+- Options: ✓
+- Objections: ✗
+
+## Call Outcome
+
+**Result:** flipped
+
+## Coaching Tip
+
+WIN — Customer objections were overcome by presenting specific options and solutions; decision phase was decisive despite weaker opening.
+
+---
+*Generated: 2026-08-05*
