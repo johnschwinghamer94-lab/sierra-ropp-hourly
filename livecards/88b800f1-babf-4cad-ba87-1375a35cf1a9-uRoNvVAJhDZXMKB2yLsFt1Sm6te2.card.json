@@ -1,0 +1,21 @@
+{
+  "recId": "88b800f1-babf-4cad-ba87-1375a35cf1a9-uRoNvVAJhDZXMKB2yLsFt1Sm6te2",
+  "tech": "Andrew Trujillo",
+  "jobNumber": null,
+  "dateCreated": "2026-08-05",
+  "durationMin": 18,
+  "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Moderate",
+    "deliver": "Solid"
+  },
+  "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": false,
+    "objections": false
+  },
+  "outcome": "unknown",
+  "tip": "FIX \u2014 When the customer mentioned a previous list of repair estimates, you acknowledged it but didn't reconnect to whether any of those concerns had resurfaced, which would have been a check-in question."
+}

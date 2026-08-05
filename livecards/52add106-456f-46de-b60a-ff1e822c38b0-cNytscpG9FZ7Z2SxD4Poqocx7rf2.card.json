@@ -1,0 +1,21 @@
+{
+  "recId": "52add106-456f-46de-b60a-ff1e822c38b0-cNytscpG9FZ7Z2SxD4Poqocx7rf2",
+  "tech": "Jack Vanos",
+  "jobNumber": "671264269",
+  "dateCreated": "2026-08-05",
+  "durationMin": 50,
+  "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong on wins",
+    "decision": "Strong",
+    "deliver": "Solid"
+  },
+  "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": true,
+    "objections": true
+  },
+  "outcome": "flipped",
+  "tip": "WIN \u2014 You immediately connected with the customer on their main concern, conducted a thorough inspection that proved your expertise, and presented a clear upgrade path they understood."
+}

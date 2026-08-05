@@ -1,0 +1,21 @@
+{
+  "recId": "bc80f8a1-bebd-4d50-a908-51bce8bdd481-hUwt6xtja4T6o8jCUdsXJsPtmQX2",
+  "tech": "Joe Mendoza",
+  "jobNumber": "669688820",
+  "dateCreated": "2026-08-05",
+  "durationMin": 53,
+  "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Strong on wins",
+    "deliver": "Strong"
+  },
+  "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": true,
+    "objections": true
+  },
+  "outcome": "flipped",
+  "tip": "WIN \u2014 You built strong rapport early, asked critical diagnostic questions that uncovered the real issue, and when the customer hesitated on price, you reconnected to the problem they'd be solving."
+}
