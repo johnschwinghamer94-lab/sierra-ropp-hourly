@@ -1,28 +1,23 @@
-# Service Call Scorecard
-**Date:** 2026-08-04  
-**Technician:** Andrew Trujillo  
-**Customer:** Nelson Virginia L  
-**Job #:** 670328011  
-**Duration:** 67 minutes  
-**Overall Score:** 8.4/10
+# Andrew Trujillo - Job 670328011
 
-## Scoring Breakdown
-| Category | Score | Notes |
-|----------|-------|-------|
-| Professionalism | 9/10 | Exceptional empathy and professionalism |
-| Customer Rapport | 9/10 | Built deep trust; listened actively |
-| Explanation Clarity | 8/10 | Good technical communication |
-| Time Management | 8/10 | Lengthy but appropriate for situation |
-| Follow-up/Closure | 8/10 | Realistic expectation-setting |
-| **AVERAGE** | **8.4/10** | |
+**RecId:** 35387f5b-82c1-4582-a2fd-32f99f8232bc-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
+**Date:** 2026-08-04
+**Duration:** 67 min
 
-## Call Summary
-Longest call of Andrew's batch showing exceptional customer service. Customer is 26-year system owner facing major home renovations (roof + AC). Andrew demonstrated extraordinary empathy when customer shared health challenges and financial concerns.
+## FSG Bands
+- Welcome: Solid
+- Assessment: Solid
+- Decision: Solid
+- Deliver: Solid
 
-## Key Highlights
-- Showed empathy for health challenges (Long COVID, arm recovery)
-- Validated decision to delay repairs until fall
-- Discussed financial constraints sensitively
-- Respected customer's energy consciousness and solar investment
-- Built trust about realistic maintenance approach
-- Good thermostat settings and energy efficiency discussion
+## Critical Actions
+- Expectations: ✓
+- Questions: ✓
+- Options: ✓
+- Objections: ✓
+
+## Outcome
+NO-CLOSE
+
+## Coaching Tip
+WIN — Acknowledged budget constraints and explored repair options to extend system life rather than forcing replacement.

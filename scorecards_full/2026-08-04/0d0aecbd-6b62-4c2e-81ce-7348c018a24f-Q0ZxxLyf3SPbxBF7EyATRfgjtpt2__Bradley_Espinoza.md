@@ -1,29 +1,23 @@
-# Service Call Scorecard
-**Date:** 2026-08-04  
-**Technician:** Bradley Espinoza  
-**Customer:** Onda Edward Lawton Linda  
-**Job #:** 670666492  
-**Duration:** 59 minutes  
-**Overall Score:** 7.6/10
+# Bradley Espinoza - Job 670666492
 
-## Scoring Breakdown
-| Category | Score | Notes |
-|----------|-------|-------|
-| Professionalism | 8/10 | Handled complex situation with empathy |
-| Customer Rapport | 8/10 | Sympathetic to customer constraints |
-| Explanation Clarity | 8/10 | Clear communication about dual systems |
-| Time Management | 7/10 | Adequate handling of complexity |
-| Follow-up/Closure | 7/10 | Good mid-phase management shown |
-| **AVERAGE** | **7.6/10** | |
+**RecId:** 0d0aecbd-6b62-4c2e-81ce-7348c018a24f-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
+**Date:** 2026-08-04
+**Duration:** 59 min
 
-## Call Summary
-Complex situation: customer's wife sleeping, had canceled another appointment. Original Goodman unit in house, one unit likely needing replacement. Bradley was empathetic but clear about need to go inside (attic/systems). Good negotiation about dual attic access availability.
+## FSG Bands
+- Welcome: Solid
+- Assessment: Solid
+- Decision: Moderate
+- Deliver: Solid
 
-## Key Highlights
-- Sympathetic to customer's scheduling conflict
-- Offered rescheduling option gracefully
-- Clear about technical necessity (need attic access)
-- Understood system concerns (original unit, replacement needed)
-- Good negotiation with sleeping wife constraint
-- Identified hard-to-cool unit issue ("hard time getting down to 75")
-- Professional handling of customer sensitivity
+## Critical Actions
+- Expectations: ✓
+- Questions: ✓
+- Options: ✗
+- Objections: ✗
+
+## Outcome
+NO-CLOSE
+
+## Coaching Tip
+WIN — Respectfully deferred attic access to honor sleeping family member while maintaining service commitment.
