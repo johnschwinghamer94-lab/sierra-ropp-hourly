@@ -1,1 +1,14 @@
-{"recId": "06431402-0fd7-4a7c-991d-889c00102529-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2", "tech": "Bradley Espinoza", "jobNumber": "668501603", "dateCreated": "2026-08-03", "durationMin": 90, "bands": {"welcome": "Solid", "assessment": "Strong", "decision": "Solid", "deliver": "Strong"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "flipped", "tip": "WIN \u2014 Successfully guided customer to next step commitment."}
+{
+  "recId": "06431402-0fd7-4a7c-991d-889c00102529-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2",
+  "tech": "Bradley Espinoza",
+  "welcome": "Strong",
+  "assessment": "Strong",
+  "decision": "Strong on wins",
+  "deliver": "Strong",
+  "expectations": true,
+  "questions": true,
+  "options": true,
+  "objections": true,
+  "outcome": "closed",
+  "tip": "WIN \u2014 Clear diagnostic findings with detailed options presented and customer decision reached."
+}

@@ -1,1 +1,14 @@
-{"recId": "4dfc5bb6-0379-47f9-b0da-684ea093951d-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2", "tech": "Bradley Espinoza", "jobNumber": "670699614", "dateCreated": "2026-08-03", "durationMin": 56, "bands": {"welcome": "Solid", "assessment": "Strong", "decision": "Strong", "deliver": "Strong"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "closed", "tip": "WIN \u2014 Customer agreement and completed sale shows effective recommendations."}
+{
+  "recId": "4dfc5bb6-0379-47f9-b0da-684ea093951d-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2",
+  "tech": "Bradley Espinoza",
+  "welcome": "Strong",
+  "assessment": "Solid",
+  "decision": "Solid",
+  "deliver": "Solid",
+  "expectations": true,
+  "questions": true,
+  "options": true,
+  "objections": false,
+  "outcome": "no-close",
+  "tip": "FIX \u2014 Good assessment but failed to close on recommendations presented."
+}

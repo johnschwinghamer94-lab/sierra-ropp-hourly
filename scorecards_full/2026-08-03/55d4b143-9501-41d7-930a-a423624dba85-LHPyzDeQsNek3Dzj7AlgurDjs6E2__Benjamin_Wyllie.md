@@ -1,24 +1,22 @@
-# Scorecard: Benjamin Wyllie
+# Call Scorecard
 
-**RecId**: 55d4b143-9501-41d7-930a-a423624dba85-LHPyzDeQsNek3Dzj7AlgurDjs6E2
-**Job**: N/A
-**Date**: 2026-08-03
-**Duration**: 40 min
+**Date:** 2026-08-03  
+**Rep:** Benjamin Wyllie  
+**Job #:** (No job number)  
+**Duration:** 40 min  
+**RecId:** 55d4b143-9501-41d7-930a-a423624dba85-LHPyzDeQsNek3Dzj7AlgurDjs6E2
 
-## Performance Bands
-- **Welcome**: Solid
-- **Assessment**: Strong
-- **Decision**: Solid
-- **Deliver**: Strong
+## FSG Scores
 
-## Critical Actions
-- **Expectations**: ✓
-- **Questions**: ✓
-- **Options**: ✓
-- **Objections**: ✗
+- **Welcome:** Strong
+- **Assessment:** Solid
+- **Decision:** Moderate
+- **Deliver:** Weak
 
-## Outcome
-**FLIPPED**
+## Call Outcome
+
+**Outcome:** unknown
 
 ## Coaching Tip
-WIN — Successfully guided customer to next step commitment.
+
+FIX — Call ends abruptly with assessment incomplete; no clear recommendation or next steps.

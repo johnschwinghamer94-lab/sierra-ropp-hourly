@@ -1,1 +1,14 @@
-{"recId": "2909ad8a-fc1f-4f16-97cd-5d7434c6d33d-f4dx65lewNTPydNXjgypLVFAcbk1", "tech": "Brandon Moreno", "jobNumber": "670666878", "dateCreated": "2026-08-03", "durationMin": 52, "bands": {"welcome": "Solid", "assessment": "Strong", "decision": "Solid", "deliver": "Strong"}, "critical": {"expectations": false, "questions": true, "options": true, "objections": true}, "outcome": "flipped", "tip": "WIN \u2014 Successfully guided customer to next step commitment."}
+{
+  "recId": "2909ad8a-fc1f-4f16-97cd-5d7434c6d33d-f4dx65lewNTPydNXjgypLVFAcbk1",
+  "tech": "Brandon Moreno",
+  "welcome": "Strong",
+  "assessment": "Strong",
+  "decision": "Solid",
+  "deliver": "Solid",
+  "expectations": true,
+  "questions": true,
+  "options": true,
+  "objections": false,
+  "outcome": "no-close",
+  "tip": "FIX \u2014 Strong diagnosis but didn't secure commitment for recommended maintenance."
+}

@@ -1,1 +1,14 @@
-{"recId": "c9b095e1-0a8f-45c5-b88f-52ab63ec443f-f4dx65lewNTPydNXjgypLVFAcbk1", "tech": "Brandon Moreno", "jobNumber": "670388797", "dateCreated": "2026-08-03", "durationMin": 12, "bands": {"welcome": "Solid", "assessment": "Strong", "decision": "Solid", "deliver": "Strong on wins"}, "critical": {"expectations": true, "questions": false, "options": false, "objections": false}, "outcome": "no-close", "tip": "FIX — Tech identified early compressor failure signals (LRA at 96/99) and explained the technical danger, but never asked 'would you like to replace this proactively before it fails?'—the moment when customers are most receptive to prevention"}
+{
+  "recId": "c9b095e1-0a8f-45c5-b88f-52ab63ec443f-f4dx65lewNTPydNXjgypLVFAcbk1",
+  "tech": "Brandon Moreno",
+  "welcome": "Strong",
+  "assessment": "Strong",
+  "decision": "Solid",
+  "deliver": "Solid",
+  "expectations": true,
+  "questions": true,
+  "options": true,
+  "objections": false,
+  "outcome": "closed",
+  "tip": "WIN \u2014 Expert diagnosis of compressor wear with clear presentation of replacement option."
+}

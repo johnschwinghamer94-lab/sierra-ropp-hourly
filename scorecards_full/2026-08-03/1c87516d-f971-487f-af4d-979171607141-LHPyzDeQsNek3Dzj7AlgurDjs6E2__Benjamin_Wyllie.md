@@ -1,24 +1,22 @@
-# Scorecard: Benjamin Wyllie
+# Call Scorecard
 
-**RecId**: 1c87516d-f971-487f-af4d-979171607141-LHPyzDeQsNek3Dzj7AlgurDjs6E2
-**Job**: 670586826
-**Date**: 2026-08-03
-**Duration**: 104 min
+**Date:** 2026-08-03  
+**Rep:** Benjamin Wyllie  
+**Job #:** 670586826  
+**Duration:** 104 min  
+**RecId:** 1c87516d-f971-487f-af4d-979171607141-LHPyzDeQsNek3Dzj7AlgurDjs6E2
 
-## Performance Bands
-- **Welcome**: Solid
-- **Assessment**: Strong
-- **Decision**: Solid
-- **Deliver**: Strong
+## FSG Scores
 
-## Critical Actions
-- **Expectations**: ✗
-- **Questions**: ✓
-- **Options**: ✓
-- **Objections**: ✓
+- **Welcome:** Strong
+- **Assessment:** Strong
+- **Decision:** Solid
+- **Deliver:** Solid
 
-## Outcome
-**CLOSED**
+## Call Outcome
+
+**Outcome:** unknown
 
 ## Coaching Tip
-WIN — Customer agreement and completed sale shows effective recommendations.
+
+WIN — Comprehensive system assessment with clear explanations of maintenance needs.

@@ -1,1 +1,14 @@
-{"recId": "20e815da-39b3-4a25-bbd2-9522e7a76807-LHPyzDeQsNek3Dzj7AlgurDjs6E2", "tech": "Benjamin Wyllie", "jobNumber": "670711113", "dateCreated": "2026-08-03", "durationMin": 23, "bands": {"welcome": "Solid", "assessment": "Strong", "decision": "Strong", "deliver": "Strong"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "closed", "tip": "WIN \u2014 Customer agreement and completed sale shows effective recommendations."}
+{
+  "recId": "20e815da-39b3-4a25-bbd2-9522e7a76807-LHPyzDeQsNek3Dzj7AlgurDjs6E2",
+  "tech": "Benjamin Wyllie",
+  "welcome": "Strong",
+  "assessment": "Solid",
+  "decision": "Solid",
+  "deliver": "Moderate",
+  "expectations": true,
+  "questions": true,
+  "options": false,
+  "objections": false,
+  "outcome": "no-close",
+  "tip": "FIX \u2014 No solution offered or options presented for identified problems."
+}

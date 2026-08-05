@@ -1,24 +1,22 @@
-# Scorecard: Andrew Trujillo
+# Call Scorecard
 
-**RecId**: 9005ae32-26d7-4909-ab3c-23fa83bf4a81-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
-**Job**: N/A
-**Date**: 2026-08-03
-**Duration**: 32 min
+**Date:** 2026-08-03  
+**Rep:** Andrew Trujillo  
+**Job #:** (No job number)  
+**Duration:** 32 min  
+**RecId:** 9005ae32-26d7-4909-ab3c-23fa83bf4a81-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
 
-## Performance Bands
-- **Welcome**: Solid
-- **Assessment**: Strong
-- **Decision**: Solid
-- **Deliver**: Strong
+## FSG Scores
 
-## Critical Actions
-- **Expectations**: ✓
-- **Questions**: ✓
-- **Options**: ✓
-- **Objections**: ✓
+- **Welcome:** Strong
+- **Assessment:** Solid
+- **Decision:** Solid
+- **Deliver:** Moderate
 
-## Outcome
-**FLIPPED**
+## Call Outcome
+
+**Outcome:** no-close
 
 ## Coaching Tip
-WIN — Successfully guided customer to next step commitment.
+
+FIX — Limited discussion of next steps before investigation begins.

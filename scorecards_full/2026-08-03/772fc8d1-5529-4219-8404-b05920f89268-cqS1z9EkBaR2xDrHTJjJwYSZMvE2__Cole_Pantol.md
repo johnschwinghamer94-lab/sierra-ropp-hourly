@@ -1,24 +1,22 @@
-# Scorecard: Cole Pantol
+# Call Scorecard
 
-**RecId**: 772fc8d1-5529-4219-8404-b05920f89268-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
-**Job**: 668201758
-**Date**: 2026-08-03
-**Duration**: 86 min
+**Date:** 2026-08-03  
+**Rep:** Cole Pantol  
+**Job #:** 668201758  
+**Duration:** 86 min  
+**RecId:** 772fc8d1-5529-4219-8404-b05920f89268-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
 
-## Performance Bands
-- **Welcome**: Solid
-- **Assessment**: Strong
-- **Decision**: Moderate
-- **Deliver**: Strong
+## FSG Scores
 
-## Critical Actions
-- **Expectations**: ✓
-- **Questions**: ✓
-- **Options**: ✓
-- **Objections**: ✗
+- **Welcome:** Strong
+- **Assessment:** Strong
+- **Decision:** Strong on wins
+- **Deliver:** Strong
 
-## Outcome
-**CLOSED**
+## Call Outcome
+
+**Outcome:** closed
 
 ## Coaching Tip
-WIN — Customer agreement and completed sale shows effective recommendations.
+
+WIN — Systematic approach with thorough evaluation and customer agreement on needed repairs.

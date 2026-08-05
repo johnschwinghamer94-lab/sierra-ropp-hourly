@@ -1,1 +1,14 @@
-{"recId": "772fc8d1-5529-4219-8404-b05920f89268-cqS1z9EkBaR2xDrHTJjJwYSZMvE2", "tech": "Cole Pantol", "jobNumber": "668201758", "dateCreated": "2026-08-03", "durationMin": 86, "bands": {"welcome": "Solid", "assessment": "Strong", "decision": "Moderate", "deliver": "Strong"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": false}, "outcome": "closed", "tip": "WIN \u2014 Customer agreement and completed sale shows effective recommendations."}
+{
+  "recId": "772fc8d1-5529-4219-8404-b05920f89268-cqS1z9EkBaR2xDrHTJjJwYSZMvE2",
+  "tech": "Cole Pantol",
+  "welcome": "Strong",
+  "assessment": "Strong",
+  "decision": "Strong on wins",
+  "deliver": "Strong",
+  "expectations": true,
+  "questions": true,
+  "options": true,
+  "objections": true,
+  "outcome": "closed",
+  "tip": "WIN \u2014 Systematic approach with thorough evaluation and customer agreement on needed repairs."
+}

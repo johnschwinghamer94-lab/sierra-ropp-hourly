@@ -1,1 +1,14 @@
-{"recId": "1c87516d-f971-487f-af4d-979171607141-LHPyzDeQsNek3Dzj7AlgurDjs6E2", "tech": "Benjamin Wyllie", "jobNumber": "670586826", "dateCreated": "2026-08-03", "durationMin": 104, "bands": {"welcome": "Solid", "assessment": "Strong", "decision": "Solid", "deliver": "Strong"}, "critical": {"expectations": false, "questions": true, "options": true, "objections": true}, "outcome": "closed", "tip": "WIN \u2014 Customer agreement and completed sale shows effective recommendations."}
+{
+  "recId": "1c87516d-f971-487f-af4d-979171607141-LHPyzDeQsNek3Dzj7AlgurDjs6E2",
+  "tech": "Benjamin Wyllie",
+  "welcome": "Strong",
+  "assessment": "Strong",
+  "decision": "Solid",
+  "deliver": "Solid",
+  "expectations": true,
+  "questions": true,
+  "options": true,
+  "objections": true,
+  "outcome": "unknown",
+  "tip": "WIN \u2014 Comprehensive system assessment with clear explanations of maintenance needs."
+}
