@@ -1,69 +1,7 @@
 {
-  "generated": "2026-08-04T22:16:45.387582-07:00",
+  "generated": "2026-08-05T08:32:37.698794-07:00",
   "method": "dashboard parse_all: TGLs Created per creating tech / Revenue-report calls ran (ROPP-tag cleaned)",
   "days": {
-    "2026-06-26": {
-      "Andrew Trujillo": {
-        "calls": 2,
-        "tgls": 1
-      },
-      "Cole Pantol": {
-        "calls": 3,
-        "tgls": 3
-      },
-      "Dustin Romine": {
-        "calls": 4,
-        "tgls": 2
-      },
-      "Francisco Valencia": {
-        "calls": 2,
-        "tgls": 2
-      },
-      "Joe Mendoza": {
-        "calls": 3,
-        "tgls": 1
-      },
-      "Kevin Rodriguez": {
-        "calls": 0,
-        "tgls": 1
-      },
-      "Mario Castro": {
-        "calls": 3,
-        "tgls": 2
-      },
-      "Nathan Colquitt": {
-        "calls": 3,
-        "tgls": 1
-      },
-      "Nikko April": {
-        "calls": 2,
-        "tgls": 1
-      },
-      "Noah Weng": {
-        "calls": 4,
-        "tgls": 4
-      },
-      "Robert Silinzy": {
-        "calls": 2,
-        "tgls": 2
-      },
-      "Benjamin Wyllie": {
-        "calls": 1,
-        "tgls": 0
-      },
-      "Christopher Moreno": {
-        "calls": 1,
-        "tgls": 0
-      },
-      "Juan Tlatenchi": {
-        "calls": 2,
-        "tgls": 0
-      },
-      "Pedro Manzanares": {
-        "calls": 1,
-        "tgls": 0
-      }
-    },
     "2026-06-27": {
       "Andrew Trujillo": {
         "calls": 3,
@@ -544,7 +482,7 @@
         "tgls": 1
       },
       "Nikko April": {
-        "calls": 2,
+        "calls": 1,
         "tgls": 1
       },
       "Noah Weng": {
@@ -556,7 +494,7 @@
         "tgls": 1
       },
       "Brandon Moreno": {
-        "calls": 2,
+        "calls": 3,
         "tgls": 0
       },
       "Juan Tlatenchi": {
@@ -1357,12 +1295,12 @@
         "calls": 1,
         "tgls": 0
       },
-      "Robert Silinzy": {
-        "calls": 3,
-        "tgls": 0
-      },
       "Nikko April": {
         "calls": 1,
+        "tgls": 0
+      },
+      "Robert Silinzy": {
+        "calls": 3,
         "tgls": 0
       }
     },
@@ -1574,7 +1512,7 @@
         "tgls": 1
       },
       "Mario Castro": {
-        "calls": 0,
+        "calls": 1,
         "tgls": 1
       },
       "Nathan Colquitt": {
@@ -1592,10 +1530,6 @@
       "Xavier Paredes": {
         "calls": 0,
         "tgls": 1
-      },
-      "Andrew Trujillo": {
-        "calls": 1,
-        "tgls": 0
       },
       "Brandon Moreno": {
         "calls": 1,
@@ -1786,7 +1720,122 @@
         "tgls": 1
       }
     },
-    "2026-08-03": {},
-    "2026-08-04": {}
+    "2026-08-03": {
+      "Adrian Muniz": {
+        "calls": 0,
+        "tgls": 1
+      },
+      "Andrew Trujillo": {
+        "calls": 1,
+        "tgls": 1
+      },
+      "Benjamin Wyllie": {
+        "calls": 5,
+        "tgls": 2
+      },
+      "Bradley Espinoza": {
+        "calls": 2,
+        "tgls": 1
+      },
+      "Brandon Moreno": {
+        "calls": 4,
+        "tgls": 4
+      },
+      "Cole Pantol": {
+        "calls": 5,
+        "tgls": 2
+      },
+      "David Canales": {
+        "calls": 4,
+        "tgls": 1
+      },
+      "Francisco Valencia": {
+        "calls": 3,
+        "tgls": 3
+      },
+      "Joe Mendoza": {
+        "calls": 4,
+        "tgls": 3
+      },
+      "Juan Tlatenchi": {
+        "calls": 4,
+        "tgls": 1
+      },
+      "Mario Castro": {
+        "calls": 4,
+        "tgls": 3
+      },
+      "Nathan Colquitt": {
+        "calls": 2,
+        "tgls": 1
+      },
+      "Nikko April": {
+        "calls": 1,
+        "tgls": 1
+      },
+      "Noah Weng": {
+        "calls": 3,
+        "tgls": 2
+      },
+      "Robert Silinzy": {
+        "calls": 3,
+        "tgls": 1
+      }
+    },
+    "2026-08-04": {
+      "Andrew Trujillo": {
+        "calls": 3,
+        "tgls": 1
+      },
+      "Benjamin Wyllie": {
+        "calls": 3,
+        "tgls": 2
+      },
+      "Bradley Espinoza": {
+        "calls": 2,
+        "tgls": 1
+      },
+      "Brandon Moreno": {
+        "calls": 3,
+        "tgls": 2
+      },
+      "Cole Pantol": {
+        "calls": 3,
+        "tgls": 2
+      },
+      "David Canales": {
+        "calls": 3,
+        "tgls": 3
+      },
+      "Francisco Valencia": {
+        "calls": 4,
+        "tgls": 3
+      },
+      "Joe Mendoza": {
+        "calls": 4,
+        "tgls": 4
+      },
+      "Juan Tlatenchi": {
+        "calls": 3,
+        "tgls": 1
+      },
+      "Nathan Colquitt": {
+        "calls": 2,
+        "tgls": 1
+      },
+      "Nikko April": {
+        "calls": 3,
+        "tgls": 2
+      },
+      "Noah Weng": {
+        "calls": 4,
+        "tgls": 3
+      },
+      "Robert Silinzy": {
+        "calls": 2,
+        "tgls": 1
+      }
+    },
+    "2026-08-05": {}
   }
 }
