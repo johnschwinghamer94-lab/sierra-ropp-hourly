@@ -1,0 +1,1 @@
+Transcript corrupted - unintelligible dialogue and character encoding errors

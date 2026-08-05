@@ -1,0 +1,1 @@
+Transcript corrupted - character encoding errors, incomplete transcription
