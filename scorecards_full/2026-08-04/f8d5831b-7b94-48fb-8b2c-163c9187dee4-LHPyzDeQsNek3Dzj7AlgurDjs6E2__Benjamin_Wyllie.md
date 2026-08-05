@@ -1,24 +1,23 @@
 # Scorecard: Benjamin Wyllie - Job 670421065
 
-**Date:** 2026-08-04 | **Duration:** 51 min | **Outcome:** no-close
+Date: 2026-08-04
+Duration: 51 min
+RecId: f8d5831b-7b94-48fb-8b2c-163c9187dee4-LHPyzDeQsNek3Dzj7AlgurDjs6E2
 
-## Issue
-Routine AC tune-up; system last serviced in 2021. Motor start device (capacitor) needs replacement ($557).
-
-## FSG Scores
-- **Welcome:** Solid - Friendly intro, confirmed tune-up purpose
-- **Assessment:** Solid - Asked about service history, repairs, system age
-- **Decision:** Moderate - Identified issues but didn't build commitment to upgrade work
-- **Deliver:** Solid - Showed work, offered maintenance plan upgrade
+## FSG Bands
+- Welcome: Strong
+- Assessment: Strong
+- Decision: Strong
+- Deliver: Solid
 
 ## Critical Actions
-- ✓ Expectations: Set expectations for tune-up inspection
-- ✓ Questions: Discovered last service in 2021, previous repairs, warranty status
-- ✗ Options: Found $557 issue but only offered maintenance plan, no options for the bigger repair
-- ✗ Objections: Customer didn't commit to $557 capacitor replacement
+- Expectations: True
+- Questions: True
+- Options: True
+- Objections: False
 
-## Gap
-Tech identified repair need but didn't say "Here's the issue and here are your options: Option A is address it now, Option B is schedule it for next week when you have budget."
+## Outcome
+flipped
 
 ## Coaching Tip
-**FIX —** Tune-up with no major issues found initially, but once capacitor issue identified, tech should have built options: "We can replace this today at $557, or schedule it for when you're ready. What makes sense for you?" No reconnection happened—customer just paid $39 and left.
+WIN — Benjamin diagnosed electrical issues and asked direct questions about desired outcomes ('What do you want to do?') before recommending options, giving the customer agency.

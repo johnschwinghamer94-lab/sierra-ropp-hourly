@@ -1,24 +1,23 @@
 # Scorecard: Benjamin Wyllie - Job 671186381
 
-**Date:** 2026-08-04 | **Duration:** 86 min | **Outcome:** FLIPPED
+Date: 2026-08-04
+Duration: 86 min
+RecId: 205d5911-fde4-49ee-b5ab-61eba431c8ac-LHPyzDeQsNek3Dzj7AlgurDjs6E2
 
-## Issue
-Upstairs unit stopped blowing cold; bedroom temp reached 92F. Multi-unit system (upstairs only affected).
-
-## FSG Scores
-- **Welcome:** Solid - Established rapport quickly
-- **Assessment:** Strong - Diagnosed upstairs unit failure; good discovery questions
-- **Decision:** Strong - Presented clear repair vs. replacement paths
-- **Deliver:** Strong - Explained findings clearly; customer understood options
+## FSG Bands
+- Welcome: Strong
+- Assessment: Strong
+- Decision: Strong
+- Deliver: Strong
 
 ## Critical Actions
-- ✓ Expectations: Set expectations about diagnostic
-- ✓ Questions: Asked about issue timing, room temperature, system configuration
-- ✓ Options: Presented repair path and replacement path with tradeoffs
-- ✓ Objections: Customer engaged with options despite major system concern
+- Expectations: True
+- Questions: True
+- Options: True
+- Objections: True
 
-## Win Moment
-Customer concerned about bedroom cooling but tech stayed calm, explained options (repair this unit vs. whole-system upgrade), and got customer agreement to meet with Comfort Advisor for pricing discussion.
+## Outcome
+flipped
 
 ## Coaching Tip
-**WIN —** When customer said upstairs unit failed—potential panic moment—tech stayed steady, presented two clear paths forward with pros/cons, and moved customer to "Let's talk to the Comfort Advisor" commitment. That calm, solution-focused approach converted the concern into a TGL.
+WIN — Benjamin handled customer's heating objection with respect ('I'm not saying it's a big problem') while still presenting a replacement upgrade path, turning concern into an option.
