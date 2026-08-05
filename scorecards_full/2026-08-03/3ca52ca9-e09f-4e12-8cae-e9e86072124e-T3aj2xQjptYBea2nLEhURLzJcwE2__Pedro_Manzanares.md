@@ -1,0 +1,1 @@
+Transcript is corrupted with non-English text; not a scorable customer interaction.

@@ -1,22 +1,22 @@
 # Scorecard: Tyler Battershell
 Date: 2026-08-03
-Duration: 49 min
 Job: None
+Duration: 49 min
 
-## FSG Bands
+## Bands
 - Welcome: Solid
 - Assessment: Strong
-- Decision: Solid
+- Decision: Strong
 - Deliver: Solid
 
 ## Critical Actions
 - Expectations: ✓
 - Questions: ✓
 - Options: ✓
-- Objections: ✗
+- Objections: ✓
 
 ## Outcome
-no-close
+NO-CLOSE
 
 ## Coaching Tip
-FIX — When the customer said they'd get another quote, you should have reconnected to the urgency (unit running all night, high energy waste) and asked what would make the deal work for them, instead of accepting the no.
+FIX — Customer expected $200-300 but quote was $449-509; address the price expectation gap early in the diagnosis, before presenting options, to validate their concern.

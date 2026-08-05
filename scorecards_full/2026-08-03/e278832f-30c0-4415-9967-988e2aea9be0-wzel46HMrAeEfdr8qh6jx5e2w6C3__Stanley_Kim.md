@@ -1,13 +1,13 @@
 # Scorecard: Stanley Kim
 Date: 2026-08-03
-Duration: 60 min
 Job: 670578644
+Duration: 360 min
 
-## FSG Bands
+## Bands
 - Welcome: Strong
 - Assessment: Strong
-- Decision: Strong on wins
-- Deliver: Solid
+- Decision: Strong
+- Deliver: Strong
 
 ## Critical Actions
 - Expectations: ✓
@@ -16,7 +16,7 @@ Job: 670578644
 - Objections: ✓
 
 ## Outcome
-flipped
+UNKNOWN
 
 ## Coaching Tip
-WIN — Stanley anchored the customer past sticker shock by showing the actual wet-spot evidence ('99% there's a leak') and vividly explaining downstream risk: 'I've seen it—they fix that spot, another spot just leaks, then Band-Aids add up to almost the same price.' He made the $6,200 new unit feel protective, not wasteful.
+WIN — Extended 6-hour comprehensive evaluation of multi-unit property demonstrates thorough expertise and professional approach to complex system assessment.
