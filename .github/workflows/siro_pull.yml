@@ -64,8 +64,13 @@ jobs:
           # disk), so on conflict keep the REMOTE state file and our transcripts.
           n=0
           until git push -q origin main; do
-            n=$((n+1)); [ "$n" -gt 3 ] && { echo "push failed after 3 heals"; exit 1; }
+            n=$((n+1))
+            if [ "$n" -gt 3 ]; then
+              echo "::error::Siro state/transcript push failed after 3 heals — this run's transcripts were NOT saved; scoring and coaching plans will not see those calls until a later pull re-fetches them"
+              exit 1
+            fi
             if ! git pull --rebase --autostash -q; then
+              echo "::warning::siro_pull_state.json conflicted with a concurrent pull — keeping the REMOTE state file and re-applying our transcripts"
               git checkout --ours siro_pull_state.json 2>/dev/null || true
               git add siro_pull_state.json 2>/dev/null || true
               GIT_EDITOR=true git rebase --continue || git rebase --abort

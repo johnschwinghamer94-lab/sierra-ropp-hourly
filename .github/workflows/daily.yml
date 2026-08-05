@@ -35,7 +35,10 @@ jobs:
             echo "ROPP_SOURCE=api" >> "$GITHUB_ENV"
             echo "OK — fetched ROPP reports from the ServiceTitan Reporting API"
           else
-            echo "WARN — ServiceTitan fetch unavailable; falling back to OneDrive Excel"
+            # Real fallback (Excel still produces a correct build), but it must be LOUD:
+            # ROPP_SOURCE stays unset, which is exactly what silently broke tgl_conv.py
+            # for nine days. If this warning appears every run, the API path is dead.
+            echo "::warning::ServiceTitan API fetch FAILED — this build fell back to the emailed OneDrive Excel reports. Numbers are only as fresh as this morning's email, and every API-only extra (TGL conversion truth) may be stale."
             python graph_download_cloud.py
           fi
       - name: TGL ground truth (trailing 8 days)
@@ -109,8 +112,14 @@ jobs:
                 truth_ok=0
                 break
               fi
+              # --mixed, NOT --soft: --soft leaves the index holding OUR whole
+              # old tree, so the retry commit silently REVERTS whatever another
+              # job pushed meanwhile (verified: a concurrent siro_pull commit lost
+              # its state file and its transcripts). --mixed resets the index to
+              # the new remote head, so re-adding only tgl_truth/ means our fresh
+              # truth files win and every other remote change is preserved.
               git fetch -q origin main
-              git reset -q --soft origin/main
+              git reset -q --mixed origin/main
               git add tgl_truth/
               if git diff --cached --quiet; then echo "truth already current on remote"; break; fi
               git commit -q -m "TGL truth $(date -u +'%F %H:%M')"
@@ -130,14 +139,42 @@ jobs:
             echo "hourly rebuild — dup-exclusion refresh runs at 14:00 UTC only; skipping"
             exit 0
           fi
-          python cloud_fetch.py >/dev/null 2>&1 || true   # ensure ~/.servicetitan creds exist
+          dup_ok=1
+          # creds only — output suppressed, but a failure here is why the refresher
+          # below usually dies, so say so instead of `|| true`-ing it into silence.
+          python cloud_fetch.py >/dev/null 2>&1 \
+            || echo "::warning::cloud_fetch credential re-materialization failed — refresh_dup_exclusions.py may not be able to authenticate"
           if python refresh_dup_exclusions.py; then
             git config user.email "johnschwinghamer94@gmail.com"
             git config user.name "John Schwinghamer"
             git add cancel_dup_exclusions.json
-            git commit -m "Refresh cancel duplicate-exclusions ($(date -u +%F))" || echo "no change"
-            git push || echo "push skipped"
+            if git diff --cached --quiet; then
+              echo "dup-exclusion list unchanged"
+            else
+              git commit -q -m "Refresh cancel duplicate-exclusions ($(date -u +%F))"
+              # Same push-race heal as the TGL truth step: the old
+              # `git push || echo "push skipped"` reported success while the
+              # refreshed list never left the runner.
+              n=0
+              until git push -q origin main; do
+                n=$((n+1))
+                if [ "$n" -gt 5 ]; then
+                  echo "::error::cancel duplicate-exclusion push failed after 5 attempts — the dashboard keeps the OLD exclusion list, so duplicate cancel tickets created since then are counted as real cancellations"
+                  dup_ok=0
+                  break
+                fi
+                git fetch -q origin main
+                git reset -q --mixed origin/main      # see TGL step: --soft would revert other jobs' pushes
+                git add cancel_dup_exclusions.json
+                if git diff --cached --quiet; then echo "exclusions already current on remote"; break; fi
+                git commit -q -m "Refresh cancel duplicate-exclusions ($(date -u +%F))"
+              done
+            fi
+          else
+            echo "::error::refresh_dup_exclusions.py failed — cancel_dup_exclusions.json is FROZEN at its last good state; duplicate cancel tickets created since then will inflate the cancellation numbers on the dashboard"
+            dup_ok=0
           fi
+          [ "$dup_ok" = "1" ] || exit 1   # step is continue-on-error: job proceeds, step renders red
       - name: Rebuild index.html and push
         env:
           ROPP_REPO: ${{ github.workspace }}/site
@@ -162,5 +199,12 @@ jobs:
             exit 0
           fi
           # Recount from YOUR emailed Excel reports and diff against the published (API-fed) index.html.
-          python graph_download_cloud.py || echo "(could not fetch emailed reports for audit)"
+          # If the emailed reports can't be downloaded, audit_dashboard.py compares the
+          # published dashboard against whatever stale Excel is already on the runner (or
+          # nothing) — a PASS then means nothing at all. That false all-clear is worse than
+          # a red step, so surface it. The audit still runs for whatever signal it gives.
+          dl_ok=1
+          python graph_download_cloud.py \
+            || { echo "::error::could not download your emailed Excel reports — the audit below is comparing the dashboard against STALE (or missing) report files, so a clean result does NOT mean the published numbers agree with your reports"; dl_ok=0; }
           python audit_dashboard.py --index site/index.html
+          [ "$dl_ok" = "1" ] || exit 1

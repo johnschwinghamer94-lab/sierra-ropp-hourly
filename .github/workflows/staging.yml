@@ -47,11 +47,22 @@ jobs:
           git config user.name "John Schwinghamer"
           if git status --porcelain -- test2.html test_service.html | grep -q .; then
             git add test2.html test_service.html
-            git commit -m "Staging refresh $(date +'%Y-%m-%d %H:%M %Z') (cloud · live API)"
+            git commit -q -m "Staging refresh $(date +'%Y-%m-%d %H:%M %Z') (cloud · live API)"
+            # test2.html / test_service.html are rebuilt from live data every hour, so on a
+            # push race ours win. --mixed (not --soft) keeps index.html and everything else
+            # the hourly rebuild pushed to the site while this job was running.
             n=0
-            until git push -q origin main; do
-              n=$((n+1)); [ "$n" -gt 1 ] && { echo "push failed after retry"; exit 1; }
-              git pull --rebase -q origin main
+            until git push -q origin HEAD:main; do
+              n=$((n+1))
+              if [ "$n" -gt 5 ]; then
+                echo "::error::staging push failed after 5 attempts — test2.html / test_service.html on the site are STALE; anything you are checking on the staging pages is from an earlier run"
+                exit 1
+              fi
+              git fetch -q origin main
+              git reset -q --mixed origin/main
+              git add test2.html test_service.html
+              if git diff --cached --quiet; then echo "staging already current on remote"; break; fi
+              git commit -q -m "Staging refresh $(date +'%Y-%m-%d %H:%M %Z') (cloud · live API)"
             done
             echo "pushed staging refresh"
           else

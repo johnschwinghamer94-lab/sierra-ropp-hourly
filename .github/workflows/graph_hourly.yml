@@ -31,10 +31,20 @@ jobs:
         # next dispatch each quarter-hour; the concurrency group queues it
         # until this loop finishes, so the chain is continuous.
         run: |
+          # A single failed capture is harmless — the next one 150s later re-reads the
+          # same hour. ALL FIVE failing is not: hourly.json never advances and the
+          # dashboard Today tab quietly freezes on the last good hour, which is exactly
+          # the kind of stall that used to hide behind `|| echo ... continuing`.
+          fails=0
           for i in 1 2 3 4 5; do
-            python graph_hourly.py || echo "capture $i failed — continuing"
+            python graph_hourly.py || { echo "::warning::hourly capture $i/5 failed — a later capture in this run can still refresh the hour"; fails=$((fails+1)); }
             if [ "$i" -lt 5 ]; then sleep 150; fi
           done
+          if [ "$fails" -ge 5 ]; then
+            echo "::error::all 5 hourly captures failed — hourly.json did NOT advance, so the dashboard Today tab is frozen at its last good hour"
+            exit 1
+          fi
+          [ "$fails" -eq 0 ] || echo "::warning::$fails of 5 hourly captures failed (a later one succeeded, so Today is current)"
       # This job is driven dependably 24/7 by cron-job.org, so it doubles as the
       # heartbeat that keeps a SILO Live Feed relay session armed during ops
       # hours — GitHub's own cron skipped all three evening ticks on day one
@@ -57,9 +67,22 @@ jobs:
             if [ "${A:-0}" -ge 1 ] && [ "${W:-0}" -ge 1 ]; then
               echo "livefeed active with a spare queued - no arm needed"
             else
-              curl -s -o /dev/null -w "arm livefeed -> HTTP %{http_code}\n" -X POST \
-                -H "$AUTH" -H "Accept: application/vnd.github+json" \
-                "$API/dispatches" -d '{"ref":"main"}'
+              # The old form only PRINTED the HTTP code, so an expired DASHBOARD_TOKEN
+              # (or any 4xx/5xx) stopped arming the relay while this step stayed green —
+              # the live board just quietly stopped updating.
+              code=""
+              for attempt in 1 2 3; do
+                code=$(curl -s -o /dev/null -w "%{http_code}" -X POST \
+                  -H "$AUTH" -H "Accept: application/vnd.github+json" \
+                  "$API/dispatches" -d '{"ref":"main"}')
+                echo "arm livefeed attempt $attempt -> HTTP $code"
+                case "$code" in 2*) break ;; esac
+                sleep 5
+              done
+              case "$code" in
+                2*) ;;
+                *) echo "::error::could not dispatch livefeed.yml (HTTP $code) — the SILO Live Feed relay is no longer being armed, so the live board will stop updating until this is fixed"; exit 1 ;;
+              esac
             fi
           else
             echo "outside ops hours (PT hour $H) — skip"
@@ -79,11 +102,24 @@ jobs:
           # extended to midnight 2026-07-26 (John) — late calls need transcripts
           # pulled for scoring/coaching too.
           if [ "$H" -ge 6 ] && [ "$H" -lt 24 ]; then
-            curl -s -o /dev/null -w "arm siro_pull -> HTTP %{http_code}\n" -X POST \
-              -H "Authorization: token $DASHBOARD_TOKEN" \
-              -H "Accept: application/vnd.github+json" \
-              https://api.github.com/repos/${{ github.repository }}/actions/workflows/siro_pull.yml/dispatches \
-              -d '{"ref":"main"}'
+            # check the HTTP code — a printed 401/404 used to scroll by unnoticed while
+            # transcript pulls silently stopped (siro_pull's own cron is unreliable, so
+            # this dispatch IS the transcript pipeline's trigger).
+            code=""
+            for attempt in 1 2 3; do
+              code=$(curl -s -o /dev/null -w "%{http_code}" -X POST \
+                -H "Authorization: token $DASHBOARD_TOKEN" \
+                -H "Accept: application/vnd.github+json" \
+                https://api.github.com/repos/${{ github.repository }}/actions/workflows/siro_pull.yml/dispatches \
+                -d '{"ref":"main"}')
+              echo "arm siro_pull attempt $attempt -> HTTP $code"
+              case "$code" in 2*) break ;; esac
+              sleep 5
+            done
+            case "$code" in
+              2*) ;;
+              *) echo "::error::could not dispatch siro_pull.yml (HTTP $code) — Siro transcripts are no longer being pulled, so scoring and coaching plans will run on an ever-staler set of calls"; exit 1 ;;
+            esac
           else
             echo "skip (outside 6a-midnight PT)"
           fi

@@ -28,17 +28,40 @@ jobs:
         run: python weekly_report.py
       - name: Publish to the site (stable + dated URL)
         run: |
-          pdf=$(ls -t weekly_report_*.pdf | head -1)
+          pdf=$(ls -t weekly_report_*.pdf 2>/dev/null | head -1)
+          jsn=$(ls -t weekly_report_*.json 2>/dev/null | head -1)
+          if [ -z "$pdf" ] || [ -z "$jsn" ]; then
+            echo "::error::weekly_report.py produced no PDF/JSON — reports/weekly-latest.pdf on the dashboard stays at LAST week's report"
+            exit 1
+          fi
           mkdir -p site/reports
           cp "$pdf" "site/reports/$(basename "$pdf")"
           cp "$pdf" site/reports/weekly-latest.pdf
-          jsn=$(ls -t weekly_report_*.json | head -1)
           cp "$jsn" "site/reports/$(basename "$jsn")"
           cp "$jsn" site/reports/weekly-latest.json
           cd site
           git config user.email "johnschwinghamer94@gmail.com"
           git config user.name "John Schwinghamer"
           git add reports/
-          git commit -m "Weekly SILO report $(date -u +%F)" || { echo "no change"; exit 0; }
-          git pull --rebase --autostash origin main || true
-          git push || echo "push skipped"
+          if git diff --cached --quiet; then
+            echo "no change — this week's report is already published"
+            exit 0
+          fi
+          git commit -q -m "Weekly SILO report $(date -u +%F)"
+          # The old tail was `git pull --rebase ... || true` then `git push || echo "push
+          # skipped"` — a conflicted rebase left the repo mid-rebase, the push failed, and
+          # the step went GREEN while weekly-latest.pdf stayed on the previous week. Nobody
+          # can tell a stale weekly PDF from a fresh one by looking at it.
+          n=0
+          until git push -q origin HEAD:main; do
+            n=$((n+1))
+            if [ "$n" -gt 5 ]; then
+              echo "::error::weekly SILO report push failed after 5 attempts — reports/weekly-latest.pdf on the dashboard is STILL last week's report"
+              exit 1
+            fi
+            git fetch -q origin main
+            git reset -q --mixed origin/main    # --mixed, not --soft: preserves other jobs' site changes
+            git add reports/
+            if git diff --cached --quiet; then echo "report already current on remote"; break; fi
+            git commit -q -m "Weekly SILO report $(date -u +%F)"
+          done

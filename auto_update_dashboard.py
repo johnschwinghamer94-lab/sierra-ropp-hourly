@@ -165,6 +165,13 @@ def git(*args, check=True):
     return subprocess.run(["git", "-C", REPO, *args], capture_output=True, text=True, check=check)
 
 
+def fail(msg):
+    """Die loudly. In Actions this renders the step red with a readable annotation."""
+    prefix = "::error::" if os.environ.get("GITHUB_ACTIONS") else "ERROR: "
+    print(prefix + msg, flush=True)
+    sys.exit(1)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date")
@@ -214,14 +221,34 @@ def main():
         print("No data changes; nothing to publish.")
         return
     git("add", "index.html")
-    git("commit", "-m", f"Auto-update dashboard data ({today.isoformat()})")
-    # Push; if another machine pushed first (both-machines setup), rebase and retry once.
-    if git("push", "origin", "main", check=False).returncode:
-        git("pull", "--rebase", "--autostash", check=False)
-        if git("push", "origin", "main", check=False).returncode:
-            print("Push failed after retry (another run may have already published today).")
+    msg = f"Auto-update dashboard data ({today.isoformat()})"
+    git("commit", "-m", msg)
+    # Push, healing races with the other publishers (staging refresh, coaching and
+    # scorecards relays, livefeed all push to this repo).
+    #
+    # This used to be "retry once, then print 'Push failed after retry (another run may
+    # have already published today)' and return 0" — which is a guess, not a check: the
+    # step went GREEN while index.html on the live site silently stayed on the previous
+    # rebuild's numbers. Now it heals up to 5 times and dies red if it truly can't publish.
+    for attempt in range(1, 6):
+        if not git("push", "origin", "main", check=False).returncode:
+            print("Pushed.")
             return
-    print("Pushed.")
+        git("fetch", "origin", "main", check=False)
+        if git("pull", "--rebase", "--autostash", check=False).returncode:
+            # Conflict (someone else also rewrote index.html). Ours is a complete rebuild
+            # from fresh data, so it wins — but via --mixed, never --soft: --soft would
+            # re-commit our whole stale tree and revert their other files.
+            git("rebase", "--abort", check=False)
+            git("reset", "--mixed", "origin/main", check=False)
+            git("add", "index.html", check=False)
+            if not git("diff", "--cached", "--quiet", check=False).returncode:
+                print("index.html already current on remote; nothing left to publish.")
+                return
+            git("commit", "-m", msg, check=False)
+        print(f"push race — healed, retrying ({attempt}/5)")
+    fail("dashboard push FAILED after 5 attempts — index.html on the live site was not "
+         "updated. The dashboard is still showing the previous rebuild's numbers.")
 
 
 if __name__ == "__main__":

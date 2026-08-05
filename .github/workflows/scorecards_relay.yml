@@ -43,10 +43,24 @@ jobs:
             echo "No staged changes — nothing to commit."
             exit 0
           fi
-          git commit -m "livecoach: scorecards update (cloud)"
-          git pull --rebase --autostash origin main
-          if ! git push; then
-            echo "Push failed, retrying after another rebase..."
-            git pull --rebase --autostash origin main
-            git push
-          fi
+          git commit -q -m "livecoach: scorecards update (cloud)"
+          # scorecards.json is a MERGE (remote cards + our livecards, deduped by recId),
+          # not a mirror — so a push race must NOT be healed by forcing our copy: that
+          # would delete cards another relay published. Instead take the remote file back
+          # and re-run the merge on top of it, which is idempotent. The old
+          # `pull --rebase; push` aborted on a conflict here and lost the whole batch.
+          n=0
+          until git push -q origin HEAD:main; do
+            n=$((n+1))
+            if [ "$n" -gt 5 ]; then
+              echo "::error::scorecards push failed after 5 attempts — the Live Feed scorecard cards on the dashboard are stale; newly graded calls are missing from the board"
+              exit 1
+            fi
+            git fetch -q origin main
+            git reset -q --mixed origin/main
+            git checkout -q origin/main -- scorecards.json 2>/dev/null || true
+            ( cd "$GITHUB_WORKSPACE" && python tools/merge_livecards.py livecards site/scorecards.json )
+            git add scorecards.json
+            if git diff --cached --quiet; then echo "scorecards already current on remote"; break; fi
+            git commit -q -m "livecoach: scorecards update (cloud)"
+          done

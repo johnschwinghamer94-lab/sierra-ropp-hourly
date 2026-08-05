@@ -93,17 +93,30 @@ jobs:
           cd site
           git config user.name "coaching-relay"
           git config user.email "actions@github.com"
+          paths=""
           for p in coaching.json coaching/plans service_coaching.json coaching/plans_service coaching/weekly coaching/monthly coaching/objections; do
-            [ -e "$p" ] && git add "$p"
+            [ -e "$p" ] && { git add "$p"; paths="$paths $p"; }
           done
           if git diff --cached --quiet; then
             echo "No staged changes — nothing to commit."
             exit 0
           fi
-          git commit -m "Coaching plans relay $(date +%F)"
-          git pull --rebase --autostash origin main
-          if ! git push; then
-            echo "Push failed, retrying after another rebase..."
-            git pull --rebase --autostash origin main
-            git push
-          fi
+          git commit -q -m "Coaching plans relay $(date +%F)"
+          # The site copies are pure MIRRORS of this repo's plans/weekly/monthly/objections,
+          # so on a push race ours win outright. The old `pull --rebase; push` aborted on
+          # any conflict and the relay was simply lost until someone pushed to plans/**
+          # again. --mixed (not --soft) keeps every other site change — index.html is
+          # rewritten by the hourly rebuild while this job runs.
+          n=0
+          until git push -q origin HEAD:main; do
+            n=$((n+1))
+            if [ "$n" -gt 5 ]; then
+              echo "::error::coaching relay push failed after 5 attempts — the new coaching plans / weekly rollups are NOT on the dashboard; the site is still showing the previous relay"
+              exit 1
+            fi
+            git fetch -q origin main
+            git reset -q --mixed origin/main
+            for p in $paths; do git add "$p"; done
+            if git diff --cached --quiet; then echo "site already current"; break; fi
+            git commit -q -m "Coaching plans relay $(date +%F)"
+          done
