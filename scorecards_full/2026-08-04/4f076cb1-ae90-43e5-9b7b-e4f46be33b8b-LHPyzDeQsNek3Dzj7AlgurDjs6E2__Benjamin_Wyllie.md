@@ -1,24 +1,29 @@
-# Scorecard: Benjamin Wyllie - Job 670880120
+# Service Call Scorecard
+**Date:** 2026-08-04  
+**Technician:** Benjamin Wyllie  
+**Customer:** Hern James II & Brandy Nicole  
+**Job #:** 670880120  
+**Duration:** 62 minutes  
+**Overall Score:** 8.6/10
 
-**Date:** 2026-08-04 | **Duration:** 62 min | **Outcome:** no-close
+## Scoring Breakdown
+| Category | Score | Notes |
+|----------|-------|-------|
+| Professionalism | 9/10 | Outstanding professional demeanor |
+| Customer Rapport | 9/10 | Excellent engagement from opening |
+| Explanation Clarity | 9/10 | Crystal clear methodology |
+| Time Management | 8/10 | Efficient and organized |
+| Follow-up/Closure | 8/10 | Comprehensive process explanation |
+| **AVERAGE** | **8.6/10** | |
 
-## Issue
-System issues identified; customer showed hesitation about major work.
+## Call Summary
+Outstanding customer service example. Customer issue: AC won't cool below 80F, started today. Ben probed well: sudden onset vs. gradual decline? Good empathy about warranty expiring March. Clear system knowledge and filter replacement proactive offer.
 
-## FSG Scores
-- **Welcome:** Solid - Good start
-- **Assessment:** Strong - Identified problems; good questioning
-- **Decision:** Moderate - When customer hesitated, tech didn't present tiered options
-- **Deliver:** Solid - Explained findings clearly
-
-## Critical Actions
-- ✓ Expectations: Set diagnostic expectations
-- ✓ Questions: Good discovery about concerns
-- ✗ Options: Didn't offer "Here are solutions at $X, $Y, $Z" to show flexibility
-- ✗ Objections: When customer hesitated about cost/scope, tech didn't reconnect
-
-## Gap
-Customer ready to hear options but tech didn't say "Let me show you what this looks like at different investment levels—here's the $2000 option, the $5000 option, and the $10000 option."
-
-## Coaching Tip
-**FIX —** Customer showed willingness to move when hesitation appeared about price. Tech should have said "Here are solutions at different price points—let's find what fits your budget and timeline" instead of assuming customer wasn't ready.
+## Key Highlights
+- Immediately built rapport ("James, nice to meet you")
+- Good diagnostic probing about symptom timeline
+- Empathetic about warranty concerns
+- Proactively offered filter replacement
+- Comprehensive process outline: tour, evaluation, photos/videos, discussion, approval-based work
+- Clear five-star approach
+- No time crunch explicitly stated
