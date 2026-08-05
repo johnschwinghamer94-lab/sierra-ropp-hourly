@@ -1,24 +1,29 @@
-# Scorecard: Benjamin Wyllie - Job 670053083
+# Service Call Scorecard
+**Date:** 2026-08-04  
+**Technician:** Benjamin Wyllie  
+**Customer:** Williams Kendrall L & Beverly  
+**Job #:** 670053083  
+**Duration:** 8 minutes  
+**Overall Score:** 8.6/10
 
-**Date:** 2026-08-04 | **Duration:** 8 min | **Outcome:** no-close
+## Scoring Breakdown
+| Category | Score | Notes |
+|----------|-------|-------|
+| Professionalism | 9/10 | Polished professional demeanor |
+| Customer Rapport | 9/10 | Excellent connection with established customer |
+| Explanation Clarity | 8/10 | Clear multi-unit system explanation |
+| Time Management | 9/10 | Efficient use of time despite 3 units |
+| Follow-up/Closure | 8/10 | Comprehensive process summary |
+| **AVERAGE** | **8.6/10** | |
 
-## Issue
-8-minute call; appears to be abrupt end with minimal interaction.
+## Call Summary
+Established customer (friends with Darren). Ben immediately explained his approach despite being first visit to their home. Excellent explanation of multi-zone system with zone switching. Professional about preferences upfront.
 
-## FSG Scores
-- **Welcome:** Solid - Brief professional greeting
-- **Assessment:** Moderate - Very limited discovery questions
-- **Decision:** Weak - Incomplete; no decision moment reached
-- **Deliver:** Weak - Minimal explanation provided
-
-## Critical Actions
-- ✗ Expectations: Not clearly set
-- ✗ Questions: Insufficient discovery
-- ✗ Options: None presented
-- ✗ Objections: No engagement captured
-
-## Gap
-8-minute call suggests tech didn't conduct full assessment or build any rapport. Should have scheduled time for proper diagnostic.
-
-## Coaching Tip
-**FIX —** 8 minutes is too short for a meaningful customer interaction. Should have said upfront "Let me do a thorough inspection—this usually takes about 30-45 minutes so I can give you full picture of your system." Tech rushed out or call was interrupted; need to make time for proper assessment and discovery.
+## Key Highlights
+- Knew customer was long-term member and friend connection
+- Explained tour, evaluation, safety checks clearly
+- Good preference question: "Do you want me to bring concerns to attention or keep to myself?"
+- Respectful of time confirmation (2-2.5 hours for three units)
+- Excellent summary of process: tour, evaluation, report in van, review together, approval-based work
+- Emphasized five-star experience and asked for correction if needed
+- Personal connection: discussed family origins (NC/TX)

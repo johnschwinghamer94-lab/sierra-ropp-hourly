@@ -1,24 +1,27 @@
-# Scorecard: Bradley Espinoza - Job 670243678
+# Service Call Scorecard
+**Date:** 2026-08-04  
+**Technician:** Bradley Espinoza  
+**Customer:** Crismarie Asset Protection Trust  
+**Job #:** 670243678  
+**Duration:** 60 minutes  
+**Overall Score:** 6.2/10
 
-**Date:** 2026-08-04 | **Duration:** 60 min | **Outcome:** FLIPPED
+## Scoring Breakdown
+| Category | Score | Notes |
+|----------|-------|-------|
+| Professionalism | 7/10 | Professional intent but communication unclear |
+| Customer Rapport | 6/10 | Friendly but not reassuring |
+| Explanation Clarity | 6/10 | Thermostat settings confusion unresolved |
+| Time Management | 6/10 | Adequate but meandering |
+| Follow-up/Closure | 6/10 | Limited closure planning |
+| **AVERAGE** | **6.2/10** | |
 
-## Issue
-Cooling system upgrade needed; customer concerned about cost.
+## Call Summary
+This call shows communication challenges. Customer had thermostat questions about dual thermostats, Z-Wave Install setting, FC settings. Bradley's explanations were unclear and customer remained confused about whether system would cool below 80F. Temperature readings (67/64 displayed vs 80F interior) weren't well clarified.
 
-## FSG Scores
-- **Welcome:** Strong - Built rapport and credibility
-- **Assessment:** Strong - Thorough diagnostic; understood customer concerns
-- **Decision:** Strong - Built options framework around customer budget/preferences
-- **Deliver:** Solid - Clear on what replacement entails
-
-## Critical Actions
-- ✓ Expectations: Clear about diagnostic and options process
-- ✓ Questions: Deep discovery about customer's cooling concerns and priorities
-- ✓ Options: Multiple upgrade paths presented with pricing context
-- ✓ Objections: Addressed cost concerns by showing value; customer ready to discuss with Comfort Advisor
-
-## Win
-Tech built genuine understanding of customer's needs, then showed multiple options that addressed those specific concerns. Customer saw clear value and moved to financing conversation.
-
-## Coaching Tip
-**WIN —** When customer expressed cost concern, tech didn't retreat but instead showed tiered options tied directly to what customer cared about. That "here's what each investment gets you" approach turned hesitation into commitment.
+## Key Highlights
+- Professional maintenance approach outlined
+- Covered cleaning scope
+- Willing to bring concerns to attention
+- Customer frustration evident ("you understand that?")
+- Thermostat settings explanation lacked clarity
