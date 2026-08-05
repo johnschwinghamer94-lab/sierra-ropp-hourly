@@ -23,4 +23,6 @@ jobs:
       - run: pip install --quiet -r requirements.txt
       - env:
           DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
-        run: python coaching_outcomes.py
+        run: |
+          python coaching_outcomes.py
+          python coaching_roi.py   # reads coaching_outcomes.json; must run after it
