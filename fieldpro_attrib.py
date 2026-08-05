@@ -491,11 +491,14 @@ def build(day):
     # be saying does not exist. Sessions with no genuine start (consent-only /
     # pause-stop tails, typically 0-7 seconds) are app noise and do not blind.
     blind = set()
+    app = {}
     for s in stats_all:
         for u in s["uncorrelatedDetail"]:
             if u["real"]:
                 for o in u["owners"]:
                     blind.add((o, u["day"]))
+        for k, v in s["appRows"].items():
+            app[k] = app.get(k, 0) + v
 
     out = {}
     for jn, j in jobs.items():
@@ -527,10 +530,6 @@ def build(day):
             continue
         # Telemetry sanity: if this tech's app emitted NOTHING all day, silence
         # is a broken/absent device feed, not proof of a skipped recording.
-        app = {}
-        for s in stats_all:
-            for k, v in s["appRows"].items():
-                app[k] = app.get(k, 0) + v
         if not any(app.get((n or "").strip(), 0) for n in techs.values()):
             out[jn] = dict(base, v="unknown", why="no-app-telemetry")
             continue
