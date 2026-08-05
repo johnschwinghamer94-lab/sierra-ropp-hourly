@@ -1,12 +1,12 @@
-# Joe Mendoza - 669688820
+# Joe Mendoza - 648117619
 
-**RecId:** bc80f8a1-bebd-4d50-a908-51bce8bdd481-hUwt6xtja4T6o8jCUdsXJsPtmQX2
+**RecId:** 586fe5b0-3af7-4515-8209-4c19eab18e07-hUwt6xtja4T6o8jCUdsXJsPtmQX2
 **Date:** 2026-08-05
-**Duration:** 53 min
+**Duration:** 10 min
 
 ## FSG Bands
 
-- **Welcome:** Strong
+- **Welcome:** Solid
 - **Assessment:** Strong
 - **Decision:** Solid
 - **Deliver:** Solid
@@ -15,12 +15,12 @@
 
 - ✗ Expectations
 - ✓ Questions
-- ✓ Options
+- ✗ Options
 - ✓ Objections
 
 ## Outcome
 
-CLOSED
+FLIPPED
 
 ## Coaching Tip
 

@@ -1,33 +1,27 @@
-# Coaching Card: Andrew Trujillo
+# Andrew Trujillo - Maintenance
 
 **RecId:** 88b800f1-babf-4cad-ba87-1375a35cf1a9-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
 **Date:** 2026-08-05
-**Job Number:** N/A
 **Duration:** 18 min
-**Outcome:** UNKNOWN
 
-## FSG Band Scores
+## FSG Bands
 
-| Step | Band |
-|------|------|
-| Welcome | Strong |
-| Assessment | Strong |
-| Decision | Moderate |
-| Deliver | Solid |
+- **Welcome:** Strong
+- **Assessment:** Strong
+- **Decision:** Solid
+- **Deliver:** Solid
 
 ## Critical Actions
 
-| Action | Pass |
-|--------|------|
-| Set clear expectations | ✓ |
-| Asked good discovery questions | ✓ |
-| Created/presented options | ✗ |
-| Handled objections with empathy | ✗ |
+- ✓ Expectations
+- ✓ Questions
+- ✗ Options
+- ✓ Objections
+
+## Outcome
+
+CLOSED
 
 ## Coaching Tip
 
-FIX — When the customer mentioned a previous list of repair estimates, you acknowledged it but didn't reconnect to whether any of those concerns had resurfaced, which would have been a check-in question.
-
----
-*SILO Live Coaching Scorecard*
-*Generated: 2026-08-05*
+WIN — Strong rapport building and empathy throughout the call

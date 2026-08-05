@@ -1,33 +1,27 @@
-# Coaching Card: Francisco Valencia
+# Francisco Valencia - 671210348
 
 **RecId:** 4a11cff1-0a46-4eff-8281-00cd6c14809b-b6xhRGsYH8eMOzcoHjFcmJrxoqp1
 **Date:** 2026-08-05
-**Job Number:** 671210348
 **Duration:** 8 min
-**Outcome:** NO-CLOSE
 
-## FSG Band Scores
+## FSG Bands
 
-| Step | Band |
-|------|------|
-| Welcome | Solid |
-| Assessment | Solid |
-| Decision | Moderate |
-| Deliver | Weak |
+- **Welcome:** Strong
+- **Assessment:** Strong
+- **Decision:** Solid
+- **Deliver:** Solid
 
 ## Critical Actions
 
-| Action | Pass |
-|--------|------|
-| Set clear expectations | ✗ |
-| Asked good discovery questions | ✓ |
-| Created/presented options | ✗ |
-| Handled objections with empathy | ✗ |
+- ✗ Expectations
+- ✓ Questions
+- ✗ Options
+- ✓ Objections
+
+## Outcome
+
+NO-CLOSE
 
 ## Coaching Tip
 
-FIX — When customer expressed sticker shock at pricing, you didn't explore what budget range would work or offer a payment plan option before ending the call.
-
----
-*SILO Live Coaching Scorecard*
-*Generated: 2026-08-05*
+FIX — Build more value and options before presenting recommendations
