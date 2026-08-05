@@ -3,3 +3,4 @@ cache/
 sierra*.json
 siro_dry_output/
 __pycache__/
+health.json

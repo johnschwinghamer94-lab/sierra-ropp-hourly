@@ -1,0 +1,20 @@
+name: Pipeline health check
+
+on:
+  schedule:
+    - cron: "*/20 * * * *"
+  workflow_dispatch:
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/Los_Angeles
+      DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install --quiet -r requirements.txt
+      - name: Run health check (fails loudly — no continue-on-error, no masking)
+        run: python health_check.py
