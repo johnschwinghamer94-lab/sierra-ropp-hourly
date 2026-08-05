@@ -42,9 +42,16 @@ jobs:
         continue-on-error: true          # a truth-refresh failure never breaks the rebuild
         env:
           ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
+          # tgl_conv.py reads the cached API payloads via ropp_live when this is set.
+          # Without it, it looked for OneDrive Excel exports that this job stopped
+          # producing — it failed every run from 2026-07-28 and the `|| echo` below
+          # hid it, so conv.json went stale and coaching plans silently fell back to
+          # "close rate from graded calls" instead of real ServiceTitan conversion.
+          ROPP_SOURCE: api
         run: |
-          python tgl_truth.py || echo "truth refresh failed — keeping last good"
-          python tgl_conv.py || echo "conv refresh failed — keeping last good"
+          truth_ok=1
+          python tgl_truth.py || { echo "::error::tgl_truth.py failed — daily truth files will be stale"; truth_ok=0; }
+          python tgl_conv.py  || { echo "::error::tgl_conv.py failed — coaching close rates will fall back to graded-call sampling"; truth_ok=0; }
           python - <<'PYEOF'
           # Objection mining needs a source-job# -> ScheduledDate map spanning the whole
           # YTD flip history. cache/tgls_created.json is written earlier in this job by
@@ -91,16 +98,26 @@ jobs:
             # commits made the rebase conflict (found 2026-07-28: daily truth
             # files silently stopped for 2 days). Truth files are regenerated
             # fresh each run, so on conflict OUR copies win.
+            # Freshly generated truth files are authoritative, so on a push race just
+            # rebuild the commit on top of the new remote head and retry. The old
+            # rebase/abort dance dropped the commit outright and lost the update.
             n=0
             until git push -q origin main; do
-              n=$((n+1)); [ "$n" -gt 3 ] && { echo "truth push failed after 3 heals"; break; }
-              if ! git pull --rebase --autostash -q; then
-                git checkout --theirs tgl_truth/ 2>/dev/null || true
-                git add tgl_truth/ 2>/dev/null || true
-                GIT_EDITOR=true git rebase --continue || git rebase --abort
+              n=$((n+1))
+              if [ "$n" -gt 5 ]; then
+                echo "::error::TGL truth push failed after 5 attempts — truth data is stale on main"
+                truth_ok=0
+                break
               fi
+              git fetch -q origin main
+              git reset -q --soft origin/main
+              git add tgl_truth/
+              if git diff --cached --quiet; then echo "truth already current on remote"; break; fi
+              git commit -q -m "TGL truth $(date -u +'%F %H:%M')"
             done
           fi
+          [ "$truth_ok" = "1" ] || exit 1  # surface masked failures (step is continue-on-error, job still proceeds)
+
       - name: Refresh duplicate-ticket exclusions (once daily · 14:00 UTC)
         continue-on-error: true          # a refresher failure keeps the last good list; never breaks the build
         env:
