@@ -1,23 +1,21 @@
-# Scorecard: Benjamin Wyllie - Job 670421065
-
-Date: 2026-08-04
-Duration: 51 min
-RecId: f8d5831b-7b94-48fb-8b2c-163c9187dee4-LHPyzDeQsNek3Dzj7AlgurDjs6E2
+# Coaching Scorecard: Benjamin Wyllie
+**Job #670421065** | **2026-08-04** | **51 min** | **Outcome: no-close**
 
 ## FSG Bands
-- Welcome: Strong
-- Assessment: Strong
-- Decision: Strong
-- Deliver: Solid
+- **Welcome**: Solid — Benjamin introduced himself and partner professionally. Set permission and established comfort.
+- **Assessment**: Solid — Identified past compressor replacement, assessed system age (2015/2016), checked warranty status.
+- **Decision**: Moderate — Maintenance visit scope; no new options presented or preventive care recommendations made.
+- **Deliver**: Moderate — Professional closing. Complimented the home upgrades. No upsell or efficiency recommendations offered.
 
 ## Critical Actions
-- Expectations: True
-- Questions: True
-- Options: True
-- Objections: False
+- **expectations**: ✓ Set expectations for routine tune-up visit.
+- **questions**: ✓ Asked about repair history, system age, warranty.
+- **options**: ✗ No preventive care upgrades or maintenance packages suggested.
+- **objections**: None apparent—routine visit.
 
-## Outcome
-flipped
+## Outcome Analysis
+**Ground Truth:** Job 670421065 does NOT appear in tgl_truth/2026-08-04.json.  
+**Verdict:** no-close
 
 ## Coaching Tip
-WIN — Benjamin diagnosed electrical issues and asked direct questions about desired outcomes ('What do you want to do?') before recommending options, giving the customer agency.
+FIX — Maintenance visit was handled well but no mention of preventive care upgrades or seasonal recommendations to extend system life or improve efficiency.

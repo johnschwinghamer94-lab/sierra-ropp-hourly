@@ -1,23 +1,21 @@
-# Scorecard: Benjamin Wyllie - Job 671186381
-
-Date: 2026-08-04
-Duration: 86 min
-RecId: 205d5911-fde4-49ee-b5ab-61eba431c8ac-LHPyzDeQsNek3Dzj7AlgurDjs6E2
+# Coaching Scorecard: Benjamin Wyllie
+**Job #671186381** | **2026-08-04** | **86 min** | **Outcome: flipped**
 
 ## FSG Bands
-- Welcome: Strong
-- Assessment: Strong
-- Decision: Strong
-- Deliver: Strong
+- **Welcome**: Solid — Warm greeting, introduced partner Juan. Established permission to proceed.
+- **Assessment**: Strong — Diagnosed upstairs unit (dual-zone system) not cooling. Identified Freon leak as likely cause. Checked system operation.
+- **Decision**: Strong on wins — Explained cooling options and potential causes (Freon shortage, mechanical issues). Customer engaged and committed to work.
+- **Deliver**: Strong — Excellent "nerd" explanation of system mechanics and diagnosis. Customer showed high buy-in.
 
 ## Critical Actions
-- Expectations: True
-- Questions: True
-- Options: True
-- Objections: True
+- **expectations**: ✓ Set clear expectations about diagnostic findings.
+- **questions**: ✓ Asked about system setup, cooling performance expectations.
+- **options**: ✓ Presented recharge vs. investigation options.
+- **objections**: ✓ Addressed customer's concerns and reconnected to comfort goals.
 
-## Outcome
-flipped
+## Outcome Analysis
+**Ground Truth:** Job 671186381 IS in tgl_truth/2026-08-04.json — FLIPPED.  
+**Verdict:** flipped
 
 ## Coaching Tip
-WIN — Benjamin handled customer's heating objection with respect ('I'm not saying it's a big problem') while still presenting a replacement upgrade path, turning concern into an option.
+WIN — Benjamin diagnosed the Freon leak in the upstairs unit and built value by presenting the option to recharge vs. investigating root cause, leading customer to commit to the work.
