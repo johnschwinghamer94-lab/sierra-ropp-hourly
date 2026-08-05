@@ -240,7 +240,12 @@ def _check_daily_plans(key, label, filename, missing_is_warn=False):
     `date` YYYY-MM-DD field, not minutes. expect date >= yesterday(PT)."""
     t = now_pt()
     today = t.date()
-    yesterday = today - dt.timedelta(days=1)
+    # Plans for day D are generated ~7:00-7:15 AM PT on day D+1, so between
+    # midnight and the generation window the newest legitimate plan is for
+    # D-2. Without this the check cried wolf every night (flagged 2026-08-05
+    # 01:00 with plans that were perfectly on time).
+    expected_newest = today - dt.timedelta(days=1 if t.hour >= 8 else 2)
+    yesterday = expected_newest
     try:
         data = fetch_json(PUB_RAW + filename)
     except urllib.error.HTTPError as e:
@@ -266,10 +271,10 @@ def _check_daily_plans(key, label, filename, missing_is_warn=False):
 
     age_days = (today - plan_date).days
     age_min = age_days * 1440
-    if plan_date >= yesterday:
+    if plan_date >= expected_newest:
         st = "ok"
-        note = "fresh"
-    elif age_days == 2:
+        note = "fresh" + ("" if t.hour >= 8 else " (pre-generation window)")
+    elif age_days == (2 if t.hour >= 8 else 3):
         st = "warn"
         note = "Daily coaching plan is 2 days behind — close-rate metrics may fall back to graded-call sampling."
     else:
