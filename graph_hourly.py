@@ -25,9 +25,16 @@ except Exception:
     _PACIFIC = None
     def _now(): return datetime.utcnow()
 
-CLIENT = os.environ["GRAPH_CLIENT_ID"]
-TENANT = os.environ["GRAPH_TENANT_ID"]
-RTOKEN = os.environ["GRAPH_REFRESH_TOKEN"]
+# Graph creds are OPTIONAL at import (2026-08-06). The Graph/OneDrive read is the
+# FALLBACK path — ServiceTitan is primary — but demanding its secrets with
+# os.environ[...] here meant the module could not even load without them, so the
+# primary path was unreachable off-Actions. The Mac failover publisher has
+# ~/.servicetitan/sierra.json but no Graph secrets (they live in Actions secrets
+# and cannot be read back). graph_token() raises a clear error if the fallback is
+# actually reached without them. DASHBOARD_TOKEN stays required — publishing needs it.
+CLIENT = os.environ.get("GRAPH_CLIENT_ID")
+TENANT = os.environ.get("GRAPH_TENANT_ID")
+RTOKEN = os.environ.get("GRAPH_REFRESH_TOKEN")
 GHTOK  = os.environ["DASHBOARD_TOKEN"]
 SELF   = os.environ.get("GITHUB_REPOSITORY", "johnschwinghamer94-lab/sierra-ropp-hourly")
 PUB    = "johnschwinghamer94-lab/sierra-ropp-dashboard"
@@ -70,6 +77,11 @@ def _load_tgl_oneoff_exclusions():
 
 # ---------- Microsoft Graph (delegated, refresh-token flow) ----------
 def graph_token():
+    if not (CLIENT and TENANT and RTOKEN):
+        raise RuntimeError(
+            "Graph/OneDrive fallback reached without GRAPH_CLIENT_ID / GRAPH_TENANT_ID / "
+            "GRAPH_REFRESH_TOKEN. Off-Actions runs (the Mac failover) are expected to use "
+            "the ServiceTitan path — check that ~/.servicetitan/sierra.json exists and is valid.")
     r = requests.post(
         f"https://login.microsoftonline.com/{TENANT}/oauth2/v2.0/token",
         data={"client_id": CLIENT, "grant_type": "refresh_token",
@@ -82,6 +94,14 @@ def graph_token():
 def rotate_secret(new_rt):
     """Persist the freshly-issued refresh token back into this repo's secret so the
     login chain never lapses (Azure rolls the token on every use)."""
+    if os.environ.get("GITHUB_ACTIONS") != "true":
+        # ONLY the Actions run may rotate. Azure invalidates the old refresh token
+        # on every use and this writes the replacement back into the repo secret.
+        # A second consumer doing that (the Mac failover) would invalidate the copy
+        # Actions holds and lock BOTH out of Graph, requiring a manual graph_setup.py
+        # re-auth. Off-Actions runs use the ServiceTitan path and never need this.
+        print("not running in GitHub Actions — skipping refresh-token rotation")
+        return
     if not new_rt or new_rt == RTOKEN:
         return
     try:
