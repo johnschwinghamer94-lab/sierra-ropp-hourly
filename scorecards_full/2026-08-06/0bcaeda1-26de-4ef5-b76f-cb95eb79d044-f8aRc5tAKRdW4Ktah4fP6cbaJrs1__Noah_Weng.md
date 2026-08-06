@@ -1,0 +1,1 @@
+Skipped: Primarily personal conversation with minimal structured customer interaction; ride-along or internal call
