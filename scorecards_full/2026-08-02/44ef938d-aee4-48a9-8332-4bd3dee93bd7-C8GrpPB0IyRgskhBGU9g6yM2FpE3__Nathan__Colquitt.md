@@ -1,8 +1,8 @@
-# Scorecard: Joe Mendoza
+# Scorecard: Nathan  Colquitt
 
-**Job:** 670554921
+**Job:** 670544561
 **Date:** 2026-08-02
-**Duration:** 7 min
+**Duration:** 22 min
 
 ## FSG Bands
 
@@ -15,7 +15,7 @@
 
 - Expectations: ✗ Fail
 - Questions: ✓ Pass
-- Options: ✗ Fail
+- Options: ✓ Pass
 - Objections: ✓ Pass
 
 ## Outcome

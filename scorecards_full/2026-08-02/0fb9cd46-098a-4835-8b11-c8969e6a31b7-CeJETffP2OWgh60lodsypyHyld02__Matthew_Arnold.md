@@ -1,21 +1,21 @@
-# Scorecard: Joe Mendoza
+# Scorecard: Matthew Arnold
 
-**Job:** 670554921
+**Job:** 670516304
 **Date:** 2026-08-02
-**Duration:** 7 min
+**Duration:** 186 min
 
 ## FSG Bands
 
 - **Welcome**: Solid
 - **Assessment**: Strong
-- **Decision**: Solid
+- **Decision**: Strong
 - **Deliver**: Solid
 
 ## Critical Actions
 
 - Expectations: ✗ Fail
 - Questions: ✓ Pass
-- Options: ✗ Fail
+- Options: ✓ Pass
 - Objections: ✓ Pass
 
 ## Outcome

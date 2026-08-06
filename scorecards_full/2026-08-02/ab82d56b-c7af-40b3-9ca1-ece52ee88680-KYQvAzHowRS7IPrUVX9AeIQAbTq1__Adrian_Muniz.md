@@ -1,8 +1,8 @@
-# Scorecard: Joe Mendoza
+# Scorecard: Adrian Muniz
 
-**Job:** 670554921
+**Job:** 670551950
 **Date:** 2026-08-02
-**Duration:** 7 min
+**Duration:** 34 min
 
 ## FSG Bands
 

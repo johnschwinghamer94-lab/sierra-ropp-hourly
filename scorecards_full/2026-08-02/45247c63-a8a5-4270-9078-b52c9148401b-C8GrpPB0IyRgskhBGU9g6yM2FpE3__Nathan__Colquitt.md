@@ -1,8 +1,8 @@
-# Scorecard: Joe Mendoza
+# Scorecard: Nathan  Colquitt
 
-**Job:** 670554921
+**Job:** 670602781
 **Date:** 2026-08-02
-**Duration:** 7 min
+**Duration:** 13 min
 
 ## FSG Bands
 
@@ -15,13 +15,13 @@
 
 - Expectations: ✗ Fail
 - Questions: ✓ Pass
-- Options: ✗ Fail
+- Options: ✓ Pass
 - Objections: ✓ Pass
 
 ## Outcome
 
-UNKNOWN
+FLIPPED
 
 ## Coaching Tip
 
-FIX — Focus on presenting clear options and reconnecting to customer concerns at decision moment.
+WIN — Strong diagnostic approach with clear customer communication led to successful Option C decision.

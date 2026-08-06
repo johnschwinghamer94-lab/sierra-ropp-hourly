@@ -1,13 +1,13 @@
-# Scorecard: Joe Mendoza
+# Scorecard: Xavier Paredes
 
-**Job:** 670554921
+**Job:** 670524501
 **Date:** 2026-08-02
-**Duration:** 7 min
+**Duration:** 19 min
 
 ## FSG Bands
 
 - **Welcome**: Solid
-- **Assessment**: Strong
+- **Assessment**: Solid
 - **Decision**: Solid
 - **Deliver**: Solid
 

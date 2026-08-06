@@ -1,19 +1,19 @@
-# Scorecard: Joe Mendoza
+# Scorecard: Joseph Byrd
 
-**Job:** 670554921
+**Job:** 670546585
 **Date:** 2026-08-02
-**Duration:** 7 min
+**Duration:** 45 min
 
 ## FSG Bands
 
 - **Welcome**: Solid
 - **Assessment**: Strong
-- **Decision**: Solid
+- **Decision**: Strong
 - **Deliver**: Solid
 
 ## Critical Actions
 
-- Expectations: ✗ Fail
+- Expectations: ✓ Pass
 - Questions: ✓ Pass
 - Options: ✗ Fail
 - Objections: ✓ Pass
