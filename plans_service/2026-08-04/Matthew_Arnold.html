@@ -1,0 +1,229 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Matthew Arnold — Service Coaching Plan 2026-08-04</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;·&nbsp;Service</b><span class="tag">Daily Coaching Plan · 2026-08-04</span></div>
+<div class="wrap">
+<div class="hero">
+  <div class="ey">Daily Coaching · 2026-08-04 · 4-Option Presentation</div>
+  <h1 class="disp">Matthew Arnold</h1>
+  <p class="lede">Matthew is the only tech on the team who built a proper 4-option menu today — Vegas Summer Soil Kit, gold, silver, and basic. The customer declined, but the structure was right. The gap is the close.</p>
+</div>
+
+<div class="glance">
+  <div class="g"><div class="k">Close Rate</div><div class="v red">0%<small>0 of 1 closed</small></div></div>
+  <div class="g"><div class="k">Calls Reviewed</div><div class="v">1<small>service call</small></div></div>
+  <div class="g"><div class="k">Strongest Section</div><div class="v grn">Options<small>Strong</small></div></div>
+  <div class="g"><div class="k">Weakest Section</div><div class="v red">Close<small>Moderate</small></div></div>
+</div>
+<div class="legend">
+  <span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span>
+  <span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span>
+</div>
+<p class="note">Only tech to hit the 4+ options target! Presented Vegas Summer Soil Kit, gold, silver, and bronze options. Soft close lost the sale.</p>
+
+<section id="verdict">
+<div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive">
+  <div class="dh"><div class="k">What&#x27;s almost there</div><h3>Right structure, soft close.</h3></div>
+  <div class="split">
+    <div class="c said"><div class="lbl">What actually happened</div><p>Matthew presented 4 tiered options with pricing, starting from highest to lowest. Customer said &#x27;not today&#x27; and Matthew accepted it.</p></div>
+    <div class="c should"><div class="lbl">What it means</div><p>Replace &#x27;Did you want to go with this?&#x27; with &#x27;Which of these options works best for you?&#x27; Assume the sale, don&#x27;t ask permission.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="calls">
+<div class="sh"><div class="no">2</div><h2>The day&#x27;s calls</h2><span class="hint">outcome per gradeable call</span></div>
+<div class="rub">
+  <div class="row"><div class="rb">McKeown — 4-option presentation</div><div><span class="b weak">No-close</span></div><div class="ev">Presented 4 options (Vegas Summer Soil, gold, silver, basic). Customer declined. Soft close.</div></div>
+</div>
+</section>
+
+<section id="rubric">
+<div class="sh"><div class="no">3</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div>
+<div class="rub">
+  <div class="grp"><span class="gn">Welcome</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Greeting</div><div><span class="b solid">Solid</span></div><div class="ev"><q>Hello, I&#x27;m Matthew Sierra. How are you?</q></div></div>
+  <div class="grp"><span class="gn">Diagnosis</span><span class="gb"><span class="b strong">Strong</span></span></div>
+  <div class="row"><div class="rb">System status</div><div><span class="b strong">Strong</span></div><div class="ev">Explained no concerns with upstairs unit (not even a year old), offered to bring up any issues found.</div></div>
+  <div class="grp"><span class="gn">Options</span><span class="gb"><span class="b strong">Strong</span></span></div>
+  <div class="row"><div class="rb">Build options</div><div><span class="b strong">Strong</span></div><div class="ev"><q>I put together 4 different recommendations... Vegas Summer Soil Kit... gold option... silver option... 2 surge protections with filters.</q></div></div>
+  <div class="row"><div class="rb">Present pricing</div><div><span class="b strong">Strong</span></div><div class="ev">Priced each tier clearly, starting from highest.</div></div>
+  <div class="grp"><span class="gn">Close</span><span class="gb"><span class="b mod">Moderate</span></span></div>
+  <div class="row"><div class="rb">Ask for business</div><div><span class="b mod">Moderate</span></div><div class="ev"><q>Did you want to go with this filter?</q> — permission-seeking, not assumptive.</div></div>
+</div>
+
+<div class="sh" style="margin-top:26px"><div class="no">4</div><h2>Critical Actions — pass rate</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Expectations</div><div><span class="b pass">Pass</span></div><div class="ev">Set expectations at arrival.</div></div>
+  <div class="row"><div class="rb">Options (4+)</div><div><span class="b pass">Pass</span></div><div class="ev">4 tiered options presented with pricing.</div></div>
+  <div class="row"><div class="rb">Membership</div><div><span class="b fail">Fail</span></div><div class="ev">Membership not offered.</div></div>
+  <div class="row"><div class="rb">Close</div><div><span class="b fail">Fail</span></div><div class="ev">Soft close: &#x27;Did you want to go with this?&#x27;</div></div>
+</div>
+</section>
+
+<section id="strengths">
+<div class="sh"><div class="no">5</div><h2>What Matthew did right — real strength, build on it</h2></div>
+<ul class="str">
+  <li><b>4-option structure.</b> The only tech today who hit the target. Vegas Summer Soil, gold, silver, basic.</li>
+  <li><b>Highest-first presentation.</b> Started with the premium option, worked down.</li>
+  <li><b>Clear pricing.</b> Each tier priced and explained.</li>
+</ul>
+</section>
+
+<section id="gaps">
+<div class="sh"><div class="no">6</div><h2>The three gaps</h2><span class="hint">each one in Matthew&#x27;s own calls</span></div>
+<div class="mom">
+  <div class="top2"><span class="b mod">Moderate</span><h4>Permission-seeking close</h4></div>
+  <div class="q"><b>Matthew</b>Did you want to go with this filter? Not today.</div>
+  <p class="fixline"><b>The fix</b> Replace &#x27;Did you want to go with this?&#x27; with &#x27;Which of these options works best for you today?&#x27; Assume they&#x27;re buying, just deciding which one.</p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b mod">Moderate</span><h4>Accepted &#x27;not today&#x27; without follow-up</h4></div>
+  <div class="q"><b>Customer</b>Not today, not today.</div>
+  <div class="q"><b>Matthew</b>I&#x27;ll call and then the next visit we&#x27;re gonna do.</div>
+  <p class="fixline"><b>The fix</b> Ask one follow-up: &#x27;What&#x27;s the main concern — timing or investment?&#x27; Work the objection before accepting.</p>
+</div>
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Membership not offered</h4></div>
+  <div class="q"><b>Pattern</b>No membership discussed despite 4-option presentation.</div>
+  <p class="fixline"><b>The fix</b> Add membership to the options menu: &#x27;Option 5 includes our SAM membership — you save 15% on today&#x27;s work.&#x27;</p>
+</div>
+</section>
+
+<section id="plan">
+<div class="sh"><div class="no">7</div><h2>Three-week training plan</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Week 1</div><div><span class="b solid">Assumptive close</span></div><div class="ev"><b>Drill:</b> Replace &#x27;Did you want?&#x27; with &#x27;Which one works best for you?&#x27; Role-play 20 times.<br><b>Proof it worked:</b> Assumptive close on 100% of calls.</div></div>
+  <div class="row"><div class="rb">Week 2</div><div><span class="b solid">Work the no</span></div><div class="ev"><b>Drill:</b> When customer says &#x27;not today,&#x27; ask: &#x27;What&#x27;s the main concern?&#x27; before accepting.<br><b>Proof it worked:</b> Follow-up question on every no.</div></div>
+  <div class="row"><div class="rb">Week 3</div><div><span class="b solid">Add membership</span></div><div class="ev"><b>Drill:</b> Add membership as a 5th option or bundle it into the premium tier.<br><b>Proof it worked:</b> Membership in options menu 100%.</div></div>
+</div>
+</section>
+
+<section id="owe">
+<div class="sh"><div class="no">8</div><h2>What we owe Matthew Arnold</h2></div>
+<ul class="str">
+  <li>Assumptive close script: &#x27;Which one works best?&#x27;</li>
+  <li>Objection-handling practice on &#x27;not today&#x27; responses.</li>
+  <li>Updated options template with membership as 5th tier.</li>
+</ul>
+</section>
+
+<div class="bottom">
+  <div class="eyb">Bottom line</div>
+  <p>Matthew is the closest to the model — 4 tiered options, priced clearly, presented highest-first. The final step is closing: assume they&#x27;re buying, ask which one, and work the &#x27;not today&#x27; before accepting it. Add membership and Matthew&#x27;s structure becomes the team template.</p>
+</div>
+
+<div class="foot">Sierra · Service daily coaching plan · 2026-08-04 · Scored on strength bands — close rate is the only number</div>
+</div></body></html>
