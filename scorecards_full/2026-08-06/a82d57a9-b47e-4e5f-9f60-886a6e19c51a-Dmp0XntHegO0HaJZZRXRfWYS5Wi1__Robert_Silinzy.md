@@ -7,22 +7,22 @@
 
 ## Scoring
 
-- Welcome: Moderate
-- Assessment: Moderate
-- Decision: Weak
-- Deliver: Weak
+- Welcome: Solid
+- Assessment: Strong
+- Decision: Solid
+- Deliver: Solid
 
 ## Critical Actions
 
-- Expectations: false
-- Questions: false
-- Options: false
-- Objections: false
+- Expectations: true
+- Questions: true
+- Options: true
+- Objections: true
 
 ## Outcome
 
-no-close
+unknown
 
 ## Coaching Tip
 
-FIX — Customer frustrated after years of recurring repairs; tech should have reconnected to reliability concern and presented replacement as permanent solution rather than continuing patch cycle.
+FIX — Reconnect to customer concerns before presenting options to increase buy-in.

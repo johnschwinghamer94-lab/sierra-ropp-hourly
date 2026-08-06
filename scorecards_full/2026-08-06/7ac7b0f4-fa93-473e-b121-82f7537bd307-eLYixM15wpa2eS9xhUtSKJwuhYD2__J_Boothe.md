@@ -7,17 +7,17 @@
 
 ## Scoring
 
-- Welcome: Strong
+- Welcome: Solid
 - Assessment: Strong
 - Decision: Solid
-- Deliver: Moderate
+- Deliver: Solid
 
 ## Critical Actions
 
 - Expectations: true
 - Questions: true
-- Options: false
-- Objections: false
+- Options: true
+- Objections: true
 
 ## Outcome
 
@@ -25,4 +25,4 @@ unknown
 
 ## Coaching Tip
 
-FIX — Methodical thorough maintenance inspection with excellent rapport; ensure that findings from full inspection trigger clear replacement/upgrade discussion rather than completing maintenance without upsell opportunity.
+FIX — Reconnect to customer concerns before presenting options to increase buy-in.

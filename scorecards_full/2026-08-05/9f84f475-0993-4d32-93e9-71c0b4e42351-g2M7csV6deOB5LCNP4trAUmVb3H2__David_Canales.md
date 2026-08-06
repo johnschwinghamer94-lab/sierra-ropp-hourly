@@ -1,23 +1,28 @@
-# Scorecard: David_Canales
+# Call Score Card - David Canales
 
+**RecId:** 9f84f475-0993-4d32-93e9-71c0b4e42351-g2M7csV6deOB5LCNP4trAUmVb3H2
+**Job:** 672791523
 **Date:** 2026-08-05
 **Duration:** 118 min
-**Job:** 672791523
 
-## FSG Bands
-- Welcome: Strong
+## Scoring
+
+- Welcome: Solid
 - Assessment: Strong
 - Decision: Solid
-- Deliver: Moderate
+- Deliver: Solid
 
 ## Critical Actions
+
 - Expectations: true
 - Questions: true
 - Options: true
 - Objections: true
 
 ## Outcome
-no-close
+
+unknown
 
 ## Coaching Tip
-FIX — Deferred decision to sales team instead of presenting financing options and attempting to close the replacement contract during the diagnostic call.
+
+FIX — Reconnect to customer concerns before presenting options to increase buy-in.

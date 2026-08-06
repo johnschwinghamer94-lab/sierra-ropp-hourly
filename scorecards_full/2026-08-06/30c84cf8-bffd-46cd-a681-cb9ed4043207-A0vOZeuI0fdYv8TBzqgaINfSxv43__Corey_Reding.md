@@ -7,17 +7,17 @@
 
 ## Scoring
 
-- Welcome: Strong
+- Welcome: Moderate
 - Assessment: Strong
 - Decision: Moderate
-- Deliver: Moderate
+- Deliver: Solid
 
 ## Critical Actions
 
-- Expectations: false
-- Questions: true
+- Expectations: true
+- Questions: false
 - Options: false
-- Objections: false
+- Objections: true
 
 ## Outcome
 
@@ -25,4 +25,4 @@ unknown
 
 ## Coaching Tip
 
-FIX — After expertly diagnosing fan motor debris damage risk, tech should have immediately explained replacement solution and created urgency rather than ending investigation phase.
+FIX — Present two clear options to create meaningful choice for customer.

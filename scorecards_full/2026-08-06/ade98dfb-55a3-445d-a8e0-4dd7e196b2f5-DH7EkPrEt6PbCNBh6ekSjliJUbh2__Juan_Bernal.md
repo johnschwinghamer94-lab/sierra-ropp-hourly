@@ -7,9 +7,9 @@
 
 ## Scoring
 
-- Welcome: Strong
+- Welcome: Solid
 - Assessment: Strong
-- Decision: Solid
+- Decision: Moderate
 - Deliver: Solid
 
 ## Critical Actions
@@ -17,7 +17,7 @@
 - Expectations: true
 - Questions: true
 - Options: false
-- Objections: false
+- Objections: true
 
 ## Outcome
 
@@ -25,4 +25,4 @@ unknown
 
 ## Coaching Tip
 
-FIX — Excellent diagnostic questions establishing failure timeline; after roof inspection confirms compressor issue, present replacement with emphasis on preventing future emergency calls and downtime risk.
+FIX — Present two clear options to create meaningful choice for customer.

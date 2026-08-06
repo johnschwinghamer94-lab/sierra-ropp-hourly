@@ -1,17 +1,28 @@
-# Live Coaching Scorecard – Juan Bernal
-**Call Date:** 2026-08-06 | **Job:** 670877662 | **Duration:** 54 min | **Outcome:** no-close
+# Call Score Card - Juan Bernal
 
-## FSG Bands
-- **Welcome:** Solid
-- **Assessment:** Solid
-- **Decision:** Moderate
-- **Deliver:** Weak
+**RecId:** b1dfce35-9fac-4b01-8a43-1ed839358464-DH7EkPrEt6PbCNBh6ekSjliJUbh2
+**Job:** 670877662
+**Date:** 2026-08-06
+**Duration:** 54 min
+
+## Scoring
+
+- Welcome: Moderate
+- Assessment: Moderate
+- Decision: Moderate
+- Deliver: Solid
 
 ## Critical Actions
-- **Expectations:** ✓ Set clear expectations
-- **Questions:** ✓ Asked good discovery questions
-- **Options:** ✗ Not Created
-- **Objections:** ✓ Handled objections
+
+- Expectations: true
+- Questions: false
+- Options: false
+- Objections: true
+
+## Outcome
+
+unknown
 
 ## Coaching Tip
-**FIX — Ask about other system concerns or areas to inspect before starting work rather than just confirming the current job timeline.**
+
+FIX — Present two clear options to create meaningful choice for customer.

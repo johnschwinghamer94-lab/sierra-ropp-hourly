@@ -7,22 +7,22 @@
 
 ## Scoring
 
-- Welcome: Strong
-- Assessment: Solid
-- Decision: Solid
+- Welcome: Moderate
+- Assessment: Strong
+- Decision: Moderate
 - Deliver: Solid
 
 ## Critical Actions
 
 - Expectations: true
 - Questions: true
-- Options: true
-- Objections: false
+- Options: false
+- Objections: true
 
 ## Outcome
 
-no-close
+unknown
 
 ## Coaching Tip
 
-FIX — Customer has dual systems with warranty on new unit; tech correctly explained coverage but missed opportunity to probe older downstairs unit replacement timeline during maintenance.
+FIX — Present two clear options to create meaningful choice for customer.
