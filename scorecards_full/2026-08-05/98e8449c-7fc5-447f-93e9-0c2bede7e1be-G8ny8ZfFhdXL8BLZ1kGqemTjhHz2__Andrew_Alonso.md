@@ -1,25 +1,37 @@
-# Coaching Card — Andrew Alonso
-
-**Job:** 669680284 | **Date:** 2026-08-05 | **Duration:** 122 min
+# Scorecard: Andrew Alonso
+**Date:** 2026-08-05  
+**Job:** 669680284  
+**Customer:** Pierson, Leigh A & Todd C  
+**Duration:** 122 min  
+**RecId:** 98e8449c-7fc5-447f-93e9-0c2bede7e1be-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
 
 ## FSG Bands
-- **Welcome:** Weak — no structured welcome, no expectations set
-- **Assessment:** Solid — good diagnostic questions (noise level, filters, unit locations, temperature readings, burn marks and rust)
-- **Decision:** Weak — identifies multiple issues as "immediate concern" but never presents options or next steps
-- **Deliver:** Moderate — some technical explanation of thermal switches, contactors, refrigerants, but incomplete and no clear work summary or 5-star request
+- **Welcome:** Solid — Introduced self, asked about system noises from intake notes, showed concern
+- **Assessment:** Strong — Dug into filter maintenance history, checked outdoor units, identified multiple issues (contactor burn marks, rust on coils, thermal switch running at 170 degrees with cutoff at 200 degrees)
+- **Decision:** Moderate — Explained technical findings clearly (contactor explains amps/heat, thermal switch logic) but transcript truncates before options or recommendations presented
+- **Deliver:** Weak — No clear summary of findings or next steps; no 5-star review request visible
 
 ## Critical Actions
-- **Expectations:** ✗ no clear timeline, scope, or next steps communicated
-- **Questions:** ✓ multiple diagnostic questions asked
-- **Options:** ✗ problems identified but no solution paths presented
-- **Objections:** ✗ no customer objections voiced (not applicable)
+- **Expectations:** ✓ Yes — Asked to show attic access and reviewed equipment
+- **Questions:** ✓ Yes — "Any weird noises coming up?" and follow-ups on system behavior
+- **Options:** ✗ No — Not shown in transcript
+- **Objections:** ✗ No — Minimal objections raised
 
 ## Outcome
-**unknown** — no TGL in truth files; call shows no close, no Option C agreement, no specialist appointment set
+**Unknown** — Transcript is incomplete/truncated (ends mid-sentence during refrigerant discussion)
+
+## What Went Well
+- Built strong rapport with customers through friendly conversation and pet interest
+- Demonstrated technical expertise explaining contactor burn marks, thermal switches, and refrigerant history (R22 → R410A phase-outs)
+- Performed thorough multi-zone inspection (upstairs/downstairs systems, filters, coils)
+
+## What Needs Improvement
+- **Excessive personal storytelling** — Spent considerable time on military service stories (Air Force, Saudi deployment, IED detection, intelligence work) that diluted focus on customer's system
+- **No clear handoff to recommendations** — Rep identified 3-4 issues but transcript cuts before presenting options or action steps
+- **Limited check-in questions during diagnosis** — Could have asked "Are these concerns I found aligning with what you mentioned about noise?" to reconnect findings to customer pain points
 
 ## Coaching Tip
-FIX — After you said "That's an immediate concern" about the thermal switch, the customer was primed to move forward. Reconnect by saying "Let me get our specialist scheduled to discuss replacement options" instead of pivoting to refrigerant history that doesn't lead to a decision.
+**FIX —** Rep built good rapport and asked about system noise, but excessive personal storytelling diluted task focus. During future inspections, save personal stories for breaks; when you identify issues mid-diagnosis (like those burn marks), pause to ask a check-in question reconnecting back to the customer's original concern, then propose a next step immediately rather than continuing inspection without closure.
 
-## Key Gaps
-1. **Missing reconnect moment:** Customer had pain point (immediate concern about thermal switch) but tech didn't return to it with a clear next step
-2. **No decision path:** Call ends without presenting options or specialist appointment, leaving customer with no clear way forward
+---
+*Note: Transcript truncated; full call outcome cannot be determined from recording.*

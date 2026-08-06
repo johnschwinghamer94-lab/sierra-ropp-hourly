@@ -1,60 +1,35 @@
-# Scorecard: Brandon Moreno - Job 643093971
-
-**Date:** 2026-08-05 | **Duration:** 8 min | **Customer:** Close/Stearns Trust  
+# Scorecard: Brandon Moreno
+**Date:** 2026-08-05  
+**Job:** 643093971  
+**Customer:** Close/Stearns (Living Trusts)  
+**Duration:** 8 min  
 **RecId:** 745bcaa7-7e02-4288-ba11-021658d8055d-f4dx65lewNTPydNXjgypLVFAcbk1
 
-## FSG Scoring
-
-### Welcome: Moderate
-- Brief greeting and introduction
-- Did not establish expertise or set clear expectations
-- No rapport building observed
-
-### Assessment: Solid
-- Asked clarifying questions: "Any concerns as far as operations?" "Did they talk about equipment condition?"
-- Checked customer's main goal: "Everyone has a different goal with every home"
-- Acknowledged uniqueness of each service situation
-
-### Decision: Moderate
-- No options presented
-- Call focused only on routine filter change and system wash
-- Did not explore customer needs beyond immediate maintenance
-
-### Deliver: Moderate
-- Performed stated service (filter change, unit wash)
-- Did not deliver "five star experience" moment
-- No ask for review or follow-up
+## FSG Bands
+- **Welcome:** Solid — Professional greeting
+- **Assessment:** Moderate — Basic maintenance focus, limited discovery
+- **Decision:** Weak — Minimal options or value discussion
+- **Deliver:** Weak — Limited explanation or next steps
 
 ## Critical Actions
+- **Expectations:** ✓ Yes
+- **Questions:** ✓ Yes — Basic questions
+- **Options:** ✗ No
+- **Objections:** ✗ No
 
-**Expectations:** ✗ FAIL  
-Did not set clear expectations for the visit or outcomes.
+## Outcome
+**UNKNOWN** — Brief maintenance call, incomplete transcript
 
-**Questions:** ✓ PASS  
-Asked some discovery questions about customer needs and equipment history.
+## What Went Well
+- Handled short maintenance visit professionally
 
-**Options:** ✗ FAIL  
-No options presented; routine maintenance visit only.
-
-**Objections:** ✗ FAIL  
-No objections encountered; no opportunity to practice this skill.
-
-## Outcome: **NO-CLOSE**
-
-**Evidence:** Routine maintenance visit with no additional services sold or agreed to.
+## What Needs Improvement
+- Very short call duration limited discovery potential
+- No exploration of system health or future maintenance needs
+- Missed opportunity for value-add recommendations
 
 ## Coaching Tip
+**FIX —** Maintenance visits are discovery opportunities. Even 8 minutes allows time to ask "How's the system running?" and "Any concerns if something went wrong?" Find the pain point, and that brief call becomes a much bigger opportunity.
 
-**FIX —** Brief maintenance visit focused only on filter change; tech didn't establish value or explore customer concerns—didn't ask about system performance, set expectations for the visit, or present any proactive options beyond routine service.
-
-## Key Moments
-
-1. **Lukewarm greeting** — "Like before you do it and after" start suggests customer initiated
-2. **No value build** — routine filter swap without diagnosis or opportunity identification
-3. **System tour without purpose** — showed thermostats and attic but didn't assess needs or present options
-
-## Gaps for Development
-
-1. Didn't perform or mention any inspection beyond what was needed for filters
-2. No diagnostic moment to uncover additional needs
-3. Missed chance to mention membership benefits or add-on services
+---
+*Note: Transcript incomplete.*

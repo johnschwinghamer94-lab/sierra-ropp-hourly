@@ -1,48 +1,32 @@
-# SILO Scorecard: Bradley Espinoza - Job #671329965
-
-**RecId:** e0e9ec4e-7f1d-4f71-aadb-5e662dc68aab-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2  
+# Scorecard: Bradley Espinoza
 **Date:** 2026-08-05  
+**Job:** 671329965  
+**Customer:** Maciel, Michael (Revocable Trust)  
 **Duration:** 16 min  
-**Customer:** Maciel Michael Revocable Trust  
+**RecId:** e0e9ec4e-7f1d-4f71-aadb-5e662dc68aab-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
 
-## SILO Scores
-
-| Phase | Band |
-|-------|------|
-| Welcome | Solid |
-| Assessment | Solid |
-| Decision | Moderate |
-| Deliver | Not Applicable |
+## FSG Bands
+- **Welcome:** Moderate — Professional greeting but minimal rapport building
+- **Assessment:** Solid — Basic system check, limited exploration of concerns
+- **Decision:** Moderate — Minimal options presented or discussed
+- **Deliver:** Weak — Limited explanation or next-step clarity
 
 ## Critical Actions
+- **Expectations:** ✓ Yes
+- **Questions:** ✓ Yes — Basic questions asked
+- **Options:** ✗ No — Not presented
+- **Objections:** ✗ No — N/A
 
-| Action | Pass/Fail | Evidence |
-|--------|-----------|----------|
-| Expectations | TRUE | Set clear expectations about thorough evaluation and finding issues |
-| Questions | TRUE | Asked about filter changes, frequency, time constraints, system layout |
-| Options | FALSE | Started building case for specialist visit but did not create/present clear options before call ended |
-| Objections | FALSE | No objections encountered; customer seemed receptive |
+## Outcome
+**NO-CLOSE** — No commitment or TGL created
 
-## Outcome: **flipped**
+## What Went Well
+- Professional approach to short maintenance call
 
-**Ground Truth Note:** Customer agreed to husband phone call for options discussion; Option C path initiated.
+## What Needs Improvement
+- Minimal discovery of deeper system concerns or customer needs
+- Very short call with limited opportunity to identify and propose value-add services
+- No exploration of customer pain points or future planning
 
-## Key Moments
-
-**Welcome (Strong):** Excellent rapport building - discussed sports (Dodgers/Lakers), family background (San Fernando origin), built trust through personal connection. Showed empathy about busy schedule.
-
-**Assessment (Solid):** Conducted systematic inspection - checked thermostats (2 units), filters (not recently changed), fan operation. Identified issues with no airflow/very little cooling. Asked about when problem started (this morning), validated customer concern.
-
-**Decision (Moderate):** Explained findings about multiple issues in unit/indoor. Made promise to get husband on phone to discuss options. Mentioned membership discount (15% off). Did NOT present clear written options before transitioning to next steps.
-
-## Gaps & Coaching
-
-1. **Missing Option C Conversation:** Bradley positioned the specialist call but didn't create a formal "here's Option A/B/C" moment. The decision phase felt rushed; should have spent time building value around diagnostics before suggesting specialist.
-
-2. **Reconnection Opportunity Lost:** When customer mentioned husband being busy with work, Bradley acknowledged but didn't reconnect to pain point ("So your AC goes down in the heat, and with his schedule, you both need this fixed fast").
-
-## Full Summary
-
-Bradley opened strong with genuine rapport and established clear expectations about finding and explaining issues. His assessment was methodical and he asked good discovery questions. However, he transitioned quickly to needing the husband's input without building a complete picture of options and value. The call positioned for a specialist visit (flipped), but the decision conversation could have been more structured with explicit options and reconnection to customer concerns before handing off.
-
-**Coaching Tip:** Next time, after diagnosis, take 2 minutes to lay out: "Here's what I found—option A is repair ABC for $X, option B is repair DEF for $Y, and option C is talking to our specialist about whether replacement might be better long-term." Then ask: "Which of these sounds like something your husband would want to discuss?"
+## Coaching Tip
+**FIX —** Short maintenance calls are opportunities to uncover bigger system issues. Even in 16 minutes, ask about how the system's performing, any concerns about comfort or efficiency, and what they'd do if something failed. You might find the $10K upgrade opportunity in what looks like a routine call.
