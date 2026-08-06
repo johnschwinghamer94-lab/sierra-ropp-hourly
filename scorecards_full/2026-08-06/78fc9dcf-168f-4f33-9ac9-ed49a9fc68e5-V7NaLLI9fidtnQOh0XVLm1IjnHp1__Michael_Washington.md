@@ -1,0 +1,1 @@
+Non-scorable: Transcript corrupted with poor speaker attribution (generic Speaker 0/1 labels); content unreadable.
