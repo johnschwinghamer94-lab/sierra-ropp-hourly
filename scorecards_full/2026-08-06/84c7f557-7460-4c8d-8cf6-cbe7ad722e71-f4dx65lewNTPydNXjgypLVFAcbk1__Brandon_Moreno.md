@@ -1,19 +1,45 @@
-# Scorecard: Brandon Moreno | Job #667923856 | 2026-08-06 (66 min)
+# Scorecard: Brandon Moreno - BARR (Job # 667923856)
 
-## FSG Bands
-- **Welcome: Strong** — Polite greeting, introduces himself ("I'm Brandon with Sierra Air Conditioning"), asks customer names, sets clear expectations about service scope and process.
-- **Assessment: Strong** — Methodical inspection of both AC units, explains what he's checking ("check up on the health, function, reliability, and safety"), identifies critical compressor failure on downstairs unit with detailed technical explanation.
-- **Decision: Solid** — Identifies major system failure but stops short of explicit repair/replacement options or creating urgency for a return visit/estimate appointment. No reconnect to customer pain points about cooling issues.
-- **Deliver: Moderate** — Provides technical explanation with videos to show pressure readings, but wrap-up and next steps are unclear; doesn't confirm follow-up appointment or sale.
+**RecId:** 84c7f557-7460-4c8d-8cf6-cbe7ad722e71-f4dx65lewNTPydNXjgypLVFAcbk1  
+**Date:** 2026-08-06  
+**Duration:** 66 min  
+**Outcome:** unknown
 
-## Critical Actions
-- **Expectations ✓** — Clear: "I won't do any work without your approval... I'll write out a report and then we'll sit down."
-- **Questions ✓** — Asked about home tenure, system history, temperature preferences, prior repairs.
-- **Options ✗** — Did not present repair vs replacement comparison or estimate appointment; diagnosis only.
-- **Objections ✗** — No customer objections to overcome; call was informational.
+## BANDS
 
-## Outcome: Unknown
-Transcript ends with tech investigating and showing videos. No indication of TGL created or estimate scheduled.
+**Welcome (Strong):**
+- Professional introduction: "I'm Brandon with Sierra Air Conditioning"
+- Uses booties to protect home
+- Establishes empathy: "it's not because we want to protect your floors... we've stepped in some stuff you wouldn't imagine"
+- Shows respect and professionalism
 
-## Coaching
-**FIX — Present repair vs replacement options explicitly after identifying multiple system failures.** When you find a major issue like the non-functioning compressor, anchor it to cost and timeline ("Replacing the whole system will be $X but buys you 10+ years; repairing this one might be $Y but it's 15 years old"). Offer to prepare an estimate for the next day to close the loop.
+**Assessment (Strong):**
+- Asks about the AC service history: "I bought the air conditioner from you about a year ago"
+- Identifies current concerns: "seven degree temperature difference... Master bedroom and the bedroom right next to it"
+- Notes customer observation: "it got really noisy"
+- Asks about previous issues and maintenance history
+
+**Decision (Strong):**
+- Sets expectations about evaluation: "I'm going to do my thorough evaluation"
+- Explains approval process: "I won't pull apart and say here's a bill... we'll be able to sit down, go over that"
+- Commits to investigation: "I'll take a look... I'll take some pictures of the layout"
+- Shows willingness to address concerns: "I'll see what the vent setup looks like in the attic"
+
+**Deliver (Solid):**
+- Begins investigation process
+- Promises feedback on findings
+
+## CRITICAL ACTIONS
+
+- **Expectations:** true
+- **Questions:** true
+- **Options:** true (implied in investigation promise)
+- **Objections:** true (addresses temperature concerns and noise)
+
+## COACHING TIP
+
+**FIX — When the customer mentioned a 7-degree temperature difference between rooms with one bedroom significantly cooler than others, Brandon correctly identified this as a potential ductwork distribution issue but didn't circle back after the inspection to present specific solutions (damper adjustments, duct rework options). The follow-up report should have included 2-3 concrete options with costs to move toward a close.**
+
+## NOTES
+
+This is a one-year warranty service on a newly installed upstairs AC unit. Customer has two air conditioners (upstairs new unit and downstairs older system). The main issue is uneven cooling distribution.

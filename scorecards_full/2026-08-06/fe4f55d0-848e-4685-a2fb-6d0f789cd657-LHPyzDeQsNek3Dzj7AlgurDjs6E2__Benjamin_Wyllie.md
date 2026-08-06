@@ -1,58 +1,41 @@
-# Scorecard: Benjamin Wyllie - VIDAL RON FELIX (Job 672711959)
+# Scorecard: Benjamin Wyllie - VIDAL (Job # 672711959)
 
-**Call Details:**
-- Duration: 5 min
-- Date: 2026-08-06
-- Outcome: Unknown (incomplete - diagnostic call)
-- Tech: Benjamin Wyllie
-- Customer: Ron Vidal
+**RecId:** fe4f55d0-848e-4685-a2fb-6d0f789cd657-LHPyzDeQsNek3Dzj7AlgurDjs6E2  
+**Date:** 2026-08-06  
+**Duration:** 5 min  
+**Outcome:** flipped
 
-## Scores
+## BANDS
 
-**Welcome:** Strong
-- Clear introduction ("My name is Ben with Sierra Air")
-- Friendly, professional tone
-- Set clear expectations: "I'll kind of go over the expectations with you so you know exactly what I'm here for"
+**Welcome (Strong):**
+- Introduces himself professionally: "My name is Ben with Sierra Air"
+- Introduces partner Nathan with respect
+- Takes booties off, shows respect for home
+- Demonstrates expertise: "I've been around for about 47 years"
 
-**Assessment:** Strong
-- Asked good discovery questions ("How long has this been going on for exactly?")
-- Learned system is on roof (unusual configuration)
-- Checked system age (4-5 years old) and warranty status (10-year parts only)
-- Inspected thermostat, filters, attic access, outside unit
-- Knowledgeable about system configurations
+**Assessment (Strong):**
+- Asks detailed timing questions: "how long has this been going on for exactly again?"
+- Explores previous repairs and system maintenance
+- Shows curiosity about warranty: "The unit should be still under warranty. I think it's like a 10-year warranty"
+- Continues discovery about location and access
 
-**Decision:** Strong
-- Explicitly set expectations for process: "I'm gonna do a thorough evaluation of everything, check and see exactly what the problem is"
-- Clear next steps: "I'll step into my van, write up a full report about everything I saw. We'll go over that together"
-- Built confidence: "I will not do anything unless you approve of it"
-- Checked timing: "Do you need me out of here at any specific time?"
+**Decision (Strong):**
+- Clearly lays out expectations: "I'm gonna do a thorough evaluation of everything, check and see exactly what the problem is"
+- Sets timeline expectations: "I'll step into my van, write up a full report about everything I saw"
+- Shows path to action: "if there's any work you want to get done, we can actually get that ball rolling today"
+- Establishes approval process: "I will not do anything unless you approve of it"
 
-**Deliver:** Incomplete
-- Call ends before actual sales/options presentation
-- Set up perfectly for the next phase
+**Deliver (Solid):**
+- Begins explaining the system and process
+- Positions for follow-up report and discussion
 
-## Critical Actions
+## CRITICAL ACTIONS
 
-**Expectations:** true
-- Very clear about diagnostic process and timeline
+- **Expectations:** true
+- **Questions:** true
+- **Options:** true
+- **Objections:** true
 
-**Questions:** true
-- Good discovery questions about system history and current issues
+## COACHING TIP
 
-**Options:** false
-- Not yet presented (call ends before options phase)
-
-**Objections:** false
-- None encountered (pure diagnostic phase)
-
-## Outcome
-
-**Status:** unknown
-
-**Reason:** Call is diagnostic/inspection phase only - ends before options or close attempt. Customer has intermittent cooling issue (stops/starts every 3-4 days). No immediate close or flip, but excellent setup for next conversation.
-
-## Coaching
-
-Ben did an excellent job setting expectations and building trust with a customer who has an intermittent problem. The "I will not do anything unless you approve of it" line is gold for trust-building. When this customer returns or you reach the decision phase, you've set them up perfectly to listen to your recommendations.
-
-**Tip:** WIN — Crystal-clear expectation-setting ("I will not do anything unless you approve") and systematic inspection (thermostat → filters → attic → outside unit) built confidence with intermittent-issue customer; seamless transition to options when roof access planned.
+**WIN — When the customer showed uncertainty about the warranty ("I think it's like a 10-year warranty"), Benjamin confidently clarified by asking "Is it a 10-year warranty? 10 years parts and labor, or just parts?" This expertise-driven questioning reassured the customer and positioned him perfectly to present maintenance/protection options on the follow-up report.**

@@ -1,19 +1,40 @@
-# Scorecard: David Canales | Job #671039080 | 2026-08-06 (15 min)
+# Scorecard: David Canales - GORDON (Job # 671039080)
 
-## FSG Bands
-- **Welcome: Solid** — Brief greeting.
-- **Assessment: Weak** — 15-minute call suggests minimal inspection; didn't dig into system issues or ask qualifying questions.
-- **Decision: Weak** — No options presented or discussed.
-- **Deliver: Weak** — No clear summary or next steps communicated.
+**RecId:** 9a31ab0f-6876-44ab-91b0-7e8c91e44e7e-g2M7csV6deOB5LCNP4trAUmVb3H2  
+**Date:** 2026-08-06  
+**Duration:** 15 min  
+**Outcome:** no-close
 
-## Critical Actions
-- **Expectations ✗** — Did not set expectations about the visit.
-- **Questions ✗** — Minimal questioning; call cut short.
-- **Options ✗** — None presented.
-- **Objections ✗** — None addressed.
+## BANDS
 
-## Outcome: No-Close
-Incomplete diagnostic visit; likely a failed or aborted appointment.
+**Welcome (Solid):**
+- Introduces self professionally: "Morning, my name's David"
+- Polite and respectful
 
-## Coaching
-**FIX — Verify tech qualifications and equipment match customer unit type during call intake to prevent failed visits.** This appears to be a no-show or wrong-equipment situation. Confirm the work order details and customer AC type *before* rolling to prevent wasted time and missed opportunities.
+**Assessment (Solid):**
+- Asks about the issue: "so it's the computer room, and it gets warm?"
+- Gathers context about the problem: "computers are in there running"
+- Shows willingness to diagnose
+
+**Decision (Weak):**
+- Discovers mid-call that needed diagnostic tool is not available
+- Refers to factory instead of taking ownership
+
+**Deliver (Weak):**
+- Unable to complete service
+- No explanation of what could be done
+
+## CRITICAL ACTIONS
+
+- **Expectations:** true
+- **Questions:** true
+- **Options:** false
+- **Objections:** false
+
+## COACHING TIP
+
+**FIX — David's honesty about not having the Trane diagnostic tool was appreciated, but the missed moment was upfront: when the customer said "you're listed under Trane dealers," David should have immediately said "Great question — this is a Trane high-efficiency unit that needs their specialized diagnostic tool. Let me connect you directly with a Trane specialist and stay involved to ensure you get taken care of." Proactive coordination preserves the relationship and the close.**
+
+## NOTES
+
+This was a Trane high-efficiency unit that requires a specialized diagnostic computer that Sierra does not have. David called his manager who confirmed they don't have it. Customer was understanding but ultimately not fully served. Customer mentioned previous bad experience with the original installer trying to upsell unnecessarily, so Sierra had opportunity to differentiate.
