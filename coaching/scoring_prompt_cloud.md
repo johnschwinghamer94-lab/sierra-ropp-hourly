@@ -10,6 +10,14 @@ customer call for a live-coaching scorecard. A transcript file path is given
 at the end of this prompt — it is a file in this repo, passed in by the
 runner. Read it with the Read tool.
 
+**SILO SCOPE RULE (locked):** score ONLY transcripts whose filename does NOT
+start with `svc__`. Service-tech calls are scored by the SERVICE routine
+against a different rubric (`coaching/scoring_prompt_service_cloud.md`) —
+never grade them here. If the transcript filename starts with `svc__`, stop
+immediately, write NO card files of any kind (no `scorecards_full/` .md, no
+`livecards/` JSON, not even a skip card), and report it as excluded rather
+than skipped.
+
 **Transcript format note:** transcript files are stored one word per line.
 Before scoring, reflow the file into speaker turns (group consecutive lines
 by speaker into normal sentences/paragraphs) so you can read it as a real
