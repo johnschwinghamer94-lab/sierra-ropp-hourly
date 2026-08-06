@@ -1,0 +1,21 @@
+{
+  "recId": "7ac7b0f4-fa93-473e-b121-82f7537bd307-eLYixM15wpa2eS9xhUtSKJwuhYD2",
+  "tech": "J Boothe",
+  "jobNumber": "669740461",
+  "dateCreated": "2026-08-06",
+  "durationMin": 168,
+  "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Solid",
+    "deliver": "Moderate"
+  },
+  "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": false,
+    "objections": false
+  },
+  "outcome": "unknown",
+  "tip": "FIX — Methodical thorough maintenance inspection with excellent rapport; ensure that findings from full inspection trigger clear replacement/upgrade discussion rather than completing maintenance without upsell opportunity."
+}

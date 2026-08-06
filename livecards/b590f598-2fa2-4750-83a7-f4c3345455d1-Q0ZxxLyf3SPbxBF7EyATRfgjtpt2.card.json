@@ -1,1 +1,21 @@
-{"recId": "b590f598-2fa2-4750-83a7-f4c3345455d1-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2", "tech": "Bradley Espinoza", "jobNumber": "PAGUSARA NICOLE MALIA, Job # 670823664", "dateCreated": "2026-08-05", "durationMin": 73, "bands": {"welcome": "Strong", "assessment": "Strong", "decision": "Weak", "deliver": "Weak"}, "critical": {"expectations": true, "questions": true, "options": false, "objections": true}, "outcome": "no-close", "tip": "FIX \u2014 Present options to give customer choices."}
+{
+  "recId": "b590f598-2fa2-4750-83a7-f4c3345455d1-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2",
+  "tech": "Bradley Espinoza",
+  "jobNumber": "670823664",
+  "dateCreated": "2026-08-05",
+  "durationMin": 73,
+  "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Solid",
+    "deliver": "Moderate"
+  },
+  "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": true,
+    "objections": false
+  },
+  "outcome": "flipped",
+  "tip": "WIN — Bradley established authority early by setting detailed expectations about the evaluation process, asked diagnostic questions about prior repairs and customer concerns, presented multiple options with detailed cost scenarios, and secured agreement for a specialist follow-up appointment."
+}

@@ -1,1 +1,21 @@
-{"recId": "98e8449c-7fc5-447f-93e9-0c2bede7e1be-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2", "tech": "Andrew Alonso", "skip": true, "reason": "Off-topic content: missile"}
+{
+  "recId": "98e8449c-7fc5-447f-93e9-0c2bede7e1be-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2",
+  "tech": "Andrew Alonso",
+  "jobNumber": "669680284",
+  "dateCreated": "2026-08-05",
+  "durationMin": 122,
+  "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Solid",
+    "deliver": "Moderate"
+  },
+  "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": true,
+    "objections": false
+  },
+  "outcome": "flipped",
+  "tip": "WIN — Andrew set clear expectations upfront (\"I won't do any work without your approval\") and methodically asked discovery questions about equipment age and performance, building trust before presenting multiple options including the specialist consultation."
+}

@@ -1,1 +1,21 @@
-{"recId": "f8a1cf9c-6c5b-471a-93e7-ce32f842adec-f4dx65lewNTPydNXjgypLVFAcbk1", "tech": "Brandon Moreno", "jobNumber": "COLVARD LIVING TRUST COLVARD MARK J & GAYLE H TRS, Job # 669616760", "dateCreated": "2026-08-05", "durationMin": 46, "bands": {"welcome": "Strong", "assessment": "Strong", "decision": "Weak", "deliver": "Weak"}, "critical": {"expectations": true, "questions": true, "options": false, "objections": true}, "outcome": "no-close", "tip": "FIX \u2014 Present options to give customer choices."}
+{
+  "recId": "f8a1cf9c-6c5b-471a-93e7-ce32f842adec-f4dx65lewNTPydNXjgypLVFAcbk1",
+  "tech": "Brandon Moreno",
+  "jobNumber": "669616760",
+  "dateCreated": "2026-08-05",
+  "durationMin": 46,
+  "bands": {
+    "welcome": "Strong on wins",
+    "assessment": "Strong",
+    "decision": "Strong on wins",
+    "deliver": "Strong"
+  },
+  "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": true,
+    "objections": true
+  },
+  "outcome": "closed",
+  "tip": "WIN — Brandon opened with genuine rapport and clear expectations, asked targeted questions about thermostat programming and temperature management, presented multiple options (monthly maintenance plan at $16/month for quarterly visits), and confidently closed by demonstrating the value of proactive maintenance."
+}

@@ -1,23 +1,28 @@
-# Scorecard
+# Call Score Card - Cole Pantol
 
-{
-  "recId": "1ade82a7-1a8d-4b53-ba40-45daf746db4c-cqS1z9EkBaR2xDrHTJjJwYSZMvE2",
-  "tech": "Cole Pantol",
-  "jobNumber": "ARIAS OSBALDO, Job # 671325517",
-  "dateCreated": "2026-08-05",
-  "durationMin": 144,
-  "bands": {
-    "welcome": "Weak",
-    "assessment": "Solid",
-    "decision": "Strong",
-    "deliver": "Weak"
-  },
-  "critical": {
-    "expectations": false,
-    "questions": true,
-    "options": true,
-    "objections": true
-  },
-  "outcome": "no-close",
-  "tip": "FIX \u2014 Reconnect to customer's concerns before closing."
-}
+**RecId:** 1ade82a7-1a8d-4b53-ba40-45daf746db4c-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
+**Job:** 671325517
+**Date:** 2026-08-05
+**Duration:** 144 min
+
+## Scoring
+
+- Welcome: Moderate
+- Assessment: Strong
+- Decision: Solid
+- Deliver: Moderate
+
+## Critical Actions
+
+- Expectations: false
+- Questions: true
+- Options: true
+- Objections: true
+
+## Outcome
+
+flipped
+
+## Coaching Tip
+
+WIN — Cole identified multiple system failures (seized dampers, leaking blower motor, excessive utility usage at 12% over), presented the specialist path as Option C for planning replacement vs repair, handled the customer's price objection professionally, and secured agreement for a free equipment advisor visit.

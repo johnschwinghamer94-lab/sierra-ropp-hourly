@@ -1,0 +1,21 @@
+{
+  "recId": "ade98dfb-55a3-445d-a8e0-4dd7e196b2f5-DH7EkPrEt6PbCNBh6ekSjliJUbh2",
+  "tech": "Juan Bernal",
+  "jobNumber": "672853309",
+  "dateCreated": "2026-08-06",
+  "durationMin": 35,
+  "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Solid",
+    "deliver": "Solid"
+  },
+  "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": false,
+    "objections": false
+  },
+  "outcome": "unknown",
+  "tip": "FIX — Excellent diagnostic questions establishing failure timeline; after roof inspection confirms compressor issue, present replacement with emphasis on preventing future emergency calls and downtime risk."
+}
