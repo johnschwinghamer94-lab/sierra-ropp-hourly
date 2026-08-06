@@ -1,47 +1,46 @@
-# Coaching Card: Bradley Espinoza
-
-**Date:** 2026-08-04  
-**Job #:** 670666492  
-**Duration:** 59 min  
+# Scorecard
 **RecId:** 0d0aecbd-6b62-4c2e-81ce-7348c018a24f-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
+**Tech:** Bradley Espinoza
+**Job Number:** 670666492
+**Date:** 2026-08-04
+**Duration:** 59 minutes
 
-## FSG Bands
+## FSG Framework Bands
 
-### Welcome: Strong
-- Greeted customer warmly and established rapport
-- Showed empathy and understanding of their concerns
-- Positioned expertise early
+### Welcome
+**Score:** Strong
 
-### Assessment: Strong
-- Asked discovery questions about system age and history
-- Probed concerns about AC reliability
-- Understood customer priorities
+The initial greeting and rapport-building phase. Includes setting expectations and establishing expertise.
 
-### Decision: Moderate
-- Discussed potential causes of cooling issue
-- Could have presented more distinct options
-- Explained diagnostic findings
+### Assessment
+**Score:** Strong
 
-### Deliver: Solid
-- Transparent about the inspection process
-- Open to customer questions and input
-- Demonstrated thoroughness
+Diagnosis phase with discovery questions and system evaluation. Checking understanding of customer concerns.
+
+### Decision
+**Score:** Moderate
+
+Option presentation and objection handling. Reconnecting to customer needs and explaining value.
+
+### Deliver
+**Score:** Moderate
+
+Transparency about work being done (being a nerd). Following up and requesting feedback/review.
 
 ## Critical Actions
 
-- **Expectations:** Set ✓ (time and process explained)
-- **Questions:** Asked ✓ (multiple discovery questions)
-- **Options:** Presented ✓ (discussed possible causes)
-- **Objections:** Handled ✓ (addressed AC failure concern)
+| Action | Status |
+|--------|--------|
+| Expectations Set | ✓ PASS |
+| Discovery Questions | ✓ PASS |
+| Options Presented | ✓ PASS |
+| Objections Handled | ✓ PASS |
 
-## Outcome: Flipped
-TGL created on 2026-08-04
+## Outcome
+**Result:** NO-CLOSE
 
-## Coaching Notes
-
-Strength: Customer felt heard and engaged with diagnostic process. This led to acceptance of next step.
-
-Area to refine: When presenting multiple possible causes, could have tied them back more explicitly to what the customer's priorities were before recommending the next step.
+## Coaching Tip
+FIX — Missing opportunity to present formal Option C recommendation
 
 ---
-Generated: 2026-08-06
+*This is a private coaching document. Do not share outside of the team.*
