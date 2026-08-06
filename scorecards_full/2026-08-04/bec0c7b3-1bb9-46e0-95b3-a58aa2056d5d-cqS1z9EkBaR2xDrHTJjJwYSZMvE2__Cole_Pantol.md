@@ -1,23 +1,26 @@
-# Scorecard bec0c7b3-1bb9-46e0-95b3-a58aa2056d5d-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
-- Tech: Cole Pantol
-- Job: 670789599
-- Date: 2026-08-04
-- Duration: 14m
+# Scorecard: Cole Pantol - Job 670789599
 
-## FSG Bands
-- Welcome: Solid
-- Assessment: Strong
-- Decision: Moderate
-- Deliver: Weak
+**Date:** 2026-08-04 | **Duration:** 14 min  
+**RecId:** bec0c7b3-1bb9-46e0-95b3-a58aa2056d5d-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
+
+## FSG Scoring
+
+- **welcome:** Strong
+- **assessment:** Solid
+- **decision:** Strong on wins
+- **deliver:** Solid
 
 ## Critical Actions
-- Expectations: True
-- Questions: True
-- Options: False
-- Objections: True
+
+- expectations: ✓
+- questions: ✓
+- options: ✓
+- objections: ✓
 
 ## Outcome
-unknown
 
-## Tip
-FIX — Clarify next steps and customer's decision timeline at call end.
+**Result:** flipped
+
+## Coaching
+
+WIN — You stayed focused on the customer's goal (just works) rather than pushing replacement, and explored fix-vs-new with the grandson's input; that flexibility led to the specialist visit.

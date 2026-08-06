@@ -1,23 +1,26 @@
-# Scorecard aa920aca-c763-4c2f-98b2-6799f07a9b5f-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
-- Tech: Cole Pantol
-- Job: 670511448
-- Date: 2026-08-04
-- Duration: 47m
+# Scorecard: Cole Pantol - Job 670511448
 
-## FSG Bands
-- Welcome: Strong
-- Assessment: Solid
-- Decision: Weak
-- Deliver: Solid
+**Date:** 2026-08-04 | **Duration:** 47 min  
+**RecId:** aa920aca-c763-4c2f-98b2-6799f07a9b5f-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
+
+## FSG Scoring
+
+- **welcome:** Strong
+- **assessment:** Strong
+- **decision:** Solid
+- **deliver:** Solid
 
 ## Critical Actions
-- Expectations: True
-- Questions: True
-- Options: False
-- Objections: True
+
+- expectations: ✓
+- questions: ✓
+- options: ✓
+- objections: ✗
 
 ## Outcome
-closed
 
-## Tip
-WIN — Tech closed the deal on system upgrade or repair.
+**Result:** unknown
+
+## Coaching
+
+WIN — You built rapport early (NY background, heat concern) and set clear expectations; follow through on the thorough evaluation to earn the decision.

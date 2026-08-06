@@ -1,23 +1,26 @@
-# Scorecard a8f3a135-76ea-4143-a373-d426b31a3a16-f4dx65lewNTPydNXjgypLVFAcbk1
-- Tech: Brandon Moreno
-- Job: 670608665
-- Date: 2026-08-04
-- Duration: 11m
+# Scorecard: Brandon Moreno - Job 670608665
 
-## FSG Bands
-- Welcome: Moderate
-- Assessment: Strong
-- Decision: Solid
-- Deliver: Solid
+**Date:** 2026-08-04 | **Duration:** 11 min  
+**RecId:** a8f3a135-76ea-4143-a373-d426b31a3a16-f4dx65lewNTPydNXjgypLVFAcbk1
+
+## FSG Scoring
+
+- **welcome:** Solid
+- **assessment:** Strong
+- **decision:** Strong on wins
+- **deliver:** Solid
 
 ## Critical Actions
-- Expectations: True
-- Questions: True
-- Options: True
-- Objections: True
+
+- expectations: ✓
+- questions: ✓
+- options: ✓
+- objections: ✓
 
 ## Outcome
-flipped
 
-## Tip
-WIN — Tech successfully transitioned customer to specialist consultation for larger decision.
+**Result:** no-close
+
+## Coaching
+
+FIX — Customer balked at $8k indoor coil replacement; offering a repair-now/replace-later path (clean coil first, then revisit in 6 months) might have moved them to the specialist visit.

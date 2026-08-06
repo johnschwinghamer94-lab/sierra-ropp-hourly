@@ -1,23 +1,26 @@
-# Scorecard ef41685d-1da2-48dc-88d3-e9fca8cafb36-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
-- Tech: Cole Pantol
-- Job: 670865946
-- Date: 2026-08-04
-- Duration: 30m
+# Scorecard: Cole Pantol - Job 670865946
 
-## FSG Bands
-- Welcome: Solid
-- Assessment: Strong
-- Decision: Moderate
-- Deliver: Solid
+**Date:** 2026-08-04 | **Duration:** 30 min  
+**RecId:** ef41685d-1da2-48dc-88d3-e9fca8cafb36-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
+
+## FSG Scoring
+
+- **welcome:** Strong
+- **assessment:** Solid
+- **decision:** Solid
+- **deliver:** Moderate
 
 ## Critical Actions
-- Expectations: True
-- Questions: True
-- Options: False
-- Objections: True
+
+- expectations: ✓
+- questions: ✓
+- options: ✗
+- objections: ✗
 
 ## Outcome
-closed
 
-## Tip
-WIN — Tech closed the deal on system upgrade or repair.
+**Result:** unknown
+
+## Coaching
+
+FIX — You diagnosed the zone board issue but didn't yet present options for how to proceed; once inside, clarify repair vs. replacement to guide next steps.
