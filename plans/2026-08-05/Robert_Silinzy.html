@@ -1,0 +1,250 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Robert Silinzy &mdash; SILO Coaching Plan 2026-08-05</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;&middot;&nbsp;SILO</b><span class="tag">Daily Coaching Plan &middot; 2026-08-05</span></div>
+<div class="wrap">
+
+<div class="hero">
+  <div class="ey">2 calls &middot; 41 minutes billed, roughly 12 minutes captured &middot; both partial</div>
+  <h1 class="disp">Robert Silinzy</h1>
+  <p class="lede">He runs the cleanest opening on the board. The full expectations sequence is word for word on both calls, unprompted, including the five-star line. Then both recordings stop at the moment he picks up his tools, so his day can only be graded on the first ten minutes of each visit.</p>
+</div>
+<div class="glance">
+  <div class="g"><div class="k">Close Rate</div><div class="v red">0% (from graded calls)<small>no flip evidence on tape &middot; both recordings cut off</small></div></div>
+  <div class="g"><div class="k">Calls Reviewed</div><div class="v">2<small>16 min and 25 min &middot; both customer-facing &middot; both partial</small></div></div>
+  <div class="g"><div class="k">Strongest Section</div><div class="v grn">Welcome<small>Strong</small></div></div>
+  <div class="g"><div class="k">Weakest Section</div><div class="v red">Assessment<small>Solid</small></div></div>
+</div>
+<div class="legend"><span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span><span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span></div>
+<p class="note">Scored on strength bands, never numbers &mdash; the only figure anywhere is the close rate. Both recordings end shortly after the expectations line, so the Decision and Deliver steps are off-tape and are <b>not</b> graded down &mdash; they were not observed. The close rate reflects that no Option&nbsp;C hand-off or advisor appointment is present on either recording, and the dashboard conversion file has no entry for this day; it is not a statement that these calls failed.</p>
+
+<section id="verdict">
+<div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive">
+  <div class="dh"><div class="k">What the day turned on</div><h3>Textbook openings, and no tape past them.</h3></div>
+  <div class="split">
+    <div class="c said"><div class="lbl">What actually happened</div><p>On both visits he delivered the entire expectations sequence without being asked: <q>I'm going to take a look at the system before I throw evaluation. Safety, function, overall effectiveness of the unit&hellip; from there we'll build a report list of options. Any work that needs to be done won't be done without your approval&hellip; If any work is approved, work could be done today. The goal is to deliver a five star experience. If I'm not meeting you, stop me so I can give you six.</q> Then, in both files, the audio degrades into unusable fragments the moment he goes to the outdoor unit.</p></div>
+    <div class="c should"><div class="lbl">What to do about it</div><p>Nothing in the opening needs changing &mdash; it is the model. The one behaviour to add is inside the part we <i>can</i> see: on the Casio call a competitor had already told the customer the two-zone system needs a second transformer, the customer asked about it twice, and the answer was <q>I'm not really sure.</q> That question needed a commitment attached to it before he walked outside.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="calls">
+<div class="sh"><div class="no">2</div><h2>The day&rsquo;s calls</h2><span class="hint">outcome per gradeable call</span></div>
+<div class="rub">
+  <div class="row"><div class="rb">Casio &middot; Job 671326553</div><div><span class="b na">Partial</span></div><div class="ev">16 min. Ten-year-old two-zone system, one thermostat dead, a $300&ndash;400 summer power bill, and a competitor already recommending a second transformer. Full expectations sequence delivered; recording ends as he starts the outdoor unit.</div></div>
+  <div class="row"><div class="rb">McIntire &middot; Job 671120977</div><div><span class="b na">Partial</span></div><div class="ev">25 min. Three-year-old system, first-time homeowners two months in, complaint of not cooling in the afternoon. Excellent welcome and personal connection; recording degrades to unusable audio after roughly five minutes.</div></div>
+</div>
+</section>
+
+<section id="rubric">
+<div class="sh"><div class="no">3</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div>
+<div class="rub">
+
+  <div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+  <div class="row"><div class="rb">Empathy</div><div><span class="b strong">Strong</span></div><div class="ev">Parking verified at the door on McIntire &mdash; <q>Rob, with Sierra right out front. Is that okay right there?</q> &mdash; entry permission asked on Casio, and the dog handled with more patience than most: <q>What's the dog name? Milo.</q> He also found the personal connection fast: <q>Is it a first home or&hellip; Congrats man&hellip; What's the first thing you most excited about doing to it?</q></div></div>
+  <div class="row"><div class="rb">Expertise</div><div><span class="b strong">Strong</span></div><div class="ev">Confirmed the reason for the visit in the customer's own words on both calls &mdash; <q>I see just. Just a tune up today&hellip; I'm not sure if it said, like, it was, like, not cooling in the afternoon</q> &mdash; and set the filter standard immediately: <q>we work a month, just so you know, one for one a month.</q></div></div>
+  <div class="row"><div class="rb">Setting expectations</div><div><span class="b strong">Strong</span></div><div class="ev">The complete LTOAT5 sequence, twice, unprompted, including the invitation to observe: <q>Feel welcome to come out and join me and ask questions if you'd like to as well.</q> This is the best-executed expectations line in the day's transcripts and it should be the team's reference recording.</div></div>
+
+  <div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Required questions</div><div><span class="b solid">Solid</span></div><div class="ev">Filters and thermostat asked on both. On Casio the power-bill follow-up was done properly and both seasons captured: <q>how much better you usually in the summertime</q> &rarr; <q>3 to 400 a month</q>, then <q>what about it in winter</q> &rarr; <q>less than 100.</q> Missing on both calls: which rooms run hotter or colder &mdash; on McIntire that was the actual complaint.</div></div>
+  <div class="row"><div class="rb">Check-ins</div><div><span class="b na">Off-tape</span></div><div class="ev">Both recordings end before the first findings check-in. Not graded.</div></div>
+  <div class="row"><div class="rb">Draw the picture</div><div><span class="b strong">Strong</span></div><div class="ev">One of the best images anywhere in the day, used before he had even opened the unit: <q>like the system running a marathon through a straw. It's gonna be very hard for it to get enough airflow.</q> Then he walked the airflow path with the customer &mdash; supplies, furnace, filtration &mdash; in plain words.</div></div>
+  <div class="row"><div class="rb">Check your tone</div><div><span class="b strong">Strong</span></div><div class="ev">Refused to run down the competitor when handed the chance: <q>I don't want you to have to talk bad about the competition</q> &rarr; <q>Yeah, I won't do that.</q> Calm, professional, no alarm.</div></div>
+  <div class="row"><div class="rb">Get the customer to diagnose</div><div><span class="b na">Off-tape</span></div><div class="ev">The evaluation and its conclusions are not on either recording.</div></div>
+
+  <div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b na">Off-tape</span></span></div>
+  <div class="row"><div class="rb">All Decision behaviours</div><div><span class="b na">Not observed</span></div><div class="ev">Building options, reconnecting, explaining options and objection handling all happen after the point at which both recordings stop. Not graded, and not counted against him. The one Decision-adjacent item that <i>is</i> on tape &mdash; the unanswered transformer question on Casio &mdash; is in &sect;6.</div></div>
+
+  <div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b na">Off-tape</span></span></div>
+  <div class="row"><div class="rb">Be a nerd</div><div><span class="b solid">Solid</span></div><div class="ev">On the observable portion he taught rather than told &mdash; airflow, filtration location, why filters in the supplies mean there is probably none in the furnace. The full education happens off-tape.</div></div>
+  <div class="row"><div class="rb">5-star review</div><div><span class="b solid">Solid</span></div><div class="ev">Seeded perfectly on both calls in the expectations line &mdash; <q>The goal is to deliver a five star experience. If I'm not meeting you, stop me so I can give you six.</q> Whether it was collected at the door cannot be seen on these recordings.</div></div>
+
+  <div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Make the time valuable</div><div><span class="b strong">Strong</span></div><div class="ev">Both customers were oriented, informed and invited to participate inside the first ten minutes. On Casio he also gave the customer a way to think about a competitor's claim without taking a side.</div></div>
+  <div class="row"><div class="rb">Help them decide</div><div><span class="b na">Off-tape</span></div><div class="ev">Cannot be assessed from these recordings.</div></div>
+</div>
+
+<div class="sh" style="margin-top:26px"><div class="no">4</div><h2>Critical Actions &mdash; pass rate</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Setting clear expectations</div><div><span class="b pass">Pass</span></div><div class="ev">Two for two, complete sequence, unprompted, on both calls. The strongest pass on this action anywhere in the day.</div></div>
+  <div class="row"><div class="rb">Asking good questions</div><div><span class="b pass">Pass</span></div><div class="ev">Two for two on the observable portion. Filters, thermostat behaviour and &mdash; on Casio &mdash; both seasons of the power bill. The rooms question is the one to add.</div></div>
+  <div class="row"><div class="rb">Creating good options</div><div><span class="b na">Off-tape</span></div><div class="ev">Happens after both recordings end. Not passed, not failed.</div></div>
+  <div class="row"><div class="rb">Handling objections</div><div><span class="b na">Off-tape</span></div><div class="ev">The only objection raised on tape &mdash; the competitor's transformer recommendation &mdash; was deferred rather than answered; see &sect;6. The main presentation is off-tape.</div></div>
+</div>
+</section>
+
+<section id="strengths">
+<div class="sh"><div class="no">5</div><h2>What Rob did right &mdash; real strength, build on it</h2></div>
+<ul class="str">
+  <li><b>The expectations sequence is complete and it sounds like him, not like a script.</b> <q>Any work that needs to be done won't be done without your approval&hellip; The goal is to deliver a five star experience. If I'm not meeting you, stop me so I can give you six.</q> Twice in one day, unprompted, on two very different customers.</li>
+  <li><b>He invites the customer into the work.</b> <q>Feel welcome to come out and join me and ask questions if you'd like to as well.</q> That single sentence does more for the later options conversation than any pitch.</li>
+  <li><b>The straw image.</b> <q>like the system running a marathon through a straw</q> &mdash; a restricted-airflow explanation a customer can repeat to a spouse, delivered before he had a tool in his hand.</li>
+  <li><b>He would not run the competitor down.</b> Handed an easy opening, he declined it: <q>Yeah, I won't do that.</q> That is how a customer decides you are the honest one.</li>
+  <li><b>He got the bill in both seasons.</b> Summer at <q>3 to 400 a month</q> against a winter under a hundred is the exact contrast the Assessment step exists to surface, and he asked for it naturally.</li>
+</ul>
+</section>
+
+<section id="gaps">
+<div class="sh"><div class="no">6</div><h2>The gaps</h2><span class="hint">only what is actually on the recordings</span></div>
+
+<div class="mom">
+  <div class="top2"><span class="b mod">Moderate</span><h4>Gap 1 &mdash; A competitor&rsquo;s recommendation was left at &ldquo;I&rsquo;m not really sure&rdquo;</h4></div>
+  <div class="q"><b>Customer, relaying it</b>"He said it's like a two zone system and it's supposed to have two transformers, so he wants to add a transformer."</div>
+  <div class="q"><b>Customer, pushing again</b>"what I told him is I said, look, it's been 10 years. It's been fine. So why would that make a difference now if they had another transformer? &hellip; unless that keeps it from running more efficiently, right?"</div>
+  <div class="q"><b>Rob</b>"I'm not really sure when I check it, but typically I. I've never seen&hellip;"</div>
+  <p class="fixline"><b>The fix</b> Declining to trash the competitor was right. Leaving the customer's question open was not &mdash; they asked it twice, which means it is the thing they actually want from the visit. Attach a commitment before walking outside: <q>That's a fair question and I'll answer it specifically. When I'm up there I'll check the zoning and the transformer setup, take pictures, and tell you straight whether a second one changes anything for you.</q> Then make it the first item of the report.</p>
+</div>
+
+<div class="mom">
+  <div class="top2"><span class="b mod">Moderate</span><h4>Gap 2 &mdash; The complaint was about a room, and the rooms question never came</h4></div>
+  <div class="q"><b>Rob, McIntire</b>"I'm not sure if it said, like, it was, like, not cooling in the, like, afternoon or something like that."</div>
+  <div class="q"><b>Customer</b>"it's set at 72 and it'll peak at 75, 76."</div>
+  <div class="q"><b>What was never asked</b>Which rooms get hotter or colder than the rest of the house &mdash; on either call &mdash; and on McIntire, what the power bill looks like at that setting.</div>
+  <p class="fixline"><b>The fix</b> On a three-year-old system that drifts three degrees in the afternoon, the answer is almost always a specific room or a duct. <q>Which rooms get hotter than the rest in the afternoon?</q> takes five seconds and turns a vague tune-up into a named problem with a named solution. Ask it while standing at the thermostat, with the bill question right behind it.</p>
+</div>
+
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Gap 3 &mdash; Two visits, and neither one is on tape past the tool bag</h4></div>
+  <div class="q"><b>Casio, 16 min billed</b>Audio usable to roughly the ten-minute mark, ending on "How are you doing for water?"</div>
+  <div class="q"><b>McIntire, 25 min billed</b>Audio usable to roughly the five-minute mark, then repeating fragments for the remainder.</div>
+  <p class="fixline"><b>The fix</b> Part of this is equipment and it is on us &mdash; see &sect;8. The part that is in his hands: confirm the recorder is live again after the outdoor unit, before the check-in. Everything Rob is graded on above happened before he picked up a tool, which means his real work &mdash; the evaluation, the report, the options &mdash; is invisible to coaching and to his own credit. He has the best opening on the team and no evidence of the rest of it.</p>
+</div>
+</section>
+
+<section id="plan">
+<div class="sh"><div class="no">7</div><h2>Three-week training plan</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Week 1</div><div><span class="b solid">Week 1</span></div><div class="ev"><b>Drill:</b> Recording confirmed twice per call &mdash; once at the door, once when he comes back in for the check-in.<br><b>Proof it worked:</b> Every recording this week contains the findings review and the options conversation, not just the welcome.</div></div>
+  <div class="row"><div class="rb">Week 2</div><div><span class="b solid">Week 2</span></div><div class="ev"><b>Drill:</b> Every customer question gets a commitment, not a maybe. When a customer repeats a question, it becomes item one of the report with a named check attached.<br><b>Proof it worked:</b> No recording contains an unanswered repeated question; each has a specific promise and the promise is kept in the report.</div></div>
+  <div class="row"><div class="rb">Week 3</div><div><span class="b solid">Week 3</span></div><div class="ev"><b>Drill:</b> Complete the question set &mdash; rooms question added to the filter, thermostat and both-seasons bill questions he already asks well.<br><b>Proof it worked:</b> All four required questions audible on every call, and the five-star ask collected at the door on the calls he already seeds it on.</div></div>
+</div>
+</section>
+
+<section id="owe">
+<div class="sh"><div class="no">8</div><h2>What we owe Robert Silinzy</h2></div>
+<ul class="str">
+  <li>Recording equipment that survives the walk to the condenser. Both of his files this day failed at the same point in the call, which is a pattern, not bad luck &mdash; and it means he gets no credit for the majority of his work.</li>
+  <li>His expectations line recorded and distributed as the team standard. It is the most complete LTOAT5 delivery in the day's transcripts and other technicians should be learning it from him.</li>
+  <li>A straight answer he can give on two-zone transformer setups, so the next time a competitor plants that question he can close it in the room instead of deferring it.</li>
+  <li>Re-grading once his recordings are intact. On the evidence available his Decision step is unknown, not weak, and he should not carry a conversion number built on two truncated files.</li>
+</ul>
+</section>
+
+<div class="bottom">
+  <div class="eyb">Bottom line</div>
+  <p>On the ten minutes we can hear, Rob is doing the front of the call better than anyone on the board &mdash; complete expectations, real permission, the customer invited to watch, a genuinely good airflow image, and both seasons of the power bill on a ten-year-old two-zone system. The two things to fix are small and specific: answer the question the customer asks twice, and ask which rooms are hot. The bigger issue is not his &mdash; his tape stops when his work starts, and until that is fixed neither he nor we can see whether the strongest opening on the team is turning into flips.</p>
+</div>
+<div class="foot">Sierra &middot; SILO daily coaching plan &middot; 2026-08-05 &middot; Scored on strength bands &mdash; close rate is the only number</div>
+</div></body></html>

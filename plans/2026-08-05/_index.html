@@ -1,0 +1,251 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SILO Daily Coaching Index &mdash; 2026-08-05</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;&middot;&nbsp;SILO</b><span class="tag">Daily Coaching Plan &middot; 2026-08-05</span></div>
+<div class="wrap">
+
+<div class="hero">
+  <div class="ey">15 technicians &middot; 32 gradeable calls &middot; 5 recordings skipped or excluded</div>
+  <h1 class="disp">Daily Coaching Index</h1>
+  <p class="lede">Every SILO technician who ran a gradeable customer call on <b>2026-08-05</b>. Bands are words, never numbers &mdash; the close rate is the only figure on the page.</p>
+</div>
+<p class="note">Scored on strength bands, never numbers &mdash; the only figure anywhere is the close rate. The dashboard conversion file has no entry for this day and the ServiceTitan truth file for the day is not yet present, so every close rate here is computed from the graded calls themselves: a flip is an Option&nbsp;C hand-off, a specialist or comfort-advisor appointment agreed in the call, or work authorised on site. An offer with no recorded acceptance does not count. A large majority of this day's recordings stop before the final presentation &mdash; on those calls the Decision and Deliver steps are marked off-tape and are not graded down.</p>
+<div class="legend"><span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span><span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span></div>
+
+<section id="reps">
+<div class="sh"><div class="no">1</div><h2>Technicians scored</h2><span class="hint">close rate &middot; strongest &middot; weakest &middot; headline gap</span></div>
+<div class="rub">
+
+  <div class="grp"><span class="gn"><a href="Andrew_Alonso.html" style="color:inherit;text-decoration:none">Andrew Alonso</a></span><span class="gb"><span class="b strong">100% (from graded calls)</span></span></div>
+  <div class="row"><div class="rb">Calls reviewed</div><div><span class="b solid">1</span></div><div class="ev">122 min &middot; two systems &middot; 1 flipped &middot; 1 recording skipped</div></div>
+  <div class="row"><div class="rb">Strongest</div><div><span class="b strong">Strong</span></div><div class="ev">Assessment Step</div></div>
+  <div class="row"><div class="rb">Weakest</div><div><span class="b mod">Moderate</span></div><div class="ev">Deliver Step</div></div>
+  <div class="row"><div class="rb">Headline gap</div><div><span class="b mod">Focus</span></div><div class="ev">Objection handling is the one action that failed on an otherwise model call &mdash; pushback gets a re-explanation instead of a question.</div></div>
+
+  <div class="grp"><span class="gn"><a href="David_Canales.html" style="color:inherit;text-decoration:none">David Canales</a></span><span class="gb"><span class="b strong">67% (from graded calls)</span></span></div>
+  <div class="row"><div class="rb">Calls reviewed</div><div><span class="b solid">3</span></div><div class="ev">23 min to 136 min &middot; all customer-facing &middot; 2 flipped, both signed</div></div>
+  <div class="row"><div class="rb">Strongest</div><div><span class="b strong">Strong</span></div><div class="ev">Decision Step</div></div>
+  <div class="row"><div class="rb">Weakest</div><div><span class="b mod">Moderate</span></div><div class="ev">Welcome Step</div></div>
+  <div class="row"><div class="rb">Headline gap</div><div><span class="b mod">Focus</span></div><div class="ev">No expectations sequence is audible on any recording, and customers are sometimes told a problem has no solution instead of being routed to the specialist.</div></div>
+
+  <div class="grp"><span class="gn"><a href="Benjamin_Wyllie.html" style="color:inherit;text-decoration:none">Benjamin Wyllie</a></span><span class="gb"><span class="b strong">50% (from graded calls)</span></span></div>
+  <div class="row"><div class="rb">Calls reviewed</div><div><span class="b solid">2</span></div><div class="ev">51 min and 55 min &middot; both customer-facing &middot; 1 flipped</div></div>
+  <div class="row"><div class="rb">Strongest</div><div><span class="b wins">Strong on wins</span></div><div class="ev">Assessment Step</div></div>
+  <div class="row"><div class="rb">Weakest</div><div><span class="b mod">Moderate</span></div><div class="ev">Decision Step</div></div>
+  <div class="row"><div class="rb">Headline gap</div><div><span class="b mod">Focus</span></div><div class="ev">Measured failures are explained superbly and then left without a repair path or an advisor visit attached.</div></div>
+
+  <div class="grp"><span class="gn"><a href="Brandon_Moreno.html" style="color:inherit;text-decoration:none">Brandon Moreno</a></span><span class="gb"><span class="b strong">50% (from graded calls)</span></span></div>
+  <div class="row"><div class="rb">Calls reviewed</div><div><span class="b solid">2</span></div><div class="ev">8 min and 46 min &middot; both customer-facing &middot; 1 closed, all four critical actions passed on it</div></div>
+  <div class="row"><div class="rb">Strongest</div><div><span class="b strong">Strong</span></div><div class="ev">Assessment Step</div></div>
+  <div class="row"><div class="rb">Weakest</div><div><span class="b wins">Strong on wins</span></div><div class="ev">Decision Step</div></div>
+  <div class="row"><div class="rb">Headline gap</div><div><span class="b mod">Focus</span></div><div class="ev">The goal question gets a clear answer and then nothing is built against it, so short visits end with no option presented.</div></div>
+
+  <div class="grp"><span class="gn"><a href="Bradley_Espinoza.html" style="color:inherit;text-decoration:none">Bradley Espinoza</a></span><span class="gb"><span class="b solid">33% (from graded calls)</span></span></div>
+  <div class="row"><div class="rb">Calls reviewed</div><div><span class="b solid">3</span></div><div class="ev">16 min to 73 min &middot; all customer-facing &middot; 1 flipped, 1 outcome unknown</div></div>
+  <div class="row"><div class="rb">Strongest</div><div><span class="b strong">Strong</span></div><div class="ev">Welcome Step</div></div>
+  <div class="row"><div class="rb">Weakest</div><div><span class="b mod">Moderate</span></div><div class="ev">Deliver Step</div></div>
+  <div class="row"><div class="rb">Headline gap</div><div><span class="b mod">Focus</span></div><div class="ev">Objections about budget or a spouse who decides are met with reassurance rather than a question and a delivery plan.</div></div>
+
+  <div class="grp"><span class="gn"><a href="Cole_Pantol.html" style="color:inherit;text-decoration:none">Cole Pantol</a></span><span class="gb"><span class="b solid">33% (from graded calls)</span></span></div>
+  <div class="row"><div class="rb">Calls reviewed</div><div><span class="b solid">3</span></div><div class="ev">22 min to 144 min &middot; all customer-facing &middot; 1 flipped and signed</div></div>
+  <div class="row"><div class="rb">Strongest</div><div><span class="b strong">Strong</span></div><div class="ev">Assessment Step</div></div>
+  <div class="row"><div class="rb">Weakest</div><div><span class="b mod">Moderate</span></div><div class="ev">Decision Step</div></div>
+  <div class="row"><div class="rb">Headline gap</div><div><span class="b mod">Focus</span></div><div class="ev">The specialist is described as a service rather than dispatched to a time, so strong diagnoses end without a signed appointment.</div></div>
+
+  <div class="grp"><span class="gn"><a href="Francisco_Valencia.html" style="color:inherit;text-decoration:none">Francisco Valencia</a></span><span class="gb"><span class="b solid">33% (from graded calls)</span></span></div>
+  <div class="row"><div class="rb">Calls reviewed</div><div><span class="b solid">3</span></div><div class="ev">8 min to 17 min &middot; all customer-facing &middot; 1 flipped &middot; 1 recording skipped</div></div>
+  <div class="row"><div class="rb">Strongest</div><div><span class="b wins">Strong on wins</span></div><div class="ev">Decision Step</div></div>
+  <div class="row"><div class="rb">Weakest</div><div><span class="b solid">Solid</span></div><div class="ev">Welcome Step</div></div>
+  <div class="row"><div class="rb">Headline gap</div><div><span class="b mod">Focus</span></div><div class="ev">Undecided customers are told what they do not want and given brand comparisons instead of an evaluation and a named path.</div></div>
+
+  <div class="grp"><span class="gn"><a href="Joe_Mendoza.html" style="color:inherit;text-decoration:none">Joe Mendoza</a></span><span class="gb"><span class="b weak">0% (from graded calls)</span></span></div>
+  <div class="row"><div class="rb">Calls reviewed</div><div><span class="b solid">4</span></div><div class="ev">10 min to 128 min &middot; all four critical actions passed on all four calls &middot; specialist offered on the key call, answer off-tape</div></div>
+  <div class="row"><div class="rb">Strongest</div><div><span class="b strong">Strong</span></div><div class="ev">Assessment Step</div></div>
+  <div class="row"><div class="rb">Weakest</div><div><span class="b solid">Solid</span></div><div class="ev">Deliver Step</div></div>
+  <div class="row"><div class="rb">Headline gap</div><div><span class="b mod">Focus</span></div><div class="ev">Specialist visits are offered as a choice for the customer to discuss rather than booked to a slot before leaving.</div></div>
+
+  <div class="grp"><span class="gn"><a href="Mario_Castro.html" style="color:inherit;text-decoration:none">Mario Castro</a></span><span class="gb"><span class="b weak">0% (from graded calls)</span></span></div>
+  <div class="row"><div class="rb">Calls reviewed</div><div><span class="b solid">3</span></div><div class="ev">7 min to 35 min &middot; all customer-facing &middot; 0 flipped</div></div>
+  <div class="row"><div class="rb">Strongest</div><div><span class="b strong">Strong</span></div><div class="ev">Assessment Step</div></div>
+  <div class="row"><div class="rb">Weakest</div><div><span class="b weak">Weak</span></div><div class="ev">Decision Step</div></div>
+  <div class="row"><div class="rb">Headline gap</div><div><span class="b mod">Focus</span></div><div class="ev">Excellent discovery goes into the report and no path, price or appointment is ever said out loud to the customer.</div></div>
+
+  <div class="grp"><span class="gn"><a href="Noah_Weng.html" style="color:inherit;text-decoration:none">Noah Weng</a></span><span class="gb"><span class="b weak">0% (from graded calls)</span></span></div>
+  <div class="row"><div class="rb">Calls reviewed</div><div><span class="b solid">2</span></div><div class="ev">43 min and 91 min billed, roughly 25 min captured &middot; both partial</div></div>
+  <div class="row"><div class="rb">Strongest</div><div><span class="b strong">Strong</span></div><div class="ev">Assessment Step</div></div>
+  <div class="row"><div class="rb">Weakest</div><div><span class="b solid">Solid</span></div><div class="ev">Deliver Step</div></div>
+  <div class="row"><div class="rb">Headline gap</div><div><span class="b mod">Focus</span></div><div class="ev">Four convergent technical findings with no customer economics behind them &mdash; no setting, bill or comfort numbers to link them to.</div></div>
+
+  <div class="grp"><span class="gn"><a href="Andrew_Trujillo.html" style="color:inherit;text-decoration:none">Andrew Trujillo</a></span><span class="gb"><span class="b weak">0% (from graded calls)</span></span></div>
+  <div class="row"><div class="rb">Calls reviewed</div><div><span class="b solid">1</span></div><div class="ev">18 min billed, roughly 12 min captured &middot; partial</div></div>
+  <div class="row"><div class="rb">Strongest</div><div><span class="b strong">Strong</span></div><div class="ev">Assessment Step</div></div>
+  <div class="row"><div class="rb">Weakest</div><div><span class="b na">Off-tape</span></div><div class="ev">Decision Step &mdash; not observed</div></div>
+  <div class="row"><div class="rb">Headline gap</div><div><span class="b mod">Focus</span></div><div class="ev">Two objections arrived at the door &mdash; cost aversion and an absent decision-maker &mdash; and both were accepted rather than planned around.</div></div>
+
+  <div class="grp"><span class="gn"><a href="Robert_Silinzy.html" style="color:inherit;text-decoration:none">Robert Silinzy</a></span><span class="gb"><span class="b weak">0% (from graded calls)</span></span></div>
+  <div class="row"><div class="rb">Calls reviewed</div><div><span class="b solid">2</span></div><div class="ev">16 min and 25 min billed, roughly 12 min captured &middot; both partial</div></div>
+  <div class="row"><div class="rb">Strongest</div><div><span class="b strong">Strong</span></div><div class="ev">Welcome Step &mdash; the most complete expectations line of the day</div></div>
+  <div class="row"><div class="rb">Weakest</div><div><span class="b solid">Solid</span></div><div class="ev">Assessment Step</div></div>
+  <div class="row"><div class="rb">Headline gap</div><div><span class="b mod">Focus</span></div><div class="ev">Both recordings stop when the tools come out, and a question the customer asked twice was left at &ldquo;I&rsquo;m not really sure&rdquo;.</div></div>
+
+  <div class="grp"><span class="gn"><a href="Nathan_Colquitt.html" style="color:inherit;text-decoration:none">Nathan Colquitt</a></span><span class="gb"><span class="b weak">0% (from graded calls)</span></span></div>
+  <div class="row"><div class="rb">Calls reviewed</div><div><span class="b solid">1</span></div><div class="ev">17 min billed, roughly 9 min captured &middot; partial</div></div>
+  <div class="row"><div class="rb">Strongest</div><div><span class="b strong">Strong</span></div><div class="ev">Assessment Step</div></div>
+  <div class="row"><div class="rb">Weakest</div><div><span class="b solid">Solid</span></div><div class="ev">Welcome Step</div></div>
+  <div class="row"><div class="rb">Headline gap</div><div><span class="b mod">Focus</span></div><div class="ev">The expectations frame stops at approval, so the customer is never told options are coming; a filter was deferred to a future visit rather than booked.</div></div>
+
+  <div class="grp"><span class="gn"><a href="Juan_Tlatenchi.html" style="color:inherit;text-decoration:none">Juan Tlatenchi</a></span><span class="gb"><span class="b weak">0% (from graded calls)</span></span></div>
+  <div class="row"><div class="rb">Calls reviewed</div><div><span class="b solid">1</span></div><div class="ev">24 min billed, roughly 15 min captured &middot; partial</div></div>
+  <div class="row"><div class="rb">Strongest</div><div><span class="b strong">Strong</span></div><div class="ev">Assessment Step &mdash; the best discovery on a single call this day</div></div>
+  <div class="row"><div class="rb">Weakest</div><div><span class="b weak">Weak</span></div><div class="ev">Decision Step</div></div>
+  <div class="row"><div class="rb">Headline gap</div><div><span class="b mod">Focus</span></div><div class="ev">Agreement that a comfort problem could not be solved, while the customer was already shopping cooling equipment elsewhere.</div></div>
+
+  <div class="grp"><span class="gn"><a href="Nikko_April.html" style="color:inherit;text-decoration:none">Nikko April</a></span><span class="gb"><span class="b weak">0% (from graded calls)</span></span></div>
+  <div class="row"><div class="rb">Calls reviewed</div><div><span class="b solid">1</span></div><div class="ev">28 min &middot; membership maintenance &middot; 2 recordings skipped</div></div>
+  <div class="row"><div class="rb">Strongest</div><div><span class="b strong">Strong</span></div><div class="ev">Welcome Step</div></div>
+  <div class="row"><div class="rb">Weakest</div><div><span class="b weak">Weak</span></div><div class="ev">Decision Step</div></div>
+  <div class="row"><div class="rb">Headline gap</div><div><span class="b mod">Focus</span></div><div class="ev">Parts the customer asked to buy were sent to an online retailer, and a stated replacement concern was reassured away.</div></div>
+
+</div>
+</section>
+
+<section id="skipped">
+<div class="sh"><div class="no">2</div><h2>Recordings skipped or excluded</h2><span class="hint">not graded for outcome, with reason</span></div>
+<div class="rub">
+  <div class="row"><div class="rb">Nikko April</div><div><span class="b na">Skipped</span></div><div class="ev">Macek, Job # 671324236 (7 min) &mdash; roughly 250 words captured and the recording cuts off while the customer is still describing the problem; no rep behaviour observable.</div></div>
+  <div class="row"><div class="rb">Nikko April</div><div><span class="b na">Skipped</span></div><div class="ev">Hu, Job # 670328923 (6 min) &mdash; recording contains one navigation line and no customer interaction.</div></div>
+  <div class="row"><div class="rb">Francisco Valencia</div><div><span class="b na">Skipped</span></div><div class="ev">Streeter, Job # 671324204 (45 min) &mdash; recording contains roughly twenty words; a recording failure, nothing gradeable.</div></div>
+  <div class="row"><div class="rb">Andrew Alonso</div><div><span class="b na">Skipped</span></div><div class="ev">Reininger, Job # 671325172 (9 min) &mdash; roughly thirty words captured, none about the equipment. A scorecard exists for it, but with no evidence to grade it is excluded rather than counted as a failed call.</div></div>
+  <div class="row"><div class="rb">Joe Mendoza</div><div><span class="b na">Excluded</span></div><div class="ev">Rooftop tenant call (23 min) &mdash; graded for behaviour but excluded from the close rate: the ladder could not safely reach the roof after a technician fell that Sunday and the office had closed, so no evaluation was possible. Rebooked to Friday at the customer's chosen time.</div></div>
+</div>
+</section>
+
+<section id="pattern">
+<div class="sh"><div class="no">3</div><h2>The pattern across the day</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">What is working</div><div><span class="b strong">Strong</span></div><div class="ev">The Welcome and Assessment steps are in genuinely good shape. Parking, permission and names are near-universal; four technicians delivered the complete expectations sequence including the five-star seed; and the technical explanation on this board is excellent &mdash; capacitor tolerances read out to the decimal, amp draw against the data tag, refrigerant pressures shown on screen with the target range beside them, compressors compared to hearts and blood pressure.</div></div>
+  <div class="row"><div class="rb">Where the day was lost</div><div><span class="b weak">Weak</span></div><div class="ev">The ask. Nine of fifteen technicians produced no confirmed flip, and in almost every case the diagnosis was right and the appointment was never requested. The four confirmed flips all share one thing: a specific time and, on three of them, a signature taken before leaving the property.</div></div>
+  <div class="row"><div class="rb">The recurring miss</div><div><span class="b mod">Moderate</span></div><div class="ev">Customers named their own buying signals out loud all day &mdash; &ldquo;I'm at eight years&rdquo;, &ldquo;October, November, I want to replace it&rdquo;, &ldquo;how much I have to start saving&rdquo;, &ldquo;I might as well go for the financing&rdquo;, &ldquo;what do we do?&rdquo; asked twice &mdash; and were answered with reassurance, lifespan facts or more diagnosis instead of an advisor visit with a date on it.</div></div>
+  <div class="row"><div class="rb">Objection handling</div><div><span class="b weak">Weak</span></div><div class="ev">Failed for eleven of the fifteen technicians. The pattern is consistent: empathy is present, the question is missing. Affordability statements and absent decision-makers get agreement rather than curiosity.</div></div>
+  <div class="row"><div class="rb">Five-star collection</div><div><span class="b weak">Weak</span></div><div class="ev">Seeded on roughly half the calls and collected on almost none. One technician asked for it outright.</div></div>
+  <div class="row"><div class="rb">Recording coverage</div><div><span class="b weak">Weak</span></div><div class="ev">The most serious problem on this page and it is not a technician problem. Well over half of the day's recordings stop when the technician picks up a tool, and several captured only a fraction of the billed time &mdash; one 91-minute visit produced roughly ten usable minutes, and one 45-minute visit produced twenty words. On those calls the Decision step is unknown, not weak, and the close rates below understate the day.</div></div>
+</div>
+</section>
+
+<div class="bottom">
+  <div class="eyb">Bottom line</div>
+  <p>This board can diagnose. Across fifteen technicians the Welcome and Assessment steps are solid to strong almost everywhere, and the technical teaching &mdash; refrigerant law, capacitor tolerances, amp draw against the plate, internal overloads, seized dampers &mdash; is better than the numbers suggest. What separated the four who converted from the eleven who did not was a single behaviour: naming the no-cost specialist visit, putting a time on it, and getting a signature before leaving the property. Three of the four flips have a zero-dollar authorisation attached. Everyone else described the service and waited to be asked. Two things need fixing above all else: give every technician the reflex of turning a stated buying signal into a booked date, and fix the recordings, because more than half of this day's real work is invisible.</p>
+</div>
+<div class="foot">Sierra &middot; SILO daily coaching index &middot; 2026-08-05 &middot; Scored on strength bands &mdash; close rate is the only number</div>
+</div></body></html>

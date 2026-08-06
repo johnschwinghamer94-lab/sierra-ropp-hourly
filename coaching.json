@@ -1,1334 +1,1424 @@
 {
-  "generated": "2026-08-05T07:34:29-07:00",
-  "date": "2026-08-04",
-  "reps": [
-    {
-      "name": "Andrew Trujillo",
-      "closeRate": "25% (from graded calls)",
-      "calls": 4,
-      "strongest": "Welcome",
-      "weakest": "Decision",
-      "bands": {
-        "welcome": "Strong",
-        "assessment": "Solid",
-        "decision": "Moderate",
-        "deliver": "Moderate"
-      },
-      "critical": {
-        "expectations": true,
-        "questions": true,
-        "options": false,
-        "objections": false
-      },
-      "headlineGap": "Stated replacement timelines are agreed with rather than converted into a specialist visit, so no second path is ever named.",
-      "focus": [
-        "Week 1: Name two paths out loud before writing any report",
-        "Week 2: Treat a customer's stated timeline as a booking cue, not a closing objection",
-        "Week 3: Seed the five-star ask in the opening and collect it before leaving"
-      ],
-      "plan": "coaching/plans/2026-08-04/Andrew_Trujillo.html"
-    },
-    {
-      "name": "Benjamin Wyllie",
-      "closeRate": "80% (from graded calls)",
-      "calls": 5,
-      "strongest": "Assessment",
-      "weakest": "Decision",
-      "bands": {
-        "welcome": "Solid",
-        "assessment": "Strong",
-        "decision": "Moderate",
-        "deliver": "Solid"
-      },
-      "critical": {
-        "expectations": true,
-        "questions": true,
-        "options": false,
-        "objections": false
-      },
-      "headlineGap": "Absent-owner hand-offs go out as a report without two written directions attached, so the decision-maker has nothing to choose between.",
-      "focus": [
-        "Week 1: Two written paths in every absent-decision-maker report",
-        "Week 2: Answer the objection in the room before promising to relay it",
-        "Week 3: Collect the five-star ask that is already seeded in the opening"
-      ],
-      "plan": "coaching/plans/2026-08-04/Benjamin_Wyllie.html"
-    },
-    {
-      "name": "Bradley Espinoza",
-      "closeRate": "75% (from graded calls)",
-      "calls": 4,
-      "strongest": "Welcome",
-      "weakest": "Decision",
-      "bands": {
-        "welcome": "Strong",
-        "assessment": "Strong",
-        "decision": "Moderate",
-        "deliver": "Solid"
-      },
-      "critical": {
-        "expectations": true,
-        "questions": true,
-        "options": false,
-        "objections": false
-      },
-      "headlineGap": "On maintenance visits no option or replacement horizon is built at all, while diagnostic calls reliably end with a named next step.",
-      "focus": [
-        "Week 1: Every maintenance call ends with a named horizon and an advisor offer",
-        "Week 2: Identical last two minutes on every call type &mdash; found, recommend, choose",
-        "Week 3: Collect the five-star promise on every completed visit"
-      ],
-      "plan": "coaching/plans/2026-08-04/Bradley_Espinoza.html"
-    },
-    {
-      "name": "Brandon Moreno",
-      "closeRate": "60% (from graded calls)",
-      "calls": 5,
-      "strongest": "Assessment",
-      "weakest": "Decision",
-      "bands": {
-        "welcome": "Moderate",
-        "assessment": "Solid",
-        "decision": "Weak",
-        "deliver": "Weak"
-      },
-      "critical": {
-        "expectations": false,
-        "questions": true,
-        "options": false,
-        "objections": false
-      },
-      "headlineGap": "Hand-offs and callbacks are promised without a diagnosis, a named path or a timeframe attached, leaving customers waiting without knowing for what.",
-      "focus": [
-        "Week 1: Never hand off without a diagnosis, a path and a deadline",
-        "Week 2: Turn every stated customer goal into a follow-up question and a named option",
-        "Week 3: Set expectations on every call, short ones included, and seed the review inside it"
-      ],
-      "plan": "coaching/plans/2026-08-04/Brandon_Moreno.html"
-    },
-    {
-      "name": "Cole Pantol",
-      "closeRate": "80% (from graded calls)",
-      "calls": 5,
-      "strongest": "Welcome",
-      "weakest": "Decision",
-      "bands": {
-        "welcome": "Strong",
-        "assessment": "Strong",
-        "decision": "Moderate",
-        "deliver": "Moderate"
-      },
-      "critical": {
-        "expectations": true,
-        "questions": true,
-        "options": false,
-        "objections": false
-      },
-      "headlineGap": "Direct requests for replacement quotes are answered with a description of scope rather than a booked advisor visit, so no second path is ever named in the room.",
-      "focus": [
-        "Week 1: Book the advisor in the room whenever replacement is mentioned",
-        "Week 2: Name two paths at the end of every report before leaving",
-        "Week 3: Collect the five-star promise that opens every one of his calls"
-      ],
-      "plan": "coaching/plans/2026-08-04/Cole_Pantol.html"
-    },
-    {
-      "name": "David Canales",
-      "closeRate": "50% (from graded calls)",
-      "calls": 2,
-      "strongest": "Assessment",
-      "weakest": "Welcome",
-      "bands": {
-        "welcome": "Solid",
-        "assessment": "Strong",
-        "decision": "Strong on wins",
-        "deliver": "Solid"
-      },
-      "critical": {
-        "expectations": true,
-        "questions": true,
-        "options": true,
-        "objections": false
-      },
-      "headlineGap": "Cost objections are answered with a benefits pitch instead of a question, which closes the conversation rather than opening the specialist path.",
-      "focus": [
-        "Week 1: Answer every cost objection with a question before anything else",
-        "Week 2: Say out loud what the customer's own plans mean for the recommendation",
-        "Week 3: Ask for the review in the same breath as taking the email address"
-      ],
-      "plan": "coaching/plans/2026-08-04/David_Canales.html"
-    },
-    {
-      "name": "Francisco Valencia",
-      "closeRate": "50% (from graded calls)",
-      "calls": 6,
-      "strongest": "Assessment",
-      "weakest": "Decision",
-      "bands": {
-        "welcome": "Solid",
-        "assessment": "Strong on wins",
-        "decision": "Moderate",
-        "deliver": "Moderate"
-      },
-      "critical": {
-        "expectations": false,
-        "questions": true,
-        "options": false,
-        "objections": false
-      },
-      "headlineGap": "On short calls the Decision step disappears entirely &mdash; replacement enquiries are routed back to repair instead of turning into a booked advisor visit.",
-      "focus": [
-        "Week 1: Book the advisor whenever replacement is mentioned, on any length of call",
-        "Week 2: Every call under twenty minutes still ends with a named next step and a date",
-        "Week 3: Attach the five-star ask to the report promise already being made"
-      ],
-      "plan": "coaching/plans/2026-08-04/Francisco_Valencia.html"
-    },
-    {
-      "name": "Joe Mendoza",
-      "closeRate": "71% (from graded calls)",
-      "calls": 7,
-      "strongest": "Assessment",
-      "weakest": "Deliver",
-      "bands": {
-        "welcome": "Strong",
-        "assessment": "Strong",
-        "decision": "Strong on wins",
-        "deliver": "Solid"
-      },
-      "critical": {
-        "expectations": false,
-        "questions": true,
-        "options": false,
-        "objections": false
-      },
-      "headlineGap": "Next steps are left depending on a single condition &mdash; a document, a timeline &mdash; instead of being paired with a parallel path that moves regardless.",
-      "focus": [
-        "Week 1: Attach a parallel path whenever the next step depends on a condition",
-        "Week 2: Answer a request for the solution by booking the specialist, not by giving a timeline",
-        "Week 3: Walk the work and ask for the review on every call that ends in agreement"
-      ],
-      "plan": "coaching/plans/2026-08-04/Joe_Mendoza.html"
-    },
-    {
-      "name": "Juan Tlatenchi",
-      "closeRate": "0% (from graded calls)",
-      "calls": 2,
-      "strongest": "Assessment",
-      "weakest": "Decision",
-      "bands": {
-        "welcome": "Moderate",
-        "assessment": "Solid",
-        "decision": "Weak",
-        "deliver": "Weak"
-      },
-      "critical": {
-        "expectations": false,
-        "questions": true,
-        "options": false,
-        "objections": false
-      },
-      "headlineGap": "No roadmap at the start and no findings review at the end, so neither call ever reaches a moment where the customer could decide anything.",
-      "focus": [
-        "Week 1: Give the roadmap at the door before starting any inspection",
-        "Week 2: Fixed ending on every call &mdash; found, recommend, choose",
-        "Week 3: Seed and collect the five-star ask inside the new roadmap"
-      ],
-      "plan": "coaching/plans/2026-08-04/Juan_Tlatenchi.html"
-    },
-    {
-      "name": "Mario Castro",
-      "closeRate": "0% (from graded calls)",
-      "calls": 1,
-      "strongest": "Assessment",
-      "weakest": "Decision",
-      "bands": {
-        "welcome": "Solid",
-        "assessment": "Solid",
-        "decision": "Moderate",
-        "deliver": "Moderate"
-      },
-      "critical": {
-        "expectations": true,
-        "questions": true,
-        "options": true,
-        "objections": false
-      },
-      "headlineGap": "The specialist path is named with the right reasoning but left as an intention rather than booked before leaving the property.",
-      "focus": [
-        "Week 1: Make the advisor call from the property, never after",
-        "Week 2: On repeat visits, state what has changed since last time and what the trend means",
-        "Week 3: Seed the five-star promise at the door and collect it before leaving"
-      ],
-      "plan": "coaching/plans/2026-08-04/Mario_Castro.html"
-    },
-    {
-      "name": "Nathan Colquitt",
-      "closeRate": "0% (from graded calls)",
-      "calls": 3,
-      "strongest": "Welcome",
-      "weakest": "Deliver",
-      "bands": {
-        "welcome": "Strong",
-        "assessment": "Solid",
-        "decision": "Moderate",
-        "deliver": "Weak"
-      },
-      "critical": {
-        "expectations": true,
-        "questions": true,
-        "options": false,
-        "objections": false
-      },
-      "headlineGap": "Every call ends at the written report, with no repair path or advisor visit named out loud &mdash; including one where the customer voiced the urgency themselves.",
-      "focus": [
-        "Week 1: Two named paths before any report is written",
-        "Week 2: Repeat the customer's own stated concern back and attach the recommendation to it",
-        "Week 3: Collect the five-star promise that already opens every call"
-      ],
-      "plan": "coaching/plans/2026-08-04/Nathan_Colquitt.html"
-    },
-    {
-      "name": "Nikko April",
-      "closeRate": "67% (from graded calls)",
-      "calls": 3,
-      "strongest": "Assessment",
-      "weakest": "Deliver",
-      "bands": {
-        "welcome": "Strong on wins",
-        "assessment": "Strong",
-        "decision": "Strong on wins",
-        "deliver": "Solid"
-      },
-      "critical": {
-        "expectations": false,
-        "questions": true,
-        "options": true,
-        "objections": false
-      },
-      "headlineGap": "Expectations are set on the calls that flip and skipped on the ones that do not, leaving strong assessment and option work with no frame around it.",
-      "focus": [
-        "Week 1: Set expectations at the door on every call without exception",
-        "Week 2: Ask what is behind a concern before reassuring on it",
-        "Week 3: State the next step plainly and ask for the review on every completed visit"
-      ],
-      "plan": "coaching/plans/2026-08-04/Nikko_April.html"
-    },
-    {
-      "name": "Noah Weng",
-      "closeRate": "0% (from graded calls)",
-      "calls": 3,
-      "strongest": "Assessment",
-      "weakest": "Decision",
-      "bands": {
-        "welcome": "Solid",
-        "assessment": "Strong",
-        "decision": "Moderate",
-        "deliver": "Solid"
-      },
-      "critical": {
-        "expectations": true,
-        "questions": true,
-        "options": false,
-        "objections": false
-      },
-      "headlineGap": "Competitor quotes and DIY statements are acknowledged honestly but never converted into a question or an advisor visit, so well-run calls end with no path.",
-      "focus": [
-        "Week 1: Answer every competitor quote with a question and an advisor offer",
-        "Week 2: Treat DIY statements as a negotiation and offer a partial path",
-        "Week 3: Add the advisor offer and the five-star ask to the report promise"
-      ],
-      "plan": "coaching/plans/2026-08-04/Noah_Weng.html"
-    },
-    {
-      "name": "Robert Silinzy",
-      "closeRate": "50% (from graded calls)",
-      "calls": 2,
-      "strongest": "Assessment",
-      "weakest": "Decision",
-      "bands": {
-        "welcome": "Solid",
-        "assessment": "Solid",
-        "decision": "Weak",
-        "deliver": "Weak"
-      },
-      "critical": {
-        "expectations": false,
-        "questions": true,
-        "options": false,
-        "objections": false
-      },
-      "headlineGap": "Real faults volunteered by customers are answered with a filter recommendation instead of a repair path or an advisor visit.",
-      "focus": [
-        "Week 1: Set expectations at the door on every call",
-        "Week 2: Every named fault gets a path &mdash; filters are an add-on, never the answer",
-        "Week 3: Seed and collect the five-star ask his rapport already earns"
-      ],
-      "plan": "coaching/plans/2026-08-04/Robert_Silinzy.html"
-    }
-  ],
-  "skipped": [
-    {
-      "rep": "Nikko April",
-      "reason": "Banyai, Job # 670051824 (72 min) — transcription severely corrupted and cuts off mid-conversation; not scoreable."
-    },
-    {
-      "rep": "Nikko April",
-      "reason": "Lee Trust, Job # 670720905 (55 min) — near-empty recording, roughly 200 words captured of a 55-minute visit; a recording failure rather than a short call."
-    },
-    {
-      "rep": "Nathan Colquitt",
-      "reason": "Connelly, Job # 670397407 (6 min) — transcript corrupted with unreadable character sequences; unscoreable. A TGL exists on this job but the call cannot be graded."
-    },
-    {
-      "rep": "Robert Silinzy",
-      "reason": "Albin, Job # 667148050 (18 min) — near-empty customer interaction (roughly ten customer words in 18 minutes) plus transcript corruption; not a scoreable customer engagement."
-    }
-  ],
-  "dates": [
-    "2026-08-04",
-    "2026-08-03",
-    "2026-08-02",
-    "2026-08-01",
-    "2026-07-31",
-    "2026-07-30",
-    "2026-07-29",
-    "2026-07-28",
-    "2026-07-27",
-    "2026-07-26",
-    "2026-07-25",
-    "2026-07-24",
-    "2026-07-23",
-    "2026-07-22"
-  ],
-  "history": {
-    "Andrew Trujillo": [
-      {
-        "date": "2026-08-04",
-        "plan": "coaching/plans/2026-08-04/Andrew_Trujillo.html"
-      },
-      {
-        "date": "2026-08-03",
-        "plan": "coaching/plans/2026-08-03/Andrew_Trujillo.html"
-      },
-      {
-        "date": "2026-08-01",
-        "plan": "coaching/plans/2026-08-01/Andrew_Trujillo.html"
-      },
-      {
-        "date": "2026-07-31",
-        "plan": "coaching/plans/2026-07-31/Andrew_Trujillo.html"
-      },
-      {
-        "date": "2026-07-30",
-        "plan": "coaching/plans/2026-07-30/Andrew_Trujillo.html"
-      },
-      {
-        "date": "2026-07-28",
-        "plan": "coaching/plans/2026-07-28/Andrew_Trujillo.html"
-      },
-      {
-        "date": "2026-07-27",
-        "plan": "coaching/plans/2026-07-27/Andrew_Trujillo.html"
-      },
-      {
-        "date": "2026-07-26",
-        "plan": "coaching/plans/2026-07-26/Andrew_Trujillo.html"
-      },
-      {
-        "date": "2026-07-25",
-        "plan": "coaching/plans/2026-07-25/Andrew_Trujillo.html"
-      },
-      {
-        "date": "2026-07-24",
-        "plan": "coaching/plans/2026-07-24/Andrew_Trujillo.html"
-      },
-      {
-        "date": "2026-07-23",
-        "plan": "coaching/plans/2026-07-23/Andrew_Trujillo.html"
-      },
-      {
-        "date": "2026-07-22",
-        "plan": "coaching/plans/2026-07-22/Andrew_Trujillo.html"
-      },
-      {
-        "date": "2026-07-21",
-        "plan": "coaching/plans/2026-07-21/Andrew_Trujillo.html"
-      },
-      {
-        "date": "2026-07-20",
-        "plan": "coaching/plans/2026-07-20/Andrew_Trujillo.html"
-      }
-    ],
-    "Benjamin Wyllie": [
-      {
-        "date": "2026-08-04",
-        "plan": "coaching/plans/2026-08-04/Benjamin_Wyllie.html"
-      },
-      {
-        "date": "2026-08-03",
-        "plan": "coaching/plans/2026-08-03/Benjamin_Wyllie.html"
-      },
-      {
-        "date": "2026-08-01",
-        "plan": "coaching/plans/2026-08-01/Benjamin_Wyllie.html"
-      },
-      {
-        "date": "2026-07-31",
-        "plan": "coaching/plans/2026-07-31/Benjamin_Wyllie.html"
-      },
-      {
-        "date": "2026-07-30",
-        "plan": "coaching/plans/2026-07-30/Benjamin_Wyllie.html"
-      },
-      {
-        "date": "2026-07-28",
-        "plan": "coaching/plans/2026-07-28/Benjamin_Wyllie.html"
-      },
-      {
-        "date": "2026-07-27",
-        "plan": "coaching/plans/2026-07-27/Benjamin_Wyllie.html"
-      },
-      {
-        "date": "2026-07-26",
-        "plan": "coaching/plans/2026-07-26/Benjamin_Wyllie.html"
-      },
-      {
-        "date": "2026-07-25",
-        "plan": "coaching/plans/2026-07-25/Benjamin_Wyllie.html"
-      },
-      {
-        "date": "2026-07-24",
-        "plan": "coaching/plans/2026-07-24/Benjamin_Wyllie.html"
-      },
-      {
-        "date": "2026-07-23",
-        "plan": "coaching/plans/2026-07-23/Benjamin_Wyllie.html"
-      },
-      {
-        "date": "2026-07-22",
-        "plan": "coaching/plans/2026-07-22/Benjamin_Wyllie.html"
-      },
-      {
-        "date": "2026-07-21",
-        "plan": "coaching/plans/2026-07-21/Benjamin_Wyllie.html"
-      },
-      {
-        "date": "2026-07-20",
-        "plan": "coaching/plans/2026-07-20/Benjamin_Wyllie.html"
-      }
-    ],
-    "Bradley Espinoza": [
-      {
-        "date": "2026-08-04",
-        "plan": "coaching/plans/2026-08-04/Bradley_Espinoza.html"
-      },
-      {
-        "date": "2026-08-03",
-        "plan": "coaching/plans/2026-08-03/Bradley_Espinoza.html"
-      },
-      {
-        "date": "2026-08-02",
-        "plan": "coaching/plans/2026-08-02/Bradley_Espinoza.html"
-      },
-      {
-        "date": "2026-07-31",
-        "plan": "coaching/plans/2026-07-31/Bradley_Espinoza.html"
-      },
-      {
-        "date": "2026-07-30",
-        "plan": "coaching/plans/2026-07-30/Bradley_Espinoza.html"
-      },
-      {
-        "date": "2026-07-29",
-        "plan": "coaching/plans/2026-07-29/Bradley_Espinoza.html"
-      },
-      {
-        "date": "2026-07-28",
-        "plan": "coaching/plans/2026-07-28/Bradley_Espinoza.html"
-      }
-    ],
-    "Brandon Moreno": [
-      {
-        "date": "2026-08-04",
-        "plan": "coaching/plans/2026-08-04/Brandon_Moreno.html"
-      },
-      {
-        "date": "2026-08-03",
-        "plan": "coaching/plans/2026-08-03/Brandon_Moreno.html"
-      },
-      {
-        "date": "2026-08-02",
-        "plan": "coaching/plans/2026-08-02/Brandon_Moreno.html"
-      },
-      {
-        "date": "2026-08-01",
-        "plan": "coaching/plans/2026-08-01/Brandon_Moreno.html"
-      },
-      {
-        "date": "2026-07-31",
-        "plan": "coaching/plans/2026-07-31/Brandon_Moreno.html"
-      },
-      {
-        "date": "2026-07-30",
-        "plan": "coaching/plans/2026-07-30/Brandon_Moreno.html"
-      },
-      {
-        "date": "2026-07-29",
-        "plan": "coaching/plans/2026-07-29/Brandon_Moreno.html"
-      },
-      {
-        "date": "2026-07-28",
-        "plan": "coaching/plans/2026-07-28/Brandon_Moreno.html"
-      },
-      {
-        "date": "2026-07-27",
-        "plan": "coaching/plans/2026-07-27/Brandon_Moreno.html"
-      },
-      {
-        "date": "2026-07-25",
-        "plan": "coaching/plans/2026-07-25/Brandon_Moreno.html"
-      },
-      {
-        "date": "2026-07-24",
-        "plan": "coaching/plans/2026-07-24/Brandon_Moreno.html"
-      },
-      {
-        "date": "2026-07-23",
-        "plan": "coaching/plans/2026-07-23/Brandon_Moreno.html"
-      },
-      {
-        "date": "2026-07-22",
-        "plan": "coaching/plans/2026-07-22/Brandon_Moreno.html"
-      },
-      {
-        "date": "2026-07-21",
-        "plan": "coaching/plans/2026-07-21/Brandon_Moreno.html"
-      },
-      {
-        "date": "2026-07-20",
-        "plan": "coaching/plans/2026-07-20/Brandon_Moreno.html"
-      }
-    ],
-    "Cole Pantol": [
-      {
-        "date": "2026-08-04",
-        "plan": "coaching/plans/2026-08-04/Cole_Pantol.html"
-      },
-      {
-        "date": "2026-08-03",
-        "plan": "coaching/plans/2026-08-03/Cole_Pantol.html"
-      },
-      {
-        "date": "2026-08-01",
-        "plan": "coaching/plans/2026-08-01/Cole_Pantol.html"
-      },
-      {
-        "date": "2026-07-31",
-        "plan": "coaching/plans/2026-07-31/Cole_Pantol.html"
-      },
-      {
-        "date": "2026-07-30",
-        "plan": "coaching/plans/2026-07-30/Cole_Pantol.html"
-      },
-      {
-        "date": "2026-07-29",
-        "plan": "coaching/plans/2026-07-29/Cole_Pantol.html"
-      },
-      {
-        "date": "2026-07-28",
-        "plan": "coaching/plans/2026-07-28/Cole_Pantol.html"
-      },
-      {
-        "date": "2026-07-27",
-        "plan": "coaching/plans/2026-07-27/Cole_Pantol.html"
-      },
-      {
-        "date": "2026-07-25",
-        "plan": "coaching/plans/2026-07-25/Cole_Pantol.html"
-      },
-      {
-        "date": "2026-07-24",
-        "plan": "coaching/plans/2026-07-24/Cole_Pantol.html"
-      },
-      {
-        "date": "2026-07-23",
-        "plan": "coaching/plans/2026-07-23/Cole_Pantol.html"
-      },
-      {
-        "date": "2026-07-22",
-        "plan": "coaching/plans/2026-07-22/Cole_Pantol.html"
-      },
-      {
-        "date": "2026-07-21",
-        "plan": "coaching/plans/2026-07-21/Cole_Pantol.html"
-      },
-      {
-        "date": "2026-07-20",
-        "plan": "coaching/plans/2026-07-20/Cole_Pantol.html"
-      },
-      {
-        "date": "2026-07-19",
-        "plan": "coaching/plans/2026-07-19/Cole_Pantol.html"
-      }
-    ],
-    "David Canales": [
-      {
-        "date": "2026-08-04",
-        "plan": "coaching/plans/2026-08-04/David_Canales.html"
-      },
-      {
-        "date": "2026-08-03",
-        "plan": "coaching/plans/2026-08-03/David_Canales.html"
-      },
-      {
-        "date": "2026-08-02",
-        "plan": "coaching/plans/2026-08-02/David_Canales.html"
-      },
-      {
-        "date": "2026-08-01",
-        "plan": "coaching/plans/2026-08-01/David_Canales.html"
-      },
-      {
-        "date": "2026-07-31",
-        "plan": "coaching/plans/2026-07-31/David_Canales.html"
-      },
-      {
-        "date": "2026-07-30",
-        "plan": "coaching/plans/2026-07-30/David_Canales.html"
-      },
-      {
-        "date": "2026-07-29",
-        "plan": "coaching/plans/2026-07-29/David_Canales.html"
-      },
-      {
-        "date": "2026-07-28",
-        "plan": "coaching/plans/2026-07-28/David_Canales.html"
-      },
-      {
-        "date": "2026-07-27",
-        "plan": "coaching/plans/2026-07-27/David_Canales.html"
-      },
-      {
-        "date": "2026-07-25",
-        "plan": "coaching/plans/2026-07-25/David_Canales.html"
-      },
-      {
-        "date": "2026-07-24",
-        "plan": "coaching/plans/2026-07-24/David_Canales.html"
-      }
-    ],
-    "Francisco Valencia": [
-      {
-        "date": "2026-08-04",
-        "plan": "coaching/plans/2026-08-04/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-08-03",
-        "plan": "coaching/plans/2026-08-03/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-30",
-        "plan": "coaching/plans/2026-07-30/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-29",
-        "plan": "coaching/plans/2026-07-29/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-28",
-        "plan": "coaching/plans/2026-07-28/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-27",
-        "plan": "coaching/plans/2026-07-27/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-26",
-        "plan": "coaching/plans/2026-07-26/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-25",
-        "plan": "coaching/plans/2026-07-25/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-24",
-        "plan": "coaching/plans/2026-07-24/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-23",
-        "plan": "coaching/plans/2026-07-23/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-22",
-        "plan": "coaching/plans/2026-07-22/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-21",
-        "plan": "coaching/plans/2026-07-21/Francisco_Valencia.html"
-      },
-      {
-        "date": "2026-07-20",
-        "plan": "coaching/plans/2026-07-20/Francisco_Valencia.html"
-      }
-    ],
-    "Joe Mendoza": [
-      {
-        "date": "2026-08-04",
-        "plan": "coaching/plans/2026-08-04/Joe_Mendoza.html"
-      },
-      {
-        "date": "2026-08-03",
-        "plan": "coaching/plans/2026-08-03/Joe_Mendoza.html"
-      },
-      {
-        "date": "2026-08-02",
-        "plan": "coaching/plans/2026-08-02/Joe_Mendoza.html"
-      },
-      {
-        "date": "2026-08-01",
-        "plan": "coaching/plans/2026-08-01/Joe_Mendoza.html"
-      },
-      {
-        "date": "2026-07-31",
-        "plan": "coaching/plans/2026-07-31/Joe_Mendoza.html"
-      },
-      {
-        "date": "2026-07-30",
-        "plan": "coaching/plans/2026-07-30/Joe_Mendoza.html"
-      },
-      {
-        "date": "2026-07-29",
-        "plan": "coaching/plans/2026-07-29/Joe_Mendoza.html"
-      },
-      {
-        "date": "2026-07-28",
-        "plan": "coaching/plans/2026-07-28/Joe_Mendoza.html"
-      },
-      {
-        "date": "2026-07-27",
-        "plan": "coaching/plans/2026-07-27/Joe_Mendoza.html"
-      },
-      {
-        "date": "2026-07-25",
-        "plan": "coaching/plans/2026-07-25/Joe_Mendoza.html"
-      },
-      {
-        "date": "2026-07-24",
-        "plan": "coaching/plans/2026-07-24/Joe_Mendoza.html"
-      },
-      {
-        "date": "2026-07-23",
-        "plan": "coaching/plans/2026-07-23/Joe_Mendoza.html"
-      },
-      {
-        "date": "2026-07-22",
-        "plan": "coaching/plans/2026-07-22/Joe_Mendoza.html"
-      },
-      {
-        "date": "2026-07-21",
-        "plan": "coaching/plans/2026-07-21/Joe_Mendoza.html"
-      },
-      {
-        "date": "2026-07-20",
-        "plan": "coaching/plans/2026-07-20/Joe_Mendoza.html"
-      }
-    ],
-    "Juan Tlatenchi": [
-      {
-        "date": "2026-08-04",
-        "plan": "coaching/plans/2026-08-04/Juan_Tlatenchi.html"
-      },
-      {
-        "date": "2026-08-03",
-        "plan": "coaching/plans/2026-08-03/Juan_Tlatenchi.html"
-      },
-      {
-        "date": "2026-08-01",
-        "plan": "coaching/plans/2026-08-01/Juan_Tlatenchi.html"
-      },
-      {
-        "date": "2026-07-31",
-        "plan": "coaching/plans/2026-07-31/Juan_Tlatenchi.html"
-      },
-      {
-        "date": "2026-07-30",
-        "plan": "coaching/plans/2026-07-30/Juan_Tlatenchi.html"
-      },
-      {
-        "date": "2026-07-29",
-        "plan": "coaching/plans/2026-07-29/Juan_Tlatenchi.html"
-      },
-      {
-        "date": "2026-07-28",
-        "plan": "coaching/plans/2026-07-28/Juan_Tlatenchi.html"
-      },
-      {
-        "date": "2026-07-27",
-        "plan": "coaching/plans/2026-07-27/Juan_Tlatenchi.html"
-      },
-      {
-        "date": "2026-07-25",
-        "plan": "coaching/plans/2026-07-25/Juan_Tlatenchi.html"
-      },
-      {
-        "date": "2026-07-23",
-        "plan": "coaching/plans/2026-07-23/Juan_Tlatenchi.html"
-      },
-      {
-        "date": "2026-07-22",
-        "plan": "coaching/plans/2026-07-22/Juan_Tlatenchi.html"
-      },
-      {
-        "date": "2026-07-21",
-        "plan": "coaching/plans/2026-07-21/Juan_Tlatenchi.html"
-      },
-      {
-        "date": "2026-07-20",
-        "plan": "coaching/plans/2026-07-20/Juan_Tlatenchi.html"
-      },
-      {
-        "date": "2026-07-19",
-        "plan": "coaching/plans/2026-07-19/Juan_Tlatenchi.html"
-      }
-    ],
-    "Mario Castro": [
-      {
-        "date": "2026-08-04",
-        "plan": "coaching/plans/2026-08-04/Mario_Castro.html"
-      },
-      {
-        "date": "2026-08-03",
-        "plan": "coaching/plans/2026-08-03/Mario_Castro.html"
-      },
-      {
-        "date": "2026-07-31",
-        "plan": "coaching/plans/2026-07-31/Mario_Castro.html"
-      },
-      {
-        "date": "2026-07-30",
-        "plan": "coaching/plans/2026-07-30/Mario_Castro.html"
-      },
-      {
-        "date": "2026-07-28",
-        "plan": "coaching/plans/2026-07-28/Mario_Castro.html"
-      },
-      {
-        "date": "2026-07-27",
-        "plan": "coaching/plans/2026-07-27/Mario_Castro.html"
-      },
-      {
-        "date": "2026-07-25",
-        "plan": "coaching/plans/2026-07-25/Mario_Castro.html"
-      },
-      {
-        "date": "2026-07-24",
-        "plan": "coaching/plans/2026-07-24/Mario_Castro.html"
-      },
-      {
-        "date": "2026-07-23",
-        "plan": "coaching/plans/2026-07-23/Mario_Castro.html"
-      },
-      {
-        "date": "2026-07-22",
-        "plan": "coaching/plans/2026-07-22/Mario_Castro.html"
-      },
-      {
-        "date": "2026-07-21",
-        "plan": "coaching/plans/2026-07-21/Mario_Castro.html"
-      },
-      {
-        "date": "2026-07-20",
-        "plan": "coaching/plans/2026-07-20/Mario_Castro.html"
-      }
-    ],
-    "Nathan Colquitt": [
-      {
-        "date": "2026-08-04",
-        "plan": "coaching/plans/2026-08-04/Nathan_Colquitt.html"
-      },
-      {
-        "date": "2026-08-03",
-        "plan": "coaching/plans/2026-08-03/Nathan_Colquitt.html"
-      },
-      {
-        "date": "2026-08-02",
-        "plan": "coaching/plans/2026-08-02/Nathan_Colquitt.html"
-      },
-      {
-        "date": "2026-08-01",
-        "plan": "coaching/plans/2026-08-01/Nathan_Colquitt.html"
-      },
-      {
-        "date": "2026-07-31",
-        "plan": "coaching/plans/2026-07-31/Nathan_Colquitt.html"
-      },
-      {
-        "date": "2026-07-30",
-        "plan": "coaching/plans/2026-07-30/Nathan_Colquitt.html"
-      },
-      {
-        "date": "2026-07-29",
-        "plan": "coaching/plans/2026-07-29/Nathan_Colquitt.html"
-      },
-      {
-        "date": "2026-07-28",
-        "plan": "coaching/plans/2026-07-28/Nathan_Colquitt.html"
-      },
-      {
-        "date": "2026-07-27",
-        "plan": "coaching/plans/2026-07-27/Nathan_Colquitt.html"
-      },
-      {
-        "date": "2026-07-25",
-        "plan": "coaching/plans/2026-07-25/Nathan_Colquitt.html"
-      },
-      {
-        "date": "2026-07-24",
-        "plan": "coaching/plans/2026-07-24/Nathan_Colquitt.html"
-      },
-      {
-        "date": "2026-07-23",
-        "plan": "coaching/plans/2026-07-23/Nathan_Colquitt.html"
-      },
-      {
-        "date": "2026-07-21",
-        "plan": "coaching/plans/2026-07-21/Nathan_Colquitt.html"
-      },
-      {
-        "date": "2026-07-20",
-        "plan": "coaching/plans/2026-07-20/Nathan_Colquitt.html"
-      },
-      {
-        "date": "2026-07-19",
-        "plan": "coaching/plans/2026-07-19/Nathan_Colquitt.html"
-      }
-    ],
-    "Nikko April": [
-      {
-        "date": "2026-08-04",
-        "plan": "coaching/plans/2026-08-04/Nikko_April.html"
-      },
-      {
-        "date": "2026-08-03",
-        "plan": "coaching/plans/2026-08-03/Nikko_April.html"
-      },
-      {
-        "date": "2026-08-01",
-        "plan": "coaching/plans/2026-08-01/Nikko_April.html"
-      },
-      {
-        "date": "2026-07-31",
-        "plan": "coaching/plans/2026-07-31/Nikko_April.html"
-      },
-      {
-        "date": "2026-07-30",
-        "plan": "coaching/plans/2026-07-30/Nikko_April.html"
-      },
-      {
-        "date": "2026-07-29",
-        "plan": "coaching/plans/2026-07-29/Nikko_April.html"
-      },
-      {
-        "date": "2026-07-28",
-        "plan": "coaching/plans/2026-07-28/Nikko_April.html"
-      },
-      {
-        "date": "2026-07-27",
-        "plan": "coaching/plans/2026-07-27/Nikko_April.html"
-      },
-      {
-        "date": "2026-07-25",
-        "plan": "coaching/plans/2026-07-25/Nikko_April.html"
-      },
-      {
-        "date": "2026-07-24",
-        "plan": "coaching/plans/2026-07-24/Nikko_April.html"
-      },
-      {
-        "date": "2026-07-23",
-        "plan": "coaching/plans/2026-07-23/Nikko_April.html"
-      },
-      {
-        "date": "2026-07-22",
-        "plan": "coaching/plans/2026-07-22/Nikko_April.html"
-      },
-      {
-        "date": "2026-07-21",
-        "plan": "coaching/plans/2026-07-21/Nikko_April.html"
-      },
-      {
-        "date": "2026-07-20",
-        "plan": "coaching/plans/2026-07-20/Nikko_April.html"
-      }
-    ],
-    "Noah Weng": [
-      {
-        "date": "2026-08-04",
-        "plan": "coaching/plans/2026-08-04/Noah_Weng.html"
-      },
-      {
-        "date": "2026-08-03",
-        "plan": "coaching/plans/2026-08-03/Noah_Weng.html"
-      },
-      {
-        "date": "2026-07-31",
-        "plan": "coaching/plans/2026-07-31/Noah_Weng.html"
-      },
-      {
-        "date": "2026-07-30",
-        "plan": "coaching/plans/2026-07-30/Noah_Weng.html"
-      },
-      {
-        "date": "2026-07-29",
-        "plan": "coaching/plans/2026-07-29/Noah_Weng.html"
-      },
-      {
-        "date": "2026-07-28",
-        "plan": "coaching/plans/2026-07-28/Noah_Weng.html"
-      },
-      {
-        "date": "2026-07-22",
-        "plan": "coaching/plans/2026-07-22/Noah_Weng.html"
-      },
-      {
-        "date": "2026-07-21",
-        "plan": "coaching/plans/2026-07-21/Noah_Weng.html"
-      },
-      {
-        "date": "2026-07-20",
-        "plan": "coaching/plans/2026-07-20/Noah_Weng.html"
-      },
-      {
-        "date": "2026-07-19",
-        "plan": "coaching/plans/2026-07-19/Noah_Weng.html"
-      }
-    ],
-    "Robert Silinzy": [
-      {
-        "date": "2026-08-04",
-        "plan": "coaching/plans/2026-08-04/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-08-03",
-        "plan": "coaching/plans/2026-08-03/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-08-01",
-        "plan": "coaching/plans/2026-08-01/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-31",
-        "plan": "coaching/plans/2026-07-31/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-30",
-        "plan": "coaching/plans/2026-07-30/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-29",
-        "plan": "coaching/plans/2026-07-29/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-28",
-        "plan": "coaching/plans/2026-07-28/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-27",
-        "plan": "coaching/plans/2026-07-27/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-26",
-        "plan": "coaching/plans/2026-07-26/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-25",
-        "plan": "coaching/plans/2026-07-25/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-24",
-        "plan": "coaching/plans/2026-07-24/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-23",
-        "plan": "coaching/plans/2026-07-23/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-22",
-        "plan": "coaching/plans/2026-07-22/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-21",
-        "plan": "coaching/plans/2026-07-21/Robert_Silinzy.html"
-      },
-      {
-        "date": "2026-07-20",
-        "plan": "coaching/plans/2026-07-20/Robert_Silinzy.html"
-      }
-    ],
-    "Andrew Alonso": [
-      {
-        "date": "2026-08-01",
-        "plan": "coaching/plans/2026-08-01/Andrew_Alonso.html"
-      },
-      {
-        "date": "2026-07-31",
-        "plan": "coaching/plans/2026-07-31/Andrew_Alonso.html"
-      },
-      {
-        "date": "2026-07-30",
-        "plan": "coaching/plans/2026-07-30/Andrew_Alonso.html"
-      },
-      {
-        "date": "2026-07-29",
-        "plan": "coaching/plans/2026-07-29/Andrew_Alonso.html"
-      },
-      {
-        "date": "2026-07-28",
-        "plan": "coaching/plans/2026-07-28/Andrew_Alonso.html"
-      },
-      {
-        "date": "2026-07-27",
-        "plan": "coaching/plans/2026-07-27/Andrew_Alonso.html"
-      },
-      {
-        "date": "2026-07-26",
-        "plan": "coaching/plans/2026-07-26/Andrew_Alonso.html"
-      },
-      {
-        "date": "2026-07-25",
-        "plan": "coaching/plans/2026-07-25/Andrew_Alonso.html"
-      },
-      {
-        "date": "2026-07-24",
-        "plan": "coaching/plans/2026-07-24/Andrew_Alonso.html"
-      },
-      {
-        "date": "2026-07-23",
-        "plan": "coaching/plans/2026-07-23/Andrew_Alonso.html"
-      },
-      {
-        "date": "2026-07-22",
-        "plan": "coaching/plans/2026-07-22/Andrew_Alonso.html"
-      },
-      {
-        "date": "2026-07-21",
-        "plan": "coaching/plans/2026-07-21/Andrew_Alonso.html"
-      },
-      {
-        "date": "2026-07-20",
-        "plan": "coaching/plans/2026-07-20/Andrew_Alonso.html"
-      }
-    ]
+ "generated": "2026-08-06T07:51:29-07:00",
+ "date": "2026-08-05",
+ "reps": [
+  {
+   "name": "Andrew Alonso",
+   "closeRate": "100% (from graded calls)",
+   "calls": 1,
+   "strongest": "Assessment",
+   "weakest": "Deliver",
+   "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Solid",
+    "deliver": "Moderate"
+   },
+   "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": true,
+    "objections": false
+   },
+   "headlineGap": "Objection handling is the one action that failed on an otherwise model call — pushback gets a re-explanation instead of a question.",
+   "focus": [
+    "Week 1: Acknowledge, ask a question, then return to the customer's own words on every objection",
+    "Week 2: Hand the conclusion to the customer instead of stating it after each measurement",
+    "Week 3: Deliver the five-star ask as its own clean sentence at the door"
+   ],
+   "plan": "coaching/plans/2026-08-05/Andrew_Alonso.html"
   },
-  "weekly": [
-    {
-      "week": "2026-07-26",
-      "label": "Jul 20–26 2026",
-      "index": "coaching/weekly/2026-07-26/_index.html",
-      "crossrep": "coaching/weekly/2026-07-26/crossrep.html",
-      "reps": {
-        "Andrew Alonso": "coaching/weekly/2026-07-26/Andrew_Alonso.html",
-        "Andrew Trujillo": "coaching/weekly/2026-07-26/Andrew_Trujillo.html",
-        "Benjamin Wyllie": "coaching/weekly/2026-07-26/Benjamin_Wyllie.html",
-        "Brandon Moreno": "coaching/weekly/2026-07-26/Brandon_Moreno.html",
-        "Cole Pantol": "coaching/weekly/2026-07-26/Cole_Pantol.html",
-        "Francisco Valencia": "coaching/weekly/2026-07-26/Francisco_Valencia.html",
-        "Joe Mendoza": "coaching/weekly/2026-07-26/Joe_Mendoza.html",
-        "Juan Tlatenchi": "coaching/weekly/2026-07-26/Juan_Tlatenchi.html",
-        "Mario Castro": "coaching/weekly/2026-07-26/Mario_Castro.html",
-        "Nathan Colquitt": "coaching/weekly/2026-07-26/Nathan_Colquitt.html",
-        "Nikko April": "coaching/weekly/2026-07-26/Nikko_April.html",
-        "Noah Weng": "coaching/weekly/2026-07-26/Noah_Weng.html",
-        "Robert Silinzy": "coaching/weekly/2026-07-26/Robert_Silinzy.html"
-      }
-    },
-    {
-      "week": "2026-07-19",
-      "label": "Jul 13–19 2026",
-      "index": "coaching/weekly/2026-07-19/_index.html",
-      "crossrep": "coaching/weekly/2026-07-19/crossrep.html",
-      "reps": {
-        "Andrew Alonso": "coaching/weekly/2026-07-19/Andrew_Alonso.html",
-        "Andrew Trujillo": "coaching/weekly/2026-07-19/Andrew_Trujillo.html",
-        "Benjamin Wyllie": "coaching/weekly/2026-07-19/Benjamin_Wyllie.html",
-        "Brandon Moreno": "coaching/weekly/2026-07-19/Brandon_Moreno.html",
-        "Cole Pantol": "coaching/weekly/2026-07-19/Cole_Pantol.html",
-        "Francisco Valencia": "coaching/weekly/2026-07-19/Francisco_Valencia.html",
-        "Joe Mendoza": "coaching/weekly/2026-07-19/Joe_Mendoza.html",
-        "Juan Tlatenchi": "coaching/weekly/2026-07-19/Juan_Tlatenchi.html",
-        "Mario Castro": "coaching/weekly/2026-07-19/Mario_Castro.html",
-        "Nathan Colquitt": "coaching/weekly/2026-07-19/Nathan_Colquitt.html",
-        "Nikko April": "coaching/weekly/2026-07-19/Nikko_April.html",
-        "Noah Weng": "coaching/weekly/2026-07-19/Noah_Weng.html",
-        "Robert Silinzy": "coaching/weekly/2026-07-19/Robert_Silinzy.html"
-      }
-    },
-    {
-      "week": "2026-07-12",
-      "label": "Jul 6–12 2026",
-      "index": "coaching/weekly/2026-07-12/_index.html",
-      "crossrep": "coaching/weekly/2026-07-12/crossrep.html",
-      "reps": {
-        "Andrew Trujillo": "coaching/weekly/2026-07-12/Andrew_Trujillo.html",
-        "Benjamin Wyllie": "coaching/weekly/2026-07-12/Benjamin_Wyllie.html",
-        "Brandon Moreno": "coaching/weekly/2026-07-12/Brandon_Moreno.html",
-        "Cole Pantol": "coaching/weekly/2026-07-12/Cole_Pantol.html",
-        "Dustin Romine": "coaching/weekly/2026-07-12/Dustin_Romine.html",
-        "Francisco Valencia": "coaching/weekly/2026-07-12/Francisco_Valencia.html",
-        "Joe Mendoza": "coaching/weekly/2026-07-12/Joe_Mendoza.html",
-        "Juan Tlatenchi": "coaching/weekly/2026-07-12/Juan_Tlatenchi.html",
-        "Mario Castro": "coaching/weekly/2026-07-12/Mario_Castro.html",
-        "Nathan Colquitt": "coaching/weekly/2026-07-12/Nathan_Colquitt.html",
-        "Nikko April": "coaching/weekly/2026-07-12/Nikko_April.html",
-        "Noah Weng": "coaching/weekly/2026-07-12/Noah_Weng.html",
-        "Robert Silinzy": "coaching/weekly/2026-07-12/Robert_Silinzy.html"
-      }
-    },
-    {
-      "week": "2026-07-05",
-      "label": "Jun 29–Jul 5 2026",
-      "index": "coaching/weekly/2026-07-05/_index.html",
-      "crossrep": "coaching/weekly/2026-07-05/crossrep.html",
-      "reps": {
-        "Andrew Trujillo": "coaching/weekly/2026-07-05/Andrew_Trujillo.html",
-        "Benjamin Wyllie": "coaching/weekly/2026-07-05/Benjamin_Wyllie.html",
-        "Brandon Moreno": "coaching/weekly/2026-07-05/Brandon_Moreno.html",
-        "Cole Pantol": "coaching/weekly/2026-07-05/Cole_Pantol.html",
-        "Dustin Romine": "coaching/weekly/2026-07-05/Dustin_Romine.html",
-        "Francisco Valencia": "coaching/weekly/2026-07-05/Francisco_Valencia.html",
-        "Joe Mendoza": "coaching/weekly/2026-07-05/Joe_Mendoza.html",
-        "Juan Tlatenchi": "coaching/weekly/2026-07-05/Juan_Tlatenchi.html",
-        "Mario Castro": "coaching/weekly/2026-07-05/Mario_Castro.html",
-        "Nathan Colquitt": "coaching/weekly/2026-07-05/Nathan_Colquitt.html",
-        "Nikko April": "coaching/weekly/2026-07-05/Nikko_April.html",
-        "Noah Weng": "coaching/weekly/2026-07-05/Noah_Weng.html",
-        "Robert Silinzy": "coaching/weekly/2026-07-05/Robert_Silinzy.html"
-      }
-    }
+  {
+   "name": "David Canales",
+   "closeRate": "67% (from graded calls)",
+   "calls": 3,
+   "strongest": "Decision",
+   "weakest": "Welcome",
+   "bands": {
+    "welcome": "Moderate",
+    "assessment": "Strong",
+    "decision": "Strong",
+    "deliver": "Solid"
+   },
+   "critical": {
+    "expectations": false,
+    "questions": true,
+    "options": true,
+    "objections": true
+   },
+   "headlineGap": "No expectations sequence is audible on any recording, and customers are sometimes told a problem has no solution instead of being routed to the specialist.",
+   "focus": [
+    "Week 1: Full expectations sequence at the door, audible on tape, every call",
+    "Week 2: Never say a problem cannot be solved — route it to the specialist as a named path",
+    "Week 3: Any stated replacement timeline becomes a booked specialist visit in the same conversation"
+   ],
+   "plan": "coaching/plans/2026-08-05/David_Canales.html"
+  },
+  {
+   "name": "Benjamin Wyllie",
+   "closeRate": "50% (from graded calls)",
+   "calls": 2,
+   "strongest": "Assessment",
+   "weakest": "Decision",
+   "bands": {
+    "welcome": "Strong on wins",
+    "assessment": "Strong on wins",
+    "decision": "Moderate",
+    "deliver": "Moderate"
+   },
+   "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": false,
+    "objections": false
+   },
+   "headlineGap": "Measured failures are explained superbly and then left without a repair path or an advisor visit attached.",
+   "focus": [
+    "Week 1: Every measured failure gets a named path in the same conversation",
+    "Week 2: Answer inherited run-it-till-it-fails advice with the cost-of-failure reframe",
+    "Week 3: One sentence on the past, then forward — and collect the five-star already seeded"
+   ],
+   "plan": "coaching/plans/2026-08-05/Benjamin_Wyllie.html"
+  },
+  {
+   "name": "Brandon Moreno",
+   "closeRate": "50% (from graded calls)",
+   "calls": 2,
+   "strongest": "Assessment",
+   "weakest": "Decision",
+   "bands": {
+    "welcome": "Strong on wins",
+    "assessment": "Strong",
+    "decision": "Strong on wins",
+    "deliver": "Strong"
+   },
+   "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": false,
+    "objections": false
+   },
+   "headlineGap": "The goal question gets a clear answer and then nothing is built against it, so short visits end with no option presented.",
+   "focus": [
+    "Week 1: Whatever the customer names as most important becomes one specific option before leaving",
+    "Week 2: Full expectations sequence on short calls too, not just long ones",
+    "Week 3: Pair the thermostat-setting question with the power-bill question every call"
+   ],
+   "plan": "coaching/plans/2026-08-05/Brandon_Moreno.html"
+  },
+  {
+   "name": "Bradley Espinoza",
+   "closeRate": "33% (from graded calls)",
+   "calls": 3,
+   "strongest": "Welcome",
+   "weakest": "Deliver",
+   "bands": {
+    "welcome": "Strong",
+    "assessment": "Solid",
+    "decision": "Solid",
+    "deliver": "Moderate"
+   },
+   "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": false,
+    "objections": false
+   },
+   "headlineGap": "Objections about budget or a spouse who decides are met with reassurance rather than a question and a delivery plan.",
+   "focus": [
+    "Week 1: Every objection gets a question back before any reassurance",
+    "Week 2: Name the finding at the check-in — no 'a couple things'",
+    "Week 3: Use the absent-decision-maker phone plan on every call where somebody is missing"
+   ],
+   "plan": "coaching/plans/2026-08-05/Bradley_Espinoza.html"
+  },
+  {
+   "name": "Cole Pantol",
+   "closeRate": "33% (from graded calls)",
+   "calls": 3,
+   "strongest": "Assessment",
+   "weakest": "Decision",
+   "bands": {
+    "welcome": "Solid",
+    "assessment": "Strong",
+    "decision": "Moderate",
+    "deliver": "Moderate"
+   },
+   "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": false,
+    "objections": false
+   },
+   "headlineGap": "The specialist is described as a service rather than dispatched to a time, so strong diagnoses end without a signed appointment.",
+   "focus": [
+    "Week 1: End every specialist offer with a time and a zero-dollar signature",
+    "Week 2: When a customer asks what to do, give a recommendation and a date, not more diagnosis",
+    "Week 3: Balance the clock — redirect off-topic stretches and give short calls a full options conversation"
+   ],
+   "plan": "coaching/plans/2026-08-05/Cole_Pantol.html"
+  },
+  {
+   "name": "Francisco Valencia",
+   "closeRate": "33% (from graded calls)",
+   "calls": 3,
+   "strongest": "Decision",
+   "weakest": "Welcome",
+   "bands": {
+    "welcome": "Solid",
+    "assessment": "Solid",
+    "decision": "Strong on wins",
+    "deliver": "Solid"
+   },
+   "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": false,
+    "objections": false
+   },
+   "headlineGap": "Undecided customers are told what they do not want and given brand comparisons instead of an evaluation and a named path.",
+   "focus": [
+    "Week 1: Always evaluate — gauges on the system and a written condition report on every visit",
+    "Week 2: Talk about the customer's own unit, never brand hierarchies or other companies",
+    "Week 3: Offer the specialist to undecided customers as readily as to desperate ones"
+   ],
+   "plan": "coaching/plans/2026-08-05/Francisco_Valencia.html"
+  },
+  {
+   "name": "Joe Mendoza",
+   "closeRate": "0% (from graded calls)",
+   "calls": 4,
+   "strongest": "Assessment",
+   "weakest": "Deliver",
+   "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Solid",
+    "deliver": "Solid"
+   },
+   "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": true,
+    "objections": true
+   },
+   "headlineGap": "Specialist visits are offered as a choice for the customer to discuss rather than booked to a slot before leaving.",
+   "focus": [
+    "Week 1: No specialist offer leaves the room without a confirmed day and time",
+    "Week 2: Seed the five-star in the opening and collect it at the door on every call",
+    "Week 3: Two written paths for every absent owner or landlord, named out loud in the room"
+   ],
+   "plan": "coaching/plans/2026-08-05/Joe_Mendoza.html"
+  },
+  {
+   "name": "Mario Castro",
+   "closeRate": "0% (from graded calls)",
+   "calls": 3,
+   "strongest": "Assessment",
+   "weakest": "Decision",
+   "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Weak",
+    "deliver": "Moderate"
+   },
+   "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": false,
+    "objections": false
+   },
+   "headlineGap": "Excellent discovery goes into the report and no path, price or appointment is ever said out loud to the customer.",
+   "focus": [
+    "Week 1: Nothing leaves the house unnamed — one specific path said out loud every visit",
+    "Week 2: Affordability statements get a question and a no-cost advisor offer, not a nod",
+    "Week 3: Age or a comfort complaint equals an advisor offer within thirty seconds"
+   ],
+   "plan": "coaching/plans/2026-08-05/Mario_Castro.html"
+  },
+  {
+   "name": "Noah Weng",
+   "closeRate": "0% (from graded calls)",
+   "calls": 2,
+   "strongest": "Assessment",
+   "weakest": "Deliver",
+   "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Moderate",
+    "deliver": "Solid"
+   },
+   "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": false,
+    "objections": false
+   },
+   "headlineGap": "Four convergent technical findings with no customer economics behind them — no setting, bill or comfort numbers to link them to; both recordings end before the presentation.",
+   "focus": [
+    "Week 1: Thermostat setting and power bill asked and recorded before the tools come out",
+    "Week 2: Use the complete expectations sequence on every call, not just some",
+    "Week 3: One sentence linking each finding to the bill or the comfort complaint"
+   ],
+   "plan": "coaching/plans/2026-08-05/Noah_Weng.html"
+  },
+  {
+   "name": "Andrew Trujillo",
+   "closeRate": "0% (from graded calls)",
+   "calls": 1,
+   "strongest": "Assessment",
+   "weakest": "Decision",
+   "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Moderate",
+    "deliver": "Moderate"
+   },
+   "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": false,
+    "objections": false
+   },
+   "headlineGap": "Two objections arrived at the door — cost aversion and an absent decision-maker — and both were accepted rather than planned around; the recording ends before the report.",
+   "focus": [
+    "Week 1: Answer the cost fear with the urgent-versus-watch promise instead of 'I'll do my best'",
+    "Week 2: A named plan for every absent decision-maker — a call from the property or two written options",
+    "Week 3: Add the power-bill question and the five-star seed to an otherwise complete opening"
+   ],
+   "plan": "coaching/plans/2026-08-05/Andrew_Trujillo.html"
+  },
+  {
+   "name": "Robert Silinzy",
+   "closeRate": "0% (from graded calls)",
+   "calls": 2,
+   "strongest": "Welcome",
+   "weakest": "Assessment",
+   "bands": {
+    "welcome": "Strong",
+    "assessment": "Solid",
+    "decision": "Moderate",
+    "deliver": "Solid"
+   },
+   "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": false,
+    "objections": false
+   },
+   "headlineGap": "Both recordings stop when the tools come out, and a question the customer asked twice was left at 'I'm not really sure'.",
+   "focus": [
+    "Week 1: Confirm the recording is live again at the check-in, so the report is captured",
+    "Week 2: Every repeated customer question gets a commitment and becomes item one of the report",
+    "Week 3: Add the hot-and-cold-rooms question to an already strong question set"
+   ],
+   "plan": "coaching/plans/2026-08-05/Robert_Silinzy.html"
+  },
+  {
+   "name": "Nathan Colquitt",
+   "closeRate": "0% (from graded calls)",
+   "calls": 1,
+   "strongest": "Assessment",
+   "weakest": "Welcome",
+   "bands": {
+    "welcome": "Solid",
+    "assessment": "Strong",
+    "decision": "Moderate",
+    "deliver": "Moderate"
+   },
+   "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": false,
+    "objections": false
+   },
+   "headlineGap": "The expectations frame stops at approval, so the customer is never told options are coming; a filter was deferred to a future visit rather than booked.",
+   "focus": [
+    "Week 1: Finish the expectations sequence — options, today and the five-star seed",
+    "Week 2: No yes-or-no discovery questions — ask for the setting and the bill figure",
+    "Week 3: Anything identified gets a date, never a note for the next technician"
+   ],
+   "plan": "coaching/plans/2026-08-05/Nathan_Colquitt.html"
+  },
+  {
+   "name": "Juan Tlatenchi",
+   "closeRate": "0% (from graded calls)",
+   "calls": 1,
+   "strongest": "Assessment",
+   "weakest": "Decision",
+   "bands": {
+    "welcome": "Solid",
+    "assessment": "Strong",
+    "decision": "Weak",
+    "deliver": "Solid"
+   },
+   "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": false,
+    "objections": false
+   },
+   "headlineGap": "The best discovery of any single call, then agreement that a comfort problem could not be solved while the customer was shopping equipment elsewhere.",
+   "focus": [
+    "Week 1: Never agree a problem is unsolvable — answer with a question and a test",
+    "Week 2: Acknowledge a pre-emptive 'we're not buying' without conceding the path",
+    "Week 3: Open every report by quoting the customer's own stated priority"
+   ],
+   "plan": "coaching/plans/2026-08-05/Juan_Tlatenchi.html"
+  },
+  {
+   "name": "Nikko April",
+   "closeRate": "0% (from graded calls)",
+   "calls": 1,
+   "strongest": "Welcome",
+   "weakest": "Decision",
+   "bands": {
+    "welcome": "Strong",
+    "assessment": "Moderate",
+    "decision": "Weak",
+    "deliver": "Solid"
+   },
+   "critical": {
+    "expectations": true,
+    "questions": false,
+    "options": false,
+    "objections": false
+   },
+   "headlineGap": "Parts the customer asked to buy were sent to an online retailer and a stated replacement concern was reassured away instead of turned into a no-cost advisor visit.",
+   "focus": [
+    "Week 1: Nothing a customer asks for leaves the house — quote and schedule it",
+    "Week 2: The four required questions on every call, inside the rapport",
+    "Week 3: Age or prior failure mentioned equals an advisor visit offered to a named day"
+   ],
+   "plan": "coaching/plans/2026-08-05/Nikko_April.html"
+  }
+ ],
+ "skipped": [
+  {
+   "rep": "Nikko April",
+   "reason": "Macek, Job # 671324236 (7 min) — roughly 250 words captured and the recording cuts off while the customer is still describing the problem; no rep behaviour observable."
+  },
+  {
+   "rep": "Nikko April",
+   "reason": "Hu, Job # 670328923 (6 min) — recording contains one navigation line and no customer interaction."
+  },
+  {
+   "rep": "Francisco Valencia",
+   "reason": "Streeter, Job # 671324204 (45 min) — recording contains roughly twenty words; a recording failure, nothing gradeable."
+  },
+  {
+   "rep": "Andrew Alonso",
+   "reason": "Reininger, Job # 671325172 (9 min) — roughly thirty words captured, none about the equipment; a scorecard exists but no evidence to grade, so it is excluded rather than counted as a failed call."
+  },
+  {
+   "rep": "Joe Mendoza",
+   "reason": "Rooftop tenant call (23 min) — graded for behaviour but excluded from the close rate: the ladder could not safely reach the roof after a technician fell that Sunday, so no evaluation was possible. Rebooked to Friday at the customer's chosen time."
+  }
+ ],
+ "dates": [
+  "2026-08-05",
+  "2026-08-04",
+  "2026-08-03",
+  "2026-08-02",
+  "2026-08-01",
+  "2026-07-31",
+  "2026-07-30",
+  "2026-07-29",
+  "2026-07-28",
+  "2026-07-27",
+  "2026-07-26",
+  "2026-07-25",
+  "2026-07-24",
+  "2026-07-23"
+ ],
+ "history": {
+  "Andrew Alonso": [
+   {
+    "date": "2026-08-05",
+    "plan": "coaching/plans/2026-08-05/Andrew_Alonso.html"
+   },
+   {
+    "date": "2026-08-01",
+    "plan": "coaching/plans/2026-08-01/Andrew_Alonso.html"
+   },
+   {
+    "date": "2026-07-31",
+    "plan": "coaching/plans/2026-07-31/Andrew_Alonso.html"
+   },
+   {
+    "date": "2026-07-30",
+    "plan": "coaching/plans/2026-07-30/Andrew_Alonso.html"
+   },
+   {
+    "date": "2026-07-29",
+    "plan": "coaching/plans/2026-07-29/Andrew_Alonso.html"
+   },
+   {
+    "date": "2026-07-28",
+    "plan": "coaching/plans/2026-07-28/Andrew_Alonso.html"
+   },
+   {
+    "date": "2026-07-27",
+    "plan": "coaching/plans/2026-07-27/Andrew_Alonso.html"
+   },
+   {
+    "date": "2026-07-26",
+    "plan": "coaching/plans/2026-07-26/Andrew_Alonso.html"
+   },
+   {
+    "date": "2026-07-25",
+    "plan": "coaching/plans/2026-07-25/Andrew_Alonso.html"
+   },
+   {
+    "date": "2026-07-24",
+    "plan": "coaching/plans/2026-07-24/Andrew_Alonso.html"
+   },
+   {
+    "date": "2026-07-23",
+    "plan": "coaching/plans/2026-07-23/Andrew_Alonso.html"
+   },
+   {
+    "date": "2026-07-22",
+    "plan": "coaching/plans/2026-07-22/Andrew_Alonso.html"
+   },
+   {
+    "date": "2026-07-21",
+    "plan": "coaching/plans/2026-07-21/Andrew_Alonso.html"
+   },
+   {
+    "date": "2026-07-20",
+    "plan": "coaching/plans/2026-07-20/Andrew_Alonso.html"
+   }
   ],
-  "monthly": [
-    {
-      "month": "2026-07",
-      "label": "July 2026",
-      "index": "coaching/monthly/2026-07/_index.html",
-      "crossrep": "coaching/monthly/2026-07/crossrep.html",
-      "reps": {
-        "Noah Weng": "coaching/monthly/2026-07/Noah_Weng.html",
-        "Andrew Alonso": "coaching/monthly/2026-07/Andrew_Alonso.html",
-        "Francisco Valencia": "coaching/monthly/2026-07/Francisco_Valencia.html",
-        "Brandon Moreno": "coaching/monthly/2026-07/Brandon_Moreno.html",
-        "Benjamin Wyllie": "coaching/monthly/2026-07/Benjamin_Wyllie.html",
-        "Juan Tlatenchi": "coaching/monthly/2026-07/Juan_Tlatenchi.html",
-        "Cole Pantol": "coaching/monthly/2026-07/Cole_Pantol.html",
-        "Dustin Romine": "coaching/monthly/2026-07/Dustin_Romine.html",
-        "Andrew Trujillo": "coaching/monthly/2026-07/Andrew_Trujillo.html",
-        "Joe Mendoza": "coaching/monthly/2026-07/Joe_Mendoza.html",
-        "Robert Silinzy": "coaching/monthly/2026-07/Robert_Silinzy.html",
-        "Mario Castro": "coaching/monthly/2026-07/Mario_Castro.html",
-        "Nathan Colquitt": "coaching/monthly/2026-07/Nathan_Colquitt.html",
-        "Nikko April": "coaching/monthly/2026-07/Nikko_April.html"
-      }
-    }
+  "Andrew Trujillo": [
+   {
+    "date": "2026-08-05",
+    "plan": "coaching/plans/2026-08-05/Andrew_Trujillo.html"
+   },
+   {
+    "date": "2026-08-04",
+    "plan": "coaching/plans/2026-08-04/Andrew_Trujillo.html"
+   },
+   {
+    "date": "2026-08-03",
+    "plan": "coaching/plans/2026-08-03/Andrew_Trujillo.html"
+   },
+   {
+    "date": "2026-08-01",
+    "plan": "coaching/plans/2026-08-01/Andrew_Trujillo.html"
+   },
+   {
+    "date": "2026-07-31",
+    "plan": "coaching/plans/2026-07-31/Andrew_Trujillo.html"
+   },
+   {
+    "date": "2026-07-30",
+    "plan": "coaching/plans/2026-07-30/Andrew_Trujillo.html"
+   },
+   {
+    "date": "2026-07-28",
+    "plan": "coaching/plans/2026-07-28/Andrew_Trujillo.html"
+   },
+   {
+    "date": "2026-07-27",
+    "plan": "coaching/plans/2026-07-27/Andrew_Trujillo.html"
+   },
+   {
+    "date": "2026-07-26",
+    "plan": "coaching/plans/2026-07-26/Andrew_Trujillo.html"
+   },
+   {
+    "date": "2026-07-25",
+    "plan": "coaching/plans/2026-07-25/Andrew_Trujillo.html"
+   },
+   {
+    "date": "2026-07-24",
+    "plan": "coaching/plans/2026-07-24/Andrew_Trujillo.html"
+   },
+   {
+    "date": "2026-07-23",
+    "plan": "coaching/plans/2026-07-23/Andrew_Trujillo.html"
+   },
+   {
+    "date": "2026-07-22",
+    "plan": "coaching/plans/2026-07-22/Andrew_Trujillo.html"
+   },
+   {
+    "date": "2026-07-21",
+    "plan": "coaching/plans/2026-07-21/Andrew_Trujillo.html"
+   },
+   {
+    "date": "2026-07-20",
+    "plan": "coaching/plans/2026-07-20/Andrew_Trujillo.html"
+   }
+  ],
+  "Benjamin Wyllie": [
+   {
+    "date": "2026-08-05",
+    "plan": "coaching/plans/2026-08-05/Benjamin_Wyllie.html"
+   },
+   {
+    "date": "2026-08-04",
+    "plan": "coaching/plans/2026-08-04/Benjamin_Wyllie.html"
+   },
+   {
+    "date": "2026-08-03",
+    "plan": "coaching/plans/2026-08-03/Benjamin_Wyllie.html"
+   },
+   {
+    "date": "2026-08-01",
+    "plan": "coaching/plans/2026-08-01/Benjamin_Wyllie.html"
+   },
+   {
+    "date": "2026-07-31",
+    "plan": "coaching/plans/2026-07-31/Benjamin_Wyllie.html"
+   },
+   {
+    "date": "2026-07-30",
+    "plan": "coaching/plans/2026-07-30/Benjamin_Wyllie.html"
+   },
+   {
+    "date": "2026-07-28",
+    "plan": "coaching/plans/2026-07-28/Benjamin_Wyllie.html"
+   },
+   {
+    "date": "2026-07-27",
+    "plan": "coaching/plans/2026-07-27/Benjamin_Wyllie.html"
+   },
+   {
+    "date": "2026-07-26",
+    "plan": "coaching/plans/2026-07-26/Benjamin_Wyllie.html"
+   },
+   {
+    "date": "2026-07-25",
+    "plan": "coaching/plans/2026-07-25/Benjamin_Wyllie.html"
+   },
+   {
+    "date": "2026-07-24",
+    "plan": "coaching/plans/2026-07-24/Benjamin_Wyllie.html"
+   },
+   {
+    "date": "2026-07-23",
+    "plan": "coaching/plans/2026-07-23/Benjamin_Wyllie.html"
+   },
+   {
+    "date": "2026-07-22",
+    "plan": "coaching/plans/2026-07-22/Benjamin_Wyllie.html"
+   },
+   {
+    "date": "2026-07-21",
+    "plan": "coaching/plans/2026-07-21/Benjamin_Wyllie.html"
+   },
+   {
+    "date": "2026-07-20",
+    "plan": "coaching/plans/2026-07-20/Benjamin_Wyllie.html"
+   }
+  ],
+  "Bradley Espinoza": [
+   {
+    "date": "2026-08-05",
+    "plan": "coaching/plans/2026-08-05/Bradley_Espinoza.html"
+   },
+   {
+    "date": "2026-08-04",
+    "plan": "coaching/plans/2026-08-04/Bradley_Espinoza.html"
+   },
+   {
+    "date": "2026-08-03",
+    "plan": "coaching/plans/2026-08-03/Bradley_Espinoza.html"
+   },
+   {
+    "date": "2026-08-02",
+    "plan": "coaching/plans/2026-08-02/Bradley_Espinoza.html"
+   },
+   {
+    "date": "2026-07-31",
+    "plan": "coaching/plans/2026-07-31/Bradley_Espinoza.html"
+   },
+   {
+    "date": "2026-07-30",
+    "plan": "coaching/plans/2026-07-30/Bradley_Espinoza.html"
+   },
+   {
+    "date": "2026-07-29",
+    "plan": "coaching/plans/2026-07-29/Bradley_Espinoza.html"
+   },
+   {
+    "date": "2026-07-28",
+    "plan": "coaching/plans/2026-07-28/Bradley_Espinoza.html"
+   }
+  ],
+  "Brandon Moreno": [
+   {
+    "date": "2026-08-05",
+    "plan": "coaching/plans/2026-08-05/Brandon_Moreno.html"
+   },
+   {
+    "date": "2026-08-04",
+    "plan": "coaching/plans/2026-08-04/Brandon_Moreno.html"
+   },
+   {
+    "date": "2026-08-03",
+    "plan": "coaching/plans/2026-08-03/Brandon_Moreno.html"
+   },
+   {
+    "date": "2026-08-02",
+    "plan": "coaching/plans/2026-08-02/Brandon_Moreno.html"
+   },
+   {
+    "date": "2026-08-01",
+    "plan": "coaching/plans/2026-08-01/Brandon_Moreno.html"
+   },
+   {
+    "date": "2026-07-31",
+    "plan": "coaching/plans/2026-07-31/Brandon_Moreno.html"
+   },
+   {
+    "date": "2026-07-30",
+    "plan": "coaching/plans/2026-07-30/Brandon_Moreno.html"
+   },
+   {
+    "date": "2026-07-29",
+    "plan": "coaching/plans/2026-07-29/Brandon_Moreno.html"
+   },
+   {
+    "date": "2026-07-28",
+    "plan": "coaching/plans/2026-07-28/Brandon_Moreno.html"
+   },
+   {
+    "date": "2026-07-27",
+    "plan": "coaching/plans/2026-07-27/Brandon_Moreno.html"
+   },
+   {
+    "date": "2026-07-25",
+    "plan": "coaching/plans/2026-07-25/Brandon_Moreno.html"
+   },
+   {
+    "date": "2026-07-24",
+    "plan": "coaching/plans/2026-07-24/Brandon_Moreno.html"
+   },
+   {
+    "date": "2026-07-23",
+    "plan": "coaching/plans/2026-07-23/Brandon_Moreno.html"
+   },
+   {
+    "date": "2026-07-22",
+    "plan": "coaching/plans/2026-07-22/Brandon_Moreno.html"
+   },
+   {
+    "date": "2026-07-21",
+    "plan": "coaching/plans/2026-07-21/Brandon_Moreno.html"
+   },
+   {
+    "date": "2026-07-20",
+    "plan": "coaching/plans/2026-07-20/Brandon_Moreno.html"
+   }
+  ],
+  "Cole Pantol": [
+   {
+    "date": "2026-08-05",
+    "plan": "coaching/plans/2026-08-05/Cole_Pantol.html"
+   },
+   {
+    "date": "2026-08-04",
+    "plan": "coaching/plans/2026-08-04/Cole_Pantol.html"
+   },
+   {
+    "date": "2026-08-03",
+    "plan": "coaching/plans/2026-08-03/Cole_Pantol.html"
+   },
+   {
+    "date": "2026-08-01",
+    "plan": "coaching/plans/2026-08-01/Cole_Pantol.html"
+   },
+   {
+    "date": "2026-07-31",
+    "plan": "coaching/plans/2026-07-31/Cole_Pantol.html"
+   },
+   {
+    "date": "2026-07-30",
+    "plan": "coaching/plans/2026-07-30/Cole_Pantol.html"
+   },
+   {
+    "date": "2026-07-29",
+    "plan": "coaching/plans/2026-07-29/Cole_Pantol.html"
+   },
+   {
+    "date": "2026-07-28",
+    "plan": "coaching/plans/2026-07-28/Cole_Pantol.html"
+   },
+   {
+    "date": "2026-07-27",
+    "plan": "coaching/plans/2026-07-27/Cole_Pantol.html"
+   },
+   {
+    "date": "2026-07-25",
+    "plan": "coaching/plans/2026-07-25/Cole_Pantol.html"
+   },
+   {
+    "date": "2026-07-24",
+    "plan": "coaching/plans/2026-07-24/Cole_Pantol.html"
+   },
+   {
+    "date": "2026-07-23",
+    "plan": "coaching/plans/2026-07-23/Cole_Pantol.html"
+   },
+   {
+    "date": "2026-07-22",
+    "plan": "coaching/plans/2026-07-22/Cole_Pantol.html"
+   },
+   {
+    "date": "2026-07-21",
+    "plan": "coaching/plans/2026-07-21/Cole_Pantol.html"
+   },
+   {
+    "date": "2026-07-20",
+    "plan": "coaching/plans/2026-07-20/Cole_Pantol.html"
+   },
+   {
+    "date": "2026-07-19",
+    "plan": "coaching/plans/2026-07-19/Cole_Pantol.html"
+   }
+  ],
+  "David Canales": [
+   {
+    "date": "2026-08-05",
+    "plan": "coaching/plans/2026-08-05/David_Canales.html"
+   },
+   {
+    "date": "2026-08-04",
+    "plan": "coaching/plans/2026-08-04/David_Canales.html"
+   },
+   {
+    "date": "2026-08-03",
+    "plan": "coaching/plans/2026-08-03/David_Canales.html"
+   },
+   {
+    "date": "2026-08-02",
+    "plan": "coaching/plans/2026-08-02/David_Canales.html"
+   },
+   {
+    "date": "2026-08-01",
+    "plan": "coaching/plans/2026-08-01/David_Canales.html"
+   },
+   {
+    "date": "2026-07-31",
+    "plan": "coaching/plans/2026-07-31/David_Canales.html"
+   },
+   {
+    "date": "2026-07-30",
+    "plan": "coaching/plans/2026-07-30/David_Canales.html"
+   },
+   {
+    "date": "2026-07-29",
+    "plan": "coaching/plans/2026-07-29/David_Canales.html"
+   },
+   {
+    "date": "2026-07-28",
+    "plan": "coaching/plans/2026-07-28/David_Canales.html"
+   },
+   {
+    "date": "2026-07-27",
+    "plan": "coaching/plans/2026-07-27/David_Canales.html"
+   },
+   {
+    "date": "2026-07-25",
+    "plan": "coaching/plans/2026-07-25/David_Canales.html"
+   },
+   {
+    "date": "2026-07-24",
+    "plan": "coaching/plans/2026-07-24/David_Canales.html"
+   }
+  ],
+  "Francisco Valencia": [
+   {
+    "date": "2026-08-05",
+    "plan": "coaching/plans/2026-08-05/Francisco_Valencia.html"
+   },
+   {
+    "date": "2026-08-04",
+    "plan": "coaching/plans/2026-08-04/Francisco_Valencia.html"
+   },
+   {
+    "date": "2026-08-03",
+    "plan": "coaching/plans/2026-08-03/Francisco_Valencia.html"
+   },
+   {
+    "date": "2026-07-30",
+    "plan": "coaching/plans/2026-07-30/Francisco_Valencia.html"
+   },
+   {
+    "date": "2026-07-29",
+    "plan": "coaching/plans/2026-07-29/Francisco_Valencia.html"
+   },
+   {
+    "date": "2026-07-28",
+    "plan": "coaching/plans/2026-07-28/Francisco_Valencia.html"
+   },
+   {
+    "date": "2026-07-27",
+    "plan": "coaching/plans/2026-07-27/Francisco_Valencia.html"
+   },
+   {
+    "date": "2026-07-26",
+    "plan": "coaching/plans/2026-07-26/Francisco_Valencia.html"
+   },
+   {
+    "date": "2026-07-25",
+    "plan": "coaching/plans/2026-07-25/Francisco_Valencia.html"
+   },
+   {
+    "date": "2026-07-24",
+    "plan": "coaching/plans/2026-07-24/Francisco_Valencia.html"
+   },
+   {
+    "date": "2026-07-23",
+    "plan": "coaching/plans/2026-07-23/Francisco_Valencia.html"
+   },
+   {
+    "date": "2026-07-22",
+    "plan": "coaching/plans/2026-07-22/Francisco_Valencia.html"
+   },
+   {
+    "date": "2026-07-21",
+    "plan": "coaching/plans/2026-07-21/Francisco_Valencia.html"
+   },
+   {
+    "date": "2026-07-20",
+    "plan": "coaching/plans/2026-07-20/Francisco_Valencia.html"
+   }
+  ],
+  "Joe Mendoza": [
+   {
+    "date": "2026-08-05",
+    "plan": "coaching/plans/2026-08-05/Joe_Mendoza.html"
+   },
+   {
+    "date": "2026-08-04",
+    "plan": "coaching/plans/2026-08-04/Joe_Mendoza.html"
+   },
+   {
+    "date": "2026-08-03",
+    "plan": "coaching/plans/2026-08-03/Joe_Mendoza.html"
+   },
+   {
+    "date": "2026-08-02",
+    "plan": "coaching/plans/2026-08-02/Joe_Mendoza.html"
+   },
+   {
+    "date": "2026-08-01",
+    "plan": "coaching/plans/2026-08-01/Joe_Mendoza.html"
+   },
+   {
+    "date": "2026-07-31",
+    "plan": "coaching/plans/2026-07-31/Joe_Mendoza.html"
+   },
+   {
+    "date": "2026-07-30",
+    "plan": "coaching/plans/2026-07-30/Joe_Mendoza.html"
+   },
+   {
+    "date": "2026-07-29",
+    "plan": "coaching/plans/2026-07-29/Joe_Mendoza.html"
+   },
+   {
+    "date": "2026-07-28",
+    "plan": "coaching/plans/2026-07-28/Joe_Mendoza.html"
+   },
+   {
+    "date": "2026-07-27",
+    "plan": "coaching/plans/2026-07-27/Joe_Mendoza.html"
+   },
+   {
+    "date": "2026-07-25",
+    "plan": "coaching/plans/2026-07-25/Joe_Mendoza.html"
+   },
+   {
+    "date": "2026-07-24",
+    "plan": "coaching/plans/2026-07-24/Joe_Mendoza.html"
+   },
+   {
+    "date": "2026-07-23",
+    "plan": "coaching/plans/2026-07-23/Joe_Mendoza.html"
+   },
+   {
+    "date": "2026-07-22",
+    "plan": "coaching/plans/2026-07-22/Joe_Mendoza.html"
+   },
+   {
+    "date": "2026-07-21",
+    "plan": "coaching/plans/2026-07-21/Joe_Mendoza.html"
+   },
+   {
+    "date": "2026-07-20",
+    "plan": "coaching/plans/2026-07-20/Joe_Mendoza.html"
+   }
+  ],
+  "Juan Tlatenchi": [
+   {
+    "date": "2026-08-05",
+    "plan": "coaching/plans/2026-08-05/Juan_Tlatenchi.html"
+   },
+   {
+    "date": "2026-08-04",
+    "plan": "coaching/plans/2026-08-04/Juan_Tlatenchi.html"
+   },
+   {
+    "date": "2026-08-03",
+    "plan": "coaching/plans/2026-08-03/Juan_Tlatenchi.html"
+   },
+   {
+    "date": "2026-08-01",
+    "plan": "coaching/plans/2026-08-01/Juan_Tlatenchi.html"
+   },
+   {
+    "date": "2026-07-31",
+    "plan": "coaching/plans/2026-07-31/Juan_Tlatenchi.html"
+   },
+   {
+    "date": "2026-07-30",
+    "plan": "coaching/plans/2026-07-30/Juan_Tlatenchi.html"
+   },
+   {
+    "date": "2026-07-29",
+    "plan": "coaching/plans/2026-07-29/Juan_Tlatenchi.html"
+   },
+   {
+    "date": "2026-07-28",
+    "plan": "coaching/plans/2026-07-28/Juan_Tlatenchi.html"
+   },
+   {
+    "date": "2026-07-27",
+    "plan": "coaching/plans/2026-07-27/Juan_Tlatenchi.html"
+   },
+   {
+    "date": "2026-07-25",
+    "plan": "coaching/plans/2026-07-25/Juan_Tlatenchi.html"
+   },
+   {
+    "date": "2026-07-23",
+    "plan": "coaching/plans/2026-07-23/Juan_Tlatenchi.html"
+   },
+   {
+    "date": "2026-07-22",
+    "plan": "coaching/plans/2026-07-22/Juan_Tlatenchi.html"
+   },
+   {
+    "date": "2026-07-21",
+    "plan": "coaching/plans/2026-07-21/Juan_Tlatenchi.html"
+   },
+   {
+    "date": "2026-07-20",
+    "plan": "coaching/plans/2026-07-20/Juan_Tlatenchi.html"
+   },
+   {
+    "date": "2026-07-19",
+    "plan": "coaching/plans/2026-07-19/Juan_Tlatenchi.html"
+   }
+  ],
+  "Mario Castro": [
+   {
+    "date": "2026-08-05",
+    "plan": "coaching/plans/2026-08-05/Mario_Castro.html"
+   },
+   {
+    "date": "2026-08-04",
+    "plan": "coaching/plans/2026-08-04/Mario_Castro.html"
+   },
+   {
+    "date": "2026-08-03",
+    "plan": "coaching/plans/2026-08-03/Mario_Castro.html"
+   },
+   {
+    "date": "2026-07-31",
+    "plan": "coaching/plans/2026-07-31/Mario_Castro.html"
+   },
+   {
+    "date": "2026-07-30",
+    "plan": "coaching/plans/2026-07-30/Mario_Castro.html"
+   },
+   {
+    "date": "2026-07-28",
+    "plan": "coaching/plans/2026-07-28/Mario_Castro.html"
+   },
+   {
+    "date": "2026-07-27",
+    "plan": "coaching/plans/2026-07-27/Mario_Castro.html"
+   },
+   {
+    "date": "2026-07-25",
+    "plan": "coaching/plans/2026-07-25/Mario_Castro.html"
+   },
+   {
+    "date": "2026-07-24",
+    "plan": "coaching/plans/2026-07-24/Mario_Castro.html"
+   },
+   {
+    "date": "2026-07-23",
+    "plan": "coaching/plans/2026-07-23/Mario_Castro.html"
+   },
+   {
+    "date": "2026-07-22",
+    "plan": "coaching/plans/2026-07-22/Mario_Castro.html"
+   },
+   {
+    "date": "2026-07-21",
+    "plan": "coaching/plans/2026-07-21/Mario_Castro.html"
+   },
+   {
+    "date": "2026-07-20",
+    "plan": "coaching/plans/2026-07-20/Mario_Castro.html"
+   }
+  ],
+  "Nathan Colquitt": [
+   {
+    "date": "2026-08-05",
+    "plan": "coaching/plans/2026-08-05/Nathan_Colquitt.html"
+   },
+   {
+    "date": "2026-08-04",
+    "plan": "coaching/plans/2026-08-04/Nathan_Colquitt.html"
+   },
+   {
+    "date": "2026-08-03",
+    "plan": "coaching/plans/2026-08-03/Nathan_Colquitt.html"
+   },
+   {
+    "date": "2026-08-02",
+    "plan": "coaching/plans/2026-08-02/Nathan_Colquitt.html"
+   },
+   {
+    "date": "2026-08-01",
+    "plan": "coaching/plans/2026-08-01/Nathan_Colquitt.html"
+   },
+   {
+    "date": "2026-07-31",
+    "plan": "coaching/plans/2026-07-31/Nathan_Colquitt.html"
+   },
+   {
+    "date": "2026-07-30",
+    "plan": "coaching/plans/2026-07-30/Nathan_Colquitt.html"
+   },
+   {
+    "date": "2026-07-29",
+    "plan": "coaching/plans/2026-07-29/Nathan_Colquitt.html"
+   },
+   {
+    "date": "2026-07-28",
+    "plan": "coaching/plans/2026-07-28/Nathan_Colquitt.html"
+   },
+   {
+    "date": "2026-07-27",
+    "plan": "coaching/plans/2026-07-27/Nathan_Colquitt.html"
+   },
+   {
+    "date": "2026-07-25",
+    "plan": "coaching/plans/2026-07-25/Nathan_Colquitt.html"
+   },
+   {
+    "date": "2026-07-24",
+    "plan": "coaching/plans/2026-07-24/Nathan_Colquitt.html"
+   },
+   {
+    "date": "2026-07-23",
+    "plan": "coaching/plans/2026-07-23/Nathan_Colquitt.html"
+   },
+   {
+    "date": "2026-07-21",
+    "plan": "coaching/plans/2026-07-21/Nathan_Colquitt.html"
+   },
+   {
+    "date": "2026-07-20",
+    "plan": "coaching/plans/2026-07-20/Nathan_Colquitt.html"
+   },
+   {
+    "date": "2026-07-19",
+    "plan": "coaching/plans/2026-07-19/Nathan_Colquitt.html"
+   }
+  ],
+  "Nikko April": [
+   {
+    "date": "2026-08-05",
+    "plan": "coaching/plans/2026-08-05/Nikko_April.html"
+   },
+   {
+    "date": "2026-08-04",
+    "plan": "coaching/plans/2026-08-04/Nikko_April.html"
+   },
+   {
+    "date": "2026-08-03",
+    "plan": "coaching/plans/2026-08-03/Nikko_April.html"
+   },
+   {
+    "date": "2026-08-01",
+    "plan": "coaching/plans/2026-08-01/Nikko_April.html"
+   },
+   {
+    "date": "2026-07-31",
+    "plan": "coaching/plans/2026-07-31/Nikko_April.html"
+   },
+   {
+    "date": "2026-07-30",
+    "plan": "coaching/plans/2026-07-30/Nikko_April.html"
+   },
+   {
+    "date": "2026-07-29",
+    "plan": "coaching/plans/2026-07-29/Nikko_April.html"
+   },
+   {
+    "date": "2026-07-28",
+    "plan": "coaching/plans/2026-07-28/Nikko_April.html"
+   },
+   {
+    "date": "2026-07-27",
+    "plan": "coaching/plans/2026-07-27/Nikko_April.html"
+   },
+   {
+    "date": "2026-07-25",
+    "plan": "coaching/plans/2026-07-25/Nikko_April.html"
+   },
+   {
+    "date": "2026-07-24",
+    "plan": "coaching/plans/2026-07-24/Nikko_April.html"
+   },
+   {
+    "date": "2026-07-23",
+    "plan": "coaching/plans/2026-07-23/Nikko_April.html"
+   },
+   {
+    "date": "2026-07-22",
+    "plan": "coaching/plans/2026-07-22/Nikko_April.html"
+   },
+   {
+    "date": "2026-07-21",
+    "plan": "coaching/plans/2026-07-21/Nikko_April.html"
+   },
+   {
+    "date": "2026-07-20",
+    "plan": "coaching/plans/2026-07-20/Nikko_April.html"
+   }
+  ],
+  "Noah Weng": [
+   {
+    "date": "2026-08-05",
+    "plan": "coaching/plans/2026-08-05/Noah_Weng.html"
+   },
+   {
+    "date": "2026-08-04",
+    "plan": "coaching/plans/2026-08-04/Noah_Weng.html"
+   },
+   {
+    "date": "2026-08-03",
+    "plan": "coaching/plans/2026-08-03/Noah_Weng.html"
+   },
+   {
+    "date": "2026-07-31",
+    "plan": "coaching/plans/2026-07-31/Noah_Weng.html"
+   },
+   {
+    "date": "2026-07-30",
+    "plan": "coaching/plans/2026-07-30/Noah_Weng.html"
+   },
+   {
+    "date": "2026-07-29",
+    "plan": "coaching/plans/2026-07-29/Noah_Weng.html"
+   },
+   {
+    "date": "2026-07-28",
+    "plan": "coaching/plans/2026-07-28/Noah_Weng.html"
+   },
+   {
+    "date": "2026-07-22",
+    "plan": "coaching/plans/2026-07-22/Noah_Weng.html"
+   },
+   {
+    "date": "2026-07-21",
+    "plan": "coaching/plans/2026-07-21/Noah_Weng.html"
+   },
+   {
+    "date": "2026-07-20",
+    "plan": "coaching/plans/2026-07-20/Noah_Weng.html"
+   },
+   {
+    "date": "2026-07-19",
+    "plan": "coaching/plans/2026-07-19/Noah_Weng.html"
+   }
+  ],
+  "Robert Silinzy": [
+   {
+    "date": "2026-08-05",
+    "plan": "coaching/plans/2026-08-05/Robert_Silinzy.html"
+   },
+   {
+    "date": "2026-08-04",
+    "plan": "coaching/plans/2026-08-04/Robert_Silinzy.html"
+   },
+   {
+    "date": "2026-08-03",
+    "plan": "coaching/plans/2026-08-03/Robert_Silinzy.html"
+   },
+   {
+    "date": "2026-08-01",
+    "plan": "coaching/plans/2026-08-01/Robert_Silinzy.html"
+   },
+   {
+    "date": "2026-07-31",
+    "plan": "coaching/plans/2026-07-31/Robert_Silinzy.html"
+   },
+   {
+    "date": "2026-07-30",
+    "plan": "coaching/plans/2026-07-30/Robert_Silinzy.html"
+   },
+   {
+    "date": "2026-07-29",
+    "plan": "coaching/plans/2026-07-29/Robert_Silinzy.html"
+   },
+   {
+    "date": "2026-07-28",
+    "plan": "coaching/plans/2026-07-28/Robert_Silinzy.html"
+   },
+   {
+    "date": "2026-07-27",
+    "plan": "coaching/plans/2026-07-27/Robert_Silinzy.html"
+   },
+   {
+    "date": "2026-07-26",
+    "plan": "coaching/plans/2026-07-26/Robert_Silinzy.html"
+   },
+   {
+    "date": "2026-07-25",
+    "plan": "coaching/plans/2026-07-25/Robert_Silinzy.html"
+   },
+   {
+    "date": "2026-07-24",
+    "plan": "coaching/plans/2026-07-24/Robert_Silinzy.html"
+   },
+   {
+    "date": "2026-07-23",
+    "plan": "coaching/plans/2026-07-23/Robert_Silinzy.html"
+   },
+   {
+    "date": "2026-07-22",
+    "plan": "coaching/plans/2026-07-22/Robert_Silinzy.html"
+   },
+   {
+    "date": "2026-07-21",
+    "plan": "coaching/plans/2026-07-21/Robert_Silinzy.html"
+   },
+   {
+    "date": "2026-07-20",
+    "plan": "coaching/plans/2026-07-20/Robert_Silinzy.html"
+   }
   ]
+ },
+ "weekly": [
+  {
+   "week": "2026-07-26",
+   "label": "Jul 20–26 2026",
+   "index": "coaching/weekly/2026-07-26/_index.html",
+   "crossrep": "coaching/weekly/2026-07-26/crossrep.html",
+   "reps": {
+    "Andrew Alonso": "coaching/weekly/2026-07-26/Andrew_Alonso.html",
+    "Andrew Trujillo": "coaching/weekly/2026-07-26/Andrew_Trujillo.html",
+    "Benjamin Wyllie": "coaching/weekly/2026-07-26/Benjamin_Wyllie.html",
+    "Brandon Moreno": "coaching/weekly/2026-07-26/Brandon_Moreno.html",
+    "Cole Pantol": "coaching/weekly/2026-07-26/Cole_Pantol.html",
+    "Francisco Valencia": "coaching/weekly/2026-07-26/Francisco_Valencia.html",
+    "Joe Mendoza": "coaching/weekly/2026-07-26/Joe_Mendoza.html",
+    "Juan Tlatenchi": "coaching/weekly/2026-07-26/Juan_Tlatenchi.html",
+    "Mario Castro": "coaching/weekly/2026-07-26/Mario_Castro.html",
+    "Nathan Colquitt": "coaching/weekly/2026-07-26/Nathan_Colquitt.html",
+    "Nikko April": "coaching/weekly/2026-07-26/Nikko_April.html",
+    "Noah Weng": "coaching/weekly/2026-07-26/Noah_Weng.html",
+    "Robert Silinzy": "coaching/weekly/2026-07-26/Robert_Silinzy.html"
+   }
+  },
+  {
+   "week": "2026-07-19",
+   "label": "Jul 13–19 2026",
+   "index": "coaching/weekly/2026-07-19/_index.html",
+   "crossrep": "coaching/weekly/2026-07-19/crossrep.html",
+   "reps": {
+    "Andrew Alonso": "coaching/weekly/2026-07-19/Andrew_Alonso.html",
+    "Andrew Trujillo": "coaching/weekly/2026-07-19/Andrew_Trujillo.html",
+    "Benjamin Wyllie": "coaching/weekly/2026-07-19/Benjamin_Wyllie.html",
+    "Brandon Moreno": "coaching/weekly/2026-07-19/Brandon_Moreno.html",
+    "Cole Pantol": "coaching/weekly/2026-07-19/Cole_Pantol.html",
+    "Francisco Valencia": "coaching/weekly/2026-07-19/Francisco_Valencia.html",
+    "Joe Mendoza": "coaching/weekly/2026-07-19/Joe_Mendoza.html",
+    "Juan Tlatenchi": "coaching/weekly/2026-07-19/Juan_Tlatenchi.html",
+    "Mario Castro": "coaching/weekly/2026-07-19/Mario_Castro.html",
+    "Nathan Colquitt": "coaching/weekly/2026-07-19/Nathan_Colquitt.html",
+    "Nikko April": "coaching/weekly/2026-07-19/Nikko_April.html",
+    "Noah Weng": "coaching/weekly/2026-07-19/Noah_Weng.html",
+    "Robert Silinzy": "coaching/weekly/2026-07-19/Robert_Silinzy.html"
+   }
+  },
+  {
+   "week": "2026-07-12",
+   "label": "Jul 6–12 2026",
+   "index": "coaching/weekly/2026-07-12/_index.html",
+   "crossrep": "coaching/weekly/2026-07-12/crossrep.html",
+   "reps": {
+    "Andrew Trujillo": "coaching/weekly/2026-07-12/Andrew_Trujillo.html",
+    "Benjamin Wyllie": "coaching/weekly/2026-07-12/Benjamin_Wyllie.html",
+    "Brandon Moreno": "coaching/weekly/2026-07-12/Brandon_Moreno.html",
+    "Cole Pantol": "coaching/weekly/2026-07-12/Cole_Pantol.html",
+    "Dustin Romine": "coaching/weekly/2026-07-12/Dustin_Romine.html",
+    "Francisco Valencia": "coaching/weekly/2026-07-12/Francisco_Valencia.html",
+    "Joe Mendoza": "coaching/weekly/2026-07-12/Joe_Mendoza.html",
+    "Juan Tlatenchi": "coaching/weekly/2026-07-12/Juan_Tlatenchi.html",
+    "Mario Castro": "coaching/weekly/2026-07-12/Mario_Castro.html",
+    "Nathan Colquitt": "coaching/weekly/2026-07-12/Nathan_Colquitt.html",
+    "Nikko April": "coaching/weekly/2026-07-12/Nikko_April.html",
+    "Noah Weng": "coaching/weekly/2026-07-12/Noah_Weng.html",
+    "Robert Silinzy": "coaching/weekly/2026-07-12/Robert_Silinzy.html"
+   }
+  },
+  {
+   "week": "2026-07-05",
+   "label": "Jun 29–Jul 5 2026",
+   "index": "coaching/weekly/2026-07-05/_index.html",
+   "crossrep": "coaching/weekly/2026-07-05/crossrep.html",
+   "reps": {
+    "Andrew Trujillo": "coaching/weekly/2026-07-05/Andrew_Trujillo.html",
+    "Benjamin Wyllie": "coaching/weekly/2026-07-05/Benjamin_Wyllie.html",
+    "Brandon Moreno": "coaching/weekly/2026-07-05/Brandon_Moreno.html",
+    "Cole Pantol": "coaching/weekly/2026-07-05/Cole_Pantol.html",
+    "Dustin Romine": "coaching/weekly/2026-07-05/Dustin_Romine.html",
+    "Francisco Valencia": "coaching/weekly/2026-07-05/Francisco_Valencia.html",
+    "Joe Mendoza": "coaching/weekly/2026-07-05/Joe_Mendoza.html",
+    "Juan Tlatenchi": "coaching/weekly/2026-07-05/Juan_Tlatenchi.html",
+    "Mario Castro": "coaching/weekly/2026-07-05/Mario_Castro.html",
+    "Nathan Colquitt": "coaching/weekly/2026-07-05/Nathan_Colquitt.html",
+    "Nikko April": "coaching/weekly/2026-07-05/Nikko_April.html",
+    "Noah Weng": "coaching/weekly/2026-07-05/Noah_Weng.html",
+    "Robert Silinzy": "coaching/weekly/2026-07-05/Robert_Silinzy.html"
+   }
+  }
+ ],
+ "monthly": [
+  {
+   "month": "2026-07",
+   "label": "July 2026",
+   "index": "coaching/monthly/2026-07/_index.html",
+   "crossrep": "coaching/monthly/2026-07/crossrep.html",
+   "reps": {
+    "Noah Weng": "coaching/monthly/2026-07/Noah_Weng.html",
+    "Andrew Alonso": "coaching/monthly/2026-07/Andrew_Alonso.html",
+    "Francisco Valencia": "coaching/monthly/2026-07/Francisco_Valencia.html",
+    "Brandon Moreno": "coaching/monthly/2026-07/Brandon_Moreno.html",
+    "Benjamin Wyllie": "coaching/monthly/2026-07/Benjamin_Wyllie.html",
+    "Juan Tlatenchi": "coaching/monthly/2026-07/Juan_Tlatenchi.html",
+    "Cole Pantol": "coaching/monthly/2026-07/Cole_Pantol.html",
+    "Dustin Romine": "coaching/monthly/2026-07/Dustin_Romine.html",
+    "Andrew Trujillo": "coaching/monthly/2026-07/Andrew_Trujillo.html",
+    "Joe Mendoza": "coaching/monthly/2026-07/Joe_Mendoza.html",
+    "Robert Silinzy": "coaching/monthly/2026-07/Robert_Silinzy.html",
+    "Mario Castro": "coaching/monthly/2026-07/Mario_Castro.html",
+    "Nathan Colquitt": "coaching/monthly/2026-07/Nathan_Colquitt.html",
+    "Nikko April": "coaching/monthly/2026-07/Nikko_April.html"
+   }
+  }
+ ]
 }
