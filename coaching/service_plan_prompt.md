@@ -47,11 +47,19 @@ cloud routine runs on Linux, so `date -d` there):
   TZ=America/Los_Angeles date -d "-1 day" +%F   # normal target = yesterday
 Resolve the TARGET date as follows:
   1. Normal case: TARGET = yesterday (local). Use it only if transcripts/TARGET/ exists
-     AND contains at least one svc__-prefixed, non-empty .txt.
+     AND contains at least one svc__-prefixed, non-empty .txt AND plans_service/TARGET/
+     does NOT already exist (if it does, this day is done — fall through to rule 2).
   2. Catch-up case: otherwise, scan the transcripts/ folders named YYYY-MM-DD, ignore any
-     starting with "_", and pick the MOST RECENT dated folder that (a) has at least one
-     svc__-prefixed .txt and (b) does NOT already have a matching output folder under
-     plans_service/. Process that day.
+     starting with "_", restrict to the LAST 3 DAYS (yesterday and the two days before
+     it), and pick the OLDEST such folder that (a) has at least one svc__-prefixed .txt
+     and (b) does NOT already have a matching output folder under plans_service/. Process
+     that day.
+     OLDEST, not most recent — this is deliberate. Picking the most recent orphans any
+     skipped day permanently: on 2026-08-06 the run picked 2026-08-05 and 2026-08-04 was
+     lost for good even though its 66 svc__ transcripts were sitting right there. Oldest
+     first means one missed day is healed by the very next run. The 3-day window is the
+     backstop that keeps a long gap from dragging the routine into ancient history and
+     falling permanently behind the current day.
   3. If no such folder exists, STOP and report "No unprocessed Service transcript day
      found — nothing to do." Do not create empty output.
 State clearly which TARGET date you resolved and why. The output folder is named for the
