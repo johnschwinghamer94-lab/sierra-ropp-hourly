@@ -1,1 +1,1 @@
-SKIPPED: Transcript too fragmented and unclear; insufficient customer interaction
+SKIPPED: Corrupted transcript with nonsensical content; not a genuine customer interaction
