@@ -5,7 +5,7 @@
   "dateCreated": "2026-08-05",
   "durationMin": 73,
   "bands": {
-    "welcome": "Solid",
+    "welcome": "Strong",
     "assessment": "Solid",
     "decision": "Solid",
     "deliver": "Moderate"
@@ -13,11 +13,11 @@
   "critical": {
     "expectations": true,
     "questions": true,
-    "options": true,
-    "objections": true
+    "options": false,
+    "objections": false
   },
   "outcome": "unknown",
-  "tip": "FIX — Built value through inspection but when customer hesitated at decision moment, tech explained why option was necessary but didn't offer alternative timeline or payment flexibility to remove cost barrier.",
+  "tip": "FIX — When Tony said there's really nothing wrong with it, Bradley explained the inspection value but missed the moment to ask What would give you peace of mind about your system or offer a lower-cost entry point. Next time when a customer hesitates ask a question to uncover the real barrier—often it's not the work, it's the cost or commitment level.",
   "skip": false,
   "skipReason": null
 }
