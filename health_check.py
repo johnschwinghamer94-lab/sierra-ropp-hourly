@@ -177,8 +177,15 @@ def check_servicefeed():
 
 
 def check_hourly():
+    # 20, not 40, to match the dashboard's own stale banner (HealthBanner in
+    # index.html alerts when hourly.json is older than 20 min). At 40 the two
+    # disagreed about what "stale" means for the same file: on 2026-08-06 the
+    # capture stalled at 08:44, the banner went red at 21 min, and this check
+    # still called it fresh. status_for() is ok at age <= budget, so 20 puts
+    # the ok/not-ok boundary exactly where the banner's ">20" sits. The feed
+    # normally commits every ~3 min, so 20 is already generous.
     return check_generated_ms_feed(
-        "hourly", "ROPP hourly capture", "hourly.json", 40,
+        "hourly", "ROPP hourly capture", "hourly.json", 20,
         (6, 0, 23, 0),
         "ROPP dashboard numbers (calls ran, close rate) are stale.",
         "ROPP hourly capture is running behind schedule.")
