@@ -9,3 +9,12 @@ digest.json
 coaching_roi.json
 fieldpro_attrib.json
 fieldpro_attrib_log.txt
+# Local runtime artifacts from the Mac failover publisher (feed_failover.sh).
+# The *_state.json files are re-seeded from the dashboard repo before every run
+# and are per-machine scratch — committing them here would fight the cloud publisher.
+livefeed_state.json
+servicefeed_state.json
+livefeed_log.txt
+servicefeed_log.txt
+livefeed.lock
+servicefeed.lock
