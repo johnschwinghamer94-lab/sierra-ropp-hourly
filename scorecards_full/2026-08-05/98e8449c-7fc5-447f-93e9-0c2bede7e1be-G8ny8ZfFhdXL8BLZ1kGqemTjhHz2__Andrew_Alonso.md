@@ -1,27 +1,24 @@
-# Live-Coaching Scorecard (Andrew Alonso)
+# Scorecard: Andrew Alonso
 
-**Call Details:**
-- RecId: 98e8449c-7fc5-447f-93e9-0c2bede7e1be-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
-- Job: 669680284
-- Date: 2026-08-05
-- Duration: 122 min
-- Tech: Andrew Alonso
-- Outcome: unknown
+**RecId:** 98e8449c-7fc5-447f-93e9-0c2bede7e1be-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
+**Job:** 669680284
+**Date:** 2026-08-05
+**Duration:** 122 min
 
-**FSG Bands:**
-- Welcome: Strong on wins
-- Assessment: Strong
+## FSG Bands
+- Welcome: Solid
+- Assessment: Solid
 - Decision: Moderate
-- Deliver: Moderate
+- Deliver: Solid
 
-**Critical Actions:**
-- Expectations: ✗ (not set)
-- Questions: ✓ (good discovery)
-- Options: ✗ (not presented)
-- Objections: ✗ (not engaged)
+## Critical Actions
+- Expectations: True
+- Questions: True
+- Options: False
+- Objections: False
 
-**Coaching Tip:**
-FIX — After diagnosing thermal switch and contactor burn marks, reconnect to the customer's noise concerns and present three clear options (preventive maintenance, component replacement, or monitoring plan) instead of ending on technical details alone.
+## Outcome
+NO-CLOSE
 
-**Notes:**
-Transcript cuts off mid-diagnosis before options or outcomes are presented. Tech excels at rapport-building and technical diagnosis but loses connection between findings and customer decision point.
+## Coaching Tip
+FIX — Customer expressed concerns but tech didn't recon customer decision around replacement recommendations, missing the moment to present full Option C options with clear value proposition.

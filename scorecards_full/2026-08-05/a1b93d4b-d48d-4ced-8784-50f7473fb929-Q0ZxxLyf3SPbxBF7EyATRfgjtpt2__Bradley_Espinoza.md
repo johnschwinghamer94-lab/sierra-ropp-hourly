@@ -1,23 +1,24 @@
-# Live-Coaching Scorecard (Bradley Espinoza)
+# Scorecard: Bradley Espinoza
 
-**Call Details:**
-- RecId: a1b93d4b-d48d-4ced-8784-50f7473fb929-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
-- Job: 663752333
-- Date: 2026-08-05
-- Duration: 38 min
-- Outcome: unknown
+**RecId:** a1b93d4b-d48d-4ced-8784-50f7473fb929-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
+**Job:** 663752333
+**Date:** 2026-08-05
+**Duration:** 38 min
 
-**FSG Bands:**
+## FSG Bands
 - Welcome: Strong
 - Assessment: Solid
-- Decision: Moderate
-- Deliver: Solid
+- Decision: Solid
+- Deliver: Moderate
 
-**Critical Actions:**
-- Expectations: ✓
-- Questions: ✓
-- Options: ✗
-- Objections: ✗
+## Critical Actions
+- Expectations: True
+- Questions: True
+- Options: True
+- Objections: False
 
-**Coaching Tip:**
-FIX — Tech gathered info but transcript ends abruptly with only maintenance noted; no clear finding of issues or discussion of next steps.
+## Outcome
+NO-CLOSE
+
+## Coaching Tip
+FIX — Tech opened strong, set clear expectations, and asked for approval before moving forward, which is excellent; however, tech didn't reconnect to findings or build a recommendation when concerns were found.

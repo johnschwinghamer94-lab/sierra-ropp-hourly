@@ -1,23 +1,24 @@
-# Live-Coaching Scorecard (Cole Pantol)
+# Scorecard: Cole Pantol
 
-**Call Details:**
-- RecId: 1ade82a7-1a8d-4b53-ba40-45daf746db4c-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
-- Job: 671325517
-- Date: 2026-08-05
-- Duration: 144 min
-- Outcome: flipped
+**RecId:** 1ade82a7-1a8d-4b53-ba40-45daf746db4c-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
+**Job:** 671325517
+**Date:** 2026-08-05
+**Duration:** 144 min
 
-**FSG Bands:**
-- Welcome: Strong
-- Assessment: Strong
-- Decision: Strong on wins
-- Deliver: Strong
+## FSG Bands
+- Welcome: Solid
+- Assessment: Solid
+- Decision: Moderate
+- Deliver: Solid
 
-**Critical Actions:**
-- Expectations: ✓
-- Questions: ✓
-- Options: ✓
-- Objections: ✓
+## Critical Actions
+- Expectations: True
+- Questions: True
+- Options: False
+- Objections: False
 
-**Coaching Tip:**
-WIN — Found multiple issues (blower motor oil leak, seized expansion device, motor start device at 31.27); presented three repair options with costs and recommended Comfort Advisor visit, customer agreed to evaluation.
+## Outcome
+NO-CLOSE
+
+## Coaching Tip
+FIX — Tech conducted a solid inspection and asked good questions, but didn't present multiple options or secure a next step; missing the decision/options moment left no TGL or follow-up commitment.
