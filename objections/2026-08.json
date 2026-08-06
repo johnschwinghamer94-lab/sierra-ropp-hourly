@@ -262,6 +262,61 @@
       "grade": "ok",
       "closed": false,
       "job": "670562656"
+    },
+    {
+      "id": "a82d57a9-b47e-4e5f-9f60-886a6e19c51a-Dmp0XntHegO0HaJZZRXRfWYS5Wi1-1",
+      "type": "System Too Old",
+      "cust": "I'm like five grand in... I got some pretty good deals too, because I called some other companies and some of these other guys... a little cheaper from some other people that I know.",
+      "answer": "It would have been a lot more, I could already bought it... it's getting to that point where... how long do you want to play that game?... at the end of the day it's your house and all I want to do is take care of your house... the units nowadays, they're really efficient.",
+      "tech": "Robert Silinzy",
+      "date": "2026-08-06",
+      "grade": "ok",
+      "closed": false,
+      "job": "672838613"
+    },
+    {
+      "id": "30c84cf8-bffd-46cd-a681-cb9ed4043207-A0vOZeuI0fdYv8TBzqgaINfSxv43-1",
+      "type": "Price",
+      "cust": "I just got done spending $2,500 fixing the stupid spa... I don't have $1,000 for a fan motor. So I'm going to say put it back on. I'll live with the sound... if it goes, then it goes.",
+      "answer": "I mean, we can definitely do that... I can always see if there's any better deals we can do for you on it... the last thing I want is, especially with it being out of warranty, it damaging others... I can see if there's any additional discounts... if that's something that potentially interests you.",
+      "tech": "Corey Reding",
+      "date": "2026-08-06",
+      "grade": "great",
+      "closed": false,
+      "job": "672730199"
+    },
+    {
+      "id": "4d015057-a25b-4a73-9fa1-352d9b05db1a-CfTWI6dOqBStQVuiFmPhv9mrmVb2-1",
+      "type": "Doubt / Distrust",
+      "cust": "Can you give us credit for what he did earlier because he charges $200 and some dollars and we were... expecting that to fix it.",
+      "answer": "What I can do is... I can throw in two pounds for free, which would be about $300 value. So that way you'd be saving what you essentially spent earlier, and you'd still get the full charge when we do the repair.",
+      "tech": "Tyler Battershell",
+      "date": "2026-08-06",
+      "grade": "great",
+      "closed": false,
+      "job": "672809169"
+    },
+    {
+      "id": "4d015057-a25b-4a73-9fa1-352d9b05db1a-CfTWI6dOqBStQVuiFmPhv9mrmVb2-2",
+      "type": "Stall / Think About It",
+      "cust": "This is something that you can't do tonight. Can we call you tomorrow?",
+      "answer": "What I can do is I'll send over the estimate to the email we have on file... all you have to do if you want to move forward is sign off on the recommendation and reach out to the office... we do have payment options available, it's basically deferred interest, an 18 month payment plan.",
+      "tech": "Tyler Battershell",
+      "date": "2026-08-06",
+      "grade": "ok",
+      "closed": false,
+      "job": "672809169"
+    },
+    {
+      "id": "0036ccec-9bb9-4ba5-b0e7-b1341d065b99-92hu453CMjMS3az2iJV9GyPLhsX2-1",
+      "type": "Price",
+      "cust": "I may delay just a little bit, but if I know that it's got to go, especially with the older unit, I can't afford a second pop right now. I would love to get the other new unit, but I'm like\u2014",
+      "answer": "You're kind of in that spot where eventually you're gonna have to either... I would just say keep band-aiding. If you're staying here only 2, 3 more years, 5 years, keep band-aiding this one. Once those coils leak, any repairs you put into it will be gone.",
+      "tech": "Nikko April",
+      "date": "2026-08-06",
+      "grade": "ok",
+      "closed": false,
+      "job": "663819422"
     }
   ]
 }
