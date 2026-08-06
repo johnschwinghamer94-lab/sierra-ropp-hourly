@@ -1,28 +1,27 @@
-# Call Score Card - Brandon Moreno
+# Scorecard: 745bcaa7-7e02-4288-ba11-021658d8055d-f4dx65lewNTPydNXjgypLVFAcbk1
 
-**RecId:** 745bcaa7-7e02-4288-ba11-021658d8055d-f4dx65lewNTPydNXjgypLVFAcbk1
+**Tech:** Brandon Moreno
 **Job:** 643093971
 **Date:** 2026-08-05
 **Duration:** 8 min
 
-## Scoring
-
+## FSG Bands
 - Welcome: Solid
 - Assessment: Solid
-- Decision: Moderate
-- Deliver: Solid
+- Decision: Weak
+- Deliver: Weak
 
 ## Critical Actions
-
 - Expectations: true
-- Questions: true
-- Options: false
+- Questions: false
+- Options: true
 - Objections: false
 
 ## Outcome
-
 no-close
 
 ## Coaching Tip
+FIX — Very short interaction focused only on maintenance (filter change); no diagnostic questioning about system performance or future goals. Missed entire assessment and decision funnel.
 
-FIX — Brandon set expectations clearly ("changing filters and getting it washed up") and asked what matters most to customers, but when the customer emphasized air filtration quality, he didn't pivot to present an upsell option or maintenance package that would address that specific priority.
+## Notes
+

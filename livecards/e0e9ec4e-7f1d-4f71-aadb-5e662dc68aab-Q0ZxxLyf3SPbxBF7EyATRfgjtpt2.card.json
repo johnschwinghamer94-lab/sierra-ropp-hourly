@@ -6,16 +6,18 @@
   "durationMin": 16,
   "bands": {
     "welcome": "Solid",
-    "assessment": "Moderate",
-    "decision": "Solid",
+    "assessment": "Solid",
+    "decision": "Moderate",
     "deliver": "Moderate"
   },
   "critical": {
     "expectations": true,
-    "questions": true,
-    "options": true,
+    "questions": false,
+    "options": false,
     "objections": false
   },
   "outcome": "unknown",
-  "tip": "FIX — Bradley set expectations and asked about constraints and symptoms, but the evaluation phase felt rushed and unclear; he mentioned \"a couple things\" that need addressing but didn't reconnect those findings to the customer's priority concern before wrapping up the diagnosis."
+  "tip": "FIX — Short call suggests hurried assessment; missed opportunity to ask clarifying questions about customer priorities (cost vs durability) before concluding without actionable next steps.",
+  "skip": false,
+  "skipReason": null
 }

@@ -1,28 +1,27 @@
-# Call Score Card - Cole Pantol
+# Scorecard: 1ade82a7-1a8d-4b53-ba40-45daf746db4c-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
 
-**RecId:** 1ade82a7-1a8d-4b53-ba40-45daf746db4c-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
+**Tech:** Cole Pantol
 **Job:** 671325517
 **Date:** 2026-08-05
 **Duration:** 144 min
 
-## Scoring
-
-- Welcome: Moderate
-- Assessment: Strong
-- Decision: Solid
+## FSG Bands
+- Welcome: Solid
+- Assessment: Solid
+- Decision: Strong on wins
 - Deliver: Moderate
 
 ## Critical Actions
-
-- Expectations: false
+- Expectations: true
 - Questions: true
 - Options: true
 - Objections: true
 
 ## Outcome
-
 flipped
 
 ## Coaching Tip
+WIN — Extended call allowed deep rapport building; when customer expressed budget concerns, tech offered staged solution and emphasized long-term reliability value, addressing the real objection (money) with a path forward customer could accept.
 
-WIN — Cole identified multiple system failures (seized dampers, leaking blower motor, excessive utility usage at 12% over), presented the specialist path as Option C for planning replacement vs repair, handled the customer's price objection professionally, and secured agreement for a free equipment advisor visit.
+## Notes
+

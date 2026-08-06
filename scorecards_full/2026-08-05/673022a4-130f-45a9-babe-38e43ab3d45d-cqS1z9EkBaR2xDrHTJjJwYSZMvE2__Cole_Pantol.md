@@ -1,28 +1,27 @@
-# Call Score Card - Cole Pantol
+# Scorecard: 673022a4-130f-45a9-babe-38e43ab3d45d-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
 
-**RecId:** 673022a4-130f-45a9-babe-38e43ab3d45d-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
+**Tech:** Cole Pantol
 **Job:** 672801426
 **Date:** 2026-08-05
 **Duration:** 116 min
 
-## Scoring
-
-- Welcome: Solid
+## FSG Bands
+- Welcome: Strong
 - Assessment: Strong
-- Decision: Moderate
-- Deliver: Solid
+- Decision: Strong
+- Deliver: Strong
 
 ## Critical Actions
-
 - Expectations: true
 - Questions: true
-- Options: false
+- Options: true
 - Objections: true
 
 ## Outcome
-
-no-close
+flipped
 
 ## Coaching Tip
+WIN — Systematically led customers through complete inspection story, used visual evidence effectively, presented clear tiered options aligned with customer's expressed comfort level, and when objection arose, reframed as investment in home value rather than just expense.
 
-FIX — Cole conducted a thorough assessment and documented significant findings, but when customers had questions about pricing and replacement costs, he explained the issues comprehensively without anchoring to clear next steps or options they could commit to today.
+## Notes
+

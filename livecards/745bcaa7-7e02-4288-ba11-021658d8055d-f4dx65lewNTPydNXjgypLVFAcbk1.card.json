@@ -7,15 +7,17 @@
   "bands": {
     "welcome": "Solid",
     "assessment": "Solid",
-    "decision": "Moderate",
-    "deliver": "Solid"
+    "decision": "Weak",
+    "deliver": "Weak"
   },
   "critical": {
     "expectations": true,
-    "questions": true,
-    "options": false,
+    "questions": false,
+    "options": true,
     "objections": false
   },
   "outcome": "no-close",
-  "tip": "FIX — Brandon set expectations clearly (\"changing filters and getting it washed up\") and asked what matters most to customers, but when the customer emphasized air filtration quality, he didn't pivot to present an upsell option or maintenance package that would address that specific priority."
+  "tip": "FIX — Very short interaction focused only on maintenance (filter change); no diagnostic questioning about system performance or future goals. Missed entire assessment and decision funnel.",
+  "skip": false,
+  "skipReason": null
 }

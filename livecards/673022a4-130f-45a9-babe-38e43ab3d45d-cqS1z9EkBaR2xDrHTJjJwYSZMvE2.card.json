@@ -5,17 +5,19 @@
   "dateCreated": "2026-08-05",
   "durationMin": 116,
   "bands": {
-    "welcome": "Solid",
+    "welcome": "Strong",
     "assessment": "Strong",
-    "decision": "Moderate",
-    "deliver": "Solid"
+    "decision": "Strong",
+    "deliver": "Strong"
   },
   "critical": {
     "expectations": true,
     "questions": true,
-    "options": false,
+    "options": true,
     "objections": true
   },
-  "outcome": "no-close",
-  "tip": "FIX — Cole conducted a thorough assessment and documented significant findings, but when customers had questions about pricing and replacement costs, he explained the issues comprehensively without anchoring to clear next steps or options they could commit to today."
+  "outcome": "flipped",
+  "tip": "WIN — Systematically led customers through complete inspection story, used visual evidence effectively, presented clear tiered options aligned with customer's expressed comfort level, and when objection arose, reframed as investment in home value rather than just expense.",
+  "skip": false,
+  "skipReason": null
 }

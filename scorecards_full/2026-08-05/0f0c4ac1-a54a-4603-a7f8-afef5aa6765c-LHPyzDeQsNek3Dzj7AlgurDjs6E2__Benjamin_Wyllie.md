@@ -1,28 +1,27 @@
-# Call Score Card - Benjamin Wyllie
+# Scorecard: 0f0c4ac1-a54a-4603-a7f8-afef5aa6765c-LHPyzDeQsNek3Dzj7AlgurDjs6E2
 
-**RecId:** 0f0c4ac1-a54a-4603-a7f8-afef5aa6765c-LHPyzDeQsNek3Dzj7AlgurDjs6E2
+**Tech:** Benjamin Wyllie
 **Job:** 668805492
 **Date:** 2026-08-05
 **Duration:** 51 min
 
-## Scoring
-
-- Welcome: Solid
-- Assessment: Solid
-- Decision: Moderate
-- Deliver: Moderate
+## FSG Bands
+- Welcome: Strong
+- Assessment: Strong
+- Decision: Solid
+- Deliver: Solid
 
 ## Critical Actions
-
 - Expectations: true
 - Questions: true
-- Options: false
-- Objections: false
+- Options: true
+- Objections: true
 
 ## Outcome
-
 no-close
 
 ## Coaching Tip
+FIX — Excellent education on failing motor start device (compressor strain analogy) and empathy when customer said 'wait for tax refund,' but should have presented proactive option like payment plan or seasonal preventive maintenance to flip reluctance into commitment.
 
-FIX — Benjamin asked good discovery questions about temperature comfort and system behavior, but after identifying cycling issues related to thermostat placement and potential improvements, he didn't present a maintenance or upgrade option to capitalize on the customer's interest in temperature control improvements.
+## Notes
+

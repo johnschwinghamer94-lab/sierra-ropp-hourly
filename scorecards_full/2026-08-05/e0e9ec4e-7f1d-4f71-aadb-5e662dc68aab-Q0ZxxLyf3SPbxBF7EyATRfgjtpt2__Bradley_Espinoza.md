@@ -1,28 +1,27 @@
-# Call Score Card - Bradley Espinoza
+# Scorecard: e0e9ec4e-7f1d-4f71-aadb-5e662dc68aab-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
 
-**RecId:** e0e9ec4e-7f1d-4f71-aadb-5e662dc68aab-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
+**Tech:** Bradley Espinoza
 **Job:** 671329965
 **Date:** 2026-08-05
 **Duration:** 16 min
 
-## Scoring
-
+## FSG Bands
 - Welcome: Solid
-- Assessment: Moderate
-- Decision: Solid
+- Assessment: Solid
+- Decision: Moderate
 - Deliver: Moderate
 
 ## Critical Actions
-
 - Expectations: true
-- Questions: true
-- Options: true
+- Questions: false
+- Options: false
 - Objections: false
 
 ## Outcome
-
 unknown
 
 ## Coaching Tip
+FIX — Short call suggests hurried assessment; missed opportunity to ask clarifying questions about customer priorities (cost vs durability) before concluding without actionable next steps.
 
-FIX — Bradley set expectations and asked about constraints and symptoms, but the evaluation phase felt rushed and unclear; he mentioned "a couple things" that need addressing but didn't reconnect those findings to the customer's priority concern before wrapping up the diagnosis.
+## Notes
+

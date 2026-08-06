@@ -5,17 +5,19 @@
   "dateCreated": "2026-08-05",
   "durationMin": 144,
   "bands": {
-    "welcome": "Moderate",
-    "assessment": "Strong",
-    "decision": "Solid",
+    "welcome": "Solid",
+    "assessment": "Solid",
+    "decision": "Strong on wins",
     "deliver": "Moderate"
   },
   "critical": {
-    "expectations": false,
+    "expectations": true,
     "questions": true,
     "options": true,
     "objections": true
   },
   "outcome": "flipped",
-  "tip": "WIN — Cole identified multiple system failures (seized dampers, leaking blower motor, excessive utility usage at 12% over), presented the specialist path as Option C for planning replacement vs repair, handled the customer's price objection professionally, and secured agreement for a free equipment advisor visit."
+  "tip": "WIN — Extended call allowed deep rapport building; when customer expressed budget concerns, tech offered staged solution and emphasized long-term reliability value, addressing the real objection (money) with a path forward customer could accept.",
+  "skip": false,
+  "skipReason": null
 }

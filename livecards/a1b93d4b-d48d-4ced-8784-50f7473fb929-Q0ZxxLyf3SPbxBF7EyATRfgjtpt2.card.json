@@ -14,8 +14,10 @@
     "expectations": true,
     "questions": true,
     "options": false,
-    "objections": false
+    "objections": true
   },
-  "outcome": "no-close",
-  "tip": "FIX — Bradley built rapport and asked good discovery questions about customer background and preferences, but when the issue came into focus (AC not cooling), he didn't present upgrade or service options to address the immediate problem, leaving money on the table."
+  "outcome": "unknown",
+  "tip": "FIX — Diagnosis was solid but when presenting findings, only mentioned current problem state instead of offering tiered solutions (repair, partial upgrade, full system replacement) to match customer budget constraints.",
+  "skip": false,
+  "skipReason": null
 }

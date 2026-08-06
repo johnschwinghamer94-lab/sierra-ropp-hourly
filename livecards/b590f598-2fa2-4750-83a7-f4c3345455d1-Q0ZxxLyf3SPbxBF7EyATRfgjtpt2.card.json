@@ -5,8 +5,8 @@
   "dateCreated": "2026-08-05",
   "durationMin": 73,
   "bands": {
-    "welcome": "Strong",
-    "assessment": "Strong",
+    "welcome": "Solid",
+    "assessment": "Solid",
     "decision": "Solid",
     "deliver": "Moderate"
   },
@@ -14,8 +14,10 @@
     "expectations": true,
     "questions": true,
     "options": true,
-    "objections": false
+    "objections": true
   },
-  "outcome": "flipped",
-  "tip": "WIN — Bradley established authority early by setting detailed expectations about the evaluation process, asked diagnostic questions about prior repairs and customer concerns, presented multiple options with detailed cost scenarios, and secured agreement for a specialist follow-up appointment."
+  "outcome": "unknown",
+  "tip": "FIX — Built value through inspection but when customer hesitated at decision moment, tech explained why option was necessary but didn't offer alternative timeline or payment flexibility to remove cost barrier.",
+  "skip": false,
+  "skipReason": null
 }

@@ -1,28 +1,27 @@
-# Call Score Card - Andrew Alonso
+# Scorecard: 98e8449c-7fc5-447f-93e9-0c2bede7e1be-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
 
-**RecId:** 98e8449c-7fc5-447f-93e9-0c2bede7e1be-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
+**Tech:** Andrew Alonso
 **Job:** 669680284
 **Date:** 2026-08-05
 **Duration:** 122 min
 
-## Scoring
-
-- Welcome: Strong
-- Assessment: Strong
-- Decision: Solid
+## FSG Bands
+- Welcome: Solid
+- Assessment: Solid
+- Decision: Moderate
 - Deliver: Moderate
 
 ## Critical Actions
-
 - Expectations: true
 - Questions: true
-- Options: true
-- Objections: false
+- Options: false
+- Objections: true
 
 ## Outcome
-
-flipped
+unknown
 
 ## Coaching Tip
+FIX — When customer expressed concern about system noise at night, opportunity was missed to present multiple options (repair vs replacement) rather than just explaining the issue.
 
-WIN — Andrew set clear expectations upfront ("I won't do any work without your approval") and methodically asked discovery questions about equipment age and performance, building trust before presenting multiple options including the specialist consultation.
+## Notes
+

@@ -7,15 +7,17 @@
   "bands": {
     "welcome": "Strong",
     "assessment": "Strong",
-    "decision": "Solid",
-    "deliver": "Solid"
+    "decision": "Strong on wins",
+    "deliver": "Strong"
   },
   "critical": {
     "expectations": true,
     "questions": true,
     "options": true,
-    "objections": false
+    "objections": true
   },
   "outcome": "flipped",
-  "tip": "WIN — Benjamin opened with strong empathy, methodically asked diagnostic questions about system age and performance history, identified rust and refrigerant concerns, presented a clear path to an equipment specialist consultation for upgrade vs repair decisions, and secured the appointment."
+  "tip": "WIN — Built deep empathy for customer's frustration with previous company, validated concerns, then showed specific evidence (pressures, superheat readings) to establish need. Customer insight: 'I want to be nice and cool' opened door for value building.",
+  "skip": false,
+  "skipReason": null
 }

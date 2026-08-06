@@ -5,9 +5,9 @@
   "dateCreated": "2026-08-05",
   "durationMin": 9,
   "bands": {
-    "welcome": "Solid",
-    "assessment": "Moderate",
-    "decision": "Moderate",
+    "welcome": "Weak",
+    "assessment": "Weak",
+    "decision": "Weak",
     "deliver": "Weak"
   },
   "critical": {
@@ -16,6 +16,8 @@
     "options": false,
     "objections": false
   },
-  "outcome": "no-close",
-  "tip": "FIX — The conversation fragmented quickly with unclear customer issues and Andrew didn't pause to ask clarifying questions about what's actually not working before pivoting topics, losing the diagnosis opportunity."
+  "outcome": "unknown",
+  "tip": "",
+  "skip": true,
+  "skipReason": "Transcript too fragmented and unclear; insufficient customer interaction"
 }
