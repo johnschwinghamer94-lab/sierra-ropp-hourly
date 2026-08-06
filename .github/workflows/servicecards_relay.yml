@@ -1,0 +1,66 @@
+name: "Servicecards relay (livecards_service → dashboard)"
+on:
+  push:
+    paths:
+      - "livecards_service/**"
+  workflow_dispatch:
+concurrency:
+  group: servicecards-relay
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  relay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TZ: America/Los_Angeles
+    steps:
+      - uses: actions/checkout@v4          # engine (this repo)
+      - uses: actions/checkout@v4          # live site (public repo) — where the scorecards feed is published
+        with:
+          repository: johnschwinghamer94-lab/sierra-ropp-dashboard
+          token: ${{ secrets.DASHBOARD_TOKEN }}
+          persist-credentials: true
+          path: site
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Merge livecards_service and relay servicecards.json to the site
+        run: |
+          if [ ! -d livecards_service ]; then
+            echo "No livecards_service/ in this repo — nothing to relay."
+            exit 0
+          fi
+
+          python tools/merge_livecards.py livecards_service site/servicecards.json --dept service
+
+          cd site
+          git config user.name "livecoach-cloud"
+          git config user.email "actions@github.com"
+          git add servicecards.json
+          if git diff --cached --quiet; then
+            echo "No staged changes — nothing to commit."
+            exit 0
+          fi
+          git commit -q -m "livecoach: servicecards update (cloud)"
+          # servicecards.json is a MERGE (remote cards + our livecards_service, deduped by
+          # recId), not a mirror — so a push race must NOT be healed by forcing our copy:
+          # that would delete cards another relay published. Instead take the remote file
+          # back and re-run the merge on top of it, which is idempotent. The old
+          # `pull --rebase; push` aborted on a conflict here and lost the whole batch.
+          n=0
+          until git push -q origin HEAD:main; do
+            n=$((n+1))
+            if [ "$n" -gt 5 ]; then
+              echo "::error::servicecards push failed after 5 attempts — the Live Feed servicecard cards on the dashboard are stale; newly graded calls are missing from the board"
+              exit 1
+            fi
+            git fetch -q origin main
+            git reset -q --mixed origin/main
+            git checkout -q origin/main -- servicecards.json 2>/dev/null || true
+            ( cd "$GITHUB_WORKSPACE" && python tools/merge_livecards.py livecards_service site/servicecards.json --dept service )
+            git add servicecards.json
+            if git diff --cached --quiet; then echo "servicecards already current on remote"; break; fi
+            git commit -q -m "livecoach: servicecards update (cloud)"
+          done

@@ -22,6 +22,11 @@ from datetime import datetime, timedelta, timezone
 BANDS = {"Strong", "Strong on wins", "Solid", "Moderate", "Weak"}
 OUTCOMES = {"closed", "flipped", "no-close", "unknown"}
 
+BAND_KEYS = {
+    "silo": ("welcome", "assessment", "decision", "deliver"),
+    "service": ("welcome", "diagnosis", "options", "close"),
+}
+
 
 def norm_tech(name):
     """Canonical tech name: underscores and runs of whitespace collapse to one space.
@@ -41,7 +46,7 @@ def norm_tech(name):
     return re.sub(r"[\s_]+", " ", name).strip() if isinstance(name, str) else name
 
 
-def load_card(path):
+def load_card(path, band_keys):
     try:
         c = json.load(open(path, encoding="utf-8"))
     except Exception as e:
@@ -60,7 +65,7 @@ def load_card(path):
         return None
 
     bands = c.get("bands", {})
-    if not all(bands.get(k) in BANDS for k in ("welcome", "assessment", "decision", "deliver")):
+    if not all(bands.get(k) in BANDS for k in band_keys):
         print(f"warning: {path}: invalid or missing band value — skipping")
         return None
 
@@ -74,18 +79,34 @@ def load_card(path):
 
 
 def main():
-    if len(sys.argv) != 3:
-        print("usage: python tools/merge_livecards.py <livecards_dir> <scorecards_json_path>")
+    args = sys.argv[1:]
+    dept = "silo"
+    if "--dept" in args:
+        i = args.index("--dept")
+        try:
+            dept = args[i + 1]
+        except IndexError:
+            print("usage: python tools/merge_livecards.py <livecards_dir> <scorecards_json_path> [--dept silo|service]")
+            sys.exit(1)
+        del args[i:i + 2]
+
+    if dept not in BAND_KEYS:
+        print(f"usage: --dept must be one of {sorted(BAND_KEYS)}, got {dept!r}")
         sys.exit(1)
 
-    livecards_dir = sys.argv[1]
-    dst = sys.argv[2]
+    if len(args) != 2:
+        print("usage: python tools/merge_livecards.py <livecards_dir> <scorecards_json_path> [--dept silo|service]")
+        sys.exit(1)
+
+    livecards_dir = args[0]
+    dst = args[1]
+    band_keys = BAND_KEYS[dept]
 
     new = []
     rejected = 0
     found = sorted(glob.glob(os.path.join(livecards_dir, "*.card.json")))
     for p in found:
-        c = load_card(p)
+        c = load_card(p, band_keys)
         if c is not None:
             new.append(c)
         else:

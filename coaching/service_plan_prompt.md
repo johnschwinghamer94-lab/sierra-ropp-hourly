@@ -24,8 +24,9 @@ problem and sell the repair / good-better-best upgrade in front of them.
 
 ## Paths (this repo = REPO)
 - Rubric: REPO/coaching/service_plan_prompt.md (this file) — mirrors
-  "LIVE COACH/scoring_prompt_service.txt", the live-scoring source of truth for band/
-  critical-action definitions. Read that file too and stay consistent with its wording.
+  REPO/coaching/scoring_prompt_service_cloud.md, the live-scoring source of truth for
+  band/critical-action definitions. Read that file too and stay consistent with its
+  wording.
 - HTML template: reuse REPO/coaching/EXEMPLAR_Benjamin_Wyllie.html's exact <style> block
   and class structure via REPO/coaching/genplan.py's service-plan renderer (same script,
   service mode) — do not hand-roll different CSS.
@@ -57,7 +58,7 @@ State clearly which TARGET date you resolved and why. The output folder is named
 TARGET (transcript) date: plans_service/TARGET/.
 
 ## Step 1 — Load reference files
-Read "LIVE COACH/scoring_prompt_service.txt" in full (the live-scoring rubric this plan
+Read coaching/scoring_prompt_service_cloud.md in full (the live-scoring rubric this plan
 must stay consistent with) and coaching/EXEMPLAR_Benjamin_Wyllie.html in full (structure
 only — the SERVICE plan swaps in Service section names, see Step 5).
 
