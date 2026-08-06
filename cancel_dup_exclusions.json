@@ -411,7 +411,7 @@
  ],
  "trueDupsTotal": 406,
  "excludedCount": 395,
- "asOf": "2026-08-05",
+ "asOf": "2026-08-06",
  "rule": "Exclude a canceled Estimate/TGL ticket only if a duplicate TGL ticket exists at the same location within 21 days AND that partner job was not canceled. If both are canceled it still counts.",
  "note": "* 406 true duplicate TGL tickets identified in cancellations. 395 excluded here (duplicate of a job that was completed). 11 retained (both tickets canceled)."
 }
