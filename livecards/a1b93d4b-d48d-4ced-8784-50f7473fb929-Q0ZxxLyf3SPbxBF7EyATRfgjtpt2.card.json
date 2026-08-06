@@ -5,10 +5,10 @@
   "dateCreated": "2026-08-05",
   "durationMin": 38,
   "bands": {
-    "welcome": "Solid",
+    "welcome": "Strong",
     "assessment": "Solid",
     "decision": "Moderate",
-    "deliver": "Moderate"
+    "deliver": "Weak"
   },
   "critical": {
     "expectations": true,
@@ -17,7 +17,7 @@
     "objections": true
   },
   "outcome": "unknown",
-  "tip": "FIX — Diagnosis was solid but when presenting findings, only mentioned current problem state instead of offering tiered solutions (repair, partial upgrade, full system replacement) to match customer budget constraints.",
+  "tip": "FIX — When the customer expressed hesitation (\"I'm not getting way out in front till I see what's what\"), Bradley reconnected with transparency, but the call cuts off before options are presented. The missed moment likely came during the assessment findings—a tiered proposal (repair-only, partial replacement, full system upgrade) would have turned that concern into a TGL, since Gregory was engaged and mentioned a concurrent appointment, suggesting he's making decisions today.",
   "skip": false,
   "skipReason": null
 }
