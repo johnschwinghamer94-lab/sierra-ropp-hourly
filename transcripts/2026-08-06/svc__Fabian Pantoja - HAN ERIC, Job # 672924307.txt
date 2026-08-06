@@ -1,0 +1,3649 @@
+TRANSCRIPT
+Rep:      Fabian Pantoja
+Date:     2026-08-06
+Duration: 46 min
+RecId:    0ff9b5bc-7000-4acb-ad81-b63eb37d4b14-jOzWDPM9R0W3U36eRPfYBOSyfVG3
+Job:      HAN ERIC, Job # 672924307
+============================================================
+
+
+Eric:
+  How
+  you
+  doing?
+
+Customer:
+  Hi.
+
+Eric:
+  All
+  right,
+  who
+  do
+  I
+  have
+  the
+  pleasure
+  of
+  speaking
+  with?
+  Eric.
+  Eric,
+  Fabian
+  with
+  Sierra.
+  Nice
+  to
+  meet
+  you.
+  Nice
+  to
+  meet
+  you,
+  sir.
+  All
+  right,
+  tell
+  me
+  what's
+  going
+  on
+  there.
+  Um,
+  well,
+  I
+  was
+  also
+  tuning
+  up
+  the
+  last
+  one.
+  Yeah,
+  said
+  you
+  recommended
+  to
+  replace
+  the
+  starter
+  for
+  the
+  motor,
+  uh-huh,
+  and
+  then
+  add
+  a
+  soft
+  start
+  first.
+
+Customer:
+  Good.
+
+Eric:
+  Add
+  a
+  soft
+  But
+  then
+  as
+  yeah,
+  you
+  know,
+  yeah,
+  I
+  went
+  along
+  with
+  it.
+  We
+  did
+  all
+  that,
+  and
+  then
+  like
+  the
+  next
+  day
+  I
+  hear
+  the
+  when
+  sometimes
+  the
+  there's
+  like
+  a
+  weird
+  noise
+  that
+  comes
+  on
+  when
+  the
+  machine's
+  running.
+  It's
+  like
+  intermittent,
+  and
+  it
+  makes
+  this
+  noise.
+  It's
+  kind
+  of
+  loud
+  enough
+  to
+  irritate
+  you,
+  but
+  it's
+  still
+  keeping
+  cold.
+  installs
+  and
+  stuff,
+  and
+  sometimes
+  it
+  shakes
+  the
+  wall
+  a
+  little
+  bit.
+  So
+  I
+  don't
+  know
+  if—
+  see,
+  we
+  can
+  test
+  it,
+  you
+  know?
+
+Fabian Pantoja:
+  Yeah,
+  go
+  ahead.
+
+Eric:
+  And
+  then
+  let's
+  see
+  if—
+
+Fabian Pantoja:
+  Oh,
+  Sunrise
+  installed
+  the
+  unit?
+
+Customer:
+  Yeah.
+
+Fabian Pantoja:
+  Sunrise,
+  okay.
+
+Eric:
+  Oh,
+  is
+  it
+  Sunrise?
+
+Customer:
+  Yeah.
+
+Eric:
+  Okay.
+  Yeah,
+  so
+  let
+  me
+  go
+  adjust
+  it
+  upstairs
+  too.
+
+Fabian Pantoja:
+  Okay,
+  so
+  this
+  noise,
+  you
+  were
+  hearing
+  it
+  before
+  we
+  installed
+  this?
+
+Customer:
+  Yeah,
+  yeah.
+
+Eric:
+  Um,
+  before
+  you—
+
+Customer:
+  we
+  call—
+
+Eric:
+  I
+  called
+  you,
+  I
+  felt
+  like
+  it
+  was,
+  it
+  was
+  like
+  running
+  a
+  little
+  loud,
+  but
+  inconsistently,
+  right?
+  But
+  not,
+  not
+  the
+  noise
+  that
+  I'm
+  hearing
+  now.
+  Oh,
+  you
+  know
+  what
+  I'm
+  saying?
+  So
+  it's
+  like
+  after
+  you
+  guys
+  installed
+  it,
+  it
+  made
+  a
+  different
+  noise.
+  I
+  mean,
+  it
+  shook
+  the
+  wall
+  a
+  little
+  bit
+  sometimes,
+  but
+  it
+  never
+  did
+  that
+  before,
+  you
+  know?
+
+Customer:
+  That
+  noise?
+
+Eric:
+  Yeah,
+  it
+  gets
+  louder
+  as
+  it
+  goes.
+  But
+  the
+  last
+  day
+  or
+  two,
+  I—
+
+Fabian Pantoja:
+  Yeah,
+  so,
+  so
+  I'm
+  sure
+  he
+  explained
+  to
+  you
+  how
+  the
+  soft
+  start
+  works.
+  So
+  the
+  soft
+  start
+  does
+  not
+  impact
+  anything
+  to
+  do
+  with
+  the
+  running
+  amps.
+  It
+  impacts
+  the
+  startup
+  amps.
+  So
+  I—
+  based
+  on
+  his
+  pictures
+  and
+  his
+  notes,
+  he
+  recommended
+  the
+  soft
+  start
+  because
+  his
+  note
+  is
+  that
+  your
+  compressor
+  was
+  pulling
+  36
+  more
+  amps
+  than
+  it
+  was
+  at
+  startup.
+  So
+  the
+  soft
+  start
+  addressed,
+  addressed
+  that
+  concern
+  that
+  he
+  had,
+  which
+  is,
+  uh,
+  help
+  with
+  the
+  startup
+  amps.
+  Running
+  amps,
+  running
+  noises,
+  soft
+  start
+  will
+  not
+  help
+  or
+  would
+  do
+  anything
+  about
+  that.
+
+Eric:
+  Wouldn't
+  do
+  anything.
+
+Fabian Pantoja:
+  In
+  this
+  case,
+  there
+  is,
+  there,
+  there
+  is
+  stuff
+  that
+  we
+  could
+  add
+  to
+  the,
+  the
+  refrigerant
+  line
+  set,
+  which
+  I
+  believe
+  that's
+  probably
+  what's
+  causing
+  it.
+  Um,
+  there's
+  called
+  damping
+  kits
+  we
+  would
+  have
+  added
+  to
+  the
+  outside
+  to
+  help
+  absorb
+  some
+  of
+  that
+  vibration
+  that
+  it's
+  causing
+  when
+  it's
+  running.
+
+Eric:
+  Yeah.
+
+Fabian Pantoja:
+  How
+  long
+  have
+  you
+  been
+  here
+  for?
+
+Eric:
+  I've
+  been
+  here
+  4
+  years.
+
+Fabian Pantoja:
+  4
+  years?
+
+Eric:
+  And
+  never
+  had—
+
+Fabian Pantoja:
+  It
+  never
+  had—
+  that
+  never
+  happened?
+  No,
+  it
+  just
+  started.
+
+Eric:
+  I
+  didn't
+  notice
+  it.
+
+Fabian Pantoja:
+  You
+  didn't
+  notice
+  it?
+  It
+  just
+  started
+  happening?
+
+Eric:
+  Yeah.
+  And
+  I
+  think,
+  yeah,
+  and
+  then
+  after
+  4
+  years,
+  I
+  think
+  I'm
+  gonna
+  get
+  a
+  call
+  and
+  get
+  it,
+  get
+  a
+  tune-up.
+
+Fabian Pantoja:
+  Check
+  that
+  out.
+
+Eric:
+  I've
+  never
+  had
+  anybody
+  come.
+  So
+  when
+  I
+  came,
+  so
+  it's
+  not
+  that
+  loud
+  today,
+  but
+  some
+  days
+  it's
+  loud.
+
+Customer:
+  Louder?
+
+Eric:
+  Yeah,
+  like
+  when
+  the
+  other
+  tech
+  was
+  here,
+  he
+  noticed
+  it
+  being
+  really
+  loud.
+  The
+  other
+  tech
+  that
+  was
+  here
+  a
+  couple
+  days
+  ago?
+
+Fabian Pantoja:
+  Yeah.
+
+Eric:
+  Wasn't
+  the
+  original
+  tech
+  that
+  came.
+
+Customer:
+  Yeah.
+
+Fabian Pantoja:
+  The
+  second
+  tech
+  that
+  came.
+  Oh,
+  okay.
+
+Eric:
+  Matthew.
+  Yeah,
+  Matthew.
+
+Fabian Pantoja:
+  He
+  noticed
+  it.
+
+Eric:
+  Yeah,
+  he
+  noticed
+  it
+  being
+  really
+  loud.
+  You
+  can
+  verify
+  it
+  with
+  him
+  because
+  right
+  now
+  it's
+  not—it's
+  not
+  loud.
+  Some
+  days
+  it's
+  really
+  loud.
+  This
+  isn't
+  bad.
+
+Fabian Pantoja:
+  This
+  I
+  can
+  tolerate.
+  Yeah,
+  yeah,
+  yes.
+  I
+  heard—I
+  heard
+  it
+  one
+  time,
+  but
+  it's
+  cooling
+  okay
+  though.
+  Yeah,
+  it's
+  cooling
+  okay.
+
+Eric:
+  What
+  he
+  just
+  said
+  might
+  help.
+  You
+  know
+  what
+  I'm
+  saying?
+
+Fabian Pantoja:
+  The
+  damping
+  kit.
+
+Eric:
+  The
+  damping
+  kit.
+  Yeah,
+  absorb
+  it
+  from
+  the
+  outside
+  a
+  little
+  bit.
+
+Fabian Pantoja:
+  Exactly.
+  And
+  that
+  damping
+  kit,
+  uh,
+  we,
+  we
+  install
+  it
+  in
+  the
+  line
+  set
+  outside
+  on
+  the
+  thicker
+  pipe,
+  um,
+  and
+  that
+  helps
+  absorb
+  vibration.
+
+Eric:
+  Yeah,
+  yeah,
+  that
+  might
+  be
+  the,
+  the
+  key.
+  Well,
+  we'll,
+  you
+  know,
+  um,
+  yeah,
+  the,
+  the—
+
+Fabian Pantoja:
+  or
+  I
+  mean,
+  it's
+  a
+  lot
+  more
+  expensive
+  because
+  I've
+  been
+  in
+  cases
+  like
+  this
+  that
+  They
+  have
+  to
+  cut
+  through
+  drywall
+  because
+  when
+  they
+  install
+  these
+  units,
+  yeah,
+  new
+  construction,
+  they,
+  they
+  hold
+  them
+  with
+  straps,
+  just
+  2
+  screws
+  in
+  the
+  strap,
+  and
+  they
+  put
+  them
+  so
+  close
+  to
+  basically
+  screwed
+  on,
+  nailed
+  onto
+  the
+  2x4s.
+  Sometimes
+  those
+  screws
+  could
+  get
+  loose.
+
+Eric:
+  Yeah.
+
+Fabian Pantoja:
+  And
+  it
+  just,
+  it
+  shakes
+  the
+  screw.
+
+Customer:
+  Yeah.
+
+Eric:
+  And
+  then
+  that's
+  what
+  you're
+  hearing.
+  But
+  that's
+  expensive
+  to
+  fix.
+
+Fabian Pantoja:
+  Yeah.
+
+Eric:
+  I
+  don't
+  really
+  want
+  to
+  go
+  that
+  route.
+  But
+  it
+  could
+  also
+  be,
+  you
+  know,
+  faulty
+  compressor,
+  but
+  I'll
+  check
+  everything
+  out
+  for
+  you,
+  you
+  know,
+  because—
+  Yeah,
+  make
+  sure.
+
+Fabian Pantoja:
+  If
+  you
+  didn't,
+  if
+  you
+  didn't
+  hear
+  it
+  for—
+  since
+  you've
+  been
+  here
+  for
+  4
+  years.
+  Yeah,
+  I
+  didn't
+  hear
+  it.
+  And
+  it
+  just
+  started
+  happening,
+  so
+  something
+  is
+  failing.
+  Could,
+  could
+  be
+  failing
+  when
+  it's
+  running.
+
+Eric:
+  Right,
+  right.
+
+Fabian Pantoja:
+  You
+  know,
+  but
+  those
+  are
+  just—
+  I'm
+  just
+  thinking
+  out
+  loud.
+
+Eric:
+  Yeah,
+  yeah.
+  So
+  I'll
+  look
+  at
+  everything
+  though.
+  Installing
+  the
+  damper
+  kit,
+  is
+  that
+  going
+  to
+  cost
+  me
+  more
+  money?
+
+Fabian Pantoja:
+  The
+  damper
+  kit?
+  Yeah.
+  Oh
+  yeah,
+  yeah,
+  we,
+  we
+  How
+  much
+  was
+  that?
+
+Eric:
+  I
+  don't
+  know
+  off
+  the
+  top
+  of
+  my
+  head.
+
+Fabian Pantoja:
+  You
+  are
+  a
+  member
+  with
+  us,
+  right?
+  Yeah,
+  you'll
+  get
+  a
+  discount
+  on
+  anything
+  we
+  do.
+  But
+  I'll—
+  let
+  me
+  look
+  at
+  everything,
+  check
+  everything
+  outside,
+  the
+  running
+  amps,
+  the
+  startup
+  bands.
+
+Eric:
+  I'm
+  hoping
+  it's
+  not
+  the
+  compressor.
+  See
+  if—
+  yeah,
+  yes,
+  check
+  out
+  the
+  compressors.
+  Yeah,
+  of
+  course.
+  What
+  we're
+  dealing
+  with
+  there.
+  Yeah,
+  because
+  each
+  compressor
+  should
+  last
+  longer
+  than
+  that
+  because
+  from
+  what
+  Corey
+  said
+  that
+  each
+  He
+  thinks
+  the
+  compressor
+  has
+  been
+  swapped
+  out
+  once
+  already.
+  Okay,
+  this
+  house
+  was
+  built
+  like
+  2021.
+  Oh,
+  okay.
+  Yeah,
+  we
+  don't
+  have
+  2021,
+  you
+  know
+  what
+  I'm
+  saying?
+
+Fabian Pantoja:
+  And
+  we
+  don't
+  have
+  no
+  records
+  of
+  it,
+  right?
+
+Eric:
+  And,
+  and
+  they
+  think—
+  he
+  thinks
+  the
+  compressor
+  has
+  already
+  been
+  swapped
+  out
+  once.
+  So
+  from
+  my
+  knowledge,
+  this
+  compressor
+  is
+  only
+  5
+  years
+  old,
+  according
+  to
+  my
+  knowledge.
+
+Fabian Pantoja:
+  So,
+  um,
+  let
+  me
+  look
+  outside.
+  I'll
+  look
+  at
+  it.
+  I'll
+  inspect
+  the
+  compressor.
+
+Eric:
+  We'll
+  be
+  able
+  to
+  tell
+  if
+  it's
+  raising
+  I
+  mean,
+  if
+  it
+  costs
+  too
+  much,
+  I'll
+  just
+  leave
+  it
+  as
+  it
+  is
+  and
+  live
+  with
+  the
+  noise,
+  right?
+  If
+  it's
+  too
+  much
+  of
+  a—
+  yeah,
+  expensive
+  fix.
+  It
+  kind
+  of
+  stopped.
+  It
+  kind
+  of
+  stopped.
+  Yeah,
+  this
+  is
+  normal.
+  Some
+  days
+  it
+  comes
+  on,
+  some
+  days
+  it
+  doesn't.
+  So
+  like
+  yesterday,
+  it
+  wasn't
+  that
+  bad,
+  so
+  that's
+  why
+  I
+  didn't
+  call
+  you
+  guys.
+  But
+  if
+  you're—
+  since
+  you
+  have
+  a
+  Field
+  tech
+  coming
+  on.
+  I
+  might
+  as
+  well
+  just
+  have
+  you
+  come
+  anyways.
+  It
+  could
+  have
+  been
+  something
+  that
+  Matthew
+  did.
+  I
+  don't
+  know
+  what
+  he
+  did.
+
+Fabian Pantoja:
+  Maybe
+  he
+  shook
+  the
+  line
+  set
+  outside.
+
+Eric:
+  Yeah,
+  I
+  think
+  he
+  might
+  have
+  shook
+  it
+  and
+  then
+  he
+  retightened
+  it.
+  He
+  said
+  he
+  tightened
+  some
+  screws
+  and
+  some
+  stuff.
+  That's
+  what
+  he
+  said.
+  Ah,
+  okay.
+
+Fabian Pantoja:
+  To
+  the
+  line
+  set,
+  maybe?
+
+Eric:
+  Yeah,
+  there
+  was
+  a
+  few.
+  He
+  said
+  there
+  was
+  a
+  few
+  screw
+  missing
+  that
+  he
+  added
+  and
+  tightened.
+  But
+  then
+  when
+  we
+  wrapped
+  it
+  up,
+  it
+  was
+  still
+  making
+  noise,
+  so
+  that's
+  why
+  he
+  had
+  to
+  have
+  a
+  field
+  tech
+  come
+  out
+  because
+  it
+  was
+  still
+  making
+  those
+  noises.
+  Let
+  me
+  try
+  to
+  replicate
+  the
+  noise.
+  Okay,
+  okay,
+  let
+  me
+  replicate
+  the
+  noise.
+
+Fabian Pantoja:
+  And,
+  uh,
+  I'm
+  gonna
+  shake
+  things
+  around.
+  If
+  you
+  do
+  hear
+  it
+  while
+  I'm
+  outside
+  checking,
+  let
+  me
+  know.
+
+Eric:
+  Yeah,
+  because
+  it's
+  hard
+  to
+  hear
+  when
+  you're
+  outside.
+  Yeah,
+  there's
+  too
+  many
+  other
+  noises
+  going
+  on.
+
+Fabian Pantoja:
+  It's
+  behind
+  the
+  walls.
+
+Eric:
+  You
+  can
+  only
+  hear
+  it
+  when
+  you're
+  in
+  here.
+  You
+  can
+  hear
+  it
+  when
+  you're
+  out
+  there.
+  You
+  don't
+  hear
+  it.
+
+Fabian Pantoja:
+  Yeah,
+  because
+  you're
+  isolating
+  the
+  noise
+  in
+  here.
+
+Eric:
+  Yeah.
+
+Fabian Pantoja:
+  All
+  right,
+  cool.
+  And
+  there's
+  no
+  access
+  through
+  here,
+  right?
+  Through
+  this
+  panel?
+
+Eric:
+  I
+  don't
+  believe
+  there
+  is.
+  No.
+
+Fabian Pantoja:
+  Yeah,
+  it
+  looks
+  like
+  the
+  signs
+  that
+  runs
+  here
+  and
+  then
+  up.
+
+Eric:
+  Yeah,
+  once
+  I
+  hear
+  it
+  again,
+  I'll
+  come
+  get
+  you.
+
+Fabian Pantoja:
+  Cool.
+  Let
+  me
+  go
+  ahead
+  and
+  check
+  things
+  out
+  outside
+  for
+  you,
+  okay?
+
+Eric:
+  All
+  right,
+  I'll
+  be
+  right
+  in.
+
+Fabian Pantoja:
+  Were
+  you
+  hearing
+  it?
+
+Eric:
+  I
+  hear
+  it
+  a
+  little
+  bit,
+  yeah.
+
+Fabian Pantoja:
+  All
+  right,
+  I'm
+  gonna
+  keep
+  my—
+  I'm
+  gonna
+  press
+  down
+  where,
+  uh,
+  the
+  pipe,
+  the
+  line
+  set,
+  and
+  then
+  let
+  me
+  know
+  if
+  it
+  gets
+  louder.
+
+Eric:
+  Good.
+
+Fabian Pantoja:
+  Nothing,
+  huh?
+  Yeah,
+  it's
+  not
+  the
+  same.
+
+Eric:
+  Maybe
+  it
+  fixed
+  itself.
+
+Customer:
+  I
+  don't
+  know.
+
+Eric:
+  I
+  don't
+  expect
+  it
+  to
+  be
+  completely
+  quiet.
+  Right.
+  I
+  don't.
+  Just
+  as
+  long
+  as
+  it's
+  not
+  going
+  to
+  wake
+  me
+  up,
+  you
+  know.
+
+Customer:
+  Right,
+  right.
+  Okay.
+  So
+  this
+  is
+  normal.
+
+Fabian Pantoja:
+  I
+  can.
+  Could
+  deal
+  with
+  that,
+  huh?
+  Yeah.
+
+Customer:
+  This
+  is
+  normal.
+
+Fabian Pantoja:
+  Let's
+  turn
+  it
+  off
+  again.
+
+Eric:
+  We're
+  trying
+  to
+  get
+  that
+  noise
+  to
+  come
+  on.
+  It
+  might
+  not
+  come
+  on.
+  Is
+  your
+  upside
+  unit
+  off?
+  Outside
+  thermostat
+  off.
+  I
+  I
+  put
+  it
+  at
+  seventy-five.
+
+Fabian Pantoja:
+  Just
+  turn
+  it
+  off,
+  or
+  wherever
+  you
+  keep
+  it.
+
+Eric:
+  Oh,
+  there's
+  an
+  outside
+  one.
+  I
+  have
+  upstairs
+  control.
+  Can
+  you
+  control
+  it
+  from
+  your
+  phone?
+  No.
+  They
+  have
+  upstairs
+  control
+  and
+  downstairs
+  control.
+  You
+  want
+  me
+  to
+  turn
+  it
+  off?
+  Yeah.
+  Okay.
+  Turn
+  it
+  off.
+
+Fabian Pantoja:
+  I
+  don't
+  know
+  how
+  to
+  do
+  that.
+  No
+  worries.
+
+Eric:
+  Turn
+  off.
+  Or
+  or
+  turn
+  turn
+  down.
+  Turn
+  up
+  the
+  temperature
+  so
+  it
+  could
+  turn
+  off.
+
+Fabian Pantoja:
+  Okay.
+  Turn
+  it
+  up.
+  Yeah.
+
+Eric:
+  Okay.
+  Yeah.
+
+Customer:
+  Enough,
+  enough.
+
+Fabian Pantoja:
+  What
+  temperature
+  do
+  you
+  have?
+
+Eric:
+  What
+  temperature
+  is
+  in
+  your
+  home?
+
+Customer:
+  Right
+  now
+  it's
+  79.
+
+Fabian Pantoja:
+  Yeah,
+  let's
+  turn
+  it
+  up
+  to
+  like
+  82
+  just
+  for
+  it
+  to
+  shut
+  off
+  the
+  unit.
+
+Customer:
+  Okay,
+  I'll
+  turn
+  it
+  to
+  82.
+  Good.
+
+Eric:
+  I
+  wish
+  I
+  would
+  just
+  have
+  one
+  control,
+  to
+  be
+  honest
+  with
+  you.
+
+Fabian Pantoja:
+  You
+  don't
+  like
+  this?
+  You
+  don't
+  like
+  this,
+  uh,
+  the
+  zoning?
+
+Eric:
+  No,
+  because
+  when
+  you
+  adjust
+  one,
+  sometimes
+  you
+  have
+  to
+  go
+  upstairs
+  and
+  adjust
+  the
+  upstairs.
+
+Fabian Pantoja:
+  Oh
+  yeah.
+
+Eric:
+  I
+  just
+  thought
+  if
+  I
+  wanted
+  a
+  certain
+  temperature,
+  I
+  want
+  it
+  throughout
+  the
+  whole
+  house,
+  right?
+  I
+  don't
+  want
+  to
+  have
+  to
+  go,
+  oh,
+  I've
+  got
+  it
+  at
+  76
+  here,
+  but
+  my
+  upstairs
+  at
+  80,
+  so
+  I
+  gotta
+  go
+  adjust
+  upstairs.
+
+Fabian Pantoja:
+  I
+  know,
+  it's
+  a—
+  it
+  could
+  be
+  a
+  pain.
+  You
+  can
+  get
+  thermostat—
+  you
+  can
+  get
+  Wi-Fi
+  thermostats
+  that
+  you
+  can
+  control
+  from
+  your
+  phone.
+
+Customer:
+  Oh
+  yeah.
+
+Fabian Pantoja:
+  Like
+  an
+  app.
+
+Eric:
+  Oh,
+  really?
+
+Fabian Pantoja:
+  Control
+  them
+  from
+  your
+  comfort
+  at
+  your
+  couch.
+
+Eric:
+  Oh,
+  okay.
+
+Fabian Pantoja:
+  These
+  are
+  not
+  Wi-Fi,
+  so
+  the
+  smart
+  thermostats,
+  you'll
+  be
+  able
+  to
+  control
+  them
+  from
+  your
+  phone.
+
+Eric:
+  Oh,
+  okay.
+  Yeah,
+  that's
+  not—
+  I
+  have
+  to
+  see
+  that.
+  Yeah,
+  I
+  appreciate
+  you
+  guys
+  for
+  coming
+  in.
+
+Customer:
+  No
+  worries,
+  man.
+  Okay,
+  it
+  turned
+  off.
+
+Eric:
+  How
+  long
+  you
+  been
+  in
+  the
+  industry?
+  Going
+  on
+  7
+  years.
+  Oh
+  wow.
+  Yeah.
+  Was
+  it
+  hard
+  to
+  get
+  started?
+
+Fabian Pantoja:
+  Well,
+  I
+  went
+  to
+  school
+  for
+  a
+  little
+  bit
+  and
+  And
+  then
+  I
+  took
+  about
+  a
+  year
+  off
+  before
+  I
+  went
+  full-time.
+  Oh,
+  okay.
+  And
+  they
+  took
+  me
+  in
+  and
+  they
+  trained
+  me,
+  and
+  I'm
+  here
+  now.
+  Oh,
+  that's
+  cool.
+
+Eric:
+  How
+  long
+  was
+  the
+  school
+  for?
+
+Fabian Pantoja:
+  The
+  school
+  that
+  I
+  went
+  to
+  was
+  4
+  months.
+
+Customer:
+  Oh,
+  okay.
+
+Fabian Pantoja:
+  It
+  was
+  a
+  quick
+  turnaround.
+  It
+  was
+  HVAC
+  school?
+  Yeah,
+  to
+  get
+  your
+  certification.
+
+Eric:
+  What
+  school
+  was
+  that?
+
+Fabian Pantoja:
+  I
+  went
+  to—
+  it
+  was
+  called
+  Quality.
+  It's
+  called
+  Quality.
+  Quality
+  Training
+  Center.
+  There's
+  a
+  couple
+  other
+  schools,
+  but
+  that's
+  the
+  one
+  that
+  I
+  went
+  to.
+  The
+  only
+  thing
+  that
+  sucks
+  is
+  when
+  you
+  got
+  to
+  work
+  out
+  in
+  the
+  heat.
+  Heat
+  and
+  then
+  the
+  attics.
+  Yeah,
+  it
+  gets
+  hot
+  up
+  there.
+  Oh
+  yeah,
+  sure.
+  It
+  gets
+  hot,
+  right?
+  Hotter,
+  hotter
+  than
+  outside.
+  Hotter?
+  Oh
+  wow.
+  Yeah,
+  well,
+  imagine
+  just
+  that's
+  where
+  all
+  your
+  heat
+  is
+  trapped
+  and
+  is
+  blocked
+  off
+  with
+  the
+  insulation
+  to
+  cut—
+  not
+  to
+  come
+  into
+  your
+  home.
+  So
+  yeah,
+  that
+  attic,
+  it's
+  just
+  a
+  bad—
+
+Eric:
+  summer
+  is
+  a
+  bad
+  time.
+  But
+  the
+  summer
+  is
+  our
+  busy
+  time,
+  you
+  know.
+
+Fabian Pantoja:
+  So
+  yeah,
+  or
+  winter,
+  maybe
+  going
+  to
+  the
+  furnace.
+  Yeah,
+  yeah,
+  yeah,
+  winter.
+  But
+  we
+  get
+  pretty
+  busy
+  as
+  well
+  in
+  wintertime,
+  you
+  know.
+  We
+  have
+  a
+  lot
+  of
+  clientele,
+  a
+  lot
+  of
+  customers.
+
+Eric:
+  Yeah,
+  so
+  it's
+  on
+  a
+  delay
+  right
+  now.
+
+Fabian Pantoja:
+  I'm
+  gonna
+  wait
+  for
+  it
+  to
+  turn
+  back
+  on,
+  see
+  if
+  it
+  could
+  make
+  that
+  noise
+  again.
+  You
+  work
+  from
+  home?
+
+Eric:
+  Yeah.
+
+Customer:
+  Yeah?
+
+Fabian Pantoja:
+  How
+  long
+  you
+  lived
+  here
+  in
+  Vegas
+  for?
+
+Eric:
+  Uh,
+  3
+  and
+  a
+  half
+  years.
+
+Fabian Pantoja:
+  Oh,
+  okay.
+  Not
+  too
+  long.
+  Where'd
+  you
+  move
+  from?
+
+Eric:
+  Washington.
+
+Fabian Pantoja:
+  Washington.
+
+Eric:
+  I
+  had
+  a
+  restaurant
+  over
+  there.
+
+Fabian Pantoja:
+  Oh,
+  really?
+  Seattle?
+
+Eric:
+  Tacoma.
+  Tacoma.
+
+Fabian Pantoja:
+  It's
+  about
+  30
+  minutes
+  south.
+  Oh,
+  okay.
+  I
+  have
+  a
+  buddy
+  that
+  just
+  moved
+  out
+  to
+  Spokane.
+  Oh,
+  that's
+  way
+  east.
+  Yeah,
+  Spokane,
+  Washington.
+
+Eric:
+  That's
+  that's
+  more
+  like
+  near
+  Idaho.
+  Ah,
+  okay.
+
+Fabian Pantoja:
+  It
+  turned
+  off.
+
+Customer:
+  Yeah.
+
+Eric:
+  I
+  hate
+  it
+  when—
+  since
+  the
+  tech
+  leave,
+  I'll
+  hear
+  the
+  noise.
+  I
+  know
+  it's
+  going
+  to
+  be
+  like
+  that.
+
+Fabian Pantoja:
+  It
+  happens
+  all
+  the
+  time.
+  What
+  kind
+  of
+  restaurant
+  did
+  you
+  own?
+  Thai
+  food.
+  Oh,
+  I
+  love
+  Thai
+  food.
+  You
+  gonna
+  open
+  up
+  something
+  out
+  here?
+  Um,
+  probably
+  not.
+
+Customer:
+  Probably
+  gonna
+  close.
+  Open
+  something
+  up
+  over
+  there?
+  Yeah.
+  Yeah.
+  Nice.
+
+Eric:
+  Out
+  here
+  is
+  pretty
+  southeast.
+  Not
+  northeast.
+
+Fabian Pantoja:
+  Southeast.
+  Yeah.
+  Out
+  here
+  is
+  pretty
+  popular,
+  you
+  know.
+
+Eric:
+  Thai
+  food.
+  There's
+  a
+  couple
+  of
+  Thai
+  restaurants
+  I
+  like.
+  I'm
+  not
+  gonna
+  do
+  Thai.
+
+Fabian Pantoja:
+  No?
+  No
+  Thai
+  no
+  more?
+  You're
+  from—
+  are
+  you
+  from
+  Thailand?
+  No.
+
+Eric:
+  No?
+  Where
+  are
+  you
+  from?
+  I'm
+  Asian.
+  Oh,
+  I'm
+  next
+  door.
+  I'm
+  from
+  Cambodia.
+
+Fabian Pantoja:
+  Cambodia?
+
+Eric:
+  Border
+  countries.
+
+Customer:
+  It's
+  very
+  similar.
+
+Eric:
+  Similar?
+
+Fabian Pantoja:
+  Yeah.
+  A
+  lot
+  of
+  spice,
+  huh?
+
+Eric:
+  A
+  lot
+  of
+  spice.
+  Just
+  like
+  Mexican
+  food.
+  Yeah,
+  spice.
+
+Fabian Pantoja:
+  I
+  love
+  spice.
+  I
+  can't
+  do
+  it
+  anymore,
+  but
+  I
+  used
+  to
+  love
+  spikes.
+  Yeah.
+  Yeah,
+  I
+  went
+  to
+  Thailand.
+  You've
+  been
+  to
+  Thailand?
+  Yeah,
+  4
+  years
+  ago.
+  4
+  years
+  ago,
+  yeah.
+
+Customer:
+  Beautiful
+  out
+  there.
+  Yeah.
+  Cheap.
+
+Eric:
+  Yeah,
+  yeah.
+  Cambodia
+  is
+  even
+  cheaper.
+
+Fabian Pantoja:
+  Is
+  it
+  really?
+  Yeah,
+  it's
+  right
+  next
+  door.
+
+Eric:
+  Cambodia.
+  I
+  bet
+  they
+  have
+  awesome
+  islands
+  too.
+  Yeah,
+  yeah,
+  yeah.
+  They
+  have
+  a
+  lot
+  of
+  island
+  resorts
+  that
+  they've
+  been
+  developing.
+  Really?
+  Yeah.
+  You
+  know,
+  I
+  gotta
+  go
+  to
+  this
+  place
+  called
+  Koh
+  Rong.
+  R-O-N-G.
+  K-O-H.
+  Uh-huh.
+  R-O-N-G.
+  Oh,
+  okay.
+  It's
+  like
+  a
+  resort
+  for
+  tourists.
+  Really?
+  Nice
+  beaches.
+
+Customer:
+  Cambodia.
+  Yeah.
+
+Fabian Pantoja:
+  I
+  had
+  a
+  When
+  I
+  used
+  to
+  do
+  whatever
+  I
+  did
+  before,
+  I
+  had
+  customers
+  from
+  Laos.
+  Laos?
+  Laos.
+
+Eric:
+  Laos.
+
+Fabian Pantoja:
+  Okay,
+  same,
+  around
+  the
+  same
+  area.
+
+Eric:
+  Yeah,
+  same.
+
+Customer:
+  They're
+  neighbors
+  too.
+  Laos.
+
+Fabian Pantoja:
+  We
+  love
+  fish.
+  He
+  would
+  always
+  come
+  in
+  smelling
+  like
+  fish.
+
+Eric:
+  All
+  right,
+  let
+  me
+  go
+  outside
+  and
+  open
+  Let
+  me
+  know
+  if
+  it
+  happens,
+  okay?
+
+Customer:
+  Okay.
+  No,
+  it's
+  quiet
+  in
+  front
+  of
+  it.
+
+Eric:
+  When
+  Matthew
+  was
+  here,
+  we
+  put
+  our
+  ears
+  right
+  to
+  where
+  your
+  hands
+  are.
+
+Customer:
+  Yeah,
+  that's
+  where
+  we
+  heard
+  it.
+  Here?
+  So
+  Matthew
+  was—
+  our
+  ears
+  by
+  this
+  pipe
+  around
+  this
+  area.
+  Yeah,
+  like
+  around
+  here.
+  So
+  you
+  heard
+  the
+  noise
+  out
+  here,
+  not
+  inside?
+  A
+  little
+  bit.
+  Well,
+  I've
+  heard
+  noise
+  loud
+  inside,
+  but
+  still
+  the
+  noise
+  out
+  here,
+  you
+  know,
+  from
+  the
+  previous
+  customer.
+  Today
+  it's
+  not
+  too
+  bad.
+
+Eric:
+  Yeah,
+  I
+  like,
+  I
+  like
+  this.
+
+Customer:
+  When
+  I
+  put
+  this
+  down,
+  you
+  hear
+  that
+  noise?
+  Like,
+  it's
+  very
+  good
+  to
+  live.
+  You
+  hear
+  the—
+  yeah,
+  it's
+  not
+  loud.
+  It's
+  taller
+  than
+  the
+  tire.
+  Yeah,
+  yeah,
+  pressures
+  look
+  good.
+  It
+  just
+  fixed
+  itself.
+  Yeah,
+  working,
+  working
+  the
+  engine.
+  Put
+  the
+  position
+  back
+  in
+  place.
+
+Fabian Pantoja:
+  There
+  you
+  go.
+
+Customer:
+  It
+  could
+  be,
+  hey,
+  you
+  never
+  know.
+  You
+  know
+  how
+  the
+  earth
+  doesn't
+  stay
+  still,
+  right?
+
+Eric:
+  Yeah,
+  yeah.
+
+Customer:
+  Oh,
+  it
+  could
+  be
+  some
+  channel
+  alignment
+  movement.
+  Just
+  shook
+  it
+  all
+  off.
+  It
+  could
+  be.
+
+Fabian Pantoja:
+  And
+  my
+  pressure
+  doesn't
+  feel
+  like
+  it.
+
+Customer:
+  No
+  noise,
+  huh?
+  Did
+  you
+  hear
+  it?
+
+Eric:
+  Everything
+  looks—
+  sounds
+  good.
+  You
+  didn't
+  hear
+  it
+  at
+  all?
+  I
+  mean,
+  I
+  heard
+  you
+  doing
+  some
+  stuff,
+  but
+  yeah,
+  minor
+  noise.
+  All
+  right,
+  let
+  me
+  do
+  it
+  again.
+  Okay.
+
+Customer:
+  Some
+  panels
+  are
+  out
+  there
+  a
+  little,
+  they
+  make
+  a
+  little
+  noise,
+  but
+  it
+  fixed
+  itself.
+
+Fabian Pantoja:
+  So
+  yeah,
+  it
+  could,
+  it
+  could
+  be
+  just
+  the
+  refrigerant
+  line
+  set
+  there,
+  or
+  it
+  could
+  be
+  the
+  compressor.
+
+Eric:
+  Yeah,
+  and
+  maybe
+  it
+  doesn't
+  want
+  to
+  act
+  up
+  today.
+  Yeah,
+  exactly.
+
+Fabian Pantoja:
+  Some
+  days
+  it
+  happens,
+  it
+  happens,
+  it
+  happens
+  until
+  the
+  component
+  that's
+  making
+  the
+  noise
+  fails,
+  right?
+
+Eric:
+  Yeah,
+  yeah.
+
+Fabian Pantoja:
+  So,
+  but,
+  uh,
+  let
+  me
+  go
+  to
+  the
+  truck.
+
+Eric:
+  Let
+  me
+  wrap
+  it
+  up
+  outside.
+
+Fabian Pantoja:
+  The
+  pressures
+  look
+  good,
+  the
+  compressor
+  amps
+  look
+  good,
+  running
+  amps
+  look
+  good.
+  Uh,
+  let
+  me
+  wrap
+  it
+  up.
+  I'll,
+  I'll
+  give
+  you
+  an
+  option
+  to
+  add
+  that
+  damping
+  kit.
+
+Eric:
+  Um,
+  but
+  then
+  we'll
+  go
+  from
+  there.
+  Okay.
+  Yeah,
+  right.
+  If
+  I
+  can
+  choose
+  not
+  to
+  do
+  it,
+  then—
+
+Customer:
+  Yeah,
+  of
+  course.
+
+Fabian Pantoja:
+  Definitely.
+
+Eric:
+  I'll
+  be
+  right
+  back.
+  Okay,
+  let
+  me
+  wrap
+  it
+  up.
+  Huh?
+  It—
+  the
+  noise
+  didn't
+  happen
+  today.
+
+Customer:
+  Yeah,
+  but
+  Matthew
+  was
+  here.
+
+Eric:
+  It
+  happened
+  like
+  when
+  you
+  get
+  to
+  do
+  it
+  again,
+  you
+  get
+  to
+  do
+  it
+  consistently.
+  Really?
+
+Customer:
+  But
+  today,
+  I
+  don't
+  know
+  what
+  happened.
+
+Fabian Pantoja:
+  Was
+  it
+  hotter
+  when
+  you
+  were
+  here?
+
+Eric:
+  Yeah,
+  it
+  was
+  hotter.
+
+Fabian Pantoja:
+  And
+  then,
+  um,
+  the
+  day
+  was
+  hotter.
+  Yeah,
+  it
+  was
+  hotter.
+
+Eric:
+  But
+  could
+  be
+  it
+  was
+  hotter.
+  So,
+  but
+  we
+  were
+  able
+  to
+  get
+  to—
+  and
+  when
+  it—
+  every
+  time
+  it
+  kicked
+  on,
+  it'll
+  do
+  it,
+  you
+  know.
+  It'll,
+  it'll
+  reach
+  a
+  certain
+  temperature,
+  and
+  then
+  once
+  it
+  gets
+  hot,
+  it'll
+  kick
+  on,
+  right?
+  And
+  when
+  it
+  kicks
+  on,
+  you
+  can
+  hear
+  it
+  consistently,
+  like
+  it'll
+  shake
+  the
+  wall
+  and
+  like—
+
+Fabian Pantoja:
+  Yeah,
+  that's
+  the
+  compressor.
+
+Eric:
+  Yeah,
+  yeah,
+  that
+  sounds
+  like
+  a
+  compressor
+  to
+  me
+  too.
+  Yeah,
+  but
+  maybe
+  it's
+  not
+  not
+  doing
+  it
+  today.
+
+Fabian Pantoja:
+  But
+  you
+  check
+  the
+  compressor,
+  it
+  looks
+  good
+  running
+  right
+  now.
+  Yeah,
+  yeah.
+  But
+  all
+  the
+  tests
+  show
+  that
+  it's
+  okay.
+  It's
+  okay.
+  Yeah,
+  pressure
+  look
+  okay,
+  running
+  amps
+  look
+  okay.
+  Um,
+  but
+  you
+  know,
+  maybe
+  it's
+  working
+  harder
+  in
+  the
+  middle
+  of
+  the
+  hottest
+  time
+  of
+  the
+  day.
+  Maybe.
+  And,
+  um,
+  that
+  might
+  be
+  the
+  case.
+  It's
+  working
+  harder,
+  pumping
+  harder.
+
+Eric:
+  Yeah,
+  because
+  it's
+  been
+  really
+  hot
+  last
+  week.
+
+Fabian Pantoja:
+  It
+  was
+  hotter
+  than
+  this
+  week.
+  That's
+  when
+  you
+  were
+  hearing
+  the
+  noise?
+  Yeah,
+  it
+  was
+  like
+  running—
+
+Eric:
+  it
+  was
+  Like
+  117,
+  116.
+  Yeah,
+  today's
+  more
+  like—
+
+Fabian Pantoja:
+  and
+  the
+  noise
+  is
+  like
+  that,
+  just
+  by
+  like
+  excessive
+  vibration,
+  right?
+  Yeah,
+  excessive
+  vibration.
+  No
+  knocking,
+  no
+  clack
+  clack
+  clack
+  clack
+  clack,
+  nothing
+  like
+  that?
+
+Eric:
+  Like
+  a
+  hammer
+  jack?
+  No,
+  no,
+  excessive
+  vibration.
+
+Fabian Pantoja:
+  Okay,
+  so
+  we'll
+  leave
+  it
+  off
+  a
+  little
+  bit
+  and
+  I'll
+  turn
+  it
+  back
+  on.
+
+Eric:
+  Okay,
+  okay.
+  If
+  I
+  hear
+  something,
+  I'll
+  cut
+  it.
+  Yeah,
+  but
+  I
+  think
+  it
+  fixed
+  itself.
+  Maybe
+  the
+  They
+  were
+  just
+  acting
+  up
+  that
+  day.
+  It's
+  kind
+  of
+  like
+  women
+  when
+  they're
+  in
+  a
+  bad
+  mood.
+
+Fabian Pantoja:
+  Yeah,
+  there
+  you
+  go.
+  It
+  can
+  happen,
+  right?
+  You
+  have
+  a
+  schedule
+  on
+  this?
+
+Eric:
+  I
+  don't
+  even
+  know
+  how
+  to
+  use
+  it.
+  I
+  just—
+
+Fabian Pantoja:
+  You
+  do
+  permanent
+  hold?
+
+Eric:
+  Yeah,
+  I
+  just
+  do
+  permanent
+  hold.
+  your
+  hold
+  and
+  just
+  back
+  and
+  forth.
+  To
+  me,
+  I
+  feel
+  like
+  that's
+  the
+  easiest.
+
+Customer:
+  Yeah.
+
+Eric:
+  I
+  don't
+  want
+  to
+  deal
+  with
+  all
+  that
+  spinning.
+
+Fabian Pantoja:
+  Let
+  me,
+  let
+  me
+  cycle
+  that
+  on
+  one
+  more
+  time,
+  okay?
