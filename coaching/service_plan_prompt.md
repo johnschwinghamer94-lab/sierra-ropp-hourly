@@ -60,8 +60,11 @@ Resolve the TARGET date as follows:
      first means one missed day is healed by the very next run. The 3-day window is the
      backstop that keeps a long gap from dragging the routine into ancient history and
      falling permanently behind the current day.
-  3. If no such folder exists, STOP and report "No unprocessed Service transcript day
-     found — nothing to do." Do not create empty output.
+  3. If no such folder exists there is nothing to GRADE — but do NOT stop yet. First run
+     the Step 6b newest-day reconciliation: if service_coaching.json's top-level `date` is
+     older than the newest date folder in plans_service/, rebuild that file from the newest
+     day and push it. Then report "No unprocessed Service transcript day found — nothing to
+     do." Do not create empty plan output.
 State clearly which TARGET date you resolved and why. The output folder is named for the
 TARGET (transcript) date: plans_service/TARGET/.
 
@@ -177,8 +180,16 @@ score, NO grade), and the list of skipped recordings with reasons.
 
 ## Step 6b — Emit service_coaching.json (dashboard feed) at the REPO ROOT
 Write `service_coaching.json` at the repository root (overwrite if it exists) — NEVER
-write to coaching.json, that file belongs to the SILO routine only. JSON schema (mirrors
-coaching.json's shape, adapted for Service section names):
+write to coaching.json, that file belongs to the SILO routine only.
+
+**Newest-day invariant (2026-08-06) — the top-level `date` and `reps` must always describe
+the NEWEST day present in plans_service/, which is not always TARGET.** When TARGET is a
+catch-up day older than a day already published, build `date`/`reps` from that newest
+published day and merely fold TARGET into `dates`/`history`. Never let a catch-up run move
+`date` backwards. Backfilling 2026-08-04 after 2026-08-05 was already live rewrote this
+file's `date` to 08-04 and the dashboard's Service coaching view regressed a full day — the
+plan HTMLs were all correct, the summary just pointed at the wrong one, and health.json
+then reported "Service daily plans 2 days behind" against complete data.
 ```
 {
   "generated": "<ISO timestamp with offset, America/Los_Angeles>",
