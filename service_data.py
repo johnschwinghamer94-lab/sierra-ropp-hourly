@@ -1410,6 +1410,38 @@ def main():
     light = "--light" in sys.argv
     log("start — roster" + (" [LIGHT]" if light else "") + (" [CLOUD]" if CLOUD else ""))
 
+    # ---- WALL-CLOCK BUDGET (2026-08-06) -------------------------------------
+    # This ran 20+ min with no output and had to be killed by hand. It was NOT an
+    # untimed socket hang — every urlopen here and in st_client already passes an
+    # explicit timeout (30/60/120s). It was st_client._open's retry policy doing
+    # its job: 6 attempts x (up to 120s timeout + ~31s Retry-After) is ~15 min PER
+    # CALL once ServiceTitan starts returning 429, and two heavy report jobs had
+    # been started concurrently against the rate-limited reporting API.
+    #
+    # Retrying is right; retrying invisibly and unboundedly is not — this script
+    # publishes only at the very end, so a long grind is indistinguishable from a
+    # freeze and silently yields nothing. This daemon thread hard-exits past the
+    # budget so the workflow goes red instead of sitting "running" for hours.
+    # Mirrors livefeed_sync.py's dead-man switch, added there for the same reason.
+    # Override with SERVICEDATA_MAX_MIN; full rebuild ~10 min, --light ~3.5 min.
+    import threading, socket
+    socket.setdefaulttimeout(120)   # belt-and-braces for any call passing none
+    _budget_min = float(os.environ.get("SERVICEDATA_MAX_MIN", "30"))
+    _t0 = time.time()
+
+    def _deadman():
+        while True:
+            time.sleep(30)
+            if (time.time() - _t0) / 60 > _budget_min:
+                log("DEADMAN: exceeded %.0f min without finishing — exiting nonzero rather than "
+                    "grinding on invisibly. Usual cause: ServiceTitan 429 backoff, often from "
+                    "another heavy report job running concurrently. Nothing was published."
+                    % _budget_min)
+                os._exit(4)
+
+    threading.Thread(target=_deadman, daemon=True).start()
+    # -------------------------------------------------------------------------
+
     path = os.path.join(HERE, "servicedata.json")
     hist_path_early = os.path.join(HERE, "servicedata_history.json")
     if CLOUD:
