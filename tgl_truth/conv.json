@@ -1,33 +1,7 @@
 {
-  "generated": "2026-08-05T08:32:37.698794-07:00",
+  "generated": "2026-08-06T18:18:26.836249-07:00",
   "method": "dashboard parse_all: TGLs Created per creating tech / Revenue-report calls ran (ROPP-tag cleaned)",
   "days": {
-    "2026-06-27": {
-      "Andrew Trujillo": {
-        "calls": 3,
-        "tgls": 3
-      },
-      "Benjamin Wyllie": {
-        "calls": 1,
-        "tgls": 1
-      },
-      "Mario Castro": {
-        "calls": 1,
-        "tgls": 1
-      },
-      "Robert Silinzy": {
-        "calls": 2,
-        "tgls": 1
-      },
-      "Tyler Battershell": {
-        "calls": 0,
-        "tgls": 1
-      },
-      "Joe Mendoza": {
-        "calls": 1,
-        "tgls": 0
-      }
-    },
     "2026-06-28": {
       "Andrew Trujillo": {
         "calls": 2,
@@ -482,7 +456,7 @@
         "tgls": 1
       },
       "Nikko April": {
-        "calls": 1,
+        "calls": 2,
         "tgls": 1
       },
       "Noah Weng": {
@@ -494,7 +468,7 @@
         "tgls": 1
       },
       "Brandon Moreno": {
-        "calls": 3,
+        "calls": 2,
         "tgls": 0
       },
       "Juan Tlatenchi": {
@@ -777,15 +751,15 @@
         "calls": 3,
         "tgls": 3
       },
-      "Brandon Moreno": {
-        "calls": 2,
-        "tgls": 0
-      },
       "Andrew Trujillo": {
         "calls": 3,
         "tgls": 0
       },
       "Benjamin Wyllie": {
+        "calls": 2,
+        "tgls": 0
+      },
+      "Brandon Moreno": {
         "calls": 2,
         "tgls": 0
       }
@@ -939,16 +913,12 @@
         "calls": 2,
         "tgls": 2
       },
-      "Bradley Espinoza": {
-        "calls": 1,
-        "tgls": 0
-      },
       "Bryce Hurley": {
         "calls": 1,
         "tgls": 0
       },
       "Nikko April": {
-        "calls": 1,
+        "calls": 2,
         "tgls": 0
       }
     },
@@ -1050,7 +1020,7 @@
         "tgls": 1
       },
       "Chris Thomas": {
-        "calls": 1,
+        "calls": 2,
         "tgls": 0
       },
       "Nikko April": {
@@ -1172,7 +1142,7 @@
         "tgls": 2
       },
       "Benjamin Wyllie": {
-        "calls": 3,
+        "calls": 4,
         "tgls": 1
       },
       "Brandon Moreno": {
@@ -1836,6 +1806,121 @@
         "tgls": 1
       }
     },
-    "2026-08-05": {}
+    "2026-08-05": {
+      "Andrew Alonso": {
+        "calls": 2,
+        "tgls": 3
+      },
+      "Andrew Trujillo": {
+        "calls": 2,
+        "tgls": 2
+      },
+      "Benjamin Wyllie": {
+        "calls": 2,
+        "tgls": 1
+      },
+      "Brandon Moreno": {
+        "calls": 2,
+        "tgls": 1
+      },
+      "Cole Pantol": {
+        "calls": 3,
+        "tgls": 3
+      },
+      "David Canales": {
+        "calls": 1,
+        "tgls": 1
+      },
+      "Francisco Valencia": {
+        "calls": 4,
+        "tgls": 4
+      },
+      "Joe Mendoza": {
+        "calls": 2,
+        "tgls": 2
+      },
+      "Jose Esquivel": {
+        "calls": 2,
+        "tgls": 1
+      },
+      "Juan Tlatenchi": {
+        "calls": 2,
+        "tgls": 1
+      },
+      "Mario Castro": {
+        "calls": 2,
+        "tgls": 1
+      },
+      "Nikko April": {
+        "calls": 3,
+        "tgls": 1
+      },
+      "Noah Weng": {
+        "calls": 3,
+        "tgls": 3
+      },
+      "Robert Silinzy": {
+        "calls": 3,
+        "tgls": 4
+      },
+      "Bradley Espinoza": {
+        "calls": 2,
+        "tgls": 0
+      }
+    },
+    "2026-08-06": {
+      "Andrew Alonso": {
+        "calls": 1,
+        "tgls": 1
+      },
+      "Bradley Espinoza": {
+        "calls": 1,
+        "tgls": 1
+      },
+      "Brandon Moreno": {
+        "calls": 2,
+        "tgls": 1
+      },
+      "Cole Pantol": {
+        "calls": 2,
+        "tgls": 1
+      },
+      "David Canales": {
+        "calls": 1,
+        "tgls": 1
+      },
+      "Francisco Valencia": {
+        "calls": 3,
+        "tgls": 4
+      },
+      "Joe Mendoza": {
+        "calls": 1,
+        "tgls": 1
+      },
+      "Juan Tlatenchi": {
+        "calls": 1,
+        "tgls": 1
+      },
+      "Noah Weng": {
+        "calls": 2,
+        "tgls": 1
+      },
+      "Robert Silinzy": {
+        "calls": 2,
+        "tgls": 1
+      },
+      "Xavier Paredes": {
+        "calls": 0,
+        "tgls": 1
+      },
+      "Andrew Trujillo": {
+        "calls": 1,
+        "tgls": 0
+      },
+      "Mario Castro": {
+        "calls": 1,
+        "tgls": 0
+      }
+    }
   }
 }
