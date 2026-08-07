@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T18:34:55.461687-07:00",
+  "generated": "2026-08-06T18:49:00.608950-07:00",
   "method": "dashboard parse_all: TGLs Created per creating tech / Revenue-report calls ran (ROPP-tag cleaned)",
   "days": {
     "2026-06-28": {
@@ -456,7 +456,7 @@
         "tgls": 1
       },
       "Nikko April": {
-        "calls": 1,
+        "calls": 2,
         "tgls": 1
       },
       "Noah Weng": {
@@ -468,7 +468,7 @@
         "tgls": 1
       },
       "Brandon Moreno": {
-        "calls": 3,
+        "calls": 2,
         "tgls": 0
       },
       "Juan Tlatenchi": {
@@ -1486,7 +1486,7 @@
         "tgls": 1
       },
       "Mario Castro": {
-        "calls": 1,
+        "calls": 0,
         "tgls": 1
       },
       "Nathan Colquitt": {
@@ -1504,6 +1504,10 @@
       "Xavier Paredes": {
         "calls": 0,
         "tgls": 1
+      },
+      "Andrew Trujillo": {
+        "calls": 1,
+        "tgls": 0
       },
       "Brandon Moreno": {
         "calls": 1,
@@ -1898,11 +1902,15 @@
         "tgls": 4
       },
       "Joe Mendoza": {
-        "calls": 1,
+        "calls": 2,
         "tgls": 1
       },
       "Juan Tlatenchi": {
         "calls": 1,
+        "tgls": 1
+      },
+      "Nikko April": {
+        "calls": 0,
         "tgls": 1
       },
       "Noah Weng": {
