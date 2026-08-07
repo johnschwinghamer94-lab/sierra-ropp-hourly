@@ -1,0 +1,1 @@
+Not a genuine customer interaction—transcript content is personal narrative/monologue about relationships and music with no customer dialogue present. Appears to be corrupted or misfiled audio.

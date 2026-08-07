@@ -1,0 +1,1 @@
+Not a genuine customer AC service call—transcript is dominated by off-topic Beatles music and record collection discussion. Unclear if this is a ride-along, social visit, or corrupted data.
