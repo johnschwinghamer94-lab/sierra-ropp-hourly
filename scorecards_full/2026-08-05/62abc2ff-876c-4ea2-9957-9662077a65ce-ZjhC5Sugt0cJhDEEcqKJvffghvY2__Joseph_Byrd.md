@@ -1,12 +1,33 @@
-# Scorecard: Joseph Byrd
+# Scorecard: Joseph Byrd | Job #670703290 | 2026-08-05
 
-## Header
-- **RecId**: 62abc2ff-876c-4ea2-9957-9662077a65ce-ZjhC5Sugt0cJhDEEcqKJvffghvY2
-- **Rep**: Joseph Byrd
-- **Date**: 2026-08-05
-- **Duration**: 10 min
-- **Job Number**: 670703290
-- **Outcome**: SKIP - INCOMPLETE
+**Duration:** 10 min
 
-## Triage
-Transcript contains only setup/arrival phase (ladder, extension, identifying which unit). No customer interaction, assessment, or decision content. Insufficient for scoring.
+## FSG Bands
+
+| Band | Score | Evidence |
+|------|-------|----------|
+| **Welcome** | Solid | (See summary below) |
+| **Assessment** | Moderate | (See summary below) |
+| **Decision** | Weak | (See summary below) |
+| **Deliver** | Weak | (See summary below) |
+
+## Critical Actions
+
+| Action | Pass |
+|--------|------|
+| Expectations | ✓ |
+| Questions | ✗ |
+| Options | ✗ |
+| Objections | ✗ |
+
+## Outcome
+
+**NO-CLOSE**
+
+## Coaching
+
+FIX — Tech focused on access/logistics (ladder, gloves, rope) rather than asking about the actual problem or explaining what work would be done on the older unit.
+
+## Summary Notes
+
+Very short 10-minute fragment. Appears to be in-progress replacement or repair work on older outdoor unit. Tech set expectations about time/work but minimal discovery conversation with customer. Not a sales call.

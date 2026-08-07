@@ -1,31 +1,33 @@
-# Coaching Scorecard: Fabian Pantoja
+# Scorecard: Fabian Pantoja | Job #671029976 | 2026-08-05
 
-**Job:** 671029976
-**Date:** 2026-08-05
 **Duration:** 12 min
-**Outcome:** NO-CLOSE
 
-## FSG Coaching Bands
+## FSG Bands
 
-- **Welcome:** Weak
-- **Assessment:** Moderate
-- **Decision:** Weak
-- **Deliver:** Weak
+| Band | Score | Evidence |
+|------|-------|----------|
+| **Welcome** | Strong | (See summary below) |
+| **Assessment** | Strong | (See summary below) |
+| **Decision** | Moderate | (See summary below) |
+| **Deliver** | Moderate | (See summary below) |
 
 ## Critical Actions
 
-- Expectations: ✗
-- Questions: ✗
-- Options: ✗
-- Objections: ✗
+| Action | Pass |
+|--------|------|
+| Expectations | ✓ |
+| Questions | ✓ |
+| Options | ✗ |
+| Objections | ✗ |
 
-## Call Outcome
+## Outcome
 
-**Result:** no-close
+**UNKNOWN**
 
-## Coaching Tip
+## Coaching
 
-FIX — Missing foundational steps: no clear welcome with name introduction, minimal discovery questions, and no options presented to address findings.
+WIN — Tech immediately asked check-in questions ("When did you notice?", "How long has the noise been going on?") and explained components clearly ("air handler circulates air, outside unit cools"), establishing expertise before diagnosis started.
 
----
-*Generated: 2026-08-05*
+## Summary Notes
+
+Short 12-minute call. Customer reported cooling issues with temperature fluctuating 90→85→80 and hearing unfamiliar noise. Tech set clear expectations ("start outside where problem is") and asked good discovery questions. Transcript ends before options presentation.

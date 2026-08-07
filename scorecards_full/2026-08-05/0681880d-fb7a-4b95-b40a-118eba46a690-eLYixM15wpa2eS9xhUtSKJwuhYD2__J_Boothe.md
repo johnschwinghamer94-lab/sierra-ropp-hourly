@@ -1,23 +1,33 @@
-# Scorecard: J_Boothe
+# Scorecard: J Boothe | Job #642926437 | 2026-08-05
 
-**Date:** 2026-08-05
 **Duration:** 190 min
-**Job:** 642926437
 
 ## FSG Bands
-- Welcome: Strong
-- Assessment: Strong
-- Decision: Strong
-- Deliver: Moderate
+
+| Band | Score | Evidence |
+|------|-------|----------|
+| **Welcome** | Solid | (See summary below) |
+| **Assessment** | Strong | (See summary below) |
+| **Decision** | Solid | (See summary below) |
+| **Deliver** | Solid | (See summary below) |
 
 ## Critical Actions
-- Expectations: true
-- Questions: true
-- Options: true
-- Objections: false
+
+| Action | Pass |
+|--------|------|
+| Expectations | ✓ |
+| Questions | ✓ |
+| Options | ✓ |
+| Objections | ✗ |
 
 ## Outcome
-no-close
 
-## Coaching Tip
-FIX — Presented three premium options but didn't quantify failure timeline or create urgency for the failing contactors.
+**NO-CLOSE**
+
+## Coaching
+
+FIX — Customer said "once my wife gets home, we'll talk about it," but tech didn't follow up with a check-in question or suggest Option C appointment to move forward without the spouse present.
+
+## Summary Notes
+
+190-min maintenance call covering two systems. Strong diagnostic work explaining issues with voltage switches showing wear. Presented enhancement options including microprocessor ($540) and soft start ($1300) but customer deferred. No attempt to overcome objection or suggest next steps.

@@ -1,25 +1,33 @@
-# Coaching Card — Stanley Kim
+# Scorecard: Stanley Kim | Job #671014575 | 2026-08-05
 
-**Job:** 671014575 | **Date:** 2026-08-05 | **Duration:** 55 min
+**Duration:** 55 min
 
 ## FSG Bands
-- **Welcome:** Weak — abrupt greeting without context; customer confusion on location/purpose
-- **Assessment:** Strong — solid technical diagnosis; showed data about cooling failure pattern and schedule settings
-- **Decision:** Solid — presented clear information about the issue
-- **Deliver:** Solid — technical explanation of HVAC system behavior and settings
+
+| Band | Score | Evidence |
+|------|-------|----------|
+| **Welcome** | Solid | (See summary below) |
+| **Assessment** | Strong on wins | (See summary below) |
+| **Decision** | Moderate | (See summary below) |
+| **Deliver** | Strong | (See summary below) |
 
 ## Critical Actions
-- **Expectations:** ✓ set context about reviewing cooling patterns
-- **Questions:** ✓ asked about system behavior and patterns
-- **Options:** ✓ presented diagnostic findings and explanations
-- **Objections:** ✓ addressed customer concerns about cooling timeline
+
+| Action | Pass |
+|--------|------|
+| Expectations | ✓ |
+| Questions | ✓ |
+| Options | ✗ |
+| Objections | ✓ |
 
 ## Outcome
-**unknown** — call provided information but no TGL or appointment set; customer response unclear
 
-## Coaching Tip
-FIX — Open calls with context: avoid abrupt greetings like "Hello, Alexis... where can I find..." Instead lead with "Hi, this is Stanley. I'm reviewing the AC cooling failure around 5pm daily at Club Aliante." Your technical assessment was strong—showing data, identifying the pattern, explaining schedule settings—but the weak opening created initial confusion. Lead with clarity so customers know you're prepared.
+**FLIPPED**
 
-## Key Gaps
-1. **Cold opening:** Started without context, forcing customer to figure out why tech is there
-2. **Missed connection:** Strong technical work didn't translate to a clear next step or decision path
+## Coaching
+
+WIN — Tech created trust through technical credibility: showed the app logs/graphs, walked customer through thermostat schedule logic, and explained "vacuum hall thermostat cooling failure" notification, turning complex data into clear evidence that led to a TGL.
+
+## Summary Notes
+
+55-minute commercial building maintenance call. Four units on roof plus one indoor. Customer reported one unit "crapping out" at 5pm daily. Tech demonstrated strong technical explanation using app data, temperature graphs, and timeline analysis. Educated customer on the root cause. TGL created (job 671014575 in tgl_truth).
