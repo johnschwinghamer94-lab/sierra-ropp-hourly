@@ -1,25 +1,28 @@
-# Scorecard: Bradley Espinoza - PAGUSARA
+# Scorecard: Bradley Espinoza
 
-**RecId:** b590f598-2fa2-4750-83a7-f4c3345455d1-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
-**Job:** 670823664
+**Recording ID:** b590f598-2fa2-4750-83a7-f4c3345455d1-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
 **Date:** 2026-08-05
 **Duration:** 73 min
+**Job Number:** 670823664
+**Outcome:** no-close
 
 ## FSG Bands
-- Welcome: Solid
-- Assessment: Strong
-- Decision: Solid
-- Deliver: Strong
+
+- **Welcome:** Strong
+- **Assessment:** Strong
+- **Decision:** Moderate
+- **Deliver:** Moderate
 
 ## Critical Actions
-- Expectations: True
-- Questions: True
-- Options: True
-- Objections: True
 
-## Outcome
-FLIPPED - TGL Created (Option C replacement)
+- **Expectations Set:** ✓ PASS
+- **Discovery Questions:** ✓ PASS
+- **Options Presented:** ✗ FAIL
+- **Objections Handled:** ✗ FAIL
 
 ## Coaching Tip
 
-**WIN — Long call with thorough assessment uncovering multiple system concerns; tech clearly explained issues, presented replacement as necessary option, overcame customer hesitations about cost, and secured commitment to move forward with replacement—strong reconnecting and objection handling created TGL.**
+FIX — Tech did thorough assessment and set approval expectations but didn't build or present specific options to the customer; needed to reconnect findings to concrete solutions the customer could choose between.
+
+---
+*Scored by cloud livecoach routine*

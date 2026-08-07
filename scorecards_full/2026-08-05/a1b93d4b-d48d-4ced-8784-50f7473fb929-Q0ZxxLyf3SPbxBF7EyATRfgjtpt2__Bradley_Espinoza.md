@@ -1,25 +1,28 @@
-# Scorecard: Bradley Espinoza - HILL
+# Scorecard: Bradley Espinoza
 
-**RecId:** a1b93d4b-d48d-4ced-8784-50f7473fb929-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
-**Job:** 663752333
+**Recording ID:** a1b93d4b-d48d-4ced-8784-50f7473fb929-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
 **Date:** 2026-08-05
 **Duration:** 38 min
+**Job Number:** 663752333
+**Outcome:** no-close
 
 ## FSG Bands
-- Welcome: Solid
-- Assessment: Solid
-- Decision: Moderate
-- Deliver: Moderate
+
+- **Welcome:** Solid
+- **Assessment:** Solid
+- **Decision:** Moderate
+- **Deliver:** Moderate
 
 ## Critical Actions
-- Expectations: True
-- Questions: True
-- Options: False
-- Objections: False
 
-## Outcome
-NO-CLOSE
+- **Expectations Set:** ✗ FAIL
+- **Discovery Questions:** ✓ PASS
+- **Options Presented:** ✗ FAIL
+- **Objections Handled:** ✗ FAIL
 
 ## Coaching Tip
 
-**FIX — Tech set clear expectations and performed thorough assessment, but after identifying concerns didn't reconnect to understand customer decision-making process or present replacement option; missed moment to ask 'what would it mean to you if this system failed?' and build replacement case.**
+FIX — While the tech checked the system and asked discovery questions, expectations around timeline and next steps weren't clearly stated upfront, and no options were presented to move toward a decision.
+
+---
+*Scored by cloud livecoach routine*

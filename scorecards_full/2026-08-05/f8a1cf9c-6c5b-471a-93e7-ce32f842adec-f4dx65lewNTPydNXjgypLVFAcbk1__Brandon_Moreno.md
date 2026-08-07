@@ -1,25 +1,28 @@
-# Scorecard: Brandon Moreno - COLVARD
+# Scorecard: Brandon Moreno
 
-**RecId:** f8a1cf9c-6c5b-471a-93e7-ce32f842adec-f4dx65lewNTPydNXjgypLVFAcbk1
-**Job:** 669616760
+**Recording ID:** f8a1cf9c-6c5b-471a-93e7-ce32f842adec-f4dx65lewNTPydNXjgypLVFAcbk1
 **Date:** 2026-08-05
 **Duration:** 46 min
+**Job Number:** 669616760
+**Outcome:** flipped
 
 ## FSG Bands
-- Welcome: Solid
-- Assessment: Solid
-- Decision: Solid
-- Deliver: Solid
+
+- **Welcome:** Strong
+- **Assessment:** Strong
+- **Decision:** Strong on wins
+- **Deliver:** Solid
 
 ## Critical Actions
-- Expectations: True
-- Questions: True
-- Options: False
-- Objections: False
 
-## Outcome
-NO-CLOSE
+- **Expectations Set:** ✓ PASS
+- **Discovery Questions:** ✓ PASS
+- **Options Presented:** ✓ PASS
+- **Objections Handled:** ✓ PASS
 
 ## Coaching Tip
 
-**FIX — Solid foundation with clear expectations and good discovery questions about system history and maintenance, but tech didn't present upgrade or replacement option despite system being candidate for proactive planning; missed chance to build value for preventive replacement.**
+WIN — Tech built excellent rapport by showing expertise, asked the right questions about system history and concerns, reconnected to proactive maintenance benefits, and got customer agreement for the maintenance plan package.
+
+---
+*Scored by cloud livecoach routine*
