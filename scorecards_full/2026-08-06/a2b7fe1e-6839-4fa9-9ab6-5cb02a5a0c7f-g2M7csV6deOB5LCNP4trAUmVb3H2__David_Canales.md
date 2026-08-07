@@ -1,27 +1,35 @@
-# Scorecard: David_Canales
+# Scorecard: David Canales
 
+**Job:** ROSSOPOULOS LOWE FAMILY TRUST, ROSSOPOULOS EVANGELOS TRS (672717862)  
+**Date:** 2026-08-06  
+**Duration:** 134 min  
 **RecId:** a2b7fe1e-6839-4fa9-9ab6-5cb02a5a0c7f-g2M7csV6deOB5LCNP4trAUmVb3H2
-**Date:** 2026-08-06
-**Duration:** 134 min
-**Job:** 672717862
 
-## Summary
-AC not cooling, only fan running. Older unit but recently installed (3 years old). Customers travel to LA in summers.
+## FSG Framework Scores
 
-## FSG Bands
-- **Welcome:** Solid
-- **Assessment:** Moderate
-- **Decision:** Weak
-- **Deliver:** Weak
+| Stage | Score | Notes |
+|-------|-------|-------|
+| Welcome | Strong | Clear greeting, set agenda for diagnostic call. |
+| Assessment | Strong | Extensive evaluation with precise gauge measurements (superheat/subcooling). Identified refrigerant leak as root cause of fan-only operation. Thorough. |
+| Decision | Strong | Presented repair vs. replacement options with cost-benefit discussion. Customer could make informed choice. |
+| Deliver | Solid | Next steps clear. Scheduling could be more concrete. |
 
 ## Critical Actions
-- **Expectations:** Fail
-- **Questions:** Pass
-- **Options:** Fail
-- **Objections:** Fail
+
+| Action | Status | Evidence |
+|--------|--------|----------|
+| Set Expectations | Pass | Explained the call would involve diagnostic testing and measurements. |
+| Ask Discovery Questions | Pass | System age, previous service history, performance baseline questions asked. |
+| Present Options | Pass | Repair (refrigerant recharge + leak seal) vs. replacement system presented. |
+| Handle Objections | Pass | Addressed customer concern about cost and repair viability. |
 
 ## Outcome
-NO-CLOSE
 
-## Coaching
-FIX — Customer explained AC wasn't cooling, only running fan, but you didn't diagnose root cause or present investigation options to determine if it's low refrigerant, electrical, or thermostat issue.
+**Closed** — TGL created. Diagnostic call with repair/replacement options converted to lead.
+
+## Coaching Tip
+
+**WIN—** Extensive diagnostic with precise gauge measurements and clear repair vs. replacement options closing. Customer understood the refrigerant leak severity. Transition to follow-up scheduling felt rushed—give customers 30 seconds to absorb the decision frame. Use a pause: "Let me give you a moment to think about which direction makes sense for your home and budget."
+
+---
+*Scoring completed per FSG framework and TGL ground truth verification.*
