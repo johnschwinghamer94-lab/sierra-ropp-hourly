@@ -1,0 +1,1 @@
+Transcript severely corrupted after initial greeting; insufficient coherent content to score.
