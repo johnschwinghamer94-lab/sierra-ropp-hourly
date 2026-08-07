@@ -1,0 +1,1 @@
+Call incomplete—customer directed tech to roof before full expectations and discovery; evaluation never completed.

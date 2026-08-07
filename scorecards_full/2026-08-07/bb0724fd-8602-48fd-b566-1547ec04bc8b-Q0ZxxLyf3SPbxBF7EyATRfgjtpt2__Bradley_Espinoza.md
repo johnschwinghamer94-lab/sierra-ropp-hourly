@@ -1,0 +1,1 @@
+Non-scoreable recording—transcript contains unrelated personal content, not customer HVAC interaction.
