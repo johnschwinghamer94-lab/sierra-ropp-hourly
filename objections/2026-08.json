@@ -317,6 +317,157 @@
       "grade": "ok",
       "closed": false,
       "job": "663819422"
+    },
+    {
+      "id": "a1b93d4b-d48d-4ced-8784-50f7473fb929-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2-1",
+      "type": "Spouse / Decision-Maker",
+      "cust": "It's being so what it is. I'm not getting myself way out in front till I see what's what... I don't do nothing off the spur of the moment... Either way happens, me and my wife will decide.",
+      "answer": "Right, of course, of course. And I always show. I always. I'm very transparent with my evaluation. I always show everything. All of my work, all of my photos.",
+      "tech": "Bradley Espinoza",
+      "date": "2026-08-05",
+      "grade": "ok",
+      "closed": false,
+      "job": "663752333"
+    },
+    {
+      "id": "0f0c4ac1-a54a-4603-a7f8-afef5aa6765c-LHPyzDeQsNek3Dzj7AlgurDjs6E2-1",
+      "type": "Stall / Think About It",
+      "cust": "Well, my thought is I hope to make it through this season, and maybe when it's down, I can get it fixed... like maybe when I get that $10,000 back, you know,",
+      "answer": "Okay. Gotcha... I gotcha. I gotcha. Okay.",
+      "tech": "Benjamin Wyllie",
+      "date": "2026-08-05",
+      "grade": "poor",
+      "closed": false,
+      "job": "668805492"
+    },
+    {
+      "id": "673022a4-130f-45a9-babe-38e43ab3d45d-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-1",
+      "type": "Price",
+      "cust": "Because do, is your company doing financing also?... if, if I have to buy a new unit and you're saying that 5,000, 6,000... But if I need to buy the, the new, a new unit, then of course, how do you know how much?",
+      "answer": "So like I was saying, I just do the repair site. Yeah, I don't, I don't do replacements. We have people in our company that I can call out to. If you want to go that route. There's people I call out to give you that information.",
+      "tech": "Cole Pantol",
+      "date": "2026-08-05",
+      "grade": "great",
+      "closed": true,
+      "job": "672801426"
+    },
+    {
+      "id": "673022a4-130f-45a9-babe-38e43ab3d45d-cqS1z9EkBaR2xDrHTJjJwYSZMvE2-2",
+      "type": "Doubt / Distrust",
+      "cust": "Right now it's like, I don't know, you're giving me these figures, and it's giving me a headache.",
+      "answer": "I'm not here to give you a headache. I'm sorry, but.",
+      "tech": "Cole Pantol",
+      "date": "2026-08-05",
+      "grade": "poor",
+      "closed": true,
+      "job": "672801426"
+    },
+    {
+      "id": "1bd931e6-9402-4fb4-824d-fe7ba4310013-g2M7csV6deOB5LCNP4trAUmVb3H2-1",
+      "type": "Stall / Think About It",
+      "cust": "This week we just got to get a lot of stuff done this week. I don't have any more time. We've spent the whole day here with different people coming today, waiting for you to come, not knowing when you were coming... I'm just kind of don't want any more this week.",
+      "answer": "Yeah, next week. Sometime next week. I think they could only schedule a week out... So let's say, are you guys okay with Monday if I call them so we can set something up?",
+      "tech": "David Canales",
+      "date": "2026-08-05",
+      "grade": "great",
+      "closed": false
+    },
+    {
+      "id": "9f84f475-0993-4d32-93e9-71c0b4e42351-g2M7csV6deOB5LCNP4trAUmVb3H2-1",
+      "type": "Price",
+      "cust": "We're not going to get a new compressor. We're not going to do a temporary fix. Like, we're not going to pay that. We're not going to pay that much. We can pay a little bit more to get. So that's our game plan as of now.",
+      "answer": "Well, the thing is with this option, too, so it doesn't cost anything for them to come out. So I don't know if you just want me to call him... And then that way, like, you have an idea, you keep that in your back pocket.",
+      "tech": "David Canales",
+      "date": "2026-08-05",
+      "grade": "ok",
+      "closed": true,
+      "job": "672791523"
+    },
+    {
+      "id": "8110e79c-80f9-4581-8d86-fa30b26689c4-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
+      "type": "Price",
+      "cust": "Can you get a used one?",
+      "answer": "No, unfortunately, no... An established company won't give you a used one, unfortunately, because we're liable for... we got to give you that full 10 year warranty on it. If we give you a used one we wouldn't even be able to do that and we don't like beating around the bush.",
+      "tech": "Francisco Valencia",
+      "date": "2026-08-05",
+      "grade": "ok",
+      "closed": false
+    },
+    {
+      "id": "4a11cff1-0a46-4eff-8281-00cd6c14809b-b6xhRGsYH8eMOzcoHjFcmJrxoqp1-1",
+      "type": "Price",
+      "cust": "I don't want to spend 20, $20,000 to install a whole new setup. If this one's working. If this one's working and the outside unit only being, you know, less than six years old and you know, train things are supposed to last longer than that.",
+      "answer": "So that's, I guess what I'd like to see is... The other thing that I would suggest, if you guys don't want to get into details at the moment, would be to sign up for the maintenance program, because the maintenance program will keep a track of how things are progressing.",
+      "tech": "Francisco Valencia",
+      "date": "2026-08-05",
+      "grade": "ok",
+      "closed": true,
+      "job": "671210348"
+    },
+    {
+      "id": "12148664-04bf-4fce-8271-785fd15f704e-F8ZeOm4TrkOymEC2UFNijyrobEp2-1",
+      "type": "Doubt / Distrust",
+      "cust": "I like him, but he's. You need this. You need this, you need this. It's like, no... I can't afford it. Don't even tell me... Because this other guy, he goes, you're. This is broken. And you need this. And you need this. And it was like $1,500.",
+      "answer": "Correct. No, I'll let you know. My job is just to give you all the information, let you know how your unit is running. That's it. Either you want to go with any of the repairs, whatever it is, whatever is going on, it's up to you. I'm just here to let you know the condition of the unit.",
+      "tech": "Mario Castro",
+      "date": "2026-08-05",
+      "grade": "ok",
+      "closed": true,
+      "job": "668573664"
+    },
+    {
+      "id": "48584b47-1add-4856-8735-adece0f56e8f-lfFi8CGGhmZHPk1GieuPr9ZvuAl1-1",
+      "type": "Price",
+      "cust": "you gotta be kind to me. I'm just an old lady who lives alone.",
+      "answer": "I know. I don't make. I'm just a messenger. I just. I don't make the prices. So what we charge for that is $264. And then there's our $39 service fee. So you would be looking at a total of $33. And I'll get you up and cool in here within the next 30 minutes.",
+      "tech": "Josue Arciga",
+      "date": "2026-08-05",
+      "grade": "ok",
+      "closed": false,
+      "job": "671008311"
+    },
+    {
+      "id": "3e513ccb-f23e-4867-afca-af795a739314-CeJETffP2OWgh60lodsypyHyld02-1",
+      "type": "Spouse / Decision-Maker",
+      "cust": "I'll have to talk with her about the starter... And then explain to her and then figure out the budgeting for that.",
+      "answer": "We do offer financing. It's through an app called Good Leap. 5, 10, 15 years, whatever you need at a 12.99%. And if you go with the auto pay, I believe it brings it down about half a percentage.",
+      "tech": "Matthew Arnold",
+      "date": "2026-08-05",
+      "grade": "ok",
+      "closed": false,
+      "job": "670390836"
+    },
+    {
+      "id": "5445e735-57f5-433d-b19e-0f6eb4ad300a-CeJETffP2OWgh60lodsypyHyld02-1",
+      "type": "Price",
+      "cust": "Cuz they sent me a quote by... in my email. And it wasn't cheap",
+      "answer": "For sure not. But it does end up being good for the video.",
+      "tech": "Matthew Arnold",
+      "date": "2026-08-05",
+      "grade": "poor",
+      "closed": false
+    },
+    {
+      "id": "f56c3f80-d9f8-40aa-9784-5a25ed415e5c-wzel46HMrAeEfdr8qh6jx5e2w6C3-1",
+      "type": "Stall / Think About It",
+      "cust": "No I was gonna go to Home Depot and or probably order myself anyway. Totally up to you. And then the membership I again I'm probably gonna talk to maybe other people that live around here too homeowners and see what they say. But for now I don't know.",
+      "answer": "I've signed myself up for one too many memberships like security and the other things I totally understand. I don't actually use them half the time so... that membership is basically you're not just paying for it we come out every six months so you know it's taken care of.",
+      "tech": "Stanley Kim",
+      "date": "2026-08-05",
+      "grade": "ok",
+      "closed": false,
+      "job": "671013332"
+    },
+    {
+      "id": "7966de35-9c4f-4344-966a-09a28ea93696-wzel46HMrAeEfdr8qh6jx5e2w6C3-1",
+      "type": "Doubt / Distrust",
+      "cust": "I spent 14 grand on this I know it seems like everybody's quieter than my unit I'm like what's going on... my main question is like you know I spent 14 grand... my point is why is those people's units quieter it is quiet.",
+      "answer": "I mean it really depends, that noise wise it's really hard to tell but performance wise and efficiency it was nice... like sometimes we put the new compressor on it, it makes louder somehow so it is really depends... just like the car, every single car with the same model has a little bit different.",
+      "tech": "Stanley Kim",
+      "date": "2026-08-05",
+      "grade": "great",
+      "closed": false,
+      "job": "671276469"
     }
   ]
 }
