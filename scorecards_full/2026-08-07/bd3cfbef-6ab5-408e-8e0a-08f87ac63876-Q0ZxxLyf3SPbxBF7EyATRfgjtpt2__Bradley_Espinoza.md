@@ -1,0 +1,1 @@
+Transcript corrupted or not a genuine Sierra Air customer call (reference to auto loans/refinancing with no HVAC context). Skipped per triage protocol.
