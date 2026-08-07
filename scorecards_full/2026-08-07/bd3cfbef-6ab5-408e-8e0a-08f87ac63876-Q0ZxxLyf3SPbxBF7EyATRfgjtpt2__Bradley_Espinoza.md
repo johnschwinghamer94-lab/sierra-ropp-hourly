@@ -1,0 +1,1 @@
+Skipped: Non-customer interaction; no HVAC service discussion; entirely personal conversation.
