@@ -1,17 +1,25 @@
-# Live Coaching Scorecard – Robert Silinzy
-**Call Date:** 2026-08-06 | **Job:** 672855914 | **Duration:** 5 min | **Outcome:** no-close
+# Coaching Card: Robert Silinzy
+
+**Call Details:**
+- Job: 672855914
+- Date: 2026-08-06
+- Duration: 5 minutes
+- RecId: 2d541345-cfac-4dc7-a59b-b849cce1164a-Dmp0XntHegO0HaJZZRXRfWYS5Wi1
 
 ## FSG Bands
-- **Welcome:** Moderate
-- **Assessment:** Solid
-- **Decision:** Weak
-- **Deliver:** Weak
+- Welcome: Solid
+- Assessment: Solid
+- Decision: Solid
+- Deliver: Solid
 
 ## Critical Actions
-- **Expectations:** ✗ Not Set
-- **Questions:** ✓ Asked good discovery questions
-- **Options:** ✗ Not Created
-- **Objections:** ✗ Not Handled
+- Expectations: ✗
+- Questions: ✓
+- Options: ✓
+- Objections: ✗
+
+## Outcome
+FLIPPED
 
 ## Coaching Tip
-**FIX — Set clear expectations before checking the outdoor unit:** name what you might find (capacitor, contactor, refrigerant leak) and tell the customer which issues you can fix today versus present as options.
+WIN — Presented clear options and customer commitment

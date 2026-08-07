@@ -1,10 +1,10 @@
-# Coaching Card: Noah Weng
+# Coaching Card: Cole Pantol
 
 **Call Details:**
-- Job: 672845196
-- Date: 2026-08-06
-- Duration: 7 minutes
-- RecId: bb34e6c7-7109-43b4-ba09-d0489c16cd1a-f8aRc5tAKRdW4Ktah4fP6cbaJrs1
+- Job: 673027924
+- Date: 2026-08-07
+- Duration: 12 minutes
+- RecId: 2644693d-3168-4d1e-981b-c5bcf1522a17-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
 
 ## FSG Bands
 - Welcome: Solid

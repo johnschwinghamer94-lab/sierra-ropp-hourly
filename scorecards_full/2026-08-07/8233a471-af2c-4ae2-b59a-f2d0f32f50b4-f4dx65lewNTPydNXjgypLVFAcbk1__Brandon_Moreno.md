@@ -1,19 +1,19 @@
-# Coaching Card: Noah Weng
+# Coaching Card: Brandon Moreno
 
 **Call Details:**
-- Job: 672845196
-- Date: 2026-08-06
-- Duration: 7 minutes
-- RecId: bb34e6c7-7109-43b4-ba09-d0489c16cd1a-f8aRc5tAKRdW4Ktah4fP6cbaJrs1
+- Job: 671214391
+- Date: 2026-08-07
+- Duration: 13 minutes
+- RecId: 8233a471-af2c-4ae2-b59a-f2d0f32f50b4-f4dx65lewNTPydNXjgypLVFAcbk1
 
 ## FSG Bands
 - Welcome: Solid
 - Assessment: Solid
-- Decision: Moderate
+- Decision: Solid
 - Deliver: Solid
 
 ## Critical Actions
-- Expectations: ✗
+- Expectations: ✓
 - Questions: ✓
 - Options: ✗
 - Objections: ✗

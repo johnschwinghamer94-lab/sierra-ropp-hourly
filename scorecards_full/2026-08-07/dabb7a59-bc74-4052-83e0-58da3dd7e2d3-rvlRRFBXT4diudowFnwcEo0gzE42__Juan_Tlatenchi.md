@@ -1,13 +1,13 @@
-# Coaching Card: Mario Castro
+# Coaching Card: Juan Tlatenchi
 
 **Call Details:**
-- Job: 662111653
-- Date: 2026-08-06
-- Duration: 60 minutes
-- RecId: 94043a7b-6a85-408a-9a71-3231d3df7b62-F8ZeOm4TrkOymEC2UFNijyrobEp2
+- Job: N/A
+- Date: 2026-08-07
+- Duration: 21 minutes
+- RecId: dabb7a59-bc74-4052-83e0-58da3dd7e2d3-rvlRRFBXT4diudowFnwcEo0gzE42
 
 ## FSG Bands
-- Welcome: Solid
+- Welcome: Moderate
 - Assessment: Solid
 - Decision: Solid
 - Deliver: Solid
@@ -19,7 +19,7 @@
 - Objections: ✗
 
 ## Outcome
-NO-CLOSE
+UNKNOWN
 
 ## Coaching Tip
 FIX — Reconnect benefits of recommended option to customer need

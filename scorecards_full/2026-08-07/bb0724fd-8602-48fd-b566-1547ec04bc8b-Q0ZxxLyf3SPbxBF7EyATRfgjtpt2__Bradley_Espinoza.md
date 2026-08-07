@@ -1,16 +1,16 @@
-# Coaching Card: Noah Weng
+# Coaching Card: Bradley Espinoza
 
 **Call Details:**
-- Job: 672845196
-- Date: 2026-08-06
-- Duration: 7 minutes
-- RecId: bb34e6c7-7109-43b4-ba09-d0489c16cd1a-f8aRc5tAKRdW4Ktah4fP6cbaJrs1
+- Job: 670666492
+- Date: 2026-08-07
+- Duration: 125 minutes
+- RecId: bb0724fd-8602-48fd-b566-1547ec04bc8b-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
 
 ## FSG Bands
 - Welcome: Solid
-- Assessment: Solid
-- Decision: Moderate
-- Deliver: Solid
+- Assessment: Moderate
+- Decision: Solid
+- Deliver: Moderate
 
 ## Critical Actions
 - Expectations: ✗
