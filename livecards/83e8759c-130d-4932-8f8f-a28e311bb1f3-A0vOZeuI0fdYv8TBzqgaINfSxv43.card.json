@@ -1,1 +1,0 @@
-{"recId": "83e8759c-130d-4932-8f8f-a28e311bb1f3-A0vOZeuI0fdYv8TBzqgaINfSxv43", "tech": "Corey Reding", "dateCreated": "2026-08-05", "skip": true, "reason": "Not a genuine customer interaction\u2014internal technician troubleshooting and repair dialogue only, no customer present"}

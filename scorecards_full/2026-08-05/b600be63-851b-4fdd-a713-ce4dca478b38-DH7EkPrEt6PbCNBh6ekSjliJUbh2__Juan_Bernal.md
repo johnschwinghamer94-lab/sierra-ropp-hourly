@@ -1,1 +1,0 @@
-Transcript corrupted - intelligible Spanish portion ends abruptly with repeated gibberish
