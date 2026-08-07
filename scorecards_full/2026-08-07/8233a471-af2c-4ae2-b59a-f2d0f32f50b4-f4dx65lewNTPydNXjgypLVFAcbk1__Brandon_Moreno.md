@@ -1,0 +1,25 @@
+# Brandon Moreno
+**Job:** DELACRUZ JASON, Job # 671214391
+**Duration:** 13 min
+
+{
+  "recId": "8233a471-af2c-4ae2-b59a-f2d0f32f50b4-f4dx65lewNTPydNXjgypLVFAcbk1",
+  "tech": "Brandon Moreno",
+  "jobNumber": "671214391",
+  "dateCreated": "2026-08-07",
+  "durationMin": 13,
+  "bands": {
+    "welcome": "Solid",
+    "assessment": "Solid",
+    "decision": "Moderate",
+    "deliver": "Moderate"
+  },
+  "critical": {
+    "expectations": true,
+    "questions": true,
+    "options": false,
+    "objections": false
+  },
+  "outcome": "unknown",
+  "tip": "FIX \u2014 Incomplete transcript limits scoring"
+}
