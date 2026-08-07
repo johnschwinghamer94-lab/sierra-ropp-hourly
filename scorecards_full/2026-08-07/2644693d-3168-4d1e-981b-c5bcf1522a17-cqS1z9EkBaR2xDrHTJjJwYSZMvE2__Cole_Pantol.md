@@ -1,0 +1,5 @@
+# Skipped
+
+RecId: 2644693d-3168-4d1e-981b-c5bcf1522a17-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
+Tech: Cole Pantol
+Reason: Transcript appears corrupted or misfiled. First half covers HVAC cooling issue but call ends abruptly with unrelated personal/legal discussion. Content does not match service call context.
