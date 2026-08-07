@@ -1,0 +1,1 @@
+Non-scoreable: Not a customer call; personal narrative content unrelated to HVAC service.

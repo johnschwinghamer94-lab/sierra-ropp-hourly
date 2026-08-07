@@ -1,0 +1,1 @@
+Non-scoreable: HVAC call contaminated with unrelated personal/family court content; insufficient customer service interaction.
