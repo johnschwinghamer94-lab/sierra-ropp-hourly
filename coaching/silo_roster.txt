@@ -5,9 +5,16 @@
 # duplicate row; the double-space "Nathan  Colquitt" is the live account and is kept.
 #
 # 2026-08-06 (John): -Francisco Valencia (promoted off SILO), +Jose Esquivel
-# (ServiceTitan tech id 665437151, BU 333). Jose Esquivel has NO row in
-# master-rep-list.csv yet, so this file is no longer purely derivable from that CSV
-# until he is added there with his Firebase UID / Siro team id.
+# (ServiceTitan tech id 665437151, BU 333).
+#
+# The "Source: master-rep-list.csv" line above is HISTORICAL — that CSV is dead.
+# Checked 2026-08-06: nothing in the live pipeline reads it; the only references are
+# PowerShell scripts and docs under "siro-test copy/" from the pre-Mac Windows era.
+# It was last edited 2026-07-18 and still lists 26 silo reps (incl. John Schwinghamer
+# and 12 departed people) while omitting Bradley Espinoza, David Canales and Jose
+# Esquivel. Espinoza and Canales have nonetheless received coaching plans every day,
+# which proves the CSV gates nothing. THIS FILE is the hand-maintained roster now —
+# do not go looking for a Siro UID to add someone here.
 #
 # 2026-08-06 drift reconciliation — this file had disagreed with
 # UPDATE_DASHBOARD.py's SILO/TEAM_A/TEAM_B (the list that drives the dashboard) for
