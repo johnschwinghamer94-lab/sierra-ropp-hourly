@@ -1,240 +1,714 @@
 {
-  "generated": "2026-08-06T17:08:50-07:00",
-  "date": "2026-08-05",
+  "generated": "2026-08-07T07:44:21-07:00",
+  "date": "2026-08-06",
   "reps": [
     {
+      "name": "Corey Reding",
+      "closeRate": "100%",
+      "calls": 3,
+      "strongest": "Diagnosis",
+      "weakest": "Options",
+      "bands": {
+        "welcome": "Solid",
+        "diagnosis": "Strong",
+        "options": "Moderate",
+        "close": "Strong on wins"
+      },
+      "critical": {
+        "expectations": true,
+        "options": false,
+        "membership": true,
+        "close": true
+      },
+      "headlineGap": "Only 2-3 options presented instead of 4+",
+      "focus": [
+        "Week 1: Before every presentation, write out 4 distinct options on the tablet \u2014 even if customer only needs one repair, add protection tiers",
+        "Week 2: Lead with the premium option first, then work down \u2014 customers anchor to the first number they hear",
+        "Week 3: Keep doing what's working \u2014 diagnosis first, trust built, confident close"
+      ],
+      "plan": "coaching/plans_service/2026-08-06/Corey_Reding.html"
+    },
+    {
       "name": "Stanley Kim",
-      "closeRate": "83%",
-      "calls": 6,
-      "strongest": "Diagnosis",
-      "weakest": "Options",
-      "bands": {"welcome": "Moderate", "diagnosis": "Strong", "options": "Weak", "close": "Solid"},
-      "critical": {"expectations": false, "options": false, "membership": false, "close": true},
-      "headlineGap": "Only 1 of 6 calls hit 4+ options despite strong diagnosis",
-      "focus": ["Week 1: Build 4-option menu for common repairs before presenting", "Week 2: Script expectations opening and deliver on every call", "Week 3: Add membership or referral ask to every option menu"],
-      "plan": "coaching/plans_service/2026-08-05/Stanley_Kim.html"
-    },
-    {
-      "name": "Pedro Manzanares",
-      "closeRate": "25%",
+      "closeRate": "50%",
       "calls": 4,
       "strongest": "Diagnosis",
       "weakest": "Options",
-      "bands": {"welcome": "Solid", "diagnosis": "Strong on wins", "options": "Weak", "close": "Weak"},
-      "critical": {"expectations": false, "options": false, "membership": false, "close": false},
-      "headlineGap": "0 of 4 calls hit 4+ options, single repair paths only",
-      "focus": ["Week 1: Write out 4 options for each diagnosis before presenting", "Week 2: Add membership to every presentation", "Week 3: End every call with a direct close question"],
-      "plan": "coaching/plans_service/2026-08-05/Pedro_Manzanares.html"
-    },
-    {
-      "name": "Joseph Byrd",
-      "closeRate": "75%",
-      "calls": 4,
-      "strongest": "Diagnosis",
-      "weakest": "Options",
-      "bands": {"welcome": "Strong on wins", "diagnosis": "Strong", "options": "Weak", "close": "Moderate"},
-      "critical": {"expectations": true, "options": false, "membership": false, "close": false},
-      "headlineGap": "Passive close language gives customers permission to wait",
-      "focus": ["Week 1: Replace permission language with choice language", "Week 2: Build 4+ options on every applicable call", "Week 3: Add membership to applicable calls consistently"],
-      "plan": "coaching/plans_service/2026-08-05/Joseph_Byrd.html"
-    },
-    {
-      "name": "Matthew Arnold",
-      "closeRate": "67%",
-      "calls": 3,
-      "strongest": "Diagnosis",
-      "weakest": "Membership",
-      "bands": {"welcome": "Strong", "diagnosis": "Strong", "options": "Moderate", "close": "Moderate"},
-      "critical": {"expectations": true, "options": true, "membership": false, "close": true},
-      "headlineGap": "Financing mentioned as afterthought after customer declined",
-      "focus": ["Week 1: Lead with financing as part of option price", "Week 2: Add membership for non-members consistently", "Week 3: Structure options with monthly payment visible"],
-      "plan": "coaching/plans_service/2026-08-05/Matthew_Arnold.html"
-    },
-    {
-      "name": "J Boothe",
-      "closeRate": "25%",
-      "calls": 4,
-      "strongest": "Diagnosis",
-      "weakest": "Close",
-      "bands": {"welcome": "Moderate", "diagnosis": "Solid", "options": "Weak", "close": "Weak"},
-      "critical": {"expectations": false, "options": false, "membership": false, "close": false},
-      "headlineGap": "Options positioned as FYI instead of structured choices",
-      "focus": ["Week 1: Structure options as numbered menu, not conversation", "Week 2: Set expectations at arrival on every call", "Week 3: End with which option works best, not let me know"],
-      "plan": "coaching/plans_service/2026-08-05/J_Boothe.html"
-    },
-    {
-      "name": "Josue Arciga",
-      "closeRate": "67%",
-      "calls": 3,
-      "strongest": "Diagnosis",
-      "weakest": "Options",
-      "bands": {"welcome": "Moderate", "diagnosis": "Solid", "options": "Weak", "close": "Solid"},
-      "critical": {"expectations": false, "options": false, "membership": true, "close": true},
-      "headlineGap": "Single repair paths only, 0 of 3 calls hit 4+ options",
-      "focus": ["Week 1: Build 4 options for each repair type", "Week 2: Set expectations upfront on every call", "Week 3: Structure options as menu with pricing"],
-      "plan": "coaching/plans_service/2026-08-05/Josue_Arciga.html"
+      "bands": {
+        "welcome": "Solid",
+        "diagnosis": "Strong",
+        "options": "Moderate",
+        "close": "Solid"
+      },
+      "critical": {
+        "expectations": true,
+        "options": false,
+        "membership": true,
+        "close": false
+      },
+      "headlineGap": "Accepts deferrals without objection handling",
+      "focus": [
+        "Week 1: Build 4+ options on EVERY call, even maintenance visits \u2014 capacitor, soft start, surge, membership",
+        "Week 2: Practice one line: 'Let me save you a trip back by ordering parts today while you decide'",
+        "Week 3: Use ALTEZ as template \u2014 5 options, clear pricing, direct ask"
+      ],
+      "plan": "coaching/plans_service/2026-08-06/Stanley_Kim.html"
     },
     {
       "name": "Chris Thomas",
-      "closeRate": "0%",
+      "closeRate": "33%",
+      "calls": 3,
+      "strongest": "Diagnosis",
+      "weakest": "Close",
+      "bands": {
+        "welcome": "Solid",
+        "diagnosis": "Strong",
+        "options": "Moderate",
+        "close": "Weak"
+      },
+      "critical": {
+        "expectations": true,
+        "options": false,
+        "membership": true,
+        "close": false
+      },
+      "headlineGap": "Talks himself out of sales",
+      "focus": [
+        "Week 1: Every diagnosis deserves a solution TODAY. No more 'it's not failing yet' \u2014 if you found it, fix it",
+        "Week 2: Build 4 options for every call: repair, repair + protection, premium package, do-nothing risk",
+        "Week 3: Stop deferring to manufacturers or callbacks. Ask for the business: 'Which option works best for you?'"
+      ],
+      "plan": "coaching/plans_service/2026-08-06/Chris_Thomas.html"
+    },
+    {
+      "name": "Jose Huesca",
+      "closeRate": "33%",
+      "calls": 3,
+      "strongest": "Diagnosis",
+      "weakest": "Close",
+      "bands": {
+        "welcome": "Moderate",
+        "diagnosis": "Strong",
+        "options": "Solid",
+        "close": "Weak"
+      },
+      "critical": {
+        "expectations": true,
+        "options": false,
+        "membership": false,
+        "close": false
+      },
+      "headlineGap": "Accepts objections without response",
+      "focus": [
+        "Week 1: On every 'hold off,' ask: 'Is it timing or price?' Then offer financing or scheduling",
+        "Week 2: 4 options on every call, even when no warranty: repair, repair + protection, premium, do-nothing risk",
+        "Week 3: Formal greeting at the door on every call: name, company, agenda"
+      ],
+      "plan": "coaching/plans_service/2026-08-06/Jose_Huesca.html"
+    },
+    {
+      "name": "Joseph Byrd",
+      "closeRate": "50%",
+      "calls": 4,
+      "strongest": "Welcome",
+      "weakest": "Options",
+      "bands": {
+        "welcome": "Strong",
+        "diagnosis": "Strong",
+        "options": "Weak",
+        "close": "Moderate"
+      },
+      "critical": {
+        "expectations": true,
+        "options": false,
+        "membership": false,
+        "close": true
+      },
+      "headlineGap": "Single-option presentations",
+      "focus": [
+        "Week 1: Create a 4-tier template: basic, protected, premium, decline. Use it on every call",
+        "Week 2: Mention membership on 100% of calls, even when already enrolled (renewal, referral ask)",
+        "Week 3: Keep doing what's working: warm welcomes, clear agendas, thorough diagnosis"
+      ],
+      "plan": "coaching/plans_service/2026-08-06/Joseph_Byrd.html"
+    },
+    {
+      "name": "Juan Bernal",
+      "closeRate": "67%",
       "calls": 3,
       "strongest": "Diagnosis",
       "weakest": "Options",
-      "bands": {"welcome": "Weak", "diagnosis": "Moderate", "options": "Weak", "close": "Weak"},
-      "critical": {"expectations": false, "options": false, "membership": false, "close": false},
-      "headlineGap": "Pre-qualifying mindset, decided not to try before presenting",
-      "focus": ["Week 1: Present options to every customer regardless of situation", "Week 2: Set expectations at arrival consistently", "Week 3: End every call with a direct ask"],
-      "plan": "coaching/plans_service/2026-08-05/Chris_Thomas.html"
+      "bands": {
+        "welcome": "Strong",
+        "diagnosis": "Strong",
+        "options": "Moderate",
+        "close": "Solid"
+      },
+      "critical": {
+        "expectations": true,
+        "options": false,
+        "membership": true,
+        "close": false
+      },
+      "headlineGap": "Inconsistent option depth",
+      "focus": [
+        "Week 1: Use Diamond/Gold/Silver/Bronze naming on every call. Same structure, different components",
+        "Week 2: Even tune-ups get options: filters, surge, soft start, membership upgrade",
+        "Week 3: End every presentation with 'Which option works best?' \u2014 no exceptions"
+      ],
+      "plan": "coaching/plans_service/2026-08-06/Juan_Bernal.html"
+    },
+    {
+      "name": "J Boothe",
+      "closeRate": "50%",
+      "calls": 2,
+      "strongest": "Diagnosis",
+      "weakest": "Options",
+      "bands": {
+        "welcome": "Solid",
+        "diagnosis": "Strong",
+        "options": "Weak",
+        "close": "Weak"
+      },
+      "critical": {
+        "expectations": true,
+        "options": false,
+        "membership": false,
+        "close": false
+      },
+      "headlineGap": "Backs off on first hesitation",
+      "focus": [
+        "Week 1: When customer hesitates, ask ONE follow-up: 'Is it price or timing?' Then offer an alternative",
+        "Week 2: Build tiered options on every call: basic, protected, premium, decline-risk",
+        "Week 3: Ask membership status on every call: 'Are you on our maintenance plan?'"
+      ],
+      "plan": "coaching/plans_service/2026-08-06/J_Boothe.html"
+    },
+    {
+      "name": "Pedro Manzanares",
+      "closeRate": "100%",
+      "calls": 2,
+      "strongest": "Welcome",
+      "weakest": "Options",
+      "bands": {
+        "welcome": "Strong",
+        "diagnosis": "Strong",
+        "options": "Weak",
+        "close": "Solid"
+      },
+      "critical": {
+        "expectations": false,
+        "options": false,
+        "membership": true,
+        "close": true
+      },
+      "headlineGap": "Single-option presentations",
+      "focus": [
+        "Week 1: Build 4 options on every call, even warranty: labor, labor + protection, premium, decline-risk",
+        "Week 2: Every tune-up gets options: filters, surge, soft start, coil cleaning",
+        "Week 3: Maintain the textbook welcome \u2014 it's working"
+      ],
+      "plan": "coaching/plans_service/2026-08-06/Pedro_Manzanares.html"
+    },
+    {
+      "name": "Tyler Battershell",
+      "closeRate": "0%",
+      "calls": 3,
+      "strongest": "Diagnosis",
+      "weakest": "Close",
+      "bands": {
+        "welcome": "Moderate",
+        "diagnosis": "Strong",
+        "options": "Weak",
+        "close": "Weak"
+      },
+      "critical": {
+        "expectations": false,
+        "options": false,
+        "membership": true,
+        "close": false
+      },
+      "headlineGap": "Accepts deferrals without counter",
+      "focus": [
+        "Week 1: When customer says 'call tomorrow,' respond: 'I can lock in parts now so we're first on the schedule. Want that?'",
+        "Week 2: Agenda at the door: what you'll check, how long it takes, what happens next",
+        "Week 3: Build tiered menu: repair, repair + protection, premium, do-nothing risk"
+      ],
+      "plan": "coaching/plans_service/2026-08-06/Tyler_Battershell.html"
     },
     {
       "name": "Jack Vanos",
       "closeRate": "100%",
+      "calls": 2,
+      "strongest": "Diagnosis",
+      "weakest": "Options",
+      "bands": {
+        "welcome": "Solid",
+        "diagnosis": "Strong",
+        "options": "Weak",
+        "close": "Weak"
+      },
+      "critical": {
+        "expectations": true,
+        "options": false,
+        "membership": false,
+        "close": false
+      },
+      "headlineGap": "Missed upsell on install visits",
+      "focus": [
+        "Week 1: After every install, offer one add-on: surge, soft start, membership",
+        "Week 2: Ask membership status on every call, even installs: 'Are you on our maintenance plan?'",
+        "Week 3: When customer asks about protection/prevention, transition to options"
+      ],
+      "plan": "coaching/plans_service/2026-08-06/Jack_Vanos.html"
+    },
+    {
+      "name": "Fabian Pantoja",
+      "closeRate": "0%",
+      "calls": 1,
+      "strongest": "Diagnosis",
+      "weakest": "Close",
+      "bands": {
+        "welcome": "Solid",
+        "diagnosis": "Strong",
+        "options": "Weak",
+        "close": "Weak"
+      },
+      "critical": {
+        "expectations": true,
+        "options": false,
+        "membership": true,
+        "close": false
+      },
+      "headlineGap": "Agrees with objections",
+      "focus": [
+        "Week 1: When customer declines, don't agree \u2014 ask: 'What's the main concern?' Then offer alternatives",
+        "Week 2: Build tiered menu for every diagnosis, even noise complaints",
+        "Week 3: End every presentation with 'Which option works best?' \u2014 no exceptions"
+      ],
+      "plan": "coaching/plans_service/2026-08-06/Fabian_Pantoja.html"
+    },
+    {
+      "name": "Josue Arciga",
+      "closeRate": "100%",
       "calls": 1,
       "strongest": "Diagnosis",
       "weakest": "Options",
-      "bands": {"welcome": "Moderate", "diagnosis": "Solid", "options": "Weak", "close": "Solid"},
-      "critical": {"expectations": false, "options": false, "membership": true, "close": true},
-      "headlineGap": "No structured menu, verbal quotes only",
-      "focus": ["Week 1: Use tablet to present options as visual menu", "Week 2: Set diagnostic fee expectation at arrival", "Week 3: Build 4+ options including add-ons"],
-      "plan": "coaching/plans_service/2026-08-05/Jack_Vanos.html"
+      "bands": {
+        "welcome": "Solid",
+        "diagnosis": "Strong",
+        "options": "Weak",
+        "close": "Moderate"
+      },
+      "critical": {
+        "expectations": true,
+        "options": false,
+        "membership": true,
+        "close": false
+      },
+      "headlineGap": "Add-ons after instead of options before",
+      "focus": [
+        "Week 1: Build full menu BEFORE presenting first price. Include add-ons as tiers, not afterthoughts",
+        "Week 2: End every presentation with 'Which option works best?' \u2014 don't wait for customer to volunteer",
+        "Week 3: The 'dead battery' explanation works \u2014 keep using it"
+      ],
+      "plan": "coaching/plans_service/2026-08-06/Josue_Arciga.html"
     },
     {
-      "name": "Juan Bernal",
+      "name": "Matthew Graves",
+      "closeRate": "50%",
+      "calls": 2,
+      "strongest": "Diagnosis",
+      "weakest": "Close",
+      "bands": {
+        "welcome": "Solid",
+        "diagnosis": "Strong",
+        "options": "Moderate",
+        "close": "Moderate"
+      },
+      "critical": {
+        "expectations": false,
+        "options": false,
+        "membership": true,
+        "close": true
+      },
+      "headlineGap": "Referral-out with no capture",
+      "focus": [
+        "Week 1: When referring to another trade, schedule Sierra follow-up: 'Call us when electrical is done, I'll come back same day'",
+        "Week 2: If waiving diagnostic fee, require membership or referral in exchange",
+        "Week 3: Use BRAVO as template: diagnosis, membership bundle, discount, direct ask"
+      ],
+      "plan": "coaching/plans_service/2026-08-06/Matthew_Graves.html"
+    },
+    {
+      "name": "Mike (Jiangtao) Li",
+      "closeRate": "100%",
+      "calls": 1,
+      "strongest": "Diagnosis",
+      "weakest": "Options",
+      "bands": {
+        "welcome": "Solid",
+        "diagnosis": "Strong",
+        "options": "Weak",
+        "close": "Moderate"
+      },
+      "critical": {
+        "expectations": false,
+        "options": false,
+        "membership": false,
+        "close": true
+      },
+      "headlineGap": "Single-option presentation",
+      "focus": [
+        "Week 1: Build 3-4 options for every repair: basic, enhanced, premium",
+        "Week 2: Ask existing customers about membership: 'Are you on our plan yet?'",
+        "Week 3: Even with returning customers, set agenda: 'I'll diagnose, explain options, you decide'"
+      ],
+      "plan": "coaching/plans_service/2026-08-06/Mike_(Jiangtao)_Li.html"
+    },
+    {
+      "name": "Mario Conant",
       "closeRate": "33%",
       "calls": 3,
       "strongest": "Welcome",
       "weakest": "Options",
-      "bands": {"welcome": "Strong", "diagnosis": "Solid", "options": "Moderate", "close": "Weak"},
-      "critical": {"expectations": true, "options": false, "membership": false, "close": false},
-      "headlineGap": "Only 2 options presented despite strong welcome",
-      "focus": ["Week 1: Build 4+ options after every diagnosis", "Week 2: Add membership to every presentation", "Week 3: End with direct close question"],
-      "plan": "coaching/plans_service/2026-08-05/Juan_Bernal.html"
+      "bands": {
+        "welcome": "Strong",
+        "diagnosis": "Solid",
+        "options": "Weak",
+        "close": "Moderate"
+      },
+      "critical": {
+        "expectations": true,
+        "options": false,
+        "membership": false,
+        "close": false
+      },
+      "headlineGap": "Unstructured price mentions",
+      "focus": [
+        "Week 1: Use DAVIS agenda format on every call: safety, cleanliness, functionality, options, ask",
+        "Week 2: Never say a price without context. Always present as part of tiered menu",
+        "Week 3: End every presentation with 'Which option works best?' \u2014 no open-ended endings"
+      ],
+      "plan": "coaching/plans_service/2026-08-06/Mario_Conant.html"
     },
     {
-      "name": "Matthew Graves",
+      "name": "AJ Munoz",
       "closeRate": "0%",
       "calls": 1,
       "strongest": "Diagnosis",
       "weakest": "Options",
-      "bands": {"welcome": "Weak", "diagnosis": "Moderate", "options": "Weak", "close": "Weak"},
-      "critical": {"expectations": false, "options": false, "membership": true, "close": false},
-      "headlineGap": "No options on courtesy visit, missed proactive opportunity",
-      "focus": ["Week 1: Present preventive options on every visit including courtesy", "Week 2: Set expectations at arrival", "Week 3: End with direct ask even on follow-up visits"],
-      "plan": "coaching/plans_service/2026-08-05/Matthew_Graves.html"
-    },
-    {
-      "name": "Adrian Muniz",
-      "closeRate": "100%",
-      "calls": 1,
-      "strongest": "Close",
-      "weakest": "Options",
-      "bands": {"welcome": "Moderate", "diagnosis": "Strong", "options": "Moderate", "close": "Strong on wins"},
-      "critical": {"expectations": false, "options": false, "membership": true, "close": true},
-      "headlineGap": "Single solution path, closed well but no good/better/best",
-      "focus": ["Week 1: Add repair tiers to compressor replacements", "Week 2: Include surge protection and extended warranty as options", "Week 3: Set expectations when arriving mid-call"],
-      "plan": "coaching/plans_service/2026-08-05/Adrian_Muniz.html"
-    },
-    {
-      "name": "Fabian Pantoja",
-      "closeRate": "unknown",
-      "calls": 1,
-      "strongest": "Diagnosis",
-      "weakest": "Options",
-      "bands": {"welcome": "Moderate", "diagnosis": "Solid", "options": "Weak", "close": "Weak"},
-      "critical": {"expectations": false, "options": false, "membership": false, "close": false},
-      "headlineGap": "Incomplete transcript, recording ended before options",
-      "focus": ["Week 1: Ensure full recording capture", "Week 2: Build options menu from diagnosis", "Week 3: Set expectations at arrival"],
-      "plan": "coaching/plans_service/2026-08-05/Fabian_Pantoja.html"
+      "bands": {
+        "welcome": "Solid",
+        "diagnosis": "Solid",
+        "options": "Weak",
+        "close": "Weak"
+      },
+      "critical": {
+        "expectations": true,
+        "options": false,
+        "membership": false,
+        "close": false
+      },
+      "headlineGap": "Recording ends before options/close",
+      "focus": [
+        "Week 1: Verify recording is running before AND after options presentation",
+        "Week 2: Build 4-tier menu for every diagnosis: basic, protected, premium, decline-risk",
+        "Week 3: Ask membership status on every call"
+      ],
+      "plan": "coaching/plans_service/2026-08-06/AJ_Munoz.html"
     }
   ],
   "skipped": [
-    {"rep": "Xavier Paredes", "reason": "Install job and service investigation with no options/close captured"},
-    {"rep": "Tyler Battershell", "reason": "Options/close not captured, commercial inspection"},
-    {"rep": "Mike (Jiangtao) Li", "reason": "Pre-sold install and fragmentary transcript"},
-    {"rep": "Mario Conant", "reason": "Thermostat install pre-sold, fragmentary transcript"},
-    {"rep": "Kevin Rodriguez", "reason": "Fragmentary transcripts, no options/close captured"},
-    {"rep": "Jose Huesca", "reason": "Fragmentary transcript and maintenance setup only"},
-    {"rep": "Corey Reding", "reason": "Warranty work and professionalism concerns noted"},
-    {"rep": "AJ Munoz", "reason": "Recordings end before presentation on both calls"}
+    {
+      "rep": "Adrian Muniz",
+      "reason": "Both transcripts unusable: one corrupted/mixed with personal content, one cut off before options"
+    },
+    {
+      "rep": "Matthew Arnold",
+      "reason": "All 3 calls non-scoreable: SAM maintenance visit, parts install completion, thermostat callback"
+    },
+    {
+      "rep": "Michael Washington",
+      "reason": "Both transcripts incomplete: signature collection only, diagnosis cut off"
+    },
+    {
+      "rep": "Xavier Paredes",
+      "reason": "All 4 calls non-scoreable: inspection verification, warranty callbacks, parts install completion"
+    }
   ],
-  "dates": ["2026-08-05", "2026-08-04", "2026-08-03"],
+  "dates": [
+    "2026-08-06",
+    "2026-08-05",
+    "2026-08-04",
+    "2026-08-03"
+  ],
   "history": {
-    "AJ Munoz": [
-      {"date": "2026-08-03", "plan": "coaching/plans_service/2026-08-03/AJ_Munoz.html"}
-    ],
-    "Adrian Muniz": [
-      {"date": "2026-08-05", "plan": "coaching/plans_service/2026-08-05/Adrian_Muniz.html"},
-      {"date": "2026-08-04", "plan": "coaching/plans_service/2026-08-04/Adrian_Muniz.html"},
-      {"date": "2026-08-03", "plan": "coaching/plans_service/2026-08-03/Adrian_Muniz.html"}
-    ],
     "Chris Thomas": [
-      {"date": "2026-08-05", "plan": "coaching/plans_service/2026-08-05/Chris_Thomas.html"},
-      {"date": "2026-08-04", "plan": "coaching/plans_service/2026-08-04/Chris_Thomas.html"},
-      {"date": "2026-08-03", "plan": "coaching/plans_service/2026-08-03/Chris_Thomas.html"}
-    ],
-    "Corey Reding": [
-      {"date": "2026-08-04", "plan": "coaching/plans_service/2026-08-04/Corey_Reding.html"},
-      {"date": "2026-08-03", "plan": "coaching/plans_service/2026-08-03/Corey_Reding.html"}
-    ],
-    "Fabian Pantoja": [
-      {"date": "2026-08-05", "plan": "coaching/plans_service/2026-08-05/Fabian_Pantoja.html"}
-    ],
-    "J Boothe": [
-      {"date": "2026-08-05", "plan": "coaching/plans_service/2026-08-05/J_Boothe.html"},
-      {"date": "2026-08-04", "plan": "coaching/plans_service/2026-08-04/J_Boothe.html"},
-      {"date": "2026-08-03", "plan": "coaching/plans_service/2026-08-03/J_Boothe.html"}
-    ],
-    "Jack Vanos": [
-      {"date": "2026-08-05", "plan": "coaching/plans_service/2026-08-05/Jack_Vanos.html"},
-      {"date": "2026-08-04", "plan": "coaching/plans_service/2026-08-04/Jack_Vanos.html"}
-    ],
-    "Jose Huesca": [
-      {"date": "2026-08-03", "plan": "coaching/plans_service/2026-08-03/Jose_Huesca.html"}
-    ],
-    "Joseph Byrd": [
-      {"date": "2026-08-05", "plan": "coaching/plans_service/2026-08-05/Joseph_Byrd.html"},
-      {"date": "2026-08-04", "plan": "coaching/plans_service/2026-08-04/Joseph_Byrd.html"},
-      {"date": "2026-08-03", "plan": "coaching/plans_service/2026-08-03/Joseph_Byrd.html"}
+      {
+        "date": "2026-08-06",
+        "plan": "coaching/plans_service/2026-08-06/Chris_Thomas.html"
+      },
+      {
+        "date": "2026-08-05",
+        "plan": "coaching/plans_service/2026-08-05/Chris_Thomas.html"
+      },
+      {
+        "date": "2026-08-04",
+        "plan": "coaching/plans_service/2026-08-04/Chris_Thomas.html"
+      },
+      {
+        "date": "2026-08-03",
+        "plan": "coaching/plans_service/2026-08-03/Chris_Thomas.html"
+      }
     ],
     "Josue Arciga": [
-      {"date": "2026-08-05", "plan": "coaching/plans_service/2026-08-05/Josue_Arciga.html"},
-      {"date": "2026-08-04", "plan": "coaching/plans_service/2026-08-04/Josue_Arciga.html"},
-      {"date": "2026-08-03", "plan": "coaching/plans_service/2026-08-03/Josue_Arciga.html"}
+      {
+        "date": "2026-08-06",
+        "plan": "coaching/plans_service/2026-08-06/Josue_Arciga.html"
+      },
+      {
+        "date": "2026-08-05",
+        "plan": "coaching/plans_service/2026-08-05/Josue_Arciga.html"
+      },
+      {
+        "date": "2026-08-04",
+        "plan": "coaching/plans_service/2026-08-04/Josue_Arciga.html"
+      },
+      {
+        "date": "2026-08-03",
+        "plan": "coaching/plans_service/2026-08-03/Josue_Arciga.html"
+      }
+    ],
+    "J Boothe": [
+      {
+        "date": "2026-08-06",
+        "plan": "coaching/plans_service/2026-08-06/J_Boothe.html"
+      },
+      {
+        "date": "2026-08-05",
+        "plan": "coaching/plans_service/2026-08-05/J_Boothe.html"
+      },
+      {
+        "date": "2026-08-04",
+        "plan": "coaching/plans_service/2026-08-04/J_Boothe.html"
+      },
+      {
+        "date": "2026-08-03",
+        "plan": "coaching/plans_service/2026-08-03/J_Boothe.html"
+      }
     ],
     "Juan Bernal": [
-      {"date": "2026-08-05", "plan": "coaching/plans_service/2026-08-05/Juan_Bernal.html"},
-      {"date": "2026-08-04", "plan": "coaching/plans_service/2026-08-04/Juan_Bernal.html"},
-      {"date": "2026-08-03", "plan": "coaching/plans_service/2026-08-03/Juan_Bernal.html"}
+      {
+        "date": "2026-08-06",
+        "plan": "coaching/plans_service/2026-08-06/Juan_Bernal.html"
+      },
+      {
+        "date": "2026-08-05",
+        "plan": "coaching/plans_service/2026-08-05/Juan_Bernal.html"
+      },
+      {
+        "date": "2026-08-04",
+        "plan": "coaching/plans_service/2026-08-04/Juan_Bernal.html"
+      },
+      {
+        "date": "2026-08-03",
+        "plan": "coaching/plans_service/2026-08-03/Juan_Bernal.html"
+      }
     ],
-    "Kevin Rodriguez": [
-      {"date": "2026-08-04", "plan": "coaching/plans_service/2026-08-04/Kevin_Rodriguez.html"},
-      {"date": "2026-08-03", "plan": "coaching/plans_service/2026-08-03/Kevin_Rodriguez.html"}
+    "Jose Huesca": [
+      {
+        "date": "2026-08-06",
+        "plan": "coaching/plans_service/2026-08-06/Jose_Huesca.html"
+      },
+      {
+        "date": "2026-08-03",
+        "plan": "coaching/plans_service/2026-08-03/Jose_Huesca.html"
+      }
     ],
-    "Mario Conant": [
-      {"date": "2026-08-04", "plan": "coaching/plans_service/2026-08-04/Mario_Conant.html"},
-      {"date": "2026-08-03", "plan": "coaching/plans_service/2026-08-03/Mario_Conant.html"}
-    ],
-    "Matthew Arnold": [
-      {"date": "2026-08-05", "plan": "coaching/plans_service/2026-08-05/Matthew_Arnold.html"},
-      {"date": "2026-08-04", "plan": "coaching/plans_service/2026-08-04/Matthew_Arnold.html"},
-      {"date": "2026-08-03", "plan": "coaching/plans_service/2026-08-03/Matthew_Arnold.html"}
+    "Corey Reding": [
+      {
+        "date": "2026-08-06",
+        "plan": "coaching/plans_service/2026-08-06/Corey_Reding.html"
+      },
+      {
+        "date": "2026-08-04",
+        "plan": "coaching/plans_service/2026-08-04/Corey_Reding.html"
+      },
+      {
+        "date": "2026-08-03",
+        "plan": "coaching/plans_service/2026-08-03/Corey_Reding.html"
+      }
     ],
     "Matthew Graves": [
-      {"date": "2026-08-05", "plan": "coaching/plans_service/2026-08-05/Matthew_Graves.html"},
-      {"date": "2026-08-04", "plan": "coaching/plans_service/2026-08-04/Matthew_Graves.html"},
-      {"date": "2026-08-03", "plan": "coaching/plans_service/2026-08-03/Matthew_Graves.html"}
+      {
+        "date": "2026-08-06",
+        "plan": "coaching/plans_service/2026-08-06/Matthew_Graves.html"
+      },
+      {
+        "date": "2026-08-05",
+        "plan": "coaching/plans_service/2026-08-05/Matthew_Graves.html"
+      },
+      {
+        "date": "2026-08-04",
+        "plan": "coaching/plans_service/2026-08-04/Matthew_Graves.html"
+      },
+      {
+        "date": "2026-08-03",
+        "plan": "coaching/plans_service/2026-08-03/Matthew_Graves.html"
+      }
+    ],
+    "Mario Conant": [
+      {
+        "date": "2026-08-06",
+        "plan": "coaching/plans_service/2026-08-06/Mario_Conant.html"
+      },
+      {
+        "date": "2026-08-04",
+        "plan": "coaching/plans_service/2026-08-04/Mario_Conant.html"
+      },
+      {
+        "date": "2026-08-03",
+        "plan": "coaching/plans_service/2026-08-03/Mario_Conant.html"
+      }
+    ],
+    "AJ Munoz": [
+      {
+        "date": "2026-08-06",
+        "plan": "coaching/plans_service/2026-08-06/AJ_Munoz.html"
+      },
+      {
+        "date": "2026-08-03",
+        "plan": "coaching/plans_service/2026-08-03/AJ_Munoz.html"
+      }
+    ],
+    "Fabian Pantoja": [
+      {
+        "date": "2026-08-06",
+        "plan": "coaching/plans_service/2026-08-06/Fabian_Pantoja.html"
+      },
+      {
+        "date": "2026-08-05",
+        "plan": "coaching/plans_service/2026-08-05/Fabian_Pantoja.html"
+      }
+    ],
+    "Mike (Jiangtao) Li": [
+      {
+        "date": "2026-08-06",
+        "plan": "coaching/plans_service/2026-08-06/Mike_(Jiangtao)_Li.html"
+      }
+    ],
+    "Jack Vanos": [
+      {
+        "date": "2026-08-06",
+        "plan": "coaching/plans_service/2026-08-06/Jack_Vanos.html"
+      },
+      {
+        "date": "2026-08-05",
+        "plan": "coaching/plans_service/2026-08-05/Jack_Vanos.html"
+      },
+      {
+        "date": "2026-08-04",
+        "plan": "coaching/plans_service/2026-08-04/Jack_Vanos.html"
+      }
+    ],
+    "Joseph Byrd": [
+      {
+        "date": "2026-08-06",
+        "plan": "coaching/plans_service/2026-08-06/Joseph_Byrd.html"
+      },
+      {
+        "date": "2026-08-05",
+        "plan": "coaching/plans_service/2026-08-05/Joseph_Byrd.html"
+      },
+      {
+        "date": "2026-08-04",
+        "plan": "coaching/plans_service/2026-08-04/Joseph_Byrd.html"
+      },
+      {
+        "date": "2026-08-03",
+        "plan": "coaching/plans_service/2026-08-03/Joseph_Byrd.html"
+      }
     ],
     "Pedro Manzanares": [
-      {"date": "2026-08-05", "plan": "coaching/plans_service/2026-08-05/Pedro_Manzanares.html"},
-      {"date": "2026-08-03", "plan": "coaching/plans_service/2026-08-03/Pedro_Manzanares.html"}
+      {
+        "date": "2026-08-06",
+        "plan": "coaching/plans_service/2026-08-06/Pedro_Manzanares.html"
+      },
+      {
+        "date": "2026-08-05",
+        "plan": "coaching/plans_service/2026-08-05/Pedro_Manzanares.html"
+      },
+      {
+        "date": "2026-08-03",
+        "plan": "coaching/plans_service/2026-08-03/Pedro_Manzanares.html"
+      }
     ],
     "Stanley Kim": [
-      {"date": "2026-08-05", "plan": "coaching/plans_service/2026-08-05/Stanley_Kim.html"},
-      {"date": "2026-08-04", "plan": "coaching/plans_service/2026-08-04/Stanley_Kim.html"},
-      {"date": "2026-08-03", "plan": "coaching/plans_service/2026-08-03/Stanley_Kim.html"}
+      {
+        "date": "2026-08-06",
+        "plan": "coaching/plans_service/2026-08-06/Stanley_Kim.html"
+      },
+      {
+        "date": "2026-08-05",
+        "plan": "coaching/plans_service/2026-08-05/Stanley_Kim.html"
+      },
+      {
+        "date": "2026-08-04",
+        "plan": "coaching/plans_service/2026-08-04/Stanley_Kim.html"
+      },
+      {
+        "date": "2026-08-03",
+        "plan": "coaching/plans_service/2026-08-03/Stanley_Kim.html"
+      }
     ],
     "Tyler Battershell": [
-      {"date": "2026-08-03", "plan": "coaching/plans_service/2026-08-03/Tyler_Battershell.html"}
+      {
+        "date": "2026-08-06",
+        "plan": "coaching/plans_service/2026-08-06/Tyler_Battershell.html"
+      },
+      {
+        "date": "2026-08-03",
+        "plan": "coaching/plans_service/2026-08-03/Tyler_Battershell.html"
+      }
+    ],
+    "Matthew Arnold": [
+      {
+        "date": "2026-08-05",
+        "plan": "coaching/plans_service/2026-08-05/Matthew_Arnold.html"
+      },
+      {
+        "date": "2026-08-04",
+        "plan": "coaching/plans_service/2026-08-04/Matthew_Arnold.html"
+      },
+      {
+        "date": "2026-08-03",
+        "plan": "coaching/plans_service/2026-08-03/Matthew_Arnold.html"
+      }
+    ],
+    "Adrian Muniz": [
+      {
+        "date": "2026-08-05",
+        "plan": "coaching/plans_service/2026-08-05/Adrian_Muniz.html"
+      },
+      {
+        "date": "2026-08-04",
+        "plan": "coaching/plans_service/2026-08-04/Adrian_Muniz.html"
+      },
+      {
+        "date": "2026-08-03",
+        "plan": "coaching/plans_service/2026-08-03/Adrian_Muniz.html"
+      }
+    ],
+    "Kevin Rodriguez": [
+      {
+        "date": "2026-08-04",
+        "plan": "coaching/plans_service/2026-08-04/Kevin_Rodriguez.html"
+      },
+      {
+        "date": "2026-08-03",
+        "plan": "coaching/plans_service/2026-08-03/Kevin_Rodriguez.html"
+      }
     ]
   }
 }
