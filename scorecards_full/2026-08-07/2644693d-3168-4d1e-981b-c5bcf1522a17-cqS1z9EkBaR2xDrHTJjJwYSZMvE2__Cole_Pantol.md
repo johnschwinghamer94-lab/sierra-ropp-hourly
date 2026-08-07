@@ -1,0 +1,1 @@
+Non-scoreable: corrupted transcript with unrelated personal conversation mixed into HVAC call content.
