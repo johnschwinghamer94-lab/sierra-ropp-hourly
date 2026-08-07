@@ -1,0 +1,1 @@
+Non-scoreable recording - transcript contains customer service call segment but includes substantial personal content unrelated to HVAC service

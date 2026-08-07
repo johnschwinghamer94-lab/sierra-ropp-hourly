@@ -1,0 +1,1 @@
+Non-scoreable recording - personal content, not a genuine customer interaction

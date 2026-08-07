@@ -1,0 +1,1 @@
+Transcript incomplete/corrupted - truncated with garbled text
