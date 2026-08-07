@@ -77,9 +77,11 @@ SELF_UPDATE_CWD = Path(os.environ.get("GITHUB_WORKSPACE", ".")).resolve()
 try:
     from UPDATE_DASHBOARD import SILO as ROSTER
 except Exception:
+    # Mirror of UPDATE_DASHBOARD.SILO — used only when that import fails.
+    # 2026-08-06: -Francisco Valencia (promoted off SILO), +Jose Esquivel (TEAM_A).
     ROSTER = ["Alex - Oleksiy Yakovchuk", "Noah Weng", "Joe Mendoza", "Benjamin Wyllie",
               "Nikko April", "Andrew Trujillo", "Juan Tlatenchi", "David Canales",
-              "Brandon Moreno", "Francisco Valencia", "Mario Castro", "Cole Pantol",
+              "Jose Esquivel", "Brandon Moreno", "Mario Castro", "Cole Pantol",
               "Nathan Colquitt", "Robert Silinzy", "Andrew Alonso", "Bradley Espinoza"]
 
 # ── Siro "not recording" check (John, 2026-07-25) ────────────────────────────
@@ -864,8 +866,12 @@ def sheet_name(full):
     return _SHEET_NAMES.get(full) or (full.split()[0].upper() if full else "")
 
 # These techs bonus under another manager — never logged to John's sheet.
+# This set mirrors UPDATE_DASHBOARD.TEAM_B; keep the two in step.
+# 2026-08-06: -Francisco Valencia (promoted off SILO, so off TEAM_B too). Jose
+# Esquivel joins TEAM_A and is deliberately NOT added here — Team A bonuses to
+# John's sheet.
 SHEET_EXCLUDE = {"Andrew Alonso", "Bradley Espinoza", "Brandon Moreno", "Cole Pantol",
-                 "Francisco Valencia", "Mario Castro", "Nathan Colquitt", "Robert Silinzy"}
+                 "Mario Castro", "Nathan Colquitt", "Robert Silinzy"}
 
 # Tickets created in error that must NEVER appear as TGLs — board, count, bonus
 # sheet, events. Distinct from canceled TGLs (can:true), which DO still count

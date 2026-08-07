@@ -3,10 +3,16 @@
 # Company="" (in-house reps only, no subcontractor companies). Excludes
 # John Schwinghamer (owner, not a coached rep) and the single-space "Nathan Colquitt"
 # duplicate row; the double-space "Nathan  Colquitt" is the live account and is kept.
+#
+# 2026-08-06 (John): -Francisco Valencia (promoted off SILO), +Jose Esquivel
+# (ServiceTitan tech id 665437151, BU 333). Jose Esquivel has NO row in
+# master-rep-list.csv yet, so this file is no longer purely derivable from that CSV
+# until he is added there with his Firebase UID / Siro team id.
 Andrew Alonso
 Nikko April
 Mario Castro
 Nathan  Colquitt
+Jose Esquivel
 Joe Mendoza
 Brandon Moreno
 Cole Pantol
@@ -15,7 +21,6 @@ Robert Silinzy
 Jaden Szelestey
 Juan Tlatenchi
 Andrew Trujillo
-Francisco Valencia
 Noah Weng
 Benjamin Wyllie
 Alex Yakovchuk

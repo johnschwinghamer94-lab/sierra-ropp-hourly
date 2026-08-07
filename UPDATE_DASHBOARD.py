@@ -44,9 +44,14 @@ CANCEL_EXCLUDE = _load_cancel_exclusions()
 _CANCEL_EXCLUDED_COUNT = 0   # set during parse_all, read by build_cancel
 
 # ---- SILO roster (curated) --------------------------------------------------
+# 2026-08-06 (John): Francisco Valencia promoted off SILO — removed from TEAM_B and
+# from livefeed_sync.py's SHEET_EXCLUDE (that set mirrors TEAM_B). Jose Esquivel
+# joins TEAM_A (ServiceTitan tech id 665437151, BU 333 — same unit as the rest of
+# SILO; NOT "Jose Valencia"/"Jose Bejar", who are HVAC, nor "Josue Arciga", Service).
+# Counts are unchanged at 16/15: TEAM_A 7->8, TEAM_B 8->7.
 TEAM_A = ["Noah Weng", "Joe Mendoza", "Benjamin Wyllie", "Nikko April",
-          "Andrew Trujillo", "Juan Tlatenchi", "David Canales"]
-TEAM_B = ["Brandon Moreno", "Francisco Valencia", "Mario Castro", "Cole Pantol",
+          "Andrew Trujillo", "Juan Tlatenchi", "David Canales", "Jose Esquivel"]
+TEAM_B = ["Brandon Moreno", "Mario Castro", "Cole Pantol",
           "Nathan Colquitt", "Andrew Alonso", "Robert Silinzy", "Bradley Espinoza"]
 ALEX   = "Alex - Oleksiy Yakovchuk"
 SILO   = [ALEX] + TEAM_A + TEAM_B           # 16 (SILO_SET, incl Andrew Alonso)
