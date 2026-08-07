@@ -1,4 +1,4 @@
-# Scorecard: Cole Pantol
+# Scorecard: Cole Pantol - ARIAS
 
 **RecId:** 1ade82a7-1a8d-4b53-ba40-45daf746db4c-cqS1z9EkBaR2xDrHTJjJwYSZMvE2
 **Job:** 671325517
@@ -7,18 +7,19 @@
 
 ## FSG Bands
 - Welcome: Solid
-- Assessment: Solid
-- Decision: Moderate
-- Deliver: Solid
+- Assessment: Strong
+- Decision: Strong
+- Deliver: Strong
 
 ## Critical Actions
 - Expectations: True
 - Questions: True
-- Options: False
-- Objections: False
+- Options: True
+- Objections: True
 
 ## Outcome
-NO-CLOSE
+FLIPPED - TGL Created (Option C replacement)
 
 ## Coaching Tip
-FIX — Tech conducted a solid inspection and asked good questions, but didn't present multiple options or secure a next step; missing the decision/options moment left no TGL or follow-up commitment.
+
+**WIN — Longest call (144 min) with comprehensive diagnosis of multiple critical issues (seized dampers, oil-leaking blower motor); tech patiently explained root causes, presented full system replacement as necessary solution, answered customer concerns about reliability, and customer agreed to move forward for replacement estimate—exemplary reconnecting throughout.**

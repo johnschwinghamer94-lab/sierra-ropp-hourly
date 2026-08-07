@@ -1,4 +1,4 @@
-# Scorecard: Brandon Moreno
+# Scorecard: Brandon Moreno - COLVARD
 
 **RecId:** f8a1cf9c-6c5b-471a-93e7-ce32f842adec-f4dx65lewNTPydNXjgypLVFAcbk1
 **Job:** 669616760
@@ -8,11 +8,11 @@
 ## FSG Bands
 - Welcome: Solid
 - Assessment: Solid
-- Decision: Moderate
-- Deliver: Weak
+- Decision: Solid
+- Deliver: Solid
 
 ## Critical Actions
-- Expectations: False
+- Expectations: True
 - Questions: True
 - Options: False
 - Objections: False
@@ -21,4 +21,5 @@
 NO-CLOSE
 
 ## Coaching Tip
-FIX — Tech asked diagnostic questions but didn't set clear expectations at the start or present options for repairs/follow-up; call reads as transactional rather than consultative.
+
+**FIX — Solid foundation with clear expectations and good discovery questions about system history and maintenance, but tech didn't present upgrade or replacement option despite system being candidate for proactive planning; missed chance to build value for preventive replacement.**

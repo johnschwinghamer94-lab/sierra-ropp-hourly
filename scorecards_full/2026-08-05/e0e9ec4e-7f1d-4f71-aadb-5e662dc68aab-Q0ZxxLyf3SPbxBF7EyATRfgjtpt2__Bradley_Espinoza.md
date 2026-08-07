@@ -1,4 +1,4 @@
-# Scorecard: Bradley Espinoza
+# Scorecard: Bradley Espinoza - MACIEL
 
 **RecId:** e0e9ec4e-7f1d-4f71-aadb-5e662dc68aab-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2
 **Job:** 671329965
@@ -6,19 +6,20 @@
 **Duration:** 16 min
 
 ## FSG Bands
-- Welcome: Strong
-- Assessment: Solid
-- Decision: Solid
-- Deliver: Weak
+- Welcome: Solid
+- Assessment: Moderate
+- Decision: Moderate
+- Deliver: Moderate
 
 ## Critical Actions
-- Expectations: False
-- Questions: True
-- Options: True
+- Expectations: True
+- Questions: False
+- Options: False
 - Objections: False
 
 ## Outcome
 NO-CLOSE
 
 ## Coaching Tip
-FIX — Tech introduced himself and asked diagnostic questions, identified the lack of cooling issue, but didn't explain the problem or present next steps; missing the delivery and options moments hurt close chances.
+
+**FIX — Shortened call (16 min) shows tech setting expectations but minimal discovery questions about system condition or customer concerns; no deep assessment, options, or reconnecting on findings—tech needed to ask clarifying questions and build case if issues found.**
