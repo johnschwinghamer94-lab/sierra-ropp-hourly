@@ -240,6 +240,32 @@ def num(v):
         return 0.0
 
 
+# ── person-name normalization ────────────────────────────────────────────────
+# BUG FIX (2026-08-06): ServiceTitan stores some technician names with a
+# TRAILING SPACE (10 of 142 active techs, e.g. "Tyler Battershell " — he is the
+# only one on the 2A/2B roster today). The pad comes through on EVERY source
+# that names a tech: settings/v2/technicians, dispatch/v2/appointment-
+# assignments (technicianName) and the FC v1 report's Name column. fetch_roster
+# and the FC aggregators happened to .strip(), but fetch_job_tech_map and
+# build_calls_board compared the raw dispatch string against the stripped roster
+# keys, so every one of Battershell's jobs failed the `name in roster` test and
+# fell into the unattributed bucket: his By Tech row read $0 sales and 0
+# membership-offer jobs while his FC-derived columns (jobs/revenue/opps) were
+# fine — a half-populated row that looked like a real performance problem.
+#
+# Every roster comparison and every roster-keyed lookup now goes through
+# norm_name() on BOTH sides. Whitespace only — collapse internal runs, strip the
+# ends. DELIBERATELY NOT case-folded: verified 2026-08-06 that there are zero
+# case-only twins among the 26 roster techs, the 142 active techs, or the FC
+# Name column, so case-folding would buy nothing today while creating a real
+# future hazard (two genuinely different people whose names differ only by case
+# would silently merge into one row). Whitespace collapse was checked the same
+# way — it collides no two distinct names in any of the three sources.
+def norm_name(v):
+    """Canonical form of a person name for roster matching (whitespace only)."""
+    return re.sub(r"\s+", " ", str(v if v is not None else "")).strip()
+
+
 def utc_iso(d, end_of_day=False):
     """Local (Vegas) midnight of date d -> UTC 'Z' timestamp string.
 
@@ -352,8 +378,21 @@ def fetch_roster():
     roster = {}
     for t in techs:
         team = t.get("team")
-        if team in TEAMS:
-            roster[t["name"].strip()] = {"team": TEAMS[team], "id": t["id"]}
+        if team not in TEAMS:
+            continue
+        key = norm_name(t.get("name"))
+        if not key:
+            log("WARNING: active technician id %s on team %r has a blank name — skipped"
+                % (t.get("id"), team))
+            continue
+        if key in roster and roster[key]["id"] != t["id"]:
+            # Two roster techs whose names differ only by whitespace would
+            # silently merge into one By Tech row — name it rather than lose it.
+            log("WARNING: roster name collision after whitespace normalization: %r "
+                "(tech ids %s and %s) — keeping the first, the second's work will "
+                "land in the first's row" % (key, roster[key]["id"], t["id"]))
+            continue
+        roster[key] = {"team": TEAMS[team], "id": t["id"]}
     return roster
 
 
@@ -444,7 +483,7 @@ def fc_tech_rows(c, rows, roster):
     the department — see fc_dept_rows()."""
     agg = {}
     for r in rows:
-        name = str(r[c["Name"]]).strip()
+        name = norm_name(r[c["Name"]])
         if name not in roster or not _fc_is_dept_row(c, r):
             continue
         _fc_add(agg.setdefault(name, _fc_blank()), c, r)
@@ -468,7 +507,7 @@ def fc_dept_rows(c, rows):
     for r in rows:
         if not _fc_is_dept_row(c, r):
             continue
-        _fc_add(agg.setdefault(str(r[c["Name"]]).strip(), _fc_blank()), c, r)
+        _fc_add(agg.setdefault(norm_name(r[c["Name"]]), _fc_blank()), c, r)
     return agg
 
 
@@ -669,7 +708,7 @@ def fetch_job_tech_map(job_ids, roster, known_jobs=None, all_techs=None):
     for a in asg:
         if not a.get("active"):
             continue
-        name = a.get("technicianName")
+        name = norm_name(a.get("technicianName"))
         if name not in roster:
             continue
         jid = a.get("jobId") or appt_to_job.get(a.get("appointmentId"))
@@ -1359,7 +1398,7 @@ def build_calls_board(roster):
     appt_techs = defaultdict(list)
     for a in asg:
         if a.get("active"):
-            nm = a.get("technicianName")
+            nm = norm_name(a.get("technicianName"))
             if nm:
                 appt_techs[a.get("appointmentId")].append(nm)
 
