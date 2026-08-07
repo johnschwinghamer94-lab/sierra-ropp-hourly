@@ -41,7 +41,8 @@ jobs:
             echo "::warning::ServiceTitan API fetch FAILED — this build fell back to the emailed OneDrive Excel reports. Numbers are only as fresh as this morning's email, and every API-only extra (TGL conversion truth) may be stale."
             python graph_download_cloud.py
           fi
-      - name: TGL ground truth (trailing 8 days)
+      - name: TGL ground truth — compute (trailing 8 days)
+        id: tgl_compute
         continue-on-error: true          # a truth-refresh failure never breaks the rebuild
         env:
           ST_CREDS_JSON: ${{ secrets.ST_CREDS_JSON }}
@@ -106,6 +107,26 @@ jobs:
               (out_dir / "ytd_sources.json").write_text(json.dumps(out, indent=2))
               print(f"wrote tgl_truth/ytd_sources.json with {len(sources)} source jobs")
           PYEOF
+          echo "compute_ok=$truth_ok" >> "$GITHUB_OUTPUT"
+
+      - name: TGL ground truth — publish
+        # A SEPARATE STEP ON PURPOSE (2026-08-06). The publish used to sit at the
+        # bottom of the compute step, under `bash -e`, ~37 lines below an incidental
+        # ytd_sources.json block. When that block crashed the shell aborted before
+        # reaching here, so correctly-computed truth files were discarded on every run
+        # while continue-on-error reported the job GREEN. That is the SECOND time this
+        # data went stale behind a green build (7/28 via `|| echo`, 8/06 via the abort),
+        # and the guard added 8/04 to catch it was itself below the abort point.
+        # Splitting it makes the failure mode structurally impossible rather than
+        # fixed-again: nothing incidental in the compute step can reach this one.
+        #
+        # always(): whatever DID regenerate is still worth publishing even when part of
+        # the compute failed — leaving main stale is strictly worse. Real failures are
+        # surfaced at the end via the compute step's output.
+        if: always()
+        continue-on-error: true
+        run: |
+          truth_ok=1
           git config user.email "johnschwinghamer94@gmail.com"
           git config user.name "John Schwinghamer"
           git add tgl_truth/
@@ -142,7 +163,11 @@ jobs:
               git commit -q -m "TGL truth $(date -u +'%F %H:%M')"
             done
           fi
-          [ "$truth_ok" = "1" ] || exit 1  # surface masked failures (step is continue-on-error, job still proceeds)
+          # Surface BOTH failure modes — this step is continue-on-error, so the job
+          # still proceeds, but it goes red instead of lying about a stale publish.
+          [ "${{ steps.tgl_compute.outputs.compute_ok }}" = "1" ] \
+            || { echo "::error::TGL compute reported a failure — some truth data may be stale on main"; truth_ok=0; }
+          [ "$truth_ok" = "1" ] || exit 1
 
       - name: Refresh duplicate-ticket exclusions (once daily · 14:00 UTC)
         continue-on-error: true          # a refresher failure keeps the last good list; never breaks the build
