@@ -53,6 +53,16 @@ TEAM_A = ["Noah Weng", "Joe Mendoza", "Benjamin Wyllie", "Nikko April",
           "Andrew Trujillo", "Juan Tlatenchi", "David Canales", "Jose Esquivel"]
 TEAM_B = ["Brandon Moreno", "Mario Castro", "Cole Pantol",
           "Nathan Colquitt", "Andrew Alonso", "Robert Silinzy", "Bradley Espinoza"]
+# DEPARTED but DELIBERATELY RETAINED (John, 2026-08-06). Alex left — active=False in
+# ServiceTitan (id 369606032), no coaching plans, absent from livefeed. He stays in
+# SILO on purpose because this list decides whose history is BUILT into the SILO ONLY
+# tab and its totals (see `for n in SILO if n in techs` below): dropping him would
+# silently erase 287 calls / 163 TGLs / $1.57M revenue from the YTD numbers. There is
+# no ROSTER_END mechanism — ROSTER_START only handles joiners — so retention here is
+# the only way to keep a departed rep's numbers counting.
+# He IS removed from coaching/silo_roster.txt (no more coaching plans) and that
+# divergence is intentional: this list = who counts in the numbers, that list = who
+# is actively coached. Do not "reconcile" them.
 ALEX   = "Alex - Oleksiy Yakovchuk"
 SILO   = [ALEX] + TEAM_A + TEAM_B           # 16 (SILO_SET, incl Andrew Alonso)
 SILO_12 = [n for n in SILO if n != "Andrew Alonso"]   # 15 (SILO_12 const)

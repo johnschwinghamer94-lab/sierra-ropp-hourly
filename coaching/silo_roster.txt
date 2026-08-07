@@ -17,10 +17,19 @@
 #     08-04 or 08-05, nor appears in livefeed.json.
 #   ADDED David Canales, Bradley Espinoza — both active in BU 333 (ids 663979898 /
 #     639893881) and both HAVE received plans every one of those days.
-# Membership now matches UPDATE_DASHBOARD.SILO exactly (16). Two name spellings
-# still differ ON PURPOSE, because this file keys Siro accounts and that one keys
-# ServiceTitan: "Nathan  Colquitt" (double space) and "Alex Yakovchuk" here vs
-# "Nathan Colquitt" and "Alex - Oleksiy Yakovchuk" there.
+#   REMOVED Alex Yakovchuk — left the company (active=False in ServiceTitan, id
+#     369606032, no recent plans). He is DELIBERATELY still in UPDATE_DASHBOARD.SILO:
+#     that list decides whose history is built into the SILO ONLY tab and its totals,
+#     so dropping him there would erase 287 calls / 163 TGLs / $1.57M from the YTD
+#     numbers. John 2026-08-06: "he's gone but his data still needs to reflect on the
+#     numbers."
+#
+# THESE TWO LISTS ARE NOT SUPPOSED TO MATCH. This file = who is actively COACHED
+# (15). UPDATE_DASHBOARD.SILO = whose numbers COUNT (16, incl. departed Alex). A
+# departed rep belongs in the second and not the first. Do not "reconcile" them.
+# One name also differs by system: this file keys Siro accounts, so
+# "Nathan  Colquitt" (double space, the live Siro account) vs "Nathan Colquitt" in
+# ServiceTitan.
 Andrew Alonso
 Nikko April
 David Canales
@@ -36,4 +45,3 @@ Juan Tlatenchi
 Andrew Trujillo
 Noah Weng
 Benjamin Wyllie
-Alex Yakovchuk
