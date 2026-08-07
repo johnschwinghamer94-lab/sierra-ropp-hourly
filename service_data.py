@@ -1,23 +1,48 @@
 #!/usr/bin/env python3
 """HVAC-Service department data engine for the new Service dashboard.
 
-Dept = 25 active techs on dispatch teams "2a Service NO Sam Maintenance" +
-"2b Service with SAM Maintenance" (fetched dynamically from
-settings/v2/technicians — never hardcoded). Dept business units: HVAC -
-Service (333) + HVAC - Maintenance (342817560).
+TWO POPULATIONS, deliberately (reworked 2026-08-06):
+  DEPARTMENT-WIDE — every technician who ran work on business units HVAC -
+    Service (333) or HVAC - Maintenance (342817560), roster or not. This is
+    what the Overview / Department Pulse tiles, the 9-week weekly[] series and
+    the monthly[] chart describe. Before this change they were roster-scoped
+    and silently dropped the dispatch-team "1Silo" techs, under-reporting
+    2026-08-05 by 41 of 126 jobs, $1,869 of revenue, and reading avg ticket
+    $691 against the true $481.
+  ROSTER (25-ish techs on dispatch teams "2a Service NO Sam Maintenance" +
+    "2b Service with SAM Maintenance", fetched dynamically from
+    settings/v2/technicians — never hardcoded). This is the By Tech table,
+    techDaily, alerts and coaching. Unchanged.
 
 Data sources (see REPORT BACK for calibration notes):
-  - opps / close rate / leads set / options-per-opp / membership conversion
-    <- Reporting API, Field Conversion Report v1 (technician/328361546), the
-    same report id ropp/service_live.py already calibrates against. Fetched
-    once per window (today/wtd/mtd/ytd) and once per elapsed month.
-  - sales (sold-estimate $) <- sales/v2/estimates (soldAfter=Jan 1), joined
-    job -> firstAppointmentId -> dispatch/v2/appointment-assignments -> roster
-    tech. Pulled ONCE for the full YTD span and bucketed client-side into all
-    four windows (avoids 4x redundant entity pulls).
-  - revenue (invoiced $, BU split) <- accounting/v2/invoices (invoicedOnOrAfter
-    =Jan 1), filtered to the two dept BUs, subTotal, bucketed the same way.
-  - board (today only) <- jpm/v2/appointments for today + jpm/v2/jobs for BU.
+  - opps / close rate / leads set / options-per-opp / completed jobs /
+    completed revenue <- Reporting API, Field Conversion Report v1
+    (technician/328361546), the same report id ropp/service_live.py already
+    calibrates against. Fetched once per window (today/wtd/mtd/ytd) and once
+    per elapsed month, then split into a roster agg (fc_tech_rows) and a
+    department agg (fc_dept_rows) from the SAME rows.
+  - dept revenue + avg ticket <- that report's CompletedRevenueWithAdjustments
+    over CompletedJobs: one population, completion basis, reproduces the
+    Command Center deck exactly ($60,629 / 126 / $481 for 2026-08-05).
+  - sales (sold-estimate $) <- sales/v2/estimates. The department total needs
+    no tech attribution so it is pulled for the whole YTD span (28.7s); only
+    the WTD slice gets the job -> firstAppointmentId ->
+    dispatch/v2/appointment-assignments -> roster-tech join, which is the part
+    that does not scale.
+  - memberships sold / conversion / offer rate <- real counts:
+    memberships/v2/memberships created that day joined to that day's completed
+    dept jobs, over a denominator of completed dept jobs whose CUSTOMER did not
+    already hold a membership covering that day. today/wtd/mtd only; YTD keeps
+    the report's rounded proxy (flagged membershipsSoldIsApprox). The By Tech
+    offer columns (today/wtd) are that SAME job set PARTITIONED by technician,
+    so the table and the Overview tile answer one question — the roster/dept
+    gap shows up as recon["unattributedJobs"], logged every run.
+  - invoiced revenue (BU split + budget/pace card) <- accounting/v2/invoices,
+    filtered to the two dept BUs, subTotal. Published as revenueBU /
+    revenueInvoiced; this is a cash-posted basis and intentionally differs
+    from the completion-basis REVENUE tile.
+  - board (today only) <- jpm/v2/appointments for "on board" + jpm/v2/jobs
+    completedOn for "ran".
 
 Writes servicedata.json + appends a per-day snapshot to
 servicedata_history.json (deduped on date).
@@ -40,7 +65,7 @@ sync):
     and full runs (once/day) simply refetch, which is an acceptable cost.
     Ported from servicefeed_sync.py's proven cloud machinery.
 """
-import base64, json, os, sys, time, datetime as dt
+import base64, json, os, re, sys, time, datetime as dt
 import urllib.request, urllib.error
 from collections import defaultdict
 from zoneinfo import ZoneInfo
@@ -194,6 +219,20 @@ def _is_membership_item(sku):
     return any(x in disp for x in ("membership", "maintenance agreement", "service agreement"))
 
 
+# Sierra's own membership SKU codes are SAM01..SAM12 exactly. The department-
+# wide membership OFFER detector uses this strict pattern rather than
+# _is_membership_item()'s loose prefix/display-name test: at dept scope the
+# loose test also catches Plumbing's PLSAM* and any "service agreement"-worded
+# line item, which inflates the offer numerator against a denominator that is
+# strictly HVAC-Service dept jobs. (Per-tech offer detection keeps the loose
+# test so the By Tech column is unchanged — see bucket_membership_offers.)
+SAM_SKU_RE = re.compile(r"^sam(0[1-9]|1[0-2])$", re.I)
+
+
+def _is_sierra_sam_sku(sku):
+    return bool(SAM_SKU_RE.match(((sku or {}).get("name") or "").strip()))
+
+
 def num(v):
     try:
         return float(v or 0)
@@ -201,11 +240,59 @@ def num(v):
         return 0.0
 
 
+# ── person-name normalization ────────────────────────────────────────────────
+# BUG FIX (2026-08-06): ServiceTitan stores some technician names with a
+# TRAILING SPACE (10 of 142 active techs, e.g. "Tyler Battershell " — he is the
+# only one on the 2A/2B roster today). The pad comes through on EVERY source
+# that names a tech: settings/v2/technicians, dispatch/v2/appointment-
+# assignments (technicianName) and the FC v1 report's Name column. fetch_roster
+# and the FC aggregators happened to .strip(), but fetch_job_tech_map and
+# build_calls_board compared the raw dispatch string against the stripped roster
+# keys, so every one of Battershell's jobs failed the `name in roster` test and
+# fell into the unattributed bucket: his By Tech row read $0 sales and 0
+# membership-offer jobs while his FC-derived columns (jobs/revenue/opps) were
+# fine — a half-populated row that looked like a real performance problem.
+#
+# Every roster comparison and every roster-keyed lookup now goes through
+# norm_name() on BOTH sides. Whitespace only — collapse internal runs, strip the
+# ends. DELIBERATELY NOT case-folded: verified 2026-08-06 that there are zero
+# case-only twins among the 26 roster techs, the 142 active techs, or the FC
+# Name column, so case-folding would buy nothing today while creating a real
+# future hazard (two genuinely different people whose names differ only by case
+# would silently merge into one row). Whitespace collapse was checked the same
+# way — it collides no two distinct names in any of the three sources.
+def norm_name(v):
+    """Canonical form of a person name for roster matching (whitespace only)."""
+    return re.sub(r"\s+", " ", str(v if v is not None else "")).strip()
+
+
 def utc_iso(d, end_of_day=False):
-    """Local (Vegas) midnight of date d -> UTC 'Z' timestamp string."""
+    """Local (Vegas) midnight of date d -> UTC 'Z' timestamp string.
+
+    Correct for fields that carry a REAL instant (job.completedOn,
+    estimate.soldOn/createdOn, appointment.start). WRONG as a lower bound for
+    pure calendar-date fields — see date_lower_bound()."""
     t = dt.time(23, 59, 59) if end_of_day else dt.time(0, 0, 0)
     local = dt.datetime.combine(d, t, tzinfo=TZ)
     return local.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def date_lower_bound(d):
+    """Server-side lower bound for filters on pure CALENDAR-DATE fields —
+    accounting/v2/invoices' `invoicedOnOrAfter` in particular.
+
+    BUG (found 2026-08-06): invoiceDate is a calendar date stamped at UTC
+    midnight ('2026-08-01T00:00:00Z' means the day Aug 1 — see
+    parse_date_only), but utc_iso(2026-08-01) emits '2026-08-01T07:00:00Z'
+    (local midnight in UTC). 00:00Z < 07:00Z, so the server dropped EVERY
+    invoice on the first day of the requested range: for Aug 1 that silently
+    lost 56 invoices / $9,048 from the month.
+
+    Fix: bound on the UTC-midnight stamp of the day BEFORE d. The extra day
+    can never leak into a window total because every consumer re-buckets with
+    the local-date comparison `frm <= parse_date_only(invoiceDate) <= to`,
+    which stays authoritative."""
+    return (d - dt.timedelta(days=1)).strftime("%Y-%m-%dT00:00:00Z")
 
 
 def parse_ts(s):
@@ -291,9 +378,67 @@ def fetch_roster():
     roster = {}
     for t in techs:
         team = t.get("team")
-        if team in TEAMS:
-            roster[t["name"].strip()] = {"team": TEAMS[team], "id": t["id"]}
+        if team not in TEAMS:
+            continue
+        key = norm_name(t.get("name"))
+        if not key:
+            log("WARNING: active technician id %s on team %r has a blank name — skipped"
+                % (t.get("id"), team))
+            continue
+        if key in roster and roster[key]["id"] != t["id"]:
+            # Two roster techs whose names differ only by whitespace would
+            # silently merge into one By Tech row — name it rather than lose it.
+            log("WARNING: roster name collision after whitespace normalization: %r "
+                "(tech ids %s and %s) — keeping the first, the second's work will "
+                "land in the first's row" % (key, roster[key]["id"], t["id"]))
+            continue
+        roster[key] = {"team": TEAMS[team], "id": t["id"]}
     return roster
+
+
+# ── 1b. dept business-unit NAME resolution (FC report only exposes names) ──
+# The Field Conversion report identifies the business unit by NAME
+# (TechnicianBusinessUnit), never by id, so dept-scoping FC rows has to be
+# name-based. Do NOT hardcode the strings: a rename in ServiceTitan would then
+# match zero rows and silently publish an all-zero department. Resolve the
+# names live from settings/v2/business-units keyed on the ID (333 /
+# 342817560), which is the stable identifier, and keep the static BU_NAME map
+# only as an offline fallback + as the (unchanged) revenueBU output labels.
+#
+# Note on "HVAC - Maintenance": BU 342817560 really IS named that, but
+# TechnicianBusinessUnit is the TECH'S HOME business unit and no technician's
+# home BU is Maintenance — so that half of the match has never fired and never
+# will. It stays in the accepted set (harmless, and correct if staffing ever
+# changes); the department's maintenance work is captured because the techs who
+# run it are homed in HVAC - Service.
+_BU_NAMES = None
+
+
+def dept_bu_names():
+    """Set of lowercased business-unit names that count as "the department"."""
+    global _BU_NAMES
+    if _BU_NAMES is not None:
+        return _BU_NAMES
+    live = {}
+    try:
+        for b in paged("/settings/v2/tenant/{tenant}/business-units", {}, page_size=200):
+            if b.get("id") in DEPT_BUS and (b.get("name") or "").strip():
+                live[b["id"]] = b["name"].strip()
+    except Exception as ex:
+        log("WARNING: business-unit name lookup failed (%r) — falling back to the "
+            "static BU_NAME map; a BU rename would go undetected this run" % ex)
+    for bu_id, static_name in BU_NAME.items():
+        got = live.get(bu_id)
+        if got is None:
+            log("WARNING: business unit %s not returned by settings/v2/business-units — "
+                "using static name %r" % (bu_id, static_name))
+        elif got != static_name:
+            log("NOTE: business unit %s renamed in ServiceTitan (%r -> %r) — matching on "
+                "the live name; BU_NAME/revenueBU labels still read %r"
+                % (bu_id, static_name, got, static_name))
+    names = {v.strip().lower() for v in live.values()} | {v.strip().lower() for v in BU_NAME.values()}
+    _BU_NAMES = names
+    return _BU_NAMES
 
 
 # ── 2. Field Conversion v1 report, per window + per month ──────────────────
@@ -305,81 +450,154 @@ def fc_window(frm, to):
     return c, rows
 
 
+def _fc_blank():
+    return {"jobs": 0, "opp": 0.0, "converted": 0.0, "rev": 0.0,
+            "leads": 0, "membSold": 0.0, "membOpp": 0.0, "oppW": 0.0}
+
+
+def _fc_add(a, c, r):
+    opp = num(r[c["Opportunity"]]); conv = num(r[c["OpportunityConversionRate"]])
+    rev = num(r[c["CompletedRevenueWithAdjustments"]])
+    membConv = num(r[c["MembershipConversionRate"]])
+    opo = num(r[c["OptionsPerOpportunity"]])
+    a["jobs"] += num(r[c["CompletedJobs"]])
+    a["opp"] += opp
+    a["converted"] += round(opp * conv)
+    a["rev"] += rev
+    a["leads"] += int(num(r[c["LeadsSet"]]))
+    a["membSold"] += round(opp * membConv)
+    a["membOpp"] += opp
+    a["oppW"] += opo * opp
+
+
+def _fc_is_dept_row(c, r):
+    return str(r[c["TechnicianBusinessUnit"]] or "").strip().lower() in dept_bu_names()
+
+
 def fc_tech_rows(c, rows, roster):
-    """dept-BU rows for roster techs, summed per tech (a tech can have a
-    Service row and a Maintenance row — both count toward the department)."""
+    """dept-BU rows for ROSTER techs, summed per tech (a tech can have a
+    Service row and a Maintenance row — both count toward the department).
+
+    This is the By Tech / techDaily / coaching / alerts population and it is
+    deliberately narrow: the 25-ish techs on dispatch teams 2A/2B. It is NOT
+    the department — see fc_dept_rows()."""
     agg = {}
     for r in rows:
-        name = str(r[c["Name"]]).strip()
-        bu = str(r[c["TechnicianBusinessUnit"]] or "").strip()
-        if name not in roster or bu not in BU_NAME.values():
+        name = norm_name(r[c["Name"]])
+        if name not in roster or not _fc_is_dept_row(c, r):
             continue
-        a = agg.setdefault(name, {"jobs": 0, "opp": 0.0, "converted": 0.0, "rev": 0.0,
-                                    "leads": 0, "membSold": 0.0, "membOpp": 0.0, "oppW": 0.0})
-        opp = num(r[c["Opportunity"]]); conv = num(r[c["OpportunityConversionRate"]])
-        rev = num(r[c["CompletedRevenueWithAdjustments"]])
-        membConv = num(r[c["MembershipConversionRate"]])
-        opo = num(r[c["OptionsPerOpportunity"]])
-        a["jobs"] += num(r[c["CompletedJobs"]])
-        a["opp"] += opp
-        a["converted"] += round(opp * conv)
-        a["rev"] += rev
-        a["leads"] += int(num(r[c["LeadsSet"]]))
-        a["membSold"] += round(opp * membConv)
-        a["membOpp"] += opp
-        a["oppW"] += opo * opp
+        _fc_add(agg.setdefault(name, _fc_blank()), c, r)
     return agg
 
 
-# ── 3. sold estimates (sales$) — entity precision, but ONLY for Today/WTD.
-# A company-wide sold-estimates pull back to Jan 1 (all departments, not just
-# the 25 roster techs — the API has no server-side technician filter on this
-# endpoint or on appointment-assignments) proved too heavy (unbounded job/tech
-# join). Per the task's budget guidance, MTD/YTD sales instead use the
-# calibrated Field Conversion v1 report's CompletedRevenueWithAdjustments
-# figure (see fc_tech_rows "rev") — labeled "salesApprox" fallback in the
-# per-tech rows / dept summary for those two windows. Today/WTD stay entity-
-# precise since the estimate volume in a ≤7-day window is small enough to
-# join to jobs/assignments quickly.
-def fetch_sold_estimates_recent():
-    """BUG FIX (2026-07-30): the raw pull is company-wide (every BU, every
-    department) since the API has no server-side technician OR businessUnit
-    filter on this endpoint. bucket_sales() used to sum every row's subtotal
-    into the dept total regardless of businessUnitId or tech attribution —
-    on the week this was caught, of 326 rows only 244 were even on a dept BU
-    (333/342817560); the other 82 were BU 370/353/354/595105985/340802904
-    (Install and other non-Service-dept business units) worth ~$964k, e.g. a
-    single $55,160 estimate (id 669275198, BU 370, soldOn 2026-07-28) that
-    has nothing to do with the 25-tech HVAC-Service roster. That inflated
-    wtd.sales to $1.07M against a techDaily/per-tech sum of ~$105k. Filtering
-    to dept BUs here (server-can't, so client-side) keeps every downstream
-    consumer (bucket_sales, bucket_sales_by_day/techDaily) working off the
-    same correct, dept-scoped estimate set."""
-    ests = paged("/sales/v2/tenant/{tenant}/estimates", {"soldAfter": utc_iso(WTD_START)})
+def fc_dept_rows(c, rows):
+    """DEPARTMENT-WIDE: every FC row on a dept business unit, no roster filter.
+
+    Added 2026-08-06. fc_tech_rows() drops every FC row whose technician isn't
+    on the 2A/2B roster, and those dropped techs are real department labor
+    (dispatch team "1Silo", BU 333 — apprentices, install-adjacent and helper
+    techs). The Overview / Department Pulse tiles are supposed to describe the
+    DEPARTMENT, so they read from here; roster-scoping them under-reported
+    Aug 5 by 41 jobs ($1,869 revenue, avg ticket $691 vs the true $481) and
+    made Leads Set read 1 for a week where the department set 82.
+
+    Reproduces the authoritative Command Center deck exactly for 2026-08-05:
+    jobs 126, CompletedRevenueWithAdjustments $60,629, avg ticket $481."""
+    agg = {}
+    for r in rows:
+        if not _fc_is_dept_row(c, r):
+            continue
+        _fc_add(agg.setdefault(norm_name(r[c["Name"]]), _fc_blank()), c, r)
+    return agg
+
+
+def fc_totals(agg):
+    """Sum a {name: fc_blank()} aggregate into one dict of department totals."""
+    t = _fc_blank()
+    for a in agg.values():
+        for k in t:
+            t[k] += a[k]
+    return t
+
+
+# ── 3. sold estimates (sales$) — entity precision.
+# The raw pull is company-wide (every BU, every department) since the API has
+# no server-side technician OR businessUnit filter on this endpoint, so the
+# dept-BU filter is applied client-side.
+#
+# BUG FIX (2026-07-30): bucket_sales() used to sum every row's subtotal into
+# the dept total regardless of businessUnitId or tech attribution — on the week
+# this was caught, of 326 rows only 244 were even on a dept BU (333/342817560);
+# the other 82 were BU 370/353/354/595105985/340802904 (Install and other
+# non-Service-dept business units) worth ~$964k, e.g. a single $55,160 estimate
+# (id 669275198, BU 370, soldOn 2026-07-28) that has nothing to do with the
+# HVAC-Service department. That inflated wtd.sales to $1.07M against a
+# techDaily/per-tech sum of ~$105k.
+#
+# COST NOTE (2026-08-06): the expensive part of a long span was never this
+# pull (measured 28.7s for the whole YTD, 12,265 rows) — it was the
+# job -> firstAppointmentId -> appointment-assignments -> tech join needed for
+# PER-TECH attribution, which is unbounded. So: pull the long span once for
+# the DEPARTMENT sales total (no join required), and hand only the WTD slice
+# to fetch_job_tech_map() for per-tech attribution. Per-tech MTD/YTD sales
+# still fall back to the FC report's CompletedRevenueWithAdjustments
+# ("salesIsApprox") exactly as before — the By Tech table is unchanged.
+def fetch_sold_estimates_dept(frm):
+    """Dept-BU estimates sold on/after `frm`. No tech join — department total only."""
+    ests = paged("/sales/v2/tenant/{tenant}/estimates", {"soldAfter": utc_iso(frm)})
     ests = [e for e in ests if e.get("soldOn") and e.get("businessUnitId") in DEPT_BUS]
-    log("sold estimates WTD-to-date (dept BUs only): %d rows" % len(ests))
+    log("sold estimates since %s (dept BUs only): %d rows" % (frm, len(ests)))
     return ests
 
 
-# ── 3b. membership OFFER detection — entity precision, Today/WTD only (rides
-# the same window-start budget as fetch_sold_estimates_recent). An OFFER =
-# a membership/SAM item present on ANY estimate for a job, sold or unsold —
-# the FC report's MembershipConversionRate can't see unsold estimates, so this
+def recent_sold_estimates(dept_ests):
+    """The WTD_START..TODAY slice of fetch_sold_estimates_dept() — the only
+    part that gets the per-tech job->assignment join."""
+    out = []
+    for e in dept_ests:
+        d = parse_ts(e.get("soldOn"))
+        if d and d.date() >= WTD_START:
+            out.append(e)
+    log("  ...of which WTD-to-date (per-tech attribution set): %d rows" % len(out))
+    return out
+
+
+# ── 3b. membership OFFER detection — entity precision. An OFFER = a
+# membership/SAM item present on ANY estimate for a job, sold or unsold — the
+# FC report's MembershipConversionRate can't see unsold estimates, so this
 # distinguishes "tech never offered" from "tech offered and lost the sale".
-# Detection helper is a verbatim port of servicefeed_sync.py's
-# _is_membership_item() so both engines agree.
-def fetch_membership_offer_estimates():
-    """All (sold or unsold) dept-BU estimates created since WTD_START — same
-    window start fetch_sold_estimates_recent() uses. createdOnOrAfter verified
-    live against sales/v2/estimates (2026-08-04 probe): returns creation-date-
-    filtered rows including unsold ones, unlike soldAfter."""
-    ests = paged("/sales/v2/tenant/{tenant}/estimates", {"createdOnOrAfter": utc_iso(WTD_START)})
+# Per-tech detection uses a verbatim port of servicefeed_sync.py's
+# _is_membership_item() so both engines agree; the DEPARTMENT figure uses the
+# stricter SAM01..SAM12 SKU test (see SAM_SKU_RE).
+def fetch_membership_offer_estimates(frm):
+    """All (sold or unsold) dept-BU estimates created on/after `frm`.
+    createdOnOrAfter verified live against sales/v2/estimates (2026-08-04
+    probe): returns creation-date-filtered rows including unsold ones, unlike
+    soldAfter."""
+    ests = paged("/sales/v2/tenant/{tenant}/estimates", {"createdOnOrAfter": utc_iso(frm)})
     ests = [e for e in ests if e.get("businessUnitId") in DEPT_BUS]
-    log("membership-offer estimates WTD-to-date (dept BUs only): %d rows" % len(ests))
+    log("membership-offer estimates since %s (dept BUs only): %d rows" % (frm, len(ests)))
     return ests
 
 
-# ── 3c. tech CALL universe — entity precision, Today/WTD only. The
+# ── 3c. tech CALL universe — SUPERSEDED 2026-08-06, NO LONGER CALLED BY main().
+#
+# fetch_tech_call_universe() / bucket_call_universe() / bucket_membership_offers()
+# built the OLD per-tech membership-offer denominator: dept-BU appointments in
+# the window, minus job types whose NAME looks SAM-covered or part-install. That
+# was a job-type PROXY for "the customer isn't already a member". The department
+# tile now uses the real thing — completed dept jobs whose CUSTOMER held no
+# membership covering that day (build_membership_dept) — so the By Tech column
+# was answering a different question than the tile directly above it. As of
+# 2026-08-06 the per-tech offer numbers are partitioned out of that SAME
+# non-member completed-job set (build_membership_dept(tech_windows=...)), and
+# these three functions are retained only for their calibration history and in
+# case the proxy is ever needed again. Dropping the call also removed a ~12s
+# company-wide appointment pull from every run.
+#
+# Original notes follow.
+#
+# Entity precision, Today/WTD only. The
 # membershipOfferRate denominator must come from the SAME population type as
 # the numerator (entity jobs, not the FC report's "Opportunity" definition —
 # those are two different job sets and mixing them produced >100% offer rates
@@ -465,10 +683,24 @@ def bucket_call_universe(dept_appts, job_tech):
     return out, dept
 
 
-def fetch_job_tech_map(job_ids, roster):
-    """job id -> roster tech name, via job.firstAppointmentId -> appointment-assignments."""
+def fetch_job_tech_map(job_ids, roster, known_jobs=None, all_techs=None):
+    """job id -> roster tech name, via job.firstAppointmentId -> appointment-assignments.
+
+    known_jobs: {jobId: job} already in hand — those ids skip the /jpm/v2/jobs
+      re-fetch. This is what lets the PER-TECH membership partition ride along
+      on the department pass (fetch_completed_dept_jobs already returned the
+      full job objects, firstAppointmentId included) instead of paying for a
+      second jobs pull.
+    all_techs: optional dict, filled with {jobId: [every active ROSTER tech on
+      the first appointment]} so callers can report multi-tech jobs. The
+      returned map still holds exactly ONE tech per job (the first active roster
+      assignment), so a job can never be counted twice across techs."""
     job_ids = sorted(set(job_ids))
-    jobs = chunked_get("/jpm/v2/tenant/{tenant}/jobs", job_ids)
+    known = known_jobs or {}
+    jobs = [known[i] for i in job_ids if i in known]
+    missing = [i for i in job_ids if i not in known]
+    if missing:
+        jobs += chunked_get("/jpm/v2/tenant/{tenant}/jobs", missing)
     appt_ids = [j["firstAppointmentId"] for j in jobs if j.get("firstAppointmentId")]
     appt_to_job = {j["firstAppointmentId"]: j["id"] for j in jobs if j.get("firstAppointmentId")}
     asg = chunked_get("/dispatch/v2/tenant/{tenant}/appointment-assignments", appt_ids, key="appointmentIds")
@@ -476,26 +708,34 @@ def fetch_job_tech_map(job_ids, roster):
     for a in asg:
         if not a.get("active"):
             continue
-        name = a.get("technicianName")
+        name = norm_name(a.get("technicianName"))
         if name not in roster:
             continue
         jid = a.get("jobId") or appt_to_job.get(a.get("appointmentId"))
-        if jid and jid not in job_tech:
+        if not jid:
+            continue
+        if all_techs is not None and name not in all_techs.setdefault(jid, []):
+            all_techs[jid].append(name)
+        if jid not in job_tech:
             job_tech[jid] = name
     return job_tech
 
 
-ENTITY_SALES_WINDOWS = ("today", "wtd")   # see fetch_sold_estimates_recent() note
+ENTITY_SALES_WINDOWS = ("today", "wtd")   # per-TECH entity attribution windows
 
 
 def bucket_sales(ests, job_tech):
     """{window: {tech: {"sales": $, "n": count}}} — today/wtd only (entity-precise).
     BUG FIX (2026-07-30): dept[w] now only accumulates rows that resolved to a
     roster tech (same condition as the per-tech buckets and as techDaily's
-    bucket_sales_by_day) so wtd.sales / weekly[current].sales reconcile
-    EXACTLY with the sum of techs.wtd[].sales and techDaily weekTotals —
-    previously it summed every dept-BU estimate even when job->tech
-    attribution failed, silently double-counting against no tech."""
+    bucket_sales_by_day) so weekly[current].sales reconciles EXACTLY with the
+    sum of techs.wtd[].sales and techDaily weekTotals — previously it summed
+    every dept-BU estimate even when job->tech attribution failed, silently
+    double-counting against no tech.
+
+    NOTE: the returned `dept` total is ROSTER-attributed, not department-wide.
+    It feeds weekly[current].sales / the techDaily reconciliation only. The
+    Overview SALES tile uses bucket_sales_dept()."""
     out = {w: defaultdict(lambda: {"sales": 0.0, "n": 0}) for w in ENTITY_SALES_WINDOWS}
     dept = {w: 0.0 for w in ENTITY_SALES_WINDOWS}
     for e in ests:
@@ -514,6 +754,26 @@ def bucket_sales(ests, job_tech):
                 out[w][tech]["sales"] += sub
                 out[w][tech]["n"] += 1
     return out, dept
+
+
+def bucket_sales_dept(dept_ests, windows):
+    """{window: sold-estimate subtotal $} DEPARTMENT-WIDE — every dept-BU
+    estimate sold in the window, whether or not it attributes to a roster
+    tech. This is what the Overview SALES tile reads.
+
+    Verified against the Command Center deck for 2026-08-05: $35,615 exactly
+    (78 dept sold estimates), vs $30,199 roster-attributed."""
+    out = {w: 0.0 for w in windows}
+    for e in dept_ests:
+        d = parse_ts(e.get("soldOn"))
+        if not d:
+            continue
+        d = d.date()
+        sub = num(e.get("subtotal"))
+        for w, (frm, to) in windows.items():
+            if frm <= d <= to:
+                out[w] += sub
+    return out
 
 
 def bucket_membership_offers(ests, job_tech, call_dept):
@@ -575,6 +835,203 @@ def bucket_membership_offers(ests, job_tech, call_dept):
     return out, dept, sold_out, sold_dept
 
 
+# ── 3e. DEPARTMENT-WIDE membership entity pass ─────────────────────────────
+# Replaces the FC report's rounded `round(Opportunity x MembershipConversionRate)`
+# proxy for the department tiles with real counts:
+#
+#   ran            = dept-BU jobs with jobStatus == "Completed" whose
+#                    completedOn falls on the local day (the authoritative
+#                    "Ran" definition; reproduces the deck's 126 for Aug 5,
+#                    split 92 demand / 34 maintenance).
+#   nonMemberJobs  = of those, the jobs whose CUSTOMER did not already hold a
+#                    membership covering that day. This replaces the old
+#                    job-type proxy (drop "SAM"-named job types + part
+#                    installs), which only approximated "already covered".
+#   sold           = memberships created that local day whose customer had one
+#                    of that day's completed dept jobs.
+#   offered        = nonMemberJobs that carry a SAM01..SAM12 SKU on ANY
+#                    estimate created that day, plus any that converted (a
+#                    sale is an offer).
+#
+# Windows: today/wtd always; mtd on FULL runs only. A YTD pass is NOT
+# affordable — measured 2026-08-06: the YTD completed-jobs pull alone is 162s
+# and the per-customer membership-coverage lookup would be 246 chunks on top
+# of ~200s of created-estimate paging (~8 min). YTD therefore keeps the FC
+# report approximation and is flagged membershipsSoldIsApprox: true.
+def fetch_completed_dept_jobs(frm, to):
+    """Dept-BU jobs completed (jobStatus == Completed) between local dates
+    frm..to inclusive. completedOn is a real instant, so utc_iso() is the
+    correct bound here (unlike invoiceDate — see date_lower_bound)."""
+    a = utc_iso(frm)
+    b = utc_iso(to + dt.timedelta(days=1))
+    jobs = paged("/jpm/v2/tenant/{tenant}/jobs",
+                 {"completedOnOrAfter": a, "completedBefore": b})
+    out = [j for j in jobs
+           if j.get("businessUnitId") in DEPT_BUS and j.get("jobStatus") == "Completed"]
+    log("completed dept jobs %s..%s: %d (of %d company-wide)" % (frm, to, len(out), len(jobs)))
+    return out
+
+
+def fetch_memberships_created(frm, to):
+    """Memberships CREATED between local dates frm..to inclusive (company-wide;
+    dept attribution is done by joining to that day's completed dept jobs, not
+    by membership.businessUnitId — a Service tech's sale can post against a
+    different selling BU)."""
+    ms = paged("/memberships/v2/tenant/{tenant}/memberships",
+               {"createdOnOrAfter": utc_iso(frm),
+                "createdBefore": utc_iso(to + dt.timedelta(days=1))})
+    log("memberships created %s..%s: %d" % (frm, to, len(ms)))
+    return ms
+
+
+def fetch_membership_coverage(customer_ids):
+    """{customerId: [(from_date, to_date_or_None), ...]} for every membership
+    those customers have ever held. Uses the customerIds= filter (verified
+    working 2026-08-06) — a full-tenant membership pull is 146,189 rows and is
+    never an option."""
+    ids = sorted({c for c in customer_ids if c})
+    rows = chunked_get("/memberships/v2/tenant/{tenant}/memberships", ids,
+                       key="customerIds", size=50)
+    cov = defaultdict(list)
+    for m in rows:
+        cid = m.get("customerId")
+        if cid:
+            cov[cid].append((parse_date_only(m.get("from")), parse_date_only(m.get("to"))))
+    log("membership coverage: %d rows for %d customers (%d chunks)"
+        % (len(rows), len(ids), (len(ids) + 49) // 50))
+    return cov
+
+
+def _already_member(cov, cid, d):
+    """True if the customer held a membership that covered the day BEFORE d —
+    started strictly before d and had not ended by d.
+
+    Point-in-time by DATE, deliberately not by the membership's current
+    `status`: status is a live snapshot, so a membership that was active on
+    a past day but has since been cancelled would wrongly re-open that day's
+    denominator on every future rebuild."""
+    for frm, to in cov.get(cid, ()):
+        if frm and frm < d and (to is None or to >= d):
+            return True
+    return False
+
+
+def build_membership_dept(windows, jobs, cov, memberships, offer_ests,
+                          job_tech=None, tech_windows=()):
+    """(dept, per_tech, recon)
+
+    dept     {window: {"sold": n, "nonMemberJobs": n, "offered": n, "soldOnOffer": n}}
+    per_tech {window: {tech: {"nonMemberJobs": n, "offered": n, "soldOnOffer": n}}}
+             for the windows named in `tech_windows` (needs `job_tech`).
+    recon    {window: {"deptNonMemberJobs", "techNonMemberJobs", "unattributedJobs"}}
+
+    Everything is computed DAY BY DAY (membership status is evaluated as of the
+    job's own completion day) and then unioned into each window, so a window
+    total can never disagree with the days it contains.
+
+    PER-TECH PARTITION (2026-08-06). The By Tech offer column used to run off a
+    job-type proxy denominator (dept appointments minus SAM-named/part-install
+    job types — see the SUPERSEDED block at 3c), so the tile and the table
+    answered different questions. Now the per-tech numbers are literally a
+    PARTITION of the department's own numbers: the same completed dept-BU jobs,
+    the same point-in-time non-member test, the same strict SAM01..SAM12 offer
+    test, the same "a sale is an offer" rule — just split by the job's
+    technician (job.firstAppointmentId -> first active roster assignment, the
+    attribution convention used everywhere else in this file).
+
+    The split is not lossless and is not meant to be: a dept job whose first
+    appointment carried no ACTIVE ROSTER technician (off-roster dept labour —
+    the "1Silo" apprentice/helper techs — or an unassigned appointment) has no
+    By Tech row to land in. Those jobs stay in the DEPARTMENT denominator and
+    are counted in recon["unattributedJobs"] so main() can log the gap instead
+    of losing it silently. Sum(per-tech) + unattributed == dept, exactly."""
+    jobs_by_day = defaultdict(list)
+    for j in jobs:
+        ts = parse_ts(j.get("completedOn"))
+        if ts:
+            jobs_by_day[ts.date()].append(j)
+
+    memb_by_day = defaultdict(list)
+    for m in memberships:
+        ts = parse_ts(m.get("createdOn"))
+        if ts:
+            memb_by_day[ts.date()].append(m)
+
+    offer_jobs_by_day = defaultdict(set)
+    for e in offer_ests:
+        jid = e.get("jobId")
+        ts = parse_ts(e.get("createdOn"))
+        if not jid or not ts:
+            continue
+        if any(_is_sierra_sam_sku(i.get("sku")) for i in (e.get("items") or [])):
+            offer_jobs_by_day[ts.date()].add(jid)
+
+    acc = {w: {"sold": 0, "nonMemberJobs": set(), "offered": set(), "soldOnOffer": set()}
+           for w in windows}
+    tw = [w for w in tech_windows if w in windows]
+    tacc = {w: defaultdict(lambda: {"nonMemberJobs": set(), "offered": set(),
+                                    "soldOnOffer": set()}) for w in tw}
+    unattr = {w: set() for w in tw}
+    for d, day_jobs in jobs_by_day.items():
+        wins = [w for w, (frm, to) in windows.items() if frm <= d <= to]
+        if not wins:
+            continue
+        day_custs = {j.get("customerId") for j in day_jobs if j.get("customerId")}
+        nonmem = [j for j in day_jobs if not _already_member(cov, j.get("customerId"), d)]
+        nonmem_ids = {j["id"] for j in nonmem}
+        nonmem_custs = {j.get("customerId") for j in nonmem if j.get("customerId")}
+        day_ms = memb_by_day.get(d, [])
+        sold_n = sum(1 for m in day_ms if m.get("customerId") in day_custs)
+        sold_custs = {m.get("customerId") for m in day_ms if m.get("customerId") in nonmem_custs}
+        converted_ids = {j["id"] for j in nonmem if j.get("customerId") in sold_custs}
+        offered_ids = (offer_jobs_by_day.get(d, set()) & nonmem_ids) | converted_ids
+        for w in wins:
+            a = acc[w]
+            a["sold"] += sold_n
+            a["nonMemberJobs"] |= nonmem_ids
+            a["offered"] |= offered_ids
+            a["soldOnOffer"] |= converted_ids
+            if w not in tacc:
+                continue
+            for jid in nonmem_ids:
+                tech = (job_tech or {}).get(jid)
+                if not tech:
+                    unattr[w].add(jid)
+                    continue
+                t = tacc[w][tech]
+                t["nonMemberJobs"].add(jid)
+                if jid in offered_ids:
+                    t["offered"].add(jid)
+                if jid in converted_ids:
+                    t["soldOnOffer"].add(jid)
+
+    dept = {w: {"sold": a["sold"], "nonMemberJobs": len(a["nonMemberJobs"]),
+                "offered": len(a["offered"]), "soldOnOffer": len(a["soldOnOffer"])}
+            for w, a in acc.items()}
+    per_tech = {w: {name: {k: len(v) for k, v in rec.items()}
+                    for name, rec in techs.items()}
+                for w, techs in tacc.items()}
+    recon = {w: {"deptNonMemberJobs": dept[w]["nonMemberJobs"],
+                 "techNonMemberJobs": sum(r["nonMemberJobs"] for r in per_tech[w].values()),
+                 "deptOffered": dept[w]["offered"],
+                 "techOffered": sum(r["offered"] for r in per_tech[w].values()),
+                 "unattributedJobs": len(unattr[w])} for w in tw}
+    return dept, per_tech, recon
+
+
+def board_ran_by_bu(jobs, day):
+    """{BU_SERVICE: n, BU_MAINT: n} of dept jobs COMPLETED on `day` — the
+    authoritative "Ran" definition (job-level completedOn), not the old
+    appointment-level `status == Done or job Completed` count which
+    over-reported demandRan by 3 on 2026-08-05 (95 vs the deck's 92)."""
+    out = {BU_SERVICE: 0, BU_MAINT: 0}
+    for j in jobs:
+        ts = parse_ts(j.get("completedOn"))
+        if ts and ts.date() == day and j.get("businessUnitId") in out:
+            out[j["businessUnitId"]] += 1
+    return out
+
+
 # ── 4. invoices (revenue$, BU split) — YTD span, bucketed ──────────────────
 def fetch_invoices():
     """Server-side businessUnitId filter (confirmed to work) keeps this to just
@@ -582,7 +1039,7 @@ def fetch_invoices():
     invs = []
     for bu in DEPT_BUS:
         invs += paged("/accounting/v2/tenant/{tenant}/invoices",
-                       {"businessUnitId": bu, "invoicedOnOrAfter": utc_iso(YTD_START)})
+                       {"businessUnitId": bu, "invoicedOnOrAfter": date_lower_bound(YTD_START)})
         time.sleep(0.3)
     log("dept invoices YTD: %d rows" % len(invs))
     return invs
@@ -616,12 +1073,16 @@ def revenue_for_range(invs, frm, to):
 
 
 # ── 5. monthly series Jan..current month ────────────────────────────────────
-# "sales" here is the FC v1 report's CompletedRevenueWithAdjustments sum
-# (same fallback used for MTD/YTD tech rows — see fetch_sold_estimates_recent
-# note) since a per-month entity sold-estimate pull x7 months company-wide
-# would blow the runtime budget. "revenue" (BU split) is entity-precise from
-# the invoices pull, which already covers the full YTD span.
-def monthly_series(invs, roster):
+# "sales" here is the FC v1 report's CompletedRevenueWithAdjustments sum since
+# a per-month entity sold-estimate pull x7 months company-wide would blow the
+# runtime budget. "revenue" (BU split) is entity-precise from the invoices
+# pull, which already covers the full YTD span.
+#
+# 2026-08-06: switched from fc_tech_rows() (25-tech roster) to fc_dept_rows()
+# (whole department). This chart sits directly under the Overview dept tiles;
+# leaving it roster-scoped meant the August bar read 59.7% close / $58.8k while
+# the MTD tile above it read 39.6% / $60.6k for the same days.
+def monthly_series(invs):
     import calendar
     out = []
     for m in range(1, TODAY.month + 1):
@@ -629,12 +1090,10 @@ def monthly_series(invs, roster):
         last = calendar.monthrange(YEAR, m)[1]
         m_to = TODAY if m == TODAY.month else dt.date(YEAR, m, last)
         c, rows = fc_window(m_from, m_to)
-        agg = fc_tech_rows(c, rows, roster)
-        opp = sum(a["opp"] for a in agg.values())
-        conv = sum(a["converted"] for a in agg.values())
-        sales_approx = sum(a["rev"] for a in agg.values())
-        membOpp = sum(a["membOpp"] for a in agg.values())
-        membSold = sum(a["membSold"] for a in agg.values())
+        t = fc_totals(fc_dept_rows(c, rows))
+        opp, conv = t["opp"], t["converted"]
+        sales_approx = t["rev"]
+        membOpp, membSold = t["membOpp"], t["membSold"]
         rev_bu = {BU_SERVICE: 0.0, BU_MAINT: 0.0}
         for i in invs:
             d = parse_date_only(i.get("invoiceDate"))
@@ -654,7 +1113,16 @@ def monthly_series(invs, roster):
 
 
 # ── 6. board counts (today) ─────────────────────────────────────────────────
-def board_counts():
+def board_counts(completed_jobs_today=None):
+    """ON BOARD = today's non-cancelled dept appointments (unchanged).
+
+    RAN = dept jobs whose jobStatus is Completed and whose completedOn lands on
+    TODAY, split by business unit. Changed 2026-08-06: the old rule counted an
+    APPOINTMENT as ran when `status == "Done" or job.jobStatus == "Completed"`,
+    which double-counts multi-appointment jobs and credits a job completed on
+    a different day. For 2026-08-05 the old rule gave demandRan 95 against the
+    authoritative deck's 92; the job-level rule gives 92 / 34 exactly and its
+    total (126) now agrees with the dept jobs tile."""
     day0 = dt.datetime.combine(TODAY, dt.time.min, tzinfo=TZ).astimezone(dt.timezone.utc)
     day1 = day0 + dt.timedelta(days=1)
     iso = lambda d: d.strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -665,15 +1133,16 @@ def board_counts():
     jobs = {j["id"]: j for j in chunked_get("/jpm/v2/tenant/{tenant}/jobs", job_ids)}
     board = {"demandOnBoard": 0, "demandRan": 0, "maintenanceOnBoard": 0, "maintenanceRan": 0}
     for a in appts:
-        j = jobs.get(a.get("jobId"), {})
-        bu = j.get("businessUnitId")
-        ran = (a.get("status") == "Done") or (j.get("jobStatus") == "Completed")
+        bu = jobs.get(a.get("jobId"), {}).get("businessUnitId")
         if bu == BU_SERVICE:
             board["demandOnBoard"] += 1
-            board["demandRan"] += int(ran)
         elif bu == BU_MAINT:
             board["maintenanceOnBoard"] += 1
-            board["maintenanceRan"] += int(ran)
+    if completed_jobs_today is None:
+        completed_jobs_today = [j for j in jobs.values() if j.get("jobStatus") == "Completed"]
+    ran = board_ran_by_bu(completed_jobs_today, TODAY)
+    board["demandRan"] = ran[BU_SERVICE]
+    board["maintenanceRan"] = ran[BU_MAINT]
     return board
 
 
@@ -798,43 +1267,53 @@ def _week_cache_allowed(monday):
     return _WR_AUDIT.get(monday.isoformat()) != "prelim"
 
 
-def fc_week_agg(monday, sunday, roster):
-    """Per-tech FC agg (fc_tech_rows shape) for an arbitrary Mon-Sun week,
-    cached to scratchpad forever UNLESS that week is currently tracked in
-    weekreview.json with audit=='prelim' (see _WR_AUDIT note above)."""
+def fc_week_aggs(monday, sunday, roster):
+    """(roster_agg, dept_agg) for an arbitrary Mon-Sun week, cached to
+    scratchpad forever UNLESS that week is currently tracked in weekreview.json
+    with audit=='prelim' (see _WR_AUDIT note above).
+
+    Cache payloads written before 2026-08-06 have only "_tech_agg" (roster) and
+    are treated as a MISS so the dept-wide half gets populated — a stale
+    roster-only cache would otherwise silently keep the 9-week Department Pulse
+    chart on the old narrow population."""
     cache = _weekly_cache_path(monday)
     allow_cache = _week_cache_allowed(monday)
     if allow_cache and os.path.exists(cache):
         try:
             payload = json.load(open(cache))
-            if isinstance(payload, dict) and "_tech_agg" in payload:
-                return payload["_tech_agg"]
+            if isinstance(payload, dict) and "_tech_agg" in payload and "_dept_agg" in payload:
+                return payload["_tech_agg"], payload["_dept_agg"]
         except Exception:
             pass
     c, rows = fc_window(monday, sunday)
     agg = fc_tech_rows(c, rows, roster)
+    dept_agg = fc_dept_rows(c, rows)
     if allow_cache:
         try:
             with open(cache + ".tmp", "w") as f:
-                json.dump({"_tech_agg": agg}, f)
+                json.dump({"_tech_agg": agg, "_dept_agg": dept_agg}, f)
             os.replace(cache + ".tmp", cache)
         except Exception:
             pass
-    return agg
+    return agg, dept_agg
+
+
+def fc_week_agg(monday, sunday, roster):
+    """Roster-scoped week agg — week_review_main()'s per-tech population."""
+    return fc_week_aggs(monday, sunday, roster)[0]
 
 
 def fetch_fc_week_dept(monday, sunday, roster):
-    agg = fc_week_agg(monday, sunday, roster)
-    dept = {"opp": sum(a["opp"] for a in agg.values()),
-            "converted": sum(a["converted"] for a in agg.values()),
-            "rev": sum(a["rev"] for a in agg.values()),
-            "membOpp": sum(a["membOpp"] for a in agg.values()),
-            "membSold": sum(a["membSold"] for a in agg.values())}
-    return dept
+    """DEPARTMENT-WIDE week totals for the 9-week Department Pulse chart."""
+    return fc_totals(fc_week_aggs(monday, sunday, roster)[1])
 
 
-def weekly_series(roster, invs_for_revenue, current_wtd_fc_agg, current_wtd_sales_dept,
+def weekly_series(roster, invs_for_revenue, current_wtd_dept_agg, current_wtd_sales_dept,
                    old_weekly=None, light=False):
+    """9-week Department Pulse series. DEPARTMENT-WIDE as of 2026-08-06 (was
+    roster-scoped) so it agrees with the Overview tiles directly above it;
+    `sales` for the current week is the dept-wide entity sold-estimate total,
+    past weeks keep the FC CompletedRevenueWithAdjustments approximation."""
     weeks = []
     for n_back in range(8, -1, -1):
         monday = WTD_START - dt.timedelta(weeks=n_back)
@@ -843,10 +1322,9 @@ def weekly_series(roster, invs_for_revenue, current_wtd_fc_agg, current_wtd_sale
         label = "%d/%d-%d/%d" % (monday.month, monday.day, sunday.month, sunday.day)
         if is_current:
             label += " (WTD)"
-            opp = sum(a["opp"] for a in current_wtd_fc_agg.values())
-            converted = sum(a["converted"] for a in current_wtd_fc_agg.values())
-            membOpp = sum(a["membOpp"] for a in current_wtd_fc_agg.values())
-            membSold = sum(a["membSold"] for a in current_wtd_fc_agg.values())
+            t = fc_totals(current_wtd_dept_agg)
+            opp, converted = t["opp"], t["converted"]
+            membOpp, membSold = t["membOpp"], t["membSold"]
             sales = current_wtd_sales_dept
         elif light and old_weekly and len(old_weekly) == 9:
             weeks.append(old_weekly[8 - n_back])
@@ -920,7 +1398,7 @@ def build_calls_board(roster):
     appt_techs = defaultdict(list)
     for a in asg:
         if a.get("active"):
-            nm = a.get("technicianName")
+            nm = norm_name(a.get("technicianName"))
             if nm:
                 appt_techs[a.get("appointmentId")].append(nm)
 
@@ -1042,7 +1520,15 @@ def budget_block(invs_for_month):
 
 # ── assembly ─────────────────────────────────────────────────────────────────
 def tech_rows_for_window(w, fc_agg, sales_bucket, roster, offer_bucket=None, call_bucket=None,
-                          sold_bucket=None):
+                          sold_bucket=None, memb_tech=None):
+    """One By Tech table (ROSTER-scoped, deliberately — see fc_tech_rows).
+
+    memb_tech: build_membership_dept()'s per-tech partition for this window,
+      {tech: {"nonMemberJobs", "offered", "soldOnOffer"}}. When present it is
+      the source of the membershipOffer* fields, so the By Tech offer column
+      and the Overview offer tile are the same arithmetic on the same job set
+      (2026-08-06). offer_bucket/call_bucket/sold_bucket are the SUPERSEDED
+      job-type-proxy path, kept only as a fallback signature."""
     entity_sales = w in ENTITY_SALES_WINDOWS
     rows = []
     for name, info in roster.items():
@@ -1056,7 +1542,11 @@ def tech_rows_for_window(w, fc_agg, sales_bucket, roster, offer_bucket=None, cal
         membSold = fc["membSold"] if fc else 0
         membOpp = fc["membOpp"] if fc else 0
         sales_val = sb["sales"] if entity_sales else rev   # mtd/ytd fallback: FC report revenue
-        if not (opp or jobs or sales_val or leads):
+        mrow = (memb_tech or {}).get(name)
+        # `or mrow[...]`: a tech with non-member completed jobs but no FC row
+        # must still get a row, otherwise his share of the department offer
+        # denominator would vanish from the table without a trace.
+        if not (opp or jobs or sales_val or leads or (mrow and mrow["nonMemberJobs"])):
             continue
         membOppF = fc["membOpp"] if fc else 0
         oppW = fc["oppW"] if fc else 0.0
@@ -1072,16 +1562,25 @@ def tech_rows_for_window(w, fc_agg, sales_bucket, roster, offer_bucket=None, cal
             "avgTicket": round(rev / jobs) if jobs else 0,
             "optionsPerOpp": round(oppW / opp, 2) if opp else 0,
         }
-        if offer_bucket is not None and call_bucket is not None:
-            offered = len(offer_bucket.get(name, ()))
-            offer_jobs = len(call_bucket.get(name, ()))
+        if memb_tech is not None or (offer_bucket is not None and call_bucket is not None):
+            if memb_tech is not None:
+                # DEPT-ALIGNED basis: this tech's slice of the department's
+                # non-member completed-job denominator.
+                m = mrow or {"nonMemberJobs": 0, "offered": 0, "soldOnOffer": 0}
+                offered, offer_jobs = m["offered"], m["nonMemberJobs"]
+                sold_on_offer = m["soldOnOffer"]
+                row["membershipOfferBasis"] = "nonMemberCompletedJobs"
+            else:
+                offered = len(offer_bucket.get(name, ()))
+                offer_jobs = len(call_bucket.get(name, ()))
+                sold_on_offer = len(sold_bucket.get(name, ())) if sold_bucket is not None else 0
+                row["membershipOfferBasis"] = "jobTypeProxy"
             assert offered <= offer_jobs, (
                 "membershipOffered > membershipOfferJobs for %s (%d > %d) — "
                 "numerator/denominator population mismatch" % (name, offered, offer_jobs))
             row["membershipOffered"] = offered
             row["membershipOfferJobs"] = offer_jobs
             row["membershipOfferRate"] = round(offered / offer_jobs * 1000) / 10 if offer_jobs else 0
-            sold_on_offer = len(sold_bucket.get(name, ())) if sold_bucket is not None else 0
             assert sold_on_offer <= offered, (
                 "membershipSoldOnOffer > membershipOffered for %s (%d > %d) — "
                 "a sold-with-membership job must be a subset of offered" % (name, sold_on_offer, offered))
@@ -1093,49 +1592,74 @@ def tech_rows_for_window(w, fc_agg, sales_bucket, roster, offer_bucket=None, cal
             row["membershipOfferRate"] = None
             row["membershipSoldOnOffer"] = None
             row["membershipCloseOnOffer"] = None
+            row["membershipOfferBasis"] = None
         rows.append(row)
     rows.sort(key=lambda r: -r["revenue"])
     return rows
 
 
-def dept_summary(w, fc_agg, sales_dept, rev_bucket, offer_dept=None, call_dept_set=None,
-                  sold_dept_set=None):
-    entity_sales = w in ENTITY_SALES_WINDOWS
-    opp = sum(a["opp"] for a in fc_agg.values())
-    converted = sum(a["converted"] for a in fc_agg.values())
-    jobs = sum(a["jobs"] for a in fc_agg.values())
-    membOpp = sum(a["membOpp"] for a in fc_agg.values())
-    membSold = sum(a["membSold"] for a in fc_agg.values())
-    leads = sum(a["leads"] for a in fc_agg.values())
-    rev = rev_bucket["total"]
-    sales_val = sales_dept if entity_sales else sum(a["rev"] for a in fc_agg.values())
+def dept_summary(w, dept_agg, sales_dept, rev_bucket, memb=None, entity_sales=False):
+    """One Overview / Department Pulse window block. DEPARTMENT-WIDE as of
+    2026-08-06 (see fc_dept_rows) — `dept_agg` must come from fc_dept_rows(),
+    NOT fc_tech_rows().
+
+    revenue / avgTicket: the FC report's CompletedRevenueWithAdjustments and
+    CompletedJobs, i.e. ONE population top and bottom, on a completion basis.
+    The old revenue came from revenue_for_range() (invoice-date basis, no tech
+    or roster filter) and read $64,801 for Aug 5 against the deck's $60,629
+    while jobs came from the roster FC agg — two different populations, so the
+    avg ticket was meaningless ($691 vs the true $481). revenue_for_range() is
+    still the right basis for the budget/pace card, which is about cash posted,
+    and it still drives `revenueBU` (the only genuine BU split available).
+
+    memb: build_membership_dept() entry for this window, or None to fall back
+    to the FC report's rounded membership proxy (YTD only)."""
+    t = fc_totals(dept_agg)
+    opp, converted, jobs, leads = t["opp"], t["converted"], t["jobs"], t["leads"]
+    rev = t["rev"]
+    sales_val = sales_dept if entity_sales else t["rev"]
     out = {
         "opps": int(opp), "converted": int(converted),
         "closeRate": round(converted / opp * 1000) / 10 if opp else 0,
         "sales": round(sales_val), "salesIsApprox": not entity_sales,
         "avgSale": round(sales_val / converted) if converted else 0,
         "revenue": round(rev), "revenueBU": {BU_NAME[k]: round(v) for k, v in rev_bucket["bu"].items()},
+        "revenueInvoiced": round(rev_bucket["total"]),
         "jobs": int(jobs), "avgTicket": round(rev / jobs) if jobs else 0,
-        "membershipsSold": int(membSold), "membershipOpps": int(membOpp),
-        "membershipConv": round(membSold / membOpp * 1000) / 10 if membOpp else 0,
         "leadsSet": leads,
+        "optionsPerOpp": round(t["oppW"] / opp, 2) if opp else 0,
     }
-    if offer_dept is not None and call_dept_set is not None:
-        offered = len(offer_dept)
-        offer_jobs = len(call_dept_set)
-        assert offered <= offer_jobs, (
+    if memb:
+        # Real counts. membershipOpps is the NON-MEMBER completed-job
+        # denominator (customers who could actually be sold), so the UI's
+        # "sold / opps" subtitle and membershipConv stay one arithmetic pair.
+        denom = memb["nonMemberJobs"]
+        offered = memb["offered"]
+        sold_on_offer = memb["soldOnOffer"]
+        assert offered <= denom, (
             "dept membershipOffered > membershipOfferJobs (%d > %d) — "
-            "numerator/denominator population mismatch" % (offered, offer_jobs))
-        out["membershipOffered"] = offered
-        out["membershipOfferJobs"] = offer_jobs
-        out["membershipOfferRate"] = round(offered / offer_jobs * 1000) / 10 if offer_jobs else 0
-        sold_on_offer = len(sold_dept_set) if sold_dept_set is not None else 0
+            "numerator/denominator population mismatch" % (offered, denom))
         assert sold_on_offer <= offered, (
             "dept membershipSoldOnOffer > membershipOffered (%d > %d) — "
             "a sold-with-membership job must be a subset of offered" % (sold_on_offer, offered))
+        out["membershipsSold"] = int(memb["sold"])
+        out["membershipsSoldIsApprox"] = False
+        out["membershipOpps"] = denom
+        out["membershipConv"] = round(memb["sold"] / denom * 1000) / 10 if denom else 0
+        out["membershipOffered"] = offered
+        out["membershipOfferJobs"] = denom
+        out["membershipOfferRate"] = round(offered / denom * 1000) / 10 if denom else 0
         out["membershipSoldOnOffer"] = sold_on_offer
         out["membershipCloseOnOffer"] = round(sold_on_offer / offered * 1000) / 10 if offered else None
     else:
+        # YTD: a per-customer membership-coverage pass over ~12k customers is
+        # not affordable (see build_membership_dept), so keep the FC report's
+        # rounded Opportunity x MembershipConversionRate proxy and say so.
+        membOpp, membSold = t["membOpp"], t["membSold"]
+        out["membershipsSold"] = int(membSold)
+        out["membershipsSoldIsApprox"] = True
+        out["membershipOpps"] = int(membOpp)
+        out["membershipConv"] = round(membSold / membOpp * 1000) / 10 if membOpp else 0
         out["membershipOffered"] = None
         out["membershipOfferJobs"] = None
         out["membershipOfferRate"] = None
@@ -1302,7 +1826,7 @@ def week_review_main():
     invs = []
     for bu in DEPT_BUS:
         invs += paged("/accounting/v2/tenant/{tenant}/invoices",
-                       {"businessUnitId": bu, "invoicedOnOrAfter": utc_iso(prior_monday)})
+                       {"businessUnitId": bu, "invoicedOnOrAfter": date_lower_bound(prior_monday)})
         time.sleep(0.3)
     cur_rev = revenue_for_range(invs, monday, sunday)
     prior_rev = revenue_for_range(invs, prior_monday, prior_sunday)
@@ -1348,15 +1872,61 @@ def week_review_main():
 # ── self-healing guards (2026-08-02 incident: GitHub native cron silently
 # skipped the 5:35 AM full rebuild, Aug 2 06:46->14:09 UTC gap, so 3-min
 # light runs kept republishing July's MTD block into August) ───────────────
+LIGHT_MAX_FULL_RUN_AGE_H = 25
+"""Max age of the last FULL run a --light run will tolerate before promoting
+itself. The full rebuild is a daily 5:35 AM PT cron, so a healthy light run
+never sees more than ~24h; 25h is one hour of grace past the next scheduled
+full run. Was 26h — halved the grace so a skipped 5:35 AM rebuild is caught by
+~6:35 AM instead of ~7:35 AM. It cannot go below 24h without escalating every
+afternoon by construction."""
+
+
+def _win_num(old, w, key):
+    v = ((old or {}).get(w) or {}).get(key)
+    return v if isinstance(v, (int, float)) else None
+
+
+def containment_pairs():
+    """[(bigger, smaller)] window pairs where `bigger` really does contain
+    `smaller` THIS week.
+
+    Not a constant: in the first partial week of a month WTD_START is in the
+    PREVIOUS month, so wtd is wider than mtd and mtd.revenue < wtd.revenue is
+    correct arithmetic, not a bug. Asserting the pair unconditionally would
+    crash the engine for the first few days of most months."""
+    out = []
+    for bigger, smaller in (("wtd", "today"), ("mtd", "wtd"), ("ytd", "mtd")):
+        bf, bt = WINDOWS[bigger]
+        sf, st_ = WINDOWS[smaller]
+        if bf <= sf and bt >= st_:
+            out.append((bigger, smaller))
+    return out
+
+
 def _light_escalation_reason(old):
     """Return a reason string if a --light run should be promoted to a full
-    run, else None. Cheap: three dict lookups + one timestamp parse."""
+    run, else None. Cheap: a handful of dict lookups + one timestamp parse."""
     cur_month = MONTHS[TODAY.month - 1]
     if old.get("mtdMonth") != cur_month:
         return "mtd month stale (seeded=%r, current=%r)" % (old.get("mtdMonth"), cur_month)
     monthly = old.get("monthly") or []
     if not any(m.get("month") == cur_month for m in monthly):
         return "monthly[] missing current month %r" % cur_month
+    # Window containment: mtd is a strict superset of wtd, ytd of mtd. A seed
+    # that violates that was built from mismatched vintages (the 2026-08-02
+    # incident published a July mtd next to an August wtd). Light runs now
+    # recompute mtd live so this normally self-heals in one cycle, but ytd is
+    # still carried forward and only a full run can repair it.
+    for bigger, smaller in containment_pairs():
+        if bigger == "wtd":
+            continue                      # today/wtd are always recomputed live
+        for key in ("revenue", "jobs"):
+            b, s = _win_num(old, bigger, key), _win_num(old, smaller, key)
+            if b is None or s is None:
+                return "seeded %s/%s missing %r — cannot verify window containment" % (bigger, smaller, key)
+            if b < s:
+                return "seeded %s.%s (%s) < %s.%s (%s) — inconsistent window vintages" % (
+                    bigger, key, b, smaller, key, s)
     lfr = old.get("lastFullRun")
     if not lfr:
         return "no lastFullRun stamp found"
@@ -1365,8 +1935,8 @@ def _light_escalation_reason(old):
         if last.tzinfo is None:
             last = last.replace(tzinfo=TZ)
         age_h = (NOW - last).total_seconds() / 3600
-        if age_h > 26:
-            return "lastFullRun stale (%.1fh old)" % age_h
+        if age_h > LIGHT_MAX_FULL_RUN_AGE_H:
+            return "lastFullRun stale (%.1fh old, limit %dh)" % (age_h, LIGHT_MAX_FULL_RUN_AGE_H)
     except Exception:
         return "lastFullRun stamp unparsable (%r)" % lfr
     return None
@@ -1465,52 +2035,129 @@ def main():
             log("light run escalated to full: %s" % reason)
             light = False
 
-    live_windows = {"today": WINDOWS["today"], "wtd": WINDOWS["wtd"]} if light else WINDOWS
+    # LIGHT RUNS NOW COMPUTE MTD LIVE (2026-08-06).
+    # Previously light runs skipped mtd/ytd entirely and republished whatever
+    # the last full run left behind, so a dashboard could show MTD revenue
+    # BELOW WTD revenue for most of a day. mtd is one extra FC report call plus
+    # a slightly longer invoice pull — cheap. ytd is still copied forward: an
+    # FC report over 7+ months and a fresh monthly[] series are what make a
+    # full run 12 minutes, and light runs have ~2. _light_escalation_reason()
+    # now hard-checks window containment on the SEED, so a carried-forward ytd
+    # that has fallen behind mtd promotes the next light run to a full one.
+    if light:
+        live_windows = {w: WINDOWS[w] for w in ("today", "wtd", "mtd")}
+        if TODAY.month == 1:
+            # In January the YTD span IS the MTD span, so computing it live
+            # costs one more (short) report call — and NOT computing it live
+            # would leave a frozen ytd sitting below a growing mtd, tripping
+            # the containment guard on every light run of the new year.
+            live_windows["ytd"] = WINDOWS["ytd"]
+    else:
+        live_windows = dict(WINDOWS)
 
     log("FC v1 report x%d window(s)" % len(live_windows))
-    fc_by_window = {}
+    fc_by_window, fc_dept_by_window = {}, {}
     for w, (frm, to) in live_windows.items():
         c, rows = fc_window(frm, to)
-        fc_by_window[w] = fc_tech_rows(c, rows, roster)
-        log("  %s: %d roster techs w/ rows" % (w, len(fc_by_window[w])))
+        fc_by_window[w] = fc_tech_rows(c, rows, roster)          # By Tech (roster)
+        fc_dept_by_window[w] = fc_dept_rows(c, rows)             # Overview tiles (dept-wide)
+        log("  %s: %d roster techs / %d dept techs w/ rows"
+            % (w, len(fc_by_window[w]), len(fc_dept_by_window[w])))
         time.sleep(0.5)
 
-    log("sold estimates (sales$, today/wtd entity-precise)")
-    ests = fetch_sold_estimates_recent()
+    # Department SALES: one long sold-estimate pull, no tech join (28.7s for a
+    # full YTD, measured 2026-08-06). Light runs only need back to the start of
+    # the month; ytd.sales is carried forward with the rest of the ytd block.
+    # min(): in the first partial week of a month WTD_START is in the PREVIOUS
+    # month, and recent_sold_estimates()/the wtd tile still need those days.
+    sales_span_start = min(MTD_START, WTD_START) if light else YTD_START
+    log("sold estimates (dept-wide sales$ since %s)" % sales_span_start)
+    dept_sold_ests = fetch_sold_estimates_dept(sales_span_start)
+    sales_dept_wide = bucket_sales_dept(dept_sold_ests, live_windows)
+    ests = recent_sold_estimates(dept_sold_ests)
 
-    log("membership-offer estimates (today/wtd entity-precise)")
-    offer_ests = fetch_membership_offer_estimates()
+    # Entity membership pass — today/wtd always, mtd on FULL runs only (see
+    # build_membership_dept for the cost measurements).
+    memb_windows = {w: WINDOWS[w] for w in (("today", "wtd") if light else ("today", "wtd", "mtd"))}
+    memb_span_start = min(frm for frm, _ in memb_windows.values())
 
-    log("tech call universe (today/wtd entity-precise — offer-rate denominator)")
-    call_appts, call_excl = fetch_tech_call_universe()
+    log("membership-offer estimates (entity, since %s)" % memb_span_start)
+    offer_ests = fetch_membership_offer_estimates(memb_span_start)
 
+    # The department membership pass has to happen BEFORE the job->tech join now
+    # (2026-08-06): its completed-job set is also the per-tech offer denominator,
+    # so those job ids ride along in the SAME fetch_job_tech_map() call instead
+    # of costing a second pull. The old fetch_tech_call_universe() job-type-proxy
+    # denominator (a ~12s company-wide appointment pull) is gone — see the
+    # SUPERSEDED block at section 3c.
+    log("dept membership entity pass (%s)" % ", ".join(sorted(memb_windows)))
+    completed_jobs = fetch_completed_dept_jobs(memb_span_start, TODAY)
+    memb_cov = fetch_membership_coverage(j.get("customerId") for j in completed_jobs)
+    memberships_created = fetch_memberships_created(memb_span_start, TODAY)
+
+    # Only jobs completed inside the per-tech windows (today/wtd) need tech
+    # attribution — a FULL run's mtd membership pass is department-only, and
+    # feeding a month of jobs into the assignment join would cost far more than
+    # the By Tech table is worth. known_jobs= hands fetch_job_tech_map the job
+    # objects we already have so it only re-fetches what it has never seen.
+    completed_by_id = {j["id"]: j for j in completed_jobs}
+    memb_tech_job_ids = {j["id"] for j in completed_jobs
+                         if (parse_ts(j.get("completedOn")) or NOW).date() >= WTD_START}
     job_ids = {e["jobId"] for e in ests if e.get("jobId")}
-    job_ids |= {e["jobId"] for e in offer_ests if e.get("jobId")}
-    job_ids |= {a["jobId"] for a in call_appts if a.get("jobId")}
-    log("  unique jobs to resolve tech for: %d" % len(job_ids))
-    job_tech = fetch_job_tech_map(job_ids, roster)
+    job_ids |= memb_tech_job_ids
+    log("  unique jobs to resolve tech for: %d (%d of them completed dept jobs "
+        "already in hand)" % (len(job_ids), len(memb_tech_job_ids)))
+    multi_tech = {}
+    job_tech = fetch_job_tech_map(job_ids, roster, known_jobs=completed_by_id,
+                                  all_techs=multi_tech)
     log("  resolved tech for %d jobs" % len(job_tech))
-    sales_by_window, sales_dept = bucket_sales(ests, job_tech)
-    call_by_window, call_dept = bucket_call_universe(call_appts, job_tech)
-    offer_by_window, offer_dept, sold_on_offer_by_window, sold_on_offer_dept = \
-        bucket_membership_offers(offer_ests, job_tech, call_dept)
+    sales_by_window, sales_dept_roster = bucket_sales(ests, job_tech)
+    log("  wtd sales$: dept-wide $%s vs roster-attributed $%s (the gap is off-roster "
+        "dept labour — the SALES tile shows the dept figure, By Tech shows the roster one)"
+        % (format(round(sales_dept_wide.get("wtd", 0.0)), ","),
+           format(round(sales_dept_roster.get("wtd", 0.0)), ",")))
+
+    memb_by_window, memb_tech_by_window, memb_recon = build_membership_dept(
+        memb_windows, completed_jobs, memb_cov, memberships_created, offer_ests,
+        job_tech=job_tech, tech_windows=ENTITY_SALES_WINDOWS)
+    for w in sorted(memb_by_window):
+        log("  %s: sold %d / non-member jobs %d / offered %d"
+            % (w, memb_by_window[w]["sold"], memb_by_window[w]["nonMemberJobs"],
+               memb_by_window[w]["offered"]))
+    # Reconciliation: the By Tech offer denominator is a PARTITION of the dept
+    # one, minus the jobs run by labour that isn't on the 2A/2B roster. Logged
+    # every run so the gap is visible instead of inferred.
+    for w in sorted(memb_recon):
+        r = memb_recon[w]
+        log("  %s per-tech offer reconciliation: %d/%d dept non-member jobs attributed to a "
+            "roster tech, %d off-roster/unassigned (kept in the dept tile, absent from By "
+            "Tech by design); offered %d/%d" %
+            (w, r["techNonMemberJobs"], r["deptNonMemberJobs"], r["unattributedJobs"],
+             r["techOffered"], r["deptOffered"]))
+        assert r["techNonMemberJobs"] + r["unattributedJobs"] == r["deptNonMemberJobs"], (
+            "per-tech offer denominator does not partition the dept denominator for %s "
+            "(%d + %d != %d)" % (w, r["techNonMemberJobs"], r["unattributedJobs"],
+                                 r["deptNonMemberJobs"]))
+    _multi = sum(1 for jid in memb_tech_job_ids if len(multi_tech.get(jid, ())) > 1)
+    log("  %d of %d window jobs had >1 active roster tech on the first appointment "
+        "(counted once, to the first — no double counting)" % (_multi, len(memb_tech_job_ids)))
 
     if light:
-        # small invoice pull: covers WTD (for revenue bucket) and, if today
-        # falls inside the budget month, the MTD-so-far span for todayCommit.
-        import calendar as _cal
+        # small invoice pull: covers MTD (revenueBU + budget-month todayCommit)
+        # and WTD. Only revenueBU / the budget card read invoices now — the
+        # REVENUE tile is the FC report's completion-basis figure.
         try:
             bcfg = json.load(open(os.path.join(HERE, "service_budget.json")))
             by, bm = (int(x) for x in bcfg["month"].split("-"))
             bstart = dt.date(by, bm, 1)
         except Exception:
-            bstart = WTD_START
-        fetch_from = min(WTD_START, bstart) if TODAY >= bstart else WTD_START
+            bstart = MTD_START
+        fetch_from = min(WTD_START, MTD_START, bstart if TODAY >= bstart else MTD_START)
         log("invoices (light: revenue$ from %s)" % fetch_from)
         invs = []
         for bu in DEPT_BUS:
             invs += paged("/accounting/v2/tenant/{tenant}/invoices",
-                           {"businessUnitId": bu, "invoicedOnOrAfter": utc_iso(fetch_from)})
+                           {"businessUnitId": bu, "invoicedOnOrAfter": date_lower_bound(fetch_from)})
             time.sleep(0.3)
         rev_by_window = bucket_revenue(invs, live_windows)
     else:
@@ -1522,10 +2169,11 @@ def main():
         monthly = old.get("monthly", [])
     else:
         log("monthly series")
-        monthly = monthly_series(invs, roster)
+        monthly = monthly_series(invs)
 
     log("board counts (today)")
-    board = board_counts()
+    board = board_counts([j for j in completed_jobs
+                          if (parse_ts(j.get("completedOn")) or NOW).date() == TODAY])
 
     log("calls board (forward 5 non-Sunday days)")
     calls_path = os.path.join(HERE, "servicecalls.json")
@@ -1549,7 +2197,7 @@ def main():
 
     log("weekly series (9 weeks)")
     old_weekly = old.get("weekly") if light else None
-    weekly = weekly_series(roster, invs, fc_by_window["wtd"], sales_dept.get("wtd", 0.0),
+    weekly = weekly_series(roster, invs, fc_dept_by_window["wtd"], sales_dept_wide.get("wtd", 0.0),
                             old_weekly=old_weekly, light=light)
 
     log("budget block")
@@ -1566,34 +2214,73 @@ def main():
     else:
         out["mtdMonth"] = MONTHS[TODAY.month - 1]
         out["lastFullRun"] = NOW.isoformat()
+    _MEMB_KEYS = ("membershipOffered", "membershipOfferJobs", "membershipOfferRate",
+                  "membershipSoldOnOffer", "membershipCloseOnOffer")
+    _MEMB_ROW_KEYS = _MEMB_KEYS + ("membershipOfferBasis",)
     for w in WINDOWS:
-        if light and w in ("mtd", "ytd"):
+        if w not in live_windows:
+            # ytd on a light run — carry the last full run's block forward.
             out[w] = old.get(w, {})
-            out[w].setdefault("membershipOffered", None)
-            out[w].setdefault("membershipOfferJobs", None)
-            out[w].setdefault("membershipOfferRate", None)
-            out[w].setdefault("membershipSoldOnOffer", None)
-            out[w].setdefault("membershipCloseOnOffer", None)
+            for k in _MEMB_KEYS:
+                out[w].setdefault(k, None)
+            out[w].setdefault("membershipsSoldIsApprox", True)
+            out[w].setdefault("revenueInvoiced", out[w].get("revenue"))
+            out[w].setdefault("optionsPerOpp", 0)
             out["techs"][w] = old.get("techs", {}).get(w, [])
             for row in out["techs"][w]:
-                row.setdefault("membershipOffered", None)
-                row.setdefault("membershipOfferJobs", None)
-                row.setdefault("membershipOfferRate", None)
-                row.setdefault("membershipSoldOnOffer", None)
-                row.setdefault("membershipCloseOnOffer", None)
+                for k in _MEMB_ROW_KEYS:
+                    row.setdefault(k, None)
             continue
-        sd = sales_dept.get(w, 0.0)
-        od = offer_dept.get(w) if w in ENTITY_SALES_WINDOWS else None
-        cd = call_dept.get(w) if w in ENTITY_SALES_WINDOWS else None
-        sdset = sold_on_offer_dept.get(w) if w in ENTITY_SALES_WINDOWS else None
-        out[w] = dept_summary(w, fc_by_window[w], sd, rev_by_window[w], offer_dept=od, call_dept_set=cd,
-                               sold_dept_set=sdset)
+        out[w] = dept_summary(w, fc_dept_by_window[w], sales_dept_wide.get(w, 0.0),
+                              rev_by_window[w], memb=memb_by_window.get(w),
+                              entity_sales=True)
+        if light and w == "mtd" and not memb_by_window.get(w):
+            # Light runs skip the mtd membership entity pass (too slow — see
+            # build_membership_dept). Carry the last full run's REAL mtd
+            # membership counts rather than silently swapping in the FC
+            # report's rounded proxy, which would make the tile jump between
+            # two different definitions every 10 minutes.
+            prior = (old or {}).get("mtd") or {}
+            if prior.get("membershipsSoldIsApprox") is False:
+                for k in ("membershipsSold", "membershipsSoldIsApprox", "membershipOpps",
+                          "membershipConv") + _MEMB_KEYS:
+                    out[w][k] = prior.get(k)
+                out[w]["membershipsAsOf"] = prior.get("membershipsAsOf") or (old or {}).get("lastFullRun")
+        # By Tech / techDaily / alerts / coaching stay ROSTER-scoped. The offer
+        # columns are the dept denominator PARTITIONED by tech (memb_tech), so
+        # the table and the tile above it are the same question — today/wtd
+        # only, exactly as before; mtd/ytd per-tech offer fields stay null
+        # rather than flapping between definitions on light vs full runs.
         sb = sales_by_window.get(w, {})
-        ob = offer_by_window.get(w) if w in ENTITY_SALES_WINDOWS else None
-        cb = call_by_window.get(w) if w in ENTITY_SALES_WINDOWS else None
-        soldb = sold_on_offer_by_window.get(w) if w in ENTITY_SALES_WINDOWS else None
-        out["techs"][w] = tech_rows_for_window(w, fc_by_window[w], sb, roster, offer_bucket=ob, call_bucket=cb,
-                                                sold_bucket=soldb)
+        mt = memb_tech_by_window.get(w) if w in ENTITY_SALES_WINDOWS else None
+        out["techs"][w] = tech_rows_for_window(w, fc_by_window[w], sb, roster, memb_tech=mt)
+    if not light:
+        for w in ("today", "wtd", "mtd"):
+            if (out[w].get("membershipsSoldIsApprox") is False):
+                out[w]["membershipsAsOf"] = NOW.isoformat()
+
+    # Containment invariant — a wider window is a strict superset of a
+    # narrower one, so it can never hold less revenue or fewer jobs. Publishing
+    # a violation is exactly the 2026-08-02 failure mode (July's mtd sitting
+    # under August's wtd).
+    #   both windows computed live this run -> HARD FAIL, the data is wrong.
+    #   one carried forward (ytd on a non-January light run) -> loud warning;
+    #     _light_escalation_reason() sees it in the seed and promotes the next
+    #     light run to a full one, so it self-heals within one cycle instead of
+    #     taking the dashboard down.
+    for bigger, smaller in containment_pairs():
+        for key in ("revenue", "jobs"):
+            b, s = out[bigger].get(key), out[smaller].get(key)
+            if not (isinstance(b, (int, float)) and isinstance(s, (int, float))) or b >= s:
+                continue
+            msg = ("%s.%s (%s) < %s.%s (%s) — the wider window is a strict superset "
+                   "and cannot be smaller" % (bigger, key, b, smaller, key, s))
+            if bigger in live_windows and smaller in live_windows:
+                raise RuntimeError("REFUSING TO PUBLISH: " + msg +
+                                   ". Both windows were computed live this run, so this is a "
+                                   "real aggregation bug, not stale carry-forward.")
+            log("WARNING: %s (carried-forward window) — the next light run will escalate to "
+                "a full rebuild and repair it" % msg)
 
     with open(path + ".tmp", "w") as f:
         json.dump(out, f, separators=(",", ":"))
@@ -1644,14 +2331,19 @@ def main():
         out["mtd"]["opps"], out["mtd"]["closeRate"], out["mtd"]["jobs"], out["mtd"]["membershipsSold"]))
     print("board:", board)
     print("top 3 MTD techs:", [(t["name"], t["revenue"], t["closeRate"]) for t in out["techs"]["mtd"][:3]])
-    print("membershipOfferJobs exclusions (WTD-to-date pull): SAM-covered=%d | part-install=%d" % (
-        call_excl["sam"], call_excl["partInstall"]))
-    print("today offer: offered=%s offerJobs=%s rate=%s closeOnOffer=%s" % (
-        out["today"].get("membershipOffered"), out["today"].get("membershipOfferJobs"),
-        out["today"].get("membershipOfferRate"), out["today"].get("membershipCloseOnOffer")))
-    print("wtd   offer: offered=%s offerJobs=%s rate=%s closeOnOffer=%s" % (
-        out["wtd"].get("membershipOffered"), out["wtd"].get("membershipOfferJobs"),
-        out["wtd"].get("membershipOfferRate"), out["wtd"].get("membershipCloseOnOffer")))
+    for w in sorted(memb_recon):
+        r = memb_recon[w]
+        print("per-TECH offer denominator (%s): %d of %d dept non-member jobs attributed to a "
+              "roster tech, %d off-roster/unassigned" %
+              (w, r["techNonMemberJobs"], r["deptNonMemberJobs"], r["unattributedJobs"]))
+    for w in ("today", "wtd", "mtd"):
+        b = out[w]
+        print("%-5s dept membership: sold=%s / non-member jobs=%s = %s%% | offered=%s (%s%%) | "
+              "closeOnOffer=%s%s" % (
+                  w, b.get("membershipsSold"), b.get("membershipOpps"), b.get("membershipConv"),
+                  b.get("membershipOffered"), b.get("membershipOfferRate"),
+                  b.get("membershipCloseOnOffer"),
+                  "  [FC approx]" if b.get("membershipsSoldIsApprox") else ""))
 
 
 if __name__ == "__main__":
