@@ -1,0 +1,257 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>David Canales &mdash; SILO Coaching Plan 2026-08-06</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0B2A4A; --navy2:#12426B; --gold:#C8962E; --gold2:#E2B24A;
+ --paper:#F6F5F2; --card:#FFFFFF; --ink:#141C28; --muted:#64717F; --faint:#8A96A2;
+ --line:#E7E3DA; --line2:#EFECE4;
+ --strong:#2E7D54; --wins:#C8962E; --solid:#2E6BA6; --mod:#B98A2E; --weak:#C0473F; --na:#9AA3AC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+.disp{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em;line-height:1.03}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 90px}
+/* topbar */
+.top{display:flex;align-items:center;gap:11px;max-width:900px;margin:0 auto;padding:16px 22px 13px;border-bottom:1.5px solid var(--navy)}
+.top .mk{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);
+ display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed";font-weight:800;font-size:18px}
+.top b{font-family:"Barlow Condensed";font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase}
+.top .tag{margin-left:auto;font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+ border:1px solid var(--gold);border-radius:20px;padding:3px 11px}
+/* hero */
+.hero{padding:30px 0 6px}
+.ey{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.hero h1{font-size:clamp(38px,7vw,60px);margin:0 0 8px}
+.hero .lede{font-size:17.5px;color:#33404e;max-width:640px}
+/* glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+ border-radius:12px;overflow:hidden;margin-top:24px}
+.glance .g{background:var(--card);padding:15px 16px}
+.glance .k{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+.glance .v{font-family:"Barlow Condensed";font-weight:700;font-size:21px;line-height:1.05;color:var(--navy)}
+.glance .v.red{color:var(--weak)} .glance .v.grn{color:var(--strong)}
+.glance .v small{display:block;font-family:Inter;font-weight:500;font-size:11.5px;color:var(--muted);margin-top:3px;letter-spacing:0;text-transform:none}
+@media(max-width:640px){.glance{grid-template-columns:repeat(2,1fr)}}
+/* section */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sh .no{font-family:"Barlow Condensed";font-weight:700;font-size:15px;color:#fff;background:var(--navy);
+ width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.sh h2{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;color:var(--navy);margin:0}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+/* band chips */
+.b{display:inline-flex;align-items:center;gap:5px;font-family:"Barlow Condensed";font-weight:700;font-size:12px;text-transform:uppercase;
+ letter-spacing:.04em;padding:2px 9px;border-radius:5px;white-space:nowrap;color:#fff}
+.b:before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+.b.strong{background:var(--strong)} .b.wins{background:var(--wins)} .b.solid{background:var(--solid)}
+.b.mod{background:var(--mod)} .b.weak{background:var(--weak)} .b.na{background:var(--na)}
+.b.pass{background:var(--strong)} .b.fail{background:var(--weak)}
+/* rubric table */
+.rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rub .grp{display:flex;align-items:center;gap:10px;background:#F0EEE7;padding:9px 16px;border-top:1px solid var(--line)}
+.rub .grp:first-child{border-top:0}
+.rub .grp .gn{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--navy)}
+.rub .grp .gb{margin-left:auto}
+.row{display:grid;grid-template-columns:150px 118px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line2);align-items:start}
+.row .rb{font-weight:600;font-size:13.5px}
+.row .ev{font-size:13px;color:#3d4855}
+.row .ev q{color:var(--navy);font-style:italic}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:5px}.row .rb{font-size:14px}.rub .grp .gb{font-size:11px}}
+/* timeline */
+.tl{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 4px}
+.tl .ev:last-child{padding-bottom:0}
+.tl .ev:before{content:"";position:absolute;left:-33px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--paper)}
+.tl .ev.win:before{background:var(--strong)} .tl .ev.miss:before{background:var(--weak)}
+.tl .ph{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.tl .ev h4{font-family:"Barlow Condensed";font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.2}
+.tl .ev p{margin:0;font-size:13.5px;color:#3d4855}
+.tl .ev q{color:var(--navy);font-style:italic}
+/* decisive moment */
+.decisive{border:1px solid var(--weak);border-radius:14px;overflow:hidden;background:var(--card)}
+.decisive .dh{background:#FBF1EF;padding:16px 20px;border-bottom:1px solid #F0D7D3}
+.decisive .dh .k{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--weak);margin-bottom:5px}
+.decisive .dh h3{font-family:"Barlow Condensed";font-weight:700;font-size:24px;margin:0;color:#8f2f28}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.split .c{background:var(--card);padding:16px 20px}
+.split .c .lbl{font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-bottom:8px}
+.split .c.said .lbl{color:var(--weak)} .split .c.should .lbl{color:var(--strong)}
+.split .c p{margin:0;font-size:14px}
+.split .c q{font-style:italic}
+@media(max-width:640px){.split{grid-template-columns:1fr}}
+.script{background:var(--navy);color:#EAF1F8;padding:18px 20px}
+.script .lbl{font-family:"IBM Plex Mono";font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:9px}
+.script p{margin:0 0 9px;font-size:15.5px;line-height:1.6}
+.script p:last-child{margin-bottom:0}
+.script .say{border-left:3px solid var(--gold);padding-left:13px;font-style:italic}
+/* moment cards */
+.mom{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:16px 19px;margin-bottom:13px}
+.mom .top2{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mom h4{font-family:"Barlow Condensed";font-weight:700;font-size:18px;margin:0;line-height:1.15}
+.mom .q{font-size:14px;background:#F6F3EC;border-radius:8px;padding:10px 13px;margin:9px 0}
+.mom .q b{font-family:"IBM Plex Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:3px}
+.mom .fixline{font-size:13.5px;color:#3d4855}
+.mom .fixline b{color:var(--strong)}
+/* strengths */
+.str{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.str li{position:relative;padding:11px 0 11px 26px;border-top:1px solid var(--line2);font-size:14.5px}
+.str li:first-child{border-top:0}
+.str li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--strong);font-weight:700}
+.str li q{color:var(--navy);font-style:italic}
+/* bottom */
+.bottom{margin-top:44px;background:var(--navy);color:#EAF1F8;border-radius:16px;padding:28px 30px}
+.bottom .eyb{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:11px}
+.bottom p{font-size:18px;line-height:1.6;margin:0}
+.foot{margin-top:34px;text-align:center;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:.05em;color:var(--faint)}
+.legend{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:12px}
+</style></head><body>
+<div class="top"><div class="mk">S</div><b>Sierra&nbsp;&middot;&nbsp;SILO</b><span class="tag">Daily Coaching Plan &middot; 2026-08-06</span></div>
+<div class="wrap">
+<div class="hero">
+  <div class="ey">2 recordings &middot; 2 gradeable calls &middot; one same-day specialist on site</div>
+  <h1 class="disp">David Canales</h1>
+  <p class="lede">On Rossopoulos he taught the whole system from scratch, priced two tiers honestly, told the customer <b>&ldquo;this is where I make my money, is by the repairs&rdquo;</b> and still sent him to the specialist &mdash; who was standing in the house within the hour. On Gordon a customer asked to buy a membership and asked for a room to be fixed, and David left with neither, apologising.</p>
+</div>
+<div class="glance">
+  <div class="g"><div class="k">Close Rate</div><div class="v grn">100%<small>flipped on the day</small></div></div>
+  <div class="g"><div class="k">Calls Reviewed</div><div class="v">2<small>134 + 15 min &middot; 0 recordings skipped</small></div></div>
+  <div class="g"><div class="k">Strongest Section</div><div class="v grn">Assessment<small>Strong</small></div></div>
+  <div class="g"><div class="k">Weakest Section</div><div class="v red">Deliver<small>Solid</small></div></div>
+</div>
+<div class="legend"><span class="b strong">Strong</span><span class="b wins">Strong on wins</span><span class="b solid">Solid</span><span class="b mod">Moderate</span><span class="b weak">Weak</span><span class="b na">Off-tape</span></div>
+<p class="note">Scored on strength bands, never numbers &mdash; the only figure anywhere is the close rate, taken from the dashboard&rsquo;s own conversion figures. A flip is an Option&nbsp;C hand-off, a specialist or comfort-advisor appointment, or work authorised in the call, confirmed against ServiceTitan. Both recordings contain long stretches of unrelated broadcast audio, and the Rossopoulos file also captures the equipment specialist&rsquo;s own visit and a conversation between colleagues &mdash; none of that is graded here.</p>
+
+<section id="verdict">
+<div class="sh"><div class="no">1</div><h2>The one-line verdict</h2></div>
+<div class="decisive">
+  <div class="dh"><div class="k">What the day turned on</div><h3>When he knows the answer he is one of the best teachers here. When he doesn&rsquo;t, he apologises and leaves.</h3></div>
+  <div class="split">
+    <div class="c should"><div class="lbl">Rossopoulos &mdash; the flip</div><p>Full expectations sequence including the review ask, an hour of genuine teaching, honest tiers &mdash; <q>2,730</q> immediate, <q>over $8,600</q> future &mdash; and then the hand-off framed against his own interest: <q>this is where I make my money, is by the repairs, because I&rsquo;m the repair guy. But I feel like you need to just hear out all your options.</q> When the customer said he was short on time, David asked for the window instead of accepting the delay: <q>if I can get him out here, if he can get here within the next couple of hours&hellip;</q> The specialist arrived and the appointment was signed at zero cost.</p></div>
+    <div class="c said"><div class="lbl">Gordon &mdash; the one that got away</div><p>Two purchases were offered to him in the first ninety seconds: <q>I&rsquo;m gonna probably sign up for your annual contract, right? I&rsquo;ll probably sign that up</q>, and <q>I wanted you to check one of my bedrooms&hellip; if there&rsquo;s an issue with the tube, the size, or if there&rsquo;s something else we can do to cool that room down.</q> The visit ended over a diagnostic tool Sierra does not own, with no membership, no airflow answer, no options and no charge: <q>Not gonna charge you nothing.</q></p></div>
+  </div>
+</div>
+</section>
+
+<section id="calls">
+<div class="sh"><div class="no">2</div><h2>The day&rsquo;s recordings</h2><span class="hint">outcome per gradeable call</span></div>
+<div class="rub">
+  <div class="row"><div class="rb">Rossopoulos &middot; Job 672717862</div><div><span class="b strong">Flipped</span></div><div class="ev">134 min on a 25-year-old R-22 system in a part-time residence. Low refrigerant with an undiagnosed leak, compressor winding damage, two motors leaking oil, a rusted coil and a heat-exchanger hot spot &mdash; all shown and explained. Immediate and future tiers priced, equipment specialist requested same-day and on site within the visit. Confirmed in ServiceTitan.</div></div>
+  <div class="row"><div class="rb">Gordon &middot; Job 671039080</div><div><span class="b weak">No close</span></div><div class="ev">15 min. High-efficiency Trane requiring a manufacturer diagnostic laptop Sierra does not carry. Customer wanted a maintenance agreement and help with an overheating computer room. Manager confirmed the tool is unavailable; the call ended with a referral to the factory and no options.</div></div>
+</div>
+</section>
+
+<section id="rubric">
+<div class="sh"><div class="no">3</div><h2>Strength by rubric section</h2><span class="hint">band + the evidence for it</span></div>
+<div class="rub">
+
+  <div class="grp"><span class="gn">Welcome Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+  <div class="row"><div class="rb">Empathy</div><div><span class="b solid">Solid</span></div><div class="ev">Name given and permission asked on both calls &mdash; <q>Morning, my name&rsquo;s David</q>, <q>is it okay if we step in though?</q> &mdash; and parking checked at the door. Rapport builds slowly rather than immediately; on the longer call it becomes genuinely warm by the end.</div></div>
+  <div class="row"><div class="rb">Expertise</div><div><span class="b strong">Strong</span></div><div class="ev">Real history before starting work: <q>when&rsquo;s the last time you had maintenance?</q>, <q>you&rsquo;ve been using us, though, right?</q>, <q>have you had any other issues in the past?</q>, and the thermostat habit including the away setting: <q>do you leave it running when you&rsquo;re gone?</q> &rarr; <q>I put it at 80 degrees.</q></div></div>
+  <div class="row"><div class="rb">Setting expectations</div><div><span class="b strong">Strong</span></div><div class="ev">The complete sequence, and he is one of very few on the board who says the last beat out loud rather than hinting at it: <q>I&rsquo;m gonna do a thorough evaluation&hellip; if I happen to notice anything outside of the issue, is it okay if I bring it to your attention?&hellip; I&rsquo;m gonna go to my truck for about 15, 20 minutes, write up my report and build up some options for you. We don&rsquo;t do anything without your approval&hellip; anything you do approve can get started on that today. And overall, I&rsquo;m here for a five star experience.</q> He also asked the time question properly: <q>Do you have anywhere you gotta be? I just want to be mindful of your time.</q></div></div>
+
+  <div class="grp"><span class="gn">Assessment Step</span><span class="gb"><span class="b strong">Strong</span></span></div>
+  <div class="row"><div class="rb">Required questions</div><div><span class="b solid">Solid</span></div><div class="ev">Thermostat setting and away behaviour covered, maintenance history covered, filters inspected and discussed. Missing on his own calls: the mandatory power-bill follow-up and the hot-and-cold-rooms question &mdash; on Gordon the customer had to raise the hot room himself.</div></div>
+  <div class="row"><div class="rb">Check-ins</div><div><span class="b strong">Strong</span></div><div class="ev">Four separate check-ins across the long call, each one bringing the customer along rather than saving it for the report: <q>Hey, Ross. I forgot to show you, too. So I took a reading on the compressor, and I&rsquo;m getting a bad reading on it&hellip; I just didn&rsquo;t want to keep you too long. I know it&rsquo;s hard out there.</q></div></div>
+  <div class="row"><div class="rb">Draw the picture</div><div><span class="b strong">Strong</span></div><div class="ev">He starts by asking permission to teach &mdash; <q>has anyone ever explained to you how an AC system works?</q> &mdash; then builds the whole thing: <q>Cooling box is like a radiator for a car&hellip; when the compressor pumps Freon up here, it goes through here, turns cold, and then cycles back down.</q> The blower described as <q>like a hamster wheel that helps push the air around.</q></div></div>
+  <div class="row"><div class="rb">Keep it simple</div><div><span class="b strong">Strong</span></div><div class="ev">Complex failures made physical. Refrigerant loss: <q>imagine if you had, if you didn&rsquo;t have oil in your car&hellip; that compressor is gonna now lock up, seize up like a motor in your car.</q> Capacitors: <q>capacitor is like car battery&hellip; it can help crank start that motor.</q> Compressor windings: <q>it has copper windings inside. And when they overheat, they get closer together, and if they touch, then that compressor is done.</q></div></div>
+  <div class="row"><div class="rb">Show pictures</div><div><span class="b strong">Strong</span></div><div class="ev">Evidence-led throughout, including the safety item he had no obligation to raise: <q>this is your heat exchanger&hellip; that&rsquo;s a heat spot. So when this overheats, you start to see those darker areas&hellip; cracks. It&rsquo;s gas, carbon monoxide&hellip; I just want to make you aware of that.</q> Photographed before the customer asked.</div></div>
+  <div class="row"><div class="rb">Get the customer to diagnose</div><div><span class="b mod">Moderate</span></div><div class="ev">He asks <q>do you have any questions on that?</q> repeatedly and the answer is repeatedly <q>No.</q> The customer does begin reasoning at the end &mdash; <q>Changing all those parts versus new unit</q> &mdash; but that is the customer&rsquo;s own arithmetic, not something David drew out of him.</div></div>
+
+  <div class="grp"><span class="gn">Decision Step</span><span class="gb"><span class="b wins">Strong on wins</span></span></div>
+  <div class="row"><div class="rb">Building options</div><div><span class="b wins">Strong on wins</span></div><div class="ev">On Rossopoulos, an honest and complete ladder: leak search plus outdoor fan motor at <q>2,730</q> with the refrigerant cost flagged as unknown and explained, futures at <q>over $8,600</q> with the coil availability risk named, and the specialist above both. On Gordon, no option of any kind was built.</div></div>
+  <div class="row"><div class="rb">Link it</div><div><span class="b strong">Strong</span></div><div class="ev">Tied the recommendation to how the customer actually lives &mdash; a part-time residence he leaves for months: <q>I know you&rsquo;re not here a lot, but if you start fresh, you know, when you come here, you have a peace of mind.</q></div></div>
+  <div class="row"><div class="rb">Say it</div><div><span class="b strong">Strong</span></div><div class="ev">Numbers stated plainly, including the ones he could not pin down, with the reason why: <q>this is not including the Freon&hellip; you could be looking at three, four, five pounds somewhere around there.</q> No false precision and no hiding.</div></div>
+  <div class="row"><div class="rb">Spin it</div><div><span class="b strong">Strong</span></div><div class="ev">The strongest line of his day, and he said it twice: <q>this is where I make my money, is by the repairs, because I&rsquo;m the repair guy&hellip; I will take your money if you would like, but at least we can give you that option.</q> Naming his own incentive is what made the free visit believable.</div></div>
+  <div class="row"><div class="rb">Zip it</div><div><span class="b mod">Moderate</span></div><div class="ev">He knows it himself: <q>Sorry, I&rsquo;ve been talking.</q> The teaching is excellent and it runs long, and several times a customer answer gets covered by the next explanation before it lands.</div></div>
+  <div class="row"><div class="rb">Overcoming objections</div><div><span class="b wins">Strong on wins</span></div><div class="ev">On the flip he turned a time constraint into a same-day booking rather than a callback: <q>if I can get him out here, if he can get here within the next couple of hours, I&rsquo;m fine.</q> On Gordon, the customer&rsquo;s own frustration with the original installer &mdash; <q>they tried to rip me off on some other stuff&hellip; So I said bye-bye</q> &mdash; was never picked up at all.</div></div>
+  <div class="row"><div class="rb">Option C hand-off</div><div><span class="b strong">Strong</span></div><div class="ev">Correctly framed, correctly priced at nothing, and signed: <q>I need to get a signature from you. This is for like their end to speak to one of those guys. It doesn&rsquo;t cost anything. It&rsquo;s absolutely free.</q> He also stayed to brief the specialist rather than handing off cold.</div></div>
+
+  <div class="grp"><span class="gn">Deliver Step</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Be a nerd</div><div><span class="b strong">Strong</span></div><div class="ev">Two full refrigerant generations explained with dates and consequence &mdash; <q>Back in 2010, the EPA said stop using R22&hellip; back last year, January 2025, we moved to a new Freon&hellip; you&rsquo;re two generations behind</q> &mdash; plus superheat and subcooling explained in plain terms and a genuine case for annual maintenance: <q>if we catch something early on&hellip; it&rsquo;s like a domino.</q></div></div>
+  <div class="row"><div class="rb">5-star review</div><div><span class="b solid">Solid</span></div><div class="ev">He is one of the only technicians on the board to ask outright, and he does it in the expectations line where it cannot be forgotten: <q>if they send you a review after I&rsquo;m done, if you can give me five stars, write a good review, I&rsquo;d greatly appreciate it because it helps me with my bosses.</q> It is asked up front rather than earned at the door, and on the Gordon call it never appears.</div></div>
+
+  <div class="grp"><span class="gn">Two Key Objectives</span><span class="gb"><span class="b solid">Solid</span></span></div>
+  <div class="row"><div class="rb">Make the time valuable</div><div><span class="b strong">Strong</span></div><div class="ev">The Rossopoulos customer received a complete education on a system he had owned for 25 years, a carbon-monoxide risk he did not know about, and a specialist in his house the same afternoon. That is an unusually valuable visit.</div></div>
+  <div class="row"><div class="rb">Help them decide</div><div><span class="b wins">Strong on wins</span></div><div class="ev">One customer left with every option in front of him and a decision path. The other left with a phone number for a manufacturer.</div></div>
+</div>
+
+<div class="sh" style="margin-top:26px"><div class="no">4</div><h2>Critical Actions &mdash; pass rate</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Setting clear expectations</div><div><span class="b pass">Pass</span></div><div class="ev">Full sequence on the Rossopoulos call including approval, today and the review ask; scope confirmed on Gordon.</div></div>
+  <div class="row"><div class="rb">Asking good questions</div><div><span class="b pass">Pass</span></div><div class="ev">Maintenance history, thermostat and away behaviour, prior issues and system age on both calls.</div></div>
+  <div class="row"><div class="rb">Creating good options</div><div><span class="b fail">Fail</span></div><div class="ev">Automatic fail on the Gordon call &mdash; a membership was requested, an airflow problem was described, and neither became an option.</div></div>
+  <div class="row"><div class="rb">Handling objections</div><div><span class="b fail">Fail</span></div><div class="ev">Automatic fail on the Gordon call. The customer&rsquo;s stated distrust of the original installer was the opening to keep the relationship and it went unworked.</div></div>
+</div>
+</section>
+
+<section id="strengths">
+<div class="sh"><div class="no">5</div><h2>What David did right &mdash; real strength, build on it</h2></div>
+<ul class="str">
+  <li><b>He asks permission to teach, then teaches properly.</b> <q>has anyone ever explained to you how an AC system works?</q> followed by the complete system, drawn out, in car analogies a 25-year homeowner could follow. Among the best education on this board.</li>
+  <li><b>He named his own incentive and gave the sale away anyway.</b> <q>this is where I make my money, is by the repairs&hellip; I will take your money if you would like, but at least we can give you that option.</q> That is why the free visit was believed.</li>
+  <li><b>He converted a time constraint into a same-day appointment.</b> Most techs hear &ldquo;I have to leave by two&rdquo; and book for next week. He asked whether the specialist could be there within the hour, and made it happen.</li>
+  <li><b>He raised a safety issue nobody asked about.</b> The heat-exchanger hot spot and carbon monoxide risk, photographed in August, on a furnace nobody was thinking about.</li>
+  <li><b>He asks for the review.</b> Very few people on this board say the words at all, and he builds them into his opening so they cannot be forgotten.</li>
+</ul>
+</section>
+
+<section id="gaps">
+<div class="sh"><div class="no">6</div><h2>The gaps</h2><span class="hint">each one in David&rsquo;s own calls</span></div>
+
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Gap 1 &mdash; A customer offered to buy two things and left with neither</h4></div>
+  <div class="q"><b>Customer, Gordon, in the first minute</b>"I'm gonna probably sign up for your, uh, you have an annual contract, right? I'll probably sign that up to where I can get it down."</div>
+  <div class="q"><b>And immediately after</b>"I wanted you to check one of my bedrooms. I have computers in there running. It gets very warm in there&hellip; I don't know if there's an issue with the tube, the size, or if there's something else we can do to cool that room down. I just want your opinion."</div>
+  <div class="q"><b>David</b>"Okay. I mean, I'll take a look at it." &mdash; and then, at the end: "Not gonna charge you nothing."</div>
+  <p class="fixline"><b>The fix</b> The Trane laptop had nothing to do with either request. A membership was being asked for out loud and could have been signed at the door in two minutes. The hot computer room is an airflow question &mdash; a supply measurement, a damper adjustment, a return &mdash; that needed no manufacturer software at all. Even with the diagnostic dead end, that call should have ended with a membership sold and a written option for the room. <q>The diagnostic laptop is a Trane-specific thing and I&rsquo;ll get you to the right person for it. Separately, let&rsquo;s get you on the maintenance plan today, and give me ten minutes on that computer room &mdash; that one I can absolutely help with.</q></p>
+</div>
+
+<div class="mom">
+  <div class="top2"><span class="b weak">Weak</span><h4>Gap 2 &mdash; He apologised his way out instead of owning the next step</h4></div>
+  <div class="q"><b>Customer</b>"I asked when I called your company, because you're listed under Trane dealers. So I called them and I said, hey, you sure you got&mdash; He says yes, we're all fully set."</div>
+  <div class="q"><b>David</b>"Yeah, too. I'm sorry&hellip; I'm assuming the office ladies don't really know&hellip; they're probably thinking that it's like a tool that we have that we carry in our truck."</div>
+  <div class="q"><b>Also from the customer, unworked</b>"the company that I installed it has had this stuff, but I have an issue with them because they tried to rip me off on some other stuff dealing with my air conditioning. So I said bye-bye."</div>
+  <p class="fixline"><b>The fix</b> Two things went wrong here and only one of them is David&rsquo;s. Blaming the office in front of the customer turns our problem into our disorganisation; owning it turns it into service. <q>That&rsquo;s on us, not on you &mdash; you asked the right question when you booked. Here&rsquo;s what I&rsquo;m going to do: I&rsquo;ll find out who in the valley has that tool and call you back today with a name.</q> And the sentence about being ripped off by the installer is the whole reason he called us instead of them &mdash; that is the moment to say what we do differently, not to send him back in that direction.</p>
+</div>
+
+<div class="mom">
+  <div class="top2"><span class="b mod">Moderate</span><h4>Gap 3 &mdash; He talks himself down in front of customers</h4></div>
+  <div class="q"><b>Gordon</b>"I'm gonna just be honest, like, these are like high-efficiency units. Like, I'm not super familiar with them and super knowledgeable." &hellip; "I've never really heard of that and I've been in the trade for 6 years." &hellip; "I have no idea. It's kind of weird."</div>
+  <div class="q"><b>Rossopoulos, the contrast</b>"the internals is the windings inside&hellip; when they overheat, they get closer together, and if they touch, then that compressor is done."</div>
+  <p class="fixline"><b>The fix</b> Honesty is right and self-deprecation is not the same thing. &ldquo;I don&rsquo;t have that tool&rdquo; is a fact; &ldquo;I&rsquo;m not super knowledgeable&rdquo; is an invitation for the customer to stop trusting the rest of the visit. Say what you do know and what you will do: <q>That laptop is manufacturer-specific and we don&rsquo;t carry it &mdash; here&rsquo;s what I can tell you from the readings I did take, and here&rsquo;s who I&rsquo;ll get you to for the rest.</q> Same truth, and he keeps the room.</p>
+</div>
+</section>
+
+<section id="plan">
+<div class="sh"><div class="no">7</div><h2>Three-week training plan</h2></div>
+<div class="rub">
+  <div class="row"><div class="rb">Week 1</div><div><span class="b solid">Week 1</span></div><div class="ev"><b>Drill:</b> Never leave a stated want on the table. If a customer mentions a membership, a room, a noise or a plan, it gets sold, written up or booked before he leaves &mdash; regardless of what else went wrong on the call.<br><b>Proof it worked:</b> Every customer request on tape has a matching outcome on the ticket.</div></div>
+  <div class="row"><div class="rb">Week 2</div><div><span class="b solid">Week 2</span></div><div class="ev"><b>Drill:</b> Own it, then route it. Any time we cannot do something, the sentence structure is &ldquo;that&rsquo;s on us / here is what I will do / here is when I will get back to you&rdquo; &mdash; never blame on dispatch, never apologising for his own competence.<br><b>Proof it worked:</b> No self-deprecating statements on any recording; every dead end ends with a committed follow-up.</div></div>
+  <div class="row"><div class="rb">Week 3</div><div><span class="b solid">Week 3</span></div><div class="ev"><b>Drill:</b> Hand over the conclusion. Replace <q>do you have any questions on that?</q> with a question the customer has to answer, and wait for it.<br><b>Proof it worked:</b> A manager can point to the customer saying the problem back in their own words on every call.</div></div>
+</div>
+</section>
+
+<section id="owe">
+<div class="sh"><div class="no">8</div><h2>What we owe David Canales</h2></div>
+<ul class="str">
+  <li>An answer on manufacturer-specific diagnostic tools. He was sent to a Trane high-efficiency unit under a Trane dealer listing without the equipment to service it, and had to work that out in the customer&rsquo;s driveway. He should never have to.</li>
+  <li>Booking notes that reach the technician. The customer raised the diagnostic laptop when he scheduled, and it did not follow the job.</li>
+  <li>His teaching sequence recorded for the team. Asking permission to explain, then building the system from the outdoor unit up with car analogies, is genuinely excellent and completely repeatable.</li>
+  <li>Credit for holding the price line. Asked to compare parts against a new unit, he routed it to the equipment specialist rather than guessing &mdash; that is the SILO process and should never read as a gap.</li>
+  <li>Same-day specialist coverage kept available. He asked for one within the hour and got it, and that is exactly why this day converted.</li>
+</ul>
+</section>
+
+<div class="bottom">
+  <div class="eyb">Bottom line</div>
+  <p>David&rsquo;s long call is close to a model of the whole process &mdash; expectations set, four honest check-ins, real teaching, tiered options, his own incentive named out loud, and a specialist standing in the house before he left. The short call is the same technician with the confidence removed. One tool he did not have turned into an apology, a referral to a competitor the customer had already fired, and two purchases walking out the door. The technical skill is not the gap. The gap is what he does when he does not have the answer.</p>
+</div>
+<div class="foot">Sierra &middot; SILO daily coaching plan &middot; 2026-08-06 &middot; Scored on strength bands &mdash; close rate is the only number</div>
+</div></body></html>
