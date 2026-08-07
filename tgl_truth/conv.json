@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T13:20:39.599908-07:00",
+  "generated": "2026-08-07T13:34:46.803218-07:00",
   "method": "dashboard parse_all: TGLs Created per creating tech / Revenue-report calls ran (ROPP-tag cleaned)",
   "days": {
     "2026-06-29": {
@@ -418,7 +418,7 @@
         "tgls": 3
       },
       "Francisco Valencia": {
-        "calls": 3,
+        "calls": 2,
         "tgls": 1
       },
       "Joe Mendoza": {
@@ -434,7 +434,7 @@
         "tgls": 1
       },
       "Nikko April": {
-        "calls": 1,
+        "calls": 2,
         "tgls": 1
       },
       "Noah Weng": {
@@ -442,7 +442,7 @@
         "tgls": 2
       },
       "Pedro Manzanares": {
-        "calls": 0,
+        "calls": 1,
         "tgls": 1
       },
       "Robert Silinzy": {
@@ -450,7 +450,7 @@
         "tgls": 1
       },
       "Brandon Moreno": {
-        "calls": 3,
+        "calls": 2,
         "tgls": 0
       },
       "Juan Tlatenchi": {
@@ -733,15 +733,15 @@
         "calls": 3,
         "tgls": 3
       },
-      "Brandon Moreno": {
-        "calls": 2,
-        "tgls": 0
-      },
       "Andrew Trujillo": {
         "calls": 3,
         "tgls": 0
       },
       "Benjamin Wyllie": {
+        "calls": 2,
+        "tgls": 0
+      },
+      "Brandon Moreno": {
         "calls": 2,
         "tgls": 0
       }
@@ -1468,7 +1468,7 @@
         "tgls": 1
       },
       "Mario Castro": {
-        "calls": 0,
+        "calls": 1,
         "tgls": 1
       },
       "Nathan Colquitt": {
@@ -1486,10 +1486,6 @@
       "Xavier Paredes": {
         "calls": 0,
         "tgls": 1
-      },
-      "Andrew Trujillo": {
-        "calls": 1,
-        "tgls": 0
       },
       "Brandon Moreno": {
         "calls": 1,
@@ -1922,7 +1918,7 @@
         "tgls": 1
       },
       "Benjamin Wyllie": {
-        "calls": 1,
+        "calls": 2,
         "tgls": 1
       },
       "Brandon Moreno": {
@@ -1933,19 +1929,19 @@
         "calls": 1,
         "tgls": 1
       },
+      "David Canales": {
+        "calls": 1,
+        "tgls": 1
+      },
       "Jose Esquivel": {
-        "calls": 0,
+        "calls": 1,
         "tgls": 1
       },
       "Noah Weng": {
-        "calls": 0,
+        "calls": 1,
         "tgls": 1
       },
       "Andrew Trujillo": {
-        "calls": 1,
-        "tgls": 0
-      },
-      "David Canales": {
         "calls": 1,
         "tgls": 0
       },
