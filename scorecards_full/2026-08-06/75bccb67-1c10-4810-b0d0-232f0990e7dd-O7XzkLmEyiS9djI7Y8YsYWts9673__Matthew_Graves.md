@@ -1,1 +1,0 @@
-Transcript corrupted - unsuitable for scoring. Transcript contains significant transcription errors, foreign language gibberish (Japanese/Korean text), and repeating placeholder text ("It", "It's"). Audio likely failed during processing or is noise/non-customer recording. Recommend retranscription.

@@ -1,1 +1,0 @@
-Non-scorable: Warranty repair call with no sales opportunity; customer had no charge.
