@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T07:23:44.586106-07:00",
+  "generated": "2026-08-07T07:35:26.626283-07:00",
   "method": "dashboard parse_all: TGLs Created per creating tech / Revenue-report calls ran (ROPP-tag cleaned)",
   "days": {
     "2026-06-29": {
@@ -891,12 +891,16 @@
         "calls": 2,
         "tgls": 2
       },
+      "Bradley Espinoza": {
+        "calls": 1,
+        "tgls": 0
+      },
       "Bryce Hurley": {
         "calls": 1,
         "tgls": 0
       },
       "Nikko April": {
-        "calls": 2,
+        "calls": 1,
         "tgls": 0
       }
     },
