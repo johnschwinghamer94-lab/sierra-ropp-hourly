@@ -1,0 +1,22 @@
+{
+  "recId": "fe032294-12aa-46cc-9172-d28687103157-Oyru7V7EN0UmFVmLGzEYuLxFoSL2",
+  "tech": "Jose Huesca",
+  "dept": "service",
+  "jobNumber": "672933124",
+  "dateCreated": "2026-08-06",
+  "durationMin": 57,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "basic",
+    "options": "comprehensive",
+    "close": "soft"
+  },
+  "critical": {
+    "expectations": true,
+    "options": true,
+    "membership": false,
+    "close": true
+  },
+  "outcome": "unknown",
+  "tip": "FIX \u2014 Tech did not ask for commitment; always end with: 'Should we move forward with this work?'"
+}

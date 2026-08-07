@@ -1,0 +1,22 @@
+{
+  "recId": "ade98dfb-55a3-445d-a8e0-4dd7e196b2f5-DH7EkPrEt6PbCNBh6ekSjliJUbh2",
+  "tech": "Juan Bernal",
+  "dept": "service",
+  "jobNumber": "672853309",
+  "dateCreated": "2026-08-06",
+  "durationMin": 35,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "thorough",
+    "options": "limited",
+    "close": "direct"
+  },
+  "critical": {
+    "expectations": false,
+    "options": false,
+    "membership": true,
+    "close": true
+  },
+  "outcome": "closed",
+  "tip": "WIN \u2014 Customer approved work after tech explained findings and offered clear path forward."
+}

@@ -1,0 +1,22 @@
+{
+  "recId": "cf9078d7-34d5-4638-948d-a01dac22a49d-T3aj2xQjptYBea2nLEhURLzJcwE2",
+  "tech": "Pedro Manzanares",
+  "dept": "service",
+  "jobNumber": "Membership",
+  "dateCreated": "2026-08-06",
+  "durationMin": 20,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "basic",
+    "options": "limited",
+    "close": "absent"
+  },
+  "critical": {
+    "expectations": true,
+    "options": false,
+    "membership": true,
+    "close": false
+  },
+  "outcome": "closed",
+  "tip": "WIN \u2014 Tech confirmed next steps by scheduling follow-up appointment before leaving."
+}

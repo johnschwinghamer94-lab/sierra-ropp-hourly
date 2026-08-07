@@ -1,0 +1,22 @@
+{
+  "recId": "a2c63903-8b49-4366-8578-95863563d244-CfTWI6dOqBStQVuiFmPhv9mrmVb2",
+  "tech": "Tyler Battershell",
+  "dept": "service",
+  "jobNumber": "672900537",
+  "dateCreated": "2026-08-06",
+  "durationMin": 68,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "thorough",
+    "options": "comprehensive",
+    "close": "soft"
+  },
+  "critical": {
+    "expectations": true,
+    "options": false,
+    "membership": true,
+    "close": false
+  },
+  "outcome": "closed",
+  "tip": "WIN \u2014 Tech confirmed next steps by scheduling follow-up appointment before leaving."
+}

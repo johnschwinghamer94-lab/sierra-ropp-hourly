@@ -1,0 +1,22 @@
+{
+  "recId": "e47a9bc7-bf67-4d0a-b674-7f754091447e-T3aj2xQjptYBea2nLEhURLzJcwE2",
+  "tech": "Pedro Manzanares",
+  "dept": "service",
+  "jobNumber": "First call",
+  "dateCreated": "2026-08-06",
+  "durationMin": 20,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "minimal",
+    "options": "adequate",
+    "close": "absent"
+  },
+  "critical": {
+    "expectations": true,
+    "options": false,
+    "membership": false,
+    "close": false
+  },
+  "outcome": "unknown",
+  "tip": "FIX \u2014 Tech did not ask for commitment; always end with: 'Should we move forward with this work?'"
+}

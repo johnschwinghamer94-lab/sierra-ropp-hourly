@@ -1,0 +1,22 @@
+{
+  "recId": "607ab18d-4023-4608-9639-3f6751703d9d-lfFi8CGGhmZHPk1GieuPr9ZvuAl1",
+  "tech": "Josue Arciga",
+  "dept": "service",
+  "jobNumber": "672903230",
+  "dateCreated": "2026-08-06",
+  "durationMin": 125,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "thorough",
+    "options": "comprehensive",
+    "close": "soft"
+  },
+  "critical": {
+    "expectations": true,
+    "options": false,
+    "membership": true,
+    "close": true
+  },
+  "outcome": "closed",
+  "tip": "WIN \u2014 Tech closed the sale by confirming price and processing payment without hesitation."
+}

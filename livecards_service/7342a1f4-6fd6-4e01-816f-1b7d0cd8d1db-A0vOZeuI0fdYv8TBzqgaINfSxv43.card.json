@@ -1,0 +1,22 @@
+{
+  "recId": "7342a1f4-6fd6-4e01-816f-1b7d0cd8d1db-A0vOZeuI0fdYv8TBzqgaINfSxv43",
+  "tech": "Corey Reding",
+  "dept": "service",
+  "jobNumber": "671327610",
+  "dateCreated": "2026-08-06",
+  "durationMin": 71,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "basic",
+    "options": "comprehensive",
+    "close": "soft"
+  },
+  "critical": {
+    "expectations": true,
+    "options": false,
+    "membership": true,
+    "close": false
+  },
+  "outcome": "closed",
+  "tip": "WIN \u2014 Tech closed the sale by confirming price and processing payment without hesitation."
+}

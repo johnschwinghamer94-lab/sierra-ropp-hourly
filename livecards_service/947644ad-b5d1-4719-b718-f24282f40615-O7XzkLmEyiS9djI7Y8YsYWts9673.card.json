@@ -1,0 +1,22 @@
+{
+  "recId": "947644ad-b5d1-4719-b718-f24282f40615-O7XzkLmEyiS9djI7Y8YsYWts9673",
+  "tech": "Matthew Graves",
+  "dept": "service",
+  "jobNumber": "672821318",
+  "dateCreated": "2026-08-06",
+  "durationMin": 56,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "basic",
+    "options": "comprehensive",
+    "close": "soft"
+  },
+  "critical": {
+    "expectations": true,
+    "options": true,
+    "membership": true,
+    "close": true
+  },
+  "outcome": "closed",
+  "tip": "WIN \u2014 Customer approved work after tech explained findings and offered clear path forward."
+}

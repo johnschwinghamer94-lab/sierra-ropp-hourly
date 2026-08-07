@@ -1,0 +1,22 @@
+{
+  "recId": "eba10b4a-e4a0-4408-a495-4d315ad2b151-tdm8rvxmjXVk2ovciuTGwY39wB23",
+  "tech": "Mario Conant",
+  "dept": "service",
+  "jobNumber": "",
+  "dateCreated": "2026-08-06",
+  "durationMin": 33,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "minimal",
+    "options": "limited",
+    "close": "absent"
+  },
+  "critical": {
+    "expectations": false,
+    "options": false,
+    "membership": false,
+    "close": false
+  },
+  "outcome": "closed",
+  "tip": "WIN \u2014 Tech earned customer commitment through thorough diagnosis and professional close."
+}

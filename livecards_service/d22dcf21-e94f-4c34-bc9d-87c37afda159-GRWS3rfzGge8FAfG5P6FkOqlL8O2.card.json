@@ -1,0 +1,22 @@
+{
+  "recId": "d22dcf21-e94f-4c34-bc9d-87c37afda159-GRWS3rfzGge8FAfG5P6FkOqlL8O2",
+  "tech": "Xavier Paredes",
+  "dept": "service",
+  "jobNumber": "672949035",
+  "dateCreated": "2026-08-06",
+  "durationMin": 14,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "basic",
+    "options": "limited",
+    "close": "absent"
+  },
+  "critical": {
+    "expectations": false,
+    "options": false,
+    "membership": false,
+    "close": false
+  },
+  "outcome": "unknown",
+  "tip": "FIX \u2014 Conversation ended before pricing discussion; need to establish cost parameters earlier in call."
+}

@@ -1,0 +1,22 @@
+{
+  "recId": "4d015057-a25b-4a73-9fa1-352d9b05db1a-CfTWI6dOqBStQVuiFmPhv9mrmVb2",
+  "tech": "Tyler Battershell",
+  "dept": "service",
+  "jobNumber": "672809169",
+  "dateCreated": "2026-08-06",
+  "durationMin": 82,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "basic",
+    "options": "adequate",
+    "close": "absent"
+  },
+  "critical": {
+    "expectations": true,
+    "options": false,
+    "membership": true,
+    "close": true
+  },
+  "outcome": "closed",
+  "tip": "WIN \u2014 Tech closed the sale by confirming price and processing payment without hesitation."
+}

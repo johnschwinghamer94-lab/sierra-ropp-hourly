@@ -1,0 +1,22 @@
+{
+  "recId": "f5161e57-de47-40bf-83ce-aec42fbb3d30-q8DO50kOQReqSEtbcVfCH6DvDWu1",
+  "tech": "Chris Thomas",
+  "dept": "service",
+  "jobNumber": "645109105",
+  "dateCreated": "2026-08-06",
+  "durationMin": 5,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "minimal",
+    "options": "limited",
+    "close": "absent"
+  },
+  "critical": {
+    "expectations": false,
+    "options": false,
+    "membership": true,
+    "close": false
+  },
+  "outcome": "no-close",
+  "tip": "FIX \u2014 Tech diagnosed issue but never quoted a price; customer couldn't approve without cost basis."
+}

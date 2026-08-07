@@ -1,0 +1,22 @@
+{
+  "recId": "d0e24870-01f8-4166-9805-facf49a66151-cNytscpG9FZ7Z2SxD4Poqocx7rf2",
+  "tech": "Jack Vanos",
+  "dept": "service",
+  "jobNumber": "671155318",
+  "dateCreated": "2026-08-06",
+  "durationMin": 46,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "basic",
+    "options": "limited",
+    "close": "absent"
+  },
+  "critical": {
+    "expectations": false,
+    "options": false,
+    "membership": false,
+    "close": false
+  },
+  "outcome": "closed",
+  "tip": "WIN \u2014 Tech confirmed next steps by scheduling follow-up appointment before leaving."
+}

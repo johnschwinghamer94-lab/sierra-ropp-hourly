@@ -1,0 +1,22 @@
+{
+  "recId": "39444631-1e19-49b8-8909-6a0f83c93ab9-q8DO50kOQReqSEtbcVfCH6DvDWu1",
+  "tech": "Chris Thomas",
+  "dept": "service",
+  "jobNumber": "671332948",
+  "dateCreated": "2026-08-06",
+  "durationMin": 40,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "basic",
+    "options": "adequate",
+    "close": "soft"
+  },
+  "critical": {
+    "expectations": true,
+    "options": false,
+    "membership": false,
+    "close": true
+  },
+  "outcome": "closed",
+  "tip": "WIN \u2014 Customer approved work after tech explained findings and offered clear path forward."
+}

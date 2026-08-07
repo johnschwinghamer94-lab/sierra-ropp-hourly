@@ -1,0 +1,22 @@
+{
+  "recId": "8c47169e-06ca-4302-805d-c33eadf3f964-T3aj2xQjptYBea2nLEhURLzJcwE2",
+  "tech": "Pedro Manzanares",
+  "dept": "service",
+  "jobNumber": "Call#2",
+  "dateCreated": "2026-08-06",
+  "durationMin": 58,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "basic",
+    "options": "limited",
+    "close": "direct"
+  },
+  "critical": {
+    "expectations": false,
+    "options": false,
+    "membership": true,
+    "close": true
+  },
+  "outcome": "closed",
+  "tip": "WIN \u2014 Customer approved work after tech explained findings and offered clear path forward."
+}

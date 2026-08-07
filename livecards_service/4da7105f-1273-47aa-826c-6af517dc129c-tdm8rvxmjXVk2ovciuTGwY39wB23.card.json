@@ -1,0 +1,22 @@
+{
+  "recId": "4da7105f-1273-47aa-826c-6af517dc129c-tdm8rvxmjXVk2ovciuTGwY39wB23",
+  "tech": "Mario Conant",
+  "dept": "service",
+  "jobNumber": "670734778",
+  "dateCreated": "2026-08-06",
+  "durationMin": 79,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "thorough",
+    "options": "comprehensive",
+    "close": "soft"
+  },
+  "critical": {
+    "expectations": true,
+    "options": false,
+    "membership": true,
+    "close": true
+  },
+  "outcome": "closed",
+  "tip": "WIN \u2014 Customer approved work after tech explained findings and offered clear path forward."
+}

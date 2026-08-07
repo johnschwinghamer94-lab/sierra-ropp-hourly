@@ -1,0 +1,22 @@
+{
+  "recId": "67fbb553-7498-484c-b118-ce6d93f85b28-CfTWI6dOqBStQVuiFmPhv9mrmVb2",
+  "tech": "Tyler Battershell",
+  "dept": "service",
+  "jobNumber": "672858621",
+  "dateCreated": "2026-08-06",
+  "durationMin": 68,
+  "bands": {
+    "welcome": "fair",
+    "diagnosis": "basic",
+    "options": "limited",
+    "close": "absent"
+  },
+  "critical": {
+    "expectations": false,
+    "options": false,
+    "membership": false,
+    "close": false
+  },
+  "outcome": "no-close",
+  "tip": "FIX \u2014 Tech diagnosed issue but never quoted a price; customer couldn't approve without cost basis."
+}

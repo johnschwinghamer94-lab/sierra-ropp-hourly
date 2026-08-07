@@ -1,0 +1,22 @@
+{
+  "recId": "d40dc7b0-3bf6-4fa1-8c38-91e2bffaff8b-CeJETffP2OWgh60lodsypyHyld02",
+  "tech": "Matthew Arnold",
+  "dept": "service",
+  "jobNumber": "639988592",
+  "dateCreated": "2026-08-06",
+  "durationMin": 9,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "minimal",
+    "options": "limited",
+    "close": "absent"
+  },
+  "critical": {
+    "expectations": false,
+    "options": false,
+    "membership": true,
+    "close": false
+  },
+  "outcome": "closed",
+  "tip": "WIN \u2014 Tech earned customer commitment through thorough diagnosis and professional close."
+}

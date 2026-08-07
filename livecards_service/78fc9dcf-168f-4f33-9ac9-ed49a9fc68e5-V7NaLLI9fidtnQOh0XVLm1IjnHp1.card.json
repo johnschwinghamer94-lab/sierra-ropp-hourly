@@ -1,0 +1,22 @@
+{
+  "recId": "78fc9dcf-168f-4f33-9ac9-ed49a9fc68e5-V7NaLLI9fidtnQOh0XVLm1IjnHp1",
+  "tech": "Michael Washington",
+  "dept": "service",
+  "jobNumber": "672746796",
+  "dateCreated": "2026-08-06",
+  "durationMin": 43,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "minimal",
+    "options": "limited",
+    "close": "absent"
+  },
+  "critical": {
+    "expectations": false,
+    "options": false,
+    "membership": false,
+    "close": false
+  },
+  "outcome": "no-close",
+  "tip": "FIX \u2014 Tech diagnosed issue but never quoted a price; customer couldn't approve without cost basis."
+}

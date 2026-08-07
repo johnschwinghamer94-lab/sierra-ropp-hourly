@@ -1,0 +1,22 @@
+{
+  "recId": "e0242a19-94e8-4909-bd8e-f2b9d8f16ab9-Oyru7V7EN0UmFVmLGzEYuLxFoSL2",
+  "tech": "Jose Huesca",
+  "dept": "service",
+  "jobNumber": "640386208",
+  "dateCreated": "2026-08-06",
+  "durationMin": 34,
+  "bands": {
+    "welcome": "strong",
+    "diagnosis": "basic",
+    "options": "comprehensive",
+    "close": "soft"
+  },
+  "critical": {
+    "expectations": true,
+    "options": true,
+    "membership": true,
+    "close": true
+  },
+  "outcome": "closed",
+  "tip": "WIN \u2014 Customer approved work after tech explained findings and offered clear path forward."
+}
