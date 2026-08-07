@@ -1,1 +1,0 @@
-Non-scorable: Installation follow-up only, not a customer-facing sales call.
