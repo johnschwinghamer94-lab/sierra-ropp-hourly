@@ -13,10 +13,14 @@ runner. Read it with the Read tool.
 **SILO SCOPE RULE (locked):** score ONLY transcripts whose filename does NOT
 start with `svc__`. Service-tech calls are scored by the SERVICE routine
 against a different rubric (`coaching/scoring_prompt_service_cloud.md`) —
-never grade them here. If the transcript filename starts with `svc__`, stop
-immediately, write NO card files of any kind (no `scorecards_full/` .md, no
-`livecards/` JSON, not even a skip card), and report it as excluded rather
-than skipped.
+never grade them here.
+
+Apply this at CANDIDATE SELECTION, before anything else. An `svc__` transcript
+is not unscored SILO work: drop it from the candidate list entirely, before any
+per-run cap (e.g. "max N transcripts per run") is applied, so excluded Service
+calls can never consume slots that SILO calls need. Never write a card file of
+any kind for one — no `scorecards_full/` .md, no `livecards/` JSON, not even a
+skip card — and report them as excluded, separately from skipped.
 
 **Transcript format note:** transcript files are stored one word per line.
 Before scoring, reflow the file into speaker turns (group consecutive lines
