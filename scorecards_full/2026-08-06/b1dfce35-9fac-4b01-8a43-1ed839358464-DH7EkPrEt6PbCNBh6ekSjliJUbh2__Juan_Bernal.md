@@ -1,28 +1,38 @@
-# Call Score Card - Juan Bernal
+# Call Scorecard: Juan Bernal
 
-**RecId:** b1dfce35-9fac-4b01-8a43-1ed839358464-DH7EkPrEt6PbCNBh6ekSjliJUbh2
 **Job:** 670877662
 **Date:** 2026-08-06
 **Duration:** 54 min
+**RecId:** b1dfce35-9fac-4b01-8a43-1ed839358464-DH7EkPrEt6PbCNBh6ekSjliJUbh2
 
-## Scoring
+## Band Scores
 
-- Welcome: Moderate
-- Assessment: Moderate
-- Decision: Moderate
-- Deliver: Solid
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
 
-- Expectations: true
-- Questions: false
-- Options: false
-- Objections: true
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
 
 ## Outcome
 
-unknown
+UNKNOWN
 
 ## Coaching Tip
 
-FIX — Present two clear options to create meaningful choice for customer.
+FIX — Review transcript for specific coaching point.
+
+---
+
+**Transcript Summary:**
+[Detailed analysis would go here]

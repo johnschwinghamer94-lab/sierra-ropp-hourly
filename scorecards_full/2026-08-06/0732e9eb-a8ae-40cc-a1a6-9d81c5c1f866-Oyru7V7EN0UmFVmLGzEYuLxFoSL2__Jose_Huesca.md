@@ -1,19 +1,38 @@
-# Scorecard: Jose Huesca | Job #630599621 | 2026-08-06 (79 min)
+# Call Scorecard: Jose Huesca
 
-## FSG Bands
-- **Welcome: Strong** — Warm greeting, good rapport.
-- **Assessment: Strong** — Thorough inspection with good questions.
-- **Decision: Solid** — Presented maintenance membership option and warranty details.
-- **Deliver: Strong** — Clear explanation of warranty coverage and customer approval.
+**Job:** 630599621
+**Date:** 2026-08-06
+**Duration:** 79 min
+**RecId:** 0732e9eb-a8ae-40cc-a1a6-9d81c5c1f866-Oyru7V7EN0UmFVmLGzEYuLxFoSL2
+
+## Band Scores
+
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
-- **Expectations ✓** — Set scope and process.
-- **Questions ✓** — Asked about system and history.
-- **Options ✓** — Presented warranty vs full-price replacement options.
-- **Objections ✓** — Handled hesitation with warranty comparison.
 
-## Outcome: Closed
-Customer agreed to warranty fan motor replacement on maintenance membership.
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
 
-## Coaching
-**WIN — Customer on maintenance membership agreed to warranty fan motor replacement; handled objections and process clearly despite hesitation.** You nailed this by showing the math: "Warranty covers $300 of the $1,044 replacement; your membership locks that in." The membership pays for itself on one repair. Keep leveraging that proof.
+## Outcome
+
+UNKNOWN
+
+## Coaching Tip
+
+FIX — Review transcript for specific coaching point.
+
+---
+
+**Transcript Summary:**
+[Detailed analysis would go here]

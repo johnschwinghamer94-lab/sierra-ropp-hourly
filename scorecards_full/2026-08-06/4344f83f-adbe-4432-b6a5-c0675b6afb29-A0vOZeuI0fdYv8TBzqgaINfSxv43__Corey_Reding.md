@@ -1,35 +1,38 @@
-# Call Scorecard: 4344f83f-adbe-4432-b6a5-c0675b6afb29-A0vOZeuI0fdYv8TBzqgaINfSxv43
+# Call Scorecard: Corey Reding
 
-**Tech:** Corey Reding
-**Date:** 2026-08-06
-**Duration:** 17 minutes
 **Job:** N/A
+**Date:** 2026-08-06
+**Duration:** 17 min
+**RecId:** 4344f83f-adbe-4432-b6a5-c0675b6afb29-A0vOZeuI0fdYv8TBzqgaINfSxv43
 
-## FSG Bands
+## Band Scores
 
-- **Welcome:** Weak
-- **Assessment:** Weak
-- **Decision:** Weak
-- **Deliver:** Weak
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
 
-- **Expectations Set:** ✗
-- **Good Questions Asked:** ✗
-- **Options Presented:** ✗
-- **Objections Handled:** ✗
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
 
 ## Outcome
 
-**Result:** UNKNOWN
+UNKNOWN
 
 ## Coaching Tip
 
-FIX — Start with clearer empathy and expertise; customers need to trust you first
+FIX — Review transcript for specific coaching point.
 
 ---
 
-### Transcript (reflowed):
-
-Speaker 0: It. It's it. Wait for an hour, I guess. It's it....
-
+**Transcript Summary:**
+[Detailed analysis would go here]

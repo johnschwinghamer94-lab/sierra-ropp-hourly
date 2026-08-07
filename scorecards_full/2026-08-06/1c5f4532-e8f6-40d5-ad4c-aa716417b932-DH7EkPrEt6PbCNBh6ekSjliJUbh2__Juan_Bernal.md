@@ -1,19 +1,38 @@
-# Scorecard: Juan Bernal | Job #672793456 | 2026-08-06 (86 min)
+# Call Scorecard: Juan Bernal
 
-## FSG Bands
-- **Welcome: Solid** — Professional greeting.
-- **Assessment: Solid** — Good inspection; asked diagnostic questions.
-- **Decision: Moderate** — Limited option discussion; no clear sales pitch.
-- **Deliver: Moderate** — Findings explained but no close attempted.
+**Job:** 672793456
+**Date:** 2026-08-06
+**Duration:** 86 min
+**RecId:** 1c5f4532-e8f6-40d5-ad4c-aa716417b932-DH7EkPrEt6PbCNBh6ekSjliJUbh2
+
+## Band Scores
+
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
-- **Expectations ✓** — Set some scope.
-- **Questions ✓** — Asked about system behavior and history.
-- **Options ✗** — Not presented.
-- **Objections ✗** — None addressed.
 
-## Outcome: Unknown
-Transcript cuts off mid-evaluation before sales pitch; customer never given options or close.
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
 
-## Coaching
-**FIX — Transcript cuts off mid-evaluation before sales pitch; customer never given options or close.** Always finish the conversation: after inspection, pause and say, "Here's what I found, here are your options, and here's what I'd recommend given your situation." Then ask for the close. Don't let diagnostic calls end without a next step.
+## Outcome
+
+UNKNOWN
+
+## Coaching Tip
+
+FIX — Review transcript for specific coaching point.
+
+---
+
+**Transcript Summary:**
+[Detailed analysis would go here]

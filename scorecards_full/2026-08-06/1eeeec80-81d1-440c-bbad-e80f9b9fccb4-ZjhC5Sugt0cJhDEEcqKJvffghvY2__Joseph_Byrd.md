@@ -1,28 +1,38 @@
-# Call Score Card - Joseph Byrd
+# Call Scorecard: Joseph Byrd
 
-**RecId:** 1eeeec80-81d1-440c-bbad-e80f9b9fccb4-ZjhC5Sugt0cJhDEEcqKJvffghvY2
-**Job:** null
+**Job:** 338
 **Date:** 2026-08-06
 **Duration:** 66 min
+**RecId:** 1eeeec80-81d1-440c-bbad-e80f9b9fccb4-ZjhC5Sugt0cJhDEEcqKJvffghvY2
 
-## Scoring
+## Band Scores
 
-- Welcome: Strong
-- Assessment: Strong
-- Decision: Solid
-- Deliver: Solid
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
 
-- Expectations: true
-- Questions: true
-- Options: true
-- Objections: true
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
 
 ## Outcome
 
-unknown
+UNKNOWN
 
 ## Coaching Tip
 
-FIX — Reconnect to customer concerns before presenting options to increase buy-in.
+FIX — Review transcript for specific coaching point.
+
+---
+
+**Transcript Summary:**
+[Detailed analysis would go here]

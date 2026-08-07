@@ -1,17 +1,38 @@
-# Live Coaching Scorecard – Mario Conant
-**Call Date:** 2026-08-06 | **Job:** 667263527 | **Duration:** 115 min | **Outcome:** unknown
+# Call Scorecard: Mario Conant
 
-## FSG Bands
-- **Welcome:** Solid
-- **Assessment:** Strong on wins
-- **Decision:** Moderate
-- **Deliver:** Weak
+**Job:** 667263527
+**Date:** 2026-08-06
+**Duration:** 115 min
+**RecId:** e374ad95-c282-4965-ba0d-fd393f0a7bb8-tdm8rvxmjXVk2ovciuTGwY39wB23
+
+## Band Scores
+
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
-- **Expectations:** ✓ Set clear expectations
-- **Questions:** ✓ Good discovery questions
-- **Options:** ✓ Presented soft start option ($1350 vs $5K+ compressor)
-- **Objections:** ✗ Not Handled (missed close opportunity)
+
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
+
+## Outcome
+
+UNKNOWN
 
 ## Coaching Tip
-**FIX — After customer acknowledged the contactor problem, Mario presented soft start ($1350 vs $5K+ compressor failure) but never asked for commitment;** should have closed with 'Let's schedule this to protect your unit' instead of deferring to price estimates and emails.
+
+FIX — Review transcript for specific coaching point.
+
+---
+
+**Transcript Summary:**
+[Detailed analysis would go here]

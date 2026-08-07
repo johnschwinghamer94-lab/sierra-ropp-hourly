@@ -1,19 +1,38 @@
-# Scorecard: Jack Vanos | Job #670554887 | 2026-08-06 (114 min)
+# Call Scorecard: Jack Vanos
 
-## FSG Bands
-- **Welcome: Solid** — Friendly greeting and introduction.
-- **Assessment: Solid** — Checked system operation, identified replacement need.
-- **Decision: Solid** — Presented replacement option, offered financing.
-- **Deliver: Solid** — Confirmed customer commitment and next steps.
+**Job:** 670554887
+**Date:** 2026-08-06
+**Duration:** 114 min
+**RecId:** 1ecdae5c-0c60-4c58-a993-12c07edaa4f5-cNytscpG9FZ7Z2SxD4Poqocx7rf2
+
+## Band Scores
+
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
-- **Expectations ✓** — Set expectations about service.
-- **Questions ✓** — Asked about system age and usage.
-- **Options ✓** — Presented replacement with financing.
-- **Objections ✗** — Minimal objection handling needed; customer bought in quickly.
 
-## Outcome: Closed
-Customer agreed to AC replacement with financing.
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
 
-## Coaching
-**WIN — Presented replacement as upgrade with financing option; customer bought in immediately.** Your efficiency here was gold — you didn't oversell; you showed the need and gave a path. Keep the same approach with hesitant customers: "Same quality system, and financing spreads the cost to $X/month." Quick, clear, done.
+## Outcome
+
+UNKNOWN
+
+## Coaching Tip
+
+FIX — Review transcript for specific coaching point.
+
+---
+
+**Transcript Summary:**
+[Detailed analysis would go here]

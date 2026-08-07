@@ -1,19 +1,38 @@
-# Scorecard: Mario Conant | Job #670734778 | 2026-08-06 (79 min)
+# Call Scorecard: Mario Conant
 
-## FSG Bands
-- **Welcome: Strong** — Warm, professional greeting.
-- **Assessment: Strong** — Thorough inspection with good discovery questions.
-- **Decision: Solid** — Presented filter replacement today and future voltage switch work with cost breakdown.
-- **Deliver: Strong** — Clear summary of findings and customer signed both proposals.
+**Job:** 670734778
+**Date:** 2026-08-06
+**Duration:** 79 min
+**RecId:** 4da7105f-1273-47aa-826c-6af517dc129c-tdm8rvxmjXVk2ovciuTGwY39wB23
+
+## Band Scores
+
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
-- **Expectations ✓** — Set clear scope and process.
-- **Questions ✓** — Asked about system age, usage, and history.
-- **Options ✓** — Presented two-tier approach (today + future work).
-- **Objections ✓** — Handled concerns about timing and cost.
 
-## Outcome: Closed
-Customer approved and signed both filter replacement and voltage switch proposals.
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
 
-## Coaching
-**WIN — Thorough diagnostic provided confidence; presented filter replacement for today and future voltage switch work, and customer approved and signed both proposals.** Your two-step approach worked perfectly — today's quick win ($180) bought trust for the bigger future investment ($618). Use this pattern: "Let's fix this today, and I'll keep an eye on that part for next month's visit."
+## Outcome
+
+UNKNOWN
+
+## Coaching Tip
+
+FIX — Review transcript for specific coaching point.
+
+---
+
+**Transcript Summary:**
+[Detailed analysis would go here]

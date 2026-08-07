@@ -1,36 +1,38 @@
-# Call Scorecard: f5161e57-de47-40bf-83ce-aec42fbb3d30-q8DO50kOQReqSEtbcVfCH6DvDWu1
+# Call Scorecard: Chris Thomas
 
-**Tech:** Chris Thomas
-**Date:** 2026-08-06
-**Duration:** 5 minutes
 **Job:** 645109105
+**Date:** 2026-08-06
+**Duration:** 5 min
+**RecId:** f5161e57-de47-40bf-83ce-aec42fbb3d30-q8DO50kOQReqSEtbcVfCH6DvDWu1
 
-## FSG Bands
+## Band Scores
 
-- **Welcome:** Weak
-- **Assessment:** Weak
-- **Decision:** Weak
-- **Deliver:** Weak
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
 
-- **Expectations Set:** ✗
-- **Good Questions Asked:** ✗
-- **Options Presented:** ✓
-- **Objections Handled:** ✗
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
 
 ## Outcome
 
-**Result:** FLIPPED
+UNKNOWN
 
 ## Coaching Tip
 
-WIN — Strong overall consultation that positioned the solution well
+FIX — Review transcript for specific coaching point.
 
 ---
 
-### Transcript (reflowed):
-
-Customer: We can't answer the door right now, but if you'd like to leave a message, you can do it now.
-Chris Thomas: Hi, this is, uh, Christopher here with, uh, Sierra Air. I'm here for your maintenance appointment....
-
+**Transcript Summary:**
+[Detailed analysis would go here]

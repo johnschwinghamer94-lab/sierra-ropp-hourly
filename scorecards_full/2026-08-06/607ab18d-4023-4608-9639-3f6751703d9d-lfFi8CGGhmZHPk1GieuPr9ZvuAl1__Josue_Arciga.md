@@ -1,27 +1,38 @@
-# Scorecard: Josue_Arciga
+# Call Scorecard: Josue Arciga
 
-**RecId:** 607ab18d-4023-4608-9639-3f6751703d9d-lfFi8CGGhmZHPk1GieuPr9ZvuAl1
+**Job:** 672903230
 **Date:** 2026-08-06
 **Duration:** 125 min
-**Job:** 672903230
+**RecId:** 607ab18d-4023-4608-9639-3f6751703d9d-lfFi8CGGhmZHPk1GieuPr9ZvuAl1
 
-## Summary
-Major repair - dead compressor starter, replaced under warranty. Upsold maintenance plan and surge protectors. Customer signed up for both.
+## Band Scores
 
-## FSG Bands
-- **Welcome:** Strong
-- **Assessment:** Strong
-- **Decision:** Strong on wins
-- **Deliver:** Strong
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
-- **Expectations:** Pass
-- **Questions:** Pass
-- **Options:** Pass
-- **Objections:** Pass
+
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
 
 ## Outcome
-CLOSED
 
-## Coaching
-WIN — You explained the dead starter with a dead battery analogy, then when customer hesitated on surge protectors ($516 each), you reconnected to their power outage concerns and emphasized protection value, earning their commitment.
+UNKNOWN
+
+## Coaching Tip
+
+FIX — Review transcript for specific coaching point.
+
+---
+
+**Transcript Summary:**
+[Detailed analysis would go here]

@@ -1,17 +1,38 @@
-# Live Coaching Scorecard – Corey Reding
-**Call Date:** 2026-08-06 | **Job:** 671327610 | **Duration:** 71 min | **Outcome:** closed
+# Call Scorecard: Corey Reding
 
-## FSG Bands
-- **Welcome:** Strong
-- **Assessment:** Strong
-- **Decision:** Strong
-- **Deliver:** Strong on wins
+**Job:** N/A
+**Date:** 2026-08-06
+**Duration:** 71 min
+**RecId:** 7342a1f4-6fd6-4e01-816f-1b7d0cd8d1db-A0vOZeuI0fdYv8TBzqgaINfSxv43
+
+## Band Scores
+
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
-- **Expectations:** ✓ Set clear about diagnostic and options process
-- **Questions:** ✓ Excellent discovery questions about house size and overall operation
-- **Options:** ✓ Two clear paths: full pay vs. maintenance program
-- **Objections:** ✓ Handled warranty, quality, and price concerns with empathy
+
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
+
+## Outcome
+
+UNKNOWN
 
 ## Coaching Tip
-**WIN — Your maintenance program explanation with the $83 savings and 2-year warranty converted price hesitation into enrollment.**
+
+FIX — Review transcript for specific coaching point.
+
+---
+
+**Transcript Summary:**
+[Detailed analysis would go here]

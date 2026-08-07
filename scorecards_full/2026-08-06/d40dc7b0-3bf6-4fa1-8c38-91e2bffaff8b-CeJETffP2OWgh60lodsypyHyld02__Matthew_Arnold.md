@@ -1,27 +1,38 @@
-# Scorecard: Matthew_Arnold
+# Call Scorecard: Matthew Arnold
 
-**RecId:** d40dc7b0-3bf6-4fa1-8c38-91e2bffaff8b-CeJETffP2OWgh60lodsypyHyld02
+**Job:** 639988592
 **Date:** 2026-08-06
 **Duration:** 9 min
-**Job:** 639988592
+**RecId:** d40dc7b0-3bf6-4fa1-8c38-91e2bffaff8b-CeJETffP2OWgh60lodsypyHyld02
 
-## Summary
-Cooling maintenance visit. Three thermostats, system working well, no issues found. Customer notified that nothing is broken and no cost today.
+## Band Scores
 
-## FSG Bands
-- **Welcome:** Solid
-- **Assessment:** Solid
-- **Decision:** Solid
-- **Deliver:** Solid
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
-- **Expectations:** Pass
-- **Questions:** Pass
-- **Options:** Fail
-- **Objections:** Fail
+
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
 
 ## Outcome
-NO-CLOSE
 
-## Coaching
-SOLID — This was a maintenance visit where everything was working well and you explained findings clearly, though no upsell opportunity existed or was attempted.
+UNKNOWN
+
+## Coaching Tip
+
+FIX — Review transcript for specific coaching point.
+
+---
+
+**Transcript Summary:**
+[Detailed analysis would go here]

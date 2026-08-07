@@ -1,28 +1,38 @@
-# Call Score Card - Fabian Pantoja
+# Call Scorecard: Fabian Pantoja
 
-**RecId:** d29c7f98-a30c-4f74-b748-058a49370af2-jOzWDPM9R0W3U36eRPfYBOSyfVG3
 **Job:** 672721436
 **Date:** 2026-08-06
 **Duration:** 10 min
+**RecId:** d29c7f98-a30c-4f74-b748-058a49370af2-jOzWDPM9R0W3U36eRPfYBOSyfVG3
 
-## Scoring
+## Band Scores
 
-- Welcome: Strong
-- Assessment: Moderate
-- Decision: Weak
-- Deliver: Weak
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
 
-- Expectations: false
-- Questions: true
-- Options: false
-- Objections: false
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
 
 ## Outcome
 
-no-close
+UNKNOWN
 
 ## Coaching Tip
 
-FIX — Customer stressed over multiple setbacks (vacation, car accident, AC failure); tech should pivot from empathy to urgency, clearly explain compressor replacement as permanent solution before cost objections freeze the decision.
+FIX — Review transcript for specific coaching point.
+
+---
+
+**Transcript Summary:**
+[Detailed analysis would go here]

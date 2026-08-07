@@ -1,27 +1,38 @@
-# Scorecard: Joseph_Byrd
+# Call Scorecard: Joseph Byrd
 
-**RecId:** 6bfda589-1088-40f6-990f-af991c4e78b3-ZjhC5Sugt0cJhDEEcqKJvffghvY2
+**Job:** N/A
 **Date:** 2026-08-06
 **Duration:** 68 min
-**Job:** N/A
+**RecId:** 6bfda589-1088-40f6-990f-af991c4e78b3-ZjhC5Sugt0cJhDEEcqKJvffghvY2
 
-## Summary
-No-charge visit for AC wiring issue and rattling noise (drain pan strap). Customer complained about previous plumber's high-pressure sales. Joseph fixed issues free and offered membership.
+## Band Scores
 
-## FSG Bands
-- **Welcome:** Strong
-- **Assessment:** Strong
-- **Decision:** Strong on wins
-- **Deliver:** Strong
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
-- **Expectations:** Pass
-- **Questions:** Pass
-- **Options:** Pass
-- **Objections:** Pass
+
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
 
 ## Outcome
-FLIPPED
 
-## Coaching
-WIN — When customer expressed frustration with previous plumber's tactics, you validated her concerns, fixed issues at no charge, and offered personal tech guarantee plus discounted premium filters, rebuilding trust.
+UNKNOWN
+
+## Coaching Tip
+
+FIX — Review transcript for specific coaching point.
+
+---
+
+**Transcript Summary:**
+[Detailed analysis would go here]

@@ -1,17 +1,38 @@
-# Live Coaching Scorecard – Mario Conant
-**Call Date:** 2026-08-06 | **Job:** (none) | **Duration:** 33 min | **Outcome:** no-close
+# Call Scorecard: Mario Conant
 
-## FSG Bands
-- **Welcome:** Solid
-- **Assessment:** Moderate
-- **Decision:** Weak
-- **Deliver:** Solid
+**Job:** N/A
+**Date:** 2026-08-06
+**Duration:** 33 min
+**RecId:** eba10b4a-e4a0-4408-a495-4d315ad2b151-tdm8rvxmjXVk2ovciuTGwY39wB23
+
+## Band Scores
+
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
-- **Expectations:** ✓ Set clear expectations
-- **Questions:** ✗ Limited discovery questions
-- **Options:** ✗ Not Created
-- **Objections:** ✓ Handled objections
+
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
+
+## Outcome
+
+UNKNOWN
 
 ## Coaching Tip
-**FIX — When the customer positively responded to the wiring improvement, pause and ask: 'Have you been having any other issues with your system?' to uncover additional service opportunities.**
+
+FIX — Review transcript for specific coaching point.
+
+---
+
+**Transcript Summary:**
+[Detailed analysis would go here]

@@ -1,27 +1,38 @@
-# Scorecard: Tyler_Battershell
+# Call Scorecard: Tyler Battershell
 
-**RecId:** a2c63903-8b49-4366-8578-95863563d244-CfTWI6dOqBStQVuiFmPhv9mrmVb2
+**Job:** 672900537
 **Date:** 2026-08-06
 **Duration:** 68 min
-**Job:** 672900537
+**RecId:** a2c63903-8b49-4366-8578-95863563d244-CfTWI6dOqBStQVuiFmPhv9mrmVb2
 
-## Summary
-AC systems not cooling effectively upstairs, one thermostat turned off. Tyler identified restrictive filters causing motor strain. Presented $60/month maintenance plan option.
+## Band Scores
 
-## FSG Bands
-- **Welcome:** Strong
-- **Assessment:** Strong
-- **Decision:** Solid
-- **Deliver:** Strong
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
-- **Expectations:** Pass
-- **Questions:** Pass
-- **Options:** Pass
-- **Objections:** Fail
+
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
 
 ## Outcome
-NO-CLOSE
 
-## Coaching
-SOLID — You diagnosed and explained the filter restriction issue clearly with motor science, then presented the $60/month membership option with email details for customer to discuss with spouse, setting expectations properly.
+UNKNOWN
+
+## Coaching Tip
+
+FIX — Review transcript for specific coaching point.
+
+---
+
+**Transcript Summary:**
+[Detailed analysis would go here]

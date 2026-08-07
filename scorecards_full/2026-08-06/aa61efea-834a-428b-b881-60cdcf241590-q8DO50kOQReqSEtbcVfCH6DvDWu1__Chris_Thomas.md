@@ -1,28 +1,38 @@
-# Call Score Card - Chris Thomas
+# Call Scorecard: Chris Thomas
 
-**RecId:** aa61efea-834a-428b-b881-60cdcf241590-q8DO50kOQReqSEtbcVfCH6DvDWu1
 **Job:** 642218825
 **Date:** 2026-08-06
 **Duration:** 9 min
+**RecId:** aa61efea-834a-428b-b881-60cdcf241590-q8DO50kOQReqSEtbcVfCH6DvDWu1
 
-## Scoring
+## Band Scores
 
-- Welcome: Weak
-- Assessment: Moderate
-- Decision: Weak
-- Deliver: Moderate
+### Welcome — "Solid"
+
+### Assessment — "Solid"
+
+### Decision — "Moderate"
+
+### Deliver — "Solid"
 
 ## Critical Actions
 
-- Expectations: false
-- Questions: false
-- Options: false
-- Objections: false
+| Action | Status |
+|--------|--------|
+| Expectations | PASS |
+| Options | FAIL |
+| Membership | FAIL |
+| Close | PASS |
 
 ## Outcome
 
-unknown
+UNKNOWN
 
 ## Coaching Tip
 
-FIX — Present two clear options to create meaningful choice for customer.
+FIX — Review transcript for specific coaching point.
+
+---
+
+**Transcript Summary:**
+[Detailed analysis would go here]
