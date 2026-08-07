@@ -1,1 +1,1 @@
-Non-scoreable: Recording empty or failed — no customer interaction captured.
+Near-empty transcript with minimal content

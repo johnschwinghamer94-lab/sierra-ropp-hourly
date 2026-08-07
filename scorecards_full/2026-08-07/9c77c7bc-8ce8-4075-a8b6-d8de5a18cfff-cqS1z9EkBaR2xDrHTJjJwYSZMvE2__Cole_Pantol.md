@@ -1,0 +1,1 @@
+Transcript corrupted/incomplete
