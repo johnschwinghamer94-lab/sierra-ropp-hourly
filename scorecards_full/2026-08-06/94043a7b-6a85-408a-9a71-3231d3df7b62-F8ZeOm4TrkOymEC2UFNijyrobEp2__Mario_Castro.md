@@ -1,19 +1,25 @@
-# Scorecard: Mario Castro | Job #662111653 | 2026-08-06 (60 min)
+# Scorecard: Mario Castro
+
+**RecId:** 94043a7b-6a85-408a-9a71-3231d3df7b62-F8ZeOm4TrkOymEC2UFNijyrobEp2
+**Date:** 2026-08-06
+**Duration:** 60 min
+**Job Number:** 662111653
+**Outcome:** no-close
 
 ## FSG Bands
-- **Welcome: Strong** — Warm, professional greeting; established rapport quickly.
-- **Assessment: Strong** — Thorough inspection; asked probing questions about system age, maintenance history, and current performance.
-- **Decision: Strong on wins** — Built clear value narrative, presented repair and replacement options with trade-offs, handled cost objection skillfully.
-- **Deliver: Solid** — Summarized findings and next steps clearly.
+
+- **Welcome:** Strong
+- **Assessment:** Strong
+- **Decision:** Moderate
+- **Deliver:** Moderate
 
 ## Critical Actions
-- **Expectations ✓** — Set clear scope at start: "Here's what I'll check and here's how we'll move forward."
-- **Questions ✓** — Asked about prior repairs, current issues, timeline preferences.
-- **Options ✓** — Presented both repair sequence and full replacement with cost/warranty comparison.
-- **Objections ✓** — Customer raised budget concern; Mario acknowledged and offered phased approach.
 
-## Outcome: No-Close
-Customer appreciated the technical expertise but did not commit to TGL or estimate appointment by end of call.
+- Expectations: ✓ Pass
+- Questions: ✓ Pass
+- Options: ✗ Fail
+- Objections: ✓ Pass
 
 ## Coaching
-**FIX — Help customers decide between major system repairs vs replacement with side-by-side cost comparison.** You got the expert credibility perfectly — the customer clearly trusted you. The miss: You didn't close with a specific next step. End with: "I'll email you a one-page comparison of the repair vs replacement so you can share it with your spouse, and I'll call tomorrow to schedule the work."
+
+FIX — When customer revealed $20k replacement fear and said 'I understand those risks,' that was the moment to ask about warranty coverage, extended payment plans, or why replacing both together might actually cost less per unit — the door was open.
