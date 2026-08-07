@@ -1,0 +1,1 @@
+Transcript contains no HVAC-related content; appears to be personal monologue unrelated to any service call.

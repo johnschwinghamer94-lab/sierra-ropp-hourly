@@ -1,0 +1,1 @@
+No genuine HVAC work performed; entire call is Beatles music discussion without any service delivery or customer issue resolution.

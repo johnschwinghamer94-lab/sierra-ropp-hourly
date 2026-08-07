@@ -1,0 +1,1 @@
+Transcript transitions into unrelated personal/legal content. Not a genuine professional service call completion.
