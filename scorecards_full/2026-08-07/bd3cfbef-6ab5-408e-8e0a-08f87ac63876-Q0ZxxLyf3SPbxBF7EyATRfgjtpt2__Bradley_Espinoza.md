@@ -1,0 +1,1 @@
+Not a genuine customer call; excessive off-topic Beatles conversation dominates transcript.

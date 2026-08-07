@@ -1,0 +1,1 @@
+Not a customer call; contains only personal rambling with no HVAC-related content.
