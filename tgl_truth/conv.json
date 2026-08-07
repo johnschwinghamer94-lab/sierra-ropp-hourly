@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T20:19:31.303131-07:00",
+  "generated": "2026-08-06T20:20:59.070854-07:00",
   "method": "dashboard parse_all: TGLs Created per creating tech / Revenue-report calls ran (ROPP-tag cleaned)",
   "days": {
     "2026-06-28": {
@@ -1265,12 +1265,12 @@
         "calls": 1,
         "tgls": 0
       },
-      "Nikko April": {
-        "calls": 1,
-        "tgls": 0
-      },
       "Robert Silinzy": {
         "calls": 3,
+        "tgls": 0
+      },
+      "Nikko April": {
+        "calls": 1,
         "tgls": 0
       }
     },
