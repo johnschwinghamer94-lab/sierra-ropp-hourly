@@ -1,27 +1,57 @@
-# Live Coaching Card: AJ Munoz
+# SERVICE Scorecard: AJ Munoz
 
 **Date:** 2026-08-06 | **Call ID:** 09655947-833d-4843-9367-8b40ece47c9a-6IIvBXgqsvMmPqdeG9H3OuK0B342  
-**Job:** 672734510 (Macias Residence) | **Duration:** 6 min | **Outcome:** No Close
+**Job:** 672734510 (Macias Residence) | **Customer:** Ezequiel Martin & Cassandra Gwynn | **Duration:** 6 min
 
-## FSG Bands
+---
 
-**Welcome: Strong** — Warm, immediate rapport ("How's it going, man?" / "Nice to meet you"). AJ establishes expertise and sets clear expectations upfront about the tune-up and inspection he'll do.
+## Scoring Bands
 
-**Assessment: Solid** — Systematically walks through the property (attic, outdoor unit, thermostat location). Asks check-in questions about unit history and comfort level. Could have probed deeper on current pain points or performance issues.
+### Welcome: Solid
+AJ opens warm and professional ("Hi. Hey. How's it going, man? Well, my name is A.J.... Nice to meet you, Isaac."). He establishes clear expectations for the work: "I'm gonna do a tune up. I'm gonna check your indoor and outdoor. Just make sure everything's working well." He asks permission before working ("is it okay if I drop the temperature for the maintenance?" and "Is it okay if I move some stuff around?").
 
-**Decision: Solid** — Presents membership benefits clearly and thoroughly ($16/month, 3 visits/year, includes summer/winter AC maintenance, plumbing, emergency trip, coil cleaning, priority service, 15% repair discount, 2-yr parts warranty). Customer is receptive but AJ doesn't close the loop or ask for commitment. Hands off literature without a closing question.
+**Gap:** No explicit statement about cost to diagnose or timeline for completion.
 
-**Deliver: Incomplete** — Call ends before work begins. No completion or explanation of work done.
+### Diagnosis: Moderate
+AJ states the plan to inspect indoor and outdoor units, but the call cuts off before actual diagnostic findings are discussed. He mentions checking the attic and thermostat location but doesn't communicate any results or issues found to the customer. The inspection appears not yet completed during this recorded segment.
+
+**Gap:** No diagnostic results explained or shared with customer despite stating inspection plan.
+
+### Options: Weak
+AJ presents only the Sierra membership ($16/month) with benefits: cooling/heating maintenance, plumbing visit, free emergency trip, chemical coil cleaning, priority service, 15% discount on repairs, 2-year parts labor warranty. This is a single option, not a structured good/better/best offering. No repair options or alternative upgrade paths are presented.
+
+**Gap:** Rubric requires 4+ distinct repair/upgrade options; only membership presented.
+
+### Close: Weak
+After explaining membership benefits in detail, AJ does not directly ask for the sale. Instead: "So you can just hold on to that if you want to think about it while." This is passive and gives the customer an easy exit without commitment. No objection-handling or follow-up question.
+
+**Gap:** No direct ask ("Can we get you started?" / "Would you like to sign up today?"). Leaves decision to customer with no urgency or next step.
+
+---
 
 ## Critical Actions
 
-- **Expectations:** ✅ Set clear plan for tune-up and inspection
-- **Questions:** ✅ Asked about unit history, maintenance habits, comfort ("How's your unit been running?")
-- **Options:** ❌ Presented one offer (membership) but not structured as multiple options to compare
-- **Objections:** ❌ Customer said "kind of have heard about it" (mild hesitation) but AJ didn't explicitly overcome it or ask clarifying questions
+| Action | Result | Evidence |
+|--------|--------|----------|
+| **expectations** | FALSE | Stated what would be inspected ("tune up... check your indoor and outdoor") but no clear cost-to-diagnose or next-steps timeline |
+| **options** | FALSE | Only membership presented; no 4+ repair/upgrade options with differentiated pricing |
+| **membership** | TRUE | Full membership pitch with $16/month price, all six benefits listed clearly |
+| **close** | FALSE | No direct ask for business; "think about it while" is passive, not a closing question |
 
-## Analysis
+---
 
-AJ nails the welcome and explains the membership value brilliantly—customer is clearly listening and engaged ("Okay. Yeah"). The issue is no close. He educates but never pivots to "Let's get you started" or "Does that sound like something you'd like to sign up for?" The customer leaves the call without taking an action step.
+## Outcome
 
-The call shows AJ is a strong educator and relationship builder. He needs to add a closing push: when customer is receptive, move from explanation to commitment.
+**Unknown** — Customer is still present but has not committed to or declined membership. Call ends mid-conversation without final decision stated.
+
+---
+
+## Coaching Tip
+
+FIX — After presenting all the membership benefits ($16 month-to-month with three inspections and one emergency visit included), ask directly for the commitment: "Would you like to get started with the membership today?" instead of "hold on to that if you want to think about it."
+
+---
+
+## Summary
+
+AJ demonstrates strong relationship-building skills and deep product knowledge of the membership. He explains value with concrete examples (coil cleaning = better airflow). The customer is engaged and receptive throughout. The missed moment is the close: once the customer didn't object and seemed interested ("Okay. Yeah."), AJ should have transitioned from education to asking for the business directly.
