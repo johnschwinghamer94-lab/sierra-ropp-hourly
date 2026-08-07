@@ -1,31 +1,25 @@
-# Coaching Scorecard: AJ Munoz
+# Scorecard: b9ec3350-2911-43bc-85ec-d08d05134621-6IIvBXgqsvMmPqdeG9H3OuK0B342
 
-**Job:** 666873422
-**Date:** 2026-08-05
-**Duration:** 6 min
-**Outcome:** CLOSED
+**Rep:** AJ Munoz  
+**Job:** 666873422  
+**Date:** 2026-08-05  
+**Duration:** 6 min  
+**Outcome:** no-close
 
-## FSG Coaching Bands
+## FSG Bands
 
-- **Welcome:** Strong
-- **Assessment:** Solid
-- **Decision:** Solid
-- **Deliver:** Weak
+- Welcome: Strong
+- Assessment: Strong
+- Decision: Solid
+- Deliver: Weak
 
 ## Critical Actions
 
 - Expectations: ✓
 - Questions: ✓
-- Options: ✗
+- Options: ✓
 - Objections: ✗
-
-## Call Outcome
-
-**Result:** closed
 
 ## Coaching Tip
 
-WIN — Quick, professional maintenance opener with clear name introduction and purpose statement set foundation for efficient call.
-
----
-*Generated: 2026-08-05*
+WIN — AJ asked great questions about filter habits ('how often are you changing these?'), presented upgrade option professionally, and when Patrick declined, respected his choice without pressure, building trust for future service.

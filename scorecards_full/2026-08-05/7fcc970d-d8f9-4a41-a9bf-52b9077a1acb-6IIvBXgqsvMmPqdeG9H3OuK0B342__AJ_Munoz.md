@@ -1,31 +1,25 @@
-# Coaching Scorecard: AJ Munoz
+# Scorecard: 7fcc970d-d8f9-4a41-a9bf-52b9077a1acb-6IIvBXgqsvMmPqdeG9H3OuK0B342
 
-**Job:** 668255861
-**Date:** 2026-08-05
-**Duration:** 11 min
-**Outcome:** CLOSED
+**Rep:** AJ Munoz  
+**Job:** 668255861  
+**Date:** 2026-08-05  
+**Duration:** 11 min  
+**Outcome:** unknown
 
-## FSG Coaching Bands
+## FSG Bands
 
-- **Welcome:** Strong
-- **Assessment:** Strong
-- **Decision:** Strong on wins
-- **Deliver:** Strong
+- Welcome: Strong
+- Assessment: Solid
+- Decision: Solid
+- Deliver: Weak
 
 ## Critical Actions
 
 - Expectations: ✓
-- Questions: ✓
+- Questions: ✗
 - Options: ✓
 - Objections: ✗
 
-## Call Outcome
-
-**Result:** closed
-
 ## Coaching Tip
 
-WIN — Strong rapport from the opening: introduced both techs by name, complimented home, set clear expectations ("if we notice anything, would you like to know?"), and made empowering 5-star commitment that invites customer feedback.
-
----
-*Generated: 2026-08-05*
+FIX — AJ should ask more discovery questions about comfort (any hot/cold spots, cooling performance, issues) before launching into the maintenance work, to personalize the service.

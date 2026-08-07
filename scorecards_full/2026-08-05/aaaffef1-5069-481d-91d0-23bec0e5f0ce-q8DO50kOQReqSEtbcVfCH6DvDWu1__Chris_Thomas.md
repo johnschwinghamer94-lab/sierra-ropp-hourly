@@ -1,31 +1,25 @@
-# Coaching Scorecard: Chris Thomas
+# Scorecard: aaaffef1-5069-481d-91d0-23bec0e5f0ce-q8DO50kOQReqSEtbcVfCH6DvDWu1
 
-**Job:** 642886196
-**Date:** 2026-08-05
-**Duration:** 95 min
-**Outcome:** CLOSED
+**Rep:** Chris Thomas  
+**Job:** 642886196  
+**Date:** 2026-08-05  
+**Duration:** 95 min  
+**Outcome:** closed
 
-## FSG Coaching Bands
+## FSG Bands
 
-- **Welcome:** Strong
-- **Assessment:** Strong
-- **Decision:** Strong on wins
-- **Deliver:** Moderate
+- Welcome: Solid
+- Assessment: Strong
+- Decision: Strong
+- Deliver: Strong
 
 ## Critical Actions
 
 - Expectations: ✓
 - Questions: ✓
 - Options: ✓
-- Objections: ✓
-
-## Call Outcome
-
-**Result:** closed
+- Objections: ✗
 
 ## Coaching Tip
 
-WIN — Extended call showing persistent effort to understand customer needs and overcome concerns with technical evidence and clear explanations.
-
----
-*Generated: 2026-08-05*
+WIN — Chris educated the customer on the true value of better filtration by explaining the failure cascade ('if those build up too much dust...become unbalanced...wear and tear on the motor...bearings will start to go...pretty expensive fix'), converting the customer to three-inch filters.

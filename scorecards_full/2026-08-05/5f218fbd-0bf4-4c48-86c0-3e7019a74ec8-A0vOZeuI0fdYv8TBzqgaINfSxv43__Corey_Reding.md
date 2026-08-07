@@ -1,31 +1,25 @@
-# Coaching Scorecard: Corey Reding
+# Scorecard: 5f218fbd-0bf4-4c48-86c0-3e7019a74ec8-A0vOZeuI0fdYv8TBzqgaINfSxv43
 
-**Job:** 671324818
-**Date:** 2026-08-05
-**Duration:** 28 min
-**Outcome:** NO-CLOSE
+**Rep:** Corey Reding  
+**Job:** 671324818  
+**Date:** 2026-08-05  
+**Duration:** 28 min  
+**Outcome:** flipped
 
-## FSG Coaching Bands
+## FSG Bands
 
-- **Welcome:** Moderate
-- **Assessment:** Strong
-- **Decision:** Strong on wins
-- **Deliver:** Weak
+- Welcome: Solid
+- Assessment: Strong
+- Decision: Moderate
+- Deliver: Moderate
 
 ## Critical Actions
 
 - Expectations: ✓
 - Questions: ✓
-- Options: ✓
+- Options: ✗
 - Objections: ✗
-
-## Call Outcome
-
-**Result:** no-close
 
 ## Coaching Tip
 
-FIX — While assessment was thorough, stronger welcome acknowledgment and closing summary of findings with clear next steps could have improved outcome.
-
----
-*Generated: 2026-08-05*
+FIX — Corey thoroughly diagnosed the refrigerant leak but should have clearly stated the next step ('the leak is at the compressor seal—we'll need to replace it') and presented Option C (recommend specialist follow-up appointment or schedule immediate repair with pricing) before ending.

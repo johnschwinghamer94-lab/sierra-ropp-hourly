@@ -1,16 +1,17 @@
-# Coaching Scorecard: Adrian Muniz
+# Scorecard: dcdb21c1-06e0-4687-a5fe-36e20bac0312-KYQvAzHowRS7IPrUVX9AeIQAbTq1
 
-**Job:** 670562597
-**Date:** 2026-08-05
-**Duration:** 20 min
-**Outcome:** CLOSED
+**Rep:** Adrian Muniz  
+**Job:** 670562597  
+**Date:** 2026-08-05  
+**Duration:** 20 min  
+**Outcome:** closed
 
-## FSG Coaching Bands
+## FSG Bands
 
-- **Welcome:** Strong on wins
-- **Assessment:** Strong
-- **Decision:** Strong on wins
-- **Deliver:** Strong on wins
+- Welcome: Solid
+- Assessment: Strong
+- Decision: Strong
+- Deliver: Strong
 
 ## Critical Actions
 
@@ -19,13 +20,6 @@
 - Options: ✓
 - Objections: ✓
 
-## Call Outcome
-
-**Result:** closed
-
 ## Coaching Tip
 
-WIN — Strong handling of customer concerns by asking clarifying questions and building value through detailed technical explanation before presenting work.
-
----
-*Generated: 2026-08-05*
+WIN — Adrian diagnosed the power surge compressor failure and explained the complete replacement scope clearly ('the compressor, the contactor, the capacitor, the filter dryer, all that gets changed out'), earning customer approval for $1450 and a maintenance plan.
