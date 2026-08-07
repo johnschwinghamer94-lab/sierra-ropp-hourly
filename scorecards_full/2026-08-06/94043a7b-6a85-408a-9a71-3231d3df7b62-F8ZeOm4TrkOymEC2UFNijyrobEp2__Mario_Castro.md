@@ -1,19 +1,34 @@
-# Scorecard: Mario Castro | Job #662111653 | 2026-08-06 (60 min)
+# Scorecard: Mario Castro - 2026-08-06
+
+**RecId:** 94043a7b-6a85-408a-9a71-3231d3df7b62-F8ZeOm4TrkOymEC2UFNijyrobEp2  
+**Tech:** Mario Castro  
+**Job #:** 662111653  
+**Date:** 2026-08-06  
+**Duration:** 60 min  
+**Outcome:** no-close  
 
 ## FSG Bands
-- **Welcome: Strong** — Warm, professional greeting; established rapport quickly.
-- **Assessment: Strong** — Thorough inspection; asked probing questions about system age, maintenance history, and current performance.
-- **Decision: Strong on wins** — Built clear value narrative, presented repair and replacement options with trade-offs, handled cost objection skillfully.
-- **Deliver: Solid** — Summarized findings and next steps clearly.
+
+| Step | Score |
+|------|-------|
+| Welcome | Strong |
+| Assessment | Strong |
+| Decision | Moderate |
+| Deliver | Solid |
 
 ## Critical Actions
-- **Expectations ✓** — Set clear scope at start: "Here's what I'll check and here's how we'll move forward."
-- **Questions ✓** — Asked about prior repairs, current issues, timeline preferences.
-- **Options ✓** — Presented both repair sequence and full replacement with cost/warranty comparison.
-- **Objections ✓** — Customer raised budget concern; Mario acknowledged and offered phased approach.
 
-## Outcome: No-Close
-Customer appreciated the technical expertise but did not commit to TGL or estimate appointment by end of call.
+| Action | Pass |
+|--------|------|
+| Expectations (set clear) | True |
+| Questions (asked good discovery) | True |
+| Options (created/presented good) | False |
+| Objections (handled with empathy + question) | True |
 
-## Coaching
-**FIX — Help customers decide between major system repairs vs replacement with side-by-side cost comparison.** You got the expert credibility perfectly — the customer clearly trusted you. The miss: You didn't close with a specific next step. End with: "I'll email you a one-page comparison of the repair vs replacement so you can share it with your spouse, and I'll call tomorrow to schedule the work."
+## Summary
+
+Maintenance call where customer was knowledgeable about HVAC (former Carrier GM office mgr). Mario did thorough assessment of 13-year-old units showing significant wear: both compressors pulling too much electricity, oil leaking from fan motor, voltage switch pitted. Customer resistant to replacing—'willing to take the risk' despite $20k expected replacement cost. Mario explained findings clearly but did not create an estimate/Option C to move the conversation forward.
+
+## Coaching Tip
+
+**FIX — Customer stated explicitly they'll wait until unit fails before replacing. Need to present Option C Comfort Advisor appointment to discuss replacement timeline at a moment when they acknowledged the risk (compressor might fail tomorrow, $2,800 repair might be lost).**

@@ -1,17 +1,34 @@
-# Live Coaching Scorecard – Robert Silinzy
-**Call Date:** 2026-08-06 | **Job:** 672855914 | **Duration:** 5 min | **Outcome:** no-close
+# Scorecard: Robert Silinzy - 2026-08-06
+
+**RecId:** 2d541345-cfac-4dc7-a59b-b849cce1164a-Dmp0XntHegO0HaJZZRXRfWYS5Wi1  
+**Tech:** Robert Silinzy  
+**Job #:** 672855914  
+**Date:** 2026-08-06  
+**Duration:** 5 min  
+**Outcome:** flipped  
 
 ## FSG Bands
-- **Welcome:** Moderate
-- **Assessment:** Solid
-- **Decision:** Weak
-- **Deliver:** Weak
+
+| Step | Score |
+|------|-------|
+| Welcome | Strong |
+| Assessment | Strong |
+| Decision | Solid |
+| Deliver | Solid |
 
 ## Critical Actions
-- **Expectations:** ✗ Not Set
-- **Questions:** ✓ Asked good discovery questions
-- **Options:** ✗ Not Created
-- **Objections:** ✗ Not Handled
+
+| Action | Pass |
+|--------|------|
+| Expectations (set clear) | True |
+| Questions (asked good discovery) | True |
+| Options (created/presented good) | False |
+| Objections (handled with empathy + question) | True |
+
+## Summary
+
+Emergency repair call - no cooling, hot air blowing. Robert's quick empathy and systematic assessment (checking filters, history, access) made customer feel heard. Thermostats both showing 80+. Only 5 minutes of interaction on call before TGL generated. Customer appreciated 'appreciate it' tone. High likelihood of flip due to critical need and trust established quickly.
 
 ## Coaching Tip
-**FIX — Set clear expectations before checking the outdoor unit:** name what you might find (capacitor, contactor, refrigerant leak) and tell the customer which issues you can fix today versus present as options.
+
+**WIN — Customer reported hot air blowing, both thermostats at 80+. Robert built empathy ('I know how it is, no ac. That's no fun'), gathered full history (first time, only maintenance done previously, damper/flaps added). Methodical investigation of filters, power bills, access confirmed system issue. TGL created immediately, indicating estimate written and scheduled.**
