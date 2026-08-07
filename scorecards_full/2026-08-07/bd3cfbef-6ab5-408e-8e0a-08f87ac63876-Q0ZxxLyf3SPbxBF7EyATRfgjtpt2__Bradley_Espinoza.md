@@ -1,0 +1,1 @@
+Transcript is primarily social/personal conversation about Beatles music, not a genuine AC service interaction

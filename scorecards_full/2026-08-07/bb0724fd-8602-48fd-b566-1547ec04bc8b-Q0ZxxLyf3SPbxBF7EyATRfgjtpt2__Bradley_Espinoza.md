@@ -1,0 +1,1 @@
+Transcript is personal monologue unrelated to HVAC service; not a customer interaction
