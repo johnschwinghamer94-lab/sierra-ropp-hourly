@@ -1,0 +1,803 @@
+TRANSCRIPT
+Rep:      Andrew Alonso
+Date:     2026-08-07
+Duration: 107 min
+RecId:    e96d56d2-1f0f-4f93-90d7-97993646ded2-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
+Job:      TORRES, ANTUAN MORALES, Job # 668201831
+============================================================
+
+
+Customer:
+  Am
+  I
+  at
+  the
+  right
+  house?
+
+Jay:
+  What?
+
+Customer:
+  Super
+  cool
+  truck.
+
+Jay:
+  What?
+
+Customer:
+  You're
+  a
+  Deadpool
+  fan,
+  man?
+  Yeah.
+  Super
+  cool
+  truck.
+  Super
+  cool
+  truck.
+
+Andrew Alonso:
+  I'm
+  Andrew.
+  Lovely
+  to
+  meet
+  you,
+  man.
+
+Jay:
+  Jay.
+  Jay.
+
+Andrew Alonso:
+  Um,
+  so
+  I'm
+  here
+  to
+  just
+  do
+  a
+  couple
+  maintenances
+  on
+  2
+  systems.
+  Yeah.
+
+Customer:
+  Yes,
+  sir.
+  Yes,
+  sir.
+
+Andrew Alonso:
+  It's
+  okay,
+  I'll
+  do
+  my
+  first.
+
+Customer:
+  Yeah.
+
+Jay:
+  Yeah.
+  And
+  then
+  are
+  you
+  the
+  homeowner?
+  No,
+  I'm
+  a
+  renter.
+
+Andrew Alonso:
+  Renter,
+  copy.
+  Okay,
+  it's
+  landlord-tenant.
+
+Customer:
+  Yeah.
+
+Jay:
+  Yes,
+  sir.
+
+Customer:
+  Oh,
+  you
+  have
+  to
+  crawl
+  up
+  the
+  attic.
+  Yeah,
+  it's
+  up
+  in
+  the
+  master
+  bedroom
+  closet.
+
+Andrew Alonso:
+  Okay,
+  do
+  you
+  want
+  me
+  to
+  just
+  go
+  up
+  there?
+
+Customer:
+  Go,
+  go.
+  Yeah,
+  you
+  do
+  your
+  thing.
+  Yeah,
+  yeah.
+  And
+  then
+  we're
+  going
+  to
+  turn
+  these
+  down
+  pretty
+  low
+  just
+  so
+  that
+  they
+  keep
+  running
+  while
+  cutting.
+  I
+  had
+  hip
+  surgery
+  on
+  Monday,
+  so
+  we've
+  been
+  living
+  downstairs.
+  I'm
+  not
+  supposed
+  to
+  be
+  walking.
+
+Jay:
+  Uh,
+  I'm
+  gonna
+  test
+  everything
+  out,
+  do
+  some
+  evaluation,
+  um,
+  and
+  I'll
+  give
+  you
+  another
+  call
+  if
+  I
+  got
+  anything.
+  Um,
+  anything
+  you
+  guys
+  didn't
+  experience,
+  you
+  guys
+  want
+  to
+  let
+  me
+  know?
+  Not
+  particularly.
+  Good.
+
+Customer:
+  Okay,
+  do
+  you
+  have
+  any
+  filters
+  I
+  can
+  swap
+  out?
+
+Andrew Alonso:
+  No,
+  I
+  usually
+  just
+  clean
+  those.
+
+Jay:
+  Okay.
+
+Customer:
+  Um,
+  kind
+  of
+  a
+  sticky
+  situation
+  because
+  I
+  know
+  it's
+  an
+  outdoor
+  unit,
+  so
+  these
+  filters
+  are
+  way
+  better.
+  Um,
+  you
+  can't
+  ever
+  fully
+  clean
+  these
+  out.
+  Like,
+  first
+  time
+  I
+  walked
+  in,
+  I
+  know.
+  I'm
+  like,
+  that's
+  why
+  I
+  hate
+  it,
+  because
+  I
+  have
+  to
+  clean
+  them
+  all
+  the
+  time.
+
+Andrew Alonso:
+  Yeah,
+  they—
+  did
+  the
+  landlord
+  supply
+  you
+  with
+  these?
+
+Jay:
+  Yeah.
+
+Customer:
+  Really?
+
+Jay:
+  Yeah.
+
+Andrew Alonso:
+  Okay,
+  I'll
+  talk
+  to
+  him
+  about
+  it.
+  What
+  do
+  you—
+
+Jay:
+  what's
+  the
+  mission
+  of
+  your
+  4-man?
+  Uh,
+  restless.
+  Yeah,
+  I
+  get
+  restless.
+
+Andrew Alonso:
+  Yeah,
+  that's
+  beautiful.
+
+Customer:
+  Awesome.
+
+Andrew Alonso:
+  Uh,
+  do
+  you
+  have
+  any
+  questions
+  for
+  me?
+  Anything
+  I
+  should
+  know
+  about
+  before
+  I
+  get
+  started?
+
+Customer:
+  No.
+
+Jay:
+  Awesome.
+
+Andrew Alonso:
+  Thank
+  you
+  so
+  much
+  for
+  joining.
+  Did
+  you
+  or
+  somebody
+  lose
+  some
+  glasses
+  recently?
+
+Customer:
+  I
+  don't
+  know.
+  See
+  any
+  glasses?
+
+Andrew Alonso:
+  Yeah,
+  I
+  found
+  some
+  out
+  in
+  the
+  rocks.
+
+Customer:
+  I
+  didn't
+  know
+  if
+  it
+  was
+  like
+  a
+  neighbor
+  that
+  walked
+  by,
+  so
+  I
+  left
+  it
+  right
+  on
+  the
+  curb
+  so
+  somebody
+  knows
+  they
+  can
+  knock
+  in.
+  Hey,
+  so
+  let
+  me
+  just
+  give
+  the
+  homeowner
+  a
+  quick
+  call
+  later.
+
+Jay:
+  Yeah.
+
+Andrew Alonso:
+  I
+  got
+  some
+  reports
+  to
+  write,
+  so
+  it'll
+  take
+  me
+  about
+  ten
+  minutes.
+
+Customer:
+  Are
+  you
+  okay
+  with
+  that?
+
+Andrew Alonso:
+  Yeah,
+  thank
+  you.
+  Beautiful.
+  So
+  I'll
+  come
+  touch
+  base
+  with
+  you
+  before
+  I
+  leave,
+  no
+  matter
+  what
+  happens.
+  Okay.
+  But
+  I'll
+  update
+  you
+  after
+  I
+  talk
+  to
+  him.
+
+Customer:
+  All
+  right,
+  cool.
+  What
+  is
+  the
+  home?
+
+Jay:
+  Okay.
+
+Customer:
+  Alrighty,
+  man,
+  I'm
+  so
+  sorry.
+  You're
+  good.
+  With
+  landlord-tenant
+  situations,
+  I
+  gotta
+  get
+  a
+  lot
+  of
+  permission,
+  um,
+  so
+  I
+  need
+  to
+  get
+  a
+  bunch
+  of
+  signatures
+  and
+  actually
+  schedule
+  when
+  you're
+  available.
+  Somebody
+  else
+  is
+  going
+  to
+  come
+  out
+  and
+  take
+  measurements
+  of
+  the
+  existing
+  systems.
+  Um,
+  and
+  then
+  just
+  right
+  here
+  where
+  I
+  sign,
+  I'm
+  circling
+  this
+  so
+  that
+  you
+  know
+  you're
+  not
+  signing
+  in
+  front
+  of
+  anybody.
+  And
+  then,
+  are
+  you
+  available
+  today,
+  or
+  when
+  would
+  you
+  be
+  available
+  to
+  do
+  the
+  coronavirus?
+  Because
+  I
+  know
+  you're
+  busy
+  right
+  now.
+  Uh,
+  yeah,
+  tomorrow.
+  Tomorrow
+  anytime?
+
+Jay:
+  Yeah.
+
+Customer:
+  Perfect,
+  I'll
+  get
+  that
+  scheduled
+  with
+  you
+  right
+  now.
+
+Andrew Alonso:
+  Are
+  you
+  Hawaiian?
+
+Jay:
+  Estimates.
+
+Customer:
+  So
+  let's
+  just
+  speak
+  with
+  our
+  other
+  guy.
+  Zero
+  dollars.
+  Let
+  me
+  get
+  a
+  signature
+  in
+  that
+  little
+  box.
+
+Andrew Alonso:
+  Where
+  are
+  you
+  going,
+  if
+  you
+  mind
+  my
+  asking?
+
+Customer:
+  I
+  gotta
+  go
+  pick
+  up
+  my
+  wife.
+  Oh
+  yeah,
+  is
+  she
+  at
+  work?
+
+Jay:
+  Yeah.
+
+Customer:
+  Yep,
+  yep.
+  Kids
+  school
+  shopping,
+  so—
+  What
+  is
+  it?
+
+Andrew Alonso:
+  Um,
+  I'll
+  leave
+  you
+  to
+  it.
+
+Customer:
+  It
+  was
+  a
+  pleasure
+  to
+  meet
+  you,
+  and
+  then
+  we'll
+  see
+  you
+  Sunday.
+  Um,
+  if
+  you've
+  got
+  any
+  questions
+  as
+  well,
+  uh,
+  you
+  can
+  take
+  a
+  picture
+  of
+  this
+  just
+  so
+  that
+  you've
+  got
+  my
+  info.
+  If
+  you
+  have
+  any
+  questions
+  along
+  the
+  way,
+  I
+  did
+  get
+  permission
+  from
+  the
+  landlord
+  to
+  share
+  info.
+  with
+  you.
+  Um,
+  so
+  if
+  you
+  got
+  any
+  questions,
+  I
+  got
+  the
+  answers.
+  Awesome.
+  You
+  have
+  a
+  great
+  day,
+  boss.
+  Oh
+  my
+  God,
+  what
+  a
+  beautiful
+  drag!
+  Jeez.
+
+Jay:
+  Okay.
