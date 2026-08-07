@@ -55,10 +55,21 @@ jobs:
           truth_ok=1
           python tgl_truth.py || { echo "::error::tgl_truth.py failed — daily truth files will be stale"; truth_ok=0; }
           python tgl_conv.py  || { echo "::error::tgl_conv.py failed — coaching close rates will fall back to graded-call sampling"; truth_ok=0; }
-          python - <<'PYEOF'
+          python - <<'PYEOF' || echo "::warning::ytd_sources.json refresh failed — objection mining keeps its last good map; the truth publish below still runs"
           # Objection mining needs a source-job# -> ScheduledDate map spanning the whole
           # YTD flip history. cache/tgls_created.json is written earlier in this job by
           # cloud_fetch.py; JobNumber there is the SOURCE call job number.
+          #
+          # 2026-08-06 — this block silently cost two days of truth data. In API mode the
+          # cache is {"fields": [...], "rows": [[...], ...]}: rows are ARRAYS, not dicts,
+          # so row.get() raised AttributeError. This step runs under `bash -e`, so that
+          # abort killed it BEFORE the git add/commit/push below — tgl_truth/ and
+          # conv.json were computed correctly on every run and then thrown away, while
+          # continue-on-error reported the job GREEN. The `[ "$truth_ok" = "1" ] || exit 1`
+          # guard added 2026-08-04 to surface exactly this never ran: it sits below the
+          # abort point.
+          # Two fixes: zip rows against fields so both shapes work, and the `|| echo`
+          # above so this cosmetic map can never again block the truth publish.
           import json, os
           from datetime import datetime, timezone
           from pathlib import Path
@@ -67,9 +78,15 @@ jobs:
           if not cache_file.exists():
               print("cache/tgls_created.json missing — skipping ytd_sources.json")
           else:
-              rows = json.loads(cache_file.read_text())
-              if isinstance(rows, dict):
-                  rows = rows.get("rows") or rows.get("data") or []
+              raw = json.loads(cache_file.read_text())
+              if isinstance(raw, dict):
+                  fields = raw.get("fields")
+                  rows = raw.get("rows") or raw.get("data") or []
+              else:
+                  fields, rows = None, raw
+              if fields:
+                  rows = [dict(zip(fields, r)) if isinstance(r, list) else r for r in rows]
+              rows = [r for r in rows if isinstance(r, dict)]
               sources = {}
               for row in rows:
                   job = str(row.get("JobNumber") or "").strip()
