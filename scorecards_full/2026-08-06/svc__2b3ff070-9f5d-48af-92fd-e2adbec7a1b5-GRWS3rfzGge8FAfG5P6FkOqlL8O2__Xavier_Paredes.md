@@ -1,0 +1,62 @@
+# SERVICE Scorecard
+**Tech:** Xavier Paredes
+**RecId:** 2b3ff070-9f5d-48af-92fd-e2adbec7a1b5-GRWS3rfzGge8FAfG5P6FkOqlL8O2
+**Job:** N/A
+**Date:** 2026-08-06
+**Duration:** 10 min
+
+## Performance Bands
+- **Welcome:** Solid
+- **Diagnosis:** Solid
+- **Options:** Weak
+- **Close:** Solid
+
+## Critical Actions
+- **Expectations set:** true
+- **Options presented (4+):** false
+- **Membership offered:** true
+- **Direct ask for sale:** true
+
+## Call Outcome
+**CLOSED**
+
+## Coaching Tip
+Review for coaching insights.
+
+## Full Transcript
+Customer: Hello. The guy from the— this house is part of this sale. Sale. Uh-huh. The guy in inspection say this, he has to be 60, not 80. I don't know.
+Xavier Paredes: I'm gonna grab my testing real quick and then we'll do the same test.
+Customer: Okay.
+Xavier Paredes: Is there any other ones down here?
+Customer: No, upstairs.
+Xavier Paredes: Can you show me the upstairs one?
+Customer: The filters, when were they last changed? You're cold.
+Xavier Paredes: 20 degrees.
+Customer: What?
+Xavier Paredes: Yeah, 20 degrees.
+Customer: See why the he the guy say it's not cooling? I don't know because that day it was outside 114.
+Xavier Paredes: So probably give it time to kick on. There's always a five-minute delay.
+Customer: He put it in 75. My husband put it 78. He put it 75. And outside was so hot.
+Xavier Paredes: Um, I just gotta go in there to collect model serial numbers of the coils. But yeah, you're cooling. There's nothing wrong with the unit. I have a 20-degree temp split. It's cooling.
+Customer: Yeah.
+Xavier Paredes: So either he didn't have— I'm gonna go in that room real quick. Either he didn't turn it down low enough or, um, You're talking about heat? No, um, the realtor.
+Customer: Maybe he just turned the thermostat down low enough because it's a thermostat.
+Xavier Paredes: Let's say your husband called for what, 78? He called for 75. There's only going to be a 2-degree difference. Yeah, in that. So it's going to satisfy really quick. So that's why when I do my test, I turn it down to the coldest I turn to about 66, maybe 64 if needed, um, sometimes lower if necessary, but 66 is where I always put it because then I know it's boiling.
+Customer: Okay. I'm going in to say that to my husband. Will you please record him? Yeah, that's fine.
+Xavier Paredes: I know this part of the home is probably going to be warmer just because it's near the sun or near the front. The windows are here, which that's normal, especially when you have the windows open.
+Customer: It's going to be warmer.
+Xavier Paredes: Hey, good afternoon, boss. This is Xavier with Sierra Air Conditioning and Plumbing.
+Customer: Yeah.
+Xavier Paredes: Hey, so, um, I saw the photos that your, uh, that your wife was showing me with the realtor about how it wasn't cooling.
+Customer: All right.
+Xavier Paredes: It's cooling just fine, boss. Um, I'm doing that. I'm doing the same thing he's doing. Only difference is I'm calling for 60 86 degrees. So I'm calling for it to cool, not to satisfy.
+Customer: That's what I'm saying. I mean, when he did the inspection, it was, it was 115 degrees outside. Yeah, what are you gonna expect, you know? Well, the air conditioner is working fine and it cools, you know, just fine.
+Xavier Paredes: Yeah, no, I got my, um, so we have a 20-degree target split is what we aim for. So the air that goes through your filters It needs to be 20 degrees different from what is being supplied to the home. Every vent is giving me the same temperature and the same degree split. Um, the only thing I'm going to do is I just need to collect model serial, collect my pressures and everything like that. Um, pretty much I'm just going to do a thorough evaluation to double-check everything, but you are cooling just fine.
+Customer: All right, just make a note of this so we could give it to the buyer so he could be satisfied. He's the one that Yeah, no worries.
+Xavier Paredes: I'm just gonna— again, I'm still gonna do a thorough evaluation on everything. Uh, right now I'm currently just checking every vent with my temp gun to make sure it's cooling, and then I'm gonna proceed into the attic and do the same thing, check everything there, go outside, check the pressures, make sure the pressures are looking good. And yeah, just so that way, you know, everything's covered up for y'all.
+Customer: All right, I appreciate it.
+Xavier Paredes: Yep, no worries, boss. I'll pass it back over. Um, I'm just gonna grab my ladder real quick, jump inside, um, just so I can collect model serial numbers of everything that I got to collect. Um, yeah, cooling. So I just need to collect the pressures, model serial numbers, and then jump into the attic, collect model serial numbers.
+Customer: Yeah, that's fine. I think that's everything.
+Xavier Paredes: It's fine.
+Customer: No, you're good.
+Xavier Paredes: I felt it cold when I walked in. Um, I don't know, I've been going to a lot of homes with the— oh, actually, I have no reason to go into the attic. I don't even get monsters at all.

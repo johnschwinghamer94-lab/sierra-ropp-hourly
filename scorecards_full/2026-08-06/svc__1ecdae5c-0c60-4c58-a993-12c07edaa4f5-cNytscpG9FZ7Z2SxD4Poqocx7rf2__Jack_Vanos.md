@@ -1,0 +1,190 @@
+# SERVICE Scorecard
+**Tech:** Jack Vanos
+**RecId:** 1ecdae5c-0c60-4c58-a993-12c07edaa4f5-cNytscpG9FZ7Z2SxD4Poqocx7rf2
+**Job:** 670554887
+**Date:** 2026-08-06
+**Duration:** 114 min
+
+## Performance Bands
+- **Welcome:** Solid
+- **Diagnosis:** Solid
+- **Options:** Solid
+- **Close:** Solid
+
+## Critical Actions
+- **Expectations set:** true
+- **Options presented (4+):** true
+- **Membership offered:** true
+- **Direct ask for sale:** true
+
+## Call Outcome
+**CLOSED**
+
+## Coaching Tip
+Review for coaching insights.
+
+## Full Transcript
+Speaker 0: Hello. Good morning. Good morning. How are you?
+Speaker 1: I'm good. How are you? I'm
+Speaker 0: good. Good. I'm Jack Sierra. I'm here to do that control board. Yes. Okay. All righty. I'm just gonna go grab my things. Want to clean on here? And then I'll. You probably have to show me where that at. Actually, you can show me
+Speaker 1: now. Sure. It's upstairs. The attic, and then the control board, they're all. Everything's all over.
+Speaker 0: How's your day going so far? Good. Good. Exhausting. Yeah, it is. My first call of the day, actually. Good. I had a late start.
+Speaker 1: That's good.
+Speaker 0: Yeah, very good.
+Speaker 1: Late ending to. Yes.
+Speaker 0: The. The attic. Attic. Attic's upstairs. Mom, we're coming up.
+Speaker 1: I'm coming down. Okay. I'm pulling down. Okay. I'm trying to get in town. Hello. Boy, you're cute.
+Speaker 0: Thank
+Speaker 1: you. I like your bust hat.
+Speaker 0: Thank you. No, it's just me today. Perfect. That's the add in there, the thermostat here, the outside units on the other side, and the control panels on that front side. All righty. Yes. Sounds good. I'm
+Speaker 1: gonna close these. Just.
+Speaker 2: I'll probably just go grab my things and.
+Speaker 0: By yourself?
+Speaker 1: I am today. How
+Speaker 0: old are you? You look 18.
+Speaker 1: No, I'm 25.
+Speaker 0: 25?
+Speaker 1: Yeah. I got a young face still, so, you know,
+Speaker 0: it's your hair. Yeah.
+Speaker 1: It's time for a haircut, to be honest. Nice. I don't have
+Speaker 0: any. How old are you?
+Speaker 1: 25.
+Speaker 0: 25. Oh, you look 17. Yeah? Yeah. All by yourself?
+Speaker 1: Yep.
+Speaker 0: Okay. All right, fine. She. She needs to come down.
+Speaker 1: No, I. I just gotta go grab my things. Alrighty. I'll be right back. It.
+Speaker 0: It. I've got it. It's no worries. I don't have bottled water, but I have poison cold water. All right, let you know. I've got a cold compress if you need. Thank you. I'll come back for that last. Yeah, it's no worries. No, it's quite all right. Yeah. Maybe. This. The door that goes up. So if you go forward. I got the. If you go forward, there's a board to put the door here, just so it's not on the insulation. And then. I've not seen them up there, but I've had some in the garage. They're mice traps. Two sticky mice traps on the platform here. So I try to, like, push them over as far as I could. Yeah, but I don't want you to get stuck. No. Keep an eye out. I appreciate the heads up, but the board I put up there tonight. I mean, I don't go up there very often, but you putting on the insulation and then it's just a mess because that insulation falls down. Falls down. And that's why I lay the tarp down
+Speaker 1: so it catches most of it.
+Speaker 0: I went to Home Depot and I said, let's get this board. Of course, it's not the right size, but it works just to slide it forward onto that and the light switches in that area, too. Okay,
+Speaker 1: sweet.
+Speaker 0: Thank
+Speaker 1: you.
+Speaker 0: You're welcome. So do you have to go to the outside unit, too?
+Speaker 1: I shouldn't. No, just that control board is going to sit right inside that indoor unit that. The H Vac. Yeah.
+Speaker 0: Because they said it was. I guess the outside unit needs a pound of Freon.
+Speaker 1: Okay. But I don't know if that's something. That's something. I can always try and maybe check for you while I'm here.
+Speaker 0: Because the gentleman that came, I don't know what he did because it was blowing hot air on Saturday, but he did. He overrode something. So since then we've had cool air, thank goodness. But I guess when he did some tests outside, he said yes. That's a pound low of Freon. Okay, So I don't know if that makes a big difference. A pound is not a ton. It can make maybe a slight difference but it shouldn't affect it the unit and mess it up too bad. 1 pound is this fluctuate some different things. Okay. Yeah, but I can always double check that one. Okay. Thank you. Yeah, of course. And if I can help you or if you need like I said, water, cold compress. Passing out. I know the audit now it's earlier than later in the day. Oh yeah, I'm sure it's just miserable. I was in an attic yesterday for five hours. I came out dredged and so. No, it's okay. Did you have cold water or anything? I. I did. I did though today I get worried cuz our ice machines at work broke. MBC 뉴스 이덕영입니다. It's, It's. It. It's. All righty. No, so the control board for the outdoor unit, not the indoor unit. They don't specify. So I have the outdoor unit. That's what I have. Okay. And so I didn't need to lug my ladder up all these stairs. Well, you're so cute.
+Speaker 1: Okay, Mom. Yes. She repeats herself a lot. Do you? So that. It's for the outside unit. For the outside unit.
+Speaker 0: So I didn't realize that you had a full communicating system. Yes. So, yeah. So there's multiple. You've got, like, three or four control boards in a specific. Which one? And then I pulled it out. I'm like, this. This is, like, not the right control board here. And then I'm going through the photos. I'm like, oh,
+Speaker 1: it's the outside outdoor control
+Speaker 0: board. Okay.
+Speaker 1: When he did everything, he was outside. Yeah. So. But then he said, no, it's for the attic.
+Speaker 0: Okay. Interesting.
+Speaker 1: He says, what you need? We're gonna get you one for the attic. But I said, do you need to go to the attic? He said, no, he never went to the attic on Saturday. But he was out with the unit outside. He took the. I don't know, the panel off, and then it had error. Error code. So he looked that up and he called somebody.
+Speaker 0: Okay.
+Speaker 1: Okay.
+Speaker 0: Yeah. Now the control board I got is for that control board for the outdoor. Outside. Okay.
+Speaker 1: Outside.
+Speaker 0: Okay. So I'm gonna go outside. Saw that one. Yes. Okay. Student B, do they ordered the wrong one, do you think? You
+Speaker 1: said inside.
+Speaker 0: I can confirm. Okay. I can give my manager the call and see,
+Speaker 1: because the kept saying is they said it's for the outside because we never went to the attic.
+Speaker 0: Yeah.
+Speaker 1: Which was odd to me.
+Speaker 0: Yeah. Let me. I'm gonna just grab the rest of my tarp and things and then I will give them a call and double check to make sure. To make sure that we. Because I'd hate to replace that.
+Speaker 1: And you have to get that and. Yeah, exactly. Yes, that. It.
+Speaker 0: It. I gave him a call. Yeah, he said it is the outdoor. Might have just been like a. Slight miscommunication. I'm happy with talking about it.
+Speaker 1: Okay.
+Speaker 0: No
+Speaker 1: worries.
+Speaker 0: But. Yes. Outdoor.
+Speaker 1: Okay.
+Speaker 0: But I can just go around the side. Around the back
+Speaker 1: side, or we can go through here. Either one.
+Speaker 0: I'll probably just go around the side so I can get my stuff out there.
+Speaker 1: I'll have the. I'll open the gate for you. So it's easy. I put a rock. Oh, perfect. Best security. All righty. Well, thanks to you. Outside waiting it is. And then the. The breaker or the. I don't know, like the electrical. Yeah. Box that's on the other side in the front. Yeah. Yeah. Everything's always hard to get to. Yeah. Okay. Yes. I'm trying
+Speaker 0: to think. I. Yeah, I might need to turn that off. Okay. Maybe. Obviously when I get in there. Okay. But thanks
+Speaker 1: again. You need water? Cool compress.
+Speaker 0: Yeah. You know, I'll open the. I'll put the rock and then I'll meet you to show. I mean, I'm sure you can figure, but I'll walk out there with you. No, I appreciate it. Thank you. This, I don't know, I tried to fix that and it doesn't want to collaborate. Yeah. So I have this old school rock that helps. Yeah. Classic. You might have to bring your ladder, though, through. Do you? No. Okay. And you have shade still shaded? Yes. And this, I guess it ran, it went to 100 and something degrees, he said inside 175 degrees. So it's. Shut down and this gets horrible afternoon sun. Yeah. Once I'd say the sun hits here, it just peers into here for a good two to three hours, and then finally it goes down. And then it's shaded. But I don't know if I should do shade. And I hate where this is because to me, it's not getting the airflow on that side that it should. So I think it works over time. Yeah, maybe a little bit. Yeah. But to rewrite this would be. Huh. Little different. Big money. Yeah. Probably more money than it cost. Yeah, potentially. Would you happen to have the key for this? Oh, yes, sorry. It. I mean, not that this would be the biggest. No. But honestly. So, yeah, you can leave it right there.
+Speaker 1: That's perfect. It's still, you know, it's secure. Secure. It keeps. People see a lock. And I feel like, mentally, it's like, yeah. Oh, it's secure. Yeah. Touch it. But this
+Speaker 0: thing could probably just take some scissors. Yeah. Maybe some good pressure and you could probably scissors and cut that. I even feel
+Speaker 1: like. Yeah. Even like a rock, probably. But
+Speaker 0: like you said, they see a lock and think, no. Is running off low voltage, isn't it? Okay, that means I gotta go back and put the attic. That is that. Yes, that's what that thing is. That. Yeah, this. This one right here. Thing. Okay. Yes. That little thing. I mean, that's the brain. Yeah. Okay. Back in the attic. No, actually, I don't. I can do it. From the breaker pan. That. Everything was in the garage. Garage? Yeah. You know. Yeah. This is outside in the sun. Yeah. No, it's kind of interesting. Put it on the outside. Cuz for me growing up. Yeah. It's always in the garage.
+Speaker 1: Yeah. Somewhere in the house or like apartments. I had it in the house. Yeah. And then this is. I can always. Okay. It's a funky little thing on there.
+Speaker 0: Back down. It's our ac.
+Speaker 1: And then for. He did the forced air. That's. Yeah, there it is.
+Speaker 0: Yeah, that's it. Fau. Okay.
+Speaker 1: And then. Is that too or. No.
+Speaker 0: You know what? We'll do it just in case. Okay. I shouldn't need to with that thing pulled, but that should do it. Close that just for the time being.
+Speaker 1: Yeah. I'll hold on to this one. It would be nice if everything was convenient too.
+Speaker 0: Yeah.
+Speaker 1: Up in the front and then go in the back. Or if you had a door that you go into. Yeah, that'd be cool. All the way around. Do yard work.
+Speaker 0: It's it. It's it. I don't know. Peace of mind. Yeah.
+Speaker 1: Just kind of do this. I have to get the manual out to remember how to do all that, too, because it hooks into the Internet usually has, like, the outside.
+Speaker 0: Maybe it's. Yeah. It might take a second to. To reconnect or may.
+Speaker 1: Yeah, that's the WI fi. Yeah. So, yeah, it's probably
+Speaker 0: still configuring.
+Speaker 1: Okay. But it's. Come on. So that's good. I mean, I definitely like that little feature. What's the temperature? I should put this on today.
+Speaker 0: Yeah. Get
+Speaker 1: dressed. And
+Speaker 0: spoiled.
+Speaker 1: Okay. That came back. Yeah. The date just changed, so. Yeah. Yeah, it's. It's thinking. Thinking.
+Speaker 0: It's working through it. The brain of it. Yeah. I've noticed that, like, of course, a lot of these newer systems have a lot more technology in them. So in a sense, they're a little bit more they're fragile. But also, so far, have actually proven to be a little bit longer lasting than the conventional. Just in the sense that on your system, you don't even have to worry about things like and this is going to sound like Rocket Science LRAs, this is your lock rotor amps or because it's basically has a soft start built into it, basically, it's just ramping up a lot slower. So that's putting a lot less wear and tear on the components. But, of course, those control boards, they can be fragile and sometimes they occasionally can go out. And I would say the most common issue is sometimes there's just like they glitch out here and there, and sometimes they don't communicate well. And. Yeah. When the. When I take the pressures when I. Yeah. So I hook up when it's off, then I turn it on. Gotcha.
+Speaker 1: I put it up just in case. I don't want to jolt it. I don't want anything.
+Speaker 0: Yeah.
+Speaker 1: I'm gonna put it down just to where it normally would be. Okay. Or lower
+Speaker 0: anywhere as long as it's going to be on just for a couple
+Speaker 1: minutes. Showing 77. I put it to 75.
+Speaker 0: Okay. Yeah, that should be fine for
+Speaker 1: like I would say 10 minutes.
+Speaker 0: Yeah.
+Speaker 1: Okay. Yeah. Now the outside stuff's come back on. Yay. So all the settings. I don't have to. Yeah, I know. When I did that I had the manual out and I'm reading and I'm looking. Yeah. Cuz I wanted to name it.
+Speaker 0: Uhhuh. I thought it was cool to name. The fact that you have that option is pretty neat. Yeah. Because, like, the new dishwasher has, you can download an app and then you can create your own wash cycle. I haven't done that. I haven't done that yet. The cycles on there
+Speaker 1: are just fine. But
+Speaker 0: that's kind of neat.
+Speaker 1: I mean,
+Speaker 0: that's why I need my own
+Speaker 1: cycle. Yeah, this special
+Speaker 0: cycle for your dishes. To wash them. Why not? Why not? You know, I'm sure I paid another hundred dollars for that. That's how it goes.
+Speaker 1: Alrighty. Just give me more minutes.
+Speaker 0: Okay? You're not feeling
+Speaker 1: lightheaded? No, I'm okay, thank you.
+Speaker 0: One pound? Yeah, one pound is like nothing. Okay. Is that gonna make it work harder or no? Okay. It can fluctuate. Does it fluctuate with. I mean, it can, but I mean, vapor saturation is at like a 44. It's good. Okay. Super Heat was at like a nine. It's good. So that tells me that it's like that super heat was like a930 and your vapor saturation was at like a35 or something. Then maybe I'd be like, okay, yeah, I could probably use a little. But still above 40. And your. Yeah, your vapor saturation is less than 25. Okay, what should that be at? Or it kind of ranges in difference from system to system, though. Usually like a superheat should usually between be between like 5 and 25. Okay. And then your vapor saturation typically should be around like a 40 to upwards of 50 something. Okay. So I'm
+Speaker 1: well
+Speaker 0: under all of that. Yeah, you're fine. You're good. 44 for the static, which is typically the average. Honestly, it's typically between 40 and 50 when it dips below 40. Even then it's still kind of okay. It's when it gets to 32. It's 32 that tells me that evaporator coil is getting too cold and we're starting to freeze essentially.
+Speaker 1: Because that's temperature. Yeah, that's freezing
+Speaker 0: essentially. Yes.
+Speaker 1: You got 44. Good. It's good. But yeah.
+Speaker 0: And then did you say you paid the office already for this job?
+Speaker 1: Okay. When Jose ordered the part I had he said you have to pay $372. Yes. For the order of the part because I guess it was a special order. So I took a picture. I said I want to make sure because then like yester okay, no one's showing up. So this.
+Speaker 0: Did they? I hope. I wouldn't think y' all would do that. You wouldn't, you know, charge me and then not come back to do the work?
+Speaker 1: No, absolutely not.
+Speaker 0: Is this. Yeah, it was the three. So replace Main Control Board Ltd. One more special order. So that. And then I had the. The $65 savings. Okay. Yeah. And then I. I charge. They charge. He charged my card. Okay. Yeah. He took my card. He says, is that your card on file? I said, yes. Yeah. So it was a
+Speaker 1: REDACTED Yeah. I just got to call them real quick because they have it on here. And I was like. I think she mentioned she paid. All right. Sometimes this has happened before, too,
+Speaker 0: because I can. They sent me this email. Yeah. And that's why I said, I want to do a screenshot of it. So you all have that. I signed my ugly. It's bad. My signature is prettier than that normally. Yeah.
+Speaker 1: All right. Yeah. Let me go double check with them.
+Speaker 0: And, yeah, I'll just be back in just one second. It. All righty. We're all good. Perfect. Do I need water? You know what? I would love some water. You would love some water. Okay. Like I said, I don't have bottles, but it's a yellow solo cup. Okay? Yeah, that's. That's perfectly all right. A yellow solo cup. So it's not red, you know, because that's. Yeah. Toby Keith, red solo cup. Better put it in your jar, Fill it up and you will carry it with you, yeah. Okay. And it's cold. I'm going to the floor today, so I will get bottled water, but then I'll just kind of happen, of course, when you're not planning for it to happen. But I have these. But I'm getting low on these. It's hard to get water, huh? He's got a job. He's got. Oh, the bottle. I know. I can't get water. I couldn't force into the bottle. It'd be a mess. How the cup is all right. The yellow solo cup. So. Because you're on duty. Okay. Yeah, exactly. Don't want to give the wrong impression. If I wouldn't do a redwood, I wouldn't do that to you all. I had salt delivered yesterday for the water softener. And the gentleman that came out, I can't remember his. His name. Super, super sweet. I said, do you want some water? He's like, I love some water. And he says, I've never seen a yellow solo cup. And he says, I don't feel bad. Driving with this. Yeah, exactly. Do you need any ice or anything? No, this is perfectly good. Okay. Because I've got. I do a block for work because I take my food bag to work, so I do a block of ice. But you needed a block for anything you have in the car because you said they didn't have ice. No, you're. Okay. Okay. Because I don't. I don't work. I don't work for like a week. I'm on vacation. Okay. Yeah. But I put. I'm a flight attendant, so I take that bag and then I put that ice on food. Because I like to take fruits and vegetables. I never even thought about that. Yeah. And I put. Well, that. I put it this. And I take two Ziploc bags and put it on top. And I like to take yogurt and different things because I try to eat healthy on the road. It's hard if you don't take healthy things, you don't eat healthy. And then I put weight on, so I try to take healthy things. And we were in Dallas, what was it, Monday? Sunday and Monday and end up with their barbecue. But it's Texas barbecue. Yeah. You know, and if you're just doing meat. Yeah, this is. Okay. The first day I did a big potato, and the second day I was like, no, I'm just gonna get some meat. Meat's okay. Yeah. You know, no sides. Yeah. The barbecue meat. Now, what airline do you work for? For Southwest. Nice. Yeah. It's good company. Yeah. I've been there 20, 21. 21 years. Wow. Yeah. But I'm not senior. Isn't that crazy? That's insane. It's. You need like 50 years to be senior. I think the top girl here in Vegas is around 40. 40 years seniority. Yeah. And then you've got people in Dallas that are original, like 50 something years. And it's just they don't fly a ton, but they still are on the seniority list, so they get whatever they want. They
+Speaker 1: get their lines and they fly what they want. And the girl here, she bids Hawaii, but then gives a lot of it away. And she has the desirable 25 hour overnights in Hawaii. Yeah. Yeah.
+Speaker 0: That's
+Speaker 1: nice. Eventually I'm halfway there. Yeah. No,
+Speaker 0: exactly. Oh, man. Alrighty. I'm just gonna collect a couple signatures just basically stating that I was authorized. All righty. System
+Speaker 1: Today. Oh, there's a.
+Speaker 0: What do you call, a split or the. A
+Speaker 1: crack
+Speaker 0: is what
+Speaker 1: I
+Speaker 0: was trying to say. I need to honestly probably get a new.
+Speaker 1: It's hard. That's your work phone. So you're out with it in the elements. Like I've
+Speaker 0: dropped it down my ladder. Like from the top of the attic all the way down. Yes. Try not to beat it up. No, but it just naturally happens sometimes
+Speaker 1: because you have to have it. If you have it in your pocket, if you have it on one.
+Speaker 0: Side, then it feels off. Yeah, yeah.
+Speaker 1: No, exactly. And just to confirm, that's going to be a good email.
+Speaker 0: Yes.
+Speaker 1: Send that invoice to. Alrighty. With that, though, we're all set. Okay.
+Speaker 0: Well, thank you so much. Yeah, of course. Thank you
+Speaker 1: so much for the water. I'm Jack.
+Speaker 0: Jack. Okay. Jack. You want some more water?
+Speaker 1: Okay. No, this will be perfect. Okay. I really appreciate it. Yes, you're welcome.
+Speaker 0: So everything's good?
+Speaker 1: It should work? Absolutely.
+Speaker 0: If the Freon starts. It would overheat. I guess if the Freon started leaking or something. Basically what
+Speaker 1: would start to happen is when it actually starts to leak. What you'll notice is what starts to happen at first is that evaporated coil starts to get colder and colder and colder. In the attic. In the attic, which then causes it usually to freeze and ice up. So then you'll notice you probably won't have much airflow.
+Speaker 0: Flow coming out of your vents. Okay. And then it'll kind of. Eventually, what starts to happen when it starts to continue to leak is then it doesn't have enough freon to get cold, and then it starts to basically just get warm, warmer and warmer, and then it's blowing warm air.
+Speaker 1: Gotcha.
+Speaker 0: Like,
+Speaker 1: kind of before, but not, I guess, before it was the internal temperature got too hot or something. Yeah, that sometimes happens. Yeah. And it shut off. Yeah. Should I look into getting a shade for it out there, or would that mess with airflow?
+Speaker 0: It depends on the type of shape. It needs enough airflow. Sometimes people will be like, oh, I'm just gonna put this thing over the top. And, you know, it's. Well, it smothers it. It smothers it. And it's trying to reject heat. That's what that condenser is doing. So it needs to be able to let that heat off. And then people put it in, like, a box, and it's like, okay, well, now it's not giving off the heat to give off. So, like, if you were gonna do that, Yeah, it needs clearance. And I would say if you were, like, in your particular setup, you could maybe put, like, a little, like, a shade, like, in front of it off to the side. Okay. But typically, yeah, you want to keep a little bit of distance around each side of it so it's able to get some airflow. And then typically, if you are going to put something over the top of it, it's got to be, like, six feet up at least.
+Speaker 1: So it probably. The HOA would say it's an obstruction now. Yeah.
+Speaker 0: Yeah. Oh, man.
+Speaker 1: But I mean, have their air conditionings on the roof here. Yeah. So to me, that's gonna get a lot hotter than this. Now, granted, it's up there, so the flow of air is gonna be good. But now you're sitting on a tile roof, it's getting the heat. So the fact this one gets three or four hours of intense sun. I don't know, maybe, you know, a cover might just be too much. It might be, because in the winter, when I'm not. It's not on. And I write a note that it's. I have a cover I got on Amazon. Cause I.
+Speaker 0: My neighbors, they like to smoke marijuana. Okay. And they. They don't smoke cigarettes, but they park right up next to the air conditioning. And sometimes they sit out there, let the car run. They're smoking their marijuana in the car, then they drive away. I go, that just isn't good. But it smells. And I don't want any particles that have cats that run around that like to lay on top of it, which. That's a battle. But in the winter, when it's not on, I cover it. But I put a note that it's kind of like the big canvas covering and it's got a vent. But I write upstairs cover on air conditioning, so I don't. November, December, January. This is when you're not gonna use it. And it just sits on it for maybe four months. Yeah. And you know, mom, she says that's an overkill, but I thought. I don't. It just offers a little protection, for sure. Keeps the dust off of it. The cat lays on the canvas cover as opposed to just on the air conditioning, putting particles and. Who knows what down in there. No, exactly. It keeps that debris out, I'm sure just keeps it clean. So that's just an okay thing to do. But don't of course run it with that on top because that will then mess it up. It'll just not gonna get airflow. It'll heat up and then. Yeah, it'll probably turn itself off. Protect itself from overheating. It would smother. Yeah. Not drown, but yes, okay. Exactly. All right. Thank you so much, Jack. Yeah, of course. Good luck to you. Stay hydrated and cool. Yes, I. I'll try. And you have everything? I believe I do. And I re locked that box and that disconnect box. I can always. You want me to re lock that other box? I'll get it. Okay. Yeah, I got it. You don't have to. I'll get it. All right. Take care. Yeah. Unit. It.

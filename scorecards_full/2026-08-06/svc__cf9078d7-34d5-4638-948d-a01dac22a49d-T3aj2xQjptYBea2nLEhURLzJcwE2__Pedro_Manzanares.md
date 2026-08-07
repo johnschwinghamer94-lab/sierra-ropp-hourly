@@ -1,0 +1,164 @@
+# SERVICE Scorecard
+**Tech:** Pedro Manzanares
+**RecId:** cf9078d7-34d5-4638-948d-a01dac22a49d-T3aj2xQjptYBea2nLEhURLzJcwE2
+**Job:** N/A
+**Date:** 2026-08-06
+**Duration:** 20 min
+
+## Performance Bands
+- **Welcome:** Solid
+- **Diagnosis:** Solid
+- **Options:** Solid
+- **Close:** Solid
+
+## Critical Actions
+- **Expectations set:** true
+- **Options presented (4+):** true
+- **Membership offered:** true
+- **Direct ask for sale:** true
+
+## Call Outcome
+**CLOSED**
+
+## Coaching Tip
+Review for coaching insights.
+
+## Full Transcript
+Pedro Manzanares: Good evening.
+Customer: How are you, sir? My name is Pedro.
+Pedro Manzanares: I'm with Sierra Air Conditioning.
+Customer: It's a pleasure to meet you. Let me know. I, I already had one. I didn't hear from them until this morning. That one was not fixing the original problem, and it was, it was just The, uh, thing was tilted out of sync and the blade was hitting the side. So I found out what it was. It just needed to be adjusted up, and I pulled it up and put a new screw in where it was missing.
+Pedro Manzanares: Oh.
+Customer: So that's working. But I called, tried to leave a message and do it, and we tried to leave a message with your lady that called and said you were on your way and it was an emergency. And I said it's not an emergency. We tried to leave that message Earlier. Yes, sir. If you had come early this morning, I would have let you fix it. I— it's not an emergency, and, and my wife and I are going to bed.
+Pedro Manzanares: No, I totally understand. I was actually here. I was here yesterday.
+Customer: Oh yeah, I thought you were talking to, uh, Rose.
+Pedro Manzanares: Yeah, uh, she was the one that told me, hey, you should go, you should go over. But we can't, uh, I can't leave a sign here because of the gated community. So, uh, at least she let you know.
+Customer: She was able to help. And had you— had I heard from you— I didn't hear from anybody in the morning. So, and, and, and we were, we were in another project on the house doing something else, and then we had to leave and come back. And, you know, that's probably our biggest problem because we couldn't communicate. But anyway, I, I'd like to hire you for regular service.
+Pedro Manzanares: Uh, do you want the membership?
+Customer: Yeah, let's do it.
+Pedro Manzanares: Let me bring you a pamphlet.
+Customer: Does it have to be now?
+Pedro Manzanares: Uh, since I'm here, yeah. Uh, it'll be really easy, it's like 2 minutes. Okay, let me just bring you the pamphlet so I can—
+Customer: Your name is— your name is what?
+Pedro Manzanares: Pedro.
+Customer: Pedro.
+Pedro Manzanares: Okay. I, I, I was right here with Rosa. I was like, man, I love it that he has the US flag out there. I've served 9 years.
+Customer: Yeah, I didn't serve 9 years, but I did serve Uh, which one?
+Pedro Manzanares: Like over there? No, sir.
+Customer: So we have the US and the Nevada flag on it.
+Pedro Manzanares: That's awesome. Uh, quick, let's— I can sign you up, literally takes 2 minutes. Do you have your debit card on you?
+Customer: Yeah.
+Pedro Manzanares: Yeah, I seen, uh, there's this— I think it's like a pub or something. It's called like the Devil Dog something. Yeah, it's up here in North Vegas, uh, One of the guys that told me about it, I was like, man, I really need a—
+Customer: You need it. You need a drink.
+Pedro Manzanares: Uh, not just a drink, but I mean, I need the camaraderie back. I, I need to be around the boys. Uh, how many systems do we have in the house?
+Customer: You mean the AC?
+Pedro Manzanares: Yeah.
+Customer: One.
+Pedro Manzanares: Like in the condenser outside?
+Customer: One condenser outside.
+Pedro Manzanares: Okay, perfect.
+Customer: Probably same setup that Rose has.
+Pedro Manzanares: Okay, super.
+Customer: They pretty— they were pretty standardized on that.
+Pedro Manzanares: Perfect. I can sign you up literally right now for the membership. This is the, uh, agreement that it is.
+Customer: Oh yeah, I'm gonna read that.
+Pedro Manzanares: Yes. Uh, so it's $16 a month. Uh, pretty much all it is right here is to tell you is that with our membership, um, it is a 1-year commitment. Uh, we do come with a— we come with a a summer maintenance, a winter maintenance, and we also have a plumbing department. So once a year we will come in for your summer, then we will come in for your winter, make sure your attic and everything is good for the warmer months of Nevada. And then our plumbing department will come and they would just make sure that you don't have any leaks, anything that could possibly mess up any of your toilets.
+Customer: Right.
+Pedro Manzanares: Your kitchen, your laundry, your water heater if you do have a tank water heater, or I don't know if you have—
+Customer: We have a tankless.
+Pedro Manzanares: Okay, so—
+Customer: We're all tankless here.
+Pedro Manzanares: Yeah, that's what I've been noticing. And then your outside, your irrigation system, make sure your sprinklers are good, stuff like that.
+Customer: I just had the— I— we just had the whole backyard redone.
+Pedro Manzanares: Yes, sir.
+Customer: So they— and I had them check everything else in, in the lines too, so they I did that.
+Pedro Manzanares: Okay, so yeah, it's a, it's a very nice, uh, program. I just need a signature right there.
+Customer: And speak into my mic because I, I record all my stuff too. No, no, come on. Okay, no problem. Okay, now where, where do I sign?
+Pedro Manzanares: Right there in the little box.
+Customer: Okay, so I can— this doesn't let me open it up, huh?
+Pedro Manzanares: No, sir.
+Customer: Okay. There you go.
+Pedro Manzanares: Uh, a little bit lower.
+Customer: There you go. Nobody has anything but a scribble.
+Pedro Manzanares: So, so you served?
+Customer: Yeah.
+Pedro Manzanares: Uh, Marine Corps?
+Customer: 2 years Army, '67 to '69. Army? I have to— I was drafted.
+Pedro Manzanares: I'm gonna have to bump up to $1,600 a month then.
+Customer: I was drafted.
+Pedro Manzanares: Uh, Vietnam?
+Customer: Yeah, '67 to '69. I didn't go to Nam, but it was '67 to '69. And as it turned out, I was, I was, I had 2 years of ROTC in college and I was in my, I was in my 3rd year and had signed up for the, for the program to become a 2nd lieutenant when I came out.
+Pedro Manzanares: Yeah.
+Customer: And as it turned out, I got my, my home area was a college town. And Westminster College is here. I don't know if you ever heard of it. It's in western Pennsylvania.
+Pedro Manzanares: No.
+Customer: Yeah. Anyway, because I had 2 years of ROTC, when I came in, I didn't come in as a no rank. I came in as an E-3.
+Pedro Manzanares: Okay.
+Customer: Because of the ROTC. Okay. And then as it turned out, I came out as the outstanding trainee of that cycle. 100,000 men, I ended up—
+Pedro Manzanares: Top of the class.
+Customer: I maxed the PT test.
+Pedro Manzanares: Okay.
+Customer: And they said, not only did you max this PT test, there have been 9 other groups that graduated before you who did not. Nobody had a 600. Okay. So he said, you have accomplished, you know, a remarkable feat by— the general ended up giving me a rank Yeah, I ended up becoming an E-4 right there on the spot with him. And then, and then what really, what really kicked it is they came out and said— oh, I'm sorry, where am I? No, you're good.
+Pedro Manzanares: It was just turning off just right there. Okay, where it says sign here.
+Customer: Okay, and what really did it is, um, then I ended up— excuse me. Ended up saying, okay, we're going to send you to NCO school now that you're already an E-4. We're going to make you an E-5. And they had it at that point in time, that was the first couple of units that had ever gone through this.
+Pedro Manzanares: Mm-hmm.
+Customer: And we went in and it was like an 8-week course. There, and then, uh, and then we went back and I went back to Polk and, and did training, you know, with them. I was— so I was now like a DI, you know, doing training with them.
+Pedro Manzanares: Do you have your debit card?
+Customer: Yeah.
+Pedro Manzanares: And, uh, so you were an E-4 before you even stepped foot into the Army?
+Customer: No, no, I was an E-3 when I came into the Army. And then you passed on? And then I got the general Uh, gave me the extra rank.
+Pedro Manzanares: Like a meritorious on the spot?
+Customer: I was the outstanding trainee for the last 10 cycles.
+Pedro Manzanares: That's insane. What a story.
+Customer: Well, it was good to do. Okay, here we go.
+Pedro Manzanares: Just so I could get better light.
+Customer: But anyway, I became a 2nd Louis, and then as we were coming back from training, and then good news, and then we had probably a class of, I don't know, maybe 300 in that class.
+Pedro Manzanares: Yes, sir.
+Customer: And I don't know, When we graduated, my first sergeant turned around and said, we got our first out-of-Vietnam assignment. And there's 17 of you who are married, and we have 17 openings, and we're sending them all to Korea. And everybody else is going groaning. But anyway, I went back, and on the way back, As it turns out, 3 of us were all going to this one trailer park for rentals. We were going to rent because we were spending that next cycle training troops. Yeah. That was part of the program. And everybody else in my group was all going to Nam. I was the only one going to Korea. But as it turned out, as we were turning in the trailer park, the other 2 had gone in. And I was training. Yeah, my light's on now. I've got security in here too.
+Pedro Manzanares: Okay.
+Customer: But anyway, uh, there was a, a lane, you know, we turned in, it was 35-mile-an-hour zone. We were turning in and there was a hill that went up and over and you couldn't see what was coming maybe, you know, 600 yards up the street. As it turned out, we ended up getting hit by a guy with a '60 Chevy. At 80 miles an hour, he hit us, and we were in a Volkswagen, the originals, and he hit and threw the car 30 feet down the road.
+Pedro Manzanares: Wow.
+Customer: Okay, and the good news is they didn't have seat belts then, because it turned out I got thrown out of the car and, and landed on the pavement up the road, and my wife got pushed into my seat. And when we finally found the car, you know, after, after we both recovered and got back— my wife spent 59 days in the hospital from that whack. But anyway, we went and found the car, and her seat did not exist. It had been pushed all the way across, and if she had been in that seat in a seat belt, she would have been dead. That's insane. So, so that for us was a, was a really lucky stroke. And but as it turned out, it made me short for other things by the time we were done. And they said, as it turns out, a colonel up in battalion needs an assistant and help. And he said, you're the right rank and you've got all the right stuff. So they sent me up to become an adjutant, basically an assistant for the colonel. As it turned out, he and I spent more time on the golf course and tennis courts than the field.
+Pedro Manzanares: That's insane.
+Customer: It was. But, um, and actually we got, we got a, uh, uh, let's see, we ended up—
+Pedro Manzanares: what's your zip code if you don't mind me asking?
+Customer: Oh, 90869.
+Pedro Manzanares: 90869.
+Customer: Yeah.
+Pedro Manzanares: Wow. So you were just living the life with the Colonel?
+Customer: Yeah. Well, he and I, he and I hit it off perfectly.
+Pedro Manzanares: And, and we—
+Customer: Get a quick signature that we are authorized to use that card. Yeah, again, it's down here again, right? There you go.
+Pedro Manzanares: Okay, so you must have gotten good at golf, huh?
+Customer: Uh, well, actually, I, uh, I was, uh, my dad, uh, worked for a company called Universal Rundle, which was a big large plumbing fixtures program that Sears eventually purchased. But part of his job, he was head of marketing for the company. Okay, and as head of marketing, you need to— now again, same thing with 2 more, last 2. Okay, okay. Anyway, he said, uh, the very last one. Yeah, he was marketing, and part what you do in marketing is that you, uh, You, uh, have to take your clients out to lunches and breakfasts and everything else and take them out for golf and whatever else they want to do.
+Pedro Manzanares: Mm-hmm.
+Customer: So he was doing all of that stuff. And he said, you're old enough. He said, I want you to, uh, start taking golf lessons, so I'm going to take you out. And there's a pro that does about 30 kids, you know, from the club and do that. And he said, if you get better, he'll take you for private lessons if he thinks you got what it takes. As it turns out, I did have what it takes, and I did play extremely well. And I played 4 years of college golf, and we won the Lambeau— Lambeau. We won the Lombardi Trophy every year. Every year Penn State thought they were going to win it. Every year they thought they were going to win it. We beat them 4 straight years for the trophy. And actually, in the time I played, we only— 4 years we lost. Wow. So, and that one we learned, because we learned what happened is the other team figured out who we were and who was playing what rank, and they turned around and said, well, let's move up and let's go play their number 4, 5, and 6 guys, because they played 6 guys. Well, we'll play their 4, 5, and 6, and their number 1, 2, and 3 played our 4, 5, 6. Mm-hmm. And they thought they were, they were gonna— and, and they barely— they— we barely lost to them. And then as it turned out, that the 4— the, uh, we actually had 12 of us that played and we did all of it. But we could put any one of us in the number 1 or number 2 or number 3, you know, we were all that good.
+Pedro Manzanares: Yeah.
+Customer: And when we got into college, we were all that good that we could turn around and play any position, you know, in any rank and stuff. So it turned out, and I really thought about going on tour, the only problem that I had was I don't like the concept of working, you know, and, and just being on the road all the time and doing all that other stuff. And I just, I just got married and, you know, you wanted to— so I just, I just said h*** with it and hung them up. And, and, and I've played maybe twice a year since then. And, and, and, and I also, I don't play as well now as I, I had then. I had a 69 stroke average when I was in college. Yeah. And I don't know if you know, if you know golf.
+Pedro Manzanares: I golf.
+Customer: Okay, you golf. Okay, but I, I averaged— that was my, my total average was 69 for the season. So, right, that's fairly strong.
+Pedro Manzanares: Yeah, that's a good score.
+Customer: Yeah, but, um, anyway, perfect, Pedro. And, uh, hopefully, uh, well, you know, nice to meet you. Maybe we'll get together for a beer or something when you come out and Hey, one day. Go up there and go, go, uh, go visit. You said Black Flag or something?
+Pedro Manzanares: Something like that.
+Customer: It's like Double Dog Tavern or something like that. Yeah, yeah, yeah, I've heard something similar, but I just didn't focus on it at the time when they, when they did it.
+Pedro Manzanares: So I, I know, you know, we fixed the problem, but, uh, you know, we just signed up. It is summertime, so it's kind of time for, uh, like a summer maintenance.
+Customer: Mhm.
+Pedro Manzanares: So that is part one of—
+Customer: Well, we've been, we've been here now, we're in our 4th Yes, sir. So that's been, been here for 4 years. Yeah. And I, and I know they had a problem and called you for, for that. Yes, sir.
+Pedro Manzanares: I was here yesterday.
+Customer: Yeah, yeah, I know, but I mean, when they first, when they first called you, you know, they, they got you in because they had a problem with the, with the system.
+Pedro Manzanares: Yes, sir. So if whenever you want to, you know, you have time to schedule a maintenance, you can call this number and tell them, hey, I want to schedule a summer maintenance. You're gonna pop up as a member and we'll come in, you know, when there's more daylight out and you guys don't have to go to bed, okay?
+Customer: Yeah. Well, I go to bed because I'm one of those guys that— I'm still running right now. I will be 80 in November.
+Pedro Manzanares: That's insane.
+Customer: And I run 15 miles a week.
+Pedro Manzanares: That's good.
+Customer: What? You know any 80-year-old people that run? I don't even know No, I know. They may go out and run 5 miles in a week, but they don't even— but I started when I was in my mid-20s when my kids were going to soccer practice because I saw one of the other fathers take off and I could tell that he was going to go out for a run. And when he came in the first time, I said, do you mind if I join you? He said, yeah, but I'm doing 5 miles. 3 miles right now, and I'm, you know, during that time period, I don't know if you'll keep up. I said, I'll go as far as I can, and I'll just— until I build up to it, and I'll do it. And then from that time on, he and I were doing 10Ks easy all over the place, huh? We were doing— we're doing 10Ks, so you know my system's working. Oh yeah. Anyway, we, we were, uh, doing 10Ks together, you know, while we were still there. And then finally, you know, when And, uh, we were done in that area and moved. And we moved— I moved for jobs all over the place. I was, uh, I don't know, this was— when we moved here, this was our 20th move. My wife and I have been married for 58 years.
+Pedro Manzanares: That's insane.
+Customer: 20 moves. This is 20th, number 20.
+Pedro Manzanares: I just had my first move. I don't want to move again.
+Customer: I know.
+Pedro Manzanares: Yeah.
+Customer: I know, and, and, uh, at 80, I'm not really— even though I, I do run and I'm, I'm fit and do that stuff, uh, I don't really feel like doing it or moving, uh, stuff.
+Pedro Manzanares: So yeah, no, completely understand.
+Customer: I did— I've done it twice, and my daughter lives here. We moved here because of her. We were in Corona, California before. No way!
+Pedro Manzanares: I just moved from, uh, Murrieta.
+Customer: Anyway, yeah, I consider myself an escapee from California. So at any rate, no, we've been here. We've been here four years now. Never end.

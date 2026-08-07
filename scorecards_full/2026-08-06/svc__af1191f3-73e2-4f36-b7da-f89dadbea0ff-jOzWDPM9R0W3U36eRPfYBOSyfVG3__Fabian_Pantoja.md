@@ -1,0 +1,75 @@
+# SERVICE Scorecard
+**Tech:** Fabian Pantoja
+**RecId:** af1191f3-73e2-4f36-b7da-f89dadbea0ff-jOzWDPM9R0W3U36eRPfYBOSyfVG3
+**Job:** 672819165
+**Date:** 2026-08-06
+**Duration:** 43 min
+
+## Performance Bands
+- **Welcome:** Solid
+- **Diagnosis:** Solid
+- **Options:** Weak
+- **Close:** Solid
+
+## Critical Actions
+- **Expectations set:** true
+- **Options presented (4+):** false
+- **Membership offered:** false
+- **Direct ask for sale:** true
+
+## Call Outcome
+**CLOSED**
+
+## Coaching Tip
+Review for coaching insights.
+
+## Full Transcript
+Adrian: Upstairs. Okay. Hello.
+Fabian Pantoja: Hi.
+Adrian: Good morning. Good morning. All right, what about the pleasure of speaking with? Adrian.
+Fabian Pantoja: Adrian, nice to meet you. Fabian here.
+Adrian: Nice to meet you. So it's just a follow-up because you guys were out here to fix the upstairs air conditioning. It had, uh, ice on it. Yeah. So just to Make sure it still doesn't seem to. I mean, it's definitely better than what it was. It just doesn't get below 70, which I know it sounds just because it's so hot out. Yeah. Okay. That's it. We were like at 87 before. I was like, so I think it's good. But then I also put the filters up there because she took one of them out. So but both need to be changed.
+Fabian Pantoja: She just need to change them out today. Yes, please.
+Adrian: Perfect.
+Fabian Pantoja: Yeah. Show me the attic.
+Adrian: Okay.
+Fabian Pantoja: So after she removed the filter and you're cooling better?
+Adrian: Yes, she told me to remove the one filter that was right here and then, um, had me turn it off for like 3 hours so it absorbs everything. Okay. All right.
+Fabian Pantoja: All right, well, I'll tell you what, let me, um, I'll look at the upstairs one. I'll check the pressures, make sure everything looks Good, and then I'm good out there. Change the filters and be done.
+Adrian: Okay, thank you.
+Fabian Pantoja: When you're out there, will you be able to see the?
+Adrian: Because she said there was ice up there too. On she showed two. There was ice on the cop on the outside coil. Okay, and then up there.
+Fabian Pantoja: Yeah, I'll be able to see it. So normally when your system freezes over, it starts at the coil up here, and then it runs down to the pipe outside. Okay, there's no ice in that pipe. We're good, but I'll still inspect it. Oh, good.
+Adrian: Okay, we should be good. And now it's good.
+Fabian Pantoja: Oh wow, it is sixty-nine. You like guys like it cold in here, huh?
+Adrian: Well. No, our son— these 2 rooms back here get really hot. And so— oh yes, my son's still asleep there. But that's—
+Fabian Pantoja: they're above the garage.
+Adrian: Yeah. And my office is hot downstairs too.
+Fabian Pantoja: Normally any room that are close to a garage, above a garage, next to a garage, just because of the garage is not well insulated.
+Adrian: Yeah, that's where the heat will come in from, right?
+Fabian Pantoja: Normally those are the most uncomfortable places.
+Adrian: Yeah, yeah. But, um, so At night, we yeah crank it. During the day, it goes back up, obviously.
+Fabian Pantoja: But I'll turn this one on just where I could identify the unit.
+Adrian: Yeah, yeah, absolutely.
+Fabian Pantoja: Turn it down.
+Adrian: You want it to go higher so it turns off?
+Fabian Pantoja: No, I wanted to stay on. Stay on. So I could.
+Adrian: Okay.
+Fabian Pantoja: Downstairs, I'm going to turn off so I could identify the upstairs.
+Adrian: Okay.
+Fabian Pantoja: Because downstairs is okay. Yeah, okay.
+Adrian: Um, and we found out the guy came out to look after her to do the comfort people to look at the things. He is one that said, do you use a humidifier? And that's what it was. My husband just started using one and he goes, those, if you don't use distilled water. Yeah, so yeah, because we've never had that happen before, the ice. And he said that's a common one is because Yeah, if you don't use distilled water, the particles or whatever.
+Fabian Pantoja: Yeah, exactly. Yeah, our water out here has so many minerals, they're so— it's so hard. We have very hard water, so you're evaporating the water, so all those minerals get sucked up in the air and then they go into your filters and clog it up.
+Adrian: Okay.
+Fabian Pantoja: Yeah, so I'm going to turn this one off just for now so I could identify the upstairs. Okay.
+Adrian: Okay.
+Fabian Pantoja: And this one's working fine?
+Adrian: Yeah.
+Fabian Pantoja: Okay.
+Adrian: Okay.
+Fabian Pantoja: Yeah, just gonna turn it up.
+Adrian: All right, thank you. And if you need it, everything's in here working.
+Fabian Pantoja: Perfect. All right, well, you can get started.
+Adrian: Okay.
+Fabian Pantoja: Haha, you know how to play the role, man.
+Adrian: Pero no somos iguales y a mí no me define que tú

@@ -1,0 +1,31 @@
+# SERVICE Scorecard
+**Tech:** Jack Vanos
+**RecId:** a3abba52-27e4-45eb-8882-3491923b0ea4-cNytscpG9FZ7Z2SxD4Poqocx7rf2
+**Job:** 672825497
+**Date:** 2026-08-06
+**Duration:** 45 min
+
+## Performance Bands
+- **Welcome:** Solid
+- **Diagnosis:** Moderate
+- **Options:** Weak
+- **Close:** Solid
+
+## Critical Actions
+- **Expectations set:** true
+- **Options presented (4+):** false
+- **Membership offered:** true
+- **Direct ask for sale:** true
+
+## Call Outcome
+**CLOSED**
+
+## Coaching Tip
+Review for coaching insights.
+
+## Full Transcript
+Speaker 0: It's. It's. Oh. Hello? Hello? Hey, hold on. Hold on real quick. Josh, I'm Jack. I'm here to do that blower motor. Okay, I'm gonna go grab those things in just a sec. I just want to make contact when I be able to see where that attic access is. It's. It. It. It's. It. It. It's. It. It's. It's. It's. Black, Yellow and then red. It. It's, It's. It. It's. It's. It's it. It's it. It's. Need to sell something. Yes. So I haven't even actually looked later. Looks like you owe 752. 52. And then on card. Yeah. All righty. We do have a card on file. Ending in Visa, ending in. Oh, shoot. REDACTED REDACTED I think it was. Yes. Yeah. You want me to discharge that, or. All right, that's what I was gonna. All right, this is just to approve that payment. I'm just going to collect two more signatures just stating that I was authorized to work on the system today. Next one saying that I did indeed come and work on this system. Technicalities. All righty. Is that going to be a good email to send that invoice to? Yeah. And this one as well. That one as well. All righty. Perfect. I will send kind of all the photos of everything I did and was looking at today. All right, Perfect. But with that, we're all set. All right, man. Appreciate your time. Yeah, of course. And your service. Now I got to go do it again. I got another one tonight. Tonight? Wow. Summer. It never ends. All right, man, well, good luck with that. Hopefully it's a
+Speaker 1: little quicker for you.
+Speaker 0: Yes, I think it could be. All righty.
+Speaker 1: It.
+Speaker 0: It's. It, Sam. It's. Right now. I know love isn't fair I know the heart wants what it wants there's no way to prepare for burning Bru, Don't. Projection. I know it takes some time to feel the pain of losing. 랩도 해보고!

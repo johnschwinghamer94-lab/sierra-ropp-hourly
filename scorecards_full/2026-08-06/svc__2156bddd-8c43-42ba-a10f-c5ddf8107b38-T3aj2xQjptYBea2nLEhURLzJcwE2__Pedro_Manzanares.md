@@ -1,0 +1,97 @@
+# SERVICE Scorecard
+**Tech:** Pedro Manzanares
+**RecId:** 2156bddd-8c43-42ba-a10f-c5ddf8107b38-T3aj2xQjptYBea2nLEhURLzJcwE2
+**Job:** 639955587
+**Date:** 2026-08-06
+**Duration:** 18 min
+
+## Performance Bands
+- **Welcome:** Solid
+- **Diagnosis:** Solid
+- **Options:** Weak
+- **Close:** Solid
+
+## Critical Actions
+- **Expectations set:** true
+- **Options presented (4+):** false
+- **Membership offered:** true
+- **Direct ask for sale:** true
+
+## Call Outcome
+**CLOSED**
+
+## Coaching Tip
+Review for coaching insights.
+
+## Full Transcript
+Speaker 0: Hey, how's it going? Good. How are you? My name is K. Drum with Sierra Air Conditioning and plug. I got the pleasure of speaking Erica. Erica, nice to meet you. You. Nice to meet you, too. Y. Are you guys just changing your air filters or. I saw that it was for a winter summer. Uhhuh. That will conduct on. I'll be just doing a quick walk through. Okay. I could go over my agenda real quick. Yeah, yeah. I'll be doing just a quick walk through. I'll be checking the thermostat. Filters your attic entry and your outside unit. Okay. I'll be doing a thorough evaluation of these four components. I'll be checking for cleanliness, performance and most importantly safety. Do we have any tank insurance?
+Speaker 1: Yeah, I need to be out of here. That's what I'm like wondering. I told them to come at 2 so I don't know how that got misconstrued but
+Speaker 0: I saw after too.
+Speaker 1: Yeah,
+Speaker 0: we could,
+Speaker 1: we could do a run through. I, I mean how long does this take normally? Oh no, we're not doing two hours and not happening.
+Speaker 0: That's what I'm trying to think right now. If you want two
+Speaker 1: hours. I like owned a home for seven years I've never had anybody in my house for two hours. And it was with Sierra Air too.
+Speaker 0: Yeah, it's like an hour 30 weird.
+Speaker 1: They always came in and changed the air filters. I mean everything runs fine so it's not like.
+Speaker 0: Like. Yeah, it's a new house so. I know but just we can do. I could change your filters. I have the filters on me right now.
+Speaker 1: Okay.
+Speaker 0: But
+Speaker 1: they definitely need to be changed because I feel like. I mean they should truly be changed every month but.
+Speaker 0: What the three inch filters. I
+Speaker 1: don't know what they are in there but however they are, they definitely need to be changed. Perfect. Like super dusty all around the whole vent and everything.
+Speaker 0: Okay.
+Speaker 1: And it's just the two that are upstairs.
+Speaker 0: Yeah. So I could definitely do that right now. Yeah. You could get the filters out of the way but the the part of the thing is still the summer
+Speaker 1: maintenance.
+Speaker 0: That's that one that I told you the one 1 hour, 32 hour. You can schedule that another day. Yeah. I could just knock out those filters all the way because I know you're gonna go.
+Speaker 1: Yeah. Yeah.
+Speaker 0: Let me go grab my ladder. Let me grab those
+Speaker 1: filters. Okay. Sounds good. Perfect.
+Speaker 0: I'll be right back.
+Speaker 1: Okay. It.
+Speaker 0: It's. Beautiful house. How long you been here? Four months. What happened? Okay, so you just moved in? Yeah. It's. Am I able to schedule you to come back? Or I need to, like, call and do a whole thing.
+Speaker 1: Whatever you are, if you want me to come back, just let them know my name is Pedro, okay? If not. Yes, it's just not a guarantee that it would be me, but they would take your preference.
+Speaker 0: Download. It. Because I feel like the whole house has been dusty, actually. Yeah, those are awful. Are you guys able to leave? Like, I can, like, pay for extra filters so that I can just change them myself because, like, we can't be going six, seven months,
+Speaker 1: So. With these. Yeah, they are rated for six months.
+Speaker 0: Yeah. But they shouldn't ever look like that, though.
+Speaker 1: The last time we got filters.
+Speaker 0: Yeah.
+Speaker 1: Was September 1st of 2025. So it's been a year. That's why they're this.
+Speaker 0: Six months. Even up here. Like, it's so dusty.
+Speaker 1: You could definitely
+Speaker 0: check them.
+Speaker 1: You can call them in and you can call in. Yeah. And we could bring you more.
+Speaker 0: Okay.
+Speaker 1: But they definitely shouldn't.
+Speaker 0: Can. 100%. You can change it, you know, your house, you can change it as often as you would like. Right. But you know, it's one of those things that you don't really have to if they're rated for this long. Yeah, these filters are. Have been in for a year, so it's pretty. You know, you'll see them like that after a year. Yeah, that makes sense. I didn't. I thought they online, but I didn't live here, so that would make sense. Okay, so why should plan on two hours then? Okay. Like I could definitely, probably knock it off like an hour and a half. I mean, I don't. I don't want to rush you or anything. I just. Nobody. Two hours, and I've never had anybody here longer than twice. So I will call them and get them to come back in here. I'll just put this outside, and then we can start getting the signature to end the visit. Okay, Sounds good. Conversation. That was the whole point. After that, I was like, okay, if we get and this shows forward, that can't happen again. Like, ever. Not this. Perfect. So tell you we're looking at 180. Okay. Just need a signature here that you authorized for 180. Want to put it in an email? Because this could. We have one card on file. Ending at REDACTED Expires 10 of 2026.
+Speaker 1: Yeah, it's probably the property managers. I don't really know. I mean, you're not charging me, so I do know that.
+Speaker 0: Let me call the property manager real quick.
+Speaker 1: She's been texting me like she's the one that told me you guys were coming and blah, blah, blah.
+Speaker 0: Yeah, I just need to get her blessing on it and. Perfect. What's her name? Anita. Similar to Anita is
+Speaker 1: a homeowner. She's not the property manager.
+Speaker 0: The
+Speaker 1: property man.
+Speaker 0: Erica ask you Cassie. There you go.
+Speaker 1: Kathy.
+Speaker 0: Yeah,
+Speaker 1: Kathy is the property manager.
+Speaker 0: I'm going to give her a call. You know, five o'. Clock. We need, like, a sign. To be born of this. Grandma Disa was the person to laugh. Yes. Yes, ma'. Am. Give me one second. Is it a. What kind of card is it. Is it a visa? Amex? Okay. Mastercard? Yeah. Good. Card name? Card holder. Name. It would be. K, a t, h, r.
+Speaker 1: Do this on your phone.
+Speaker 0: Y, n last name? R, a c I, n e. Card number.
+Speaker 1: REDACTED
+Speaker 0: Three. Expiration date. Cbb, cvc. And then zip
+Speaker 1: code.
+Speaker 0: I'm almost done. What was the zip code again?
+Speaker 2: I'm not sure if it's on the business or it's on my personal one. Because this is a business card. It might try 89135. If not, it's
+Speaker 0: REDACTED
+Speaker 2: 89135. 8935.
+Speaker 0: All right. We could try it out right now.
+Speaker 2: Yeah, it might be on my phone.
+Speaker 0: And am I authorized to sign for you, ma'? Am? Of course. Okay, Perfect. I got approved.
+Speaker 1: Okay, then it is office. I'm glad I knew that. Okay, thank you.
+Speaker 0: No problem, ma'. Am.
+Speaker 1: Okay, thanks. Bye. Okay, thanks.
+Speaker 0: No problem.
+Speaker 1: Have a good one.
+Speaker 0: You too. It. I'm smiling on his face. There's nothing I can do. It doesn't take a crystal ball to see a cowboy. Always finds a way to leave. Drinking Jack. All by myself. Just choosing Texas. I can tell. I guess he forgot about the Smoky Mountain rain.

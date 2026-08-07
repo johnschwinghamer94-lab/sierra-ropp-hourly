@@ -1,0 +1,52 @@
+# SERVICE Scorecard
+**Tech:** Jose Huesca
+**RecId:** fe032294-12aa-46cc-9172-d28687103157-Oyru7V7EN0UmFVmLGzEYuLxFoSL2
+**Job:** 672933124
+**Date:** 2026-08-06
+**Duration:** 57 min
+
+## Performance Bands
+- **Welcome:** Solid
+- **Diagnosis:** Solid
+- **Options:** Solid
+- **Close:** Solid
+
+## Critical Actions
+- **Expectations set:** true
+- **Options presented (4+):** true
+- **Membership offered:** false
+- **Direct ask for sale:** true
+
+## Call Outcome
+**CLOSED**
+
+## Coaching Tip
+Review for coaching insights.
+
+## Full Transcript
+Jose Huesca: Where's the thermostat at? Um, I'll take a picture of the filters and then a picture of the access to the attic.
+Customer: How's your day going? All right, about to leave in a little bit.
+Jose Huesca: It's cool, it's better in here than out there. So I'll just turn it 3 notches down for now. About 3, 5 notches. Yeah, we got one more month before we're like on this low call-out list kind of thing, right? So, uh, I can't wait for that month to over with. I'm tired. I'm done. Has it a code on there? It says enter your code. It's like a little password that some people use sometimes. Yeah, it's been hot. It's been a, it's been a long hot summer. Okay, and then the filters, and then access to the attic. So I'll start outside. Um, should take about 35-40 minutes on the outside. The inside takes about 10-15 minutes.
+Customer: Okay.
+Jose Huesca: Um, so I'll go ahead and get started. Do you have a garden hose pick around there?
+Customer: The water hose is downstairs.
+Jose Huesca: Okay, is it close by the unit or—
+Customer: Yeah, just by the garage.
+Jose Huesca: Okay, all right, I'll go ahead and get started outside. Once I'm done, I'll knock and then I'll just check in with it, see what's in the line and get you in.
+Customer: Ready? Yeah, I gotta leave that.
+Jose Huesca: No, I was just— I was writing up the report. Oh, so I have to write my report. We can go inside, it'll take about 10 more minutes. Oh, I have my pool bag in the front. Shouldn't be too bad. Um, right now though, I mean, to be honest, I wouldn't run it so much unless the motor start device gets replaced. So that's like an emergency fix to get the AC. So right now I'll just go over everything real quick. So the motor start device is supposed to read as a 45 plus 5 or minus 5. The lowest it could be is 42.75, so it's 41.55, which is below manufacturer specification, which it has failed already. So right now the compressor is going to work harder to try to cool the house, but the house will stop cooling without this piece. Uh, the compressor is rated for 112 on the LRA, compressor loaded rated amperage. Your compressor is pushing 137.
+Customer: Mm-hmm.
+Jose Huesca: So it's, uh, it's above it, over and above that. So basically the compressor is dealing with a big old overload that it's not made for.
+Customer: Oh, okay.
+Jose Huesca: Um, so it can just shorten the life of a compressor. Uh, there's a way to stop that. Um, I got some options for you if you want to stop that and take care of all that, but I just got to check the attic out and then I'll be done. Once I finish, I'll actually send you the report.
+Customer: Yeah.
+Jose Huesca: And then, you know, we can call them back and probably work this weekend. I don't know yet, but tomorrow and replace it, or How much would it be? So just the motor start device is $470 something.
+Customer: Yeah, I'm gonna have to hold off on that.
+Jose Huesca: Yeah, so this— so the top one, just ignore, it's just an enhancement. Um, the second one, it's an enhancement for your voltage switch just because, uh, I noticed a little bit of burn mark. But I mean, to be honest As long as I'm doing it, I wouldn't worry about that till maybe next year.
+Customer: Okay.
+Jose Huesca: Um, but that's one of the options I put in there for you. Uh, the second one is the gold, the immediate one. So that's just for your compressor and the motor start device. So the compressor, um, for a compressor is probably around $4,000, plus the refrigerant is probably another almost $2,000. It's almost $6,000. But to stop that and to like make the compressor back to like normal again, to how it used to be, it would be $1,351. And then, uh, to just replace like the battery, like for the car, but the battery for the AC system is $474.
+Customer: Okay.
+Jose Huesca: And then if you want to just take care of the compressor, I would recommend doing the battery because, you know, without that, the battery is going to go just dead and it's not going to work. That's how much is it just to revive the compressor back to normal. And then, uh, that's the price. I put Band-Aid fix for, uh, just the motor start device because it's below manufacturer specification. So that's like the emergency fix to keep you cooling. Uh, once I'm done, I'll just send this all to you. I'll be out of here, but by the time you get it, it'll be like 30, 40 minutes after. This, I used to be able to talk to the phone, right? And they would just write it up for me. But, uh, yeah, it still does it, but it's the chat. It's like the AI that's doing it. So sometimes it writes different stuff when you're trying to say something, and there's been technicians who just, you know, don't scan through their reading. And they'll send it, and it just has some crazy stuff sometimes.
+Customer: Like, hey, what the h***?
+Jose Huesca: Yeah, yeah, yeah. Yeah. So now we have to like pull over and manually type it and no see what we're reading. So you know, the managers to see that we're actually doing it right and not just trying to rush past it. Yeah, this— I'm just checking your blower motor and that you're not leaking anything. That's it.
+Customer: What's your name? Siro.

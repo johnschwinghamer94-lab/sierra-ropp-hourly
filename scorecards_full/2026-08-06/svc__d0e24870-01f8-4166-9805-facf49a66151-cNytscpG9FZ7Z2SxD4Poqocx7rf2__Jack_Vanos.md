@@ -1,0 +1,81 @@
+# SERVICE Scorecard
+**Tech:** Jack Vanos
+**RecId:** d0e24870-01f8-4166-9805-facf49a66151-cNytscpG9FZ7Z2SxD4Poqocx7rf2
+**Job:** 671155318
+**Date:** 2026-08-06
+**Duration:** 46 min
+
+## Performance Bands
+- **Welcome:** Solid
+- **Diagnosis:** Solid
+- **Options:** Weak
+- **Close:** Solid
+
+## Critical Actions
+- **Expectations set:** true
+- **Options presented (4+):** false
+- **Membership offered:** false
+- **Direct ask for sale:** true
+
+## Call Outcome
+**CLOSED**
+
+## Coaching Tip
+Review for coaching insights.
+
+## Full Transcript
+Customer: Hi.
+Jack Vanos: Good, how are you? All right, thanks.
+Customer: Hello. I see you're buying my dad's phone.
+Jack Vanos: Yes, I am. Probably gonna do Rachel's Kitchen again for lunch.
+Customer: Um, could you call her apartment?
+Jack Vanos: Oh yeah, do we need to pick up still?
+Customer: Or, uh, well, tomorrow. Yeah, I can, cuz tomorrow's the 7th.
+Jack Vanos: Okay, yes I can. How are you doing?
+Customer: Fine, doing all right.
+Jack Vanos: All right.
+Customer: Yeah, how are you? Good.
+Jack Vanos: I'm tired.
+Customer: Yeah, I'm tired. You've been out late.
+Jack Vanos: Yeah, it just—
+Customer: How's the heat been?
+Jack Vanos: How's what?
+Customer: How has the heat been?
+Jack Vanos: So hot.
+Customer: So hot. It's funny, you're probably like so much more adjusted to the heat than I am because I've like been inside all summer.
+Jack Vanos: Yeah, I still, uh, Still, it's always so hot.
+Customer: So hot.
+Jack Vanos: All right, I gotta climb on this roof.
+Customer: Oh, okay. Yeah, call, call them when you get there.
+Jack Vanos: Yeah, I will.
+Customer: Alright.
+Jack Vanos: Alright, my love.
+Customer: I love you.
+Jack Vanos: I love you too.
+Customer: Bye.
+Jack Vanos: Bye.
+Customer: Oh, come on. Come on.
+Jack Vanos: Yeah, I think so. I'm just gonna go back there and take a quick look at the thermostat. That's okay.
+Customer: You got that part on already?
+Jack Vanos: I got that part on.
+Customer: And then you lock the door?
+Jack Vanos: Yeah, that was probably honestly a Could have been me, but I I noticed when I got over there it looked like the top door was still open. Yeah, so I made sure to close it up.
+Customer: Okay, good. Perfect. Well, then I can go over that. Yeah. Oh, thank you. You're welcome. Okey-dokey.
+Jack Vanos: And then did you guys just want me to bill the landlord?
+Customer: That just— you just tell the office. The office should have all their information on file.
+Jack Vanos: Okay, absolutely. Then I'm just gonna grab 2 signatures just saying that I was authorized to work on the system.
+Customer: I also didn't need to come here today.
+Jack Vanos: Thank you.
+Customer: Thank you. Perfect.
+Jack Vanos: Thank you so much.
+Customer: You too.
+Jack Vanos: Thank you. I'll give you guys your key back.
+Customer: All right.
+Jack Vanos: All righty, take care.
+Customer: Thank you. Have a good weekend.
+Jack Vanos: You too. Other words are gonna bleed too many. Today I arrived on site to perform a parts install. I installed a blower motor Fan belt, belt.
+Customer: About unit number 4.
+Jack Vanos: For office section, um, for suite 20.
+Customer: Temperature. I don't know what you're talking about, but America loves it. Find a movie to get you through. I'm here. I'm Vanos. I'll be picking you up. I'm not going to go to the hospital. My name is Van Fogg. Anyone try to disable me? So you want to play me, you 13-year-old? It's a bad thought. I can't believe she's doing this.
+Jack Vanos: Okay, what am I doing? Curve there, and a rock. I'm just like avid as f*** today. I am like not locked in.
+Customer: 0.6551. Okay.

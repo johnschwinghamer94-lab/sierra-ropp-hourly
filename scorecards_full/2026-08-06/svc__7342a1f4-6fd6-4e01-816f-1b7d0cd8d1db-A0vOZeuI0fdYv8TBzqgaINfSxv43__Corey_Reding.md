@@ -1,0 +1,309 @@
+# SERVICE Scorecard
+**Tech:** Corey Reding
+**RecId:** 7342a1f4-6fd6-4e01-816f-1b7d0cd8d1db-A0vOZeuI0fdYv8TBzqgaINfSxv43
+**Job:** N/A
+**Date:** 2026-08-06
+**Duration:** 71 min
+
+## Performance Bands
+- **Welcome:** Solid
+- **Diagnosis:** Solid
+- **Options:** Solid
+- **Close:** Solid
+
+## Critical Actions
+- **Expectations set:** true
+- **Options presented (4+):** true
+- **Membership offered:** true
+- **Direct ask for sale:** true
+
+## Call Outcome
+**CLOSED**
+
+## Coaching Tip
+Review for coaching insights.
+
+## Full Transcript
+Corey Reding: How's it going?
+Customer: How's it going?
+Corey Reding: Oh my goodness! All right, give me one moment.
+Customer: No, no, I'm Corey.
+Corey Reding: I'm gonna take good care of you. How's it going? All right, so we got hot air.
+Customer: So this is the deal, you know, we went on vacation with Arkansas for a weekend.
+Corey Reding: Okay.
+Customer: I raised— I always keep mine on hold because it requires me to stay home.
+Corey Reding: Okay.
+Customer: So I raised it from the normal 80 to 85. Okay. So we got back on Monday and I lowered it back to 80, and then, uh, seemed to work fine. Yesterday we went out for some entertainment, so We were out for a few hours and I came back. I have like— this unit has 3 controllers. Yeah, 3 thermostats. One's a main digital. So I get back, the digital says your AC's been running for 3 and a half hours, but the air temperature inside the home is raised by 4 degrees.
+Corey Reding: Oh my goodness.
+Customer: So I shut it off, you know, all 3 of them. I tried to run it like maybe 2 or 3 hours ago to see if it Maybe the evaporator coil's frozen up there because of that all of a sudden demand. Because when I turned it on back to 80, it was 6 o'clock and 105 or whatever it is out there.
+Corey Reding: Right.
+Customer: It's cooler up here than it is down there. It's still hot. Okay. That's legit. So I thought, well, you guys are the original installers. You can see my size. I've never been in the attic in the house.
+Corey Reding: Okay.
+Customer: You know, 5 and a half years that I've owned it. The house was built in 2020. Okay. So the AC unit that I had in Houston had a box filter in the unit in the attic.
+Corey Reding: Okay.
+Customer: So, but that in Houston, you pull down a drop-down and the ladder comes down.
+Corey Reding: Drop-down ladder, yeah.
+Customer: Climb up there and you're good to go to fix that s***. If this thing has it in there, I'm going to be f****** p*****.
+Corey Reding: It shouldn't. That's typically an add-on.
+Customer: Because there's no way for me to access it. I'm f****** 6'5, 300 pounds. Okay, I'm not gonna be climbing up there, and I'm not gonna be calling technicians every 3 months to change the filter. Nah. But it could be that because it says one of the things is a clogged filter. I just replaced the 2 air filters that were in here, but they weren't like overly dirty, you know what I'm saying? Right. So that's just kind of back. Okay, since you're coming out at night And the AC unit is on the side of the house over here. See this little thing right here? That's kind of like looking kind of green right there. Yeah, it's a scorpion. So they come out at night. Okay, you need to be— I use a black light last night and you see him there. He dead because I killed him yesterday, but I left him there to kind of let you know what—
+Corey Reding: Okay, good to know. So All right, yeah, yeah, just show me where everything's located. I will start outside and work my way in.
+Customer: I'll show you. All right, okay, so here's where the filters are. It takes 2 20 by 20. Okay, okay, so I have some, uh, Spacers in there because the filter would every time the thing would suck it up go wing. So I put spacers in the corners to keep it from yeah moving up.
+Corey Reding: Yeah, okay.
+Customer: If you see that, that's a problem. We'll have to come up with a different filter.
+Corey Reding: All right.
+Customer: So that's the main digital third. Okay, there's one on the wall over by the Painting to the right, then there's this one. This is the one that had the message on the screen. And then there's one—
+Corey Reding: And it's okay, it's off right now.
+Customer: Yeah. And then there's one in the master bedroom, which is just like the one that's over on the wall.
+Corey Reding: Okay.
+Customer: But they're all off. My wife's in here, so it might be off. All right. Right inside the door. So kind of weird that this house has 3-zone air conditioning, or at least 2, with the main controller. How—
+Corey Reding: yeah, how big is— how big is the house?
+Customer: 1,800 square feet.
+Corey Reding: Yeah, I, you know, I, I feel like on like 1,800 square foot, 2 zones is enough. Uh-huh. Oh, the unit's over here, right? So I'm guessing that typically those are individual zones.
+Customer: Okay.
+Corey Reding: Um, so you have 3 zones, which again I find just so odd.
+Customer: Y'all put it in, right?
+Corey Reding: But up until this point, how's everything been operating overall? Okay, no worries.
+Customer: So this is a 2020 home, but this AC was actually built in 2018.
+Corey Reding: Okay, I don't know why it's even running.
+Customer: Turn it off. Turn it off.
+Corey Reding: I just turned it on.
+Customer: Yes, sir.
+Corey Reding: Okay, cuz I'm going to come out here, I'm going to run my evaluation, figure out what's going on.
+Customer: I don't see any on the front of that.
+Corey Reding: Are those scorpions?
+Customer: Yeah, they come out and eat things like this too.
+Corey Reding: Yes, the— I've been here in Vegas for about a year and a half now, and I've, I've seen some, some tech— some technicians have had some close encounters with them, but I luckily have not.
+Customer: Well, so them small bastards I just showed you, The poisonous ones, the big hairy ones. Okay, they are poisonous, but the small ones are the ones that have bigger—
+Corey Reding: yeah, it can be the deadly ones.
+Customer: No, they're not deadly, but they get you sick for sure, right? You will notice. You will know you got stuck. Okay, I'll put that one. You b******, I got you now!
+Corey Reding: What I'm going to do is I'm going to grab my tools. I'm going to start outside and work my way in if needed to provide you with diagnosis.
+Customer: The gate's open, you know, I have 2 gates, so you have to kind of watch it. Okay, there's the front courtyard gate. Okay, and the main gate to the backyard's on that side of the house over there. They're both unlocked.
+Corey Reding: Okay.
+Customer: Perfect.
+Corey Reding: Sounds like the plan. Well, I'm gonna go grab my tools, get started figuring out what's going on. Once I have a diagnosis, I will come talk to you. Right.
+Customer: And you guys do the install. Okay. Sierra is the one that you guys did it. Once you worked on like one of the registers, it was rattling and all that s***.
+Corey Reding: Oh, when we first bought— when you first bought the house?
+Customer: Yeah.
+Corey Reding: Okay.
+Customer: They didn't tell me there's supposed to be some kind of registration card, so guess what? I didn't send any registration cards.
+Corey Reding: Oh no.
+Customer: And so you have only a 5-year warranty, and guess what? It's been 5 years and 10 months.
+Corey Reding: Yeah, no, that's— that's— it sucks, you know, because when we bought— when you—
+Customer: you put—
+Corey Reding: when we all the units. We don't know who's going to purchase the home, right? Right. But then it falls through the cracks because the builder also doesn't tell you you need to register the system for the additional 5 years.
+Customer: So I don't have it, and you know, the thing's only 5 years old to me, you know, but the AC's from 2018. The house was built in 2020. I don't know why they're getting old s*** like that installed.
+Corey Reding: And sometimes they sit, but the worst part is some, some of the, the manufacturers Like, uh, like York, if a York unit, the warranty starts when it leaves the warehouse, their warehouse. So I've seen situations where I go to calls, yeah, where I'm like, oh, the clothes of escrow is only 3 and a half years old. I'm like, well, thank God for warranty, right?
+Customer: And I look up the warranty and then it's already 3 and a half gone.
+Corey Reding: 3 and a half because it sat somewhere for a year and a half. And it's just like cheating out the homeowner. You buy a new house Right, right.
+Customer: Well, that's what I expect. If I can have a fine result, I don't expect to have problems. That's one of the reasons you buy a new house.
+Corey Reding: Yeah.
+Customer: So I don't know what the, what the deal is, so that's why you're here. Just tell me.
+Corey Reding: All right.
+Customer: Obviously it can't be great news. Well, I'll do— Hopefully it's minimally bad.
+Corey Reding: Absolutely. And what I'll, what I'll do is I'll run my evaluation. If it's something that I have on my truck and I can fix this evening, I intend to do such that. And, um, but I'll, I'll talk to you first Before I know, um, once I know what's going on.
+Customer: When I, I had an older system in Houston and thunderstorms knocked out the compressor.
+Corey Reding: Yeah, heard there's a lot of brownouts.
+Customer: It was really the, the— what the f*** is that— the capacitor got blown. So once they replaced the capacitor, the condenser worked. But see, it wouldn't even spin. It wasn't working. Mine's spinning.
+Corey Reding: The fan's running.
+Customer: Yes. But it's not, you know, it's not compressing or whatever.
+Corey Reding: Exactly.
+Customer: I don't know what the problem is, but the one in Texas wouldn't even spin because that capacitor was shot.
+Corey Reding: Oh wow, I have seen that too where it's flatlined on both sides. You know, the starters, the capacitors, they, uh, um, you know, they have 2 different, uh, sections on them, so sometimes one side will fail and the fan will still run. But the compressor won't, or I've seen the compressor run and the fan not run because of the, you know, the capacitor. But let's, uh, let's hope it's later in the evening. Let's hope it's something simple like that where I have it out on the truck and I can fix it this evening. But I'll come talk to you once I know what's going on. Just give me a little bit to run through my diagnosis and we'll go from there.
+Customer: Okay, sounds like a plan.
+Corey Reding: All right, sounds good. Let me go grab my tools. That's the builder.
+Customer: So they they have their unit here, and the house makes because of the climate here in the summer makes it really a three and a half ton location given.
+Corey Reding: Ah yep, I see what you're saying.
+Customer: Yeah.
+Corey Reding: One second, I can't quite hear you. Is it a 3.5 ton? Is it a 3.5-ton unit? Oh, that's what it says. In my opinion, I'd want a 3— I would put a 3.5-ton in.
+Customer: Okay.
+Corey Reding: All right. Fair enough. Just a good habit to have. I have one. I'm just— it's been a long day.
+Customer: I'm being lazy. Did you come from Henderson all the way over here?
+Corey Reding: I did, yeah.
+Customer: Oh, so it didn't show you up here. It gave me your location in a residential neighborhood in East Henderson.
+Corey Reding: Yeah, that's where I was. I had a I've been all over today.
+Customer: I've—
+Corey Reding: well, actually, I've just kind of been between Enterprise and Henderson all day. First 2 calls were leaks.
+Customer: The good news is that it's a little cooler over here.
+Corey Reding: That is true. It— in my opinion, I don't, I don't really ever notice the difference.
+Customer: I do, but it's probably because I live here.
+Corey Reding: Right? Definitely helps.
+Customer: All right, let me go grab, grab something from the truck.
+Corey Reding: I gotta test this. 5 years old.
+Customer: It happens.
+Corey Reding: These systems take a huge strain.
+Customer: I'm going to do it here.
+Corey Reding: Yeah, they, they definitely do. I was very fine when I was in Houston with the back.
+Customer: Houston, we got so humid, all the moisture out of the air.
+Corey Reding: I could only imagine in Houston, the— all the condensation leaks Due to the humidity. I'll be right back. All right, I have a diagnosis for you. So just to recap, uh, you had mentioned to me that the thermostat gave you the error code that it was trying to cool but wasn't reaching temperature.
+Customer: Right.
+Corey Reding: It was increasing.
+Customer: Right.
+Corey Reding: Um, so that told me there's communication from the control board out here, right? Um, at that point, I turned on the thermostat. I heard the blower motor. We came out here. I noticed the fan motor was running but not the compressor. So I then opened up the panel, checked the electrical wiring for any burn marks, tears, discoloration, anything like that. All that checked out. At that point, I checked the starter or the capacitor. And its rating. It was flatlined on the compressor side, but on the fan side it was still running. So what I then did is I threw a new capacitor on there just to verify that the compressor turns over. I like to— when it's something like that, I like to make sure that the compressor kicks on because the last thing I want to say, hey, it's just this, and then find out it's the compressor. Yeah, because that's, that's not a fun conversation.
+Customer: No.
+Corey Reding: So I, so I did—
+Customer: especially if you're retired old folks.
+Corey Reding: Absolutely. Uh, but so at that point, compressor kicked over, refrigerant pressures are looking good. So the issue here is the capacitor. Yes, sir.
+Customer: Which is the most common AC problem.
+Corey Reding: It is. Yeah, it's— we, we carry—
+Customer: Over the years, that has always been the problem I've had with, uh, AC ends when they have— when they go out.
+Corey Reding: It's the most common. I have, uh, um, my, my buddy in Arizona— I was just out there over the weekend out on the, uh, we went out to the Colorado River out there in, uh, in Laughlin, and he was like, yeah, yeah, Lake Havasu. I was out there too, and he was like, yeah, my unit's 20— he was like 20— he's like, my unit's 24 years old, I've never had an issue, and he jinxed it. Yeah, and then this could Capacitor failed today. I was walking up through it on the floors like, Corey, help me, like, I don't know what's going on. I'm like, open up the panel.
+Customer: I've had 3 go out, you know, before this in my lifetime. And there was one, the one I told you went out, it was actually in Dallas.
+Corey Reding: Okay.
+Customer: Lightning hit the— I had a condo up there. That was— I was going to retire in Dallas. I lived in Houston, worked in Houston, but Bought a condo in Dallas.
+Corey Reding: Okay.
+Customer: As we aged, we decided that we didn't like having to take the stairs upstairs all the time, and the HOA fees were coming up a little bit because the maintenance included the roof. And Dallas has weather, so they get thunderstorms and hail every now and then. When the HOA has to replace the roofs of the units, guess what? Raises the cost for the HOA to maintain the place. We sold it at a tidy profit and bought this place.
+Corey Reding: Awesome. How do you like it out here?
+Customer: I like it. She doesn't because the air's so dry. In my case, I'm from Los Angeles originally, even though I haven't lived there in 40 years.
+Corey Reding: Okay. I'm from Sacramento.
+Customer: Yeah, so it's like, okay, I was born and raised in Orange County and I left when I was 20 and I never lived there. I've been back multiple times to visit. Yeah. And it's like the cost of living there is outrageous. I thought, hey, Vegas is actually cheap. It was in 2020. The interest rate here is 2.5% when I bought this house.
+Corey Reding: Nah, what I would do for it.
+Customer: And the property taxes are 1%, and since they have a 3% cap on the value increase, it's, it's dropped to like 0.75 now.
+Corey Reding: That's awesome.
+Customer: Houston is 3%. I've heard Houston is 10%. 10% a year, and they overly value your house, so you have to protest every year. So you have to pay a tax protest company 40% of your savings to get 60% of your money back to get the house value down for tax purposes. Why the h*** they do that in Harris County, I don't know.
+Corey Reding: Oh my goodness.
+Customer: So anyway, lightning hit the place and blew out the unit in the back. First, the compressor went out first, but then after that it blew out the condenser unit in the back, so I replaced it. The first time I had to actually replace an air conditioning unit in a place I owned.
+Corey Reding: So it grounded out the compressor at that point?
+Customer: All kinds of s***. Blew out the TV. I had a flat-screen TV, you know, Sony Bravia. Did a lot of s***, which I would not have expected in a multi-unit building, but it's like Oh my goodness. So yeah, but yeah, all the other problems have always been the f****** capacitors. Like, they're made poorly. Oh, how much is the damage? You know, I, I, it's like, you can buy those on Amazon, but I'm not an AC technician, so I don't—
+Corey Reding: right, I don't f*** with that myself. So it's on there right now. It's just for testing purposes, right? So I do have to go over, you know, in terms of pricing Right. So there's 2 routes we can go with it. Either one, you pay outright. Everything we install comes with a 1-year full warranty.
+Customer: Mm-hmm.
+Corey Reding: The option number 2 is we also have— I know this is our first problem. Myself, I'm a huge believer on routine maintenance and upkeep. We do have this maintenance program. I have a pamphlet for you here. This is our Sierra Maintenance and Upkeep Program. It's a $16 a month program. Allowing you to get an air conditioning maintenance once a year, a heating maintenance once a year. You get a plumbing visit and maintenance once a year, an emergency visit, so it waives the service fee. Also saves 15% off parts and services and overall business costs, backed with 2 years full warranty. So for example, with the maintenance program and replacement of that capacitor, You save $83 in terms of overall cost, and we're at $490 compared to paying outright at $557. Any questions?
+Customer: Yeah, well, I mean, so $16 a month at that rate, or is that an annual—
+Corey Reding: It's a— yeah, $16 a month. It's a 1-year commitment.
+Customer: So you pay for a year in advance, or do you pay for it monthly?
+Corey Reding: You pay for it monthly. So the $16 is included in the $490, right? And then at that point, then the recurring once a month, uh, again, 1-year commitment. But after the 1 year, if you don't see the value, you're not a fan, you'll still—
+Customer: So can you like charge your credit card over there?
+Corey Reding: Yes, sir, absolutely. Whatever card you'd like.
+Customer: $16.
+Corey Reding: $192 for the year.
+Customer: And get the heating checked as well.
+Corey Reding: Maintenance.
+Customer: Now you guys put this good in. One of the things I've noticed in the windows is that when they first set it up, it's like they— there's some kind of wiring. I had the guys came out and fix that too when they fix The register, there was something up there where they had the heating zone. So, one thing I've noticed, it seems to be, although it hasn't, you know, really affected anything, is that the heater will be going, and it won't focus, you know. It won't reach temperature? Right. And it'll shut off. 5 minutes later, it'll come back on like nothing. Real quiet. Doesn't click on or anything.
+Corey Reding: It just fires very intermittent. So it's like starts running for a few minutes.
+Customer: Yeah. And then it shuts back down almost right away. After a minute or two, not very long. You think, you think that he must never— he's on that much, but it runs. It's not just does this like short cycling.
+Corey Reding: Yeah. And then keeps Right back on. Yeah, that's definitely something we can look at during the maintenance. Sometimes it's as simple as cleaning the flame sensor, you know what I mean, where the flame sensor is faulty. Because if— what will happen is that gas valve opens to provide some heat. If that flame sensor is dirty or faulty, it will then shut down the system. They have to run humid. Yeah, a lot of them are now. That's the unfortunate part.
+Customer: It was once upon a day. So yeah, I can go with the main complaint. I'm just like $60 enough just so I can set it up on my credit card later.
+Corey Reding: Yeah, absolutely.
+Customer: Okay, so I got to come with $490, and that can be charged to the card too, I guess?
+Corey Reding: Yes, sir, absolutely.
+Customer: And the unit, you have to put it together, of course. Is this one that you put in here a good quality one? Because Because, you know, they have different qualities.
+Corey Reding: Yes.
+Customer: Some are good, some are worse.
+Corey Reding: Yeah, no, it's a good— it's a good quality. We use the Titan, the Titan brand overall. Um, it's great, uh, in my opinion.
+Customer: Underrated for the demand.
+Corey Reding: No, the exact specifications. I took what you had on the unit, went to my truck, grabbed the exact same one, put it on there, tested it.
+Customer: Dallas unit that blew up in the drum front. When the guy came and replaced the capacitor, you know, I don't know anything about that s***, so I'm not like— he did it in series because he didn't have the right size, so it was like right capacitor level, but he had 2 little ones in there.
+Corey Reding: Ah, okay. I sometimes, you know, I'm very, very, you know, get-it-done situation. Sometimes I'll end up at calls where I'll have like an odd size or Like a 50, 75, and I'll have to, you know, jump them and, and, uh, zip tie them together.
+Customer: And of course, the guys who saw that when they were diagnosing what the lightning did to the unit, hopefully you don't have to do that.
+Corey Reding: No, I had the exact size for both the compressor and fan motor on one. remounted in the panel.
+Customer: So you only have— are there 2 now and there's only going to be one?
+Corey Reding: No, there's— it's a dual. So it's—
+Customer: You're going to replace the other one?
+Corey Reding: No, it's, it's one that, that energizes the fan and the compressor, but the compressor side was 100% failed, but the fan side still had a little bit of life left in it. That's why the fan was running. Yeah, but if it's got a little bit of life, it's not— Right, that's why it's It's one capacitor that energizes the fan and the compressor. So I replaced that and with the, you know, so there's one in there and there's 2 in there.
+Customer: One's gonna fail in like 6 months?
+Corey Reding: No, it's one that energizes both, the entire thing.
+Customer: All right, I just don't want to have a call-in.
+Corey Reding: No, absolutely. Now my fan's not running, what the heck, Corey? Like, yeah, I get it. Like, you should have just did this at that point. No, I get it. So real quick, I just need a signature.
+Customer: I'm sorry, I gotta, I gotta go get in the car.
+Corey Reding: Okay, sounds like a plan.
+Customer: Come back.
+Corey Reding: Is it getting a little cooler in there?
+Customer: I've noticed a little cooler air, but it's going to take a while.
+Corey Reding: It's going to take a while. It's hot now.
+Customer: Exactly.
+Corey Reding: Yeah, I think it was 88 and the The center, the center area. All right, I was gonna get you'll be able to at least be comfortable tonight. So real quick, as I'd mentioned, so we're gonna opt into the maintenance program with replacement of that capacitor. As I'd mentioned, we're at 490. What I need is a quick signature from you in that box, and I apologize the cracked screen.
+Customer: This is a d*** screen protector next phone. Jesus Christ, you guys are so F****** cheap. Just f****** with you. I always put a screen protector on mine.
+Corey Reding: Yeah, no, that's— this is my work phone, so they—
+Customer: It don't matter.
+Corey Reding: They don't give me the choice. You put a screen protector on this. They firing your a**? Huh?
+Customer: They firing your a** if you don't put a screen protector on?
+Corey Reding: No, but—
+Customer: So did you put— is that the actual screen protector?
+Corey Reding: That's the screen protector, yeah.
+Customer: Okay, okay.
+Corey Reding: Yeah, I gotta— I just gotta make the time to go in early enough to They'll even install it for you. I know they will.
+Customer: That's where I get my personal phones, because why? I have major OCD issues and I put that s*** on myself, it's got a bubble in it 100% of the time. These guys, either whether it's the Geek Squad or the guys who do the phone sales, they're like f****** professionals. I don't know how they do it, but it comes out perfect every time.
+Corey Reding: Oh, the screen protectors? Yeah.
+Customer: 'Cause like every time I've tried it, I f*** up. I get a piece of lint under there or something that causes—
+Corey Reding: Oh, there's one bubble right in the middle. Everything else looks good except that.
+Customer: F***. And they're not cheap. It's like they're $30, you know? Yeah. It's like, well, f***.
+Corey Reding: And if you try and peel it back, it never looks the same.
+Customer: Yeah, so I just have them do it now.
+Corey Reding: You have to, yeah.
+Customer: Yeah.
+Corey Reding: So the card real quick, may I see the card? So it's a Visa card. All right.
+Customer: I can give you American Express.
+Corey Reding: How you guys have to pay another five percent to this f****** S C H R O E D E R card number is REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED Expiration date 03/30.
+Customer: Sounds like it's so far away. It'll be here before you know it.
+Corey Reding: I know.
+Customer: This year's already f****** longest. It just started.
+Corey Reding: I know, time's flying.
+Customer: Dead before long because time's flying so fast.
+Corey Reding: I just, I feel like I, I work so much, I'm just like Man, dude, like, this year has flown by.
+Customer: That's how I was when I worked for the other company. F****** worked all the g****** time. It's like when I first retired, like, I didn't know what to do.
+Corey Reding: You have all this free time you're not used to.
+Customer: F***, I just sleep in now.
+Corey Reding: That's me.
+Customer: I don't even get up until noon. I mean, literally.
+Corey Reding: I can't do that. I can, I can, you know, I can get—
+Customer: I used to be able to— I don't go to bed till 2 AM.
+Corey Reding: Ah, okay. So you guys still got a few more hours. Yeah.
+Customer: Yeah. Well, luckily the place will hopefully be cool by then.
+Corey Reding: Absolutely. What is the zip code for the card? 89138. All right, so we're going to process the card for $490. Can I get one more scribble right there?
+Customer: F****** me, $490. All right, my head unit cost plus I would have Get quotes on that.
+Corey Reding: They're, they're getting expensive. These refrigerant changes happened last year.
+Customer: Yeah, I still have— I had what was the— I think this is 410.
+Corey Reding: 410, yeah.
+Customer: 410U or just 410?
+Corey Reding: Just 410A. So they, they no longer manufacture the 410A.
+Customer: So the problem with that is the Freon, the R-22.
+Corey Reding: Yeah, and I— my mom has an R-22 unit in Northern California. You can't. No, she had it was it's it's original to the house from 1978.
+Customer: That's maybe a dealer.
+Corey Reding: Yeah, and it had its first problem actually three weeks ago. The blower wheel well the blow the blower wheel itself the tack weld snapped, warping the motor so it seized the motor in replacement of the wheel, and I just call had to call a friend because I was like I don't know. First of all, we're not calling an actual company, so they're gonna, they're gonna try and tell you that you can't— you need a new unit, or we're not going to work on it. And that's why I was like, I called my buddy. I said, hey, I said, I need you to go look at this. I'm pretty sure I already know what it is. I said, but go evaluate the situation. They'll pay you. Obviously, I know this is probably, probably $1,000, $1,500, give or take, right?
+Customer: Yeah, give or take. That's what it's called. R22. If you can find it.
+Corey Reding: If you can find it.
+Customer: Exactly.
+Corey Reding: It's expensive. And so yeah, my buddy went out there. It was exactly what I thought. $1,000. We got it up, you know, got it up and running.
+Customer: Was there a leak in the house, or are those old ones on the fuel tank right now?
+Corey Reding: Well, they're all fat. They're all sealed, you know, soldered and sealed. But R22 You'd have to— if there's a leak in that evaporator coil, you'd have to replace— yeah, replace the coil, but then have to do all new refrigerant.
+Customer: Yeah, well, that's, that's the problem with like, let's say for example, 410A, right? Yeah.
+Corey Reding: Um, I know the cost of like just getting them from the manufacturer for what stock holds left. I've seen, I've seen evaporators So it was as high as like just $6,000 just for the coil. It's crazy, crazier than the money you make. And then you got to get all the refrigerant depending on the size of your system. Like, this is a 3-ton, probably about 8 pounds of that. Then you're charging about $150 a pound. So before you know it, you're spending $7,000, $8,000 to fix a unit with— that you're no longer manufacturing parts.
+Customer: Yeah, I'm probably in there, but I already know all the ductwork is really swapping out that box.
+Corey Reding: Exactly.
+Customer: With the heater in there though, does that make it more difficult? You don't need to replace the heater.
+Corey Reding: You don't, you know what I mean? But a lot, a lot of people end up just replacing it. It's like a grand or 2 more to replace everything as a whole.
+Customer: Why mix old and new?
+Corey Reding: Absolutely. Me too. I'm not, I'm not good at, uh, I don't have a whole lot of luck. Well, I'm gonna go—
+Customer: they're made to make you lose.
+Corey Reding: They definitely are. Well, I am gonna go, uh, get everything buttoned up.
+Customer: Um, so they're gonna send me a bill for $16 in August?
+Corey Reding: Yes, it's recurring on the There'll be an automatic payment, but if you need to change the card, you just call into the office and they can update it to whatever card you'd like.
+Customer: So the first one will be on September, say, 5th?
+Corey Reding: Yeah, all right, sounds good. Well, I'm gonna go get it. No, no, no, sir. Absolutely. All right, well, I gotta go mount the capacitor and then I'm gonna clean everything up. And then what I'm gonna do is get your email at the end, and I'm gonna email you over the invoice.
+Customer: All right. All right.
+Corey Reding: Yes, sir. All right, I'm all finished up. I just need a good email for you.
+Customer: Okay, s.b.
+Corey Reding: S.b. .b.schroeder.
+Customer: Yeah.
+Corey Reding: S-C-H-R-O-E-D-E-R. Yeah.
+Customer: At outlook.com.
+Corey Reding: Does that look good right there? S.B as in boy.schroeder@outlook.com.
+Customer: Yeah, except I don't capitalize those, but it'll still get there. Okay, perfect. Perfect.
+Corey Reding: So what I'm going to do is I'm going to write up my report. I'm going to send everything over to you, so you'll have the pictures, videos, invoice of the work today. Okay. Uh, but, uh, we're all good. System's back up and running.
+Customer: Yeah, it's got the temperature in here down 84. I just turned the far one on, so it's still hotter down there.
+Corey Reding: Oh yeah, I didn't turn that one on when I first got here.
+Customer: So it's cooling now too.
+Corey Reding: Perfect. Well, do you have any questions for me before I go?
+Customer: No, I think that's it. I, I— it was as I was hoping. For, but the best case scenario, I had never seen the capacitor go out with the thing still spinning. It's usually dead in the water.
+Corey Reding: It flats both. Yeah, it's sometimes that happens, but I've seen it on both sides where the fan stops working but the compressor's running, or the fan's running and the compressor is not. It definitely can. Yes, it will cause the compressor to go out on thermal overload. Yes, sir. Well, you have a great evening. It was a pleasure meeting you. All right, and I'm going to close the gates behind me.
+Customer: All right, thank you, man.
+Corey Reding: Yes, sir. You take care. Have a good evening. Uh, Monty wants his daddy home, period. Well, let Monty know Daddy's on his way home. Call him upstairs and let him know— him know I'm on my way home. And give him a big kiss for me. Hi, I'm North Las Vegas Mayor Pro Tem Scott—
+Customer: Forget everything. Hey, Alster. Done, done. He's at my joke. Please. Thank you. Appreciate it, bro. I appreciate it, boss. So there's a brand new hidden— A media siglo me pongo a matar. ¿Qué es tu nombre?
+Corey Reding: Llegué a Las Vegas solto.
+Customer: How does someone? One of the greatest postseason performers ever. With the skill, touchdown. He is remarkable. There's the sure-handed Fitzgerald. You can see the confidence. Goes up and makes a spectacular catch. Caught at the 5, heading for the pylon. No! Barry Fitzgerald! One at a time. Fitzgerald won't go down. Touchdown! Makes the play for the touchdown. He doesn't care. He's getting another. Barry Fitzgerald! Fitzgerald, the legend! It's gonna be a fade for Fitzgerald, who's gonna go up and make the catch for the touchdown! There's no one that does it better than Larry Fitzgerald. Warner, he's gonna go. Fitzgerald in the Steelers' territory. 30, 20, 10! Arizona has the lead! That playoff run was the most remarkable run of football I have ever seen from a wide receiver. On this episode of Tweaker Geographic. I want to test—
+Corey Reding: I want to test your knowledge.
+Customer: Petit.
+Corey Reding: I want to test—
+Customer: Happy birthday, happy birthday to you. Happy birthday to you, happy birthday. I just never understood how metal got so good. Couldn't I have a day that wasn't— You said happy birthday to you. Happy birthday to you, happy birthday to you. Under the sea, under the sea, darling, it's better down there.
+Corey Reding: I will, baby. Gonna start driving right now. I wanna test your— Tonight.
+Customer: Tonight, the sick tonight.
+Corey Reding: Tonight, the six-year-old signed by an.

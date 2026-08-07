@@ -1,0 +1,97 @@
+# SERVICE Scorecard
+**Tech:** Corey Reding
+**RecId:** 9199892b-8434-497e-b99b-c63586dfd821-A0vOZeuI0fdYv8TBzqgaINfSxv43
+**Job:** 672899524
+**Date:** 2026-08-06
+**Duration:** 43 min
+
+## Performance Bands
+- **Welcome:** Solid
+- **Diagnosis:** Solid
+- **Options:** Solid
+- **Close:** Solid
+
+## Critical Actions
+- **Expectations set:** true
+- **Options presented (4+):** true
+- **Membership offered:** true
+- **Direct ask for sale:** true
+
+## Call Outcome
+**CLOSED**
+
+## Coaching Tip
+Review for coaching insights.
+
+## Full Transcript
+Speaker 0: It. Hello? Hello.
+Speaker 1: Trying to survive in this heat, man.
+Speaker 0: All right, so we're having an air conditioning problem. Is that correct? Yeah, it's not. So I got a message from the ecob. ECOV? Thermostat. Yeah. It says. I was trying to. Says something's wrong with your unit because trying to get it to the right temperature. For the last four hours. And it's climbing. Yeah, and it's climbing. Okay. When did this start happening? This morning.
+Speaker 1: This morning when I woke up at three in the morning, I went to the thermostat and I turned it up a little bit because it was getting too cold in the house. So I just turned it up to like 74. And then around 8 o' clock this morning, that's when I got that message. Okay. Yeah. Okay. Yeah. Could you show me where everything's located? The units on this side? Okay. And then I got two thermostats, one in the bottom. Okay. Can we go inside real quick and see those thermostats?
+Speaker 0: I turned it all off. Okay. Yeah, absolutely. Exactly. No, it's smart. You know, a lot of. A lot of homeowners don't do that. They'll. They'll try and get what they can out of it. And then before you know it, it's like. Well, you know, it could be a small problem. It turned into a big problem. The condenser pan still works. Okay. But up until this point everything's been working the way it should. Yeah.
+Speaker 1: Okay. For the last about three years, right? Yeah. Okay. We added service, just a maintenance service last year, June. That was about it. It wasn't through us was it? No, I don't think so. Okay. Cuz before we bought the house they had a somebody come and do their own checks and. Okay.
+Speaker 0: Yeah,
+Speaker 1: yeah we were renting it first and then we end up buying the house.
+Speaker 0: Okay. So it was like a. You guys were renters and then they were getting rid of the house. We gave you the option to buy it. Yeah. That's cool because we were the first people that lived in this house anyway. Okay, filters right here. How often are filters get typically getting swapped out?
+Speaker 1: Was it every three, four months? Okay, when was the last time those were swapped out? I just.
+Speaker 0: Swapped one out this morning. Okay. The other one. Cuz I had the box and I thought I had two, but I only had one, so I have to go get another one.
+Speaker 1: Okay,
+Speaker 0: and then the other. Oh, right here. Perfect.
+Speaker 1: All right, and then the attic access in case I need to get in there. All right. All right, so what I'm going to do is I have both thermostats on, so I'm going to start outside, run my thorough evaluation, figuring out what's going on. Once I have a diagnosis of what's going on, I will come talk to you about the diagnosis as well as solutions that what we need to do to get you guys back up and running along with those will be the estimates. Do we need to have anyone else like on the phone in regards to the. No, no, just. Just yourself. Yeah. Okay, perfect.
+Speaker 0: Perfect. And then if it's something we can take care of on site today, the goal is to get it fixed before it gets too hot outside. It's gonna be another hot day. I've been. I've been working, man. Let me tell you.
+Speaker 1: I used to do H Vac. Okay. With Ideal Services. Okay. Yeah. But then I stopped and I lost everything. So I
+Speaker 0: don't.
+Speaker 1: You know what I mean? And if you. I don't want to try and touch nothing, I forget about you. Exactly. Yeah. It
+Speaker 0: happens. If you don't use it, you lose it. You know? That's any. You are. All right? Actually, I don't know if you
+Speaker 1: know Harry. You know Harry? Yeah, I know Harry. He's our. Yeah, he's our cousin. I. I went to school with him back in Ti. Harry's your cousin? Yeah.
+Speaker 0: Okay.
+Speaker 1: I was going to call him up, but I was like, I don't want. I don't want to be that guy. You know what I
+Speaker 0: mean? So I was like, let me just call his company and. Come on. Yeah, no, Harry is the. The. The service manager for H Vac operations. Okay. Yeah. That's good. Yeah. No, I knew he was a manager. Yeah, he's. He's a. He's a good guy. Yeah. All right, well, let me figure out what's going on, and then we'll go from there. All right? Sounds good. Thank you. It's it. It's it. It's it. Making sure there's no burn marks, tears, cuts, anything that would cause the compressor not to run. All that looked good at that point. I tested the starter for the compressor. It was failed on that side, so then I grabbed a new one, threw it on there, tested the system, pulled an amp draw on the compressor and the fan motor and the refrigeration levels, and everything is cooling at this time. The only thing I noticed in terms of underlying was the compressor is pulling 20amps higher than manufacturing design. So you run the risk of the compressor burning out because it's overworking. I was talking to Harry. Given the fact you're his cousin, I wanted to see if there was any special pricing on anything, which he did say there was. We did apply all the family discounts and all that fun stuff. Yeah, yeah. So in terms of solutions, Right. So obviously having to replace a starter. Program. You may or may not know about this, but it's a 16amonth routine maintenance program, saves you 15% off parts and services on top of the additional discount Harry was doing for you. You get an AC maintenance once a year, heating maintenance once a year, a plumbing maintenance once a year, along with an emergency visit. So a JP service fee advised on the phone, backed with a two year warranty on anything when installed. Okay, so there's that as well. So if we were to do everything we were, I was talking about the soft start replacement of that starter with with the membership on top of the additional discounts Harry provided for you. He did save in terms of that discount. There's about an additional like $450 overall in discounts here. We're looking at for everything 1066 take care of everything. Any questions? Right there. Thousand eight. 10 66, the starter, first payment of the membership and the soft start. Okay. That would be everything. I mean, we could always do, you know, if we were to just do solely the starter, it is under the limited manufacturing warranty, so typically believe it's around like 240, give or take with the membership. Right. And his discounts for that, we're looking at $166 just for that. Right. But if you were to want to pay out. Right, for everything with the membership, he looks like he applied a discount there as well. Non member price, he would be about $190. $190? Yeah. The soft start is the bulk of it. I just like to educate on what we can do to ensure the compressor is not burning out and we're having to replace the compressor and then all the refrigerant. You know what I mean? Okay. We'll probably do the. The starter. Okay, you said that's two something.
+Speaker 1: So depends. With or without the maintenance program,
+Speaker 0: we'll probably do it. What's the price without the membership,
+Speaker 1: the non member. So there's about a third with his discounts, there's about a 30, $33 price difference. So 166 with the membership or 190 outright. The only the difference there am I
+Speaker 0: able to is this membership. I can cancel at any
+Speaker 1: time. It's a one year commitment. Right. But I'm a firm believer of routine maintenance and upkeep on these air conditioning systems, especially here in Las Vegas, you know, taking care of small things before they turn into major problems and just, you know, just like taking your truck out there for a maintenance every so often. Yeah. You know what I mean. So moving forward, you'll have a designated team maintenance and upkeeping the system.
+Speaker 0: Yeah, we did a $16 a month. And that's. So you guys come out just for regular maintenance. We'll call you.
+Speaker 1: Yes, the office will actually call you. So we have a call center team of about 20 girls that their job is to take the inbound calls and outbound calls to schedule appointments. Right. So moving forward, they will contact you in regards to maintenance. You won't have to, like, remember to schedule and stuff like that. And it's $16. $16 a month. Yeah. So essentially you're investing into the maintenances. Okay. So when we come out, right, there's gonna be no payment due unless there's some concerns, just like I did today. Then I'll present you pricing and all of that. And
+Speaker 0: concern. Yeah, we can do that. The soft start. And that's the one you recommend, right? The
+Speaker 1: soft start is what I recommend. But again, that's the bulk of what I was, you know, what we were. What I was talking about. So that's the
+Speaker 0: thousand dollars. 2066. So that was the. The first payment of the membership. The soft start and that starter. Oh, yeah. That was everything. Oh, this is a soft start and a starter. Yeah. Yeah. The soft start's gonna reduce the amp draw of the compressor upon startup while it's running by 50%. So essentially alleviating all stress off that you still have to replace the starter. I would. Yeah. So that's the thing as well. You know, I have a soft start on my unit at home. My unit's about a year and a half. I personally love it given the fact, you know, for how often these units turn on and off thermostats in my homes just like yours. You know, these systems are under a lot of stress, so I fix everyone else's stuff all day. Whatever. You said the 190 or 201. So with the maintenance program for just the motor start for the compressor is that it's at 166. What's the next one up? That was the thousand. Oh, 1060. So that's again. Yeah, there's a. Most of it is the soft star. That's 900 of it is ultimately just the soft start. Oh, wow. But normally it would be 13. Membership price is 13.50. So Harry did give a nice discount, but 450 off of that. Another 80 here. So a little over 500 in additional discounts.
+Speaker 1: Yeah. I only got a thousand dollars right now. I mean, thanks for that discount. Absolutely. Yeah. But
+Speaker 0: I can't. I'll probably just. Whatever
+Speaker 1: it takes to just get that fixed. Okay. With the membership, right?
+Speaker 0: Yes. Okay. 166. Yes, sir. So 150 for the part. $16 for the first payment. Yeah. Sounds like a plan. All right. We also do have payment investment options too. So if like,
+Speaker 1: you know, we don't have to do it today, but moving forward it's like, hey, I like the idea. Right.
+Speaker 0: You
+Speaker 1: know.
+Speaker 0: For, let's say, $1,000 project, we could stretch a no payment due today outside the 16 and then no payment due for 30 days, no interest and no prepaid penalties as long as it's paid off within the within the year. That is an option too, which I think is really cool. Yeah, I'll probably do that later on down the road. Absolutely. So right now, just to go over the membership, the first $16 payments included in today, plus the starter right here at 150 grand total, what I'll be collecting is $166. I get a scribble in that box from you. You guys, the Apple pay I would need a card to put on file. Y. It. All right.
+Speaker 1: So
+Speaker 0: it's
+Speaker 1: a starter, huh?
+Speaker 0: Yeah. The fan was running. It's a dual component. So the fan was running, but the compressor wasn't. Yeah.
+Speaker 1: It's like a safety thing there, huh?
+Speaker 0: Yeah, exactly like that. Because you don't want the. Yeah. There's a lot of.
+Speaker 1: Honestly, what causes the starter to go out, though?
+Speaker 0: Wear and tear. Wear and tear. Typically. Wear and tear. The heat drains them real quick. You know what I mean? Causes it to fail. Three years
+Speaker 1: already since I did it,
+Speaker 0: I've seen power surges blow them out. I know that's very common here in Las Vegas. Brownouts, overworking of components like the compressor. Overworking puts additional strain on that starter. Right. You know. So there's a lot of different reasons, you know what I mean? But given the fact it's three years, I mean, I, we do see, I would. It's hard to say, you know, some of these components can be faulty. You know, I've seen some that last 10 years, 15 years. I have a buddy, he has his unit, he lives in Arizona and his unit's 24 years old and it finally failed actually last night. And I was just there on Sunday. He was like, yeah, he's like, I've had no problems with my AC in 24 years. And then he's calling me freaking out a couple days later. Yeah. How's the refrigerant? Good. Refrigeration levels? Yeah. Which is a great sign because if, you know, if it was low, then we'd be having to look for a leak, which is not a fun, fun conversation nor a cheap conversation. 7, 6, 7, 8. But no concerns overall with the unit up until. Up to. Up till today. Okay. One, nine, three. What's the zip code for the card? 891-4-1. All right. So I just need one scribble. As I'd mentioned, we're going to charge the full balance today of $166 to this card. Get a scribble right there from you. There's that. Processing. Perfect. Well, I am going to go finish up outside. What I will do once I am finished, I am going to verify we have an email, if not, collect an email from you to send you over the invoice for your documentation and then we'll go from there. Okay. All right. Perfect. Yeah, sure. Awesome. Oh, thank you. Can't have enough electrolytes in this heat. I don't know, man. We've been working. I've been working myself the last three days. I've worked from 7, 8. Last night, I got home at 11pm so the capacitor. Yeah. Starter capacitor. This is what failed. So what I did. Right. So this just. I know you have a little experience. So the 45. 5, right? Yeah. So 45 plus or minus 5% on the compressor side, which I only had seven. Right. But on the fan side, we were still. Still good. Almost perfect. So that's why the fan was running pressure. Yes, sir. Just didn't have enough juice. So, yeah, I'll turn this in. It's the best case scenario. It's definitely the best case scenario.
+Speaker 1: Oh, it's just the compressor.
+Speaker 0: Exactly. That was my last call last night at, like, 10:30. I'm like, please be something easy.
+Speaker 1: And
+Speaker 0: then it was. I got there, same thing. I saw a fan running, compressor wasn't running. I checked it. I'm like, thank God, dude. So I don't want to have to do a major repair at 10:30 at night, you know? So everything is looking good. Good pressures. I've been going quite a few leaks lately. With the intense, with the high heats.
+Speaker 1: It
+Speaker 0: puts these systems under a lot of pressure. What do you do? What do you do
+Speaker 1: now? I'm with Metro.
+Speaker 0: A Metro?
+Speaker 1: Yeah.
+Speaker 0: Okay.
+Speaker 1: Yeah. I work at the jail.
+Speaker 0: Okay. How do you like that? It's good. I like the days off. Heard there's a lot of overtime opportunities working for. Don't throw it in my face now.
+Speaker 1: Hey, no. This is a hard job right here. I'm done. I. I did this. I did the ones. The units. They got the units on the roof.
+Speaker 0: Oh, the package units. Yeah. I used to. I. I'm from, like, Sacramento area, so I used to commute out to the Bay Area, like, San Francisco area. Right. I was an installer for many years before I moved out here for about. About four and a half, five years. I was an installer. But the problem is it wasn't just simple swap outs like this. It was a lot of add ons. Because there's houses out in the San Francisco area that are from like the 20s, 30s and 40s. There were just furnaces only in a closet. But now the climates have changed. Where places like Oakland and out there can get like 90 plus degrees and they're not used to that, so they're just dying. You know us, a 90 degree day is a beautiful day. It's a beautiful day. But to them it's like all h*** breaks loose. It's the most miserable day of their life. And so I would have to figure out how can we, you know, run the electrical, how can we run the line set, how can we run thermostat wire, you know, and there's a lot of crawl spaces, so you're down in the, in the crawl spaces, you know. And so I definitely learned a lot. But I love being a tech, you know what I mean? The hours are definitely a lot longer, but on the body overall, it's not. Not nearly as bad.
+Speaker 1: You know, At least with this unit right here somewhat of shade. Right.
+Speaker 0: Yeah, that's true, too. Right, Cool. Well, I'm gonna start cleaning up. Give me a few minutes. I'm gonna write up my report and then I'll get your email and we'll go. Yes, sir. It's it. It. Yes, sir. The soft start. Yeah. Yeah, I can. I can get that adjusted for you, absolutely. All right. System's back up and running. Came out here for a no. Cool. Met with the homeowner. He mentioned to me that system's not cooling and the ECOB was giving them an alert saying it's climbing in temp. Diagnosed a bad motor start device. Spoke to the homeowner about replacement of that. And the membership Homeowner agreed to the work. We're all complete. It's it. For this job. I came out for a no cool call period. Upon arrival I met with my homeowner who explained to me the unit is not cooling, period. I then ran a thorough evaluation where I identified two thermostats, the attic access and two 20 by 20 filters, period. I then went outside where I found my fan running but my compressor was not running. I then took off the panel, checked the electrical as well as inspecting the motor start device for the compressor period. I found the 45 component. At my time of departure period. I sent over the invoice collective payment period. There are no additional issues or concerns. All right. It's feeling much better in here. Yeah, it is. All right, so I do need an email since I'm all finished up. What is a good email to send everything over to? It's gonna be the letter J. J, D, A, H, D, A, H, I, L, I, I, L, I, G9090. @gmail com. gmail com. Does that look correct? J, D A H, I L, I G. Yep. Perfect. So I'm going to send over the pictures, videos, and the invoice over to your email. I'm also going to send over the soft start quote by itself. That way you have that for your documentation. So after
+Speaker 1: you decide to want to get that done, you just give the office a call. They'll have them come back out with the necessary part, take care of it on site, and then we'll go from there. Yep, sounds good. Perfect. Any questions before I go? No, that should be good. All right. Well, it was a pleasure meeting you. Nice to meet Corey. Thank you. Yes, sir. You take care of Harry, too? I'm sorry? Thanks for calling. Harry, too.
+Speaker 0: Absolutely. Yeah,
+Speaker 1: it's, you know, I'm all for taking care of my clients, and if you're, you know, family of someone that works for us, I like to take care of you even a little bit more. So. Yes, sir. You have a great rest of your day. You too.
+Speaker 0: It's it.

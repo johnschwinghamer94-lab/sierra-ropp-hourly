@@ -1,0 +1,31 @@
+# SERVICE Scorecard
+**Tech:** Matthew Arnold
+**RecId:** 81e6234b-c6e8-4b38-8da6-dee83be4adc0-CeJETffP2OWgh60lodsypyHyld02
+**Job:** 669933631
+**Date:** 2026-08-06
+**Duration:** 45 min
+
+## Performance Bands
+- **Welcome:** Solid
+- **Diagnosis:** Moderate
+- **Options:** Weak
+- **Close:** Solid
+
+## Critical Actions
+- **Expectations set:** true
+- **Options presented (4+):** false
+- **Membership offered:** false
+- **Direct ask for sale:** true
+
+## Call Outcome
+**CLOSED**
+
+## Coaching Tip
+Review for coaching insights.
+
+## Full Transcript
+Matthew Arnold: I'm just here to install that part.
+Customer: What do you install? Uh, the outside. Yeah, yeah.
+Matthew Arnold: So, um, I think I might have saw her outside briefly, but I, uh, oh. Okay, so I finished that up. I do have two cards on payment if it makes it easier. I've got one ending in REDACTED That one? Okay, perfect. There'll be a few more signatures. Okay, then you'll just, uh, that's pretty much everything. You'll just get an email either about just the work that was done.
+Customer: Okay, thank you.
+Matthew Arnold: Yeah, thank you. Y'all have a great rest of your day.

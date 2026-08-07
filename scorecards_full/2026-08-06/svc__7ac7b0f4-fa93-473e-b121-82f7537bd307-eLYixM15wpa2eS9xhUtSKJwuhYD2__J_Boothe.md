@@ -1,0 +1,213 @@
+# SERVICE Scorecard
+**Tech:** J Boothe
+**RecId:** 7ac7b0f4-fa93-473e-b121-82f7537bd307-eLYixM15wpa2eS9xhUtSKJwuhYD2
+**Job:** 669740461
+**Date:** 2026-08-06
+**Duration:** 168 min
+
+## Performance Bands
+- **Welcome:** Solid
+- **Diagnosis:** Solid
+- **Options:** Weak
+- **Close:** Solid
+
+## Critical Actions
+- **Expectations set:** true
+- **Options presented (4+):** false
+- **Membership offered:** true
+- **Direct ask for sale:** true
+
+## Call Outcome
+**CLOSED**
+
+## Coaching Tip
+Review for coaching insights.
+
+## Full Transcript
+Speaker 0: Got this. Oh, nice. Yeah, we didn't use this room for the first 23 years. Just sat here as a place to walk through. Wife and I finally decided we would make a game. Yeah, you know, a couple of. Couple of little machines. Shuffleboard table. You know that. That's a. One of those little laid back game chairs and the big screen tv. Yeah. You know, just a place for mostly grandkids hang out now they never hang out there, so. We now have a game room. We walk through.
+Speaker 1: Well, but at least this is a conversation piece. Yeah.
+Speaker 0: They're both down right now. I've got to get the service tech out here to work on. I used to run a soft route, so if I had my old tools and such, I could do it myself. What can we do? Where can we start? You?
+Speaker 1: Yeah. How many thermostats? Two. One down.
+Speaker 0: One.
+Speaker 1: All right. Can we check out this one down here first? Sure. Did you work in a casino or work at a, like, a company?
+Speaker 0: Company. Did slots. Yeah. Did slot.
+Speaker 1: All right. And during my maintenance, I am going to drop the temperature down a bit more. This is fine. Just to keep it.
+Speaker 0: Yep.
+Speaker 1: Rolling. While I'm checking it out.
+Speaker 0: But. It's a little bit better. But, yeah, so I take photos of it that way. Yeah, I can set it back before I leave. And so, you know, while we're down here, which side of the the house are the units on? Could you have two? Yes, yes. Okay.
+Speaker 1: No, right over here.
+Speaker 0: And is it behind a wall or anything? Or am I able to just walk over, like, around the front and get to them
+Speaker 1: through the front?
+Speaker 0: Okay.
+Speaker 1: It's walled off in the back gate over on this side, but, yeah, you can just wander back there.
+Speaker 0: Okay. And is there a hose or at least a spigot nearby over there?
+Speaker 1: Yeah.
+Speaker 0: How close is it to it, or is it right by it?
+Speaker 1: It's within six or seven feet. Oh, great.
+Speaker 0: That's easy enough. So. So we got that kind of portion of it taken care of really quick because it's easy since I can just walk around the front there. Sometimes I got to go through gates.
+Speaker 1: Yeah. On that side. You would have to if it was back here, but it's in front of the wall
+Speaker 0: over here, so that makes it easy. Yeah. Let's hit the second floor really quick, and then I can get. Keep going. And how has everything been running for you, by the way? Running smooth. It's a nice system. Oh, great.
+Speaker 1: Top of the line. Cost me one b*** cheek and one heel. I wouldn't give up a whole leg.
+Speaker 0: You stood your ground?
+Speaker 1: Well, yeah. The original unit that came with the house lasted way longer than I expected it to.
+Speaker 0: I think that's just. Because how old? This was built in 2000,
+Speaker 1: so the original unit
+Speaker 0: did 15 years better than actually.
+Speaker 1: Yeah, like, that's. And it's crazy because it's. You know, it's later, of course, but, you know, stuff just doesn't get made like it used to.
+Speaker 0: And they stuffed thousands of dollars worth of stuff up there, so that's where you'll find most of the action other than the
+Speaker 1: outside. Two units. Okay. And this was the other thing I needed to see. So. Did you. Did you want to move some of this? Just. Just this section? Is that. Is that okay? Yeah.
+Speaker 0: I can if you want.
+Speaker 1: Or I mean I can move. Doesn't matter.
+Speaker 0: Yeah, I just wouldn't try and move that cabinet. It's getting kind of hurricane.
+Speaker 1: Oh no, it's just mainly because I'm going to have my ladder about here. Yeah. So I just want to make sure that these.
+Speaker 0: Yeah.
+Speaker 1: You know, are in the way of, you know, anything coming down, which there really wouldn't be. But you never
+Speaker 0: know. You shouldn't. You shouldn't have a problem with it. I wouldn't think. You know, I mean those are just frames of pictures. I'll take the two. The pumps and move them. Okay, cool.
+Speaker 1: Just to be better safe than sorry. Yeah. Burr. And let's see, you guys have filters. Oh, you guys have a. You have the April air. Is that correct? Yeah, filters were all up there. That's pretty nice, huh?
+Speaker 0: Well, yeah, it's nice for me cuz I don't have to change filters anymore. That is true. We do it. You do? Yeah. Of course. The filters that I used to change were 14.95 a piece. The ones you change are 500 bucks. That is
+Speaker 1: true. Yeah. But it is I know it's, I know it's costly, especially to do two, but it's, it is one of those things that you, you do purchase, but you, you know, there is some upkeep, so it is
+Speaker 0: an
+Speaker 1: investment. But
+Speaker 0: it no, the system works flawlessly. It's just since they put it in, we've absolutely no problems with it.
+Speaker 1: Yeah. And then with those filters, it also, it doesn't it obviously improves the air quality, you know, for us, but it also keeps the system itself from getting. So it's beneficial. So we're.
+Speaker 0: It becomes maintenance low rather than high at the cost of the filters. And that's I don't have. When we had them redo the system, I wasn't keeping on top of things. I wasn't questioning. So when he came to me and he hands me the bill for $38,000,
+Speaker 1: I'm saying, ah, I do that exactly. But I have no regrets. It's fine. Well, good. And you know what? That's the thing is before I started in this trade, I didn't realize that especially out here, that is the thing that we use the most in our day to day in our life, because whether you're awake or sleeping
+Speaker 0: is. Going. It's doing
+Speaker 1: its thing. Yeah
+Speaker 0: so. And it's needed out here because of all the dust in the air. Absolutely. You can't get away from it. I mean we don't ever have any windows or anything open. It's not our lifestyle. But there's dust everywhere and the minute you wipe it out 10 minutes later
+Speaker 1: there's a new layer. You know you're absolutely right. When I first moved out, I'm from the east coast originally when I first moved out out here that was an adjustment for me cuz I was like I just dusted.
+Speaker 0: Yeah, yeah.
+Speaker 1: Two days ago. Yeah, yeah and there's this.
+Speaker 0: Yeah that's
+Speaker 1: what you live with when you make the choice to live
+Speaker 0: in the desert.
+Speaker 1: Yeah, that's true. It was just one of the cool things.
+Speaker 0: Especially what caught us by surprise. When we moved out here we knew what the climate was cuz we, we lived in Southern California. For 24 years before we moved east for 20 and then moved back at retirement. So we knew what the climate was out here. We knew about the dust. I didn't take encounter the wind. The wind is what does it here. What are you going to do? Absolutely. That you can't put a system from him to regulate.
+Speaker 1: No. And it is that's really the kind of outside of us getting flash floods. The wind is the worst kind of thing that we get normally when it gets crazy. Because when I used to work because I don't know, did I tell you downstairs I used to work at a casino because I was going to bring it up about the slots, but. Oh, maybe it's because you didn't work at a property that you worked for a company. I worked for a company, but yeah. So I did it.
+Speaker 0: At the Cosmopolitan for about three or four years. I was a bouncer before that, but. Yeah. Anyway, so walking down on the Strip, especially the kind of side alleys or whatever, it's just wind tunnels.
+Speaker 1: Yeah.
+Speaker 0: And it is insane. And that's. That's really the only time during the winter that I can get cold is when that wind is whipping.
+Speaker 1: Yeah. Yeah.
+Speaker 0: And it does whip. Oh, yeah. And now. So filters are.
+Speaker 1: I had her order them for you to bring. Yeah. Knowing whether we were gonna. Wondering. Not knowing if we were gonna need them or not. Okay. So that's up to you, you
+Speaker 0: know. Yeah. I can definitely assess them when I go up there. Do you. My signal's a little spotty up here on my phone. Do you remember when they were. Put in last. No, that's okay. It would be the last full service on the system, and I honestly don't. Haven't got a clue. Ah, it's
+Speaker 1: okay. I'll go. I'll check it out. Yeah. So it was probably leaving the winter or last summer.
+Speaker 0: I'm thinking last summer, but I. Again, I could be wrong. Well, no, it's quite possible. I don't. I don't keep up with things anymore. I just let them happen. Get
+Speaker 1: too old, a little bit too old for that. I get it. I mean, you know, you work your whole life, you deserve to take a load off a little bit. Yeah,
+Speaker 0: well, I did three careers. Three distinct and separate careers. So I had one that was my regular one with Postal. Service. And then I retired from that one. On an early out, actually. I was 49 and I needed something. After about a year, I started leaving scratch marks in the wall. Needed something to do. So I started my own little company to consult with postal people on needs. Did that. Finally got tired of doing that and then went on the slot route stuff as a. As a filler. Okay. And when I finally gave that up, it was time. I was getting tired. I'm tired now, Retired, hurt, and didn't do it. But
+Speaker 1: at least you have. Maybe. Maybe there's more time to rest. At least.
+Speaker 0: Well, I've been resting for a while now. I'm 83. 83 this year, last month. And not looking for another career. I think I've hung it up for the final
+Speaker 1: year. Yeah.
+Speaker 0: Three times is enough. Absolutely. Have at it, my man.
+Speaker 1: Yeah. So what I'll do is I'll go get my stuff now. I start inside first.
+Speaker 0: Would you rather do this? Get it out of the way?
+Speaker 1: Yeah. And plus, with the summer maintenance, we do the bulk of the work on the outdoor units. We go up here to make sure everything is looking as it should, make sure the conditions are good, the temperatures and everything.
+Speaker 0: Like that because up there's the furnace. So in the winter, that's the focus. Yeah, so.
+Speaker 1: And that makes sense.
+Speaker 0: Yeah. And so I'll go up there. I just check everything, make sure everything looks okay. But outside is when more the components are getting tested because they're. It's running well. Yeah. Utilized open air out there too, so. Yeah. So I like to get the sauna out of the way. And then, you know, this time of night or this time of day, it'll. And there's a little breeze. It'll. It'll be nice. Do you.
+Speaker 1: Do you have any questions for me before I get started? I do not. I would say leave that front door. I've got it to where the bolt is slid and it doesn't close. Okay. So it'll just leave it like that so you can get in and out.
+Speaker 0: Sure. Sounds good. I'll. I'll check in with you when I'm done with the upstairs portion.
+Speaker 1: Okay. I'll probably be right there.
+Speaker 0: Here in my office. All right, sounds good. All right. It's it. It's it. It's it. It's. Hot up there, isn't it? A little bit. Oh, yeah. I need to lay off the junk food, and then that'd be good. No, no, no. That's too much of a sad. Sacrifice.
+Speaker 1: It's true. And it's difficult with this job because I'm just out and about all day. So it's easier to get fast food or something from the gas station.
+Speaker 0: Yeah. Yeah. It doesn't contribute very much. Well, you work it off, though.
+Speaker 1: Yes, sir. That's what I like to tell myself, anyway.
+Speaker 0: How'd it look up there?
+Speaker 1: Good. I will show you in just a moment.
+Speaker 0: All right. So, you know, everything looks good. Let's see. This is the inside of one of the panels, one of the two panels on the first unit upstairs. Its blower motor was where it should be. Amperage wise, there's the blower compartment. The wheel is in that housing right there. Then you got your, your control board, which is in good shape. The blower wheels have minimal. Minor.
+Speaker 1: Yeah.
+Speaker 0: Just nothing, nothing crazy at all. The temperatures are where they should be. The. Let
+Speaker 1: me see. It's amazing they got all that stuff out there.
+Speaker 0: Oh, yeah.
+Speaker 1: When they originally put the system in this whole area with.
+Speaker 0: Just full of system.
+Speaker 1: Yeah. And I. Yeah, they. They work for their money.
+Speaker 0: Oh, yeah, yeah. No, and there was a whole team of them. I mean, it wasn't one guy. It was.
+Speaker 1: Oh, yeah. Because that's just. That's just not fair to one person.
+Speaker 0: Yeah.
+Speaker 1: And now I did look, and it looks like you had. Sorry, my. My app crashed. Let me see. Previous boom. Yeah. So it looks like in September of last year,
+Speaker 0: so. A year ago, basically.
+Speaker 1: Yeah. And I mean, at this point, Because we wouldn't be back until
+Speaker 0: a year,
+Speaker 1: you know, sometime in the winter.
+Speaker 0: Oh, yeah, yeah. For the winter service.
+Speaker 1: Yeah. And I'm not sure how far that goes. Like, I don't know if that'll be after the new year, like, how it. How it stacks up. So, I mean, my whole thing is that you paid for the system, so you might. You have to,
+Speaker 0: you
+Speaker 1: know, stay on top of it.
+Speaker 0: Yeah,
+Speaker 1: right. Because you don't. You don't pay that money to have that in there and then let that filter sit up there and hope for the best. It's like. No, you want the. You want a fresh filter in there to get, you know, the. The most you can out of what you spend. So I could. I could take care of that for you before I go, before I pack up my stuff and everything, if you'd like me to.
+Speaker 0: And when is it that you're likely to be the next service?
+Speaker 1: See, that I cannot.
+Speaker 0: We don't know. Because that'll be the. What, Winter service.
+Speaker 1: Yes, sir. Yeah. So. Because I.
+Speaker 0: That could go all the way to. February, March. And that and that's my concern with that is I'm not sure if it's something that would be before or after the new year, because I just I just started with these guys at the beginning of the summer, so I haven't seen the. Don't know what their cycle is. Yeah. Exactly. How bad is the filter? Well, I mean, to be honest, it seems okay. Pretty good. You know, when I was trying to, you know, test them, you know, rubbing my hand down, it didn't seem too bad. My hands are dirty. But I wiped them off. Yeah. And tried it. And it was like I said, it was minimal dust. It keeps they work pretty well. They keep stuff clean. You know, they keep the air clean. But. I. I didn't see anything crazy on them.
+Speaker 1: Well, let's save yourself a trip up there. Let's just leave them and I'll. I'll make a note that we didn't and we'll see what it looks like on the next service.
+Speaker 0: Yeah. More than likely for the next one. They're going to tell you to change them. It will
+Speaker 1: be
+Speaker 0: due. Yeah. Yeah. And even if it's still in, like, decent condition, like I was saying.
+Speaker 1: Yep.
+Speaker 0: You want to make sure you keep a good, you know, filter in there. Yeah. So another couple months. Yeah, sure. Yeah. And really, you know what you could do is when it gets to be that time frame, you could call in your winter maintenance. Well, yeah, that's true. And say, hey, I want to get it done, you know, sooner than later. Yep. And then I can get my filters changed as well. So when at your convenience. Convenience, you know, after. I don't know. Yeah. Maybe September, like, you know, October and on. Maybe you could consider that. Yeah. Yeah. Good enough. Thank you. Thank you. Oh, of course. So that's that. And I'm gonna take this stuff out to the van, switch up a little bit, and I'm gonna get started outside. Yeah. Do you have any questions for me or anything? I do not. I do not. Thank you for informative. Oh, of course. I. I try to. That makes your job easier and sets my mind at ease. Some of the issues that I find is that not everyone's receptive to it. I don't know if they're not paying attention or just, you know. Yeah, could be a million things. So it's nice when somebody appreciates. Well, you know. The attending. Absolutely. You want it to work to its fullest potential. Well, you guys know what the system is supposed to be. What a cool ladder. What's that? I said, what a cool ladder. Oh. Oh, yeah. There's a couple ways you can, you know, take it down, but that's the way I like. Makes it kind of fun. No problem. That's true. What's your weight? What's that?
+Speaker 1: What's your ladder weight?
+Speaker 0: It's a good question.
+Speaker 1: I
+Speaker 0: was wondering that recently,
+Speaker 1: because that's a. I've not seen one that would come down like that.
+Speaker 0: This thing is so beat up, the labels are all gone.
+Speaker 1: Yeah, that's the first thing to go.
+Speaker 0: But. I guess, if I had to guess, maybe 40 pounds. Is it that much? Maybe.
+Speaker 1: Well, yeah, there's a lot of hardware on there. More than. More than I've seen in the usual ones.
+Speaker 0: Watch out for the. Yeah, I got you. Yeah. Oh, yeah. It's got some heft to it. Yeah. That's why I like to carry it around. Yeah. Well, this is a good one. Bit of a workout, too. This is a good one. I've not seen this part of it on any of them before. They've always been. They come like this or they come like that. Right. But there wasn't much choice. I mean, there was only. Yeah. This one goes flat also, so it can extend straight out. That's nice. That's a nice one. All my ladders have gone to my grandsons. They won't let me do anything anymore. Well, I mean, that's a good thing. I can operate my computer. Yeah, that's about it.
+Speaker 1: Yeah. Enjoy yourself.
+Speaker 0: Yeah. Oh, me? Getting too old, man.
+Speaker 1: I'm catching up. But you're only 26. That'd be nice. Nah, I turned 40 this year.
+Speaker 0: I've got to tell. I have one son, my wife's son, that's 56 or 57. My youngest is 49, and my middle child is 52. He's the only one that lives here. Okay. Of my kids personal lives here. That's where all the grandbabies come from. Oh, gotcha. He's not been busy enough.
+Speaker 1: Well, he has, just in a different way. Yeah, exactly.
+Speaker 0: Yeah, yeah, you got it.
+Speaker 1: Well, so I'm gonna go ahead and get started on that. That's right. You said that there was a spigot nearby, just no hose on it. Correct.
+Speaker 0: You know, I think there is a.
+Speaker 1: Well, it's okay. I mean, I can figure it out, but just as long as it's near. You said it's nearby. The unit
+Speaker 0: where the units sit, the spigot is right up here.
+Speaker 1: Great. Just
+Speaker 0: as you go around the corner.
+Speaker 1: All right, cool. That was all I really needed to double check. All right, I'll be back in a little while.
+Speaker 0: All right. It's it. It. It's. It's. Come on, dude. It's. Yes, sir. Yeah, I'm gonna put my headlamp on in a second. That's okay. There's just a little bit of the. The husks or whatever. What's that? Those are a Hummer pair of systems. Oh, yeah. See, my grandson got to work on your behalf. Brought the cars out. Oh, yeah? Thought you might have needed. Okay, so I'll be good to go. I'm just starting right now. The hose right there is great. So that'll make it easy. Yeah. Maybe another, I don't know, maybe hour, hour to change. I'll be. I'll be done on it. Just because the two systems, you know, takes a bit long. It's it. It's it. It's it. It's it. It's it. It's it. ご 視聴 ありがとう ござい まし た。 エビ フライ It's it. It's it. It's it. It's it. It's it. It's it. It. It's it. It's. It's. It's it. It's it. It's it. It's it. It charged up, did you? A little bit. It's just, it takes such a beating during the day, heat wise, that it just gets so drained. Oh, yeah. That it takes a. Takes a while for it to bounce back. But yeah, the weather is definitely nice. I'm. I'm hoping they don't send me to another call after this, but they might, so I'll at least get, get this for a little bit. Yeah. And now. So just to go through this real quick. So that's inside, I think the first panel, the first unit over there. So fully communicating. That's where all the circuitry comes into play. So it's all in good condition. There's a little bit of, you know, dust in there, but I mean, that's to be expected. You know, it's outside. Right. The, the pressures and temperatures are good and I believe I mentioned inside that the fans and everything were. Were good. The compressor was fine. Now there was only a little bit of debris in there, a bit of dust and stuff, but I went through clean that one out for you and then same thing with the other unit. Yeah, it's built the same on the inside. This one's in a little bit better condition probably because it's sitting behind that other one. Oh yeah, windbreak. Yeah, exactly. So, yeah, lighter on the dust and dirt and stuff like that. But I still went and took care of it for you. Cool. And that's really about it. So through the maintenance and everything, with everything seeming to be running fine, I could only think of one. Recommendation. It's optional though. The only reason I bring it up is because you having fully communicating systems means it's heavier on the circuitry. Because this, let me, let me just show you for example, because that's what the inside of an average unit looks like. Oh, wow. Yeah. So you have a voltage switch right here. So the high voltage comes in through the bottom and then it, you know, goes through. This is the motor start device. It jump starts the fan and the compressor and that's it. So yeah, there's a big difference. Yeah, exactly. So the only thing that I feel I would need to bring up just to make you aware of it, in case you were ever interested in it, is surge protection. Oh yeah, yeah. So it's just like what we have inside. Like you plug your computer, your tv, whatever, into that stuff and. And it's there for peace of mind like a backup, right? A wall of defense. So with those that's the only thing I could recommend that way if anything like that were to ever happen you would have that shield because especially like I said, you know, five years is, you know, you're getting up there. It obviously still has time left. Oh yeah. It's just that when units start to hit this age of over four years, five years that's when especially it's a good time to maybe think long term and say hey I can get a couple things taken care of on this just to give it a bit more life. Usually there'd be other stuff to all other things to offer but with a fully communicating system it does so much already that that's really the only thing that I can think of that could make the system better give me a rough order of magnitude cost. Cost. Yeah. I believe. Doesn't have to be, you know, close, real close.
+Speaker 1: I, I believe with these kind of
+Speaker 0: systems,
+Speaker 1: it's one, one to two grand, and that's parts and labor, everything.
+Speaker 0: Now, the reason I say one to two
+Speaker 1: is because I would, in this situation, I would have to double check, but I know outside would greatly benefit from them. So they, they're
+Speaker 0: 500 so a piece.
+Speaker 1: So I would have to verify that if 2 would be needed for
+Speaker 0: the
+Speaker 1: upstairs. Yeah. Which sometimes it is. That's why the, the two would come in. But that's
+Speaker 0: just like I said, just as a suggestion. Okay, well, I'll take that under advisement. And I appreciate you bringing it up. I had talked to one of your guys. When it wasn't. When the system was put in, it was after. Had talked about. Surge. And so it's not the first time that it's come up.
+Speaker 1: Yeah, it's. And that's the thing, like, each time a technician comes here and sees that it should come up.
+Speaker 0: Yeah.
+Speaker 1: Because it's just anytime I see one like that, I always bring it up.
+Speaker 0: And it just in case. It surprises me that that wasn't done in the first place.
+Speaker 1: And you know what? You're absolutely right. I get asked these, well, those kind of questions or statements all the time is, why wasn't this device or this upgrade? Because that's kind of what we do is enhance things or replace stuff to make it better. Yeah. People ask me, hey, why wasn't that.
+Speaker 0: That done during installation or why wasn't it offered when yeah we were buying it? And the thing is I don't know cuz I don't. I don't do that part of it and then part of me thinks that cuz we have a, you know, an agreement probably I know it's with ones with Lennox. I don't know if we have multiple brands. I'm not sure but let's just say Lennox for example that I don't know if their stuff comes packaged a certain way and that's it. I don't know if that's how you have to sell it.
+Speaker 1: Yeah probably can't be adding
+Speaker 0: stuff to it. Yeah that's what I was thinking
+Speaker 1: especially if it's. I'm going to use a term, it may not be the correct one. Off brand Lennox doesn't want to corrupt their system with Joe Schmo's surge. Oh well
+Speaker 0: yeah, absolutely. Yeah and I've.
+Speaker 1: That's what I meant by off
+Speaker 0: brand. Some people. Well, since you bring it up, some people actually go that route to where we'll make a recommendation and they'll go on like Amazon or something and find a rinky dink replacement. And it's like, that's not. This is doing more harm than
+Speaker 1: not the same.
+Speaker 0: Exactly. But let me see real quick so I don't hold you up too much. I just need two signatures real quick, and it's just going to be at the bottom here. So the first one, it's just going to be the authorization for the work
+Speaker 1: right in that box.
+Speaker 0: Yes, sir. Yeah, it's just the authorization for the maintenances that I showed up to do.
+Speaker 1: Whoops, it got away from me.
+Speaker 0: Yeah, it happens sometimes when you get down by the corners and stuff and. And then this one is going to be for the completion of the maintenances.
+Speaker 1: Okay.
+Speaker 0: Yeah, I always enjoy it when people try to. When they sign their whole signature because I just do an X.
+Speaker 1: I just keep it old school,
+Speaker 0: pretend I can't read or write X. All right, so we got that sorted out. I still have a little bit of stuff to work on, but we are good. And I'm gonna email you an invoice, just about everything. And what I'll do is I'll also just attach the surge, just an estimate, just so you can have it on file.
+Speaker 1: That's good. Yeah, that's good. Yeah. I'll keep it on fire. I. I need to think about it. It's just.
+Speaker 0: Yeah, and that's completely fine. No, no, no pressure, no rush. My whole thing is. A lot of times I sleep on it.
+Speaker 1: Yeah.
+Speaker 0: So I get it.
+Speaker 1: Alrighty, man.
+Speaker 0: All right. It was nice chatting. Yes, it was. I
+Speaker 1: enjoyed it.
+Speaker 0: Me too. You have a great night, sir. I'll do my best. It. 사람 많네. It's. I arrived to the address on file and made contact with the homeowner in regards to summer maintenance. I began by assessing the two thermostats in the home and setting them to a maintenance appropriate temperature. I then began my assessments of the indoor units. Both units were in good functioning order. The boxes were clean, the blower wheels had minimal dust. The filter was still in decent condition, which the homeowner decided to wait until the winter maintenance to possibly replace, and I suggested not to wait any longer than that. The blower motors are. Amperage in each unit was where it should be and the temperature splits were in range. I then updated the homeowner after my indoor assessment was concluded. Then I began the outdoor portion of my maintenance. During that time both youth units were in good functioning order as well fully communicating. All the boards and wiring were in good condition, the temperature and pressures were good, the fan, motor, shaft and blade in each unit were in good condition and the same with the compressor. These huge condensed. And coil was sprayed out, cleaned out of debris. And with the condition of the two units after contact. After checking in with the homeowner, I educated him and suggested to add surge protection to the units due to the heavy amount of circuitry. I showed him a picture of his system compared to a standard system. I let him know that if he was interested, that we could get a better quote as to if only the outdoor units preferably needed or if all four total needed. But I explained. That'd be one or the other. Just give him a ballpark, he acknowledged. And then I collected my signatures and departed property while the systems were up and running. It. For our conversation. I am attaching this estimate to your invoice just so you can have the pricing of surge protection on file. Now, this is something you're interested in doing. Just reach out to us. Any technician or management will then verify if the outdoor unit's only needed or if all four need it. But for sure, the two in the outdoor. Definitely. And then one of the things about the surge. Protection is that it has 10 charges per surge protector, so if anything does happen over a great a large time frame, you'll have more than enough charges to handle it and protect your system in the long run. It was great chatting with you and having a nice night. It.

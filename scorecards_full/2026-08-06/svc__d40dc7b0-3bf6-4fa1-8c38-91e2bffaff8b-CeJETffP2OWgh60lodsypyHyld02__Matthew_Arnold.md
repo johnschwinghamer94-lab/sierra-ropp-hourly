@@ -1,0 +1,94 @@
+# SERVICE Scorecard
+**Tech:** Matthew Arnold
+**RecId:** d40dc7b0-3bf6-4fa1-8c38-91e2bffaff8b-CeJETffP2OWgh60lodsypyHyld02
+**Job:** 639988592
+**Date:** 2026-08-06
+**Duration:** 9 min
+
+## Performance Bands
+- **Welcome:** Solid
+- **Diagnosis:** Solid
+- **Options:** Weak
+- **Close:** Solid
+
+## Critical Actions
+- **Expectations set:** true
+- **Options presented (4+):** false
+- **Membership offered:** true
+- **Direct ask for sale:** true
+
+## Call Outcome
+**CLOSED**
+
+## Coaching Tip
+Review for coaching insights.
+
+## Full Transcript
+Speaker 0: Oh, hello. How are you?
+Speaker 1: Good.
+Speaker 0: I'm at the Sierra.
+Speaker 1: Okay.
+Speaker 0: Is it going to be a park up here? Right there?
+Speaker 1: Yeah, yeah.
+Speaker 0: Okay. Perfect.
+Speaker 1: Sure.
+Speaker 0: How are you doing today?
+Speaker 1: Good. Wonderful. How you doing? It's hot out there already.
+Speaker 0: Yes, it is. And it's extremely hot. We're here for that cooling maintenance, correct?
+Speaker 1: Yes. So I have three. Three thermostats. That's the first one.
+Speaker 0: Some of these, usually the temperature, you kind of like it out there, usually for not long. Eight. Okay. Anywhere from 78 at nighttime. D. And then. Oh, I just hit it to 80. It was 79. So you don't have to go in the attic this time, right? I do, actually. You do? Yes, ma'. Am. Okay, so I didn't know you had to do that.
+Speaker 1: Yes. We just make sure that the whole system is working perfectly because the. The unit in the attic is not just for the heating. It also moves the air.
+Speaker 0: Okay. And we're not going to change the filters until we have that system.
+Speaker 1: Yes,
+Speaker 0: we won't change the filters till winter check.
+Speaker 1: Winter check.
+Speaker 0: Yeah. Just so you
+Speaker 1: know, when was the last time they were replaced? October.
+Speaker 0: So we'll do it again in
+Speaker 1: October. Yeah. Was that also during another maintenance?
+Speaker 0: Yes. Okay, so we only going to do them in the wintertime.
+Speaker 1: Yeah. And then
+Speaker 0: we're going to upgrade them too this next time. To the
+Speaker 1: filters to the better number. My husband knows he can. Yeah, so.
+Speaker 0: So I know that the system's in there. I still would like to take a picture of where your vents are at.
+Speaker 2: Yeah, yeah. Do what you got to do. Yeah, yeah. What do you mean? Our vents
+Speaker 0: just wear the. Like. You had the 3 inch filters at one point where those went. The what? The three inch filters you have. Oh, yeah, sorry. No worries.
+Speaker 1: We're going to switch the filters on the winter maintenance. Right. And we're going to. We're going to move
+Speaker 2: up on
+Speaker 1: a number. Yeah, I think we went
+Speaker 3: over 14 maybe instead of 13. People have like those.
+Speaker 1: Yeah.
+Speaker 3: Oh, okay. Yeah, okay. And then those are being provided by Sierra. You know what? Last one, we just ordered it. And when Sierra came and did the winter maintenance, they put it in for a holiday. Yeah. When they had to get up in the attic,
+Speaker 1: but they gave us the website and we ordered it.
+Speaker 3: Yeah, exactly. We order it
+Speaker 1: ourselves.
+Speaker 0: And then they ship here. And then. Yeah,
+Speaker 1: they're ready for you through your company and they ship it right to our house.
+Speaker 2: I didn't know that was a thing. I always thought that we were just the ones that put it in from Sierra. So that's. Yeah. You do put it in. Well, yeah. Technicians that come with the filter themselves.
+Speaker 3: Yeah. So we'll do that in our winter maintenance. Okay, perfect.
+Speaker 1: Cool. And then the AC unit's obviously on this side, right outside the window here. Yes.
+Speaker 2: It's not behind a. No, that's what I thought.
+Speaker 1: And I have a hose over the wall too, so if you want to spray down the vents. I don't know if you guys do that or not. We do because you guys. Sam members, we. We clean those walls. Perfect. Thank
+Speaker 2: you.
+Speaker 0: So there's no. You're. I know. I always have the same guy. Sorry, there's no wall. So just be careful, cuz there's a drop. Okay.
+Speaker 1: Yeah. It sits. These houses sit like. Yes, I, I,
+Speaker 2: I've maintenanced one of your neighbors down the street. So I was like,
+Speaker 1: I feel like I've
+Speaker 2: been here before. I was like, oh, that's right. So I'm kind of familiar. Okay, good. So perfect. All right. Thank you. Okay. Yeah. Anything you need a water or anything?
+Speaker 0: Yeah, I was just gonna ask you. Yeah,
+Speaker 2: that actually would be lovely.
+Speaker 0: Okay, while we're gonna do that, I do have a few more questions. I do believe that the. The unit is with the originalness of the home. Yep. Okay, so it's about how many years old?
+Speaker 1: Six years old. Six years old. Okay. And that's when y' all bought the house, is it? We had it built. Yep. So the unit came with it. Wonderful. Obviously. Yeah.
+Speaker 0: So in the meantime, y' all probably plan on staying here for quite some time, then.
+Speaker 1: Okay.
+Speaker 0: I mean, y'. All. Y' all plan on staying here for quite some time. Oh, you mean to live here? Yeah. I
+Speaker 1: thought you were staying, like, sometime, whatever. However long. Yeah, we're. We're
+Speaker 0: here for a while until I move to Newport Beach. Lovely place.
+Speaker 1: So. So just come in and out as you need to. You don't have to knock or anything. Okay. Perfect.
+Speaker 0: As far as the unit, nothing sounds off, anything like that.
+Speaker 1: Great. As far as I can tell.
+Speaker 0: Yeah, I think everything's been good. So. Yeah. No issues? No. No airflow issues within the home. Everything's been great. So. Perfect. I'm not expecting to know. Notice anything during my visit, but if I do happen to notice anything, would you like me to bring it to your attention? Yeah,
+Speaker 1: absolutely. Okay. Perfect. All right. As long as it don't cost money, we're good.
+Speaker 0: That's always the hub for sure. Yeah. Especially with the living one system. I shouldn't be taking too long, but are there any time advisements that I should know about today
+Speaker 2: you got to do? Come here. Perfect. Awesome. All right. Yeah. Just come and go as you need. And then the closet
+Speaker 0: is the one in there. Awesome. All right. All right. Thank you so much. Sure. Thank you. It.

@@ -1,0 +1,66 @@
+# SERVICE Scorecard
+**Tech:** Jack Vanos
+**RecId:** 0171a308-efca-4802-95d2-611a8ba3d902-cNytscpG9FZ7Z2SxD4Poqocx7rf2
+**Job:** 670874973
+**Date:** 2026-08-06
+**Duration:** 45 min
+
+## Performance Bands
+- **Welcome:** Solid
+- **Diagnosis:** Moderate
+- **Options:** Weak
+- **Close:** Solid
+
+## Critical Actions
+- **Expectations set:** true
+- **Options presented (4+):** false
+- **Membership offered:** false
+- **Direct ask for sale:** true
+
+## Call Outcome
+**CLOSED**
+
+## Coaching Tip
+Review for coaching insights.
+
+## Full Transcript
+Speaker 0: It. It's it. It. The was that. I just don't understand understand how it's pulling up a different address completely than what? It's it. It's it. It's it. It's it. It. It's. It. It. It's. It. It's. It. It's it. It. It's. It. Okay, so it looks like. We just owe $272.
+Speaker 1: So it works now. So how. How is it?
+Speaker 2: It's working. Good. Do you hear it? You should start to feel it. A.
+Speaker 1: So it's still 94. Oh. So it's cooling.
+Speaker 2: It'll. It'll take some time.
+Speaker 1: Okay.
+Speaker 2: But it should start to cool down.
+Speaker 1: Yeah? Yeah. Yeah. I hope so.
+Speaker 2: Yeah.
+Speaker 0: So what is the course? Why? Why? It's like that.
+Speaker 1: The 272.
+Speaker 0: Yeah. 272.
+Speaker 1: All right. Yeah. So says just 272. Why is it like that? It looks like it was under limited warranty. It looks like they might have even. I don't know, it looks like they might have even thrown in a discount there, too. I'm not sure.
+Speaker 2: So just in case,
+Speaker 1: If it accepts again.
+Speaker 2: Yeah, yeah,
+Speaker 1: okay.
+Speaker 0: Absolutely.
+Speaker 1: We didn't sleep almost three. Three nights.
+Speaker 0: Oh, no.
+Speaker 1: Yeah, it's cooling a little bit. Because he said it's too hot inside.
+Speaker 0: It'll take some time. It'll take. It's got a lot of catching up to
+Speaker 1: $94. Yeah, it's still. But you said it's cooling. Okay, I will just pay that one in my debit card.
+Speaker 0: Debit card?
+Speaker 1: Yeah, the one in. In the.
+Speaker 0: On the file. The file?
+Speaker 1: Yes.
+Speaker 0: Let me see here. It's a visa ending in REDACTED
+Speaker 1: All righty. Condenser
+Speaker 0: fan motor. Alrighty. Signature is just to approve that payment.
+Speaker 1: How can we so fast that one broken.
+Speaker 0: Pardon.
+Speaker 1: We are only two years in here. Oh,
+Speaker 0: that fan.
+Speaker 1: Yeah,
+Speaker 0: sometimes they just go out, you know. I know, but you've got a one
+Speaker 1: year warranty
+Speaker 0: for that. So you know. And of course if anything else happens and stuff, you can call us and let us know and we will come on down here then. I just need two more signatures saying that I was authorized
+Speaker 1: system.
+Speaker 0: Next one saying that I did indeed work on your system today. Alrighty. We're gonna be all set. Is that a good email to send that invoice to? Yes. Yeah. Thank you so much, sir. Yeah, of course. It. It's. It. It's. Two years warranty. It. Operational upon leaving.
