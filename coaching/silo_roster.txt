@@ -8,17 +8,30 @@
 # (ServiceTitan tech id 665437151, BU 333). Jose Esquivel has NO row in
 # master-rep-list.csv yet, so this file is no longer purely derivable from that CSV
 # until he is added there with his Firebase UID / Siro team id.
+#
+# 2026-08-06 drift reconciliation — this file had disagreed with
+# UPDATE_DASHBOARD.py's SILO/TEAM_A/TEAM_B (the list that drives the dashboard) for
+# an unknown period, so coaching and the dashboard were scoring different groups:
+#   REMOVED Dustin Romine, Jaden Szelestey — both active=False in ServiceTitan
+#     (ids 463725483 / 543859946) and neither received a coaching plan on 08-03,
+#     08-04 or 08-05, nor appears in livefeed.json.
+#   ADDED David Canales, Bradley Espinoza — both active in BU 333 (ids 663979898 /
+#     639893881) and both HAVE received plans every one of those days.
+# Membership now matches UPDATE_DASHBOARD.SILO exactly (16). Two name spellings
+# still differ ON PURPOSE, because this file keys Siro accounts and that one keys
+# ServiceTitan: "Nathan  Colquitt" (double space) and "Alex Yakovchuk" here vs
+# "Nathan Colquitt" and "Alex - Oleksiy Yakovchuk" there.
 Andrew Alonso
 Nikko April
+David Canales
 Mario Castro
 Nathan  Colquitt
+Bradley Espinoza
 Jose Esquivel
 Joe Mendoza
 Brandon Moreno
 Cole Pantol
-Dustin Romine
 Robert Silinzy
-Jaden Szelestey
 Juan Tlatenchi
 Andrew Trujillo
 Noah Weng
