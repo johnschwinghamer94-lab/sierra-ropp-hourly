@@ -1,0 +1,1 @@
+SKIP: Not a genuine customer interaction—transcript is empty/corrupted, contains only partial words with no dialogue or clear content.
