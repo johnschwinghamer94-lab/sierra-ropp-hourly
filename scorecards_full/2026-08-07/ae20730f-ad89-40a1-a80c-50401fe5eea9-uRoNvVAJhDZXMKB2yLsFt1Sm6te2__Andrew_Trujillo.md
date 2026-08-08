@@ -1,24 +1,19 @@
-# Scorecard: Andrew Trujillo - Job 673086689
-
-**Date:** 2026-08-07  
-**Duration:** 18 minutes  
-**RecId:** ae20730f-ad89-40a1-a80c-50401fe5eea9-uRoNvVAJhDZXMKB2yLsFt1Sm6te2  
-**Outcome:** UNKNOWN
+# Andrew Trujillo — MANGO TREE REAL ESTATE INVESTMENTS L L C (Job #673086689)
+**Date:** 2026-08-07 | **Duration:** 18 min | **Outcome:** no-close
 
 ## FSG Bands
-
-- **Welcome:** Strong
-- **Assessment:** Strong
-- **Decision:** Strong on wins
-- **Deliver:** Solid
+- **Welcome:** Solid — Professional greeting and rapport established
+- **Assessment:** Strong — Good diagnostic questions and systematic inspection
+- **Decision:** Moderate — Explained findings but no firm appointment commitment
+- **Deliver:** Moderate — Clear explanation of findings; vague on next steps
 
 ## Critical Actions
-
-- **Expectations:** ✓ Pass
-- **Questions:** ✓ Pass
-- **Options:** ✗ Fail
-- **Objections:** ✗ Fail
+- **Expectations:** ✓ Set expectations about inspection scope
+- **Questions:** ✓ Good diagnostic discovery questions asked
+- **Options:** ✗ No options presented or specialist appointment scheduled
+- **Objections:** ✓ Handled objections professionally
 
 ## Coaching
+The missed moment was vague commitment on follow-up. Andrew said he'd call back with options but didn't ask the customer to block time for a scheduled meeting to review findings and pricing together. The customer needed a firm appointment time for the callback, not just a promise to call when he had estimates ready.
 
-FIX — Confirm repair authorization path upfront to clarify approval timing for TXV replacement and accelerate close once diagnosis complete.
+**No TGL created for this job.**

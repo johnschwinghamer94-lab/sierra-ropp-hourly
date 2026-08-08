@@ -1,24 +1,22 @@
-# Scorecard: Benjamin Wyllie - Job 673090560
-
-**Date:** 2026-08-07  
-**Duration:** 24 minutes  
-**RecId:** f84c1a26-d81f-4b0f-adee-4f729f021648-LHPyzDeQsNek3Dzj7AlgurDjs6E2  
-**Outcome:** FLIPPED
+# Benjamin Wyllie — GRODEN LEE LIVING TRUST GRODEN LEE TRS (Job #673090560)
+**Date:** 2026-08-07 | **Duration:** 24 min | **Outcome:** flipped ✓
 
 ## FSG Bands
-
-- **Welcome:** Strong
-- **Assessment:** Strong
-- **Decision:** Strong on wins
-- **Deliver:** Solid
+- **Welcome:** Strong — Warm greeting, established trust and expertise immediately
+- **Assessment:** Solid — Good diagnostic questions and system evaluation
+- **Decision:** Strong — Clear explanation of findings, recognized the replacement opportunity, executed textbook Option C pivot
+- **Deliver:** Moderate — Explained findings but incomplete on 5-star review ask
 
 ## Critical Actions
+- **Expectations:** ✓ Set clear expectations about the maintenance visit
+- **Questions:** ✓ Good diagnostic questions throughout
+- **Options:** ✓ Presented Option C (specialist replacement estimate)
+- **Objections:** ✓ Handled all customer concerns with empathy
 
-- **Expectations:** ✓ Pass
-- **Questions:** ✓ Pass
-- **Options:** ✓ Pass
-- **Objections:** ✓ Pass
+## Ground Truth
+Call flipped — TGL/lead created.
 
 ## Coaching
+The WIN: When the customer mentioned needing a replacement estimate for the 26-year-old system, you said "that's a different department, but we can absolutely get someone out here." That's textbook Option C positioning—it acknowledges the customer's need, sets the expectation that a specialist owns this path, and commits to getting them connected. You turned a maintenance call into a lead by staying in your lane (explain the problem) and inviting Option C (get the specialist involved).
 
-WIN - Strong technical diagnosis with visual evidence (frozen refrigerant, compressor damage) converted hesitant customer to repair plus replacement estimate
+Keep doing exactly that on the next similar call—a maintenance finding + customer curiosity about replacement = immediate Option C positioning.

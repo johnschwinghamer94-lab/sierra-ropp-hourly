@@ -1,24 +1,19 @@
-# Scorecard: Andrew Trujillo - Job 668500667
-
-**Date:** 2026-08-07  
-**Duration:** 79 minutes  
-**RecId:** 5444d299-9ef3-41b1-90ed-4c602404db93-uRoNvVAJhDZXMKB2yLsFt1Sm6te2  
-**Outcome:** UNKNOWN
+# Andrew Trujillo — RAMOS MELANIE U & CHRISTE D (Job #668500667)
+**Date:** 2026-08-07 | **Duration:** 79 min | **Outcome:** no-close
 
 ## FSG Bands
-
-- **Welcome:** Strong
-- **Assessment:** Strong
-- **Decision:** Solid
-- **Deliver:** Solid
+- **Welcome:** Solid — Good rapport and empathy established
+- **Assessment:** Strong — Comprehensive diagnostic questions and systematic inspection
+- **Decision:** Moderate — Weak transition when customer raised component replacement question
+- **Deliver:** Solid — Clear explanation of findings and system status
 
 ## Critical Actions
-
-- **Expectations:** ✓ Pass
-- **Questions:** ✓ Pass
-- **Options:** ✗ Fail
-- **Objections:** ✗ Fail
+- **Expectations:** ✓ Set expectations about inspection scope
+- **Questions:** ✗ Did not ask clarifying questions when customer mentioned replacements
+- **Options:** ✗ No options building or specialist scheduling initiated
+- **Objections:** ✗ Did not handle customer's replacement request with a next step
 
 ## Coaching
+The missed moment came when the customer asked about replacing the two electrical components. Andrew explained the findings but didn't ask when they needed the work done or immediately transition to scheduling a specialist to build pricing and full replacement options. The customer had opened the door to a sale—that question was the cue to engage Option C and schedule the Comfort Advisor follow-up.
 
-FIX — Establish replacement cost benchmark early and frame repair cost-benefit to create urgency and move toward decision once full assessment completes.
+**No TGL created for this job.**

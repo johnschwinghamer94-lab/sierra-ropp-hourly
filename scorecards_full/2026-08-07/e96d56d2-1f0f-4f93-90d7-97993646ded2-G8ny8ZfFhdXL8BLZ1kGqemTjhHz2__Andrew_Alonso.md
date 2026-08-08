@@ -1,24 +1,22 @@
-# Scorecard: Andrew Alonso - Job 668201831
-
-**Date:** 2026-08-07  
-**Duration:** 107 minutes  
-**RecId:** e96d56d2-1f0f-4f93-90d7-97993646ded2-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2  
-**Outcome:** UNKNOWN
+# Andrew Alonso — TORRES, ANTUAN MORALES (Job #668201831)
+**Date:** 2026-08-07 | **Duration:** 107 min | **Outcome:** flipped ✓
 
 ## FSG Bands
-
-- **Welcome:** Strong
-- **Assessment:** Solid
-- **Decision:** Solid
-- **Deliver:** Solid
+- **Welcome:** Solid — Warm introduction and basic expectation-setting
+- **Assessment:** Solid — Good check-in questions; limited discovery depth
+- **Decision:** Solid — Clearly explained landlord-tenant complexity, mapped process forward, empathetically addressed filter concern, secured appointment
+- **Deliver:** Moderate — Committed to follow-up; no findings explanation or 5-star review ask
 
 ## Critical Actions
+- **Expectations:** ✓ Clearly set landlord-tenant requirements and process
+- **Questions:** ✓ Asked check-ins and discovery questions
+- **Options:** ✗ No multiple options; process flow only
+- **Objections:** ✓ Empathetically addressed filter concern and committed to follow-up
 
-- **Expectations:** ✓ Pass
-- **Questions:** ✓ Pass
-- **Options:** ✗ Fail
-- **Objections:** ✗ Fail
+## Ground Truth
+TGL 673139119 created 2026-08-07T17:55:08Z — call flipped.
 
 ## Coaching
+The WIN here is transparency about complexity. When you explained "I gotta get a lot of permission, um, so I need to get a bunch of signatures," the customer immediately trusted the process and committed to the measurement appointment. You turned a potential blocker (landlord-tenant red tape) into a clear path forward by naming the challenge and showing it's handled. When the customer raised the filter frustration, you addressed it directly ("I'll talk to him about it") instead of dismissing it.
 
-FIX — Before landlord follow-up, clarify what maintenance or upgrades they want to achieve beyond routine service to position the conversation for decisiveness.
+That combination—naming the complexity + committing to help—is what flipped this call. Do the same on the next multi-stakeholder job: name the process, show you understand the frustration, and commit to the next step.
