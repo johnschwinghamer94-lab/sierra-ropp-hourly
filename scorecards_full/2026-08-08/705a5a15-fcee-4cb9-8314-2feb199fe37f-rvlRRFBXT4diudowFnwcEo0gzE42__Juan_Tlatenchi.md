@@ -1,0 +1,1 @@
+Skip: Transcript contains only garbled/repeated single words; no genuine customer interaction
