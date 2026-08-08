@@ -1,28 +1,27 @@
-# Call Score Card - Brandon Moreno
+# Live Coach Score Card
 
-**RecId:** 1e226827-a6b9-4f9b-aad5-ab74aade01f5-f4dx65lewNTPydNXjgypLVFAcbk1
-**Job:** 671037450
-**Date:** 2026-08-06
-**Duration:** 75 min
+**RecId:** 1e226827-a6b9-4f9b-aad5-ab74aade01f5-f4dx65lewNTPydNXjgypLVFAcbk1  
+**Tech:** Brandon Moreno  
+**Date:** 2026-08-06  
+**Duration:** 75 min  
+**Job #:** 671037450  
 
 ## Scoring
 
-- Welcome: Strong
-- Assessment: Strong
+### Bands
+- Welcome: Moderate
+- Assessment: Solid
 - Decision: Solid
-- Deliver: Moderate
+- Deliver: Solid
 
-## Critical Actions
+### Critical Actions
+- Expectations: ✓
+- Questions: ✓
+- Options: ✓
+- Objections: ✓
 
-- Expectations: true
-- Questions: true
-- Options: false
-- Objections: false
+### Outcome
+**CLOSED**
 
-## Outcome
-
-no-close
-
-## Coaching Tip
-
-FIX — Customer mentioned upstairs staying hot for 4 years while managing with workarounds; tech should have probed deeper into replacement urgency and presented multi-stage efficiency savings before wrapping up.
+### Coaching Tip
+WIN — Strong diagnostic work and clear customer education built trust.
