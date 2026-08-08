@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T17:50:58.371818-07:00",
+  "generated": "2026-08-07T18:05:08.920240-07:00",
   "method": "dashboard parse_all: TGLs Created per creating tech / Revenue-report calls ran (ROPP-tag cleaned)",
   "days": {
     "2026-06-29": {
@@ -733,15 +733,15 @@
         "calls": 3,
         "tgls": 3
       },
+      "Brandon Moreno": {
+        "calls": 2,
+        "tgls": 0
+      },
       "Andrew Trujillo": {
         "calls": 3,
         "tgls": 0
       },
       "Benjamin Wyllie": {
-        "calls": 2,
-        "tgls": 0
-      },
-      "Brandon Moreno": {
         "calls": 2,
         "tgls": 0
       }
