@@ -1,0 +1,321 @@
+# Scorecard: Andrew Alonso
+
+**Date:** 2026-08-08
+**Job:** 673200251
+**Duration:** 47 min
+**RecId:** 3533ce77-2807-4a50-ae42-7f14df3e8129-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
+**Outcome:** FLIPPED
+
+## FSG Bands
+- **Welcome:** Strong
+- **Assessment:** Strong
+- **Decision:** Solid
+- **Deliver:** Strong
+
+## Critical Actions
+- Expectations: ✓
+- Questions: ✓
+- Options: ✓
+- Objections: ✓
+
+## Coaching Tip
+WIN — Strong engagement and proper assessment earned this flip.
+
+---
+
+## Transcript
+
+
+**Speaker 0:**
+Perfect. Sam, it. Hello.
+
+**Speaker 1:**
+Hi there. Hey. Hi. Hey. I'm Andrew with Sierra. I heard we got some acu. Yes. Yeah. Sorry. I tried knocking, so I didn't set up enough. Is it okay? I have you but I trunk right there? Yes. Awesome. You ready if I come in and come tr. Yes. And what's your name? Laura. Yes, ma'. Am. Do you prefer it to be pronounced Laura? Yes. Yeah. Yeah. So what's been going on with the system?
+
+**Speaker 0:**
+Frequently it's going on and. And something they change that. They treat. They like make it on again, but then they saying that condenser is not working. So they want to change that. But it's costing a lot of money. So in the. The unit has. For, like, more than 20 years, so. Okay, okay. They're talking. I'm a renter, so. So they want to do. Because, like, in the past two, three years is. Is like getting off, like, not working, like, 10 times or something.
+
+**Speaker 1:**
+I
+
+**Speaker 0:**
+always
+
+**Speaker 1:**
+have to be
+
+**Speaker 0:**
+connecting those things because anytime I don't have ac.
+
+**Speaker 1:**
+Yeah,
+
+**Speaker 0:**
+every, I don't know, two, three weeks, I'm fine.
+
+**Speaker 1:**
+Copy, copy. So how long have you lived here? Five years. Five years. Okay. And this has been. How long has this issue been going on? A couple days. Oh, yeah.
+
+**Speaker 0:**
+How long what? How
+
+**Speaker 1:**
+long has, like, this breakdown been going on where it's, like, turning off? Yeah. Okay, so I'm gonna turn it down pretty low just so that I can keep testing everything out there. Is it usually middle of the day that it's turning off on you?
+
+**Speaker 0:**
+Find outside of this happening. Huh? Really? I don't, I don't know. I don't remember. I Sometimes I it and I don't notice how. Yeah. Yeah. Not always when it's super hot, sometimes not too hot. But usually the hotter days is when it goes when it pops. Okay. Uhhuh. And. And before like the past years when was like every two, three weeks was like going out. But they have insurance and we always come to insurance and they fix it. And two, three weeks. But since I changed the this the 5%. Yeah. When I change it to this one, like smarter is like taking more time to get. Okay. Because with this one controls because usually I have it higher and MB energy is putting up when it's hotter. So probably that's when. Why it's not
+
+**Speaker 1:**
+broken system. Yeah, 100%. Yeah. When it gets super hot outside, they up the temperature to save you money. But it actually does kind of help the system.
+
+**Speaker 0:**
+I know. Yeah. I know that they. They did it by free, but now it's harder. But it's okay because at least it's not getting off the. The ac. It helps matter. It's happening again, huh? But before it was two, three weeks. And now was months that we were. Okay, so.
+
+**Speaker 1:**
+So this is the first one in a few months that you guys have been having this issue. So you're the renter. Is this contact details? Is Priscilla the landlord?
+
+**Speaker 0:**
+Priscilla is a
+
+**Speaker 1:**
+homeowner.
+
+**Speaker 0:**
+Yeah. His father.
+
+**Speaker 1:**
+Priscilla's father is the landlord. Is Priscilla.
+
+**Speaker 0:**
+Priscilla a tenant?
+
+**Speaker 1:**
+No.
+
+**Speaker 0:**
+Oh, Priscilla is the father.
+
+**Speaker 1:**
+No, her father is the owner. Okay, so
+
+**Speaker 0:**
+she's who all call. Wait, 7885. She's who I call.
+
+**Speaker 1:**
+Okay, yes, yes. Because the father, he's 87 and he, he always tell me no, yes, we're going to get a new one and then they fix it and say okay, it's fixed so we are not going to get it. So every time they fix it and that have been happening for years and then some days before I didn't
+
+**Speaker 2:**
+have
+
+**Speaker 1:**
+those and I was living without AC and it's not cool.
+
+**Speaker 2:**
+Yeah, no, I get, especially in Vegas
+
+**Speaker 1:**
+and even with those things it's not enough.
+
+**Speaker 2:**
+Yeah,
+
+**Speaker 1:**
+even that I, they, he brought me one, I brought the other one, but it's not enough. Like in the middle of the day
+
+**Speaker 2:**
+it goes like 87.
+
+**Speaker 0:**
+Is this the only thermostat? Is there one of those?
+
+**Speaker 1:**
+No, there's only one.
+
+**Speaker 0:**
+Only one. Do you mind showing me the attic access and the filter? Yes. Where are you from originally? Next dog. Okay. Okay. I gotta get approval before I can actually do anything. And then I'm really here to give you some five star service. Okay. Yeah, we're at 4.9 out of five star. Give you some good service. Do you have any questions for me? Anything else you've been experiencing that I should know about?
+
+**Speaker 1:**
+No,
+
+**Speaker 0:**
+other than that kitty downstairs. I'll keep an eye on him. Is there anybody that's going to try to run out the door? Open the door. You can keep it open? Yeah. Do you want me to knock on my way in? No, no, we can
+
+**Speaker 1:**
+go in and out. I prefer them knocking because they get.
+
+**Speaker 0:**
+It's. It. It's it. All right. It. It's it. It's it. It's it. It's. Do you have any filters? I can swap those off.
+
+**Speaker 1:**
+They might be dirty. It's just they look dirty. But if you said that they're a few weeks old, that I can leave them in. So it's up to you if you want me to change them. What?
+
+**Speaker 0:**
+Yeah,
+
+**Speaker 1:**
+Copy. Yeah.
+
+**Speaker 0:**
+I can leave them if you want
+
+**Speaker 1:**
+yeah usually it takes more time to sh. It yeah
+
+**Speaker 0:**
+yeah no
+
+**Speaker 1:**
+but I don't know if looks dirty yes but I don't probably I have to clean the is outside
+
+**Speaker 0:**
+y But
+
+**Speaker 1:**
+you can you can look I have another one well
+
+**Speaker 0:**
+no you could probably get more life out of it it's just if you want me to while I'm here is essentially what I'm
+
+**Speaker 1:**
+I know but I just but if it's dirty 100% I will send it but two weeks wasn't was it working when I sh. No, you're good like what
+
+**Speaker 0:**
+yeah you can
+
+**Speaker 1:**
+a week and a half or something
+
+**Speaker 0:**
+yeah yeah 100% yeah they're getting like what are they like 20 bucks a piece out
+
+**Speaker 1:**
+yeah yeah I don't know but I I get a trying to get a good ones for the
+
+**Speaker 0:**
+and then just like a recommendation is you can go on Amazon and they'll give you bulk packs and they're way cheaper. Lake. I will. Is it. And then when you, when you order them, there's me. RV rating, Merv rating.
+
+**Speaker 1:**
+What is
+
+**Speaker 0:**
+it? It's how, it's how much dust will it catch? Only get MERV 11 or lower. Okay,
+
+**Speaker 1:**
+how much? What?
+
+**Speaker 0:**
+MERV 11. 1. 1 1.
+
+**Speaker 1:**
+11 or lower. Okay,
+
+**Speaker 0:**
+so if you go to, like, 13, 15, it catches more dust, but it also suffocates the system in order to catch that dust. Oh, yeah. Okay, so if you go 8, 11, just change them a little bit more frequently. But 11 is that perfect spot where it's going to catch the dust. But not
+
+**Speaker 1:**
+probably before. Before that one. I had more time. But was it still not, like, completely full? But I, I sh. No, you're good. You're good.
+
+**Speaker 0:**
+Dude, I know
+
+**Speaker 1:**
+it's early. I get this. It was off the last week, like, entire week. And then they come. Someone come. They did something
+
+**Speaker 0:**
+turned off?
+
+**Speaker 1:**
+No, no,
+
+**Speaker 0:**
+That's the outside
+
+**Speaker 1:**
+unit.
+
+**Speaker 0:**
+And, like, the outside system.
+
+**Speaker 1:**
+The outside system. Did you
+
+**Speaker 0:**
+ever go out and look at it and it just wasn't on? Time sometimes wasn't on. Most of the time was that that was not turning on. And now it's turning on. But was not conversant. It's always something different. Yep,
+
+**Speaker 1:**
+Yep.
+
+**Speaker 0:**
+But usually was something that. Like a switch or something like.
+
+**Speaker 1:**
+So I got to call Priscilla to get permission to talk to you about it, but because it's not technically your I can get a lot of legal trouble for you about it. Probably be like, yeah, we're good to talk to her and then we'll go.
+
+**Speaker 0:**
+It's it. It's it. It's it. It's it. It's it. It, Sam. It's it. Ram. It. Whoop, whoop, whoop, whoop, whoop, whoop. Oh. So I'm gonna call Priscilla up real quick I see what we got going on upstairs outside see what she wants me to do just give me a little bit and then we'll I'll come back to you before I leave with a game plan and kind of figure out what she wants me to do
+
+**Speaker 1:**
+okay awesome hopefully this entire system because they I I I'm already tired because they always fix a small practice that is forever and l with a AC is is not
+
+**Speaker 0:**
+yeah 100% yeah that's why I got into AC out here was cuz I'm born and raised out here so I know how hot these homes get
+
+**Speaker 1:**
+no it's it's super hot and honestly we were like if we turn it up there we in the floor just to
+
+**Speaker 0:**
+yeah just cuz just cuz the floor's cold
+
+**Speaker 1:**
+no and they think they think and probably you can tell her like hey it's time it's time to sh.
+
+**Speaker 0:**
+I can't.
+
+**Speaker 1:**
+So I can't use those words. But I can tell her that there's a lot of major concerns with it. And tell. And. And they have
+
+**Speaker 0:**
+invested much more than like all these repairs and the insurance and the. And the pay they. They already pay for anyway.
+
+**Speaker 1:**
+Yeah. Right. Right. Yeah. I get too fr. I don't understand
+
+**Speaker 0:**
+that. We're suffering all the. All
+
+**Speaker 1:**
+the time
+
+**Speaker 0:**
+and even the winter. In the winter. But
+
+**Speaker 1:**
+it's not heating in the winter either.
+
+**Speaker 0:**
+No. But sometimes goes up.
+
+**Speaker 1:**
+Really.
+
+**Speaker 0:**
+Yeah.
+
+**Speaker 1:**
+Wow.
+
+**Speaker 0:**
+But. But it's not too. Well, it's easier to survive. Yeah. We don't got
+
+**Speaker 1:**
+crazy cold winters.
+
+**Speaker 0:**
+Yeah. We just put something.
+
+**Speaker 1:**
+Yeah. Bundle up with the kitty and the dogs. Yeah. So. Yeah. Just give me a little bit. I'll convey your frustrations to her and then I'll let you guys know what we're going to do. Okay. No, I'll be back. I'll be back.
+
+**Speaker 0:**
+It. It's.

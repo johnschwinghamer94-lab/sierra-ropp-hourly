@@ -1,0 +1,264 @@
+# Scorecard: Mario Castro
+
+**Date:** 2026-08-08
+**Job:** 673281712
+**Duration:** 9 min
+**RecId:** ea141977-e2d6-4b71-8b14-2a83c255d27a-F8ZeOm4TrkOymEC2UFNijyrobEp2
+**Outcome:** UNKNOWN
+
+## FSG Bands
+- **Welcome:** Strong
+- **Assessment:** Strong
+- **Decision:** Strong on wins
+- **Deliver:** Strong
+
+## Critical Actions
+- Expectations: ✓
+- Questions: ✓
+- Options: ✓
+- Objections: ✓
+
+## Coaching Tip
+FIX — Consider earlier option presentation and objection handling.
+
+---
+
+## Transcript
+
+
+**Speaker 0:**
+Robert. It. How's it going? Hi, Mario. How are you? Good, good. How about yourself? Oh, good. Little toasty. I appreciate you coming out quickly. You want to come in for a minute? It or. Yeah, yeah, yeah. I got all the dogs in the back with my wife. Oh, okay. I
+
+**Speaker 1:**
+parked
+
+**Speaker 0:**
+right there. Is
+
+**Speaker 1:**
+that okay? Oh, yeah, that's great.
+
+**Speaker 0:**
+Come on in. Good. Thank you. Can I get you either a sparkling water or my wife drinks caffeine free to zero. That's about.
+
+**Speaker 1:**
+I'll take a sparkling water. Yeah. Appreciate you. So, what,
+
+**Speaker 0:**
+do you guys rotate this
+
+**Speaker 1:**
+night duty? No, no, we're from 6:00am all the way to. Till the calls are over, till everyone has a seat, till the call stopped coming in. I been off at two in the morning. Three in the morning. Hey, I appreciate you. Oh, yeah, no, thank you. Is this our first time coming out here?
+
+**Speaker 0:**
+Yeah. I've lived in this house for five years and I've got my shirt serviced every year. But the thing was, I used a company that the prior owner had, which is a small company named Lin Air. Okay. And my biggest concern was what's happening right now. Because they're a small company, they seem reputable, but when a problem occurs, they're not large enough to really deal with it. Oh,
+
+**Speaker 1:**
+I see. I see. So I
+
+**Speaker 0:**
+figure I see you guys in the neighborhood all the time. I figured, well, maybe now's the time to kind of switch to you guys as is. Okay.
+
+**Speaker 1:**
+Yeah. We do, like, most of the Vegas Valley. We do, like, 80% of the Vegas area. So you'll see us everywhere. Oh, yeah. No. And
+
+**Speaker 0:**
+I love the billboards. There's one sign that says, we'll come out and fix what your husband repaired. He repaired.
+
+**Speaker 1:**
+Yeah. Yeah. I was like, if your wife is hot, we'll come and fix it. She can't blame
+
+**Speaker 0:**
+me for this problem.
+
+**Speaker 1:**
+Yeah. So this is our first time coming out. Okay. That's what, you know, what to expect from us. Okay. You can just show me that thermostat. The indoor unit, outdoor unit. Okay. Okay. OB A thorough evaluation. Okay. Checking cleanliness, checking safeties, making sure the components are working properly.
+
+**Speaker 0:**
+If anything's out of specs, I'll bring it to your attention. Okay. I didn't know. I did see on my notes that the unit wasn't working. So whatever I find, I'll let you know. I'll put it on my notes. It takes about 20 to 30 minutes to write my report. Okay. I'll give you all the information. I'll let you decide what you want to do. We won't start without your approval. With an approval, we can get things started. Asking us today?
+
+**Speaker 1:**
+No, that's good. Basically, what happened here tonight, the system. I had a check three months ago and was told it was, you know, it's 14 years old, but said, you know, it's looking good. So I keep it set pretty much at 78. So maybe around six, seven o' clock tonight. I'm sitting here, all of a sudden it climbs to 82. I feel warm air blowing out of the system.
+
+**Speaker 0:**
+Yeah.
+
+**Speaker 1:**
+I go in the garage. The system in the garage is. Is operating as it usually sounds like it is.
+
+**Speaker 0:**
+Okay.
+
+**Speaker 1:**
+I go out, the compressor is completely dead.
+
+**Speaker 0:**
+Okay.
+
+**Speaker 1:**
+So I ran up the Lowe's and I replaced the fuses, thinking, well, maybe I'm going to get lucky.
+
+**Speaker 0:**
+I checked the breaker box. Nothing was tripped.
+
+**Speaker 1:**
+Okay.
+
+**Speaker 0:**
+I left it unlocked for you.
+
+**Speaker 1:**
+Thank
+
+**Speaker 0:**
+you. But the new fuses are in there and I think I put them in properly, but I'm not the. The best of it. You.
+
+**Speaker 1:**
+You would have. You would have had your hairs up
+
+**Speaker 0:**
+if there
+
+**Speaker 1:**
+would have been.
+
+**Speaker 0:**
+Yeah. Wrong.
+
+**Speaker 1:**
+So.
+
+**Speaker 0:**
+So unfortunately, it's not the fuses.
+
+**Speaker 1:**
+Okay. I'll definitely check everything. Okay. I'll check everything. AC related. AC is broken in two parts, outside and inside. So if you can show me the attic access to. Oh, no. You say your units in the garage, right? Yeah, we've got the.
+
+**Speaker 0:**
+The furnace system, so to speak, in the garage. Okay. And the compressor is on the side of that.
+
+**Speaker 1:**
+Okay. Yes. So the furnace inside. I'll check that. Because the cooling box is attached to the furnace. Okay. So I'll check that and then I'll check the outside. You're more than welcome to follow me around and talk. I'll
+
+**Speaker 0:**
+leave you. I won't be your shadow.
+
+**Speaker 1:**
+It's fine. Trust me. I. I like teaching. I like talking. So if you want to. But I
+
+**Speaker 0:**
+won't. Be looking over your
+
+**Speaker 1:**
+shoulder. Oh no, it's fine, it's fine. I don't mind.
+
+**Speaker 0:**
+Here's the inside unit. I've got it off.
+
+**Speaker 1:**
+Okay, let me see. And you, you say you like it at
+
+**Speaker 0:**
+78. Usually have it at 78. Or if we're doing something, we might time 76, 77 when we're sleeping.
+
+**Speaker 1:**
+And is that for comfort or to help out with the utilities?
+
+**Speaker 0:**
+A little bit of both.
+
+**Speaker 1:**
+A little bit of both. Okay. What do you normally like it at? Like what's your 77 would be? 77. Okay, so I'll just put it 76 for now, just to see what is going on. Your filters.
+
+**Speaker 0:**
+I change them religiously every three months. Okay. You have two, same size 2020 by 25. And they were probably just replaced within the last two weeks. But I'm pre a***. It's on a diary system so I don't blow that off. That's
+
+**Speaker 1:**
+good. Okay.
+
+**Speaker 0:**
+Yeah.
+
+**Speaker 1:**
+When you turn it down.
+
+**Speaker 0:**
+Down. Do you notice any hot or cold spots around the house?
+
+**Speaker 1:**
+Ever since we moved in? If you notice, we got the bed in there. Okay. The reason why. This is the master bedroom. We had it in there, but that room is typically a little warmer than the rest of the house. Okay. So the company that we had been dealing with, when we first mentioned that to them, they put in larger vents back there, which helped a little bit. But he went up in the attic and checked. He said nothing's wrong. But that part back there is usually a little warmer than the rest of the house, and it's been that way, but the rest of it feels great. Even at 78?
+
+**Speaker 0:**
+Even at 78. Okay. I see. All right. And your utility bills, how are those looking? Like, are they.
+
+**Speaker 1:**
+Last month's was $230, which I think is pretty good.
+
+**Speaker 0:**
+Okay.
+
+**Speaker 1:**
+And that's been the same since you moved here five years ago? Yeah. No, I haven't noticed any upticks where I'm going. What's going on? Yeah, no, it's been
+
+**Speaker 0:**
+pretty good. If anything, maybe it even seems to have gone down a little bit, but.
+
+**Speaker 1:**
+Okay.
+
+**Speaker 0:**
+I'm not sure. But nothing alarming. Now. That's good. And that's the highest one it's been so far this year. Oh, okay. 230. It's a 1700 square foot house, so it's not a big place. Yeah.
+
+**Speaker 1:**
+Okay. Yeah. And this is a forever home. Yeah, this is our retirement home. Okay. Yeah. Nice. Nice.
+
+**Speaker 0:**
+Are you guys originally from Vegas? No, I'm. Well, I'm originally from New York. My wife's from Texas, but we moved here
+
+**Speaker 1:**
+after
+
+**Speaker 0:**
+living there for like
+
+**Speaker 1:**
+20 years. What part of Texas? Houston. Houston. Okay. Okay. I was in Dallas area.
+
+**Speaker 0:**
+She lived there for a while. Oh, really? Okay, nice. But a lot of the people I worked with were in Frisco and Plano.
+
+**Speaker 1:**
+Frisco and Plano. I was in Grand Prairie, so it was. Oh, yeah. Right next to Frisco and Plano. There you go. I used to work in all that area. Are you a
+
+**Speaker 0:**
+Cowboy fan?
+
+**Speaker 1:**
+No, I'm not either. I. I don't have a. I don't have a team. I just like instigating fights. No, that's the
+
+**Speaker 0:**
+way to do that. Way you don't have your heart. Yeah. Yeah, no, that's hot. Here, I'll leave you
+
+**Speaker 1:**
+to the. The unit in the garage.
+
+**Speaker 0:**
+Okay.
+
+**Speaker 1:**
+There you go. She's always putting stuff by here, and I tell her, you know, I can do some of this stuff for you.
+
+**Speaker 0:**
+Yeah, I can help you out, too, with that.
+
+**Speaker 1:**
+I try to keep it so it doesn't block the ventilation, but it's always,
+
+**Speaker 0:**
+I won't touch Buddy because I don't know if I'll break him. Oh, that's.
+
+**Speaker 1:**
+You want those books?
+
+**Speaker 0:**
+Everything should be fine right there. I should be able to get to the whole unit itself. Okay.
