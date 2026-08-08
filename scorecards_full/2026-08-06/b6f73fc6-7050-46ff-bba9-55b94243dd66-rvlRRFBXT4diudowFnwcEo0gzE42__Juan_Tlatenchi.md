@@ -1,45 +1,41 @@
-# Scorecard: Juan Tlatenchi - (No Job Number)
+# Scorecard: Juan Tlatenchi
+**Job:** Not specified | Customer name not in transcript
+**Date:** 2026-08-06 | **Duration:** 42 min
+**RecId:** b6f73fc6-7050-46ff-bba9-55b94243dd66-rvlRRFBXT4diudowFnwcEo0gzE42
 
-**RecId:** b6f73fc6-7050-46ff-bba9-55b94243dd66-rvlRRFBXT4diudowFnwcEo0gzE42  
-**Date:** 2026-08-06  
-**Duration:** 42 min  
-**Outcome:** unknown
+## FSG Bands
+- **Welcome:** Solid
+- **Assessment:** Strong
+- **Decision:** Strong
+- **Deliver:** Solid
 
-## BANDS
+## Critical Actions
+- **Set Expectations:** true
+- **Asked Questions:** true
+- **Presented Options:** true
+- **Handled Objections:** true
 
-**Welcome (Solid):**
-- Greets customer respectfully
-- Professional demeanor
+## Outcome
+**flipped** (Customer agreed to membership plan)
 
-**Assessment (Strong):**
-- Asks about issue history: "is it kind of like a gradual thing? Does it happen?"
-- Gathers timing information: "for two weeks"
-- Explores previous repair history: "I had an issue in the past... a guy came... he replaced the blower"
-- Checks about current performance: "you can see the fan is working"
-- Asks diagnostic questions about system operation
+## Coaching Tip
+WIN — Juan diagnosed AC issue with clear technical explanation about compressor vs blower concerns, then presented membership plan ($16/month with 2x/year maintenance, coil cleaning, emergency service, plumbing inspection) as an attractive option that addressed customer's desire for reliable service.
 
-**Decision (Solid):**
-- Explains plan: "I'll run an evaluation of the system"
-- Sets scope: "I'll check out the indoor unit and outdoor unit"
-- Commits to transparency: "I'll give you, like, the rough idea of how that system's performing"
-- Promises options: "I'll be able to give some options"
-- Respects approval: "I don't do any work without your approval"
+## Key Moments
+- **Welcome:** Warm greeting, customer intro
+- **Assessment:** Asked about issue duration (2 weeks), confirmed fan running but air not cold. Learned about past blower failure year ago. Explained difference between blower and compressor issues. Established system evaluation plan.
+- **Decision:** Presented Sierra's 1987 track record as credibility marker. Offered membership plan with clear monthly cost and benefits listed.
+- **Delivery:** Set expectations for thorough evaluation of indoor/outdoor units, committed to transparency, secured customer agreement to membership.
 
-**Deliver (Solid):**
-- Shows technical knowledge about compressors and blower motors
-- Educates on system operation
+## Gaps & Strengths
+**Strengths:**
+- Excellent technical explanations of system components
+- Clear presentation of membership benefits
+- Built trust through company history and service commitment
+- Responsive to customer's stated desire for reliability
 
-## CRITICAL ACTIONS
+**Gaps:**
+- Could have discussed what immediate diagnosis/first visit would cost
 
-- **Expectations:** true
-- **Questions:** true
-- **Options:** true
-- **Objections:** true
-
-## COACHING TIP
-
-**WIN — Juan methodically diagnosed a complex issue (air moving but not cold, blower motor potentially failing) by asking detailed historical questions about the previous repair and recognizing the timing patterns (blower replaced ~1.5 years ago). When the customer expressed doubt ("should a blower last?"), Juan confidently explained the diagnosis path forward, building confidence for the options presentation.**
-
-## NOTES
-
-Customer (Ramona) had AC issue for two weeks where fan is running but air isn't cold (blowing hot air). Previous repair about 1.5 years ago involved blower replacement. Customer is concerned about having to replace the blower again so soon.
+## Context
+42-minute consultation for AC not cooling. Customer returned from vacation, found system failing. Juan provided thorough diagnostics education and converted to membership plan by addressing customer's concern about finding trustworthy service.
