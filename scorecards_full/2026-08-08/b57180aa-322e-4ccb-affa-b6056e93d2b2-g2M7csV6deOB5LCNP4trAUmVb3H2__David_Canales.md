@@ -1,0 +1,1 @@
+Transcript contains only garbled/corrupted content — no scoreable interaction.

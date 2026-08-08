@@ -1,0 +1,1 @@
+Transcript incomplete — ends mid-conversation during report/options phase.

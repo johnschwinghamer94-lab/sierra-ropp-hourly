@@ -1,0 +1,1 @@
+Transcript incomplete — ends mid-inspection, no outcome recorded.
