@@ -1,0 +1,1 @@
+{"recId": "noid_Juan_Tlatenchi_dabb7a59_bc74_4052_83e0_58da3dd7e2d3", "tech": "Juan Tlatenchi", "skip": true, "reason": "No job number; incomplete transcript with only setup dialogue and no customer issue identified."}
