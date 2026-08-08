@@ -1,0 +1,7 @@
+# Skip Note
+
+RecId: b57180aa-322e-4ccb-affa-b6056e93d2b2-g2M7csV6deOB5LCNP4trAUmVb3H2
+Tech: David Canales
+Date: 2026-08-08
+
+Reason: transcript is empty/corrupted - only 8 lines of fragmented text, no genuine customer interaction
