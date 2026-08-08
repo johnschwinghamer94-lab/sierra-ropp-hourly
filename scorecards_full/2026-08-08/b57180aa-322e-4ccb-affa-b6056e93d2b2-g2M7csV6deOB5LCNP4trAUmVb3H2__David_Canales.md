@@ -1,0 +1,1 @@
+Skipped — Near-empty transcript with no customer interaction detected.
