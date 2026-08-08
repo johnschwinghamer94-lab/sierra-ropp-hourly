@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-08T11:18:15.352052-07:00",
+  "generated": "2026-08-08T11:34:53.090522-07:00",
   "method": "dashboard parse_all: TGLs Created per creating tech / Revenue-report calls ran (ROPP-tag cleaned)",
   "days": {
     "2026-06-30": {
@@ -364,7 +364,7 @@
         "tgls": 3
       },
       "Francisco Valencia": {
-        "calls": 3,
+        "calls": 2,
         "tgls": 1
       },
       "Joe Mendoza": {
@@ -388,7 +388,7 @@
         "tgls": 2
       },
       "Pedro Manzanares": {
-        "calls": 0,
+        "calls": 1,
         "tgls": 1
       },
       "Robert Silinzy": {
@@ -679,15 +679,15 @@
         "calls": 3,
         "tgls": 3
       },
+      "Brandon Moreno": {
+        "calls": 2,
+        "tgls": 0
+      },
       "Andrew Trujillo": {
         "calls": 3,
         "tgls": 0
       },
       "Benjamin Wyllie": {
-        "calls": 2,
-        "tgls": 0
-      },
-      "Brandon Moreno": {
         "calls": 2,
         "tgls": 0
       }
@@ -1922,6 +1922,10 @@
         "tgls": 0
       },
       "Juan Bernal": {
+        "calls": 1,
+        "tgls": 0
+      },
+      "Mario Castro": {
         "calls": 1,
         "tgls": 0
       }
