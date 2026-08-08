@@ -1,10 +1,10 @@
 # Score Card
 
-**Tech:** Andrew Alonso
-**Date:** 2026-08-07
-**Job:** 673121188
-**Duration:** 9 min
-**RecId:** 2c2964cc-00b2-4ae4-8d19-fded6997a24c-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2
+**Tech:** David Canales
+**Date:** 2026-08-08
+**Job:** 673265727
+**Duration:** 12 min
+**RecId:** b57180aa-322e-4ccb-affa-b6056e93d2b2-g2M7csV6deOB5LCNP4trAUmVb3H2
 
 ## FSG Bands
 
@@ -26,4 +26,4 @@ unknown
 
 ## Coaching Tip
 
-Transcript corrupted; only isolated word fragments recovered.
+Transcript corrupted; insufficient data to score.
