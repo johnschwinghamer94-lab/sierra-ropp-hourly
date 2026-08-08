@@ -1,0 +1,1 @@
+Non-scoreable: Non-scoreable: 9 minute call with corrupted/insufficient interaction.
