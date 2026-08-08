@@ -1,24 +1,22 @@
-# Scorecard: Andrew Trujillo - Job 673086689
-
-**Date:** 2026-08-07  
-**Duration:** 18 minutes  
-**RecId:** ae20730f-ad89-40a1-a80c-50401fe5eea9-uRoNvVAJhDZXMKB2yLsFt1Sm6te2  
-**Outcome:** UNKNOWN
+# Live Scorecard: Andrew Trujillo
+            
+RecId: ae20730f-ad89-40a1-a80c-50401fe5eea9-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
+Job: 673086689
+Date: 2026-08-07
+Duration: 18 min
+Outcome: flipped
 
 ## FSG Bands
-
-- **Welcome:** Strong
-- **Assessment:** Strong
-- **Decision:** Strong on wins
-- **Deliver:** Solid
+- Welcome: Solid
+- Assessment: Solid
+- Decision: Solid
+- Deliver: Moderate
 
 ## Critical Actions
+- Expectations: ✓
+- Questions: ✓
+- Options: ✓
+- Objections: ✗
 
-- **Expectations:** ✓ Pass
-- **Questions:** ✓ Pass
-- **Options:** ✗ Fail
-- **Objections:** ✗ Fail
-
-## Coaching
-
-FIX — Confirm repair authorization path upfront to clarify approval timing for TXV replacement and accelerate close once diagnosis complete.
+## Coaching Tip
+WIN — Tech reached out directly to the owner to get full context, validated the first company's TXV diagnosis, then positioned Sierra as the independent second opinion to build customer confidence before proposing warranty-backed repair options.

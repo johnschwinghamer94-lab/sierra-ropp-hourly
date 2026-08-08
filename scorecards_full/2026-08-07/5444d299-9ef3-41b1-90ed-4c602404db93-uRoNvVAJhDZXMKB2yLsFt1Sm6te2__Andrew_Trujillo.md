@@ -1,24 +1,22 @@
-# Scorecard: Andrew Trujillo - Job 668500667
-
-**Date:** 2026-08-07  
-**Duration:** 79 minutes  
-**RecId:** 5444d299-9ef3-41b1-90ed-4c602404db93-uRoNvVAJhDZXMKB2yLsFt1Sm6te2  
-**Outcome:** UNKNOWN
+# Live Scorecard: Andrew Trujillo
+            
+RecId: 5444d299-9ef3-41b1-90ed-4c602404db93-uRoNvVAJhDZXMKB2yLsFt1Sm6te2
+Job: 668500667
+Date: 2026-08-07
+Duration: 79 min
+Outcome: closed
 
 ## FSG Bands
-
-- **Welcome:** Strong
-- **Assessment:** Strong
-- **Decision:** Solid
-- **Deliver:** Solid
+- Welcome: Solid
+- Assessment: Strong
+- Decision: Strong
+- Deliver: Strong
 
 ## Critical Actions
+- Expectations: ✓
+- Questions: ✓
+- Options: ✓
+- Objections: ✓
 
-- **Expectations:** ✓ Pass
-- **Questions:** ✓ Pass
-- **Options:** ✗ Fail
-- **Objections:** ✗ Fail
-
-## Coaching
-
-FIX — Establish replacement cost benchmark early and frame repair cost-benefit to create urgency and move toward decision once full assessment completes.
+## Coaching Tip
+WIN — Tech educated the customer with a detailed visual diagram explaining motor start devices, voltage switches, and compressor readings, then reconnected to their budget concerns by presenting a prioritized repair plan that included immediate needs and long-term prevention to maximize system life.
