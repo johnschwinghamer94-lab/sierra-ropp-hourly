@@ -1,1 +1,21 @@
-{"recId": "ae20730f-ad89-40a1-a80c-50401fe5eea9-uRoNvVAJhDZXMKB2yLsFt1Sm6te2", "tech": "Andrew Trujillo", "jobNumber": "673086689", "dateCreated": "2026-08-07", "durationMin": 18, "bands": {"welcome": "Solid", "assessment": "Strong", "decision": "Solid", "deliver": "Solid"}, "critical": {"expectations": true, "questions": true, "options": false, "objections": true}, "outcome": "no-close", "tip": "FIX \u2014 Present multiple options on the call; securing approval before leaving empowers customer decision-making"}
+{
+  "recId": "ae20730f-ad89-40a1-a80c-50401fe5eea9-uRoNvVAJhDZXMKB2yLsFt1Sm6te2",
+  "tech": "Andrew Trujillo",
+  "jobNumber": "673086689",
+  "dateCreated": "2026-08-07",
+  "durationMin": 18,
+  "bands": {
+    "welcome": "Solid",
+    "assessment": "Strong",
+    "decision": "Strong",
+    "deliver": "Solid"
+  },
+  "critical": {
+    "expectations": "pass",
+    "questions": "pass",
+    "options": "pass",
+    "objections": "pass"
+  },
+  "outcome": "unknown",
+  "tip": "FIX — When the homeowner mentioned the warranty coverage, Andrew should have immediately offered to file a claim on their behalf as Option B before pivoting to full system evaluation. This would have demonstrated proactive service and solidified the Option C appointment as the premium path."
+}

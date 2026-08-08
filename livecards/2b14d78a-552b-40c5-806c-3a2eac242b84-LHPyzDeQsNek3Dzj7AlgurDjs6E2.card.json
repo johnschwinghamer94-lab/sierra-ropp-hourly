@@ -1,1 +1,21 @@
-{"recId": "2b14d78a-552b-40c5-806c-3a2eac242b84-LHPyzDeQsNek3Dzj7AlgurDjs6E2", "tech": "Benjamin Wyllie", "jobNumber": "673146064", "dateCreated": "2026-08-07", "durationMin": 14, "bands": {"welcome": "Solid", "assessment": "Strong", "decision": "Moderate", "deliver": "Moderate"}, "critical": {"expectations": true, "questions": true, "options": false, "objections": false}, "outcome": "no-close", "tip": "FIX \u2014 Present multiple options on the call; securing approval before leaving empowers customer decision-making"}
+{
+  "recId": "2b14d78a-552b-40c5-806c-3a2eac242b84-LHPyzDeQsNek3Dzj7AlgurDjs6E2",
+  "tech": "Benjamin Wyllie",
+  "jobNumber": "673146064",
+  "dateCreated": "2026-08-07",
+  "durationMin": 14,
+  "bands": {
+    "welcome": "Solid",
+    "assessment": "Moderate",
+    "decision": "Weak",
+    "deliver": "Solid"
+  },
+  "critical": {
+    "expectations": "pass",
+    "questions": "moderate",
+    "options": "weak",
+    "objections": "fail"
+  },
+  "outcome": "no-close",
+  "tip": "FIX — When the customer mentioned they'd already had two other companies out, Benjamin should have asked what those companies recommended instead of offering to just check it. This would have uncovered unmet concerns he could address and repositioned Sierra as the solution consultant."
+}

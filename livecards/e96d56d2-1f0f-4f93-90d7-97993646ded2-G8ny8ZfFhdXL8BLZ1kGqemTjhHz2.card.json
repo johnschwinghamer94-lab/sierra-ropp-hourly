@@ -1,1 +1,21 @@
-{"recId": "e96d56d2-1f0f-4f93-90d7-97993646ded2-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2", "tech": "Andrew Alonso", "jobNumber": "668201831", "dateCreated": "2026-08-07", "durationMin": 107, "bands": {"welcome": "Solid", "assessment": "Moderate", "decision": "Moderate", "deliver": "Moderate"}, "critical": {"expectations": true, "questions": false, "options": false, "objections": true}, "outcome": "flipped", "tip": "WIN — Navigated landlord-tenant complexity and secured committed estimate appointment."}
+{
+  "recId": "e96d56d2-1f0f-4f93-90d7-97993646ded2-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2",
+  "tech": "Andrew Alonso",
+  "jobNumber": "668201831",
+  "dateCreated": "2026-08-07",
+  "durationMin": 107,
+  "bands": {
+    "welcome": "Solid",
+    "assessment": "Solid",
+    "decision": "Strong",
+    "deliver": "Moderate"
+  },
+  "critical": {
+    "expectations": "pass",
+    "questions": "pass",
+    "options": "pass",
+    "objections": "n/a"
+  },
+  "outcome": "flipped",
+  "tip": "WIN — Andrew professionally navigated the landlord-tenant compliance requirements, secured necessary signatures, and scheduled measurements for the next day through clear communication of the multi-step process."
+}

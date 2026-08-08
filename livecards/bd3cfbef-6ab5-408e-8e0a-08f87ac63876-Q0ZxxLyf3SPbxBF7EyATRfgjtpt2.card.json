@@ -1,1 +1,21 @@
-{"recId": "bd3cfbef-6ab5-408e-8e0a-08f87ac63876-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2", "tech": "Bradley Espinoza", "jobNumber": "672903078", "dateCreated": "2026-08-07", "durationMin": 84, "bands": {"welcome": "Solid", "assessment": "Strong", "decision": "Moderate", "deliver": "Moderate"}, "critical": {"expectations": true, "questions": true, "options": false, "objections": false}, "outcome": "no-close", "tip": "FIX \u2014 Present multiple options on the call; securing approval before leaving empowers customer decision-making"}
+{
+  "recId": "bd3cfbef-6ab5-408e-8e0a-08f87ac63876-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2",
+  "tech": "Bradley Espinoza",
+  "jobNumber": "672903078",
+  "dateCreated": "2026-08-07",
+  "durationMin": 84,
+  "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Strong",
+    "deliver": "Strong on wins"
+  },
+  "critical": {
+    "expectations": "pass",
+    "questions": "pass",
+    "options": "pass",
+    "objections": "pass"
+  },
+  "outcome": "unknown",
+  "tip": "WIN — Bradley's personal conversation about the Beatles collection demonstrated genuine interest in the customer as a person, not just a job, which built trust for discussing technical recommendations. This human connection is the foundation for advancing the customer to the next service step."
+}

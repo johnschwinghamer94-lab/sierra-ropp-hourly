@@ -1,1 +1,21 @@
-{"recId": "5805d926-3b92-4dba-8704-0426eb4c3f65-LHPyzDeQsNek3Dzj7AlgurDjs6E2", "tech": "Benjamin Wyllie", "jobNumber": "673179658", "dateCreated": "2026-08-07", "durationMin": 49, "bands": {"welcome": "Solid", "assessment": "Strong", "decision": "Moderate", "deliver": "Moderate"}, "critical": {"expectations": true, "questions": true, "options": false, "objections": true}, "outcome": "no-close", "tip": "FIX \u2014 Present multiple options on the call; securing approval before leaving empowers customer decision-making"}
+{
+  "recId": "5805d926-3b92-4dba-8704-0426eb4c3f65-LHPyzDeQsNek3Dzj7AlgurDjs6E2",
+  "tech": "Benjamin Wyllie",
+  "jobNumber": "673179658",
+  "dateCreated": "2026-08-07",
+  "durationMin": 49,
+  "bands": {
+    "welcome": "Strong",
+    "assessment": "Strong",
+    "decision": "Moderate",
+    "deliver": "Strong on wins"
+  },
+  "critical": {
+    "expectations": "pass",
+    "questions": "pass",
+    "options": "moderate",
+    "objections": "weak"
+  },
+  "outcome": "unknown",
+  "tip": "FIX — When the homeowner revealed they'd had multiple vendor attempts, Benjamin should have asked what the other companies missed, positioning himself as the solution to their previous frustrations rather than just another vendor presentation."
+}

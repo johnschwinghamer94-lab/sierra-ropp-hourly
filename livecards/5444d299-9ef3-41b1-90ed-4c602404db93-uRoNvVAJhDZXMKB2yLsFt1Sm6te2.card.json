@@ -1,1 +1,21 @@
-{"recId": "5444d299-9ef3-41b1-90ed-4c602404db93-uRoNvVAJhDZXMKB2yLsFt1Sm6te2", "tech": "Andrew Trujillo", "jobNumber": "668500667", "dateCreated": "2026-08-07", "durationMin": 79, "bands": {"welcome": "Solid", "assessment": "Strong", "decision": "Moderate", "deliver": "Moderate"}, "critical": {"expectations": true, "questions": true, "options": false, "objections": true}, "outcome": "no-close", "tip": "FIX \u2014 Present multiple options on the call; securing approval before leaving empowers customer decision-making"}
+{
+  "recId": "5444d299-9ef3-41b1-90ed-4c602404db93-uRoNvVAJhDZXMKB2yLsFt1Sm6te2",
+  "tech": "Andrew Trujillo",
+  "jobNumber": "668500667",
+  "dateCreated": "2026-08-07",
+  "durationMin": 79,
+  "bands": {
+    "welcome": "Solid",
+    "assessment": "Strong",
+    "decision": "Strong",
+    "deliver": "Strong on wins"
+  },
+  "critical": {
+    "expectations": "pass",
+    "questions": "pass",
+    "options": "pass",
+    "objections": "n/a"
+  },
+  "outcome": "no-close",
+  "tip": "FIX — When the customer asked about replacing versus repairing, Andrew should have presented the cost comparison of the electrical components repair against a full replacement, rather than saying 'I'll get to the price once I'm finished.' This would have moved the conversation toward a larger commitment in the moment."
+}

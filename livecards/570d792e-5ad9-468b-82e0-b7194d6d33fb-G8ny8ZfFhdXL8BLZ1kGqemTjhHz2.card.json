@@ -1,1 +1,21 @@
-{"recId": "570d792e-5ad9-468b-82e0-b7194d6d33fb-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2", "tech": "Andrew Alonso", "jobNumber": "673197881", "dateCreated": "2026-08-07", "durationMin": 102, "bands": {"welcome": "Strong", "assessment": "Strong", "decision": "Strong", "deliver": "Strong"}, "critical": {"expectations": true, "questions": true, "options": true, "objections": true}, "outcome": "flipped", "tip": "WIN \u2014 Leveraged technical expertise through pump-down testing and visual evidence (photos of coil rust, oil leak) to justify recommendations and earn customer confidence despite budget constraints."}
+{
+  "recId": "570d792e-5ad9-468b-82e0-b7194d6d33fb-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2",
+  "tech": "Andrew Alonso",
+  "jobNumber": "673197881",
+  "dateCreated": "2026-08-07",
+  "durationMin": 102,
+  "bands": {
+    "welcome": "Solid",
+    "assessment": "Strong",
+    "decision": "Strong",
+    "deliver": "Strong on wins"
+  },
+  "critical": {
+    "expectations": "pass",
+    "questions": "pass",
+    "options": "pass",
+    "objections": "pass"
+  },
+  "outcome": "flipped",
+  "tip": "WIN — Andrew's detailed explanation of the R410A phase-out and its business implications, combined with showing the rusty coils and weak compressor via visual demonstration, moved the customer from hesitant to agreeing to full system evaluation and estimate path."
+}

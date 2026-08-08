@@ -1,1 +1,21 @@
-{"recId": "bb0724fd-8602-48fd-b566-1547ec04bc8b-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2", "tech": "Bradley Espinoza", "jobNumber": "670666492", "dateCreated": "2026-08-07", "durationMin": 125, "bands": {"welcome": "Solid", "assessment": "Moderate", "decision": "Solid", "deliver": "Moderate"}, "critical": {"expectations": true, "questions": true, "options": false, "objections": false}, "outcome": "no-close", "tip": "FIX \u2014 Present multiple options on the call; securing approval before leaving empowers customer decision-making"}
+{
+  "recId": "bb0724fd-8602-48fd-b566-1547ec04bc8b-Q0ZxxLyf3SPbxBF7EyATRfgjtpt2",
+  "tech": "Bradley Espinoza",
+  "jobNumber": "670666492",
+  "dateCreated": "2026-08-07",
+  "durationMin": 125,
+  "bands": {
+    "welcome": "Solid",
+    "assessment": "Strong",
+    "decision": "Strong",
+    "deliver": "Strong on wins"
+  },
+  "critical": {
+    "expectations": "pass",
+    "questions": "pass",
+    "options": "pass",
+    "objections": "pass"
+  },
+  "outcome": "unknown",
+  "tip": "WIN — Bradley's persistent leak search and documentation of multiple refrigerant leaks across the system components provided strong justification for a full replacement, earning agreement to move forward with the TGL path. The objective evidence of widespread refrigerant issues gave the customer confidence in the recommended solution."
+}
