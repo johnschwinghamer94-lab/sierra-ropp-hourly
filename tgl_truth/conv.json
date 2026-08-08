@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T21:50:53.993110-07:00",
+  "generated": "2026-08-07T22:18:30.809569-07:00",
   "method": "dashboard parse_all: TGLs Created per creating tech / Revenue-report calls ran (ROPP-tag cleaned)",
   "days": {
     "2026-06-29": {
@@ -1934,7 +1934,7 @@
         "tgls": 3
       },
       "David Canales": {
-        "calls": 2,
+        "calls": 3,
         "tgls": 2
       },
       "Jose Esquivel": {
