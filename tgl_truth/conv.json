@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-08T07:47:51.299636-07:00",
+  "generated": "2026-08-08T07:52:29.240151-07:00",
   "method": "dashboard parse_all: TGLs Created per creating tech / Revenue-report calls ran (ROPP-tag cleaned)",
   "days": {
     "2026-06-30": {
@@ -364,7 +364,7 @@
         "tgls": 3
       },
       "Francisco Valencia": {
-        "calls": 2,
+        "calls": 3,
         "tgls": 1
       },
       "Joe Mendoza": {
@@ -388,7 +388,7 @@
         "tgls": 2
       },
       "Pedro Manzanares": {
-        "calls": 1,
+        "calls": 0,
         "tgls": 1
       },
       "Robert Silinzy": {
