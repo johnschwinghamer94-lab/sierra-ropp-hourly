@@ -1,0 +1,41 @@
+{
+  "recId": "b56530d8-46a1-43c8-80e1-8f27be90d1f2-T3aj2xQjptYBea2nLEhURLzJcwE2",
+  "date": "2026-08-07",
+  "rep": "Pedro Manzanares",
+  "jobNumber": "672920651",
+  "customer": "LUCIANO REBECCA SHAMROCK RIVERA JULIO ANGEL LUCIANO",
+  "duration": "29 min",
+  "serviceScore": {
+    "welcome": 6,
+    "diagnosis": 8,
+    "options": 3,
+    "close": 2,
+    "total": 19,
+    "maxScore": 40,
+    "percentage": 47
+  },
+  "criticalActions": {
+    "expectationsSet": false,
+    "optionsPresented": false,
+    "membershipDiscussed": false,
+    "callClosed": false,
+    "passedActions": 0,
+    "totalActions": 4
+  },
+  "outcome": "unknown",
+  "summary": "Customer AC compressor making loud noise. Pedro conducts diagnostics, determines compressor healthy but overworking seasonally. Call ends incomplete without options, timeline, or resolution.",
+  "coachingTip": "WIN— Builds excellent rapport and thorough diagnostics. FIX— Present clear warranty/repair options and close timeline before leaving for upstairs check.",
+  "gaps": [
+    "No options presented",
+    "Call not properly closed",
+    "No warranty discussion despite customer inquiry",
+    "No appointment scheduled",
+    "No written summary provided"
+  ],
+  "strengths": [
+    "Excellent rapport building",
+    "Systematic diagnostic approach",
+    "Active listening to customer concerns",
+    "Considers environmental factors"
+  ]
+}
