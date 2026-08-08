@@ -1,21 +1,24 @@
-# Call Scorecard: Job #668201831
+# Scorecard: Andrew Alonso - Job 668201831
 
-**Date:** 2026-08-07 | **Duration:** 107 min | **Tech:** Andrew Alonso | **Outcome:** Flipped
+**Date:** 2026-08-07  
+**Duration:** 107 minutes  
+**RecId:** e96d56d2-1f0f-4f93-90d7-97993646ded2-G8ny8ZfFhdXL8BLZ1kGqemTjhHz2  
+**Outcome:** UNKNOWN
 
-## Bands
-- **Welcome:** Solid — Friendly introduction, established rapport with customer and colleague
-- **Assessment:** Moderate — Didn't ask comprehensive discovery questions about comfort concerns
-- **Decision:** Moderate — Did not present options; followed landlord-tenant protocol but limited customer engagement on upgrade opportunities
-- **Deliver:** Moderate — Explained process and next steps, but didn't emphasize the value prop or ask for review
+## FSG Bands
+
+- **Welcome:** Strong
+- **Assessment:** Solid
+- **Decision:** Solid
+- **Deliver:** Solid
 
 ## Critical Actions
-- ✓ **Expectations:** Set clear expectations on process and timeline  
-- ✗ **Questions:** Limited discovery questions asked; "Anything you guys didn't experience?" was closed-ended
-- ✗ **Options:** No options presented; this was diagnostic/prep call only
-- ✓ **Objections:** Handled filter/maintenance concern with landlord escalation approach
 
-## Outcome Analysis
-**FLIPPED** — Customer agreed to committed estimate appointment for tomorrow; scheduled follow-up with permissions and measurements.
+- **Expectations:** ✓ Pass
+- **Questions:** ✓ Pass
+- **Options:** ✗ Fail
+- **Objections:** ✗ Fail
 
-## Coaching Notes
-The tech navigated the landlord-tenant complexity effectively—a skill that reduces friction and builds trust. The "I'll talk to him about it" moment when addressing the filter issue shows ownership and follow-through. For future calls, ask more discovery questions early to surface comfort/efficiency concerns before the technical assessment.
+## Coaching
+
+FIX — Before landlord follow-up, clarify what maintenance or upgrades they want to achieve beyond routine service to position the conversation for decisiveness.
